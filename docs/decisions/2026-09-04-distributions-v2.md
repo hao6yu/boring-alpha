@@ -3,7 +3,7 @@
 Date: 2026-09-04
 Snapshot: `data/snapshots/20260904T192633Z`, methodology `yahoo-adjusted-v2+dgs3mo-v1`
 Resolves: spec §3.5 of `docs/superpowers/specs/2026-09-04-after-tax-evaluation-design.md`
-Status: **open**
+Status: **verified** (pre-split row by inference; see the June 2008 note)
 
 ## What was checked
 
@@ -15,7 +15,7 @@ compared by hand against the issuer's published distribution schedule.
 
 | Ex-date (archived) | Archived amount | Issuer amount per share | Issuer source | Relationship |
 |---|---:|---:|---|---|
-| 2008-06-25 | 0.517333 | 0.517255 | iShares MSCI Emerging Markets ETF (EEM) fund-data download, "Distributions" sheet, fetched 2026-09-04 from `https://www.blackrock.com/varnish-api/blk-one01-product-data/product-data/api/v1/get-fund-document?appType=PRODUCT_PAGE&appSubType=ISHARES&targetSite=us-ishares&locale=en_US&portfolioId=239637&component=fundDownload&userType=individual` (the download link on `https://www.ishares.com/us/products/239637/ishares-msci-emerging-markets-etf`) | equal — not the hypothesized one third; see note below |
+| 2008-06-25 | 0.517333 | 0.517255 | iShares MSCI Emerging Markets ETF (EEM) fund-data download, "Distributions" sheet, fetched 2026-09-04 from `https://www.blackrock.com/varnish-api/blk-one01-product-data/product-data/api/v1/get-fund-document?appType=PRODUCT_PAGE&appSubType=ISHARES&targetSite=us-ishares&locale=en_US&portfolioId=239637&component=fundDownload&userType=individual` (the download link on `https://www.ishares.com/us/products/239637/ishares-msci-emerging-markets-etf`) | equal to the issuer's restated (post-split-terms) figure; proves split-adjusted units by inference, see note |
 | 2008-12-23 | 0.340000 | 0.340423 | Same document as above | equal, post-split |
 
 **Note on the June 2008 row.** The archived amount is equal to the issuer's
@@ -58,10 +58,15 @@ original June 2008 per-share amount and could not obtain one:
   available.
 
 I did not estimate a figure and did not infer one from the archived data
-itself. This cell is reported as **not sourced** for the purpose of testing
-the one-third relationship; the 0.517255 figure above is real and cited,
-but — for the reason just given — does not settle whether the
-split-adjustment is applied correctly to the pre-split period.
+itself: the 0.517255 figure above is real and cited. It cannot test the
+one-third arithmetic directly, because it is itself restated to post-split
+terms. But the controller ruled that equality with a figure known to be
+restated to post-split terms is itself proof that the archived amount is in
+split-adjusted units: if the archived amount were instead in original
+pre-split terms, it would be roughly three times this restated figure
+(about 1.55), not equal to it. The equality observed here rules that out,
+so it establishes the split-adjusted-units assumption for this row by
+inference, even though a contemporaneous pre-split figure was not sourced.
 
 ### SPY 2019 (no splits)
 
@@ -74,26 +79,24 @@ split-adjustment is applied correctly to the pre-split period.
 
 ## Conclusion
 
-The December 2008 EEM row (post-split) and all four SPY 2019 rows match the
-issuer's published amounts to the cent, which is consistent with the
-split-adjusted-units assumption for those dates. The June 2008 EEM row
-(pre-split) does not confirm the anticipated one-third relationship: the
-only issuer figure I could obtain for it comes from iShares' currently
-published data, which I found — by checking that same data's own NAV and
-shares-outstanding history around 2008-07-24 — to already be restated to
-today's post-split share count, so it cannot test whether the archived
-value is correctly a third of what was actually paid per pre-split share in
-June 2008. I was unable to find a contemporaneous, non-restated source for
-that figure within the sourcing rules (a Wayback Machine capture of the
-period's distribution page is Flash-rendered and not extractable; the
-relevant SEC N-CSR/N-CSRS filings for both iShares registrants in 2008 do
-not appear to carry EEM's own fund-specific financial statements).
+All five directly comparable rows — the December 2008 EEM distribution and
+all four SPY 2019 distributions — equal the issuer's published amounts to
+the cent. The June 2008 EEM row equals the issuer's restated figure, and
+therefore establishes split-adjusted units by the inference above: the
+brief's "one third, pre-split" arithmetic was one way to prove that the
+chart endpoint's dividend amounts are in the same split-adjusted units as
+its `close`; showing that the archived amount equals a figure independently
+known to be restated to post-split terms (rather than roughly three times
+larger, as it would be in original pre-split terms) proves the same thing
+by a different route. The split-adjusted-units assumption in the fetcher
+and the distributions reader is confirmed. A contemporaneous, non-restated
+pre-split figure for EEM's June 2008 distribution was not sourced, and this
+record says so.
 
-This leaves the pre-split half of the split-adjusted-units assumption open.
-The overlay's outputs may not be cited until this is closed — either by
-locating a genuine pre-split per-share figure for EEM's June 2008
-distribution, or by an equivalent hand check on a different pre-split
-symbol-date where such a figure can be sourced.
+Plan 2's tax overlay will make this assumption self-checking on every
+ex-date by reporting the ratio of the data-implied reinvestment price (cash
+received divided by child shares) to the unadjusted close, so a unit
+mismatch for any symbol or date is caught mechanically.
 
 ## Consequences for existing configurations
 
