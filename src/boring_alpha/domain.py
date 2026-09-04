@@ -51,4 +51,5 @@ class BacktestResult:
     decisions: tuple[SignalSnapshot, ...]
     warnings: tuple[str, ...] = ()
     contributions: dict[str, float] = field(default_factory=dict)
+    excess_contributions: dict[str, float] = field(default_factory=dict)
     cash_interest: float = 0.0

@@ -113,6 +113,33 @@ def _trades_csv(result: BacktestResult) -> str:
     return output.getvalue()
 
 
+def run_warnings(config: AppConfig, data: MarketData, results: tuple[BacktestResult, ...]) -> list[str]:
+    """Everything an artifact must say about what its numbers are worth."""
+
+    warnings: list[str] = []
+    if config.data.source == "synthetic":
+        warnings.append("SYNTHETIC DATA: results have no economic or predictive meaning.")
+    if not config.evaluation.is_evidence:
+        warnings.append(f"EXPLORATORY RUN: not evidence about {config.strategy.strategy_id}.")
+    warnings.extend(data.warnings)
+    for result in results:
+        warnings.extend(result.warnings)
+    return warnings
+
+
+def append_provenance(run_dir: Path, unseal_reason: str | None) -> None:
+    """Record the environment this invocation ran in, without touching identity."""
+
+    record = {
+        "recorded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "python_version": sys.version.split()[0],
+        "unseal_reason": unseal_reason,
+        **git_provenance(Path(__file__).resolve().parent.parent.parent),
+    }
+    with (run_dir / "provenance.jsonl").open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(record, sort_keys=True) + "\n")
+
+
 def write_report(
     config: AppConfig,
     data: MarketData,
@@ -134,16 +161,7 @@ def write_report(
     run_dir = config.report.output_dir / config.strategy.strategy_id / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    warnings: list[str] = []
-    if config.data.source == "synthetic":
-        warnings.append("SYNTHETIC DATA: results have no economic or predictive meaning.")
-    if not config.evaluation.is_evidence:
-        warnings.append(
-            f"EXPLORATORY RUN: not evidence about {config.strategy.strategy_id}."
-        )
-    warnings.extend(data.warnings)
-    for result in (strategy, benchmark, cash):
-        warnings.extend(result.warnings)
+    warnings = run_warnings(config, data, (strategy, benchmark, cash))
 
     manifest = {
         "artifact_schema": ARTIFACT_SCHEMA,
@@ -181,14 +199,5 @@ def write_report(
     write_once(run_dir / "benchmark_trades.csv", _trades_csv(benchmark))
 
     # Identity is immutable; the environment a run was reproduced in is not.
-    # Appending keeps every invocation instead of making the write-once check
-    # fire on a Python upgrade or an unrelated commit.
-    provenance = {
-        "recorded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "python_version": sys.version.split()[0],
-        "unseal_reason": unseal_reason,
-        **git_provenance(Path(__file__).resolve().parent.parent.parent),
-    }
-    with (run_dir / "provenance.jsonl").open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(provenance, sort_keys=True) + "\n")
+    append_provenance(run_dir, unseal_reason)
     return run_id, run_dir

@@ -54,6 +54,12 @@ def sharpe_difference_interval(
     count = len(strategy_excess)
     if count < 2:
         raise ValueError("at least two observations are required")
+    if block < 1:
+        raise ValueError("block length must be at least one session")
+    if not 0.0 < confidence < 1.0:
+        raise ValueError("confidence must lie strictly between 0 and 1")
+    if resamples < 1:
+        raise ValueError("at least one resample is required")
 
     point = _sharpe(strategy_excess) - _sharpe(benchmark_excess)
     rng = random.Random(seed)

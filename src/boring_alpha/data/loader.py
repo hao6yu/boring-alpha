@@ -37,5 +37,15 @@ def load_market_data(config: AppConfig, unseal_reason: str | None = None) -> Mar
     # Inspect after truncation: findings should describe the data the run uses,
     # not data the seal has already discarded.
     thresholds = QualityThresholds(**config.quality_overrides)
-    data.warnings = tuple(enforce(inspect(data, config.strategy.symbols, thresholds)))
+    warnings = enforce(inspect(data, config.strategy.symbols, thresholds))
+
+    # A bounded period declares a window; data that stops well short of it is a
+    # gap in the dataset, not a legitimately short run.
+    last = data.dates[-1]
+    if last < config.backtest.end and (last - config.backtest.end).days < -5:
+        warnings.append(
+            f"data ends {last}, short of the declared window end "
+            f"{config.backtest.end}; metrics cover the shorter period"
+        )
+    data.warnings = tuple(warnings)
     return data

@@ -68,11 +68,7 @@ def _check_pair(variant: dict[str, dict[str, float]]) -> tuple[bool, str]:
 def evaluate_period(variants: dict[str, dict[str, dict[str, float]]]) -> PeriodOutcome:
     """Evaluate C1 to C5 for one evaluation period."""
 
-    missing = [name for name in VARIANTS if name not in variants]
-    if missing:
-        raise ValueError(f"missing variants for criteria: {', '.join(missing)}")
-
-    base_ok, base_detail = _check_pair(variants[BASE])
+    _require_variants(variants)
     strategy, static = variants[BASE]["strategy"], variants[BASE]["static"]
     limit = DRAWDOWN_RATIO * _drawdown(static)
     floor = float(static["sharpe_vs_cash"]) - SHARPE_TOLERANCE
@@ -113,6 +109,12 @@ def evaluate_period(variants: dict[str, dict[str, dict[str, float]]]) -> PeriodO
     )
 
 
+def _require_variants(variants: dict[str, dict[str, dict[str, float]]]) -> None:
+    missing = [name for name in VARIANTS if name not in variants]
+    if missing:
+        raise ValueError(f"missing variants for criteria: {', '.join(missing)}")
+
+
 def _triggers_rejection(variants: dict[str, dict[str, dict[str, float]]]) -> bool:
     strategy, static = variants[BASE]["strategy"], variants[BASE]["static"]
     return (
@@ -124,6 +126,11 @@ def _triggers_rejection(variants: dict[str, dict[str, dict[str, float]]]) -> boo
 def classify(development: dict, validation: dict) -> Verdict:
     """The charter's advance / reject / inconclusive rule."""
 
+    _require_variants(development)
+    _require_variants(validation)
+    # Rejection is checked first and reads only the base variant: a strategy that
+    # deepens drawdown or loses to cash is rejected even if every stability
+    # check passes.
     if _triggers_rejection(development) or _triggers_rejection(validation):
         return Verdict.REJECT
     if evaluate_period(development).passed and evaluate_period(validation).passed:

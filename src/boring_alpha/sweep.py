@@ -30,7 +30,14 @@ from boring_alpha.metrics import (
     excess_return_series,
     sharpe_difference_interval,
 )
-from boring_alpha.report import ARTIFACT_SCHEMA, json_text, write_once
+from boring_alpha.report import (
+    ARTIFACT_SCHEMA,
+    append_provenance,
+    code_fingerprint,
+    json_text,
+    run_warnings,
+    write_once,
+)
 from boring_alpha.signals import (
     CashAllocation,
     ExcludingSleeve,
@@ -48,9 +55,11 @@ class SweepResult:
     variants: dict[str, dict[str, dict[str, float]]]
     outcome: PeriodOutcome
     contributions: dict[str, float]
+    excess_contributions: dict[str, float]
     clusters: dict[str, float]
     top_sleeve: str
     exposure_matched: dict[str, float]
+    cash: dict[str, float]
     sharpe_interval: dict[str, float]
     warnings: tuple[str, ...] = ()
     grid: dict[str, str] = field(default_factory=dict)
@@ -82,6 +91,11 @@ def _pair(
     # The benchmark is always the charter's full static allocation, including
     # for C5: the question is whether the strategy clears the bar without its
     # best sleeve, not whether a handicapped benchmark is easier to beat.
+    #
+    # It does take the variant's own lookback, so the 9- and 15-month checks
+    # compare series that start on the same session. Comparing a 15-month
+    # strategy against a 12-month benchmark would confound the lookback with
+    # three extra months of warm-up.
     static = engine.run(FixedAllocation(symbols, lookback, weight))
     return strategy, static
 
@@ -99,7 +113,12 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
 
     base_strategy, base_static = _pair(config, data, lookback=lookback, cost_bps=cost)
     contributions = dict(base_strategy.contributions)
-    top_sleeve = max(contributions, key=lambda symbol: contributions[symbol])
+    # The charter ranks sleeves by share of excess return over cash, not by raw
+    # profit: a sleeve held almost always at roughly the cash rate earns a large
+    # raw number while contributing nothing the portfolio could not have had by
+    # sitting in cash.
+    excess_contributions = dict(base_strategy.excess_contributions)
+    top_sleeve = max(excess_contributions, key=lambda symbol: excess_contributions[symbol])
 
     runs = {
         BASE: (base_strategy, base_static),
@@ -126,12 +145,20 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         )
     )
     cash = _engine(config, data, cost).run(CashAllocation(config.strategy.symbols))
+    cash_metrics = calculate_metrics(cash, data)
 
     clusters = {
-        name: sum(contributions.get(symbol, 0.0) for symbol in symbols)
+        name: sum(excess_contributions.get(symbol, 0.0) for symbol in symbols)
         for name, symbols in config.clusters.items()
     }
-    warnings = list(base_strategy.warnings)
+    # Variants warm up differently — the 15-month rule needs three more months
+    # of anchor history than the base rule — so every variant's warnings are
+    # recorded and tagged, not just the pre-registered one's.
+    warnings = [
+        f"{name}: {warning}"
+        for name, (strategy, static) in runs.items()
+        for warning in tuple(strategy.warnings) + tuple(static.warnings)
+    ]
     covered = {symbol for symbols in config.clusters.values() for symbol in symbols}
     uncovered = sorted(set(config.strategy.symbols) - covered)
     if config.clusters and uncovered:
@@ -141,15 +168,17 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         variants=variants,
         outcome=evaluate_period(variants),
         contributions=contributions,
+        excess_contributions=excess_contributions,
         clusters=clusters,
         top_sleeve=top_sleeve,
         exposure_matched=calculate_metrics(matched, data),
+        cash=cash_metrics,
         sharpe_interval=sharpe_difference_interval(
             excess_return_series(base_strategy, data),
             excess_return_series(base_static, data),
             seed=BOOTSTRAP_SEED,
         ),
-        warnings=tuple(warnings) + tuple(cash.warnings[:0]),
+        warnings=tuple(warnings),
         grid=grid,
     )
 
@@ -168,8 +197,8 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
         "Everything below it is a stability check on this result, not a menu: "
         "the charter forbids selecting a lookback or a cost after seeing outcomes.",
         "",
-        "| Metric | Strategy | Static | Exposure-matched |",
-        "|---|---:|---:|---:|",
+        "| Metric | Strategy | Static | Exposure-matched | Cash |",
+        "|---|---:|---:|---:|---:|",
     ]
     base = sweep.variants[BASE]
     for label, key in (
@@ -186,20 +215,28 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
     ):
         lines.append(
             f"| {label} | {float(base['strategy'][key]):.4f} | "
-            f"{float(base['static'][key]):.4f} | {float(sweep.exposure_matched[key]):.4f} |"
+            f"{float(base['static'][key]):.4f} | {float(sweep.exposure_matched[key]):.4f} | "
+            f"{float(sweep.cash[key]):.4f} |"
         )
 
     interval = sweep.sharpe_interval
     lines += [
         "",
         f"Sharpe difference against static: {interval['point']:+.3f} "
-        f"({interval['confidence']:.0%} interval {interval['low']:+.3f} to {interval['high']:+.3f}, "
-        f"{int(interval['resamples'])} block resamples, seed {int(interval['seed'])}).",
+        f"({interval['confidence']:.0%} percentile interval {interval['low']:+.3f} to "
+        f"{interval['high']:+.3f}, {int(interval['resamples'])} stationary block resamples, "
+        f"seed {int(interval['seed'])}).",
     ]
     if interval["low"] <= 0.0 <= interval["high"]:
         lines.append(
             "The interval contains zero: this sample cannot distinguish the two on "
             "risk-adjusted return."
+        )
+    else:
+        lines.append(
+            "The interval excludes zero. Read it with the charter's prior-evidence "
+            "discount in mind: this rule was published before this test, the interval "
+            "is one of several reported here, and it says nothing about the sealed period."
         )
     lines += ["", "## Advancement criteria", "", "| Criterion | Passed | Detail |", "|---|---|---|"]
     for criterion in sweep.outcome.criteria:
@@ -224,12 +261,21 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
             f"{float(metrics['sharpe_vs_cash']):.4f} |"
         )
 
-    lines += ["", "## Attribution", "", "| Sleeve | Contribution |", "|---|---:|"]
-    for symbol, value in sorted(sweep.contributions.items(), key=lambda item: -item[1]):
+    lines += [
+        "",
+        "## Attribution",
+        "",
+        "C5 ranks on excess over cash, which is the charter's definition; raw P&L "
+        "is shown beside it because the two can disagree.",
+        "",
+        "| Sleeve | Excess over cash | Raw P&L |",
+        "|---|---:|---:|",
+    ]
+    for symbol, value in sorted(sweep.excess_contributions.items(), key=lambda item: -item[1]):
         marker = " (largest)" if symbol == sweep.top_sleeve else ""
-        lines.append(f"| {symbol}{marker} | {value:.2f} |")
+        lines.append(f"| {symbol}{marker} | {value:.2f} | {sweep.contributions[symbol]:.2f} |")
     if sweep.clusters:
-        lines += ["", "| Cluster | Contribution |", "|---|---:|"]
+        lines += ["", "| Cluster | Excess over cash |", "|---|---:|"]
         for name, value in sorted(sweep.clusters.items(), key=lambda item: -item[1]):
             lines.append(f"| {name} | {value:.2f} |")
     if sweep.warnings:
@@ -238,16 +284,18 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
 
 
 def write_sweep_report(
-    config: AppConfig, data: MarketData, sweep: SweepResult
+    config: AppConfig,
+    data: MarketData,
+    sweep: SweepResult,
+    unseal_reason: str | None = None,
 ) -> tuple[str, Path]:
-    from boring_alpha.report import code_fingerprint
-
     evaluation = config.evaluation
+    code_hash = code_fingerprint()
     identity = ":".join(
         (
             hashlib.sha256(config.raw_bytes).hexdigest(),
             data.fingerprint(),
-            code_fingerprint(),
+            code_hash,
             f"{evaluation.period}:{evaluation.start}:{evaluation.end}",
             "|".join(GRID),
         )
@@ -272,7 +320,10 @@ def write_sweep_report(
                 "config_toml": config.raw_bytes.decode("utf-8"),
                 "data_sha256": data.fingerprint(),
                 "data_source": data.source,
-                "warnings": list(sweep.warnings) + list(data.warnings),
+                "data_start": data.dates[0],
+                "data_end": data.dates[-1],
+                "code_sha256": code_hash,
+                "warnings": run_warnings(config, data, ()) + list(sweep.warnings),
             }
         ),
     )
@@ -280,6 +331,12 @@ def write_sweep_report(
         sweep_dir / "criteria.json",
         json_text(
             {
+                "artifact_schema": ARTIFACT_SCHEMA,
+                "sweep_id": sweep_id,
+                "strategy_id": config.strategy.strategy_id,
+                "code_sha256": code_hash,
+                "lookback_months": config.strategy.lookback_months,
+                "cost_bps": config.execution.cost_bps,
                 "evaluation_period": evaluation.period,
                 "passed": sweep.outcome.passed,
                 "criteria": [
@@ -294,6 +351,7 @@ def write_sweep_report(
                 "variants": sweep.variants,
                 "top_sleeve": sweep.top_sleeve,
                 "contributions": sweep.contributions,
+                "excess_contributions": sweep.excess_contributions,
                 "clusters": sweep.clusters,
                 "exposure_matched": sweep.exposure_matched,
                 "sharpe_interval": sweep.sharpe_interval,
@@ -301,4 +359,5 @@ def write_sweep_report(
         ),
     )
     write_once(sweep_dir / "summary.md", _summary(config, sweep))
+    append_provenance(sweep_dir, unseal_reason)
     return sweep_id, sweep_dir

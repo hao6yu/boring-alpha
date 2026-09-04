@@ -86,6 +86,10 @@ class Backtester:
         # reconstructed afterwards, so it can account for every price change and
         # every cost exactly once.
         contributions = {symbol: 0.0 for symbol in self.symbols}
+        # The charter defines a sleeve's contribution as its share of the
+        # strategy's excess return over cash, so capital parked in a sleeve is
+        # charged the cash it forwent while it sat there.
+        cash_forgone = {symbol: 0.0 for symbol in self.symbols}
         cash_interest = 0.0
         previous_closes: dict[str, float] = {}
         pending: SignalSnapshot | None = None
@@ -111,10 +115,14 @@ class Backtester:
                 prestart_warning = None
 
             if started:
+                session_factor = self.data.cash_factors[day]
                 before = portfolio.cash
-                portfolio.accrue_cash(self.data.cash_factors[day])
+                portfolio.accrue_cash(session_factor)
                 cash_interest += portfolio.cash - before
             else:
+                # The portfolio opens at the first session; nothing was held
+                # overnight into it, so no cash was earned or forgone.
+                session_factor = 1.0
                 started = True
 
             # Held from the prior close to today's open, then at whatever the
@@ -136,6 +144,9 @@ class Backtester:
                 previous_close = previous_closes.get(symbol)
                 if previous_close is not None:
                     contributions[symbol] += held_overnight[symbol] * (bar.open - previous_close)
+                    cash_forgone[symbol] += (
+                        held_overnight[symbol] * previous_close * (session_factor - 1.0)
+                    )
                 contributions[symbol] += portfolio.positions[symbol] * (bar.close - bar.open)
                 previous_closes[symbol] = bar.close
 
@@ -155,5 +166,8 @@ class Backtester:
             decisions=tuple(decisions),
             warnings=tuple(warnings),
             contributions=contributions,
+            excess_contributions={
+                symbol: contributions[symbol] - cash_forgone[symbol] for symbol in self.symbols
+            },
             cash_interest=cash_interest,
         )

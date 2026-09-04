@@ -61,3 +61,33 @@ class AttributionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExcessContributionTests(unittest.TestCase):
+    """The charter measures contribution as excess return over cash, not raw P&L."""
+
+    def _cash_paced_data(self, factor: float) -> MarketData:
+        days = [ANCHOR, SIGNAL, FIRST, SECOND]
+        price, bars = 100.0, []
+        for day in days:
+            bars.append(PriceBar(day, "A", price, price))
+            price *= factor
+        return MarketData(bars, {day: factor for day in days}, source="test")
+
+    def test_a_sleeve_paced_by_cash_contributes_nothing_in_excess(self) -> None:
+        from boring_alpha.signals.trend import FixedAllocation
+
+        factor = 1.0004
+        data = self._cash_paced_data(factor)
+        result = Backtester(
+            data, ("A",), initial_cash=1_000.0, cost_bps=0.0, start=FIRST, end=SECOND,
+        ).run(FixedAllocation(("A",), 12, 1.0))
+        self.assertGreater(result.contributions["A"], 0.0)
+        self.assertAlmostEqual(result.excess_contributions["A"], 0.0, places=6)
+
+    def test_excess_contribution_subtracts_the_cash_the_capital_forwent(self) -> None:
+        _, result = _run(factor=1.0001)
+        for symbol in ("A", "B"):
+            self.assertLessEqual(
+                result.excess_contributions[symbol], result.contributions[symbol] + 1e-12
+            )

@@ -105,3 +105,20 @@ class RaggedStartTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DelistingTests(unittest.TestCase):
+    def test_a_sleeve_whose_data_ends_early_is_a_data_error(self) -> None:
+        data = _ragged(date(2020, 1, 1))
+        bars = [
+            bar
+            for day in data.dates
+            for bar in data.by_date[day].values()
+            if not (bar.symbol == "B" and bar.date >= date(2022, 3, 16))
+        ]
+        delisted = MarketData(bars, data.cash_factors, source="test")
+        with self.assertRaisesRegex(ValueError, "2022-03-16"):
+            Backtester(
+                delisted, ("A", "B"), initial_cash=10_000.0, cost_bps=10.0,
+                start=date(2021, 8, 1), end=date(2022, 6, 30),
+            )

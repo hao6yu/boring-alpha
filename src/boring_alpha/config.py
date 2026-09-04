@@ -239,13 +239,33 @@ def load_config(path: str | Path) -> AppConfig:
         evaluation=evaluation,
         report=report,
         quality_overrides=dict(raw.get("quality", {})),
-        clusters={
-            name: tuple(str(symbol).upper() for symbol in symbols)
-            for name, symbols in raw.get("clusters", {}).items()
-        },
+        clusters=_load_clusters(raw.get("clusters", {}), strategy.symbols),
         path=config_path,
         raw_bytes=raw_bytes,
     )
+
+
+def _load_clusters(
+    raw: dict[str, object], symbols: tuple[str, ...]
+) -> dict[str, tuple[str, ...]]:
+    clusters: dict[str, tuple[str, ...]] = {}
+    seen: dict[str, str] = {}
+    for name, members in raw.items():
+        if not isinstance(members, list) or not all(isinstance(m, str) for m in members):
+            raise ValueError(f"clusters.{name} must be a list of symbols")
+        cluster = tuple(member.upper() for member in members)
+        unknown = sorted(set(cluster) - set(symbols))
+        if unknown:
+            raise ValueError(f"clusters.{name} names symbols outside the universe: {unknown}")
+        for symbol in cluster:
+            if symbol in seen:
+                raise ValueError(
+                    f"{symbol} appears in clusters {seen[symbol]} and {name}; "
+                    "clusters must not overlap or attribution double-counts"
+                )
+            seen[symbol] = name
+        clusters[name] = cluster
+    return clusters
 
 
 def _load_evaluation(

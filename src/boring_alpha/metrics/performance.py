@@ -91,7 +91,8 @@ def calculate_metrics(result: BacktestResult, data: MarketData) -> dict[str, flo
         "average_gross_exposure": average_exposure,
         "time_in_market": time_in_market,
         "worst_month": worst_month,
-        "one_way_turnover": traded_notional / average_equity / years,
+        # traded_notional sums both sides; one-way turnover counts one.
+        "one_way_turnover": traded_notional / 2.0 / average_equity / years,
         "cost_drag_bps": total_cost / average_equity / years * 10_000.0,
         "trade_count": len(result.trades),
         "traded_notional": traded_notional,

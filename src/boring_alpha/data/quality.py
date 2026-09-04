@@ -51,6 +51,15 @@ def _business_days_between(earlier: date, later: date) -> int:
     return count
 
 
+def _stale_finding(symbol: str, last_day: date, length: int) -> Finding:
+    return Finding(
+        WARNING,
+        "stale_closes",
+        f"{symbol} closed unchanged for {length} consecutive sessions ending "
+        f"{last_day}; the feed may be stale",
+    )
+
+
 def _price_findings(
     data: MarketData, symbol: str, thresholds: QualityThresholds
 ) -> list[Finding]:
@@ -81,16 +90,14 @@ def _price_findings(
                     "the open and close series share one adjustment basis",
                 )
             )
-        stale_run = stale_run + 1 if current.close == previous.close else 0
-        if stale_run == thresholds.max_stale_closes:
-            findings.append(
-                Finding(
-                    WARNING,
-                    "stale_closes",
-                    f"{symbol} closed unchanged for {stale_run + 1} consecutive "
-                    f"sessions ending {days[index]}; the feed may be stale",
-                )
-            )
+        if current.close == previous.close:
+            stale_run += 1
+            continue
+        if stale_run + 1 >= thresholds.max_stale_closes:
+            findings.append(_stale_finding(symbol, days[index - 1], stale_run + 1))
+        stale_run = 0
+    if days and stale_run + 1 >= thresholds.max_stale_closes:
+        findings.append(_stale_finding(symbol, days[-1], stale_run + 1))
     return findings
 
 

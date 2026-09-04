@@ -70,12 +70,23 @@ benchmark. A sweep writes `summary.md`, which leads with the pre-registered
 result and labels everything after it as a stability check, plus `criteria.json`
 holding the arithmetic behind C1 to C5.
 
-Alongside them it reports the exposure-matched benchmark, one-way turnover,
-cost drag, worst month, time in market, per-sleeve and per-cluster attribution,
-and a stationary block bootstrap interval for the Sharpe difference against
-static. That interval is the honest counterweight to a point estimate: on about
-a decade of monthly decisions it will often contain zero, and the summary says
-so in plain words when it does.
+Alongside them it reports the cash and exposure-matched benchmarks, one-way
+turnover, cost drag, worst month, time in market, per-sleeve and per-cluster
+attribution, and a stationary block bootstrap interval for the Sharpe difference
+against static. That interval is the honest counterweight to a point estimate:
+on about a decade of monthly decisions it will often contain zero, and the
+summary says so in plain words either way.
+
+Two conventions worth stating, because both are easy to read wrongly:
+
+- **Turnover is one-way.** Trade notional sums both sides of every rebalance,
+  so the reported figure is half of it. A full round trip of the portfolio is
+  one unit, not two.
+- **Attribution ranks on excess over cash.** A sleeve's contribution is its
+  share of the strategy's return *above* what the same capital would have
+  earned sitting in cash, which is the charter's definition and what C5 uses to
+  pick the sleeve to remove. Raw profit is reported beside it, because in a
+  high-cash-rate period the two can disagree about which sleeve mattered most.
 
 The verdict needs both periods, so it is a separate step:
 

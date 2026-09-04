@@ -30,7 +30,7 @@ initial_cash = 10000
 cost_bps = 10
 [data]
 source = "synthetic"
-start = "2018-01-01"
+start = "2019-10-01"
 end = "2024-12-31"
 seed = 21
 annual_cash_rate = 0.02
@@ -100,10 +100,46 @@ class SweepTests(unittest.TestCase):
             self.assertIn("strategy", sweep.variants[name])
             self.assertIn("static", sweep.variants[name])
 
-    def test_the_dropped_sleeve_is_the_largest_contributor(self) -> None:
+    def test_the_dropped_sleeve_is_ranked_by_excess_return_over_cash(self) -> None:
         sweep = run_sweep(self.config, self.data)
-        contributions = sweep.contributions
-        self.assertEqual(sweep.top_sleeve, max(contributions, key=contributions.get))
+        excess = sweep.excess_contributions
+        self.assertEqual(sweep.top_sleeve, max(excess, key=excess.get))
+        # Raw P&L is reported too, but the charter ranks on excess over cash.
+        self.assertNotEqual(sweep.excess_contributions, sweep.contributions)
+
+    def test_sweep_records_provenance_and_the_unseal_reason(self) -> None:
+        sweep = run_sweep(self.config, self.data)
+        _, sweep_dir = write_sweep_report(self.config, self.data, sweep, unseal_reason="reviewed")
+        records = [
+            json.loads(line)
+            for line in (sweep_dir / "provenance.jsonl").read_text(encoding="utf-8").splitlines()
+        ]
+        self.assertEqual(records[0]["unseal_reason"], "reviewed")
+        self.assertIn("git_commit", records[0])
+
+    def test_sweep_manifest_carries_the_run_warnings_and_data_window(self) -> None:
+        sweep = run_sweep(self.config, self.data)
+        _, sweep_dir = write_sweep_report(self.config, self.data, sweep)
+        manifest = json.loads((sweep_dir / "manifest.json").read_text(encoding="utf-8"))
+        self.assertTrue(any("SYNTHETIC DATA" in w for w in manifest["warnings"]))
+        self.assertIn("data_start", manifest)
+        self.assertIn("data_end", manifest)
+
+    def test_criteria_identify_the_strategy_and_the_code(self) -> None:
+        sweep = run_sweep(self.config, self.data)
+        _, sweep_dir = write_sweep_report(self.config, self.data, sweep)
+        criteria = json.loads((sweep_dir / "criteria.json").read_text(encoding="utf-8"))
+        self.assertEqual(criteria["strategy_id"], "W-001")
+        self.assertIn("code_sha256", criteria)
+        self.assertIn("artifact_schema", criteria)
+
+    def test_warnings_from_every_variant_are_collected(self) -> None:
+        sweep = run_sweep(self.config, self.data)
+        # The 15-month variant needs more anchor history than the base rule, so
+        # its warm-up warnings must be recorded rather than silently dropped.
+        tagged = [w for w in sweep.warnings if w.startswith("lookback_15:")]
+        self.assertTrue(tagged, sweep.warnings)
+        self.assertFalse([w for w in sweep.warnings if w.startswith("base:")], sweep.warnings)
 
     def test_criteria_are_evaluated_from_the_grid(self) -> None:
         sweep = run_sweep(self.config, self.data)
@@ -113,7 +149,7 @@ class SweepTests(unittest.TestCase):
         sweep = run_sweep(self.config, self.data)
         self.assertEqual(set(sweep.clusters), {"growth", "defensive"})
         self.assertAlmostEqual(
-            sum(sweep.clusters.values()), sum(sweep.contributions.values()), places=6
+            sum(sweep.clusters.values()), sum(sweep.excess_contributions.values()), places=6
         )
 
     def test_the_report_leads_with_the_pre_registered_result(self) -> None:
@@ -134,3 +170,25 @@ class SweepTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SweepReproducibilityTests(SweepTests):
+    def test_two_independent_recomputations_produce_identical_artifacts(self) -> None:
+        """Content addressing is only honest if the content is deterministic."""
+
+        first_sweep = run_sweep(self.config, self.data)
+        first_id, sweep_dir = write_sweep_report(self.config, self.data, first_sweep)
+        written = {
+            path.name: path.read_text(encoding="utf-8")
+            for path in sweep_dir.iterdir()
+            if path.name != "provenance.jsonl"
+        }
+
+        reloaded = load_market_data(self.config)
+        second_sweep = run_sweep(self.config, reloaded)
+        second_id, second_dir = write_sweep_report(self.config, reloaded, second_sweep)
+
+        self.assertEqual(first_id, second_id)
+        self.assertEqual(sweep_dir, second_dir)
+        for name, content in written.items():
+            self.assertEqual((second_dir / name).read_text(encoding="utf-8"), content, name)

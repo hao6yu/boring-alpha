@@ -122,7 +122,7 @@ def run_sweep_command(config_path: Path, unseal_reason: str | None = None) -> in
     config = load_config(config_path)
     data = load_market_data(config, unseal_reason)
     sweep = run_sweep(config, data)
-    sweep_id, sweep_dir = write_sweep_report(config, data, sweep)
+    sweep_id, sweep_dir = write_sweep_report(config, data, sweep, unseal_reason=unseal_reason)
 
     banners = _banners(config)
     print(f"BoringAlpha sweep {sweep_id} ({config.evaluation.period} period)")
@@ -134,6 +134,9 @@ def run_sweep_command(config_path: Path, unseal_reason: str | None = None) -> in
     print("A verdict needs both periods: boring-alpha classify <development> <validation>")
     for warning in list(data.warnings) + list(sweep.warnings):
         print(f"  - {warning}")
+    if unseal_reason:
+        print(f"SEALED SWEEP unsealed: {unseal_reason}")
+        print(f"Record this sweep in the {config.strategy.strategy_id} charter change log.")
     for banner in banners:
         print(banner)
     print(f"Artifacts: {sweep_dir}")
@@ -141,18 +144,35 @@ def run_sweep_command(config_path: Path, unseal_reason: str | None = None) -> in
 
 
 def _read_criteria(sweep_dir: Path, expected_period: str) -> dict:
-    criteria = json.loads((sweep_dir / "criteria.json").read_text(encoding="utf-8"))
-    if criteria["evaluation_period"] != expected_period:
-        raise ValueError(
-            f"{sweep_dir} holds a {criteria['evaluation_period']} sweep, "
-            f"expected {expected_period}"
-        )
+    try:
+        criteria = json.loads((sweep_dir / "criteria.json").read_text(encoding="utf-8"))
+        period = criteria["evaluation_period"]
+    except (KeyError, json.JSONDecodeError) as exc:
+        raise ValueError(f"{sweep_dir} does not hold a readable sweep: {exc}") from exc
+    if period != expected_period:
+        raise ValueError(f"{sweep_dir} holds a {period} sweep, expected {expected_period}")
     return criteria
 
 
 def run_classify(development_dir: Path, validation_dir: Path) -> int:
     development = _read_criteria(development_dir, "development")
     validation = _read_criteria(validation_dir, "validation")
+
+    # A verdict combining two unrelated sweeps would be confidently wrong, so the
+    # inputs must agree on everything except the window they cover.
+    for field, message in (
+        ("strategy_id", "different strategies"),
+        ("code_sha256", "different code revisions"),
+        ("lookback_months", "different lookbacks"),
+        ("cost_bps", "different cost assumptions"),
+    ):
+        if field in development and field in validation:
+            if development[field] != validation[field]:
+                raise ValueError(
+                    f"refusing to classify {message}: "
+                    f"{field} is {development[field]!r} in the development sweep and "
+                    f"{validation[field]!r} in the validation sweep"
+                )
     verdict = classify(development["variants"], validation["variants"])
 
     print(f"BA-001 classification: {verdict.value.upper()}")

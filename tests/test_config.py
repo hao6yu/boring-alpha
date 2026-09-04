@@ -79,3 +79,24 @@ class ConfigTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ClusterValidationTests(unittest.TestCase):
+    def _with_clusters(self, table: str):
+        return _load(VALID + table)
+
+    def test_a_bare_string_is_rejected_rather_than_split_into_letters(self) -> None:
+        with self.assertRaisesRegex(ValueError, "must be a list of symbols"):
+            self._with_clusters('\n[clusters]\ngrowth = "A"\n')
+
+    def test_overlapping_clusters_are_rejected(self) -> None:
+        with self.assertRaisesRegex(ValueError, "must not overlap"):
+            self._with_clusters('\n[clusters]\none = ["A"]\ntwo = ["A", "B"]\n')
+
+    def test_a_symbol_outside_the_universe_is_rejected(self) -> None:
+        with self.assertRaisesRegex(ValueError, "outside the universe"):
+            self._with_clusters('\n[clusters]\none = ["Z"]\n')
+
+    def test_valid_clusters_are_normalised(self) -> None:
+        config, _ = self._with_clusters('\n[clusters]\none = ["a"]\ntwo = ["b"]\n')
+        self.assertEqual(config.clusters, {"one": ("A",), "two": ("B",)})

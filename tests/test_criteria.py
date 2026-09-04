@@ -85,3 +85,20 @@ class ClassificationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OrderingTests(unittest.TestCase):
+    def test_rejection_is_checked_before_advancement(self) -> None:
+        """The one case where evaluation order changes the answer."""
+
+        # Every criterion passes on its own terms, but the strategy lost to cash.
+        losing = {"strategy": {"max_drawdown": -0.10, "sharpe_vs_cash": -0.05},
+                  "static": {"max_drawdown": -0.20, "sharpe_vs_cash": 0.0}}
+        variants = _period(**{name: losing for name in
+                              ("base", "double_cost", "lookback_9", "lookback_15", "drop_top_sleeve")})
+        self.assertTrue(evaluate_period(variants).passed)
+        self.assertEqual(classify(variants, _period()), Verdict.REJECT)
+
+    def test_a_malformed_variant_set_is_a_value_error(self) -> None:
+        with self.assertRaisesRegex(ValueError, "missing variants"):
+            classify({}, _period())
