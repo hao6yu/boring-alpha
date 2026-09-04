@@ -250,5 +250,79 @@ class HomogeneityTests(unittest.TestCase):
             self.assertAlmostEqual(b.cash, 2.0 * a.cash, delta=1e-6 * max(1.0, abs(a.cash)))
 
 
+from dataclasses import replace
+
+from boring_alpha.domain import SignalSnapshot
+
+
+class _AlwaysHold:
+    """Half in A, then hold: what an annually rebalanced benchmark says between Januaries."""
+
+    name = "Always Hold"
+
+    def snapshot(self, data, as_of):
+        return SignalSnapshot(
+            as_of=as_of,
+            target_weights={"A": 0.5},
+            asset_returns={},
+            cash_return=0.0,
+            name=self.name,
+            hold=True,
+        )
+
+
+class _NeverHold(_AlwaysHold):
+    name = "Never Hold"
+
+    def snapshot(self, data, as_of):
+        return replace(super().snapshot(data, as_of), hold=False, name=self.name)
+
+
+class HoldTests(unittest.TestCase):
+    # Month-ends 2024-12-31, 2025-01-31, 2025-02-28; the price moves so that a
+    # real rebalance to 50% would trade every month.
+    DAYS = {
+        date(2024, 12, 31): 100.0,
+        date(2025, 1, 2): 100.0,
+        date(2025, 1, 31): 150.0,
+        date(2025, 2, 3): 150.0,
+        date(2025, 2, 28): 75.0,
+        date(2025, 3, 3): 75.0,
+    }
+
+    def _engine(self) -> Backtester:
+        return Backtester(
+            _flat_data("A", self.DAYS),
+            ("A",),
+            initial_cash=1_000.0,
+            cost_bps=0.0,
+            start=date(2025, 1, 2),
+            end=date(2025, 3, 3),
+        )
+
+    def test_a_hold_on_an_empty_book_establishes_the_targets(self) -> None:
+        result = self._engine().run(_AlwaysHold())
+        self.assertEqual(len(result.fills), 1)
+        self.assertEqual(result.fills[0].date, date(2025, 1, 2))
+        self.assertEqual(result.fills[0].side, "BUY")
+        self.assertAlmostEqual(result.fills[0].notional, 500.0)
+
+    def test_a_hold_on_a_held_book_places_no_orders_but_records_the_decision(self) -> None:
+        result = self._engine().run(_AlwaysHold())
+        self.assertEqual(len(result.fills), 1)
+        self.assertEqual(
+            [decision.as_of for decision in result.decisions],
+            [date(2024, 12, 31), date(2025, 1, 31), date(2025, 2, 28)],
+        )
+        self.assertTrue(all(decision.hold for decision in result.decisions))
+
+    def test_without_hold_the_same_targets_rebalance_every_month(self) -> None:
+        result = self._engine().run(_NeverHold())
+        self.assertEqual(
+            [fill.date for fill in result.fills],
+            [date(2025, 1, 2), date(2025, 2, 3), date(2025, 3, 3)],
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

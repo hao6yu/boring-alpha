@@ -62,6 +62,10 @@ class SignalSnapshot:
     asset_returns: dict[str, float]
     cash_return: float
     name: str
+    # "Keep the current allocation." The engine treats a hold on an empty book
+    # as a normal rebalance to `target_weights`, because there is nothing to
+    # keep; otherwise it records the decision and places no orders.
+    hold: bool = False
 
 
 @dataclass(frozen=True, slots=True)

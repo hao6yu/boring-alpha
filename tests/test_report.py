@@ -7,10 +7,22 @@ import unittest
 from boring_alpha.backtest.engine import Backtester
 from boring_alpha.config import load_config
 from boring_alpha.data.synthetic import generate_synthetic_market_data
+from boring_alpha.domain import BacktestResult, SignalSnapshot
 from boring_alpha.metrics.performance import calculate_metrics
 import boring_alpha.report as report
 from boring_alpha.report import write_report
 from boring_alpha.signals.trend import CashAllocation, FixedAllocation, MultiAssetTrend
+
+
+def _result_with_decisions(*decisions: SignalSnapshot) -> BacktestResult:
+    return BacktestResult(
+        name="P",
+        initial_equity=1.0,
+        equity_curve=(),
+        fills=(),
+        decisions=tuple(decisions),
+    )
+
 
 CONFIG = """
 [strategy]
@@ -157,3 +169,43 @@ class GitProvenanceScopeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             provenance = report.git_provenance(Path(directory), code_path=Path("/usr/lib/python"))
         self.assertIsNone(provenance["git_commit"])
+
+
+from boring_alpha.report import snapshot_record
+
+
+class DecisionRecordTests(unittest.TestCase):
+    """Files written before `hold` existed must be reproduced byte for byte."""
+
+    def _snapshot(self, **overrides) -> SignalSnapshot:
+        fields = dict(
+            as_of=date(2024, 1, 31),
+            target_weights={"A": 0.5},
+            asset_returns={"A": 0.1},
+            cash_return=0.01,
+            name="P",
+        )
+        fields.update(overrides)
+        return SignalSnapshot(**fields)
+
+    def test_a_false_hold_is_omitted_from_the_record(self) -> None:
+        record = snapshot_record(self._snapshot())
+        self.assertNotIn("hold", record)
+        self.assertEqual(
+            record,
+            {
+                "as_of": date(2024, 1, 31),
+                "target_weights": {"A": 0.5},
+                "asset_returns": {"A": 0.1},
+                "cash_return": 0.01,
+                "name": "P",
+            },
+        )
+
+    def test_a_true_hold_is_recorded(self) -> None:
+        self.assertIs(snapshot_record(self._snapshot(hold=True))["hold"], True)
+
+    def test_decisions_json_uses_the_record(self) -> None:
+        result = _result_with_decisions(self._snapshot(), self._snapshot(hold=True))
+        text = report.decisions_json(result)
+        self.assertEqual(text.count('"hold"'), 1)

@@ -15,7 +15,9 @@ from boring_alpha.portfolio.account import Portfolio
 class SignalPolicy(Protocol):
     """A policy must echo back the `as_of` date it was handed as the returned
     snapshot's `as_of`: the engine reads the reference price at
-    `pending.as_of`, not at the date it happened to call `snapshot` from."""
+    `pending.as_of`, not at the date it happened to call `snapshot` from.
+    A snapshot with hold=True asks the engine to keep the current allocation;
+    see SignalSnapshot."""
 
     name: str
 
@@ -137,24 +139,34 @@ class Backtester:
             held_overnight = dict(portfolio.positions)
 
             if pending is not None:
-                prices = {
-                    symbol: self.data.bar(day, symbol).open for symbol in self.symbols
-                }
-                references = {
-                    symbol: self.data.bar(pending.as_of, symbol).close
-                    for symbol in self.symbols
-                }
-                new_orders = portfolio.plan_rebalance(
-                    prices, pending.target_weights, references, day
-                )
-                new_fills = execute(new_orders, prices, portfolio.cash, self.cost_model)
-                portfolio.apply(new_fills)
-                for fill in new_fills:
-                    contributions[fill.symbol] -= fill.cost
-                orders.extend(new_orders)
-                fills.extend(new_fills)
-                decisions.append(pending)
-                pending = None
+                if pending.hold and fills:
+                    # Nothing has ever been bought while `fills` is empty, so a
+                    # hold there has no allocation to keep and falls through to
+                    # a normal rebalance. Once something is held, a hold is
+                    # exactly that: the decision is recorded and no order is
+                    # planned, so the allocation drifts until the next
+                    # non-hold signal.
+                    decisions.append(pending)
+                    pending = None
+                else:
+                    prices = {
+                        symbol: self.data.bar(day, symbol).open for symbol in self.symbols
+                    }
+                    references = {
+                        symbol: self.data.bar(pending.as_of, symbol).close
+                        for symbol in self.symbols
+                    }
+                    new_orders = portfolio.plan_rebalance(
+                        prices, pending.target_weights, references, day
+                    )
+                    new_fills = execute(new_orders, prices, portfolio.cash, self.cost_model)
+                    portfolio.apply(new_fills)
+                    for fill in new_fills:
+                        contributions[fill.symbol] -= fill.cost
+                    orders.extend(new_orders)
+                    fills.extend(new_fills)
+                    decisions.append(pending)
+                    pending = None
 
             for symbol in self.symbols:
                 bar = self.data.bar(day, symbol)

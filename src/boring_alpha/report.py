@@ -16,7 +16,7 @@ from typing import Any
 
 from boring_alpha.config import AppConfig
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import BacktestResult
+from boring_alpha.domain import BacktestResult, SignalSnapshot
 
 ARTIFACT_SCHEMA = 5
 
@@ -29,6 +29,20 @@ def _json_default(value: object) -> str:
 
 def json_text(value: Any) -> str:
     return json.dumps(value, indent=2, sort_keys=True, default=_json_default) + "\n"
+
+
+def snapshot_record(snapshot: SignalSnapshot) -> dict[str, Any]:
+    """A decision as written to artifacts.
+
+    `hold` appears only when set. Decisions files written before the field
+    existed are therefore reproduced byte for byte, and a reader sees the key
+    only where it means something.
+    """
+
+    record = asdict(snapshot)
+    if not record.get("hold"):
+        record.pop("hold", None)
+    return record
 
 
 def write_once(path: Path, content: str) -> None:
@@ -102,7 +116,7 @@ def trades_csv(result: BacktestResult) -> str:
 
 
 def decisions_json(result: BacktestResult) -> str:
-    return json_text([asdict(snapshot) for snapshot in result.decisions])
+    return json_text([snapshot_record(snapshot) for snapshot in result.decisions])
 
 
 def _equity_csv(result: BacktestResult) -> str:
@@ -216,7 +230,7 @@ def write_report(
         "data_end": data.dates[-1],
         "warnings": warnings,
     }
-    decisions = [asdict(snapshot) for snapshot in strategy.decisions]
+    decisions = [snapshot_record(snapshot) for snapshot in strategy.decisions]
     metrics = {
         "strategy": strategy_metrics,
         "static_benchmark": benchmark_metrics,
