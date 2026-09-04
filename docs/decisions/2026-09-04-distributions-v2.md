@@ -48,14 +48,25 @@ original June 2008 per-share amount and could not obtain one:
 - SEC EDGAR: I checked both registrants that file iShares' shareholder
   reports — iShares Trust (CIK 0001100663) and iShares, Inc. (CIK
   0000930667) — for every N-CSR/N-CSRS they filed with a period in 2008.
-  None of iShares, Inc.'s 2008 filings (periods 2008-02-29 and 2008-08-31)
-  contain EEM's own financial statements; EEM is only cross-referenced
-  there in a fee-schedule clause for a different fund. None of iShares
-  Trust's 2008 filings cover the "MSCI Emerging Markets" fund group either
-  (they cover FTSE/Xinhua, ACWI, EAFE, Kokusai, bond, sector, and European
-  MSCI country funds instead). I was not able to identify which filing, if
-  any, carries EEM's own fiscal-2008 financial highlights within the time
-  available.
+  iShares, Inc.'s N-CSRS for the six months ended 2008-02-29 and its N-CSR
+  for the year ended 2008-08-31 do contain EEM's own financial statements
+  (Statement of Assets and Liabilities, Statement of Operations, Statements
+  of Changes in Net Assets, and a Financial Highlights table) — correcting
+  an earlier, too-hasty read of the same two documents that mistook the
+  fund's own section for a cross-reference. The Financial Highlights table
+  for the year ended 2008-08-31 reports only an aggregate annual "Total
+  distributions" of $1.17 per share for that whole fiscal year, not a
+  per-ex-date breakdown, and it carries an explicit footnote: "Per share
+  amounts were adjusted to reflect a three-for-one stock split effective
+  July 24, 2008." So this SEC filing, independently of iShares' website,
+  also presents 2008 per-share figures on a post-split-restated basis, and
+  it does not supply a genuine per-ex-date, non-restated pre-split figure
+  for June 25, 2008 either. None of iShares Trust's eight 2008-period
+  N-CSR/N-CSRS filings cover the "MSCI Emerging Markets" fund group at all
+  (their own Schedules of Investments and Financial Highlights sections
+  cover FTSE/Xinhua, ACWI, EAFE, Kokusai, bond, sector, domestic S&P/Nasdaq,
+  and European MSCI country funds instead; EEM appears in them only in the
+  generic, trust-wide "iShares Family of Funds" listing).
 
 I did not estimate a figure and did not infer one from the archived data
 itself: the 0.517255 figure above is real and cited. It cannot test the
