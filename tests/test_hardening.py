@@ -449,3 +449,63 @@ class DatasetEndedRunTests(unittest.TestCase):
         config = load_config(path)
         data = load_market_data(config, "reviewed")
         self.assertEqual(data.dates[-1], date(2024, 6, 28))
+
+
+class MethodologyManifestTests(unittest.TestCase):
+    """A declared methodology that disagrees with the snapshot is a mismatch,
+    not a formality. Requiring the string without checking it only proves
+    someone typed something."""
+
+    def _snapshot(self, manifest_methodology: str | None, declared: str) -> Path:
+        root = Path(tempfile.mkdtemp())
+        (root / "configs").mkdir()
+        snapshot = root / "data" / "current"
+        snapshot.mkdir(parents=True)
+        days = ["2023-01-03", "2023-01-04"]
+        (snapshot / "p.csv").write_text(
+            "date,symbol,tr_open,tr_close\n"
+            + "".join(f"{d},{s},100.0,100.0\n" for d in days for s in ("A", "B")),
+            encoding="utf-8",
+        )
+        (snapshot / "c.csv").write_text(
+            "date,cash_factor\n" + "".join(f"{d},1.00002\n" for d in days), encoding="utf-8"
+        )
+        if manifest_methodology is not None:
+            (snapshot / "manifest.json").write_text(
+                f'{{"methodology": "{manifest_methodology}"}}', encoding="utf-8"
+            )
+        path = root / "configs" / "run.toml"
+        path.write_text(
+            '\n[strategy]\nid = "M-1"\nname = "M"\nsymbols = ["A", "B"]\n'
+            "lookback_months = 12\nsleeve_weight = 0.5\n"
+            "[portfolio]\ninitial_cash = 1000\n[execution]\ncost_bps = 10\n"
+            f'[data]\nsource = "csv"\nmethodology = "{declared}"\n'
+            'prices_path = "../data/current/p.csv"\ncash_path = "../data/current/c.csv"\n'
+            '[backtest]\nstart = "2023-01-01"\nend = "2023-01-31"\n'
+            '[evaluation]\nperiod = "exploratory"\n'
+            '[report]\noutput_dir = "../experiments"\n',
+            encoding="utf-8",
+        )
+        return path
+
+    def test_a_mismatched_methodology_is_refused(self) -> None:
+        from boring_alpha.data import load_market_data
+
+        config = load_config(self._snapshot("yahoo-adjusted-v2+dgs3mo-v1", "yahoo-adjusted-v1+dgs3mo-v1"))
+        with self.assertRaisesRegex(ValueError, "methodology"):
+            load_market_data(config)
+
+    def test_a_matching_methodology_loads(self) -> None:
+        from boring_alpha.data import load_market_data
+
+        config = load_config(self._snapshot("yahoo-adjusted-v1+dgs3mo-v1", "yahoo-adjusted-v1+dgs3mo-v1"))
+        self.assertEqual(len(load_market_data(config).dates), 2)
+
+    def test_data_outside_a_snapshot_is_allowed_but_unverified(self) -> None:
+        from boring_alpha.data import load_market_data
+
+        # Hand-built CSVs have no manifest to check against; that is not an error,
+        # but the run records that the claim went unverified.
+        config = load_config(self._snapshot(None, "hand-built-v1"))
+        data = load_market_data(config)
+        self.assertTrue(any("unverified" in w for w in data.warnings), data.warnings)

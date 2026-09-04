@@ -6,6 +6,8 @@ seal is a property of obtaining data, not a step a future caller might forget.
 
 from __future__ import annotations
 
+import json
+
 from boring_alpha.config import AppConfig
 from boring_alpha.data.csv_loader import load_csv_market_data
 from boring_alpha.data.market import MarketData
@@ -14,8 +16,38 @@ from boring_alpha.data.synthetic import generate_synthetic_market_data
 from boring_alpha.evaluation import check_evaluation_gates
 
 
+def _check_methodology(config: AppConfig) -> list[str]:
+    """Hold the declared methodology against the snapshot that produced the data.
+
+    Requiring the string without checking it only proves someone typed
+    something. The fetcher stamps the same identifier into each snapshot's
+    manifest, so the two can be held against each other; data built by hand has
+    no manifest, which is allowed but recorded as unverified.
+    """
+
+    assert config.data.prices_path is not None
+    manifest_path = config.data.prices_path.parent / "manifest.json"
+    if not manifest_path.is_file():
+        return [
+            f"data methodology {config.data.methodology!r} is unverified: no "
+            f"manifest.json beside {config.data.prices_path.name}"
+        ]
+    try:
+        recorded = json.loads(manifest_path.read_text(encoding="utf-8")).get("methodology")
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"{manifest_path} could not be read: {exc}") from exc
+    if recorded != config.data.methodology:
+        raise ValueError(
+            f"declared data.methodology {config.data.methodology!r} does not match the "
+            f"snapshot at {manifest_path.parent}, which records {recorded!r}. The run "
+            "identity would claim a provenance the data does not have."
+        )
+    return []
+
+
 def load_market_data(config: AppConfig, unseal_reason: str | None = None) -> MarketData:
     check_evaluation_gates(config, unseal_reason)
+    methodology_warnings: list[str] = []
 
     if config.data.source == "synthetic":
         assert config.data.start is not None and config.data.end is not None
@@ -30,6 +62,7 @@ def load_market_data(config: AppConfig, unseal_reason: str | None = None) -> Mar
     else:
         assert config.data.prices_path is not None and config.data.cash_path is not None
         data = load_csv_market_data(config.data.prices_path, config.data.cash_path)
+        methodology_warnings = _check_methodology(config)
 
     if config.evaluation.end is not None:
         data = data.through(config.evaluation.end)
@@ -49,7 +82,7 @@ def load_market_data(config: AppConfig, unseal_reason: str | None = None) -> Mar
     # Inspect after truncation: findings should describe the data the run uses,
     # not data the seal has already discarded.
     thresholds = QualityThresholds(**config.quality_overrides)
-    warnings = enforce(inspect(data, config.strategy.symbols, thresholds))
+    warnings = methodology_warnings + enforce(inspect(data, config.strategy.symbols, thresholds))
 
     # A bounded period declares a window; data that stops well short of it is a
     # gap in the dataset, not a legitimately short run.
