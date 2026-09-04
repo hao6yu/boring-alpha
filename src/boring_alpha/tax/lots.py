@@ -192,27 +192,38 @@ class LotBook:
         """Pay `dividend_per_share` to every lot held into `ex_date`, reinvesting it.
 
         `growth` is the reinvestment factor the adjusted series implies,
-        F(ex_date) / F(previous session): the child lot's shares are the parent's
-        times (growth − 1) and its basis is the cash, so real shares keep
-        matching engine units exactly. An income distribution leaves the parent's
-        basis alone and is taxed; a return of capital reduces the parent's basis
-        by the cash instead, and any excess over that basis is a capital gain
-        realised on the ex-date. Lots acquired on or after the ex-date, including
-        the child lots this call opens, receive nothing.
+        F(ex_date) / F(previous session): one pooled child lot's shares are
+        the sum of the recipients' shares times (growth − 1) and its basis is
+        the sum of their cash, so real shares keep matching engine units
+        exactly in total. One child lot per (ex-date, symbol) rather than one
+        per recipient lot keeps the lot count linear in the number of
+        ex-dates instead of doubling at every one — a sleeve held through N
+        ex-dates would otherwise open 2^N lots. An income distribution leaves
+        a parent's basis alone and is taxed; a return of capital reduces a
+        parent's basis by its cash instead, and any excess over that basis is
+        a capital gain realised on the ex-date. Lots acquired on or after the
+        ex-date, including the child lot this call opens, receive nothing.
         """
 
         if dividend_per_share < 0.0:
             raise ValueError(f"negative dividend {dividend_per_share!r} for {symbol} on {ex_date}")
+        recipients = [
+            lot
+            for lot in list(self._open.get(symbol, ()))
+            if lot.acquired < ex_date and lot.shares * dividend_per_share > 0.0
+        ]
+        if not recipients:
+            return []
+        child: Lot | None = None
+        if growth > 1.0:
+            total_shares = sum(lot.shares for lot in recipients)
+            total_cash = sum(lot.shares * dividend_per_share for lot in recipients)
+            child = self.buy(
+                symbol, ex_date, total_shares * (growth - 1.0), total_cash, source="reinvest"
+            )
         events: list[Distribution] = []
-        for lot in list(self._open.get(symbol, ())):
-            if lot.acquired >= ex_date:
-                continue
+        for lot in recipients:
             cash = lot.shares * dividend_per_share
-            if cash <= 0.0:
-                continue
-            child: Lot | None = None
-            if growth > 1.0:
-                child = self.buy(symbol, ex_date, lot.shares * (growth - 1.0), cash, source="reinvest")
             if return_of_capital:
                 reduction = min(cash, lot.basis)
                 lot.basis -= reduction

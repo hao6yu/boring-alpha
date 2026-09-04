@@ -238,6 +238,24 @@ class DistributionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "dividend"):
             LotBook("fifo").distribute("A", D1, -1.0, 1.0, return_of_capital=False)
 
+    def test_two_lots_share_one_pooled_child_lot(self) -> None:
+        """A sleeve held through many ex-dates must not double its lot count at each one."""
+
+        book = LotBook("fifo")
+        book.buy("A", D0, 9.9, 990.0)
+        book.buy("A", D0, 4.95, 495.0)
+        events = book.distribute("A", D1, 1.0, self.growth, return_of_capital=False)
+        self.assertEqual(len(events), 2)
+        child_ids = {event.child_lot_id for event in events}
+        self.assertEqual(len(child_ids), 1, "both events must name the same pooled child lot")
+        child_id = child_ids.pop()
+        self.assertIsNotNone(child_id)
+        # Two parent lots plus exactly one pooled child: no per-recipient doubling.
+        self.assertEqual(len(book.lots), 3)
+        child = book.lots[child_id]
+        self.assertAlmostEqual(child.shares, (9.9 + 4.95) * (self.growth - 1.0))
+        self.assertAlmostEqual(child.basis, 14.85)
+
 
 class WashSaleTests(unittest.TestCase):
     """A 10-share lot bought at 1000 on D0 and sold on 2024-02-01 for 900: a 100 loss."""
