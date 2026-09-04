@@ -5,6 +5,10 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
 
+# Rebalancing schedules a static benchmark may declare. Shared vocabulary for
+# configuration and the signal layer, defined once so the two cannot diverge.
+REBALANCE_SCHEDULES: tuple[str, ...] = ("annual", "monthly")
+
 
 @dataclass(frozen=True, slots=True)
 class PriceBar:

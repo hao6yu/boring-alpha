@@ -110,6 +110,14 @@ class TargetExposureTests(unittest.TestCase):
         policy = TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "annual")
         self.assertIsNone(policy.snapshot(_two_symbol_data(self.DAYS), date(2023, 11, 30)))
 
+    def test_schedules_are_the_configuration_s_schedules(self) -> None:
+        from boring_alpha.config import REBALANCE_SCHEDULES as configured
+        from boring_alpha.domain import REBALANCE_SCHEDULES as shared
+
+        self.assertIs(configured, shared)
+        for schedule in shared:
+            TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, schedule)
+
 
 if __name__ == "__main__":
     unittest.main()

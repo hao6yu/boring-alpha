@@ -6,7 +6,7 @@ from dataclasses import replace
 from datetime import date
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import SignalSnapshot
+from boring_alpha.domain import REBALANCE_SCHEDULES, SignalSnapshot
 
 
 def month_offset(year: int, month: int, delta: int) -> tuple[int, int]:
@@ -125,8 +125,6 @@ class TargetExposureAllocation(ScaledAllocation):
     starts mid-year still enters on its first session.
     """
 
-    SCHEDULES = ("annual", "monthly")
-
     def __init__(
         self,
         symbols: tuple[str, ...],
@@ -135,9 +133,9 @@ class TargetExposureAllocation(ScaledAllocation):
         exposure: float,
         rebalance: str,
     ) -> None:
-        if rebalance not in self.SCHEDULES:
+        if rebalance not in REBALANCE_SCHEDULES:
             raise ValueError(
-                f"rebalance must be one of {', '.join(self.SCHEDULES)}, got {rebalance!r}"
+                f"rebalance must be one of {', '.join(REBALANCE_SCHEDULES)}, got {rebalance!r}"
             )
         super().__init__(symbols, lookback_months, sleeve_weight, exposure)
         self.rebalance = rebalance

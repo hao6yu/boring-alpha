@@ -10,6 +10,8 @@ import math
 from pathlib import Path
 import tomllib
 
+from boring_alpha.domain import REBALANCE_SCHEDULES
+
 
 @dataclass(frozen=True, slots=True)
 class StrategyConfig:
@@ -42,9 +44,6 @@ class BenchmarkConfig:
 
     exposure: float
     rebalance: str
-
-
-REBALANCE_SCHEDULES = ("annual", "monthly")
 
 
 @dataclass(frozen=True, slots=True)
