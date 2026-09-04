@@ -156,3 +156,103 @@ class BenchmarkConfigTests(unittest.TestCase):
     def test_an_unknown_key_is_refused(self) -> None:
         with self.assertRaisesRegex(ValueError, "unknown key"):
             _load(BENCHMARK + "band = 0.02\n")
+
+
+TAX = VALID + """
+[tax]
+distributions_path = "../data/distributions_daily.csv"
+ordinary_rate = 0.35
+long_term_rate = 0.20
+collectibles_rate = 0.28
+qualified_fraction_low = 0.5
+
+[tax.qualified_fraction]
+A = 0.95
+B = 0.0
+
+[tax.gains_class]
+A = "standard"
+B = "collectibles"
+"""
+
+
+class TaxConfigTests(unittest.TestCase):
+    def test_an_absent_table_means_no_tax_policy(self) -> None:
+        config, _ = _load(VALID)
+        self.assertIsNone(config.tax)
+
+    def test_the_table_is_parsed_and_the_path_resolved_against_the_config(self) -> None:
+        config, path = _load(TAX)
+        assert config.tax is not None
+        self.assertAlmostEqual(config.tax.ordinary_rate, 0.35)
+        self.assertAlmostEqual(config.tax.long_term_rate, 0.20)
+        self.assertAlmostEqual(config.tax.collectibles_rate, 0.28)
+        self.assertAlmostEqual(config.tax.qualified_fraction_low, 0.5)
+        self.assertEqual(config.tax.qualified_fraction, {"A": 0.95, "B": 0.0})
+        self.assertEqual(config.tax.gains_class, {"A": "standard", "B": "collectibles"})
+        self.assertEqual(
+            config.tax.distributions_path,
+            (path.parent / ".." / "data" / "distributions_daily.csv").resolve(),
+        )
+
+    def test_the_tax_table_does_not_enter_the_strategy_spec_hash(self) -> None:
+        without, _ = _load(VALID)
+        with_tax, _ = _load(TAX)
+        self.assertEqual(without.strategy_spec_sha256, with_tax.strategy_spec_sha256)
+
+    def test_collectibles_rate_may_not_exceed_the_cap_or_the_ordinary_rate(self) -> None:
+        with self.assertRaisesRegex(ValueError, "collectibles_rate"):
+            _load(TAX.replace("collectibles_rate = 0.28", "collectibles_rate = 0.30"))
+        with self.assertRaisesRegex(ValueError, "collectibles_rate"):
+            _load(TAX.replace("ordinary_rate = 0.35", "ordinary_rate = 0.24"))
+
+    def test_rates_must_lie_in_the_unit_interval(self) -> None:
+        with self.assertRaisesRegex(ValueError, "tax.ordinary_rate"):
+            _load(TAX.replace("ordinary_rate = 0.35", "ordinary_rate = 1.0"))
+        with self.assertRaisesRegex(ValueError, "tax.qualified_fraction_low"):
+            _load(TAX.replace("qualified_fraction_low = 0.5", "qualified_fraction_low = 1.5"))
+
+    def test_every_symbol_needs_a_fraction_and_a_class(self) -> None:
+        with self.assertRaisesRegex(ValueError, "tax.qualified_fraction is missing B"):
+            _load(TAX.replace("B = 0.0\n", ""))
+        with self.assertRaisesRegex(ValueError, "tax.gains_class is missing B"):
+            _load(TAX.replace('B = "collectibles"\n', ""))
+
+    def test_unknown_symbols_fractions_and_classes_are_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "not in strategy.symbols"):
+            _load(TAX.replace("[tax.gains_class]", "[tax.gains_class]\nZ = \"standard\""))
+        with self.assertRaisesRegex(ValueError, "tax.qualified_fraction.A"):
+            _load(TAX.replace("A = 0.95", "A = 1.2"))
+        with self.assertRaisesRegex(ValueError, "tax.gains_class.B"):
+            _load(TAX.replace('B = "collectibles"', 'B = "futures"'))
+
+    def test_unknown_keys_are_refused(self) -> None:
+        # The key must sit in [tax] itself; appended text would land in the last sub-table.
+        with self.assertRaisesRegex(ValueError, "unknown key"):
+            _load(TAX.replace("qualified_fraction_low = 0.5", 'qualified_fraction_low = 0.5\nlot_method = "hifo"'))
+
+    def test_a_standalone_policy_file_loads_for_a_symbol_set(self) -> None:
+        from boring_alpha.config import load_tax_policy
+
+        text = TAX[TAX.index("[tax]"):]
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "policy.toml"
+            path.write_text(text, encoding="utf-8")
+            policy = load_tax_policy(path, ("A", "B"))
+            self.assertAlmostEqual(policy.ordinary_rate, 0.35)
+            with self.assertRaisesRegex(ValueError, "not in strategy.symbols"):
+                load_tax_policy(path, ("A",))
+            (Path(directory) / "bad.toml").write_text("[strategy]\nid = \"X\"\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "only a \\[tax\\] table"):
+                load_tax_policy(Path(directory) / "bad.toml", ("A", "B"))
+
+    def test_the_checked_in_ba_001_policy_loads_for_the_charter_universe(self) -> None:
+        from boring_alpha.config import load_tax_policy
+
+        policy = load_tax_policy(
+            REPO_ROOT / "configs" / "tax_policy.toml",
+            ("SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC"),
+        )
+        self.assertEqual(policy.gains_class["GLD"], "collectibles")
+        self.assertEqual(policy.gains_class["DBC"], "commodity_pool")
+        self.assertAlmostEqual(policy.qualified_fraction["EEM"], 0.61)

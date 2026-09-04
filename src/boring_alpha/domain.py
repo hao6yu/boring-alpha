@@ -9,6 +9,10 @@ from datetime import date
 # configuration and the signal layer, defined once so the two cannot diverge.
 REBALANCE_SCHEDULES: tuple[str, ...] = ("annual", "monthly")
 
+# How a symbol's capital gains are taxed in the after-tax overlay. Shared by
+# configuration validation and the tax package, defined once.
+GAINS_CLASSES: tuple[str, ...] = ("standard", "collectibles", "commodity_pool")
+
 
 @dataclass(frozen=True, slots=True)
 class PriceBar:

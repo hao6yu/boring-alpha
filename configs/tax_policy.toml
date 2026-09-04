@@ -1,0 +1,34 @@
+# Stylized, federal-only tax policy for the after-tax overlay (spec §4.9).
+# Rates are a scenario for the record, not anyone's actual bracket; real rates
+# belong in an untracked local copy. State tax, the 3.8% net investment income
+# tax and historical rate changes are ignored by construction. The base
+# qualified fractions for IWM, EFA and EEM are the issuers' reported 2019
+# figures as cited in the design review; SPY's is an expectation. The scenario
+# grid also runs every income-paying sleeve at qualified_fraction_low.
+
+[tax]
+distributions_path = "../data/current/distributions_daily.csv"
+ordinary_rate = 0.35
+long_term_rate = 0.20
+collectibles_rate = 0.28
+qualified_fraction_low = 0.50
+
+[tax.qualified_fraction]
+SPY = 0.95
+IWM = 0.71
+EFA = 0.95
+EEM = 0.61
+IEF = 0.0
+TLT = 0.0
+GLD = 0.0
+DBC = 0.0
+
+[tax.gains_class]
+SPY = "standard"
+IWM = "standard"
+EFA = "standard"
+EEM = "standard"
+IEF = "standard"
+TLT = "standard"
+GLD = "collectibles"
+DBC = "commodity_pool"

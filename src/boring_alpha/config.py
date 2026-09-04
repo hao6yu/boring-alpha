@@ -10,7 +10,7 @@ import math
 from pathlib import Path
 import tomllib
 
-from boring_alpha.domain import REBALANCE_SCHEDULES
+from boring_alpha.domain import GAINS_CLASSES, REBALANCE_SCHEDULES
 
 
 @dataclass(frozen=True, slots=True)
@@ -44,6 +44,35 @@ class BenchmarkConfig:
 
     exposure: float
     rebalance: str
+
+
+@dataclass(frozen=True, slots=True)
+class TaxConfig:
+    """Stylized tax policy for the after-tax overlay (spec §4.9).
+
+    Federal-only rates declared for the record; the account holder's real rates
+    belong in an untracked local file. `qualified_fraction` is the base set;
+    the scenario grid also runs every income-paying symbol at
+    `qualified_fraction_low`. The path names the distributions file; it is not
+    part of the policy's identity.
+    """
+
+    distributions_path: Path
+    ordinary_rate: float
+    long_term_rate: float
+    collectibles_rate: float
+    qualified_fraction_low: float
+    qualified_fraction: dict[str, float]
+    gains_class: dict[str, str]
+
+
+COLLECTIBLES_RATE_CAP = 0.28
+_TAX_KEYS = frozenset(
+    {
+        "distributions_path", "ordinary_rate", "long_term_rate", "collectibles_rate",
+        "qualified_fraction_low", "qualified_fraction", "gains_class",
+    }
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -96,6 +125,7 @@ class AppConfig:
     quality_overrides: dict[str, float]
     clusters: dict[str, tuple[str, ...]]
     benchmark: BenchmarkConfig | None
+    tax: TaxConfig | None
     strategy_spec_sha256: str
     path: Path
     raw_bytes: bytes
@@ -122,6 +152,7 @@ _SCHEMA: dict[str, frozenset[str]] = {
     ),
     "report": frozenset({"output_dir"}),
     "benchmark": frozenset({"exposure", "rebalance"}),
+    "tax": _TAX_KEYS,
 }
 
 # Cluster names are chosen per strategy, so this table's keys are open.
@@ -300,6 +331,7 @@ def load_config(path: str | Path) -> AppConfig:
     )
 
     benchmark = _load_benchmark(raw.get("benchmark"))
+    tax = _load_tax(raw.get("tax"), strategy.symbols, root)
 
     _validate(strategy, portfolio, execution, data, backtest)
     return AppConfig(
@@ -313,6 +345,7 @@ def load_config(path: str | Path) -> AppConfig:
         quality_overrides=_load_quality_overrides(raw.get("quality", {})),
         clusters=_load_clusters(raw.get("clusters", {}), strategy.symbols),
         benchmark=benchmark,
+        tax=tax,
         strategy_spec_sha256=_strategy_spec_hash(strategy, portfolio, execution, data, benchmark),
         path=config_path,
         raw_bytes=raw_bytes,
@@ -376,6 +409,101 @@ def _load_benchmark(raw: dict[str, object] | None) -> BenchmarkConfig | None:
             f"benchmark.rebalance must be one of {', '.join(REBALANCE_SCHEDULES)}, got {rebalance!r}"
         )
     return BenchmarkConfig(exposure, rebalance)
+
+
+def _rate(raw: dict[str, object], key: str) -> float:
+    value = _finite(float(_require(raw, "tax", key)), f"tax.{key}")
+    if not 0.0 <= value < 1.0:
+        raise ValueError(f"tax.{key} must be in [0, 1), got {value!r}")
+    return value
+
+
+def _load_symbol_table(
+    raw: dict[str, object], name: str, symbols: tuple[str, ...], kind: str
+) -> dict[str, object]:
+    """`[tax.<name>]`: one entry per symbol of the universe, no extras."""
+
+    table = _require(raw, "tax", name)
+    if not isinstance(table, dict):
+        raise ValueError(f"tax.{name} must be a table of symbol = value")
+    result: dict[str, object] = {}
+    for symbol, value in table.items():
+        upper = symbol.upper()
+        if upper not in symbols:
+            raise ValueError(f"tax.{name} names {symbol}, which is not in strategy.symbols")
+        if kind == "fraction":
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                raise ValueError(f"tax.{name}.{symbol} must be a number in [0, 1]")
+            number = _finite(float(value), f"tax.{name}.{symbol}")
+            if not 0.0 <= number <= 1.0:
+                raise ValueError(f"tax.{name}.{symbol} must be in [0, 1], got {value!r}")
+            result[upper] = number
+        else:
+            label = str(value).lower()
+            if label not in GAINS_CLASSES:
+                raise ValueError(
+                    f"tax.{name}.{symbol} must be one of {', '.join(GAINS_CLASSES)}, got {value!r}"
+                )
+            result[upper] = label
+    missing = sorted(set(symbols) - set(result))
+    if missing:
+        raise ValueError(f"tax.{name} is missing {', '.join(missing)}")
+    return result
+
+
+def _load_tax(
+    raw: dict[str, object] | None, symbols: tuple[str, ...], root: Path
+) -> TaxConfig | None:
+    if raw is None:
+        return None
+    unknown = sorted(set(raw) - _TAX_KEYS)
+    if unknown:
+        raise ValueError(f"unknown key(s) in [tax]: {', '.join(unknown)}")
+    ordinary = _rate(raw, "ordinary_rate")
+    long_term = _rate(raw, "long_term_rate")
+    collectibles = _rate(raw, "collectibles_rate")
+    cap = min(ordinary, COLLECTIBLES_RATE_CAP)
+    if collectibles > cap + 1e-12:
+        raise ValueError(
+            f"tax.collectibles_rate must not exceed min(ordinary_rate, {COLLECTIBLES_RATE_CAP}) "
+            f"= {cap:.4f}, got {collectibles!r}; the statutory rule is the ordinary rate "
+            "capped at 28%"
+        )
+    low = _finite(
+        float(_require(raw, "tax", "qualified_fraction_low")), "tax.qualified_fraction_low"
+    )
+    if not 0.0 <= low <= 1.0:
+        raise ValueError(f"tax.qualified_fraction_low must be in [0, 1], got {low!r}")
+    fractions = _load_symbol_table(raw, "qualified_fraction", symbols, "fraction")
+    classes = _load_symbol_table(raw, "gains_class", symbols, "class")
+    path = _resolve_path(
+        _require(raw, "tax", "distributions_path"), root, "tax.distributions_path"
+    )
+    return TaxConfig(
+        distributions_path=path,
+        ordinary_rate=ordinary,
+        long_term_rate=long_term,
+        collectibles_rate=collectibles,
+        qualified_fraction_low=low,
+        qualified_fraction={k: float(v) for k, v in fractions.items()},
+        gains_class={k: str(v) for k, v in classes.items()},
+    )
+
+
+def load_tax_policy(path: str | Path, symbols: tuple[str, ...]) -> TaxConfig:
+    """A standalone policy file: exactly one `[tax]` table, validated for `symbols`.
+
+    Used by the `aftertax` command, which scores archived sweeps whose own
+    configuration carried no tax table.
+    """
+
+    policy_path = Path(path).resolve()
+    raw = tomllib.loads(policy_path.read_text(encoding="utf-8"))
+    if set(raw) != {"tax"} or not isinstance(raw["tax"], dict):
+        raise ValueError(f"{policy_path} must contain only a [tax] table")
+    tax = _load_tax(raw["tax"], tuple(symbol.upper() for symbol in symbols), policy_path.parent)
+    assert tax is not None
+    return tax
 
 
 def _load_evaluation(
