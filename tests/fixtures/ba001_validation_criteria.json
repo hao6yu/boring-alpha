@@ -1,0 +1,277 @@
+{
+  "artifact_schema": 5,
+  "clusters": {
+    "bonds": 2031.5294643111233,
+    "commodities": 2166.5926053119993,
+    "equity": 4517.101284037315,
+    "gold": 2235.5416087554663
+  },
+  "code_sha256": "4dd1eb16665f98d4c500425c190e93050a290870ae1e24c3d8f89a8fb692f8e3",
+  "contributions": {
+    "DBC": 2405.826352903157,
+    "EEM": 652.4569961815683,
+    "EFA": -339.8997461297937,
+    "GLD": 2505.299947883628,
+    "IEF": 1310.7065896956265,
+    "IWM": 587.8221572288066,
+    "SPY": 4906.106990314666,
+    "TLT": 1336.3988747924489
+  },
+  "cost_bps": 10.0,
+  "criteria": [
+    {
+      "description": "max drawdown at most 75% of the static benchmark's",
+      "detail": "drawdown 0.0882 vs limit 0.1599 (0.75 x static 0.2132)",
+      "name": "C1",
+      "passed": true
+    },
+    {
+      "description": "Sharpe versus cash within 0.10 of the static benchmark's",
+      "detail": "Sharpe 0.3909 vs floor 0.5944",
+      "name": "C2",
+      "passed": false
+    },
+    {
+      "description": "C1 and C2 hold at twice the base cost",
+      "detail": "drawdown 0.0893 vs limit 0.1599 (0.75 x 0.2133); Sharpe 0.3678 vs floor 0.5891",
+      "name": "C3",
+      "passed": false
+    },
+    {
+      "description": "C1 and C2 hold at 9- and 15-month lookbacks",
+      "detail": "9-month: drawdown 0.1774 vs limit 0.1599 (0.75 x 0.2132); Sharpe 0.1626 vs floor 0.5944; 15-month: drawdown 0.1614 vs limit 0.1599 (0.75 x 0.2132); Sharpe 0.1765 vs floor 0.5944",
+      "name": "C4",
+      "passed": false
+    },
+    {
+      "description": "C1 and C2 hold without the largest-contributing sleeve",
+      "detail": "drawdown 0.0709 vs limit 0.1599 (0.75 x 0.2132); Sharpe 0.2880 vs floor 0.5944",
+      "name": "C5",
+      "passed": false
+    }
+  ],
+  "evaluation_period": "validation",
+  "excess_contributions": {
+    "DBC": 2166.5926053119993,
+    "EEM": 443.0062811270707,
+    "EFA": -606.2192212321828,
+    "GLD": 2235.5416087554663,
+    "IEF": 1019.5916672607939,
+    "IWM": 271.94260775172853,
+    "SPY": 4408.371616390698,
+    "TLT": 1011.9377970503293
+  },
+  "exposure_matched": {
+    "annualized_volatility": 0.068498716561408,
+    "average_gross_exposure": 0.6180793050397734,
+    "cagr": 0.05835461088334082,
+    "cost_drag_bps": 3.70654409691731,
+    "end_equity": 125446.74875267854,
+    "max_drawdown": -0.13370306451201142,
+    "one_way_turnover": 0.18532720484586548,
+    "sharpe_vs_cash": 0.6999995188764557,
+    "start_equity": 100000.0,
+    "time_in_market": 1.0,
+    "total_cost": 160.8516438447896,
+    "total_return": 0.2544674875267854,
+    "trade_count": 384,
+    "traded_notional": 160851.6438447896,
+    "worst_month": -0.054804318186648104
+  },
+  "lookback_months": 12,
+  "passed": false,
+  "sharpe_interval": {
+    "confidence": 0.9,
+    "high": 0.22482705237755182,
+    "low": -0.92697890908963,
+    "point": -0.30353333105337205,
+    "resamples": 2000.0,
+    "seed": 20260904.0
+  },
+  "strategy_id": "BA-001",
+  "strategy_spec_sha256": "595a25e57ed68d4e863eeb69b40248345840b809b0f213609ddd14b4cd952110",
+  "sweep_id": "f0a36ea722ebefd4",
+  "top_sleeve": "SPY",
+  "variants": {
+    "base": {
+      "static": {
+        "annualized_volatility": 0.11197621721857182,
+        "average_gross_exposure": 1.0,
+        "cagr": 0.08608906169732977,
+        "cost_drag_bps": 5.666705407375415,
+        "end_equity": 139112.61323243752,
+        "max_drawdown": -0.21322358905050087,
+        "one_way_turnover": 0.28333527036877076,
+        "sharpe_vs_cash": 0.6944410083957582,
+        "start_equity": 100000.0,
+        "time_in_market": 1.0,
+        "total_cost": 253.2526618999744,
+        "total_return": 0.3911261323243753,
+        "trade_count": 384,
+        "traded_notional": 253252.6618999744,
+        "worst_month": -0.0891075648653622
+      },
+      "strategy": {
+        "annualized_volatility": 0.06885385277425998,
+        "average_gross_exposure": 0.6171834322575918,
+        "cagr": 0.0362889922004459,
+        "cost_drag_bps": 15.700910894585457,
+        "end_equity": 115314.1032920204,
+        "max_drawdown": -0.08816052190874868,
+        "one_way_turnover": 0.7850455447292728,
+        "sharpe_vs_cash": 0.39090767734238613,
+        "start_equity": 100000.0,
+        "time_in_market": 0.9791666666666666,
+        "total_cost": 645.1737292933674,
+        "total_return": 0.1531410329202041,
+        "trade_count": 258,
+        "traded_notional": 645173.7292933674,
+        "worst_month": -0.03846788801306322
+      }
+    },
+    "double_cost": {
+      "static": {
+        "annualized_volatility": 0.1119753531881128,
+        "average_gross_exposure": 1.0,
+        "cagr": 0.08543838193864217,
+        "cost_drag_bps": 11.329817733068529,
+        "end_equity": 138779.76216041707,
+        "max_drawdown": -0.21325841461421913,
+        "one_way_turnover": 0.2832454433267132,
+        "sharpe_vs_cash": 0.6890973147449918,
+        "start_equity": 100000.0,
+        "time_in_market": 1.0,
+        "total_cost": 505.4628317204066,
+        "total_return": 0.38779762160417075,
+        "trade_count": 384,
+        "traded_notional": 252731.4158602033,
+        "worst_month": -0.08915008805122837
+      },
+      "strategy": {
+        "annualized_volatility": 0.06883198268559862,
+        "average_gross_exposure": 0.617247178760505,
+        "cagr": 0.03463081474662877,
+        "cost_drag_bps": 31.427218533769146,
+        "end_equity": 114578.29868846253,
+        "max_drawdown": -0.08927923815584848,
+        "one_way_turnover": 0.7856804633442287,
+        "sharpe_vs_cash": 0.36776591818646887,
+        "start_equity": 100000.0,
+        "time_in_market": 0.9791666666666666,
+        "total_cost": 1286.170965549478,
+        "total_return": 0.1457829868846252,
+        "trade_count": 258,
+        "traded_notional": 643085.482774739,
+        "worst_month": -0.03847705366346177
+      }
+    },
+    "drop_top_sleeve": {
+      "static": {
+        "annualized_volatility": 0.11197621721857182,
+        "average_gross_exposure": 1.0,
+        "cagr": 0.08608906169732977,
+        "cost_drag_bps": 5.666705407375415,
+        "end_equity": 139112.61323243752,
+        "max_drawdown": -0.21322358905050087,
+        "one_way_turnover": 0.28333527036877076,
+        "sharpe_vs_cash": 0.6944410083957582,
+        "start_equity": 100000.0,
+        "time_in_market": 1.0,
+        "total_cost": 253.2526618999744,
+        "total_return": 0.3911261323243753,
+        "trade_count": 384,
+        "traded_notional": 253252.6618999744,
+        "worst_month": -0.0891075648653622
+      },
+      "strategy": {
+        "annualized_volatility": 0.05779481743462303,
+        "average_gross_exposure": 0.5023504150949387,
+        "cagr": 0.02640946456284987,
+        "cost_drag_bps": 13.974570909559866,
+        "end_equity": 110981.99492741394,
+        "max_drawdown": -0.07090005730846316,
+        "one_way_turnover": 0.6987285454779933,
+        "sharpe_vs_cash": 0.287968168918962,
+        "start_equity": 100000.0,
+        "time_in_market": 0.9603174603174603,
+        "total_cost": 571.8652714098364,
+        "total_return": 0.1098199492741394,
+        "trade_count": 212,
+        "traded_notional": 571865.2714098364,
+        "worst_month": -0.029581423620925085
+      }
+    },
+    "lookback_15": {
+      "static": {
+        "annualized_volatility": 0.11197621721857182,
+        "average_gross_exposure": 1.0,
+        "cagr": 0.08608906169732977,
+        "cost_drag_bps": 5.666705407375415,
+        "end_equity": 139112.61323243752,
+        "max_drawdown": -0.21322358905050087,
+        "one_way_turnover": 0.28333527036877076,
+        "sharpe_vs_cash": 0.6944410083957582,
+        "start_equity": 100000.0,
+        "time_in_market": 1.0,
+        "total_cost": 253.2526618999744,
+        "total_return": 0.3911261323243753,
+        "trade_count": 384,
+        "traded_notional": 253252.6618999744,
+        "worst_month": -0.0891075648653622
+      },
+      "strategy": {
+        "annualized_volatility": 0.08086518046118331,
+        "average_gross_exposure": 0.6440358855730229,
+        "cagr": 0.022324196216553682,
+        "cost_drag_bps": 14.84459659117113,
+        "end_equity": 109226.77065667759,
+        "max_drawdown": -0.16137868943466882,
+        "one_way_turnover": 0.7422298295585567,
+        "sharpe_vs_cash": 0.17645332152229815,
+        "start_equity": 100000.0,
+        "time_in_market": 0.9791666666666666,
+        "total_cost": 592.5011926189055,
+        "total_return": 0.09226770656677585,
+        "trade_count": 266,
+        "traded_notional": 592501.1926189056,
+        "worst_month": -0.04967181544381727
+      }
+    },
+    "lookback_9": {
+      "static": {
+        "annualized_volatility": 0.11197621721857182,
+        "average_gross_exposure": 1.0,
+        "cagr": 0.08608906169732977,
+        "cost_drag_bps": 5.666705407375415,
+        "end_equity": 139112.61323243752,
+        "max_drawdown": -0.21322358905050087,
+        "one_way_turnover": 0.28333527036877076,
+        "sharpe_vs_cash": 0.6944410083957582,
+        "start_equity": 100000.0,
+        "time_in_market": 1.0,
+        "total_cost": 253.2526618999744,
+        "total_return": 0.3911261323243753,
+        "trade_count": 384,
+        "traded_notional": 253252.6618999744,
+        "worst_month": -0.0891075648653622
+      },
+      "strategy": {
+        "annualized_volatility": 0.0847982088347683,
+        "average_gross_exposure": 0.6084645155372057,
+        "cagr": 0.021484694412904126,
+        "cost_drag_bps": 21.277960668498274,
+        "end_equity": 108868.67493761607,
+        "max_drawdown": -0.1773896900175458,
+        "one_way_turnover": 1.0638980334249135,
+        "sharpe_vs_cash": 0.16261175141493903,
+        "start_equity": 100000.0,
+        "time_in_market": 0.9791666666666666,
+        "total_cost": 846.8079193615231,
+        "total_return": 0.08868674937616072,
+        "trade_count": 262,
+        "traded_notional": 846807.919361523,
+        "worst_month": -0.06787307820845134
+      }
+    }
+  }
+}
