@@ -13,6 +13,7 @@ and the factor is reduced by the tax paid over that year-end equity.
 from __future__ import annotations
 
 from collections import defaultdict
+from dataclasses import replace
 from datetime import date, timedelta
 import math
 
@@ -54,13 +55,12 @@ KNOWN_OMISSIONS = (
     "ignored; rates are a fixed federal-only scenario (spec §4.9).",
     "Commodity-pool interest income is not separated from futures gains under the "
     "mark-to-market treatment (spec §4.5).",
-    "Reinvested distributions inherit no wash-sale role once a later loss sale's "
-    "window opens after them; only purchases known at sale time are matched.",
 )
 SHARE_IDENTITY_TOLERANCE = 1e-6
 PNL_IDENTITY_TOLERANCE = 1e-6
 IMPLIED_PRICE_TOLERANCE = 0.05
 DAYS_PER_YEAR = 365.2425
+_WASH_MATCH_TOLERANCE = 1e-9
 
 
 def _cagr(terminal: float, initial: float, days: int) -> float:
@@ -82,12 +82,32 @@ def apply_overlay(
         raise ValueError("at least two equity observations are required")
     if initial_cash <= 0.0:
         raise ValueError("initial cash must be positive")
+    if result.initial_equity > 0.0:
+        relative = abs(result.initial_equity - initial_cash) / result.initial_equity
+        if relative > 1e-9:
+            raise ValueError(
+                f"result.initial_equity ({result.initial_equity!r}) does not match "
+                f"initial_cash ({initial_cash!r})"
+            )
     sessions = [point.date for point in curve]
     first, last = sessions[0], sessions[-1]
     symbols = sorted({fill.symbol for fill in result.fills})
     for symbol in symbols:
         if symbol not in tax.gains_class:
             raise ValueError(f"the tax policy names no gains class for {symbol}")
+    session_set = set(sessions)
+    seen_fills: set[tuple[date, str]] = set()
+    for fill in result.fills:
+        if fill.date not in session_set:
+            raise ValueError(
+                f"a fill for {fill.symbol} on {fill.date} is not a session of the equity curve"
+            )
+        key = (fill.date, fill.symbol)
+        if key in seen_fills:
+            raise ValueError(
+                "the engine never fills one symbol twice in a session; the inputs are inconsistent"
+            )
+        seen_fills.add(key)
     table.require_coverage(data, tuple(symbols))
     index_of = {day: index for index, day in enumerate(data.dates)}
 
@@ -108,11 +128,17 @@ def apply_overlay(
     engine_units: dict[str, float] = defaultdict(float)
     realized: list[Realized] = []
     distributions: list[Distribution] = []
-    marks: list[tuple[date, str, float]] = []
+    marks: list[tuple[date, float]] = []
     interest_by_year: dict[int, float] = defaultdict(float)
     year_end_equity: dict[int, float] = {}
     implied_ratios: list[float] = []
+    ex_dates_without_growth = 0
     share_deviation = 0.0
+    # Loss sales whose disallowance is not yet fully matched to a replacement.
+    # A reinvested distribution's pooled child lot counts as a purchase too
+    # (spec §4.6), but its lot does not exist until the ex-date arrives, so it
+    # is matched here, lazily, rather than at sale time like a buy fill.
+    open_losses: list[dict] = []
 
     for index, day in enumerate(sessions):
         point = curve[index]
@@ -127,13 +153,37 @@ def apply_overlay(
             growth = (
                 factor(day, symbol) / factor(data.dates[previous], symbol) if previous >= 0 else 1.0
             )
+            if growth <= 1.0:
+                ex_dates_without_growth += 1
             implied_ratios.append(
                 (dividend / (growth - 1.0)) / table.close(day, symbol) if growth > 1.0 else math.inf
             )
             return_of_capital = tax.gains_class[symbol] == "commodity_pool"
-            distributions.extend(
-                book.distribute(symbol, day, dividend, growth, return_of_capital=return_of_capital)
-            )
+            events = book.distribute(symbol, day, dividend, growth, return_of_capital=return_of_capital)
+            distributions.extend(events)
+            child_id = next((event.child_lot_id for event in events if event.child_lot_id is not None), None)
+            if child_id is not None:
+                child = book.lots[child_id]
+                tacked = False
+                for loss in open_losses:
+                    if child.replacement_capacity <= _WASH_MATCH_TOLERANCE:
+                        break
+                    if loss["symbol"] != symbol or loss["unmatched"] <= _WASH_MATCH_TOLERANCE:
+                        continue
+                    if not (day - WASH_SALE_WINDOW <= loss["sold"] < day):
+                        continue
+                    take = min(child.replacement_capacity, loss["unmatched"])
+                    add = take * loss["loss_per_share"]
+                    child.basis += add
+                    child.disallowed_attached += add
+                    if not tacked:
+                        holding_days = (loss["sold"] - loss["opened"]).days
+                        child.opened = child.opened - timedelta(days=holding_days)
+                        tacked = True
+                    child.replacement_capacity -= take
+                    loss["unmatched"] -= take
+                    idx = loss["index"]
+                    realized[idx] = replace(realized[idx], disallowed=realized[idx].disallowed + add)
 
         for fill in fills_by_date.get(day, ()):
             shares = fill.quantity * factor(day, fill.symbol)
@@ -145,7 +195,25 @@ def apply_overlay(
                     for (purchase_day, symbol), purchase in future.items()
                     if symbol == fill.symbol and day < purchase_day <= day + WASH_SALE_WINDOW
                 ]
-                realized.extend(apply_wash_sales(records, book.open_lots(fill.symbol), window))
+                adjusted_records = apply_wash_sales(records, book.open_lots(fill.symbol), window)
+                base_index = len(realized)
+                realized.extend(adjusted_records)
+                for offset, record in enumerate(adjusted_records):
+                    loss = record.basis - record.proceeds
+                    if loss <= 0.0:
+                        continue
+                    unmatched = record.shares * (1.0 - record.disallowed / loss)
+                    if unmatched > _WASH_MATCH_TOLERANCE:
+                        open_losses.append(
+                            {
+                                "index": base_index + offset,
+                                "symbol": record.symbol,
+                                "sold": record.sold,
+                                "opened": record.opened,
+                                "unmatched": unmatched,
+                                "loss_per_share": loss / record.shares,
+                            }
+                        )
             else:
                 engine_units[fill.symbol] += fill.quantity
                 purchase = future.pop((day, fill.symbol))
@@ -178,7 +246,7 @@ def apply_overlay(
                     price = table.close(day, symbol)
                     for lot in book.open_lots(symbol):
                         value = lot.shares * price
-                        marks.append((day, symbol, value - lot.basis))
+                        marks.append((day, value - lot.basis))
                         lot.basis = value
 
     realized.extend(book.extra_realized)
@@ -205,7 +273,7 @@ def apply_overlay(
             lot = book.lots[event.lot_id]
             fraction = (
                 qualified_fraction(tax, scenario, event.symbol)
-                if qualifies(lot.opened, lot.closed or last, event.ex_date)
+                if qualifies(lot.acquired, lot.closed or last, event.ex_date)
                 else 0.0
             )
             amounts.qualified_income += event.cash * fraction
@@ -225,7 +293,7 @@ def apply_overlay(
                 mark_to_market=mark_to_market,
             )
             amounts.wash_disallowed += record.disallowed
-        for mark_day, _, amount in marks:
+        for mark_day, amount in marks:
             if mark_day.year == year:
                 amounts.add_gain(amount, long_term=False, gains_class="commodity_pool", mark_to_market=True)
         amounts.cash_interest += interest_by_year.get(year, 0.0)
@@ -282,19 +350,19 @@ def apply_overlay(
     gains_total = (
         sum(record.gain for record in realized)
         + sum(record.gain for record in liquidation)
-        + sum(amount for _, _, amount in marks)
+        + sum(amount for _, amount in marks)
     )
     pnl_deviation = abs(income_total + gains_total - adjusted_pnl) / max(abs(adjusted_pnl), initial_cash)
     finite_ratios = [ratio for ratio in implied_ratios if math.isfinite(ratio)]
     ratio_min = min(finite_ratios) if finite_ratios else None
     ratio_max = max(finite_ratios) if finite_ratios else None
-    implied_ok = len(finite_ratios) == len(implied_ratios) and all(
+    implied_ok = ex_dates_without_growth == 0 and all(
         abs(ratio - 1.0) <= IMPLIED_PRICE_TOLERANCE for ratio in finite_ratios
     )
 
     days = (last - first).days + 1
     pre_tax_cagr = _cagr(pre_tax_terminal, initial_cash, days)
-    after_tax_cagr = _cagr(post_liquidation, initial_cash, days) if post_liquidation > 0.0 else -1.0
+    after_tax_cagr = _cagr(post_liquidation, initial_cash, days) if post_liquidation > 0.0 else None
     profit = pre_tax_terminal - initial_cash
     total_tax = taxes_paid + tax_liquidation
 
@@ -312,7 +380,9 @@ def apply_overlay(
         "totals": {
             "taxes_paid": taxes_paid,
             "tax_liquidation": tax_liquidation,
-            "wash_sale_count": sum(1 for record in realized if record.disallowed > 0.0),
+            "wash_sale_count": len(
+                {(record.sold, record.symbol) for record in realized if record.disallowed > 0.0}
+            ),
             "wash_sale_disallowed_total": sum(record.disallowed for record in realized),
             "return_of_capital_total": sum(
                 event.cash for event in distributions if event.return_of_capital
@@ -329,7 +399,9 @@ def apply_overlay(
         "metrics": {
             "pre_tax_cagr": pre_tax_cagr,
             "after_tax_cagr": after_tax_cagr,
-            "tax_drag_bps": (pre_tax_cagr - after_tax_cagr) * 10_000.0,
+            "tax_drag_bps": (
+                (pre_tax_cagr - after_tax_cagr) * 10_000.0 if after_tax_cagr is not None else None
+            ),
             "effective_tax_rate": total_tax / profit if profit > 0.0 else None,
         },
         "identity_checks": {
@@ -338,6 +410,7 @@ def apply_overlay(
             "income_plus_gain_relative_deviation": pnl_deviation,
             "income_plus_gain_passed": pnl_deviation <= PNL_IDENTITY_TOLERANCE,
             "ex_dates_checked": len(implied_ratios),
+            "ex_dates_without_growth": ex_dates_without_growth,
             "implied_reinvestment_price_ratio_min": ratio_min,
             "implied_reinvestment_price_ratio_max": ratio_max,
             "implied_price_check_passed": implied_ok,
