@@ -14,8 +14,8 @@ from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
 from boring_alpha.report import READABLE_SCHEMAS, write_report
 from boring_alpha.criteria import Verdict
-from boring_alpha.profiles import profile_for
-from boring_alpha.signals import CashAllocation, FixedAllocation, MultiAssetTrend
+from boring_alpha.profiles import gating_benchmark, profile_for
+from boring_alpha.signals import CashAllocation, MultiAssetTrend
 from boring_alpha.sweep import run_sweep, write_sweep_report
 
 __all__ = ["SealedRunError", "check_evaluation_gates", "build_parser", "main", "run_backtest"]
@@ -61,13 +61,7 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
             config.strategy.sleeve_weight,
         )
     )
-    benchmark = engine.run(
-        FixedAllocation(
-            config.strategy.symbols,
-            config.strategy.lookback_months,
-            config.strategy.sleeve_weight,
-        )
-    )
+    benchmark = engine.run(gating_benchmark(config, config.strategy.lookback_months))
     cash = engine.run(CashAllocation(config.strategy.symbols))
     strategy_metrics = calculate_metrics(strategy, data)
     benchmark_metrics = calculate_metrics(benchmark, data)
