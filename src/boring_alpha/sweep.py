@@ -3,7 +3,9 @@
 The charter fixes what must be run: the 12-month rule, twice the base cost, the
 neighbouring lookbacks, and the strategy without its largest-contributing
 sleeve. Running them together, from one command, is what stops the stability
-checks from becoming a menu of results to choose from after the fact.
+checks from becoming a menu of results to choose from after the fact. When a
+configuration carries a [tax] table, every run is also scored after tax under
+the fixed scenario grid and the result is written beside the criteria.
 """
 
 from __future__ import annotations
@@ -13,6 +15,7 @@ from dataclasses import dataclass, field
 import gzip
 import hashlib
 import io
+import json
 from pathlib import Path
 
 from boring_alpha.backtest import Backtester
@@ -25,6 +28,7 @@ from boring_alpha.criteria import (
     LOOKBACK_9,
     PeriodOutcome,
 )
+from boring_alpha.data.distributions import DistributionTable, load_distributions
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
 from boring_alpha.metrics import (
@@ -45,7 +49,8 @@ from boring_alpha.report import (
     write_once_bytes,
 )
 from boring_alpha.profiles import VariantSpec, profile_for
-from boring_alpha.signals import CashAllocation, ScaledAllocation
+from boring_alpha.signals import CashAllocation, FixedAllocation, ScaledAllocation
+from boring_alpha.tax import OVERLAY_VERSION, policy_sha256, run_scenarios
 
 # BA-001's variant order; kept for callers that iterate it.
 GRID = (BASE, DOUBLE_COST, LOOKBACK_9, LOOKBACK_15, DROP_TOP_SLEEVE)
@@ -66,6 +71,13 @@ class SweepResult:
     warnings: tuple[str, ...] = ()
     grid: dict[str, str] = field(default_factory=dict)
     runs: dict[str, tuple] = field(default_factory=dict)
+    static_full: dict[str, float] | None = None
+    """Metrics of the fully invested monthly static allocation when a
+    target-exposure benchmark gates; None when full static is the benchmark."""
+    tax: dict | None = None
+    """Every run under every scenario, plus the policy and distributions identity;
+    None when the configuration has no [tax] table."""
+    distributions: DistributionTable | None = None
 
 
 def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
@@ -77,6 +89,36 @@ def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
         start=config.backtest.start,
         end=config.backtest.end,
     )
+
+
+TAX_BASE_SCENARIO = "hifo-deferral-base"
+
+
+def _distributions_for(config: AppConfig, data: MarketData) -> tuple[DistributionTable, dict]:
+    """The distributions table a tax run uses, truncated like the market data,
+    and the manifest block that travels into the sweep so it is self-contained."""
+
+    assert config.tax is not None
+    path = config.tax.distributions_path
+    manifest_path = path.parent / "manifest.json"
+    if config.data.prices_path is not None and path.parent != config.data.prices_path.parent:
+        raise ValueError(
+            f"tax.distributions_path {path} must sit in the same snapshot directory as "
+            f"data.prices_path {config.data.prices_path}: distributions and prices must "
+            "come from one fetch"
+        )
+    if not manifest_path.is_file():
+        raise ValueError(f"no manifest.json beside {path.name}; a v2 snapshot is required for tax")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    table = load_distributions(path, manifest_path=manifest_path).through(data.dates[-1])
+    table.require_coverage(data, config.strategy.symbols)
+    block = {
+        "methodology": manifest.get("methodology"),
+        "created_at": manifest.get("created_at"),
+        "splits": table.splits,
+        "sha256": table.sha256,
+    }
+    return table, block
 
 
 def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
@@ -134,6 +176,47 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
     cash = _engine(config, data, cost).run(CashAllocation(config.strategy.symbols))
     cash_metrics = calculate_metrics(cash, data)
 
+    static_full_result: BacktestResult | None = None
+    static_full: dict[str, float] | None = None
+    if config.benchmark is not None:
+        # The gating benchmark is the target-exposure allocation; the fully
+        # invested monthly static stays as a secondary row so the reader can
+        # still see the comparison BA-001 was judged on.
+        static_full_result = _engine(config, data, cost).run(
+            FixedAllocation(config.strategy.symbols, lookback, config.strategy.sleeve_weight)
+        )
+        static_full = calculate_metrics(static_full_result, data)
+
+    tax: dict | None = None
+    table: DistributionTable | None = None
+    if config.tax is not None:
+        table, block = _distributions_for(config, data)
+        code_hash = code_fingerprint()
+        tax_runs: dict[str, BacktestResult] = {
+            "strategy": base_strategy,
+            "benchmark": base_static,
+            "exposure_matched": matched,
+            "cash": cash,
+        }
+        if static_full_result is not None:
+            tax_runs["static_full"] = static_full_result
+        for name, (strategy, _) in runs.items():
+            if name != BASE:
+                tax_runs[f"variant:{name}"] = strategy
+        tax = {
+            "tax_policy_sha256": policy_sha256(config.tax),
+            "distributions_sha256": table.sha256,
+            "distributions_manifest": block,
+            "overlay_version": OVERLAY_VERSION,
+            "runs": {
+                name: run_scenarios(
+                    result, data, table, config.tax,
+                    initial_cash=config.portfolio.initial_cash, code_sha256=code_hash,
+                )
+                for name, result in tax_runs.items()
+            },
+        }
+
     clusters = {
         name: sum(excess_contributions.get(symbol, 0.0) for symbol in symbols)
         for name, symbols in config.clusters.items()
@@ -153,14 +236,18 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
 
     return SweepResult(
         variants=variants,
-        outcome=profile.evaluate_period(variants, {}),
+        outcome=profile.evaluate_period(variants, {"tax": tax, "static_full": static_full}),
         contributions=contributions,
         excess_contributions=excess_contributions,
         clusters=clusters,
         top_sleeve=top_sleeve,
         exposure_matched=calculate_metrics(matched, data),
         cash=cash_metrics,
-        runs={**runs, "exposure_matched": (matched, cash)},
+        runs={
+            **runs,
+            "exposure_matched": (matched, cash),
+            **({"static_full": (static_full_result, cash)} if static_full_result is not None else {}),
+        },
         sharpe_interval=sharpe_difference_interval(
             excess_return_series(base_strategy, data),
             excess_return_series(base_static, data),
@@ -168,6 +255,9 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         ),
         warnings=tuple(warnings),
         grid=grid,
+        static_full=static_full,
+        tax=tax,
+        distributions=table,
     )
 
 
@@ -206,6 +296,16 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
             f"{float(base['static'][key]):.4f} | {float(sweep.exposure_matched[key]):.4f} | "
             f"{float(sweep.cash[key]):.4f} |"
         )
+
+    if sweep.static_full is not None:
+        lines += [
+            "",
+            "Full static (fully invested, rebalanced monthly), the comparison BA-001 was "
+            "judged on, kept as a secondary row: "
+            f"CAGR {float(sweep.static_full['cagr']):.4f}, "
+            f"max drawdown {float(sweep.static_full['max_drawdown']):.4f}, "
+            f"Sharpe vs cash {float(sweep.static_full['sharpe_vs_cash']):.4f}.",
+        ]
 
     interval = sweep.sharpe_interval
     lines += [
@@ -266,9 +366,65 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
         lines += ["", "| Cluster | Excess over cash |", "|---|---:|"]
         for name, value in sorted(sweep.clusters.items(), key=lambda item: -item[1]):
             lines.append(f"| {name} | {value:.2f} |")
+    lines += _after_tax_lines(sweep)
     if sweep.warnings:
         lines += ["", "## Warnings", ""] + [f"- {warning}" for warning in sweep.warnings]
     return "\n".join(lines) + "\n"
+
+
+def _after_tax_lines(sweep: SweepResult) -> list[str]:
+    if sweep.tax is None:
+        return []
+    tax = sweep.tax
+    lines = [
+        "",
+        "## After tax",
+        "",
+        f"Overlay {tax['overlay_version']}; policy {tax['tax_policy_sha256'][:12]}; "
+        f"distributions {tax['distributions_sha256'][:12]}. Eight scenarios: lot method × "
+        "commodity-pool treatment × qualified set. An after-tax conclusion must hold under "
+        "every scenario; the worst and best are shown.",
+        "",
+        "| Run | Pre-tax CAGR | After-tax CAGR (worst) | Worst scenario | After-tax CAGR (best) "
+        "| Tax drag, worst (bps) | Wash-sale disallowed |",
+        "|---|---:|---:|---|---:|---:|---:|",
+    ]
+    failed_checks: list[str] = []
+    for name, scenarios in tax["runs"].items():
+        # A post-liquidation wealth that is not positive leaves after_tax_cagr
+        # (and tax_drag_bps) None; None is treated as worst, never best, so a
+        # scenario that fails to sustain positive wealth cannot hide as "best".
+        def rank(key: str, scenarios: dict = scenarios) -> float:
+            cagr = scenarios[key]["metrics"]["after_tax_cagr"]
+            return cagr if cagr is not None else float("-inf")
+
+        worst_key = min(scenarios, key=rank)
+        best_key = max(scenarios, key=rank)
+        worst, best, base = scenarios[worst_key], scenarios[best_key], scenarios[TAX_BASE_SCENARIO]
+        worst_cagr = worst["metrics"]["after_tax_cagr"]
+        best_cagr = best["metrics"]["after_tax_cagr"]
+        worst_drag = worst["metrics"]["tax_drag_bps"]
+        lines.append(
+            f"| {name} | {worst['metrics']['pre_tax_cagr']:.4f} | "
+            f"{'n/a' if worst_cagr is None else f'{worst_cagr:.4f}'} | {worst_key} | "
+            f"{'n/a' if best_cagr is None else f'{best_cagr:.4f}'} | "
+            f"{'n/a' if worst_drag is None else f'{worst_drag:.1f}'} | "
+            f"{base['totals']['wash_sale_disallowed_total']:.2f} |"
+        )
+        checks = base["identity_checks"]
+        for check in ("share_identity_passed", "income_plus_gain_passed", "implied_price_check_passed"):
+            if not checks[check]:
+                failed_checks.append(f"{name}: {check} is false")
+    policy = next(iter(next(iter(tax["runs"].values())).values()))["policy"]
+    lines += [
+        "",
+        f"Rates: ordinary {policy['ordinary_rate']:.0%}, long-term {policy['long_term_rate']:.0%}, "
+        f"collectibles {policy['collectibles_rate']:.0%}; a federal-only stylized scenario. "
+        f"{policy['nav_convention']} Drawdown is pre-tax throughout.",
+    ]
+    if failed_checks:
+        lines += ["", "**Identity checks failed:** " + "; ".join(failed_checks) + "."]
+    return lines
 
 
 def _price_rows(data: MarketData) -> list[list[str]]:
@@ -284,6 +440,15 @@ def _cash_rows(data: MarketData) -> list[list[str]]:
     return [["date", "cash_factor"]] + [
         [day.isoformat(), repr(data.cash_factors[day])] for day in data.dates
     ]
+
+
+def _distribution_rows(table: DistributionTable) -> list[list[str]]:
+    rows = [["date", "symbol", "close", "dividend"]]
+    for day in table.dates:
+        for symbol in table.symbols:
+            if day in table.symbol_dates.get(symbol, ()):
+                rows.append([day.isoformat(), symbol, repr(table.close(day, symbol)), repr(table.dividend(day, symbol))])
+    return rows
 
 
 def _gzip_csv(rows: list[list[str]]) -> bytes:
@@ -338,6 +503,15 @@ def write_sweep_report(
                 "data_end": data.dates[-1],
                 "code_sha256": code_hash,
                 "warnings": run_warnings(config, data, ()) + list(sweep.warnings),
+                **(
+                    {
+                        "tax_policy_sha256": sweep.tax["tax_policy_sha256"],
+                        "distributions_sha256": sweep.tax["distributions_sha256"],
+                        "distributions_manifest": sweep.tax["distributions_manifest"],
+                    }
+                    if sweep.tax is not None
+                    else {}
+                ),
             }
         ),
     )
@@ -370,10 +544,33 @@ def write_sweep_report(
                 "clusters": sweep.clusters,
                 "exposure_matched": sweep.exposure_matched,
                 "sharpe_interval": sweep.sharpe_interval,
+                **(
+                    {
+                        "tax_policy_sha256": sweep.tax["tax_policy_sha256"],
+                        "distributions_sha256": sweep.tax["distributions_sha256"],
+                        "static_full": sweep.static_full,
+                    }
+                    if sweep.tax is not None
+                    else ({"static_full": sweep.static_full} if sweep.static_full is not None else {})
+                ),
             }
         ),
     )
     write_once(sweep_dir / "summary.md", _summary(config, sweep))
+
+    if sweep.tax is not None:
+        write_once(
+            sweep_dir / "tax.json",
+            json_text(
+                {
+                    "artifact_schema": ARTIFACT_SCHEMA,
+                    "sweep_id": sweep_id,
+                    "strategy_id": config.strategy.strategy_id,
+                    "code_sha256": code_hash,
+                    **sweep.tax,
+                }
+            ),
+        )
 
     # Principle 6 asks for decisions, trades and equity curves, not only
     # aggregates. A sweep is eleven runs; each keeps its own evidence.
@@ -391,6 +588,11 @@ def write_sweep_report(
     # actually saw is stored beside its results.
     write_once_bytes(sweep_dir / "input_prices.csv.gz", _gzip_csv(_price_rows(data)))
     write_once_bytes(sweep_dir / "input_cash.csv.gz", _gzip_csv(_cash_rows(data)))
+    if sweep.distributions is not None:
+        write_once_bytes(
+            sweep_dir / "input_distributions.csv.gz",
+            _gzip_csv(_distribution_rows(sweep.distributions)),
+        )
 
     append_provenance(sweep_dir, unseal_reason)
     return sweep_id, sweep_dir

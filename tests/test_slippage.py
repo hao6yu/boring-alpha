@@ -42,7 +42,7 @@ def _run_partial_fill():
 
 class SlippageTests(unittest.TestCase):
     def test_the_schema_records_the_wider_ledger(self) -> None:
-        self.assertEqual(ARTIFACT_SCHEMA, 5)
+        self.assertEqual(ARTIFACT_SCHEMA, 6)
 
     def test_the_ledger_header_names_intent_and_reference(self) -> None:
         header = _trades_csv(_run()).splitlines()[0]

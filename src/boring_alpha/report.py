@@ -18,11 +18,12 @@ from boring_alpha.config import AppConfig
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult, SignalSnapshot
 
-ARTIFACT_SCHEMA = 5
+ARTIFACT_SCHEMA = 6
 
 # Schemas `classify` may read. A new schema that only adds fields is appended
 # here so that artifacts written under the old one stay classifiable.
-READABLE_SCHEMAS: tuple[int, ...] = (ARTIFACT_SCHEMA,)
+# Schema 6 adds tax fields and removes nothing, so schema-5 sweeps stay classifiable.
+READABLE_SCHEMAS: tuple[int, ...] = (5, ARTIFACT_SCHEMA)
 
 
 def _json_default(value: object) -> str:
