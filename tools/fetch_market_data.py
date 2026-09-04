@@ -24,6 +24,18 @@ This assumes the adjustment applies uniformly within the session. That is the
 usual convention and it is an assumption; the open-gap plausibility check
 exists to catch it failing.
 
+Distributions: the same payload carries dividend and split events. v2 writes
+`distributions_daily.csv` with the UNADJUSTED close and the cash dividend per
+share on its ex-date (0 otherwise), one row per session and symbol, aligned
+with the price file. The tax overlay uses these to separate the income the
+adjusted series silently reinvests from the capital gain it reports; nothing
+else reads them. Checked on 2026-09-04 against EEM's 3:1 split of 2008-07-24:
+the endpoint's close does not jump across the split and the preceding
+dividend is one third of the pre-split per-share amount, so close and
+dividend are both already split-adjusted and consistent with the adjusted
+series. Split events are recorded in the manifest so a reader can see them;
+no arithmetic is applied to them.
+
 Cash: FRED series DGS3MO, the 3-month Treasury constant maturity rate, quoted
 on an INVESTMENT basis. An earlier version of this script used DTB3, which is
 quoted on a bank DISCOUNT basis: it is computed against par value on a 360-day
@@ -86,7 +98,7 @@ CHART_URL = (
 FRED_SERIES = "DGS3MO"
 FRED_URL = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={FRED_SERIES}"
 SESSIONS_PER_YEAR = 252
-METHODOLOGY = "yahoo-adjusted-v1+dgs3mo-v1"
+METHODOLOGY = "yahoo-adjusted-v2+dgs3mo-v1"
 USER_AGENT = "Mozilla/5.0 (compatible; BoringAlpha research)"
 
 
@@ -126,18 +138,22 @@ def _get(url: str) -> bytes:
         return response.read()
 
 
-def rows_from_chart(result: dict, today: date) -> list[tuple[date, float, float]]:
-    """Adjusted (date, tr_open, tr_close) rows from one parsed chart response.
+def _local_date(stamp: int, offset_seconds: int) -> date:
+    """The exchange's local calendar date for a timestamp, not UTC's."""
 
-    Pure, so the adjustment and the incomplete-session rule can be tested
-    without a network call.
+    return (datetime.fromtimestamp(stamp, tz=timezone.utc) + timedelta(seconds=offset_seconds)).date()
+
+
+def _sessions(result: dict, today: date):
+    """(day, open, close, adjclose) for every complete, usable session.
+
+    One filter for prices and distributions, so the two files are aligned
+    row for row by construction rather than by luck.
     """
 
     offset = result["meta"].get("gmtoffset", 0)
     quote = result["indicators"]["quote"][0]
     adjusted = result["indicators"]["adjclose"][0]["adjclose"]
-
-    rows: list[tuple[date, float, float]] = []
     for index, stamp in enumerate(result["timestamp"]):
         open_, close, adjclose = quote["open"][index], quote["close"][index], adjusted[index]
         if None in (open_, close, adjclose):
@@ -146,13 +162,72 @@ def rows_from_chart(result: dict, today: date) -> list[tuple[date, float, float]
             continue
         if close <= 0.0 or open_ <= 0.0 or adjclose <= 0.0:
             continue
-        # The exchange's local calendar date, not UTC's.
-        day = (datetime.fromtimestamp(stamp, tz=timezone.utc) + timedelta(seconds=offset)).date()
+        day = _local_date(stamp, offset)
         if day >= today:
             continue
-        factor = adjclose / close
-        rows.append((day, open_ * factor, adjclose))
+        yield day, open_, close, adjclose
+
+
+def rows_from_chart(result: dict, today: date) -> list[tuple[date, float, float]]:
+    """Adjusted (date, tr_open, tr_close) rows from one parsed chart response.
+
+    Pure, so the adjustment and the incomplete-session rule can be tested
+    without a network call.
+    """
+
+    return [
+        (day, open_ * (adjclose / close), adjclose)
+        for day, open_, close, adjclose in _sessions(result, today)
+    ]
+
+
+def distribution_rows_from_chart(result: dict, today: date) -> list[tuple[date, float, float]]:
+    """(date, unadjusted close, dividend per share) for every session kept by rows_from_chart.
+
+    The dividend is the cash amount on its ex-date and 0.0 otherwise. Amounts
+    and closes are in the endpoint's split-adjusted units, which match each
+    other and the adjusted series (checked against EEM's 2008 split). A
+    dividend dated on a session that was dropped as incomplete is an error:
+    it would otherwise vanish silently. Dividends dated today or later are
+    declared, not yet paid, and are ignored.
+    """
+
+    offset = result["meta"].get("gmtoffset", 0)
+    dividends: dict[date, float] = {}
+    for event in result.get("events", {}).get("dividends", {}).values():
+        amount = float(event["amount"])
+        if not math.isfinite(amount) or amount < 0.0:
+            raise ValueError(f"invalid dividend event: {event!r}")
+        day = _local_date(int(event["date"]), offset)
+        dividends[day] = dividends.get(day, 0.0) + amount
+    rows = [
+        (day, close, dividends.pop(day, 0.0))
+        for day, _, close, _ in _sessions(result, today)
+    ]
+    unmatched = sorted(day for day in dividends if day < today)
+    if unmatched:
+        raise ValueError(
+            f"dividend ex-dates fall on no complete session: {[d.isoformat() for d in unmatched]}"
+        )
     return rows
+
+
+def splits_from_chart(result: dict) -> list[dict[str, str]]:
+    """Split events in date order, as recorded in the snapshot manifest.
+
+    Nothing downstream adjusts for these — the endpoint's closes and
+    dividends are already split-adjusted — but a reader must be able to see
+    that a split happened.
+    """
+
+    offset = result["meta"].get("gmtoffset", 0)
+    events = sorted(
+        result.get("events", {}).get("splits", {}).values(), key=lambda event: int(event["date"])
+    )
+    return [
+        {"date": _local_date(int(event["date"]), offset).isoformat(), "ratio": str(event.get("splitRatio", ""))}
+        for event in events
+    ]
 
 
 def exchange_today(offset_seconds: int) -> date:
@@ -161,12 +236,11 @@ def exchange_today(offset_seconds: int) -> date:
     return (datetime.now(timezone.utc) + timedelta(seconds=offset_seconds)).date()
 
 
-def fetch_prices(symbol: str) -> list[tuple[date, float, float]]:
-    """Adjusted (date, tr_open, tr_close) rows for one symbol."""
+def fetch_chart(symbol: str) -> dict:
+    """The parsed chart result for one symbol: quotes, adjusted closes and events."""
 
     payload = json.loads(_get(CHART_URL.format(symbol=symbol)))
-    result = payload["chart"]["result"][0]
-    return rows_from_chart(result, exchange_today(result["meta"].get("gmtoffset", 0)))
+    return payload["chart"]["result"][0]
 
 
 def fetch_cash_rates() -> list[tuple[date, float]]:
@@ -212,12 +286,15 @@ def write_snapshot(
     out: Path,
     price_rows: list[list[str]],
     cash_rows: list[list[str]],
+    distribution_rows: list[list[str]],
     coverage: dict[str, dict[str, str]],
+    splits: dict[str, list[dict[str, str]]],
 ) -> Path:
     """Write one snapshot directory, manifest last, then repoint `current`.
 
     The manifest is the completion marker: its absence means the download did
-    not finish, so prices and cash can never be read as a mismatched pair.
+    not finish, so prices, cash and distributions can never be read as a
+    mismatched set.
     """
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -226,19 +303,27 @@ def write_snapshot(
 
     _write_csv(snapshot / "market_daily.csv", price_rows)
     _write_csv(snapshot / "cash_daily.csv", cash_rows)
+    _write_csv(snapshot / "distributions_daily.csv", distribution_rows)
 
     manifest = {
         "created_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "methodology": METHODOLOGY,
         "price_source": "yahoo-finance-chart-v8",
         "price_adjustment": "tr_open = open * adjclose / close; tr_close = adjclose",
+        "distribution_source": "yahoo-finance-chart-v8 events=div",
+        "distribution_units": (
+            "split-adjusted, matching close; dividend is cash per share on its "
+            "ex-date and 0 otherwise"
+        ),
         "cash_series": FRED_SERIES,
         "cash_basis": "investment (constant maturity), not bank discount",
         "cash_convention": "(1 + prior_session_rate / 100) ** (1 / 252)",
         "sessions_per_year": SESSIONS_PER_YEAR,
         "price_rows": len(price_rows) - 1,
         "cash_rows": len(cash_rows) - 1,
+        "distribution_rows": len(distribution_rows) - 1,
         "coverage": coverage,
+        "splits": splits,
     }
     # Last: everything above must already be on disk for this to mean anything.
     (snapshot / "manifest.json").write_text(
@@ -261,21 +346,34 @@ def main() -> int:
     args.out.mkdir(parents=True, exist_ok=True)
 
     bars: list[tuple[date, str, float, float]] = []
+    distributions: list[tuple[date, str, float, float]] = []
     coverage: dict[str, dict[str, str]] = {}
+    splits: dict[str, list[dict[str, str]]] = {}
     for symbol in SYMBOLS:
         try:
-            rows = fetch_prices(symbol)
+            result = fetch_chart(symbol)
+            today = exchange_today(result["meta"].get("gmtoffset", 0))
+            rows = rows_from_chart(result, today)
+            distribution_rows = distribution_rows_from_chart(result, today)
+            splits[symbol] = splits_from_chart(result)
         except (urllib.error.URLError, KeyError, ValueError, TimeoutError) as exc:
             print(f"error: {symbol}: {type(exc).__name__}: {exc}", file=sys.stderr)
             return 2
         if not rows:
             print(f"error: {symbol}: no usable rows returned", file=sys.stderr)
             return 2
-        print(f"{symbol:4} {rows[0][0]} .. {rows[-1][0]}  {len(rows):5} rows")
+        paid = sum(1 for _, _, dividend in distribution_rows if dividend > 0.0)
+        print(
+            f"{symbol:4} {rows[0][0]} .. {rows[-1][0]}  {len(rows):5} rows  "
+            f"{paid:4} ex-dates  {len(splits[symbol])} splits"
+        )
         coverage[symbol] = {
             "first": str(rows[0][0]), "last": str(rows[-1][0]), "rows": str(len(rows))
         }
         bars.extend((day, symbol, tr_open, tr_close) for day, tr_open, tr_close in rows)
+        distributions.extend(
+            (day, symbol, close, dividend) for day, close, dividend in distribution_rows
+        )
 
     # Everything is fetched before anything is written, so a failure here cannot
     # leave fresh prices paired with a stale cash file.
@@ -290,6 +388,7 @@ def main() -> int:
     print(f"{FRED_SERIES} {rates[0][0]} .. {rates[-1][0]}  {len(rates):5} observations")
 
     bars.sort(key=lambda row: (row[0], row[1]))
+    distributions.sort(key=lambda row: (row[0], row[1]))
     sessions = sorted({day for day, _, _, _ in bars})
     factors = cash_factors(sessions, rates)
 
@@ -300,10 +399,21 @@ def main() -> int:
     ]
     cash_rows = [["date", "cash_factor"]]
     cash_rows += [[str(s), f"{factors[s]:.12f}"] for s in sessions]
+    distribution_rows_out = [["date", "symbol", "close", "dividend"]]
+    distribution_rows_out += [
+        [str(day), symbol, f"{close:.10f}", f"{dividend:.10f}"]
+        for day, symbol, close, dividend in distributions
+    ]
 
-    snapshot = write_snapshot(args.out, price_rows, cash_rows, coverage)
+    snapshot = write_snapshot(
+        args.out, price_rows, cash_rows, distribution_rows_out, coverage, splits
+    )
     print(f"\nwrote {snapshot}")
     print(f"  {len(bars)} bars through {sessions[-1]}, {len(sessions)} cash sessions")
+    print(f"  {len(distributions)} distribution rows")
+    for symbol, records in splits.items():
+        if records:
+            print(f"  {symbol} splits: " + ", ".join(f"{r['date']} {r['ratio']}" for r in records))
     print(f"  methodology: {METHODOLOGY}")
     print(f"  {args.out / 'current'} -> snapshots/{snapshot.name}")
     return 0

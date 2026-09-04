@@ -12,8 +12,8 @@ fetcher = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(fetcher)
 
 
-def _chart(stamps, opens, closes, adjcloses, offset=0):
-    return {
+def _chart(stamps, opens, closes, adjcloses, offset=0, dividends=(), splits=()):
+    chart = {
         "meta": {"gmtoffset": offset},
         "timestamp": list(stamps),
         "indicators": {
@@ -21,6 +21,24 @@ def _chart(stamps, opens, closes, adjcloses, offset=0):
             "adjclose": [{"adjclose": list(adjcloses)}],
         },
     }
+    events = {}
+    if dividends:
+        events["dividends"] = {
+            str(stamp): {"amount": amount, "date": stamp} for stamp, amount in dividends
+        }
+    if splits:
+        events["splits"] = {
+            str(stamp): {
+                "date": stamp,
+                "numerator": numerator,
+                "denominator": denominator,
+                "splitRatio": f"{numerator}:{denominator}",
+            }
+            for stamp, numerator, denominator in splits
+        }
+    if events:
+        chart["events"] = events
+    return chart
 
 
 DAY1, DAY2 = 1_700_000_000, 1_700_086_400   # 2023-11-14, 2023-11-15 UTC
@@ -106,6 +124,56 @@ class ProvenanceTests(unittest.TestCase):
         self.assertIn("DGS3MO", fetcher.FRED_URL)
 
 
+class DistributionTests(unittest.TestCase):
+    """Distributions must line up with the price rows, or the overlay taxes the wrong shares."""
+
+    def test_rows_align_with_price_rows_and_carry_the_unadjusted_close(self) -> None:
+        chart = _chart(
+            [DAY1, DAY2], [100.0, 101.0], [110.0, 111.0], [55.0, 111.0],
+            dividends=[(DAY2, 0.75)],
+        )
+        prices = fetcher.rows_from_chart(chart, date(2030, 1, 1))
+        rows = fetcher.distribution_rows_from_chart(chart, date(2030, 1, 1))
+        self.assertEqual([row[0] for row in rows], [row[0] for row in prices])
+        self.assertEqual([row[1] for row in rows], [110.0, 111.0])
+        self.assertEqual([row[2] for row in rows], [0.0, 0.75])
+
+    def test_a_session_dropped_from_prices_is_dropped_from_distributions_too(self) -> None:
+        chart = _chart([DAY1, DAY2], [1.0, None], [1.0, 2.0], [1.0, 2.0])
+        rows = fetcher.distribution_rows_from_chart(chart, date(2030, 1, 1))
+        self.assertEqual([row[0] for row in rows], [date(2023, 11, 14)])
+
+    def test_a_dividend_on_no_complete_session_is_an_error(self) -> None:
+        chart = _chart([DAY1], [1.0], [1.0], [1.0], dividends=[(DAY2, 0.5)])
+        with self.assertRaisesRegex(ValueError, "no complete session"):
+            fetcher.distribution_rows_from_chart(chart, date(2030, 1, 1))
+
+    def test_a_dividend_dated_today_or_later_is_ignored(self) -> None:
+        chart = _chart([DAY1, DAY2], [1.0, 2.0], [1.0, 2.0], [1.0, 2.0], dividends=[(DAY2, 0.5)])
+        rows = fetcher.distribution_rows_from_chart(chart, date(2023, 11, 15))
+        self.assertEqual(rows, [(date(2023, 11, 14), 1.0, 0.0)])
+
+    def test_a_negative_dividend_is_an_error(self) -> None:
+        chart = _chart([DAY1], [1.0], [1.0], [1.0], dividends=[(DAY1, -0.5)])
+        with self.assertRaisesRegex(ValueError, "invalid dividend"):
+            fetcher.distribution_rows_from_chart(chart, date(2030, 1, 1))
+
+    def test_splits_are_reported_with_their_ratio_in_date_order(self) -> None:
+        chart = _chart([DAY1], [1.0], [1.0], [1.0], splits=[(DAY2, 3, 1), (DAY1, 2, 1)])
+        self.assertEqual(
+            fetcher.splits_from_chart(chart),
+            [{"date": "2023-11-14", "ratio": "2:1"}, {"date": "2023-11-15", "ratio": "3:1"}],
+        )
+
+    def test_no_events_means_no_splits_and_zero_dividends(self) -> None:
+        chart = _chart([DAY1], [1.0], [1.0], [1.0])
+        self.assertEqual(fetcher.splits_from_chart(chart), [])
+        self.assertEqual(fetcher.distribution_rows_from_chart(chart, date(2030, 1, 1)), [(date(2023, 11, 14), 1.0, 0.0)])
+
+    def test_the_methodology_identifier_names_v2(self) -> None:
+        self.assertEqual(fetcher.METHODOLOGY, "yahoo-adjusted-v2+dgs3mo-v1")
+
+
 if __name__ == "__main__":
     unittest.main()
 
@@ -116,17 +184,31 @@ class SnapshotTests(unittest.TestCase):
     PRICES = [["date", "symbol", "tr_open", "tr_close"], ["2024-01-02", "A", "1", "1"]]
     CASH = [["date", "cash_factor"], ["2024-01-02", "1.0001"]]
     COVERAGE = {"A": {"first": "2024-01-02", "last": "2024-01-02", "rows": "1"}}
+    DISTRIBUTIONS = [["date", "symbol", "close", "dividend"], ["2024-01-02", "A", "1", "0"]]
+    SPLITS = {"A": [{"date": "2005-06-09", "ratio": "2:1"}]}
 
     def _write(self, out):
-        return fetcher.write_snapshot(out, self.PRICES, self.CASH, self.COVERAGE)
+        return fetcher.write_snapshot(
+            out, self.PRICES, self.CASH, self.DISTRIBUTIONS, self.COVERAGE, self.SPLITS
+        )
 
     def test_a_snapshot_holds_both_files_and_a_manifest(self) -> None:
         import tempfile
 
         out = Path(tempfile.mkdtemp())
         snapshot = self._write(out)
-        for name in ("market_daily.csv", "cash_daily.csv", "manifest.json"):
+        for name in ("market_daily.csv", "cash_daily.csv", "distributions_daily.csv", "manifest.json"):
             self.assertTrue((snapshot / name).is_file(), name)
+
+    def test_a_snapshot_holds_the_distributions_file_and_records_splits(self) -> None:
+        import json, tempfile
+
+        snapshot = self._write(Path(tempfile.mkdtemp()))
+        self.assertTrue((snapshot / "distributions_daily.csv").is_file())
+        manifest = json.loads((snapshot / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["splits"], self.SPLITS)
+        self.assertEqual(manifest["distribution_rows"], 1)
+        self.assertIn("split-adjusted", manifest["distribution_units"])
 
     def test_the_manifest_records_the_methodology_a_config_must_repeat(self) -> None:
         import json, tempfile
