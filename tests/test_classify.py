@@ -147,6 +147,16 @@ class TaxPolicyAgreementTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "different tax policies"):
             run_classify(dev_dir, val_dir)
 
+    def test_an_empty_string_policy_on_one_side_only_is_refused(self) -> None:
+        # An empty string and an absent field are both falsy, but they are not
+        # the same value: `any(...)` over the pair would miss this, since it
+        # only asks whether either side is truthy.
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", tax_policy_sha256=""), _criteria("validation")
+        )
+        with self.assertRaisesRegex(ValueError, "different tax policies"):
+            run_classify(dev_dir, val_dir)
+
 
 class ProfileLookupTests(unittest.TestCase):
     _dirs = ClassifyGuardTests._dirs

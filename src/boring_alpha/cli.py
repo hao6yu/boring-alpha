@@ -191,7 +191,7 @@ def run_classify(development_dir: Path, validation_dir: Path) -> int:
     # A tax policy is part of what was scored. Two sweeps scored under different
     # policies, or one scored and one not, cannot share a verdict.
     policies = (development.get("tax_policy_sha256"), validation.get("tax_policy_sha256"))
-    if any(policies) and policies[0] != policies[1]:
+    if (policies[0] is not None or policies[1] is not None) and policies[0] != policies[1]:
         raise ValueError(
             "refusing to classify different tax policies: tax_policy_sha256 is "
             f"{policies[0]!r} in the development sweep and {policies[1]!r} in the "
