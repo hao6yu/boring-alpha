@@ -6,19 +6,51 @@ import argparse
 import json
 from pathlib import Path
 import sys
+import tempfile
 
 from boring_alpha.backtest import Backtester
-from boring_alpha.config import DATASET_END, UNBOUNDED_PERIOD, AppConfig, load_config
+from boring_alpha.config import (
+    DATASET_END,
+    UNBOUNDED_PERIOD,
+    AppConfig,
+    load_config,
+    load_tax_policy,
+)
 from boring_alpha.data import load_market_data
+from boring_alpha.data.distributions import load_distributions
 from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
-from boring_alpha.report import READABLE_SCHEMAS, write_report
+from boring_alpha.report import (
+    ARTIFACT_SCHEMA,
+    READABLE_SCHEMAS,
+    code_fingerprint,
+    json_text,
+    write_once,
+    write_report,
+)
 from boring_alpha.criteria import Verdict
 from boring_alpha.profiles import gating_benchmark, profile_for
 from boring_alpha.signals import CashAllocation, MultiAssetTrend
 from boring_alpha.sweep import run_sweep, write_sweep_report
+from boring_alpha.tax import OVERLAY_VERSION, policy_sha256, run_scenarios
+from boring_alpha.tax.reconstruct import (
+    gunzip_to,
+    initial_cash_from,
+    market_data_from_archive,
+    read_manifest,
+    reconstruct_result,
+    run_files,
+    symbols_from,
+)
 
-__all__ = ["SealedRunError", "check_evaluation_gates", "build_parser", "main", "run_backtest"]
+__all__ = [
+    "SealedRunError",
+    "check_evaluation_gates",
+    "build_parser",
+    "main",
+    "run_aftertax",
+    "run_backtest",
+]
 
 
 def _banners(config: AppConfig) -> list[str]:
@@ -213,6 +245,102 @@ def run_classify(development_dir: Path, validation_dir: Path) -> int:
     return 0
 
 
+def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | None = None) -> int:
+    """Score an existing sweep after tax under a policy file (spec §7).
+
+    Runs are rebuilt from the archived equity curves and trade ledgers and the
+    archived prices and cash. Distributions come from `--distributions` (with the
+    snapshot manifest beside it) or, when the sweep archived them, from the sweep
+    itself. The output is named by every input including the overlay's code
+    fingerprint, so a corrected overlay produces a separately identified result
+    and identical inputs are idempotent.
+    """
+
+    manifest = read_manifest(sweep_dir)
+    symbols = symbols_from(manifest)
+    initial_cash = initial_cash_from(manifest)
+    policy = load_tax_policy(policy_path, symbols)
+    data = market_data_from_archive(sweep_dir)
+
+    if distributions_path is not None:
+        manifest_path = distributions_path.parent / "manifest.json"
+        if not manifest_path.is_file():
+            raise ValueError(f"no manifest.json beside {distributions_path}; a v2 snapshot is required")
+        snapshot = json.loads(manifest_path.read_text(encoding="utf-8"))
+        table = load_distributions(distributions_path, manifest_path=manifest_path)
+        block = {
+            "methodology": snapshot.get("methodology"),
+            "created_at": snapshot.get("created_at"),
+            "splits": table.splits,
+            "sha256": table.sha256,
+        }
+    else:
+        archived = sweep_dir / "input_distributions.csv.gz"
+        block = manifest.get("distributions_manifest")
+        if not archived.is_file() or block is None:
+            raise ValueError(
+                f"{sweep_dir} archived no distributions; pass --distributions with the "
+                "snapshot's distributions_daily.csv"
+            )
+        with tempfile.TemporaryDirectory() as directory:
+            unpacked = Path(directory) / "distributions_daily.csv"
+            gunzip_to(archived, unpacked)
+            table = load_distributions(unpacked, manifest_block=block)
+        # The archive holds the truncated rows; the identity is the source file's,
+        # recorded in the block, so results match the in-sweep tax.json exactly.
+        table.sha256 = block["sha256"]
+    table = table.through(data.dates[-1])
+    table.require_coverage(data, symbols)
+
+    code_hash = code_fingerprint()
+    runs: dict[str, dict] = {}
+    for name, equity_path, trades_path in run_files(sweep_dir):
+        result = reconstruct_result(name, equity_path, trades_path, initial_cash)
+        runs[name] = run_scenarios(
+            result, data, table, policy, initial_cash=initial_cash, code_sha256=code_hash
+        )
+
+    policy_hash = policy_sha256(policy)
+    output = sweep_dir / f"tax-{policy_hash[:12]}-{table.sha256[:12]}-{code_hash[:12]}.json"
+    write_once(
+        output,
+        json_text(
+            {
+                "artifact_schema": ARTIFACT_SCHEMA,
+                "sweep_id": manifest["sweep_id"],
+                "strategy_id": manifest["strategy_id"],
+                "code_sha256": code_hash,
+                "source": "aftertax",
+                "tax_policy_sha256": policy_hash,
+                "distributions_sha256": table.sha256,
+                "distributions_manifest": block,
+                "overlay_version": OVERLAY_VERSION,
+                "runs": runs,
+            }
+        ),
+    )
+
+    print(f"BoringAlpha aftertax {manifest['sweep_id']} ({manifest['strategy_id']}), policy {policy_hash[:12]}")
+    print(f"{'Run':<24}{'Pre-tax CAGR':>14}{'After-tax worst':>17}{'Worst scenario':>24}{'Best':>10}")
+    for name, scenarios in runs.items():
+        worst_key = min(scenarios, key=lambda key: scenarios[key]["metrics"]["after_tax_cagr"])
+        best_key = max(scenarios, key=lambda key: scenarios[key]["metrics"]["after_tax_cagr"])
+        worst = scenarios[worst_key]["metrics"]
+        print(
+            f"{name:<24}{worst['pre_tax_cagr']:>14.4f}{worst['after_tax_cagr']:>17.4f}"
+            f"{worst_key:>24}{scenarios[best_key]['metrics']['after_tax_cagr']:>10.4f}"
+        )
+        checks = scenarios[worst_key]["identity_checks"]
+        failed = [
+            check for check in ("share_identity_passed", "income_plus_gain_passed", "implied_price_check_passed")
+            if not checks[check]
+        ]
+        if failed:
+            print(f"  identity checks failed for {name}: {', '.join(failed)}")
+    print(f"Written: {output}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="boring-alpha", description="No free lunch. No magic backtests."
@@ -241,6 +369,21 @@ def build_parser() -> argparse.ArgumentParser:
     )
     classify_parser.add_argument("development", type=Path, help="development sweep directory")
     classify_parser.add_argument("validation", type=Path, help="validation sweep directory")
+
+    aftertax = subparsers.add_parser(
+        "aftertax", help="score an existing sweep after tax under a policy file"
+    )
+    aftertax.add_argument("sweep", type=Path, help="sweep directory to re-score")
+    aftertax.add_argument(
+        "--policy", type=Path, required=True, help="TOML file holding only a [tax] table"
+    )
+    aftertax.add_argument(
+        "--distributions",
+        type=Path,
+        default=None,
+        help="distributions_daily.csv of a v2 snapshot (manifest.json beside it); "
+        "omit to use the sweep's own archived distributions",
+    )
     return parser
 
 
@@ -253,6 +396,8 @@ def main() -> None:
             raise SystemExit(run_sweep_command(args.config, unseal_reason=args.unseal))
         if args.command == "classify":
             raise SystemExit(run_classify(args.development, args.validation))
+        if args.command == "aftertax":
+            raise SystemExit(run_aftertax(args.sweep, args.policy, args.distributions))
     except (OSError, RuntimeError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(2) from exc

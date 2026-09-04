@@ -176,6 +176,34 @@ Three configuration rules are enforced rather than assumed: `report.output_dir`
 and `evaluation.period` are required, and `backtest.start` must select the first
 session of a month, so use the first calendar day of the month.
 
+## After tax
+
+A configuration may carry a `[tax]` table (see `configs/tax_policy.toml` for
+the stylized BA-001 policy). When it does, every run in a sweep is also scored
+after tax by a pure overlay over the pre-tax artifacts: fills are converted to
+real shares, distributions open their own lots, sales close lots by method,
+wash sales are adjusted, and each calendar year is taxed with
+character-retaining carryovers under an after-tax NAV convention (the pre-tax
+path is rescaled at each year end by the tax paid). Three inputs are declared
+rather than known — lot selection, a commodity pool's tax character, and the
+qualified fraction of equity distributions — so the overlay runs a fixed grid
+of eight scenarios and any after-tax conclusion must hold under all of them.
+Results land in `tax.json` beside `criteria.json`, with a summary block in
+`summary.md`. Drawdown is never recomputed after tax.
+
+Any archived sweep can be re-scored without re-running it:
+
+```bash
+boring-alpha aftertax experiments/BA-001/sweeps/<id> --policy configs/tax_policy.toml \
+    --distributions data/current/distributions_daily.csv
+```
+
+The output is named by the policy, the distributions and the overlay's code
+fingerprint, so a corrected overlay produces a separately identified file and
+identical inputs are idempotent. Rates in the checked-in policy are a
+federal-only stylized scenario, not anyone's bracket; real rates belong in an
+untracked local copy.
+
 ## Real CSV contract
 
 The real-data adapter accepts two CSV files. Prices use total-return-adjusted
