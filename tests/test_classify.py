@@ -23,6 +23,7 @@ def _criteria(period: str, **overrides) -> dict:
     payload = {
         "artifact_schema": 5,
         "strategy_id": "X-001",
+        "strategy_spec_sha256": "e" * 64,
         "code_sha256": "a" * 64,
         "evaluation_period": period,
         "passed": True,
@@ -82,3 +83,37 @@ class ClassifyGuardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class VerdictInputGuardTests(unittest.TestCase):
+    """Absence proves nothing, so a missing identity field is refused too."""
+
+    _dirs = ClassifyGuardTests._dirs
+
+    def test_a_missing_strategy_spec_hash_is_refused(self) -> None:
+        development = _criteria("development")
+        del development["strategy_spec_sha256"]
+        dev_dir, val_dir = self._dirs(development, _criteria("validation"))
+        with self.assertRaisesRegex(ValueError, "records no strategy_spec_sha256"):
+            run_classify(dev_dir, val_dir)
+
+    def test_a_different_strategy_definition_is_refused(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development"), _criteria("validation", strategy_spec_sha256="f" * 64)
+        )
+        with self.assertRaisesRegex(ValueError, "different strategy definitions"):
+            run_classify(dev_dir, val_dir)
+
+    def test_a_stale_artifact_schema_is_refused(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", artifact_schema=4), _criteria("validation", artifact_schema=4)
+        )
+        with self.assertRaisesRegex(ValueError, "artifact schema 4"):
+            run_classify(dev_dir, val_dir)
+
+    def test_a_missing_artifact_schema_is_refused(self) -> None:
+        development = _criteria("development")
+        del development["artifact_schema"]
+        dev_dir, val_dir = self._dirs(development, _criteria("validation"))
+        with self.assertRaisesRegex(ValueError, "records no artifact_schema"):
+            run_classify(dev_dir, val_dir)

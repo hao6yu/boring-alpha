@@ -68,7 +68,7 @@ class EvaluationPeriodTests(unittest.TestCase):
         self.assertIsNone(config.evaluation.end)
 
     def test_backtest_window_outside_the_period_is_rejected(self) -> None:
-        with self.assertRaisesRegex(ValueError, "outside the development period"):
+        with self.assertRaisesRegex(ValueError, "must cover the development period exactly"):
             _load(CONFIG.replace('end = "2017-12-31"\n[evaluation]', 'end = "2018-06-30"\n[evaluation]'))
 
     def test_unknown_period_name_is_rejected(self) -> None:

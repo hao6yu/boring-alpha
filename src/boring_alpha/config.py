@@ -4,6 +4,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date, datetime
+import hashlib
+import json
+import math
 from pathlib import Path
 import tomllib
 
@@ -75,6 +78,7 @@ class AppConfig:
     report: ReportConfig
     quality_overrides: dict[str, float]
     clusters: dict[str, tuple[str, ...]]
+    strategy_spec_sha256: str
     path: Path
     raw_bytes: bytes
 
@@ -135,6 +139,41 @@ def _require(section: dict[str, object], table: str, key: str) -> object:
     return section[key]
 
 
+def _finite(value: float, field: str) -> float:
+    """Reject NaN and infinity, which slip past every `<= 0` guard."""
+
+    if not math.isfinite(value):
+        raise ValueError(f"{field} must be a finite number, got {value!r}")
+    return value
+
+
+def _strategy_spec_hash(
+    strategy: StrategyConfig,
+    portfolio: PortfolioConfig,
+    execution: ExecutionConfig,
+    data: DataConfig,
+) -> str:
+    """Fingerprint of what the strategy IS, independent of the window it ran over.
+
+    Two sweeps may only be combined into a verdict if this matches. The
+    evaluation window is deliberately excluded — development and validation
+    differ in exactly that and nothing else. Symbols are sorted because
+    reordering the universe does not change the strategy.
+    """
+
+    spec = {
+        "strategy_id": strategy.strategy_id,
+        "symbols": sorted(strategy.symbols),
+        "lookback_months": strategy.lookback_months,
+        "sleeve_weight": strategy.sleeve_weight,
+        "initial_cash": portfolio.initial_cash,
+        "cost_bps": execution.cost_bps,
+        "data_source": data.source,
+    }
+    canonical = json.dumps(spec, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
 def _parse_date(value: object, field: str) -> date:
     if isinstance(value, datetime):
         raise ValueError(f"{field} must be an ISO date, not a datetime")
@@ -175,16 +214,18 @@ def load_config(path: str | Path) -> AppConfig:
         name=str(_require(strategy_raw, "strategy", "name")).strip(),
         symbols=tuple(str(symbol).upper() for symbol in symbols_raw),
         lookback_months=int(_require(strategy_raw, "strategy", "lookback_months")),
-        sleeve_weight=float(_require(strategy_raw, "strategy", "sleeve_weight")),
+        sleeve_weight=_finite(float(_require(strategy_raw, "strategy", "sleeve_weight")), "strategy.sleeve_weight"),
     )
 
     portfolio_raw = raw.get("portfolio", {})
     portfolio = PortfolioConfig(
-        initial_cash=float(_require(portfolio_raw, "portfolio", "initial_cash"))
+        initial_cash=_finite(float(_require(portfolio_raw, "portfolio", "initial_cash")), "portfolio.initial_cash")
     )
 
     execution_raw = raw.get("execution", {})
-    execution = ExecutionConfig(cost_bps=float(_require(execution_raw, "execution", "cost_bps")))
+    execution = ExecutionConfig(
+        cost_bps=_finite(float(_require(execution_raw, "execution", "cost_bps")), "execution.cost_bps")
+    )
 
     data_raw = raw.get("data", {})
     source = str(_require(data_raw, "data", "source")).lower()
@@ -199,7 +240,7 @@ def load_config(path: str | Path) -> AppConfig:
         start=_parse_date(data_raw["start"], "data.start") if "start" in data_raw else None,
         end=_parse_date(data_raw["end"], "data.end") if "end" in data_raw else None,
         seed=int(data_raw.get("seed", 0)),
-        annual_cash_rate=float(data_raw.get("annual_cash_rate", 0.0)),
+        annual_cash_rate=_finite(float(data_raw.get("annual_cash_rate", 0.0)), "data.annual_cash_rate"),
         regime=str(data_raw.get("regime", "trending")).lower(),
         prices_path=(
             _resolve_path(data_raw["prices_path"], root, "data.prices_path")
@@ -240,6 +281,7 @@ def load_config(path: str | Path) -> AppConfig:
         report=report,
         quality_overrides=dict(raw.get("quality", {})),
         clusters=_load_clusters(raw.get("clusters", {}), strategy.symbols),
+        strategy_spec_sha256=_strategy_spec_hash(strategy, portfolio, execution, data),
         path=config_path,
         raw_bytes=raw_bytes,
     )
@@ -297,10 +339,19 @@ def _load_evaluation(
     end = None if raw_end == DATASET_END else _parse_date(raw_end, "period end")
     if end is not None and start > end:
         raise ValueError(f"{strategy_id} {period} period starts after it ends")
-    if backtest.start < start or (end is not None and backtest.end > end):
+    # An evidence period must be run whole. Accepting a narrower window would let
+    # a favourable sub-period be reported under the period's name, which is the
+    # cherry-picking the charter's protocol exists to prevent. A period ending at
+    # DATASET_END has no registered end to match, so only its start is fixed.
+    if backtest.start != start:
         raise ValueError(
-            f"backtest window {backtest.start}..{backtest.end} falls outside the "
-            f"{period} period {start}..{end or DATASET_END}"
+            f"a {period} run must start on the {period} period start {start}, "
+            f"not {backtest.start}"
+        )
+    if end is not None and backtest.end != end:
+        raise ValueError(
+            f"a {period} run must cover the {period} period exactly "
+            f"({start}..{end}); got {backtest.start}..{backtest.end}"
         )
     return EvaluationConfig(period, start, end, review_dir)
 

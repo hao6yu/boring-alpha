@@ -85,6 +85,26 @@ def code_fingerprint() -> str:
     return digest.hexdigest()
 
 
+def write_once_bytes(path: Path, content: bytes) -> None:
+    if path.exists():
+        if path.read_bytes() != content:
+            raise RuntimeError(f"refusing to overwrite changed experiment artifact: {path}")
+        return
+    path.write_bytes(content)
+
+
+def equity_csv(result: BacktestResult) -> str:
+    return _equity_csv(result)
+
+
+def trades_csv(result: BacktestResult) -> str:
+    return _trades_csv(result)
+
+
+def decisions_json(result: BacktestResult) -> str:
+    return json_text([asdict(snapshot) for snapshot in result.decisions])
+
+
 def _equity_csv(result: BacktestResult) -> str:
     output = io.StringIO()
     writer = csv.writer(output, lineterminator="\n")

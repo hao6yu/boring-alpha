@@ -12,7 +12,7 @@ from boring_alpha.config import DATASET_END, UNBOUNDED_PERIOD, AppConfig, load_c
 from boring_alpha.data import load_market_data
 from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
-from boring_alpha.report import write_report
+from boring_alpha.report import ARTIFACT_SCHEMA, write_report
 from boring_alpha.criteria import Verdict, classify
 from boring_alpha.signals import CashAllocation, FixedAllocation, MultiAssetTrend
 from boring_alpha.sweep import run_sweep, write_sweep_report
@@ -158,21 +158,34 @@ def run_classify(development_dir: Path, validation_dir: Path) -> int:
     development = _read_criteria(development_dir, "development")
     validation = _read_criteria(validation_dir, "validation")
 
-    # A verdict combining two unrelated sweeps would be confidently wrong, so the
-    # inputs must agree on everything except the window they cover.
+    # A verdict combining two unrelated sweeps would be confidently wrong. The
+    # inputs must agree on everything except the window they cover, and a field
+    # that is merely absent proves nothing — so absence is refused too, rather
+    # than skipped.
     for field, message in (
+        ("artifact_schema", "different artifact schemas"),
         ("strategy_id", "different strategies"),
+        ("strategy_spec_sha256", "different strategy definitions"),
         ("code_sha256", "different code revisions"),
-        ("lookback_months", "different lookbacks"),
-        ("cost_bps", "different cost assumptions"),
     ):
-        if field in development and field in validation:
-            if development[field] != validation[field]:
+        for label, criteria in (("development", development), ("validation", validation)):
+            if field not in criteria:
                 raise ValueError(
-                    f"refusing to classify {message}: "
-                    f"{field} is {development[field]!r} in the development sweep and "
-                    f"{validation[field]!r} in the validation sweep"
+                    f"the {label} sweep records no {field}; it predates the checks that "
+                    "make a verdict trustworthy. Re-run the sweep on current code."
                 )
+        if development[field] != validation[field]:
+            raise ValueError(
+                f"refusing to classify {message}: "
+                f"{field} is {development[field]!r} in the development sweep and "
+                f"{validation[field]!r} in the validation sweep"
+            )
+    if development["artifact_schema"] != ARTIFACT_SCHEMA:
+        raise ValueError(
+            f"these sweeps use artifact schema {development['artifact_schema']}, but this "
+            f"code writes schema {ARTIFACT_SCHEMA}. Re-run them rather than comparing "
+            "artifacts across schema versions."
+        )
     verdict = classify(development["variants"], validation["variants"])
 
     print(f"BA-001 classification: {verdict.value.upper()}")

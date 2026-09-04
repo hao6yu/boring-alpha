@@ -176,13 +176,18 @@ class SweepReproducibilityTests(SweepTests):
     def test_two_independent_recomputations_produce_identical_artifacts(self) -> None:
         """Content addressing is only honest if the content is deterministic."""
 
+        def snapshot(directory: Path) -> dict[str, bytes]:
+            return {
+                str(path.relative_to(directory)): path.read_bytes()
+                for path in sorted(directory.rglob("*"))
+                if path.is_file() and path.name != "provenance.jsonl"
+            }
+
         first_sweep = run_sweep(self.config, self.data)
         first_id, sweep_dir = write_sweep_report(self.config, self.data, first_sweep)
-        written = {
-            path.name: path.read_text(encoding="utf-8")
-            for path in sweep_dir.iterdir()
-            if path.name != "provenance.jsonl"
-        }
+        written = snapshot(sweep_dir)
+        self.assertIn("variants/base/strategy_equity.csv", written)
+        self.assertIn("input_prices.csv.gz", written)
 
         reloaded = load_market_data(self.config)
         second_sweep = run_sweep(self.config, reloaded)
@@ -190,5 +195,4 @@ class SweepReproducibilityTests(SweepTests):
 
         self.assertEqual(first_id, second_id)
         self.assertEqual(sweep_dir, second_dir)
-        for name, content in written.items():
-            self.assertEqual((second_dir / name).read_text(encoding="utf-8"), content, name)
+        self.assertEqual(snapshot(second_dir), written)

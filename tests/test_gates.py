@@ -191,7 +191,7 @@ class SealedReviewGateTests(GateTests):
             CONFIG.replace('start = "2022-01-01"\nend = "2023-12-31"', 'start = "2021-01-01"\nend = "2023-12-31"'),
             encoding="utf-8",
         )
-        with self.assertRaisesRegex(ValueError, "outside the sealed period"):
+        with self.assertRaisesRegex(ValueError, "must start on the sealed period start"):
             self._run(unseal_reason="ready")
 
     def test_exploratory_run_is_announced_on_the_console(self) -> None:

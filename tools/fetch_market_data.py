@@ -24,15 +24,35 @@ This assumes the adjustment applies uniformly within the session. That is the
 usual convention and it is an assumption; the open-gap plausibility check
 exists to catch it failing.
 
-Cash: FRED series DTB3, the 3-month Treasury bill secondary market rate,
-annualised in percent. Converted to a one-session growth factor as
+Cash: FRED series DGS3MO, the 3-month Treasury constant maturity rate, quoted
+on an INVESTMENT basis. An earlier version of this script used DTB3, which is
+quoted on a bank DISCOUNT basis: it is computed against par value on a 360-day
+year and is therefore not a rate of return on the money invested. Treating a
+discount quote as an investment return understates cash, which flatters any
+strategy measured against it. The two differ by roughly 0.1 to 0.2 percentage
+points at current levels — small, but wrong in the direction that matters for a
+rule whose whole signal is "does this beat cash".
+
+Converted to a one-session growth factor as
 
     cash_factor[t] = (1 + rate[t-1] / 100) ** (1 / 252)
 
 using the most recent observation STRICTLY BEFORE session t. Cash carried
 overnight into t earns a rate that was known before t opened; using the
-same-day rate would be a small lookahead. 252 is the conventional session count
-and is an approximation, not a calendar.
+same-day rate would be a small lookahead. This treats the quoted yield as an
+effective annual rate, which is a convention: a bond-equivalent yield is a
+simple annualisation, so compounding it this way slightly understates cash.
+That error is conservative for a strategy that must beat cash. 252 is the
+conventional session count and is an approximation, not a calendar.
+
+Incomplete sessions: a session dated today is still trading, so its close is
+provisional and will change. Such rows are dropped. Without this a run made
+during market hours would embed a price that no longer exists tomorrow, and the
+data hash would silently disagree with itself.
+
+Both files are written only after every download succeeds, and via a temporary
+file that is renamed into place. A failure part-way through therefore leaves
+the previous pair intact rather than pairing new prices with stale cash.
 
 Usage:  python tools/fetch_market_data.py [--out DIR]
 """
@@ -41,7 +61,8 @@ from __future__ import annotations
 
 import argparse
 import csv
-from datetime import date, timedelta
+import math
+from datetime import date, datetime, timedelta, timezone
 import json
 from pathlib import Path
 import ssl
@@ -54,7 +75,8 @@ CHART_URL = (
     "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
     "?period1=0&period2=9999999999&interval=1d&events=div%2Csplit"
 )
-FRED_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTB3"
+FRED_SERIES = "DGS3MO"
+FRED_URL = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={FRED_SERIES}"
 SESSIONS_PER_YEAR = 252
 USER_AGENT = "Mozilla/5.0 (compatible; BoringAlpha research)"
 
@@ -95,11 +117,13 @@ def _get(url: str) -> bytes:
         return response.read()
 
 
-def fetch_prices(symbol: str) -> list[tuple[date, float, float]]:
-    """Adjusted (date, tr_open, tr_close) rows for one symbol."""
+def rows_from_chart(result: dict, today: date) -> list[tuple[date, float, float]]:
+    """Adjusted (date, tr_open, tr_close) rows from one parsed chart response.
 
-    payload = json.loads(_get(CHART_URL.format(symbol=symbol)))
-    result = payload["chart"]["result"][0]
+    Pure, so the adjustment and the incomplete-session rule can be tested
+    without a network call.
+    """
+
     offset = result["meta"].get("gmtoffset", 0)
     quote = result["indicators"]["quote"][0]
     adjusted = result["indicators"]["adjclose"][0]["adjclose"]
@@ -107,13 +131,33 @@ def fetch_prices(symbol: str) -> list[tuple[date, float, float]]:
     rows: list[tuple[date, float, float]] = []
     for index, stamp in enumerate(result["timestamp"]):
         open_, close, adjclose = quote["open"][index], quote["close"][index], adjusted[index]
-        if None in (open_, close, adjclose) or close <= 0.0:
+        if None in (open_, close, adjclose):
+            continue
+        if not all(math.isfinite(v) for v in (open_, close, adjclose)):
+            continue
+        if close <= 0.0 or open_ <= 0.0 or adjclose <= 0.0:
             continue
         # The exchange's local calendar date, not UTC's.
-        day = date.fromtimestamp(stamp + offset)
+        day = (datetime.fromtimestamp(stamp, tz=timezone.utc) + timedelta(seconds=offset)).date()
+        if day >= today:
+            continue
         factor = adjclose / close
         rows.append((day, open_ * factor, adjclose))
     return rows
+
+
+def exchange_today(offset_seconds: int) -> date:
+    """The exchange's current calendar date; anything on it is still trading."""
+
+    return (datetime.now(timezone.utc) + timedelta(seconds=offset_seconds)).date()
+
+
+def fetch_prices(symbol: str) -> list[tuple[date, float, float]]:
+    """Adjusted (date, tr_open, tr_close) rows for one symbol."""
+
+    payload = json.loads(_get(CHART_URL.format(symbol=symbol)))
+    result = payload["chart"]["result"][0]
+    return rows_from_chart(result, exchange_today(result["meta"].get("gmtoffset", 0)))
 
 
 def fetch_cash_rates() -> list[tuple[date, float]]:
@@ -122,10 +166,13 @@ def fetch_cash_rates() -> list[tuple[date, float]]:
     text = _get(FRED_URL).decode("utf-8")
     rows: list[tuple[date, float]] = []
     for row in csv.DictReader(text.splitlines()):
-        raw = (row.get("DTB3") or "").strip()
+        raw = (row.get(FRED_SERIES) or "").strip()
         if raw in ("", "."):
             continue
-        rows.append((date.fromisoformat(row["observation_date"]), float(raw)))
+        rate = float(raw)
+        if not math.isfinite(rate):
+            continue
+        rows.append((date.fromisoformat(row["observation_date"]), rate))
     return sorted(rows)
 
 
@@ -147,6 +194,16 @@ def cash_factors(sessions: list[date], rates: list[tuple[date, float]]) -> dict[
     return factors
 
 
+def _write_atomically(path: Path, rows: list[list[str]]) -> Path:
+    """Write via a temporary file and rename, so a crash cannot truncate the old one."""
+
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with temporary.open("w", newline="", encoding="utf-8") as handle:
+        csv.writer(handle, lineterminator="\n").writerows(rows)
+    temporary.replace(path)
+    return path
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--out", type=Path, default=Path("data"), help="output directory")
@@ -166,26 +223,33 @@ def main() -> int:
         print(f"{symbol:4} {rows[0][0]} .. {rows[-1][0]}  {len(rows):5} rows")
         bars.extend((day, symbol, tr_open, tr_close) for day, tr_open, tr_close in rows)
 
-    bars.sort(key=lambda row: (row[0], row[1]))
-    prices_path = args.out / "market_daily.csv"
-    with prices_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(["date", "symbol", "tr_open", "tr_close"])
-        for day, symbol, tr_open, tr_close in bars:
-            writer.writerow([day, symbol, f"{tr_open:.10f}", f"{tr_close:.10f}"])
+    # Everything is fetched before anything is written, so a failure here cannot
+    # leave fresh prices paired with a stale cash file.
+    try:
+        rates = fetch_cash_rates()
+    except (urllib.error.URLError, ValueError, TimeoutError) as exc:
+        print(f"error: {FRED_SERIES}: {type(exc).__name__}: {exc}", file=sys.stderr)
+        return 2
+    if not rates:
+        print(f"error: {FRED_SERIES}: no usable observations", file=sys.stderr)
+        return 2
+    print(f"{FRED_SERIES} {rates[0][0]} .. {rates[-1][0]}  {len(rates):5} observations")
 
-    rates = fetch_cash_rates()
-    print(f"DTB3 {rates[0][0]} .. {rates[-1][0]}  {len(rates):5} observations")
+    bars.sort(key=lambda row: (row[0], row[1]))
     sessions = sorted({day for day, _, _, _ in bars})
     factors = cash_factors(sessions, rates)
-    cash_path = args.out / "cash_daily.csv"
-    with cash_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(["date", "cash_factor"])
-        for session in sessions:
-            writer.writerow([session, f"{factors[session]:.12f}"])
 
-    print(f"\nwrote {prices_path} ({len(bars)} bars)")
+    price_rows = [["date", "symbol", "tr_open", "tr_close"]]
+    price_rows += [
+        [str(day), symbol, f"{tr_open:.10f}", f"{tr_close:.10f}"]
+        for day, symbol, tr_open, tr_close in bars
+    ]
+    cash_rows = [["date", "cash_factor"]]
+    cash_rows += [[str(s), f"{factors[s]:.12f}"] for s in sessions]
+
+    prices_path = _write_atomically(args.out / "market_daily.csv", price_rows)
+    cash_path = _write_atomically(args.out / "cash_daily.csv", cash_rows)
+    print(f"\nwrote {prices_path} ({len(bars)} bars, through {sessions[-1]})")
     print(f"wrote {cash_path} ({len(sessions)} sessions)")
     return 0
 

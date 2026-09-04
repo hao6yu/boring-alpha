@@ -8,8 +8,11 @@ checks from becoming a menu of results to choose from after the fact.
 
 from __future__ import annotations
 
+import csv
 from dataclasses import dataclass, field
+import gzip
 import hashlib
+import io
 from pathlib import Path
 
 from boring_alpha.backtest import Backtester
@@ -34,9 +37,13 @@ from boring_alpha.report import (
     ARTIFACT_SCHEMA,
     append_provenance,
     code_fingerprint,
+    decisions_json,
+    equity_csv,
     json_text,
     run_warnings,
+    trades_csv,
     write_once,
+    write_once_bytes,
 )
 from boring_alpha.signals import (
     CashAllocation,
@@ -63,6 +70,7 @@ class SweepResult:
     sharpe_interval: dict[str, float]
     warnings: tuple[str, ...] = ()
     grid: dict[str, str] = field(default_factory=dict)
+    runs: dict[str, tuple] = field(default_factory=dict)
 
 
 def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
@@ -173,6 +181,7 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         top_sleeve=top_sleeve,
         exposure_matched=calculate_metrics(matched, data),
         cash=cash_metrics,
+        runs={**runs, "exposure_matched": (matched, cash)},
         sharpe_interval=sharpe_difference_interval(
             excess_return_series(base_strategy, data),
             excess_return_series(base_static, data),
@@ -283,6 +292,32 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _price_rows(data: MarketData) -> list[list[str]]:
+    rows = [["date", "symbol", "tr_open", "tr_close"]]
+    for day in data.dates:
+        for symbol in sorted(data.by_date[day]):
+            bar = data.by_date[day][symbol]
+            rows.append([day.isoformat(), symbol, repr(bar.open), repr(bar.close)])
+    return rows
+
+
+def _cash_rows(data: MarketData) -> list[list[str]]:
+    return [["date", "cash_factor"]] + [
+        [day.isoformat(), repr(data.cash_factors[day])] for day in data.dates
+    ]
+
+
+def _gzip_csv(rows: list[list[str]]) -> bytes:
+    """Deterministic gzip: mtime zeroed so the same data yields the same bytes."""
+
+    text = io.StringIO()
+    csv.writer(text, lineterminator="\n").writerows(rows)
+    raw = io.BytesIO()
+    with gzip.GzipFile(fileobj=raw, mode="wb", mtime=0) as handle:
+        handle.write(text.getvalue().encode("utf-8"))
+    return raw.getvalue()
+
+
 def write_sweep_report(
     config: AppConfig,
     data: MarketData,
@@ -334,6 +369,7 @@ def write_sweep_report(
                 "artifact_schema": ARTIFACT_SCHEMA,
                 "sweep_id": sweep_id,
                 "strategy_id": config.strategy.strategy_id,
+                "strategy_spec_sha256": config.strategy_spec_sha256,
                 "code_sha256": code_hash,
                 "lookback_months": config.strategy.lookback_months,
                 "cost_bps": config.execution.cost_bps,
@@ -359,5 +395,23 @@ def write_sweep_report(
         ),
     )
     write_once(sweep_dir / "summary.md", _summary(config, sweep))
+
+    # Principle 6 asks for decisions, trades and equity curves, not only
+    # aggregates. A sweep is eleven runs; each keeps its own evidence.
+    for name, (strategy, static) in sweep.runs.items():
+        variant_dir = sweep_dir / "variants" / name
+        variant_dir.mkdir(parents=True, exist_ok=True)
+        write_once(variant_dir / "strategy_equity.csv", equity_csv(strategy))
+        write_once(variant_dir / "strategy_trades.csv", trades_csv(strategy))
+        write_once(variant_dir / "strategy_decisions.json", decisions_json(strategy))
+        write_once(variant_dir / "benchmark_equity.csv", equity_csv(static))
+        write_once(variant_dir / "benchmark_trades.csv", trades_csv(static))
+
+    # A data hash proves the inputs changed; it does not let you reproduce the
+    # old run. Downloaded history gets revised, so the dataset the sweep
+    # actually saw is stored beside its results.
+    write_once_bytes(sweep_dir / "input_prices.csv.gz", _gzip_csv(_price_rows(data)))
+    write_once_bytes(sweep_dir / "input_cash.csv.gz", _gzip_csv(_cash_rows(data)))
+
     append_provenance(sweep_dir, unseal_reason)
     return sweep_id, sweep_dir

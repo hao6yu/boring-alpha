@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from bisect import bisect_left, bisect_right
 import calendar
+import math
 from collections import defaultdict
 from datetime import date
 import hashlib
@@ -26,6 +27,9 @@ class MarketData:
         by_date: dict[date, dict[str, PriceBar]] = defaultdict(dict)
         symbol_dates: dict[str, list[date]] = defaultdict(list)
         for bar in bars:
+            # NaN fails every ordered comparison, so `<= 0` alone lets it through.
+            if not (math.isfinite(bar.open) and math.isfinite(bar.close)):
+                raise ValueError(f"price for {bar.symbol} on {bar.date} is not a finite number")
             if bar.open <= 0.0 or bar.close <= 0.0:
                 raise ValueError(f"non-positive price for {bar.symbol} on {bar.date}")
             if bar.symbol in by_date[bar.date]:
@@ -48,6 +52,8 @@ class MarketData:
             factor = self.cash_factors.get(day)
             if factor is None:
                 raise ValueError(f"missing cash factor for {day}")
+            if not math.isfinite(factor):
+                raise ValueError(f"cash factor on {day} is not a finite number")
             if factor <= 0.0:
                 raise ValueError(f"cash factor must be positive on {day}")
 
