@@ -27,11 +27,11 @@ def _json_default(value: object) -> str:
     raise TypeError(f"cannot encode {type(value).__name__}")
 
 
-def _json(value: Any) -> str:
+def json_text(value: Any) -> str:
     return json.dumps(value, indent=2, sort_keys=True, default=_json_default) + "\n"
 
 
-def _write_once(path: Path, content: str) -> None:
+def write_once(path: Path, content: str) -> None:
     if path.exists():
         if path.read_text(encoding="utf-8") != content:
             raise RuntimeError(f"refusing to overwrite changed experiment artifact: {path}")
@@ -76,7 +76,7 @@ def git_provenance(root: Path, code_path: Path | None = None) -> dict[str, objec
     }
 
 
-def _code_fingerprint() -> str:
+def code_fingerprint() -> str:
     package_root = Path(__file__).resolve().parent
     digest = hashlib.sha256()
     for source_path in sorted(package_root.rglob("*.py")):
@@ -126,7 +126,7 @@ def write_report(
 ) -> tuple[str, Path]:
     config_hash = hashlib.sha256(config.raw_bytes).hexdigest()
     data_hash = data.fingerprint()
-    code_hash = _code_fingerprint()
+    code_hash = code_fingerprint()
     evaluation = config.evaluation
     evaluation_key = f"{evaluation.period}:{evaluation.start}:{evaluation.end}"
     identity = f"{config_hash}:{data_hash}:{code_hash}:{evaluation_key}"
@@ -171,14 +171,14 @@ def write_report(
         "cash_benchmark": cash_metrics,
     }
 
-    _write_once(run_dir / "manifest.json", _json(manifest))
-    _write_once(run_dir / "metrics.json", _json(metrics))
-    _write_once(run_dir / "decisions.json", _json(decisions))
-    _write_once(run_dir / "strategy_equity.csv", _equity_csv(strategy))
-    _write_once(run_dir / "benchmark_equity.csv", _equity_csv(benchmark))
-    _write_once(run_dir / "cash_equity.csv", _equity_csv(cash))
-    _write_once(run_dir / "strategy_trades.csv", _trades_csv(strategy))
-    _write_once(run_dir / "benchmark_trades.csv", _trades_csv(benchmark))
+    write_once(run_dir / "manifest.json", json_text(manifest))
+    write_once(run_dir / "metrics.json", json_text(metrics))
+    write_once(run_dir / "decisions.json", json_text(decisions))
+    write_once(run_dir / "strategy_equity.csv", _equity_csv(strategy))
+    write_once(run_dir / "benchmark_equity.csv", _equity_csv(benchmark))
+    write_once(run_dir / "cash_equity.csv", _equity_csv(cash))
+    write_once(run_dir / "strategy_trades.csv", _trades_csv(strategy))
+    write_once(run_dir / "benchmark_trades.csv", _trades_csv(benchmark))
 
     # Identity is immutable; the environment a run was reproduced in is not.
     # Appending keeps every invocation instead of making the write-once check

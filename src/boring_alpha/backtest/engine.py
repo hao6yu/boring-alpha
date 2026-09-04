@@ -82,6 +82,12 @@ class Backtester:
         decisions: list[SignalSnapshot] = []
         curve: list[EquityPoint] = []
         warnings: list[str] = []
+        # Attribution is accumulated as the run proceeds rather than
+        # reconstructed afterwards, so it can account for every price change and
+        # every cost exactly once.
+        contributions = {symbol: 0.0 for symbol in self.symbols}
+        cash_interest = 0.0
+        previous_closes: dict[str, float] = {}
         pending: SignalSnapshot | None = None
         prestart_warning: str | None = None
         started = False
@@ -105,21 +111,33 @@ class Backtester:
                 prestart_warning = None
 
             if started:
+                before = portfolio.cash
                 portfolio.accrue_cash(self.data.cash_factors[day])
+                cash_interest += portfolio.cash - before
             else:
                 started = True
 
+            # Held from the prior close to today's open, then at whatever the
+            # rebalance leaves, through to today's close.
+            held_overnight = dict(portfolio.positions)
+
             if pending is not None:
-                trades.extend(
-                    portfolio.rebalance(
-                        self.data,
-                        day,
-                        pending.target_weights,
-                        self.cost_bps,
-                    )
+                new_trades = portfolio.rebalance(
+                    self.data, day, pending.target_weights, self.cost_bps
                 )
+                for trade in new_trades:
+                    contributions[trade.symbol] -= trade.cost
+                trades.extend(new_trades)
                 decisions.append(pending)
                 pending = None
+
+            for symbol in self.symbols:
+                bar = self.data.bar(day, symbol)
+                previous_close = previous_closes.get(symbol)
+                if previous_close is not None:
+                    contributions[symbol] += held_overnight[symbol] * (bar.open - previous_close)
+                contributions[symbol] += portfolio.positions[symbol] * (bar.close - bar.open)
+                previous_closes[symbol] = bar.close
 
             equity, exposure = portfolio.equity_at_close(self.data, day)
             curve.append(EquityPoint(day, equity, portfolio.cash, exposure))
@@ -136,4 +154,6 @@ class Backtester:
             trades=tuple(trades),
             decisions=tuple(decisions),
             warnings=tuple(warnings),
+            contributions=contributions,
+            cash_interest=cash_interest,
         )

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 
 
@@ -42,7 +42,7 @@ class EquityPoint:
     gross_exposure: float
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class BacktestResult:
     name: str
     initial_equity: float
@@ -50,3 +50,5 @@ class BacktestResult:
     trades: tuple[Trade, ...]
     decisions: tuple[SignalSnapshot, ...]
     warnings: tuple[str, ...] = ()
+    contributions: dict[str, float] = field(default_factory=dict)
+    cash_interest: float = 0.0

@@ -30,5 +30,13 @@ end = "2017-12-31"
 [evaluation]
 period = "development"
 
+# Reported attribution groups. Four of the eight sleeves are equity beta, so
+# per-sleeve attribution alone would understate how concentrated the risk is.
+[clusters]
+equity = ["SPY", "IWM", "EFA", "EEM"]
+bonds = ["IEF", "TLT"]
+gold = ["GLD"]
+commodities = ["DBC"]
+
 [report]
 output_dir = "../experiments"

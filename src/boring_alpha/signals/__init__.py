@@ -1,3 +1,15 @@
-from boring_alpha.signals.trend import CashAllocation, FixedAllocation, MultiAssetTrend
+from boring_alpha.signals.trend import (
+    CashAllocation,
+    ExcludingSleeve,
+    FixedAllocation,
+    MultiAssetTrend,
+    ScaledAllocation,
+)
 
-__all__ = ["CashAllocation", "FixedAllocation", "MultiAssetTrend"]
+__all__ = [
+    "CashAllocation",
+    "ExcludingSleeve",
+    "FixedAllocation",
+    "MultiAssetTrend",
+    "ScaledAllocation",
+]

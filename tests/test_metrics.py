@@ -4,7 +4,7 @@ import statistics
 import unittest
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import BacktestResult, EquityPoint, PriceBar
+from boring_alpha.domain import BacktestResult, EquityPoint, PriceBar, Trade
 from boring_alpha.metrics.performance import calculate_metrics
 
 
@@ -50,3 +50,46 @@ class MetricsTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ReportedDiagnosticsTests(unittest.TestCase):
+    def test_worst_month_finds_the_worst_calendar_month(self) -> None:
+        result, data = _result_and_data(
+            100.0,
+            {
+                date(2024, 1, 31): 110.0,
+                date(2024, 2, 29): 99.0,
+                date(2024, 3, 28): 105.0,
+            },
+        )
+        metrics = calculate_metrics(result, data)
+        self.assertAlmostEqual(metrics["worst_month"], 99.0 / 110.0 - 1.0)
+
+    def test_first_month_is_measured_from_the_initial_equity(self) -> None:
+        result, data = _result_and_data(
+            100.0, {date(2024, 1, 31): 80.0, date(2024, 2, 29): 82.0}
+        )
+        self.assertAlmostEqual(calculate_metrics(result, data)["worst_month"], -0.2)
+
+    def test_time_in_market_is_the_fraction_of_sessions_holding_anything(self) -> None:
+        curve = tuple(
+            EquityPoint(day, 100.0, 100.0, exposure)
+            for day, exposure in {
+                date(2024, 1, 2): 0.0,
+                date(2024, 1, 3): 50.0,
+                date(2024, 1, 4): 50.0,
+                date(2024, 1, 5): 0.0,
+            }.items()
+        )
+        result = BacktestResult("t", 100.0, curve, (), ())
+        bars = [PriceBar(point.date, "A", 1.0, 1.0) for point in curve]
+        data = MarketData(bars, {point.date: 1.0 for point in curve}, source="test")
+        self.assertAlmostEqual(calculate_metrics(result, data)["time_in_market"], 0.5)
+
+    def test_turnover_annualizes_traded_notional_against_average_equity(self) -> None:
+        days = {date(2024, 1, 2): 100.0, date(2025, 1, 1): 100.0}
+        result, data = _result_and_data(100.0, days)
+        trades = (Trade(date(2024, 1, 2), "A", "BUY", 1.0, 50.0, 50.0, 0.0),)
+        with_trades = BacktestResult("t", 100.0, result.equity_curve, trades, ())
+        metrics = calculate_metrics(with_trades, data)
+        self.assertAlmostEqual(metrics["one_way_turnover"], 0.5, places=2)

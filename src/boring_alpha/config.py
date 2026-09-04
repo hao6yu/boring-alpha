@@ -74,6 +74,7 @@ class AppConfig:
     evaluation: EvaluationConfig
     report: ReportConfig
     quality_overrides: dict[str, float]
+    clusters: dict[str, tuple[str, ...]]
     path: Path
     raw_bytes: bytes
 
@@ -100,6 +101,9 @@ _SCHEMA: dict[str, frozenset[str]] = {
     "report": frozenset({"output_dir"}),
 }
 
+# Cluster names are chosen per strategy, so this table's keys are open.
+_OPEN_TABLES = frozenset({"clusters"})
+
 PERIODS = ("development", "validation", "sealed", "exploratory")
 UNBOUNDED_PERIOD = "exploratory"
 DATASET_END = "dataset"
@@ -111,10 +115,12 @@ _DATA_KEYS_BY_SOURCE: dict[str, frozenset[str]] = {
 
 
 def _check_schema(raw: dict[str, object]) -> None:
-    unknown_tables = sorted(set(raw) - set(_SCHEMA))
+    unknown_tables = sorted(set(raw) - set(_SCHEMA) - _OPEN_TABLES)
     if unknown_tables:
         raise ValueError(f"unknown table(s) in configuration: {', '.join(unknown_tables)}")
     for table, allowed in _SCHEMA.items():
+        if table in _OPEN_TABLES:
+            continue
         section = raw.get(table, {})
         if not isinstance(section, dict):
             raise ValueError(f"[{table}] must be a table")
@@ -233,6 +239,10 @@ def load_config(path: str | Path) -> AppConfig:
         evaluation=evaluation,
         report=report,
         quality_overrides=dict(raw.get("quality", {})),
+        clusters={
+            name: tuple(str(symbol).upper() for symbol in symbols)
+            for name, symbols in raw.get("clusters", {}).items()
+        },
         path=config_path,
         raw_bytes=raw_bytes,
     )

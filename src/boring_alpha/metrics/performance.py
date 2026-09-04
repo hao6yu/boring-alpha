@@ -9,6 +9,22 @@ from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
 
 
+def excess_return_series(result: BacktestResult, data: MarketData) -> list[float]:
+    """Daily returns net of the session cash rate, aligned to the equity curve."""
+
+    curve = result.equity_curve
+    if not curve:
+        return []
+    series = [curve[0].equity / result.initial_equity - 1.0]
+    series.extend(
+        curve[index].equity / curve[index - 1].equity
+        - 1.0
+        - (data.cash_factors[curve[index].date] - 1.0)
+        for index in range(1, len(curve))
+    )
+    return series
+
+
 def calculate_metrics(result: BacktestResult, data: MarketData) -> dict[str, float | int]:
     curve = result.equity_curve
     if len(curve) < 2:
@@ -44,6 +60,21 @@ def calculate_metrics(result: BacktestResult, data: MarketData) -> dict[str, flo
         peak = max(peak, point.equity)
         max_drawdown = min(max_drawdown, point.equity / peak - 1.0)
 
+    # Calendar-month returns, the first measured from the opening equity.
+    month_end_equity: dict[tuple[int, int], float] = {}
+    for point in curve:
+        month_end_equity[(point.date.year, point.date.month)] = point.equity
+    previous_equity = start_equity
+    monthly_returns: list[float] = []
+    for month in sorted(month_end_equity):
+        monthly_returns.append(month_end_equity[month] / previous_equity - 1.0)
+        previous_equity = month_end_equity[month]
+    worst_month = min(monthly_returns) if monthly_returns else 0.0
+
+    time_in_market = sum(1 for point in curve if point.gross_exposure > 0.0) / len(curve)
+    average_equity = statistics.mean(point.equity for point in curve)
+    years = max((curve[-1].date - curve[0].date).days, 1) / 365.2425
+
     total_cost = sum(trade.cost for trade in result.trades)
     traded_notional = sum(trade.notional for trade in result.trades)
     average_exposure = statistics.mean(
@@ -58,6 +89,10 @@ def calculate_metrics(result: BacktestResult, data: MarketData) -> dict[str, flo
         "sharpe_vs_cash": sharpe,
         "max_drawdown": max_drawdown,
         "average_gross_exposure": average_exposure,
+        "time_in_market": time_in_market,
+        "worst_month": worst_month,
+        "one_way_turnover": traded_notional / average_equity / years,
+        "cost_drag_bps": total_cost / average_equity / years * 10_000.0,
         "trade_count": len(result.trades),
         "traded_notional": traded_notional,
         "total_cost": total_cost,

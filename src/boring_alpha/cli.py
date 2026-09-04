@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 import sys
 
@@ -12,7 +13,9 @@ from boring_alpha.data import load_market_data
 from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
 from boring_alpha.report import write_report
+from boring_alpha.criteria import Verdict, classify
 from boring_alpha.signals import CashAllocation, FixedAllocation, MultiAssetTrend
+from boring_alpha.sweep import run_sweep, write_sweep_report
 
 __all__ = ["SealedRunError", "check_evaluation_gates", "build_parser", "main", "run_backtest"]
 
@@ -115,6 +118,60 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
     return 0
 
 
+def run_sweep_command(config_path: Path, unseal_reason: str | None = None) -> int:
+    config = load_config(config_path)
+    data = load_market_data(config, unseal_reason)
+    sweep = run_sweep(config, data)
+    sweep_id, sweep_dir = write_sweep_report(config, data, sweep)
+
+    banners = _banners(config)
+    print(f"BoringAlpha sweep {sweep_id} ({config.evaluation.period} period)")
+    for banner in banners:
+        print(banner)
+    for criterion in sweep.outcome.criteria:
+        print(f"  {criterion.name} {'pass' if criterion.passed else 'FAIL'}: {criterion.detail}")
+    print(f"All criteria passed for this period: {'yes' if sweep.outcome.passed else 'NO'}")
+    print("A verdict needs both periods: boring-alpha classify <development> <validation>")
+    for warning in list(data.warnings) + list(sweep.warnings):
+        print(f"  - {warning}")
+    for banner in banners:
+        print(banner)
+    print(f"Artifacts: {sweep_dir}")
+    return 0
+
+
+def _read_criteria(sweep_dir: Path, expected_period: str) -> dict:
+    criteria = json.loads((sweep_dir / "criteria.json").read_text(encoding="utf-8"))
+    if criteria["evaluation_period"] != expected_period:
+        raise ValueError(
+            f"{sweep_dir} holds a {criteria['evaluation_period']} sweep, "
+            f"expected {expected_period}"
+        )
+    return criteria
+
+
+def run_classify(development_dir: Path, validation_dir: Path) -> int:
+    development = _read_criteria(development_dir, "development")
+    validation = _read_criteria(validation_dir, "validation")
+    verdict = classify(development["variants"], validation["variants"])
+
+    print(f"BA-001 classification: {verdict.value.upper()}")
+    for label, criteria in (("development", development), ("validation", validation)):
+        print(f"\n{label}:")
+        for criterion in criteria["criteria"]:
+            print(
+                f"  {criterion['name']} {'pass' if criterion['passed'] else 'FAIL'}: "
+                f"{criterion['detail']}"
+            )
+    if verdict is Verdict.INCONCLUSIVE:
+        print(
+            "\nInconclusive is a real outcome, not a failure to decide. "
+            "Record it in the charter rather than searching for a variant that advances."
+        )
+    print("\nWrite the decision under docs/reviews/ without changing the charter retroactively.")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="boring-alpha", description="No free lunch. No magic backtests."
@@ -125,8 +182,24 @@ def build_parser() -> argparse.ArgumentParser:
     backtest.add_argument(
         "--unseal",
         metavar="REASON",
-        help="run a sealed evaluation period; the reason is recorded in the manifest",
+        help="run a sealed evaluation period; the reason is recorded in the provenance log",
     )
+
+    sweep = subparsers.add_parser(
+        "sweep", help="run the charter's pre-registered grid for one period"
+    )
+    sweep.add_argument("config", type=Path, help="path to a TOML configuration")
+    sweep.add_argument(
+        "--unseal",
+        metavar="REASON",
+        help="run a sealed evaluation period; the reason is recorded in the provenance log",
+    )
+
+    classify_parser = subparsers.add_parser(
+        "classify", help="classify a strategy from its development and validation sweeps"
+    )
+    classify_parser.add_argument("development", type=Path, help="development sweep directory")
+    classify_parser.add_argument("validation", type=Path, help="validation sweep directory")
     return parser
 
 
@@ -135,6 +208,10 @@ def main() -> None:
     try:
         if args.command == "backtest":
             raise SystemExit(run_backtest(args.config, unseal_reason=args.unseal))
+        if args.command == "sweep":
+            raise SystemExit(run_sweep_command(args.config, unseal_reason=args.unseal))
+        if args.command == "classify":
+            raise SystemExit(run_classify(args.development, args.validation))
     except (OSError, RuntimeError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(2) from exc

@@ -28,6 +28,7 @@ The repository currently provides:
 - cash and static equal-weight benchmarks using the same accounting engine;
 - declared evaluation periods that seal data after their boundary;
 - plausibility checks that halt on implausible data and record the rest;
+- a pre-registered evaluation sweep and a mechanical advancement verdict;
 - content-addressed, immutable experiment artifacts recording code provenance;
 - tests for timing, lookahead, costs, fixed-sleeve behavior, and determinism.
 
@@ -51,6 +52,42 @@ existing artifacts instead of silently overwriting them. Relative paths inside
 a configuration, such as `output_dir` and the CSV paths, resolve against the
 directory that contains the configuration file, so a run writes to the same
 place regardless of the working directory.
+
+## Evaluating a strategy
+
+A single backtest is not evidence for or against a strategy. The charter fixes
+what must be run alongside it, and `sweep` runs the whole grid at once so the
+stability checks cannot become a menu of results chosen after the fact:
+
+```bash
+boring-alpha sweep configs/my_development_run.toml
+```
+
+The grid is the pre-registered 12-month rule, the same rule at twice the base
+cost, the 9- and 15-month neighbours, and the rule with its largest-contributing
+sleeve held permanently in cash. Each runs against the charter's full static
+benchmark. A sweep writes `summary.md`, which leads with the pre-registered
+result and labels everything after it as a stability check, plus `criteria.json`
+holding the arithmetic behind C1 to C5.
+
+Alongside them it reports the exposure-matched benchmark, one-way turnover,
+cost drag, worst month, time in market, per-sleeve and per-cluster attribution,
+and a stationary block bootstrap interval for the Sharpe difference against
+static. That interval is the honest counterweight to a point estimate: on about
+a decade of monthly decisions it will often contain zero, and the summary says
+so in plain words when it does.
+
+The verdict needs both periods, so it is a separate step:
+
+```bash
+boring-alpha classify experiments/BA-001/sweeps/<development> \
+                      experiments/BA-001/sweeps/<validation>
+```
+
+`classify` applies the charter's advance / reject / inconclusive rule to the two
+sweeps and prints the criterion-by-criterion arithmetic. The verdict is
+computed, never typed in. Inconclusive is a real outcome; the tooling says so
+rather than inviting another variant.
 
 ## Evaluation periods
 

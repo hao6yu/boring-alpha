@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from dataclasses import replace
 from datetime import date
 
 from boring_alpha.data.market import MarketData
@@ -75,6 +76,59 @@ class FixedAllocation:
             target_weights={symbol: self.sleeve_weight for symbol in self.symbols},
             asset_returns={},
             cash_return=data.cash_index[as_of] / data.cash_index[anchor] - 1.0,
+            name=self.name,
+        )
+
+
+class ScaledAllocation(FixedAllocation):
+    """Static weights scaled to a target gross exposure, remainder in cash.
+
+    Comparing a half-invested strategy with a fully invested benchmark flatters
+    the strategy on drawdown and penalises it on return. This benchmark removes
+    that difference so the comparison is about selection, not exposure.
+    """
+
+    def __init__(
+        self,
+        symbols: tuple[str, ...],
+        lookback_months: int,
+        sleeve_weight: float,
+        exposure: float,
+    ) -> None:
+        super().__init__(symbols, lookback_months, sleeve_weight)
+        self.exposure = min(max(exposure, 0.0), 1.0)
+        self.name = f"Exposure-Matched Benchmark ({self.exposure:.0%})"
+
+    def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None:
+        snapshot = super().snapshot(data, as_of)
+        if snapshot is None:
+            return None
+        gross = sum(snapshot.target_weights.values())
+        scale = self.exposure / gross if gross > 0.0 else 0.0
+        return replace(
+            snapshot,
+            target_weights={
+                symbol: weight * scale for symbol, weight in snapshot.target_weights.items()
+            },
+            name=self.name,
+        )
+
+
+class ExcludingSleeve:
+    """A policy with one sleeve held permanently in cash, for C5."""
+
+    def __init__(self, policy, symbol: str) -> None:
+        self.policy = policy
+        self.symbol = symbol
+        self.name = f"{policy.name} without {symbol}"
+
+    def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None:
+        snapshot = self.policy.snapshot(data, as_of)
+        if snapshot is None:
+            return None
+        return replace(
+            snapshot,
+            target_weights={**snapshot.target_weights, self.symbol: 0.0},
             name=self.name,
         )
 
