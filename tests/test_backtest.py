@@ -220,5 +220,35 @@ class BacktestTests(unittest.TestCase):
         self.assertNotEqual(base.equity_curve[-1], other.equity_curve[-1])
 
 
+class HomogeneityTests(unittest.TestCase):
+    """The after-tax NAV convention (spec §4.8) rests on this: every rule in the
+    engine is proportional to account size, so doubling the cash doubles the curve."""
+
+    def _run(self, initial_cash: float):
+        symbols = ("A", "B", "C")
+        data = generate_synthetic_market_data(
+            symbols, date(2019, 10, 1), date(2022, 12, 31), seed=7, annual_cash_rate=0.02
+        )
+        engine = Backtester(
+            data,
+            symbols,
+            initial_cash=initial_cash,
+            cost_bps=10.0,
+            start=date(2021, 1, 1),
+            end=date(2022, 12, 31),
+        )
+        return engine.run(MultiAssetTrend(symbols, 12, 1.0 / 3.0))
+
+    def test_doubling_initial_cash_doubles_the_equity_curve(self) -> None:
+        small, large = self._run(10_000.0), self._run(20_000.0)
+        self.assertEqual(len(small.equity_curve), len(large.equity_curve))
+        self.assertGreater(len(small.fills), 0)
+        self.assertEqual(len(small.fills), len(large.fills))
+        for a, b in zip(small.equity_curve, large.equity_curve):
+            self.assertEqual(a.date, b.date)
+            self.assertAlmostEqual(b.equity / a.equity, 2.0, delta=1e-6)
+            self.assertAlmostEqual(b.cash, 2.0 * a.cash, delta=1e-6 * max(1.0, abs(a.cash)))
+
+
 if __name__ == "__main__":
     unittest.main()
