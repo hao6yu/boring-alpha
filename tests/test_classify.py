@@ -19,7 +19,7 @@ VARIANTS = {
 
 def _criteria(period: str, **overrides) -> dict:
     payload = {
-        "artifact_schema": 4,
+        "artifact_schema": 5,
         "strategy_id": "X-001",
         "code_sha256": "a" * 64,
         "evaluation_period": period,

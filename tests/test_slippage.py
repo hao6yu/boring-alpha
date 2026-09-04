@@ -26,6 +26,20 @@ def _run():
     ).run(MultiAssetTrend(("A",), 12, 1.0))
 
 
+def _run_partial_fill():
+    """Build a scenario where cash is insufficient for the full order."""
+    bars = [
+        PriceBar(ANCHOR, "A", 100.0, 100.0),
+        PriceBar(SIGNAL, "A", 120.0, 120.0),
+        PriceBar(FILL, "A", 132.0, 132.0),
+    ]
+    days = [ANCHOR, SIGNAL, FILL]
+    data = MarketData(bars, {day: 1.0 for day in days}, source="test")
+    return Backtester(
+        data, ("A",), initial_cash=500.0, cost_bps=10.0, start=FILL, end=FILL
+    ).run(MultiAssetTrend(("A",), 12, 1.0))
+
+
 class SlippageTests(unittest.TestCase):
     def test_the_schema_records_the_wider_ledger(self) -> None:
         self.assertEqual(ARTIFACT_SCHEMA, 5)
@@ -45,6 +59,13 @@ class SlippageTests(unittest.TestCase):
     def test_a_fully_filled_order_reports_equal_notionals(self) -> None:
         row = _trades_csv(_run()).splitlines()[1].split(",")
         self.assertAlmostEqual(float(row[5]), float(row[7]))
+
+    def test_a_partial_fill_reports_different_notionals(self) -> None:
+        """A buy scaled down by available cash is visible as a partial fill."""
+        row = _trades_csv(_run_partial_fill()).splitlines()[1].split(",")
+        filled_notional = float(row[5])
+        intended_notional = float(row[7])
+        self.assertLess(filled_notional, intended_notional)
 
 
 if __name__ == "__main__":
