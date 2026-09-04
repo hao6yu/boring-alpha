@@ -6,10 +6,15 @@ belong to immutable experiment artifacts linked from a later review.
 
 | ID | Name | Status | Charter |
 |---|---|---|---|
-| BA-001 | Multi-Asset Trend | Locked for implementation | [BA-001.md](BA-001.md) |
+| BA-001 | Multi-Asset Trend | Locked for implementation (revision 2) | [BA-001.md](BA-001.md) |
 
 ## Revision policy
 
+- Before a strategy's first run on historical market data, its charter may be
+  amended in place, provided every change is dated in the charter's change log
+  and the charter states that no historical data has been run. Synthetic runs
+  do not count as historical data.
+- From the first historical run onward, the rules below apply.
 - Clarifying wording without changing behavior may update the current charter
   and must be noted in its change log.
 - Any change to the universe, feature timing, signal, parameter, sizing,

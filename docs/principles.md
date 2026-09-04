@@ -20,9 +20,10 @@ paper, and live modes must share the first three layers.
 
 ## 4. Model frictions before celebrating
 
-Include spread, slippage, fees, cash returns, unavailable assets, missing data,
-and realistic execution timing. Paper fills are evidence about plumbing, not
-proof of achievable live performance.
+Include spread, slippage, fees, taxes when the account is taxable, cash
+returns, unavailable assets, missing data, and realistic execution timing.
+Paper fills are evidence about plumbing, not proof of achievable live
+performance.
 
 ## 5. Prefer stability to the best historical score
 
