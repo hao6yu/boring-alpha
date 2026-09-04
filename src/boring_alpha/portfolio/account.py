@@ -20,12 +20,6 @@ class Portfolio:
     def accrue_cash(self, factor: float) -> None:
         self.cash *= factor
 
-    def equity_at_open(self, data: MarketData, day: date) -> float:
-        return self.cash + sum(
-            quantity * data.bar(day, symbol).open
-            for symbol, quantity in self.positions.items()
-        )
-
     def equity_at_close(self, data: MarketData, day: date) -> tuple[float, float]:
         exposure = sum(
             quantity * data.bar(day, symbol).close
@@ -45,6 +39,11 @@ class Portfolio:
         Sizing uses equity at execution prices, which is what the engine fills
         at. No cost model appears here; costs belong to execution.
         """
+
+        for symbol in self.positions:
+            price = prices[symbol]
+            if price <= 0.0:
+                raise ValueError(f"non-positive price for {symbol}: {price}")
 
         equity = self.cash + sum(
             quantity * prices[symbol] for symbol, quantity in self.positions.items()

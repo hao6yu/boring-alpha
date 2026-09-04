@@ -71,6 +71,21 @@ class ExecutionTests(unittest.TestCase):
     def test_no_orders_means_no_fills(self) -> None:
         self.assertEqual(execute([], PRICES, 1_000.0, FREE), [])
 
+    def test_a_non_positive_price_is_refused(self) -> None:
+        orders = [Order(DAY, "A", "BUY", 500.0, 9.0)]
+        with self.assertRaisesRegex(ValueError, "non-positive price for A: 0.0"):
+            execute(orders, {"A": 0.0, "B": 20.0}, 1_000.0, FREE)
+
+    def test_a_negative_price_is_refused(self) -> None:
+        orders = [Order(DAY, "A", "SELL", 500.0, 9.0)]
+        with self.assertRaisesRegex(ValueError, "non-positive price for A: -10.0"):
+            execute(orders, {"A": -10.0, "B": 20.0}, 1_000.0, FREE)
+
+    def test_an_unrecognised_side_is_refused_rather_than_dropped(self) -> None:
+        orders = [Order(DAY, "A", "HOLD", 500.0, 9.0)]
+        with self.assertRaisesRegex(ValueError, "unrecognised order side for A: 'HOLD'"):
+            execute(orders, PRICES, 1_000.0, FREE)
+
     def test_buys_with_no_cash_still_emit_zero_notional_fills(self) -> None:
         """The old fused path appended a zero-quantity trade here, and the CSV
         ledger is written in list order, so dropping these would change the

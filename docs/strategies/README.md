@@ -6,7 +6,7 @@ belong to immutable experiment artifacts linked from a later review.
 
 | ID | Name | Status | Charter |
 |---|---|---|---|
-| BA-001 | Multi-Asset Trend | Locked for implementation (revision 2) | [BA-001.md](BA-001.md) |
+| BA-001 | Multi-Asset Trend | Locked for implementation (revision 3) | [BA-001.md](BA-001.md) |
 
 ## Revision policy
 

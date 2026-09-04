@@ -22,6 +22,9 @@ class Order:
     close — not the price the order will fill at. The gap between the two is
     slippage, and recording it is what lets a paper fill be compared with a
     modelled one.
+
+    `intended_notional` is sized at execution prices, not at `reference_price`,
+    so a quantity must never be derived from their ratio.
     """
 
     date: date

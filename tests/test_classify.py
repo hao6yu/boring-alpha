@@ -1,5 +1,7 @@
 """A verdict must refuse inputs it cannot legitimately combine."""
 
+import contextlib
+import io
 import json
 from pathlib import Path
 import tempfile
@@ -44,33 +46,38 @@ class ClassifyGuardTests(unittest.TestCase):
 
     def test_matched_sweeps_classify(self) -> None:
         development, validation = self._dirs(_criteria("development"), _criteria("validation"))
-        self.assertEqual(run_classify(development, validation), 0)
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(run_classify(development, validation), 0)
 
     def test_a_period_mismatch_is_refused(self) -> None:
         development, validation = self._dirs(_criteria("validation"), _criteria("validation"))
         with self.assertRaisesRegex(ValueError, "expected development"):
-            run_classify(development, validation)
+            with contextlib.redirect_stdout(io.StringIO()):
+                run_classify(development, validation)
 
     def test_a_different_strategy_is_refused(self) -> None:
         development, validation = self._dirs(
             _criteria("development"), _criteria("validation", strategy_id="Y-002")
         )
         with self.assertRaisesRegex(ValueError, "different strategies"):
-            run_classify(development, validation)
+            with contextlib.redirect_stdout(io.StringIO()):
+                run_classify(development, validation)
 
     def test_a_different_code_revision_is_refused(self) -> None:
         development, validation = self._dirs(
             _criteria("development"), _criteria("validation", code_sha256="b" * 64)
         )
         with self.assertRaisesRegex(ValueError, "different code"):
-            run_classify(development, validation)
+            with contextlib.redirect_stdout(io.StringIO()):
+                run_classify(development, validation)
 
     def test_a_malformed_file_reports_an_error_rather_than_crashing(self) -> None:
         development, validation = self._dirs(
             _criteria("development", variants={}), _criteria("validation")
         )
         with self.assertRaises(ValueError):
-            run_classify(development, validation)
+            with contextlib.redirect_stdout(io.StringIO()):
+                run_classify(development, validation)
 
 
 if __name__ == "__main__":

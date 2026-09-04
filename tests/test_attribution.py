@@ -23,10 +23,10 @@ def _data(factor: float = 1.0) -> MarketData:
     return MarketData(bars, {day: factor for day in days}, source="test")
 
 
-def _run(factor: float = 1.0):
+def _run(factor: float = 1.0, cost_bps: float = 0.0):
     data = _data(factor)
     return data, Backtester(
-        data, ("A", "B"), initial_cash=1_000.0, cost_bps=0.0,
+        data, ("A", "B"), initial_cash=1_000.0, cost_bps=cost_bps,
         start=FIRST, end=SECOND,
     ).run(MultiAssetTrend(("A", "B"), 12, 0.5))
 
@@ -44,10 +44,16 @@ class AttributionTests(unittest.TestCase):
         self.assertAlmostEqual(result.contributions["A"], 500.0 / 120.0 * (121.0 - 120.0))
 
     def test_contributions_and_cash_interest_explain_the_whole_equity_change(self) -> None:
-        _, result = _run(factor=1.0001)
-        change = result.equity_curve[-1].equity - result.initial_equity
-        sleeves = sum(result.contributions.values())
-        self.assertAlmostEqual(change, sleeves + result.cash_interest, places=9)
+        # Costs are charged to contributions (engine.py) but debited from real
+        # cash independently (portfolio.apply): only a non-zero cost_bps run
+        # can catch the two falling out of step, so this is parametrised
+        # rather than run once at the free-trading default.
+        for cost_bps in (0.0, 10.0, 50.0):
+            with self.subTest(cost_bps=cost_bps):
+                _, result = _run(factor=1.0001, cost_bps=cost_bps)
+                change = result.equity_curve[-1].equity - result.initial_equity
+                sleeves = sum(result.contributions.values())
+                self.assertAlmostEqual(change, sleeves + result.cash_interest, places=9)
 
     def test_costs_are_charged_to_the_sleeve_that_traded(self) -> None:
         data = _data()

@@ -241,7 +241,9 @@ docs/strategies/        Locked strategy charters
 docs/reviews/           Written reviews that gate the next period
 src/boring_alpha/data/  Canonical data and adapters
 src/boring_alpha/signals/ Strategy implementations
-src/boring_alpha/backtest/ Accounting and execution
+src/boring_alpha/portfolio/ Cash, positions, and target-weight planning
+src/boring_alpha/execution/ Cost model and order-to-fill simulation
+src/boring_alpha/backtest/ The daily mark-to-market engine that drives them
 src/boring_alpha/metrics/ Performance statistics
 tests/                  Correctness tests
 experiments/            Generated immutable artifacts (ignored)

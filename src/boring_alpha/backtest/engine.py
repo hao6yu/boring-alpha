@@ -13,6 +13,10 @@ from boring_alpha.portfolio.account import Portfolio
 
 
 class SignalPolicy(Protocol):
+    """A policy must echo back the `as_of` date it was handed as the returned
+    snapshot's `as_of`: the engine reads the reference price at
+    `pending.as_of`, not at the date it happened to call `snapshot` from."""
+
     name: str
 
     def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None: ...

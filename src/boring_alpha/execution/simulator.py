@@ -28,6 +28,8 @@ class CostModel:
 
 
 def _fill(order: Order, price: float, notional: float, cost_model: CostModel) -> Fill:
+    if price <= 0.0:
+        raise ValueError(f"non-positive price for {order.symbol}: {price}")
     return Fill(
         date=order.date,
         symbol=order.symbol,
@@ -54,6 +56,10 @@ def execute(
     scales down is a partial fill, and says so: its notional is below the
     intended notional it carries.
     """
+
+    for order in orders:
+        if order.side not in ("BUY", "SELL"):
+            raise ValueError(f"unrecognised order side for {order.symbol}: {order.side!r}")
 
     sells = sorted(
         (order for order in orders if order.side == "SELL"), key=lambda order: order.symbol
