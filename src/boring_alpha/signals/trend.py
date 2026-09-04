@@ -114,6 +114,43 @@ class ScaledAllocation(FixedAllocation):
         )
 
 
+class TargetExposureAllocation(ScaledAllocation):
+    """Static weights at a target exposure fixed in advance, on a declared schedule.
+
+    Unlike the exposure-matched diagnostic, nothing about a strategy's realized
+    exposure feeds this: the number and the schedule come from the charter. On
+    an annual schedule every month-end but December is a hold, so the
+    allocation drifts between Januaries the way a passive holder's would. The
+    engine treats a hold on an empty book as a normal rebalance, so a run that
+    starts mid-year still enters on its first session.
+    """
+
+    SCHEDULES = ("annual", "monthly")
+
+    def __init__(
+        self,
+        symbols: tuple[str, ...],
+        lookback_months: int,
+        sleeve_weight: float,
+        exposure: float,
+        rebalance: str,
+    ) -> None:
+        if rebalance not in self.SCHEDULES:
+            raise ValueError(
+                f"rebalance must be one of {', '.join(self.SCHEDULES)}, got {rebalance!r}"
+            )
+        super().__init__(symbols, lookback_months, sleeve_weight, exposure)
+        self.rebalance = rebalance
+        self.name = f"Target-Exposure Benchmark ({self.exposure:.0%}, {rebalance})"
+
+    def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None:
+        snapshot = super().snapshot(data, as_of)
+        if snapshot is None:
+            return None
+        hold = self.rebalance == "annual" and as_of.month != 12
+        return replace(snapshot, name=self.name, hold=hold)
+
+
 class ExcludingSleeve:
     """A policy with one sleeve held permanently in cash, for C5."""
 

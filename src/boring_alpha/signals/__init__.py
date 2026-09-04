@@ -4,6 +4,7 @@ from boring_alpha.signals.trend import (
     FixedAllocation,
     MultiAssetTrend,
     ScaledAllocation,
+    TargetExposureAllocation,
 )
 
 __all__ = [
@@ -12,4 +13,5 @@ __all__ = [
     "FixedAllocation",
     "MultiAssetTrend",
     "ScaledAllocation",
+    "TargetExposureAllocation",
 ]

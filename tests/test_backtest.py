@@ -324,5 +324,32 @@ class HoldTests(unittest.TestCase):
         )
 
 
+from boring_alpha.signals.trend import TargetExposureAllocation
+
+
+class AnnualBenchmarkTests(unittest.TestCase):
+    """An annual benchmark enters on the first session and trades again each January."""
+
+    SYMBOLS = ("A", "B", "C")
+
+    def _fill_months(self, start: date) -> set[tuple[int, int]]:
+        data = generate_synthetic_market_data(
+            self.SYMBOLS, date(2019, 10, 1), date(2022, 12, 31), seed=11, annual_cash_rate=0.02
+        )
+        engine = Backtester(
+            data, self.SYMBOLS, initial_cash=10_000.0, cost_bps=10.0,
+            start=start, end=date(2022, 12, 31),
+        )
+        result = engine.run(TargetExposureAllocation(self.SYMBOLS, 12, 1.0 / 3.0, 0.6, "annual"))
+        self.assertGreater(len(result.fills), 0)
+        return {(fill.date.year, fill.date.month) for fill in result.fills}
+
+    def test_a_january_start_trades_at_entry_and_each_following_january(self) -> None:
+        self.assertEqual(self._fill_months(date(2021, 1, 1)), {(2021, 1), (2022, 1)})
+
+    def test_a_mid_year_start_still_enters_on_its_first_session(self) -> None:
+        self.assertEqual(self._fill_months(date(2021, 7, 1)), {(2021, 7), (2022, 1)})
+
+
 if __name__ == "__main__":
     unittest.main()

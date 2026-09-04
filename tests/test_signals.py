@@ -56,5 +56,60 @@ class SignalTests(unittest.TestCase):
         self.assertEqual(snapshot.target_weights, {"A": 0.5})
 
 
+from boring_alpha.data.synthetic import generate_synthetic_market_data
+from boring_alpha.signals.trend import TargetExposureAllocation
+
+
+def _two_symbol_data(days: list[date]) -> MarketData:
+    bars = [
+        PriceBar(day, symbol, 100.0 + index, 100.0 + index)
+        for index, day in enumerate(days)
+        for symbol in ("A", "B")
+    ]
+    return MarketData(bars, {day: 1.0 for day in days}, source="test")
+
+
+class TargetExposureTests(unittest.TestCase):
+    DAYS = [date(2023, 11, 30), date(2023, 12, 29), date(2024, 11, 29), date(2024, 12, 31)]
+
+    def test_weights_sum_to_the_target_exposure(self) -> None:
+        policy = TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "annual")
+        snapshot = policy.snapshot(_two_symbol_data(self.DAYS), date(2024, 12, 31))
+        assert snapshot is not None
+        self.assertAlmostEqual(sum(snapshot.target_weights.values()), 0.6)
+        self.assertAlmostEqual(snapshot.target_weights["A"], 0.3)
+
+    def test_annual_holds_except_at_the_december_month_end(self) -> None:
+        policy = TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "annual")
+        data = _two_symbol_data(self.DAYS)
+        november = policy.snapshot(data, date(2024, 11, 29))
+        december = policy.snapshot(data, date(2024, 12, 31))
+        assert november is not None and december is not None
+        self.assertTrue(november.hold)
+        self.assertFalse(december.hold)
+        # A hold still carries the targets: the engine uses them on an empty book.
+        self.assertAlmostEqual(sum(november.target_weights.values()), 0.6)
+
+    def test_monthly_never_holds(self) -> None:
+        policy = TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "monthly")
+        snapshot = policy.snapshot(_two_symbol_data(self.DAYS), date(2024, 11, 29))
+        assert snapshot is not None
+        self.assertFalse(snapshot.hold)
+
+    def test_the_name_states_exposure_and_schedule(self) -> None:
+        self.assertEqual(
+            TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "annual").name,
+            "Target-Exposure Benchmark (60%, annual)",
+        )
+
+    def test_an_unknown_schedule_is_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "rebalance"):
+            TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "weekly")
+
+    def test_insufficient_history_still_yields_no_signal(self) -> None:
+        policy = TargetExposureAllocation(("A", "B"), 12, 0.5, 0.6, "annual")
+        self.assertIsNone(policy.snapshot(_two_symbol_data(self.DAYS), date(2023, 11, 30)))
+
+
 if __name__ == "__main__":
     unittest.main()
