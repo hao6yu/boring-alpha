@@ -31,6 +31,23 @@ class ExecutionConfig:
 
 
 @dataclass(frozen=True, slots=True)
+class BenchmarkConfig:
+    """The gating benchmark's target exposure and rebalancing schedule.
+
+    Optional. When present, the strategy is judged against static equal-weight
+    scaled to `exposure` with the remainder in cash, rebalanced on `rebalance`,
+    instead of the fully invested monthly static allocation. Both values are
+    part of what is being tested, so both enter the strategy spec hash.
+    """
+
+    exposure: float
+    rebalance: str
+
+
+REBALANCE_SCHEDULES = ("annual", "monthly")
+
+
+@dataclass(frozen=True, slots=True)
 class DataConfig:
     source: str
     start: date | None = None
@@ -79,6 +96,7 @@ class AppConfig:
     report: ReportConfig
     quality_overrides: dict[str, float]
     clusters: dict[str, tuple[str, ...]]
+    benchmark: BenchmarkConfig | None
     strategy_spec_sha256: str
     path: Path
     raw_bytes: bytes
@@ -104,6 +122,7 @@ _SCHEMA: dict[str, frozenset[str]] = {
         }
     ),
     "report": frozenset({"output_dir"}),
+    "benchmark": frozenset({"exposure", "rebalance"}),
 }
 
 # Cluster names are chosen per strategy, so this table's keys are open.
@@ -153,16 +172,19 @@ def _strategy_spec_hash(
     portfolio: PortfolioConfig,
     execution: ExecutionConfig,
     data: DataConfig,
+    benchmark: BenchmarkConfig | None,
 ) -> str:
     """Fingerprint of what the strategy IS, independent of the window it ran over.
 
     Two sweeps may only be combined into a verdict if this matches. The
     evaluation window is deliberately excluded — development and validation
     differ in exactly that and nothing else. Symbols are sorted because
-    reordering the universe does not change the strategy.
+    reordering the universe does not change the strategy. The benchmark table
+    is included only when present, so configurations written before it existed
+    keep the hash their archived runs recorded.
     """
 
-    spec = {
+    spec: dict[str, object] = {
         "strategy_id": strategy.strategy_id,
         "symbols": sorted(strategy.symbols),
         "lookback_months": strategy.lookback_months,
@@ -175,6 +197,8 @@ def _strategy_spec_hash(
         # series would otherwise be invisible to the run's identity.
         "data_methodology": data.methodology,
     }
+    if benchmark is not None:
+        spec["benchmark"] = {"exposure": benchmark.exposure, "rebalance": benchmark.rebalance}
     canonical = json.dumps(spec, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -276,6 +300,8 @@ def load_config(path: str | Path) -> AppConfig:
         )
     )
 
+    benchmark = _load_benchmark(raw.get("benchmark"))
+
     _validate(strategy, portfolio, execution, data, backtest)
     return AppConfig(
         strategy=strategy,
@@ -287,7 +313,8 @@ def load_config(path: str | Path) -> AppConfig:
         report=report,
         quality_overrides=_load_quality_overrides(raw.get("quality", {})),
         clusters=_load_clusters(raw.get("clusters", {}), strategy.symbols),
-        strategy_spec_sha256=_strategy_spec_hash(strategy, portfolio, execution, data),
+        benchmark=benchmark,
+        strategy_spec_sha256=_strategy_spec_hash(strategy, portfolio, execution, data, benchmark),
         path=config_path,
         raw_bytes=raw_bytes,
     )
@@ -334,6 +361,22 @@ def _load_clusters(
             seen[symbol] = name
         clusters[name] = cluster
     return clusters
+
+
+def _load_benchmark(raw: dict[str, object] | None) -> BenchmarkConfig | None:
+    if raw is None:
+        return None
+    exposure = _finite(
+        float(_require(raw, "benchmark", "exposure")), "benchmark.exposure"
+    )
+    if not 0.0 < exposure <= 1.0:
+        raise ValueError(f"benchmark.exposure must be in (0, 1], got {exposure!r}")
+    rebalance = str(_require(raw, "benchmark", "rebalance")).lower()
+    if rebalance not in REBALANCE_SCHEDULES:
+        raise ValueError(
+            f"benchmark.rebalance must be one of {', '.join(REBALANCE_SCHEDULES)}, got {rebalance!r}"
+        )
+    return BenchmarkConfig(exposure, rebalance)
 
 
 def _load_evaluation(

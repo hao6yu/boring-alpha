@@ -100,3 +100,59 @@ class ClusterValidationTests(unittest.TestCase):
     def test_valid_clusters_are_normalised(self) -> None:
         config, _ = self._with_clusters('\n[clusters]\none = ["a"]\ntwo = ["b"]\n')
         self.assertEqual(config.clusters, {"one": ("A",), "two": ("B",)})
+
+
+BENCHMARK = VALID + """
+[benchmark]
+exposure = 0.6
+rebalance = "annual"
+"""
+
+BA001_SPEC_HASH = "595a25e57ed68d4e863eeb69b40248345840b809b0f213609ddd14b4cd952110"
+
+
+class BenchmarkConfigTests(unittest.TestCase):
+    def test_an_absent_table_means_no_override(self) -> None:
+        config, _ = _load(VALID)
+        self.assertIsNone(config.benchmark)
+
+    def test_the_table_is_parsed(self) -> None:
+        config, _ = _load(BENCHMARK)
+        assert config.benchmark is not None
+        self.assertAlmostEqual(config.benchmark.exposure, 0.6)
+        self.assertEqual(config.benchmark.rebalance, "annual")
+
+    def test_the_table_enters_the_spec_hash_only_when_present(self) -> None:
+        without, _ = _load(VALID)
+        annual, _ = _load(BENCHMARK)
+        monthly, _ = _load(BENCHMARK.replace('"annual"', '"monthly"'))
+        half, _ = _load(BENCHMARK.replace("0.6", "0.5"))
+        hashes = {without.strategy_spec_sha256, annual.strategy_spec_sha256,
+                  monthly.strategy_spec_sha256, half.strategy_spec_sha256}
+        self.assertEqual(len(hashes), 4)
+
+    def test_ba_001_development_spec_hash_is_unchanged(self) -> None:
+        # The value recorded in both real BA-001 sweeps. Adding an optional table
+        # must not move it, or the archived record would no longer describe the
+        # checked-in configuration.
+        config = load_config(REPO_ROOT / "configs" / "ba_001_development.toml")
+        self.assertEqual(config.strategy_spec_sha256, BA001_SPEC_HASH)
+
+    def test_exposure_outside_the_unit_interval_is_refused(self) -> None:
+        for bad in ("0.0", "1.5", "-0.2"):
+            with self.assertRaisesRegex(ValueError, "benchmark.exposure"):
+                _load(BENCHMARK.replace("0.6", bad))
+
+    def test_an_unknown_schedule_is_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "benchmark.rebalance"):
+            _load(BENCHMARK.replace('"annual"', '"weekly"'))
+
+    def test_an_incomplete_table_is_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "benchmark.rebalance is required"):
+            _load(VALID + "\n[benchmark]\nexposure = 0.6\n")
+        with self.assertRaisesRegex(ValueError, "benchmark.exposure is required"):
+            _load(VALID + '\n[benchmark]\nrebalance = "annual"\n')
+
+    def test_an_unknown_key_is_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "unknown key"):
+            _load(BENCHMARK + "band = 0.02\n")
