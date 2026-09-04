@@ -22,11 +22,12 @@ The repository currently provides:
 - the locked BA-001 strategy charter;
 - deterministic synthetic data for exercising the system;
 - strict long-form CSV ingestion for future real datasets;
-- month-end trend signals with fixed sleeves;
+- month-end trend signals with fixed sleeves on a shared trading calendar;
 - next-session execution and explicit transaction costs;
 - cash accrual, a trade ledger, equity curves, and risk metrics;
 - cash and static equal-weight benchmarks using the same accounting engine;
 - declared evaluation periods that seal data after their boundary;
+- plausibility checks that halt on implausible data and record the rest;
 - content-addressed, immutable experiment artifacts recording code provenance;
 - tests for timing, lookahead, costs, fixed-sleeve behavior, and determinism.
 
@@ -139,10 +140,41 @@ date,cash_factor
 2024-01-02,1.00021
 ```
 
-Dates must be unique per symbol, values must be positive, and all configured
-symbols must share a complete calendar across the supplied warm-up and
-evaluation data.
-Downloaded market data and secrets are intentionally ignored by Git.
+Dates must be unique per symbol and values must be positive. Sleeves may begin
+on different dates: the portfolio's calendar is the sessions on which every
+configured symbol has a bar, and it starts at the first such session. After that
+common start a missing bar is a data error that halts the run, never an implicit
+move to cash. Downloaded market data and secrets are ignored by Git.
+
+## Data plausibility
+
+Loaded data is inspected before it is used. Findings that usually mean a broken
+series halt the run: a one-session move beyond ±40%, an open gapping beyond
+±25% from the prior close, or a cash factor implying an annual rate outside
+−10% to +30%, which is what a rate entered where a one-session growth factor
+belongs looks like. Findings that are merely suspicious are recorded in the
+manifest and printed: gaps over five business days in the shared calendar, and
+ten or more identical consecutive closes.
+
+The thresholds are deliberately loose enough that real crisis sessions pass.
+Any of them can be relaxed for a run:
+
+```toml
+[quality]
+max_session_return = 0.6
+```
+
+Inspection happens after the evaluation period truncates the data, so findings
+describe the data the run actually used.
+
+## Negative control
+
+Synthetic data comes in two regimes, selected with `[data] regime`. The default
+`trending` builds slow cycles that any trend rule trades well — useful for
+exercising the machinery, and flattering by construction. `random_walk` is the
+negative control: driftless and memoryless, it is the series on which a trend
+rule should earn nothing and still pay costs. A result that looks similar in
+both regimes is a result about the plumbing, not about trend.
 
 ## Repository map
 

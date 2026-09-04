@@ -9,6 +9,7 @@ from __future__ import annotations
 from boring_alpha.config import AppConfig
 from boring_alpha.data.csv_loader import load_csv_market_data
 from boring_alpha.data.market import MarketData
+from boring_alpha.data.quality import QualityThresholds, enforce, inspect
 from boring_alpha.data.synthetic import generate_synthetic_market_data
 from boring_alpha.evaluation import check_evaluation_gates
 
@@ -32,4 +33,9 @@ def load_market_data(config: AppConfig, unseal_reason: str | None = None) -> Mar
 
     if config.evaluation.end is not None:
         data = data.through(config.evaluation.end)
+
+    # Inspect after truncation: findings should describe the data the run uses,
+    # not data the seal has already discarded.
+    thresholds = QualityThresholds(**config.quality_overrides)
+    data.warnings = tuple(enforce(inspect(data, config.strategy.symbols, thresholds)))
     return data

@@ -42,6 +42,7 @@ class MarketData:
         }
         self.cash_factors = dict(cash_factors)
         self.source = source
+        self.warnings: tuple[str, ...] = ()
 
         for day in self.dates:
             factor = self.cash_factors.get(day)
@@ -65,6 +66,20 @@ class MarketData:
             return self.by_date[day][symbol]
         except KeyError as exc:
             raise ValueError(f"missing {symbol} bar on {day}") from exc
+
+    def shared_sessions(self, symbols: tuple[str, ...]) -> tuple[date, ...]:
+        """Sessions on which every symbol has a bar.
+
+        This is the portfolio's trading calendar. Sleeves may list before one
+        another, and a session where only some of them trade is warm-up for
+        those, not a day the portfolio can rebalance on.
+        """
+
+        return tuple(
+            day
+            for day in self.dates
+            if all(symbol in self.by_date[day] for symbol in symbols)
+        )
 
     def last_shared_session_in_month(
         self, symbols: tuple[str, ...], year: int, month: int
@@ -99,7 +114,9 @@ class MarketData:
         if not bars:
             raise ValueError(f"truncating at {end} leaves no bars")
         factors = {day: factor for day, factor in self.cash_factors.items() if day <= end}
-        return MarketData(bars, factors, source=f"{self.source}:truncated={end}")
+        truncated = MarketData(bars, factors, source=f"{self.source}:truncated={end}")
+        truncated.warnings = self.warnings
+        return truncated
 
     def require_complete_calendar(
         self, symbols: tuple[str, ...], start: date, end: date

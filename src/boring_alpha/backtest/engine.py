@@ -49,17 +49,26 @@ class Backtester:
         self.cost_bps = cost_bps
         self.start = start
         self.end = end
-        data.require_complete_calendar(symbols, data.dates[0], end)
-        sessions = [day for day in data.dates if start <= day <= end]
+        missing = set(symbols) - set(data.symbol_dates)
+        if missing:
+            raise ValueError(f"dataset is missing symbols: {sorted(missing)}")
+        self.calendar = data.shared_sessions(symbols)
+        if not self.calendar:
+            raise ValueError("no session has bars for every configured symbol")
+        # Sleeves may begin on different dates. From the first shared session
+        # onward every sleeve must be present; a hole after that is a data
+        # error, never an implicit move to cash.
+        data.require_complete_calendar(symbols, self.calendar[0], end)
+        sessions = [day for day in self.calendar if start <= day <= end]
         if not sessions:
             raise ValueError("no market sessions fall inside the backtest period")
         # The first session in the window must open a month so that the pending
-        # signal it executes is the preceding month-end's. A dataset that itself
-        # begins mid-month cannot be checked and simply has no pending signal.
+        # signal it executes is the preceding month-end's. A calendar that
+        # itself begins mid-month cannot be checked and has no pending signal.
         first = sessions[0]
-        index = bisect_left(data.dates, first)
+        index = bisect_left(self.calendar, first)
         if index > 0:
-            previous = data.dates[index - 1]
+            previous = self.calendar[index - 1]
             if (previous.year, previous.month) == (first.year, first.month):
                 raise ValueError(
                     "backtest.start must select the first session of a month; "
@@ -76,12 +85,12 @@ class Backtester:
         pending: SignalSnapshot | None = None
         prestart_warning: str | None = None
         started = False
-        month_ends = month_end_dates(self.data.dates)
+        month_ends = month_end_dates(self.calendar)
 
         def no_signal(day: date) -> str:
             return f"{policy.name}: no signal at month-end {day.isoformat()} (insufficient history)"
 
-        for day in self.data.dates:
+        for day in self.calendar:
             if day > self.end:
                 break
 

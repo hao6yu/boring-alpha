@@ -1,4 +1,9 @@
 # Copy this file to a local, untracked configuration after preparing real data.
+#
+# The window is exactly BA-001's development period. Prepare data starting at
+# least twelve months earlier so the first month-end has a full lookback. The
+# sleeves list at different times — DBC is the binding constraint — and that is
+# fine: the portfolio starts at the first session on which all eight trade.
 
 [strategy]
 id = "BA-001"

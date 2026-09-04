@@ -141,6 +141,7 @@ def write_report(
         warnings.append(
             f"EXPLORATORY RUN: not evidence about {config.strategy.strategy_id}."
         )
+    warnings.extend(data.warnings)
     for result in (strategy, benchmark, cash):
         warnings.extend(result.warnings)
 

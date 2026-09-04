@@ -73,6 +73,7 @@ class AppConfig:
     backtest: BacktestConfig
     evaluation: EvaluationConfig
     report: ReportConfig
+    quality_overrides: dict[str, float]
     path: Path
     raw_bytes: bytes
 
@@ -89,6 +90,13 @@ _SCHEMA: dict[str, frozenset[str]] = {
     ),
     "backtest": frozenset({"start", "end"}),
     "evaluation": frozenset({"period", "periods_path", "review_dir"}),
+    # Names must match QualityThresholds; defaults live there, not here.
+    "quality": frozenset(
+        {
+            "max_session_return", "max_open_gap", "min_cash_rate", "max_cash_rate",
+            "max_calendar_gap_days", "max_stale_closes",
+        }
+    ),
     "report": frozenset({"output_dir"}),
 }
 
@@ -224,6 +232,7 @@ def load_config(path: str | Path) -> AppConfig:
         backtest=backtest,
         evaluation=evaluation,
         report=report,
+        quality_overrides=dict(raw.get("quality", {})),
         path=config_path,
         raw_bytes=raw_bytes,
     )
