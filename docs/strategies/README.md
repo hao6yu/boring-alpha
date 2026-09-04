@@ -6,7 +6,7 @@ belong to immutable experiment artifacts linked from a later review.
 
 | ID | Name | Status | Charter |
 |---|---|---|---|
-| BA-001 | Multi-Asset Trend | Locked for implementation (revision 4) | [BA-001.md](BA-001.md) |
+| BA-001 | Multi-Asset Trend | Evaluation complete — Inconclusive (revision 4); sealed period unrevealed. Reviews: [development](../reviews/BA-001-development.md), [validation](../reviews/BA-001-validation.md) | [BA-001.md](BA-001.md) |
 
 ## Revision policy
 
