@@ -136,5 +136,102 @@ class SellTests(unittest.TestCase):
         self.assertAlmostEqual(record.gain, -4.0)
 
 
+class DistributionTests(unittest.TestCase):
+    """Adjusted close 99 throughout; unadjusted 100, then 99 after a 1.00 dividend on D1.
+    The factor A/P is 0.99 before the ex-date and 1.0 after, so growth is 1/0.99."""
+
+    def setUp(self) -> None:
+        self.data = _market({"A": [99.0, 99.0, 99.0, 99.0]})
+        self.table = _table({"A": [100.0, 99.0, 99.0, 99.0]}, {"A": [0.0, 1.0, 0.0, 0.0]})
+        before = adjustment_factor(self.data, self.table, D0, "A")
+        after = adjustment_factor(self.data, self.table, D1, "A")
+        self.growth = after / before
+
+    def _buy_ten_units(self, book: LotBook):
+        # Ten engine units bought on D0 for 990 are 9.9 real shares at 100.
+        shares = 10.0 * adjustment_factor(self.data, self.table, D0, "A")
+        return book.buy("A", D0, shares, 990.0)
+
+    def test_income_opens_a_child_lot_and_leaves_the_parent_basis_alone(self) -> None:
+        book = LotBook("fifo")
+        parent = self._buy_ten_units(book)
+        events = book.distribute("A", D1, 1.0, self.growth, return_of_capital=False)
+        self.assertEqual(len(events), 1)
+        event = events[0]
+        self.assertAlmostEqual(event.cash, 9.9)
+        self.assertFalse(event.return_of_capital)
+        self.assertEqual((event.lot_id, event.lot_opened, event.ex_date), (parent.lot_id, D0, D1))
+        child = book.lots[event.child_lot_id]
+        self.assertAlmostEqual(child.shares, 0.1)
+        self.assertAlmostEqual(child.basis, 9.9)
+        self.assertEqual((child.opened, child.acquired, child.source), (D1, D1, "reinvest"))
+        self.assertAlmostEqual(parent.basis, 990.0)
+        # Real shares now equal the engine's ten units at the post-dividend factor.
+        self.assertAlmostEqual(
+            book.shares_held("A"), 10.0 * adjustment_factor(self.data, self.table, D1, "A")
+        )
+        # The reinvestment price the data implies is the unadjusted close.
+        self.assertAlmostEqual(event.cash / child.shares, 99.0)
+
+    def test_income_plus_gain_equals_the_adjusted_profit(self) -> None:
+        book = LotBook("fifo")
+        self._buy_ten_units(book)
+        events = book.distribute("A", D1, 1.0, self.growth, return_of_capital=False)
+        # Sold on D3: ten engine units at 99 are 990, the same as ten real shares at 99.
+        records = book.sell("A", D3, book.shares_held("A"), 990.0)
+        income = sum(event.cash for event in events)
+        gains = sum(record.gain for record in records)
+        self.assertAlmostEqual(income, 9.9)
+        self.assertAlmostEqual(gains, -9.9)
+        self.assertAlmostEqual(income + gains, 990.0 - 990.0, places=9)
+
+    def test_return_of_capital_reduces_the_parent_and_is_not_income(self) -> None:
+        book = LotBook("fifo")
+        parent = self._buy_ten_units(book)
+        events = book.distribute("A", D1, 1.0, self.growth, return_of_capital=True)
+        self.assertTrue(events[0].return_of_capital)
+        self.assertAlmostEqual(parent.basis, 980.1)
+        self.assertAlmostEqual(book.lots[events[0].child_lot_id].basis, 9.9)
+        self.assertAlmostEqual(sum(lot.basis for lot in book.open_lots("A")), 990.0)
+        records = book.sell("A", D3, book.shares_held("A"), 990.0)
+        self.assertAlmostEqual(sum(record.gain for record in records), 0.0, places=9)
+        self.assertEqual(book.extra_realized, [])
+
+    def test_return_of_capital_beyond_basis_is_a_gain_on_the_ex_date(self) -> None:
+        book = LotBook("fifo")
+        shares = 10.0 * adjustment_factor(self.data, self.table, D0, "A")
+        lot = book.buy("A", D0, shares, 5.0)   # an implausibly low basis, to force the excess
+        book.distribute("A", D1, 1.0, self.growth, return_of_capital=True)
+        self.assertAlmostEqual(lot.basis, 0.0)
+        self.assertEqual(len(book.extra_realized), 1)
+        excess = book.extra_realized[0]
+        self.assertAlmostEqual(excess.gain, 4.9)
+        self.assertEqual((excess.shares, excess.sold, excess.opened), (0.0, D1, D0))
+
+    def test_a_lot_bought_on_the_ex_date_receives_nothing(self) -> None:
+        book = LotBook("fifo")
+        book.buy("A", D1, 10.0, 990.0)
+        self.assertEqual(book.distribute("A", D1, 1.0, self.growth, return_of_capital=False), [])
+        self.assertEqual(len(book.lots), 1)
+
+    def test_child_lots_do_not_receive_the_distribution_that_created_them(self) -> None:
+        book = LotBook("fifo")
+        self._buy_ten_units(book)
+        events = book.distribute("A", D1, 1.0, self.growth, return_of_capital=False)
+        self.assertEqual(len(events), 1)
+        self.assertEqual(len(book.lots), 2)
+
+    def test_no_growth_means_no_child_lot_but_the_cash_is_still_recorded(self) -> None:
+        book = LotBook("fifo")
+        self._buy_ten_units(book)
+        events = book.distribute("A", D1, 1.0, 1.0, return_of_capital=False)
+        self.assertIsNone(events[0].child_lot_id)
+        self.assertAlmostEqual(events[0].cash, 9.9)
+
+    def test_a_negative_dividend_is_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "dividend"):
+            LotBook("fifo").distribute("A", D1, -1.0, 1.0, return_of_capital=False)
+
+
 if __name__ == "__main__":
     unittest.main()

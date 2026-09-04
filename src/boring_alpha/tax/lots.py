@@ -72,6 +72,19 @@ class Realized:
         return self.proceeds - self.basis + self.disallowed
 
 
+@dataclass(frozen=True, slots=True)
+class Distribution:
+    """One lot's share of a distribution on an ex-date (spec §4.3)."""
+
+    symbol: str
+    ex_date: date
+    lot_id: int
+    lot_opened: date
+    cash: float
+    return_of_capital: bool
+    child_lot_id: int | None
+
+
 class LotBook:
     """Open lots per symbol, sold by a declared method."""
 
@@ -82,6 +95,8 @@ class LotBook:
         self.lots: dict[int, Lot] = {}
         self._open: dict[str, list[Lot]] = {}
         self._next_id = 1
+        self.extra_realized: list[Realized] = []
+        """Return of capital beyond a lot's basis, realised as gain on the ex-date."""
 
     def open_lots(self, symbol: str) -> tuple[Lot, ...]:
         return tuple(self._open.get(symbol, ()))
@@ -163,3 +178,52 @@ class LotBook:
             # Shares just sold cannot serve as replacement shares for a wash sale.
             lot.replacement_capacity = min(lot.replacement_capacity, lot.shares)
         return records
+
+    def distribute(
+        self,
+        symbol: str,
+        ex_date: date,
+        dividend_per_share: float,
+        growth: float,
+        *,
+        return_of_capital: bool,
+    ) -> list[Distribution]:
+        """Pay `dividend_per_share` to every lot held into `ex_date`, reinvesting it.
+
+        `growth` is the reinvestment factor the adjusted series implies,
+        F(ex_date) / F(previous session): the child lot's shares are the parent's
+        times (growth − 1) and its basis is the cash, so real shares keep
+        matching engine units exactly. An income distribution leaves the parent's
+        basis alone and is taxed; a return of capital reduces the parent's basis
+        by the cash instead, and any excess over that basis is a capital gain
+        realised on the ex-date. Lots acquired on or after the ex-date, including
+        the child lots this call opens, receive nothing.
+        """
+
+        if dividend_per_share < 0.0:
+            raise ValueError(f"negative dividend {dividend_per_share!r} for {symbol} on {ex_date}")
+        events: list[Distribution] = []
+        for lot in list(self._open.get(symbol, ())):
+            if lot.acquired >= ex_date:
+                continue
+            cash = lot.shares * dividend_per_share
+            if cash <= 0.0:
+                continue
+            child: Lot | None = None
+            if growth > 1.0:
+                child = self.buy(symbol, ex_date, lot.shares * (growth - 1.0), cash, source="reinvest")
+            if return_of_capital:
+                reduction = min(cash, lot.basis)
+                lot.basis -= reduction
+                excess = cash - reduction
+                if excess > 0.0:
+                    self.extra_realized.append(
+                        Realized(symbol, lot.lot_id, lot.opened, ex_date, 0.0, excess, 0.0)
+                    )
+            events.append(
+                Distribution(
+                    symbol, ex_date, lot.lot_id, lot.opened, cash, return_of_capital,
+                    child.lot_id if child is not None else None,
+                )
+            )
+        return events
