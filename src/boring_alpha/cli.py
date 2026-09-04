@@ -7,55 +7,32 @@ from pathlib import Path
 import sys
 
 from boring_alpha.backtest import Backtester
-from boring_alpha.config import UNBOUNDED_PERIOD, AppConfig, load_config
-from boring_alpha.data.csv_loader import load_csv_market_data
-from boring_alpha.data.synthetic import generate_synthetic_market_data
+from boring_alpha.config import DATASET_END, UNBOUNDED_PERIOD, AppConfig, load_config
+from boring_alpha.data import load_market_data
+from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
 from boring_alpha.report import write_report
 from boring_alpha.signals import CashAllocation, FixedAllocation, MultiAssetTrend
 
-
-class SealedRunError(RuntimeError):
-    """Raised when a sealed evaluation period is run without an explicit unseal."""
+__all__ = ["SealedRunError", "check_evaluation_gates", "build_parser", "main", "run_backtest"]
 
 
-def _load_data(config: AppConfig):
+def _banners(config: AppConfig) -> list[str]:
+    """Everything a reader must not miss about what this run is worth.
+
+    Printed above and below the metrics table, because the table is where a
+    reader forms an impression that a footnote will not undo.
+    """
+
+    banners: list[str] = []
     if config.data.source == "synthetic":
-        assert config.data.start is not None and config.data.end is not None
-        data = generate_synthetic_market_data(
-            config.strategy.symbols,
-            config.data.start,
-            config.data.end,
-            seed=config.data.seed,
-            annual_cash_rate=config.data.annual_cash_rate,
+        banners.append("SYNTHETIC DATA — OUTPUT HAS NO ECONOMIC MEANING")
+    if not config.evaluation.is_evidence:
+        banners.append(
+            f"EXPLORATORY RUN — NOT EVIDENCE ABOUT {config.strategy.strategy_id} "
+            "(unbounded window, no sealing)"
         )
-    else:
-        assert config.data.prices_path is not None and config.data.cash_path is not None
-        data = load_csv_market_data(config.data.prices_path, config.data.cash_path)
-    if config.evaluation.end is not None:
-        data = data.through(config.evaluation.end)
-    return data
-
-
-def check_evaluation_gates(config: AppConfig, unseal_reason: str | None) -> None:
-    """Refuse runs the charter's sealing policy does not permit."""
-
-    period = config.evaluation.period
-    if period == "sealed" and not (unseal_reason or "").strip():
-        raise SealedRunError(
-            "the sealed period requires --unseal with a reason; "
-            "a sealed run is a one-way decision and must be logged in the charter"
-        )
-    if unseal_reason and period != "sealed":
-        raise ValueError(f"--unseal applies only to the sealed period, not {period}")
-    if period == "validation":
-        strategy_id = config.strategy.strategy_id
-        reviews = sorted(config.evaluation.review_dir.glob(f"{strategy_id}-development*.md"))
-        if not reviews:
-            raise ValueError(
-                f"a written development review is required before validation: expected "
-                f"{config.evaluation.review_dir / f'{strategy_id}-development*.md'}"
-            )
+    return banners
 
 
 def _percentage(value: float) -> str:
@@ -64,8 +41,7 @@ def _percentage(value: float) -> str:
 
 def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
     config = load_config(config_path)
-    check_evaluation_gates(config, unseal_reason)
-    data = _load_data(config)
+    data = load_market_data(config, unseal_reason)
     engine = Backtester(
         data,
         config.strategy.symbols,
@@ -104,13 +80,17 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
         unseal_reason=unseal_reason,
     )
 
+    banners = _banners(config)
     print(f"BoringAlpha run {run_id}")
-    print("SYNTHETIC DATA — OUTPUT HAS NO ECONOMIC MEANING" if config.data.source == "synthetic" else data.source)
+    for banner in banners:
+        print(banner)
+    if config.data.source != "synthetic":
+        print(data.source)
     period = config.evaluation.period
     window = (
         "unbounded"
         if period == UNBOUNDED_PERIOD
-        else f"{config.evaluation.start}..{config.evaluation.end}"
+        else f"{config.evaluation.start}..{config.evaluation.end or DATASET_END}"
     )
     print(f"Evaluation period: {period} ({window})")
     print(f"{'Metric':<24}{'Strategy':>14}{'Static':>14}{'Cash':>14}")
@@ -127,6 +107,8 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
     if unseal_reason:
         print(f"SEALED RUN unsealed: {unseal_reason}")
         print(f"Record this run in the {config.strategy.strategy_id} charter change log.")
+    for banner in banners:
+        print(banner)
     print(f"Artifacts: {run_dir}")
     return 0
 

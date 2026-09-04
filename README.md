@@ -63,40 +63,58 @@ period = "development"   # or validation, sealed, exploratory
 ```
 
 The dataset is truncated at the period's end before the engine sees it, so data
-after the boundary is never loaded, cannot influence a result, and does not
-enter the data fingerprint. A development run therefore keeps its identity after
-later data is appended. A backtest window outside its period is refused.
+after the boundary never reaches the engine, the metrics, or the data
+fingerprint. A development run therefore keeps its identity after later data is
+appended, which is the property `tests/test_seal_identity.py` pins down. A
+backtest window outside its period is refused. Gating and truncation live in
+`load_market_data`, the only supported way to obtain data for a configuration,
+so the seal is not a step a caller can forget.
+
+A period may end at `"dataset"` rather than a date, which is how BA-001's
+sealed period expresses the charter's "latest complete dataset": no truncation
+and no upper bound beyond the data you have prepared.
 
 `exploratory` is unbounded and always permitted, and stamps every run with a
 warning that it is not evidence about the strategy. The checked-in demo uses it.
 
 Two gates implement the charter's sealing policy. A `validation` run requires a
 written development review at `docs/reviews/<ID>-development*.md`. A `sealed`
-run requires an explicit reason:
+run requires both that review and a validation review, plus an explicit reason:
 
 ```bash
 boring-alpha backtest configs/my_sealed_run.toml --unseal "dev and validation reviewed"
 ```
 
-The reason is recorded in the manifest, and the run must be listed in the
-strategy's charter change log. Neither gate is cryptographic: you can always
-edit a file. They exist so that looking at sealed data is a deliberate,
-reviewable act rather than an accident.
+The reason is recorded in the run's provenance record, and the run must be
+listed in the strategy's charter change log. Neither gate is cryptographic: you
+can always edit a file, and `evaluation.periods_path` can point at a different
+registry. They exist so that looking at sealed data is a deliberate, reviewable
+act rather than an accident. What the artifacts do guarantee is that a run
+states which boundaries it obeyed: the resolved period and its bounds are part
+of the run identity, so the same configuration under different boundaries is a
+different run.
 
 ## Run artifacts
 
-Each run writes `manifest.json`, `metrics.json`, `decisions.json`, and the
-equity and trade CSVs for the strategy and both benchmarks. The manifest embeds
-the full configuration text, the SHA-256 of the configuration, the data, and
-the code, the declared period and its bounds, the first and last session
-actually loaded, the Git commit and whether the working tree was dirty, the
-Python version, any unseal reason, and every warning, including month-ends that
-produced no signal.
+Each run writes `manifest.json`, `metrics.json`, `decisions.json`, the equity
+and trade CSVs for the strategy and both benchmarks, and `provenance.jsonl`.
 
-The run identifier is derived only from the configuration, data, and code
-hashes, so identical inputs always land in the same directory and a second run
-verifies the artifacts instead of rewriting them. `artifact_schema` is 3; a
-manifest without that field predates the schema.
+`manifest.json` describes the experiment's identity: the full configuration
+text, the SHA-256 of the configuration, the data, and the code, the declared
+period and its bounds, the first and last session actually loaded, and every
+warning, including month-ends that produced no signal and any data-quality
+finding. It is written once. The run identifier is derived from the
+configuration, data, and code hashes plus the resolved evaluation period, so
+identical inputs always land in the same directory and a second run verifies
+the artifacts instead of rewriting them. `artifact_schema` is 4; a manifest
+without that field predates the schema.
+
+`provenance.jsonl` describes the environment each invocation ran in — timestamp,
+Git commit, whether the working tree was dirty, Python version, and any unseal
+reason — and gains one line per run. These belong outside the manifest on
+purpose: a docs-only commit or a Python patch upgrade changes the environment
+without changing the experiment, and folding them into a write-once file would
+make the integrity check fire on ordinary work until you learned to ignore it.
 
 Three configuration rules are enforced rather than assumed: `report.output_dir`
 and `evaluation.period` are required, and `backtest.start` must select the first

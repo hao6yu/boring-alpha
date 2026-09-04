@@ -59,9 +59,6 @@ class MarketDataValidationTests(unittest.TestCase):
             MarketData([PriceBar(day, "A", 0.0, 1.0)], {day: 1.0}, source="s")
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class TruncationTests(unittest.TestCase):
     def _data(self) -> MarketData:
@@ -87,3 +84,7 @@ class TruncationTests(unittest.TestCase):
     def test_through_rejects_a_boundary_before_the_first_session(self) -> None:
         with self.assertRaisesRegex(ValueError, "no bars"):
             self._data().through(date(2024, 1, 1))
+
+
+if __name__ == "__main__":
+    unittest.main()

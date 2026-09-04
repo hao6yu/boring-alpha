@@ -88,9 +88,6 @@ class EvaluationPeriodTests(unittest.TestCase):
             _load(CONFIG.replace('[evaluation]\nperiod = "development"\n', ""))
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class CheckedInRegistryTests(unittest.TestCase):
     """The registry and the example configuration must agree with the charter."""
@@ -111,3 +108,7 @@ class CheckedInRegistryTests(unittest.TestCase):
         )
         self.assertEqual(development["end"], validation["start"] - timedelta(days=1))
         self.assertEqual(validation["end"], sealed["start"] - timedelta(days=1))
+
+
+if __name__ == "__main__":
+    unittest.main()

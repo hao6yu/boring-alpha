@@ -8,6 +8,7 @@ from boring_alpha.backtest.engine import Backtester
 from boring_alpha.config import load_config
 from boring_alpha.data.synthetic import generate_synthetic_market_data
 from boring_alpha.metrics.performance import calculate_metrics
+import boring_alpha.report as report
 from boring_alpha.report import write_report
 from boring_alpha.signals.trend import CashAllocation, FixedAllocation, MultiAssetTrend
 
@@ -77,7 +78,7 @@ class ReportTests(unittest.TestCase):
     def test_manifest_records_schema_version_and_engine_warnings(self) -> None:
         run_id, run_dir = self._write()
         manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["artifact_schema"], 3)
+        self.assertEqual(manifest["artifact_schema"], 4)
         self.assertTrue(any("no signal at month-end 2020-12-31" in w for w in manifest["warnings"]))
         self.assertEqual(run_dir, self.config.report.output_dir / "T-001" / run_id)
 
@@ -106,3 +107,53 @@ class ReportTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ArtifactIdentityTests(ReportTests):
+    """The manifest must be a pure function of config, data, code, and period."""
+
+    def test_environment_changes_do_not_trip_the_write_once_guard(self) -> None:
+        self._write()
+        real = report.git_provenance
+        report.git_provenance = lambda root: {"git_commit": "0" * 40, "git_dirty": False}
+        try:
+            self._write()
+        finally:
+            report.git_provenance = real
+
+    def test_each_invocation_appends_a_provenance_record(self) -> None:
+        _, run_dir = self._write()
+        self._write()
+        lines = (run_dir / "provenance.jsonl").read_text(encoding="utf-8").strip().splitlines()
+        self.assertEqual(len(lines), 2)
+        record = json.loads(lines[0])
+        self.assertIn("recorded_at", record)
+        self.assertIn("python_version", record)
+        self.assertIn("git_commit", record)
+
+    def test_manifest_holds_no_environment_fields(self) -> None:
+        _, run_dir = self._write()
+        manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
+        for field in ("git_commit", "git_dirty", "python_version", "unseal_reason"):
+            self.assertNotIn(field, manifest)
+
+    def test_different_period_bounds_change_the_run_identity(self) -> None:
+        first, _ = self._write()
+        bounded = self.config.__class__(
+            **{
+                **{f: getattr(self.config, f) for f in self.config.__slots__},
+                "evaluation": self.config.evaluation.__class__(
+                    "development", date(2021, 1, 1), date(2021, 12, 31),
+                    self.config.evaluation.review_dir,
+                ),
+            }
+        )
+        second, _ = write_report(bounded, self.data, *self.results, *self.metrics)
+        self.assertNotEqual(first, second)
+
+
+class GitProvenanceScopeTests(unittest.TestCase):
+    def test_reports_nulls_when_the_repository_does_not_contain_the_code(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            provenance = report.git_provenance(Path(directory), code_path=Path("/usr/lib/python"))
+        self.assertIsNone(provenance["git_commit"])

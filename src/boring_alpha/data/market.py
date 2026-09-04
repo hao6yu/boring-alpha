@@ -86,8 +86,8 @@ class MarketData:
         """A copy holding only sessions on or before `end`.
 
         Truncating before the engine runs is what makes an evaluation period a
-        seal: data after the boundary is never loaded, so it cannot influence a
-        result and does not enter the data fingerprint.
+        seal: data after the boundary never reaches the engine or the metrics,
+        and does not enter the data fingerprint.
         """
 
         bars = [
@@ -99,7 +99,7 @@ class MarketData:
         if not bars:
             raise ValueError(f"truncating at {end} leaves no bars")
         factors = {day: factor for day, factor in self.cash_factors.items() if day <= end}
-        return MarketData(bars, factors, source=self.source)
+        return MarketData(bars, factors, source=f"{self.source}:truncated={end}")
 
     def require_complete_calendar(
         self, symbols: tuple[str, ...], start: date, end: date

@@ -34,6 +34,7 @@ class DataConfig:
     end: date | None = None
     seed: int = 0
     annual_cash_rate: float = 0.0
+    regime: str = "trending"
     prices_path: Path | None = None
     cash_path: Path | None = None
 
@@ -81,7 +82,10 @@ _SCHEMA: dict[str, frozenset[str]] = {
     "portfolio": frozenset({"initial_cash"}),
     "execution": frozenset({"cost_bps"}),
     "data": frozenset(
-        {"source", "start", "end", "seed", "annual_cash_rate", "prices_path", "cash_path"}
+        {
+            "source", "start", "end", "seed", "annual_cash_rate", "regime",
+            "prices_path", "cash_path",
+        }
     ),
     "backtest": frozenset({"start", "end"}),
     "evaluation": frozenset({"period", "periods_path", "review_dir"}),
@@ -90,9 +94,10 @@ _SCHEMA: dict[str, frozenset[str]] = {
 
 PERIODS = ("development", "validation", "sealed", "exploratory")
 UNBOUNDED_PERIOD = "exploratory"
+DATASET_END = "dataset"
 
 _DATA_KEYS_BY_SOURCE: dict[str, frozenset[str]] = {
-    "synthetic": frozenset({"start", "end", "seed", "annual_cash_rate"}),
+    "synthetic": frozenset({"start", "end", "seed", "annual_cash_rate", "regime"}),
     "csv": frozenset({"prices_path", "cash_path"}),
 }
 
@@ -181,6 +186,7 @@ def load_config(path: str | Path) -> AppConfig:
         end=_parse_date(data_raw["end"], "data.end") if "end" in data_raw else None,
         seed=int(data_raw.get("seed", 0)),
         annual_cash_rate=float(data_raw.get("annual_cash_rate", 0.0)),
+        regime=str(data_raw.get("regime", "trending")).lower(),
         prices_path=(
             _resolve_path(data_raw["prices_path"], root, "data.prices_path")
             if "prices_path" in data_raw
@@ -244,14 +250,18 @@ def _load_evaluation(
     bounds = registry.get(strategy_id, {}).get(period)
     if not isinstance(bounds, dict):
         raise ValueError(f"{periods_path} defines no {period} period for {strategy_id}")
-    start = _parse_date(_require(bounds, f"{strategy_id}.{period}", "start"), "period start")
-    end = _parse_date(_require(bounds, f"{strategy_id}.{period}", "end"), "period end")
-    if start > end:
+    label = f"{strategy_id}.{period}"
+    start = _parse_date(_require(bounds, label, "start"), "period start")
+    raw_end = _require(bounds, label, "end")
+    # A charter may end a period at "the latest complete dataset" rather than a
+    # date. DATASET_END means no truncation and no upper bound to check.
+    end = None if raw_end == DATASET_END else _parse_date(raw_end, "period end")
+    if end is not None and start > end:
         raise ValueError(f"{strategy_id} {period} period starts after it ends")
-    if backtest.start < start or backtest.end > end:
+    if backtest.start < start or (end is not None and backtest.end > end):
         raise ValueError(
             f"backtest window {backtest.start}..{backtest.end} falls outside the "
-            f"{period} period {start}..{end}"
+            f"{period} period {start}..{end or DATASET_END}"
         )
     return EvaluationConfig(period, start, end, review_dir)
 
@@ -280,6 +290,8 @@ def _validate(
     if backtest.start > backtest.end:
         raise ValueError("backtest.start must not follow backtest.end")
     if data.source == "synthetic":
+        if data.regime not in ("trending", "random_walk"):
+            raise ValueError("data.regime must be 'trending' or 'random_walk'")
         if data.start is None or data.end is None or data.start >= data.end:
             raise ValueError("synthetic data requires data.start < data.end")
         if data.start > backtest.start or data.end < backtest.end:

@@ -2,9 +2,11 @@
 #
 # A run configuration names a period; it never restates these dates. The loader
 # resolves the bounds here, refuses a backtest window that falls outside them,
-# and truncates the dataset at the period end so data after the boundary is
-# never loaded. Changing a boundary is a charter change: amend the charter and
-# its change log in the same commit.
+# and truncates the dataset at the period end so data after the boundary never
+# reaches the engine, the metrics, or the data fingerprint. The resolved bounds
+# are part of a run's identity, so a run states which boundaries it obeyed.
+# Changing a boundary is a charter change: amend the charter and its change log
+# in the same commit.
 
 [BA-001.development]
 start = 2007-01-01
@@ -14,6 +16,9 @@ end = 2017-12-31
 start = 2018-01-01
 end = 2021-12-31
 
+# The charter ends the sealed period at "the latest complete dataset", so it is
+# registered as "dataset" rather than an invented date: no truncation, and no
+# upper bound beyond whatever data has been prepared.
 [BA-001.sealed]
 start = 2022-01-01
-end = 2025-12-31
+end = "dataset"
