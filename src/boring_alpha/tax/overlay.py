@@ -56,7 +56,13 @@ KNOWN_OMISSIONS = (
     "Commodity-pool interest income is not separated from futures gains under the "
     "mark-to-market treatment (spec §4.5).",
 )
-SHARE_IDENTITY_TOLERANCE = 1e-6
+# The identity compares real shares times unadjusted close against engine
+# units times adjusted close on every session. With a piecewise-constant
+# adjustment factor (see adjustment_factor) the difference is exactly
+# Yahoo's rounding of the adjusted close, observed up to ~1e-6 relative; 1e-5
+# passes that while still catching a genuine unit error, and the maximum
+# deviation is reported regardless of whether the check passes.
+SHARE_IDENTITY_TOLERANCE = 1e-5
 PNL_IDENTITY_TOLERANCE = 1e-6
 IMPLIED_PRICE_TOLERANCE = 0.05
 DAYS_PER_YEAR = 365.2425

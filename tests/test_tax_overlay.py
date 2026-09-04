@@ -625,6 +625,36 @@ class NegativeAfterTaxWealthTests(unittest.TestCase):
         self.assertIsNone(out["metrics"]["tax_drag_bps"])
 
 
+class JitterTests(unittest.TestCase):
+    """Ten units of A bought and fully sold with no ex-date in between, where
+    the unadjusted close carries a ~1e-7 relative jitter (the kind Yahoo's
+    ~7-significant-digit adjusted closes actually show) between the buy
+    session and the sell session while the adjusted close stays flat at 100.
+    Sampling the adjustment factor once per interval means the buy and the
+    sell use the same factor, so the full exit closes exactly instead of
+    tripping the over-sell guard or the share-identity check.
+    """
+
+    def test_a_full_exit_across_a_jittered_close_does_not_oversell(self) -> None:
+        tax = _policy()
+        days = [date(2024, 1, 2), date(2024, 12, 31)]
+        data = _market(days, {"A": [100.0, 100.0]})
+        table = _table(days, {"A": [100.0, 100.00001]})
+        curve = [(date(2024, 1, 2), 1000.0, 0.0), (date(2024, 12, 31), 1000.0, 1000.0)]
+        fills = [
+            _fill(date(2024, 1, 2), "A", "BUY", 10.0, 100.0),
+            _fill(date(2024, 12, 31), "A", "SELL", 10.0, 100.0),
+        ]
+        out = apply_overlay(
+            _result("jitter", curve, fills), data, table, tax, BASE,
+            initial_cash=1000.0, code_sha256=CODE,
+        )
+        self.assertEqual(out["totals"]["open_lots_at_end"], 0)
+        checks = out["identity_checks"]
+        self.assertLess(checks["share_identity_max_relative_deviation"], 1e-5)
+        self.assertTrue(checks["share_identity_passed"])
+
+
 class GuardTests(unittest.TestCase):
     def test_a_curve_with_fewer_than_two_points_is_refused(self) -> None:
         tax = _policy()

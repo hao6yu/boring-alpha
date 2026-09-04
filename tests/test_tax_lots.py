@@ -48,6 +48,28 @@ class AdjustmentFactorTests(unittest.TestCase):
         # adjusted downwards, so old lots hold fewer real shares than units.
         self.assertAlmostEqual(10.0 * adjustment_factor(data, table, D0, "A"), 5.0)
 
+    def test_the_factor_is_sampled_once_per_ex_date_interval(self) -> None:
+        # Unadjusted closes carry ~2e-7 relative jitter on D1 and D3 (the kind
+        # Yahoo's ~7-significant-digit adjusted closes actually show); the
+        # adjusted series is flat, so the raw per-day ratio would jitter too.
+        # Sampled once per interval, D0/D1 share D0's ratio and D2/D3 share D2's.
+        data = _market({"A": [99.0, 99.0, 99.0, 99.0]})
+        table = _table(
+            {"A": [100.0, 100.00002, 99.0, 99.00003]}, {"A": [0.0, 0.0, 1.0, 0.0]}
+        )
+        self.assertEqual(adjustment_factor(data, table, D0, "A"), 99.0 / 100.0)
+        self.assertEqual(adjustment_factor(data, table, D1, "A"), 99.0 / 100.0)
+        self.assertEqual(adjustment_factor(data, table, D2, "A"), 99.0 / 99.0)
+        self.assertEqual(adjustment_factor(data, table, D3, "A"), 99.0 / 99.0)
+
+    def test_the_reference_never_precedes_the_market_data(self) -> None:
+        # The table's first session for A is D0, but the market data (and so
+        # the run) only starts on D1: the reference must not reach back to a
+        # date `data` cannot price.
+        data = _market({"A": [99.0, 99.0, 99.0]}, days=(D1, D2, D3))
+        table = _table({"A": [100.0, 99.0, 99.0, 99.0]}, days=(D0, D1, D2, D3))
+        self.assertEqual(adjustment_factor(data, table, D1, "A"), 99.0 / 99.0)
+
 
 class BuyTests(unittest.TestCase):
     def test_a_buy_opens_a_lot_with_full_replacement_capacity(self) -> None:

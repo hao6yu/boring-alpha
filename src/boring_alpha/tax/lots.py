@@ -10,6 +10,7 @@ prices that already contain reinvested distributions.
 
 from __future__ import annotations
 
+from bisect import bisect_right
 from dataclasses import dataclass, replace
 from datetime import date, timedelta
 from typing import Sequence
@@ -22,14 +23,33 @@ _SHARE_TOLERANCE = 1e-9
 
 
 def adjustment_factor(data: MarketData, table: DistributionTable, day: date, symbol: str) -> float:
-    """Adjusted over unadjusted close on `day`: engine units times this are real shares.
+    """Adjusted over unadjusted close, sampled once per ex-date interval.
 
-    The ratio changes only at ex-dates (both series are split-adjusted), so it
-    is constant between distributions and a lot's real shares grow only when a
-    child lot is opened.
+    Yahoo's adjusted closes carry only about seven significant digits, so the
+    raw `data.bar(day, symbol).close / table.close(day, symbol)` ratio jitters
+    by up to roughly 1e-6 relative between ex-dates even though the ratio is
+    supposed to be exactly constant there (both series are split- and
+    dividend-adjusted). To make the factor piecewise-constant by construction,
+    this samples it at one reference session per interval: the latest ex-date
+    of `symbol` in `table` (a session where `table.dividend(...) > 0`) that is
+    on or before `day`, found with `bisect` on `table.ex_dates(symbol)`; when
+    there is none on or before `day`, the earliest session of `symbol` in the
+    table is used instead. If that reference session is earlier than the
+    first date of `data`, the first date of `data` is used instead, so the
+    whole first interval shares that one sample.
+
+    Real shares bought and sold within one interval therefore use exactly one
+    factor, so a full exit closes exactly instead of tripping the over-sell
+    guard on Yahoo's rounding; the share-identity check then measures that
+    rounding jitter directly rather than being broken by it.
     """
 
-    return data.bar(day, symbol).close / table.close(day, symbol)
+    ex_dates = table.ex_dates(symbol)
+    index = bisect_right(ex_dates, day)
+    reference = ex_dates[index - 1] if index > 0 else table.symbol_dates[symbol][0]
+    if reference < data.dates[0]:
+        reference = data.dates[0]
+    return data.bar(reference, symbol).close / table.close(reference, symbol)
 
 
 @dataclass

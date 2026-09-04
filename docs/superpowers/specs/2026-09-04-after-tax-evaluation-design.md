@@ -798,3 +798,13 @@ implementation plan will break these into tasks.
   `TargetExposureAllocation`, carries the rebalancing schedule, so the
   exposure-matched diagnostic keeps its monthly behaviour and its archived
   name.
+- **Revision 3.2 (2026-09-04).** After the first run on real data. The
+  adjusted-over-unadjusted ratio is constant between ex-dates only to about
+  1e-6, because Yahoo's adjusted closes carry about seven significant digits;
+  the overlay therefore samples the factor once per ex-date interval, and the
+  share-identity threshold is 1e-5 relative, with the deviation reported
+  regardless. Plan 2's stated simplifications, for the record: the
+  qualification test uses the lot's acquisition date and the date its last
+  share was sold; a replacement lot is tacked once per sale; the low
+  qualified set caps rather than replaces; commodity-pool interest is not
+  separated.
