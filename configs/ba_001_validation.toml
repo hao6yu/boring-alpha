@@ -1,0 +1,48 @@
+# BA-001 validation period. Run only after the development review exists under
+# docs/reviews/; the loader enforces that gate.
+#
+# The window is exactly BA-001's validation period. The dataset is the same
+# snapshot the development sweep used; the loader truncates it at the period end
+# so nothing after 2021-12-31 reaches the engine, the metrics, or the data
+# fingerprint. Lookback history before 2018 comes from the same file.
+
+[strategy]
+id = "BA-001"
+name = "Multi-Asset Trend"
+symbols = ["SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC"]
+lookback_months = 12
+sleeve_weight = 0.125
+
+[portfolio]
+initial_cash = 100000.0
+
+[execution]
+cost_bps = 10.0
+
+[data]
+source = "csv"
+# Names how the series were built; part of the run identity, because the
+# fetcher is not covered by the code fingerprint.
+methodology = "yahoo-adjusted-v1+dgs3mo-v1"
+# Point at a snapshot directory. `current` is repointed only after a fetch
+# finishes; a snapshot without manifest.json is an incomplete download.
+prices_path = "../data/current/market_daily.csv"
+cash_path = "../data/current/cash_daily.csv"
+
+[backtest]
+start = "2018-01-01"
+end = "2021-12-31"
+
+[evaluation]
+period = "validation"
+
+# Reported attribution groups. Four of the eight sleeves are equity beta, so
+# per-sleeve attribution alone would understate how concentrated the risk is.
+[clusters]
+equity = ["SPY", "IWM", "EFA", "EEM"]
+bonds = ["IEF", "TLT"]
+gold = ["GLD"]
+commodities = ["DBC"]
+
+[report]
+output_dir = "../experiments"
