@@ -12,8 +12,9 @@ from boring_alpha.config import DATASET_END, UNBOUNDED_PERIOD, AppConfig, load_c
 from boring_alpha.data import load_market_data
 from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
-from boring_alpha.report import ARTIFACT_SCHEMA, write_report
-from boring_alpha.criteria import Verdict, classify
+from boring_alpha.report import READABLE_SCHEMAS, write_report
+from boring_alpha.criteria import Verdict
+from boring_alpha.profiles import profile_for
 from boring_alpha.signals import CashAllocation, FixedAllocation, MultiAssetTrend
 from boring_alpha.sweep import run_sweep, write_sweep_report
 
@@ -180,15 +181,28 @@ def run_classify(development_dir: Path, validation_dir: Path) -> int:
                 f"{field} is {development[field]!r} in the development sweep and "
                 f"{validation[field]!r} in the validation sweep"
             )
-    if development["artifact_schema"] != ARTIFACT_SCHEMA:
+    schema = development["artifact_schema"]
+    if schema not in READABLE_SCHEMAS:
+        readable = ", ".join(str(value) for value in READABLE_SCHEMAS)
         raise ValueError(
-            f"these sweeps use artifact schema {development['artifact_schema']}, but this "
-            f"code writes schema {ARTIFACT_SCHEMA}. Re-run them rather than comparing "
-            "artifacts across schema versions."
+            f"these sweeps use artifact schema {schema}, but this code reads schemas "
+            f"{readable}. Re-run them rather than comparing artifacts across schema versions."
         )
-    verdict = classify(development["variants"], validation["variants"])
+    # A tax policy is part of what was scored. Two sweeps scored under different
+    # policies, or one scored and one not, cannot share a verdict.
+    policies = (development.get("tax_policy_sha256"), validation.get("tax_policy_sha256"))
+    if any(policies) and policies[0] != policies[1]:
+        raise ValueError(
+            "refusing to classify different tax policies: tax_policy_sha256 is "
+            f"{policies[0]!r} in the development sweep and {policies[1]!r} in the "
+            "validation sweep"
+        )
 
-    print(f"BA-001 classification: {verdict.value.upper()}")
+    strategy_id = development["strategy_id"]
+    profile = profile_for(strategy_id)
+    verdict = profile.classify(development["variants"], validation["variants"])
+
+    print(f"{strategy_id} classification: {verdict.value.upper()}")
     for label, criteria in (("development", development), ("validation", validation)):
         print(f"\n{label}:")
         for criterion in criteria["criteria"]:
@@ -199,7 +213,7 @@ def run_classify(development_dir: Path, validation_dir: Path) -> int:
     if verdict is Verdict.INCONCLUSIVE:
         print(
             "\nInconclusive is a real outcome, not a failure to decide. "
-            "Record it in the charter rather than searching for a variant that advances."
+            "Record it in the registry rather than searching for a variant that advances."
         )
     print("\nWrite the decision under docs/reviews/ without changing the charter retroactively.")
     return 0

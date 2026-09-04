@@ -20,6 +20,10 @@ from boring_alpha.domain import BacktestResult, SignalSnapshot
 
 ARTIFACT_SCHEMA = 5
 
+# Schemas `classify` may read. A new schema that only adds fields is appended
+# here so that artifacts written under the old one stay classifiable.
+READABLE_SCHEMAS: tuple[int, ...] = (ARTIFACT_SCHEMA,)
+
 
 def _json_default(value: object) -> str:
     if isinstance(value, date):

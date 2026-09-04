@@ -22,7 +22,7 @@ VARIANTS = {
 def _criteria(period: str, **overrides) -> dict:
     payload = {
         "artifact_schema": 5,
-        "strategy_id": "X-001",
+        "strategy_id": "BA-001",
         "strategy_spec_sha256": "e" * 64,
         "code_sha256": "a" * 64,
         "evaluation_period": period,
@@ -117,3 +117,66 @@ class VerdictInputGuardTests(unittest.TestCase):
         dev_dir, val_dir = self._dirs(development, _criteria("validation"))
         with self.assertRaisesRegex(ValueError, "records no artifact_schema"):
             run_classify(dev_dir, val_dir)
+
+
+class TaxPolicyAgreementTests(unittest.TestCase):
+    """Two sweeps scored under different tax policies cannot share a verdict."""
+
+    _dirs = ClassifyGuardTests._dirs
+
+    def test_identical_tax_policies_classify(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", tax_policy_sha256="c" * 64),
+            _criteria("validation", tax_policy_sha256="c" * 64),
+        )
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(run_classify(dev_dir, val_dir), 0)
+
+    def test_different_tax_policies_are_refused(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", tax_policy_sha256="c" * 64),
+            _criteria("validation", tax_policy_sha256="d" * 64),
+        )
+        with self.assertRaisesRegex(ValueError, "different tax policies"):
+            run_classify(dev_dir, val_dir)
+
+    def test_a_policy_on_one_side_only_is_refused(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", tax_policy_sha256="c" * 64), _criteria("validation")
+        )
+        with self.assertRaisesRegex(ValueError, "different tax policies"):
+            run_classify(dev_dir, val_dir)
+
+
+class ProfileLookupTests(unittest.TestCase):
+    _dirs = ClassifyGuardTests._dirs
+
+    def test_an_unregistered_strategy_is_refused(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", strategy_id="X-001"),
+            _criteria("validation", strategy_id="X-001"),
+        )
+        with self.assertRaisesRegex(ValueError, "no evaluation profile.*X-001"):
+            run_classify(dev_dir, val_dir)
+
+    def test_the_verdict_names_the_strategy(self) -> None:
+        dev_dir, val_dir = self._dirs(_criteria("development"), _criteria("validation"))
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            run_classify(dev_dir, val_dir)
+        self.assertIn("BA-001 classification:", out.getvalue())
+
+
+class SchemaCompatibilityTests(unittest.TestCase):
+    _dirs = ClassifyGuardTests._dirs
+
+    def test_every_readable_schema_classifies(self) -> None:
+        from boring_alpha.report import READABLE_SCHEMAS
+
+        for schema in READABLE_SCHEMAS:
+            dev_dir, val_dir = self._dirs(
+                _criteria("development", artifact_schema=schema),
+                _criteria("validation", artifact_schema=schema),
+            )
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(run_classify(dev_dir, val_dir), 0)
