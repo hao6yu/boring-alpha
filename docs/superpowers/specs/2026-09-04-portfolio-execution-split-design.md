@@ -2,6 +2,8 @@
 
 Status: **approved, not yet implemented**
 Date: 2026-09-04
+Revised: 2026-09-04 — records are flat and matched by key, rather than a
+fill holding its order.
 
 ## Why
 
@@ -32,17 +34,38 @@ class Order:
 
 @dataclass(frozen=True, slots=True)
 class Fill:
-    order: Order
+    date: date
+    symbol: str
+    side: str
     quantity: float
     price: float
-    notional: float         # actually filled, <= order.intended_notional
+    notional: float         # actually filled, <= intended_notional
     cost: float
+    intended_notional: float
+    reference_price: float
 ```
 
-`Fill` replaces `Trade` and exposes `date`, `symbol` and `side` as properties
-delegating to its order, so existing call sites and artifact columns are
-unchanged. `BacktestResult` gains `orders` alongside `fills`, so an order that
-filled partially is visible rather than inferred from a quantity.
+Both records are flat, and a fill is matched to its order by
+`(date, symbol, side)`. The strategy issues at most one order per symbol per
+session, so that key is unique by construction.
+
+Flat records rather than a `Fill.order` reference, for three reasons. A broker
+returns fills that know nothing about our objects, and reconciliation will match
+them by instrument, side and date; modelling the link as an object reference
+would model something the live system does not have. Serialization stays direct,
+with no nested blob in JSON and no indirection in the CSV writer. And an order
+that fills for nothing — which happens when buys scale to zero — is visible by
+the absence of a matching fill, rather than requiring a zero-quantity fill to
+represent it.
+
+The cost is that `intended_notional` and `reference_price` appear on both
+records. That duplication is deliberate: they are exactly the fields the trade
+ledger needs, and denormalising them onto a ledger row is the ordinary shape for
+this kind of record.
+
+`Fill` replaces `Trade`. `BacktestResult` gains `orders` alongside `fills`, so
+an order that filled partially, or not at all, is visible rather than inferred
+from a quantity.
 
 ### Layers
 
