@@ -281,11 +281,11 @@ class SweepRanksOnTheCharterDefinitionTests(unittest.TestCase):
         (root / "data" / "p.csv").write_text("\n".join(prices) + "\n", encoding="utf-8")
         (root / "data" / "c.csv").write_text("\n".join(cash) + "\n", encoding="utf-8")
         (root / "configs" / "evaluation_periods.toml").write_text(
-            "[T-900.development]\nstart = 2021-01-01\nend = 2023-12-31\n", encoding="utf-8"
+            "[BA-001.development]\nstart = 2021-01-01\nend = 2023-12-31\n", encoding="utf-8"
         )
         path = root / "configs" / "run.toml"
         path.write_text(
-            '\n[strategy]\nid = "T-900"\nname = "Ranking"\n'
+            '\n[strategy]\nid = "BA-001"\nname = "Ranking"\n'
             'symbols = ["PLODDER", "SPRINTER"]\nlookback_months = 12\nsleeve_weight = 0.5\n'
             "[portfolio]\ninitial_cash = 100000\n[execution]\ncost_bps = 10\n"
             '[data]\nsource = "csv"\nmethodology = "test-v1"\n'

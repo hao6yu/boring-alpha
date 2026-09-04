@@ -24,7 +24,6 @@ from boring_alpha.criteria import (
     LOOKBACK_15,
     LOOKBACK_9,
     PeriodOutcome,
-    evaluate_period,
 )
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
@@ -45,14 +44,10 @@ from boring_alpha.report import (
     write_once,
     write_once_bytes,
 )
-from boring_alpha.signals import (
-    CashAllocation,
-    ExcludingSleeve,
-    FixedAllocation,
-    MultiAssetTrend,
-    ScaledAllocation,
-)
+from boring_alpha.profiles import VariantSpec, profile_for
+from boring_alpha.signals import CashAllocation, ScaledAllocation
 
+# BA-001's variant order; kept for callers that iterate it.
 GRID = (BASE, DOUBLE_COST, LOOKBACK_9, LOOKBACK_15, DROP_TOP_SLEEVE)
 BOOTSTRAP_SEED = 20260904
 
@@ -84,42 +79,28 @@ def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
     )
 
 
-def _pair(
-    config: AppConfig,
-    data: MarketData,
-    *,
-    lookback: int,
-    cost_bps: float,
-    exclude: str | None = None,
-) -> tuple[BacktestResult, BacktestResult]:
-    symbols, weight = config.strategy.symbols, config.strategy.sleeve_weight
-    engine = _engine(config, data, cost_bps)
-    policy = MultiAssetTrend(symbols, lookback, weight)
-    strategy = engine.run(ExcludingSleeve(policy, exclude) if exclude else policy)
-    # The benchmark is always the charter's full static allocation, including
-    # for C5: the question is whether the strategy clears the bar without its
-    # best sleeve, not whether a handicapped benchmark is easier to beat.
-    #
-    # It does take the variant's own lookback, so the 9- and 15-month checks
-    # compare series that start on the same session. Comparing a 15-month
-    # strategy against a 12-month benchmark would confound the lookback with
-    # three extra months of warm-up.
-    static = engine.run(FixedAllocation(symbols, lookback, weight))
-    return strategy, static
-
-
 def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
-    lookback = config.strategy.lookback_months
+    profile = profile_for(config.strategy.strategy_id)
+    specs = profile.grid(config)
+    if BASE not in specs:
+        raise ValueError(f"{profile.strategy_id}'s grid defines no '{BASE}' variant")
+    grid = {name: spec.description for name, spec in specs.items()}
     cost = config.execution.cost_bps
-    grid = {
-        BASE: f"{lookback}-month lookback at {cost:g} bps (pre-registered)",
-        DOUBLE_COST: f"{lookback}-month lookback at {2 * cost:g} bps",
-        LOOKBACK_9: f"9-month lookback at {cost:g} bps",
-        LOOKBACK_15: f"15-month lookback at {cost:g} bps",
-        DROP_TOP_SLEEVE: f"{lookback}-month lookback at {cost:g} bps, top sleeve in cash",
-    }
+    lookback = config.strategy.lookback_months
 
-    base_strategy, base_static = _pair(config, data, lookback=lookback, cost_bps=cost)
+    def run_variant(
+        spec: VariantSpec, top_sleeve: str | None
+    ) -> tuple[BacktestResult, BacktestResult]:
+        engine = _engine(config, data, spec.cost_bps)
+        strategy = engine.run(spec.strategy(config, top_sleeve))
+        # Every variant is judged against the gating benchmark, including the
+        # one without its best sleeve: the question is whether the strategy
+        # clears the bar handicapped, not whether a handicapped benchmark is
+        # easier to beat.
+        benchmark = engine.run(spec.benchmark(config))
+        return strategy, benchmark
+
+    base_strategy, base_static = run_variant(specs[BASE], None)
     contributions = dict(base_strategy.contributions)
     # The charter ranks sleeves by share of excess return over cash, not by raw
     # profit: a sleeve held almost always at roughly the cash rate earns a large
@@ -128,13 +109,11 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
     excess_contributions = dict(base_strategy.excess_contributions)
     top_sleeve = max(excess_contributions, key=lambda symbol: excess_contributions[symbol])
 
-    runs = {
-        BASE: (base_strategy, base_static),
-        DOUBLE_COST: _pair(config, data, lookback=lookback, cost_bps=2.0 * cost),
-        LOOKBACK_9: _pair(config, data, lookback=9, cost_bps=cost),
-        LOOKBACK_15: _pair(config, data, lookback=15, cost_bps=cost),
-        DROP_TOP_SLEEVE: _pair(config, data, lookback=lookback, cost_bps=cost, exclude=top_sleeve),
-    }
+    runs: dict[str, tuple[BacktestResult, BacktestResult]] = {BASE: (base_strategy, base_static)}
+    for name, spec in specs.items():
+        if name == BASE:
+            continue
+        runs[name] = run_variant(spec, top_sleeve if spec.needs_top_sleeve else None)
     variants = {
         name: {
             "strategy": calculate_metrics(strategy, data),
@@ -174,7 +153,7 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
 
     return SweepResult(
         variants=variants,
-        outcome=evaluate_period(variants),
+        outcome=profile.evaluate_period(variants, {}),
         contributions=contributions,
         excess_contributions=excess_contributions,
         clusters=clusters,
@@ -263,7 +242,7 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
         "| Variant | Description | Strategy drawdown | Strategy Sharpe |",
         "|---|---|---:|---:|",
     ]
-    for name in GRID:
+    for name in sweep.grid:
         metrics = sweep.variants[name]["strategy"]
         lines.append(
             f"| {name} | {sweep.grid[name]} | {float(metrics['max_drawdown']):.4f} | "
@@ -332,7 +311,7 @@ def write_sweep_report(
             data.fingerprint(),
             code_hash,
             f"{evaluation.period}:{evaluation.start}:{evaluation.end}",
-            "|".join(GRID),
+            "|".join(sweep.grid),
         )
     )
     sweep_id = hashlib.sha256(identity.encode("ascii")).hexdigest()[:16]

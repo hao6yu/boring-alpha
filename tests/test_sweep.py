@@ -12,14 +12,14 @@ from boring_alpha.signals.trend import ExcludingSleeve, MultiAssetTrend, ScaledA
 from boring_alpha.sweep import GRID, run_sweep, write_sweep_report
 
 PERIODS = """
-[W-001.development]
+[BA-001.development]
 start = 2021-01-01
 end = 2022-12-31
 """
 
 CONFIG = """
 [strategy]
-id = "W-001"
+id = "BA-001"
 name = "Sweep Test"
 symbols = ["A", "B", "C", "D"]
 lookback_months = 12
@@ -129,7 +129,7 @@ class SweepTests(unittest.TestCase):
         sweep = run_sweep(self.config, self.data)
         _, sweep_dir = write_sweep_report(self.config, self.data, sweep)
         criteria = json.loads((sweep_dir / "criteria.json").read_text(encoding="utf-8"))
-        self.assertEqual(criteria["strategy_id"], "W-001")
+        self.assertEqual(criteria["strategy_id"], "BA-001")
         self.assertIn("code_sha256", criteria)
         self.assertIn("artifact_schema", criteria)
 
@@ -196,3 +196,17 @@ class SweepReproducibilityTests(SweepTests):
         self.assertEqual(first_id, second_id)
         self.assertEqual(sweep_dir, second_dir)
         self.assertEqual(snapshot(second_dir), written)
+
+
+class ProfileGateTests(unittest.TestCase):
+    def test_an_unregistered_strategy_id_is_refused_before_any_run(self) -> None:
+        root = Path(tempfile.mkdtemp())
+        (root / "configs").mkdir()
+        (root / "configs" / "evaluation_periods.toml").write_text(
+            PERIODS.replace("BA-001", "W-001"), encoding="utf-8"
+        )
+        path = root / "configs" / "run.toml"
+        path.write_text(CONFIG.replace('id = "BA-001"', 'id = "W-001"'), encoding="utf-8")
+        config = load_config(path)
+        with self.assertRaisesRegex(ValueError, "no evaluation profile.*W-001"):
+            run_sweep(config, load_market_data(config))
