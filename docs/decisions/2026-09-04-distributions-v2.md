@@ -11,6 +11,18 @@ The chart endpoint's dividend amounts are in the same split-adjusted units
 as its `close`. The tax overlay depends on that. Two symbol-years were
 compared by hand against the issuer's published distribution schedule.
 
+The archived snapshot itself shows the close series has no split
+discontinuity. For EEM across its 2008-07-24 3:1 split, the snapshot's
+`distributions_daily.csv` (a symlink to it lives at
+`data/current/distributions_daily.csv`) records the unadjusted close as
+43.9233 on 2008-07-23 and 42.2999 on 2008-07-24, and its `market_daily.csv`
+(`data/current/market_daily.csv`) records the adjusted close (`tr_close`) as
+30.1219 on 2008-07-23 and 29.0086 on 2008-07-24: an ordinary one-session move
+in both series, not the roughly threefold jump a genuine, un-adjusted 3:1
+split would produce. The close series is therefore already split-adjusted,
+and the dividend equality established below puts the dividend in that same
+split-adjusted units.
+
 ### EEM 2008 (3:1 split on 2008-07-24)
 
 | Ex-date (archived) | Archived amount | Issuer amount per share | Issuer source | Relationship |

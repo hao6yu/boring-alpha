@@ -29,12 +29,12 @@ Distributions: the same payload carries dividend and split events. v2 writes
 share on its ex-date (0 otherwise), one row per session and symbol, aligned
 with the price file. The tax overlay uses these to separate the income the
 adjusted series silently reinvests from the capital gain it reports; nothing
-else reads them. Checked on 2026-09-04 against EEM's 3:1 split of 2008-07-24:
-the endpoint's close does not jump across the split and the preceding
-dividend is one third of the pre-split per-share amount, so close and
-dividend are both already split-adjusted and consistent with the adjusted
-series. Split events are recorded in the manifest so a reader can see them;
-no arithmetic is applied to them.
+else reads them. Checked on 2026-09-04: the endpoint's close does not jump
+across EEM's 3:1 split of 2008-07-24 (43.92 → 42.30), and its June 2008
+dividend (0.517333) equals the issuer's own split-restated figure to the
+cent, so close and dividend are both in split-adjusted units; see
+docs/decisions/2026-09-04-distributions-v2.md. Split events are recorded in
+the manifest so a reader can see them; no arithmetic is applied to them.
 
 Cash: FRED series DGS3MO, the 3-month Treasury constant maturity rate, quoted
 on an INVESTMENT basis. An earlier version of this script used DTB3, which is

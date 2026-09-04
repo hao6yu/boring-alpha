@@ -96,10 +96,10 @@ development period. SPY, IEF, TLT, GLD and DBC report none.
 
 The same check showed that the endpoint's `close` does not jump across EEM's
 2008 split (43.92 to 42.30 on consecutive sessions) and that its June 2008
-dividend is 0.517333, one third of the pre-split per-share amount. So `close`
-and `dividend` are both already in split-adjusted units, consistent with each
-other and with the adjusted close. Lot accounting is therefore done in
-split-adjusted shares. A split is not a taxable event: a lot's total basis and
+dividend, 0.517333, equals the issuer's split-restated figure to the cent. So
+`close` and `dividend` are both already in split-adjusted units, consistent
+with each other and with the adjusted close. Lot accounting is therefore done
+in split-adjusted shares. A split is not a taxable event: a lot's total basis and
 its holding period are unchanged, and its per-share basis divides by the split
 ratio, which is exactly what keeping the account in split-adjusted units does.
 No adjustment is needed in the overlay.
@@ -123,9 +123,11 @@ Before the overlay's numbers are cited anywhere, two hand checks are done and
 written into a decision record for the first v2 snapshot:
 
 1. **EEM 2008**, which has a split in the middle of the year: the archived
-   ex-dates and amounts against the issuer's published distribution history,
-   confirming the one-third relationship before the split and equality after.
-   This is the check that proves the unit convention.
+   ex-dates and amounts against the issuer's published distribution history.
+   Pre-split amounts should equal the issuer's split-restated figures, and a
+   contemporaneous pre-split figure, if one can be sourced, should be about
+   three times the archived amount; post-split amounts should equal published
+   amounts directly. This is the check that proves the unit convention.
 2. **SPY 2019**, a no-split control: archived amounts equal published amounts.
 
 Tax character (§4.5) is not validated by these checks; its inputs are declared
@@ -784,3 +786,15 @@ implementation plan will break these into tasks.
   holding period preserved, per-share basis divided). The qualification window
   is evaluated over the complete fill history. The benchmark is named a
   target-exposure benchmark because realized exposure drifts.
+- **Revision 3.1 (2026-09-04).** After implementation of plan 1. §3.3 and
+  §3.5's one-third relationship for EEM's June 2008 dividend was replaced,
+  because the hand check could not source a contemporaneous pre-split figure
+  and instead closed the unit question by inference: the archived amount
+  equals the issuer's currently published, split-restated figure to the
+  cent, which is what it would equal if it were already in split-adjusted
+  units, and roughly three times what it would equal otherwise (see
+  `docs/decisions/2026-09-04-distributions-v2.md`). §5.2's `ScaledAllocation`
+  was not given a `rebalance` argument; instead a new subclass,
+  `TargetExposureAllocation`, carries the rebalancing schedule, so the
+  exposure-matched diagnostic keeps its monthly behaviour and its archived
+  name.
