@@ -134,8 +134,9 @@ class TaxConfigTests(unittest.TestCase):
             _load(TAX.replace('B = "collectibles"', 'B = "futures"'))
 
     def test_unknown_keys_are_refused(self) -> None:
+        # The key must sit in [tax] itself; appended text would land in the last sub-table.
         with self.assertRaisesRegex(ValueError, "unknown key"):
-            _load(TAX + "lot_method = \"hifo\"\n")
+            _load(TAX.replace("qualified_fraction_low = 0.5", 'qualified_fraction_low = 0.5\nlot_method = "hifo"'))
 
     def test_a_standalone_policy_file_loads_for_a_symbol_set(self) -> None:
         from boring_alpha.config import load_tax_policy
@@ -2699,10 +2700,16 @@ class TaxWiringTests(unittest.TestCase):
         self.assertTrue(self.sweep.outcome.criteria)   # BA-001's criteria ignore extras and still evaluate
 
 
-class NoTaxTests(SweepTests):
+class NoTaxTests(unittest.TestCase):
     def test_without_a_tax_table_nothing_tax_related_is_written(self) -> None:
-        sweep = run_sweep(self.config, self.data)
-        _, sweep_dir = write_sweep_report(self.config, self.data, sweep)
+        with tempfile.TemporaryDirectory() as directory:
+            config = _config(Path(directory))
+            data = load_market_data(config)
+            sweep = run_sweep(config, data)
+            _, sweep_dir = write_sweep_report(config, data, sweep)
+            self._check(sweep, sweep_dir)
+
+    def _check(self, sweep, sweep_dir: Path) -> None:
         self.assertIsNone(sweep.tax)
         self.assertFalse((sweep_dir / "tax.json").exists())
         self.assertFalse((sweep_dir / "input_distributions.csv.gz").exists())
@@ -2986,7 +2993,7 @@ Expected: all pass (the schema-5 classify fixtures still classify under `READABL
 - [ ] **Step 6: Run the whole suite and commit**
 
 Run: `.venv/bin/python -m pytest -q`
-Expected: `433 passed, 3 subtests passed`.
+Expected: `432 passed, 3 subtests passed`.
 
 ```bash
 git add src/boring_alpha/report.py src/boring_alpha/sweep.py tests/test_sweep.py tests/test_slippage.py tests/test_report.py tests/test_gates.py
@@ -3419,6 +3426,9 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
             unpacked = Path(directory) / "distributions_daily.csv"
             gunzip_to(archived, unpacked)
             table = load_distributions(unpacked, manifest_block=block)
+        # The archive holds the truncated rows; the identity is the source file's,
+        # recorded in the block, so results match the in-sweep tax.json exactly.
+        table.sha256 = block["sha256"]
     table = table.through(data.dates[-1])
     table.require_coverage(data, symbols)
 
@@ -3536,7 +3546,7 @@ Expected: all pass (7 `AfterTaxCommandTests`, 2 `ReconstructionTests`, plus the 
 - [ ] **Step 7: Run the whole suite and commit**
 
 Run: `.venv/bin/python -m pytest -q`
-Expected: `442 passed, 3 subtests passed`.
+Expected: `441 passed, 3 subtests passed`.
 
 ```bash
 git add src/boring_alpha/tax/reconstruct.py src/boring_alpha/cli.py README.md tests/test_cli.py
@@ -3698,4 +3708,4 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>"
 
 **Placeholder scan.** The only bracketed fields are in Task 9's note template, which a person fills from the Step 2 output; Step 4 checks none remain.
 
-**Type consistency.** `LotBook.buy(symbol, day, shares, basis, *, source, opened, extra_basis, replacement_capacity)` is called that way in Tasks 3 and 6. `LotBook.sell(symbol, day, shares, proceeds) -> list[Realized]` in Tasks 2, 4, 6. `LotBook.distribute(symbol, ex_date, dividend_per_share, growth, *, return_of_capital) -> list[Distribution]` in Tasks 3, 4, 6. `apply_wash_sales(records, existing, future)` in Tasks 4 and 6; `FuturePurchase(symbol, acquired, shares, replacement_capacity)` in both. `Amounts.add_gain(amount, *, long_term, gains_class, mark_to_market)`, `Amounts.scaled`, `Amounts.as_dict`, `net_and_tax(amounts, short_carry, long_carry, tax) -> YearTax` in Tasks 5 and 6. `qualified_fraction(tax, scenario, symbol)`, `policy_sha256(tax)`, `policy_record(tax)`, `Scenario.key/as_dict`, `SCENARIOS` in Tasks 1, 6, 7, 8. `run_scenarios(result, data, table, tax, *, initial_cash, code_sha256)` in Tasks 6, 7, 8. `tax_run_name` (Task 8) mirrors the literal names Task 7 writes. `load_tax_policy(path, symbols)` in Tasks 1 and 8. Expected suite totals: 339 → 356 → 369 → 377 → 387 → 407 → 422 → 433 → 442; the count in the file is what matters if one differs.
+**Type consistency.** `LotBook.buy(symbol, day, shares, basis, *, source, opened, extra_basis, replacement_capacity)` is called that way in Tasks 3 and 6. `LotBook.sell(symbol, day, shares, proceeds) -> list[Realized]` in Tasks 2, 4, 6. `LotBook.distribute(symbol, ex_date, dividend_per_share, growth, *, return_of_capital) -> list[Distribution]` in Tasks 3, 4, 6. `apply_wash_sales(records, existing, future)` in Tasks 4 and 6; `FuturePurchase(symbol, acquired, shares, replacement_capacity)` in both. `Amounts.add_gain(amount, *, long_term, gains_class, mark_to_market)`, `Amounts.scaled`, `Amounts.as_dict`, `net_and_tax(amounts, short_carry, long_carry, tax) -> YearTax` in Tasks 5 and 6. `qualified_fraction(tax, scenario, symbol)`, `policy_sha256(tax)`, `policy_record(tax)`, `Scenario.key/as_dict`, `SCENARIOS` in Tasks 1, 6, 7, 8. `run_scenarios(result, data, table, tax, *, initial_cash, code_sha256)` in Tasks 6, 7, 8. `tax_run_name` (Task 8) mirrors the literal names Task 7 writes. `load_tax_policy(path, symbols)` in Tasks 1 and 8. Expected suite totals: 339 → 356 → 369 → 377 → 387 → 407 → 422 → 432 → 441; the count in the file is what matters if one differs.
