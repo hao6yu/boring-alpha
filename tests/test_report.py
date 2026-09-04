@@ -78,7 +78,7 @@ class ReportTests(unittest.TestCase):
     def test_manifest_records_schema_version_and_engine_warnings(self) -> None:
         run_id, run_dir = self._write()
         manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["artifact_schema"], 4)
+        self.assertEqual(manifest["artifact_schema"], 5)
         self.assertTrue(any("no signal at month-end 2020-12-31" in w for w in manifest["warnings"]))
         self.assertEqual(run_dir, self.config.report.output_dir / "T-001" / run_id)
 

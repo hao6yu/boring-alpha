@@ -125,7 +125,7 @@ class GateTests(unittest.TestCase):
     def test_invocation_provenance_is_recorded_beside_the_manifest(self) -> None:
         self._write_reviews("T-001-development.md", "T-001-validation.md")
         self._run(unseal_reason="review complete")
-        self.assertEqual(self._manifest()["artifact_schema"], 4)
+        self.assertEqual(self._manifest()["artifact_schema"], 5)
         record = self._provenance()[0]
         for field in ("python_version", "git_commit", "git_dirty", "recorded_at"):
             self.assertIn(field, record)

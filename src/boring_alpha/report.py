@@ -18,7 +18,7 @@ from boring_alpha.config import AppConfig
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
 
-ARTIFACT_SCHEMA = 4
+ARTIFACT_SCHEMA = 5
 
 
 def _json_default(value: object) -> str:
@@ -97,7 +97,19 @@ def _equity_csv(result: BacktestResult) -> str:
 def _trades_csv(result: BacktestResult) -> str:
     output = io.StringIO()
     writer = csv.writer(output, lineterminator="\n")
-    writer.writerow(["date", "symbol", "side", "quantity", "price", "notional", "cost"])
+    writer.writerow(
+        [
+            "date",
+            "symbol",
+            "side",
+            "quantity",
+            "price",
+            "notional",
+            "cost",
+            "intended_notional",
+            "reference_price",
+        ]
+    )
     for fill in result.fills:
         writer.writerow(
             [
@@ -108,6 +120,8 @@ def _trades_csv(result: BacktestResult) -> str:
                 fill.price,
                 fill.notional,
                 fill.cost,
+                fill.intended_notional,
+                fill.reference_price,
             ]
         )
     return output.getvalue()

@@ -155,8 +155,15 @@ warning, including month-ends that produced no signal and any data-quality
 finding. It is written once. The run identifier is derived from the
 configuration, data, and code hashes plus the resolved evaluation period, so
 identical inputs always land in the same directory and a second run verifies
-the artifacts instead of rewriting them. `artifact_schema` is 4; a manifest
+the artifacts instead of rewriting them. `artifact_schema` is 5; a manifest
 without that field predates the schema.
+
+The trade ledgers record `intended_notional` beside the filled notional, so an
+order that was scaled down by available cash is visible as a partial fill, and
+`reference_price` — the month-end close the decision was made on — beside the
+fill price. The difference between those two prices is slippage; in the
+backtest it is the overnight gap, and it is the figure a paper fill will be
+compared against.
 
 `provenance.jsonl` describes the environment each invocation ran in — timestamp,
 Git commit, whether the working tree was dirty, Python version, and any unseal
