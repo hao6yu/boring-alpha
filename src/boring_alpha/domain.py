@@ -32,6 +32,27 @@ class Order:
 
 
 @dataclass(frozen=True, slots=True)
+class Fill:
+    """What actually happened to an order.
+
+    Flat, and matched to its order by (date, symbol, side): a broker returns
+    fills that know nothing about our objects, so the link is a key rather than
+    a reference. `intended_notional` and `reference_price` are carried here too
+    because they are what the trade ledger needs.
+    """
+
+    date: date
+    symbol: str
+    side: str
+    quantity: float
+    price: float
+    notional: float
+    cost: float
+    intended_notional: float
+    reference_price: float
+
+
+@dataclass(frozen=True, slots=True)
 class SignalSnapshot:
     as_of: date
     target_weights: dict[str, float]

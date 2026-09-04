@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import date
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import Order, Trade
+from boring_alpha.domain import Fill, Order, Trade
 
 
 class AccountingError(RuntimeError):
@@ -65,6 +65,21 @@ class Portfolio:
                 )
             )
         return orders
+
+    def apply(self, fills: list[Fill]) -> None:
+        """Book fills against cash and positions, preserving the cash-only rule."""
+
+        for fill in fills:
+            if fill.side == "SELL":
+                self.positions[fill.symbol] -= fill.quantity
+                self.cash += fill.notional - fill.cost
+            else:
+                self.positions[fill.symbol] += fill.quantity
+                self.cash -= fill.notional + fill.cost
+        if self.cash < -1e-7:
+            raise AccountingError(f"cash-only portfolio became negative: {self.cash}")
+        if abs(self.cash) < 1e-9:
+            self.cash = 0.0
 
     def rebalance(
         self,
