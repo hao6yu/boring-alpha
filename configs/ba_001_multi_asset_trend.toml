@@ -24,5 +24,9 @@ annual_cash_rate = 0.025
 start = "2018-01-01"
 end = "2025-12-31"
 
+# The demo exercises the laboratory; it is not evidence about BA-001.
+[evaluation]
+period = "exploratory"
+
 [report]
 output_dir = "../experiments"

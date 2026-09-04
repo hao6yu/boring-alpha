@@ -26,7 +26,8 @@ The repository currently provides:
 - next-session execution and explicit transaction costs;
 - cash accrual, a trade ledger, equity curves, and risk metrics;
 - cash and static equal-weight benchmarks using the same accounting engine;
-- content-addressed, immutable experiment artifacts;
+- declared evaluation periods that seal data after their boundary;
+- content-addressed, immutable experiment artifacts recording code provenance;
 - tests for timing, lookahead, costs, fixed-sleeve behavior, and determinism.
 
 Broker connectivity, live orders, sentiment, pullback timing, leverage, and ML
@@ -50,21 +51,56 @@ a configuration, such as `output_dir` and the CSV paths, resolve against the
 directory that contains the configuration file, so a run writes to the same
 place regardless of the working directory.
 
+## Evaluation periods
+
+Every run declares the period it targets, and the boundaries live in
+`configs/evaluation_periods.toml` rather than in the run configuration, so a
+config cannot quietly widen its own window:
+
+```toml
+[evaluation]
+period = "development"   # or validation, sealed, exploratory
+```
+
+The dataset is truncated at the period's end before the engine sees it, so data
+after the boundary is never loaded, cannot influence a result, and does not
+enter the data fingerprint. A development run therefore keeps its identity after
+later data is appended. A backtest window outside its period is refused.
+
+`exploratory` is unbounded and always permitted, and stamps every run with a
+warning that it is not evidence about the strategy. The checked-in demo uses it.
+
+Two gates implement the charter's sealing policy. A `validation` run requires a
+written development review at `docs/reviews/<ID>-development*.md`. A `sealed`
+run requires an explicit reason:
+
+```bash
+boring-alpha backtest configs/my_sealed_run.toml --unseal "dev and validation reviewed"
+```
+
+The reason is recorded in the manifest, and the run must be listed in the
+strategy's charter change log. Neither gate is cryptographic: you can always
+edit a file. They exist so that looking at sealed data is a deliberate,
+reviewable act rather than an accident.
+
 ## Run artifacts
 
 Each run writes `manifest.json`, `metrics.json`, `decisions.json`, and the
 equity and trade CSVs for the strategy and both benchmarks. The manifest embeds
 the full configuration text, the SHA-256 of the configuration, the data, and
-the code, the data source label, and every warning, including month-ends that
-produced no signal. The run identifier is derived only from those three hashes,
-so identical inputs always land in the same directory and a second run verifies
-the artifacts instead of rewriting them. `artifact_schema` is 2; a manifest
-without that field predates the schema and recorded the absolute configuration
-path instead of its text.
+the code, the declared period and its bounds, the first and last session
+actually loaded, the Git commit and whether the working tree was dirty, the
+Python version, any unseal reason, and every warning, including month-ends that
+produced no signal.
 
-Two configuration rules are enforced rather than assumed: `report.output_dir`
-is required, and `backtest.start` must select the first session of a month, so
-use the first calendar day of the month.
+The run identifier is derived only from the configuration, data, and code
+hashes, so identical inputs always land in the same directory and a second run
+verifies the artifacts instead of rewriting them. `artifact_schema` is 3; a
+manifest without that field predates the schema.
+
+Three configuration rules are enforced rather than assumed: `report.output_dir`
+and `evaluation.period` are required, and `backtest.start` must select the first
+session of a month, so use the first calendar day of the month.
 
 ## Real CSV contract
 
@@ -94,8 +130,10 @@ Downloaded market data and secrets are intentionally ignored by Git.
 
 ```text
 configs/                Versioned experiment configuration
+configs/evaluation_periods.toml  Period boundaries taken from the charters
 docs/principles.md      Research rules
 docs/strategies/        Locked strategy charters
+docs/reviews/           Written reviews that gate the next period
 src/boring_alpha/data/  Canonical data and adapters
 src/boring_alpha/signals/ Strategy implementations
 src/boring_alpha/backtest/ Accounting and execution

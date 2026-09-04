@@ -45,6 +45,20 @@ class BacktestConfig:
 
 
 @dataclass(frozen=True, slots=True)
+class EvaluationConfig:
+    period: str
+    start: date | None
+    end: date | None
+    review_dir: Path
+
+    @property
+    def is_evidence(self) -> bool:
+        """Exploratory runs exercise the lab; they say nothing about the strategy."""
+
+        return self.period != "exploratory"
+
+
+@dataclass(frozen=True, slots=True)
 class ReportConfig:
     output_dir: Path
 
@@ -56,6 +70,7 @@ class AppConfig:
     execution: ExecutionConfig
     data: DataConfig
     backtest: BacktestConfig
+    evaluation: EvaluationConfig
     report: ReportConfig
     path: Path
     raw_bytes: bytes
@@ -69,8 +84,12 @@ _SCHEMA: dict[str, frozenset[str]] = {
         {"source", "start", "end", "seed", "annual_cash_rate", "prices_path", "cash_path"}
     ),
     "backtest": frozenset({"start", "end"}),
+    "evaluation": frozenset({"period", "periods_path", "review_dir"}),
     "report": frozenset({"output_dir"}),
 }
+
+PERIODS = ("development", "validation", "sealed", "exploratory")
+UNBOUNDED_PERIOD = "exploratory"
 
 _DATA_KEYS_BY_SOURCE: dict[str, frozenset[str]] = {
     "synthetic": frozenset({"start", "end", "seed", "annual_cash_rate"}),
@@ -180,6 +199,9 @@ def load_config(path: str | Path) -> AppConfig:
         end=_parse_date(_require(backtest_raw, "backtest", "end"), "backtest.end"),
     )
 
+    evaluation_raw = raw.get("evaluation", {})
+    evaluation = _load_evaluation(evaluation_raw, root, strategy.strategy_id, backtest)
+
     report_raw = raw.get("report", {})
     report = ReportConfig(
         output_dir=_resolve_path(
@@ -194,10 +216,44 @@ def load_config(path: str | Path) -> AppConfig:
         execution=execution,
         data=data,
         backtest=backtest,
+        evaluation=evaluation,
         report=report,
         path=config_path,
         raw_bytes=raw_bytes,
     )
+
+
+def _load_evaluation(
+    raw: dict[str, object], root: Path, strategy_id: str, backtest: BacktestConfig
+) -> EvaluationConfig:
+    period = str(_require(raw, "evaluation", "period")).lower()
+    if period not in PERIODS:
+        raise ValueError(f"evaluation.period must be one of {', '.join(PERIODS)}")
+    review_dir = _resolve_path(
+        raw.get("review_dir", "../docs/reviews"), root, "evaluation.review_dir"
+    )
+    if period == UNBOUNDED_PERIOD:
+        return EvaluationConfig(period, None, None, review_dir)
+
+    periods_path = _resolve_path(
+        raw.get("periods_path", "evaluation_periods.toml"), root, "evaluation.periods_path"
+    )
+    if not periods_path.is_file():
+        raise ValueError(f"evaluation period registry not found: {periods_path}")
+    registry = tomllib.loads(periods_path.read_text(encoding="utf-8"))
+    bounds = registry.get(strategy_id, {}).get(period)
+    if not isinstance(bounds, dict):
+        raise ValueError(f"{periods_path} defines no {period} period for {strategy_id}")
+    start = _parse_date(_require(bounds, f"{strategy_id}.{period}", "start"), "period start")
+    end = _parse_date(_require(bounds, f"{strategy_id}.{period}", "end"), "period end")
+    if start > end:
+        raise ValueError(f"{strategy_id} {period} period starts after it ends")
+    if backtest.start < start or backtest.end > end:
+        raise ValueError(
+            f"backtest window {backtest.start}..{backtest.end} falls outside the "
+            f"{period} period {start}..{end}"
+        )
+    return EvaluationConfig(period, start, end, review_dir)
 
 
 def _validate(

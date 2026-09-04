@@ -61,3 +61,29 @@ class MarketDataValidationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TruncationTests(unittest.TestCase):
+    def _data(self) -> MarketData:
+        days = [date(2024, 12, 30), date(2024, 12, 31), date(2025, 1, 2)]
+        bars = [PriceBar(day, "A", 1.0, 1.0) for day in days]
+        return MarketData(bars, {day: 1.0 for day in days}, source="test")
+
+    def test_through_drops_sessions_after_the_boundary(self) -> None:
+        truncated = self._data().through(date(2024, 12, 31))
+        self.assertEqual(truncated.dates, (date(2024, 12, 30), date(2024, 12, 31)))
+        self.assertNotIn(date(2025, 1, 2), truncated.cash_factors)
+
+    def test_fingerprint_ignores_data_beyond_the_boundary(self) -> None:
+        truncated = self._data().through(date(2024, 12, 31))
+        days = [date(2024, 12, 30), date(2024, 12, 31)]
+        short = MarketData(
+            [PriceBar(day, "A", 1.0, 1.0) for day in days],
+            {day: 1.0 for day in days},
+            source="test",
+        )
+        self.assertEqual(truncated.fingerprint(), short.fingerprint())
+
+    def test_through_rejects_a_boundary_before_the_first_session(self) -> None:
+        with self.assertRaisesRegex(ValueError, "no bars"):
+            self._data().through(date(2024, 1, 1))

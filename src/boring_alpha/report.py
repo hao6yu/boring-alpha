@@ -9,13 +9,15 @@ import hashlib
 import io
 import json
 from pathlib import Path
+import subprocess
+import sys
 from typing import Any
 
 from boring_alpha.config import AppConfig
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
 
-ARTIFACT_SCHEMA = 2
+ARTIFACT_SCHEMA = 3
 
 
 def _json_default(value: object) -> str:
@@ -34,6 +36,31 @@ def _write_once(path: Path, content: str) -> None:
             raise RuntimeError(f"refusing to overwrite changed experiment artifact: {path}")
         return
     path.write_text(content, encoding="utf-8")
+
+
+def git_provenance(root: Path) -> dict[str, object]:
+    """Commit and dirty state of the repository at `root`, or nulls if absent."""
+
+    def git(*args: str) -> str | None:
+        try:
+            result = subprocess.run(
+                ("git", "-C", str(root), *args),
+                capture_output=True,
+                text=True,
+                timeout=10,
+            )
+        except (OSError, subprocess.SubprocessError):
+            return None
+        return result.stdout if result.returncode == 0 else None
+
+    commit = git("rev-parse", "HEAD")
+    if commit is None:
+        return {"git_commit": None, "git_dirty": None}
+    status = git("status", "--porcelain")
+    return {
+        "git_commit": commit.strip(),
+        "git_dirty": None if status is None else bool(status.strip()),
+    }
 
 
 def _code_fingerprint() -> str:
@@ -82,6 +109,7 @@ def write_report(
     strategy_metrics: dict[str, float | int],
     benchmark_metrics: dict[str, float | int],
     cash_metrics: dict[str, float | int],
+    unseal_reason: str | None = None,
 ) -> tuple[str, Path]:
     config_hash = hashlib.sha256(config.raw_bytes).hexdigest()
     data_hash = data.fingerprint()
@@ -94,6 +122,10 @@ def write_report(
     warnings: list[str] = []
     if config.data.source == "synthetic":
         warnings.append("SYNTHETIC DATA: results have no economic or predictive meaning.")
+    if not config.evaluation.is_evidence:
+        warnings.append(
+            f"EXPLORATORY RUN: not evidence about {config.strategy.strategy_id}."
+        )
     for result in (strategy, benchmark, cash):
         warnings.extend(result.warnings)
 
@@ -109,6 +141,14 @@ def write_report(
         "data_source": data.source,
         "backtest_start": config.backtest.start,
         "backtest_end": config.backtest.end,
+        "evaluation_period": config.evaluation.period,
+        "evaluation_start": config.evaluation.start,
+        "evaluation_end": config.evaluation.end,
+        "unseal_reason": unseal_reason,
+        "data_start": data.dates[0],
+        "data_end": data.dates[-1],
+        "python_version": sys.version.split()[0],
+        **git_provenance(Path(__file__).resolve().parent.parent.parent),
         "warnings": warnings,
     }
     decisions = [asdict(snapshot) for snapshot in strategy.decisions]

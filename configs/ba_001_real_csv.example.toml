@@ -20,7 +20,10 @@ cash_path = "../data/cash_daily.csv"
 
 [backtest]
 start = "2007-01-01"
-end = "2021-12-31"
+end = "2017-12-31"
+
+[evaluation]
+period = "development"
 
 [report]
 output_dir = "../experiments"

@@ -24,6 +24,8 @@ end = "2022-01-01"
 [backtest]
 start = "2021-01-01"
 end = "2022-01-01"
+[evaluation]
+period = "exploratory"
 [report]
 output_dir = "out"
 """
