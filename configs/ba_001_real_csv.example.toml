@@ -20,8 +20,13 @@ cost_bps = 10.0
 
 [data]
 source = "csv"
-prices_path = "../data/market_daily.csv"
-cash_path = "../data/cash_daily.csv"
+# Names how the series were built; part of the run identity, because the
+# fetcher is not covered by the code fingerprint.
+methodology = "yahoo-adjusted-v1+dgs3mo-v1"
+# Point at a snapshot directory. `current` is repointed only after a fetch
+# finishes; a snapshot without manifest.json is an incomplete download.
+prices_path = "../data/current/market_daily.csv"
+cash_path = "../data/current/cash_daily.csv"
 
 [backtest]
 start = "2007-01-01"

@@ -50,9 +50,17 @@ provisional and will change. Such rows are dropped. Without this a run made
 during market hours would embed a price that no longer exists tomorrow, and the
 data hash would silently disagree with itself.
 
-Both files are written only after every download succeeds, and via a temporary
-file that is renamed into place. A failure part-way through therefore leaves
-the previous pair intact rather than pairing new prices with stale cash.
+Atomicity: prices and cash must move together. Renaming two files separately
+still leaves a window where a crash pairs new prices with old cash, so a run is
+written into its own timestamped snapshot directory and `manifest.json` is
+written LAST. A directory without a manifest is an incomplete download and must
+not be used. `data/current` is repointed at the finished snapshot only after
+the manifest lands.
+
+Methodology: the identifier below travels into the snapshot manifest and must
+be repeated in a run configuration's `data.methodology`. It is part of a run's
+identity because this script is not covered by the code fingerprint, so a
+change of price adjustment or cash series would otherwise be invisible.
 
 Usage:  python tools/fetch_market_data.py [--out DIR]
 """
@@ -78,6 +86,7 @@ CHART_URL = (
 FRED_SERIES = "DGS3MO"
 FRED_URL = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={FRED_SERIES}"
 SESSIONS_PER_YEAR = 252
+METHODOLOGY = "yahoo-adjusted-v1+dgs3mo-v1"
 USER_AGENT = "Mozilla/5.0 (compatible; BoringAlpha research)"
 
 
@@ -194,14 +203,55 @@ def cash_factors(sessions: list[date], rates: list[tuple[date, float]]) -> dict[
     return factors
 
 
-def _write_atomically(path: Path, rows: list[list[str]]) -> Path:
-    """Write via a temporary file and rename, so a crash cannot truncate the old one."""
-
-    temporary = path.with_suffix(path.suffix + ".tmp")
-    with temporary.open("w", newline="", encoding="utf-8") as handle:
+def _write_csv(path: Path, rows: list[list[str]]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as handle:
         csv.writer(handle, lineterminator="\n").writerows(rows)
-    temporary.replace(path)
-    return path
+
+
+def write_snapshot(
+    out: Path,
+    price_rows: list[list[str]],
+    cash_rows: list[list[str]],
+    coverage: dict[str, dict[str, str]],
+) -> Path:
+    """Write one snapshot directory, manifest last, then repoint `current`.
+
+    The manifest is the completion marker: its absence means the download did
+    not finish, so prices and cash can never be read as a mismatched pair.
+    """
+
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    snapshot = out / "snapshots" / stamp
+    snapshot.mkdir(parents=True, exist_ok=False)
+
+    _write_csv(snapshot / "market_daily.csv", price_rows)
+    _write_csv(snapshot / "cash_daily.csv", cash_rows)
+
+    manifest = {
+        "created_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "methodology": METHODOLOGY,
+        "price_source": "yahoo-finance-chart-v8",
+        "price_adjustment": "tr_open = open * adjclose / close; tr_close = adjclose",
+        "cash_series": FRED_SERIES,
+        "cash_basis": "investment (constant maturity), not bank discount",
+        "cash_convention": "(1 + prior_session_rate / 100) ** (1 / 252)",
+        "sessions_per_year": SESSIONS_PER_YEAR,
+        "price_rows": len(price_rows) - 1,
+        "cash_rows": len(cash_rows) - 1,
+        "coverage": coverage,
+    }
+    # Last: everything above must already be on disk for this to mean anything.
+    (snapshot / "manifest.json").write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+
+    current = out / "current"
+    pointer = out / "current.tmp"
+    if pointer.is_symlink() or pointer.exists():
+        pointer.unlink()
+    pointer.symlink_to(Path("snapshots") / stamp, target_is_directory=True)
+    pointer.replace(current)
+    return snapshot
 
 
 def main() -> int:
@@ -211,6 +261,7 @@ def main() -> int:
     args.out.mkdir(parents=True, exist_ok=True)
 
     bars: list[tuple[date, str, float, float]] = []
+    coverage: dict[str, dict[str, str]] = {}
     for symbol in SYMBOLS:
         try:
             rows = fetch_prices(symbol)
@@ -221,6 +272,9 @@ def main() -> int:
             print(f"error: {symbol}: no usable rows returned", file=sys.stderr)
             return 2
         print(f"{symbol:4} {rows[0][0]} .. {rows[-1][0]}  {len(rows):5} rows")
+        coverage[symbol] = {
+            "first": str(rows[0][0]), "last": str(rows[-1][0]), "rows": str(len(rows))
+        }
         bars.extend((day, symbol, tr_open, tr_close) for day, tr_open, tr_close in rows)
 
     # Everything is fetched before anything is written, so a failure here cannot
@@ -247,10 +301,11 @@ def main() -> int:
     cash_rows = [["date", "cash_factor"]]
     cash_rows += [[str(s), f"{factors[s]:.12f}"] for s in sessions]
 
-    prices_path = _write_atomically(args.out / "market_daily.csv", price_rows)
-    cash_path = _write_atomically(args.out / "cash_daily.csv", cash_rows)
-    print(f"\nwrote {prices_path} ({len(bars)} bars, through {sessions[-1]})")
-    print(f"wrote {cash_path} ({len(sessions)} sessions)")
+    snapshot = write_snapshot(args.out, price_rows, cash_rows, coverage)
+    print(f"\nwrote {snapshot}")
+    print(f"  {len(bars)} bars through {sessions[-1]}, {len(sessions)} cash sessions")
+    print(f"  methodology: {METHODOLOGY}")
+    print(f"  {args.out / 'current'} -> snapshots/{snapshot.name}")
     return 0
 
 

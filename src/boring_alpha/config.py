@@ -38,6 +38,7 @@ class DataConfig:
     seed: int = 0
     annual_cash_rate: float = 0.0
     regime: str = "trending"
+    methodology: str = ""
     prices_path: Path | None = None
     cash_path: Path | None = None
 
@@ -90,7 +91,7 @@ _SCHEMA: dict[str, frozenset[str]] = {
     "data": frozenset(
         {
             "source", "start", "end", "seed", "annual_cash_rate", "regime",
-            "prices_path", "cash_path",
+            "methodology", "prices_path", "cash_path",
         }
     ),
     "backtest": frozenset({"start", "end"}),
@@ -114,7 +115,7 @@ DATASET_END = "dataset"
 
 _DATA_KEYS_BY_SOURCE: dict[str, frozenset[str]] = {
     "synthetic": frozenset({"start", "end", "seed", "annual_cash_rate", "regime"}),
-    "csv": frozenset({"prices_path", "cash_path"}),
+    "csv": frozenset({"prices_path", "cash_path", "methodology"}),
 }
 
 
@@ -169,6 +170,10 @@ def _strategy_spec_hash(
         "initial_cash": portfolio.initial_cash,
         "cost_bps": execution.cost_bps,
         "data_source": data.source,
+        # How the inputs were built is part of what was run. The fetcher lives
+        # outside code_fingerprint(), so a change of price adjustment or cash
+        # series would otherwise be invisible to the run's identity.
+        "data_methodology": data.methodology,
     }
     canonical = json.dumps(spec, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
@@ -242,6 +247,7 @@ def load_config(path: str | Path) -> AppConfig:
         seed=int(data_raw.get("seed", 0)),
         annual_cash_rate=_finite(float(data_raw.get("annual_cash_rate", 0.0)), "data.annual_cash_rate"),
         regime=str(data_raw.get("regime", "trending")).lower(),
+        methodology=str(data_raw.get("methodology", "")).strip(),
         prices_path=(
             _resolve_path(data_raw["prices_path"], root, "data.prices_path")
             if "prices_path" in data_raw
@@ -279,12 +285,32 @@ def load_config(path: str | Path) -> AppConfig:
         backtest=backtest,
         evaluation=evaluation,
         report=report,
-        quality_overrides=dict(raw.get("quality", {})),
+        quality_overrides=_load_quality_overrides(raw.get("quality", {})),
         clusters=_load_clusters(raw.get("clusters", {}), strategy.symbols),
         strategy_spec_sha256=_strategy_spec_hash(strategy, portfolio, execution, data),
         path=config_path,
         raw_bytes=raw_bytes,
     )
+
+
+_POSITIVE_THRESHOLDS = frozenset(
+    {"max_session_return", "max_open_gap", "max_calendar_gap_days", "max_stale_closes"}
+)
+
+
+def _load_quality_overrides(raw: dict[str, object]) -> dict[str, float]:
+    """A NaN threshold silently disables its check, since NaN fails every
+    ordered comparison — a worse outcome than not overriding at all."""
+
+    overrides: dict[str, float] = {}
+    for key, value in raw.items():
+        if not isinstance(value, (int, float)) or isinstance(value, bool):
+            raise ValueError(f"quality.{key} must be a number")
+        number = _finite(float(value), f"quality.{key}")
+        if key in _POSITIVE_THRESHOLDS and number <= 0.0:
+            raise ValueError(f"quality.{key} must be positive, got {number!r}")
+        overrides[key] = number
+    return overrides
 
 
 def _load_clusters(
@@ -391,5 +417,12 @@ def _validate(
     elif data.source == "csv":
         if data.prices_path is None or data.cash_path is None:
             raise ValueError("CSV data requires prices_path and cash_path")
+        if not data.methodology:
+            raise ValueError(
+                "data.methodology is required for CSV data: name how the series were "
+                "built, e.g. 'yahoo-adjusted-v1+dgs3mo-v1'. It becomes part of the "
+                "run's identity, because the tool that builds the data is not covered "
+                "by the code fingerprint."
+            )
     else:
         raise ValueError("data.source must be 'synthetic' or 'csv'")

@@ -32,6 +32,7 @@ initial_cash = 1000
 cost_bps = 10
 [data]
 source = "csv"
+methodology = "test-v1"
 prices_path = "../data/p.csv"
 cash_path = "../data/c.csv"
 [backtest]
@@ -93,8 +94,16 @@ class StrategySpecHashTests(unittest.TestCase):
     """Two runs are comparable only if the strategy they ran is identical."""
 
     def test_the_same_strategy_hashes_the_same_under_a_different_window(self) -> None:
-        other = CONFIG.replace('start = "2007-01-01"', 'start = "2007-01-01"')
-        self.assertEqual(_load().strategy_spec_sha256, _load(other).strategy_spec_sha256)
+        # Development and validation differ in window and nothing else, so the
+        # spec hash must ignore it. Comparing a config with itself, as an earlier
+        # version of this test did, proves nothing.
+        sealed = (
+            CONFIG.replace('period = "development"', 'period = "sealed"')
+            .replace('start = "2007-01-01"\nend = "2017-12-31"', 'start = "2022-01-01"\nend = "2025-06-30"')
+        )
+        development, other = _load(), _load(sealed)
+        self.assertNotEqual(development.backtest.start, other.backtest.start)
+        self.assertEqual(development.strategy_spec_sha256, other.strategy_spec_sha256)
 
     def test_symbol_order_does_not_change_the_hash(self) -> None:
         reordered = CONFIG.replace('symbols = ["A", "B"]', 'symbols = ["B", "A"]')
@@ -279,7 +288,8 @@ class SweepRanksOnTheCharterDefinitionTests(unittest.TestCase):
             '\n[strategy]\nid = "T-900"\nname = "Ranking"\n'
             'symbols = ["PLODDER", "SPRINTER"]\nlookback_months = 12\nsleeve_weight = 0.5\n'
             "[portfolio]\ninitial_cash = 100000\n[execution]\ncost_bps = 10\n"
-            '[data]\nsource = "csv"\nprices_path = "../data/p.csv"\ncash_path = "../data/c.csv"\n'
+            '[data]\nsource = "csv"\nmethodology = "test-v1"\n'
+            'prices_path = "../data/p.csv"\ncash_path = "../data/c.csv"\n'
             '[backtest]\nstart = "2021-01-01"\nend = "2023-12-31"\n'
             '[evaluation]\nperiod = "development"\n'
             '[report]\noutput_dir = "../experiments"\n',
@@ -346,3 +356,96 @@ class SweepEvidenceTests(SweepRanksOnTheCharterDefinitionTests):
         restored = load_csv_market_data(root / "prices.csv", root / "cash.csv")
         # A hash proves the inputs changed; this proves the old run can be rebuilt.
         self.assertEqual(restored.fingerprint(), data.fingerprint())
+
+
+class MethodologyIdentityTests(unittest.TestCase):
+    """Two CSV datasets built differently are not the same strategy input."""
+
+    def test_csv_data_must_declare_its_methodology(self) -> None:
+        with self.assertRaisesRegex(ValueError, "data.methodology is required"):
+            _load(CONFIG.replace('source = "csv"\n', 'source = "csv"\n', 1).replace(
+                'methodology = "test-v1"\n', ""
+            ))
+
+    def test_a_different_methodology_changes_the_spec_hash(self) -> None:
+        other = CONFIG.replace('methodology = "test-v1"', 'methodology = "test-v2"')
+        self.assertNotEqual(_load().strategy_spec_sha256, _load(other).strategy_spec_sha256)
+
+
+class QualityOverrideTests(unittest.TestCase):
+    """A NaN threshold silently disables its check, because NaN fails every
+    ordered comparison. That is worse than no override at all."""
+
+    def test_a_non_finite_threshold_is_rejected(self) -> None:
+        with self.assertRaisesRegex(ValueError, "finite"):
+            _load(CONFIG + "\n[quality]\nmax_session_return = nan\n")
+
+    def test_a_non_positive_magnitude_threshold_is_rejected(self) -> None:
+        with self.assertRaisesRegex(ValueError, "must be positive"):
+            _load(CONFIG + "\n[quality]\nmax_open_gap = 0.0\n")
+
+    def test_a_negative_cash_floor_is_allowed(self) -> None:
+        config = _load(CONFIG + "\n[quality]\nmin_cash_rate = -0.25\n")
+        self.assertEqual(config.quality_overrides["min_cash_rate"], -0.25)
+
+
+class DatasetEndedRunTests(unittest.TestCase):
+    """"Through the latest complete dataset" must mean exactly that."""
+
+    def _run_dir(self, backtest_end: str) -> Path:
+        from datetime import timedelta
+
+        root = Path(tempfile.mkdtemp())
+        (root / "configs").mkdir()
+        (root / "data").mkdir()
+        days, day = [], date(2021, 1, 1)
+        while day <= date(2024, 6, 28):
+            if day.weekday() < 5:
+                days.append(day)
+            day += timedelta(days=1)
+        prices = ["date,symbol,tr_open,tr_close"] + [
+            f"{d},{s},100.0,100.0" for d in days for s in ("A", "B")
+        ]
+        cash = ["date,cash_factor"] + [f"{d},1.00002" for d in days]
+        (root / "data" / "p.csv").write_text("\n".join(prices) + "\n", encoding="utf-8")
+        (root / "data" / "c.csv").write_text("\n".join(cash) + "\n", encoding="utf-8")
+        (root / "configs" / "evaluation_periods.toml").write_text(
+            '[D-1.sealed]\nstart = 2022-01-01\nend = "dataset"\n', encoding="utf-8"
+        )
+        path = root / "configs" / "run.toml"
+        path.write_text(
+            '\n[strategy]\nid = "D-1"\nname = "D"\nsymbols = ["A", "B"]\n'
+            "lookback_months = 12\nsleeve_weight = 0.5\n"
+            "[portfolio]\ninitial_cash = 1000\n[execution]\ncost_bps = 10\n"
+            '[data]\nsource = "csv"\nmethodology = "test-v1"\n'
+            'prices_path = "../data/p.csv"\ncash_path = "../data/c.csv"\n'
+            f'[backtest]\nstart = "2022-01-01"\nend = "{backtest_end}"\n'
+            '[evaluation]\nperiod = "sealed"\n'
+            '[report]\noutput_dir = "../experiments"\n',
+            encoding="utf-8",
+        )
+        return path
+
+    def test_stopping_short_of_the_data_is_refused(self) -> None:
+        from boring_alpha.data import load_market_data
+
+        path = self._run_dir("2023-12-29")
+        reviews = path.parent.parent / "docs" / "reviews"
+        reviews.mkdir(parents=True)
+        for stage in ("development", "validation"):
+            (reviews / f"D-1-{stage}.md").write_text("reviewed", encoding="utf-8")
+        config = load_config(path)
+        with self.assertRaisesRegex(ValueError, "must extend through the latest complete session"):
+            load_market_data(config, "reviewed")
+
+    def test_running_through_the_last_session_is_accepted(self) -> None:
+        from boring_alpha.data import load_market_data
+
+        path = self._run_dir("2024-06-28")
+        reviews = path.parent.parent / "docs" / "reviews"
+        reviews.mkdir(parents=True)
+        for stage in ("development", "validation"):
+            (reviews / f"D-1-{stage}.md").write_text("reviewed", encoding="utf-8")
+        config = load_config(path)
+        data = load_market_data(config, "reviewed")
+        self.assertEqual(data.dates[-1], date(2024, 6, 28))

@@ -108,3 +108,58 @@ class ProvenanceTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SnapshotTests(unittest.TestCase):
+    """Prices and cash must move together, or they can be read as a mismatched pair."""
+
+    PRICES = [["date", "symbol", "tr_open", "tr_close"], ["2024-01-02", "A", "1", "1"]]
+    CASH = [["date", "cash_factor"], ["2024-01-02", "1.0001"]]
+    COVERAGE = {"A": {"first": "2024-01-02", "last": "2024-01-02", "rows": "1"}}
+
+    def _write(self, out):
+        return fetcher.write_snapshot(out, self.PRICES, self.CASH, self.COVERAGE)
+
+    def test_a_snapshot_holds_both_files_and_a_manifest(self) -> None:
+        import tempfile
+
+        out = Path(tempfile.mkdtemp())
+        snapshot = self._write(out)
+        for name in ("market_daily.csv", "cash_daily.csv", "manifest.json"):
+            self.assertTrue((snapshot / name).is_file(), name)
+
+    def test_the_manifest_records_the_methodology_a_config_must_repeat(self) -> None:
+        import json, tempfile
+
+        snapshot = self._write(Path(tempfile.mkdtemp()))
+        manifest = json.loads((snapshot / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["methodology"], fetcher.METHODOLOGY)
+        self.assertEqual(manifest["cash_series"], "DGS3MO")
+        self.assertIn("investment", manifest["cash_basis"])
+
+    def test_current_points_at_the_finished_snapshot(self) -> None:
+        import tempfile
+
+        out = Path(tempfile.mkdtemp())
+        snapshot = self._write(out)
+        self.assertTrue((out / "current").is_symlink())
+        self.assertEqual((out / "current").resolve(), snapshot.resolve())
+
+    def test_a_second_snapshot_repoints_current_without_touching_the_first(self) -> None:
+        import tempfile, time
+
+        out = Path(tempfile.mkdtemp())
+        first = self._write(out)
+        time.sleep(1.1)   # snapshot names are second-resolution
+        second = self._write(out)
+        self.assertNotEqual(first, second)
+        self.assertTrue((first / "manifest.json").is_file())
+        self.assertEqual((out / "current").resolve(), second.resolve())
+
+    def test_an_existing_snapshot_directory_is_never_overwritten(self) -> None:
+        import tempfile
+
+        out = Path(tempfile.mkdtemp())
+        self._write(out)
+        with self.assertRaises(FileExistsError):
+            self._write(out)   # same second, so the same directory name

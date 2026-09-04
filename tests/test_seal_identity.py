@@ -29,6 +29,7 @@ initial_cash = 10000
 cost_bps = 10
 [data]
 source = "csv"
+methodology = "test-v1"
 prices_path = "../data/prices.csv"
 cash_path = "../data/cash.csv"
 [backtest]

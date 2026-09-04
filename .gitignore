@@ -16,6 +16,8 @@ build/
 !.env.example
 data/*.csv
 data/*.parquet
+data/snapshots/
+data/current
 
 # Generated experiments are immutable local artifacts.
 experiments/**

@@ -33,6 +33,18 @@ def load_market_data(config: AppConfig, unseal_reason: str | None = None) -> Mar
 
     if config.evaluation.end is not None:
         data = data.through(config.evaluation.end)
+    elif config.evaluation.is_evidence:
+        # A period registered as ending at the dataset means exactly that. The
+        # registry fixes only its start, so without this a sealed run could stop
+        # early and report a favourable sub-period under the period's name.
+        shared = data.shared_sessions(config.strategy.symbols)
+        if shared and config.backtest.end < shared[-1]:
+            raise ValueError(
+                f"a {config.evaluation.period} run must extend through the latest "
+                f"complete session {shared[-1]}, but the configured window ends "
+                f"{config.backtest.end}. Update backtest.end, or trim the dataset "
+                "if those sessions are not meant to be in scope."
+            )
 
     # Inspect after truncation: findings should describe the data the run uses,
     # not data the seal has already discarded.
