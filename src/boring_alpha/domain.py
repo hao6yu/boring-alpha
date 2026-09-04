@@ -15,6 +15,23 @@ class PriceBar:
 
 
 @dataclass(frozen=True, slots=True)
+class Order:
+    """An intent to trade, priced at the moment the decision was made.
+
+    `reference_price` is the decision-time price — for BA-001 the month-end
+    close — not the price the order will fill at. The gap between the two is
+    slippage, and recording it is what lets a paper fill be compared with a
+    modelled one.
+    """
+
+    date: date
+    symbol: str
+    side: str
+    intended_notional: float
+    reference_price: float
+
+
+@dataclass(frozen=True, slots=True)
 class SignalSnapshot:
     as_of: date
     target_weights: dict[str, float]

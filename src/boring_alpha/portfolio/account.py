@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import date
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import Trade
+from boring_alpha.domain import Order, Trade
 
 
 class AccountingError(RuntimeError):
@@ -32,6 +32,39 @@ class Portfolio:
             for symbol, quantity in self.positions.items()
         )
         return self.cash + exposure, exposure
+
+    def plan_rebalance(
+        self,
+        prices: dict[str, float],
+        target_weights: dict[str, float],
+        reference_prices: dict[str, float],
+        day: date,
+    ) -> list[Order]:
+        """Targets and holdings in, order intents out. Pure: nothing is mutated.
+
+        Sizing uses equity at execution prices, which is what the engine fills
+        at. No cost model appears here; costs belong to execution.
+        """
+
+        equity = self.cash + sum(
+            quantity * prices[symbol] for symbol, quantity in self.positions.items()
+        )
+        orders: list[Order] = []
+        for symbol in sorted(self.positions):
+            current = self.positions[symbol] * prices[symbol]
+            difference = equity * target_weights.get(symbol, 0.0) - current
+            if abs(difference) <= 1e-10:
+                continue
+            orders.append(
+                Order(
+                    day,
+                    symbol,
+                    "BUY" if difference > 0.0 else "SELL",
+                    abs(difference),
+                    reference_prices[symbol],
+                )
+            )
+        return orders
 
     def rebalance(
         self,
