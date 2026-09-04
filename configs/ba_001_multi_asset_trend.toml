@@ -1,0 +1,28 @@
+# BA-001 demo configuration. Synthetic results have no economic meaning.
+
+[strategy]
+id = "BA-001"
+name = "Multi-Asset Trend"
+symbols = ["SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC"]
+lookback_months = 12
+sleeve_weight = 0.125
+
+[portfolio]
+initial_cash = 100000.0
+
+[execution]
+cost_bps = 10.0
+
+[data]
+source = "synthetic"
+start = "2016-12-01"
+end = "2025-12-31"
+seed = 1701
+annual_cash_rate = 0.025
+
+[backtest]
+start = "2018-01-02"
+end = "2025-12-31"
+
+[report]
+output_dir = "experiments"

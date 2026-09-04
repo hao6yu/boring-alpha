@@ -1,0 +1,22 @@
+!.gitignore
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Local secrets and downloaded market data
+.env
+.env.*
+!.env.example
+data/*.csv
+data/*.parquet
+
+# Generated experiments are immutable local artifacts.
+experiments/**
+!experiments/.gitkeep
