@@ -111,6 +111,15 @@ class ApplyTests(unittest.TestCase):
         with self.assertRaises(AccountingError):
             portfolio.apply(fills)
 
+    def test_a_fully_invested_book_clamps_residual_cash_to_zero(self) -> None:
+        portfolio = Portfolio(1_000.0, ("A", "B"))
+        fills = execute(
+            [Order(DAY, "A", "BUY", 500.0, 9.0), Order(DAY, "B", "BUY", 500.0, 21.0)],
+            PRICES, 1_000.0, CostModel(100.0),
+        )
+        portfolio.apply(fills)
+        self.assertEqual(portfolio.cash, 0.0)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -93,19 +93,69 @@ class ExcessContributionTests(unittest.TestCase):
             )
 
 
+ANCHOR0 = date(2024, 11, 29)
+SIGNAL2, THIRD = date(2025, 1, 31), date(2025, 2, 3)
+
+
+def _rotation_data() -> MarketData:
+    """Two decisions, not one: A's decision close (118) differs from its
+    execution open (120), and month two rotates A out and B in, so a single
+    rebalance carries both a SELL and a BUY. Full sleeve weight plus a real
+    cost rate leaves too little cash to fill every buy in full, so at least
+    one fill is a genuine partial fill rather than always landing at par.
+    """
+
+    bars = [
+        PriceBar(ANCHOR0, "A", 100.0, 100.0), PriceBar(ANCHOR0, "B", 100.0, 100.0),
+        PriceBar(SIGNAL, "A", 120.0, 118.0), PriceBar(SIGNAL, "B", 90.0, 90.0),
+        PriceBar(FIRST, "A", 120.0, 132.0), PriceBar(FIRST, "B", 90.0, 90.0),
+        PriceBar(SIGNAL2, "A", 108.0, 108.0), PriceBar(SIGNAL2, "B", 100.0, 100.0),
+        PriceBar(THIRD, "A", 108.0, 108.0), PriceBar(THIRD, "B", 100.0, 100.0),
+    ]
+    days = [ANCHOR0, SIGNAL, FIRST, SIGNAL2, THIRD]
+    return MarketData(bars, {day: 1.0 for day in days}, source="test")
+
+
+def _run_rotation():
+    data = _rotation_data()
+    return data, Backtester(
+        data, ("A", "B"), initial_cash=1_000.0, cost_bps=100.0,
+        start=FIRST, end=THIRD,
+    ).run(MultiAssetTrend(("A", "B"), 1, 1.0))
+
+
 class OrderLedgerTests(unittest.TestCase):
     def test_every_fill_matches_an_order_by_date_symbol_and_side(self) -> None:
-        _, result = _run()
+        _, result = _run_rotation()
+        # Two decisions produce three orders (month one's BUY, month two's
+        # SELL and BUY), so this checks real cross-order matching rather than
+        # a single pair that could not help but line up.
+        self.assertEqual(len(result.orders), 3)
+        third_sides = {order.side for order in result.orders if order.date == THIRD}
+        self.assertEqual(third_sides, {"SELL", "BUY"})
         keys = {(order.date, order.symbol, order.side) for order in result.orders}
         for fill in result.fills:
             self.assertIn((fill.date, fill.symbol, fill.side), keys)
 
     def test_the_reference_price_is_the_decision_month_end_close(self) -> None:
-        data, result = _run()
+        data, result = _run_rotation()
+        decision_day = {FIRST: SIGNAL, THIRD: SIGNAL2}
         for order in result.orders:
-            self.assertEqual(order.reference_price, data.bar(SIGNAL, order.symbol).close)
+            self.assertEqual(
+                order.reference_price, data.bar(decision_day[order.date], order.symbol).close
+            )
+        # A's decision close (118) and execution open (120) genuinely differ,
+        # so an engine that recorded the open instead would be caught here.
+        first_month_buy = next(o for o in result.orders if o.date == FIRST)
+        self.assertEqual(first_month_buy.reference_price, 118.0)
+        self.assertNotEqual(first_month_buy.reference_price, data.bar(FIRST, "A").open)
 
     def test_fills_never_exceed_what_was_intended(self) -> None:
-        _, result = _run()
+        _, result = _run_rotation()
         for fill in result.fills:
             self.assertLessEqual(fill.notional, fill.intended_notional + 1e-9)
+        # At least one buy is actually rationed by the cash its own batch's
+        # sells left behind, not merely filled at par every time.
+        self.assertTrue(
+            any(fill.notional < fill.intended_notional - 1e-9 for fill in result.fills)
+        )
