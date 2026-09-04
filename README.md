@@ -27,7 +27,7 @@ The repository currently provides:
 - cash accrual, a trade ledger, equity curves, and risk metrics;
 - cash and static equal-weight benchmarks using the same accounting engine;
 - content-addressed, immutable experiment artifacts;
-- tests for timing, costs, fixed-sleeve behavior, and determinism.
+- tests for timing, lookahead, costs, fixed-sleeve behavior, and determinism.
 
 Broker connectivity, live orders, sentiment, pullback timing, leverage, and ML
 are intentionally outside this milestone.
@@ -45,7 +45,26 @@ python3 -m venv .venv
 
 The command writes a content-addressed run under `experiments/BA-001/` and
 prints the strategy/benchmark summary. Repeating the same run verifies the
-existing artifacts instead of silently overwriting them.
+existing artifacts instead of silently overwriting them. Relative paths inside
+a configuration, such as `output_dir` and the CSV paths, resolve against the
+directory that contains the configuration file, so a run writes to the same
+place regardless of the working directory.
+
+## Run artifacts
+
+Each run writes `manifest.json`, `metrics.json`, `decisions.json`, and the
+equity and trade CSVs for the strategy and both benchmarks. The manifest embeds
+the full configuration text, the SHA-256 of the configuration, the data, and
+the code, the data source label, and every warning, including month-ends that
+produced no signal. The run identifier is derived only from those three hashes,
+so identical inputs always land in the same directory and a second run verifies
+the artifacts instead of rewriting them. `artifact_schema` is 2; a manifest
+without that field predates the schema and recorded the absolute configuration
+path instead of its text.
+
+Two configuration rules are enforced rather than assumed: `report.output_dir`
+is required, and `backtest.start` must select the first session of a month, so
+use the first calendar day of the month.
 
 ## Real CSV contract
 

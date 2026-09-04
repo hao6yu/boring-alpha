@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 import tomllib
 
@@ -61,7 +61,45 @@ class AppConfig:
     raw_bytes: bytes
 
 
+_SCHEMA: dict[str, frozenset[str]] = {
+    "strategy": frozenset({"id", "name", "symbols", "lookback_months", "sleeve_weight"}),
+    "portfolio": frozenset({"initial_cash"}),
+    "execution": frozenset({"cost_bps"}),
+    "data": frozenset(
+        {"source", "start", "end", "seed", "annual_cash_rate", "prices_path", "cash_path"}
+    ),
+    "backtest": frozenset({"start", "end"}),
+    "report": frozenset({"output_dir"}),
+}
+
+_DATA_KEYS_BY_SOURCE: dict[str, frozenset[str]] = {
+    "synthetic": frozenset({"start", "end", "seed", "annual_cash_rate"}),
+    "csv": frozenset({"prices_path", "cash_path"}),
+}
+
+
+def _check_schema(raw: dict[str, object]) -> None:
+    unknown_tables = sorted(set(raw) - set(_SCHEMA))
+    if unknown_tables:
+        raise ValueError(f"unknown table(s) in configuration: {', '.join(unknown_tables)}")
+    for table, allowed in _SCHEMA.items():
+        section = raw.get(table, {})
+        if not isinstance(section, dict):
+            raise ValueError(f"[{table}] must be a table")
+        unknown_keys = sorted(set(section) - allowed)
+        if unknown_keys:
+            raise ValueError(f"unknown key(s) in [{table}]: {', '.join(unknown_keys)}")
+
+
+def _require(section: dict[str, object], table: str, key: str) -> object:
+    if key not in section:
+        raise ValueError(f"{table}.{key} is required")
+    return section[key]
+
+
 def _parse_date(value: object, field: str) -> date:
+    if isinstance(value, datetime):
+        raise ValueError(f"{field} must be an ISO date, not a datetime")
     if isinstance(value, date):
         return value
     if isinstance(value, str):
@@ -73,6 +111,8 @@ def _parse_date(value: object, field: str) -> date:
 
 
 def _resolve_path(value: object, root: Path, field: str) -> Path:
+    """Resolve a configured path; relative paths are anchored at the config's directory."""
+
     if not isinstance(value, str) or not value.strip():
         raise ValueError(f"{field} must be a non-empty path")
     path = Path(value)
@@ -85,26 +125,37 @@ def load_config(path: str | Path) -> AppConfig:
     config_path = Path(path).resolve()
     raw_bytes = config_path.read_bytes()
     raw = tomllib.loads(raw_bytes.decode("utf-8"))
-    root = config_path.parent.parent
+    _check_schema(raw)
+    root = config_path.parent
 
     strategy_raw = raw.get("strategy", {})
-    symbols = tuple(str(symbol).upper() for symbol in strategy_raw.get("symbols", ()))
+    symbols_raw = _require(strategy_raw, "strategy", "symbols")
+    if not isinstance(symbols_raw, list):
+        raise ValueError("strategy.symbols must be a list of symbols")
     strategy = StrategyConfig(
-        strategy_id=str(strategy_raw.get("id", "")).strip(),
-        name=str(strategy_raw.get("name", "")).strip(),
-        symbols=symbols,
-        lookback_months=int(strategy_raw.get("lookback_months", 0)),
-        sleeve_weight=float(strategy_raw.get("sleeve_weight", 0.0)),
+        strategy_id=str(_require(strategy_raw, "strategy", "id")).strip(),
+        name=str(_require(strategy_raw, "strategy", "name")).strip(),
+        symbols=tuple(str(symbol).upper() for symbol in symbols_raw),
+        lookback_months=int(_require(strategy_raw, "strategy", "lookback_months")),
+        sleeve_weight=float(_require(strategy_raw, "strategy", "sleeve_weight")),
     )
 
     portfolio_raw = raw.get("portfolio", {})
-    portfolio = PortfolioConfig(initial_cash=float(portfolio_raw.get("initial_cash", 0.0)))
+    portfolio = PortfolioConfig(
+        initial_cash=float(_require(portfolio_raw, "portfolio", "initial_cash"))
+    )
 
     execution_raw = raw.get("execution", {})
-    execution = ExecutionConfig(cost_bps=float(execution_raw.get("cost_bps", -1.0)))
+    execution = ExecutionConfig(cost_bps=float(_require(execution_raw, "execution", "cost_bps")))
 
     data_raw = raw.get("data", {})
-    source = str(data_raw.get("source", "")).lower()
+    source = str(_require(data_raw, "data", "source")).lower()
+    if source in _DATA_KEYS_BY_SOURCE:
+        irrelevant = sorted(set(data_raw) - {"source"} - _DATA_KEYS_BY_SOURCE[source])
+        if irrelevant:
+            raise ValueError(
+                f"[data] keys {', '.join(irrelevant)} do not apply to source '{source}'"
+            )
     data = DataConfig(
         source=source,
         start=_parse_date(data_raw["start"], "data.start") if "start" in data_raw else None,
@@ -125,14 +176,14 @@ def load_config(path: str | Path) -> AppConfig:
 
     backtest_raw = raw.get("backtest", {})
     backtest = BacktestConfig(
-        start=_parse_date(backtest_raw.get("start"), "backtest.start"),
-        end=_parse_date(backtest_raw.get("end"), "backtest.end"),
+        start=_parse_date(_require(backtest_raw, "backtest", "start"), "backtest.start"),
+        end=_parse_date(_require(backtest_raw, "backtest", "end"), "backtest.end"),
     )
 
     report_raw = raw.get("report", {})
     report = ReportConfig(
         output_dir=_resolve_path(
-            report_raw.get("output_dir", "experiments"), root, "report.output_dir"
+            _require(report_raw, "report", "output_dir"), root, "report.output_dir"
         )
     )
 
@@ -157,7 +208,7 @@ def _validate(
     backtest: BacktestConfig,
 ) -> None:
     if not strategy.strategy_id or not strategy.name:
-        raise ValueError("strategy.id and strategy.name are required")
+        raise ValueError("strategy.id and strategy.name must be non-empty")
     if not strategy.symbols or len(set(strategy.symbols)) != len(strategy.symbols):
         raise ValueError("strategy.symbols must be non-empty and unique")
     if strategy.lookback_months <= 0:

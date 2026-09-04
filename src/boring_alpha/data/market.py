@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from bisect import bisect_right
+from bisect import bisect_left, bisect_right
+import calendar
 from collections import defaultdict
 from datetime import date
 import hashlib
@@ -65,30 +66,20 @@ class MarketData:
         except KeyError as exc:
             raise ValueError(f"missing {symbol} bar on {day}") from exc
 
-    def date_on_or_before(self, symbol: str, target: date) -> date | None:
-        days = self.symbol_dates.get(symbol, ())
-        index = bisect_right(days, target) - 1
-        return days[index] if index >= 0 else None
+    def last_shared_session_in_month(
+        self, symbols: tuple[str, ...], year: int, month: int
+    ) -> date | None:
+        """Latest session in the calendar month on which every symbol has a bar."""
 
-    def shared_date_on_or_before(self, symbols: tuple[str, ...], target: date) -> date | None:
-        candidates = [self.date_on_or_before(symbol, target) for symbol in symbols]
-        if any(day is None for day in candidates):
-            return None
-        candidate = min(day for day in candidates if day is not None)
-        while candidate is not None:
-            if all(candidate in self.by_date and symbol in self.by_date[candidate] for symbol in symbols):
-                return candidate
-            previous = [self.date_on_or_before(symbol, candidate) for symbol in symbols]
-            if any(day is None for day in previous):
-                return None
-            next_candidate = min(day for day in previous if day is not None)
-            if next_candidate == candidate:
-                earlier = date.fromordinal(candidate.toordinal() - 1)
-                previous = [self.date_on_or_before(symbol, earlier) for symbol in symbols]
-                if any(day is None for day in previous):
-                    return None
-                next_candidate = min(day for day in previous if day is not None)
-            candidate = next_candidate
+        first = date(year, month, 1)
+        last = date(year, month, calendar.monthrange(year, month)[1])
+        low = bisect_left(self.dates, first)
+        high = bisect_right(self.dates, last)
+        for index in range(high - 1, low - 1, -1):
+            day = self.dates[index]
+            bars = self.by_date[day]
+            if all(symbol in bars for symbol in symbols):
+                return day
         return None
 
     def require_complete_calendar(
@@ -105,7 +96,6 @@ class MarketData:
 
     def fingerprint(self) -> str:
         digest = hashlib.sha256()
-        digest.update(self.source.encode("utf-8"))
         for day in self.dates:
             for symbol in sorted(self.by_date[day]):
                 bar = self.by_date[day][symbol]

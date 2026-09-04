@@ -15,6 +15,8 @@ from boring_alpha.config import AppConfig
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
 
+ARTIFACT_SCHEMA = 2
+
 
 def _json_default(value: object) -> str:
     if isinstance(value, date):
@@ -89,15 +91,18 @@ def write_report(
     run_dir = config.report.output_dir / config.strategy.strategy_id / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    warnings = []
+    warnings: list[str] = []
     if config.data.source == "synthetic":
         warnings.append("SYNTHETIC DATA: results have no economic or predictive meaning.")
+    for result in (strategy, benchmark, cash):
+        warnings.extend(result.warnings)
 
     manifest = {
+        "artifact_schema": ARTIFACT_SCHEMA,
         "run_id": run_id,
         "strategy_id": config.strategy.strategy_id,
         "strategy_name": config.strategy.name,
-        "config_path": str(config.path),
+        "config_toml": config.raw_bytes.decode("utf-8"),
         "config_sha256": config_hash,
         "data_sha256": data_hash,
         "code_sha256": code_hash,

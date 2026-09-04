@@ -49,4 +49,4 @@ def load_csv_market_data(prices_path: Path, cash_path: Path) -> MarketData:
             except (TypeError, ValueError) as exc:
                 raise ValueError(f"invalid cash row {row_number}: {row}") from exc
 
-    return MarketData(bars, cash_factors, source=f"csv:{prices_path}:{cash_path}")
+    return MarketData(bars, cash_factors, source="csv")

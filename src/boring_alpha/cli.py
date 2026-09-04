@@ -81,6 +81,11 @@ def run_backtest(config_path: Path) -> int:
     print(f"{'Volatility':<24}{_percentage(float(strategy_metrics['annualized_volatility'])):>14}{_percentage(float(benchmark_metrics['annualized_volatility'])):>14}{_percentage(float(cash_metrics['annualized_volatility'])):>14}")
     print(f"{'Max drawdown':<24}{_percentage(float(strategy_metrics['max_drawdown'])):>14}{_percentage(float(benchmark_metrics['max_drawdown'])):>14}{_percentage(float(cash_metrics['max_drawdown'])):>14}")
     print(f"{'Sharpe vs cash':<24}{float(strategy_metrics['sharpe_vs_cash']):>14.2f}{float(benchmark_metrics['sharpe_vs_cash']):>14.2f}{float(cash_metrics['sharpe_vs_cash']):>14.2f}")
+    warnings = [warning for result in (strategy, benchmark, cash) for warning in result.warnings]
+    if warnings:
+        print(f"Warnings ({len(warnings)}):")
+        for warning in warnings:
+            print(f"  - {warning}")
     print(f"Artifacts: {run_dir}")
     return 0
 

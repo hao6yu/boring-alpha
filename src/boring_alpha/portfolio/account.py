@@ -8,6 +8,10 @@ from boring_alpha.data.market import MarketData
 from boring_alpha.domain import Trade
 
 
+class AccountingError(RuntimeError):
+    """Raised when the cash-only accounting invariant is violated."""
+
+
 class Portfolio:
     def __init__(self, initial_cash: float, symbols: tuple[str, ...]) -> None:
         self.cash = initial_cash
@@ -81,7 +85,7 @@ class Portfolio:
             trades.append(Trade(day, symbol, "BUY", quantity, price, notional, cost))
 
         if self.cash < -1e-7:
-            raise AssertionError(f"cash-only portfolio became negative: {self.cash}")
+            raise AccountingError(f"cash-only portfolio became negative: {self.cash}")
         if abs(self.cash) < 1e-9:
             self.cash = 0.0
         return trades

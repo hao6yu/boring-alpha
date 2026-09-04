@@ -15,12 +15,12 @@ cost_bps = 10.0
 
 [data]
 source = "csv"
-prices_path = "data/market_daily.csv"
-cash_path = "data/cash_daily.csv"
+prices_path = "../data/market_daily.csv"
+cash_path = "../data/cash_daily.csv"
 
 [backtest]
-start = "2007-01-03"
+start = "2007-01-01"
 end = "2021-12-31"
 
 [report]
-output_dir = "experiments"
+output_dir = "../experiments"

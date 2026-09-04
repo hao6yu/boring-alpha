@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from bisect import bisect_left
 from datetime import date
 from typing import Protocol
 
@@ -17,9 +18,16 @@ class SignalPolicy(Protocol):
 
 
 def month_end_dates(dates: tuple[date, ...]) -> set[date]:
+    """Sessions followed by a session in a different month.
+
+    The final date of a dataset is never a month-end: the data cannot show
+    whether its month actually ended, and a decision there could never execute.
+    """
+
     result: set[date] = set()
-    for index, day in enumerate(dates):
-        if index == len(dates) - 1 or dates[index + 1].month != day.month:
+    for index in range(len(dates) - 1):
+        day, following = dates[index], dates[index + 1]
+        if (following.year, following.month) != (day.year, day.month):
             result.add(day)
     return result
 
@@ -42,17 +50,36 @@ class Backtester:
         self.start = start
         self.end = end
         data.require_complete_calendar(symbols, data.dates[0], end)
-        if not any(start <= day <= end for day in data.dates):
+        sessions = [day for day in data.dates if start <= day <= end]
+        if not sessions:
             raise ValueError("no market sessions fall inside the backtest period")
+        # The first session in the window must open a month so that the pending
+        # signal it executes is the preceding month-end's. A dataset that itself
+        # begins mid-month cannot be checked and simply has no pending signal.
+        first = sessions[0]
+        index = bisect_left(data.dates, first)
+        if index > 0:
+            previous = data.dates[index - 1]
+            if (previous.year, previous.month) == (first.year, first.month):
+                raise ValueError(
+                    "backtest.start must select the first session of a month; "
+                    f"{first} follows {previous} in the same month "
+                    "(use the first calendar day of the month)"
+                )
 
     def run(self, policy: SignalPolicy) -> BacktestResult:
         portfolio = Portfolio(self.initial_cash, self.symbols)
         trades: list[Trade] = []
         decisions: list[SignalSnapshot] = []
         curve: list[EquityPoint] = []
+        warnings: list[str] = []
         pending: SignalSnapshot | None = None
+        prestart_warning: str | None = None
         started = False
         month_ends = month_end_dates(self.data.dates)
+
+        def no_signal(day: date) -> str:
+            return f"{policy.name}: no signal at month-end {day.isoformat()} (insufficient history)"
 
         for day in self.data.dates:
             if day > self.end:
@@ -61,7 +88,12 @@ class Backtester:
             if day < self.start:
                 if day in month_ends:
                     pending = policy.snapshot(self.data, day)
+                    prestart_warning = no_signal(day) if pending is None else None
                 continue
+
+            if prestart_warning is not None:
+                warnings.append(prestart_warning)
+                prestart_warning = None
 
             if started:
                 portfolio.accrue_cash(self.data.cash_factors[day])
@@ -85,6 +117,8 @@ class Backtester:
 
             if day in month_ends:
                 pending = policy.snapshot(self.data, day)
+                if pending is None:
+                    warnings.append(no_signal(day))
 
         return BacktestResult(
             name=policy.name,
@@ -92,4 +126,5 @@ class Backtester:
             equity_curve=tuple(curve),
             trades=tuple(trades),
             decisions=tuple(decisions),
+            warnings=tuple(warnings),
         )

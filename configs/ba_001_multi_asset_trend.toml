@@ -21,8 +21,8 @@ seed = 1701
 annual_cash_rate = 0.025
 
 [backtest]
-start = "2018-01-02"
+start = "2018-01-01"
 end = "2025-12-31"
 
 [report]
-output_dir = "experiments"
+output_dir = "../experiments"

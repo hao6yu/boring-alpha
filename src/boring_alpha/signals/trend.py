@@ -2,18 +2,25 @@
 
 from __future__ import annotations
 
-import calendar
 from datetime import date
 
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import SignalSnapshot
 
 
-def subtract_months(day: date, months: int) -> date:
-    total = day.year * 12 + (day.month - 1) - months
+def month_offset(year: int, month: int, delta: int) -> tuple[int, int]:
+    total = year * 12 + (month - 1) + delta
     year, month_zero = divmod(total, 12)
-    month = month_zero + 1
-    return date(year, month, min(day.day, calendar.monthrange(year, month)[1]))
+    return year, month_zero + 1
+
+
+def anchor_month_end(
+    data: MarketData, symbols: tuple[str, ...], as_of: date, lookback_months: int
+) -> date | None:
+    """Final shared session of the calendar month `lookback_months` before `as_of`."""
+
+    year, month = month_offset(as_of.year, as_of.month, -lookback_months)
+    return data.last_shared_session_in_month(symbols, year, month)
 
 
 class MultiAssetTrend:
@@ -26,8 +33,7 @@ class MultiAssetTrend:
         self.name = "BA-001 Multi-Asset Trend"
 
     def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None:
-        anchor_target = subtract_months(as_of, self.lookback_months)
-        anchor = data.shared_date_on_or_before(self.symbols, anchor_target)
+        anchor = anchor_month_end(data, self.symbols, as_of, self.lookback_months)
         if anchor is None:
             return None
 
@@ -61,8 +67,7 @@ class FixedAllocation:
         self.name = "Static Equal-Weight Benchmark"
 
     def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None:
-        anchor_target = subtract_months(as_of, self.lookback_months)
-        anchor = data.shared_date_on_or_before(self.symbols, anchor_target)
+        anchor = anchor_month_end(data, self.symbols, as_of, self.lookback_months)
         if anchor is None:
             return None
         return SignalSnapshot(

@@ -49,3 +49,4 @@ class BacktestResult:
     equity_curve: tuple[EquityPoint, ...]
     trades: tuple[Trade, ...]
     decisions: tuple[SignalSnapshot, ...]
+    warnings: tuple[str, ...] = ()
