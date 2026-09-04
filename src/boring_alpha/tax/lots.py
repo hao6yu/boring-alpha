@@ -12,6 +12,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, replace
 from datetime import date, timedelta
+from typing import Sequence
 
 from boring_alpha.data.distributions import DistributionTable
 from boring_alpha.data.market import MarketData
@@ -227,3 +228,84 @@ class LotBook:
                 )
             )
         return events
+
+
+WASH_SALE_WINDOW = timedelta(days=30)
+
+
+@dataclass
+class FuturePurchase:
+    """A buy fill dated after a loss sale, still inside the wash-sale window.
+
+    Its lot does not exist yet, so the disallowed loss and the tacked holding
+    period wait here and are applied when the lot is opened.
+    """
+
+    symbol: str
+    acquired: date
+    shares: float
+    replacement_capacity: float
+    pending_basis: float = 0.0
+    pending_tack_days: int = 0
+
+
+def apply_wash_sales(
+    records: list[Realized],
+    existing: "Sequence[Lot]",
+    future: "Sequence[FuturePurchase]",
+) -> list[Realized]:
+    """Disallow losses matched to replacement shares (spec §4.6).
+
+    A loss sale is a wash sale to the extent the same symbol was acquired within
+    30 calendar days before or after, counting reinvested distributions as
+    purchases. Replacement shares are matched once, in acquisition order. For an
+    existing lot the disallowed loss is added to its basis and the sold lot's
+    holding period is tacked onto its own; for a purchase still in the future
+    both wait on the `FuturePurchase` until the lot is opened. Shares sold in the
+    loss sale itself never replace themselves: `LotBook.sell` has already reduced
+    their lot's capacity to what remains.
+    """
+
+    adjusted: list[Realized] = []
+    tacked: set[int] = set()
+    for record in records:
+        loss = record.basis - record.proceeds
+        if loss <= 0.0 or record.shares <= 0.0:
+            adjusted.append(record)
+            continue
+        low, high = record.sold - WASH_SALE_WINDOW, record.sold + WASH_SALE_WINDOW
+        candidates: list[Lot | FuturePurchase] = [
+            lot
+            for lot in existing
+            if lot.symbol == record.symbol
+            and low <= lot.acquired <= high
+            and lot.replacement_capacity > _SHARE_TOLERANCE
+        ]
+        candidates += [
+            purchase
+            for purchase in future
+            if purchase.symbol == record.symbol
+            and low <= purchase.acquired <= high
+            and purchase.replacement_capacity > _SHARE_TOLERANCE
+        ]
+        candidates.sort(key=lambda item: item.acquired)
+        holding_days = (record.sold - record.opened).days
+        matched = 0.0
+        for candidate in candidates:
+            if matched >= record.shares - _SHARE_TOLERANCE:
+                break
+            take = min(candidate.replacement_capacity, record.shares - matched)
+            share_of_loss = loss * (take / record.shares)
+            if isinstance(candidate, Lot):
+                candidate.basis += share_of_loss
+                candidate.disallowed_attached += share_of_loss
+                if candidate.lot_id not in tacked:
+                    candidate.opened = candidate.opened - timedelta(days=holding_days)
+                    tacked.add(candidate.lot_id)
+            else:
+                candidate.pending_basis += share_of_loss
+                candidate.pending_tack_days = max(candidate.pending_tack_days, holding_days)
+            candidate.replacement_capacity -= take
+            matched += take
+        adjusted.append(replace(record, disallowed=loss * (matched / record.shares)))
+    return adjusted
