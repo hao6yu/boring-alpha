@@ -71,6 +71,23 @@ class ExecutionTests(unittest.TestCase):
     def test_no_orders_means_no_fills(self) -> None:
         self.assertEqual(execute([], PRICES, 1_000.0, FREE), [])
 
+    def test_buys_with_no_cash_still_emit_zero_notional_fills(self) -> None:
+        """The old fused path appended a zero-quantity trade here, and the CSV
+        ledger is written in list order, so dropping these would change the
+        artifact."""
+
+        orders = [
+            Order(DAY, "A", "BUY", 500.0, 9.0),
+            Order(DAY, "B", "BUY", 500.0, 21.0),
+        ]
+        fills = execute(orders, PRICES, 0.0, FREE)
+        self.assertEqual(len(fills), 2)
+        for fill in fills:
+            self.assertEqual(fill.notional, 0.0)
+            self.assertEqual(fill.quantity, 0.0)
+            self.assertEqual(fill.cost, 0.0)
+        self.assertEqual([fill.intended_notional for fill in fills], [500.0, 500.0])
+
 
 class ApplyTests(unittest.TestCase):
     def test_applying_fills_moves_cash_and_positions(self) -> None:
