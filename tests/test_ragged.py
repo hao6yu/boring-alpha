@@ -54,8 +54,8 @@ class RaggedStartTests(unittest.TestCase):
             start=date(2021, 8, 1),
             end=date(2022, 6, 30),
         ).run(MultiAssetTrend(("A", "B"), 12, 0.5))
-        self.assertTrue(result.trades)
-        self.assertGreaterEqual(min(trade.date for trade in result.trades), date(2021, 8, 1))
+        self.assertTrue(result.fills)
+        self.assertGreaterEqual(min(trade.date for trade in result.fills), date(2021, 8, 1))
 
     def test_the_portfolio_waits_until_every_sleeve_has_a_full_lookback(self) -> None:
         data = _ragged(date(2020, 7, 1))

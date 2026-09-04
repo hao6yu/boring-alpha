@@ -7,7 +7,8 @@ from datetime import date
 from typing import Protocol
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import BacktestResult, EquityPoint, SignalSnapshot, Trade
+from boring_alpha.domain import BacktestResult, EquityPoint, Fill, Order, SignalSnapshot
+from boring_alpha.execution import CostModel, execute
 from boring_alpha.portfolio.account import Portfolio
 
 
@@ -47,6 +48,7 @@ class Backtester:
         self.symbols = symbols
         self.initial_cash = initial_cash
         self.cost_bps = cost_bps
+        self.cost_model = CostModel(cost_bps)
         self.start = start
         self.end = end
         missing = set(symbols) - set(data.symbol_dates)
@@ -78,7 +80,8 @@ class Backtester:
 
     def run(self, policy: SignalPolicy) -> BacktestResult:
         portfolio = Portfolio(self.initial_cash, self.symbols)
-        trades: list[Trade] = []
+        fills: list[Fill] = []
+        orders: list[Order] = []
         decisions: list[SignalSnapshot] = []
         curve: list[EquityPoint] = []
         warnings: list[str] = []
@@ -130,12 +133,22 @@ class Backtester:
             held_overnight = dict(portfolio.positions)
 
             if pending is not None:
-                new_trades = portfolio.rebalance(
-                    self.data, day, pending.target_weights, self.cost_bps
+                prices = {
+                    symbol: self.data.bar(day, symbol).open for symbol in self.symbols
+                }
+                references = {
+                    symbol: self.data.bar(pending.as_of, symbol).close
+                    for symbol in self.symbols
+                }
+                new_orders = portfolio.plan_rebalance(
+                    prices, pending.target_weights, references, day
                 )
-                for trade in new_trades:
-                    contributions[trade.symbol] -= trade.cost
-                trades.extend(new_trades)
+                new_fills = execute(new_orders, prices, portfolio.cash, self.cost_model)
+                portfolio.apply(new_fills)
+                for fill in new_fills:
+                    contributions[fill.symbol] -= fill.cost
+                orders.extend(new_orders)
+                fills.extend(new_fills)
                 decisions.append(pending)
                 pending = None
 
@@ -162,7 +175,8 @@ class Backtester:
             name=policy.name,
             initial_equity=self.initial_cash,
             equity_curve=tuple(curve),
-            trades=tuple(trades),
+            fills=tuple(fills),
+            orders=tuple(orders),
             decisions=tuple(decisions),
             warnings=tuple(warnings),
             contributions=contributions,

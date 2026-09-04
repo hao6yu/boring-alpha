@@ -98,16 +98,16 @@ def _trades_csv(result: BacktestResult) -> str:
     output = io.StringIO()
     writer = csv.writer(output, lineterminator="\n")
     writer.writerow(["date", "symbol", "side", "quantity", "price", "notional", "cost"])
-    for trade in result.trades:
+    for fill in result.fills:
         writer.writerow(
             [
-                trade.date,
-                trade.symbol,
-                trade.side,
-                trade.quantity,
-                trade.price,
-                trade.notional,
-                trade.cost,
+                fill.date,
+                fill.symbol,
+                fill.side,
+                fill.quantity,
+                fill.price,
+                fill.notional,
+                fill.cost,
             ]
         )
     return output.getvalue()

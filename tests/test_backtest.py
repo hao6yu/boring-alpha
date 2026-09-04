@@ -36,10 +36,10 @@ class BacktestTests(unittest.TestCase):
             end=execution_day,
         )
         result = engine.run(MultiAssetTrend(("A",), 12, 1.0))
-        self.assertEqual(len(result.trades), 1)
-        self.assertEqual(result.trades[0].date, execution_day)
-        self.assertEqual(result.trades[0].price, 200.0)
-        self.assertAlmostEqual(result.trades[0].quantity, 5.0)
+        self.assertEqual(len(result.fills), 1)
+        self.assertEqual(result.fills[0].date, execution_day)
+        self.assertEqual(result.fills[0].price, 200.0)
+        self.assertAlmostEqual(result.fills[0].quantity, 5.0)
 
     def test_costs_are_funded_without_negative_cash(self) -> None:
         anchor = date(2024, 1, 31)
@@ -109,7 +109,7 @@ class BacktestTests(unittest.TestCase):
             start=date(2025, 1, 2),
             end=date(2025, 2, 3),
         ).run(MultiAssetTrend(("A",), 12, 1.0))
-        self.assertEqual(result.trades, ())
+        self.assertEqual(result.fills, ())
         self.assertTrue(any("2024-12-31" in warning for warning in result.warnings))
         self.assertTrue(any("2025-01-31" in warning for warning in result.warnings))
 
@@ -210,8 +210,8 @@ class BacktestTests(unittest.TestCase):
             [d for d in other.decisions if d.as_of <= cutoff],
         )
         self.assertEqual(
-            [t for t in base.trades if t.date <= cutoff],
-            [t for t in other.trades if t.date <= cutoff],
+            [t for t in base.fills if t.date <= cutoff],
+            [t for t in other.fills if t.date <= cutoff],
         )
         self.assertEqual(
             [e for e in base.equity_curve if e.date <= cutoff],

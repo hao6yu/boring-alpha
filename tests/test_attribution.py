@@ -91,3 +91,21 @@ class ExcessContributionTests(unittest.TestCase):
             self.assertLessEqual(
                 result.excess_contributions[symbol], result.contributions[symbol] + 1e-12
             )
+
+
+class OrderLedgerTests(unittest.TestCase):
+    def test_every_fill_matches_an_order_by_date_symbol_and_side(self) -> None:
+        _, result = _run()
+        keys = {(order.date, order.symbol, order.side) for order in result.orders}
+        for fill in result.fills:
+            self.assertIn((fill.date, fill.symbol, fill.side), keys)
+
+    def test_the_reference_price_is_the_decision_month_end_close(self) -> None:
+        data, result = _run()
+        for order in result.orders:
+            self.assertEqual(order.reference_price, data.bar(SIGNAL, order.symbol).close)
+
+    def test_fills_never_exceed_what_was_intended(self) -> None:
+        _, result = _run()
+        for fill in result.fills:
+            self.assertLessEqual(fill.notional, fill.intended_notional + 1e-9)

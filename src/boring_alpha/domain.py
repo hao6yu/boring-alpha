@@ -62,17 +62,6 @@ class SignalSnapshot:
 
 
 @dataclass(frozen=True, slots=True)
-class Trade:
-    date: date
-    symbol: str
-    side: str
-    quantity: float
-    price: float
-    notional: float
-    cost: float
-
-
-@dataclass(frozen=True, slots=True)
 class EquityPoint:
     date: date
     equity: float
@@ -85,9 +74,10 @@ class BacktestResult:
     name: str
     initial_equity: float
     equity_curve: tuple[EquityPoint, ...]
-    trades: tuple[Trade, ...]
+    fills: tuple[Fill, ...]
     decisions: tuple[SignalSnapshot, ...]
     warnings: tuple[str, ...] = ()
     contributions: dict[str, float] = field(default_factory=dict)
     excess_contributions: dict[str, float] = field(default_factory=dict)
     cash_interest: float = 0.0
+    orders: tuple[Order, ...] = ()

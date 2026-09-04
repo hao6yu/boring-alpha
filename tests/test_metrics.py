@@ -4,7 +4,7 @@ import statistics
 import unittest
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import BacktestResult, EquityPoint, PriceBar, Trade
+from boring_alpha.domain import BacktestResult, EquityPoint, Fill, PriceBar
 from boring_alpha.metrics.performance import calculate_metrics
 
 
@@ -89,7 +89,7 @@ class ReportedDiagnosticsTests(unittest.TestCase):
     def test_turnover_annualizes_against_average_equity_and_elapsed_years(self) -> None:
         days = {date(2024, 1, 2): 100.0, date(2025, 1, 1): 100.0}
         result, data = _result_and_data(100.0, days)
-        trades = (Trade(date(2024, 1, 2), "A", "BUY", 1.0, 50.0, 50.0, 0.0),)
+        trades = (Fill(date(2024, 1, 2), "A", "BUY", 1.0, 50.0, 50.0, 0.0, 50.0, 50.0),)
         with_trades = BacktestResult("t", 100.0, result.equity_curve, trades, ())
         metrics = calculate_metrics(with_trades, data)
         self.assertAlmostEqual(metrics["one_way_turnover"], 0.25, places=2)
@@ -102,8 +102,8 @@ class TurnoverConventionTests(unittest.TestCase):
         # A full round trip of 100 of notional is one unit of one-way turnover
         # against 100 of average equity, not two.
         trades = (
-            Trade(date(2024, 1, 2), "A", "BUY", 1.0, 100.0, 100.0, 0.0),
-            Trade(date(2024, 12, 31), "A", "SELL", 1.0, 100.0, 100.0, 0.0),
+            Fill(date(2024, 1, 2), "A", "BUY", 1.0, 100.0, 100.0, 0.0, 100.0, 100.0),
+            Fill(date(2024, 12, 31), "A", "SELL", 1.0, 100.0, 100.0, 0.0, 100.0, 100.0),
         )
         metrics = calculate_metrics(
             BacktestResult("t", 100.0, result.equity_curve, trades, ()), data

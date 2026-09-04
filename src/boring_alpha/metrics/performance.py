@@ -75,8 +75,8 @@ def calculate_metrics(result: BacktestResult, data: MarketData) -> dict[str, flo
     average_equity = statistics.mean(point.equity for point in curve)
     years = max((curve[-1].date - curve[0].date).days, 1) / 365.2425
 
-    total_cost = sum(trade.cost for trade in result.trades)
-    traded_notional = sum(trade.notional for trade in result.trades)
+    total_cost = sum(fill.cost for fill in result.fills)
+    traded_notional = sum(fill.notional for fill in result.fills)
     average_exposure = statistics.mean(
         point.gross_exposure / point.equity for point in curve if point.equity > 0.0
     )
@@ -94,7 +94,7 @@ def calculate_metrics(result: BacktestResult, data: MarketData) -> dict[str, flo
         # traded_notional sums both sides; one-way turnover counts one.
         "one_way_turnover": traded_notional / 2.0 / average_equity / years,
         "cost_drag_bps": total_cost / average_equity / years * 10_000.0,
-        "trade_count": len(result.trades),
+        "trade_count": len(result.fills),
         "traded_notional": traded_notional,
         "total_cost": total_cost,
     }
