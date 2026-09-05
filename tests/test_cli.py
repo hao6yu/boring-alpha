@@ -1,4 +1,5 @@
 import contextlib
+import copy
 import csv
 from datetime import date
 import gzip
@@ -7,6 +8,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from boring_alpha.cli import run_aftertax, run_backtest
 from boring_alpha.config import load_config
@@ -245,6 +247,107 @@ class AfterTaxCommandTests(unittest.TestCase):
         self.assertIn("strategy", text)
         self.assertIn("cash", text)
         self.assertIn("worst", text)
+
+    def _as_legacy_archive(self, sweep_dir: Path) -> dict:
+        path = sweep_dir / "manifest.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifest.pop("artifacts_sha256")
+        path.write_text(json.dumps(manifest), encoding="utf-8")
+        return manifest
+
+    def test_empty_legacy_trade_ledger_is_rejected_by_independent_replay(self) -> None:
+        self._as_legacy_archive(self.plain_dir)
+        path = self.plain_dir / "variants" / "base" / "strategy_trades.csv"
+        header = path.read_text(encoding="utf-8").splitlines()[0]
+        path.write_text(header + "\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "replay.*mismatch"):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+        self.assertEqual(self._outputs(self.plain_dir), [])
+
+    def test_new_archive_trade_checksums_are_verified(self) -> None:
+        path = self.plain_dir / "variants" / "base" / "strategy_trades.csv"
+        path.write_text(path.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "checksum mismatch.*strategy_trades"):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+
+    def test_missing_legacy_variant_is_refused(self) -> None:
+        self._as_legacy_archive(self.plain_dir)
+        (self.plain_dir / "variants" / "lookback_9").rename(self.root / "missing-variant")
+        with self.assertRaisesRegex(ValueError, "variant coverage.*lookback_9"):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+
+    def test_truncated_legacy_equity_curve_is_refused(self) -> None:
+        self._as_legacy_archive(self.plain_dir)
+        path = self.plain_dir / "variants" / "exposure_matched" / "benchmark_equity.csv"
+        rows = path.read_text(encoding="utf-8").splitlines()
+        path.write_text("\n".join([rows[0], *rows[2:]]) + "\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "declared backtest window"):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+
+    def test_legacy_market_archive_must_match_its_recorded_fingerprint(self) -> None:
+        self._as_legacy_archive(self.plain_dir)
+        path = self.plain_dir / "input_cash.csv.gz"
+        rows = gzip.decompress(path.read_bytes()).decode("utf-8").splitlines()
+        day, _ = rows[1].split(",")
+        rows[1] = f"{day},1.5"
+        path.write_bytes(gzip.compress(("\n".join(rows) + "\n").encode("utf-8"), mtime=0))
+        with self.assertRaisesRegex(ValueError, "market data fingerprint"):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+
+    def test_distribution_archive_must_match_its_canonical_fingerprint(self) -> None:
+        self._as_legacy_archive(self.taxed_dir)
+        path = self.taxed_dir / "input_distributions.csv.gz"
+        rows = gzip.decompress(path.read_bytes()).decode("utf-8").splitlines()
+        day, symbol, close, dividend = rows[1].split(",")
+        rows[1] = f"{day},{symbol},{float(close) * 2},{dividend}"
+        path.write_bytes(gzip.compress(("\n".join(rows) + "\n").encode("utf-8"), mtime=0))
+        with self.assertRaisesRegex(ValueError, "distributions fingerprint"):
+            run_aftertax(self.taxed_dir, self.policy, None)
+
+    def test_old_source_hash_is_provenance_and_is_never_claimed_as_archive_verification(self) -> None:
+        manifest = self._as_legacy_archive(self.taxed_dir)
+        block = manifest["distributions_manifest"]
+        block.pop("fingerprint_version")
+        block.pop("csv_sha256")
+        block["sha256"] = "a" * 64
+        manifest["distributions_sha256"] = "a" * 64
+        (self.taxed_dir / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            self.assertEqual(run_aftertax(self.taxed_dir, self.policy, None), 0)
+        self.assertIn("legacy-unverified", output.getvalue())
+        produced = json.loads(self._outputs(self.taxed_dir)[0].read_text(encoding="utf-8"))
+        self.assertNotEqual(produced["distributions_sha256"], "a" * 64)
+        provenance = json.loads((self.taxed_dir / "distributions_provenance.jsonl").read_text().splitlines()[-1])
+        self.assertEqual(provenance["legacy_claimed_source_sha256"], "a" * 64)
+        self.assertTrue(provenance["distributions_verification"].startswith("legacy-unverified"))
+
+    def test_future_rows_and_refetch_metadata_do_not_change_posthoc_identity(self) -> None:
+        with contextlib.redirect_stdout(io.StringIO()):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+        original = self._outputs(self.plain_dir)[0].read_bytes()
+        self.distributions.write_text(self.distributions.read_text() + "2025-01-02,A,999.0,100.0\n")
+        manifest_path = self.distributions.parent / "manifest.json"
+        manifest = json.loads(manifest_path.read_text())
+        manifest["created_at"] = "2027-01-01T00:00:00+00:00"
+        manifest["splits"]["A"].append({"date": "2025-01-02", "ratio": "2:1"})
+        manifest_path.write_text(json.dumps(manifest))
+        with contextlib.redirect_stdout(io.StringIO()):
+            run_aftertax(self.plain_dir, self.policy, self.distributions)
+        self.assertEqual(len(self._outputs(self.plain_dir)), 1)
+        self.assertEqual(self._outputs(self.plain_dir)[0].read_bytes(), original)
+
+    def test_nonpositive_wealth_and_nonworst_identity_failure_are_visible(self) -> None:
+        scenarios = copy.deepcopy(json.loads((self.taxed_dir / "tax.json").read_text())["runs"]["strategy"])
+        keys = list(scenarios)
+        scenarios[keys[0]]["metrics"]["after_tax_cagr"] = None
+        scenarios[keys[-1]]["metrics"]["after_tax_cagr"] = 0.5
+        scenarios[keys[-1]]["identity_checks"]["income_plus_gain_passed"] = False
+        output = io.StringIO()
+        with patch("boring_alpha.cli.run_scenarios", return_value=scenarios), contextlib.redirect_stdout(output):
+            self.assertEqual(run_aftertax(self.plain_dir, self.policy, self.distributions), 0)
+        self.assertIn("n/a", output.getvalue())
+        self.assertIn(f"strategy / {keys[-1]}: income_plus_gain_passed", output.getvalue())
 
 
 class ReconstructionTests(unittest.TestCase):

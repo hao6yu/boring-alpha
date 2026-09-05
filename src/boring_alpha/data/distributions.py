@@ -26,6 +26,7 @@ from typing import Iterable
 from boring_alpha.data.market import MarketData
 
 REQUIRED_COLUMNS = frozenset({"date", "symbol", "close", "dividend"})
+FINGERPRINT_VERSION = "distributions-input-v1"
 
 Row = tuple[date, str, float, float]
 
@@ -40,6 +41,7 @@ class DistributionTable:
         splits: dict[str, list[dict[str, str]]],
         sha256: str,
         source: str,
+        methodology: str = "",
     ) -> None:
         closes: dict[tuple[date, str], float] = {}
         dividends: dict[tuple[date, str], float] = {}
@@ -69,9 +71,39 @@ class DistributionTable:
             for symbol, days in self.symbol_dates.items()
         }
         self.dates = tuple(sorted({day for day, _ in closes}))
-        self.splits = {symbol: list(records) for symbol, records in splits.items()}
-        self.sha256 = sha256
+        self.splits = {
+            symbol: sorted((dict(record) for record in records), key=lambda record: (record["date"], record["ratio"]))
+            for symbol, records in splits.items()
+        }
+        # Source bytes are provenance; identity describes the normalized rows
+        # actually available to the overlay, including after truncation.
+        self.source_sha256 = sha256
+        self.methodology = methodology
+        self.csv_sha256 = hashlib.sha256(self.canonical_csv()).hexdigest()
+        semantic_input = {
+            "fingerprint_version": FINGERPRINT_VERSION,
+            "csv_sha256": self.csv_sha256,
+            "methodology": self.methodology,
+            "splits": self.splits,
+        }
+        self.sha256 = hashlib.sha256(
+            json.dumps(semantic_input, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
         self.source = source
+
+    def canonical_csv(self) -> bytes:
+        output = io.StringIO()
+        writer = csv.writer(output, lineterminator="\n")
+        writer.writerow(["date", "symbol", "close", "dividend"])
+        for day, symbol in sorted(self._closes):
+            writer.writerow([
+                day.isoformat(), symbol, repr(float(self._closes[(day, symbol)])),
+                repr(float(self._dividends[(day, symbol)])),
+            ])
+        return output.getvalue().encode("utf-8")
+
+    def fingerprint(self) -> str:
+        return self.sha256
 
     @property
     def symbols(self) -> tuple[str, ...]:
@@ -104,8 +136,16 @@ class DistributionTable:
         ]
         if not rows:
             raise ValueError(f"truncating distributions at {end} leaves no rows")
+        retained_symbols = {symbol for _, symbol, _, _ in rows}
+        splits = {
+            symbol: [record for record in records if date.fromisoformat(record["date"]) <= end]
+            for symbol, records in self.splits.items()
+            if symbol in retained_symbols
+        }
         return DistributionTable(
-            rows, splits=self.splits, sha256=self.sha256, source=f"{self.source}:truncated={end}"
+            rows, splits=splits, sha256=self.source_sha256,
+            source=f"{self.source}:truncated={end}",
+            methodology=self.methodology,
         )
 
     def require_coverage(self, data: MarketData, symbols: tuple[str, ...]) -> None:
@@ -174,4 +214,5 @@ def load_distributions(
         splits=splits,
         sha256=hashlib.sha256(raw).hexdigest(),
         source=f"csv:{Path(path).name}",
+        methodology=str(manifest.get("methodology") or ""),
     )

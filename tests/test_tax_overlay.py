@@ -180,7 +180,7 @@ class BuyAndHoldWithDividendTests(unittest.TestCase):
         self.assertEqual(out["scenario"]["key"], "fifo-deferral-base")
         self.assertEqual(out["policy"]["overlay_version"], "tax-overlay-v1")
         self.assertEqual(out["policy"]["code_sha256"], CODE)
-        self.assertEqual(out["policy"]["distributions_sha256"], "d" * 64)
+        self.assertEqual(out["policy"]["distributions_sha256"], self.table.sha256)
         self.assertEqual(len(out["policy"]["tax_policy_sha256"]), 64)
         self.assertIn("NAV convention", out["policy"]["nav_convention"])
         self.assertTrue(any("GLD" in item for item in out["totals"]["known_omissions"]))

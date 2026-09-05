@@ -17,7 +17,7 @@ from boring_alpha.config import (
     load_tax_policy,
 )
 from boring_alpha.data import load_market_data
-from boring_alpha.data.distributions import load_distributions
+from boring_alpha.data.distributions import FINGERPRINT_VERSION, load_distributions
 from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
 from boring_alpha.report import (
@@ -31,16 +31,19 @@ from boring_alpha.report import (
 from boring_alpha.criteria import Verdict
 from boring_alpha.profiles import gating_benchmark, profile_for
 from boring_alpha.signals import CashAllocation, MultiAssetTrend
-from boring_alpha.sweep import run_sweep, write_sweep_report
+from boring_alpha.sweep import benchmark_description, run_sweep, write_sweep_report
 from boring_alpha.tax import OVERLAY_VERSION, policy_sha256, run_scenarios
+from boring_alpha.tax.reconcile import validate_replay
 from boring_alpha.tax.reconstruct import (
     gunzip_to,
     initial_cash_from,
     market_data_from_archive,
     read_manifest,
     reconstruct_result,
+    require_run_window,
     run_files,
     symbols_from,
+    verify_archive_artifacts,
 )
 
 __all__ = [
@@ -123,6 +126,7 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
         else f"{config.evaluation.start}..{config.evaluation.end or DATASET_END}"
     )
     print(f"Evaluation period: {period} ({window})")
+    print(f"Benchmark: {benchmark_description(config)}")
     print(f"{'Metric':<24}{'Strategy':>14}{'Static':>14}{'Cash':>14}")
     print(f"{'Total return':<24}{_percentage(float(strategy_metrics['total_return'])):>14}{_percentage(float(benchmark_metrics['total_return'])):>14}{_percentage(float(cash_metrics['total_return'])):>14}")
     print(f"{'CAGR':<24}{_percentage(float(strategy_metrics['cagr'])):>14}{_percentage(float(benchmark_metrics['cagr'])):>14}{_percentage(float(cash_metrics['cagr'])):>14}")
@@ -257,10 +261,12 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
     """
 
     manifest = read_manifest(sweep_dir)
+    archived_files_status = verify_archive_artifacts(sweep_dir, manifest)
+    files = run_files(sweep_dir, manifest)
     symbols = symbols_from(manifest)
     initial_cash = initial_cash_from(manifest)
     policy = load_tax_policy(policy_path, symbols)
-    data = market_data_from_archive(sweep_dir)
+    data = market_data_from_archive(sweep_dir, manifest)
 
     if distributions_path is not None:
         manifest_path = distributions_path.parent / "manifest.json"
@@ -268,12 +274,13 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
             raise ValueError(f"no manifest.json beside {distributions_path}; a v2 snapshot is required")
         snapshot = json.loads(manifest_path.read_text(encoding="utf-8"))
         table = load_distributions(distributions_path, manifest_path=manifest_path)
-        block = {
-            "methodology": snapshot.get("methodology"),
+        provenance = {
+            "source": "external-snapshot",
+            "source_path": str(distributions_path),
+            "source_sha256": table.source_sha256,
             "created_at": snapshot.get("created_at"),
-            "splits": table.splits,
-            "sha256": table.sha256,
         }
+        distribution_status = "external snapshot: canonical input fingerprint recorded"
     else:
         archived = sweep_dir / "input_distributions.csv.gz"
         block = manifest.get("distributions_manifest")
@@ -286,16 +293,43 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
             unpacked = Path(directory) / "distributions_daily.csv"
             gunzip_to(archived, unpacked)
             table = load_distributions(unpacked, manifest_block=block)
-        # The archive holds the truncated rows; the identity is the source file's,
-        # recorded in the block, so results match the in-sweep tax.json exactly.
-        table.sha256 = block["sha256"]
+        version = block.get("fingerprint_version")
+        if version is not None and version != FINGERPRINT_VERSION:
+            raise ValueError(f"unsupported distributions fingerprint version: {version!r}")
+        if version == FINGERPRINT_VERSION:
+            if (
+                table.sha256 != block.get("sha256")
+                or table.sha256 != manifest.get("distributions_sha256")
+                or table.csv_sha256 != block.get("csv_sha256")
+            ):
+                raise ValueError("archived distributions fingerprint does not match the sweep manifest")
+            distribution_status = "verified"
+        else:
+            # Old sweeps stored a full snapshot hash beside a truncated CSV.
+            # That claimed source hash cannot verify the bytes now in hand.
+            distribution_status = "legacy-unverified: no canonical archive fingerprint was recorded"
+        snapshot = block
+        provenance = {
+            "source": "sweep-archive",
+            "archive_csv_sha256": table.source_sha256,
+            "legacy_claimed_source_sha256": block.get("sha256") if version is None else None,
+        }
     table = table.through(data.dates[-1])
     table.require_coverage(data, symbols)
+    block = {
+        "methodology": table.methodology,
+        "splits": table.splits,
+        "sha256": table.sha256,
+        "csv_sha256": table.csv_sha256,
+        "fingerprint_version": FINGERPRINT_VERSION,
+    }
 
     code_hash = code_fingerprint()
     runs: dict[str, dict] = {}
-    for name, equity_path, trades_path in run_files(sweep_dir):
+    for name, equity_path, trades_path in files:
         result = reconstruct_result(name, equity_path, trades_path, initial_cash)
+        require_run_window(result, data, manifest)
+        validate_replay(result, data, initial_cash)
         runs[name] = run_scenarios(
             result, data, table, policy, initial_cash=initial_cash, code_sha256=code_hash
         )
@@ -319,24 +353,44 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
             }
         ),
     )
+    provenance.update({
+        "artifact": output.name,
+        "archived_files_verification": archived_files_status,
+        "market_data_verification": "verified",
+        "distributions_verification": distribution_status,
+    })
+    with (sweep_dir / "distributions_provenance.jsonl").open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(provenance, sort_keys=True) + "\n")
 
     print(f"BoringAlpha aftertax {manifest['sweep_id']} ({manifest['strategy_id']}), policy {policy_hash[:12]}")
+    if "benchmark" in manifest:
+        print(f"Benchmark: {manifest['benchmark']}")
+    for status in (archived_files_status, distribution_status):
+        if status.startswith("legacy-unverified"):
+            print(f"Archive provenance: {status}")
     print(f"{'Run':<24}{'Pre-tax CAGR':>14}{'After-tax worst':>17}{'Worst scenario':>24}{'Best':>10}")
     for name, scenarios in runs.items():
-        worst_key = min(scenarios, key=lambda key: scenarios[key]["metrics"]["after_tax_cagr"])
-        best_key = max(scenarios, key=lambda key: scenarios[key]["metrics"]["after_tax_cagr"])
+        def rank(key: str) -> float:
+            cagr = scenarios[key]["metrics"]["after_tax_cagr"]
+            return cagr if cagr is not None else float("-inf")
+
+        def render(value: float | None) -> str:
+            return "n/a" if value is None else f"{value:.4f}"
+
+        worst_key = min(scenarios, key=rank)
+        best_key = max(scenarios, key=rank)
         worst = scenarios[worst_key]["metrics"]
         print(
-            f"{name:<24}{worst['pre_tax_cagr']:>14.4f}{worst['after_tax_cagr']:>17.4f}"
-            f"{worst_key:>24}{scenarios[best_key]['metrics']['after_tax_cagr']:>10.4f}"
+            f"{name:<24}{worst['pre_tax_cagr']:>14.4f}{render(worst['after_tax_cagr']):>17}"
+            f"{worst_key:>24}{render(scenarios[best_key]['metrics']['after_tax_cagr']):>10}"
         )
-        checks = scenarios[worst_key]["identity_checks"]
-        failed = [
-            check for check in ("share_identity_passed", "income_plus_gain_passed", "implied_price_check_passed")
-            if not checks[check]
-        ]
-        if failed:
-            print(f"  identity checks failed for {name}: {', '.join(failed)}")
+        for scenario_name, scenario in scenarios.items():
+            failed = [
+                check for check in ("share_identity_passed", "income_plus_gain_passed", "implied_price_check_passed")
+                if not scenario["identity_checks"][check]
+            ]
+            if failed:
+                print(f"  identity checks failed for {name} / {scenario_name}: {', '.join(failed)}")
     print(f"Written: {output}")
     return 0
 

@@ -7,11 +7,10 @@ from boring_alpha.data.distributions import DistributionTable
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import PriceBar
 from boring_alpha.tax.lots import (
-    FuturePurchase,
     LotBook,
     Realized,
+    WashSaleLedger,
     adjustment_factor,
-    apply_wash_sales,
 )
 
 D0, D1, D2, D3 = date(2024, 1, 2), date(2024, 1, 3), date(2024, 1, 4), date(2024, 1, 5)
@@ -284,35 +283,40 @@ class WashSaleTests(unittest.TestCase):
 
     SOLD = date(2024, 2, 1)
 
-    def _loss(self) -> tuple[LotBook, list[Realized]]:
+    def _loss(self) -> tuple[LotBook, WashSaleLedger]:
         book = LotBook("fifo")
         book.buy("A", D0, 10.0, 1000.0)
-        return book, book.sell("A", self.SOLD, 10.0, 900.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(book.sell("A", self.SOLD, 10.0, 900.0))
+        return book, ledger
 
     def test_a_purchase_thirty_days_later_disallows_the_whole_loss(self) -> None:
-        book, records = self._loss()
-        future = FuturePurchase("A", self.SOLD + timedelta(days=30), 10.0, 10.0)
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [future])
-        self.assertAlmostEqual(adjusted[0].disallowed, 100.0)
-        self.assertAlmostEqual(adjusted[0].gain, 0.0)
-        self.assertAlmostEqual(future.pending_basis, 100.0)
-        self.assertEqual(future.pending_tack_days, (self.SOLD - D0).days)
-        self.assertAlmostEqual(future.replacement_capacity, 0.0)
+        book, ledger = self._loss()
+        day = self.SOLD + timedelta(days=30)
+        replacement = book.buy("A", day, 10.0, 900.0)
+        ledger.purchase(day, "A")
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 100.0)
+        self.assertAlmostEqual(ledger.realized[0].gain, 0.0)
+        self.assertAlmostEqual(replacement.basis, 1000.0)
+        self.assertEqual(replacement.opened, day - (self.SOLD - D0))
+        self.assertAlmostEqual(replacement.replacement_capacity, 0.0)
 
     def test_thirty_one_days_later_is_outside_the_window(self) -> None:
-        book, records = self._loss()
-        future = FuturePurchase("A", self.SOLD + timedelta(days=31), 10.0, 10.0)
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [future])
-        self.assertAlmostEqual(adjusted[0].disallowed, 0.0)
-        self.assertAlmostEqual(future.pending_basis, 0.0)
+        book, ledger = self._loss()
+        day = self.SOLD + timedelta(days=31)
+        replacement = book.buy("A", day, 10.0, 900.0)
+        ledger.purchase(day, "A")
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 0.0)
+        self.assertAlmostEqual(replacement.basis, 900.0)
 
     def test_partial_replacement_disallows_a_proportional_share(self) -> None:
-        book, records = self._loss()
-        future = FuturePurchase("A", self.SOLD + timedelta(days=10), 4.0, 4.0)
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [future])
-        self.assertAlmostEqual(adjusted[0].disallowed, 40.0)
-        self.assertAlmostEqual(adjusted[0].gain, -60.0)
-        self.assertAlmostEqual(future.pending_basis, 40.0)
+        book, ledger = self._loss()
+        day = self.SOLD + timedelta(days=10)
+        replacement = book.buy("A", day, 4.0, 360.0)
+        ledger.purchase(day, "A")
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 40.0)
+        self.assertAlmostEqual(ledger.realized[0].gain, -60.0)
+        self.assertAlmostEqual(replacement.basis, 400.0)
 
     def test_an_existing_lot_is_adjusted_immediately(self) -> None:
         book = LotBook("fifo")
@@ -320,8 +324,9 @@ class WashSaleTests(unittest.TestCase):
         replacement = book.buy("A", date(2024, 1, 20), 10.0, 950.0)     # lot 2, inside the window
         records = book.sell("A", self.SOLD, 10.0, 900.0)                # fifo sells lot 1
         self.assertEqual(records[0].lot_id, 1)
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [])
-        self.assertAlmostEqual(adjusted[0].disallowed, 100.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(records)
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 100.0)
         self.assertAlmostEqual(replacement.basis, 1050.0)
         self.assertAlmostEqual(replacement.disallowed_attached, 100.0)
         self.assertEqual(
@@ -332,39 +337,44 @@ class WashSaleTests(unittest.TestCase):
 
     def test_replacement_shares_are_matched_once(self) -> None:
         book = LotBook("fifo")
-        book.buy("A", D0, 10.0, 1000.0)
-        # Deliberately outside the wash-sale window (D1 is only 29 days before
-        # SOLD, which is inside it) so this lot cannot itself serve as a
-        # replacement, leaving lot 3 as the only one.
-        book.buy("A", date(2024, 6, 1), 10.0, 1000.0)
+        book.buy("A", date(2023, 12, 1), 10.0, 1000.0)
+        book.buy("A", date(2023, 12, 2), 10.0, 1000.0)
         book.buy("A", date(2024, 1, 20), 10.0, 950.0)   # lot 3: the only replacement
-        first = apply_wash_sales(book.sell("A", self.SOLD, 10.0, 900.0), book.open_lots("A"), [])
-        second = apply_wash_sales(book.sell("A", self.SOLD, 10.0, 900.0), book.open_lots("A"), [])
-        self.assertAlmostEqual(first[0].disallowed, 100.0)
-        self.assertAlmostEqual(second[0].disallowed, 0.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(book.sell("A", self.SOLD, 10.0, 900.0))
+        ledger.sell(book.sell("A", self.SOLD, 10.0, 900.0))
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 100.0)
+        self.assertAlmostEqual(ledger.realized[1].disallowed, 0.0)
 
     def test_the_shares_sold_do_not_replace_themselves(self) -> None:
         book = LotBook("fifo")
         book.buy("A", date(2024, 1, 25), 10.0, 1000.0)   # bought within 30 days of the sale
         records = book.sell("A", self.SOLD, 10.0, 900.0)  # and sold in full
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [])
-        self.assertAlmostEqual(adjusted[0].disallowed, 0.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(records)
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 0.0)
 
     def test_the_unsold_remainder_of_the_same_lot_does_replace(self) -> None:
         book = LotBook("fifo")
         book.buy("A", date(2024, 1, 25), 10.0, 1000.0)
         records = book.sell("A", self.SOLD, 4.0, 360.0)   # a 40 loss on four shares; six remain
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [])
-        self.assertAlmostEqual(adjusted[0].disallowed, 40.0)
-        self.assertAlmostEqual(book.lots[1].basis, 640.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(records)
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 40.0)
+        self.assertAlmostEqual(sum(lot.basis for lot in book.open_lots("A")), 640.0)
+        matched, unmatched = book.open_lots("A")
+        self.assertEqual((matched.shares, unmatched.shares), (4.0, 2.0))
+        self.assertAlmostEqual(matched.basis, 440.0)
+        self.assertAlmostEqual(unmatched.basis, 200.0)
 
     def test_gains_and_other_symbols_are_untouched(self) -> None:
         book = LotBook("fifo")
         book.buy("A", D0, 10.0, 1000.0)
         other = book.buy("B", D1, 10.0, 1000.0)
         records = book.sell("A", self.SOLD, 10.0, 1100.0)
-        adjusted = apply_wash_sales(records, book.open_lots("A") + book.open_lots("B"), [])
-        self.assertAlmostEqual(adjusted[0].disallowed, 0.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(records)
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 0.0)
         self.assertAlmostEqual(other.basis, 1000.0)
         self.assertAlmostEqual(other.replacement_capacity, 10.0)
 
@@ -374,20 +384,26 @@ class WashSaleTests(unittest.TestCase):
         # A child lot of 0.1 shares opened by a distribution inside the window.
         book.distribute("A", date(2024, 1, 20), 1.0, 1.01, return_of_capital=False)
         records = book.sell("A", self.SOLD, 10.0, 900.0)   # fifo: the parent lot
-        adjusted = apply_wash_sales(records, book.open_lots("A"), [])
-        self.assertAlmostEqual(adjusted[0].disallowed, 100.0 * 0.1 / 10.0)
+        ledger = WashSaleLedger(book)
+        ledger.sell(records)
+        self.assertAlmostEqual(ledger.realized[0].disallowed, 100.0 * 0.1 / 10.0)
 
-    def test_a_replacement_lot_is_tacked_once_per_call(self) -> None:
+    def test_different_loss_holding_periods_create_distinct_replacement_slices(self) -> None:
         book = LotBook("fifo")
         book.buy("A", D0, 5.0, 500.0)
         book.buy("A", D1, 5.0, 500.0)
         replacement = book.buy("A", date(2024, 1, 20), 10.0, 950.0)
         records = book.sell("A", self.SOLD, 10.0, 900.0)   # two loss records, one replacement lot
-        apply_wash_sales(records, book.open_lots("A"), [])
+        ledger = WashSaleLedger(book)
+        ledger.sell(records)
         self.assertEqual(
             replacement.opened, date(2024, 1, 20) - timedelta(days=(self.SOLD - D0).days)
         )
-        self.assertAlmostEqual(replacement.basis, 1050.0)
+        slices = book.open_lots("A")
+        self.assertEqual(len(slices), 2)
+        self.assertAlmostEqual(replacement.basis, 525.0)
+        self.assertAlmostEqual(slices[1].basis, 525.0)
+        self.assertEqual(slices[1].opened, date(2024, 1, 20) - (self.SOLD - D1))
 
 
 if __name__ == "__main__":

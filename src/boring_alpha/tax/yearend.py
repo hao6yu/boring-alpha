@@ -26,11 +26,16 @@ def is_long_term(opened: date, sold: date) -> bool:
 
 
 def qualifies(opened: date, closed: date, ex_date: date) -> bool:
-    """Held more than 60 days within the 121-day window beginning 60 days before the ex-date."""
+    """Count eligible days inclusively, excluding acquisition but including sale.
 
-    start = max(opened, ex_date - QUALIFIED_WINDOW)
+    The 121-day window includes both endpoints. If acquisition predates the
+    window, its first day counts too; treating the clipped start as the
+    acquisition date would incorrectly remove that day.
+    """
+
+    start = max(opened + timedelta(days=1), ex_date - QUALIFIED_WINDOW)
     end = min(closed, ex_date + QUALIFIED_WINDOW)
-    return (end - start).days > QUALIFIED_MIN_DAYS
+    return max(0, (end - start).days + 1) > QUALIFIED_MIN_DAYS
 
 
 @dataclass
@@ -91,6 +96,14 @@ class Amounts:
 
 @dataclass(frozen=True, slots=True)
 class YearTax:
+    """Netted tax and loss pools, including incoming carryovers.
+
+    Carry used measures the reduction in the incoming pool after netting,
+    floored at zero when current-year losses enlarge that pool. Current losses
+    of the same character are therefore counted before carried losses in this
+    reporting attribution; their tax treatment is identical.
+    """
+
     tax: float
     income_tax: float
     gains_tax: float
@@ -106,9 +119,9 @@ class YearTax:
 def net_and_tax(amounts: Amounts, short_carry: float, long_carry: float, tax: TaxConfig) -> YearTax:
     """Net one year's gains and losses and compute its tax (spec §4.7).
 
-    1. Carryovers keep their character. The short-term carryover offsets net
-       short-term gain; the long-term carryover offsets the collectibles bucket
-       first, then other long-term gain.
+    1. Carryovers enter as losses in their own character's pool. Long-term
+       carry first reduces positive collectibles gain, then the other long-term
+       bucket. Any remainder stays a loss available for cross-character netting.
     2. Long-term losses net against collectibles gains, and collectibles losses
        against long-term gains, before any cross-character offset.
     3. A net short-term loss offsets remaining long-term gain, collectibles
@@ -117,16 +130,13 @@ def net_and_tax(amounts: Amounts, short_carry: float, long_carry: float, tax: Ta
     Income is taxed by character and is never offset by capital losses.
     """
 
-    short = amounts.short_gains - amounts.short_losses + amounts.marks_short
+    short = amounts.short_gains - amounts.short_losses + amounts.marks_short - short_carry
     long = amounts.long_gains - amounts.long_losses + amounts.marks_long
     coll = amounts.collectibles_gains - amounts.collectibles_losses
 
-    short_used = min(short_carry, max(short, 0.0))
-    short -= short_used
-    coll_used = min(long_carry, max(coll, 0.0))
-    coll -= coll_used
-    long_used = min(long_carry - coll_used, max(long, 0.0))
-    long -= long_used
+    carry_to_collectibles = min(long_carry, max(coll, 0.0))
+    coll -= carry_to_collectibles
+    long -= long_carry - carry_to_collectibles
 
     if long < 0.0 < coll:
         use = min(-long, coll)
@@ -154,8 +164,13 @@ def net_and_tax(amounts: Amounts, short_carry: float, long_carry: float, tax: Ta
             long += use
             short -= use
 
-    short_out = short_carry - short_used + max(-short, 0.0)
-    long_out = long_carry - coll_used - long_used + max(-long, 0.0) + max(-coll, 0.0)
+    # The signed balances already include all incoming losses. Adding unused
+    # input carry again would duplicate it; only the final negative balances
+    # carry forward, retaining their original short/long character.
+    short_out = max(-short, 0.0)
+    long_out = max(-long, 0.0) + max(-coll, 0.0)
+    short_used = max(short_carry - short_out, 0.0)
+    long_used = max(long_carry - long_out, 0.0)
     gains_tax = (
         max(short, 0.0) * tax.ordinary_rate
         + max(long, 0.0) * tax.long_term_rate
@@ -173,7 +188,7 @@ def net_and_tax(amounts: Amounts, short_carry: float, long_carry: float, tax: Ta
         long_net=long,
         collectibles_net=coll,
         short_carry_used=short_used,
-        long_carry_used=coll_used + long_used,
+        long_carry_used=long_used,
         short_carry_out=short_out,
         long_carry_out=long_out,
     )

@@ -1,6 +1,11 @@
 # After-Tax Overlay Implementation Plan (plan 2 of 2)
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Implementation record, 2026-09-04.** Tasks 1–8 were implemented on
+> `after-tax-overlay` through `16ee714`. The subsequent takeover corrects tax
+> lot histories, carryover netting, replay verification and artifact identity
+> under spec revision 3.3. The original code sketches below are historical;
+> the tested implementation and revision 3.3 supersede their mechanics.
+> Task 9's extraction must use the exact paths returned by the corrected CLI.
 
 **Goal:** Compute after-tax results for every run a sweep produces, under a fixed eight-scenario grid, from the pre-tax artifacts alone; wire them into sweeps as `tax.json`; add an `aftertax` command that re-scores existing sweeps; and write the post-hoc after-tax note on BA-001's two archived sweeps.
 
@@ -21,7 +26,9 @@
 - The after-tax NAV convention (spec §4.8): taxes are computed from unscaled amounts multiplied by the cumulative scale `c`; `c_{y+1} = c_y − tax_y / W_y`; liquidation is the final year computed twice, and `tax_liquidation` is the difference.
 - Drawdown is never recomputed after tax.
 - Artifacts are write-once. Nothing under `experiments/` or `data/` is edited or deleted; Task 9 reads two archived sweeps and adds one file to each sweep directory through the write-once path.
-- Commit after every task; imperative one-line subject, short body, trailer `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`.
+- Keep implementation corrections and the resulting diagnostic note in separate
+  commits with accurate authorship. The original task commit examples below
+  retain the attribution of their original author.
 - Never run a sealed-period evaluation. Never fetch from the network.
 
 ---
@@ -3591,26 +3598,44 @@ The archived prices came from the v1 snapshot and the distributions from the v2 
 - [ ] **Step 2: Extract the figures**
 
 ```bash
-python3 - <<'EOF'
-import glob, json
-for label, sweep in (("development", "4b9d1479f811d108"), ("validation", "f0a36ea722ebefd4")):
-    path = sorted(glob.glob(f"experiments/BA-001/sweeps/{sweep}/tax-*.json"))[-1]
-    tax = json.load(open(path))
+.venv/bin/python - "EXACT_DEVELOPMENT_OUTPUT_PATH" "EXACT_VALIDATION_OUTPUT_PATH" <<'EOF'
+import json, sys
+from pathlib import Path
+from boring_alpha.report import code_fingerprint
+
+if len(sys.argv) != 3:
+    raise SystemExit("Pass the two exact paths printed by aftertax; never sort hash filenames.")
+expected_code = code_fingerprint()
+expected_policy = None
+for label, sweep, path in zip(
+    ("development", "validation"),
+    ("4b9d1479f811d108", "f0a36ea722ebefd4"),
+    sys.argv[1:],
+):
+    tax = json.loads(Path(path).read_text())
+    assert tax["sweep_id"] == sweep
+    assert tax["code_sha256"] == expected_code, "stale implementation"
+    if expected_policy is None:
+        expected_policy = tax["tax_policy_sha256"]
+    assert tax["tax_policy_sha256"] == expected_policy, "different policies"
     print(f"\n### {label} — {path.split('/')[-1]}")
     print("| Run | Pre-tax CAGR | After-tax CAGR, worst | Worst scenario | After-tax CAGR, best | Drag, worst (bps) | Taxes paid (base) | Liquidation tax (base) | Wash-sale disallowed (base) |")
     print("|---|---:|---:|---|---:|---:|---:|---:|---:|")
     for run, scenarios in tax["runs"].items():
+        if any(row["metrics"]["after_tax_cagr"] is None for row in scenarios.values()):
+            raise SystemExit(f"{label}/{run}: undefined CAGR; record this outcome explicitly")
         worst = min(scenarios, key=lambda k: scenarios[k]["metrics"]["after_tax_cagr"])
         best = max(scenarios, key=lambda k: scenarios[k]["metrics"]["after_tax_cagr"])
         w, b, base = scenarios[worst]["metrics"], scenarios[best]["metrics"], scenarios["hifo-deferral-base"]
         print(f"| {run} | {w['pre_tax_cagr']:.4f} | {w['after_tax_cagr']:.4f} | {worst} | {b['after_tax_cagr']:.4f} | "
               f"{w['tax_drag_bps']:.0f} | {base['totals']['taxes_paid']:.0f} | {base['totals']['tax_liquidation']:.0f} | "
               f"{base['totals']['wash_sale_disallowed_total']:.0f} |")
-    print("\nIdentity checks (base scenario):")
+    print("\nIdentity checks (every scenario):")
     for run, scenarios in tax["runs"].items():
-        c = scenarios["hifo-deferral-base"]["identity_checks"]
+      for scenario, result in scenarios.items():
+        c = result["identity_checks"]
         ratio = "n/a" if c["implied_reinvestment_price_ratio_min"] is None else f"{c['implied_reinvestment_price_ratio_min']:.4f} to {c['implied_reinvestment_price_ratio_max']:.4f}"
-        print(f"- {run}: share identity {'ok' if c['share_identity_passed'] else 'FAILED'} (max dev {c['share_identity_max_relative_deviation']:.2e}); "
+        print(f"- {run}/{scenario}: share identity {'ok' if c['share_identity_passed'] else 'FAILED'} (max dev {c['share_identity_max_relative_deviation']:.2e}); "
               f"income+gain {'ok' if c['income_plus_gain_passed'] else 'FAILED'} (dev {c['income_plus_gain_relative_deviation']:.2e}); "
               f"implied price ratio {ratio} over {c['ex_dates_checked']} ex-dates, {'ok' if c['implied_price_check_passed'] else 'FAILED'}")
 EOF
@@ -3704,7 +3729,14 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>"
 
 **Spec coverage.** §4.1 inputs: Task 6 `apply_overlay` signature. §4.2 real shares, HIFO/FIFO, partial closes, over-sell error, share identity: Tasks 2 and 6. §4.3 child lots from data-implied growth, income vs return of capital, excess as gain, income-plus-gain identity: Tasks 3 and 6. §4.4 cash interest: Task 6. §4.5 qualified fraction with the 61-day test over the complete fill history, standard/collectibles/commodity_pool classes, two commodity treatments, collectibles cap: Tasks 1, 5, 6. §4.6 wash sales adjusted with matching once, tacking, future purchases; GLD omission stated with bound: Tasks 4 and 6 (`KNOWN_OMISSIONS`). §4.7 marks first, netting, character-retaining carryovers, collectibles bucket first, the tax formula: Task 5. §4.8 NAV convention, scale update, liquidation as the final year twice, named in outputs: Task 6. §4.9 policy table, validation, hash excluding the path, base fractions: Task 1 (`configs/tax_policy.toml` carries the spec's proposed values). §4.10 outputs: Task 6 (`by_year` holds scaled amounts and the scale, `totals`, `wealth`, `metrics`, `identity_checks` including the implied-price ratio carried forward from plan 1). §4.11 the fixed grid of eight: Task 1; "holds under all" as a criterion is spec 2's job, and the sweep exposes the full grid for it. §5.3 secondary rows when a target-exposure benchmark gates: Task 7 (`static_full`). §7 sweep runs, archive, embedded manifest, summary block, schema 6 with 5 readable, tax hashes in manifest and criteria, `aftertax` naming and idempotence: Tasks 7 and 8. §8 the note: Task 9. §9 tests named in the spec: real-share conversion (Task 2), HIFO/FIFO by hand (Task 2), child lots and identity (Task 3), return of capital (Task 3), wash sales 30 vs 31 days, reinvested lots, matched once (Task 4), holding period 365/366 (Task 5), qualified 61/60 and year-crossing window (Task 5), carryover character (Task 5), collectibles routing and cap (Tasks 1, 5), commodity pool both treatments (Task 6), cash interest (Task 6), rescaling and liquidation (Task 6), eight scenarios and determinism (Task 6), sweep writes and archives (Task 7), `aftertax` reconstruction equality and idempotence (Task 8). §12 steps 3, 6, 7: Tasks 1–6, 7–8, 9.
 
-**Known simplifications, stated in code or docstrings rather than hidden:** the qualification test uses the parent lot's opening date and the date its last share was sold; reinvested child lots created after a loss sale are not matched as its replacements; a replacement lot is tacked once per sale; the low qualified set caps rather than replaces; commodity-pool interest is not separated. Each is in `KNOWN_OMISSIONS` or the relevant docstring. Plan 2's closing review should add a Revision 3.2 entry to the spec recording them alongside the note.
+**Original simplification list, superseded by revision 3.3:** the last-share
+dividend shortcut and whole-replacement-lot tacking were incorrect for partial
+trades and have been removed. Purchases and reinvestments now share chronological
+wash matching. The low qualified set still caps base fractions, and the
+commodity-pool scenario still does not separate collateral interest. Those are
+declared policy/model approximations. The revision 3.3 record describes the
+current behavior; the original implementation sketches below and above should
+not be copied back over the tested implementation.
 
 **Placeholder scan.** The only bracketed fields are in Task 9's note template, which a person fills from the Step 2 output; Step 4 checks none remain.
 

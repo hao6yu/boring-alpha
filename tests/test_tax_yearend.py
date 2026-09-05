@@ -43,9 +43,24 @@ class HoldingPeriodTests(unittest.TestCase):
 
     def test_days_outside_the_window_do_not_count(self) -> None:
         ex_date = date(2024, 6, 14)
-        # Held for years before, sold the day after the ex-date: only 61 window days.
-        self.assertTrue(qualifies(date(2020, 1, 1), date(2024, 6, 15), ex_date))
-        self.assertFalse(qualifies(date(2020, 1, 1), date(2024, 6, 14), ex_date))
+        # April 15 through June 14 inclusive is 61 days; June 13 is only 60.
+        self.assertTrue(qualifies(date(2020, 1, 1), date(2024, 6, 14), ex_date))
+        self.assertFalse(qualifies(date(2020, 1, 1), date(2024, 6, 13), ex_date))
+
+    def test_acquisition_on_the_window_start_excludes_that_day(self) -> None:
+        ex_date = date(2024, 6, 14)
+        # The window starts April 15. Buying that day leaves April 16 through
+        # June 14 (60 days); buying April 14 includes all 61 window days.
+        self.assertFalse(qualifies(date(2024, 4, 15), date(2024, 6, 14), ex_date))
+        self.assertTrue(qualifies(date(2024, 4, 14), date(2024, 6, 14), ex_date))
+
+    def test_the_window_end_is_inclusive_and_later_days_cannot_help(self) -> None:
+        ex_date = date(2024, 6, 14)
+        # June 14 through August 13 inclusive is 61 days. June 15 through
+        # August 13 is 60, even if the lot remains open beyond August 13.
+        self.assertTrue(qualifies(date(2024, 6, 13), date(2024, 8, 13), ex_date))
+        self.assertFalse(qualifies(date(2024, 6, 14), date(2024, 8, 13), ex_date))
+        self.assertFalse(qualifies(date(2024, 6, 14), date(2024, 9, 1), ex_date))
 
     def test_the_window_may_cross_a_year_end(self) -> None:
         ex_date = date(2024, 12, 20)
@@ -136,8 +151,102 @@ class NettingTests(unittest.TestCase):
 
     def test_carryovers_not_needed_this_year_survive(self) -> None:
         year = net_and_tax(Amounts(), 25.0, 15.0, self.tax)
+        self.assertAlmostEqual(year.short_carry_used, 0.0)
+        self.assertAlmostEqual(year.long_carry_used, 0.0)
         self.assertAlmostEqual(year.short_carry_out, 25.0)
         self.assertAlmostEqual(year.long_carry_out, 15.0)
+
+    def test_short_carry_offsets_long_gain_and_keeps_unused_short_character(self) -> None:
+        year = net_and_tax(Amounts(long_gains=100.0), 150.0, 0.0, self.tax)
+        self.assertAlmostEqual(year.tax, 0.0)
+        self.assertAlmostEqual(year.short_net, -50.0)
+        self.assertAlmostEqual(year.long_net, 0.0)
+        self.assertAlmostEqual(year.short_carry_used, 100.0)
+        self.assertAlmostEqual(year.short_carry_out, 50.0)
+        self.assertAlmostEqual(year.long_carry_out, 0.0)
+
+    def test_long_carry_offsets_short_gain_and_keeps_unused_long_character(self) -> None:
+        year = net_and_tax(Amounts(short_gains=100.0), 0.0, 150.0, self.tax)
+        self.assertAlmostEqual(year.tax, 0.0)
+        self.assertAlmostEqual(year.short_net, 0.0)
+        self.assertAlmostEqual(year.long_net, -50.0)
+        self.assertAlmostEqual(year.long_carry_used, 100.0)
+        self.assertAlmostEqual(year.long_carry_out, 50.0)
+        self.assertAlmostEqual(year.short_carry_out, 0.0)
+
+    def test_gain_above_opposite_character_carry_keeps_its_tax_rate(self) -> None:
+        short_gain = net_and_tax(Amounts(short_gains=100.0), 0.0, 30.0, self.tax)
+        self.assertAlmostEqual(short_gain.short_net, 70.0)
+        self.assertAlmostEqual(short_gain.tax, 24.5)
+        self.assertAlmostEqual(short_gain.long_carry_used, 30.0)
+        self.assertAlmostEqual(short_gain.long_carry_out, 0.0)
+
+        long_gain = net_and_tax(Amounts(long_gains=100.0), 30.0, 0.0, self.tax)
+        self.assertAlmostEqual(long_gain.long_net, 70.0)
+        self.assertAlmostEqual(long_gain.tax, 14.0)
+        self.assertAlmostEqual(long_gain.short_carry_used, 30.0)
+        self.assertAlmostEqual(long_gain.short_carry_out, 0.0)
+
+    def test_short_carry_offsets_collectibles_before_other_long_gains(self) -> None:
+        year = net_and_tax(
+            Amounts(collectibles_gains=80.0, long_gains=100.0), 110.0, 0.0, self.tax
+        )
+        self.assertAlmostEqual(year.collectibles_net, 0.0)
+        self.assertAlmostEqual(year.long_net, 70.0)
+        self.assertAlmostEqual(year.short_carry_used, 110.0)
+        self.assertAlmostEqual(year.short_carry_out, 0.0)
+        self.assertAlmostEqual(year.tax, 14.0)
+
+    def test_current_short_losses_and_carry_net_across_both_long_buckets(self) -> None:
+        # Current short net is -60; with the prior 50 it is -110. Collectibles
+        # absorb 30 and ordinary long gains 60, leaving 20 of short loss.
+        year = net_and_tax(
+            Amounts(short_gains=20.0, short_losses=80.0,
+                    collectibles_gains=30.0, long_gains=60.0),
+            50.0, 0.0, self.tax,
+        )
+        self.assertAlmostEqual(year.tax, 0.0)
+        self.assertAlmostEqual(year.short_net, -20.0)
+        self.assertAlmostEqual(year.long_net, 0.0)
+        self.assertAlmostEqual(year.collectibles_net, 0.0)
+        self.assertAlmostEqual(year.short_carry_used, 30.0)
+        self.assertAlmostEqual(year.short_carry_out, 20.0)
+
+    def test_current_long_losses_and_carry_net_against_short_gains(self) -> None:
+        # 70 of ordinary long loss first nets against 20 of collectibles gain.
+        # Adding 40 carried long loss gives -90; 60 short gain leaves -30.
+        year = net_and_tax(
+            Amounts(short_gains=60.0, long_gains=10.0, long_losses=80.0,
+                    collectibles_gains=20.0),
+            0.0, 40.0, self.tax,
+        )
+        self.assertAlmostEqual(year.tax, 0.0)
+        self.assertAlmostEqual(year.short_net, 0.0)
+        self.assertAlmostEqual(year.long_net, -30.0)
+        self.assertAlmostEqual(year.collectibles_net, 0.0)
+        self.assertAlmostEqual(year.long_carry_used, 10.0)
+        self.assertAlmostEqual(year.long_carry_out, 30.0)
+
+    def test_each_carry_nets_in_its_own_pool_before_cross_character_offset(self) -> None:
+        # 100 short gain uses 50 short carry, then 50 of the 100 long carry.
+        # The surviving 50 remains long; it must not become short carry.
+        year = net_and_tax(Amounts(short_gains=100.0), 50.0, 100.0, self.tax)
+        self.assertAlmostEqual(year.tax, 0.0)
+        self.assertAlmostEqual(year.short_carry_used, 50.0)
+        self.assertAlmostEqual(year.long_carry_used, 50.0)
+        self.assertAlmostEqual(year.short_carry_out, 0.0)
+        self.assertAlmostEqual(year.long_carry_out, 50.0)
+
+    def test_new_losses_do_not_make_unneeded_carryovers_look_used(self) -> None:
+        year = net_and_tax(
+            Amounts(short_losses=70.0, long_gains=20.0, collectibles_losses=30.0),
+            40.0, 50.0, self.tax,
+        )
+        self.assertAlmostEqual(year.tax, 0.0)
+        self.assertAlmostEqual(year.short_carry_used, 0.0)
+        self.assertAlmostEqual(year.long_carry_used, 0.0)
+        self.assertAlmostEqual(year.short_carry_out, 110.0)
+        self.assertAlmostEqual(year.long_carry_out, 60.0)
 
     def test_income_is_taxed_by_character_and_interest_as_ordinary(self) -> None:
         amounts = Amounts(qualified_income=100.0, ordinary_income=50.0, cash_interest=20.0)

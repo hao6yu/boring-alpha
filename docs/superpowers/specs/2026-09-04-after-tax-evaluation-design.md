@@ -1,8 +1,8 @@
 # After-tax evaluation and a target-exposure benchmark — design
 
 Date: 2026-09-04
-Status: **revision 3, approved for planning.** Revised twice after external
-review; §14 records what changed and why. Spec 1 of 2 for the BA-002 programme.
+Status: **revision 3.3, implementation corrections.**
+§14 records the reviews and implementation corrections. Spec 1 of 2 for the BA-002 programme.
 Spec 2 (the BA-002 charter and signal) follows once this is implemented.
 Depends on: BA-001 development and validation reviews under `docs/reviews/`.
 
@@ -164,14 +164,18 @@ unadjusted-price basis:
   notional minus its trading cost.
 
 Identity, tested every session: the sum of real shares across a symbol's open
-lots times `P_t` equals the engine's position value `q_total · A_t` to 1e-9.
+lots times `P_t` equals the engine's position value `q_total · A_t`, within
+1e-5 relative error for rounded source prices. As recorded in revision 3.2,
+the adjustment factor is sampled once per ex-date interval. Exact synthetic
+fixtures retain much tighter checks; every output reports its actual deviation.
 
 Sells close lots by the scenario's method:
 
 - `hifo`: highest basis per share first. Specific identification, which every
   major broker supports; what a tax-aware investor does.
-- `fifo`: earliest open date first. The broker default and the conservative
-  bound.
+- `fifo`: earliest acquisition first, retaining purchase order when a wash
+  sale transfers an older holding period to a replacement. It is a second
+  operating scenario; it is not guaranteed to produce the highest tax bill.
 
 Partial closes split the lot. A sell exceeding open quantity is an error: the
 engine cannot produce it, so it signals corrupted inputs.
@@ -186,9 +190,10 @@ the prior session:
   `g_u = (A_u / P_u) / (A_{u-1} / P_{u-1})`. This is what the adjusted series
   actually assumes, so using it (rather than a formula for the reinvestment
   price) keeps the identity in §4.2 exact.
-- A child lot opens with real shares = the lot's shares × `(g_u − 1)`, basis =
-  the cash, open date `u`. It is a purchase in its own right, with its own
-  basis and holding period, as the tax code treats reinvested distributions.
+- The recipients' reinvestments are pooled into one purchase on `u`: shares
+  are the sum of each recipient's shares × `(g_u − 1)`, and basis is total
+  cash. Its own acquisition date is `u`. Wash-sale matching may split that
+  purchase into portions with distinct basis and holding periods.
 - What happens to the parent depends on the distribution's character (§4.5):
   an **income** distribution leaves the parent's basis alone and the cash is
   taxed; a **return-of-capital** distribution reduces the parent's basis by
@@ -210,12 +215,16 @@ the equity curve's cash column, summed by calendar year.
 such symbol carries a `qualified_fraction` in `[0, 1]`; the scenario (§4.11)
 selects the base set or the low set. A lot's distribution is qualified in that
 fraction only if the lot passes the holding-period test: held more than 60 days
-within the 121-day window beginning 60 days before the ex-date. The test uses
-the complete fill history, since the window can cross a year end; a lot still
-open at the period end is tested against the liquidation date. Qualified income
+within the inclusive 121-day window beginning 60 days before the ex-date.
+Acquisition day is excluded and disposal day is included. The test uses the
+complete fill history, since the window can cross a year end. Each partial
+disposal retains its share of earlier dividend entitlements and is tested
+against its own disposal date; remaining shares use the liquidation date.
+Qualified income
 is taxed at the long-term rate; the remainder, and all income of lots failing
 the test, at the ordinary rate. A monthly rule that holds a sleeve for one or
-two months will often fail this test; a buy-and-hold benchmark never does.
+two months can fail this test; initial purchases, reinvestments and a final
+liquidation can also make a benchmark's distributions unqualified.
 
 Fund-year qualified fractions exist in issuer tax summaries but would need
 archiving from PDFs. The policy declares one base fraction per symbol and one
@@ -264,6 +273,10 @@ both strategy and benchmark. They are adjusted, not counted:
 - The disallowed loss (proportional to matched shares) is added to the
   replacement lot's basis, and the sold lot's holding period is added to the
   replacement lot's.
+- Matches split replacement purchases into homogeneous portions. Unmatched
+  shares retain their original basis and holding period. Both explicit buys
+  and dividend reinvestments enter one chronological replacement stream, so
+  a later scheduled buy cannot jump ahead of an earlier reinvestment.
 - Reported: `wash_sale_count` and `wash_sale_disallowed_total`.
 
 **GLD expense sales.** The trust sells gold to pay its expense ratio, and
@@ -282,11 +295,11 @@ At the last session of each calendar year, and at the period's final session:
    year's short-term and long-term amounts.
 2. Net short-term gains and losses; net long-term gains and losses; the
    collectibles long-term bucket separately.
-3. Carried-forward losses are applied **retaining character**: the short-term
-   carryover against net short-term, the long-term carryover against net
-   long-term (collectibles bucket first, then the rest). If one character nets
-   negative and the other positive, offset. Remaining net losses carry forward
-   in their own pools without limit.
+3. Carried-forward losses enter their character pools in full before netting:
+   short-term against short-term, long-term against long-term (collectibles
+   bucket first, then the rest). A net negative character offsets a net
+   positive character even when the loss came from an earlier year. Only the
+   remaining losses carry forward, retaining character, without limit.
 4. Tax = positive net short-term × ordinary rate + positive net long-term
    (standard) × long-term rate + positive net collectibles × collectibles rate
    + qualified income × long-term rate + ordinary income × ordinary rate + cash
@@ -314,13 +327,11 @@ pre-tax artifacts without re-running:
   wealth is the pre-liquidation figure minus it. Nothing is subtracted twice.
 
 This is an accounting convention, not a transaction: no brokerage lets you
-shrink every position and lot proportionally without selling. What it ignores,
-each second order here because both accounts average 35 to 40% cash and would
-pay tax from it: the trading cost of raising cash when cash is short; the gain
-realized by doing so; and the drift in exposure between the payment and the
-next scheduled rebalance. The first two, when they occur, fall more heavily on
-the strategy paying more tax, so the convention is mildly favourable to it. The
-convention is stated in the outputs by name.
+shrink every position and lot proportionally without selling. It ignores the
+trading cost of raising cash when cash is short, the gain realized by doing so,
+and exposure drift between payment and the next rebalance. These effects are
+not bounded by this implementation. In particular, the full static diagnostic
+can have almost no cash. The convention is stated in the outputs by name.
 
 Revision 1 charged taxes paid outside the account the cash rate. That
 understated the cost for the strategy paying more tax whenever the portfolio
@@ -401,11 +412,12 @@ the low set too.
   period), `tax_drag_bps` (pre-tax CAGR minus after-tax CAGR, ×10⁴),
   `effective_tax_rate` (total tax / pre-tax profit, when profit is positive).
 - `identity_checks`: the §4.2 share identity and the §4.3 income-plus-gain
-  identity, each with its maximum absolute deviation.
+  identity, each with its maximum relative deviation, plus the implied
+  reinvestment-price check.
 
-Drawdown is not recomputed. It remains the pre-tax figure from the equity
-curve: tax is owed on realized gains and does not change the path you live
-through.
+Drawdown is not recomputed. It remains explicitly the pre-tax figure from the
+equity curve. After-tax terminal wealth under this convention is not a claim
+about the drawdown of an executable account making tax withdrawals.
 
 ### 4.11 The scenario grid
 
@@ -529,11 +541,16 @@ returns `inconclusive`.
   exposure-matched benchmark and cash, and to every variant's strategy,
   because a stability check on after-tax return will need them in spec 2.
 - The sweep archives `input_distributions.csv.gz` beside the existing price
-  and cash inputs, truncated at the period end like everything else, and
-  embeds the distributions snapshot's `methodology`, `created_at`, `splits`
-  and file SHA-256 in `manifest.json` under `distributions_manifest`. The
-  reader accepts that block in place of a snapshot manifest, so a sweep
-  directory is self-contained for re-scoring.
+  and cash inputs, truncated at the period end like everything else. Its
+  immutable `distributions_manifest` records the canonical input identity,
+  methodology and period-truncated splits. The full source-file hash and
+  snapshot creation time belong to separate provenance, so future-only data
+  changes do not invalidate a development run. The canonical distribution
+  identity enters the sweep ID as well as post-hoc output names.
+- New sweep manifests hash the actual archived inputs and run ledgers. Replay
+  checks those hashes, the restored market fingerprint, and complete variant
+  coverage. Legacy archives without per-file hashes are explicitly marked as
+  such; they still require independent account reconciliation.
 - `write_sweep_report` writes `tax.json` (write-once) and adds an "After tax"
   block to `summary.md`: for the strategy and each benchmark, pre-tax CAGR and
   after-tax CAGR post-liquidation under every scenario, the worst-case scenario
@@ -559,6 +576,13 @@ returns `inconclusive`.
   implementation, so a corrected overlay produces a separately identified
   result rather than colliding with an old one, and re-running with identical
   inputs is idempotent.
+
+  Before scoring, replay reconstructs adjusted-unit positions and cash from
+  the fills, applies session cash accrual, and checks cash, exposure and equity
+  against every archived equity observation. It rejects missing sessions,
+  incomplete ledgers, invalid fill values and non-finite numbers. This check
+  is independent of the tax-lot identities. Failed tax identity checks remain
+  visible for every scenario; their numbers cannot support a research claim.
 
 ## 8. BA-001 post-hoc note
 
@@ -611,14 +635,19 @@ Lots (`test_tax_lots.py`):
 - Wash sales: a loss sale with a repurchase 30 days later is disallowed and
   the basis and holding period transfer; 31 days later is not; a reinvested
   child lot counts as a purchase; replacement shares match once.
+- Partial wash matches leave unmatched shares' basis and holding periods
+  intact. FIFO uses acquisition order after a tack. An earlier reinvestment
+  takes priority over a later explicit replacement buy.
 
 Overlay (`test_tax_overlay.py`):
 - Holding period: 365 days short-term, 366 long-term.
 - Qualified test: a lot held 61 days across the ex-date qualifies; 60 does not;
   a December ex-date whose window closes in February is decided correctly;
-  the fraction applies only to qualifying lots; the low scenario replaces every
-  equity fraction.
-- Carryovers retain character across a loss year and a gain year.
+  acquisition and disposal boundaries are counted correctly; partial sales
+  divide qualification by actual holding history. The low scenario caps the
+  base qualified fractions.
+- Carryovers retain character across a loss year and a gain year, and offset
+  gains of the other character after same-character netting.
 - Collectibles class routes long-term gains to the collectibles rate; a policy
   with `collectibles_rate` above the cap is rejected.
 - Commodity pool: under `mtm_60_40` a lot held across a year end is marked
@@ -658,6 +687,10 @@ Sweep (`test_sweep.py`):
 - `aftertax` on a synthetic sweep directory reconstructs the runs and writes an
   input-hashed file; running it twice does not rewrite; the in-sweep
   `tax.json` and the reconstructed result agree to 1e-9.
+- A missing trade, variant or session is refused even if the tax identities
+  would balance. Changed archived bytes fail fingerprint verification.
+  Within-period distribution changes produce a new identity; future-only
+  changes preserve it. Undefined CAGR is rendered without crashing.
 
 ## 10. Financial judgment calls, and why
 
@@ -811,3 +844,19 @@ implementation plan will break these into tasks.
   opened after a loss sale are not matched as its replacements — no longer
   applies: the overlay matches them when the child lot opens, against loss
   records of the symbol sold within the prior thirty days.
+- **Revision 3.3 (2026-09-04).** Corrected the implementation after a review
+  of `16ee714`. Incoming losses now participate fully in cross-character
+  netting. Replacement purchases split by matched shares and source holding
+  period; FIFO follows acquisition order; buys and reinvestments share one
+  chronological wash ledger. Dividend entitlements retain partial-disposal
+  histories, and qualification counts the inclusive window correctly. These
+  remove the last-share and whole-replacement shortcuts disclosed in 3.2.
+  Archived replay now independently reconciles trades with cash, exposure and
+  equity, verifies recorded input/ledger checksums and requires the complete
+  manifest run set and window. Distribution identity covers the canonical
+  truncated data and semantic metadata; source provenance is separate. The
+  benchmark name, undefined-CAGR handling and task-9 output selection were
+  corrected. The unsupported claim that tax-funding effects are always small
+  was removed. No charter, sealed period, tax rate or scenario axis changed.
+  See [the correction record](../../changes/2026-09-04-after-tax-corrections.md)
+  for examples, verification and remaining limitations.

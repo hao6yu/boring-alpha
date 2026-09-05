@@ -1,14 +1,18 @@
 from datetime import date
+from dataclasses import replace
+import copy
 import gzip
 import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from boring_alpha.config import load_config
 from boring_alpha.data import load_market_data
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import PriceBar
+from boring_alpha.profiles import profile_for
 from boring_alpha.signals.trend import ExcludingSleeve, MultiAssetTrend, ScaledAllocation
 from boring_alpha.sweep import GRID, run_sweep, write_sweep_report
 
@@ -326,9 +330,59 @@ class TaxWiringTests(unittest.TestCase):
         self.assertIn("hifo-deferral-base", summary)
         self.assertIn("NAV convention", summary)
 
-    def test_the_after_tax_figures_enter_the_profile_extras_unchanged_for_ba_001(self) -> None:
-        self.assertIsNotNone(self.sweep.tax)
-        self.assertTrue(self.sweep.outcome.criteria)   # BA-001's criteria ignore extras and still evaluate
+    def test_the_complete_after_tax_grid_reaches_the_profile(self) -> None:
+        profile = profile_for("BA-001")
+        received = []
+
+        def evaluate(variants, extras):
+            received.append(extras)
+            self.assertEqual(set(extras), {"tax", "static_full"})
+            self.assertEqual(set(extras["tax"]["runs"]), set(self.sweep.tax["runs"]))
+            self.assertTrue(all(len(scenarios) == 8 for scenarios in extras["tax"]["runs"].values()))
+            return self.sweep.outcome
+
+        with patch.object(profile, "evaluate_period", side_effect=evaluate):
+            actual = run_sweep(self.config, self.data)
+        self.assertEqual(len(received), 1)
+        self.assertIs(received[0]["tax"], actual.tax)
+        self.assertIs(actual.outcome, self.sweep.outcome)
+
+    def test_changed_distribution_rows_get_a_distinct_sweep_directory(self) -> None:
+        path = self.root / "data" / "distributions_daily.csv"
+        rows = path.read_text(encoding="utf-8").splitlines()
+        day, symbol, close, dividend = rows[1].split(",")
+        rows[1] = f"{day},{symbol},{float(close) + 0.1},{dividend}"
+        path.write_text("\n".join(rows) + "\n", encoding="utf-8")
+        revised = run_sweep(self.config, self.data)
+        _, revised_dir = write_sweep_report(self.config, self.data, revised)
+        self.assertNotEqual(revised.tax["distributions_sha256"], self.sweep.tax["distributions_sha256"])
+        self.assertNotEqual(revised_dir, self.sweep_dir)
+        self.assertTrue((self.sweep_dir / "tax.json").is_file())
+        self.assertTrue((revised_dir / "tax.json").is_file())
+
+    def test_future_data_and_refetch_timestamp_only_append_provenance(self) -> None:
+        path = self.root / "data" / "distributions_daily.csv"
+        path.write_text(path.read_text() + "2025-01-02,A,999.0,10.0\n")
+        manifest_path = path.parent / "manifest.json"
+        manifest = json.loads(manifest_path.read_text())
+        manifest["created_at"] = "2027-01-01T00:00:00+00:00"
+        manifest["splits"]["A"].append({"date": "2025-01-02", "ratio": "2:1"})
+        manifest_path.write_text(json.dumps(manifest))
+        revised = run_sweep(self.config, self.data)
+        _, revised_dir = write_sweep_report(self.config, self.data, revised)
+        self.assertEqual(revised.tax, self.sweep.tax)
+        self.assertEqual(revised_dir, self.sweep_dir)
+        provenance = [json.loads(line) for line in (self.sweep_dir / "distributions_provenance.jsonl").read_text().splitlines()]
+        self.assertEqual(len(provenance), 2)
+        self.assertNotEqual(provenance[0]["source_sha256"], provenance[1]["source_sha256"])
+
+    def test_summary_reports_an_identity_failure_outside_the_base_scenario(self) -> None:
+        tax = copy.deepcopy(self.sweep.tax)
+        scenario = "fifo-mtm_60_40-low"
+        tax["runs"]["strategy"][scenario]["identity_checks"]["income_plus_gain_passed"] = False
+        from boring_alpha.sweep import _after_tax_lines
+        summary = "\n".join(_after_tax_lines(replace(self.sweep, tax=tax)))
+        self.assertIn(f"strategy / {scenario}: income_plus_gain_passed is false", summary)
 
 
 class NoTaxTests(unittest.TestCase):
@@ -368,6 +422,9 @@ class StaticFullRowTests(unittest.TestCase):
             summary = (sweep_dir / "summary.md").read_text(encoding="utf-8")
             self.assertIn("| Metric | Strategy | Static | Exposure-matched | Cash |", summary)
             self.assertIn("Full static", summary)
+            self.assertIn("Benchmark: 60% target exposure, annually rebalanced", summary)
+            manifest = json.loads((sweep_dir / "manifest.json").read_text())
+            self.assertEqual(manifest["benchmark"], "60% target exposure, annually rebalanced")
 
     def test_without_a_benchmark_table_there_is_no_static_full_row(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

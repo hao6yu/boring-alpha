@@ -11,9 +11,8 @@ prices that already contain reinvested distributions.
 from __future__ import annotations
 
 from bisect import bisect_right
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from datetime import date, timedelta
-from typing import Sequence
 
 from boring_alpha.data.distributions import DistributionTable
 from boring_alpha.data.market import MarketData
@@ -69,6 +68,10 @@ class Lot:
     replacement_capacity: float = 0.0
     """Shares of this lot not yet used as replacement shares in a wash sale."""
     disallowed_attached: float = 0.0
+    purchase_id: int = 0
+    """Stable acquisition order, shared by slices of one purchase."""
+    share_offset: float = 0.0
+    dividend_claims: list["DividendHolding"] = field(default_factory=list)
 
     @property
     def basis_per_share(self) -> float:
@@ -106,6 +109,22 @@ class Distribution:
     child_lot_id: int | None
 
 
+@dataclass(frozen=True, slots=True)
+class DividendHolding:
+    """One share slice's dividend entitlement and actual ownership interval.
+
+    These records never use a wash sale's tacked capital-gain holding period.
+    Partial dispositions and replacement-lot splits partition the cash claim;
+    they do not rewrite the holding interval of shares already disposed of.
+    """
+
+    symbol: str
+    ex_date: date
+    acquired: date
+    cash: float
+    closed: date | None = None
+
+
 class LotBook:
     """Open lots per symbol, sold by a declared method."""
 
@@ -118,6 +137,7 @@ class LotBook:
         self._next_id = 1
         self.extra_realized: list[Realized] = []
         """Return of capital beyond a lot's basis, realised as gain on the ex-date."""
+        self.closed_dividends: list[DividendHolding] = []
 
     def open_lots(self, symbol: str) -> tuple[Lot, ...]:
         return tuple(self._open.get(symbol, ()))
@@ -154,11 +174,52 @@ class LotBook:
             source=source,
             replacement_capacity=shares if replacement_capacity is None else replacement_capacity,
             disallowed_attached=extra_basis,
+            purchase_id=self._next_id,
         )
         self._next_id += 1
         self.lots[lot.lot_id] = lot
         self._open.setdefault(symbol, []).append(lot)
         return lot
+
+    def split(self, lot: Lot, shares: float) -> Lot:
+        """Keep the first `shares` in `lot`, returning the remaining slice.
+
+        Every slice has one basis per share and one capital-gain holding
+        period. In particular, a wash adjustment affecting four of ten shares
+        must not average that adjustment over all ten.
+        """
+
+        if not 0.0 < shares < lot.shares:
+            raise ValueError("a split must leave positive shares in both slices")
+        fraction = shares / lot.shares
+        remainder = replace(
+            lot,
+            lot_id=self._next_id,
+            shares=lot.shares - shares,
+            basis=lot.basis * (1.0 - fraction),
+            replacement_capacity=max(lot.replacement_capacity - shares, 0.0),
+            disallowed_attached=lot.disallowed_attached * (1.0 - fraction),
+            share_offset=lot.share_offset + shares,
+            dividend_claims=[replace(claim, cash=claim.cash * (1.0 - fraction))
+                             for claim in lot.dividend_claims],
+        )
+        self._next_id += 1
+        self.lots[remainder.lot_id] = remainder
+        self._open[lot.symbol].append(remainder)
+        lot.shares = shares
+        lot.basis *= fraction
+        lot.replacement_capacity = min(lot.replacement_capacity, shares)
+        lot.disallowed_attached *= fraction
+        lot.dividend_claims = [replace(claim, cash=claim.cash * fraction)
+                              for claim in lot.dividend_claims]
+        return remainder
+
+    def dividend_holdings(self) -> tuple[DividendHolding, ...]:
+        """Immutable disposal history plus the claims on shares still held."""
+
+        return tuple(self.closed_dividends) + tuple(
+            claim for lots in self._open.values() for lot in lots for claim in lot.dividend_claims
+        )
 
     def sell(self, symbol: str, day: date, shares: float, proceeds: float) -> list[Realized]:
         """Close `shares` of `symbol` by the book's method; proceeds are split pro rata."""
@@ -172,9 +233,13 @@ class LotBook:
             )
         shares = min(shares, held)
         if self.method == "hifo":
-            order = sorted(open_lots, key=lambda lot: (-lot.basis_per_share, lot.lot_id))
+            order = sorted(open_lots, key=lambda lot: (
+                -lot.basis_per_share, lot.acquired, lot.purchase_id, lot.share_offset
+            ))
         else:
-            order = sorted(open_lots, key=lambda lot: (lot.opened, lot.lot_id))
+            order = sorted(open_lots, key=lambda lot: (
+                lot.acquired, lot.purchase_id, lot.share_offset
+            ))
 
         records: list[Realized] = []
         remaining = shares
@@ -188,8 +253,16 @@ class LotBook:
             records.append(
                 Realized(symbol, lot.lot_id, lot.opened, day, take, lot_proceeds, lot_basis)
             )
+            self.closed_dividends.extend(
+                replace(claim, cash=claim.cash * fraction, closed=day)
+                for claim in lot.dividend_claims
+            )
+            lot.dividend_claims = [replace(claim, cash=claim.cash * (1.0 - fraction))
+                                  for claim in lot.dividend_claims]
             lot.shares -= take
             lot.basis -= lot_basis
+            lot.disallowed_attached *= 1.0 - fraction
+            lot.share_offset += take
             remaining -= take
             if lot.shares <= _SHARE_TOLERANCE:
                 lot.shares = 0.0
@@ -252,6 +325,8 @@ class LotBook:
                     self.extra_realized.append(
                         Realized(symbol, lot.lot_id, lot.opened, ex_date, 0.0, excess, 0.0)
                     )
+            else:
+                lot.dividend_claims.append(DividendHolding(symbol, ex_date, lot.acquired, cash))
             events.append(
                 Distribution(
                     symbol, ex_date, lot.lot_id, lot.opened, cash, return_of_capital,
@@ -264,79 +339,72 @@ class LotBook:
 WASH_SALE_WINDOW = timedelta(days=30)
 
 
-@dataclass
-class FuturePurchase:
-    """A buy fill dated after a loss sale, still inside the wash-sale window.
+class WashSaleLedger:
+    """Match losses against purchases in the order the purchases occur.
 
-    Its lot does not exist yet, so the disallowed loss and the tacked holding
-    period wait here and are applied when the lot is opened.
+    Both exchange fills and reinvestments enter through `purchase`. There is
+    no reservation for a known future fill, which could otherwise jump ahead
+    of an earlier reinvestment. Realized records are immutable snapshots;
+    later replacements replace just their disallowed-loss field, so a January
+    purchase can correctly change the preceding December's taxable loss.
     """
 
-    symbol: str
-    acquired: date
-    shares: float
-    replacement_capacity: float
-    pending_basis: float = 0.0
-    pending_tack_days: int = 0
+    def __init__(self, book: LotBook) -> None:
+        self.book = book
+        self.realized: list[Realized] = []
+        self._pending: list[int] = []
 
-
-def apply_wash_sales(
-    records: list[Realized],
-    existing: "Sequence[Lot]",
-    future: "Sequence[FuturePurchase]",
-) -> list[Realized]:
-    """Disallow losses matched to replacement shares (spec §4.6).
-
-    A loss sale is a wash sale to the extent the same symbol was acquired within
-    30 calendar days before or after, counting reinvested distributions as
-    purchases. Replacement shares are matched once, in acquisition order. For an
-    existing lot the disallowed loss is added to its basis and the sold lot's
-    holding period is tacked onto its own; for a purchase still in the future
-    both wait on the `FuturePurchase` until the lot is opened. Shares sold in the
-    loss sale itself never replace themselves: `LotBook.sell` has already reduced
-    their lot's capacity to what remains.
-    """
-
-    adjusted: list[Realized] = []
-    tacked: set[int] = set()
-    for record in records:
+    def _match(self, index: int, candidates: list[Lot]) -> None:
+        record = self.realized[index]
         loss = record.basis - record.proceeds
-        if loss <= 0.0 or record.shares <= 0.0:
-            adjusted.append(record)
-            continue
-        low, high = record.sold - WASH_SALE_WINDOW, record.sold + WASH_SALE_WINDOW
-        candidates: list[Lot | FuturePurchase] = [
-            lot
-            for lot in existing
-            if lot.symbol == record.symbol
-            and low <= lot.acquired <= high
-            and lot.replacement_capacity > _SHARE_TOLERANCE
-        ]
-        candidates += [
-            purchase
-            for purchase in future
-            if purchase.symbol == record.symbol
-            and low <= purchase.acquired <= high
-            and purchase.replacement_capacity > _SHARE_TOLERANCE
-        ]
-        candidates.sort(key=lambda item: item.acquired)
-        holding_days = (record.sold - record.opened).days
-        matched = 0.0
-        for candidate in candidates:
-            if matched >= record.shares - _SHARE_TOLERANCE:
+        remaining = record.shares * (1.0 - record.disallowed / loss)
+        disallowed = record.disallowed
+        for candidate in sorted(candidates, key=lambda lot: (
+            lot.acquired, lot.purchase_id, lot.share_offset
+        )):
+            if remaining <= _SHARE_TOLERANCE:
                 break
-            take = min(candidate.replacement_capacity, record.shares - matched)
-            share_of_loss = loss * (take / record.shares)
-            if isinstance(candidate, Lot):
-                candidate.basis += share_of_loss
-                candidate.disallowed_attached += share_of_loss
-                if candidate.lot_id not in tacked:
-                    candidate.opened = candidate.opened - timedelta(days=holding_days)
-                    tacked.add(candidate.lot_id)
-            else:
-                candidate.pending_basis += share_of_loss
-                candidate.pending_tack_days = max(candidate.pending_tack_days, holding_days)
+            if candidate.replacement_capacity <= _SHARE_TOLERANCE:
+                continue
+            take = min(candidate.replacement_capacity, remaining)
+            if take < candidate.shares - _SHARE_TOLERANCE:
+                self.book.split(candidate, take)
+            add = loss * take / record.shares
+            candidate.basis += add
+            candidate.disallowed_attached += add
+            candidate.opened -= record.sold - record.opened
             candidate.replacement_capacity -= take
-            matched += take
-        adjusted.append(replace(record, disallowed=loss * (matched / record.shares)))
-    return adjusted
+            disallowed += add
+            remaining -= take
+        self.realized[index] = replace(record, disallowed=min(loss, disallowed))
+
+    def sell(self, records: list[Realized]) -> None:
+        """Record a sale after all its shares have left the book."""
+
+        for record in records:
+            index = len(self.realized)
+            self.realized.append(record)
+            if record.basis <= record.proceeds or record.shares <= _SHARE_TOLERANCE:
+                continue
+            self._match(index, [
+                lot for lot in self.book.open_lots(record.symbol)
+                if record.sold - WASH_SALE_WINDOW <= lot.acquired <= record.sold
+            ])
+            if self.realized[index].disallowed < record.basis - record.proceeds:
+                self._pending.append(index)
+
+    def purchase(self, day: date, symbol: str) -> None:
+        """Offer today's new shares to still-unmatched losses, oldest first."""
+
+        active: list[int] = []
+        for index in self._pending:
+            record = self.realized[index]
+            if day > record.sold + WASH_SALE_WINDOW:
+                continue
+            if record.symbol == symbol:
+                self._match(index, [
+                    lot for lot in self.book.open_lots(symbol) if lot.acquired == day
+                ])
+            if self.realized[index].disallowed < record.basis - record.proceeds:
+                active.append(index)
+        self._pending = active

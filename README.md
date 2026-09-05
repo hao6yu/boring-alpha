@@ -32,6 +32,13 @@ The repository currently provides:
 - content-addressed, immutable experiment artifacts recording code provenance;
 - tests for timing, lookahead, costs, fixed-sleeve behavior, and determinism.
 
+The after-tax extension adds annual target-exposure benchmarks and eight
+declared tax scenarios, with partial-lot wash accounting and independent
+verification when replaying archived accounts. Its NAV convention and tax
+policy are stylized. The [implementation correction record](docs/changes/2026-09-04-after-tax-corrections.md)
+describes the tested mechanics and remaining limitations; BA-001's pre-tax
+classification remains Inconclusive.
+
 Broker connectivity, live orders, sentiment, pullback timing, leverage, and ML
 are intentionally outside this milestone.
 

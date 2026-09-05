@@ -28,7 +28,7 @@ from boring_alpha.criteria import (
     LOOKBACK_9,
     PeriodOutcome,
 )
-from boring_alpha.data.distributions import DistributionTable, load_distributions
+from boring_alpha.data.distributions import FINGERPRINT_VERSION, DistributionTable, load_distributions
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult
 from boring_alpha.metrics import (
@@ -78,6 +78,7 @@ class SweepResult:
     """Every run under every scenario, plus the policy and distributions identity;
     None when the configuration has no [tax] table."""
     distributions: DistributionTable | None = None
+    distributions_provenance: dict | None = None
 
 
 def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
@@ -94,7 +95,7 @@ def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
 TAX_BASE_SCENARIO = "hifo-deferral-base"
 
 
-def _distributions_for(config: AppConfig, data: MarketData) -> tuple[DistributionTable, dict]:
+def _distributions_for(config: AppConfig, data: MarketData) -> tuple[DistributionTable, dict, dict]:
     """The distributions table a tax run uses, truncated like the market data,
     and the manifest block that travels into the sweep so it is self-contained."""
 
@@ -113,12 +114,19 @@ def _distributions_for(config: AppConfig, data: MarketData) -> tuple[Distributio
     table = load_distributions(path, manifest_path=manifest_path).through(data.dates[-1])
     table.require_coverage(data, config.strategy.symbols)
     block = {
-        "methodology": manifest.get("methodology"),
-        "created_at": manifest.get("created_at"),
+        "methodology": table.methodology,
         "splits": table.splits,
         "sha256": table.sha256,
+        "csv_sha256": table.csv_sha256,
+        "fingerprint_version": FINGERPRINT_VERSION,
     }
-    return table, block
+    provenance = {
+        "source_sha256": table.source_sha256,
+        "source_path": str(path),
+        "created_at": manifest.get("created_at"),
+        "methodology": manifest.get("methodology"),
+    }
+    return table, block, provenance
 
 
 def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
@@ -189,8 +197,9 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
 
     tax: dict | None = None
     table: DistributionTable | None = None
+    distributions_provenance: dict | None = None
     if config.tax is not None:
-        table, block = _distributions_for(config, data)
+        table, block, distributions_provenance = _distributions_for(config, data)
         code_hash = code_fingerprint()
         tax_runs: dict[str, BacktestResult] = {
             "strategy": base_strategy,
@@ -258,6 +267,16 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         static_full=static_full,
         tax=tax,
         distributions=table,
+        distributions_provenance=distributions_provenance,
+    )
+
+
+def benchmark_description(config: AppConfig) -> str:
+    if config.benchmark is None:
+        return "Static allocation, monthly rebalanced"
+    return (
+        f"{config.benchmark.exposure:.0%} target exposure, "
+        f"{'annually' if config.benchmark.rebalance == 'annual' else 'monthly'} rebalanced"
     )
 
 
@@ -268,6 +287,7 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
         "",
         f"Window: {config.backtest.start} to {config.backtest.end}. "
         f"Base cost: {config.execution.cost_bps:g} bps per side.",
+        f"Benchmark: {benchmark_description(config)}.",
         "",
         "## Pre-registered result",
         "",
@@ -411,10 +431,10 @@ def _after_tax_lines(sweep: SweepResult) -> list[str]:
             f"{'n/a' if worst_drag is None else f'{worst_drag:.1f}'} | "
             f"{base['totals']['wash_sale_disallowed_total']:.2f} |"
         )
-        checks = base["identity_checks"]
-        for check in ("share_identity_passed", "income_plus_gain_passed", "implied_price_check_passed"):
-            if not checks[check]:
-                failed_checks.append(f"{name}: {check} is false")
+        for scenario_name, scenario in scenarios.items():
+            for check in ("share_identity_passed", "income_plus_gain_passed", "implied_price_check_passed"):
+                if not scenario["identity_checks"][check]:
+                    failed_checks.append(f"{name} / {scenario_name}: {check} is false")
     policy = next(iter(next(iter(tax["runs"].values())).values()))["policy"]
     lines += [
         "",
@@ -442,23 +462,18 @@ def _cash_rows(data: MarketData) -> list[list[str]]:
     ]
 
 
-def _distribution_rows(table: DistributionTable) -> list[list[str]]:
-    rows = [["date", "symbol", "close", "dividend"]]
-    for day in table.dates:
-        for symbol in table.symbols:
-            if day in table.symbol_dates.get(symbol, ()):
-                rows.append([day.isoformat(), symbol, repr(table.close(day, symbol)), repr(table.dividend(day, symbol))])
-    return rows
-
-
 def _gzip_csv(rows: list[list[str]]) -> bytes:
     """Deterministic gzip: mtime zeroed so the same data yields the same bytes."""
 
     text = io.StringIO()
     csv.writer(text, lineterminator="\n").writerows(rows)
+    return _gzip_bytes(text.getvalue().encode("utf-8"))
+
+
+def _gzip_bytes(content: bytes) -> bytes:
     raw = io.BytesIO()
     with gzip.GzipFile(fileobj=raw, mode="wb", mtime=0) as handle:
-        handle.write(text.getvalue().encode("utf-8"))
+        handle.write(content)
     return raw.getvalue()
 
 
@@ -470,6 +485,21 @@ def write_sweep_report(
 ) -> tuple[str, Path]:
     evaluation = config.evaluation
     code_hash = code_fingerprint()
+    archive: dict[str, bytes] = {
+        "input_prices.csv.gz": _gzip_csv(_price_rows(data)),
+        "input_cash.csv.gz": _gzip_csv(_cash_rows(data)),
+    }
+    if sweep.distributions is not None:
+        archive["input_distributions.csv.gz"] = _gzip_bytes(sweep.distributions.canonical_csv())
+    for name, (strategy, benchmark) in sweep.runs.items():
+        prefix = f"variants/{name}"
+        archive.update({
+            f"{prefix}/strategy_equity.csv": equity_csv(strategy).encode("utf-8"),
+            f"{prefix}/strategy_trades.csv": trades_csv(strategy).encode("utf-8"),
+            f"{prefix}/strategy_decisions.json": decisions_json(strategy).encode("utf-8"),
+            f"{prefix}/benchmark_equity.csv": equity_csv(benchmark).encode("utf-8"),
+            f"{prefix}/benchmark_trades.csv": trades_csv(benchmark).encode("utf-8"),
+        })
     identity = ":".join(
         (
             hashlib.sha256(config.raw_bytes).hexdigest(),
@@ -477,6 +507,10 @@ def write_sweep_report(
             code_hash,
             f"{evaluation.period}:{evaluation.start}:{evaluation.end}",
             "|".join(sweep.grid),
+            *(
+                (sweep.tax["distributions_sha256"],)
+                if sweep.tax is not None else ()
+            ),
         )
     )
     sweep_id = hashlib.sha256(identity.encode("ascii")).hexdigest()[:16]
@@ -496,12 +530,17 @@ def write_sweep_report(
                 "backtest_start": config.backtest.start,
                 "backtest_end": config.backtest.end,
                 "grid": sweep.grid,
+                "benchmark": benchmark_description(config),
                 "config_toml": config.raw_bytes.decode("utf-8"),
                 "data_sha256": data.fingerprint(),
                 "data_source": data.source,
                 "data_start": data.dates[0],
                 "data_end": data.dates[-1],
                 "code_sha256": code_hash,
+                "artifacts_sha256": {
+                    name: hashlib.sha256(content).hexdigest()
+                    for name, content in archive.items()
+                },
                 "warnings": run_warnings(config, data, ()) + list(sweep.warnings),
                 **(
                     {
@@ -572,27 +611,13 @@ def write_sweep_report(
             ),
         )
 
-    # Principle 6 asks for decisions, trades and equity curves, not only
-    # aggregates. A sweep is eleven runs; each keeps its own evidence.
-    for name, (strategy, static) in sweep.runs.items():
-        variant_dir = sweep_dir / "variants" / name
-        variant_dir.mkdir(parents=True, exist_ok=True)
-        write_once(variant_dir / "strategy_equity.csv", equity_csv(strategy))
-        write_once(variant_dir / "strategy_trades.csv", trades_csv(strategy))
-        write_once(variant_dir / "strategy_decisions.json", decisions_json(strategy))
-        write_once(variant_dir / "benchmark_equity.csv", equity_csv(static))
-        write_once(variant_dir / "benchmark_trades.csv", trades_csv(static))
-
-    # A data hash proves the inputs changed; it does not let you reproduce the
-    # old run. Downloaded history gets revised, so the dataset the sweep
-    # actually saw is stored beside its results.
-    write_once_bytes(sweep_dir / "input_prices.csv.gz", _gzip_csv(_price_rows(data)))
-    write_once_bytes(sweep_dir / "input_cash.csv.gz", _gzip_csv(_cash_rows(data)))
-    if sweep.distributions is not None:
-        write_once_bytes(
-            sweep_dir / "input_distributions.csv.gz",
-            _gzip_csv(_distribution_rows(sweep.distributions)),
-        )
+    for name, content in archive.items():
+        path = sweep_dir / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        write_once_bytes(path, content)
 
     append_provenance(sweep_dir, unseal_reason)
+    if sweep.distributions_provenance is not None:
+        with (sweep_dir / "distributions_provenance.jsonl").open("a", encoding="utf-8") as handle:
+            handle.write(json.dumps(sweep.distributions_provenance, sort_keys=True) + "\n")
     return sweep_id, sweep_dir

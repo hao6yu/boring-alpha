@@ -118,14 +118,42 @@ class TruncationAndCoverageTests(unittest.TestCase):
         bars = [PriceBar(day, symbol, 1.0, 1.0) for day in days for symbol in ("A", "B")]
         return MarketData(bars, {day: 1.0 for day in days}, source="test")
 
-    def test_through_keeps_sessions_up_to_the_end_and_the_file_hash(self) -> None:
+    def test_through_rehashes_the_input_and_preserves_source_provenance(self) -> None:
         truncated = self.table.through(date(2024, 1, 3))
         self.assertEqual(truncated.dates, (date(2024, 1, 2), date(2024, 1, 3)))
-        self.assertEqual(truncated.sha256, self.table.sha256)
+        self.assertNotEqual(truncated.sha256, self.table.sha256)
+        self.assertNotEqual(truncated.csv_sha256, self.table.csv_sha256)
+        self.assertEqual(truncated.source_sha256, self.table.source_sha256)
         self.assertEqual(truncated.splits, self.table.splits)
         self.assertIn("truncated=2024-01-03", truncated.source)
         with self.assertRaisesRegex(ValueError, "leaves no rows"):
             self.table.through(date(2023, 1, 1))
+
+    def test_future_rows_and_splits_do_not_enter_the_truncated_identity(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            changed = CSV.replace("2024-01-04,A,102.0,0.0", "2024-01-04,A,999.0,50.0")
+            changed += "2024-01-04,NEW,100.0,0.0\n"
+            manifest = {"splits": {"A": MANIFEST["splits"]["A"] + [
+                {"date": "2024-01-04", "ratio": "3:1"}
+            ], "B": [], "NEW": []}}
+            path, manifest_path = _write(root, changed, manifest)
+            future = load_distributions(path, manifest_path=manifest_path)
+            boundary = date(2024, 1, 3)
+            self.assertNotEqual(future.source_sha256, self.table.source_sha256)
+            self.assertEqual(future.through(boundary).sha256, self.table.through(boundary).sha256)
+            self.assertEqual(future.through(boundary).splits, self.table.splits)
+
+    def test_semantic_identity_ignores_csv_formatting_but_includes_methodology(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path, manifest_path = _write(root, CSV.replace("100.0", "100.0000"))
+            formatted = load_distributions(path, manifest_path=manifest_path)
+            self.assertEqual(formatted.sha256, self.table.sha256)
+            self.assertNotEqual(formatted.source_sha256, self.table.source_sha256)
+            revised = load_distributions(path, manifest_block={**MANIFEST, "methodology": "revised"})
+            self.assertEqual(revised.csv_sha256, formatted.csv_sha256)
+            self.assertNotEqual(revised.sha256, formatted.sha256)
 
     def test_coverage_passes_when_every_priced_session_has_a_row(self) -> None:
         self.table.require_coverage(self._market([date(2024, 1, 2), date(2024, 1, 3)]), ("A", "B"))

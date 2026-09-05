@@ -13,8 +13,7 @@ and the factor is reduced by the tax paid over that year-end equity.
 from __future__ import annotations
 
 from collections import defaultdict
-from dataclasses import replace
-from datetime import date, timedelta
+from datetime import date
 import math
 
 from boring_alpha.config import TaxConfig
@@ -22,13 +21,11 @@ from boring_alpha.data.distributions import DistributionTable
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult, Fill
 from boring_alpha.tax.lots import (
-    WASH_SALE_WINDOW,
     Distribution,
-    FuturePurchase,
     LotBook,
     Realized,
+    WashSaleLedger,
     adjustment_factor,
-    apply_wash_sales,
 )
 from boring_alpha.tax.policy import (
     OVERLAY_VERSION,
@@ -44,8 +41,8 @@ NAV_CONVENTION = (
     "after-tax NAV convention (spec §4.8): the pre-tax path is rescaled at each "
     "year end by the tax paid over that year-end equity. Raising the cash to pay, "
     "its trading cost, the gain realised doing so, and exposure drift until the "
-    "next rebalance are not modelled; both accounts hold enough cash that these "
-    "are second order."
+    "next rebalance are not modelled. Their size depends on each account's "
+    "available cash and tax liability; no cash-sufficiency assumption is made."
 )
 KNOWN_OMISSIONS = (
     "GLD expense sales: the trust sells gold to pay its expense ratio and holders "
@@ -66,7 +63,6 @@ SHARE_IDENTITY_TOLERANCE = 1e-5
 PNL_IDENTITY_TOLERANCE = 1e-6
 IMPLIED_PRICE_TOLERANCE = 0.05
 DAYS_PER_YEAR = 365.2425
-_WASH_MATCH_TOLERANCE = 1e-9
 
 
 def _cagr(terminal: float, initial: float, days: int) -> float:
@@ -122,17 +118,11 @@ def apply_overlay(
 
     # ---- Phase A: replay the run in real shares --------------------------------
     book = LotBook(scenario.lot_method)
+    wash = WashSaleLedger(book)
     fills_by_date: dict[date, list[Fill]] = defaultdict(list)
     for fill in result.fills:
         fills_by_date[fill.date].append(fill)
-    future: dict[tuple[date, str], FuturePurchase] = {}
-    for fill in result.fills:
-        if fill.side == "BUY":
-            shares = fill.quantity * factor(fill.date, fill.symbol)
-            future[(fill.date, fill.symbol)] = FuturePurchase(fill.symbol, fill.date, shares, shares)
-
     engine_units: dict[str, float] = defaultdict(float)
-    realized: list[Realized] = []
     distributions: list[Distribution] = []
     marks: list[tuple[date, float]] = []
     interest_by_year: dict[int, float] = defaultdict(float)
@@ -140,12 +130,6 @@ def apply_overlay(
     implied_ratios: list[float] = []
     ex_dates_without_growth = 0
     share_deviation = 0.0
-    # Loss sales whose disallowance is not yet fully matched to a replacement.
-    # A reinvested distribution's pooled child lot counts as a purchase too
-    # (spec §4.6), but its lot does not exist until the ex-date arrives, so it
-    # is matched here, lazily, rather than at sale time like a buy fill.
-    open_losses: list[dict] = []
-
     for index, day in enumerate(sessions):
         point = curve[index]
         if index > 0:
@@ -169,71 +153,25 @@ def apply_overlay(
             distributions.extend(events)
             child_id = next((event.child_lot_id for event in events if event.child_lot_id is not None), None)
             if child_id is not None:
-                child = book.lots[child_id]
-                tacked = False
-                for loss in open_losses:
-                    if child.replacement_capacity <= _WASH_MATCH_TOLERANCE:
-                        break
-                    if loss["symbol"] != symbol or loss["unmatched"] <= _WASH_MATCH_TOLERANCE:
-                        continue
-                    if not (day - WASH_SALE_WINDOW <= loss["sold"] < day):
-                        continue
-                    take = min(child.replacement_capacity, loss["unmatched"])
-                    add = take * loss["loss_per_share"]
-                    child.basis += add
-                    child.disallowed_attached += add
-                    if not tacked:
-                        holding_days = (loss["sold"] - loss["opened"]).days
-                        child.opened = child.opened - timedelta(days=holding_days)
-                        tacked = True
-                    child.replacement_capacity -= take
-                    loss["unmatched"] -= take
-                    idx = loss["index"]
-                    realized[idx] = replace(realized[idx], disallowed=realized[idx].disallowed + add)
+                wash.purchase(day, symbol)
 
         for fill in fills_by_date.get(day, ()):
+            if fill.quantity == 0.0:
+                continue
             shares = fill.quantity * factor(day, fill.symbol)
             if fill.side == "SELL":
                 engine_units[fill.symbol] -= fill.quantity
                 records = book.sell(fill.symbol, day, shares, fill.notional - fill.cost)
-                window = [
-                    purchase
-                    for (purchase_day, symbol), purchase in future.items()
-                    if symbol == fill.symbol and day < purchase_day <= day + WASH_SALE_WINDOW
-                ]
-                adjusted_records = apply_wash_sales(records, book.open_lots(fill.symbol), window)
-                base_index = len(realized)
-                realized.extend(adjusted_records)
-                for offset, record in enumerate(adjusted_records):
-                    loss = record.basis - record.proceeds
-                    if loss <= 0.0:
-                        continue
-                    unmatched = record.shares * (1.0 - record.disallowed / loss)
-                    if unmatched > _WASH_MATCH_TOLERANCE:
-                        open_losses.append(
-                            {
-                                "index": base_index + offset,
-                                "symbol": record.symbol,
-                                "sold": record.sold,
-                                "opened": record.opened,
-                                "unmatched": unmatched,
-                                "loss_per_share": loss / record.shares,
-                            }
-                        )
+                wash.sell(records)
             else:
                 engine_units[fill.symbol] += fill.quantity
-                purchase = future.pop((day, fill.symbol))
                 book.buy(
                     fill.symbol,
                     day,
                     shares,
                     fill.notional + fill.cost,
-                    opened=day - timedelta(days=purchase.pending_tack_days)
-                    if purchase.pending_tack_days
-                    else None,
-                    extra_basis=purchase.pending_basis,
-                    replacement_capacity=purchase.replacement_capacity,
                 )
+                wash.purchase(day, fill.symbol)
 
         for symbol in symbols:
             engine_value = engine_units[symbol] * data.bar(day, symbol).close
@@ -255,7 +193,8 @@ def apply_overlay(
                         marks.append((day, value - lot.basis))
                         lot.basis = value
 
-    realized.extend(book.extra_realized)
+    realized = wash.realized + book.extra_realized
+    dividend_holdings = book.dividend_holdings()
     liquidation: list[Realized] = []
     unrealized = 0.0
     open_lots = 0
@@ -275,15 +214,16 @@ def apply_overlay(
                 continue
             if event.return_of_capital:
                 amounts.return_of_capital += event.cash
+        for holding in dividend_holdings:
+            if holding.ex_date.year != year:
                 continue
-            lot = book.lots[event.lot_id]
             fraction = (
-                qualified_fraction(tax, scenario, event.symbol)
-                if qualifies(lot.acquired, lot.closed or last, event.ex_date)
+                qualified_fraction(tax, scenario, holding.symbol)
+                if qualifies(holding.acquired, holding.closed or last, holding.ex_date)
                 else 0.0
             )
-            amounts.qualified_income += event.cash * fraction
-            amounts.ordinary_income += event.cash * (1.0 - fraction)
+            amounts.qualified_income += holding.cash * fraction
+            amounts.ordinary_income += holding.cash * (1.0 - fraction)
         records = [record for record in realized if record.sold.year == year]
         if include_liquidation:
             records += [record for record in liquidation if record.sold.year == year]
