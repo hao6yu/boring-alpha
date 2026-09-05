@@ -807,4 +807,7 @@ implementation plan will break these into tasks.
   qualification test uses the lot's acquisition date and the date its last
   share was sold; a replacement lot is tacked once per sale; the low
   qualified set caps rather than replaces; commodity-pool interest is not
-  separated.
+  separated. The plan's fifth stated simplification — that reinvested lots
+  opened after a loss sale are not matched as its replacements — no longer
+  applies: the overlay matches them when the child lot opens, against loss
+  records of the symbol sold within the prior thirty days.

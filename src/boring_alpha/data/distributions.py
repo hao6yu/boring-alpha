@@ -64,6 +64,10 @@ class DistributionTable:
         self.symbol_dates = {
             symbol: tuple(sorted(days)) for symbol, days in symbol_dates.items()
         }
+        self._ex_dates: dict[str, tuple[date, ...]] = {
+            symbol: tuple(day for day in days if dividends[(day, symbol)] > 0.0)
+            for symbol, days in self.symbol_dates.items()
+        }
         self.dates = tuple(sorted({day for day, _ in closes}))
         self.splits = {symbol: list(records) for symbol, records in splits.items()}
         self.sha256 = sha256
@@ -88,11 +92,7 @@ class DistributionTable:
     def ex_dates(self, symbol: str) -> tuple[date, ...]:
         """Sessions on which the symbol paid a dividend."""
 
-        return tuple(
-            day
-            for day in self.symbol_dates.get(symbol, ())
-            if self._dividends[(day, symbol)] > 0.0
-        )
+        return self._ex_dates.get(symbol, ())
 
     def through(self, end: date) -> "DistributionTable":
         """A copy holding only sessions on or before `end`, matching MarketData.through."""
