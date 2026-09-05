@@ -31,7 +31,9 @@ def _periods(config):
         if name not in ('development', 'validation', 'sealed'):
             raise ValueError('BA-002 registry has an unexpected period')
         start, end = str(bounds['start']), str(bounds['end'])
-        date.fromisoformat(start), date.fromisoformat(end)  # fixed dates, never dataset
+        if end == 'dataset':
+            raise ValueError('research preparation requires a fixed reviewed end date; replace the dataset-ended registry bound before preparing a freeze')
+        date.fromisoformat(start), date.fromisoformat(end)
         periods[name] = {'start': start, 'end': end, 'status': 'unopened' if name == 'sealed' else 'seen'}
     return periods
 
@@ -48,13 +50,16 @@ def show_research_freeze(path: Path) -> int:
 def _draft_for(config, charter_text):
     profile = profile_for(config.strategy.strategy_id)
     if config.research is None:
-        raise ValueError('configure research.calendar_path, freeze_path and journal_path first')
+        raise ValueError('configure research.calendar_path and freeze_path first')
     if hasattr(profile, 'validate_config'):
         profile.validate_config(config)
     calendar = SessionCalendar.load(config.research.calendar_path)
     synthetic = config.data.source == 'synthetic'
     if calendar.synthetic is not synthetic:
         raise ValueError('calendar and configured data disagree on synthetic provenance')
+    if not synthetic:
+        from boring_alpha.research_family import canonical_journal_path
+        canonical_journal_path(config.strategy.strategy_id)  # Locate only; never initialize during preparation.
     periods = _periods(config)
     if config.strategy.strategy_id == 'BA-002':
         contract = build_contract(
@@ -84,6 +89,10 @@ def prepare_research_freeze(config_path: Path, charter_path: Path) -> int:
     config = load_config(config_path)
     draft = _draft_for(config, charter_path.read_text(encoding='utf-8'))
     path = config.research.freeze_path
+    if path.exists():
+        existing = load_freeze(path)
+        if existing['status'] != 'draft' or freeze_sha256(existing) != freeze_sha256(draft):
+            raise ValueError('freeze path already contains a different or confirmed review; choose a new research.freeze_path for the new draft')
     path.parent.mkdir(parents=True, exist_ok=True)
     write_once(path, json_text(draft))
     print('Draft prepared; no execution, confirmation or journal initialization occurred.')
@@ -100,7 +109,9 @@ def confirm_research_freeze(config_path: Path, identity_hash: str, reason: str) 
     current = _draft_for(config, draft['identity']['charter_text'])
     if freeze_sha256(current) != freeze_sha256(draft):
         raise ValueError('configured policy, calendar, windows, code or inputs differ from the draft; prepare a new draft')
-    confirm_freeze(config.research.freeze_path, expected_sha256=identity_hash, reason=reason,
-                   journal_path=config.research.journal_path)
+    confirm_freeze(config.research.freeze_path, expected_sha256=identity_hash, reason=reason)
+    if not draft['identity']['contract']['synthetic']:
+        from boring_alpha.research_family import canonical_journal_path
+        print(f"Research journal: {canonical_journal_path(config.strategy.strategy_id)}")
     print('Freeze confirmed. No strategy was run and no holdout was revealed.')
     return show_research_freeze(config.research.freeze_path)

@@ -37,6 +37,7 @@ def laboratory(tmp_path):
         "boring_alpha.data.distributions.load_distributions_bytes",
         "boring_alpha.research_access.open_run",
         "boring_alpha.research_state.RunJournal",
+        "boring_alpha.research_family.canonical_journal_path",
         "boring_alpha.cli.run_backtest",
         "boring_alpha.cli.run_sweep_command",
     )
@@ -45,7 +46,7 @@ def laboratory(tmp_path):
             stack.enter_context(patch(target, side_effect=AssertionError(f"review-only command called {target}")))
         yield SimpleNamespace(root=tmp_path, paths=paths, config_path=config_path,
                               charter=charter, config=config,
-                              freeze=config.research.freeze_path, journal=config.research.journal_path)
+                              freeze=config.research.freeze_path, journal=tmp_path / "must-not-exist.json")
 
 
 def prepare(lab):
@@ -177,6 +178,25 @@ def test_show_refuses_a_charter_edited_without_updating_its_identity(laboratory)
         research_commands.show_research_freeze(laboratory.freeze)
 
 
+def test_preparing_again_does_not_overwrite_a_confirmed_review(laboratory):
+    draft = prepare(laboratory)
+    research_commands.confirm_research_freeze(laboratory.config_path, freeze_sha256(draft), "Fictional review")
+    before = laboratory.freeze.read_bytes()
+    with pytest.raises(ValueError, match="choose a new research.freeze_path"):
+        research_commands.prepare_research_freeze(laboratory.config_path, laboratory.charter)
+    assert laboratory.freeze.read_bytes() == before
+
+
+def test_prepare_explains_dataset_ended_registry_without_creating_a_draft(laboratory):
+    registry = laboratory.config_path.parent / "evaluation_periods.toml"
+    before = registry.read_text()
+    assert 'end = 2019-12-31' in before
+    registry.write_text(before.replace('end = 2019-12-31', 'end = "dataset"'))
+    with pytest.raises(ValueError, match="fixed reviewed end date"):
+        research_commands.prepare_research_freeze(laboratory.config_path, laboratory.charter)
+    assert not laboratory.freeze.exists()
+
+
 def test_prepare_historical_branch_only_captures_raw_bytes_and_leaves_a_draft(laboratory):
     # Exercise the historical branch with fake metadata and a mocked byte
     # capture. No historical calendar, approval, data or journal is created.
@@ -186,13 +206,13 @@ def test_prepare_historical_branch_only_captures_raw_bytes_and_leaves_a_draft(la
     periods = {
         "development": {"start": "2018-01-01", "end": "2018-12-31", "status": "seen"},
         "validation": {"start": "2019-01-01", "end": "2019-12-31", "status": "seen"},
-        "sealed": {"start": "2020-01-01", "end": "2020-12-31", "status": "unopened"},
+        "sealed": {"start": "2022-01-01", "end": "2022-12-31", "status": "unopened"},
     }
     with patch.object(research_commands, "load_config", return_value=config), patch.object(
         research_commands.SessionCalendar, "load", return_value=calendar
     ), patch.object(research_commands, "_periods", return_value=periods), patch.object(
         research_commands, "capture_inputs", return_value=SimpleNamespace(sha256="3" * 64)
-    ) as capture:
+    ) as capture, patch("boring_alpha.research_family.canonical_journal_path", return_value=laboratory.journal):
         draft = prepare(laboratory)
     capture.assert_called_once_with(config)
     assert draft["identity"]["input_manifest_sha256"] == "3" * 64

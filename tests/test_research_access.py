@@ -1,6 +1,7 @@
 """Explicit run lifecycle tests use temporary fictional inputs, never history."""
 
 import csv
+import io
 from dataclasses import replace
 from datetime import date
 import json
@@ -34,6 +35,8 @@ class ResearchContextTests(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
+        self.journal = self.root / "journal.json"
+        patch("boring_alpha.research_family.canonical_journal_path", return_value=self.journal).start()
         self.paths = prepare_ba002_demo(self.root)
         self.config = load_config(self.paths["development"])
         self.addCleanup(patch.stopall)
@@ -41,12 +44,12 @@ class ResearchContextTests(unittest.TestCase):
 
     def test_synthetic_uses_draft_and_never_reads_or_initializes_a_journal(self):
         original = Path.read_text
-        forbidden = self.config.research.journal_path
+        forbidden = self.journal
         def guarded(path, *args, **kwargs):
             if path == forbidden:
                 raise AssertionError("historical journal was read")
             return original(path, *args, **kwargs)
-        with patch.object(Path, "read_text", guarded), patch(
+        with patch("boring_alpha.research_family.canonical_journal_path", side_effect=AssertionError("journal located")), patch.object(Path, "read_text", guarded), patch(
             "boring_alpha.research_state.RunJournal", side_effect=AssertionError("journal instantiated")
         ):
             selected = research_context(self.config)
@@ -104,7 +107,7 @@ class ResearchContextTests(unittest.TestCase):
 
     def _confirm(self, config, record):
         return confirm_freeze(config.research.freeze_path, expected_sha256=freeze_sha256(record),
-                              reason="Temporary fictional workflow test only", journal_path=config.research.journal_path)
+                              reason="Temporary fictional workflow test only")
 
     def test_csv_cannot_use_a_synthetic_freeze_or_calendar(self):
         config = replace(self.config, data=replace(self.config.data, source="csv"))
@@ -119,7 +122,7 @@ class ResearchContextTests(unittest.TestCase):
         with patch("boring_alpha.research_access.capture_inputs", side_effect=AssertionError("prices read")):
             with self.assertRaisesRegex(ValueError, "confirmed"):
                 prepare_run(config)
-        self.assertFalse(config.research.journal_path.exists())
+        self.assertFalse(self.journal.exists())
 
     def test_confirmed_freeze_cannot_claim_a_different_calendar(self):
         config, record = self._proposed_historical_fixture()
@@ -132,11 +135,11 @@ class ResearchContextTests(unittest.TestCase):
     def test_execution_does_not_silently_initialize_a_missing_journal(self):
         config, record = self._proposed_historical_fixture()
         self._confirm(config, record)
-        config.research.journal_path.unlink()  # Only this temporary empty test journal.
+        self.journal.unlink()  # Only this temporary empty test journal.
         with self.assertRaisesRegex(ValueError, "existing regular"):
             with open_run(config):
                 self.fail("unlogged run entered")
-        self.assertFalse(config.research.journal_path.exists())
+        self.assertFalse(self.journal.exists())
 
     def test_one_confirmed_freeze_covers_both_seen_windows_without_extra_approvals(self):
         config, record = self._proposed_historical_fixture()
@@ -151,10 +154,10 @@ class ResearchContextTests(unittest.TestCase):
                 self.assertFalse(any(name.startswith("_research") for name in vars(run.data)))
                 run.context.artifact_path = f"fictional-{current.evaluation.period}-artifact"
         self.assertEqual(config.research.freeze_path.read_bytes(), frozen_bytes)
-        events = json.loads(config.research.journal_path.read_text())["events"]
+        events = json.loads(self.journal.read_text())["events"]
         self.assertEqual([event["event"] for event in events], ["attempted", "access_started", "completed"] * 3)
         self.assertTrue(all(event["reveal_reason"] is None for event in events if event["event"] == "attempted"))
-        self.assertEqual(set(json.loads(config.research.journal_path.read_text())), {"schema_version", "events"})
+        self.assertEqual(set(json.loads(self.journal.read_text())), {"schema_version", "events"})
 
     def test_managed_csv_requires_explicit_context_instead_of_private_dataset_state(self):
         config, record = self._proposed_historical_fixture()
@@ -213,6 +216,8 @@ class LoaderAccessTests(unittest.TestCase):
         self.addCleanup(patch.stopall)
         patch("boring_alpha.research_access.capture_execution_identity", return_value=BASELINE).start()
         self.root = Path(self.temporary.name)
+        self.journal = self.root / "journal.json"
+        patch("boring_alpha.research_family.canonical_journal_path", return_value=self.journal).start()
         (self.root / "evaluation_periods.toml").write_text("[BA-001.development]\nstart = 2021-01-01\nend = 2021-01-31\n")
         path = self.root / "config.toml"
         path.write_text(CSV_CONFIG)
@@ -265,6 +270,26 @@ class LoaderAccessTests(unittest.TestCase):
                     self.fail("failed loading yielded a run")
         attempt.fail.assert_called_once_with("fictional loading failure")
 
+    def test_attempt_location_and_id_are_flushed_before_access_can_fail(self):
+        attempt = Mock()
+        attempt.journal.path = self.journal
+        attempt.attempt_id = "fictional-attempt-id"
+        output = io.StringIO()
+        flushed = Mock(wraps=output.flush)
+        output.flush = flushed
+        def refused():
+            self.assertIn(f"Research journal: {self.journal}", output.getvalue())
+            self.assertIn("Attempt ID: fictional-attempt-id", output.getvalue())
+            flushed.assert_called_once_with()
+            raise ValueError("fictional access refusal")
+        attempt.start_access.side_effect = refused
+        with self._mock_run(attempt), patch("sys.stdout", output), patch(
+            "boring_alpha.data.loader.load_market_data", side_effect=AssertionError("parsed before refusal")
+        ), self.assertRaisesRegex(ValueError, "access refusal"):
+            with open_run(self.config):
+                self.fail("refused run yielded")
+        attempt.fail.assert_called_once_with("fictional access refusal")
+
     def test_successful_loading_keeps_attempt_open_until_context_publication(self):
         attempt = Mock()
         with self._mock_run(attempt):
@@ -301,7 +326,7 @@ class LoaderAccessTests(unittest.TestCase):
         config = replace(self.config,
             backtest=replace(self.config.backtest, start=date(2025, 1, 1), end=date(2025, 12, 31)),
             evaluation=replace(self.config.evaluation, period="exploratory", start=None, end=None),
-            research=ResearchConfig(self.root / "calendar.json", self.root / "freeze.json", self.root / "journal.json"))
+            research=ResearchConfig(self.root / "calendar.json", self.root / "freeze.json"))
         selected = ResearchContext({"fictional": True}, Mock(sha256="c" * 64), {"identity": {
             "code_sha256": BASELINE[0], "evaluator_sha256": BASELINE[0],
             "input_manifest_sha256": capture_inputs(config).sha256}})

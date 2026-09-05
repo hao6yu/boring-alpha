@@ -95,7 +95,9 @@ def test_exact_50_bps_passes_without_float_subtraction_roundoff():
     outcome = evaluate_period(build_period_evidence(**evidence_inputs()))
     assert outcome.passed
     assert len(outcome.criteria) == 15
-    assert "50" in outcome.criteria[0].detail
+    from decimal import Decimal
+    margin = outcome.criteria[0].detail.split('margin ', 1)[1].split(' bps/year', 1)[0]
+    assert Decimal(margin) == Decimal('50')
 
 
 def test_499999_bps_fails_despite_excellent_pre_tax_sharpe():

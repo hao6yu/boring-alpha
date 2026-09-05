@@ -21,7 +21,8 @@ BASELINE = ("a" * 64, "b" * 64)
 
 
 @pytest.fixture
-def frozen_legacy(tmp_path):
+def frozen_legacy(tmp_path, monkeypatch):
+    monkeypatch.setattr("boring_alpha.research_family.canonical_journal_path", lambda candidate: tmp_path / "journal.json")
     base = load_config(prepare_ba002_demo(tmp_path)["development"])
     calendar = SessionCalendar(
         source="FICTIONAL binding fixture, not an exchange authority", version="1",
@@ -39,8 +40,8 @@ def frozen_legacy(tmp_path):
     }))
     config = replace(base, strategy=replace(base.strategy, strategy_id="BA-001"),
         data=replace(base.data, source="csv", methodology="fictional-binding-v1", prices_path=prices, cash_path=cash),
-        backtest=replace(base.backtest, start=date(2025, 1, 1), end=date(2025, 1, 31)),
-        evaluation=replace(base.evaluation, period="sealed", start=date(2025, 1, 1), end=date(2025, 1, 31)))
+        backtest=replace(base.backtest, start=date(2022, 1, 1), end=date(2025, 1, 31)),
+        evaluation=replace(base.evaluation, period="sealed", start=date(2022, 1, 1), end=date(2025, 1, 31)))
     config = replace(config, strategy_spec_sha256=_strategy_spec_hash(
         config.strategy, config.portfolio, config.execution, config.data, config.benchmark))
     for stage in ("development", "validation"):
@@ -50,14 +51,14 @@ def frozen_legacy(tmp_path):
         "strategy_spec_sha256": config.strategy_spec_sha256,
         "tax_policy_sha256": policy_sha256(config.tax),
         "calendar_sha256": calendar.sha256, "calendar_authority_sha256": calendar.authority_sha256,
-        "periods": {"sealed": {"start": "2025-01-01", "end": "2025-01-31", "status": "unopened"}},
+        "periods": {"sealed": {"start": "2022-01-01", "end": "2025-01-31", "status": "unopened"}},
     }
     record = build_freeze(config, contract, input_manifest_sha256=capture_inputs(config).sha256,
                           charter_text="Temporary fictional legacy-binding test only",
                           code_sha256=BASELINE[0], evaluator_sha256=BASELINE[0])
     config.research.freeze_path.write_text(json.dumps(record))
     confirmed = confirm_freeze(config.research.freeze_path, expected_sha256=freeze_sha256(record),
-                               reason="Fictional binding test only", journal_path=config.research.journal_path)
+                               reason="Fictional binding test only")
     return config, confirmed
 
 
@@ -108,7 +109,7 @@ def test_legacy_unseal_reason_also_serves_as_the_first_reveal_reason(frozen_lega
         context = prepare_run(config, unseal_reason=reason)  # No second --reveal.
         try:
             context.attempt.start_access()
-            events = json.loads(config.research.journal_path.read_text())["events"]
+            events = json.loads(context.attempt.journal.path.read_text())["events"]
             assert [event["event"] for event in events] == ["attempted", "access_started"]
             assert events[0]["reveal_reason"] == reason
             assert events[1]["rerun"] is False

@@ -123,7 +123,13 @@ def write_ba002_sweep(config, data, sweep, unseal_reason=None):
 
 
 def load_ba002_evidence(root: Path, freeze_path: Path | None = None):
-    """Reconcile archived accounts and recompute inputs; ignore saved verdicts."""
+    """Verify archive bytes, replay pre-tax accounts, and ignore saved verdicts.
+
+    Drawdowns are recomputed. After-tax CAGRs and tax identity-check results
+    are validated saved inputs from checksummed tax.json, not freshly computed
+    tax returns. Archived decisions are traces, not an independently rerun
+    signal. Use the separate aftertax diagnostic to replay the tax overlay.
+    """
     manifest = read_manifest(root)
     from boring_alpha.research_freeze import load_freeze, freeze_sha256
     if manifest['strategy_id'] != 'BA-002' or manifest['artifact_schema'] != 7:

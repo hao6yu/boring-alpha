@@ -23,6 +23,7 @@ import math
 from pathlib import Path
 from typing import Iterable
 
+from boring_alpha.data.csv_loader import _csv_date, _csv_number, _csv_row_shape, _csv_rows, _csv_symbol
 from boring_alpha.data.market import MarketData
 
 REQUIRED_COLUMNS = frozenset({"date", "symbol", "close", "dividend"})
@@ -203,28 +204,20 @@ def load_distributions_bytes(
         raise ValueError("captured distributions must be immutable bytes")
     manifest = manifest_block
     splits = split_records(manifest)
-    reader = csv.DictReader(io.StringIO(raw.decode("utf-8")))
-    if set(reader.fieldnames or ()) != REQUIRED_COLUMNS:
-        raise ValueError(
-            f"distribution CSV columns must be exactly {sorted(REQUIRED_COLUMNS)}, "
-            f"got {reader.fieldnames}"
-        )
     rows: list[Row] = []
-    for row_number, row in enumerate(reader, start=2):
-        try:
-            day = date.fromisoformat(row["date"])
-            if end is not None and day > end:
-                continue
-            rows.append(
-                (
-                    day,
-                    row["symbol"].strip().upper(),
-                    float(row["close"]),
-                    float(row["dividend"]),
-                )
-            )
-        except (TypeError, ValueError) as exc:
-            raise ValueError(f"invalid distribution row {row_number}: {row}") from exc
+    for row_number, row in _csv_rows(raw, "distribution", REQUIRED_COLUMNS):
+        day = _csv_date(row, "distribution", row_number)
+        if end is not None and day > end:
+            continue
+        _csv_row_shape(row, "distribution", row_number)
+        symbol = _csv_symbol(row, "distribution", row_number)
+        close = _csv_number(row, "close", "distribution", row_number)
+        dividend = _csv_number(row, "dividend", "distribution", row_number)
+        if close <= 0:
+            raise ValueError(f"invalid distribution row {row_number}: field 'close' (non-positive close)")
+        if dividend < 0:
+            raise ValueError(f"invalid distribution row {row_number}: field 'dividend' (negative dividend)")
+        rows.append((day, symbol, close, dividend))
     if end is not None:
         retained_symbols = {symbol for _, symbol, _, _ in rows}
         splits = {

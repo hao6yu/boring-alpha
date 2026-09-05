@@ -30,10 +30,28 @@ def _policy():
 
 
 class HoldingPeriodTests(unittest.TestCase):
-    def test_more_than_365_days_is_long_term(self) -> None:
+    def test_calendar_anniversary_is_not_long_term_even_after_366_days(self) -> None:
         opened = date(2023, 3, 1)
         self.assertFalse(is_long_term(opened, date(2024, 2, 29)))   # 365 days
-        self.assertTrue(is_long_term(opened, date(2024, 3, 1)))     # 366 days
+        self.assertFalse(is_long_term(opened, date(2024, 3, 1)))    # 366 days, exactly one year
+        self.assertTrue(is_long_term(opened, date(2024, 3, 2)))
+
+    def test_nonleap_anniversary_and_day_after(self) -> None:
+        self.assertFalse(is_long_term(date(2022, 12, 31), date(2023, 12, 31)))
+        self.assertTrue(is_long_term(date(2022, 12, 31), date(2024, 1, 1)))
+
+    def test_february_29_acquisition_uses_next_year_february_end(self) -> None:
+        self.assertFalse(is_long_term(date(2024, 2, 29), date(2025, 2, 28)))
+        self.assertTrue(is_long_term(date(2024, 2, 29), date(2025, 3, 1)))
+
+    def test_calendar_boundary_is_applied_to_tacked_holding_origin(self) -> None:
+        # The caller passes the wash-adjusted origin, not acquisition order.
+        tacked_origin = date(2023, 7, 1)
+        self.assertFalse(is_long_term(tacked_origin, date(2024, 7, 1)))
+        self.assertTrue(is_long_term(tacked_origin, date(2024, 7, 2)))
+
+    def test_maximum_year_does_not_overflow(self) -> None:
+        self.assertFalse(is_long_term(date(9999, 1, 1), date.max))
 
     def test_qualified_needs_more_than_sixty_days_inside_the_window(self) -> None:
         ex_date = date(2024, 6, 14)

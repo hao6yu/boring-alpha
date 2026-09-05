@@ -45,3 +45,12 @@ commodities = ["DBC"]
 
 [report]
 output_dir = "../experiments"
+
+# Optional for this development-only example; required before a new protected
+# historical BA-001 run. Select the proper snapshot/methodology and exact
+# registered window deliberately; do not switch the example to sealed merely
+# to test the workflow. research prepare/confirm do not run a strategy.
+[research]
+calendar_path = "../data/calendars/nyse-2006-2026-v1.json"
+freeze_path = "../research/ba001-freeze.json"
+# Journal is canonical Git-common-directory state, not a configurable path.

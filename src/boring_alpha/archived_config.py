@@ -59,6 +59,10 @@ def validate_archived_config(manifest: Mapping, contract: Mapping) -> None:
         raw = tomllib.loads(_text(manifest.get("config_toml"), "config_toml"))
     except tomllib.TOMLDecodeError as exc:
         raise ValueError(f"archived config_toml is unreadable: {exc}") from exc
+    # Old schema-7 archives retain their former configurable journal location.
+    # It is inert provenance here, never a path to read or reuse for execution.
+    if isinstance(raw.get("research"), dict) and "journal_path" in raw["research"]:
+        _text(raw["research"].pop("journal_path"), "research.journal_path")
     _check_schema(raw)
     required = {"strategy", "portfolio", "execution", "data", "backtest", "evaluation", "benchmark", "tax", "report", "research"}
     if not required.issubset(raw):
@@ -186,7 +190,7 @@ def validate_archived_config(manifest: Mapping, contract: Mapping) -> None:
 
     # These are locations and diagnostic groupings, not sources of frozen state.
     _text(raw["report"].get("output_dir"), "report.output_dir")
-    for key in ("calendar_path", "freeze_path", "journal_path"):
+    for key in ("calendar_path", "freeze_path"):
         _text(raw["research"].get(key), f"research.{key}")
     for key in ("review_dir", "periods_path"):
         if key in raw["evaluation"]:

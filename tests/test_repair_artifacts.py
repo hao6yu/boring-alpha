@@ -17,7 +17,10 @@ from boring_alpha.sweep import run_sweep, write_sweep_report
 
 
 @pytest.mark.parametrize('command', [run_backtest, run_sweep_command])
-def test_demo_confirmation_does_not_change_existing_run_artifacts(tmp_path, command, capsys):
+def test_demo_confirmation_does_not_change_existing_run_artifacts(tmp_path, command, capsys, monkeypatch):
+    def forbidden(*args, **kwargs):
+        raise AssertionError("synthetic workflow located a real journal")
+    monkeypatch.setattr("boring_alpha.research_family.canonical_journal_path", forbidden)
     paths = prepare_ba002_demo(tmp_path)
     config = load_config(paths['development'])
     command(paths['development'])
@@ -34,7 +37,6 @@ def test_demo_confirmation_does_not_change_existing_run_artifacts(tmp_path, comm
     assert list((tmp_path / 'experiments').rglob('manifest.json')) == manifests
     assert manifest.read_bytes() == before
     assert manifest.with_name('freeze.json').read_bytes() == frozen_bytes
-    assert not config.research.journal_path.exists()
     records = [json.loads(line) for line in manifest.with_name('provenance.jsonl').read_text().splitlines()]
     assert [row['research_freeze']['status'] for row in records] == ['draft', 'confirmed']
     assert records[1]['research_freeze']['confirmation']['reason'] == 'Fictional review only'

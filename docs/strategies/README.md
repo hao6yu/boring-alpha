@@ -7,7 +7,8 @@ belong to immutable experiment artifacts linked from a later review.
 | ID | Name | Status | Charter |
 |---|---|---|---|
 | BA-001 | Multi-Asset Trend | Evaluation complete — Inconclusive (revision 4); sealed period unrevealed. Reviews: [development](../reviews/BA-001-development.md), [validation](../reviews/BA-001-validation.md) | [BA-001.md](BA-001.md) |
-| BA-002 | Multi-Horizon Trend | Implemented for synthetic review; thresholds approved, charter not locked; no historical evaluation; derives from already-seen BA-001 results | [BA-002.md](BA-002.md) |
+| BA-002 | Multi-Horizon Trend | [Two-feed seen-history diagnostic complete — practical no-go](../reviews/BA-002-source-sensitivity.md). Revision 1 unchanged; formal freeze unconfirmed, no holdout evaluation. | [BA-002.md](BA-002.md) |
+| BA-003 | Relative-Strength Tilt | Draft proposal — defaults awaiting review; not locked, implemented or evaluated. Shared family holdout unchanged. | [BA-003.md](BA-003.md) |
 
 ## Revision policy
 

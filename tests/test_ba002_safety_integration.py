@@ -21,6 +21,7 @@ class ReadOnceByteHandoffTests(unittest.TestCase):
         demo = prepare_ba002_demo(self.root / "fictional-demo")
         base = load_config(demo["development"])
         self.addCleanup(patch.stopall)
+        patch("boring_alpha.research_family.canonical_journal_path", return_value=self.root / "journal.json").start()
         patch("boring_alpha.research_access.capture_execution_identity", return_value=("a" * 64, "b" * 64)).start()
         self.prices = self.root / "prices.csv"
         self.cash = self.root / "cash.csv"
@@ -37,7 +38,7 @@ class ReadOnceByteHandoffTests(unittest.TestCase):
             evaluation=replace(base.evaluation, period="exploratory", start=None, end=None),
             data=replace(base.data, source="csv", prices_path=self.prices, cash_path=self.cash, methodology="fictional-v1"),
             tax=replace(base.tax, distributions_path=self.distributions),
-            research=ResearchConfig(self.root / "unused-calendar.json", self.root / "unused-freeze.json", self.root / "unused-journal.json"),
+            research=ResearchConfig(self.root / "unused-calendar.json", self.root / "unused-freeze.json"),
         )
         # Profile selection and the journal backend are mocked; capture, frozen
         # hash comparison, lifecycle and all readers below are real.

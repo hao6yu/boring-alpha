@@ -1,5 +1,7 @@
 # BoringAlpha
 
+English | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
+
 **No free lunch. No magic backtests.**
 
 BoringAlpha is a small, dependency-light laboratory for systematic trading
@@ -43,14 +45,22 @@ records both archived periods: its advantage over the exposure-matched
 allocation held in development and reversed in validation under every tested
 tax scenario.
 
-The successor, [BA-002 Multi-Horizon Trend](docs/strategies/BA-002.md), is
-**implemented for synthetic review, not historically evaluated or locked**.
+The successor, [BA-002 Multi-Horizon Trend](docs/strategies/BA-002.md), has a
+completed [two-feed seen-history diagnostic](docs/reviews/BA-002-source-sensitivity.md):
+**practical no-go under both corrected Yahoo and Tiingo inputs**.
 It blends 9-, 12- and 15-month signals against an annual 60%-target benchmark.
 Its five-row screen requires at least 50 bps/year of primary after-tax advantage,
 positive stress margins, and cost-net drawdown at most 20% and no worse than
 each paired benchmark. These are research criteria, not return/loss guarantees.
 The reused historical windows are explicitly already seen; passing them would
 only make the candidate eligible to request a separately authorized holdout.
+The [data preflight](docs/reviews/BA-002-preflight.md) found a missing TLT
+dividend, now corrected in a new Yahoo snapshot. The separately authorized
+source comparison ran all five paired rows and eight tax scenarios in both
+seen windows. In 2018–2021, base after-tax CAGR is about 2.00–2.03% versus
+4.16–4.21% for the benchmark, with worse drawdown, under both feeds. These are
+non-gating diagnostic results, not formal classification or deployment evidence.
+The original freeze remains draft; no holdout evaluation is authorized or run.
 
 Broker connectivity, live orders, sentiment, pullback timing, leverage, and ML
 are intentionally outside this milestone.
@@ -100,30 +110,47 @@ the archive and account replay, then recomputes the gates rather than trusting
 saved pass flags. Post-hoc `aftertax` is a separately identified diagnostic,
 not a replacement for the sweep's eligibility evidence.
 
+Precisely: classification replays pre-tax accounting and recomputes drawdown
+and gates. After-tax CAGRs and tax identity-check results are validated inputs
+from checksummed `tax.json`, not freshly recomputed tax returns. Archived
+decisions are traces, not an independent regeneration of the trading signals.
+`aftertax` provides a separately identified tax replay when one is requested.
+
 The archived freeze is an identity-only draft envelope, never execution
 permission. Confirmation metadata lives in append-only invocation provenance;
 historical classification additionally requires the matching external
 confirmed freeze. Confirming a synthetic draft does not change its existing
 economic artifacts or initialize a real journal.
 
-### Historical research workflow (not yet executed)
+### Formal historical research workflow (not yet executed)
 
 The independent [NYSE session calendar](docs/data/nyse-calendar.md) is now
-checked in. Its comparison with an actual SPY snapshot's dates remains
-deferred. No historical BA-002 config, confirmed freeze or reveal is created
-by this implementation.
+checked in. The [branch review](docs/changes/2026-09-04-branch-review-after-tax-overlay.md)
+subsequently reported an exact SPY date-only match over seen history:
+2006-02-28 through 2021-12-31, 3,990 sessions. No holdout market file was checked.
+The later seen-history preflight added two historical configs and a draft
+freeze. It did not confirm the freeze or run a formal sweep. The subsequent
+[source-sensitivity experiment](docs/reviews/BA-002-source-sensitivity.md) used
+distinct, non-classifiable artifacts and supports stopping this candidate.
+The following formal workflow is documentation, not the recommended next step
+for BA-002 after that result.
 
 After reviewing the charter and selecting fixed input snapshots, configure
-three locations, resolved relative to the config file:
+two locations, resolved relative to the config file:
 
 ```toml
 [research]
 calendar_path = "../data/calendars/nyse-2006-2026-v1.json"
 freeze_path = "../research/ba002-freeze.json"
-journal_path = "../research/ba-trend-journal.json"
 ```
 
-All related BA-001/BA-002 configurations must use the **same family journal**.
+All related BA-001/BA-002 configurations use the **same canonical family journal**:
+`<Git common directory>/boring-alpha/journals/BA-TREND.json`. The installed
+package's source checkout selects the Git common directory, so changing config
+location, working directory or linked worktree cannot create another history.
+`research.journal_path` is no longer accepted in executable configs. Historical
+execution outside a Git-backed source checkout is refused. Synthetic runs do
+not locate or initialize this journal.
 The following are instructions for a later deliberate review, not commands
 already run or a request to open the holdout:
 
@@ -140,6 +167,14 @@ match, confirms that exact draft, and initializes the family journal. Neither
 command runs a strategy or reveals a holdout. Existing drafts are write-once;
 select a new freeze path for a reviewed revision.
 
+Reconfirming an already confirmed freeze cannot recreate a missing journal.
+Do not erase it: recover the existing history from backup. The journal is
+durable local operating state inside Git metadata, **not committed by `git add`**
+and not transferred by clone/push. Back it up separately; never treat a clone
+with no history as a fresh scientific holdout. Reviewed non-sensitive freeze
+records in `research/` can be committed; personal tax inputs should remain
+local. Invocation provenance and frozen archive identities remain separate.
+
 Ordinary `sweep DEVELOPMENT_CONFIG` and `sweep VALIDATION_CONFIG` reuse the same
 confirmed freeze, with no per-run approval file. Classify their printed archive
 paths using `boring-alpha classify DEVELOPMENT_SWEEP VALIDATION_SWEEP --freeze
@@ -155,6 +190,15 @@ Only code/evaluator changes are permitted for that repair: candidate, rule,
 window, policy, calendar and input bytes must match. Repair results and their
 retries remain **revealed-data diagnostics**, never a fresh holdout or new
 eligibility evidence. Do not delete or reset the journal to retry a candidate.
+Managed runs print the journal path and attempt ID **before** access; overlap
+refusals name the earlier attempts for `--repair-of`.
+
+One independent reveal is shared by the BA-TREND family: revealing BA-001's
+sealed period consumes BA-002's opportunity to call that history unseen, and
+vice versa. Later analysis can only be explicitly revealed-data research.
+The current repair command permits same-candidate code/evaluator corrections,
+not a cross-candidate diagnostic workflow. Historical seen windows must end
+before 2022-01-01, and the registered historical sealed window starts there.
 
 ## Evaluating BA-001
 
@@ -258,6 +302,15 @@ used throughout a managed run. This is a procedural research safeguard, not
 security against the machine's owner. Read-only legacy BA-001 archive
 classification needs no retroactive freeze.
 
+For BA-001, the optional research table in
+`configs/ba_001_real_csv.example.toml` shows the two locations. After selecting
+the exact registered window and matching immutable data methodology, prepare
+with `boring-alpha research prepare CONFIG --charter docs/strategies/BA-001.md`,
+review and confirm its displayed hash as above, then retain BA-001's existing
+review-file and `--unseal` requirements. These instructions do not authorize
+running BA-001's holdout. An old v1 config must not silently follow `data/current`
+to a v2 snapshot: choose the matching frozen snapshot explicitly.
+
 ## Run artifacts
 
 Each run writes `manifest.json`, `metrics.json`, `decisions.json`, the equity
@@ -325,6 +378,35 @@ identical inputs are idempotent. Rates in the checked-in policy are a
 federal-only stylized scenario, not anyone's bracket; real rates belong in an
 untracked local copy.
 
+### Optional capital-loss deduction sensitivity
+
+The eight gating scenarios exclude the ordinary-income capital-loss deduction.
+An explicit sensitivity is available without changing those gates:
+
+```bash
+boring-alpha aftertax PATH_TO_ARCHIVED_SWEEP --policy configs/tax_policy.toml \
+    --loss-sensitivity configs/loss_sensitivity.example.toml
+```
+
+The example declares **zero available capacity**; edit a local copy only after
+choosing the household assumptions. It requires annual unused deduction
+capacity, available outside ordinary taxable income, and whether the resulting
+tax savings stay outside the account or are explicitly contributed. The rate
+defaults to the selected tax policy, not an inferred personal tax bracket.
+The capacity applies to a tax return, not separately to simultaneous accounts;
+each strategy/scenario here is an alternative account, not an additive benefit.
+
+The diagnostic consumes short-term then long-term carryovers after capital
+netting and recalculates later years and terminal liquidation. It does not add
+a tax benefit while preserving the losses that funded it. Outside savings earn
+no assumed return; contribution mode is a stylized NAV-rescaling experiment,
+not exact tax-lot funding, and suppresses self-financing CAGR/tax-drag claims.
+The full policy, account size, baseline and sensitivity results are archived in
+a separate `tax-loss-sensitivity-*.json`; `tax.json` and eligibility are unchanged.
+The existing $100,000 research result cannot be scaled to $2,000–$5,000 once
+a fixed-dollar deduction is included. See the
+[sensitivity design](docs/decisions/2026-09-04-capital-loss-sensitivity.md).
+
 ## Real CSV contract
 
 The real-data adapter accepts two CSV files. Prices use total-return-adjusted
@@ -388,12 +470,17 @@ configs/evaluation_periods.toml  Period boundaries taken from the charters
 docs/principles.md      Research rules
 docs/strategies/        Locked strategy charters
 docs/reviews/           Written reviews that gate the next period
+docs/changes/           Implementation and correction records
+docs/notes/             Research diagnostics and result notes
+docs/decisions/         Decision records: benchmarks, data, tax policy
 src/boring_alpha/data/  Canonical data and adapters
 src/boring_alpha/signals/ Strategy implementations
 src/boring_alpha/portfolio/ Cash, positions, and target-weight planning
 src/boring_alpha/execution/ Cost model and order-to-fill simulation
 src/boring_alpha/backtest/ The daily mark-to-market engine that drives them
 src/boring_alpha/metrics/ Performance statistics
+src/boring_alpha/tax/   After-tax overlay: lots, wash sales, year-end netting
 tests/                  Correctness tests
+tools/                  Market-data fetchers and calendar builders
 experiments/            Generated immutable artifacts (ignored)
 ```

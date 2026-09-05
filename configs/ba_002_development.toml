@@ -1,0 +1,84 @@
+# BA-002 seen research A: authorized for the fixed seen-history screen only.
+# This window informed the design; it is not independent out-of-sample evidence.
+# The first decision is 2007-05-31, requiring complete shared history from
+# 2006-02-28 under the common 15-month warmup. Missing data must halt the run.
+# The shared registry's sealed bounds are metadata, not holdout permission.
+
+[strategy]
+id = "BA-002"
+name = "BA-002 Multi-Horizon Trend"
+symbols = ["SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC"]
+lookback_months = 15
+horizons = [9, 12, 15]
+warmup_months = 15
+sleeve_weight = 0.125
+
+[portfolio]
+initial_cash = 100000.0
+
+[execution]
+cost_bps = 10.0
+
+[data]
+source = "csv"
+methodology = "yahoo-adjusted-v2+dgs3mo-v1"
+# Bind the immutable v2 snapshot, never the mutable data/current pointer.
+prices_path = "../data/snapshots/20260904T192633Z/market_daily.csv"
+cash_path = "../data/snapshots/20260904T192633Z/cash_daily.csv"
+
+[backtest]
+start = 2007-06-01
+end = 2017-12-31
+
+[evaluation]
+period = "development"
+periods_path = "ba_002_evaluation_periods.toml"
+review_dir = "../docs/reviews"
+
+[benchmark]
+exposure = 0.60
+rebalance = "annual"
+
+# Same descriptive attribution groups as BA-001; these do not alter targets.
+[clusters]
+equity = ["SPY", "IWM", "EFA", "EEM"]
+bonds = ["IEF", "TLT"]
+gold = ["GLD"]
+commodities = ["DBC"]
+
+[report]
+output_dir = "../experiments"
+
+[research]
+calendar_path = "../data/calendars/nyse-2006-2026-v1.json"
+freeze_path = "../research/ba002-seen-20260904-freeze.json"
+
+# Existing federal-only stylized policy, not the account holder's actual rates.
+# State/NIIT taxes and historical rate changes remain excluded. Capital-loss
+# deduction sensitivity is OFF and does not enter the eight-scenario gate.
+[tax]
+distributions_path = "../data/snapshots/20260904T192633Z/distributions_daily.csv"
+ordinary_rate = 0.35
+long_term_rate = 0.20
+collectibles_rate = 0.28
+qualified_fraction_low = 0.50
+
+[tax.qualified_fraction]
+SPY = 0.95
+IWM = 0.71
+EFA = 0.95
+EEM = 0.61
+IEF = 0.0
+TLT = 0.0
+GLD = 0.0
+DBC = 0.0
+
+[tax.gains_class]
+SPY = "standard"
+IWM = "standard"
+EFA = "standard"
+EEM = "standard"
+IEF = "standard"
+TLT = "standard"
+GLD = "collectibles"
+DBC = "commodity_pool"

@@ -108,10 +108,11 @@ class RunJournalTests(unittest.TestCase):
         retry.complete("identical")
 
     def test_changed_candidate_cannot_reset_family_even_with_reveal_reason(self):
-        self.first()
+        original = self.first()
         renamed = self.journal.begin(replace(self.identity, candidate_id="BA-001"), reveal_reason="new name")
-        with self.assertRaisesRegex(ResearchAccessError, "family.*already revealed"):
+        with self.assertRaisesRegex(ResearchAccessError, "family.*already revealed") as refused:
             renamed.start_access()
+        self.assertIn(original.attempt_id, str(refused.exception))
         self.assertEqual(self.events()[-1]["event"], "refused")
 
     def test_changed_overlapping_window_cannot_claim_a_fresh_reveal(self):

@@ -3,6 +3,8 @@
 Invalid evidence raises ValueError; it is not a failed financial criterion.
 Archive loaders must verify file checksums and independently reconcile accounts
 before calling the builder. No saved verdict or checksum-success flag is read.
+Tax CAGRs and tax identity-check results are saved, checksum-verified inputs;
+this builder validates their structure and identity but does not recompute tax.
 """
 
 from __future__ import annotations
@@ -116,6 +118,8 @@ def _account_returns(
     result = []
     for scenario in SCENARIOS:
         record = _mapping(payload[scenario.key], f"tax {account}/{scenario.key}")
+        if record.get('loss_sensitivity') is not None:
+            raise ValueError('capital-loss sensitivities are diagnostic only, not BA-002 gating scenarios')
         require_exact_behavior(record.get("scenario"), scenario.as_dict(), f"tax {account}/{scenario.key}.scenario")
         policy = _mapping(record.get("policy"), f"tax {account}/{scenario.key}.policy")
         for field in ("tax_policy_sha256", "distributions_sha256", "code_sha256"):

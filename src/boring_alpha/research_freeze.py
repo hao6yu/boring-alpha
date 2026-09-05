@@ -19,6 +19,7 @@ from boring_alpha.research_contract import (
     FAMILY_ID, canonical_json, canonical_sha256, code_fingerprint,
     evaluator_fingerprint, require_digest, validate_contract,
 )
+from boring_alpha.research_family import PROTECTED_START
 
 
 _IDENTITY_KEYS = {
@@ -55,6 +56,11 @@ def _legacy_contract(contract: Mapping) -> dict:
             raise ValueError("freeze periods require fixed ISO dates") from exc
         if start > end or start.isoformat() != period["start"] or end.isoformat() != period["end"]:
             raise ValueError("freeze period has invalid date bounds")
+        if not contract["synthetic"]:
+            if name != "sealed" and end >= PROTECTED_START:
+                raise ValueError(f"historical {name} cannot label protected dates on or after {PROTECTED_START} as seen")
+            if name == "sealed" and start != PROTECTED_START:
+                raise ValueError(f"historical sealed period must start at the family protected boundary {PROTECTED_START}")
         intervals.append((start, end))
     intervals.sort()
     if any(left[1] >= right[0] for left, right in zip(intervals, intervals[1:])):
@@ -174,7 +180,7 @@ def archival_freeze(record: object) -> dict:
     return frozen
 
 
-def confirm_freeze(path: str | Path, *, expected_sha256: str, reason: str, journal_path: str | Path) -> dict:
+def confirm_freeze(path: str | Path, *, expected_sha256: str, reason: str) -> dict:
     """Confirm the displayed full identity and initialize its run journal.
 
     Repeating the same confirmation is idempotent. A changed draft requires
@@ -188,8 +194,13 @@ def confirm_freeze(path: str | Path, *, expected_sha256: str, reason: str, journ
     if freeze_sha256(record) != expected_sha256:
         raise ValueError("freeze identity changed: review it and supply its full current hash")
     if not record["identity"]["contract"]["synthetic"]:
+        from boring_alpha.research_family import canonical_journal_path
         from boring_alpha.research_state import RunJournal
-        RunJournal(journal_path).initialize()
+        journal = RunJournal(canonical_journal_path(record["identity"]["strategy_id"]))
+        if record["status"] == "confirmed":
+            journal.validate()
+        else:
+            journal.initialize()
     if record["status"] == "confirmed":
         return record
     record["status"] = "confirmed"

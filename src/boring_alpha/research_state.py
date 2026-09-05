@@ -20,22 +20,13 @@ import tempfile
 from types import MappingProxyType
 import uuid
 
+from boring_alpha.research_family import (
+    FAMILY_ID, PROTECTED_START, REGISTERED_FAMILIES, ResearchAccessError, resolve_family,
+)
 
-REGISTERED_FAMILIES = MappingProxyType({"BA-001": "BA-TREND", "BA-002": "BA-TREND"})
-PROTECTED_FROM = MappingProxyType({"BA-TREND": date(2022, 1, 1)})
+PROTECTED_FROM = MappingProxyType({FAMILY_ID: PROTECTED_START})
 _HASH_FIELDS = ("contract_sha256", "code_sha256", "policy_sha256", "calendar_sha256",
                 "input_manifest_sha256", "evaluator_sha256")
-
-
-class ResearchAccessError(ValueError):
-    """Refusal before parsing observations, or inability to record an attempt."""
-
-
-def resolve_family(candidate_id: str) -> str:
-    try:
-        return REGISTERED_FAMILIES[candidate_id]
-    except (KeyError, TypeError) as exc:
-        raise ResearchAccessError(f"unregistered research candidate {candidate_id!r}; resolve reviewed lineage before input access") from exc
 
 
 @dataclass(frozen=True)
@@ -165,6 +156,7 @@ class RunJournal:
             with self._locked():
                 return
         try:
+            self.path.parent.mkdir(parents=True, exist_ok=True)
             with self.path.open("xb") as handle:
                 handle.write(b'{"schema_version": 2, "events": []}\n')
                 handle.flush()
@@ -172,11 +164,16 @@ class RunJournal:
         except OSError as exc:
             raise ResearchAccessError(f"run journal cannot be initialized: {exc}") from exc
 
+    def validate(self) -> None:
+        """Require existing history; never recreate it from an old confirmation."""
+        with self._locked():
+            pass
+
     @contextmanager
     def _locked(self):
         try:
             if not self.path.is_file() or self.path.is_symlink():
-                raise ResearchAccessError("run journal must be an existing regular, non-symlink file; initialize it explicitly")
+                raise ResearchAccessError(f"run journal {self.path} must be an existing regular, non-symlink file; restore existing history or initialize a first draft explicitly")
             with self.path.with_name(self.path.name + ".lock").open("a+b") as lock:
                 fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
                 try:
@@ -235,14 +232,17 @@ class AccessAttempt:
                     and other["identity"].family_id == self.identity.family_id
                     and other["identity"].end >= PROTECTED_FROM[self.identity.family_id]
                     and other["identity"].start <= self.identity.end and self.identity.start <= other["identity"].end]
+        overlapping_ids = ", ".join(other["attempt_id"] for other in overlaps)
         if record["repair_of"] is not None or record["repair_reason"] is not None:
             original = previous.get(record["repair_of"])
             stable = lambda item: {key: val for key, val in item.as_dict().items() if key not in {"code_sha256", "evaluator_sha256"}}
             if not protected or original is None or not record["repair_reason"] or original not in overlaps or any(stable(other["identity"]) != stable(self.identity) for other in overlaps):
-                return "repair requires a prior accessed attempt, a reason, and identical candidate/contract/window/policy/calendar/inputs; only code/evaluator may change"
+                return ("repair requires a prior accessed attempt, a reason, and identical candidate/contract/window/policy/calendar/inputs; "
+                        f"only code/evaluator may change; overlapping attempt IDs: {overlapping_ids or 'none'}")
             self.repair_of, self.revealed_diagnostic = record["repair_of"], True
         elif protected and overlaps and not self.rerun:
-            return "this family's overlapping coverage is already revealed; use an identical frozen rerun or an explicit code/evaluator repair"
+            return ("this family's overlapping coverage is already revealed; use an identical frozen rerun or an explicit "
+                    f"code/evaluator repair; overlapping attempt IDs: {overlapping_ids}")
         elif protected and not overlaps and not record["reveal_reason"]:
             return "first holdout access requires a nonempty reveal reason"
         if self.rerun:

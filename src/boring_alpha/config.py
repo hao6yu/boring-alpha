@@ -125,7 +125,6 @@ class ResearchConfig:
 
     calendar_path: Path
     freeze_path: Path
-    journal_path: Path
 
 
 @dataclass(frozen=True, slots=True)
@@ -169,7 +168,7 @@ _SCHEMA: dict[str, frozenset[str]] = {
     "report": frozenset({"output_dir"}),
     "benchmark": frozenset({"exposure", "rebalance"}),
     "tax": _TAX_KEYS,
-    "research": frozenset({"calendar_path", "freeze_path", "journal_path"}),
+    "research": frozenset({"calendar_path", "freeze_path"}),
 }
 
 # Cluster names are chosen per strategy, so this table's keys are open.
@@ -399,7 +398,7 @@ def _load_research(raw: dict[str, object] | None, root: Path) -> ResearchConfig 
         return None
     return ResearchConfig(**{
         key: _resolve_path(_require(raw, "research", key), root, f"research.{key}")
-        for key in ("calendar_path", "freeze_path", "journal_path")
+        for key in ("calendar_path", "freeze_path")
     })
 
 

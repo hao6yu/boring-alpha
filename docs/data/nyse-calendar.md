@@ -96,10 +96,20 @@ holiday boundaries, published year tables, warmup coverage, and early closes.
 Never silently replace the artifact after a research freeze. A corrected date or
 new interval requires a reviewed new version and provenance record.
 
-## Deferred SPY date-only cross-check
+## Subsequent SPY date-only cross-check
 
-This remains **not performed**. Before a historical run, explicitly approve the
-date-only inspection and select the bounded snapshot/window. The tool below reads
+The [branch review committed as `6cce761`](../changes/2026-09-04-branch-review-after-tax-overlay.md)
+records a subsequent date-only check on 2026-09-04 over **2006-02-28 through
+2021-12-31**: 3,990 expected and observed SPY sessions, with no missing, extra
+or duplicate dates. This is the reviewer's recorded result, not a second
+market-file inspection performed during the fixing round. The review does not
+attach the checked snapshot's byte fingerprint, so it is not a complete new
+machine-verifiable data provenance record. No holdout dates were checked.
+
+The immutable v1 provenance's "deferred" statement remains true at its
+authoring time; this later report does not rewrite it. For a future check,
+explicitly select the bounded snapshot/window and retain its exact identity.
+The tool below reads
 only `date` and `symbol` fields for comparison, never interprets prices, never
 returns numeric market values, and does not modify the calendar. It cannot
 grant its own holdout permission. The CSV reader necessarily reads raw rows;

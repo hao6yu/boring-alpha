@@ -8,21 +8,34 @@ the next year.
 
 from __future__ import annotations
 
+from calendar import monthrange
 from dataclasses import dataclass, fields
 from datetime import date, timedelta
 
 from boring_alpha.config import TaxConfig
 
-LONG_TERM_DAYS = 365
 QUALIFIED_WINDOW = timedelta(days=60)
 QUALIFIED_MIN_DAYS = 60
 MARK_LONG_SHARE = 0.6
 
 
 def is_long_term(opened: date, sold: date) -> bool:
-    """"More than one year", approximated as more than 365 days."""
+    """More than one calendar year, excluding acquisition and including sale.
 
-    return (sold - opened).days > LONG_TERM_DAYS
+    Publication 550's holding period is not a fixed day count: the anniversary
+    itself is still short-term even when the intervening year has 366 days.
+    A February 29 acquisition's anniversary is February 28 in the next year.
+    ``opened`` may be the lot book's tacked holding-period origin; do not replace
+    it with the replacement lot's acquisition date.
+    """
+
+    if opened.year == date.max.year:
+        return False
+    anniversary = date(
+        opened.year + 1, opened.month,
+        min(opened.day, monthrange(opened.year + 1, opened.month)[1]),
+    )
+    return sold > anniversary
 
 
 def qualifies(opened: date, closed: date, ex_date: date) -> bool:

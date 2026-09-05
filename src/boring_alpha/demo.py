@@ -116,7 +116,6 @@ output_dir = "../experiments"
 [research]
 calendar_path = "../research/calendar.json"
 freeze_path = "../research/freeze.json"
-journal_path = "../research/NO_REAL_JOURNAL.json"
 ''' + policy_text
         paths[period] = root / f'configs/{period}.toml'
         write_once(paths[period], text)

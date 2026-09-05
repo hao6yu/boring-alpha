@@ -44,6 +44,18 @@ def test_original_embedded_config_matches_loader_hash_without_file_reads(archive
     assert validate_archived_config(manifest, contract) is None
 
 
+def test_old_journal_location_is_inert_archive_metadata(archive_records, monkeypatch):
+    manifest, contract = deepcopy(archive_records)
+    manifest["config_toml"] = manifest["config_toml"].replace(
+        "[research]", '[research]\njournal_path = "/must-not-read/old-journal.json"',
+    )
+    def forbidden(*args, **kwargs):
+        raise AssertionError("archive consulted a historical journal location")
+    monkeypatch.setattr(Path, "read_text", forbidden)
+    monkeypatch.setattr("boring_alpha.research_family.canonical_journal_path", forbidden)
+    assert validate_archived_config(manifest, contract) is None
+
+
 @pytest.mark.parametrize("before,after", [
     ('exposure = 0.60', 'exposure = 0.90'),
     ('cost_bps = 10', 'cost_bps = 0'),
@@ -130,7 +142,7 @@ def test_historical_config_normalization_uses_only_archived_semantics(archive_re
     manifest, contract = deepcopy(archive_records)
     contract["synthetic"] = False
     contract["data_methodology"] = "yahoo-adjusted-v2+dgs3mo-v1"
-    contract["periods"]["sealed"] = {"start": "2020-01-01", "end": "2021-12-31", "status": "unopened"}
+    contract["periods"]["sealed"] = {"start": "2022-01-01", "end": "2023-12-31", "status": "unopened"}
     before, data_tail = manifest["config_toml"].split("[data]\n", 1)
     _, after = data_tail.split("[backtest]\n", 1)
     manifest["config_toml"] = before + '''[data]

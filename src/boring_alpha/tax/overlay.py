@@ -27,6 +27,11 @@ from boring_alpha.tax.lots import (
     WashSaleLedger,
     adjustment_factor,
 )
+from boring_alpha.tax.loss_sensitivity import (
+    LossDeductionPolicy,
+    SENSITIVITY_VERSION,
+    evaluate_deduction_year,
+)
 from boring_alpha.tax.policy import (
     OVERLAY_VERSION,
     SCENARIOS,
@@ -52,6 +57,9 @@ KNOWN_OMISSIONS = (
     "ignored; rates are a fixed federal-only scenario (spec §4.9).",
     "Commodity-pool interest income is not separated from futures gains under the "
     "mark-to-market treatment (spec §4.5).",
+    "The ordinary-income capital-loss deduction is excluded from baseline and "
+    "gating results. It can be examined only in a separate, explicit household "
+    "tax sensitivity; available capacity and future carryover effects matter.",
 )
 # The identity compares real shares times unadjusted close against engine
 # units times adjusted close on every session. With a piecewise-constant
@@ -78,7 +86,10 @@ def apply_overlay(
     *,
     initial_cash: float,
     code_sha256: str,
+    loss_sensitivity: LossDeductionPolicy | None = None,
 ) -> dict:
+    if loss_sensitivity is not None and not isinstance(loss_sensitivity, LossDeductionPolicy):
+        raise ValueError("loss_sensitivity must be an explicit LossDeductionPolicy")
     curve = result.equity_curve
     if len(curve) < 2:
         raise ValueError("at least two equity observations are required")
@@ -251,16 +262,39 @@ def apply_overlay(
     by_year: list[dict] = []
     taxes_paid = 0.0
     tax_liquidation = 0.0
+    contributed_savings = outside_savings = 0.0
+    liquidation_savings_adjustment = 0.0
+    terminal_deduction = None
     for year in years:
         equity = year_end_equity[year]
         if equity <= 0.0:
             raise ValueError(f"equity at the {year} year end is not positive; the NAV convention needs it")
         amounts = amounts_for(year, include_liquidation=False).scaled(scale)
-        outcome = net_and_tax(amounts, short_carry, long_carry, tax)
+        deduction = (
+            evaluate_deduction_year(amounts, short_carry, long_carry, tax, loss_sensitivity)
+            if loss_sensitivity is not None else None
+        )
+        outcome = deduction.taxes if deduction is not None else net_and_tax(amounts, short_carry, long_carry, tax)
+        contribution = outside = 0.0
+        if deduction is not None:
+            if loss_sensitivity.savings_destination == "contribute_to_account":
+                contribution = deduction.ordinary_tax_savings
+            else:
+                outside = deduction.ordinary_tax_savings
         if year == years[-1]:
-            with_liquidation = net_and_tax(
-                amounts_for(year, include_liquidation=True).scaled(scale), short_carry, long_carry, tax
-            )
+            liquidation_amounts = amounts_for(year, include_liquidation=True).scaled(scale)
+            if loss_sensitivity is not None:
+                # These are alternative final tax returns from the same carry-in,
+                # not a second annual deduction after the no-liquidation return.
+                terminal_deduction = evaluate_deduction_year(
+                    liquidation_amounts, short_carry, long_carry, tax, loss_sensitivity
+                )
+                with_liquidation = terminal_deduction.taxes
+                liquidation_savings_adjustment = (
+                    terminal_deduction.ordinary_tax_savings - deduction.ordinary_tax_savings
+                )
+            else:
+                with_liquidation = net_and_tax(liquidation_amounts, short_carry, long_carry, tax)
             tax_liquidation = with_liquidation.tax - outcome.tax
         by_year.append(
             {
@@ -275,16 +309,36 @@ def apply_overlay(
                 "gains_tax": outcome.gains_tax,
                 "tax": outcome.tax,
                 "pre_tax_equity": equity,
-                "after_tax_equity": scale * equity - outcome.tax,
+                "after_tax_equity": scale * equity - outcome.tax + contribution,
+                **({
+                    **deduction.as_dict(),
+                    "tax_savings_contributed": contribution,
+                    "tax_savings_outside": outside,
+                } if deduction is not None else {}),
             }
         )
         taxes_paid += outcome.tax
+        contributed_savings += contribution
+        outside_savings += outside
         short_carry, long_carry = outcome.short_carry_out, outcome.long_carry_out
-        scale = scale - outcome.tax / equity
+        scale = scale - outcome.tax / equity + contribution / equity
+        if loss_sensitivity is not None and year != years[-1] and (not math.isfinite(scale) or scale <= 0.0):
+            raise ValueError("year-end tax exhausts the account under the NAV convention")
+        # A scale above one can also arise from the baseline's existing signed
+        # cash-income tax arithmetic. Contributions are identified by their
+        # explicit cash-flow field, not inferred from the level of NAV scale.
 
     pre_tax_terminal = curve[-1].equity
     pre_liquidation = by_year[-1]["after_tax_equity"]
     post_liquidation = pre_liquidation - tax_liquidation
+    contributed_post = contributed_savings
+    outside_post = outside_savings
+    if loss_sensitivity is not None:
+        if loss_sensitivity.savings_destination == "contribute_to_account":
+            post_liquidation += liquidation_savings_adjustment
+            contributed_post += liquidation_savings_adjustment
+        else:
+            outside_post += liquidation_savings_adjustment
 
     # ---- Identities ---------------------------------------------------------------
     adjusted_pnl = (
@@ -309,10 +363,14 @@ def apply_overlay(
     days = (last - first).days + 1
     pre_tax_cagr = _cagr(pre_tax_terminal, initial_cash, days)
     after_tax_cagr = _cagr(post_liquidation, initial_cash, days) if post_liquidation > 0.0 else None
+    if loss_sensitivity is not None and loss_sensitivity.savings_destination == "contribute_to_account":
+        # A terminal/initial ratio with external deposits is not a self-financing
+        # investment return. No money-weighted or household CAGR is claimed.
+        after_tax_cagr = None
     profit = pre_tax_terminal - initial_cash
     total_tax = taxes_paid + tax_liquidation
 
-    return {
+    output = {
         "scenario": scenario.as_dict(),
         "policy": {
             **policy_record(tax),
@@ -348,7 +406,12 @@ def apply_overlay(
             "tax_drag_bps": (
                 (pre_tax_cagr - after_tax_cagr) * 10_000.0 if after_tax_cagr is not None else None
             ),
-            "effective_tax_rate": total_tax / profit if profit > 0.0 else None,
+            "effective_tax_rate": (
+                total_tax / profit if profit > 0.0 and not (
+                    loss_sensitivity is not None
+                    and loss_sensitivity.savings_destination == "contribute_to_account"
+                ) else None
+            ),
         },
         "identity_checks": {
             "share_identity_max_relative_deviation": share_deviation,
@@ -362,6 +425,34 @@ def apply_overlay(
             "implied_price_check_passed": implied_ok,
         },
     }
+    if loss_sensitivity is not None:
+        output["loss_sensitivity"] = {
+            "version": SENSITIVITY_VERSION,
+            "non_gating": True,
+            "policy": loss_sensitivity.as_dict(tax),
+            "policy_sha256": loss_sensitivity.sha256(tax),
+            "initial_account_size": initial_cash,
+            "timing": "Savings are recognised at each evaluated calendar year's final observation; terminal liquidation replaces that year's deduction, it does not add another one.",
+            "contribution_convention": "Contributed savings increase the following year's NAV scale. This is a stylized proportional rescaling, not new real-share lots with fresh basis, funding costs or an exact deposit simulation. Contribution-mode CAGR, tax drag and effective tax rate are suppressed.",
+            "household_scope": "Alternative standalone accounts each use the declared remaining household capacity; their benefits must not be summed as simultaneous accounts. Outside savings are retained without interest or reinvestment. Income brackets and other household transactions are not calculated.",
+            "terminal_liquidation": {
+                **terminal_deduction.as_dict(),
+                "short_carry_out": terminal_deduction.taxes.short_carry_out,
+                "long_carry_out": terminal_deduction.taxes.long_carry_out,
+                "ordinary_tax_savings_adjustment": liquidation_savings_adjustment,
+            },
+        }
+        output["wealth"].update({
+            "outside_tax_savings_pre_liquidation": outside_savings,
+            "outside_tax_savings_post_liquidation": outside_post,
+            "contributed_tax_savings_pre_liquidation": contributed_savings,
+            "contributed_tax_savings_post_liquidation": contributed_post,
+            "household_terminal_wealth": post_liquidation + outside_post,
+        })
+        output["totals"]["known_omissions"] = [
+            item for item in KNOWN_OMISSIONS if not item.startswith("The ordinary-income capital-loss deduction")
+        ]
+    return output
 
 
 def run_scenarios(

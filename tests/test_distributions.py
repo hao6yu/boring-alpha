@@ -4,9 +4,11 @@ from datetime import date
 import json
 from pathlib import Path
 import tempfile
+import traceback
 import unittest
+from unittest.mock import patch
 
-from boring_alpha.data.distributions import DistributionTable, load_distributions, split_records
+from boring_alpha.data.distributions import DistributionTable, load_distributions, load_distributions_bytes, split_records
 from boring_alpha.data.market import MarketData
 from boring_alpha.domain import PriceBar
 
@@ -119,6 +121,73 @@ class SplitRecordTests(unittest.TestCase):
             load_distributions(csv_path)
         with self.assertRaisesRegex(ValueError, "exactly one"):
             load_distributions(csv_path, manifest_path=manifest_path, manifest_block=MANIFEST)
+
+
+class SafeDistributionDiagnosticsTests(unittest.TestCase):
+    def _error(self, raw: bytes, *, end: date | None = None) -> tuple[ValueError, str]:
+        try:
+            load_distributions_bytes(raw, manifest_block=MANIFEST, end=end)
+        except ValueError as error:
+            return error, "".join(traceback.format_exception(error))
+        self.fail("invalid input was accepted")
+
+    def test_malformed_date_fails_before_any_numeric_parse_without_revealing_values(self) -> None:
+        raw = b"date,symbol,close,dividend\nSEALED-DATE,SEALED-SYMBOL,987654.321,123456.789\n"
+        with patch("boring_alpha.data.distributions._csv_number") as numbers:
+            error, rendered = self._error(raw, end=date(2023, 12, 31))
+        numbers.assert_not_called()
+        self.assertEqual(str(error), "invalid distribution row 2: field 'date'")
+        for protected in ("SEALED-DATE", "SEALED-SYMBOL", "987654.321", "123456.789"):
+            self.assertNotIn(protected, rendered)
+        self.assertTrue(error.__suppress_context__)
+        self.assertIsNone(error.__cause__)
+        self.assertNotIn("During handling", rendered)
+
+    def test_numeric_conversion_diagnostics_omit_original_exception(self) -> None:
+        for field, raw in (
+            ("close", b"date,symbol,close,dividend\n2024-01-02,A,PRIVATE-NUMBER,0\n"),
+            ("dividend", b"date,symbol,close,dividend\n2024-01-02,A,100,PRIVATE-NUMBER\n"),
+        ):
+            with self.subTest(field=field):
+                error, rendered = self._error(raw)
+                self.assertEqual(str(error), f"invalid distribution row 2: field '{field}'")
+                self.assertNotIn("PRIVATE-NUMBER", rendered)
+                self.assertNotIn("could not convert string to float", rendered)
+                self.assertTrue(error.__suppress_context__)
+
+    def test_corrupt_header_does_not_quote_possible_observations(self) -> None:
+        error, rendered = self._error(b"SEALED-HEADER,987654.321\n")
+        self.assertIn("distribution CSV columns", str(error))
+        self.assertNotIn("SEALED-HEADER", rendered)
+        self.assertNotIn("987654.321", rendered)
+
+    def test_duplicate_header_is_refused(self) -> None:
+        raw = CSV.replace("date,symbol,close,dividend", "date,symbol,close,dividend,dividend").encode()
+        error, _ = self._error(raw)
+        self.assertIn("distribution CSV columns", str(error))
+
+    def test_missing_symbol_and_extra_fields_fail_without_echoing(self) -> None:
+        for field, raw in (
+            ("symbol", b"date,symbol,close,dividend\n2024-01-02\n"),
+            ("dividend", b"date,symbol,close,dividend\n2024-01-02,A,100\n"),
+            ("columns", b"date,symbol,close,dividend\n2024-01-02,A,100,0,SEALED-EXTRA\n"),
+        ):
+            with self.subTest(field=field):
+                error, rendered = self._error(raw)
+                self.assertEqual(str(error), f"invalid distribution row 2: field '{field}'")
+                self.assertNotIn("SEALED-EXTRA", rendered)
+
+    def test_future_rows_skip_shape_and_numeric_validation(self) -> None:
+        raw = CSV.encode() + b"2024-01-05,,PRIVATE-NUMBER,PRIVATE-NUMBER,SEALED-EXTRA\n"
+        bounded = load_distributions_bytes(raw, manifest_block=MANIFEST, end=date(2024, 1, 4))
+        expected = load_distributions_bytes(CSV.encode(), manifest_block=MANIFEST)
+        self.assertEqual(bounded.fingerprint(), expected.fingerprint())
+
+    def test_invalid_encoding_has_no_chained_byte_diagnostic(self) -> None:
+        error, rendered = self._error(CSV.encode() + b"\xffPRIVATE-BYTES")
+        self.assertEqual(str(error), "invalid distribution CSV: field 'encoding' (UTF-8 required)")
+        self.assertNotIn("PRIVATE-BYTES", rendered)
+        self.assertNotIn("0xff", rendered)
 
 
 class TruncationAndCoverageTests(unittest.TestCase):

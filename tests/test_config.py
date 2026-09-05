@@ -162,21 +162,21 @@ class EnsembleConfigTests(unittest.TestCase):
 [research]
 calendar_path = "research/calendar.json"
 freeze_path = "research/freeze.json"
-journal_path = "research/journal.json"
 """
         config, path = _load(text)
-        for name in ("calendar", "freeze", "journal"):
+        for name in ("calendar", "freeze"):
             self.assertEqual(getattr(config.research, name + "_path"), (path.parent / "research" / (name + ".json")).resolve())
-        missing = text.replace('journal_path = "research/journal.json"', "")
-        with self.assertRaisesRegex(ValueError, "research.journal_path.*required"):
+        missing = text.replace('freeze_path = "research/freeze.json"', "")
+        with self.assertRaisesRegex(ValueError, "research.freeze_path.*required"):
             _load(missing)
+        with self.assertRaisesRegex(ValueError, "journal_path"):
+            _load(text + 'journal_path = "a-fresh-history.json"\n')
 
     def test_research_locations_do_not_impersonate_semantic_identity(self):
         text = ENSEMBLE + """
 [research]
 calendar_path = "two.json"
 freeze_path = "three.json"
-journal_path = "four.json"
 """
         original, _ = _load(ENSEMBLE)
         located, _ = _load(text)

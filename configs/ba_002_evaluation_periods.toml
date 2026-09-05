@@ -1,0 +1,17 @@
+# BA-002's exact charter windows, separate from BA-001's immutable registry.
+# Only the two already-seen research windows are authorized for evaluation now.
+# The sealed bounds are frozen design metadata, NOT permission to reveal them;
+# any holdout execution still requires a separate explicit authorization.
+# Fixed calendar endpoints are intentional: do not use a rolling dataset end.
+
+[BA-002.development]
+start = 2007-06-01
+end = 2017-12-31
+
+[BA-002.validation]
+start = 2018-01-01
+end = 2021-12-31
+
+[BA-002.sealed]
+start = 2022-01-01
+end = 2026-08-31

@@ -14,9 +14,10 @@ import math
 from pathlib import Path
 from typing import Mapping
 
+from boring_alpha.research_family import FAMILY_ID, PROTECTED_START
+
 
 CONTRACT_VERSION = "BA-002-research-contract-v1"
-FAMILY_ID = "BA-TREND"
 ROWS = ("base", "double_cost", "without_9", "without_12", "without_15")
 SYMBOLS = ("SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC")
 HORIZONS = {
@@ -234,6 +235,11 @@ def validate_contract(contract: Mapping[str, object]) -> dict:
             raise ValueError(f"contract period {name} requires fixed ISO dates") from exc
         if start > end or previous_end is not None and start <= previous_end:
             raise ValueError("contract periods must be ordered, disjoint complete intervals")
+        if not contract['synthetic']:
+            if name != 'sealed' and end >= PROTECTED_START:
+                raise ValueError(f'historical {name} cannot label protected dates on or after {PROTECTED_START} as seen')
+            if name == 'sealed' and start != PROTECTED_START:
+                raise ValueError(f'historical sealed period must start at the family protected boundary {PROTECTED_START}')
         previous_end = end
     # JSON round-trip both rejects non-finite metadata and detaches mutable input.
     return json.loads(canonical_json(dict(contract)))

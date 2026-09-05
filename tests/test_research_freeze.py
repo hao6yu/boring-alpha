@@ -16,6 +16,12 @@ from test_criteria_ba002 import evidence_inputs
 from test_research_contract import historical_contract
 
 
+@pytest.fixture(autouse=True)
+def temporary_canonical_journal(tmp_path):
+    with patch("boring_alpha.research_family.canonical_journal_path", return_value=tmp_path / "journal.json"):
+        yield
+
+
 def draft(*, historical=False, strategy_id="BA-002"):
     config = SimpleNamespace(strategy=SimpleNamespace(strategy_id=strategy_id),
                              strategy_spec_sha256="1" * 64)
@@ -28,7 +34,7 @@ def draft(*, historical=False, strategy_id="BA-002"):
             "synthetic": not historical,
             "tax_policy_sha256": "5" * 64, "calendar_sha256": "6" * 64,
             "calendar_authority_sha256": "7" * 64,
-            "periods": {"sealed": {"start": "2030-01-01", "end": "2030-12-31", "status": "unopened"}},
+            "periods": {"sealed": {"start": "2022-01-01" if historical else "2030-01-01", "end": "2030-12-31", "status": "unopened"}},
         }
     return build_freeze(config, contract, input_manifest_sha256="2" * 64,
                         charter_text="# Fictional research\nNo market observations.\n",
@@ -114,9 +120,9 @@ def test_synthetic_confirmation_does_not_touch_a_real_journal(tmp_path):
     record = draft()
     path = write_record(tmp_path, record)
     journal = tmp_path / "must-not-exist.json"
-    with patch("boring_alpha.research_state.RunJournal", side_effect=AssertionError("journal instantiated")):
+    with patch("boring_alpha.research_family.canonical_journal_path", side_effect=AssertionError("journal located")), patch("boring_alpha.research_state.RunJournal", side_effect=AssertionError("journal instantiated")):
         confirmed = confirm_freeze(path, expected_sha256=freeze_sha256(record),
-                                   reason="  Review the fictional demo  ", journal_path=journal)
+                                   reason="  Review the fictional demo  ")
     assert confirmed["confirmation"]["reason"] == "Review the fictional demo"
     assert load_freeze(path, require_confirmed=True) == confirmed
     assert freeze_sha256(confirmed) == freeze_sha256(record)
@@ -128,15 +134,28 @@ def test_historical_confirmation_initializes_one_journal_and_is_idempotent(tmp_p
     path = write_record(tmp_path, record)
     journal = tmp_path / "journal.json"
     confirmed = confirm_freeze(path, expected_sha256=freeze_sha256(record),
-                               reason="Fictional workflow test only", journal_path=journal)
+                               reason="Fictional workflow test only")
     assert journal.is_file()
     assert json.loads(journal.read_text())["schema_version"] == 2
     journal_before = journal.read_bytes()
     freeze_before = path.read_bytes()
     assert confirm_freeze(path, expected_sha256=freeze_sha256(record),
-                          reason="A retry must not rewrite confirmation", journal_path=journal) == confirmed
+                          reason="A retry must not rewrite confirmation") == confirmed
     assert journal.read_bytes() == journal_before
     assert path.read_bytes() == freeze_before
+
+
+def test_reconfirming_cannot_recreate_deleted_family_history(tmp_path):
+    record = draft(historical=True)
+    path = write_record(tmp_path, record)
+    confirm_freeze(path, expected_sha256=freeze_sha256(record), reason="Fictional first review")
+    before = path.read_bytes()
+    journal = tmp_path / "journal.json"
+    journal.unlink()  # Temporary empty fixture only; never a real family history.
+    with pytest.raises(ValueError, match="existing regular"):
+        confirm_freeze(path, expected_sha256=freeze_sha256(record), reason="Retry cannot reset history")
+    assert path.read_bytes() == before
+    assert not journal.exists()
 
 
 @pytest.mark.parametrize("expected", ["2" * 64, "1" * 12, "A" * 64, "", None])
@@ -145,7 +164,7 @@ def test_wrong_or_partial_hash_cannot_confirm_or_initialize_journal(tmp_path, ex
     path = write_record(tmp_path, record)
     journal = tmp_path / "journal.json"
     with pytest.raises(ValueError):
-        confirm_freeze(path, expected_sha256=expected, reason="Review", journal_path=journal)
+        confirm_freeze(path, expected_sha256=expected, reason="Review")
     assert load_freeze(path)["status"] == "draft"
     assert not journal.exists()
 
@@ -156,7 +175,7 @@ def test_confirmation_requires_a_real_reason(tmp_path, reason):
     path = write_record(tmp_path, record)
     journal = tmp_path / "journal.json"
     with pytest.raises(ValueError, match="reason"):
-        confirm_freeze(path, expected_sha256=freeze_sha256(record), reason=reason, journal_path=journal)
+        confirm_freeze(path, expected_sha256=freeze_sha256(record), reason=reason)
     assert not journal.exists()
 
 
@@ -165,7 +184,7 @@ def test_journal_failure_leaves_freeze_as_draft(tmp_path):
     path = write_record(tmp_path, record)
     with patch("boring_alpha.research_state.RunJournal.initialize", side_effect=ValueError("corrupt journal")):
         with pytest.raises(ValueError, match="corrupt journal"):
-            confirm_freeze(path, expected_sha256=freeze_sha256(record), reason="Review", journal_path=tmp_path / "journal.json")
+            confirm_freeze(path, expected_sha256=freeze_sha256(record), reason="Review")
     assert load_freeze(path) == record
 
 
@@ -174,7 +193,7 @@ def test_failed_atomic_publication_preserves_draft_and_removes_temporary_file(tm
     path = write_record(tmp_path, record)
     with patch("boring_alpha.research_freeze.os.replace", side_effect=OSError("disk error")):
         with pytest.raises(OSError, match="disk error"):
-            confirm_freeze(path, expected_sha256=freeze_sha256(record), reason="Review", journal_path=tmp_path / "journal.json")
+            confirm_freeze(path, expected_sha256=freeze_sha256(record), reason="Review")
     assert load_freeze(path) == record
     assert list(tmp_path.iterdir()) == [path]
 
@@ -225,3 +244,16 @@ def test_duplicate_json_fields_are_refused(tmp_path):
     path.write_text('{"schema_version": 1, "schema_version": 2}')
     with pytest.raises(ValueError, match="duplicate"):
         load_freeze(path)
+
+
+@pytest.mark.parametrize("period,start,end,status", [
+    ("development", "2022-01-01", "2022-01-31", "seen"),
+    ("validation", "2021-01-01", "2022-01-01", "seen"),
+    ("exploratory", "2030-01-01", "2030-12-31", "seen"),
+    ("sealed", "2023-01-01", "2030-12-31", "unopened"),
+])
+def test_historical_legacy_contract_cannot_relabel_or_skip_family_holdout(tmp_path, period, start, end, status):
+    record = draft(historical=True, strategy_id="BA-001")
+    record["identity"]["contract"]["periods"] = {period: {"start": start, "end": end, "status": status}}
+    with pytest.raises(ValueError, match="protected"):
+        load_freeze(write_record(tmp_path, record))

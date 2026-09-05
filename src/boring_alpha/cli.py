@@ -286,7 +286,8 @@ def run_classify(development_dir: Path, validation_dir: Path, freeze_path: Path 
     return 0
 
 
-def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | None = None) -> int:
+def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | None = None,
+                 *, loss_sensitivity_path: Path | None = None) -> int:
     """Score an existing sweep after tax under a policy file (spec §7).
 
     Runs are rebuilt from the archived equity curves and trade ledgers and the
@@ -297,6 +298,10 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
     and identical inputs are idempotent.
     """
 
+    sensitivity = None
+    if loss_sensitivity_path is not None:
+        from boring_alpha.tax.loss_sensitivity import load_loss_deduction_policy
+        sensitivity = load_loss_deduction_policy(loss_sensitivity_path)
     manifest = read_manifest(sweep_dir)
     archived_files_status = verify_archive_artifacts(sweep_dir, manifest)
     files = run_files(sweep_dir, manifest)
@@ -363,6 +368,7 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
 
     code_hash = code_fingerprint()
     runs: dict[str, dict] = {}
+    sensitivity_runs: dict[str, dict] = {}
     for name, equity_path, trades_path in files:
         result = reconstruct_result(name, equity_path, trades_path, initial_cash)
         require_run_window(result, data, manifest)
@@ -370,25 +376,38 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
         runs[name] = run_scenarios(
             result, data, table, policy, initial_cash=initial_cash, code_sha256=code_hash
         )
+        if sensitivity is not None:
+            from boring_alpha.tax.overlay import apply_overlay
+            from boring_alpha.tax.policy import SCENARIOS
+            sensitivity_runs[name] = {
+                scenario.key: apply_overlay(result, data, table, policy, scenario,
+                    initial_cash=initial_cash, code_sha256=code_hash, loss_sensitivity=sensitivity)
+                for scenario in SCENARIOS
+            }
 
     policy_hash = policy_sha256(policy)
     output = sweep_dir / f"tax-{policy_hash[:12]}-{table.sha256[:12]}-{code_hash[:12]}.json"
+    payload = {
+        "artifact_schema": manifest["artifact_schema"] if manifest["strategy_id"] == "BA-002" else ARTIFACT_SCHEMA,
+        "sweep_id": manifest["sweep_id"], "strategy_id": manifest["strategy_id"],
+        "code_sha256": code_hash, "source": "aftertax", "tax_policy_sha256": policy_hash,
+        "distributions_sha256": table.sha256, "distributions_manifest": block,
+        "overlay_version": OVERLAY_VERSION, "runs": runs,
+    }
+    if sensitivity is not None:
+        sensitivity_hash = sensitivity.sha256(policy)
+        output = sweep_dir / f"tax-loss-sensitivity-{policy_hash[:12]}-{sensitivity_hash[:12]}-{table.sha256[:12]}-{code_hash[:12]}.json"
+        payload.update({
+            'source': 'aftertax-loss-sensitivity', 'non_gating': True,
+            'loss_sensitivity': sensitivity.as_dict(policy),
+            'loss_sensitivity_sha256': sensitivity_hash, 'initial_account_size': initial_cash,
+            'baseline_runs': payload.pop('runs'), 'sensitivity_runs': sensitivity_runs,
+            'warning': 'Household-tax sensitivity, not independent trading performance or BA-002 eligibility. '
+                       'Each account/scenario is a separate counterfactual; do not add their deduction capacities.',
+        })
     write_once(
         output,
-        json_text(
-            {
-                "artifact_schema": manifest["artifact_schema"] if manifest["strategy_id"] == "BA-002" else ARTIFACT_SCHEMA,
-                "sweep_id": manifest["sweep_id"],
-                "strategy_id": manifest["strategy_id"],
-                "code_sha256": code_hash,
-                "source": "aftertax",
-                "tax_policy_sha256": policy_hash,
-                "distributions_sha256": table.sha256,
-                "distributions_manifest": block,
-                "overlay_version": OVERLAY_VERSION,
-                "runs": runs,
-            }
-        ),
+        json_text(payload),
     )
     provenance.update({
         "artifact": output.name,
@@ -398,6 +417,23 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
     })
     with (sweep_dir / "distributions_provenance.jsonl").open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(provenance, sort_keys=True) + "\n")
+
+    if sensitivity is not None:
+        print('CAPITAL-LOSS SENSITIVITY — NON-GATING HOUSEHOLD-WEALTH DIAGNOSTIC')
+        print(f'Initial account: ${initial_cash:,.2f}; savings destination: {sensitivity.savings_destination}')
+        print('Figures include declared tax benefits, not self-financing strategy returns; do not sum alternative accounts.')
+        print(f"{'Run':<28}{'Household terminal min ($)':>29}{'Max ($)':>18}")
+        for name, scenarios in sensitivity_runs.items():
+            wealth = [item['wealth']['household_terminal_wealth'] for item in scenarios.values()]
+            print(f'{name:<28}{min(wealth):>29,.2f}{max(wealth):>18,.2f}')
+            for key, item in scenarios.items():
+                failed = [field for field in ('share_identity_passed', 'income_plus_gain_passed', 'implied_price_check_passed')
+                          if item['identity_checks'][field] is not True]
+                if failed:
+                    print(f"  identity checks failed for {name} / {key}: {', '.join(failed)}")
+        print('Baseline and sensitivity results are separate; frozen tax.json and criteria are unchanged.')
+        print(f'Written: {output}')
+        return 0
 
     print(f"BoringAlpha aftertax {manifest['sweep_id']} ({manifest['strategy_id']}), policy {policy_hash[:12]}")
     if manifest["strategy_id"] == "BA-002":
@@ -481,6 +517,8 @@ def build_parser() -> argparse.ArgumentParser:
         help="distributions_daily.csv of a v2 snapshot (manifest.json beside it); "
         "omit to use the sweep's own archived distributions",
     )
+    aftertax.add_argument('--loss-sensitivity', type=Path, default=None,
+        help='explicit household capital-loss deduction assumptions (TOML/JSON); separate non-gating diagnostic, off by default')
     for command in (backtest, sweep):
         command.add_argument('--reveal', metavar='REASON', help='explicitly acknowledge first family holdout access')
         command.add_argument('--repair-of', metavar='ATTEMPT_ID', help='replay a revealed attempt after a documented code-only repair')
@@ -511,7 +549,8 @@ def main() -> None:
         if args.command == "classify":
             raise SystemExit(run_classify(args.development, args.validation, args.freeze))
         if args.command == "aftertax":
-            raise SystemExit(run_aftertax(args.sweep, args.policy, args.distributions))
+            raise SystemExit(run_aftertax(args.sweep, args.policy, args.distributions,
+                                         loss_sensitivity_path=args.loss_sensitivity))
         if args.command == 'research':
             from boring_alpha.research_commands import prepare_research_freeze, show_research_freeze, confirm_research_freeze
             if args.research_action == 'prepare':

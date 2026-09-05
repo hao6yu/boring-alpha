@@ -19,7 +19,7 @@ def historical_contract():
     contract = evidence_inputs()["contract"]
     contract["synthetic"] = False
     contract["data_methodology"] = "yahoo-adjusted-v2+dgs3mo-v1"
-    contract["periods"]["sealed"] = {"start": "2014-01-01", "end": "2015-12-31", "status": "unopened"}
+    contract["periods"]["sealed"] = {"start": "2022-01-01", "end": "2026-08-31", "status": "unopened"}
     contract["tax_policy"] = {
         "ordinary_rate": 0.35, "long_term_rate": 0.2, "collectibles_rate": 0.28,
         "qualified_fraction_low": 0.5,

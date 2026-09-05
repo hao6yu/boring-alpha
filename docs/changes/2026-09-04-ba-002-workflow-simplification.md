@@ -109,3 +109,14 @@ snapshot; archive readers independently replay the preserved bounded inputs.
 Fresh CLI processes are required when changing code, and POSIX locking is
 still the supported platform. This follow-up does not change tax-model or
 small-account execution limitations. Changes remain uncommitted for review.
+
+## Postscript — 2026-09-04
+
+This work was subsequently committed as `fd729f4`. The branch review at
+`6cce761` records a later seen-only SPY date check with 3,990 matching sessions
+over 2006-02-28..2021-12-31. No holdout market data was compared. The v1
+calendar provenance remains unchanged as an authoring-time record.
+
+The [review-fix record](2026-09-04-ba-002-review-fixes.md) supersedes this
+checkpoint's freely configured journal path and describes the optional
+capital-loss sensitivity. The economic BA-002 gates remain unchanged.

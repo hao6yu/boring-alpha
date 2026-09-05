@@ -1,0 +1,13 @@
+# Non-gating household-tax sensitivity. No benefit is assumed by this example.
+# Copy to an untracked local file; choose capacity/income rather than assuming
+# every trading account receives another $3,000 allowance.
+[loss_sensitivity]
+annual_capacity = 0.0
+outside_ordinary_income = 0.0
+savings_destination = "outside_account"
+# Capacity must be in [0, 3000]; married-filing-separately capacity is at most
+# 1500. Supply capacity remaining after other household uses. The declared
+# income/capacity apply each year; this is not a full income-tax return model.
+# Optional ordinary_rate overrides the selected tax policy's ordinary rate.
+# Contribution alternative: savings_destination = "contribute_to_account"
+# That is a stylized deposit/NAV sensitivity, not a self-financing CAGR.

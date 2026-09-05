@@ -18,8 +18,7 @@ from typing import Mapping
 from boring_alpha.config import AppConfig
 from boring_alpha.data.calendar import SessionCalendar
 from boring_alpha.research_contract import canonical_sha256, contract_sha256, evaluator_fingerprint
-
-PROTECTED_START = date(2022, 1, 1)
+from boring_alpha.research_family import PROTECTED_START
 
 
 def capture_execution_identity() -> tuple[str, str]:
@@ -237,6 +236,7 @@ def prepare_run(config, unseal_reason=None, *, reveal_reason=None, repair_of=Non
     from boring_alpha.evaluation import check_evaluation_gates
     from boring_alpha.profiles import profile_for
     from boring_alpha.research_state import FrozenAccessIdentity, RunJournal
+    from boring_alpha.research_family import canonical_journal_path
     from boring_alpha.tax.policy import policy_sha256
 
     baseline = capture_execution_identity()
@@ -252,6 +252,7 @@ def prepare_run(config, unseal_reason=None, *, reveal_reason=None, repair_of=Non
         if reveal_reason or repair_of or repair_reason:
             raise ValueError("reveal/repair applies only to a managed historical run")
         return context
+    journal_path = canonical_journal_path(config.strategy.strategy_id)
     inputs = capture_inputs(config)
     frozen = selected.freeze["identity"]
     expected_evaluator = baseline[1] if config.strategy.strategy_id == "BA-002" else baseline[0]
@@ -273,7 +274,7 @@ def prepare_run(config, unseal_reason=None, *, reveal_reason=None, repair_of=Non
         calendar_sha256=selected.calendar.sha256, input_manifest_sha256=inputs.sha256,
         synthetic=False,
     )
-    context.attempt = RunJournal(config.research.journal_path).begin(
+    context.attempt = RunJournal(journal_path).begin(
         identity, reveal_reason=reveal_reason or unseal_reason, repair_of=repair_of, repair_reason=repair_reason,
     )
     return context
@@ -287,6 +288,7 @@ def open_run(config, unseal_reason=None, **options):
     try:
         context.verify()
         if context.attempt is not None:
+            print(f"Research journal: {context.attempt.journal.path}\nAttempt ID: {context.attempt.attempt_id}", flush=True)
             context.attempt.start_access()
         context.verify()
         data = load_market_data(config, context=context)

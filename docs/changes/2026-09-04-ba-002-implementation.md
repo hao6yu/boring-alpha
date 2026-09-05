@@ -160,3 +160,12 @@ The current implementation uses POSIX file locking and is tested on macOS;
 Windows locking support is not included.
 
 Changes are left uncommitted for review. Unrelated PNG assets are untouched.
+
+## Postscript — 2026-09-04
+
+The implementation and workflow follow-up above were committed as `fd729f4`.
+The branch review was committed separately as `6cce761`. Its later SPY date-only
+check reported 3,990 matching sessions over 2006-02-28..2021-12-31, without a
+holdout market-data check. The original statements above describe their earlier
+checkpoints. Current correction status is in the
+[review-fix record](2026-09-04-ba-002-review-fixes.md).
