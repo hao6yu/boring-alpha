@@ -111,6 +111,78 @@ rebalance = "annual"
 BA001_SPEC_HASH = "595a25e57ed68d4e863eeb69b40248345840b809b0f213609ddd14b4cd952110"
 
 
+ENSEMBLE = VALID.replace("lookback_months = 12", "lookback_months = 15\nhorizons = [9, 12, 15]")
+
+
+class EnsembleConfigTests(unittest.TestCase):
+    def test_defaults_are_absent_for_legacy_strategy(self):
+        config, _ = _load(VALID)
+        self.assertIsNone(config.strategy.horizons)
+        self.assertIsNone(config.strategy.warmup_months)
+        self.assertIsNone(config.research)
+
+    def test_ensemble_defaults_common_warmup_to_fifteen(self):
+        config, _ = _load(ENSEMBLE)
+        self.assertEqual(config.strategy.horizons, (9, 12, 15))
+        self.assertEqual(config.strategy.warmup_months, 15)
+
+    def test_pair_keeps_common_warmup_and_rejects_inconsistent_lookback(self):
+        config, _ = _load(ENSEMBLE.replace("[9, 12, 15]", "[9, 12]"))
+        self.assertEqual(config.strategy.warmup_months, 15)
+        with self.assertRaisesRegex(ValueError, "lookback_months.*warmup_months"):
+            _load(ENSEMBLE.replace("lookback_months = 15", "lookback_months = 12"))
+
+    def test_horizons_are_strict_positive_unique_integers(self):
+        for bad in ("[]", "[9, 9]", "[0, 12]", "[-1, 12]", "[9.0, 12]", "[true, 12]", '["9", 12]', '"9,12"'):
+            with self.subTest(bad=bad), self.assertRaisesRegex(ValueError, "horizons"):
+                _load(ENSEMBLE.replace("[9, 12, 15]", bad))
+
+    def test_warmup_is_strict_and_at_least_maximum_horizon(self):
+        for bad in ("true", "15.0", "0", "12"):
+            with self.subTest(bad=bad), self.assertRaisesRegex(ValueError, "warmup_months"):
+                _load(ENSEMBLE.replace("horizons =", f"warmup_months = {bad}\nhorizons ="))
+        with self.assertRaisesRegex(ValueError, "warmup_months.*horizons"):
+            _load(VALID.replace("lookback_months = 12", "lookback_months = 15\nwarmup_months = 15"))
+
+    def test_longer_explicit_warmup_is_allowed_and_changes_spec(self):
+        original, _ = _load(ENSEMBLE)
+        longer, _ = _load(ENSEMBLE.replace("lookback_months = 15", "lookback_months = 18\nwarmup_months = 18"))
+        self.assertEqual(longer.strategy.warmup_months, 18)
+        self.assertNotEqual(original.strategy_spec_sha256, longer.strategy_spec_sha256)
+
+    def test_active_horizons_change_spec_but_order_does_not(self):
+        full, _ = _load(ENSEMBLE)
+        pair, _ = _load(ENSEMBLE.replace("[9, 12, 15]", "[9, 12]"))
+        reordered, _ = _load(ENSEMBLE.replace("[9, 12, 15]", "[15, 9, 12]"))
+        self.assertNotEqual(full.strategy_spec_sha256, pair.strategy_spec_sha256)
+        self.assertEqual(full.strategy_spec_sha256, reordered.strategy_spec_sha256)
+
+    def test_research_paths_resolve_without_loading_external_files(self):
+        text = ENSEMBLE + """
+[research]
+calendar_path = "research/calendar.json"
+freeze_path = "research/freeze.json"
+journal_path = "research/journal.json"
+"""
+        config, path = _load(text)
+        for name in ("calendar", "freeze", "journal"):
+            self.assertEqual(getattr(config.research, name + "_path"), (path.parent / "research" / (name + ".json")).resolve())
+        missing = text.replace('journal_path = "research/journal.json"', "")
+        with self.assertRaisesRegex(ValueError, "research.journal_path.*required"):
+            _load(missing)
+
+    def test_research_locations_do_not_impersonate_semantic_identity(self):
+        text = ENSEMBLE + """
+[research]
+calendar_path = "two.json"
+freeze_path = "three.json"
+journal_path = "four.json"
+"""
+        original, _ = _load(ENSEMBLE)
+        located, _ = _load(text)
+        self.assertEqual(original.strategy_spec_sha256, located.strategy_spec_sha256)
+
+
 class BenchmarkConfigTests(unittest.TestCase):
     def test_an_absent_table_means_no_override(self) -> None:
         config, _ = _load(VALID)

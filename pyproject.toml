@@ -12,6 +12,9 @@ license = { text = "MIT" }
 authors = [{ name = "BoringAlpha contributors" }]
 dependencies = []
 
+[project.optional-dependencies]
+dev = ["pytest>=9.1,<10"]
+
 [project.scripts]
 boring-alpha = "boring_alpha.cli:main"
 

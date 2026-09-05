@@ -10,7 +10,7 @@ import math
 from pathlib import Path
 import tomllib
 
-from boring_alpha.domain import GAINS_CLASSES, REBALANCE_SCHEDULES
+from boring_alpha.domain import GAINS_CLASSES, REBALANCE_SCHEDULES, validate_horizon_inputs
 
 
 @dataclass(frozen=True, slots=True)
@@ -20,6 +20,8 @@ class StrategyConfig:
     symbols: tuple[str, ...]
     lookback_months: int
     sleeve_weight: float
+    horizons: tuple[int, ...] | None = None
+    warmup_months: int | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -114,6 +116,19 @@ class ReportConfig:
 
 
 @dataclass(frozen=True, slots=True)
+class ResearchConfig:
+    """Locations, not approvals: loading config does not read these artifacts.
+
+    Their independently verified semantic content is consumed by research
+    preflight; a path or mere file presence can never authorize execution.
+    """
+
+    calendar_path: Path
+    freeze_path: Path
+    journal_path: Path
+
+
+@dataclass(frozen=True, slots=True)
 class AppConfig:
     strategy: StrategyConfig
     portfolio: PortfolioConfig
@@ -129,10 +144,11 @@ class AppConfig:
     strategy_spec_sha256: str
     path: Path
     raw_bytes: bytes
+    research: ResearchConfig | None = None
 
 
 _SCHEMA: dict[str, frozenset[str]] = {
-    "strategy": frozenset({"id", "name", "symbols", "lookback_months", "sleeve_weight"}),
+    "strategy": frozenset({"id", "name", "symbols", "lookback_months", "sleeve_weight", "horizons", "warmup_months"}),
     "portfolio": frozenset({"initial_cash"}),
     "execution": frozenset({"cost_bps"}),
     "data": frozenset(
@@ -153,6 +169,7 @@ _SCHEMA: dict[str, frozenset[str]] = {
     "report": frozenset({"output_dir"}),
     "benchmark": frozenset({"exposure", "rebalance"}),
     "tax": _TAX_KEYS,
+    "research": frozenset({"calendar_path", "freeze_path", "journal_path"}),
 }
 
 # Cluster names are chosen per strategy, so this table's keys are open.
@@ -229,6 +246,9 @@ def _strategy_spec_hash(
     }
     if benchmark is not None:
         spec["benchmark"] = {"exposure": benchmark.exposure, "rebalance": benchmark.rebalance}
+    if strategy.horizons is not None:
+        spec["horizons"] = list(strategy.horizons)
+        spec["warmup_months"] = strategy.warmup_months
     canonical = json.dumps(spec, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
@@ -268,12 +288,27 @@ def load_config(path: str | Path) -> AppConfig:
     symbols_raw = _require(strategy_raw, "strategy", "symbols")
     if not isinstance(symbols_raw, list):
         raise ValueError("strategy.symbols must be a list of symbols")
+    horizons = None
+    warmup_months = None
+    lookback_raw = _require(strategy_raw, "strategy", "lookback_months")
+    if "horizons" in strategy_raw:
+        horizons_raw = strategy_raw["horizons"]
+        if not isinstance(horizons_raw, list):
+            raise ValueError("strategy.horizons must be a list of positive integers")
+        warmup_months = strategy_raw.get("warmup_months", 15)
+        horizons = validate_horizon_inputs(horizons_raw, warmup_months)
+        if type(lookback_raw) is not int or lookback_raw != warmup_months:
+            raise ValueError("strategy.lookback_months must equal the integer strategy.warmup_months")
+    elif "warmup_months" in strategy_raw:
+        raise ValueError("strategy.warmup_months requires strategy.horizons")
     strategy = StrategyConfig(
         strategy_id=str(_require(strategy_raw, "strategy", "id")).strip(),
         name=str(_require(strategy_raw, "strategy", "name")).strip(),
         symbols=tuple(str(symbol).upper() for symbol in symbols_raw),
-        lookback_months=int(_require(strategy_raw, "strategy", "lookback_months")),
+        lookback_months=int(lookback_raw),
         sleeve_weight=_finite(float(_require(strategy_raw, "strategy", "sleeve_weight")), "strategy.sleeve_weight"),
+        horizons=horizons,
+        warmup_months=warmup_months,
     )
 
     portfolio_raw = raw.get("portfolio", {})
@@ -332,6 +367,7 @@ def load_config(path: str | Path) -> AppConfig:
 
     benchmark = _load_benchmark(raw.get("benchmark"))
     tax = _load_tax(raw.get("tax"), strategy.symbols, root)
+    research = _load_research(raw.get("research"), root)
 
     _validate(strategy, portfolio, execution, data, backtest)
     return AppConfig(
@@ -349,12 +385,22 @@ def load_config(path: str | Path) -> AppConfig:
         strategy_spec_sha256=_strategy_spec_hash(strategy, portfolio, execution, data, benchmark),
         path=config_path,
         raw_bytes=raw_bytes,
+        research=research,
     )
 
 
 _POSITIVE_THRESHOLDS = frozenset(
     {"max_session_return", "max_open_gap", "max_calendar_gap_days", "max_stale_closes"}
 )
+
+
+def _load_research(raw: dict[str, object] | None, root: Path) -> ResearchConfig | None:
+    if raw is None:
+        return None
+    return ResearchConfig(**{
+        key: _resolve_path(_require(raw, "research", key), root, f"research.{key}")
+        for key in ("calendar_path", "freeze_path", "journal_path")
+    })
 
 
 def _load_quality_overrides(raw: dict[str, object]) -> dict[str, float]:

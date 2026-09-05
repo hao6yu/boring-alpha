@@ -19,11 +19,12 @@ from boring_alpha.data.market import MarketData
 from boring_alpha.domain import BacktestResult, SignalSnapshot
 
 ARTIFACT_SCHEMA = 6
+BA002_ARTIFACT_SCHEMA = 7
 
 # Schemas `classify` may read. A new schema that only adds fields is appended
 # here so that artifacts written under the old one stay classifiable.
 # Schema 6 adds tax fields and removes nothing, so schema-5 sweeps stay classifiable.
-READABLE_SCHEMAS: tuple[int, ...] = (5, ARTIFACT_SCHEMA)
+READABLE_SCHEMAS: tuple[int, ...] = (5, ARTIFACT_SCHEMA, BA002_ARTIFACT_SCHEMA)
 
 
 def _json_default(value: object) -> str:
@@ -39,14 +40,16 @@ def json_text(value: Any) -> str:
 def snapshot_record(snapshot: SignalSnapshot) -> dict[str, Any]:
     """A decision as written to artifacts.
 
-    `hold` appears only when set. Decisions files written before the field
-    existed are therefore reproduced byte for byte, and a reader sees the key
-    only where it means something.
+    `hold` appears only when set, and horizon evidence only for ensembles.
+    Legacy decision files are therefore reproduced byte for byte. An ensemble
+    keeps an explicit null scalar cash_return: no single hurdle describes it.
     """
 
     record = asdict(snapshot)
     if not record.get("hold"):
         record.pop("hold", None)
+    if record.get("horizon_evidence") is None:
+        record.pop("horizon_evidence", None)
     return record
 
 
@@ -180,7 +183,7 @@ def run_warnings(config: AppConfig, data: MarketData, results: tuple[BacktestRes
     return warnings
 
 
-def append_provenance(run_dir: Path, unseal_reason: str | None) -> None:
+def append_provenance(run_dir: Path, unseal_reason: str | None, *, research_freeze=None) -> None:
     """Record the environment this invocation ran in, without touching identity."""
 
     record = {
@@ -189,6 +192,13 @@ def append_provenance(run_dir: Path, unseal_reason: str | None) -> None:
         "unseal_reason": unseal_reason,
         **git_provenance(Path(__file__).resolve().parent.parent.parent),
     }
+    if research_freeze is not None:
+        from boring_alpha.research_freeze import freeze_sha256
+        record['research_freeze'] = {
+            'sha256': freeze_sha256(research_freeze),
+            'status': research_freeze['status'],
+            'confirmation': research_freeze['confirmation'],
+        }
     with (run_dir / "provenance.jsonl").open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(record, sort_keys=True) + "\n")
 
@@ -203,7 +213,12 @@ def write_report(
     benchmark_metrics: dict[str, float | int],
     cash_metrics: dict[str, float | int],
     unseal_reason: str | None = None,
+    run_context=None,
 ) -> tuple[str, Path]:
+    if config.strategy.strategy_id == "BA-002":
+        from boring_alpha.ba002_artifacts import write_ba002_backtest
+        return write_ba002_backtest(config, data, strategy, benchmark, cash,
+                                   strategy_metrics, benchmark_metrics, cash_metrics, unseal_reason, run_context)
     config_hash = hashlib.sha256(config.raw_bytes).hexdigest()
     data_hash = data.fingerprint()
     code_hash = code_fingerprint()

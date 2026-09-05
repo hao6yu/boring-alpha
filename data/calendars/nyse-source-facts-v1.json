@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-04",
+  "archive_scope": "Short primary-source excerpts and researcher-transcribed facts, not full source documents or website payloads. A source URL alone is not an archive.",
+  "sources": [
+    {
+      "id": "ford-2007",
+      "publisher": "New York Stock Exchange",
+      "title": "Information Memo 06-88, December 29, 2006",
+      "url": "https://www.nyse.com/publicdocs/nyse/regulation/nyse/NYSE_Rules.pdf",
+      "retrieval": "The memo's indexed primary-source text was retrieved; the full aggregate rulebook PDF could not be opened and is not archived.",
+      "excerpt": "will be closed on Tuesday, January 2, 2007",
+      "facts": {"full_closures": ["2007-01-02"], "reason": "National day of mourning for Gerald Ford"}
+    },
+    {
+      "id": "sandy-2012",
+      "publisher": "NYSE filing published by the U.S. Securities and Exchange Commission",
+      "title": "Release 34-70099, August 2, 2013, Events During Superstorm Sandy, pages 5-6",
+      "url": "https://www.sec.gov/rules/sro/nyse/2013/34-70099.pdf",
+      "retrieval": "Primary PDF text, pages 5-6 (zero-based pages 4-5).",
+      "excerpt": "all U.S. equities and options markets would be closed for those two days",
+      "facts": {"full_closures": ["2012-10-29", "2012-10-30"], "reason": "Hurricane Sandy"}
+    },
+    {
+      "id": "bush-2018",
+      "publisher": "Intercontinental Exchange / NYSE",
+      "title": "New York Stock Exchange to Honor President George H. W. Bush, December 1, 2018",
+      "url": "https://ir.theice.com/press/news-details/2018/New-York-Stock-Exchange-to-Honor-President-George-H-W-Bush/default.aspx",
+      "retrieval": "Primary press release text.",
+      "excerpt": "NYSE Group Markets to close for Day of Mourning on Wednesday, December 5, 2018",
+      "facts": {"full_closures": ["2018-12-05"], "includes_nyse_arca": true, "reason": "National day of mourning for George H. W. Bush"}
+    },
+    {
+      "id": "carter-2025",
+      "publisher": "Intercontinental Exchange / NYSE",
+      "title": "The New York Stock Exchange Will Close Markets on January 9 to Honor the Passing of Former President Jimmy Carter on National Day of Mourning, December 30, 2024",
+      "url": "https://ir.theice.com/press/news-details/2024/The-New-York-Stock-Exchange-Will-Close-Markets-on-January-9-to-Honor-the-Passing-of-Former-President-Jimmy-Carter-on-National-Day-of-Mourning/default.aspx",
+      "retrieval": "Primary press release text.",
+      "excerpt": "close all NYSE Group equity and options markets on Thursday, January 9, 2025",
+      "facts": {"full_closures": ["2025-01-09"], "reason": "National day of mourning for Jimmy Carter"}
+    },
+    {
+      "id": "calendar-2020-2021",
+      "publisher": "Intercontinental Exchange / NYSE",
+      "title": "NYSE Group Announces 2020, 2021 and 2022 Holiday and Early Closings Calendar, December 9, 2019",
+      "url": "https://ir.theice.com/press/news-details/2019/NYSE-Group-Announces-2020-2021-and-2022-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "retrieval": "Primary press release holiday table. Its preliminary 2022 calendar is superseded by the December 2021 announcement.",
+      "excerpt": "The 2020 and 2021 holiday and early closing dates are also set forth below.",
+      "facts": {
+        "2021_regular_closures": ["2021-01-01", "2021-01-18", "2021-02-15", "2021-04-02", "2021-05-31", "2021-07-05", "2021-09-06", "2021-11-25", "2021-12-24"],
+        "2021_early_closes": ["2021-11-26"],
+        "juneteenth_listed_for_2021": false
+      }
+    },
+    {
+      "id": "calendar-2022-2024",
+      "publisher": "Intercontinental Exchange / NYSE",
+      "title": "NYSE Group Announces 2022, 2023 and 2024 Holiday and Early Closings Calendar, December 27, 2021",
+      "url": "https://ir.theice.com/press/news-details/2021/NYSE-Group-Announces-2022-2023-and-2024-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "retrieval": "Primary press release holiday table and footnotes.",
+      "excerpt": "No holiday observed, pursuant to NYSE Rule 7.2",
+      "facts": {
+        "2022_regular_closures": ["2022-01-17", "2022-02-21", "2022-04-15", "2022-05-30", "2022-06-20", "2022-07-04", "2022-09-05", "2022-11-24", "2022-12-26"],
+        "2023_regular_closures": ["2023-01-02", "2023-01-16", "2023-02-20", "2023-04-07", "2023-05-29", "2023-06-19", "2023-07-04", "2023-09-04", "2023-11-23", "2023-12-25"],
+        "2024_regular_closures": ["2024-01-01", "2024-01-15", "2024-02-19", "2024-03-29", "2024-05-27", "2024-06-19", "2024-07-04", "2024-09-02", "2024-11-28", "2024-12-25"],
+        "2022_early_closes": ["2022-11-25"],
+        "2023_early_closes": ["2023-07-03", "2023-11-24"],
+        "2024_early_closes": ["2024-07-03", "2024-11-29", "2024-12-24"],
+        "juneteenth_first_exchange_observance": "2022-06-20",
+        "saturday_new_year_has_no_observed_friday_closure": true,
+        "includes_nyse_arca_equities": true
+      }
+    },
+    {
+      "id": "calendar-2026",
+      "publisher": "New York Stock Exchange",
+      "title": "Holidays and Trading Hours, 2026-2028 calendar",
+      "url": "https://www.nyse.com/trade/hours-calendars",
+      "retrieval": "Primary website holiday table; only 2026 facts through the artifact endpoint are transcribed.",
+      "excerpt": "All NYSE markets observe U.S. holidays as listed below for 2026, 2027, and 2028.",
+      "facts": {
+        "2026_regular_closures_through_august": ["2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-25", "2026-06-19", "2026-07-03"],
+        "nyse_arca_core_open_eastern": "09:30",
+        "nyse_arca_core_close_eastern": "16:00"
+      }
+    }
+  ]
+}

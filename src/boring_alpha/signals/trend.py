@@ -4,9 +4,12 @@ from __future__ import annotations
 
 from dataclasses import replace
 from datetime import date
+import math
 
 from boring_alpha.data.market import MarketData
-from boring_alpha.domain import REBALANCE_SCHEDULES, SignalSnapshot
+from boring_alpha.domain import (
+    HorizonEvidence, REBALANCE_SCHEDULES, SignalSnapshot, validate_horizon_inputs,
+)
 
 
 def month_offset(year: int, month: int, delta: int) -> tuple[int, int]:
@@ -53,6 +56,78 @@ class MultiAssetTrend:
             asset_returns=asset_returns,
             cash_return=cash_return,
             name=self.name,
+        )
+
+
+class MultiHorizonTrend:
+    """Equal asset-versus-cash votes with a separate common readiness window.
+
+    Inactive votes keep their capital in cash; weights are never renormalized
+    across active assets. Removing a horizon changes the vote denominator, not
+    the common readiness window or any remaining horizon's cash anchor.
+    """
+
+    def __init__(
+        self,
+        symbols: tuple[str, ...],
+        horizons: tuple[int, ...],
+        sleeve_weight: float,
+        warmup_months: int = 15,
+    ) -> None:
+        self.horizons = validate_horizon_inputs(horizons, warmup_months)
+        if not symbols or any(not isinstance(symbol, str) or not symbol for symbol in symbols):
+            raise ValueError("symbols must be non-empty strings")
+        if len(set(symbols)) != len(symbols):
+            raise ValueError("symbols must be unique")
+        if isinstance(sleeve_weight, bool) or not isinstance(sleeve_weight, (int, float)):
+            raise ValueError("sleeve_weight must be a finite number")
+        if not math.isfinite(sleeve_weight) or not 0 < sleeve_weight <= 1:
+            raise ValueError("sleeve_weight must be finite and in (0, 1]")
+        if len(symbols) * sleeve_weight > 1 + 1e-12:
+            raise ValueError("configured sleeves exceed 100% gross exposure")
+        self.symbols = tuple(symbols)
+        self.sleeve_weight = sleeve_weight
+        self.warmup_months = warmup_months
+        self.lookback_months = warmup_months
+        label = "/".join(str(horizon) for horizon in self.horizons)
+        self.name = f"BA-002 Multi-Horizon Trend ({label} months)"
+
+    def snapshot(self, data: MarketData, as_of: date) -> SignalSnapshot | None:
+        if anchor_month_end(data, self.symbols, as_of, self.warmup_months) is None:
+            return None
+        evidence: list[HorizonEvidence] = []
+        targets = {symbol: 0.0 for symbol in self.symbols}
+        vote_weight = self.sleeve_weight / len(self.horizons)
+        for horizon in self.horizons:
+            anchor = anchor_month_end(data, self.symbols, as_of, horizon)
+            if anchor is None:
+                return None
+            cash_return = data.cash_index[as_of] / data.cash_index[anchor] - 1.0
+            returns = {
+                symbol: data.bar(as_of, symbol).close / data.bar(anchor, symbol).close - 1.0
+                for symbol in self.symbols
+            }
+            votes = {symbol: returns[symbol] > cash_return for symbol in self.symbols}
+            contributions = {
+                symbol: vote_weight if votes[symbol] else 0.0 for symbol in self.symbols
+            }
+            for symbol in self.symbols:
+                targets[symbol] += contributions[symbol]
+            evidence.append(HorizonEvidence(
+                horizon_months=horizon,
+                anchor_date=anchor,
+                asset_returns=returns,
+                cash_return=cash_return,
+                votes=votes,
+                target_weights=contributions,
+            ))
+        return SignalSnapshot(
+            as_of=as_of,
+            target_weights=targets,
+            asset_returns={},
+            cash_return=None,
+            name=self.name,
+            horizon_evidence=tuple(evidence),
         )
 
 

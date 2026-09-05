@@ -205,6 +205,14 @@ class DecisionRecordTests(unittest.TestCase):
     def test_a_true_hold_is_recorded(self) -> None:
         self.assertIs(snapshot_record(self._snapshot(hold=True))["hold"], True)
 
+    def test_ba_001_decision_json_bytes_are_unchanged(self) -> None:
+        self.assertEqual(
+            report.json_text(snapshot_record(self._snapshot())),
+            '{\n  "as_of": "2024-01-31",\n  "asset_returns": {\n    "A": 0.1\n  },\n'
+            '  "cash_return": 0.01,\n  "name": "P",\n  "target_weights": {\n'
+            '    "A": 0.5\n  }\n}\n',
+        )
+
     def test_decisions_json_uses_the_record(self) -> None:
         result = _result_with_decisions(self._snapshot(), self._snapshot(hold=True))
         text = report.decisions_json(result)

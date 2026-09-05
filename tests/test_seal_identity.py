@@ -11,14 +11,14 @@ import unittest
 from boring_alpha.cli import run_backtest
 
 PERIODS = """
-[S-001.development]
+[BA-001.development]
 start = 2020-01-01
 end = 2021-12-31
 """
 
 CONFIG = """
 [strategy]
-id = "S-001"
+id = "BA-001"
 name = "Seal Identity"
 symbols = ["A", "B"]
 lookback_months = 12
@@ -78,7 +78,7 @@ class SealIdentityTests(unittest.TestCase):
             _write_csvs(root / "data", date(2021, 12, 31))
             with contextlib.redirect_stdout(io.StringIO()):
                 run_backtest(config_path)
-            runs = list((root / "experiments" / "S-001").iterdir())
+            runs = list((root / "experiments" / "BA-001").iterdir())
             self.assertEqual(len(runs), 1)
             first = json.loads((runs[0] / "manifest.json").read_text(encoding="utf-8"))
 
@@ -87,7 +87,7 @@ class SealIdentityTests(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):
                 run_backtest(config_path)
 
-            runs = list((root / "experiments" / "S-001").iterdir())
+            runs = list((root / "experiments" / "BA-001").iterdir())
             self.assertEqual(len(runs), 1, "appended data created a second run directory")
             second = json.loads((runs[0] / "manifest.json").read_text(encoding="utf-8"))
             self.assertEqual(first, second)

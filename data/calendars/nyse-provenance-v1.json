@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-04",
+  "calendar_canonical_sha256": "6bc0cf5a01d73e50e216560e20988e982366f1436b95688c3b9cf78c02c3106a",
+  "file_sha256": {
+    "data/calendars/nyse-2006-2026-v1.json": "e8221a9c5f4571596ed4597c148da35c0f45c201dfba829294d3b29f52dc3647",
+    "data/calendars/nyse-source-facts-v1.json": "987db9fc071b8c75524b10ff4767aa0d01d7746e455eb89c98775d6fcc3c871f",
+    "tools/build_nyse_calendar.py": "68bd39649a151430fc25e4fcac4a64a4e61ddf9396fdc459ca23452637868a42"
+  },
+  "counts": {"sessions": 5197, "weekday_closures": 194, "early_close_sessions": 44},
+  "independent_implementation_check": {
+    "status": "performed; exact match for every session and early-close date",
+    "package": "exchange_calendars",
+    "version": "4.13",
+    "calendar": "XNYS",
+    "package_url": "https://pypi.org/project/exchange_calendars/4.13/",
+    "published_wheel_sha256": "652a2ae9c81d09b5bc4ee09e4a7e5b9b8540ffe481e19c2ea56dcc223e0e2d30",
+    "installed_source_sha256": {
+      "exchange_calendars/exchange_calendar_xnys.py": "baa39f07163abafcf2800b69edc5d920c3db0a64f8bbb30dc7d522883d0b5bd7",
+      "exchange_calendars/us_holidays.py": "a2444bd7aef3ff651faff3f9117c47a0d41e9e7c312f38ecf42403e4d996830e"
+    },
+    "execution_environment": {"python": "3.13", "pandas": "3.0.5", "numpy": "2.5.2"},
+    "archive_scope": "The package, installed source files, and dependency wheels are not vendored. Version, published wheel digest, and hashes of locally inspected rule files are recorded for retrieval. The library is corroboration, not NYSE authority."
+  },
+  "primary_source_review": {
+    "archive": "data/calendars/nyse-source-facts-v1.json",
+    "status": "All five identified exceptional closure dates verified against primary-source records; 2021-2024 and 2026 holiday tables checked. Earlier recurring rules and early-close annotations additionally checked against pinned XNYS implementation.",
+    "limitation": "Not an exhaustive archive or independent manual audit of every NYSE annual circular for 2006-2026. Short excerpts and transcribed facts are archived; complete original publications are not."
+  },
+  "spy_date_cross_check": {
+    "status": "deferred; not performed",
+    "reason": "No market-data inspection was authorized in this implementation round. A separately approved date-only comparison must report mismatches without changing the calendar to fit the feed."
+  },
+  "licensing": "Researcher-written rules and generated factual dates belong to the project. Short attributed excerpts remain subject to source rights; the MIT project license does not grant rights over NYSE/ICE publications or trademarks. exchange_calendars is Apache-2.0 and is not redistributed here. This record is not a market-data license or legal opinion."
+}

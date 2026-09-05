@@ -303,7 +303,14 @@ class SweepRanksOnTheCharterDefinitionTests(unittest.TestCase):
 
         root = Path(tempfile.mkdtemp())
         config = load_config(self._build(root))
-        return run_sweep(config, load_market_data(config))
+        # This hand-crafted CSV is a tax/ranking fixture, not a historical
+        # invocation. Isolate its regression from the separately tested access
+        # gate without changing its deliberately discriminating prices/dates.
+        from unittest.mock import patch
+        from boring_alpha.research_access import RunContext, capture_execution_identity
+        context = RunContext(None, capture_execution_identity())
+        with patch("boring_alpha.research_access.prepare_run", return_value=context):
+            return run_sweep(config, load_market_data(config))
 
     def test_the_fixture_makes_the_two_rankings_disagree(self) -> None:
         sweep = self._sweep()
@@ -327,7 +334,13 @@ class SweepEvidenceTests(SweepRanksOnTheCharterDefinitionTests):
 
         root = Path(tempfile.mkdtemp())
         config = load_config(self._build(root))
-        data = load_market_data(config)
+        # Same fictional CSV fixture as _sweep; access policy has independent
+        # end-to-end refusal tests in test_research_access.
+        from unittest.mock import patch
+        from boring_alpha.research_access import RunContext, capture_execution_identity
+        context = RunContext(None, capture_execution_identity())
+        with patch("boring_alpha.research_access.prepare_run", return_value=context):
+            data = load_market_data(config)
         sweep = run_sweep(config, data)
         _, sweep_dir = write_sweep_report(config, data, sweep)
         return sweep_dir, GRID, data
@@ -410,11 +423,11 @@ class DatasetEndedRunTests(unittest.TestCase):
         (root / "data" / "p.csv").write_text("\n".join(prices) + "\n", encoding="utf-8")
         (root / "data" / "c.csv").write_text("\n".join(cash) + "\n", encoding="utf-8")
         (root / "configs" / "evaluation_periods.toml").write_text(
-            '[D-1.sealed]\nstart = 2022-01-01\nend = "dataset"\n', encoding="utf-8"
+            '[BA-001.sealed]\nstart = 2022-01-01\nend = "dataset"\n', encoding="utf-8"
         )
         path = root / "configs" / "run.toml"
         path.write_text(
-            '\n[strategy]\nid = "D-1"\nname = "D"\nsymbols = ["A", "B"]\n'
+            '\n[strategy]\nid = "BA-001"\nname = "D"\nsymbols = ["A", "B"]\n'
             "lookback_months = 12\nsleeve_weight = 0.5\n"
             "[portfolio]\ninitial_cash = 1000\n[execution]\ncost_bps = 10\n"
             '[data]\nsource = "csv"\nmethodology = "test-v1"\n'
@@ -433,10 +446,16 @@ class DatasetEndedRunTests(unittest.TestCase):
         reviews = path.parent.parent / "docs" / "reviews"
         reviews.mkdir(parents=True)
         for stage in ("development", "validation"):
-            (reviews / f"D-1-{stage}.md").write_text("reviewed", encoding="utf-8")
+            (reviews / f"BA-001-{stage}.md").write_text("reviewed", encoding="utf-8")
         config = load_config(path)
-        with self.assertRaisesRegex(ValueError, "must extend through the latest complete session"):
-            load_market_data(config, "reviewed")
+        # Isolate the legacy dataset-ended invariant. Actual family access and
+        # --unseal refusal are tested without mocks in test_research_access.
+        from unittest.mock import patch
+        from boring_alpha.research_access import RunContext, capture_execution_identity
+        context = RunContext(None, capture_execution_identity())
+        with patch("boring_alpha.research_access.prepare_run", return_value=context):
+            with self.assertRaisesRegex(ValueError, "must extend through the latest complete session"):
+                load_market_data(config, "reviewed")
 
     def test_running_through_the_last_session_is_accepted(self) -> None:
         from boring_alpha.data import load_market_data
@@ -445,9 +464,13 @@ class DatasetEndedRunTests(unittest.TestCase):
         reviews = path.parent.parent / "docs" / "reviews"
         reviews.mkdir(parents=True)
         for stage in ("development", "validation"):
-            (reviews / f"D-1-{stage}.md").write_text("reviewed", encoding="utf-8")
+            (reviews / f"BA-001-{stage}.md").write_text("reviewed", encoding="utf-8")
         config = load_config(path)
-        data = load_market_data(config, "reviewed")
+        from unittest.mock import patch
+        from boring_alpha.research_access import RunContext, capture_execution_identity
+        context = RunContext(None, capture_execution_identity())
+        with patch("boring_alpha.research_access.prepare_run", return_value=context):
+            data = load_market_data(config, "reviewed")
         self.assertEqual(data.dates[-1], date(2024, 6, 28))
 
 
@@ -461,7 +484,7 @@ class MethodologyManifestTests(unittest.TestCase):
         (root / "configs").mkdir()
         snapshot = root / "data" / "current"
         snapshot.mkdir(parents=True)
-        days = ["2023-01-03", "2023-01-04"]
+        days = ["2021-01-04", "2021-01-05"]
         (snapshot / "p.csv").write_text(
             "date,symbol,tr_open,tr_close\n"
             + "".join(f"{d},{s},100.0,100.0\n" for d in days for s in ("A", "B")),
@@ -476,15 +499,18 @@ class MethodologyManifestTests(unittest.TestCase):
             )
         path = root / "configs" / "run.toml"
         path.write_text(
-            '\n[strategy]\nid = "M-1"\nname = "M"\nsymbols = ["A", "B"]\n'
+            '\n[strategy]\nid = "BA-001"\nname = "M"\nsymbols = ["A", "B"]\n'
             "lookback_months = 12\nsleeve_weight = 0.5\n"
             "[portfolio]\ninitial_cash = 1000\n[execution]\ncost_bps = 10\n"
             f'[data]\nsource = "csv"\nmethodology = "{declared}"\n'
             'prices_path = "../data/current/p.csv"\ncash_path = "../data/current/c.csv"\n'
-            '[backtest]\nstart = "2023-01-01"\nend = "2023-01-31"\n'
-            '[evaluation]\nperiod = "exploratory"\n'
+            '[backtest]\nstart = "2021-01-01"\nend = "2021-01-31"\n'
+            '[evaluation]\nperiod = "development"\n'
             '[report]\noutput_dir = "../experiments"\n',
             encoding="utf-8",
+        )
+        (path.parent / "evaluation_periods.toml").write_text(
+            "[BA-001.development]\nstart = 2021-01-01\nend = 2021-01-31\n", encoding="utf-8"
         )
         return path
 

@@ -10,18 +10,18 @@ from boring_alpha.cli import SealedRunError, run_backtest
 from boring_alpha.report import git_provenance
 
 PERIODS = """
-[T-001.validation]
+[BA-001.validation]
 start = 2018-01-01
 end = 2021-12-31
 
-[T-001.sealed]
+[BA-001.sealed]
 start = 2022-01-01
 end = 2023-12-31
 """
 
 CONFIG = """
 [strategy]
-id = "T-001"
+id = "BA-001"
 name = "Gate Test"
 symbols = ["A", "B"]
 lookback_months = 12
@@ -71,12 +71,12 @@ class GateTests(unittest.TestCase):
             (reviews / name).write_text("reviewed", encoding="utf-8")
 
     def _provenance(self) -> list[dict]:
-        runs = list((self.root / "experiments" / "T-001").iterdir())
+        runs = list((self.root / "experiments" / "BA-001").iterdir())
         lines = (runs[0] / "provenance.jsonl").read_text(encoding="utf-8").strip().splitlines()
         return [json.loads(line) for line in lines]
 
     def _manifest(self) -> dict:
-        runs = list((self.root / "experiments" / "T-001").iterdir())
+        runs = list((self.root / "experiments" / "BA-001").iterdir())
         self.assertEqual(len(runs), 1)
         return json.loads((runs[0] / "manifest.json").read_text(encoding="utf-8"))
 
@@ -86,7 +86,7 @@ class GateTests(unittest.TestCase):
         self.assertFalse((self.root / "experiments").exists())
 
     def test_sealed_run_records_the_unseal_reason_and_warns(self) -> None:
-        self._write_reviews("T-001-development.md", "T-001-validation.md")
+        self._write_reviews("BA-001-development.md", "BA-001-validation.md")
         output = self._run(unseal_reason="development and validation review complete")
         self.assertEqual(self._manifest()["evaluation_period"], "sealed")
         self.assertEqual(
@@ -106,7 +106,7 @@ class GateTests(unittest.TestCase):
 
     def test_validation_run_proceeds_once_a_review_exists(self) -> None:
         (self.root / "docs" / "reviews").mkdir(parents=True)
-        (self.root / "docs" / "reviews" / "T-001-development.md").write_text("reviewed", encoding="utf-8")
+        (self.root / "docs" / "reviews" / "BA-001-development.md").write_text("reviewed", encoding="utf-8")
         self.config_path.write_text(
             CONFIG.replace('period = "sealed"', 'period = "validation"')
             .replace('start = "2022-01-01"\nend = "2023-12-31"', 'start = "2018-01-01"\nend = "2021-12-31"'),
@@ -116,14 +116,14 @@ class GateTests(unittest.TestCase):
         self.assertEqual(self._manifest()["evaluation_period"], "validation")
 
     def test_data_after_the_period_end_is_never_loaded(self) -> None:
-        self._write_reviews("T-001-development.md", "T-001-validation.md")
+        self._write_reviews("BA-001-development.md", "BA-001-validation.md")
         self._run(unseal_reason="review complete")
         manifest = self._manifest()
         self.assertEqual(manifest["data_end"], "2023-12-29")
         self.assertEqual(manifest["evaluation_end"], "2023-12-31")
 
     def test_invocation_provenance_is_recorded_beside_the_manifest(self) -> None:
-        self._write_reviews("T-001-development.md", "T-001-validation.md")
+        self._write_reviews("BA-001-development.md", "BA-001-validation.md")
         self._run(unseal_reason="review complete")
         self.assertEqual(self._manifest()["artifact_schema"], 6)
         record = self._provenance()[0]
@@ -161,12 +161,12 @@ if __name__ == "__main__":
 
 class SealedReviewGateTests(GateTests):
     def test_sealed_run_requires_both_written_reviews(self) -> None:
-        self._write_reviews("T-001-development.md")
+        self._write_reviews("BA-001-development.md")
         with self.assertRaisesRegex(ValueError, "validation review"):
             self._run(unseal_reason="ready")
 
     def test_sealed_run_proceeds_once_both_reviews_exist(self) -> None:
-        self._write_reviews("T-001-development.md", "T-001-validation.md")
+        self._write_reviews("BA-001-development.md", "BA-001-validation.md")
         self._run(unseal_reason="ready")
         self.assertEqual(self._manifest()["evaluation_period"], "sealed")
 
@@ -200,4 +200,4 @@ class SealedReviewGateTests(GateTests):
         )
         output = self._run()
         self.assertGreaterEqual(output.count("EXPLORATORY RUN"), 2)
-        self.assertIn("NOT EVIDENCE ABOUT T-001", output)
+        self.assertIn("NOT EVIDENCE ABOUT BA-001", output)

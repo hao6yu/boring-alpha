@@ -43,6 +43,15 @@ records both archived periods: its advantage over the exposure-matched
 allocation held in development and reversed in validation under every tested
 tax scenario.
 
+The successor, [BA-002 Multi-Horizon Trend](docs/strategies/BA-002.md), is
+**implemented for synthetic review, not historically evaluated or locked**.
+It blends 9-, 12- and 15-month signals against an annual 60%-target benchmark.
+Its five-row screen requires at least 50 bps/year of primary after-tax advantage,
+positive stress margins, and cost-net drawdown at most 20% and no worse than
+each paired benchmark. These are research criteria, not return/loss guarantees.
+The reused historical windows are explicitly already seen; passing them would
+only make the candidate eligible to request a separately authorized holdout.
+
 Broker connectivity, live orders, sentiment, pullback timing, leverage, and ML
 are intentionally outside this milestone.
 
@@ -52,8 +61,8 @@ Python 3.11 or newer is required.
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install -e .
-.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/python -m pytest -q
 .venv/bin/boring-alpha backtest configs/ba_001_multi_asset_trend.toml
 ```
 
@@ -64,7 +73,90 @@ a configuration, such as `output_dir` and the CSV paths, resolve against the
 directory that contains the configuration file, so a run writes to the same
 place regardless of the working directory.
 
-## Evaluating a strategy
+### BA-002 synthetic walkthrough
+
+Create a self-contained demo outside the repository, then run the printed
+commands with your installed `boring-alpha` executable:
+
+```bash
+ba002_demo_dir=$(mktemp -d)
+.venv/bin/python -m boring_alpha.demo "$ba002_demo_dir"
+.venv/bin/boring-alpha backtest "$ba002_demo_dir/configs/development.toml"
+.venv/bin/boring-alpha sweep "$ba002_demo_dir/configs/development.toml"
+.venv/bin/boring-alpha sweep "$ba002_demo_dir/configs/validation.toml"
+```
+
+Use the two sweep paths printed by these commands with `boring-alpha classify`.
+The demo has a fictional calendar and zero distributions; it exercises the
+pipeline, not market performance. Dedicated tax tests cover distributions and
+lot mechanics. It creates a synthetic draft freeze, but no confirmation or
+real run journal.
+
+BA-002 archives both accounts for every grid row, all eight tax scenarios,
+the independent expected calendar, frozen-behavior contract, complete human
+charter in the freeze record, and truncated
+inputs. Publication writes the checksum manifest last. Classification verifies
+the archive and account replay, then recomputes the gates rather than trusting
+saved pass flags. Post-hoc `aftertax` is a separately identified diagnostic,
+not a replacement for the sweep's eligibility evidence.
+
+The archived freeze is an identity-only draft envelope, never execution
+permission. Confirmation metadata lives in append-only invocation provenance;
+historical classification additionally requires the matching external
+confirmed freeze. Confirming a synthetic draft does not change its existing
+economic artifacts or initialize a real journal.
+
+### Historical research workflow (not yet executed)
+
+The independent [NYSE session calendar](docs/data/nyse-calendar.md) is now
+checked in. Its comparison with an actual SPY snapshot's dates remains
+deferred. No historical BA-002 config, confirmed freeze or reveal is created
+by this implementation.
+
+After reviewing the charter and selecting fixed input snapshots, configure
+three locations, resolved relative to the config file:
+
+```toml
+[research]
+calendar_path = "../data/calendars/nyse-2006-2026-v1.json"
+freeze_path = "../research/ba002-freeze.json"
+journal_path = "../research/ba-trend-journal.json"
+```
+
+All related BA-001/BA-002 configurations must use the **same family journal**.
+The following are instructions for a later deliberate review, not commands
+already run or a request to open the holdout:
+
+```bash
+boring-alpha research prepare CONFIG --charter docs/strategies/BA-002.md
+boring-alpha research show research/ba002-freeze.json
+boring-alpha research confirm CONFIG --hash FULL_DISPLAYED_HASH --reason "Reviewed the complete freeze"
+```
+
+`prepare` writes a draft containing the charter text, behavior, policy, calendar,
+periods and code/input identities. It hashes source bytes without parsing
+market observations. `confirm` checks that the configured identities still
+match, confirms that exact draft, and initializes the family journal. Neither
+command runs a strategy or reveals a holdout. Existing drafts are write-once;
+select a new freeze path for a reviewed revision.
+
+Ordinary `sweep DEVELOPMENT_CONFIG` and `sweep VALIDATION_CONFIG` reuse the same
+confirmed freeze, with no per-run approval file. Classify their printed archive
+paths using `boring-alpha classify DEVELOPMENT_SWEEP VALIDATION_SWEEP --freeze
+research/ba002-freeze.json`. Passing is only eligibility to request a holdout.
+First holdout execution additionally requires `sweep SEALED_CONFIG --reveal
+"Explicit reason for this reveal"`.
+
+The journal logs attempts, access, failure and completion. After a crash, retry
+the identical frozen command; no ledger editing is needed. Changed code on
+already-revealed coverage requires a separately reviewed new freeze and
+`--repair-of PRIOR_ATTEMPT_ID --repair-reason "Describe the correction"`.
+Only code/evaluator changes are permitted for that repair: candidate, rule,
+window, policy, calendar and input bytes must match. Repair results and their
+retries remain **revealed-data diagnostics**, never a fresh holdout or new
+eligibility evidence. Do not delete or reset the journal to retry a candidate.
+
+## Evaluating BA-001
 
 A single backtest is not evidence for or against a strategy. The charter fixes
 what must be run alongside it, and `sweep` runs the whole grid at once so the
@@ -126,18 +218,20 @@ The dataset is truncated at the period's end before the engine sees it, so data
 after the boundary never reaches the engine, the metrics, or the data
 fingerprint. A development run therefore keeps its identity after later data is
 appended, which is the property `tests/test_seal_identity.py` pins down. A
-backtest window outside its period is refused. Gating and truncation live in
-`load_market_data`, the only supported way to obtain data for a configuration,
-so the seal is not a step a caller can forget.
+backtest window outside its period is refused. Profiles own admission rules;
+the CLI uses `open_run` for the explicit run lifecycle, while the loader owns
+truncation. Direct managed historical loads are refused without that context.
 
 A period may end at `"dataset"` rather than a date, which is how BA-001's
-sealed period expresses the charter's "latest complete dataset": no truncation
-and no upper bound beyond the data you have prepared.
+sealed period expresses the charter's "latest complete dataset". Its requested
+end must reach the latest complete shared session; a shorter selected result
+is refused. BA-002 instead requires fixed, exact contract dates.
 
-`exploratory` is unbounded and always permitted, and stamps every run with a
-warning that it is not evidence about the strategy. The checked-in demo uses it.
+BA-001's `exploratory` mode stamps a warning that it is not strategy evidence.
+The checked-in synthetic demo uses it. It does not bypass protected historical
+access; BA-002 does not accept an exploratory alias for its fixed windows.
 
-Two gates implement the charter's sealing policy. A `validation` run requires a
+BA-001 retains its charter's review gates. A `validation` run requires a
 written development review at `docs/reviews/<ID>-development*.md`. A `sealed`
 run requires both that review and a validation review, plus an explicit reason:
 
@@ -154,6 +248,16 @@ states which boundaries it obeyed: the resolved period and its bounds are part
 of the run identity, so the same configuration under different boundaries is a
 different run.
 
+New historical invocations that can expose BA-TREND data from 2022 onward
+(including BA-001 exploratory runs) also require a confirmed freeze and the
+same family journal **before observation parsing**. BA-001's existing
+`--unseal` reason also serves as its first reveal reason; a second flag is not
+needed. Failures preserve the reveal but permit identical frozen retries or
+explicit diagnostic code repairs as described above. Captured input bytes are
+used throughout a managed run. This is a procedural research safeguard, not
+security against the machine's owner. Read-only legacy BA-001 archive
+classification needs no retroactive freeze.
+
 ## Run artifacts
 
 Each run writes `manifest.json`, `metrics.json`, `decisions.json`, the equity
@@ -166,8 +270,8 @@ warning, including month-ends that produced no signal and any data-quality
 finding. It is written once. The run identifier is derived from the
 configuration, data, and code hashes plus the resolved evaluation period, so
 identical inputs always land in the same directory and a second run verifies
-the artifacts instead of rewriting them. `artifact_schema` is 5; a manifest
-without that field predates the schema.
+the artifacts instead of rewriting them. A manifest without `artifact_schema`
+predates the schema-aware readers.
 
 The trade ledgers record `intended_notional` beside the filled notional, so an
 order that was scaled down by available cash is visible as a partial fill, and
@@ -182,6 +286,12 @@ reason — and gains one line per run. These belong outside the manifest on
 purpose: a docs-only commit or a Python patch upgrade changes the environment
 without changing the experiment, and folding them into a write-once file would
 make the integrity check fire on ordinary work until you learned to ignore it.
+
+New BA-001 artifacts use schema 6, with specific schema-5/6 compatibility
+readers. Complete BA-002 sweeps use schema 7 and explicit strategy/benchmark
+account maps. Their frozen implementation/evaluator hashes must match the
+code consuming them; future behavior changes require reviewed compatibility
+or the original code checkout, not automatic acceptance of an old hash.
 
 Three configuration rules are enforced rather than assumed: `report.output_dir`
 and `evaluation.period` are required, and `backtest.start` must select the first

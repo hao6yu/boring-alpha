@@ -177,8 +177,12 @@ def load_distributions(
     *,
     manifest_path: str | Path | None = None,
     manifest_block: dict | None = None,
+    end: date | None = None,
 ) -> DistributionTable:
-    """Read `distributions_daily.csv` and the split records that belong with it."""
+    """Read the table, filtering dates before parsing unavailable numeric data.
+
+    The raw-file hash is provenance only; ``end`` bounds semantic identity.
+    """
 
     if (manifest_path is None) == (manifest_block is None):
         raise ValueError("exactly one of manifest_path or manifest_block is required")
@@ -187,9 +191,18 @@ def load_distributions(
         if manifest_block is not None
         else json.loads(Path(manifest_path).read_text(encoding="utf-8"))
     )
-    splits = split_records(manifest)
-
     raw = Path(path).read_bytes()
+    return load_distributions_bytes(raw, manifest_block=manifest, source_name=Path(path).name, end=end)
+
+
+def load_distributions_bytes(
+    raw: bytes, *, manifest_block: dict, source_name: str = "captured-distributions.csv", end: date | None = None
+) -> DistributionTable:
+    """Parse captured bytes without reopening mutable paths after approval."""
+    if type(raw) is not bytes:
+        raise ValueError("captured distributions must be immutable bytes")
+    manifest = manifest_block
+    splits = split_records(manifest)
     reader = csv.DictReader(io.StringIO(raw.decode("utf-8")))
     if set(reader.fieldnames or ()) != REQUIRED_COLUMNS:
         raise ValueError(
@@ -199,9 +212,12 @@ def load_distributions(
     rows: list[Row] = []
     for row_number, row in enumerate(reader, start=2):
         try:
+            day = date.fromisoformat(row["date"])
+            if end is not None and day > end:
+                continue
             rows.append(
                 (
-                    date.fromisoformat(row["date"]),
+                    day,
                     row["symbol"].strip().upper(),
                     float(row["close"]),
                     float(row["dividend"]),
@@ -209,10 +225,17 @@ def load_distributions(
             )
         except (TypeError, ValueError) as exc:
             raise ValueError(f"invalid distribution row {row_number}: {row}") from exc
+    if end is not None:
+        retained_symbols = {symbol for _, symbol, _, _ in rows}
+        splits = {
+            symbol: [record for record in records if date.fromisoformat(record["date"]) <= end]
+            for symbol, records in splits.items()
+            if symbol in retained_symbols
+        }
     return DistributionTable(
         rows,
         splits=splits,
         sha256=hashlib.sha256(raw).hexdigest(),
-        source=f"csv:{Path(path).name}",
+        source=f"csv:{source_name}",
         methodology=str(manifest.get("methodology") or ""),
     )

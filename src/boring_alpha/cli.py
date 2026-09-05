@@ -22,15 +22,15 @@ from boring_alpha.evaluation import SealedRunError, check_evaluation_gates
 from boring_alpha.metrics import calculate_metrics
 from boring_alpha.report import (
     ARTIFACT_SCHEMA,
-    READABLE_SCHEMAS,
     code_fingerprint,
     json_text,
     write_once,
     write_report,
 )
 from boring_alpha.criteria import Verdict
-from boring_alpha.profiles import gating_benchmark, profile_for
-from boring_alpha.signals import CashAllocation, MultiAssetTrend
+from boring_alpha.profiles import profile_for
+from boring_alpha.research_access import open_run
+from boring_alpha.signals import CashAllocation
 from boring_alpha.sweep import benchmark_description, run_sweep, write_sweep_report
 from boring_alpha.tax import OVERLAY_VERSION, policy_sha256, run_scenarios
 from boring_alpha.tax.reconcile import validate_replay
@@ -56,7 +56,7 @@ __all__ = [
 ]
 
 
-def _banners(config: AppConfig) -> list[str]:
+def _banners(config: AppConfig, run_context=None) -> list[str]:
     """Everything a reader must not miss about what this run is worth.
 
     Printed above and below the metrics table, because the table is where a
@@ -71,6 +71,12 @@ def _banners(config: AppConfig) -> list[str]:
             f"EXPLORATORY RUN — NOT EVIDENCE ABOUT {config.strategy.strategy_id} "
             "(unbounded window, no sealing)"
         )
+    if run_context is not None and run_context.revealed_diagnostic:
+        banners.append("REVEALED-DATA REPAIR — DIAGNOSTIC ONLY, NOT A FRESH HOLDOUT")
+    elif config.strategy.strategy_id == "BA-002" and config.data.source != "synthetic":
+        banners.append("RETROSPECTIVE HOLDOUT — unopened at freeze, now evaluated"
+                       if config.evaluation.period == "sealed" else
+                       "SEEN RESEARCH HISTORY — NOT INDEPENDENT VALIDATION")
     return banners
 
 
@@ -78,9 +84,20 @@ def _percentage(value: float) -> str:
     return f"{value * 100:8.2f}%"
 
 
-def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
+def run_backtest(config_path: Path, unseal_reason: str | None = None, **options) -> int:
     config = load_config(config_path)
-    data = load_market_data(config, unseal_reason)
+    with open_run(config, unseal_reason, **options) as run:
+        return _run_backtest_loaded(config, run.data, unseal_reason, run.context)
+
+def _run_backtest_loaded(config: AppConfig, data, unseal_reason, run_context) -> int:
+    profile = profile_for(config.strategy.strategy_id)
+    primary = profile.grid(config)["base"]
+    if config.strategy.strategy_id == "BA-002":
+        from boring_alpha.research_access import validate_ba002_inputs
+        from boring_alpha.sweep import _distributions_for
+        run_context.verify()
+        table, _, _ = _distributions_for(config, data, run_context)
+        validate_ba002_inputs(config, data, table, run_context)
     engine = Backtester(
         data,
         config.strategy.symbols,
@@ -89,14 +106,8 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
         start=config.backtest.start,
         end=config.backtest.end,
     )
-    strategy = engine.run(
-        MultiAssetTrend(
-            config.strategy.symbols,
-            config.strategy.lookback_months,
-            config.strategy.sleeve_weight,
-        )
-    )
-    benchmark = engine.run(gating_benchmark(config, config.strategy.lookback_months))
+    strategy = engine.run(primary.strategy(config, None))
+    benchmark = engine.run(primary.benchmark(config))
     cash = engine.run(CashAllocation(config.strategy.symbols))
     strategy_metrics = calculate_metrics(strategy, data)
     benchmark_metrics = calculate_metrics(benchmark, data)
@@ -111,9 +122,11 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
         benchmark_metrics,
         cash_metrics,
         unseal_reason=unseal_reason,
+        run_context=run_context,
     )
+    run_context.artifact_path = str(run_dir)
 
-    banners = _banners(config)
+    banners = _banners(config, run_context)
     print(f"BoringAlpha run {run_id}")
     for banner in banners:
         print(banner)
@@ -127,6 +140,8 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
     )
     print(f"Evaluation period: {period} ({window})")
     print(f"Benchmark: {benchmark_description(config)}")
+    if config.strategy.strategy_id == "BA-002":
+        print("Primary ensemble diagnostic only; use sweep for the complete after-tax research screen.")
     print(f"{'Metric':<24}{'Strategy':>14}{'Static':>14}{'Cash':>14}")
     print(f"{'Total return':<24}{_percentage(float(strategy_metrics['total_return'])):>14}{_percentage(float(benchmark_metrics['total_return'])):>14}{_percentage(float(cash_metrics['total_return'])):>14}")
     print(f"{'CAGR':<24}{_percentage(float(strategy_metrics['cagr'])):>14}{_percentage(float(benchmark_metrics['cagr'])):>14}{_percentage(float(cash_metrics['cagr'])):>14}")
@@ -149,20 +164,26 @@ def run_backtest(config_path: Path, unseal_reason: str | None = None) -> int:
     return 0
 
 
-def run_sweep_command(config_path: Path, unseal_reason: str | None = None) -> int:
+def run_sweep_command(config_path: Path, unseal_reason: str | None = None, **options) -> int:
     config = load_config(config_path)
-    data = load_market_data(config, unseal_reason)
-    sweep = run_sweep(config, data)
-    sweep_id, sweep_dir = write_sweep_report(config, data, sweep, unseal_reason=unseal_reason)
+    with open_run(config, unseal_reason, **options) as run:
+        return _run_sweep_loaded(config, run.data, unseal_reason, run.context)
 
-    banners = _banners(config)
+def _run_sweep_loaded(config, data, unseal_reason, run_context) -> int:
+    sweep = run_sweep(config, data, run_context=run_context)
+    sweep_id, sweep_dir = write_sweep_report(config, data, sweep, unseal_reason=unseal_reason)
+    run_context.artifact_path = str(sweep_dir)
+
+    banners = _banners(config, run_context)
     print(f"BoringAlpha sweep {sweep_id} ({config.evaluation.period} period)")
     for banner in banners:
         print(banner)
     for criterion in sweep.outcome.criteria:
         print(f"  {criterion.name} {'pass' if criterion.passed else 'FAIL'}: {criterion.detail}")
     print(f"All criteria passed for this period: {'yes' if sweep.outcome.passed else 'NO'}")
-    print("A verdict needs both periods: boring-alpha classify <development> <validation>")
+    print("Research eligibility needs both seen periods: boring-alpha classify <development> <validation>"
+          if config.strategy.strategy_id == "BA-002" else
+          "A verdict needs both periods: boring-alpha classify <development> <validation>")
     for warning in list(data.warnings) + list(sweep.warnings):
         print(f"  - {warning}")
     if unseal_reason:
@@ -185,9 +206,25 @@ def _read_criteria(sweep_dir: Path, expected_period: str) -> dict:
     return criteria
 
 
-def run_classify(development_dir: Path, validation_dir: Path) -> int:
+def run_classify(development_dir: Path, validation_dir: Path, freeze_path: Path | None = None) -> int:
     development = _read_criteria(development_dir, "development")
     validation = _read_criteria(validation_dir, "validation")
+
+    if development.get("strategy_id") == "BA-002" or validation.get("strategy_id") == "BA-002":
+        from boring_alpha.ba002_artifacts import load_ba002_evidence
+        from boring_alpha.criteria_ba002 import classify, evaluate_period
+        first = load_ba002_evidence(development_dir, freeze_path)
+        second = load_ba002_evidence(validation_dir, freeze_path)
+        verdict = classify(first, second)
+        print("SYNTHETIC DATA — NO ECONOMIC MEANING" if first.synthetic else
+              "SEEN RESEARCH HISTORY — NOT INDEPENDENT VALIDATION")
+        print(f"BA-002 research eligibility: {verdict.value}")
+        for label, evidence in (("Seen research A", first), ("Seen research B", second)):
+            print(f"\n{label}: {evidence.start}..{evidence.end}")
+            for criterion in evaluate_period(evidence).criteria:
+                print(f"  {criterion.name} {'pass' if criterion.passed else 'FAIL'}: {criterion.detail}")
+        print("\nEligibility is not authorization to reveal a holdout or trade.")
+        return 0
 
     # A verdict combining two unrelated sweeps would be confidently wrong. The
     # inputs must agree on everything except the window they cover, and a field
@@ -212,8 +249,8 @@ def run_classify(development_dir: Path, validation_dir: Path) -> int:
                 f"{validation[field]!r} in the validation sweep"
             )
     schema = development["artifact_schema"]
-    if schema not in READABLE_SCHEMAS:
-        readable = ", ".join(str(value) for value in READABLE_SCHEMAS)
+    if type(schema) is not int or schema not in (5, 6):
+        readable = "5, 6 (BA-001); schema 7 requires complete BA-002 evidence"
         raise ValueError(
             f"these sweeps use artifact schema {schema}, but this code reads schemas "
             f"{readable}. Re-run them rather than comparing artifacts across schema versions."
@@ -273,7 +310,7 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
         if not manifest_path.is_file():
             raise ValueError(f"no manifest.json beside {distributions_path}; a v2 snapshot is required")
         snapshot = json.loads(manifest_path.read_text(encoding="utf-8"))
-        table = load_distributions(distributions_path, manifest_path=manifest_path)
+        table = load_distributions(distributions_path, manifest_path=manifest_path, end=data.dates[-1])
         provenance = {
             "source": "external-snapshot",
             "source_path": str(distributions_path),
@@ -340,7 +377,7 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
         output,
         json_text(
             {
-                "artifact_schema": ARTIFACT_SCHEMA,
+                "artifact_schema": manifest["artifact_schema"] if manifest["strategy_id"] == "BA-002" else ARTIFACT_SCHEMA,
                 "sweep_id": manifest["sweep_id"],
                 "strategy_id": manifest["strategy_id"],
                 "code_sha256": code_hash,
@@ -363,6 +400,8 @@ def run_aftertax(sweep_dir: Path, policy_path: Path, distributions_path: Path | 
         handle.write(json.dumps(provenance, sort_keys=True) + "\n")
 
     print(f"BoringAlpha aftertax {manifest['sweep_id']} ({manifest['strategy_id']}), policy {policy_hash[:12]}")
+    if manifest["strategy_id"] == "BA-002":
+        print("DIAGNOSTIC RESCORE — does not replace the frozen eligibility tax.json")
     if "benchmark" in manifest:
         print(f"Benchmark: {manifest['benchmark']}")
     for status in (archived_files_status, distribution_status):
@@ -423,6 +462,10 @@ def build_parser() -> argparse.ArgumentParser:
     )
     classify_parser.add_argument("development", type=Path, help="development sweep directory")
     classify_parser.add_argument("validation", type=Path, help="validation sweep directory")
+    classify_parser.add_argument(
+        "--freeze", type=Path, default=None,
+        help="independently confirmed freeze record for historical BA-002 classification",
+    )
 
     aftertax = subparsers.add_parser(
         "aftertax", help="score an existing sweep after tax under a policy file"
@@ -438,6 +481,21 @@ def build_parser() -> argparse.ArgumentParser:
         help="distributions_daily.csv of a v2 snapshot (manifest.json beside it); "
         "omit to use the sweep's own archived distributions",
     )
+    for command in (backtest, sweep):
+        command.add_argument('--reveal', metavar='REASON', help='explicitly acknowledge first family holdout access')
+        command.add_argument('--repair-of', metavar='ATTEMPT_ID', help='replay a revealed attempt after a documented code-only repair')
+        command.add_argument('--repair-reason', metavar='REASON', help='explain the code-only repair; never restores unseen status')
+    research = subparsers.add_parser('research', help='prepare, inspect or confirm a freeze without evaluating observations')
+    actions = research.add_subparsers(dest='research_action', required=True)
+    prepare = actions.add_parser('prepare', help='generate a reviewable draft, hashing inputs without numeric parsing')
+    prepare.add_argument('config', type=Path)
+    prepare.add_argument('--charter', type=Path, required=True)
+    show = actions.add_parser('show', help='show the full proposed identity and confirmation status')
+    show.add_argument('freeze', type=Path)
+    confirm = actions.add_parser('confirm', help='confirm the exact displayed identity; does not open a holdout')
+    confirm.add_argument('config', type=Path)
+    confirm.add_argument('--hash', dest='identity_hash', required=True)
+    confirm.add_argument('--reason', required=True)
     return parser
 
 
@@ -445,13 +503,23 @@ def main() -> None:
     args = build_parser().parse_args()
     try:
         if args.command == "backtest":
-            raise SystemExit(run_backtest(args.config, unseal_reason=args.unseal))
+            raise SystemExit(run_backtest(args.config, unseal_reason=args.unseal,
+                                         reveal_reason=args.reveal, repair_of=args.repair_of, repair_reason=args.repair_reason))
         if args.command == "sweep":
-            raise SystemExit(run_sweep_command(args.config, unseal_reason=args.unseal))
+            raise SystemExit(run_sweep_command(args.config, unseal_reason=args.unseal,
+                                              reveal_reason=args.reveal, repair_of=args.repair_of, repair_reason=args.repair_reason))
         if args.command == "classify":
-            raise SystemExit(run_classify(args.development, args.validation))
+            raise SystemExit(run_classify(args.development, args.validation, args.freeze))
         if args.command == "aftertax":
             raise SystemExit(run_aftertax(args.sweep, args.policy, args.distributions))
+        if args.command == 'research':
+            from boring_alpha.research_commands import prepare_research_freeze, show_research_freeze, confirm_research_freeze
+            if args.research_action == 'prepare':
+                raise SystemExit(prepare_research_freeze(args.config, args.charter))
+            if args.research_action == 'show':
+                raise SystemExit(show_research_freeze(args.freeze))
+            if args.research_action == 'confirm':
+                raise SystemExit(confirm_research_freeze(args.config, args.identity_hash, args.reason))
     except (OSError, RuntimeError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(2) from exc

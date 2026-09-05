@@ -20,7 +20,13 @@ class SealedRunError(RuntimeError):
 
 
 def check_evaluation_gates(config: AppConfig, unseal_reason: str | None) -> None:
-    """Refuse runs the charter's sealing policy does not permit."""
+    """One profile-owned admission interface, shared by all entry points."""
+    from boring_alpha.profiles import profile_for
+    profile_for(config.strategy.strategy_id).check_admission(config, unseal_reason)
+
+
+def check_legacy_review_gates(config: AppConfig, unseal_reason: str | None) -> None:
+    """Preserve BA-001's review-file semantics; profiles own their use."""
 
     period = config.evaluation.period
     if period == "sealed" and not (unseal_reason or "").strip():

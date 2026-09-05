@@ -12,7 +12,7 @@ from boring_alpha.cli import run_backtest
 
 CONFIG = """
 [strategy]
-id = "Q-001"
+id = "BA-001"
 name = "Quality Wiring"
 symbols = ["A", "B"]
 lookback_months = 12
@@ -30,7 +30,7 @@ cash_path = "../data/cash.csv"
 start = "2021-01-01"
 end = "2021-12-31"
 [evaluation]
-period = "exploratory"
+period = "development"
 [report]
 output_dir = "../experiments"
 """
@@ -53,6 +53,12 @@ class QualityWiringTests(unittest.TestCase):
         (self.root / "data").mkdir()
         self.config_path = self.root / "configs" / "run.toml"
         self.config_path.write_text(CONFIG, encoding="utf-8")
+        # Quality-only fixture: a bounded, already-seen period of a registered
+        # profile, not an unbounded CSV alias requesting protected observations.
+        (self.root / "configs" / "evaluation_periods.toml").write_text(
+            "[BA-001.development]\nstart = 2021-01-01\nend = 2021-12-31\n",
+            encoding="utf-8",
+        )
 
     def tearDown(self) -> None:
         self.tmp.cleanup()
@@ -75,7 +81,7 @@ class QualityWiringTests(unittest.TestCase):
         return output.getvalue()
 
     def _manifest(self) -> dict:
-        run = next((self.root / "experiments" / "Q-001").iterdir())
+        run = next((self.root / "experiments" / "BA-001").iterdir())
         return json.loads((run / "manifest.json").read_text(encoding="utf-8"))
 
     def test_implausible_move_halts_the_run_before_any_artifact_is_written(self) -> None:

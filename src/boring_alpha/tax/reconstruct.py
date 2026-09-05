@@ -32,10 +32,19 @@ def read_manifest(sweep_dir: Path) -> dict:
     for key in ("sweep_id", "strategy_id", "config_toml", "grid", "data_sha256"):
         if key not in manifest:
             raise ValueError(f"{path} records no {key}; it predates the sweep artifact format")
-    if manifest.get("artifact_schema") not in READABLE_SCHEMAS:
+    if type(manifest.get("artifact_schema")) is not int or manifest["artifact_schema"] not in READABLE_SCHEMAS:
         raise ValueError(f"{path} has unsupported artifact_schema {manifest.get('artifact_schema')!r}")
     if not isinstance(manifest["grid"], dict) or "base" not in manifest["grid"]:
         raise ValueError(f"{path} records no complete variant grid")
+    if manifest.get("strategy_id") == "BA-002" and manifest.get("artifact_schema") != 7:
+        raise ValueError("BA-002 requires complete schema-7 evidence, not a legacy archive")
+    if manifest.get("artifact_schema") == 7:
+        if manifest.get("strategy_id") != "BA-002":
+            raise ValueError("schema-7 evidence is reserved for the BA-002 profile")
+        if manifest.get("complete") is not True:
+            raise ValueError("schema-7 sweep has no completed publication")
+        if manifest.get("run_map") != schema7_run_map():
+            raise ValueError("schema-7 sweep has an incomplete or changed account mapping")
     return manifest
 
 
@@ -145,10 +154,27 @@ def tax_run_name(variant: str, role: str) -> str | None:
     return f"variant:{variant}" if role == "strategy" else None
 
 
+def schema7_run_map() -> dict[str, dict[str, str]]:
+    from boring_alpha.research_contract import expected_account_map
+    mapping = {
+        account: {"variant": row, "role": role}
+        for row, roles in expected_account_map().items() for role, account in roles.items()
+    }
+    mapping.update({
+        "exposure_matched": {"variant": "exposure_matched", "role": "strategy"},
+        "cash": {"variant": "exposure_matched", "role": "benchmark"},
+        "static_full": {"variant": "static_full", "role": "strategy"},
+        "reference_12": {"variant": "reference_12", "role": "strategy"},
+    })
+    return mapping
+
+
 def _variant_names(manifest: dict) -> set[str]:
     names = set(manifest["grid"]) | {"exposure_matched"}
     if "benchmark" in _config_of(manifest):
         names.add("static_full")
+    if manifest.get("artifact_schema") == 7:
+        names.add("reference_12")
     if any(not isinstance(name, str) or Path(name).name != name or name in (".", "..") for name in names):
         raise ValueError("sweep manifest has an invalid variant name")
     return names
@@ -164,16 +190,23 @@ def verify_archive_artifacts(sweep_dir: Path, manifest: dict) -> str:
 
     hashes = manifest.get("artifacts_sha256")
     if hashes is None:
+        if manifest.get("artifact_schema") == 7:
+            raise ValueError("schema-7 sweep requires artifact checksums")
         return "legacy-unverified: per-file checksums were not recorded"
     required = {"input_prices.csv.gz", "input_cash.csv.gz"}
     if "distributions_manifest" in manifest:
         required.add("input_distributions.csv.gz")
+    if manifest.get("artifact_schema") == 7:
+        required.update({"criteria.json", "tax.json", "research_contract.json", "freeze.json", "calendar.json",
+                         "account_map.json", "summary.md"})
     for name in _variant_names(manifest):
         required.update(
             f"variants/{name}/{role}_{kind}.csv"
             for role in ("strategy", "benchmark") for kind in ("equity", "trades")
         )
         required.add(f"variants/{name}/strategy_decisions.json")
+        if manifest.get("artifact_schema") == 7:
+            required.add(f"variants/{name}/benchmark_decisions.json")
     if not isinstance(hashes, dict) or not required.issubset(hashes):
         raise ValueError("sweep artifacts_sha256 does not cover all required archived inputs")
     for name, expected in hashes.items():
@@ -203,13 +236,15 @@ def run_files(sweep_dir: Path, manifest: dict | None = None) -> list[tuple[str, 
             f"unexpected {sorted(actual - expected)}"
         )
     files: list[tuple[str, Path, Path]] = []
+    explicit = manifest.get("run_map") if manifest.get("artifact_schema") == 7 else None
     for variant in sorted(expected):
         variant_dir = variants / variant
         for role in ("strategy", "benchmark"):
             for kind in ("equity", "trades"):
                 if not (variant_dir / f"{role}_{kind}.csv").is_file():
                     raise ValueError(f"missing archived artifact: {variant}/{role}_{kind}.csv")
-            name = tax_run_name(variant_dir.name, role)
+            name = next((key for key, location in explicit.items()
+                         if location == {"variant": variant, "role": role}), None) if explicit is not None else tax_run_name(variant_dir.name, role)
             if name is None:
                 continue
             files.append((name, variant_dir / f"{role}_equity.csv", variant_dir / f"{role}_trades.csv"))

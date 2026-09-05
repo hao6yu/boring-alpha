@@ -51,6 +51,7 @@ from boring_alpha.report import (
 from boring_alpha.profiles import VariantSpec, profile_for
 from boring_alpha.signals import CashAllocation, FixedAllocation, ScaledAllocation
 from boring_alpha.tax import OVERLAY_VERSION, policy_sha256, run_scenarios
+from boring_alpha.tax.reconcile import validate_replay
 
 # BA-001's variant order; kept for callers that iterate it.
 GRID = (BASE, DOUBLE_COST, LOOKBACK_9, LOOKBACK_15, DROP_TOP_SLEEVE)
@@ -79,6 +80,14 @@ class SweepResult:
     None when the configuration has no [tax] table."""
     distributions: DistributionTable | None = None
     distributions_provenance: dict | None = None
+    evidence: object | None = None
+    research_contract: dict | None = None
+    calendar_record: dict | None = None
+    account_map: dict | None = None
+    row_definitions: dict | None = None
+    verification: dict | None = None
+    reference_12: dict | None = None
+    run_context: object | None = None
 
 
 def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
@@ -95,9 +104,11 @@ def _engine(config: AppConfig, data: MarketData, cost_bps: float) -> Backtester:
 TAX_BASE_SCENARIO = "hifo-deferral-base"
 
 
-def _distributions_for(config: AppConfig, data: MarketData) -> tuple[DistributionTable, dict, dict]:
+def _distributions_for(config: AppConfig, data: MarketData, context=None) -> tuple[DistributionTable, dict, dict]:
     """The distributions table a tax run uses, truncated like the market data,
     and the manifest block that travels into the sweep so it is self-contained."""
+
+    from boring_alpha.research_access import captured_distributions
 
     assert config.tax is not None
     path = config.tax.distributions_path
@@ -108,10 +119,21 @@ def _distributions_for(config: AppConfig, data: MarketData) -> tuple[Distributio
             f"data.prices_path {config.data.prices_path}: distributions and prices must "
             "come from one fetch"
         )
-    if not manifest_path.is_file():
-        raise ValueError(f"no manifest.json beside {path.name}; a v2 snapshot is required for tax")
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    table = load_distributions(path, manifest_path=manifest_path).through(data.dates[-1])
+    captured = captured_distributions(context, data.dates[-1])
+    if captured is None:
+        if not manifest_path.is_file():
+            raise ValueError(f"no manifest.json beside {path.name}; a v2 snapshot is required for tax")
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        table = load_distributions(path, manifest_path=manifest_path, end=data.dates[-1])
+        provenance = {
+            "source_sha256": table.source_sha256,
+            "source_path": str(path),
+            "created_at": manifest.get("created_at"),
+            "methodology": manifest.get("methodology"),
+        }
+    else:
+        table, manifest, provenance = captured
+    table = table.through(data.dates[-1])
     table.require_coverage(data, config.strategy.symbols)
     block = {
         "methodology": table.methodology,
@@ -120,18 +142,21 @@ def _distributions_for(config: AppConfig, data: MarketData) -> tuple[Distributio
         "csv_sha256": table.csv_sha256,
         "fingerprint_version": FINGERPRINT_VERSION,
     }
-    provenance = {
-        "source_sha256": table.source_sha256,
-        "source_path": str(path),
-        "created_at": manifest.get("created_at"),
-        "methodology": manifest.get("methodology"),
-    }
     return table, block, provenance
 
 
-def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
+def run_sweep(config: AppConfig, data: MarketData, *, run_context=None) -> SweepResult:
     profile = profile_for(config.strategy.strategy_id)
     specs = profile.grid(config)
+    ba002 = config.strategy.strategy_id == "BA-002"
+    context = None
+    table = block = distributions_provenance = None
+    if ba002:
+        from boring_alpha.research_access import synthetic_run_context, validate_ba002_inputs
+        run_context = run_context or synthetic_run_context(config)
+        run_context.verify()
+        table, block, distributions_provenance = _distributions_for(config, data, run_context)
+        context = validate_ba002_inputs(config, data, table, run_context)
     if BASE not in specs:
         raise ValueError(f"{profile.strategy_id}'s grid defines no '{BASE}' variant")
     grid = {name: spec.description for name, spec in specs.items()}
@@ -195,12 +220,17 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         )
         static_full = calculate_metrics(static_full_result, data)
 
+    reference_result = None
+    if ba002:
+        reference_result = _engine(config, data, cost).run(profile.reference_policy(config))
+
     tax: dict | None = None
-    table: DistributionTable | None = None
-    distributions_provenance: dict | None = None
+    verification = None
+    account_map = row_definitions = None
     if config.tax is not None:
-        table, block, distributions_provenance = _distributions_for(config, data)
-        code_hash = code_fingerprint()
+        if table is None:
+            table, block, distributions_provenance = _distributions_for(config, data, run_context)
+        code_hash = run_context.verify()[0] if ba002 else code_fingerprint()
         tax_runs: dict[str, BacktestResult] = {
             "strategy": base_strategy,
             "benchmark": base_static,
@@ -209,9 +239,38 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         }
         if static_full_result is not None:
             tax_runs["static_full"] = static_full_result
-        for name, (strategy, _) in runs.items():
+        if reference_result is not None:
+            tax_runs["reference_12"] = reference_result
+        for name, (strategy, paired_benchmark) in runs.items():
             if name != BASE:
                 tax_runs[f"variant:{name}"] = strategy
+                if ba002:
+                    tax_runs[f"benchmark:{name}"] = paired_benchmark
+        if ba002:
+            from boring_alpha.research_contract import expected_account_map
+            account_map = expected_account_map()
+            for result in tax_runs.values():
+                validate_replay(result, data, config.portfolio.initial_cash)
+                context.calendar.validate_output_sessions(
+                    tuple(point.date for point in result.equity_curve),
+                    config.backtest.start, config.backtest.end,
+                )
+            verification = {
+                "account_reconciliation": {
+                    account: True for account in tax_runs
+                },
+                "calendar_complete": True,
+            }
+            row_definitions = {}
+            for name, spec in specs.items():
+                signal = spec.strategy(config, None)
+                comparison = spec.benchmark(config)
+                row_definitions[name] = {
+                    "horizons": list(signal.horizons), "warmup_months": signal.warmup_months,
+                    "cost_bps": spec.cost_bps,
+                    "benchmark": {"exposure": comparison.exposure,
+                                  "rebalance": comparison.rebalance, "cost_bps": spec.cost_bps},
+                }
         tax = {
             "tax_policy_sha256": policy_sha256(config.tax),
             "distributions_sha256": table.sha256,
@@ -225,6 +284,29 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
                 for name, result in tax_runs.items()
             },
         }
+
+    evidence = None
+    if ba002:
+        from boring_alpha.period_evidence import build_period_evidence
+        from boring_alpha.research_contract import contract_sha256, evaluator_fingerprint
+        evidence = build_period_evidence(
+            variants=variants, tax=tax, account_map=account_map,
+            row_definitions=row_definitions, verification=verification,
+            identities={
+                "strategy_spec_sha256": config.strategy_spec_sha256,
+                "code_sha256": code_hash, "tax_policy_sha256": tax["tax_policy_sha256"],
+                "distributions_sha256": table.sha256, "data_sha256": data.fingerprint(),
+                "contract_sha256": contract_sha256(context.contract),
+                "evaluator_sha256": evaluator_fingerprint(),
+                "calendar_sha256": context.calendar.sha256,
+                "calendar_authority_sha256": context.calendar.authority_sha256,
+            },
+            contract=context.contract, approved_contract=context.approved_contract,
+            period=config.evaluation.period, start=config.backtest.start.isoformat(),
+            end=config.backtest.end.isoformat(),
+            evidence_status="synthetic" if config.data.source == "synthetic" else
+                context.contract["periods"][config.evaluation.period]["status"],
+        )
 
     clusters = {
         name: sum(excess_contributions.get(symbol, 0.0) for symbol in symbols)
@@ -245,7 +327,10 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
 
     return SweepResult(
         variants=variants,
-        outcome=profile.evaluate_period(variants, {"tax": tax, "static_full": static_full}),
+        outcome=profile.evaluate_period(variants, {
+            "tax": tax, "static_full": static_full,
+            **({"evidence": evidence} if ba002 else {}),
+        }),
         contributions=contributions,
         excess_contributions=excess_contributions,
         clusters=clusters,
@@ -256,6 +341,7 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
             **runs,
             "exposure_matched": (matched, cash),
             **({"static_full": (static_full_result, cash)} if static_full_result is not None else {}),
+            **({"reference_12": (reference_result, cash)} if reference_result is not None else {}),
         },
         sharpe_interval=sharpe_difference_interval(
             excess_return_series(base_strategy, data),
@@ -268,6 +354,12 @@ def run_sweep(config: AppConfig, data: MarketData) -> SweepResult:
         tax=tax,
         distributions=table,
         distributions_provenance=distributions_provenance,
+        evidence=evidence,
+        run_context=run_context,
+        research_contract=context.contract if context is not None else None,
+        calendar_record=json.loads(context.calendar.canonical_bytes()) if context is not None else None,
+        account_map=account_map, row_definitions=row_definitions, verification=verification,
+        reference_12=calculate_metrics(reference_result, data) if reference_result is not None else None,
     )
 
 
@@ -389,6 +481,64 @@ def _summary(config: AppConfig, sweep: SweepResult) -> str:
     lines += _after_tax_lines(sweep)
     if sweep.warnings:
         lines += ["", "## Warnings", ""] + [f"- {warning}" for warning in sweep.warnings]
+    if config.strategy.strategy_id == "BA-002":
+        lines = [
+            "# BA-002 — 9/12/15-month equal-vote trend",
+            "",
+            "REVEALED-DATA REPAIR — DIAGNOSTIC ONLY, NOT A FRESH HOLDOUT"
+            if sweep.run_context and sweep.run_context.revealed_diagnostic else
+            "SYNTHETIC DATA — NO ECONOMIC MEANING" if config.data.source == "synthetic" else
+            ("RETROSPECTIVE HOLDOUT — unopened at freeze, now evaluated" if evaluation.period == "sealed" else
+             "SEEN RESEARCH HISTORY — not independent validation"),
+            f"Window: {config.backtest.start} to {config.backtest.end} ({evaluation.period}).",
+            f"Benchmark: {benchmark_description(config)}; 7.5% per ETF, remainder cash.",
+            "",
+            "## Research screening criteria",
+            "",
+            "After-tax returns: post-liquidation NAV convention, stylized federal taxes. "
+            "Drawdown: pre-tax, cost-net. A 20% historical screen is not a live loss limit.",
+            "Primary margin ≥50 bps/year; every stress margin >0; each paired drawdown ≤20% "
+            "and no worse than its cost-matched benchmark. Independent worst strategy / best benchmark.",
+            "",
+            "| Gate | Passed | Detail |", "|---|---|---|",
+            *[f"| {c.name} | {'yes' if c.passed else 'NO'} | {c.detail} |" for c in sweep.outcome.criteria],
+            "",
+            "Both seen periods must pass every row to be eligible to request holdout evaluation. "
+            "This is not Advance or authorization to trade/reveal data.",
+            "",
+            "## Fixed grid (not a menu)", "",
+            "| Row | Rule | Strategy drawdown | Paired benchmark drawdown |",
+            "|---|---|---:|---:|",
+            *[f"| {row} | {description} | {sweep.variants[row]['strategy']['max_drawdown']:.6f} | "
+              f"{sweep.variants[row]['static']['max_drawdown']:.6f} |" for row, description in sweep.grid.items()],
+            "",
+            "## Diagnostics (non-gating)", "",
+            f"Primary strategy: turnover {base['strategy']['one_way_turnover']:.6f}; "
+            f"average gross exposure {base['strategy']['average_gross_exposure']:.6f}; "
+            f"worst month {base['strategy']['worst_month']:.6f}; "
+            f"cost drag {base['strategy']['cost_drag_bps']:.6f} bps/year.",
+            f"12-month reference with common 15-month warmup: {sweep.reference_12}.",
+            f"Full static: {sweep.static_full}.",
+            f"Exposure-matched: {sweep.exposure_matched}.", f"Cash: {sweep.cash}.",
+            f"Pre-tax Sharpe difference bootstrap: {sweep.sharpe_interval}. "
+            "This interval does not test the nonlinear after-tax margin.",
+            f"Sleeve excess-over-cash attribution: {sweep.excess_contributions}.",
+            f"Cluster attribution: {sweep.clusters}.",
+            "Global-equity diagnostic unavailable; no substitute selected.",
+            *_after_tax_lines(sweep),
+            "", "## Matched tax scenarios (diagnostic)", "",
+            "These matched differences do not replace the independent worst/best gating margin above.",
+            "", "| Row | Scenario | Strategy after-tax CAGR | Paired benchmark after-tax CAGR | Matched margin (bps/year) |",
+            "|---|---|---:|---:|---:|",
+        ]
+        for row in sweep.evidence.rows:
+            strategy_cagrs = dict(row.strategy.after_tax_cagrs)
+            benchmark_cagrs = dict(row.benchmark.after_tax_cagrs)
+            for scenario, margin in row.paired_margins:
+                lines.append(f"| {row.row_id} | {scenario} | {strategy_cagrs[scenario]} | "
+                             f"{benchmark_cagrs[scenario]} | {margin * 10000} |")
+        if data_warnings := tuple(sweep.warnings):
+            lines += ["", "## Warnings", ""] + [f"- {warning}" for warning in data_warnings]
     return "\n".join(lines) + "\n"
 
 
@@ -483,6 +633,9 @@ def write_sweep_report(
     sweep: SweepResult,
     unseal_reason: str | None = None,
 ) -> tuple[str, Path]:
+    if config.strategy.strategy_id == "BA-002":
+        from boring_alpha.ba002_artifacts import write_ba002_sweep
+        return write_ba002_sweep(config, data, sweep, unseal_reason=unseal_reason)
     evaluation = config.evaluation
     code_hash = code_fingerprint()
     archive: dict[str, bytes] = {

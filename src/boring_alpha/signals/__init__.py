@@ -3,6 +3,7 @@ from boring_alpha.signals.trend import (
     ExcludingSleeve,
     FixedAllocation,
     MultiAssetTrend,
+    MultiHorizonTrend,
     ScaledAllocation,
     TargetExposureAllocation,
 )
@@ -12,6 +13,7 @@ __all__ = [
     "ExcludingSleeve",
     "FixedAllocation",
     "MultiAssetTrend",
+    "MultiHorizonTrend",
     "ScaledAllocation",
     "TargetExposureAllocation",
 ]

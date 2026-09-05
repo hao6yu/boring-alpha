@@ -3,7 +3,8 @@
 Date: 2026-09-04
 Status: **revision 3.3, implementation corrections.**
 §14 records the reviews and implementation corrections. Spec 1 of 2 for the BA-002 programme.
-Spec 2 (the BA-002 charter and signal) follows once this is implemented.
+Spec 2 now has a [draft charter](../../strategies/BA-002.md) and synthetic-tested
+implementation; no BA-002 historical evaluation or charter freeze has occurred.
 Depends on: BA-001 development and validation reviews under `docs/reviews/`.
 
 ## 1. Why this exists
@@ -711,10 +712,11 @@ alternative would be right.
   Pre-liquidation is the right figure only for an investor who will never sell,
   which is a personal fact, not a strategy property.
 - **An after-tax NAV convention, named as such.** Rescaling is exact under the
-  engine's homogeneity and needs no opportunity-cost assumption; what it skips
-  is second order for accounts that hold this much cash, and it is stated.
-  Modelling withdrawal mechanics would be right only if either account were
-  routinely fully invested.
+  stated convention and needs no opportunity-cost assumption. Homogeneity of
+  the pre-tax engine does not make it an executable tax-payment model. The
+  omitted costs, realizations and exposure effects are unbounded here, as §4.8
+  states; cash-heavy accounts are not automatically exempt. Withdrawal
+  mechanics require a separate study before funded-account conclusions.
 - **Tax cash interest.** A cash-heavy rule that ignores tax on interest
   understates its own cost. Treasury bill interest is federally taxable.
 - **Annual rebalancing for the target-exposure benchmark.** The benchmark is
@@ -744,9 +746,9 @@ alternative would be right.
   understanding of the rules, consistent with the IRS and issuer materials the
   external reviews cited, and not verified tax advice. The base qualified
   fractions are numbers I have taken from a review rather than read myself.
-  Each is a declared policy input or a grid axis, so correcting one is a policy
-  change, not a code change, and the grid is what keeps a wrong one from
-  deciding anything.
+  The grid measures sensitivity only to its declared axes. A wrong input or an
+  omitted mechanism can still decide a close result, and a correction may
+  require policy, data or code changes with a new recorded identity.
 
 ## 11. Open items before implementation is complete
 
@@ -860,3 +862,8 @@ implementation plan will break these into tasks.
   was removed. No charter, sealed period, tax rate or scenario axis changed.
   See [the correction record](../../changes/2026-09-04-after-tax-corrections.md)
   for examples, verification and remaining limitations.
+- **Documentation follow-up (2026-09-04).** The BA-002 draft review found that
+  §10 still called funding omissions second order, despite 3.3 removing that
+  claim from §4.8 and the implementation. Corrected the remaining occurrence
+  and the claim that the scenario grid prevents any wrong assumption from
+  deciding a result. No code, policy, locked charter or historical result changed.

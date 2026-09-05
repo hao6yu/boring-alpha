@@ -14,6 +14,26 @@ REBALANCE_SCHEDULES: tuple[str, ...] = ("annual", "monthly")
 GAINS_CLASSES: tuple[str, ...] = ("standard", "collectibles", "commodity_pool")
 
 
+def validate_horizon_inputs(horizons: object, warmup_months: object) -> tuple[int, ...]:
+    """Canonical equal-vote horizons and the distinct common readiness window.
+
+    A vote is a countable month horizon, not a number to coerce from a boolean,
+    float or string. The common window remains in force when a vote is removed.
+    """
+
+    if not isinstance(horizons, (tuple, list)) or not horizons:
+        raise ValueError("horizons must be a non-empty sequence of positive integers")
+    if any(type(horizon) is not int or horizon <= 0 for horizon in horizons):
+        raise ValueError("horizons must contain only positive integers")
+    if len(set(horizons)) != len(horizons):
+        raise ValueError("horizons must be unique")
+    if type(warmup_months) is not int or warmup_months <= 0:
+        raise ValueError("warmup_months must be a positive integer")
+    if warmup_months < max(horizons):
+        raise ValueError("warmup_months must be at least the largest active horizon")
+    return tuple(sorted(horizons))
+
+
 @dataclass(frozen=True, slots=True)
 class PriceBar:
     date: date
@@ -64,16 +84,31 @@ class Fill:
 
 
 @dataclass(frozen=True, slots=True)
+class HorizonEvidence:
+    """One equal vote and its contribution to the final sleeve targets."""
+
+    horizon_months: int
+    anchor_date: date
+    asset_returns: dict[str, float]
+    cash_return: float
+    votes: dict[str, bool]
+    target_weights: dict[str, float]
+
+
+@dataclass(frozen=True, slots=True)
 class SignalSnapshot:
     as_of: date
     target_weights: dict[str, float]
     asset_returns: dict[str, float]
-    cash_return: float
+    cash_return: float | None
     name: str
     # "Keep the current allocation." The engine treats a hold on an empty book
     # as a normal rebalance to `target_weights`, because there is nothing to
     # keep; otherwise it records the decision and places no orders.
     hold: bool = False
+    # An ensemble has no single return or cash hurdle. Its legacy asset_returns
+    # is empty and cash_return is None; the comparisons live here instead.
+    horizon_evidence: tuple[HorizonEvidence, ...] | None = None
 
 
 @dataclass(frozen=True, slots=True)

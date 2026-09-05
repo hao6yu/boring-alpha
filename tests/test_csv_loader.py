@@ -19,6 +19,24 @@ def _load(prices: str, cash: str):
 
 
 class CsvLoaderTests(unittest.TestCase):
+    def test_end_filter_skips_protected_numeric_values_before_parsing(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "p.csv").write_text(PRICES + "2024-01-04,SPY,PROTECTED,PROTECTED\n")
+            (root / "c.csv").write_text(CASH + "2024-01-04,PROTECTED\n")
+            bounded = load_csv_market_data(root / "p.csv", root / "c.csv", end=date(2024, 1, 3))
+            self.assertEqual(bounded.fingerprint(), _load(PRICES, CASH).fingerprint())
+            with self.assertRaisesRegex(ValueError, "invalid price row"):
+                load_csv_market_data(root / "p.csv", root / "c.csv")
+
+    def test_end_filter_still_rejects_invalid_numbers_inside_window(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "p.csv").write_text(PRICES.replace("101.0,102.0", "PROTECTED,102.0"))
+            (root / "c.csv").write_text(CASH)
+            with self.assertRaisesRegex(ValueError, "invalid price row 3"):
+                load_csv_market_data(root / "p.csv", root / "c.csv", end=date(2024, 1, 3))
+
     def test_loads_bars_and_uppercases_symbols(self) -> None:
         data = _load(PRICES, CASH)
         self.assertEqual(data.symbols, ("SPY",))

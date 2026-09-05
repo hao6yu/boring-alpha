@@ -46,6 +46,19 @@ class ReaderTests(unittest.TestCase):
         self.assertEqual(table.splits, MANIFEST["splits"])
         self.assertEqual(len(table.sha256), 64)
 
+    def test_end_filter_skips_numeric_parse_and_future_split_identity(self) -> None:
+        csv_path, manifest_path = _write(self.root)
+        expected = load_distributions(csv_path, manifest_path=manifest_path).through(date(2024, 1, 3))
+        csv_path.write_text(CSV.replace("2024-01-04,A,102.0,0.0", "2024-01-04,A,PROTECTED,PROTECTED"))
+        manifest = {"splits": {"A": MANIFEST["splits"]["A"] + [
+            {"date": "2024-01-04", "ratio": "3:1"}
+        ], "B": [], "FUTURE": []}}
+        bounded = load_distributions(csv_path, manifest_block=manifest, end=date(2024, 1, 3))
+        self.assertEqual(bounded.fingerprint(), expected.fingerprint())
+        self.assertNotEqual(bounded.source_sha256, expected.source_sha256)
+        with self.assertRaisesRegex(ValueError, "invalid distribution row"):
+            load_distributions(csv_path, manifest_block=manifest)
+
     def test_ex_dates_list_only_sessions_with_a_dividend(self) -> None:
         csv_path, manifest_path = _write(self.root)
         table = load_distributions(csv_path, manifest_path=manifest_path)

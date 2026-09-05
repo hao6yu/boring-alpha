@@ -180,13 +180,22 @@ class ProfileLookupTests(unittest.TestCase):
 class SchemaCompatibilityTests(unittest.TestCase):
     _dirs = ClassifyGuardTests._dirs
 
-    def test_every_readable_schema_classifies(self) -> None:
+    def test_ba001_readable_schemas_classify(self) -> None:
         from boring_alpha.report import READABLE_SCHEMAS
 
-        for schema in READABLE_SCHEMAS:
+        self.assertTrue({5, 6}.issubset(READABLE_SCHEMAS))
+        for schema in (5, 6):
             dev_dir, val_dir = self._dirs(
                 _criteria("development", artifact_schema=schema),
                 _criteria("validation", artifact_schema=schema),
             )
             with contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(run_classify(dev_dir, val_dir), 0)
+
+    def test_ba001_cannot_masquerade_as_schema7(self) -> None:
+        dev_dir, val_dir = self._dirs(
+            _criteria("development", artifact_schema=7),
+            _criteria("validation", artifact_schema=7),
+        )
+        with self.assertRaisesRegex(ValueError, "schema 7 requires complete BA-002"):
+            run_classify(dev_dir, val_dir)
