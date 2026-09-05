@@ -6,6 +6,8 @@
 > under spec revision 3.3. The original code sketches below are historical;
 > the tested implementation and revision 3.3 supersede their mechanics.
 > Task 9's extraction must use the exact paths returned by the corrected CLI.
+> **Task 9 is complete:** see the [post-hoc note](../../notes/2026-09-04-BA-001-after-tax.md)
+> for the exact outputs, all-scenario checks and the unchanged BA-001 verdict.
 
 **Goal:** Compute after-tax results for every run a sweep produces, under a fixed eight-scenario grid, from the pre-tax artifacts alone; wire them into sweeps as `tax.json`; add an `aftertax` command that re-scores existing sweeps; and write the post-hoc after-tax note on BA-001's two archived sweeps.
 
@@ -3572,7 +3574,12 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>"
 
 ### Task 9: The post-hoc after-tax note on BA-001
 
-The overlay's first real use: score BA-001's two archived sweeps under the stylized policy and write down what they show. This is a diagnostic computed after the results were known; it changes nothing about BA-001's classification and the note says so in its first line.
+Completed after the corrections in `a3252b2`: both archived sweeps were
+re-scored under the stylized policy, with all account reconciliations and tax
+identity checks passing. An older development-only tax artifact already
+existed; it was preserved and excluded from the new note. This is a diagnostic
+computed after the original results were known and changes nothing about
+BA-001's classification.
 
 **Files:**
 - Create: `docs/notes/2026-09-04-BA-001-after-tax.md`
@@ -3582,7 +3589,7 @@ The overlay's first real use: score BA-001's two archived sweeps under the styli
 - Consumes: the `aftertax` command (Task 8), `configs/tax_policy.toml` (Task 1).
 - Produces: the note plan 2's closing review cites.
 
-- [ ] **Step 1: Score both sweeps**
+- [x] **Step 1: Score both sweeps**
 
 ```bash
 .venv/bin/boring-alpha aftertax experiments/BA-001/sweeps/4b9d1479f811d108 \
@@ -3595,10 +3602,12 @@ Expected: each prints a header, one line per run (`strategy`, `benchmark`, `expo
 
 The archived prices came from the v1 snapshot and the distributions from the v2 snapshot, fetched a few hours apart. If Yahoo revised any historical price in between, the share identity or the implied-price check will say so. That is what the checks are for; report what they say and do not adjust anything.
 
-- [ ] **Step 2: Extract the figures**
+- [x] **Step 2: Extract the figures**
 
 ```bash
-.venv/bin/python - "EXACT_DEVELOPMENT_OUTPUT_PATH" "EXACT_VALIDATION_OUTPUT_PATH" <<'EOF'
+.venv/bin/python - \
+    experiments/BA-001/sweeps/4b9d1479f811d108/tax-9abb91e20b43-db02d3cd22b2-4f555678b691.json \
+    experiments/BA-001/sweeps/f0a36ea722ebefd4/tax-9abb91e20b43-a6e3f11bc853-4f555678b691.json <<'EOF'
 import json, sys
 from pathlib import Path
 from boring_alpha.report import code_fingerprint
@@ -3641,7 +3650,7 @@ for label, sweep, path in zip(
 EOF
 ```
 
-- [ ] **Step 3: Write the note**
+- [x] **Step 3: Write the note**
 
 Create `docs/notes/2026-09-04-BA-001-after-tax.md`. Paste the two tables and the identity-check lists from Step 2 verbatim where marked, and fill the bracketed sentences from those figures only — no figure may appear in prose that is not in a table:
 
@@ -3704,14 +3713,16 @@ are declared rather than known; a conclusion that changes between worst and
 best scenario is not a conclusion.
 ```
 
-- [ ] **Step 4: Confirm the note is complete**
+- [x] **Step 4: Confirm the note is complete**
 
-Run: `grep -n "^\[" docs/notes/2026-09-04-BA-001-after-tax.md; grep -c "<paste" docs/notes/2026-09-04-BA-001-after-tax.md`
-Expected: no lines beginning with `[` and a count of `0` for `<paste`.
+Run: `rg -n '<paste|EXACT_|^\[One sentence' docs/notes/2026-09-04-BA-001-after-tax.md`
+Expected: no placeholder matches. Ordinary Markdown links are permitted.
+Verify numeric tables and comparisons against the exact JSON paths above.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
-Nothing under `experiments/` or `data/` is tracked; only the note is committed.
+Nothing under `experiments/` or `data/` is tracked. The note and its completion
+pointers are committed separately from the implementation corrections.
 
 ```bash
 git add docs/notes/2026-09-04-BA-001-after-tax.md
