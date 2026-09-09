@@ -10,6 +10,9 @@ belong to immutable experiment artifacts linked from a later review.
 | BA-002 | Multi-Horizon Trend | [Two-feed seen-history diagnostic complete — practical no-go](../reviews/BA-002-source-sensitivity.md). Revision 1 unchanged; formal freeze unconfirmed, no holdout evaluation. | [BA-002.md](BA-002.md) |
 | BA-003 | Relative-Strength Tilt | Draft proposal — defaults awaiting review; not locked, implemented or evaluated. Shared family holdout unchanged. | [BA-003.md](BA-003.md) |
 | BA-004 | Passive Capture | **Redundant** (see charter §13) — [result note](../notes/2026-09-05-BA-004-retention-audit.md). Audit is discriminating on all injected channels; budget reachable only under four named conditions. No live audit; consumes no holdout observation. | [BA-004.md](BA-004.md) |
+| BA-005 | BTC-USD above its 200-day mean | Evaluation complete — **FAIL** on its own locked drawdown gate at every fee (see [round note](../notes/2026-09-08-a-hundredfold-asset-and-a-brake-on-it.md)); Coinbase question sized down into BA-006. | [BA-005.md](BA-005.md) |
+| BA-006 | Sized Coinbase BTC sleeve | Pre-registered 2026-09-08, not run — awaiting the operator fee record its gates require. Consumes no BA-TREND observation. | [BA-006.md](BA-006.md) |
+| BA-007 | Crypto Cross-Sectional Selection | Pre-registered 2026-09-08, **not run** — charter locked before any signal computation on the real archive; its own data family (Binance USDT-M perps via data.binance.vision), consumes no BA-TREND or BA-006 observation. | [BA-007.md](BA-007.md) |
 
 BA-004 is not a member of the `BA-TREND` family. It holds no forecast, so it
 neither consumes nor releases a sealed observation, and its evaluation cannot be
