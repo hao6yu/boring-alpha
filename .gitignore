@@ -20,6 +20,7 @@ data/*.csv
 data/*.parquet
 data/snapshots/
 data/crypto/
+data/perps/
 data/current
 
 # Generated experiments are immutable local artifacts.
