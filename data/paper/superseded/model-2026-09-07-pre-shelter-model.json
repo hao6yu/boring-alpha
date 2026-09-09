@@ -1,0 +1,19 @@
+{
+  "comparator": {
+    "expense_ratio": 0.000945,
+    "name": "100% SPY",
+    "weights": {
+      "SPY": 1.0
+    }
+  },
+  "expense_ratio": 0.000945,
+  "model": "voltarget",
+  "model_key": "voltarget",
+  "monthly": 500.0,
+  "opening": 5000.0,
+  "sleeves": [
+    "SPY"
+  ],
+  "snapshot": "20260906T195947Z",
+  "spread_bps": 3.0
+}

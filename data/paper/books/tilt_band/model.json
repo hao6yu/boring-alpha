@@ -1,0 +1,26 @@
+{
+  "comparator": {
+    "expense_ratio": 0.0003,
+    "name": "100% VOO",
+    "weights": {
+      "VOO": 1.0
+    }
+  },
+  "expense_ratio": 0.0003,
+  "fees": {
+    "QQQ": 0.002,
+    "SPY": 0.000945
+  },
+  "model": "tilt_band",
+  "model_key": "tilt_band",
+  "monthly": 500.0,
+  "opening": 5000.0,
+  "rebalance_band_points": 5.0,
+  "sleeves": [
+    "SPY",
+    "QQQ"
+  ],
+  "snapshot": "20260906T203953Z",
+  "spread_bps": 3.0,
+  "trend_reading": null
+}

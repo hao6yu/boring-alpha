@@ -10,7 +10,7 @@ htmlcov/
 dist/
 build/
 
-docs/medium/
+docs/articles/
 
 # Local secrets and downloaded market data
 .env
@@ -19,8 +19,14 @@ docs/medium/
 data/*.csv
 data/*.parquet
 data/snapshots/
+data/crypto/
 data/current
 
 # Generated experiments are immutable local artifacts.
 experiments/**
 !experiments/.gitkeep
+
+# The attention feed: the assembled panel and its hash index are tracked; the 8.7 MB of raw
+# response blobs stay on disk and are pinned by SHA-256 inside index.json, so `verify` proves a
+# re-fetch matches the record that any claim was scored from without the repo carrying the cache.
+data/attention/raw/

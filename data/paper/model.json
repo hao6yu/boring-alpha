@@ -1,0 +1,25 @@
+{
+  "comparator": {
+    "expense_ratio": 0.000945,
+    "name": "100% SPY",
+    "weights": {
+      "SPY": 1.0
+    }
+  },
+  "expense_ratio": 0.000945,
+  "fees": {
+    "IEF": 0.0035,
+    "SPY": 0.000945
+  },
+  "model": "shelter",
+  "model_key": "shelter",
+  "monthly": 500.0,
+  "opening": 5000.0,
+  "sleeves": [
+    "SPY",
+    "IEF"
+  ],
+  "snapshot": "20260906T203953Z",
+  "spread_bps": 3.0,
+  "trend_reading": "first trading day of the month BEFORE the one it governs"
+}

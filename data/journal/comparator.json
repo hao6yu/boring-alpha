@@ -1,0 +1,9 @@
+{
+  "expense_ratio": 0.000945,
+  "name": "100% SPY",
+  "pinned_on": "2026-09-06",
+  "protocol_hash": "3eb35b246b402361103f01fa5931b5cc085581b376667841e6460117abc2f394",
+  "weights": {
+    "SPY": 1.0
+  }
+}

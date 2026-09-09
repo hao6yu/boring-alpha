@@ -1,0 +1,346 @@
+{
+  "board": [
+    {
+      "article": "Stock_market_crash",
+      "role": "financial"
+    },
+    {
+      "article": "Recession",
+      "role": "financial"
+    },
+    {
+      "article": "Bank_run",
+      "role": "financial"
+    },
+    {
+      "article": "Great_Depression",
+      "role": "financial"
+    },
+    {
+      "article": "Inflation",
+      "role": "financial"
+    },
+    {
+      "article": "Federal_reserve",
+      "role": "financial"
+    },
+    {
+      "article": "Stock_market",
+      "role": "financial"
+    },
+    {
+      "article": "Financial_crisis",
+      "role": "financial"
+    },
+    {
+      "article": "Moon",
+      "role": "control"
+    },
+    {
+      "article": "Photosynthesis",
+      "role": "control"
+    },
+    {
+      "article": "Volcano",
+      "role": "control"
+    },
+    {
+      "article": "Mount_Everest",
+      "role": "control"
+    },
+    {
+      "article": "Human",
+      "role": "control"
+    },
+    {
+      "article": "Water",
+      "role": "control"
+    }
+  ],
+  "fetched": [
+    {
+      "accepted": true,
+      "article": "Stock_market_crash",
+      "blob_hashes": [
+        "4124a08ded1a5aea",
+        "5f50d947ea3b86d0",
+        "64a95d38be30be38",
+        "e194c86808050bf2",
+        "f5d7afea121999c2",
+        "fbd5da3bd4ef929d"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Stock_market_crash",
+      "role": "financial",
+      "sha256_of_series": "b44877d5f62a1764d1d9c11875e10576174f6ce9bab8e611e593a0a9ee3c41e2"
+    },
+    {
+      "accepted": true,
+      "article": "Recession",
+      "blob_hashes": [
+        "02050a1509b91ae4",
+        "0ceafc4f2035543e",
+        "19db0df1d09bb24b",
+        "5bba03c068a1180d",
+        "d19c1016253b67ec",
+        "eb08968ad62616fd"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Recession",
+      "role": "financial",
+      "sha256_of_series": "74c09645fd61e0ce328c7e40ccaafea0bb06ede425729917db338f158fd29cfb"
+    },
+    {
+      "accepted": true,
+      "article": "Bank_run",
+      "blob_hashes": [
+        "12906c72ca851679",
+        "4d1801f36ce16690",
+        "5317c7568ce6abd8",
+        "59e2a817ebad79cb",
+        "686c521b0865cdde",
+        "96e1f5512100e3c0"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Bank_run",
+      "role": "financial",
+      "sha256_of_series": "a9c17971c5d39cf4bb08cfab13b793018344dd754acded6b72499dd448dafab5"
+    },
+    {
+      "accepted": true,
+      "article": "Great_Depression",
+      "blob_hashes": [
+        "0ce8657b493c2955",
+        "50f45fb7f26da4d5",
+        "91246f001abe5318",
+        "9ce81d6a19eb7a1f",
+        "c5754cea431e5898",
+        "fb65950c91ac505c"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Great_Depression",
+      "role": "financial",
+      "sha256_of_series": "0d928d442354869687753b85ced92fc574f50736ec9662853f06840642dd4c1a"
+    },
+    {
+      "accepted": true,
+      "article": "Inflation",
+      "blob_hashes": [
+        "0c2f322482238550",
+        "3061805f655e64b3",
+        "43b10506a09616c6",
+        "6f75e5f6f0e77204",
+        "d2391e5a89d69639",
+        "dec138c9d307c1cc"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Inflation",
+      "role": "financial",
+      "sha256_of_series": "6b861f9a1cf036834dc0c306cb576ec686b2a895e4a59e78ab65bae1753328ba"
+    },
+    {
+      "accepted": true,
+      "article": "Federal_Reserve",
+      "blob_hashes": [
+        "1461982e5748009a",
+        "6f0b10340d506801",
+        "7d3765bb81add6c7",
+        "9eef2fa821e5add4",
+        "ad64742e010f2402",
+        "f9fe4f55792a93b7"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Federal_reserve",
+      "role": "financial",
+      "sha256_of_series": "574165dfb28441b8a8a8b51726d00e445f14b3e927eb8dce4ec3d8d8df640dea"
+    },
+    {
+      "accepted": true,
+      "article": "Stock_market",
+      "blob_hashes": [
+        "00f3836ed8a510b9",
+        "221cb5b6e06f49e4",
+        "6487ab452a0aea23",
+        "6d2bca5f1e2985b5",
+        "74637095b1f1c759",
+        "98990b3e78a701f0"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Stock_market",
+      "role": "financial",
+      "sha256_of_series": "ad08b911597b0c3cd2b311e5770c2ed383ac3950f12de61ecf6e6008ae5c962f"
+    },
+    {
+      "accepted": true,
+      "article": "Financial_crisis",
+      "blob_hashes": [
+        "26e944da2b397d64",
+        "3facb689363a9388",
+        "4f67361bb73330a4",
+        "b2bfdf1f98cf9bc4",
+        "c4882104a06caa4b",
+        "d48f727716188c7e"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Financial_crisis",
+      "role": "financial",
+      "sha256_of_series": "100342edb75fb5c9ea1f089cdbe6bbc9db99a216463b7e3e86cd5c1035c4a055"
+    },
+    {
+      "accepted": true,
+      "article": "Moon",
+      "blob_hashes": [
+        "0bcd86477201ec3b",
+        "0c3f4c73d085e020",
+        "401b7821d12867dd",
+        "4bcdc5bb13b88199",
+        "5a9629d9740e000f",
+        "d8496531b8878257"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Moon",
+      "role": "control",
+      "sha256_of_series": "5ee18bc1109b57ac03b16b0aa022ecf30bec3f860dcf29e9c96c43510af3bc5b"
+    },
+    {
+      "accepted": true,
+      "article": "Photosynthesis",
+      "blob_hashes": [
+        "1006939a179af8fa",
+        "19eaa6a7f7681c01",
+        "6ed78765c565557d",
+        "780d70ca5d22a3ba",
+        "a8f4f7447b7815f6",
+        "b85c2f63339a614e"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Photosynthesis",
+      "role": "control",
+      "sha256_of_series": "47cf118a37ccac78ad3768b4c814e03e5373ff261734b7b06b5cd8fb455ac5e8"
+    },
+    {
+      "accepted": true,
+      "article": "Volcano",
+      "blob_hashes": [
+        "3de45c4f0e1ca7e6",
+        "4f12ce3451830717",
+        "53bdb400abbee072",
+        "8586d772b5077a9a",
+        "9fbdee5ba50049c0",
+        "efc38a10290051f9"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Volcano",
+      "role": "control",
+      "sha256_of_series": "62b0fd856f0d44fc6707ae0028f61d118a77ebed34bcb2c0160e217790786df5"
+    },
+    {
+      "accepted": true,
+      "article": "Mount_Everest",
+      "blob_hashes": [
+        "02e0860cd0619af9",
+        "07ac7a07009bce5b",
+        "63be433a41cbc2b8",
+        "94d1054e7e3ad1f9",
+        "c9b42f76b04f4ddf",
+        "feb8324b0f1dfd25"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Mount_Everest",
+      "role": "control",
+      "sha256_of_series": "fdb8949db7c908c19ae0d9e497f9ca8d7a9655bd7c60e5d3c43d46c9ad6cef32"
+    },
+    {
+      "accepted": true,
+      "article": "Human",
+      "blob_hashes": [
+        "10401637ecce697c",
+        "2432f4639304e83e",
+        "48c4ee347fc0074c",
+        "6bc2cc581757dcc1",
+        "b1de84cf8f5c7ce5",
+        "eb94de20abc006b0"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Human",
+      "role": "control",
+      "sha256_of_series": "950865073739e30543b4b2462f5f6b690d75a861cd1382c64a3928dad612eb1f"
+    },
+    {
+      "accepted": true,
+      "article": "Water",
+      "blob_hashes": [
+        "2e62fb75152acae9",
+        "49db26443b21d2f4",
+        "87eba755c3634c0c",
+        "976a59e52850531b",
+        "d4957378ba554e47",
+        "e19adbfaf65ebf4c"
+      ],
+      "coverage": 1.0,
+      "days": 4084,
+      "first": "2015-07-01",
+      "last": "2026-09-04",
+      "reason": "",
+      "requested_as": "Water",
+      "role": "control",
+      "sha256_of_series": "5bf4ebedfd2b560d77c7aecb97529c0582bb80b75bb366e6c301009b98529faf"
+    }
+  ],
+  "fetched_on": "2026-09-06T23:31:16",
+  "rejects": [],
+  "sample_end": "2026-09-04",
+  "sample_start": "2015-07-01"
+}
