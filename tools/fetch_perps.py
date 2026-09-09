@@ -68,7 +68,7 @@ FUNDING_KEYS = "data/futures/um/monthly/fundingRate/{sym}/"
 FUNDING_INTERVALS = (1.0, 2.0, 4.0, 8.0)
 #: A funding rate beyond ±5% per event is not a rate, it is a broken row.
 MAX_FUNDING_RATE = 0.05
-MIN_REQUEST_INTERVAL = 0.06
+MIN_REQUEST_INTERVAL = 0.03
 USER_AGENT = "boring-alpha/1.0 (research; stdlib urllib)"
 
 _NS = {"s": "http://s3.amazonaws.com/doc/2006-03-01/"}
@@ -106,27 +106,49 @@ def _pace() -> None:
         _PACE_LAST = now
 
 
-def _get(url: str) -> bytes | None:
-    """One paced GET. 404 is a normal answer here — an absent file — so it returns None; anything else refuses after retries."""
+_THREAD_LOCAL = threading.local()
 
-    last_error = None
+
+def _get(url: str) -> bytes | None:
+    """One paced GET on a persistent per-thread connection. 404 is a normal answer here — an absent file — so it returns None.
+
+    The endpoint throttles by dropping new handshakes (observed 2026-09-08: a connection parked in SYN_SENT for minutes while
+    established ones kept serving), and a per-request connection pays that drop on every single file. A keep-alive connection per
+    worker thread pays it once and then keeps serving — the same request stream, a fraction of the handshakes.
+    """
+
+    parsed = urllib.parse.urlsplit(url)
+    target = parsed.path + (f"?{parsed.query}" if parsed.query else "")
+    last_error: Exception | None = None
     for attempt in range(5):
         _pace()
+        conn = getattr(_THREAD_LOCAL, "conn", None)
+        if conn is None:
+            conn = http.client.HTTPSConnection(parsed.hostname, timeout=60, context=_CONTEXT)
+            _THREAD_LOCAL.conn = conn
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(request, timeout=30, context=_CONTEXT) as response:
-                return response.read()
-        except urllib.error.HTTPError as error:
-            if error.code == 404:
+            conn.request("GET", target, headers={"User-Agent": USER_AGENT})
+            response = conn.getresponse()
+            body = response.read()
+            if response.status == 404:
                 return None
+            if response.status >= 500:
+                last_error = urllib.error.HTTPError(url, response.status, response.reason, None, None)
+                _THREAD_LOCAL.conn = None
+                conn.close()
+                time.sleep(1.0 + attempt)
+                continue
+            return body
+        except (OSError, http.client.HTTPException) as error:
+            # A dead or half-dead keep-alive socket: the raw socket failures surface while reading the body, past the point where
+            # urllib would wrap them. Drop the connection and retry on a fresh one — at this volume the archive does reset.
             last_error = error
-            if error.code < 500:
-                raise SystemExit(f"{url}: the archive answered HTTP {error.code}; refusing to invent the file") from None
-        except (urllib.error.URLError, OSError, ssl.SSLError, http.client.HTTPException) as error:
-            # OSError carries the raw socket failures (connection reset) that surface while reading the body,
-            # past the point where urllib would wrap them in URLError; at this volume the archive does reset.
-            last_error = error
-        time.sleep(1.0 + attempt)
+            _THREAD_LOCAL.conn = None
+            try:
+                conn.close()
+            except OSError:
+                pass
+            time.sleep(1.0 + attempt)
     raise SystemExit(f"{url}: unreachable after 5 attempts ({last_error}); refusing to archive a half-fetched symbol") from None
 
 
