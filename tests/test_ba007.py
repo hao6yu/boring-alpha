@@ -276,5 +276,42 @@ class TheBootstrapIsSeeded(unittest.TestCase):
         self.assertEqual(engine.bootstrap_interval(nets), engine.bootstrap_interval(nets))
 
 
+class TheDiagnosticsAreReported(unittest.TestCase):
+    def setUp(self):
+        engine.BOOTSTRAP_RESAMPLES = 200
+        self.addCleanup(setattr, engine, "BOOTSTRAP_RESAMPLES", 2_000)
+
+    def test_turnover_is_reported_and_matches_the_fees_implied_notional(self):
+        """Turnover accumulates |Δw|; the first live rebalance contributes exactly gross 1.0 and stable weeks contribute zero."""
+
+        drift = [0.004 - 0.0004 * i for i in range(30)]
+        closes, volumes, funding_map, sessions = make_panel(n=30, days=200, drift=drift)
+        book = run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0)
+        self.assertGreaterEqual(book["turnover_one_way"], 1.0)
+        self.assertAlmostEqual(book["turnover_one_way"] / book["days"] * 365, book["turnover_annualized"], places=12)
+
+    def test_beta_against_a_benchmark_is_covariance_over_variance(self):
+        """A book whose net series is exactly twice the benchmark's has beta 2; alignment is by date, entry day excluded."""
+
+        btc = {START + timedelta(days=i): 0.001 * ((-1) ** (i % 5)) for i in range(60)}
+        daily = [{"date": d, "net": 2.0 * r, "gross": 0.0, "funding": 0.0, "fees": 0.0} for d, r in btc.items()]
+        self.assertAlmostEqual(engine.beta_against(daily, btc), 2.0, places=9)
+
+    def test_legs_split_the_spread_book_into_its_two_halves(self):
+        """Long-only and short-only books hold one side each: ten names a side, twenty together."""
+
+        drift = [0.003 - 0.0003 * i for i in range(30)]
+        closes, volumes, funding_map, sessions = make_panel(n=30, days=120, drift=drift)
+        long_leg = run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0, leg="long")
+        short_leg = run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0, leg="short")
+        live_long = next(row for row in long_leg["daily"] if row["positions"] > 0)
+        live_short = next(row for row in short_leg["daily"] if row["positions"] > 0)
+        self.assertEqual(live_long["positions"], 10)
+        self.assertEqual(live_short["positions"], 10)
+        both = run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0)
+        live_both = next(row for row in both["daily"] if row["positions"] > 0)
+        self.assertEqual(live_both["positions"], 20)
+
+
 if __name__ == "__main__":
     unittest.main()

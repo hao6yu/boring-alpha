@@ -191,6 +191,7 @@ def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], funding: d
     weights: dict[str, float] = {}
     daily: list[dict] = []
     pending_fee = 0.0
+    turnover_total = 0.0
     closed_symbols: set[str] = set()
 
     for day in sessions:
@@ -226,6 +227,7 @@ def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], funding: d
                 new_weights = {sym: -GROSS / k_short for sym in short_side}
             turnover = sum(abs(new_weights.get(s, 0.0) - weights.get(s, 0.0))
                            for s in set(new_weights) | set(weights))
+            turnover_total += turnover
             pending_fee += turnover * fee_bps / 10_000
             weights = new_weights
 
@@ -234,7 +236,10 @@ def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], funding: d
                       "fees": pending_fee, "net": net_ret, "positions": len(weights)})
         pending_fee = 0.0
 
-    return _summarize(daily, fee_bps, leg, reverse, scramble_seed, closed_symbols)
+    summary = _summarize(daily, fee_bps, leg, reverse, scramble_seed, closed_symbols)
+    summary["turnover_one_way"] = turnover_total                             # gross multiples traded over the whole period
+    summary["turnover_annualized"] = turnover_total / len(daily) * ANNUALIZATION_DAYS if daily else 0.0
+    return summary
 
 
 def _summarize(daily: list[dict], fee_bps: float, leg: str, reverse: bool,
@@ -312,9 +317,27 @@ def verdict(dev: dict, val: dict, reversed_dev: dict, scrambled_means: list[floa
     return {"checks": checks, "verdict": "PASS" if all(checks.values()) else "FAIL"}
 
 
+def beta_against(daily: list[dict], benchmark: dict[date, float]) -> float:
+    """Beta of the book's daily net series against a benchmark daily return series (charter §5 diagnostic, no gate on it)."""
+
+    pairs = [(row["net"], benchmark[row["date"]]) for row in daily
+             if row["date"] in benchmark and row["date"] != daily[0]["date"]]
+    if len(pairs) < 3:
+        return float("nan")
+    xs = [p[0] for p in pairs]
+    ys = [p[1] for p in pairs]
+    mean_x, mean_y = statistics.fmean(xs), statistics.fmean(ys)
+    cov = sum((x - mean_x) * (y - mean_y) for x, y in pairs) / len(pairs)
+    var = sum((y - mean_y) ** 2 for y in ys) / len(ys)
+    return cov / var if var else float("nan")
+
+
 def evaluate_signal(signal_name: str, closes, volumes, funding) -> dict:
     """One signal, one construction, both seen periods, every control: the charter's whole family for that signal."""
 
+    btc_returns = ({d: closes["BTCUSDT"][d] / closes["BTCUSDT"][p] - 1.0
+                    for d, p in zip(sorted(closes["BTCUSDT"]), sorted(closes["BTCUSDT"])[1:])}
+                   if "BTCUSDT" in closes else {})
     out: dict = {"signal": signal_name}
     for period_name, period in (("development", DEVELOPMENT), ("validation", VALIDATION)):
         sessions = sessions_in(closes, period)
@@ -323,16 +346,21 @@ def evaluate_signal(signal_name: str, closes, volumes, funding) -> dict:
         base = run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY)
         stress = run_book(weeks, closes, funding, sessions, FEE_BPS_STRESS)
         reversed_book = run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY, reverse=True)
+        legs = {leg: run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY, leg=leg)
+                for leg in ("long", "short")}
         scrambled_means = [run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY,
                                     scramble_seed=seed)["annualized_net"] for seed in SCRAMBLE_SEEDS]
-        out[period_name] = {"base": base, "stress": stress, "reversed": reversed_book,
+        base["beta_vs_btc"] = beta_against(base["daily"], btc_returns)
+        out[period_name] = {"base": base, "stress": stress, "reversed": reversed_book, "legs": legs,
                             "scrambled_median": statistics.median(scrambled_means),
                             "scrambled_all": scrambled_means}
         row = base
         print(f"  {period_name:<11} {signal_name:<5} net {row['annualized_net']:+.2%}/yr "
               f"[{row['bootstrap_low']:+.2%}, {row['bootstrap_high']:+.2%}] sharpe {row['sharpe']:.2f} "
-              f"dd {row['max_drawdown']:+.1%} | stress {stress['annualized_net']:+.2%} "
-              f"reversed {reversed_book['annualized_net']:+.2%} scrambled median {statistics.median(scrambled_means):+.2%}")
+              f"dd {row['max_drawdown']:+.1%} beta {row['beta_vs_btc']:+.2f} "
+              f"turnover {row['turnover_annualized']:.1f}x/yr | stress {stress['annualized_net']:+.2%} "
+              f"reversed {reversed_book['annualized_net']:+.2%} scrambled median {statistics.median(scrambled_means):+.2%} "
+              f"legs L {legs['long']['annualized_net']:+.2%} S {legs['short']['annualized_net']:+.2%}")
     out["verdict"] = verdict(out["development"]["base"], out["validation"]["base"],
                              out["development"]["reversed"], out["development"]["scrambled_all"],
                              out["development"]["stress"], out["validation"]["stress"])
@@ -350,9 +378,9 @@ def main() -> int:
     slim = json.loads(json.dumps(results, default=str))                      # datetimes become strings; sizes stay readable
     for result in slim.values():                                             # the daily series live in the CSVs, not the manifest
         for period_name in ("development", "validation"):
-            result[period_name]["base"].pop("daily", None)
-            result[period_name]["stress"].pop("daily", None)
-            result[period_name]["reversed"].pop("daily", None)
+            for book in (result[period_name]["base"], result[period_name]["stress"],
+                         result[period_name]["reversed"], *result[period_name]["legs"].values()):
+                book.pop("daily", None)
     (target / "metrics.json").write_text(json.dumps(slim, indent=2, sort_keys=True) + "\n")
     for name, result in results.items():
         for period_name in ("development", "validation"):
