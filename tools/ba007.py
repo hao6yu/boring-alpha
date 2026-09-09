@@ -176,7 +176,15 @@ def prepare_weeks(closes: dict[str, dict[date, float]], traversal, volumes: dict
         universe = eligible_universe(closes, traversal, volumes, day)
         scores: dict[str, float] = {}
         for sym in universe:
-            value = momentum(closes[sym], day) if signal_name == "MOM" else carry_sum(funding.get(sym, {}), day)
+            if signal_name == "MOM":
+                value = momentum(closes[sym], day)
+            elif signal_name == "CARRY":
+                # Charter §4: "Rank ascending: the most negative ... ranks first (long side)" — the long side holds the LOWEST
+                # funding, so the ranking score is the negated sum and the descending sort delivers the charter's order. The first
+                # sweep graded this signal's mirror because the negation was missing; the direction pin lives in test_ba007.py.
+                value = -carry_sum(funding.get(sym, {}), day)
+            else:
+                raise SystemExit(f"unknown signal {signal_name!r}; the charter declares MOM and CARRY and nothing else")
             if value is not None:
                 scores[sym] = value
         if len(scores) >= MIN_ELIGIBLE:

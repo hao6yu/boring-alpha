@@ -70,3 +70,39 @@ priced, and every price came back negative or inconclusive. That is not a failur
 
 *The next hypothesis, if there is one, starts as a new charter with gates locked before the first rank — the sealed window is still
 unspent, and the lab is still the most valuable thing here.*
+
+---
+
+## Correction, 2026-09-09 (same day, and it changes the CARRY verdict)
+
+**The engine implemented XS-CARRY's ranking inverted against the locked charter.** Charter §4 registers CARRY as *rank ascending — long the
+most-negative-funding tercile*. The engine ranked descending, so the sweep graded the mirror of the registered signal as the candidate and
+scored the registered construction as its "reversed control." The table above stands as printed — those rows are real — but the labels were
+swapped: the row marked *reversed* (+38.28%/+45.23%, bootstrap excluding zero in both windows) **is** the charter's registered CARRY, and
+the row marked *candidate* (−42.98%/−50.50%) is its mirror.
+
+Corrected, with the engine fixed and the direction pinned by a fixture test that quotes this charter's sentence:
+
+| signal | period | net/yr | bootstrap 95% | stress net | verdict |
+|---|---|---|---|---|---|
+| XS-CARRY (as registered) | development | **+31.69%** | [+2.55%, +61.52%] | +29.36% | ✓ |
+| XS-CARRY (as registered) | validation | **+41.36%** | [+18.42%, +64.94%] | +38.71% | ✓ |
+
+**Corrected verdict: XS-CARRY PASS 6/6.** Both windows' intervals exclude zero, the mirror loses by 68 and 88 points a year, the scrambles
+lose, and stress holds. Per charter §11 this opens the sealed reveal (2025-01-01 → latest — twenty months on disk, untouched by any signal)
+as a deliberate next act, and only then the paper book. XS-MOM's FAIL is unchanged and stands.
+
+Two things the correction surfaced, both disclosed rather than buried:
+
+1. **A funding clamp tie straddles the tercile boundary.** Six symbols print exactly −0.000900 per 72h (a venue clamp), and a 6-way tie cut
+   by the ranking's two mirror orderings lands different members in the short tercile: one resolution shorts ADA, the other XRP. The two
+   resolutions differ by ±6.6%/yr on the development estimate (+38.28% vs +31.69%) and **both pass every gate**. The tie-break is
+   deterministic (stable sort, alphabetical within equal scores) and now part of the record; the magnitude of its freedom is the number
+   this disclosure exists to carry.
+2. **The mechanism narrative above the correction is inverted and left as printed.** The data says the *lowest*-funding names outperformed
+   the highest — the academic crowding-reversal direction, which is what the charter registered — not the mania-run-over story this note
+   first told. The correction is the record; the original text stays as the record of the error.
+
+**What this does to BA-008:** its locked premise — long the *highest* funding forward — was derived from the inverted reading. The
+registered direction is the one that passed, and its next test is BA-007's own sealed reveal. BA-008 is amended the same day (allowed
+before its first graded session): see its change log.

@@ -225,6 +225,34 @@ class TheBookSurvivesADelisting(unittest.TestCase):
         self.assertNotIn("SYM00", scores[0]["scores"])
 
 
+class TheSignalDirectionsAreTheCharters(unittest.TestCase):
+    def test_carry_longs_the_lowest_funding_as_charter_section_4_registers(self):
+        """Charter §4: 'Rank ascending: the most negative ... ranks first (long side).' The first sweep graded this signal's mirror
+        because the negation was missing — this pin exists so the direction can never silently flip again."""
+
+        funding_tilt = [0.00005 * i for i in range(30)]                      # SYM00 lowest funding ... SYM29 highest
+        closes, volumes, funding_map, sessions = make_panel(n=30, days=120, funding=funding_tilt)
+        traversal = engine.build_traversal(closes)
+        rebalances = engine.weekly_rebalance_dates(sessions)
+        weeks = engine.prepare_weeks(closes, traversal, volumes, funding_map, sessions, rebalances, "CARRY")
+        self.assertTrue(weeks)
+        long_side, short_side = engine.terciles(weeks[0]["universe"], weeks[0]["scores"])
+        self.assertEqual(sorted(long_side), [f"SYM{i:02d}" for i in range(10)])   # the lowest-funding tercile is the long side
+        self.assertEqual(sorted(short_side), [f"SYM{i:02d}" for i in range(20, 30)])
+
+    def test_momentum_longs_the_biggest_winners_as_charter_section_4_registers(self):
+        """Charter §4: momentum ranks descending — the strongest 7-day return is the long side."""
+
+        drift = [0.004 - 0.0004 * i for i in range(30)]                      # SYM00 the strongest week
+        closes, volumes, funding_map, sessions = make_panel(n=30, days=120, drift=drift)
+        traversal = engine.build_traversal(closes)
+        rebalances = engine.weekly_rebalance_dates(sessions)
+        weeks = engine.prepare_weeks(closes, traversal, volumes, funding_map, sessions, rebalances, "MOM")
+        long_side, short_side = engine.terciles(weeks[1]["universe"], weeks[1]["scores"])
+        self.assertIn("SYM00", long_side)
+        self.assertIn("SYM29", short_side)
+
+
 class ThePeriodsTruncate(unittest.TestCase):
     def test_development_never_sees_a_validation_bar(self):
         """The union of sessions inside a period stops at its boundary even when the panel runs years past it."""
