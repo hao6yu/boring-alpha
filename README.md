@@ -479,6 +479,10 @@ src/boring_alpha/portfolio/ Cash, positions, and target-weight planning
 src/boring_alpha/execution/ Cost model and order-to-fill simulation
 src/boring_alpha/backtest/ The daily mark-to-market engine that drives them
 src/boring_alpha/metrics/ Performance statistics
+data/perps/             BA-007's cross-section: Binance USDT-M perp daily candles and funding events,
+                        fetched by `tools/fetch_perps.py` from data.binance.vision into immutable snapshots
+                        (delisted symbols included; the fetch is resumable and the manifest pins every CSV's
+                        sha256 — see docs/decisions/2026-09-08-ba007-crypto-data-source.md)
 src/boring_alpha/tax/   After-tax overlay: lots, wash sales, year-end netting
 tests/                  Correctness tests
 tools/                  Market-data fetchers and calendar builders
