@@ -53,13 +53,16 @@ SEALED = (date(2025, 1, 1), None)   # never opened by this charter
 
 # ---------------------------------------------------------------- the panel ---------------------------------------------------------------
 
-def load_panel(directory: Path = PERPS) -> tuple[dict, dict, dict]:
+def load_panel(directory: Path | None = None) -> tuple[dict, dict, dict]:
     """The spine's two CSVs into close / quote-volume / daily-funding matrices: {symbol: {date: value}}.
 
     A funding event's rate is the amount paid for holding through that event, whatever the event's cadence, so a symbol's daily funding is
     the plain sum of that day's event rates — the engine never averages across cadences, because holding through three events at 0.01%
-    costs 0.03% that day no matter how the venue slices the hours.
+    costs 0.03% that day no matter how the venue slices the hours. The directory resolves at call time, not import time: a test that moves
+    the lab must move the panel with it.
     """
+
+    directory = directory or PERPS
 
     closes: dict[str, dict[date, float]] = {}
     volumes: dict[str, dict[date, float]] = {}
@@ -76,6 +79,21 @@ def load_panel(directory: Path = PERPS) -> tuple[dict, dict, dict]:
             funding.setdefault(row["symbol"], {})[day] = \
                 funding.get(row["symbol"], {}).get(day, 0.0) + float(row["rate"])
     return closes, volumes, funding
+
+
+def build_traversal(closes: dict[str, dict[date, float]]) -> dict[str, tuple[list[date], dict[date, float]]]:
+    """Per-symbol sorted dates and each day's prior close, computed once per panel.
+
+    The book loop touches every position every day; scanning a symbol's whole series to find yesterday is O(days) per touch and turns a
+    sweep into a multinight affair. One sorted pass per symbol makes both lookups constant time for every book that follows.
+    """
+
+    traversal: dict[str, tuple[list[date], dict[date, float]]] = {}
+    for sym, series in closes.items():
+        dates = sorted(series)
+        priors = {dates[i]: series[dates[i - 1]] for i in range(1, len(dates))}
+        traversal[sym] = (dates, priors)
+    return traversal
 
 
 def weekly_rebalance_dates(sessions: list[date]) -> list[date]:
@@ -120,17 +138,25 @@ def carry_sum(funding: dict[date, float], t: date) -> float:
     return sum(v for d, v in funding.items() if window_start <= d <= t)
 
 
-def eligible_universe(closes: dict[str, dict[date, float]], volumes: dict[str, dict[date, float]],
+def eligible_universe(closes: dict[str, dict[date, float]], traversal, volumes: dict[str, dict[date, float]],
                       t: date) -> list[str]:
-    """Charter §3: observed close at t, HISTORY_FLOOR_DAYS of life, ranked by trailing VOLUME_WINDOW_DAYS median quote volume, top UNIVERSE_N."""
+    """Charter §3: observed close at t, HISTORY_FLOOR_DAYS of life, ranked by trailing VOLUME_WINDOW_DAYS median quote volume, top UNIVERSE_N.
 
+    The volume window is sliced from the symbol's sorted dates by bisect — the panel has years of days and the window wants thirty.
+    """
+
+    import bisect
     scored: list[tuple[float, str]] = []
     for sym, series in closes.items():
-        if t not in series:
+        dates, _ = traversal[sym]
+        if not dates or dates[-1] != t:
+            if t not in series:
+                continue
+            dates = sorted(d for d in series if d <= t)
+        if dates[0] > t - timedelta(days=HISTORY_FLOOR_DAYS):
             continue
-        if min(series) > t - timedelta(days=HISTORY_FLOOR_DAYS):
-            continue
-        window = [volumes[sym][d] for d in series if t - timedelta(days=VOLUME_WINDOW_DAYS) < d <= t]
+        lo = bisect.bisect_right(dates, t - timedelta(days=VOLUME_WINDOW_DAYS))
+        window = [volumes[sym][d] for d in dates[lo:] if d <= t]
         if not window:
             continue
         scored.append((-statistics.median(window), sym))
@@ -138,7 +164,7 @@ def eligible_universe(closes: dict[str, dict[date, float]], volumes: dict[str, d
     return [sym for _, sym in scored[:UNIVERSE_N]]
 
 
-def prepare_weeks(closes: dict[str, dict[date, float]], volumes: dict[str, dict[date, float]],
+def prepare_weeks(closes: dict[str, dict[date, float]], traversal, volumes: dict[str, dict[date, float]],
                   funding: dict[str, dict[date, float]], sessions: list[date],
                   rebalances: list[date], signal_name: str) -> list[dict]:
     """Each rebalance week's universe and scores, computed once: the candidate and every control consume the same preparation."""
@@ -147,7 +173,7 @@ def prepare_weeks(closes: dict[str, dict[date, float]], volumes: dict[str, dict[
         raise SystemExit(f"unknown signal {signal_name!r}; the charter declares MOM and CARRY and nothing else")
     weeks = []
     for day in rebalances:
-        universe = eligible_universe(closes, volumes, day)
+        universe = eligible_universe(closes, traversal, volumes, day)
         scores: dict[str, float] = {}
         for sym in universe:
             value = momentum(closes[sym], day) if signal_name == "MOM" else carry_sum(funding.get(sym, {}), day)
@@ -180,8 +206,8 @@ def terciles(universe: list[str], scores: dict[str, float], reverse: bool = Fals
 
 # ---------------------------------------------------------------- the book ----------------------------------------------------------------
 
-def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], funding: dict[str, dict[date, float]],
-             sessions: list[date], fee_bps: float, leg: str = "both",
+def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], traversal,
+             funding: dict[str, dict[date, float]], sessions: list[date], fee_bps: float, leg: str = "both",
              reverse: bool = False, scramble_seed: int | None = None) -> dict:
     """One book's daily record over the period: gross spread, funding, fees, turnover — the charter's construction, nothing else."""
 
@@ -198,12 +224,12 @@ def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], funding: d
         gross_ret = funding_ret = 0.0
         dead = []
         for sym, weight in weights.items():
-            series = closes[sym]
-            prior = max((d for d in series if d < day), default=None)
-            if day not in series or prior is None:
+            dates, priors = traversal[sym]
+            prior_close = priors.get(day)
+            if day not in closes[sym] or prior_close is None:
                 dead.append(sym)                                            # delisted mid-week: closed at its last close
                 continue
-            gross_ret += weight * (series[day] / series[prior] - 1.0)
+            gross_ret += weight * (closes[sym][day] / prior_close - 1.0)
             funding_ret += weight * funding.get(sym, {}).get(day, 0.0)
         for sym in dead:
             del weights[sym]                                                # the notional sits in cash until the next rebalance
@@ -274,9 +300,14 @@ def _summarize(daily: list[dict], fee_bps: float, leg: str, reverse: bool,
 
 
 def bootstrap_interval(nets: list[float], block: int = BLOCK_LENGTH,
-                       resamples: int = BOOTSTRAP_RESAMPLES, seed: int = 7) -> tuple[float, float]:
-    """Stationary-block-bootstrap 95% interval of the annualized mean — the honest counterweight to a point estimate. Seeded: deterministic."""
+                       resamples: int | None = None, seed: int = 7) -> tuple[float, float]:
+    """Stationary-block-bootstrap 95% interval of the annualized mean — the honest counterweight to a point estimate. Seeded: deterministic.
 
+    The resample count resolves at call time: a test that shrinks the rehearsal's bootstrap must actually shrink it, which a default bound
+    at import time would silently refuse.
+    """
+
+    resamples = resamples or BOOTSTRAP_RESAMPLES
     rng = random.Random(seed)
     n = len(nets)
     if n < block * 2:
@@ -335,20 +366,20 @@ def beta_against(daily: list[dict], benchmark: dict[date, float]) -> float:
 def evaluate_signal(signal_name: str, closes, volumes, funding) -> dict:
     """One signal, one construction, both seen periods, every control: the charter's whole family for that signal."""
 
-    btc_returns = ({d: closes["BTCUSDT"][d] / closes["BTCUSDT"][p] - 1.0
-                    for d, p in zip(sorted(closes["BTCUSDT"]), sorted(closes["BTCUSDT"])[1:])}
-                   if "BTCUSDT" in closes else {})
+    btc_dates = sorted(closes["BTCUSDT"]) if "BTCUSDT" in closes else []
+    btc_returns = ({d: closes["BTCUSDT"][d] / closes["BTCUSDT"][p] - 1.0 for d, p in zip(btc_dates, btc_dates[1:])})
+    traversal = build_traversal(closes)
     out: dict = {"signal": signal_name}
     for period_name, period in (("development", DEVELOPMENT), ("validation", VALIDATION)):
         sessions = sessions_in(closes, period)
         rebalances = weekly_rebalance_dates(sessions)
-        weeks = prepare_weeks(closes, volumes, funding, sessions, rebalances, signal_name)
-        base = run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY)
-        stress = run_book(weeks, closes, funding, sessions, FEE_BPS_STRESS)
-        reversed_book = run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY, reverse=True)
-        legs = {leg: run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY, leg=leg)
+        weeks = prepare_weeks(closes, traversal, volumes, funding, sessions, rebalances, signal_name)
+        base = run_book(weeks, closes, traversal, funding, sessions, FEE_BPS_PRIMARY)
+        stress = run_book(weeks, closes, traversal, funding, sessions, FEE_BPS_STRESS)
+        reversed_book = run_book(weeks, closes, traversal, funding, sessions, FEE_BPS_PRIMARY, reverse=True)
+        legs = {leg: run_book(weeks, closes, traversal, funding, sessions, FEE_BPS_PRIMARY, leg=leg)
                 for leg in ("long", "short")}
-        scrambled_means = [run_book(weeks, closes, funding, sessions, FEE_BPS_PRIMARY,
+        scrambled_means = [run_book(weeks, closes, traversal, funding, sessions, FEE_BPS_PRIMARY,
                                     scramble_seed=seed)["annualized_net"] for seed in SCRAMBLE_SEEDS]
         base["beta_vs_btc"] = beta_against(base["daily"], btc_returns)
         out[period_name] = {"base": base, "stress": stress, "reversed": reversed_book, "legs": legs,

@@ -7,8 +7,14 @@ eligible and when. What is pinned is not that a strategy works — it is that th
 
 from __future__ import annotations
 
+import contextlib
+import csv
+import io
+import json
+import math
 import statistics
 import sys
+import tempfile
 import unittest
 from datetime import date, timedelta
 from pathlib import Path
@@ -51,9 +57,10 @@ def make_panel(n=30, days=100, drift=None, volume_step=1_000.0, funding=None,
 
 
 def run(closes, volumes, funding_map, sessions, signal="MOM", **kwargs):
+    traversal = engine.build_traversal(closes)
     rebalances = engine.weekly_rebalance_dates(sessions)
-    weeks = engine.prepare_weeks(closes, volumes, funding_map, sessions, rebalances, signal)
-    return engine.run_book(weeks, closes, funding_map, sessions, **kwargs)
+    weeks = engine.prepare_weeks(closes, traversal, volumes, funding_map, sessions, rebalances, signal)
+    return engine.run_book(weeks, closes, traversal, funding_map, sessions, **kwargs)
 
 
 class TheUniverseIsPointInTime(unittest.TestCase):
@@ -61,7 +68,7 @@ class TheUniverseIsPointInTime(unittest.TestCase):
         """Top 30 of 40 by trailing median quote volume: the ten lowest-volume symbols are never eligible."""
 
         closes, volumes, funding_map, sessions = make_panel(n=30, days=100, extra_symbols=10)
-        universe = engine.eligible_universe(closes, volumes, sessions[-1])
+        universe = engine.eligible_universe(closes, engine.build_traversal(closes), volumes, sessions[-1])
         self.assertEqual(len(universe), 30)
         self.assertNotIn("SYM39", universe)
         self.assertIn("SYM00", universe)
@@ -73,7 +80,7 @@ class TheUniverseIsPointInTime(unittest.TestCase):
         young = f"SYM{30:02d}"
         closes[young] = {day: 100.0 + i for i, day in enumerate(sessions[-30:])}
         volumes[young] = {day: 99_000_000.0 for day in closes[young]}        # the highest volume in the panel
-        universe = engine.eligible_universe(closes, volumes, sessions[-1])
+        universe = engine.eligible_universe(closes, engine.build_traversal(closes), volumes, sessions[-1])
         self.assertNotIn(young, universe)
 
     def test_fewer_than_the_minimum_eligible_skips_the_week(self):
@@ -81,7 +88,7 @@ class TheUniverseIsPointInTime(unittest.TestCase):
 
         closes, volumes, funding_map, sessions = make_panel(n=5, days=100)   # five symbols: below the floor of 12
         rebalances = engine.weekly_rebalance_dates(sessions)
-        weeks = engine.prepare_weeks(closes, volumes, funding_map, sessions, rebalances, "MOM")
+        weeks = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, rebalances, "MOM")
         self.assertEqual(weeks, [])
 
 
@@ -175,10 +182,10 @@ class ControlsAreTheSameArithmetic(unittest.TestCase):
         drift = [0.003 - 0.0003 * i for i in range(30)]
         closes, volumes, funding_map, sessions = make_panel(n=30, days=120, drift=drift)
         rebalances = engine.weekly_rebalance_dates(sessions)
-        weeks = engine.prepare_weeks(closes, volumes, funding_map, sessions, rebalances, "MOM")
-        first = engine.run_book(weeks, closes, funding_map, sessions, fee_bps=5.0, scramble_seed=3)["annualized_net"]
-        again = engine.run_book(weeks, closes, funding_map, sessions, fee_bps=5.0, scramble_seed=3)["annualized_net"]
-        other = engine.run_book(weeks, closes, funding_map, sessions, fee_bps=5.0, scramble_seed=4)["annualized_net"]
+        weeks = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, rebalances, "MOM")
+        first = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=5.0, scramble_seed=3)["annualized_net"]
+        again = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=5.0, scramble_seed=3)["annualized_net"]
+        other = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=5.0, scramble_seed=4)["annualized_net"]
         self.assertEqual(first, again)
         self.assertNotEqual(first, other)
 
@@ -188,9 +195,9 @@ class ControlsAreTheSameArithmetic(unittest.TestCase):
         drift = [0.003 - 0.0003 * i for i in range(30)]
         closes, volumes, funding_map, sessions = make_panel(n=30, days=90, drift=drift)
         rebalances = engine.weekly_rebalance_dates(sessions)
-        weeks = engine.prepare_weeks(closes, volumes, funding_map, sessions, rebalances, "MOM")
-        base = engine.run_book(weeks, closes, funding_map, sessions, fee_bps=0.0)
-        mirror = engine.run_book(weeks, closes, funding_map, sessions, fee_bps=0.0, reverse=True)
+        weeks = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, rebalances, "MOM")
+        base = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=0.0)
+        mirror = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=0.0, reverse=True)
         for a, b in zip(base["daily"], mirror["daily"]):
             self.assertAlmostEqual(a["gross"], -b["gross"], places=15)
 
@@ -214,7 +221,7 @@ class TheBookSurvivesADelisting(unittest.TestCase):
         holes = closes["SYM00"]
         for day in list(holes)[-9:-1]:                                       # eight of the last nine days before the end
             del holes[day]
-        scores = engine.prepare_weeks(closes, volumes, funding_map, sessions, [sessions[-1]], "MOM")
+        scores = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, [sessions[-1]], "MOM")
         self.assertNotIn("SYM00", scores[0]["scores"])
 
 
@@ -311,6 +318,77 @@ class TheDiagnosticsAreReported(unittest.TestCase):
         both = run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0)
         live_both = next(row for row in both["daily"] if row["positions"] > 0)
         self.assertEqual(live_both["positions"], 20)
+
+
+class TheSweepEndsInArtifacts(unittest.TestCase):
+    """main() is the Phase 3 entry point: the real archive sweep must produce its artifacts on the first try, so it is rehearsed offline."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        root = Path(self.tmp.name) / "perps"
+        self._swap = (engine.PERPS, engine.BACKTESTS)
+        engine.PERPS, engine.BACKTESTS = root, root / "backtests"
+        self.addCleanup(lambda: (setattr(engine, "PERPS", self._swap[0]), setattr(engine, "BACKTESTS", self._swap[1])))
+        engine.BOOTSTRAP_RESAMPLES = 100
+        self.addCleanup(setattr, engine, "BOOTSTRAP_RESAMPLES", 2_000)
+
+        global START
+        START = date(2019, 11, 1)                                            # the panel must span the charter's own windows
+        self.addCleanup(setattr, __import__("test_ba007"), "START", date(2024, 1, 1))
+        closes, volumes, funding_map, _ = make_panel(n=30, days=2_200, drift=[0.003 - 0.0003 * i for i in range(30)],
+                                                     funding=[0.0001] * 30)
+        closes["BTCUSDT"] = {day: 100.0 * (1.0 + 0.0005) ** i for i, day in
+                             enumerate(sorted(closes["SYM00"]))}                # the beta benchmark the real archive carries
+        volumes["BTCUSDT"] = {day: 50_000_000.0 for day in closes["BTCUSDT"]}
+        funding_map["BTCUSDT"] = {day: 0.0001 for day in closes["BTCUSDT"]}
+        directory = engine.PERPS
+        directory.mkdir(parents=True)
+        with (directory / "perps_daily.csv").open("w", newline="") as handle:
+            handle.write("date,symbol,open,high,low,close,base_volume,quote_volume\n")
+            for sym in closes:
+                for day, price in closes[sym].items():
+                    handle.write(f"{day.isoformat()},{sym},{price:.8g},{price:.8g},{price:.8g},{price:.8g},1.0,"
+                                 f"{volumes[sym][day]:.10g}\n")
+        with (directory / "funding_events.csv").open("w", newline="") as handle:
+            handle.write("ts_utc,symbol,interval_hours,rate\n")
+            for sym in closes:
+                for day in closes[sym]:
+                    stamp = f"{day.isoformat()}T08:00:00Z"
+                    handle.write(f"{stamp},{sym},8,{funding_map[sym][day]:.12g}\n")
+
+    def test_main_writes_metrics_and_daily_csvs_for_both_signals_and_periods(self):
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            self.assertEqual(engine.main(), 0)
+        output = buffer.getvalue()
+        self.assertIn("MOM verdict", output)
+        self.assertIn("CARRY verdict", output)
+        backtests = list(engine.BACKTESTS.iterdir())
+        self.assertEqual(len(backtests), 1)
+        metrics = json.loads((backtests[0] / "metrics.json").read_text())
+        for name in ("MOM", "CARRY"):
+            self.assertIn(name, metrics)
+            self.assertIn(metrics[name]["verdict"]["verdict"], ("PASS", "FAIL"))
+            for period in ("development", "validation"):
+                self.assertNotIn("daily", metrics[name][period]["base"])   # the manifest stays slim; the CSVs carry the rows
+                self.assertLess((backtests[0] / f"daily-{period}-{name}-base.csv").stat().st_size, 10_000_000)
+                with (backtests[0] / f"daily-{period}-{name}-base.csv").open() as handle:
+                    rows = list(csv.DictReader(handle))
+                self.assertTrue(rows)
+                for row in rows:
+                    self.assertAlmostEqual(float(row["net"]),
+                                           float(row["gross"]) - float(row["funding"]) - float(row["fees"]), places=15)
+
+    def test_beta_is_in_the_metrics_when_btcusdt_is_in_the_panel(self):
+        """The real archive carries BTCUSDT; the rehearsal panel must too, and beta must be a number, not a nan."""
+
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            engine.main()
+        metrics = json.loads(next(engine.BACKTESTS.iterdir()).joinpath("metrics.json").read_text())
+        for name in ("MOM", "CARRY"):
+            self.assertFalse(math.isnan(metrics[name]["development"]["base"]["beta_vs_btc"]))
 
 
 if __name__ == "__main__":
