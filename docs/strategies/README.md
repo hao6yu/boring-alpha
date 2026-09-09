@@ -9,6 +9,11 @@ belong to immutable experiment artifacts linked from a later review.
 | BA-001 | Multi-Asset Trend | Evaluation complete — Inconclusive (revision 4); sealed period unrevealed. Reviews: [development](../reviews/BA-001-development.md), [validation](../reviews/BA-001-validation.md) | [BA-001.md](BA-001.md) |
 | BA-002 | Multi-Horizon Trend | [Two-feed seen-history diagnostic complete — practical no-go](../reviews/BA-002-source-sensitivity.md). Revision 1 unchanged; formal freeze unconfirmed, no holdout evaluation. | [BA-002.md](BA-002.md) |
 | BA-003 | Relative-Strength Tilt | Draft proposal — defaults awaiting review; not locked, implemented or evaluated. Shared family holdout unchanged. | [BA-003.md](BA-003.md) |
+| BA-004 | Passive Capture | **Redundant** (see charter §13) — [result note](../notes/2026-09-05-BA-004-retention-audit.md). Audit is discriminating on all injected channels; budget reachable only under four named conditions. No live audit; consumes no holdout observation. | [BA-004.md](BA-004.md) |
+
+BA-004 is not a member of the `BA-TREND` family. It holds no forecast, so it
+neither consumes nor releases a sealed observation, and its evaluation cannot be
+tuned by its own result because it has no signal parameter to tune.
 
 ## Revision policy
 
