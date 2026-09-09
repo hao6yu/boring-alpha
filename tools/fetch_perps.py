@@ -374,8 +374,24 @@ def symbol_funding(sym: str, floor_ym: str | None, today: date, counter: dict) -
     return events, stats
 
 
+def fetch_symbol_with_funding(sym: str, funding_symbols: set[str], today: date,
+                              counter: dict) -> tuple[list[dict], list[dict], dict, dict]:
+    """One symbol's whole record: klines, funding (when the archive has a directory for it), and both stats dicts."""
+
+    rows, stats = symbol_klines(sym, today, counter)
+    if sym in funding_symbols:
+        events, fstats = symbol_funding(sym, stats.get("first_month"), today, counter)
+    else:
+        events, fstats = [], {"events": 0, "first_month": None, "note": "no funding directory in this archive"}
+    return rows, events, stats, fstats
+
+
 def fetch(today: date | None = None) -> tuple[list[dict], list[dict], dict]:
-    """The whole cross-section: every symbol's klines, every funding event, and the manifest that says how it was obtained."""
+    """The whole cross-section in memory: every symbol's klines, every funding event, and the manifest that says how it was obtained.
+
+    This is the tested in-memory shape. The production entry point is the resumable workspace below — an archive that takes hours must not
+    lose its work because a laptop slept.
+    """
 
     now = datetime.now(timezone.utc)
     today = today or now.date()
@@ -397,13 +413,9 @@ def fetch(today: date | None = None) -> tuple[list[dict], list[dict], dict]:
     }
 
     def work(sym: str) -> None:
-        rows, stats = symbol_klines(sym, today, counter)
-        if sym in funding_symbols:
-            events, fstats = symbol_funding(sym, stats.get("first_month"), today, counter)
-            all_events.extend(events)
-        else:
-            fstats = {"events": 0, "first_month": None, "note": "no funding directory in this archive"}
+        rows, events, stats, fstats = fetch_symbol_with_funding(sym, funding_symbols, today, counter)
         all_rows.extend(rows)
+        all_events.extend(events)
         manifest["per_symbol"][sym] = stats
         manifest["funding_per_symbol"][sym] = fstats
 
@@ -421,51 +433,170 @@ def fetch(today: date | None = None) -> tuple[list[dict], list[dict], dict]:
     return all_rows, all_events, manifest
 
 
-def write_snapshot(rows: list[dict], events: list[dict], manifest: dict, stamp: str) -> Path:
+# ---------------------------------------------------------------- the resumable workspace --------------------------------------------------------
+
+WORKSPACE_SUFFIX = ".partial"
+PROGRESS = "progress.json"
+
+
+def _atomic_json(path: Path, payload: dict) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    tmp.replace(path)
+
+
+def open_workspace(today: date) -> tuple[Path, dict]:
+    """Create or resume this run's workspace: a .partial snapshot directory whose progress ledger makes every finished symbol permanent."""
+
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     SNAPSHOTS.mkdir(parents=True, exist_ok=True)
-    target = SNAPSHOTS / stamp
-    if target.exists():
-        raise SystemExit(f"{target} already exists; snapshots are immutable, so this fetch would have to be a new stamp")
-    target.mkdir(parents=True)
+    existing = sorted(SNAPSHOTS.glob(f"*{WORKSPACE_SUFFIX}"))
+    if existing:
+        workspace = existing[-1]                                            # resume the newest partial; one bootstrap at a time
+    else:
+        workspace = SNAPSHOTS / f"{stamp}{WORKSPACE_SUFFIX}"
+        workspace.mkdir()
+        (workspace / "parts").mkdir()
+    progress_path = workspace / PROGRESS
+    progress = json.loads(progress_path.read_text()) if progress_path.exists() else {"done": {}}
+    progress.setdefault("done", {})
+    progress["today"] = today.isoformat()
+    return workspace, progress
 
-    with (target / PRICES).open("w", newline="") as handle:
-        writer = csv.writer(handle)
-        writer.writerow(["date", "symbol", "open", "high", "low", "close", "base_volume", "quote_volume"])
-        for row in rows:
-            writer.writerow([row["date"].isoformat(), row["symbol"], f"{row['open']:.8g}", f"{row['high']:.8g}",
-                             f"{row['low']:.8g}", f"{row['close']:.8g}", f"{row['base_volume']:.10g}",
-                             f"{row['quote_volume']:.10g}"])
-    with (target / FUNDING).open("w", newline="") as handle:
-        writer = csv.writer(handle)
-        writer.writerow(["ts_utc", "symbol", "interval_hours", "rate"])
-        for event in events:
-            stamp_utc = datetime.fromtimestamp(event["ts_ms"] / 1000, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-            writer.writerow([stamp_utc, event["symbol"], f"{event['interval_hours']:g}", f"{event['rate']:.12g}"])
 
-    manifest["sha256"] = {PRICES: hashlib.sha256((target / PRICES).read_bytes()).hexdigest(),
-                          FUNDING: hashlib.sha256((target / FUNDING).read_bytes()).hexdigest()}
-    (target / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+def mark_done(workspace: Path, progress: dict, sym: str) -> None:
+    progress["done"][sym] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    _atomic_json(workspace / PROGRESS, progress)
 
+
+def fetch_into_workspace(workspace: Path, progress: dict, today: date | None = None) -> tuple[dict, dict, int]:
+    """One pass over every symbol the ledger does not already account for, persisting each to its own part files as it lands."""
+
+    now = datetime.now(timezone.utc)
+    today = today or now.date()
+    counter = {"requests": 0, "absent": 0}
+    kline_symbols = list_symbols(KLINE_LIST_PREFIX)
+    funding_symbols = set(list_symbols(FUNDING_LIST_PREFIX))
+    remaining = [s for s in kline_symbols if s not in progress["done"]]
+    manifest = {
+        "fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "endpoints": {"kline_monthly": KLINE_MONTHLY_URL, "kline_daily": KLINE_DAILY_URL,
+                      "funding_monthly": FUNDING_MONTHLY_URL, "listing": S3_BASE},
+        "universe": {"kline_symbols": len(kline_symbols), "funding_symbols": len(funding_symbols),
+                     "note": "the kline listing includes delisted symbols; funding exists for a subset"},
+        "synthetic": False, "today": today.isoformat(),
+    }
+
+    def work(sym: str) -> None:
+        rows, events, stats, fstats = fetch_symbol_with_funding(sym, funding_symbols, today, counter)
+        with (workspace / "parts" / f"{sym}.prices.csv").open("w", newline="") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(["date", "symbol", "open", "high", "low", "close", "base_volume", "quote_volume"])
+            for row in rows:
+                writer.writerow([row["date"].isoformat(), row["symbol"], f"{row['open']:.8g}", f"{row['high']:.8g}",
+                                 f"{row['low']:.8g}", f"{row['close']:.8g}", f"{row['base_volume']:.10g}",
+                                 f"{row['quote_volume']:.10g}"])
+        with (workspace / "parts" / f"{sym}.funding.csv").open("w", newline="") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(["ts_utc", "symbol", "interval_hours", "rate"])
+            for event in events:
+                stamp_utc = datetime.fromtimestamp(event["ts_ms"] / 1000, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                writer.writerow([stamp_utc, event["symbol"], f"{event['interval_hours']:g}", f"{event['rate']:.12g}"])
+        _atomic_json(workspace / "parts" / f"{sym}.stats.json",
+                     {"prices": stats, "funding": fstats})
+        mark_done(workspace, progress, sym)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(work, remaining))
+    still_remaining = [s for s in kline_symbols if s not in progress["done"]]
+    return manifest, counter, still_remaining
+
+
+def finalize_workspace(workspace: Path, progress: dict, manifest: dict, counter: dict) -> Path:
+    """Concatenate every part into the two archive CSVs, pin their sha256, seal the manifest, and only then claim the snapshot name.
+
+    The immutability guard is the first statement, not a formality before the rename: a finalized workspace is gone (renamed), and a
+    second attempt must refuse before it touches anything, not fail mid-write on a directory that no longer exists.
+    """
+
+    stamp = workspace.name[:-len(WORKSPACE_SUFFIX)]
+    final = SNAPSHOTS / stamp
+    if final.exists():
+        raise SystemExit(f"{final} already exists; snapshots are immutable")
+    done = sorted(progress["done"])
+    prices_tmp, funding_tmp = workspace / f"{PRICES}.tmp", workspace / f"{FUNDING}.tmp"
+    rows = events = 0
+    with prices_tmp.open("w", newline="") as prices_handle, funding_tmp.open("w", newline="") as funding_handle:
+        prices_writer = csv.writer(prices_handle)
+        funding_writer = csv.writer(funding_handle)
+        prices_writer.writerow(["date", "symbol", "open", "high", "low", "close", "base_volume", "quote_volume"])
+        funding_writer.writerow(["ts_utc", "symbol", "interval_hours", "rate"])
+        per_symbol, funding_per_symbol = {}, {}
+        day_holes = 0
+        for sym in done:
+            stats = json.loads((workspace / "parts" / f"{sym}.stats.json").read_text())
+            per_symbol[sym] = stats["prices"]
+            funding_per_symbol[sym] = stats["funding"]
+            day_holes += len(stats["prices"].get("day_holes", []))
+            with (workspace / "parts" / f"{sym}.prices.csv").open(newline="") as handle:
+                for row in csv.reader(handle):
+                    if row[0] == "date":
+                        continue
+                    prices_writer.writerow(row)
+                    rows += 1
+            with (workspace / "parts" / f"{sym}.funding.csv").open(newline="") as handle:
+                for row in csv.reader(handle):
+                    if row[0] == "ts_utc":
+                        continue
+                    funding_writer.writerow(row)
+                    events += 1
+        manifest["per_symbol"] = per_symbol
+        manifest["funding_per_symbol"] = funding_per_symbol
+        manifest["day_holes"] = day_holes
+        manifest["symbols_with_rows"] = sum(1 for s in per_symbol.values() if s["rows"])
+    prices_tmp.replace(workspace / PRICES)
+    funding_tmp.replace(workspace / FUNDING)
+    manifest["requests"] = counter["requests"]
+    manifest["absent_requests"] = counter["absent"]
+    manifest["rows"] = rows
+    manifest["events"] = events
+    manifest["sha256"] = {PRICES: hashlib.sha256((workspace / PRICES).read_bytes()).hexdigest(),
+                          FUNDING: hashlib.sha256((workspace / FUNDING).read_bytes()).hexdigest()}
+    (workspace / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+
+    workspace.rename(final)
     pointer = CURRENT
     if pointer.is_symlink() or pointer.exists():
         pointer.unlink()
     pointer.symlink_to(Path("snapshots") / stamp, target_is_directory=True)
-    return target
+    return final
 
 
 def main() -> int:
-    print("  enumerating the archive's symbol listings...", flush=True)
     started = time.monotonic()
-    rows, events, manifest = fetch()
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    target = write_snapshot(rows, events, manifest, stamp)
-    print(f"  {PRICES}: {manifest['rows']:,} rows over {manifest['symbols_with_rows']} symbol(s) "
-          f"of {manifest['universe']['kline_symbols']} listed, sha256 {manifest['sha256'][PRICES][:12]}")
-    print(f"  {FUNDING}: {manifest['events']:,} events over {len(manifest['funding_per_symbol'])} funding symbol(s), "
-          f"sha256 {manifest['sha256'][FUNDING][:12]}")
-    print(f"  requests: {manifest['requests']:,} ({manifest['absent_requests']:,} answered absent); "
-          f"day holes inside served months: {manifest['day_holes']}")
-    print(f"  wall time {time.monotonic() - started:,.0f}s; data/perps/current -> snapshots/{stamp}")
+    today = datetime.now(timezone.utc).date()
+    workspace, progress = open_workspace(today)
+    done_before = len(progress["done"])
+    print(f"  workspace {workspace.name}: {done_before} symbol(s) already done, resuming" if done_before
+          else f"  workspace {workspace.name}: fresh", flush=True)
+    stall = 0
+    while True:
+        manifest, counter, remaining = fetch_into_workspace(workspace, progress, today)
+        total_done = len(progress["done"])
+        print(f"  pass done: {total_done} symbol(s) recorded ({remaining} were remaining this pass, "
+              f"{counter['requests']:,} requests, {counter['absent']:,} absent)", flush=True)
+        if not remaining:
+            break
+        stall = stall + 1 if total_done == done_before else 0
+        done_before = total_done
+        if stall >= 3:
+            raise SystemExit("three consecutive passes with no progress: the archive is not answering; the workspace is kept for resume")
+    final = finalize_workspace(workspace, progress, manifest, counter)
+    print(f"  {PRICES}: {manifest['rows']:,} rows over {manifest['symbols_with_rows']} symbol(s), "
+          f"sha256 {manifest['sha256'][PRICES][:12]}")
+    print(f"  {FUNDING}: {manifest['events']:,} events, sha256 {manifest['sha256'][FUNDING][:12]}")
+    print(f"  day holes inside served spans: {manifest['day_holes']}; wall time {time.monotonic() - started:,.0f}s")
+    print(f"  data/perps/current -> snapshots/{final.name}")
     return 0
 
 

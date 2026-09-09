@@ -317,24 +317,74 @@ class FundingDiscipline(AFakeArchive):
             fp.parse_funding_csv(make_zip("f.zip", funding_csv([date(2023, 3, 14)], interval="3")), "BTCUSDT")
 
 
-class TheSnapshotIsContentAddressed(AFakeArchive):
+class TheWorkspaceIsResumable(AFakeArchive):
+    def workspace_pass(self):
+        workspace, progress = fp.open_workspace(TODAY)
+        manifest, counter, remaining = fp.fetch_into_workspace(workspace, progress, TODAY)
+        return workspace, progress, manifest, counter, remaining
+
     def test_the_manifest_pins_the_sha256_of_every_csv(self):
         self.serve(FakeArchive(floor=date(2021, 6, 1)))
-        rows, events, manifest = fp.fetch(today=TODAY)
-        target = fp.write_snapshot(rows, events, manifest, "STAMP1")
+        workspace, progress, manifest, counter, remaining = self.workspace_pass()
+        self.assertEqual(remaining, [])
+        target = fp.finalize_workspace(workspace, progress, manifest, counter)
         self.assertEqual(manifest["sha256"][fp.PRICES],
                          hashlib.sha256((target / fp.PRICES).read_bytes()).hexdigest())
         self.assertEqual(manifest["sha256"][fp.FUNDING],
                          hashlib.sha256((target / fp.FUNDING).read_bytes()).hexdigest())
         self.assertTrue(json.loads((target / "manifest.json").read_text())["synthetic"] is False)
 
-    def test_the_current_pointer_moves_and_stamps_are_immutable(self):
+    def test_the_current_pointer_moves_and_finalized_snapshots_are_immutable(self):
         self.serve(FakeArchive(floor=date(2021, 6, 1)))
-        rows, events, manifest = fp.fetch(today=TODAY)
-        fp.write_snapshot(rows, events, manifest, "STAMP1")
+        workspace, progress, manifest, counter, remaining = self.workspace_pass()
+        target = fp.finalize_workspace(workspace, progress, manifest, counter)
         self.assertTrue(fp.CURRENT.is_symlink())
         with self.assertRaises(SystemExit):
-            fp.write_snapshot(rows, events, manifest, "STAMP1")
+            fp.finalize_workspace(workspace, progress, manifest, counter)
+
+    def test_an_interrupted_pass_resumes_and_the_result_matches_a_single_pass(self):
+        """The whole point of the workspace: a killed fetch loses nothing but the symbol in flight, and the parts reassemble identically."""
+
+        archive = FakeArchive(floor=date(2021, 6, 1), kline_symbols=("AAAUSDT", "BTCUSDT"), funding_symbols=("BTCUSDT",))
+        self.serve(archive)
+
+        workspace, progress = fp.open_workspace(TODAY)
+        symbols = sorted(archive.kline_symbols)
+        first, second = symbols[0], symbols[1]
+        # a "crash": symbol one completes fully (parts and ledger), then the process dies before the next symbol begins
+        counter = {"requests": 0, "absent": 0}
+        rows, events, stats, fstats = fp.fetch_symbol_with_funding(first, archive.funding_symbols, TODAY, counter)
+        with (workspace / "parts" / f"{first}.prices.csv").open("w", newline="") as handle:
+            handle.write("date,symbol,open,high,low,close,base_volume,quote_volume\n")
+            for row in rows:
+                handle.write(f"{row['date'].isoformat()},{first},{row['open']:.8g},{row['high']:.8g},{row['low']:.8g},"
+                             f"{row['close']:.8g},{row['base_volume']:.10g},{row['quote_volume']:.10g}\n")
+        with (workspace / "parts" / f"{first}.funding.csv").open("w", newline="") as handle:
+            handle.write("ts_utc,symbol,interval_hours,rate\n")
+        fp._atomic_json(workspace / "parts" / f"{first}.stats.json", {"prices": stats, "funding": fstats})
+        fp.mark_done(workspace, progress, first)
+        self.assertIn(first, progress["done"])
+        archive.urls.clear()                                                 # the crash boundary: the resumed process remembers nothing
+
+        # resume: the ledger skips the finished symbol — not one request asks the archive for it again — and the rest complete
+        manifest, counter, remaining = fp.fetch_into_workspace(workspace, progress, TODAY)
+        self.assertEqual(remaining, [])
+        self.assertTrue(all(first not in url for url in archive.urls),
+                        "the resume refetched a symbol the ledger had finished")
+        target = fp.finalize_workspace(workspace, progress, manifest, counter)
+
+        # the reference: one clean pass into a fresh workspace, same archive, identical bytes
+        workspace2, progress2 = fp.open_workspace(TODAY)
+        progress2["done"] = {}
+        manifest2, _, remaining2 = fp.fetch_into_workspace(workspace2, progress2, TODAY)
+        fp.finalize_workspace(workspace2, progress2, manifest2, {"requests": 0, "absent": 0})
+        reference = sorted(fp.SNAPSHOTS.glob("*"))[-1]
+        self.assertEqual((target / fp.PRICES).read_text(), (reference / fp.PRICES).read_text())
+        self.assertEqual((target / fp.FUNDING).read_text(), (reference / fp.FUNDING).read_text())
+
+
+if __name__ == "__main__":
+    unittest.main()
 
 
 class TheUniverseIsTheArchiveS(AFakeArchive):
