@@ -90,7 +90,17 @@ import sys
 import urllib.error
 import urllib.request
 
-SYMBOLS = ("SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC")
+SYMBOLS = (
+    "SPY", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "DBC",
+    # These four are here because the goal is written as "beat VOO, QQQ", and an
+    # archive without them made every sentence in this repository about beating
+    # QQQ a sentence about SPY wearing a borrowed name. QQQ is not a proxy for
+    # anything that was already here: it is a different risk, and at any leverage
+    # a different financing cost. VTI and ITOT are the total-market version of the
+    # same question, and VOO is the cheap-wrapper form of the index SPY already
+    # stands in for, kept so that fee comparison is measured rather than asserted.
+    "QQQ", "VOO", "VTI", "ITOT",
+)
 CHART_URL = (
     "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
     "?period1=0&period2=9999999999&interval=1d&events=div%2Csplit"
@@ -298,6 +308,9 @@ def write_snapshot(
     """
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    # `exist_ok=False` on purpose, and round 88 tried to change it and was made to put it back. Two runs inside one second
+    # collide, and the right answer to that is the traceback: a snapshot's name is its identity, the manifest in it is the
+    # completion marker, and a tool that silently invents `-2` is a tool whose snapshots stop being addressable.
     snapshot = out / "snapshots" / stamp
     snapshot.mkdir(parents=True, exist_ok=False)
 
