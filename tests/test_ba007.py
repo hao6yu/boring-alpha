@@ -51,8 +51,7 @@ def make_panel(n=30, days=100, drift=None, volume_step=1_000.0, funding=None,
             series[day] = price
         closes[sym] = series
         volumes[sym] = {day: 10_000_000.0 - idx * volume_step for day in series}
-        if funding:
-            funding_map[sym] = {day: funding[idx] for day in series}
+        funding_map[sym] = {day: funding[idx] if funding is not None else 0.0 for day in series}
     return closes, volumes, funding_map, sessions
 
 
@@ -135,8 +134,11 @@ class TheConstructionIsTheCharters(unittest.TestCase):
         # The entry day's funding belongs to the positions held INTO that day, so the new book pays from the next day — the engine
         # charges exactly that, which is why the first live day reads zero and every day after reads the cross-sectional difference.
         self.assertAlmostEqual(live[0]["funding"], 0.0, places=12)
-        for row in live[1:]:
-            self.assertAlmostEqual(row["funding"], 0.5 * 0.02 - 0.5 * 0.01, places=12)
+        # Until the next trade the $0.5 long and $0.5 short notionals stay
+        # constant at flat prices, while equity declines from payments.
+        for row in live[1:7]:
+            self.assertAlmostEqual(row["funding_paid"], 0.005, places=12)
+        self.assertAlmostEqual(live[1]["funding"], 0.005 / 0.9995, places=12)
 
     def test_fees_are_charged_on_traded_notional_both_sides(self):
         """Entry charges gross 1.0 at the fee; a full rank flip charges 2.0; a stable week charges nothing."""
@@ -161,7 +163,10 @@ class TheConstructionIsTheCharters(unittest.TestCase):
         book2 = run(closes2, volumes, funding_map, sessions2, signal="MOM", fee_bps=5.0)
         flip_day_fees = [row["fees"] for row in book2["daily"] if row["fees"] > 0]
         self.assertGreaterEqual(len(flip_day_fees), 2)
-        self.assertAlmostEqual(max(flip_day_fees), 2.0 * 5.0 / 10_000, places=12)
+        # A full flip includes drifted notionals. It is not always exactly 2x
+        # yesterday's equity; the independently tested quantity ledger prices it.
+        self.assertGreater(max(flip_day_fees), 0.0009)
+        self.assertAlmostEqual(book2["fees_paid_cash"], book2["traded_notional"] * 0.0005, places=12)
 
     def test_net_is_gross_minus_funding_minus_fees_every_day(self):
         """The decomposition is an identity on every row, which is what makes the gross-minus-net accusation readable."""
@@ -189,6 +194,35 @@ class ControlsAreTheSameArithmetic(unittest.TestCase):
         self.assertEqual(first, again)
         self.assertNotEqual(first, other)
 
+    def test_weekly_scrambles_trade_even_when_the_universe_is_unchanged(self):
+        days = [START + timedelta(days=i) for i in range(15)]
+        names = [f"S{i:02d}" for i in range(30)]
+        closes = {name: dict.fromkeys(days, 100.0) for name in names}
+        weeks = [{"date": day, "universe": names, "scores": {name: i for i, name in enumerate(names)}}
+                 for day in (days[0], days[7], days[14])]
+        funding = {sym: dict.fromkeys(days, 0.0) for sym in closes}
+        fixed = engine.run_book(weeks, closes, engine.build_traversal(closes), funding, days, 0)
+        scrambled = engine.run_book(weeks, closes, engine.build_traversal(closes), funding, days, 0, scramble_seed=3)
+        self.assertAlmostEqual(fixed["turnover_one_way"], 1.0)
+        self.assertGreater(scrambled["turnover_one_way"], 1.0)
+
+    def test_weekly_book_preserves_a_flat_round_trip_in_asset_prices(self):
+        days = [START + timedelta(days=i) for i in range(3)]
+        closes = {"A": dict(zip(days, [100, 200, 100])),
+                  "B": dict.fromkeys(days, 100), "C": dict.fromkeys(days, 100)}
+        weeks = [{"date": days[0], "universe": ["A", "B", "C"], "scores": {"A": 3, "B": 2, "C": 1}}]
+        funding = {sym: dict.fromkeys(days, 0.0) for sym in closes}
+        book = engine.run_book(weeks, closes, engine.build_traversal(closes), funding, days, 0)
+        self.assertAlmostEqual(book["terminal_equity"], 1.0)
+        self.assertAlmostEqual(math.prod(1 + row["net"] for row in book["daily"]), 1.0)
+
+    def test_absent_funding_series_cannot_be_assumed_zero(self):
+        days = [START + timedelta(days=i) for i in range(2)]
+        closes = {sym: dict.fromkeys(days, 100.0) for sym in ("A", "B", "C")}
+        weeks = [{"date": days[0], "universe": list(closes), "scores": {"A": 3, "B": 2, "C": 1}}]
+        with self.assertRaisesRegex(engine.MissingMark, "missing funding observation"):
+            engine.run_book(weeks, closes, engine.build_traversal(closes), {}, days, 0)
+
     def test_reversed_book_is_the_exact_mirror_of_the_sides(self):
         """Same preparation, sides swapped: the reversed book's gross is the negative of the candidate's, to the float."""
 
@@ -198,21 +232,23 @@ class ControlsAreTheSameArithmetic(unittest.TestCase):
         weeks = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, rebalances, "MOM")
         base = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=0.0)
         mirror = engine.run_book(weeks, closes, engine.build_traversal(closes), funding_map, sessions, fee_bps=0.0, reverse=True)
+        # Before the second rebalance, quantities are exact negatives. Cash
+        # P&L mirrors; percentage returns differ as the accounts' equity moves.
         for a, b in zip(base["daily"], mirror["daily"]):
-            self.assertAlmostEqual(a["gross"], -b["gross"], places=15)
+            if a["date"] >= weeks[1]["date"]:
+                break
+            self.assertAlmostEqual(a["gross_pnl"], -b["gross_pnl"], places=15)
 
 
 class TheBookSurvivesADelisting(unittest.TestCase):
-    def test_a_long_side_symbol_dying_midweek_is_closed_and_reported(self):
-        """SYM00 dies after 40 days: its weight leaves the book, the notional sits in cash, and the manifest names it."""
+    def test_a_disappearing_symbol_requires_verified_settlement_data(self):
+        """An archive ending does not establish an executable exit price."""
 
         drift = [0.004 - 0.0004 * i for i in range(30)]
         closes, volumes, funding_map, sessions = make_panel(n=30, days=120, drift=drift,
                                                             dead_after=lambda idx: START + timedelta(days=70) if idx == 0 else None)
-        book = run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0)
-        self.assertIn("SYM00", book["closed_symbols"])
-        dead_day = next(row for row in book["daily"] if row["date"] > START + timedelta(days=70) and row["positions"] > 0)
-        self.assertLess(dead_day["positions"], 20)
+        with self.assertRaisesRegex(engine.MissingMark, "SYM00"):
+            run(closes, volumes, funding_map, sessions, signal="MOM", fee_bps=5.0)
 
     def test_a_symbol_whose_window_contains_silence_is_not_ranked_that_week(self):
         """Silence is not a price: a symbol with no closes in its momentum window scores nothing and is excluded, not defaulted."""
@@ -221,11 +257,36 @@ class TheBookSurvivesADelisting(unittest.TestCase):
         holes = closes["SYM00"]
         for day in list(holes)[-9:-1]:                                       # eight of the last nine days before the end
             del holes[day]
-        scores = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, [sessions[-1]], "MOM")
+        scores = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes, funding_map, sessions, [sessions[-2]], "MOM")
         self.assertNotIn("SYM00", scores[0]["scores"])
 
 
 class TheSignalDirectionsAreTheCharters(unittest.TestCase):
+    def test_seven_day_return_is_not_yesterdays_return(self):
+        days = [START + timedelta(days=i) for i in range(8)]
+        prices = dict(zip(days, [100, 110, 120, 130, 140, 150, 160, 170]))
+        self.assertAlmostEqual(engine.momentum(prices, days[-1]), 0.70)
+        del prices[days[3]]
+        self.assertIsNone(engine.momentum(prices, days[-1]))
+
+    def test_missing_funding_is_not_a_zero_funding_signal(self):
+        day = START + timedelta(days=3)
+        self.assertIsNone(engine.carry_sum({}, day))
+        observed = {day - timedelta(days=i): 0.0 for i in range(3)}
+        self.assertEqual(engine.carry_sum(observed, day), 0.0)
+
+    def test_signal_is_observed_before_execution_and_cannot_use_execution_price(self):
+        closes, volumes, funding_map, sessions = make_panel(n=30, days=90)
+        decision = sessions[70]
+        first = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes,
+                                     funding_map, sessions, [decision], "MOM")
+        self.assertEqual(first[0]["date"], decision + timedelta(days=1))
+        self.assertEqual(first[0]["signal_date"], decision)
+        closes["SYM00"][decision + timedelta(days=1)] *= 100
+        second = engine.prepare_weeks(closes, engine.build_traversal(closes), volumes,
+                                      funding_map, sessions, [decision], "MOM")
+        self.assertEqual(first, second)
+
     def test_carry_longs_the_lowest_funding_as_charter_section_4_registers(self):
         """Charter §4: 'Rank ascending: the most negative ... ranks first (long side).' The first sweep graded this signal's mirror
         because the negation was missing — this pin exists so the direction can never silently flip again."""

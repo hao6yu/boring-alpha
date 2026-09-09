@@ -21,6 +21,7 @@ data/*.parquet
 data/snapshots/
 data/crypto/
 data/perps/
+data/us_crypto/
 data/current
 
 # Generated experiments are immutable local artifacts.

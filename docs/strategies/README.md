@@ -14,6 +14,14 @@ belong to immutable experiment artifacts linked from a later review.
 | BA-006 | Sized Coinbase BTC sleeve | Pre-registered 2026-09-08, not run — awaiting the operator fee record its gates require. Consumes no BA-TREND observation. | [BA-006.md](BA-006.md) |
 | BA-007 | Crypto Cross-Sectional Selection | **Evaluation complete — closed at the sealed reveal.** XS-MOM: FAIL on seen windows (2/6), sealed sessions never opened. XS-CARRY: after a dated engine-direction correction ([sweep note](../notes/2026-09-09-ba007-first-cross-sectional-sweep.md)), PASS 6/6 on seen windows — then **FAIL the sealed reveal 1/4** (2025-01→2026-09: +9.58%/yr [−44.91%, +63.25%], scrambled median +9.84% — the ranking carried no information). Program closed per §11. | [BA-007.md](BA-007.md) |
 | BA-008 | Funding Momentum (XS-FMOM) | **Withdrawn 2026-09-09 before its first graded session** — its locked premise (long *high* funding) was inverted by the engine-direction defect corrected in the BA-007 sweep note; the registered BA-007 CARRY direction is the one that passed, and its test is BA-007's sealed reveal. Forward-only grading protocol (52/104-week bars) transfers to the paper book. | [BA-008.md](BA-008.md) |
+| BA-009 | U.S. Crypto Spot/Futures Relative Value | **Feasibility research active.** Public metadata/depth collector and cost screen implemented; no profitability verdict or live orders. | [BA-009.md](BA-009.md) |
+
+**2026-09-09 audit update:** BA-007's original rows above are retained as the
+historical record, not endorsed as reliable economic estimates. Further
+feature, accounting, execution, missing-data, and control defects were found.
+The claim that funding carried "no information" is unsupported. See the
+[takeover audit and current work](../notes/2026-09-09-quant-takeover.md).
+Corrected output is diagnostic only and does not restore unseen status.
 
 BA-004 is not a member of the `BA-TREND` family. It holds no forecast, so it
 neither consumes nor releases a sealed observation, and its evaluation cannot be

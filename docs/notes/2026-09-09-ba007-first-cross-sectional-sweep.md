@@ -1,5 +1,13 @@
 # BA-007's first cross-sectional sweep: both signals fail their own gates, and the honest-stop note is the deliverable
 
+> **Further audit, 2026-09-09:** additional defects invalidate reliance on the
+> economic estimates and broad conclusions below. Momentum used the wrong
+> horizon; weekly positions were accounted as constant daily weights; missing
+> bars removed held positions; random controls reused static assignments.
+> Execution and funding assumptions also limit inference. The original text
+> is retained as history. See [the repair record](2026-09-09-quant-takeover.md).
+> No corrected profitability claim or fresh holdout is implied.
+
 Measured 2026-09-09 on the first full snapshot of the spine. Charter [`docs/strategies/BA-007.md`](../strategies/BA-007.md) was locked
 2026-09-08, before any signal touched a real price; this note reports the verdict its gates computed — **FAIL for both pre-registered
 signals** — and stops the charter's question under its own §11 stopping rule. No lookback is nudged, no tercile is widened, and the

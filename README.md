@@ -8,6 +8,13 @@ BoringAlpha is a small, dependency-light laboratory for systematic trading
 research. Its first job is not to make money. Its first job is to make it hard
 to fool ourselves.
 
+**Active research, September 9, 2026:** the current mandate is U.S.-accessible
+quantitative crypto trading with a $5,000 pilot, not ETF allocation. BA-007's
+simulator is under a documented economic correction; its historical headline
+results are not reliable deployment evidence. [Current status and commands](docs/QUANT_RESEARCH.md)
+cover the repairs and BA-009's public spot/futures feasibility screen. Earlier
+ETF research below remains historical context.
+
 The initial strategy, **BA-001 Multi-Asset Trend**, is deliberately simple:
 eight fixed ETF sleeves are invested when their trailing 12-month total return
 exceeds the trailing cash return, and otherwise remain in cash. Signals are

@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-09-09",
+  "purpose": "Public research inputs and sensitivity scenarios; not authenticated account fees",
+  "robinhood_crypto_exchange_routing": {
+    "source": "https://cdn.robinhood.com/assets/robinhood/legal/rhc-fee-schedule.pdf",
+    "document_id": "20260622-5628344-17827487",
+    "status": "published schedule, promotions may differ",
+    "tiers": [
+      {"volume_from_usd": 0, "volume_to_usd": 10000, "taker_bps": 95, "maker_bps": 50},
+      {"volume_from_usd": 10000, "volume_to_usd": 50000, "taker_bps": 75, "maker_bps": 35},
+      {"volume_from_usd": 50000, "volume_to_usd": 250000, "taker_bps": 25, "maker_bps": 12.5},
+      {"volume_from_usd": 250000, "volume_to_usd": 500000, "taker_bps": 15, "maker_bps": 7.5}
+    ],
+    "note": "Trailing 30-day executed exchange-routing volume, not account balance. Model each fill at its then-current tier; do not apply a future tier retroactively. The market-maker route has no commission, but its execution cost is not zero and requires account quotes. Robinhood books were not measured in the Coinbase feasibility snapshot."
+  },
+  "coinbase_advanced_spot": {
+    "source": "https://help.coinbase.com/en/coinbase/trading-and-funding/advanced-trade/advanced-trade-fees",
+    "status": "account tier unavailable; complete current schedule requires sign-in",
+    "research_taker_bps": [60, 120, 240],
+    "base_scenario_bps": 120,
+    "note": "These are explicit cost sensitivity assumptions, not a verified average or upper bound. Do not substitute Coinbase Exchange, consumer buy/sell, or non-US derivatives rates. No assumed maker fills or automatic fee discounts."
+  },
+  "coinbase_us_futures": {
+    "source": "https://www.coinbase.com/blog/perpetual-futures-have-arrived-in-the-us",
+    "source_published": "2025-07-21",
+    "status": "public advertised minimum, not a verified current account rate",
+    "advertised_as_low_as_bps": 2,
+    "published_minimum_per_contract_usd": 0.15,
+    "research_bps": [2, 5, 10],
+    "base_scenario_bps": 5,
+    "note": "Published disclosure includes exchange, clearing and NFA fees. Model max(notional fee, contract minimum), not their sum. The 5 and 10 bps scenarios are assumptions; the headline 2 bps is not guaranteed. Fees apply separately on entry and exit. Funding is additional."
+  }
+}

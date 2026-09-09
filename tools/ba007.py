@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
-"""BA-007: the cross-sectional screen engine — the charter's locked mechanics, computed and never typed in.
+"""BA-007 corrected historical diagnostics, revision 2.
 
-The charter (`docs/strategies/BA-007.md`) was pre-registered before any signal touched the real archive. This file implements exactly what
-it locks and nothing it does not: a point-in-time top-30-by-volume universe with a 60-day history floor, two signals (7-day cross-sectional
-momentum; 72-hour summed funding carry), weekly dollar-neutral tercile books at gross 1.0, fees on traded notional both sides, funding
-charged at realized rates daily, delistings closed at their last observed close, and the four controls the gates accuse the signal with
-(reversed ranks, 20 seeded scrambles, gross-minus-net, single legs). Evaluation periods truncate the panel before anything is computed —
-the development window never sees a validation bar, which is the property `test_ba007.py` pins down.
+The original results and charter remain in the dated research record. This
+revision fixes the seven-day feature and quantity accounting, delays execution
+until the following close, requires complete lookbacks, and fails on missing
+held marks. Those corrections and conservative protocol changes do not create
+a fresh holdout or a deployable result. Funding still uses daily-close marks;
+spread, margin/liquidation, collateral interest, and taxes are not modeled.
 
-The engine separates *preparation* (each week's eligible universe and each signal's scores, computed once per week per signal) from
-*bookkeeping* (each book consumes the same preparation), so the scrambled and reversed controls are the same arithmetic as the candidate
-with the ranks changed and nothing else — the same property that made the equity family's mirror-image controls damning.
-
-What this file is not: a place where a rule gets nudged until a table clears. The charter's §4 declares two signals, one construction, one
-fee grid as the whole family; the verdict is arithmetic on artifacts, and Inconclusive kills the candidate as surely as FAIL.
+See docs/notes/2026-09-09-quant-takeover.md for the audit and remaining limits.
 """
 
 from __future__ import annotations
@@ -29,6 +24,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tools"))
+
+from boring_alpha.futures_account import FuturesAccount, MissingMark  # noqa: E402
+
+ENGINE_REVISION = "ba007-quantity-ledger-v2"
+RESEARCH_STATUS = "corrected historical diagnostic; not a fresh holdout or deployment verdict"
 
 PERPS = ROOT / "data" / "perps" / "current"
 BACKTESTS = ROOT / "data" / "perps" / "backtests"
@@ -48,7 +48,7 @@ ANNUALIZATION_DAYS = 365
 
 DEVELOPMENT = (date(2020, 2, 1), date(2022, 12, 31))
 VALIDATION = (date(2023, 1, 1), date(2024, 12, 31))
-SEALED = (date(2025, 1, 1), None)   # never opened by this charter
+SEALED = (date(2025, 1, 1), None)   # historical name; revealed by v1 on 2026-09-09
 
 
 # ---------------------------------------------------------------- the panel ---------------------------------------------------------------
@@ -122,43 +122,39 @@ def sessions_in(closes: dict[str, dict[date, float]], period: tuple[date, date |
 def momentum(series: dict[date, float], t: date) -> float | None:
     """Total close-to-close return over the MOMENTUM_DAYS calendar days ending at t, on observed closes; silence is not a price."""
 
-    if t not in series:
+    window = [t - timedelta(days=i) for i in range(MOMENTUM_DAYS + 1)]
+    if any(d not in series for d in window):
         return None
     start = t - timedelta(days=MOMENTUM_DAYS)
-    priors = sorted(d for d in series if start <= d < t)
-    if not priors:
-        return None
-    return series[t] / series[priors[-1]] - 1.0
+    return series[t] / series[start] - 1.0
 
 
-def carry_sum(funding: dict[date, float], t: date) -> float:
+def carry_sum(funding: dict[date, float], t: date) -> float | None:
     """Summed realized funding over the trailing CARRY_HOURS whole UTC days ending at t, whatever cadence the venue pays at."""
 
-    window_start = t - timedelta(days=CARRY_HOURS // 24 - 1)              # (t-72h, t] on the daily grid: t-2, t-1, t
-    return sum(v for d, v in funding.items() if window_start <= d <= t)
+    window = [t - timedelta(days=i) for i in range(CARRY_HOURS // 24)]
+    if any(d not in funding for d in window):
+        return None
+    return sum(funding[d] for d in window)
 
 
 def eligible_universe(closes: dict[str, dict[date, float]], traversal, volumes: dict[str, dict[date, float]],
                       t: date) -> list[str]:
     """Charter §3: observed close at t, HISTORY_FLOOR_DAYS of life, ranked by trailing VOLUME_WINDOW_DAYS median quote volume, top UNIVERSE_N.
 
-    The volume window is sliced from the symbol's sorted dates by bisect — the panel has years of days and the window wants thirty.
+    Require complete prior history and volume observations. This conservative
+    diagnostic policy is recorded separately from the original charter.
     """
 
-    import bisect
     scored: list[tuple[float, str]] = []
     for sym, series in closes.items():
-        dates, _ = traversal[sym]
-        if not dates or dates[-1] != t:
-            if t not in series:
-                continue
-            dates = sorted(d for d in series if d <= t)
-        if dates[0] > t - timedelta(days=HISTORY_FLOOR_DAYS):
+        history = [t - timedelta(days=i) for i in range(1, HISTORY_FLOOR_DAYS + 1)]
+        if t not in series or any(d not in series for d in history):
             continue
-        lo = bisect.bisect_right(dates, t - timedelta(days=VOLUME_WINDOW_DAYS))
-        window = [volumes[sym][d] for d in dates[lo:] if d <= t]
-        if not window:
+        volume_days = history[:VOLUME_WINDOW_DAYS]
+        if any(d not in volumes.get(sym, {}) for d in volume_days):
             continue
+        window = [volumes[sym][d] for d in volume_days]
         scored.append((-statistics.median(window), sym))
     scored.sort()
     return [sym for _, sym in scored[:UNIVERSE_N]]
@@ -182,18 +178,24 @@ def prepare_weeks(closes: dict[str, dict[date, float]], traversal, volumes: dict
                 # Charter §4: "Rank ascending: the most negative ... ranks first (long side)" — the long side holds the LOWEST
                 # funding, so the ranking score is the negated sum and the descending sort delivers the charter's order. The first
                 # sweep graded this signal's mirror because the negation was missing; the direction pin lives in test_ba007.py.
-                value = -carry_sum(funding.get(sym, {}), day)
+                observed_funding = carry_sum(funding.get(sym, {}), day)
+                value = -observed_funding if observed_funding is not None else None
             else:
                 raise SystemExit(f"unknown signal {signal_name!r}; the charter declares MOM and CARRY and nothing else")
             if value is not None:
                 scores[sym] = value
         if len(scores) >= MIN_ELIGIBLE:
-            weeks.append({"date": day, "universe": sorted(scores), "scores": scores})
+            # A close-derived signal cannot fill at that same close. The daily
+            # diagnostic executes at the following calendar day's close.
+            execution_day = day + timedelta(days=1)
+            if execution_day in sessions:
+                weeks.append({"date": execution_day, "signal_date": day,
+                              "universe": sorted(scores), "scores": scores})
     return weeks
 
 
 def terciles(universe: list[str], scores: dict[str, float], reverse: bool = False,
-             scramble_seed: int | None = None) -> tuple[list[str], list[str]]:
+             scramble_seed: int | str | None = None) -> tuple[list[str], list[str]]:
     """Long tercile / short tercile of the ranked universe. Reversed swaps the sides; a scramble permutes the ranks before cutting.
 
     The scrambled book is not a different construction: it is this construction fed a ranking known to carry no information, which is
@@ -217,62 +219,79 @@ def terciles(universe: list[str], scores: dict[str, float], reverse: bool = Fals
 def run_book(weeks: list[dict], closes: dict[str, dict[date, float]], traversal,
              funding: dict[str, dict[date, float]], sessions: list[date], fee_bps: float, leg: str = "both",
              reverse: bool = False, scramble_seed: int | None = None) -> dict:
-    """One book's daily record over the period: gross spread, funding, fees, turnover — the charter's construction, nothing else."""
+    """Quantity-ledger diagnostic with the revision-2 timing and data policies."""
 
     if leg not in ("both", "long", "short"):
         raise SystemExit(f"unknown leg {leg!r}; the charter prices both, long-only and short-only as diagnostics")
     rebalance_on = {week["date"]: week for week in weeks}
-    weights: dict[str, float] = {}
+    account = FuturesAccount()
     daily: list[dict] = []
-    pending_fee = 0.0
     turnover_total = 0.0
-    closed_symbols: set[str] = set()
+    previous_day = None
 
     for day in sessions:
-        gross_ret = funding_ret = 0.0
-        dead = []
-        for sym, weight in weights.items():
-            dates, priors = traversal[sym]
-            prior_close = priors.get(day)
-            if day not in closes[sym] or prior_close is None:
-                dead.append(sym)                                            # delisted mid-week: closed at its last close
-                continue
-            gross_ret += weight * (closes[sym][day] / prior_close - 1.0)
-            funding_ret += weight * funding.get(sym, {}).get(day, 0.0)
-        for sym in dead:
-            del weights[sym]                                                # the notional sits in cash until the next rebalance
-            closed_symbols.add(sym)
-
+        if previous_day is not None and day <= previous_day:
+            raise ValueError("sessions must be strictly increasing")
+        if account.quantities and (day - previous_day).days != 1:
+            raise MissingMark(f"missing calendar session before {day}; cannot skip held risk")
+        equity_before = account.equity
+        prices = {sym: series[day] for sym, series in closes.items() if day in series}
+        try:
+            gross_pnl = account.mark(prices)
+        except MissingMark as exc:
+            raise MissingMark(f"{day}: {exc}") from exc
+        funding_paid = 0.0
+        for sym in account.quantities:
+            # The archive stores rates without event-time marks. This is an
+            # explicit close-mark approximation, never exact event funding.
+            # Missing funding is unknown, including a wholly absent series.
+            if day not in funding.get(sym, {}):
+                raise MissingMark(f"{day}: missing funding observation for held {sym}")
+            funding_paid += account.fund(sym, funding[sym][day], prices[sym])
+        if account.equity <= 0:
+            raise ValueError(f"{day}: account insolvent; no executable continuation")
+        fee = 0.0
         week = rebalance_on.get(day)
         if week is not None:
+            seed = (f"{scramble_seed}:{week.get('signal_date', day)}"
+                    if scramble_seed is not None else None)
             long_side, short_side = terciles(week["universe"], week["scores"],
-                                             reverse=reverse, scramble_seed=scramble_seed)
-            k_long, k_short = max(1, len(long_side)), max(1, len(short_side))
-            new_weights: dict[str, float] = {}
+                                             reverse=reverse, scramble_seed=seed)
+            weights: dict[str, float] = {}
             if leg in ("both", "long"):
-                for sym in long_side:
-                    new_weights[sym] = new_weights.get(sym, 0.0) + (GROSS / 2) / k_long
+                weights.update({sym: (GROSS / 2 if leg == "both" else GROSS) / len(long_side)
+                                for sym in long_side})
             if leg in ("both", "short"):
-                for sym in short_side:
-                    new_weights[sym] = new_weights.get(sym, 0.0) - (GROSS / 2) / k_short
-            if leg == "long":
-                new_weights = {sym: GROSS / k_long for sym in long_side}
-            elif leg == "short":
-                new_weights = {sym: -GROSS / k_short for sym in short_side}
-            turnover = sum(abs(new_weights.get(s, 0.0) - weights.get(s, 0.0))
-                           for s in set(new_weights) | set(weights))
-            turnover_total += turnover
-            pending_fee += turnover * fee_bps / 10_000
-            weights = new_weights
+                weights.update({sym: -(GROSS / 2 if leg == "both" else GROSS) / len(short_side)
+                                for sym in short_side})
+            for sym in weights:
+                if sym not in prices:
+                    raise MissingMark(f"{day}: missing execution price for {sym}")
+            # Targets use equity immediately before trade fees. Quantities then
+            # remain fixed until the next trade; weights naturally drift.
+            targets = {sym: weight * account.equity / prices[sym] for sym, weight in weights.items()}
+            traded, fee = account.trade(targets, prices, fee_bps)
+            turnover_total += traded / equity_before
+        daily.append({"date": day, "gross": gross_pnl / equity_before,
+                      "funding": funding_paid / equity_before, "fees": fee / equity_before,
+                      "net": (gross_pnl - funding_paid - fee) / equity_before,
+                      "positions": len(account.quantities), "equity": account.equity,
+                      "gross_pnl": gross_pnl, "funding_paid": funding_paid,
+                      "fee_paid": fee})
+        previous_day = day
 
-        net_ret = gross_ret - funding_ret - pending_fee
-        daily.append({"date": day, "gross": gross_ret, "funding": funding_ret,
-                      "fees": pending_fee, "net": net_ret, "positions": len(weights)})
-        pending_fee = 0.0
-
-    summary = _summarize(daily, fee_bps, leg, reverse, scramble_seed, closed_symbols)
-    summary["turnover_one_way"] = turnover_total                             # gross multiples traded over the whole period
+    summary = _summarize(daily, fee_bps, leg, reverse, scramble_seed, set())
+    summary["turnover_one_way"] = turnover_total
     summary["turnover_annualized"] = turnover_total / len(daily) * ANNUALIZATION_DAYS if daily else 0.0
+    summary["traded_notional"] = account.traded_notional
+    summary["fees_paid_cash"] = account.fees_paid
+    summary["terminal_equity"] = account.equity
+    summary["engine_revision"] = ENGINE_REVISION
+    summary["research_status"] = RESEARCH_STATUS
+    summary["limitations"] = ["funding uses daily-close marks, not event-time marks",
+                               "fills at next-day close omit spreads and market impact",
+                               "no margin/liquidation, collateral yield, or tax model",
+                               "weekly scrambles are not turnover- or factor-matched controls"]
     return summary
 
 
@@ -315,7 +334,9 @@ def bootstrap_interval(nets: list[float], block: int = BLOCK_LENGTH,
     at import time would silently refuse.
     """
 
-    resamples = resamples or BOOTSTRAP_RESAMPLES
+    resamples = BOOTSTRAP_RESAMPLES if resamples is None else resamples
+    if block < 1 or resamples < 40:
+        raise ValueError("bootstrap requires block >= 1 and at least 40 resamples")
     rng = random.Random(seed)
     n = len(nets)
     if n < block * 2:
@@ -325,10 +346,12 @@ def bootstrap_interval(nets: list[float], block: int = BLOCK_LENGTH,
         sample: list[float] = []
         while len(sample) < n:
             start = rng.randrange(n)
-            length = max(1, round(rng.gauss(block, block / 2)))
-            for offset in range(length):
-                sample.append(nets[(start + offset) % n])
-                if len(sample) >= n:
+            # Stationary bootstrap: geometric block lengths with mean `block`.
+            # Gaussian block lengths in v1 were not a stationary bootstrap.
+            while len(sample) < n:
+                sample.append(nets[start])
+                start = (start + 1) % n
+                if rng.random() < 1 / block:
                     break
         means.append(statistics.fmean(sample) * ANNUALIZATION_DAYS)
     means.sort()
@@ -339,7 +362,7 @@ def bootstrap_interval(nets: list[float], block: int = BLOCK_LENGTH,
 
 def verdict(dev: dict, val: dict, reversed_dev: dict, scrambled_means: list[float],
             stress_dev: dict, stress_val: dict) -> dict:
-    """Charter §8: G1..G4 computed from artifacts. Inconclusive kills the candidate as surely as FAIL; there is no third window."""
+    """Legacy numerical checks, retained for diagnostic comparison only."""
 
     def clears_g1(book: dict) -> bool:
         return book.get("annualized_net", float("nan")) > 0 and book.get("bootstrap_low", float("nan")) > 0
@@ -353,7 +376,9 @@ def verdict(dev: dict, val: dict, reversed_dev: dict, scrambled_means: list[floa
         "G4_stress_holds_in_dev": clears_g1(stress_dev),
         "G4_stress_holds_in_val": clears_g1(stress_val),
     }
-    return {"checks": checks, "verdict": "PASS" if all(checks.values()) else "FAIL"}
+    return {"checks": checks, "verdict": "PASS" if all(checks.values()) else "FAIL",
+            "research_status": RESEARCH_STATUS,
+            "gate_scope": "legacy numerical screen only; stress controls and economic execution limits not resolved"}
 
 
 def beta_against(daily: list[dict], benchmark: dict[date, float]) -> float:
@@ -427,7 +452,9 @@ def sealed_verdict(base: dict, reversed_book: dict, scrambled_means: list[float]
                                                                                               if scrambled_means else float("inf")),
         "G4_stress_holds_in_sealed": clears(stress),
     }
-    return {"checks": checks, "verdict": "PASS" if all(checks.values()) else "FAIL"}
+    return {"checks": checks, "verdict": "PASS" if all(checks.values()) else "FAIL",
+            "research_status": RESEARCH_STATUS,
+            "gate_scope": "legacy numerical screen only; stress controls and economic execution limits not resolved"}
 
 
 def run_reveal(reason: str, closes, volumes, funding) -> dict:
@@ -443,7 +470,7 @@ def run_reveal(reason: str, closes, volumes, funding) -> dict:
     # The authorized signal is XS-CARRY — the only one whose development and validation both passed (charter §11).
     # XS-MOM failed its gates; its sealed sessions stay untouched by this code path, by construction.
     out = evaluate_signal("CARRY", closes, volumes, funding, periods=(("sealed", SEALED),))
-    out["reveal"] = {"reason": reason.strip(),
+    out["reveal"] = {"reason": reason.strip(), "research_status": RESEARCH_STATUS,
                      "locked_at": "2026-09-09 (charter f1c5f08; corrected verdict 0948d31)",
                      "opened_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                      "window": "2025-01-01 -> latest complete session",
@@ -458,25 +485,30 @@ def run_reveal(reason: str, closes, volumes, funding) -> dict:
           f"scrambled median {out['sealed']['scrambled_median']:+.2%} "
           f"stress {out['sealed']['stress']['annualized_net']:+.2%} "
           f"legs L {out['sealed']['legs']['long']['annualized_net']:+.2%} S {out['sealed']['legs']['short']['annualized_net']:+.2%}")
-    print(f"  SEALED VERDICT: {out['verdict']['verdict']} ({sum(out['verdict']['checks'].values())}/{len(out['verdict']['checks'])} gates)")
+    print(f"  REVEALED-DATA DIAGNOSTIC: {out['verdict']['verdict']} ({sum(out['verdict']['checks'].values())}/{len(out['verdict']['checks'])} gates)")
     print(f"  reason: {out['reveal']['reason']}")
     return out
 
 
 def main() -> int:
     import argparse
-    ap = argparse.ArgumentParser(description="BA-007: the pre-registered cross-sectional sweep, and the sealed reveal when it is earned")
+    ap = argparse.ArgumentParser(description="BA-007 corrected historical diagnostics; no fresh holdout verdict")
     ap.add_argument("--reveal", metavar="REASON", default=None,
-                    help="open the sealed window (2025-01-01 -> latest) for XS-CARRY; the reason is recorded in the artifacts")
+                    help="recompute already-revealed XS-CARRY history as a repair diagnostic; never a new sealed test")
     args = ap.parse_args()
-    closes, volumes, funding = load_panel()
-    if args.reveal is not None:
-        stamp_suffix = "-reveal"
-        results = {"CARRY": run_reveal(args.reveal, closes, volumes, funding)}
-    else:
-        stamp_suffix = ""
-        results = {name: evaluate_signal(name, closes, volumes, funding) for name in ("MOM", "CARRY")}
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    print(f"{ENGINE_REVISION}: {RESEARCH_STATUS}")
+    try:
+        closes, volumes, funding = load_panel()
+        if args.reveal is not None:
+            stamp_suffix = "-revealed-diagnostic"
+            results = {"CARRY": run_reveal(args.reveal, closes, volumes, funding)}
+        else:
+            stamp_suffix = "-seen-diagnostic"
+            results = {name: evaluate_signal(name, closes, volumes, funding) for name in ("MOM", "CARRY")}
+    except (ValueError, OSError) as exc:
+        print(f"DIAGNOSTIC DATA ERROR: {exc}; no repaired verdict issued", file=sys.stderr)
+        return 2
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     target = BACKTESTS / f"{stamp}{stamp_suffix}"
     target.mkdir(parents=True)
     periods_scored = tuple(results[next(iter(results))].keys()) if results else ()
@@ -490,15 +522,15 @@ def main() -> int:
     (target / "metrics.json").write_text(json.dumps(slim, indent=2, sort_keys=True) + "\n")
     for name, result in results.items():
         for period_name in periods_scored:
-            daily = result[period_name]["base"]
             with (target / f"daily-{period_name}-{name}-base.csv").open("w", newline="") as handle:
-                writer = csv.DictWriter(handle, fieldnames=["date", "gross", "funding", "fees", "net", "positions"])
+                rows = result[period_name]["base"].get("daily", [])
+                writer = csv.DictWriter(handle, fieldnames=list(rows[0]) if rows else ["date", "gross", "funding", "fees", "net", "positions"])
                 writer.writeheader()
                 writer.writerows(result[period_name]["base"].get("daily", []))
     if args.reveal is not None:
         print(f"  reveal reason recorded in metrics.json (reveal.reason); no other signal's sealed window was opened")
     print(f"  artifacts: {target}")
-    print("  verdicts are computed from these artifacts, never typed in (charter §8)")
+    print("  legacy numerical gates are diagnostic only; economic limitations preclude deployment")
     return 0
 
 
