@@ -124,7 +124,7 @@ class FakeArchive:
     def __call__(self, url: str) -> bytes | None:
         self.urls.append(url)
         parsed = urllib.parse.urlparse(url)
-        path = parsed.path.lstrip("/")
+        path = urllib.parse.unquote(parsed.path.lstrip("/"))                    # the fetcher percent-encodes symbols; the model speaks raw
         if path.startswith("data.binance.vision/"):
             path = path[len("data.binance.vision/"):]                            # the bucket name rides in the path; drop it
         query = urllib.parse.parse_qs(parsed.query)
@@ -335,6 +335,24 @@ class TheSnapshotIsContentAddressed(AFakeArchive):
         self.assertTrue(fp.CURRENT.is_symlink())
         with self.assertRaises(SystemExit):
             fp.write_snapshot(rows, events, manifest, "STAMP1")
+
+
+class TheUniverseIsTheArchiveS(AFakeArchive):
+    def test_a_symbol_whose_name_is_not_ascii_is_fetched_not_filtered(self):
+        """The archive lists Chinese-named symbols; the fetch percent-encodes the request and archives the raw name."""
+
+        archive = self.serve(FakeArchive(kline_symbols=("哈基米USDT",), funding_symbols=("哈基米USDT",)))
+        rows, events, manifest = fp.fetch(today=TODAY)
+        self.assertIn("哈基米USDT", manifest["per_symbol"])
+        encoded = urllib.parse.quote("哈基米USDT", safe="")
+        self.assertTrue(any(encoded in u for u in archive.urls))
+
+    def test_the_non_ascii_symbols_the_probe_found_are_in_this_universe_model(self):
+        """Pins the fact that motivated the encoding: five Chinese-named listings exist in the real archive's symbol listing."""
+
+        self.serve(FakeArchive(kline_symbols=("哈基米USDT", "币安人生USDT", "我踏马来了USDT", "牛来USDT", "龙虾USDT")))
+        rows, events, manifest = fp.fetch(today=TODAY)
+        self.assertEqual(len(manifest["per_symbol"]), 5)
 
 
 class TheArchiveMustExist(AFakeArchive):

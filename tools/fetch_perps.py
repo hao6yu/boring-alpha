@@ -74,6 +74,13 @@ USER_AGENT = "boring-alpha/1.0 (research; stdlib urllib)"
 _NS = {"s": "http://s3.amazonaws.com/doc/2006-03-01/"}
 
 
+def _sym_url(sym: str) -> str:
+    """The symbol as it belongs in a URL: percent-encoded. The archive's universe contains symbols whose names are not ASCII
+    (five Chinese-named listings as of 2026-09-08), and an archive that lists them is a fact the fetch must survive, not filter."""
+
+    return urllib.parse.quote(sym, safe="")
+
+
 def _ssl_context() -> ssl.SSLContext:
     context = ssl.create_default_context()
     if context.cert_store_stats()["x509_ca"] > 0:
@@ -273,14 +280,14 @@ def symbol_klines(sym: str, today: date, counter: dict) -> tuple[list[dict], dic
         ymd = key.rsplit("/", 1)[-1].replace(f"{sym}-1d-", "").replace(".zip", "")
         if date.fromisoformat(ymd) >= today:
             continue
-        blob = _zip_bytes(KLINE_DAILY_URL.format(sym=sym, ymd=ymd), counter)
+        blob = _zip_bytes(KLINE_DAILY_URL.format(sym=_sym_url(sym), ymd=ymd), counter)
         if blob is not None:
             daily_rows += parse_kline_csv(blob, sym, today)
 
     rows: list[dict] = []
     listed_but_absent = 0
     for ym in months:
-        blob = _zip_bytes(KLINE_MONTHLY_URL.format(sym=sym, ym=ym), counter)
+        blob = _zip_bytes(KLINE_MONTHLY_URL.format(sym=_sym_url(sym), ym=ym), counter)
         if blob is None:
             listed_but_absent += 1                                          # the listing promised it; the archive did not serve it
             continue
@@ -336,7 +343,7 @@ def symbol_funding(sym: str, floor_ym: str | None, today: date, counter: dict) -
     months = [ym for ym in months if ym <= ceiling and (floor_ym is None or ym >= floor_ym)]
     events: list[dict] = []
     for ym in months:
-        blob = _zip_bytes(FUNDING_MONTHLY_URL.format(sym=sym, ym=ym), counter)
+        blob = _zip_bytes(FUNDING_MONTHLY_URL.format(sym=_sym_url(sym), ym=ym), counter)
         if blob is not None:
             events += parse_funding_csv(blob, sym)
     events.sort(key=lambda e: (e["ts_ms"], e["symbol"]))
