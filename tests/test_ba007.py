@@ -386,6 +386,9 @@ class TheSweepEndsInArtifacts(unittest.TestCase):
                     handle.write(f"{stamp},{sym},8,{funding_map[sym][day]:.12g}\n")
 
     def test_main_writes_metrics_and_daily_csvs_for_both_signals_and_periods(self):
+        argv = sys.argv
+        sys.argv = ["ba007"]                                                   # main parses the process argv; the rehearsal has none
+        self.addCleanup(setattr, sys, "argv", argv)
         buffer = io.StringIO()
         with contextlib.redirect_stdout(buffer):
             self.assertEqual(engine.main(), 0)
@@ -411,12 +414,72 @@ class TheSweepEndsInArtifacts(unittest.TestCase):
     def test_beta_is_in_the_metrics_when_btcusdt_is_in_the_panel(self):
         """The real archive carries BTCUSDT; the rehearsal panel must too, and beta must be a number, not a nan."""
 
+        argv = sys.argv
+        sys.argv = ["ba007"]
+        self.addCleanup(setattr, sys, "argv", argv)
         buffer = io.StringIO()
         with contextlib.redirect_stdout(buffer):
             engine.main()
         metrics = json.loads(next(engine.BACKTESTS.iterdir()).joinpath("metrics.json").read_text())
         for name in ("MOM", "CARRY"):
             self.assertFalse(math.isnan(metrics[name]["development"]["base"]["beta_vs_btc"]))
+
+
+class TheSealedRevealIsDeliberate(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        root = Path(self.tmp.name) / "perps"
+        self._swap = (engine.PERPS, engine.BACKTESTS)
+        engine.PERPS, engine.BACKTESTS = root, root / "backtests"
+        self.addCleanup(lambda: (setattr(engine, "PERPS", self._swap[0]), setattr(engine, "BACKTESTS", self._swap[1])))
+        engine.BOOTSTRAP_RESAMPLES = 100
+        self.addCleanup(setattr, engine, "BOOTSTRAP_RESAMPLES", 2_000)
+
+        global START
+        START = date(2019, 11, 1)
+        self.addCleanup(setattr, __import__("test_ba007"), "START", date(2024, 1, 1))
+        closes, volumes, funding_map, _ = make_panel(n=30, days=2_200, drift=[0.003 - 0.0003 * i for i in range(30)],
+                                                     funding=[0.0001] * 30)
+        closes["BTCUSDT"] = {day: 100.0 * (1.0 + 0.0005) ** i for i, day in enumerate(sorted(closes["SYM00"]))}
+        volumes["BTCUSDT"] = {day: 50_000_000.0 for day in closes["BTCUSDT"]}
+        funding_map["BTCUSDT"] = {day: 0.0001 for day in closes["BTCUSDT"]}
+        directory = engine.PERPS
+        directory.mkdir(parents=True)
+        with (directory / "perps_daily.csv").open("w", newline="") as handle:
+            handle.write("date,symbol,open,high,low,close,base_volume,quote_volume\n")
+            for sym in closes:
+                for day, price in closes[sym].items():
+                    handle.write(f"{day.isoformat()},{sym},{price:.8g},{price:.8g},{price:.8g},{price:.8g},1.0,"
+                                 f"{volumes[sym][day]:.10g}\n")
+        with (directory / "funding_events.csv").open("w", newline="") as handle:
+            handle.write("ts_utc,symbol,interval_hours,rate\n")
+            for sym in closes:
+                for day in closes[sym]:
+                    handle.write(f"{day.isoformat()}T08:00:00Z,{sym},8,{funding_map[sym][day]:.12g}\n")
+        self.panel = (closes, volumes, funding_map)
+
+    def test_a_reveal_without_a_reason_is_refused_before_it_reads_a_sealed_bar(self):
+        closes, volumes, funding = self.panel
+        with self.assertRaises(SystemExit):
+            engine.run_reveal("   ", closes, volumes, funding)
+
+    def test_the_sealed_window_opens_only_for_carry_and_only_past_2025(self):
+        closes, volumes, funding = self.panel
+        out = engine.run_reveal("BA-007 section 11: both seen windows passed", closes, volumes, funding)
+        self.assertNotIn("MOM", out)                                          # the failed signal's sealed sessions stay sealed
+        sealed = out["sealed"]["base"]
+        self.assertGreaterEqual(date.fromisoformat(sealed["first"]), date(2025, 1, 1))
+        self.assertEqual(out["reveal"]["signal"].startswith("XS-CARRY"), True)
+
+    def test_sealed_verdict_is_arithmetic(self):
+        good = {"annualized_net": 0.10, "bootstrap_low": 0.03}
+        result = engine.sealed_verdict(good, {"annualized_net": -0.05}, [0.01, 0.02],
+                                       {"annualized_net": 0.08, "bootstrap_low": 0.02})
+        self.assertEqual(result["verdict"], "PASS")
+        bad = engine.sealed_verdict({"annualized_net": -0.10, "bootstrap_low": -0.20}, {"annualized_net": 0.05},
+                                    [0.01], {"annualized_net": -0.08, "bootstrap_low": -0.15})
+        self.assertEqual(bad["verdict"], "FAIL")
 
 
 if __name__ == "__main__":

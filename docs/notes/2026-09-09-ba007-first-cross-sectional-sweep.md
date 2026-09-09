@@ -106,3 +106,38 @@ Two things the correction surfaced, both disclosed rather than buried:
 **What this does to BA-008:** its locked premise — long the *highest* funding forward — was derived from the inverted reading. The
 registered direction is the one that passed, and its next test is BA-007's own sealed reveal. BA-008 is amended the same day (allowed
 before its first graded session): see its change log.
+
+---
+
+## The sealed reveal, 2026-09-09: the hypothesis dies where it was supposed to be tested
+
+Approved by the account holder the same day (reason recorded in the reveal artifacts), opened for XS-CARRY only — XS-MOM failed its gates
+and its sealed sessions stay sealed. Window: **2025-01-01 → 2026-09-07**, ~87 weekly rebalances on disk, never touched by any signal
+computation before this run. Artifacts: `data/perps/backtests/20260909T215759Z-reveal/` (the reveal reason is inside `metrics.json`).
+
+| sealed window (20 months) | net/yr | bootstrap 95% |
+|---|---|---|
+| XS-CARRY (registered) | **+9.58%** | **[−44.91%, +63.25%]** |
+| reversed (high-funding long) | −15.29% | — |
+| scrambled median (20 seeds) | **+9.84%** | — |
+| stress (10 bps) | +6.72% | — |
+
+**Sealed verdict: FAIL (1/4 gates).** The one passing gate is G3-reversed. G1 fails — the interval contains zero by a mile. G3-scrambled
+fails in the most damning way possible: **random tercile books earned +9.84%/yr, more than the candidate's +9.58%** — the ranking carried no
+information in 2025-2026; the +9.58% is what *any* tercile book collected from that regime's dispersion. G4 fails at stress. And the ride
+got worse, not better: maximum drawdown −41.0%, against −33.5% and −12.6% in the seen windows.
+
+This is the shrinkage the charter's honest prior promised, measured: the seen windows said +31.69% and +41.36%; the window the hypothesis
+never influenced said +9.58% with an interval you could drive a truck through, indistinguishable from random. Per charter §11, the sealed
+FAIL ends BA-007. The program closes:
+
+- **XS-MOM**: FAIL on seen windows (2/6). Sealed window unopened, permanently — a failed signal earns no reveal.
+- **XS-CARRY**: PASS on seen windows (6/6, after a dated engine-direction correction), **FAIL on the sealed reveal (1/4)**. The
+  seen-windows pass was the entry ticket, not the prize; the seal was the prize, and it went to the scrambles.
+
+What the repo keeps: a survivorship-free 1,018-symbol perp panel with resumable fetching; a cross-sectional engine whose every mechanism is
+pinned by fixtures including signal direction; the forward-only grading protocol BA-008's withdrawal transferred into the record; and now a
+complete worked example of the full lifecycle — hypothesis, pre-registration, seen-window pass, sealed test, shrinkage, death — executed in
+one day, at a cost of zero dollars, which was the only honest price this hypothesis was ever worth.
+
+*The next hypothesis, if one is ever registered, starts here: gates locked before the data exists, tested on data that cannot flatter it.*

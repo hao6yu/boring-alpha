@@ -371,14 +371,19 @@ def beta_against(daily: list[dict], benchmark: dict[date, float]) -> float:
     return cov / var if var else float("nan")
 
 
-def evaluate_signal(signal_name: str, closes, volumes, funding) -> dict:
-    """One signal, one construction, both seen periods, every control: the charter's whole family for that signal."""
+def evaluate_signal(signal_name: str, closes, volumes, funding,
+                    periods: tuple = (("development", DEVELOPMENT), ("validation", VALIDATION))) -> dict:
+    """One signal, one construction, its periods, every control.
+
+    The default periods are the charter's two seen windows. The sealed reveal calls this with its own single period — the engine never
+    decides which windows to open; it is told, deliberately, by the caller.
+    """
 
     btc_dates = sorted(closes["BTCUSDT"]) if "BTCUSDT" in closes else []
     btc_returns = ({d: closes["BTCUSDT"][d] / closes["BTCUSDT"][p] - 1.0 for d, p in zip(btc_dates, btc_dates[1:])})
     traversal = build_traversal(closes)
     out: dict = {"signal": signal_name}
-    for period_name, period in (("development", DEVELOPMENT), ("validation", VALIDATION)):
+    for period_name, period in periods:
         sessions = sessions_in(closes, period)
         rebalances = weekly_rebalance_dates(sessions)
         weeks = prepare_weeks(closes, traversal, volumes, funding, sessions, rebalances, signal_name)
@@ -400,34 +405,98 @@ def evaluate_signal(signal_name: str, closes, volumes, funding) -> dict:
               f"turnover {row['turnover_annualized']:.1f}x/yr | stress {stress['annualized_net']:+.2%} "
               f"reversed {reversed_book['annualized_net']:+.2%} scrambled median {statistics.median(scrambled_means):+.2%} "
               f"legs L {legs['long']['annualized_net']:+.2%} S {legs['short']['annualized_net']:+.2%}")
-    out["verdict"] = verdict(out["development"]["base"], out["validation"]["base"],
-                             out["development"]["reversed"], out["development"]["scrambled_all"],
-                             out["development"]["stress"], out["validation"]["stress"])
-    print(f"  {signal_name} verdict: {out['verdict']['verdict']} "
-          f"({sum(out['verdict']['checks'].values())}/{len(out['verdict']['checks'])} gates)")
+    if periods == (("development", DEVELOPMENT), ("validation", VALIDATION)):
+        out["verdict"] = verdict(out["development"]["base"], out["validation"]["base"],
+                                 out["development"]["reversed"], out["development"]["scrambled_all"],
+                                 out["development"]["stress"], out["validation"]["stress"])
+        print(f"  {signal_name} verdict: {out['verdict']['verdict']} "
+              f"({sum(out['verdict']['checks'].values())}/{len(out['verdict']['checks'])} gates)")
+    return out
+
+
+def sealed_verdict(base: dict, reversed_book: dict, scrambled_means: list[float], stress: dict) -> dict:
+    """The sealed window's gates: the same arithmetic as G1/G3/G4, on the one window a reveal is allowed to open."""
+
+    def clears(book: dict) -> bool:
+        return book.get("annualized_net", float("nan")) > 0 and book.get("bootstrap_low", float("nan")) > 0
+
+    checks = {
+        "G1_sealed_bootstrap_excludes_zero": clears(base),
+        "G3_reversed_loses_in_sealed": reversed_book.get("annualized_net", float("inf")) < base.get("annualized_net", float("-inf")),
+        "G3_scrambled_median_loses_in_sealed": base.get("annualized_net", float("-inf")) > (statistics.median(scrambled_means)
+                                                                                              if scrambled_means else float("inf")),
+        "G4_stress_holds_in_sealed": clears(stress),
+    }
+    return {"checks": checks, "verdict": "PASS" if all(checks.values()) else "FAIL"}
+
+
+def run_reveal(reason: str, closes, volumes, funding) -> dict:
+    """Open the sealed window (2025-01-01 → latest) for the one signal that earned it, with the reason carried into the artifacts.
+
+    Charter §11: the reveal is requested only after development and validation both pass. XS-MOM failed its gates, so its sealed sessions
+    stay untouched — the reveal opens for XS-CARRY and for no other signal, and a reveal without a stated reason is refused before it
+    reads a single sealed bar.
+    """
+
+    if not reason or not reason.strip():
+        raise SystemExit("the reveal requires a non-empty reason; a sealed window opens deliberately or not at all")
+    # The authorized signal is XS-CARRY — the only one whose development and validation both passed (charter §11).
+    # XS-MOM failed its gates; its sealed sessions stay untouched by this code path, by construction.
+    out = evaluate_signal("CARRY", closes, volumes, funding, periods=(("sealed", SEALED),))
+    out["reveal"] = {"reason": reason.strip(),
+                     "locked_at": "2026-09-09 (charter f1c5f08; corrected verdict 0948d31)",
+                     "opened_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                     "window": "2025-01-01 -> latest complete session",
+                     "signal": "XS-CARRY — the only signal whose development and validation both passed (charter §11)"}
+    out["verdict"] = sealed_verdict(out["sealed"]["base"], out["sealed"]["reversed"],
+                                    out["sealed"]["scrambled_all"], out["sealed"]["stress"])
+    row = out["sealed"]["base"]
+    print(f"  sealed       CARRY net {row['annualized_net']:+.2%}/yr [{row['bootstrap_low']:+.2%}, {row['bootstrap_high']:+.2%}] "
+          f"sharpe {row['sharpe']:.2f} dd {row['max_drawdown']:+.1%} beta {row['beta_vs_btc']:+.2f} "
+          f"turnover {row['turnover_annualized']:.1f}x/yr")
+    print(f"  controls: reversed {out['sealed']['reversed']['annualized_net']:+.2%} "
+          f"scrambled median {out['sealed']['scrambled_median']:+.2%} "
+          f"stress {out['sealed']['stress']['annualized_net']:+.2%} "
+          f"legs L {out['sealed']['legs']['long']['annualized_net']:+.2%} S {out['sealed']['legs']['short']['annualized_net']:+.2%}")
+    print(f"  SEALED VERDICT: {out['verdict']['verdict']} ({sum(out['verdict']['checks'].values())}/{len(out['verdict']['checks'])} gates)")
+    print(f"  reason: {out['reveal']['reason']}")
     return out
 
 
 def main() -> int:
+    import argparse
+    ap = argparse.ArgumentParser(description="BA-007: the pre-registered cross-sectional sweep, and the sealed reveal when it is earned")
+    ap.add_argument("--reveal", metavar="REASON", default=None,
+                    help="open the sealed window (2025-01-01 -> latest) for XS-CARRY; the reason is recorded in the artifacts")
+    args = ap.parse_args()
     closes, volumes, funding = load_panel()
-    results = {name: evaluate_signal(name, closes, volumes, funding) for name in ("MOM", "CARRY")}
+    if args.reveal is not None:
+        stamp_suffix = "-reveal"
+        results = {"CARRY": run_reveal(args.reveal, closes, volumes, funding)}
+    else:
+        stamp_suffix = ""
+        results = {name: evaluate_signal(name, closes, volumes, funding) for name in ("MOM", "CARRY")}
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    target = BACKTESTS / stamp
+    target = BACKTESTS / f"{stamp}{stamp_suffix}"
     target.mkdir(parents=True)
+    periods_scored = tuple(results[next(iter(results))].keys()) if results else ()
+    periods_scored = tuple(p for p in periods_scored if p not in ("signal", "verdict", "reveal"))
     slim = json.loads(json.dumps(results, default=str))                      # datetimes become strings; sizes stay readable
     for result in slim.values():                                             # the daily series live in the CSVs, not the manifest
-        for period_name in ("development", "validation"):
+        for period_name in periods_scored:
             for book in (result[period_name]["base"], result[period_name]["stress"],
                          result[period_name]["reversed"], *result[period_name]["legs"].values()):
                 book.pop("daily", None)
     (target / "metrics.json").write_text(json.dumps(slim, indent=2, sort_keys=True) + "\n")
     for name, result in results.items():
-        for period_name in ("development", "validation"):
+        for period_name in periods_scored:
             daily = result[period_name]["base"]
             with (target / f"daily-{period_name}-{name}-base.csv").open("w", newline="") as handle:
                 writer = csv.DictWriter(handle, fieldnames=["date", "gross", "funding", "fees", "net", "positions"])
                 writer.writeheader()
                 writer.writerows(result[period_name]["base"].get("daily", []))
+    if args.reveal is not None:
+        print(f"  reveal reason recorded in metrics.json (reveal.reason); no other signal's sealed window was opened")
     print(f"  artifacts: {target}")
     print("  verdicts are computed from these artifacts, never typed in (charter §8)")
     return 0
