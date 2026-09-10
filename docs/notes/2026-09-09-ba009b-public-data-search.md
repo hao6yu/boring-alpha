@@ -49,6 +49,10 @@ timestamp conventions, and any carried-forward prices.
 
 ## Other sources checked
 
+The subsequent [CoinDesk API access check](2026-09-09-ba009b-coindesk-access.md)
+records exact catalog probes and the current signed-in pricing/key-settings
+behavior. It did not obtain a usable key or the expired-contract sample.
+
 | Source | Finding | Use for this retest |
 |---|---|---|
 | [CoinDesk Data derivatives](https://data.coindesk.com/derivatives) | Explicit CDE coverage and tick/minute/hour historical products; anonymous market request requires a key. Exact August instrument coverage not verified. | Possible vendor alternative, not an established free download. |

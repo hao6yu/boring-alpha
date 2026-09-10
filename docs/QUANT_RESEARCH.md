@@ -50,6 +50,11 @@ research does not define the user's active objective.
    Ed25519 authentication and view-only permissions verified. A BTC futures
    control returned 24 hourly bars, but both expired August contracts still
    returned invalid-product errors. Retail API access did not unlock them.
+10. [CoinDesk API access check](notes/2026-09-09-ba009b-coindesk-access.md):
+    documented futures catalog/history routes and explicit CDE coverage;
+    anonymous catalog requests require a key. Signed-in key settings return
+    to pricing, and no usable key or exact August contract sample was obtained.
+    A narrow derivatives-trial request is drafted, not sent.
 
 ## Commands
 
