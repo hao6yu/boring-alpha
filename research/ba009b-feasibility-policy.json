@@ -1,0 +1,35 @@
+{
+  "candidate": "BA-009B",
+  "status": "exploratory sensitivity policy; no forecast or fitted trade rule",
+  "capital_usd": 5000,
+  "reserve_usd": 1000,
+  "max_leg_fraction": 0.5,
+  "max_book_age_seconds": 15,
+  "max_pair_skew_seconds": 2,
+  "min_hours_to_expiry": 48,
+  "exit_buffer_hours": 24,
+  "holding_days": [1, 7, 14],
+  "cash_rates": [0.04, 0.06],
+  "collateral_yield": 0,
+  "fee_cases": [
+    {"name": "low_assumed", "perp_bps": 2, "dated_bps": 2, "perp_min_usd": 0.15, "dated_min_usd": 0.15},
+    {"name": "base_assumed", "perp_bps": 5, "dated_bps": 5, "perp_min_usd": 0.15, "dated_min_usd": 0.15},
+    {"name": "dated_fee_stress", "perp_bps": 5, "dated_bps": 5, "perp_min_usd": 0.15, "dated_min_usd": 0.50},
+    {"name": "both_fee_stress", "perp_bps": 10, "dated_bps": 10, "perp_min_usd": 0.15, "dated_min_usd": 0.50}
+  ],
+  "fee_note": "All dated all-in fees and most perp fees are assumptions, not verified account rates or upper bounds. The older perp launch advertised as low as 2bps with a $0.15 floor; it does not verify dated fees. Exchange-only dated fees exclude customer brokerage and clearing. Spreads are separate, funding additional.",
+  "funding_simple_annual_scenarios": [-0.10, 0, 0.10, 0.25],
+  "exit_spread_multipliers": [1, 2],
+  "include_current_hourly_funding_scenario": true,
+  "terminal_gap_cases": ["unchanged", "half_current_gap", "zero_gap", "widens_one_percent_of_perp"],
+  "common_price_stress_fraction": 0.5,
+  "margin_rate_stress_multiplier": 1.5,
+  "leg_failure_move_fraction": 0.20,
+  "notes": [
+    "BTC and ETH are separate alternatives, never two simultaneous $5000 allocations in a $5000 account.",
+    "Terminal gap and funding values are hypothetical; zero convergence is not guaranteed.",
+    "The common price and current displayed depth stay constant within each carry scenario.",
+    "Gross cap applies to initial notional; fixed quantities can exceed it after price changes.",
+    "Cash opportunity cost is assessed on all $5000; collateral yield assumed zero."
+  ]
+}

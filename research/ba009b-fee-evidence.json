@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-09-09 America/Chicago",
+  "exchange_schedule": {
+    "url": "https://assets.ctfassets.net/k3n74unfin40/sgInuF26edJX4v4nUlE29/87f18103cd35feede93f0bb92a5f1065/Fee_Schedule_1.26.2026.pdf",
+    "effective_date": "2026-01-26",
+    "venue": "Coinbase Derivatives LLC",
+    "symbols": ["BIT", "BIP", "ET", "ETP"],
+    "electronic_professional_usd_per_contract_per_side": 0.10,
+    "electronic_non_professional_usd_per_contract_per_side": 0.10,
+    "scope": "Exchange-only fees. Does not establish Coinbase Financial Markets retail all-in commission. No market-maker discount assumed."
+  },
+  "perpetual_launch_disclosure": {
+    "url": "https://www.coinbase.com/blog/perpetual-futures-have-arrived-in-the-us",
+    "published_date": "2025-07-21",
+    "as_low_as_bps": 2,
+    "minimum_usd_per_contract": 0.15,
+    "scope": "Perpetual-style launch disclosure, not verification of current account tier or dated all-in fees."
+  },
+  "research_policy": "research/ba009b-feasibility-policy.json",
+  "status": "Dated and perpetual customer fees remain separately parameterized assumptions; neither the minimum scenario nor the stress scenario is guaranteed."
+}

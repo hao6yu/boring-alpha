@@ -32,6 +32,10 @@ research does not define the user's active objective.
 5. `tools/us_funding_history.py`: validates and summarizes public U.S. funding
    exports. BTC and ETH each have 2,160 contiguous reported hourly rates in
    the acquired 90-day export; these are rate statistics, not strategy returns.
+6. [BA-009B first feasibility result](notes/2026-09-09-ba009b-first-feasibility.md):
+   four-book spread scanner and exact U.S. paired-candle archive. The sampled
+   entry does not justify a pilot after cost stresses; no fitted model or
+   executable historical return is claimed.
 
 ## Commands
 
@@ -54,6 +58,14 @@ BTC/ETH screen did not justify a trade after modeled fees and cash opportunity
 cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
+
+Current priority: [BA-009B, dated/perpetual futures spreads](strategies/BA-009B.md),
+which investigates a different construction with two futures legs to reduce
+the spot-fee burden. Its first feasibility screen is complete; the next
+requirement is synchronized quote history and funding-event reconciliation,
+not parameter fitting or pilot funding. The original
+BA-007 candidate is retired from deployment consideration; its broader
+funding-ranking hypothesis remains unresolved after the audit.
 
 1. U.S. CDE funding history has been downloaded and checked for 90 days via
    the public portal's CSV export. Next obtain event-time settlement marks,
