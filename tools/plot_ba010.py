@@ -49,7 +49,7 @@ def render(report_path):
         if halt:
             hday = datetime.fromisoformat(halt["date"])
             hvalue = halt["equity_cents"] / 100
-            label = "Capital floor reached" if halt["reason"] == "capital_floor" else "$1,000 loss limit triggered"
+            label = "Capital floor reached" if halt["reason"] == "capital_floor" else "$1,000 trailing drawdown triggered"
             axes[0].annotate(label + "\n" + halt["date"], xy=(hday, hvalue), xytext=(12, 28), textcoords="offset points",
                              fontsize=9, arrowprops={"arrowstyle": "->", "color": colors["base_pilot"]})
         axes[0].set_ylabel("Account equity (USD)")

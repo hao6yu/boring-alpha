@@ -57,9 +57,14 @@ research does not define the user's active objective.
     A narrow derivatives-trial request is drafted, not sent.
 11. [Databento access and research costs](notes/2026-09-09-databento-access.md):
     $125 signup credits verified; an expired MESZ5 contract returned 390 valid
-    one-minute bars with no missing minutes in the requested session. A five-year
-    MES continuous minute series was quoted at about $6.45, but not downloaded.
-    A new CME experiment can proceed independently of IBKR approval.
+    one-minute bars with no missing minutes in the requested session. This was
+    followed by the full archive and BA-010 experiment below.
+12. [BA-010 development result](notes/2026-09-09-ba010-development.md): five years
+    of MES minute data downloaded at a cumulative provider quote of $6.45;
+    1,245 full sessions audited with no missing minutes. The preregistered
+    opening-range strategy failed its 2021–2023 development gate: the pilot
+    hit its trailing-drawdown halt, and unrestricted one-contract trading lost
+    money after costs. Version 1 is parked; no 2024–2025 strategy test was run.
 
 ## Commands
 
@@ -83,13 +88,18 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
 
-Current priority: a separately specified **CME MES intraday experiment** using
-Databento historical data and, if warranted, IBKR Pro paper execution. First
-declare the hypothesis, timing, costs, risk/abstention rules, and chronological
-development/holdout periods. Then acquire the quoted history, map actual contracts,
-audit sessions and rolls, and backtest with realistic delayed execution and cost
-stress. The successful sample is access evidence only; no MES strategy is yet
-validated, and the five-year quote is not a completed backtest.
+The first **CME MES intraday experiment**, [BA-010](strategies/BA-010.md), is
+complete and failed development. Its base pilot ended up $106.65 over three
+years but halted in December 2021 after a $1,000 trailing drawdown; the same
+one-contract strategy ignoring account limits lost $106.52 after costs. Do not
+promote it, tune it against those results, or run its 2024–2025 holdout.
+
+The data-access blocker is resolved. Audited 2021–2025 MES history and a tested
+minute-bar execution/account engine are available locally. Further research
+requires a distinct economic hypothesis with a plausible cost/capacity argument
+before another registered test. Treat 2021–2023 as seen history, preserve the
+unused 2024–2025 strategy holdout, and track cumulative candidate trials. No
+paper or funded pilot is justified by BA-010.
 
 [BA-009B, dated/perpetual futures spreads](strategies/BA-009B.md), is parked.
 Its quote screen, conditional price diagnostic, and minute timing audit are

@@ -3,6 +3,11 @@
 Checked September 9, 2026 America/Chicago; API requests completed September 10
 at 03:00 UTC. This is a data-access result, not a strategy or profitability test.
 
+**Later update:** the quoted five-year archive was subsequently downloaded and
+audited, and BA-010 completed its development test. See the
+[BA-010 result](2026-09-09-ba010-development.md). The quote-only descriptions
+below preserve the state at this earlier access probe.
+
 ## Verified access
 
 The user supplied a Databento key for the proposed futures research. The signed-in
