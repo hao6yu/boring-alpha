@@ -61,7 +61,9 @@ def render(report_path):
         for ax in axes:
             ax.grid(True, alpha=.16)
         stage = "Development" if report["stage"] == "development" else "Chronological validation"
-        fig.suptitle(f"BA-010 · MES opening-range breakout\n{stage}: {report['years'][0]}–{report['years'][-1]}", fontsize=15)
+        strategy = ("BA-011 · MES late-day sign momentum" if report.get("schema") == "ba011-results-v1"
+                    else "BA-010 · MES opening-range breakout")
+        fig.suptitle(f"{strategy}\n{stage}: {report['years'][0]}–{report['years'][-1]}", fontsize=15)
         fig.supxlabel("Daily closing paths; the loss control uses minute-close equity. Fills, slippage and margin are modeled.", fontsize=9)
         for suffix in ("png", "svg"):
             target = report_path.parent / ("overview." + suffix)
