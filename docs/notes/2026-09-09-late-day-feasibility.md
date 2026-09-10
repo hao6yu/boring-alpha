@@ -3,6 +3,10 @@
 Completed September 9, 2026. Scope: the single feasibility review authorized
 after the [three-family shortlist](2026-09-09-shortlist-screen.md).
 
+**Subsequent update:** the user authorized one direct test to resolve this
+evidence gap. [BA-011 failed its fixed development test](2026-09-09-ba011-development.md).
+The following retains the earlier paper-screen decision and its limitations.
+
 **Decision: do not implement or backtest this candidate. Close this shortlist
 round.** The evidence does not supply the S&P-specific trade expectancy needed
 to clear the declared cost/cash hurdle. This is an insufficient-evidence decision,

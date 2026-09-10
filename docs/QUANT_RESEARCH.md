@@ -75,6 +75,12 @@ research does not define the user's active objective.
     unavailable, while the reported portfolio statistics and one-tick cost
     comment cannot establish profitability at MES base/stress costs. The
     bounded shortlist round is complete; no new backtest or purchase occurred.
+15. [BA-011 fixed development test](notes/2026-09-09-ba011-development.md): the
+    user subsequently authorized one direct test to resolve that missing
+    expectancy. **FAIL:** pilot lost $805.38 including post-halt data fees;
+    unrestricted base lost $477.59 over 2021–2023 and stress lost $2,307.59.
+    The pilot hit its capital floor in July 2021. No 2024–2025 price files were
+    opened by this experiment, and no additional data was purchased.
 
 ## Commands
 
@@ -98,13 +104,13 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
 
-**Current status: bounded shortlist round complete; no further work queued.**
-The user wants to avoid open-ended research spending. The one authorized
-paper-to-MES feasibility review returned [no-go](notes/2026-09-09-late-day-feasibility.md)
-because required single-instrument economics could not be established from
-the evidence. Stop this round as agreed. Reopening requires a deliberate scope
-change or new evidence; do not expand to more candidates, vendor searches,
-additional data spending or infrastructure by default.
+**Current status: the authorized BA-011 test failed; no further work queued.**
+The user deliberately reopened the paper-screen round for one fixed direct
+test. [BA-011's measured result](notes/2026-09-09-ba011-development.md) now shows
+costs exceeded the unrestricted strategy's gross profit, and the pilot halted
+at its capital floor. End this reopened round as agreed. Do not tune BA-011,
+run its holdout, expand the candidate list, buy data or build deployment tools
+by default. A new research direction requires a deliberate scope change.
 
 The first **CME MES intraday experiment**, [BA-010](strategies/BA-010.md), is
 complete and failed development. Its base pilot ended up $106.65 over three

@@ -10,6 +10,10 @@ single-S&P trade expectancy needed to clear the MES hurdle. This round is
 closed; no candidate advanced to implementation or a backtest. The initial
 ranking below is retained as the decision history.
 
+**Subsequent authorized test:** the user reopened the round for one fixed
+direct measurement. [BA-011 failed development](2026-09-09-ba011-development.md),
+and the reopened round is now complete. Its 2024–2025 price files remained unused.
+
 Decision: **advance only late-day futures momentum to a cost/implementation
 feasibility review.** This is a research priority, not a validated trade.
 BA-010 remains retired. No new candidate is registered or approved for backtesting.

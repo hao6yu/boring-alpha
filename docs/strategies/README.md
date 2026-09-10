@@ -17,6 +17,7 @@ belong to immutable experiment artifacts linked from a later review.
 | BA-009 | U.S. Crypto Spot/Futures Relative Value | **Feasibility research active.** Public metadata/depth collector and cost screen implemented; no profitability verdict or live orders. | [BA-009.md](BA-009.md) |
 | BA-009B | Dated/Perpetual Futures Spreads | **Conditional screen complete; no pilot justified.** ETH movement does not cover assumed costs; BTC observations predate the retail opening implied by the current rollover rule. Historical access remains unverified. Front-month retest parked pending expired-contract data; public candle probe failed. [Result](../notes/2026-09-09-ba009b-conditional-screen.md) | [BA-009B.md](BA-009B.md) |
 | BA-010 | MES Opening-Range Continuation | **Development FAIL; version 1 parked.** Pilot hit its trailing-drawdown halt in 2021; unrestricted 2021–2023 result lost money after costs. No 2024–2025 strategy evaluation. [Result](../notes/2026-09-09-ba010-development.md) | [BA-010.md](BA-010.md) |
+| BA-011 | MES Late-Day Sign Momentum | **Development FAIL; version 1 retired.** Pilot hit its capital floor in July 2021; unrestricted 2021–2023 net −$477.59, stressed −$2,307.59. No 2024–2025 evaluation. [Result](../notes/2026-09-09-ba011-development.md) | [BA-011.md](BA-011.md) |
 
 **2026-09-09 audit update:** BA-007's original rows above are retained as the
 historical record, not endorsed as reliable economic estimates. Further
