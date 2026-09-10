@@ -1,0 +1,166 @@
+{
+  "research_date": "2026-09-10",
+  "kind": "arithmetic_and_public_observations_not_backtest",
+  "currencies": "USD except underlying EUR units",
+  "pricing_assumption": "IBKR US fixed, non-member, retail first-volume-tier; account choice unverified",
+  "cost_assumptions": {
+    "slippage_base_ticks_per_execution": 1,
+    "slippage_stress_ticks_per_execution": 2,
+    "slippage_measured": false,
+    "interest_income_assumed_usd": 0,
+    "hosting_cost_assumed_usd": 0,
+    "taxes_modeled": false
+  },
+  "costs": {
+    "rows": [
+      {
+        "symbol": "NES",
+        "broker": 0.25,
+        "exchange": 0.35,
+        "nfa": 0.01,
+        "tick": 0.25,
+        "rolls": 4,
+        "feeSide": 0.61,
+        "feeRT": 1.22,
+        "oneTickEachRT": 1.72,
+        "twoTicksEachRT": 2.2199999999999998
+      },
+      {
+        "symbol": "MTN",
+        "broker": 0.25,
+        "exchange": 0.3,
+        "nfa": 0.01,
+        "tick": 1.5625,
+        "rolls": 4,
+        "feeSide": 0.56,
+        "feeRT": 1.12,
+        "oneTickEachRT": 4.245,
+        "twoTicksEachRT": 7.37
+      },
+      {
+        "symbol": "M6E",
+        "broker": 0.15,
+        "exchange": 0.24,
+        "nfa": 0.01,
+        "tick": 1.25,
+        "rolls": 4,
+        "feeSide": 0.4,
+        "feeRT": 0.8,
+        "oneTickEachRT": 3.3,
+        "twoTicksEachRT": 5.8
+      },
+      {
+        "symbol": "1OZ",
+        "broker": 0.15,
+        "exchange": 0.5,
+        "nfa": 0.01,
+        "tick": 0.25,
+        "rolls": 6,
+        "feeSide": 0.66,
+        "feeRT": 1.32,
+        "oneTickEachRT": 1.82,
+        "twoTicksEachRT": 2.3200000000000003
+      },
+      {
+        "symbol": "MZC",
+        "broker": 0.25,
+        "exchange": 0.5,
+        "nfa": 0.01,
+        "tick": 2.5,
+        "rolls": 5,
+        "feeSide": 0.76,
+        "feeRT": 1.52,
+        "oneTickEachRT": 6.52,
+        "twoTicksEachRT": 11.52
+      }
+    ],
+    "annualData": 55.800000000000004,
+    "turnoverScenarios": [
+      {
+        "RTperMarket": 4,
+        "baseTrading": 70.42,
+        "stressTrading": 116.92
+      },
+      {
+        "RTperMarket": 12,
+        "baseTrading": 211.26,
+        "stressTrading": 350.76
+      },
+      {
+        "RTperMarket": 24,
+        "baseTrading": 422.52,
+        "stressTrading": 701.52
+      }
+    ],
+    "calendarRollOnly": {
+      "baseTrading": 80.58,
+      "stressTrading": 133.07999999999998
+    }
+  },
+  "public_margin": {
+    "initial_sign_agnostic": 2108.4535,
+    "maintenance_conservative": 1742.892,
+    "offsets_assumed": false
+  },
+  "dated_last_trade_reference": {
+    "NES": 7664.5,
+    "MTN": 108.765625,
+    "M6E": 1.1679,
+    "1OZ": 4471.75,
+    "MZC": 528.5,
+    "executable": false,
+    "synchronous": false
+  },
+  "risk_scenarios": {
+    "four_contract_counterexample": {
+      "absolute_units": {"NES": 1, "MTN": 1, "M6E": 0, "1OZ": 1, "MZC": 1},
+      "recommended_allocation": false,
+      "stress_B_price_loss": 800,
+      "stress_round_trip_friction": 23.43,
+      "initial_margin_sign_agnostic": 1774.0115,
+      "maintenance_margin": 1456.421,
+      "equity_after_stress_and_friction": 4176.57,
+      "initial_headroom_at_twice_margin": 628.547,
+      "maintenance_headroom_at_twice_margin": 1263.728,
+      "remaining_1000_loss_budget": 176.57
+    },
+    "one_contract_each": {
+      "A": {
+        "loss": 525,
+        "margin_multiple": 1.5
+      },
+      "B": {
+        "loss": 1050,
+        "margin_multiple": 2
+      }
+    },
+    "probability_estimated": false,
+    "volatility_estimated": false
+  },
+  "capital_comparison": [
+    {
+      "capital": 5000,
+      "initial_margin_fraction": 0.42169070000000003,
+      "stress_B_fraction": 0.21,
+      "maintenance_headroom_after_B": 464.2159999999999,
+      "initial_headroom_after_B": -266.90700000000015,
+      "required_gross_PnL_at_6pct_cash_zero_interest_12RT_base": 567.06
+    },
+    {
+      "capital": 25000,
+      "initial_margin_fraction": 0.08433814,
+      "stress_B_fraction": 0.042,
+      "maintenance_headroom_after_B": 20464.216,
+      "initial_headroom_after_B": 19733.093,
+      "required_gross_PnL_at_6pct_cash_zero_interest_12RT_base": 1767.06
+    },
+    {
+      "capital": 100000,
+      "initial_margin_fraction": 0.021084535,
+      "stress_B_fraction": 0.0105,
+      "maintenance_headroom_after_B": 95464.216,
+      "initial_headroom_after_B": 94733.093,
+      "required_gross_PnL_at_6pct_cash_zero_interest_12RT_base": 6267.06
+    }
+  ]
+}

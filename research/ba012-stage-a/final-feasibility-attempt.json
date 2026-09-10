@@ -1,0 +1,11 @@
+{
+  "authorized_by": "User: okay go, approving the proposed final bounded feasibility attempt",
+  "started_at_utc": "2026-09-10T16:12:18Z",
+  "deadline_utc": "2026-09-10T16:42:18Z",
+  "maximum_total_provider_estimate_usd": "1",
+  "prior_reserved_estimate_usd": "0.162474512840",
+  "maximum_additional_estimate_usd": "0.837525487160",
+  "scope": "Documented data-specification revision and sizing only; no strategy P&L, holdout prices, trading or subscriptions",
+  "stop_rule": "Park BA-012 if substantial infrastructure is required, usable inputs remain unavailable, or complete pilot sizing is all cash. Missing data is not a capital or profitability failure.",
+  "v1_result_preserved": true
+}

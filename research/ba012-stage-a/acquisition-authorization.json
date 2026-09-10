@@ -1,0 +1,12 @@
+{
+  "strategy": "BA-012",
+  "recorded_utc": "2026-09-10T12:54:50Z",
+  "authorization": "User replied go to the explicit request for a $1 Databento usage budget.",
+  "aggregate_estimate_ceiling_usd": "1",
+  "quote_path": "research/ba012-stage-a/20260910T074018356649Z/quote.json",
+  "quote_total_usd": "0.156779289039",
+  "scope": "The exact 2080 weekday reference-minute requests and continuation of Stage A sizing-only evaluation; no strategy return backtest or trading.",
+  "budget_includes": "Prior successful, failed and uncertain acquisition attempts. Estimates are not a provider-enforced billing limit.",
+  "new_subscription_authorized": false,
+  "live_trading_authorized": false
+}

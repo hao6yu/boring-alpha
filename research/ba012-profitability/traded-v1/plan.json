@@ -1,0 +1,106 @@
+{
+  "authorization": "User: test it; referring to virtual25000 profitability with100000 comparison. Historical data-only work; no funded account or orders.",
+  "base_execution_cost_per_unit_usd": [
+    0.86,
+    2.1225,
+    1.65,
+    0.91,
+    3.26
+  ],
+  "capitals_usd": [
+    25000,
+    100000
+  ],
+  "cash_interest": 0,
+  "comparisons": {
+    "annual_cash_scenarios": [
+      0.04,
+      0.06
+    ],
+    "calendar_day_basis": 365,
+    "economic_gate": "BothbaseandstressCAGR>6%, nohalt, resolvedentiredeclaredwindow andmaxdaily/event-markeddrawdown<=fixed20%initialcapitalbudget. Diagnosticpasswouldstillnotestablishreliablealpha."
+  },
+  "controls": "Firstresolvefourintegertrendledgers. All-long/fractional/uncertainty/nativeexecution/2024-25 areoutside thisboundedprofitabilitydiagnostic; noformalStageB/statisticaledgeclaimwithoutthem.",
+  "cost_accounting": "Raw parent bar-open fills times childmultipliers; inclusive commissions+one/two childticks debited once in account. Stresscosts used for candidatefeasibility/reserves in BOTH costcases; incurred actualcosts enter their separate continuousledgers.",
+  "cost_cases": [
+    "base",
+    "stress"
+  ],
+  "data_only_fallback": {
+    "boundary_liquidation_date": "2023-11-22",
+    "end_exclusive": "2023-11-24",
+    "joint_sessions": 352,
+    "reason_known_before_pnl": "Exact10:00 TNH4 mark is absent on2023-11-24. Prefix ends before this already known data defect; last joint date isNov22. Do not search other end dates after returns.",
+    "start_inclusive": "2022-07-01",
+    "trigger": "Only if primary ledger cannot resolve a held valuation or committed fill, not because its return is poor. Report primary unresolved even if this diagnostic completes."
+  },
+  "hosting": 0,
+  "initial_loss_budget_fraction": 0.2,
+  "label": "Coverage-selected development diagnostic of hypothetical child exposures on parent history. Not full2018-2023 StageB, native fills, holdout validation or deposit recommendation.",
+  "loss_budget_rule": "Fixed20% of originalcapital (5000/20000), never reset; not20% of current equity. Volatilitycap8% of current marked equity; operatingbuffer100.",
+  "monthly_data_fee_usd": 4.65,
+  "new_execution_observations": "Quote and acquire only377coveredjointdays10:00-10:06 exactparenttradebars; no2024-25. Incrementalpurchasecostcap0.38USD unlessuserauthorizesotherwise. Preservequeries/rawhashes.",
+  "primary": {
+    "boundary_liquidation_date": "2023-12-29",
+    "end_exclusive": "2024-01-01",
+    "joint_sessions": 377,
+    "seed_monthly_signal_date": "2022-06-30",
+    "start_inclusive": "2022-07-01"
+  },
+  "registered_at_utc": "2026-09-10T20:14:11.710789+00:00",
+  "risk_signal": "Frozen252jointintervals,50%diagonalshrink,demeanedcovariance annual252 and12month compounded directions. No parameter or return-based search.",
+  "runtime_and_implementation": "Record exact runtime, engine/optimizer/inputhashes beforePnL; changesneededtocorrectbugsarelogged andallaffectedresultsrecomputed, neverselectbestvariant.",
+  "schema": "ba012-covered-traded-profitability-plan-v1",
+  "sources": [
+    {
+      "path": "docs/strategies/BA-012.md",
+      "sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-amendment-v2.json",
+      "sha256": "a556ee73b7d2d54a054b88afebf3c8f9d736680b17657af71af4c3a0fae397a3"
+    },
+    {
+      "path": "research/ba012-stage-a/calendar-v1.json",
+      "sha256": "b1034a5462f09723f297faba748291c304ee6597f02f0212e765b171226789b3"
+    },
+    {
+      "path": "research/ba012-stage-a/rolls-v2.json",
+      "sha256": "ae99c75f4d6da08a83afeb60c89d4d9d2073c45e8b180ce341a47cbcfca0fafd"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-inputs-v2-continuation.json",
+      "sha256": "2b309c135d3b8982450a186e4e05f0d400bd02ec71f8ba6c98044cb77c3986cf"
+    },
+    {
+      "path": "tools/ba012_sizing.py",
+      "sha256": "5b51ffe91ed845be846801c0d695897801a1c0430c910852310ac9ca4c397726"
+    }
+  ],
+  "stress_execution_cost_per_unit_usd": [
+    1.11,
+    3.685,
+    2.9,
+    1.16,
+    5.76
+  ],
+  "taxes_included": false,
+  "timing": [
+    "At prior16:30, mark exact heldcontracts to causally selected settlements; compute nextday covariance and atmonthend new directions/transition plan from current E/H and holdings.",
+    "At day10:00 mark heldcontracts using exact09:59close; use ONLYpriorjointday settlementcovariance. Recheck monthlyplan with componentwisequantitycaps; daily decisions onlyhold/reduce, neverreverse/reopen.",
+    "Commit exits/reductions before10:01; price them at exact10:01baropens. Closeoldcontracts beforeanyreplacement; repeatedcontractprices never create rollprofit.",
+    "At10:02 mark heldcontracts usingcompleted10:01barcloses. KeeppriorSigma/signs. Recheck remaining additions within alreadycommittedtarget bounds; no use of10:03open whenchoosingquantities.",
+    "At10:03 price committedadditions at exactbaropens. Observefullbasket at10:04 usingcompleted10:03closes; ifit violateshardterminalconstraints, commitfullunwindat10:05opens. Noquantityimprovementusingfutureopen.",
+    "Updateonecontinuous marked equity andhighwater atvaluations/execution/expenseevents. Settlementmarkchangeiscountedonce asP&L; variationmargintransferisnotadditionalprofit.",
+    "Finaljointsessionforces10:01fullclose, noentries. Charge4.65firstjointsessionofeachcalendarmonth includingflat/halted. Noannualreset/deposit."
+  ],
+  "transition_policy": [
+    "Use globallyverified integertrackingoptimizer on actualholdings/currentequity/drawdown; sameJ andtiebreaks. Holdsarefree; rolls/reversalscostbothlegs.",
+    "Monthly additionsonly. Rollreplacement cannotexceedoutgoingquantity even atmonthturn. Dailynonrollreductions cannotincreaseterminalcovarianceriskversuscurrentholding.",
+    "Optional exit andentry phases checkall32empty/fullvertices aroundactualholdings, costadjustedrisk, stress/exitreserve, funding;>=3marketsand>=3groups/concentration<=50% applyonlyterminalbasket.",
+    "Explicit conservative protection interpretation: when existingholdings alreadyviolatehardlimits andall-vertices testblocksoptionalreductions, fullyliquidate atnextscheduledexecutableprotectivephase. This mayflattenwherea relaxedpartial-reductionpolicywouldnot; no suchrelaxationused.",
+    "Drawdownbudget oractualmaintenancebreach permanentlyhalts. Forecastvolatility/concentration/stressreserve/fundingbreach canflattenwithoutpermanenthalt; no reopeninguntilnextmonthlyinstruction.",
+    "Missingnewcontractprecommitpricing blocksadditions. Missingheldmarks orcommittedfills makesledgerUNRESOLVED andpreventsreturnverdict. Neverinventfill, carryforwardmark, compressgaps, orclassifymissingdataascash.",
+    "SEARCH_LIMIT with2millionnodes isUNRESOLVED, nevercash. Mandatoryliquidationcannotbeblockedbyinfeasibility; recordbreach/overshoot."
+  ]
+}

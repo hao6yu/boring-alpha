@@ -1,0 +1,28 @@
+{
+  "capital_results": {
+    "100000": {
+      "decision": "UNRESOLVED",
+      "optimum_verified": false,
+      "quantities": null,
+      "status": "DATA_INCOMPLETE"
+    },
+    "25000": {
+      "decision": "UNRESOLVED",
+      "optimum_verified": false,
+      "quantities": null,
+      "status": "DATA_INCOMPLETE"
+    },
+    "5000": {
+      "decision": "UNRESOLVED",
+      "optimum_verified": false,
+      "quantities": null,
+      "status": "DATA_INCOMPLETE"
+    }
+  },
+  "decision_date_chicago": "2021-08-31",
+  "input_status": "DATA_INCOMPLETE",
+  "missing_interval_dates": [
+    "2021-06-28",
+    "2021-06-29"
+  ]
+}

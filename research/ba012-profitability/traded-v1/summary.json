@@ -1,0 +1,704 @@
+{
+  "completed_at_utc": "2026-09-10T20:51:52.022756+00:00",
+  "holdout_prices_read": false,
+  "implementation": {
+    "research/ba012-profitability/traded-inputs-v1.json": "a8240876425740bb53a62e0e7eea858e570ede44007b68ae7726e2f010b0b339",
+    "tools/ba012_transition.py": "fa4f61ce00f680fae8f359cc044750450c74a8653f54a468f2028d7a941df409",
+    "tools/run_ba012_profitability.py": "d7678d764e10cf284991ae50e1b669138d27256a6a40859b21ec00598eff0002"
+  },
+  "label": "Coverage-selected development diagnostic of hypothetical child exposures on parent history. Not full2018-2023 StageB, native fills, holdout validation or deposit recommendation.",
+  "live_orders_submitted": false,
+  "plan_sha256": "a9da9a602bcebca0653de7c4eb1259f8464dee4b1593d5fd4da129440d45c6cb",
+  "results": [
+    {
+      "name": "25000-base-primary",
+      "sha256": "ca9d1bfa59ae28c76b919c92c71c978e09054967c9a7c034798779377d4a0ef9",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 25489.984999999986,
+            "joint_days": 127,
+            "opening_equity": 25000,
+            "pnl": 489.98499999998603,
+            "return_fraction": 0.01959939999999949,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 24356.01500000002,
+            "joint_days": 225,
+            "opening_equity": 25489.984999999986,
+            "pnl": -1133.9699999999648,
+            "return_fraction": -0.044486883770232355,
+            "year": "2023"
+          }
+        ],
+        "cagr": null,
+        "calendar_days": 549,
+        "capital": 25000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 26519.175513798073,
+            "strategy_minus_cash": null
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 27289.953978187725,
+            "strategy_minus_cash": null
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 147,
+        "cost_case": "base",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": null,
+        "execution_costs": 217.62249999999992,
+        "execution_costs_by_market": {
+          "1OZ": 54.59999999999997,
+          "M6E": 34.649999999999984,
+          "MTN": 27.592499999999994,
+          "MZC": 74.97999999999999,
+          "NES": 25.799999999999994
+        },
+        "execution_events": 109,
+        "fixed_loss_budget_usd": 5000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -942.4999999999993,
+          "M6E": -265.6249999999961,
+          "MTN": 507.8125,
+          "MZC": 98.75,
+          "NES": 254.25
+        },
+        "gross_trading_pnl": -347.3124999999954,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.13329400964169583,
+        "max_marked_drawdown_usd": 3606.5999999999913,
+        "minimum_eod_stressed_funding_headroom": 17540.03350000001,
+        "monthly_instructions": 17,
+        "net_pnl": null,
+        "nonzero_eod_days": 265,
+        "partial_marked_equity": 24356.01500000002,
+        "protective_batches": 6,
+        "status": "UNRESOLVED",
+        "total_return": null,
+        "total_solver_nodes": 3073,
+        "unresolved_category": "held_valuation_data",
+        "unresolved_reason": "2023-11-24 10:00_reference: missing held mark TNH4",
+        "window": {
+          "boundary_liquidation_date": "2023-12-29",
+          "end_exclusive": "2024-01-01",
+          "joint_sessions": 377,
+          "seed_monthly_signal_date": "2022-06-30",
+          "start_inclusive": "2022-07-01"
+        }
+      }
+    },
+    {
+      "name": "25000-base-coverage-prefix",
+      "sha256": "dd145a26a0c28765382afa223e89312400fbc3e03bcaded2ae07f314175ae548",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 25489.984999999986,
+            "joint_days": 127,
+            "opening_equity": 25000,
+            "pnl": 489.98499999998603,
+            "return_fraction": 0.01959939999999949,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 24318.217500000017,
+            "joint_days": 225,
+            "opening_equity": 25489.984999999986,
+            "pnl": -1171.767499999969,
+            "return_fraction": -0.04596972104926578,
+            "year": "2023"
+          }
+        ],
+        "cagr": -0.019556291240761192,
+        "calendar_days": 511,
+        "capital": 25000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 26411.111804478478,
+            "strategy_minus_cash": -2092.894304478461
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 27124.904639006138,
+            "strategy_minus_cash": -2806.6871390061206
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 154,
+        "cost_case": "base",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": 24318.217500000017,
+        "execution_costs": 228.19499999999994,
+        "execution_costs_by_market": {
+          "1OZ": 56.41999999999997,
+          "M6E": 36.29999999999998,
+          "MTN": 29.714999999999993,
+          "MZC": 78.24,
+          "NES": 27.519999999999992
+        },
+        "execution_events": 114,
+        "fixed_loss_budget_usd": 5000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -935.0999999999992,
+          "M6E": -287.49999999999505,
+          "MTN": 526.5625,
+          "MZC": 72.5,
+          "NES": 249.0
+        },
+        "gross_trading_pnl": -374.5374999999943,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.13329400964169583,
+        "max_marked_drawdown_usd": 3606.5999999999913,
+        "minimum_eod_stressed_funding_headroom": 17540.03350000001,
+        "monthly_instructions": 17,
+        "net_pnl": -681.782499999983,
+        "nonzero_eod_days": 264,
+        "partial_marked_equity": 24318.217500000017,
+        "protective_batches": 6,
+        "status": "COMPLETE_DIAGNOSTIC",
+        "total_return": -0.027271299999999332,
+        "total_solver_nodes": 3073,
+        "unresolved_category": null,
+        "unresolved_reason": null,
+        "window": {
+          "boundary_liquidation_date": "2023-11-22",
+          "end_exclusive": "2023-11-24",
+          "joint_sessions": 352,
+          "reason_known_before_pnl": "Exact10:00 TNH4 mark is absent on2023-11-24. Prefix ends before this already known data defect; last joint date isNov22. Do not search other end dates after returns.",
+          "start_inclusive": "2022-07-01",
+          "trigger": "Only if primary ledger cannot resolve a held valuation or committed fill, not because its return is poor. Report primary unresolved even if this diagnostic completes."
+        }
+      }
+    },
+    {
+      "name": "25000-stress-primary",
+      "sha256": "920c732dc58464268290d27bcd19948cc7caae9212d887a386881b66a50711d1",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 25436.234999999986,
+            "joint_days": 127,
+            "opening_equity": 25000,
+            "pnl": 436.23499999998603,
+            "return_fraction": 0.017449399999999393,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 23485.384999999987,
+            "joint_days": 225,
+            "opening_equity": 25436.234999999986,
+            "pnl": -1950.8499999999985,
+            "return_fraction": -0.07669570594862019,
+            "year": "2023"
+          }
+        ],
+        "cagr": null,
+        "calendar_days": 549,
+        "capital": 25000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 26519.175513798073,
+            "strategy_minus_cash": null
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 27289.953978187725,
+            "strategy_minus_cash": null
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 159,
+        "cost_case": "stress",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": null,
+        "execution_costs": 379.16499999999996,
+        "execution_costs_by_market": {
+          "1OZ": 70.75999999999995,
+          "M6E": 72.49999999999999,
+          "MTN": 55.27500000000001,
+          "MZC": 144.00000000000003,
+          "NES": 36.629999999999995
+        },
+        "execution_events": 121,
+        "fixed_loss_budget_usd": 5000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -1185.3999999999996,
+          "M6E": -412.4999999999978,
+          "MTN": 393.75,
+          "MZC": 117.5,
+          "NES": 30.25
+        },
+        "gross_trading_pnl": -1056.3999999999974,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.1414321177736421,
+        "max_marked_drawdown_usd": 3823.172500000015,
+        "minimum_eod_stressed_funding_headroom": 17562.923999999966,
+        "monthly_instructions": 17,
+        "net_pnl": null,
+        "nonzero_eod_days": 267,
+        "partial_marked_equity": 23485.384999999987,
+        "protective_batches": 6,
+        "status": "UNRESOLVED",
+        "total_return": null,
+        "total_solver_nodes": 3127,
+        "unresolved_category": "held_valuation_data",
+        "unresolved_reason": "2023-11-24 10:00_reference: missing held mark TNH4",
+        "window": {
+          "boundary_liquidation_date": "2023-12-29",
+          "end_exclusive": "2024-01-01",
+          "joint_sessions": 377,
+          "seed_monthly_signal_date": "2022-06-30",
+          "start_inclusive": "2022-07-01"
+        }
+      }
+    },
+    {
+      "name": "25000-stress-coverage-prefix",
+      "sha256": "f2d35fdb8171989e52511ce8bdf1728a88574ca42bb6ab33b816ea7aa1626057",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 25436.234999999986,
+            "joint_days": 127,
+            "opening_equity": 25000,
+            "pnl": 436.23499999998603,
+            "return_fraction": 0.017449399999999393,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 23442.469999999987,
+            "joint_days": 225,
+            "opening_equity": 25436.234999999986,
+            "pnl": -1993.7649999999994,
+            "return_fraction": -0.0783828660177106,
+            "year": "2023"
+          }
+        ],
+        "cagr": -0.04490789016199226,
+        "calendar_days": 511,
+        "capital": 25000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 26411.111804478478,
+            "strategy_minus_cash": -2968.6418044784914
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 27124.904639006138,
+            "strategy_minus_cash": -3682.434639006151
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 164,
+        "cost_case": "stress",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": 23442.469999999987,
+        "execution_costs": 393.78,
+        "execution_costs_by_market": {
+          "1OZ": 71.91999999999994,
+          "M6E": 75.39999999999999,
+          "MTN": 58.960000000000015,
+          "MZC": 149.76000000000002,
+          "NES": 37.739999999999995
+        },
+        "execution_events": 126,
+        "fixed_loss_budget_usd": 5000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -1181.6999999999996,
+          "M6E": -434.37499999999676,
+          "MTN": 412.5,
+          "MZC": 91.25,
+          "NES": 27.625
+        },
+        "gross_trading_pnl": -1084.6999999999964,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.1414321177736421,
+        "max_marked_drawdown_usd": 3823.172500000015,
+        "minimum_eod_stressed_funding_headroom": 17562.923999999966,
+        "monthly_instructions": 17,
+        "net_pnl": -1557.5300000000134,
+        "nonzero_eod_days": 266,
+        "partial_marked_equity": 23442.469999999987,
+        "protective_batches": 6,
+        "status": "COMPLETE_DIAGNOSTIC",
+        "total_return": -0.0623012000000005,
+        "total_solver_nodes": 3127,
+        "unresolved_category": null,
+        "unresolved_reason": null,
+        "window": {
+          "boundary_liquidation_date": "2023-11-22",
+          "end_exclusive": "2023-11-24",
+          "joint_sessions": 352,
+          "reason_known_before_pnl": "Exact10:00 TNH4 mark is absent on2023-11-24. Prefix ends before this already known data defect; last joint date isNov22. Do not search other end dates after returns.",
+          "start_inclusive": "2022-07-01",
+          "trigger": "Only if primary ledger cannot resolve a held valuation or committed fill, not because its return is poor. Report primary unresolved even if this diagnostic completes."
+        }
+      }
+    },
+    {
+      "name": "100000-base-primary",
+      "sha256": "1a44febf191134874ea0e4f63c0c5e45c486044ede4454e4f5817a588b21d05e",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 103313.65250000024,
+            "joint_days": 127,
+            "opening_equity": 100000,
+            "pnl": 3313.652500000244,
+            "return_fraction": 0.033136525000002415,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 98785.91250000052,
+            "joint_days": 225,
+            "opening_equity": 103313.65250000024,
+            "pnl": -4527.739999999729,
+            "return_fraction": -0.043825185640394615,
+            "year": "2023"
+          }
+        ],
+        "cagr": null,
+        "calendar_days": 549,
+        "capital": 100000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 106076.70205519229,
+            "strategy_minus_cash": null
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 109159.8159127509,
+            "strategy_minus_cash": null
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 719,
+        "cost_case": "base",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": null,
+        "execution_costs": 998.3124999999999,
+        "execution_costs_by_market": {
+          "1OZ": 284.83,
+          "M6E": 113.85,
+          "MTN": 129.47250000000005,
+          "MZC": 316.2199999999999,
+          "NES": 153.93999999999997
+        },
+        "execution_events": 133,
+        "fixed_loss_budget_usd": 20000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -5328.100000000006,
+          "M6E": -1424.999999999994,
+          "MTN": 5150.0,
+          "MZC": 1473.75,
+          "NES": -7.375
+        },
+        "gross_trading_pnl": -136.7249999999999,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.11641657733973912,
+        "max_marked_drawdown_usd": 12283.807499999719,
+        "minimum_eod_stressed_funding_headroom": 65305.52050000039,
+        "monthly_instructions": 17,
+        "net_pnl": null,
+        "nonzero_eod_days": 245,
+        "partial_marked_equity": 98785.91250000052,
+        "protective_batches": 6,
+        "status": "UNRESOLVED",
+        "total_return": null,
+        "total_solver_nodes": 6631,
+        "unresolved_category": "held_valuation_data",
+        "unresolved_reason": "2023-11-24 10:00_reference: missing held mark TNH4",
+        "window": {
+          "boundary_liquidation_date": "2023-12-29",
+          "end_exclusive": "2024-01-01",
+          "joint_sessions": 377,
+          "seed_monthly_signal_date": "2022-06-30",
+          "start_inclusive": "2022-07-01"
+        }
+      }
+    },
+    {
+      "name": "100000-base-coverage-prefix",
+      "sha256": "ccf91a7de09986a4fdc63ba4caa22ee8f5f7eddd52069f18b5526e5785f03c8b",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 103313.65250000024,
+            "joint_days": 127,
+            "opening_equity": 100000,
+            "pnl": 3313.652500000244,
+            "return_fraction": 0.033136525000002415,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 98615.6050000005,
+            "joint_days": 225,
+            "opening_equity": 103313.65250000024,
+            "pnl": -4698.047499999739,
+            "return_fraction": -0.0454736367006261,
+            "year": "2023"
+          }
+        ],
+        "cagr": -0.009908209300185766,
+        "calendar_days": 511,
+        "capital": 100000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 105644.44721791391,
+            "strategy_minus_cash": -7028.842217913407
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 108499.61855602455,
+            "strategy_minus_cash": -9884.013556024045
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 754,
+        "cost_case": "base",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": 98615.6050000005,
+        "execution_costs": 1047.22,
+        "execution_costs_by_market": {
+          "1OZ": 296.65999999999997,
+          "M6E": 118.8,
+          "MTN": 135.84000000000006,
+          "MZC": 332.5199999999999,
+          "NES": 163.39999999999998
+        },
+        "execution_events": 138,
+        "fixed_loss_budget_usd": 20000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -5280.0000000000055,
+          "M6E": -1490.624999999991,
+          "MTN": 5206.25,
+          "MZC": 1342.5,
+          "NES": -36.25
+        },
+        "gross_trading_pnl": -258.12499999999636,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.11641657733973912,
+        "max_marked_drawdown_usd": 12283.807499999719,
+        "minimum_eod_stressed_funding_headroom": 65305.52050000039,
+        "monthly_instructions": 17,
+        "net_pnl": -1384.3949999994948,
+        "nonzero_eod_days": 244,
+        "partial_marked_equity": 98615.6050000005,
+        "protective_batches": 6,
+        "status": "COMPLETE_DIAGNOSTIC",
+        "total_return": -0.013843949999994942,
+        "total_solver_nodes": 6631,
+        "unresolved_category": null,
+        "unresolved_reason": null,
+        "window": {
+          "boundary_liquidation_date": "2023-11-22",
+          "end_exclusive": "2023-11-24",
+          "joint_sessions": 352,
+          "reason_known_before_pnl": "Exact10:00 TNH4 mark is absent on2023-11-24. Prefix ends before this already known data defect; last joint date isNov22. Do not search other end dates after returns.",
+          "start_inclusive": "2022-07-01",
+          "trigger": "Only if primary ledger cannot resolve a held valuation or committed fill, not because its return is poor. Report primary unresolved even if this diagnostic completes."
+        }
+      }
+    },
+    {
+      "name": "100000-stress-primary",
+      "sha256": "3f6a66871b6b90e356115a4894642e39e144bb0dc8242f0a97c052cd32906dc1",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 96700.73000000013,
+            "joint_days": 127,
+            "opening_equity": 100000,
+            "pnl": -3299.269999999873,
+            "return_fraction": -0.032992699999998765,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 90920.93750000036,
+            "joint_days": 225,
+            "opening_equity": 96700.73000000013,
+            "pnl": -5779.792499999763,
+            "return_fraction": -0.05976989522209142,
+            "year": "2023"
+          }
+        ],
+        "cagr": null,
+        "calendar_days": 549,
+        "capital": 100000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 106076.70205519229,
+            "strategy_minus_cash": null
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 109159.8159127509,
+            "strategy_minus_cash": null
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 730,
+        "cost_case": "stress",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": null,
+        "execution_costs": 1497.8250000000003,
+        "execution_costs_by_market": {
+          "1OZ": 392.0800000000001,
+          "M6E": 217.49999999999991,
+          "MTN": 195.30500000000006,
+          "MZC": 495.36,
+          "NES": 197.57999999999998
+        },
+        "execution_events": 138,
+        "fixed_loss_budget_usd": 20000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -6411.500000000004,
+          "M6E": -2830.6249999999955,
+          "MTN": 2051.5625,
+          "MZC": 1748.75,
+          "NES": -2060.375
+        },
+        "gross_trading_pnl": -7502.1875,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.13899562307854843,
+        "max_marked_drawdown_usd": 13931.012499999779,
+        "minimum_eod_stressed_funding_headroom": 60595.4460000003,
+        "monthly_instructions": 17,
+        "net_pnl": null,
+        "nonzero_eod_days": 240,
+        "partial_marked_equity": 90920.93750000036,
+        "protective_batches": 6,
+        "status": "UNRESOLVED",
+        "total_return": null,
+        "total_solver_nodes": 7160,
+        "unresolved_category": "held_valuation_data",
+        "unresolved_reason": "2023-11-24 10:00_reference: missing held mark TNH4",
+        "window": {
+          "boundary_liquidation_date": "2023-12-29",
+          "end_exclusive": "2024-01-01",
+          "joint_sessions": 377,
+          "seed_monthly_signal_date": "2022-06-30",
+          "start_inclusive": "2022-07-01"
+        }
+      }
+    },
+    {
+      "name": "100000-stress-coverage-prefix",
+      "sha256": "fb4e8e5c83d48c5d58809b935ee9867abbc7eff001e04a73b438616a6b88e6cb",
+      "summary": {
+        "annual_periods": [
+          {
+            "closing_equity": 96700.73000000013,
+            "joint_days": 127,
+            "opening_equity": 100000,
+            "pnl": -3299.269999999873,
+            "return_fraction": -0.032992699999998765,
+            "year": "2022"
+          },
+          {
+            "closing_equity": 90756.89750000038,
+            "joint_days": 225,
+            "opening_equity": 96700.73000000013,
+            "pnl": -5943.832499999742,
+            "return_fraction": -0.061466262974433916,
+            "year": "2023"
+          }
+        ],
+        "cagr": -0.06693042281812711,
+        "calendar_days": 511,
+        "capital": 100000,
+        "cash_comparisons": [
+          {
+            "annual_rate": 0.04,
+            "ending_value": 105644.44721791391,
+            "strategy_minus_cash": -14887.549717913527
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value": 108499.61855602455,
+            "strategy_minus_cash": -17742.721056024166
+          }
+        ],
+        "completed_joint_days": 352,
+        "contract_sides": 762,
+        "cost_case": "stress",
+        "data_fees": 79.05000000000001,
+        "economic_gate_pass": false,
+        "ending_equity": 90756.89750000038,
+        "execution_costs": 1565.6400000000003,
+        "execution_costs_by_market": {
+          "1OZ": 406.0000000000001,
+          "M6E": 226.1999999999999,
+          "MTN": 206.36000000000007,
+          "MZC": 518.4,
+          "NES": 208.67999999999998
+        },
+        "execution_events": 143,
+        "fixed_loss_budget_usd": 20000.0,
+        "gross_pnl_by_market": {
+          "1OZ": -6367.100000000003,
+          "M6E": -2896.2499999999923,
+          "MTN": 2107.8125,
+          "MZC": 1643.75,
+          "NES": -2086.625
+        },
+        "gross_trading_pnl": -7598.412499999995,
+        "halt_reason": null,
+        "halted": false,
+        "max_marked_drawdown_fraction": 0.13899562307854843,
+        "max_marked_drawdown_usd": 13931.012499999779,
+        "minimum_eod_stressed_funding_headroom": 60595.4460000003,
+        "monthly_instructions": 17,
+        "net_pnl": -9243.102499999615,
+        "nonzero_eod_days": 239,
+        "partial_marked_equity": 90756.89750000038,
+        "protective_batches": 6,
+        "status": "COMPLETE_DIAGNOSTIC",
+        "total_return": -0.09243102499999611,
+        "total_solver_nodes": 7160,
+        "unresolved_category": null,
+        "unresolved_reason": null,
+        "window": {
+          "boundary_liquidation_date": "2023-11-22",
+          "end_exclusive": "2023-11-24",
+          "joint_sessions": 352,
+          "reason_known_before_pnl": "Exact10:00 TNH4 mark is absent on2023-11-24. Prefix ends before this already known data defect; last joint date isNov22. Do not search other end dates after returns.",
+          "start_inclusive": "2022-07-01",
+          "trigger": "Only if primary ledger cannot resolve a held valuation or committed fill, not because its return is poor. Report primary unresolved even if this diagnostic completes."
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "python": "3.13.7 (v3.13.7:bcee1c32211, Aug 14 2025, 19:10:51) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  },
+  "schema": "ba012-covered-traded-profitability-results-v1"
+}

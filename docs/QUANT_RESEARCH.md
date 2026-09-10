@@ -1,6 +1,6 @@
 # Active quantitative trading research
 
-Updated 2026-09-09. This is the current work brief; earlier ETF/withdrawal
+Updated 2026-09-10. This is the current work brief; earlier ETF/withdrawal
 research does not define the user's active objective.
 
 ## Mandate
@@ -81,6 +81,31 @@ research does not define the user's active objective.
     unrestricted base lost $477.59 over 2021–2023 and stress lost $2,307.59.
     The pilot hit its capital floor in July 2021. No 2024–2025 price files were
     opened by this experiment, and no additional data was purchased.
+16. [Strategy research before further implementation](notes/2026-09-10-strategy-research.md):
+    the user authorized a broader research review with coding deferred. Three
+    mechanisms were reviewed against primary evidence and current U.S. contract
+    terms. Slow diversified long/short futures trend ranks first; dated crypto
+    cash-and-carry ranks second; defined-risk options are parked. Both leading
+    candidates overlap earlier research families, and neither is investment-ready.
+    The note records counterevidence, small-account economics and a fixed next
+    feasibility scope. No code, backtest, purchase or account change occurred.
+17. [Five-market futures trend feasibility](notes/2026-09-10-futures-trend-feasibility.md):
+    the user selected futures trend and authorized its feasibility worksheet.
+    Verified NES/MTN/M6E/1OZ/MZC mechanics, public trading activity, broker fees,
+    margins and explicit capital/stress arithmetic. One of each meets current
+    margin but loses $1,050 before costs in the larger assumed joint shock.
+    Allowing flat markets provides mechanically feasible smaller baskets;
+    executable spreads and volatility-based integer sizing remain unresolved.
+    Conditional continuation to one research protocol, not a funded or backtest
+    pass. No strategy code, purchase, account change or return test occurred.
+18. [BA-012 fixed research protocol](strategies/BA-012.md): the user authorized
+    the next protocol stage. Fixed 252-session trend, 8% forecast volatility,
+    covariance shrinkage, portfolio-level integer selection with cash allowed,
+    causal rolls and separate execution phases, daily risk reductions and
+    explicit costs/margin/loss budgets. First stage tests sizing only; it can
+    reject an all-cash $5,000 implementation before a return backtest. Delayed
+    IBKR bid/ask fields are documented, but account access and exact-contract
+    coverage remain unverified. No new return calculations or purchases occurred.
 
 ## Commands
 
@@ -104,13 +129,109 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
 
-**Current status: the authorized BA-011 test failed; no further work queued.**
-The user deliberately reopened the paper-screen round for one fixed direct
-test. [BA-011's measured result](notes/2026-09-09-ba011-development.md) now shows
-costs exceeded the unrestricted strategy's gross profit, and the pilot halted
-at its capital floor. End this reopened round as agreed. Do not tune BA-011,
-run its holdout, expand the candidate list, buy data or build deployment tools
-by default. A new research direction requires a deliberate scope change.
+**Current status: the completed larger-account profitability diagnostic loses
+money under both cost assumptions at both balances.** The
+[result note](notes/2026-09-10-ba012-traded-profitability.md) covers July 1, 2022
+through November 23, 2023, with November 22 boundary liquidation. At $25,000,
+base/stress net P&L is −$681.78/−$1,557.53, annualized −1.96%/−4.49%. At
+$100,000, it is −$1,384.40/−$9,243.10, annualized −0.99%/−6.69%. All four fail
+both cash scenarios. None reaches its permanent halt; event-marked drawdowns
+range from 11.64% to 14.14% of running peaks. Fixed dollar loss budgets are
+20% of initial capital, not a periodically reset allowance.
+
+All four runs intended through December 2023 remain **UNRESOLVED** at the
+missing November 24 held TNH4 10:00 mark. The common shorter endpoint was
+fixed before P&L and used only for this data failure. All 377 execution queries
+are acquired; absent individual bars remain null. The four completed shorter
+ledgers use actual exact-contract parent bars with hypothetical child
+multipliers and fees, continuous equity, real transition quantities, causal
+prior-day settlement risk, and the explicitly recorded protection policy.
+Higher costs also change later trades; the $100,000 paths first diverge at an
+August 10, 2022 risk-cap crossing. This is a material sensitivity.
+
+The earlier [capital comparison](notes/2026-09-10-ba012-capital-sensitivity.md)
+still establishes 25/25 usable nonzero sizing cases at both larger balances;
+it did not predict profit. The completed return diagnostic supplies no positive
+evidence to advance this configuration. No parameter search, holdout,
+all-long/fractional control, native-fill or funded pass has been performed.
+The full 2018–2023 study remains incomplete, so do not generalize the shorter
+loss to all years or every trend strategy.
+
+The covered-period $5,000 cash-only profitability diagnostic remains complete
+and negative. The [diagnostic report](notes/2026-09-10-ba012-profitability-diagnostic.md)
+uses the longest fully covered stretch, July 2022–December 2023, with its June
+2022 seed signal. The account makes zero trades and falls from $5,000 to
+$4,916.30 after 18 modeled $4.65 data fees: −$83.70, −1.1161% calendar CAGR.
+All 377 daily risk windows are complete. Monthly risk/money bounds were
+independently rechecked at the account's actual declining equity; no missing
+input was converted to a cash decision and no annual reset was used.
+
+The 4% and 6% annual cash scenarios end at $5,303.84 and $5,457.99 respectively.
+This coverage-selected expense diagnostic does not meet either hurdle and is
+not the planned full 2018–2023 Stage B study. It establishes the inactivity of
+this $5,000 implementation in the covered period, not the profitability of the
+underlying trend signal at a different capital level. The later larger-capital
+result is recorded above; holdout returns remain untested.
+
+All 181 BA-012 settlement downloads are complete and verified.
+The [completion report](notes/2026-09-10-ba012-download-complete.md) records
+3,277,624 raw statistics records and $0.611430853385 cumulative provider estimates
+against the $1 ceiling at that stage. All six failed/interrupted settlement
+reservations remain counted. The subsequent execution acquisition adds
+$0.187270641337 including four failed requests and successful retries, bringing
+BA-012 cumulative estimates to $0.798701494722. Actual billing was not queried.
+No download process or lock remains.
+
+Under the unchanged version 2 selection rules, 8,488 of 10,211 required references
+are eligible. Twenty-five monthly windows are complete: August–December 2019,
+January 2020, June–December 2022, and all 2023. The existing $5,000 sizing check
+returned verified cash decisions for all 25, with a necessary infeasibility
+proof in each: fewer than three groups can hold even one contract within the
+risk/money limits. The remaining 47 windows have null/unresolved decisions.
+They are not cash observations. The prescribed 72-case capital rejection is not
+met. The cash/expense, larger-capital sizing and shorter trading diagnostics
+above have been calculated; full-period trading profitability remains unresolved.
+
+The user's extension of download time superseded the acquisition stop in the
+preserved [bounded-attempt record](notes/2026-09-10-ba012-final-feasibility.md).
+The download blocker is now resolved. Remaining input issues concern settlement
+flags and timing eligibility, largely in 2016–2017. Preserve the current result;
+any future eligibility amendment must be explicit rather than silently changing
+which already-observed records pass. No broad strategy search or return study
+was queued by download completion. The subsequent explicit profitability request
+authorized the separately recorded cash/expense diagnostic above, followed by
+explicitly approved larger-capital sizing and profitability tests.
+
+The preserved version 1 [Stage A result](notes/2026-09-10-ba012-stage-a-result.md)
+records all 2,080 quoted dates acquired, with $0.162474512840 in provider estimates.
+
+There are 134 missing exact-minute references across 125 joint dates: 85 gold,
+47 Treasury and two corn. Of the gold gaps, 82 involve October contracts.
+Every one of the 72 scheduled monthly windows is incomplete, so the $5,000,
+$25,000 and $100,000 sizing cases remain unresolved. Missing inputs were never
+counted as cash decisions or evidence of capital infeasibility. That preserved
+version 1 result calculated no returns; later diagnostics are listed above.
+No holdout price inspection or funded pilot has been run.
+
+The [earlier diagnosis](notes/2026-09-10-ba012-data-design-diagnosis.md) led to
+version 2's separately frozen gold schedule and settlement-selection rules.
+The earlier bounded attempt confirmed that settlement messages could be acquired
+and processed. The subsequent continuation completed acquisition and established
+the partial sizing evidence above. This does not establish that diversified
+trend trading fails economically. Preserve both versions; do not increase risk
+or change selection rules to turn missing inputs into a passing result.
+
+The earlier [static arithmetic](notes/2026-09-10-ba012-stage-a-preflight.md)
+established only mechanical cost/margin possibility at $5,000. It remains
+insufficient to establish a portfolio using measured risk. Larger virtual
+cases are diagnostics, not deposit requests. IBKR Pro eligibility, account
+permissions, actual child spreads and broker-specific delivery cutoffs remain
+unverified. Crypto carry and options remain parked. No bot, subscription,
+order or monitoring has been started.
+
+[BA-011's measured result](notes/2026-09-09-ba011-development.md) remains a
+failure: costs exceeded unrestricted gross profit and the pilot halted at its
+capital floor. Do not tune it or run its holdout to rescue that result.
 
 The first **CME MES intraday experiment**, [BA-010](strategies/BA-010.md), is
 complete and failed development. Its base pilot ended up $106.65 over three
@@ -120,10 +241,14 @@ promote it, tune it against those results, or run its 2024–2025 holdout.
 
 The data-access blocker is resolved. Audited 2021–2025 MES history and a tested
 minute-bar execution/account engine are available locally. Further research
-requires a distinct economic hypothesis with a plausible cost/capacity argument
-before another registered test. Treat 2021–2023 as seen history, preserve the
-unused 2024–2025 strategy holdout, and track cumulative candidate trials. No
-paper or funded pilot is justified by BA-010.
+requires a specific economic hypothesis with a plausible cost/capacity argument
+before another registered test. Explicitly record extensions of prior families:
+BA-001/002 already tested related long/cash ETF trend signals, and BA-009 already
+opened spot/futures carry research. Treat MES 2021–2023 and prior ETF development
+and validation history as seen, preserve unopened holdout files, and track
+cumulative candidate trials. An untested instrument does not make an otherwise
+examined calendar period an entirely unseen economic regime. No paper or funded
+pilot is justified by BA-010.
 
 [BA-009B, dated/perpetual futures spreads](strategies/BA-009B.md), is parked.
 Its quote screen, conditional price diagnostic, and minute timing audit are

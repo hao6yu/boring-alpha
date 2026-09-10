@@ -1,0 +1,14 @@
+{
+  "implementation": {
+    "research/ba012-profitability/traded-inputs-v1.json": "a8240876425740bb53a62e0e7eea858e570ede44007b68ae7726e2f010b0b339",
+    "tools/ba012_transition.py": "fa4f61ce00f680fae8f359cc044750450c74a8653f54a468f2028d7a941df409",
+    "tools/run_ba012_profitability.py": "d7678d764e10cf284991ae50e1b669138d27256a6a40859b21ec00598eff0002"
+  },
+  "plan_sha256": "a9da9a602bcebca0653de7c4eb1259f8464dee4b1593d5fd4da129440d45c6cb",
+  "registered_at_utc": "2026-09-10T20:51:50.722918+00:00",
+  "runtime": {
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "python": "3.13.7 (v3.13.7:bcee1c32211, Aug 14 2025, 19:10:51) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "capital_results": {
+    "100000": {
+      "annual_covariance": [
+        [
+          53485.52082669324,
+          -35960.819223107566,
+          585.407308266933,
+          -2361.6320617529873,
+          2691.2696713147407
+        ],
+        [
+          -35960.819223107566,
+          462675.70343625493,
+          45580.75510458167,
+          23722.6780378486,
+          -11057.675547808767
+        ],
+        [
+          585.407308266933,
+          45580.75510458167,
+          745010.6744895418,
+          30749.709785856576,
+          4274.934636454182
+        ],
+        [
+          -2361.6320617529873,
+          23722.6780378486,
+          30749.709785856576,
+          21482.645219123504,
+          1464.0054780876492
+        ],
+        [
+          2691.2696713147407,
+          -11057.675547808767,
+          4274.934636454182,
+          1464.0054780876492,
+          193246.14043824698
+        ]
+      ],
+      "annual_standalone_vol_usd": [
+        231.26936854389783,
+        680.2026929057654,
+        863.1400086252182,
+        146.56959172735492,
+        439.59770294923857
+      ],
+      "continuous_target_quantities": [
+        -14.695412624953207,
+        4.9964500783530275,
+        -3.9374826381621806,
+        23.187611824606428,
+        -7.731156863341017
+      ],
+      "decision": "NONZERO",
+      "equity_usd": 100000,
+      "incumbent_entry_cost_usd": 118.325,
+      "incumbent_exit_reserve_usd": 118.325,
+      "incumbent_funding_headroom_usd": 45618.75000000001,
+      "incumbent_initial_margin_usd": 21522.3,
+      "incumbent_loss_budget_charge_usd": 11236.65,
+      "incumbent_maintenance_margin_usd": 18501.184,
+      "incumbent_max_partial_risk_norm_plus_cost_fraction": 0.9974309642475758,
+      "incumbent_post_entry_annual_dollar_vol_cap_usd": 7990.534000000001,
+      "incumbent_post_entry_equity_usd": 99881.675,
+      "incumbent_quantities": [
+        -14,
+        5,
+        -4,
+        23,
+        -8
+      ],
+      "incumbent_stress_price_loss_usd": 11000.0,
+      "incumbent_terminal_annual_dollar_vol_usd": 7969.981713980606,
+      "incumbent_tracking_objective": 0.0006854682875238442,
+      "incumbent_tracking_objective_rounded_12": 0.000685468288,
+      "minimum_three_group_squared_standalone_vol": 537643.8694820717,
+      "necessary_failures": [],
+      "nonzero_feasibility": "WITNESS_FOUND",
+      "optimum_verified": true,
+      "partial_fill_treatment": "All empty/full sleeve vertices cover the from-cash quantity box: norm(q)+0.08*C(q) is convex. State E=initial E minus incurred entry costs; D=incurred costs. Positive additive stress/funding charges attain their maximum at the completed basket. No entry cost is deducted twice.",
+      "per_market_quantity_upper_bounds": [
+        34,
+        11,
+        9,
+        54,
+        18
+      ],
+      "pre_entry_annual_dollar_vol_target_usd": 8000.0,
+      "protocol_sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f",
+      "quantities": [
+        -14,
+        5,
+        -4,
+        23,
+        -8
+      ],
+      "scope": "Stage A independent from-cash sizing; hypothetical parent exposures; no strategy returns",
+      "search": {
+        "concentration_rejections": 0,
+        "feasible_nonzero_evaluated": 2,
+        "group_prunes": 0,
+        "max_nodes": 2000000,
+        "method": "finite integer branch-and-bound with unconstrained Schur lower bounds",
+        "money_prunes": 0,
+        "nodes": 304,
+        "normalized_feasibility_allowance": 1e-12,
+        "objective_prunes": 285,
+        "objective_pruning_pad": 1e-10,
+        "partial_risk_prunes": 4,
+        "terminal_candidates_evaluated": 2
+      },
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "simulated_loss_budget_usd": 20000.0,
+      "status": "OPTIMAL",
+      "symbols": [
+        "NES",
+        "MTN",
+        "M6E",
+        "1OZ",
+        "MZC"
+      ]
+    },
+    "25000": {
+      "annual_covariance": [
+        [
+          53485.52082669324,
+          -35960.819223107566,
+          585.407308266933,
+          -2361.6320617529873,
+          2691.2696713147407
+        ],
+        [
+          -35960.819223107566,
+          462675.70343625493,
+          45580.75510458167,
+          23722.6780378486,
+          -11057.675547808767
+        ],
+        [
+          585.407308266933,
+          45580.75510458167,
+          745010.6744895418,
+          30749.709785856576,
+          4274.934636454182
+        ],
+        [
+          -2361.6320617529873,
+          23722.6780378486,
+          30749.709785856576,
+          21482.645219123504,
+          1464.0054780876492
+        ],
+        [
+          2691.2696713147407,
+          -11057.675547808767,
+          4274.934636454182,
+          1464.0054780876492,
+          193246.14043824698
+        ]
+      ],
+      "annual_standalone_vol_usd": [
+        231.26936854389783,
+        680.2026929057654,
+        863.1400086252182,
+        146.56959172735492,
+        439.59770294923857
+      ],
+      "continuous_target_quantities": [
+        -3.6738531562383017,
+        1.2491125195882569,
+        -0.9843706595405451,
+        5.796902956151607,
+        -1.9327892158352542
+      ],
+      "decision": "NONZERO",
+      "equity_usd": 25000,
+      "incumbent_entry_cost_usd": 29.505,
+      "incumbent_exit_reserve_usd": 29.505,
+      "incumbent_funding_headroom_usd": 11056.556000000002,
+      "incumbent_initial_margin_usd": 5467.217,
+      "incumbent_loss_budget_charge_usd": 2909.01,
+      "incumbent_maintenance_margin_usd": 4700.895,
+      "incumbent_max_partial_risk_norm_plus_cost_fraction": 0.9897791309153873,
+      "incumbent_post_entry_annual_dollar_vol_cap_usd": 1997.6396,
+      "incumbent_post_entry_equity_usd": 24970.495,
+      "incumbent_quantities": [
+        -4,
+        1,
+        -1,
+        6,
+        -2
+      ],
+      "incumbent_stress_price_loss_usd": 2850.0,
+      "incumbent_terminal_annual_dollar_vol_usd": 1977.1978618307746,
+      "incumbent_tracking_objective": 0.007073521984190339,
+      "incumbent_tracking_objective_rounded_12": 0.007073521984,
+      "minimum_three_group_squared_standalone_vol": 537643.8694820717,
+      "necessary_failures": [],
+      "nonzero_feasibility": "WITNESS_FOUND",
+      "optimum_verified": true,
+      "partial_fill_treatment": "All empty/full sleeve vertices cover the from-cash quantity box: norm(q)+0.08*C(q) is convex. State E=initial E minus incurred entry costs; D=incurred costs. Positive additive stress/funding charges attain their maximum at the completed basket. No entry cost is deducted twice.",
+      "per_market_quantity_upper_bounds": [
+        8,
+        2,
+        2,
+        13,
+        4
+      ],
+      "pre_entry_annual_dollar_vol_target_usd": 2000.0,
+      "protocol_sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f",
+      "quantities": [
+        -4,
+        1,
+        -1,
+        6,
+        -2
+      ],
+      "scope": "Stage A independent from-cash sizing; hypothetical parent exposures; no strategy returns",
+      "search": {
+        "concentration_rejections": 0,
+        "feasible_nonzero_evaluated": 1,
+        "group_prunes": 0,
+        "max_nodes": 2000000,
+        "method": "finite integer branch-and-bound with unconstrained Schur lower bounds",
+        "money_prunes": 0,
+        "nodes": 38,
+        "normalized_feasibility_allowance": 1e-12,
+        "objective_prunes": 31,
+        "objective_pruning_pad": 1e-10,
+        "partial_risk_prunes": 0,
+        "terminal_candidates_evaluated": 1
+      },
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "simulated_loss_budget_usd": 5000.0,
+      "status": "OPTIMAL",
+      "symbols": [
+        "NES",
+        "MTN",
+        "M6E",
+        "1OZ",
+        "MZC"
+      ]
+    },
+    "5000": {
+      "annual_covariance": [
+        [
+          53485.52082669324,
+          -35960.819223107566,
+          585.407308266933,
+          -2361.6320617529873,
+          2691.2696713147407
+        ],
+        [
+          -35960.819223107566,
+          462675.70343625493,
+          45580.75510458167,
+          23722.6780378486,
+          -11057.675547808767
+        ],
+        [
+          585.407308266933,
+          45580.75510458167,
+          745010.6744895418,
+          30749.709785856576,
+          4274.934636454182
+        ],
+        [
+          -2361.6320617529873,
+          23722.6780378486,
+          30749.709785856576,
+          21482.645219123504,
+          1464.0054780876492
+        ],
+        [
+          2691.2696713147407,
+          -11057.675547808767,
+          4274.934636454182,
+          1464.0054780876492,
+          193246.14043824698
+        ]
+      ],
+      "annual_standalone_vol_usd": [
+        231.26936854389783,
+        680.2026929057654,
+        863.1400086252182,
+        146.56959172735492,
+        439.59770294923857
+      ],
+      "continuous_target_quantities": [
+        -0.7347706312476603,
+        0.2498225039176514,
+        -0.19687413190810904,
+        1.1593805912303214,
+        -0.38655784316705083
+      ],
+      "decision": "CASH",
+      "equity_usd": 5000,
+      "incumbent_entry_cost_usd": 0.0,
+      "incumbent_exit_reserve_usd": 0.0,
+      "incumbent_funding_headroom_usd": 4900.0,
+      "incumbent_initial_margin_usd": 0.0,
+      "incumbent_loss_budget_charge_usd": 0.0,
+      "incumbent_maintenance_margin_usd": 0.0,
+      "incumbent_max_partial_risk_norm_plus_cost_fraction": 0.0,
+      "incumbent_post_entry_annual_dollar_vol_cap_usd": 400.0,
+      "incumbent_post_entry_equity_usd": 5000.0,
+      "incumbent_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "incumbent_stress_price_loss_usd": 0.0,
+      "incumbent_terminal_annual_dollar_vol_usd": 0.0,
+      "incumbent_tracking_objective": 1.0000000000000002,
+      "incumbent_tracking_objective_rounded_12": 1.0,
+      "minimum_three_group_squared_standalone_vol": null,
+      "necessary_failures": [
+        "fewer_than_three_groups_with_one_contract_within_singleton_risk_and_money_caps"
+      ],
+      "nonzero_feasibility": "PROVED_INFEASIBLE",
+      "optimum_verified": true,
+      "partial_fill_treatment": "All empty/full sleeve vertices cover the from-cash quantity box: norm(q)+0.08*C(q) is convex. State E=initial E minus incurred entry costs; D=incurred costs. Positive additive stress/funding charges attain their maximum at the completed basket. No entry cost is deducted twice.",
+      "per_market_quantity_upper_bounds": [
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "pre_entry_annual_dollar_vol_target_usd": 400.0,
+      "protocol_sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "Stage A independent from-cash sizing; hypothetical parent exposures; no strategy returns",
+      "search": {
+        "concentration_rejections": 0,
+        "feasible_nonzero_evaluated": 0,
+        "group_prunes": 0,
+        "max_nodes": 2000000,
+        "method": "finite integer branch-and-bound with unconstrained Schur lower bounds",
+        "money_prunes": 0,
+        "nodes": 0,
+        "normalized_feasibility_allowance": 1e-12,
+        "objective_prunes": 0,
+        "objective_pruning_pad": 1e-10,
+        "partial_risk_prunes": 0,
+        "terminal_candidates_evaluated": 0
+      },
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "simulated_loss_budget_usd": 1000.0,
+      "status": "OPTIMAL",
+      "symbols": [
+        "NES",
+        "MTN",
+        "M6E",
+        "1OZ",
+        "MZC"
+      ]
+    }
+  },
+  "decision_date_chicago": "2019-08-30",
+  "input_status": "READY",
+  "signs": [
+    -1,
+    1,
+    -1,
+    1,
+    -1
+  ],
+  "window_first_endpoint": "2018-08-29"
+}

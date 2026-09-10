@@ -1,0 +1,539 @@
+{
+  "diagnostic_type": "static_constraint_arithmetic_only_not_stage_a_price_test",
+  "protocol_sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f",
+  "freeze_sha256_verified": true,
+  "historical_data_read": false,
+  "strategy_returns_calculated": false,
+  "volatility_estimated": false,
+  "scope": "Fresh cash entries only; 20% simulated loss budgets for larger virtual capitals as frozen; static counts omit measured volatility, target tracking, nonzero monthly signals, and volatility concentration. Static margin costs monotone in partial fills, so full-entry pass covers partial states for margin/stress only.",
+  "symbols": [
+    "NES",
+    "MTN",
+    "M6E",
+    "1OZ",
+    "MZC"
+  ],
+  "entry_plus_stress_plus_exit_per_contract_usd": [
+    "202.22",
+    "207.370",
+    "255.80",
+    "202.32",
+    "211.52"
+  ],
+  "capital_bounds": [
+    {
+      "capital_usd": "5000",
+      "stage_a_simulated_loss_budget_usd": "1000.0",
+      "annual_dollar_vol_cap_usd": "400.00",
+      "frozen_diagonal_sum_rejection_threshold": "320000.0000",
+      "stress_only_total_contract_upper_bound": 4,
+      "stress_only_per_market_quantity_upper_bounds": [
+        4,
+        4,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "capital_usd": "25000",
+      "stage_a_simulated_loss_budget_usd": "5000.0",
+      "annual_dollar_vol_cap_usd": "2000.00",
+      "frozen_diagonal_sum_rejection_threshold": "8000000.0000",
+      "stress_only_total_contract_upper_bound": 24,
+      "stress_only_per_market_quantity_upper_bounds": [
+        24,
+        24,
+        19,
+        24,
+        23
+      ]
+    },
+    {
+      "capital_usd": "100000",
+      "stage_a_simulated_loss_budget_usd": "20000.0",
+      "annual_dollar_vol_cap_usd": "8000.00",
+      "frozen_diagonal_sum_rejection_threshold": "128000000.0000",
+      "stress_only_total_contract_upper_bound": 98,
+      "stress_only_per_market_quantity_upper_bounds": [
+        98,
+        96,
+        78,
+        98,
+        94
+      ]
+    }
+  ],
+  "pilot_pattern_counts": {
+    "stress_and_three_group_patterns": 33,
+    "passes_all_signs": 28,
+    "sign_dependent": 2,
+    "fails_all_signs": 3
+  },
+  "pilot_patterns": [
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "674.690",
+      "required_capital_best_initial_sides_usd": "3268.776",
+      "required_capital_worst_initial_sides_usd": "3414.9740",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "stress_entry_exit_charge_usd": "886.210",
+      "required_capital_best_initial_sides_usd": "3894.136",
+      "required_capital_worst_initial_sides_usd": "4095.3340",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "665.490",
+      "required_capital_best_initial_sides_usd": "3765.114",
+      "required_capital_worst_initial_sides_usd": "3865.3120",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "877.010",
+      "required_capital_best_initial_sides_usd": "4390.474",
+      "required_capital_worst_initial_sides_usd": "4545.6720",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "867.810",
+      "required_capital_best_initial_sides_usd": "4886.812",
+      "required_capital_worst_initial_sides_usd": "4996.0100",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "930.490",
+      "required_capital_best_initial_sides_usd": "4183.460",
+      "required_capital_worst_initial_sides_usd": "4339.6580",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "921.290",
+      "required_capital_best_initial_sides_usd": "4679.798",
+      "required_capital_worst_initial_sides_usd": "4789.9960",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        2,
+        1,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "882.060",
+      "required_capital_best_initial_sides_usd": "4897.508",
+      "required_capital_worst_initial_sides_usd": "5124.9040",
+      "margin_status": "sign_dependent"
+    },
+    {
+      "absolute_quantities": [
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "872.860",
+      "required_capital_best_initial_sides_usd": "5393.846",
+      "required_capital_worst_initial_sides_usd": "5575.2420",
+      "margin_status": "fails_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "669.540",
+      "required_capital_best_initial_sides_usd": "2439.824",
+      "required_capital_worst_initial_sides_usd": "2555.5090",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "stress_entry_exit_charge_usd": "881.060",
+      "required_capital_best_initial_sides_usd": "3065.184",
+      "required_capital_worst_initial_sides_usd": "3235.8690",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "660.340",
+      "required_capital_best_initial_sides_usd": "2936.162",
+      "required_capital_worst_initial_sides_usd": "3005.8470",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "871.860",
+      "required_capital_best_initial_sides_usd": "3561.522",
+      "required_capital_worst_initial_sides_usd": "3686.2070",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        1,
+        2,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "862.660",
+      "required_capital_best_initial_sides_usd": "4057.860",
+      "required_capital_worst_initial_sides_usd": "4136.5450",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "925.340",
+      "required_capital_best_initial_sides_usd": "3354.508",
+      "required_capital_worst_initial_sides_usd": "3480.1930",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "916.140",
+      "required_capital_best_initial_sides_usd": "3850.846",
+      "required_capital_worst_initial_sides_usd": "3930.5310",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "621.110",
+      "required_capital_best_initial_sides_usd": "3153.872",
+      "required_capital_worst_initial_sides_usd": "3340.7550",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "stress_entry_exit_charge_usd": "832.630",
+      "required_capital_best_initial_sides_usd": "3779.232",
+      "required_capital_worst_initial_sides_usd": "4021.1150",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "611.910",
+      "required_capital_best_initial_sides_usd": "3650.210",
+      "required_capital_worst_initial_sides_usd": "3791.0930",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "823.430",
+      "required_capital_best_initial_sides_usd": "4275.570",
+      "required_capital_worst_initial_sides_usd": "4471.4530",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "814.230",
+      "required_capital_best_initial_sides_usd": "4771.908",
+      "required_capital_worst_initial_sides_usd": "4921.7910",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "665.390",
+      "required_capital_best_initial_sides_usd": "3443.196",
+      "required_capital_worst_initial_sides_usd": "3585.0790",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "876.910",
+      "required_capital_best_initial_sides_usd": "4068.556",
+      "required_capital_worst_initial_sides_usd": "4265.4390",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "867.710",
+      "required_capital_best_initial_sides_usd": "4564.894",
+      "required_capital_worst_initial_sides_usd": "4715.7770",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "921.190",
+      "required_capital_best_initial_sides_usd": "4357.880",
+      "required_capital_worst_initial_sides_usd": "4509.7630",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "828.480",
+      "required_capital_best_initial_sides_usd": "4782.604",
+      "required_capital_worst_initial_sides_usd": "5050.6850",
+      "margin_status": "sign_dependent"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "819.280",
+      "required_capital_best_initial_sides_usd": "5278.942",
+      "required_capital_worst_initial_sides_usd": "5501.0230",
+      "margin_status": "fails_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "872.760",
+      "required_capital_best_initial_sides_usd": "5071.928",
+      "required_capital_worst_initial_sides_usd": "5295.0090",
+      "margin_status": "fails_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "871.760",
+      "required_capital_best_initial_sides_usd": "3239.604",
+      "required_capital_worst_initial_sides_usd": "3405.9740",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "862.560",
+      "required_capital_best_initial_sides_usd": "3735.942",
+      "required_capital_worst_initial_sides_usd": "3856.3120",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "stress_entry_exit_charge_usd": "823.330",
+      "required_capital_best_initial_sides_usd": "3953.652",
+      "required_capital_worst_initial_sides_usd": "4191.2200",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "814.130",
+      "required_capital_best_initial_sides_usd": "4449.990",
+      "required_capital_worst_initial_sides_usd": "4641.5580",
+      "margin_status": "passes_all_signs"
+    },
+    {
+      "absolute_quantities": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "stress_entry_exit_charge_usd": "867.610",
+      "required_capital_best_initial_sides_usd": "4242.976",
+      "required_capital_worst_initial_sides_usd": "4435.5440",
+      "margin_status": "passes_all_signs"
+    }
+  ],
+  "static_witness": {
+    "absolute_quantities": [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "groups": [
+      "equities",
+      "fx",
+      "commodities"
+    ],
+    "stress_price_loss_usd": "650",
+    "entry_plus_exit_cost_usd": "19.540",
+    "total_loss_budget_charge_usd": "669.540",
+    "worst_side_initial_margin_usd": "892.9845",
+    "required_capital_worst_sides_including_2x_initial_stress_costs_and_100_reserve_usd": "2555.5090",
+    "required_capital_best_sides_usd": "2439.824",
+    "statement": "This proves no contradiction among fixed cost/stress/group-count/margin rules. It does not establish measured volatility/concentration or target tracking feasibility."
+  },
+  "necessary_tests": [
+    "At least three asset groups must contain eligible, nonzero-signal instruments.",
+    "Every selected sleeve must satisfy abs(q_i)*v_i <= tau because that sleeve alone is a possible partial-fill state from cash.",
+    "If fewer than three groups contain an instrument with v_i <= tau, all nonzero entries are impossible.",
+    "For the cheapest-in-volatility representative of each eligible group, sum the three smallest squared annual dollar volatilities. If the sum exceeds 2*tau^2, the frozen shrinkage lower bound proves infeasibility.",
+    "Final concentration requires max(abs(q_i)*v_i) <= sum(abs(q_i)*v_i)/2. For three one-unit markets this is the triangle inequality on their v_i.",
+    "Every subset of a from-cash integer basket is a possible fill state; test its full covariance risk, not merely the completed portfolio. For a positive semidefinite covariance, maximum variance over the quantity box occurs at a vertex, so all 2^k sleeve-empty/full vertices suffice for the volatility check at fixed E and covariance. Costs/equity re-marking need their own stated treatment.",
+    "From-cash quantities have cheap bounds from stress, single-sleeve margin, and partial-fill volatility; passing any bound is not a Stage A pass."
+  ],
+  "exact_blockers": [
+    "A five-market one-contract-each entry costs 1079.230 USD of stipulated stress plus entry and exit reserve, exceeding the pilot 1000 USD budget regardless of signs or covariance.",
+    "Pilot total quantity is at most four contracts; with at least three active markets, no market can exceed two contracts.",
+    "Fixed constraints alone do not prove the pilot infeasible; measured 252-session dollar risk remains required."
+  ]
+}

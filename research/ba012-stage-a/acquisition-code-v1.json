@@ -1,0 +1,10 @@
+{
+  "scope": "Reference acquisition implementation before changes; no performance implementation frozen",
+  "files": {
+    "tools/fetch_ba012_references.py": "fd284ee5cb743ae798814193b54864b0b0940d3c32204c6efe456f21d9fd9c85",
+    "tools/fetch_mes_history.py": "8b9d912225ca31d7f6d940ce7255f5c44cb22a9c959d7a9eb41a411e83eaea04",
+    "tools/quote_ba012_inputs.py": "23bf0d54371fc7dffef5e1e04e6899ca6adf3f679210f6822fa4f4b4af90257f",
+    "tools/fetch_market_data.py": "d08993b61228d90abaf53fe315dedfe57269f25784057a60c92d088f2605d37b",
+    "tests/test_fetch_ba012_references.py": "4321c13b0a3bbaf3f403600fef3b67f19987dcff2dd15209034c75f01a14335b"
+  }
+}

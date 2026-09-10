@@ -1,0 +1,207 @@
+{
+  "schema": "ba012-input-metadata-quote-v1",
+  "started_at": "2026-09-10T07:25:55.437025+00:00",
+  "protocol_sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f",
+  "data_downloads": 0,
+  "strategy_returns_calculated": false,
+  "requests": [
+    {
+      "method": "metadata.get_cost",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "ES.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:55.440480+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "16.134087145329",
+      "response_sha256": "0f06fee8fe42cf32312e3ee48e3e8ed7e9700900cd69062c33a00b23bde8baaa"
+    },
+    {
+      "method": "metadata.get_record_count",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "ES.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:56.052878+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "4419348",
+      "response_sha256": "e65cf37da5bd015ba5b6e901f49336962cf92748800fda3276c9133dcfdcb254"
+    },
+    {
+      "method": "metadata.get_cost",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "TN.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:56.333864+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "9.473920837045",
+      "response_sha256": "212c3d433461df978da569ce5b429ebaffb6a0f50f2a16b2ee92fd4a314bc37e"
+    },
+    {
+      "method": "metadata.get_record_count",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "TN.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:56.646166+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "2595037",
+      "response_sha256": "f7559a85ab368e7b97d83b8bc888ec6dfd6e84fda63b02353b090f7819f35e10"
+    },
+    {
+      "method": "metadata.get_cost",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "6E.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:56.948192+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "14.239764437079",
+      "response_sha256": "8b858db31ad622ea979bede2e52a1025d6dce3e66c6c2d1c3f6768da5513341f"
+    },
+    {
+      "method": "metadata.get_record_count",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "6E.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:57.289798+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "3900467",
+      "response_sha256": "af3b5d8ff75a41447e427d226c9f5cc0d098bb233ec7baa7944dec112cb6feee"
+    },
+    {
+      "method": "metadata.get_cost",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "GC.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:57.631815+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "27.584787309170",
+      "response_sha256": "05098f0b5fc778bb3476ea2271854def9f12c6861dfad530cf0f9cffa2ccdd38"
+    },
+    {
+      "method": "metadata.get_record_count",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "GC.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:57.904763+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "7555852",
+      "response_sha256": "0dda3729ef7e076e6564a6c8e12ebbfaea5d22451a93b7f144131fad5439647a"
+    },
+    {
+      "method": "metadata.get_cost",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "ZC.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:58.179126+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "39.489155858755",
+      "response_sha256": "cca398e2470afc90b313caf8f14e9dc79e3775989c4fb4565ad86a7bd0b9d4ce"
+    },
+    {
+      "method": "metadata.get_record_count",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "ZC.FUT",
+        "schema": "ohlcv-1m"
+      },
+      "requested_at": "2026-09-10T07:25:58.449627+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "10816622",
+      "response_sha256": "f17c25c607f564b10881c0e0e0c7a528210b1a265ae96aa39f2075f70fec2cae"
+    },
+    {
+      "method": "metadata.get_cost",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "ES.FUT,TN.FUT,6E.FUT,GC.FUT,ZC.FUT",
+        "schema": "definition"
+      },
+      "requested_at": "2026-09-10T07:25:58.762819+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "2.146186396480",
+      "response_sha256": "61fb75cfa39fdc639c58e7ebb1e89da84ad4afb74fede9c84fcdd52e098d48e3"
+    },
+    {
+      "method": "metadata.get_record_count",
+      "query": {
+        "dataset": "GLBX.MDP3",
+        "stype_in": "parent",
+        "start": "2016-01-11",
+        "end": "2024-01-01",
+        "symbols": "ES.FUT,TN.FUT,6E.FUT,GC.FUT,ZC.FUT",
+        "schema": "definition"
+      },
+      "requested_at": "2026-09-10T07:25:59.029620+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "value": "2606844",
+      "response_sha256": "7a313c19a2e85454c9c54202fafcf5a1fcd44570e8e57860e076f6eeae5c8166"
+    }
+  ],
+  "limitations": [
+    "Broad all-maturity quotes, not a selected contract/time acquisition plan.",
+    "Positive record counts do not establish required minute coverage.",
+    "Quotes do not verify account credit balance or billing."
+  ],
+  "completed_at": "2026-09-10T07:25:59.723798+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Post-input coverage diagnosis; no strategy performance or revised protocol execution",
+  "sources": [
+    {
+      "url": "https://www.cmegroup.com/market-regulation/rule-filings/2017/09/17-358_1.pdf",
+      "fact": "2017 Appendix B defines active Gold months as February, April, June, August, December; excludes spot month and October.",
+      "inference": "The frozen every-even-month selection includes listed October contracts outside that historical active sequence. This does not prove why every missing minute is absent."
+    },
+    {
+      "url": "https://www.cmegroup.com/trading/metals/files/metals-prod-guide-2021.pdf",
+      "fact": "2021 guide lists October GC but omits October from the active TAS/TAM month sets."
+    },
+    {
+      "url": "https://www.cmegroup.com/trading/interest-rates/files/treasury-futures-calendar-spreads.pdf",
+      "fact": "2016 Treasury calendar-spread study describes migration near the delivery-month boundary; its nine-exchange-day roll window ends on the first business day of the delivery month. August 25, 2016 is a TN peak-roll example.",
+      "inference": "A child-driven early roll can precede peak migration. Calendar-spread liquidity does not guarantee an exact-minute outright trade."
+    },
+    {
+      "url": "https://databento.com/docs/schemas-and-data-formats/statistics",
+      "fact": "Historical statistics supports settlement stat_type=3, rtype=24, scaled price and update_action.",
+      "limitation": "A schema is not evidence of complete usable settlement history."
+    },
+    {
+      "url": "https://databento.com/docs/venues-and-datasets/glbx-mdp3",
+      "fact": "CME settlements may have preliminary/final updates. ts_ref is the trading-session date, ts_event the venue event, ts_recv capture receipt. No MDP settlement is published without open interest or volume.",
+      "limitation": "A causal revision must preserve updates and forbid eventual final prices unavailable at the decision cutoff."
+    },
+    {
+      "url": "https://databento.com/datasets/GLBX.MDP3",
+      "fact": "Overall dataset starts June 6, 2010; schema-specific availability can differ. Data before May 21, 2017 has no capture timestamps."
+    },
+    {
+      "url": "https://databento.com/docs/api-reference-historical/basics/rate-limits",
+      "fact": "Per IP historical service permits 100 concurrent connections and 20 metadata requests/sec; current collector uses 16 workers and a shared 10 starts/sec limiter."
+    }
+  ]
+}

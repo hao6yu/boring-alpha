@@ -1,0 +1,6962 @@
+{
+  "annual_periods": [
+    {
+      "covered_months": 6,
+      "end_equity_usd": "4972.10",
+      "full_calendar_year": false,
+      "net_pnl_usd": "-27.90",
+      "period_return_fraction": -0.00558,
+      "start_equity_usd": "5000.00",
+      "year": 2022
+    },
+    {
+      "covered_months": 12,
+      "end_equity_usd": "4916.30",
+      "full_calendar_year": true,
+      "net_pnl_usd": "-55.80",
+      "period_return_fraction": -0.011222622232054866,
+      "start_equity_usd": "4972.10",
+      "year": 2023
+    }
+  ],
+  "base_and_stress_equal": true,
+  "calendar_cagr": -0.01116096410442057,
+  "calendar_days": 549,
+  "cash_scenarios": [
+    {
+      "annual_rate": "0.04",
+      "ending_equity_usd": "5303.84",
+      "strategy_minus_benchmark_usd": "-387.54"
+    },
+    {
+      "annual_rate": "0.06",
+      "ending_equity_usd": "5457.99",
+      "strategy_minus_benchmark_usd": "-541.69"
+    }
+  ],
+  "daily_cash_ledger": [
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2022-07-01",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "5000.00",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-05",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-06",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-07",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-08",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-11",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-12",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-13",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-14",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-15",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-18",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-19",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-20",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-21",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-22",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-25",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-26",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-27",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-28",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-07-29",
+      "drawdown_usd": "4.65",
+      "equity_after_usd": "4995.35",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2022-08-01",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4995.35",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-02",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-03",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-04",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-05",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-08",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-09",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-10",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-11",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-12",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-15",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-16",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-17",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-18",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-19",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-22",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-23",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-24",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-25",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-26",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-29",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-30",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-08-31",
+      "drawdown_usd": "9.30",
+      "equity_after_usd": "4990.70",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2022-09-01",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4990.70",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-02",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-06",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-07",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-08",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-09",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-12",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-13",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-14",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-15",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-16",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-19",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-20",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-21",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-22",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-23",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-26",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-27",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-28",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-29",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-09-30",
+      "drawdown_usd": "13.95",
+      "equity_after_usd": "4986.05",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2022-10-03",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4986.05",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-04",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-05",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-06",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-07",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-10",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-11",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-12",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-13",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-14",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-17",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-18",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-19",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-20",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-21",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-24",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-25",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-26",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-27",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-28",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-10-31",
+      "drawdown_usd": "18.60",
+      "equity_after_usd": "4981.40",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2022-11-01",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4981.40",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-02",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-03",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-04",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-07",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-08",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-09",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-10",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-11",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-14",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-15",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-16",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-17",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-18",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-21",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-22",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-23",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-25",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-28",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-29",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-11-30",
+      "drawdown_usd": "23.25",
+      "equity_after_usd": "4976.75",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2022-12-01",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4976.75",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-02",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-05",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-06",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-07",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-08",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-09",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-12",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-13",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-14",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-15",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-16",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-19",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-20",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-21",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-22",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-23",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-27",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-28",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-29",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2022-12-30",
+      "drawdown_usd": "27.90",
+      "equity_after_usd": "4972.10",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-01-03",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4972.10",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-04",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-05",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-06",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-09",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-10",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-11",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-12",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-13",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-17",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-18",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-19",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-20",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-23",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-24",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-25",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-26",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-27",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-30",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-01-31",
+      "drawdown_usd": "32.55",
+      "equity_after_usd": "4967.45",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-02-01",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4967.45",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-02",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-03",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-06",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-07",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-08",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-09",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-10",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-13",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-14",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-15",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-16",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-17",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-21",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-22",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-23",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-24",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-27",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-02-28",
+      "drawdown_usd": "37.20",
+      "equity_after_usd": "4962.80",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-03-01",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4962.80",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-02",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-03",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-06",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-07",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-08",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-09",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-10",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-13",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-14",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-15",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-16",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-17",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-20",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-21",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-22",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-23",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-24",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-27",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-28",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-29",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-30",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-03-31",
+      "drawdown_usd": "41.85",
+      "equity_after_usd": "4958.15",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-04-03",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4958.15",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-04",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-05",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-06",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-10",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-11",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-12",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-13",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-14",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-17",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-18",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-19",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-20",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-21",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-24",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-25",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-26",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-27",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-04-28",
+      "drawdown_usd": "46.50",
+      "equity_after_usd": "4953.50",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-05-01",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4953.50",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-02",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-03",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-04",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-05",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-08",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-09",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-10",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-11",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-12",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-15",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-16",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-17",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-18",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-19",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-22",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-23",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-24",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-25",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-26",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-30",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-05-31",
+      "drawdown_usd": "51.15",
+      "equity_after_usd": "4948.85",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-06-01",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4948.85",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-02",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-05",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-06",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-07",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-08",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-09",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-12",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-13",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-14",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-15",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-16",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-20",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-21",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-22",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-23",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-26",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-27",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-28",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-29",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-06-30",
+      "drawdown_usd": "55.80",
+      "equity_after_usd": "4944.20",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-07-03",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4944.20",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-05",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-06",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-07",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-10",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-11",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-12",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-13",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-14",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-17",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-18",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-19",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-20",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-21",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-24",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-25",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-26",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-27",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-28",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-07-31",
+      "drawdown_usd": "60.45",
+      "equity_after_usd": "4939.55",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-08-01",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4939.55",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-02",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-03",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-04",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-07",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-08",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-09",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-10",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-11",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-14",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-15",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-16",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-17",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-18",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-21",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-22",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-23",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-24",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-25",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-28",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-29",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-30",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-08-31",
+      "drawdown_usd": "65.10",
+      "equity_after_usd": "4934.90",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-09-01",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4934.90",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-05",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-06",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-07",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-08",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-11",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-12",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-13",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-14",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-15",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-18",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-19",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-20",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-21",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-22",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-25",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-26",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-27",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-28",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-09-29",
+      "drawdown_usd": "69.75",
+      "equity_after_usd": "4930.25",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-10-02",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4930.25",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-03",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-04",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-05",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-06",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-09",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-10",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-11",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-12",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-13",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-16",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-17",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-18",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-19",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-20",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-23",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-24",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-25",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-26",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-27",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-30",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-10-31",
+      "drawdown_usd": "74.40",
+      "equity_after_usd": "4925.60",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-11-01",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4925.60",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-02",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-03",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-06",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-07",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-08",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-09",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-10",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-13",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-14",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-15",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-16",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-17",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-20",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-21",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-22",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-24",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-27",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-28",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-29",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-11-30",
+      "drawdown_usd": "79.05",
+      "equity_after_usd": "4920.95",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "4.65",
+      "date_chicago": "2023-12-01",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4920.95",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-04",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-05",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-06",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-07",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-08",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-11",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-12",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-13",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-14",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-15",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-18",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-19",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-20",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-21",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-22",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-26",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-27",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-28",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    },
+    {
+      "data_fee_usd": "0.00",
+      "date_chicago": "2023-12-29",
+      "drawdown_usd": "83.70",
+      "equity_after_usd": "4916.30",
+      "equity_before_usd": "4916.30",
+      "gross_trading_pnl_usd": "0.00",
+      "high_water_usd": "5000.00",
+      "quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trade_cost_usd": "0.00"
+    }
+  ],
+  "end_exclusive": "2024-01-01",
+  "ending_equity_usd": "4916.30",
+  "full_2018_2023_stage_b_status": "UNRESOLVED_NOT_RUN",
+  "gross_trading_pnl_usd": "0.00",
+  "halted": false,
+  "holdout_prices_read": false,
+  "initial_equity_usd": "5000.00",
+  "joint_sessions_verified": 377,
+  "label": "Coverage-selected development cash-only profitability diagnostic; not the planned full 2018\u20132023 Stage B study",
+  "larger_capital_tested": false,
+  "limitations": [
+    "The window is selected after observing coverage and all-cash sizing; this is not independent validation.",
+    "No larger-capital or fractional implementation is substituted.",
+    "No claim about trading returns or expected future returns.",
+    "Original paid data acquisition is research expense, separate from the predeclared recurring4.65 monthly operating-data charge."
+  ],
+  "maximum_marked_drawdown_fraction": 0.01674,
+  "maximum_marked_drawdown_usd": "83.70",
+  "monthly_instruction_proofs": [
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4995.35",
+      "execution_month": "2022-07",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-06-30"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4990.70",
+      "execution_month": "2022-08",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-07-29"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4986.05",
+      "execution_month": "2022-09",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-08-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4981.40",
+      "execution_month": "2022-10",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-09-30"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4976.75",
+      "execution_month": "2022-11",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-10-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4972.10",
+      "execution_month": "2022-12",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-11-30"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4967.45",
+      "execution_month": "2023-01",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2022-12-30"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4962.80",
+      "execution_month": "2023-02",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-01-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4958.15",
+      "execution_month": "2023-03",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-02-28"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4953.50",
+      "execution_month": "2023-04",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-03-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4948.85",
+      "execution_month": "2023-05",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-04-28"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities"
+      ],
+      "eligible_markets_after_fee": [
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4944.20",
+      "execution_month": "2023-06",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-05-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities",
+        "equities"
+      ],
+      "eligible_markets_after_fee": [
+        "NES",
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4939.55",
+      "execution_month": "2023-07",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-06-30"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities",
+        "equities"
+      ],
+      "eligible_markets_after_fee": [
+        "NES",
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4934.90",
+      "execution_month": "2023-08",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-07-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities",
+        "equities"
+      ],
+      "eligible_markets_after_fee": [
+        "NES",
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4930.25",
+      "execution_month": "2023-09",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-08-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities",
+        "equities"
+      ],
+      "eligible_markets_after_fee": [
+        "NES",
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4925.60",
+      "execution_month": "2023-10",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-09-29"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities",
+        "equities"
+      ],
+      "eligible_markets_after_fee": [
+        "NES",
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4920.95",
+      "execution_month": "2023-11",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-10-31"
+    },
+    {
+      "eligible_groups_after_fee": [
+        "commodities",
+        "equities"
+      ],
+      "eligible_markets_after_fee": [
+        "NES",
+        "1OZ"
+      ],
+      "equity_after_fee_usd": "4916.30",
+      "execution_month": "2023-12",
+      "planned_quantities": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signal_date": "2023-11-30"
+    }
+  ],
+  "monthly_returns": [
+    {
+      "end_equity_usd": "4995.35",
+      "fee_date": "2022-07-01",
+      "month": "2022-07",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.00093,
+      "start_equity_usd": "5000.00"
+    },
+    {
+      "end_equity_usd": "4990.70",
+      "fee_date": "2022-08-01",
+      "month": "2022-08",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009308657051057483,
+      "start_equity_usd": "4995.35"
+    },
+    {
+      "end_equity_usd": "4986.05",
+      "fee_date": "2022-09-01",
+      "month": "2022-09",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009317330234235678,
+      "start_equity_usd": "4990.70"
+    },
+    {
+      "end_equity_usd": "4981.40",
+      "fee_date": "2022-10-03",
+      "month": "2022-10",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009326019594669127,
+      "start_equity_usd": "4986.05"
+    },
+    {
+      "end_equity_usd": "4976.75",
+      "fee_date": "2022-11-01",
+      "month": "2022-11",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009334725177660898,
+      "start_equity_usd": "4981.40"
+    },
+    {
+      "end_equity_usd": "4972.10",
+      "fee_date": "2022-12-01",
+      "month": "2022-12",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009343447028683378,
+      "start_equity_usd": "4976.75"
+    },
+    {
+      "end_equity_usd": "4967.45",
+      "fee_date": "2023-01-03",
+      "month": "2023-01",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009352185193379055,
+      "start_equity_usd": "4972.10"
+    },
+    {
+      "end_equity_usd": "4962.80",
+      "fee_date": "2023-02-01",
+      "month": "2023-02",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009360939717561324,
+      "start_equity_usd": "4967.45"
+    },
+    {
+      "end_equity_usd": "4958.15",
+      "fee_date": "2023-03-01",
+      "month": "2023-03",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009369710647215281,
+      "start_equity_usd": "4962.80"
+    },
+    {
+      "end_equity_usd": "4953.50",
+      "fee_date": "2023-04-03",
+      "month": "2023-04",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009378498028498533,
+      "start_equity_usd": "4958.15"
+    },
+    {
+      "end_equity_usd": "4948.85",
+      "fee_date": "2023-05-01",
+      "month": "2023-05",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009387301907742001,
+      "start_equity_usd": "4953.50"
+    },
+    {
+      "end_equity_usd": "4944.20",
+      "fee_date": "2023-06-01",
+      "month": "2023-06",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009396122331450741,
+      "start_equity_usd": "4948.85"
+    },
+    {
+      "end_equity_usd": "4939.55",
+      "fee_date": "2023-07-03",
+      "month": "2023-07",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009404959346304762,
+      "start_equity_usd": "4944.20"
+    },
+    {
+      "end_equity_usd": "4934.90",
+      "fee_date": "2023-08-01",
+      "month": "2023-08",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009413812999159842,
+      "start_equity_usd": "4939.55"
+    },
+    {
+      "end_equity_usd": "4930.25",
+      "fee_date": "2023-09-01",
+      "month": "2023-09",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.000942268333704837,
+      "start_equity_usd": "4934.90"
+    },
+    {
+      "end_equity_usd": "4925.60",
+      "fee_date": "2023-10-02",
+      "month": "2023-10",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009431570407180163,
+      "start_equity_usd": "4930.25"
+    },
+    {
+      "end_equity_usd": "4920.95",
+      "fee_date": "2023-11-01",
+      "month": "2023-11",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009440474256943316,
+      "start_equity_usd": "4925.60"
+    },
+    {
+      "end_equity_usd": "4916.30",
+      "fee_date": "2023-12-01",
+      "month": "2023-12",
+      "net_pnl_usd": "-4.65",
+      "return_fraction": -0.0009449394933905039,
+      "start_equity_usd": "4920.95"
+    }
+  ],
+  "months": 18,
+  "net_pnl_usd": "-83.70",
+  "plan_sha256": "b242f605a1c4325080b06e43e8ca23de68eca8bb888ca3a74769551308602bde",
+  "profitability_verdict": "DOES_NOT_BEAT_EITHER_CASH_SCENARIO_IN_COVERED_WINDOW",
+  "schema": "ba012-covered-cash-profitability-result-v1",
+  "script_sha256": "34781da639c31a1645ba4c8d3aa43703d2ff1ed7ac19b0359c37f10124ea53ac",
+  "start_inclusive": "2022-07-01",
+  "status": "COMPLETE_DIAGNOSTIC",
+  "total_data_fees_usd": "83.70",
+  "total_return_fraction": -0.01674,
+  "trades": 0,
+  "trading_edge_established": false
+}

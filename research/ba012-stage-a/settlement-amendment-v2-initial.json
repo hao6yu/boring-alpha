@@ -1,0 +1,185 @@
+{
+  "authorization": {
+    "attempt_started_utc": "2026-09-10T16:12:18Z",
+    "hard_stop_utc": "2026-09-10T16:42:18Z",
+    "this_record_authorizes_no_data_charge": true,
+    "user_approved_final_feasibility_attempt": true
+  },
+  "base_protocol": {
+    "path": "docs/strategies/BA-012.md",
+    "sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f"
+  },
+  "base_rolls": {
+    "path": "research/ba012-stage-a/rolls-v1.json",
+    "sha256": "462d0ac1658382b43076b0ce276a4dd8100ca7ed567842363e99349a799e8f21"
+  },
+  "calendar": {
+    "path": "research/ba012-stage-a/calendar-v1.json",
+    "sha256": "b1034a5462f09723f297faba748291c304ee6597f02f0212e765b171226789b3"
+  },
+  "gold_schedule_amendment": {
+    "allowed_gold_month_numbers": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ],
+    "implementation_artifact_requirement": "Publish amended roll-map bytes and SHA256 before reading settlement prices. Validate against frozen v1 calendar and dated identities.",
+    "interval_construction": "Use previous mapped active contract at both endpoints. On roll date also require and seed new active contract settlement. Never subtract different contracts.",
+    "method": "Map each v1 selected October gold maturity to December of the same explicit full year; leave other gold maturities and all other markets unchanged.",
+    "raw_symbol_transform": "GCVy -> GCZy with full maturity year preserved",
+    "recompute": [
+      "active maturity and symbol",
+      "previous mapped active interval symbol",
+      "is_roll",
+      "deduplicated required old/new symbols",
+      "gold active LTD and exit metadata using December maturity rules, never copied October deadlines"
+    ],
+    "scope": "Hypothetical child exposures on parent settlements; matching child execution is not established"
+  },
+  "information_policy": {
+    "amendment_reason": "All72 v1 windows were incomplete. Historical CME active gold sequence excludes October; official settlement messages are an explicit separate reference source. These changes were chosen from coverage/contract evidence without a v1 return result.",
+    "capital_verdict_gate": "All72 verified sizing outcomes required for an all-cash capital rejection. Missing/ambiguous data and search limits are unresolved, never capital failure.",
+    "not_a_holdout": "2018-2023 remains seen development/feasibility; no claim of untouched validation.",
+    "reference_limit": "Product settlements occur at different times. This replaces the bounded-asynchronous minute reference with a causal end-of-day settlement panel; it does not establish simultaneous or executable marks.",
+    "settlement_prices_read_before_registration": false,
+    "v1_missingness_has_been_seen": true
+  },
+  "registered_utc": "2026-09-10T16:16:21.172640+00:00",
+  "registration_type": "Local pre-settlement-price-read data amendment; not an external timestamp or independent holdout",
+  "schema": "ba012-settlement-data-amendment-v2",
+  "scope": "Sizing participation only. No P&L, performance selection, live orders or funded approval.",
+  "selection": {
+    "deletions": "Any stat_type3/rtype24 DELETE(action2) for the instrument/session available by cutoff invalidates the whole day reference, regardless actual/final/intraday flags and even if another ADD exists. Conservative policy because documented delete matching is insufficient; do not invent a resurrection/matching rule.",
+    "eligibility": "stat_type3/rtype24 ADD(action1), stat_flags&2 !=0 and stat_flags&8 ==0; positive finite normalized price required. stat_flags integer must be0..15. Invalid candidate fields leave DATA_INCOMPLETE.",
+    "finality": "Final bit1 is recorded but not required or preferred over chronology. Latest eligible actual nonintraday message available by cutoff is selected; later final/revised prices are excluded.",
+    "key": [
+      "exact dated instrument identity",
+      "ts_ref session day"
+    ],
+    "missing": "No candidate, invalid identity/date/timestamp, missing roll endpoint or unresolved conflict -> DATA_INCOMPLETE; no fills, gap compression or fallback source/time.",
+    "ordering": [
+      "maximum eligible availability-order timestamp",
+      "maximum ts_event among that tie",
+      "require one publisher_id and channel_id among remaining tie; otherwise DATA_INCOMPLETE",
+      "maximum sequence within that publisher/channel",
+      "exact duplicate relevant records may deduplicate; conflicting price or stat_flags at final ordering key -> DATA_INCOMPLETE"
+    ],
+    "tick_convention": "Preserve trading/clearing tick flag. No price-based selection or preference between otherwise eligible tick flags.",
+    "unsupported_action": "Any pre-cutoff settlement action outside1/2 for that key -> DATA_INCOMPLETE"
+  },
+  "session_and_cutoff": {
+    "availability_order_timestamp": "genuine ts_recv when available under the modern rule; otherwise legacy ts_event",
+    "cutoff": "16:30:00 America/Chicago on that literal session date; timezone-aware conversion to UTC including DST.",
+    "event_gate": "ts_event must be finite/valid and <= session cutoff. Later revisions never affect that day reference.",
+    "genuine_capture_start_utc": "2017-05-21T00:00:00Z",
+    "legacy_capture_policy": "For earlier messages, capture timestamps are unavailable from the source. Use ts_event only; ignore unavailable or synthetic ts_recv, and label the reference LEGACY_EVENT_TIME_PROXY. This is not verified historic receipt-time availability.",
+    "modern_capture_gate": "For messages on/after genuine capture start, ts_recv must be finite/valid, >= ts_event and <= cutoff. Missing/null/UINT64_MAX capture timestamp makes that instrument/session DATA_INCOMPLETE.",
+    "session_day": "Literal UTC calendar date encoded in ts_ref (CME TradingReferenceDate). Do not timezone-convert ts_ref into Chicago. ts_ref must be finite, valid and date-precision midnight UTC."
+  },
+  "settlement_source": {
+    "actual_field": "stat_flags",
+    "child_dollars_per_normalized_parent_price_unit": [
+      "0.5",
+      "100",
+      "12500",
+      "1",
+      "5"
+    ],
+    "dataset": "GLBX.MDP3",
+    "flag_bits": {
+      "actual": 2,
+      "final": 1,
+      "intraday": 8,
+      "trading_tick_instead_of_clearing_tick": 4
+    },
+    "price_integer_scale": "1e-9",
+    "rtype": 24,
+    "schema": "statistics",
+    "stat_type": 3,
+    "units": [
+      "index_points",
+      "decimal_bond_points",
+      "USD_per_EUR",
+      "USD_per_ounce",
+      "cents_per_bushel"
+    ],
+    "update_action": {
+      "add": 1,
+      "delete": 2
+    }
+  },
+  "sources": [
+    {
+      "facts": "Official venue statistics; settlement stat_type3/rtype24; price1e-9; event/receive/reference timestamps; update_action1 added/2 deleted.",
+      "url": "https://databento.com/docs/schemas-and-data-formats/statistics"
+    },
+    {
+      "facts": "ts_ref is date-precision TradingReferenceDate; multiple preliminary/final messages; stat_flags bits1/2/4/8; settlement unavailable on MDP for instruments without open interest or volume.",
+      "url": "https://databento.com/docs/venues-and-datasets/glbx-mdp3"
+    },
+    {
+      "facts": "Before2017-05-21 legacy FIX flat files have no capture timestamps; dataset/schema coverage dates differ.",
+      "url": "https://databento.com/datasets/GLBX.MDP3"
+    },
+    {
+      "facts": "Historical active GC months Feb/Apr/Jun/Aug/Dec; October excluded.",
+      "url": "https://www.cmegroup.com/market-regulation/rule-filings/2017/09/17-358_1.pdf"
+    },
+    {
+      "facts": "October GC listed but excluded from active TAS/TAM sequence in2021.",
+      "url": "https://www.cmegroup.com/trading/metals/files/metals-prod-guide-2021.pdf"
+    }
+  ],
+  "stop_conditions": [
+    "Hard stop2026-09-10T16:42:18Z, including unresolved data/implementation; no automatic extension",
+    "Substantial unresolved deletion/timestamp/identity/roll ambiguity that requires a new research family or source",
+    "No broad data purchase without separate scoped authorization and exact estimate",
+    "No further data rule or parameter variants after observing v2 prices/results"
+  ],
+  "strategy_id": "BA-012",
+  "unchanged": {
+    "all_other_risk_cost_margin_stress_group_concentration_partial_fill_objective_tie_break_and_search_rules": "Exactly frozen v1; no fitting or alternative sweep",
+    "annual_volatility_target_fraction": 0.08,
+    "capital_cases_start_from_cash": true,
+    "capitals_usd": [
+      5000,
+      25000,
+      100000
+    ],
+    "covariance": "Demeaned sample denominator251; 50% diagonal shrink; annualize252",
+    "decision_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "lookback_scheduled_intervals": 252,
+    "market_order": [
+      "NES",
+      "MTN",
+      "M6E",
+      "1OZ",
+      "MZC"
+    ],
+    "monthly_cases": 72,
+    "parent_roots": [
+      "ES",
+      "TN",
+      "6E",
+      "GC",
+      "ZC"
+    ],
+    "range_end_exclusive": "2024-01-01",
+    "range_start_inclusive": "2016-01-11",
+    "warmup_years": [
+      2016,
+      2017
+    ]
+  },
+  "v1_is_preserved": true,
+  "version": 2
+}

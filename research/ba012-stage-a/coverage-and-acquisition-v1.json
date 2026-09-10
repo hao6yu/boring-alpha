@@ -1,0 +1,258 @@
+{
+  "acquired_joint_session_dates": 2007,
+  "aggregate_attempted_estimate_usd": "0.162474512840",
+  "approved_estimate_ceiling_usd": "1",
+  "archive_manifests": [
+    {
+      "attempted_estimate_usd": "0.001657456155",
+      "path": "data/futures/ba012-reference-history/20260910T125552254289Z/manifest.json",
+      "sha256": "9de97a06d20b115d1f994eb5f457546d60361df95ce5123903d82452cf0e414b",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0",
+      "path": "data/futures/ba012-reference-history/20260910T130231714069Z/manifest.json",
+      "sha256": "7125df8a35ccc1f34c32b661c8191352c3114b69384b73cddeb3d3044c6f7256",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.006213635197",
+      "path": "data/futures/ba012-reference-history/20260910T130443676272Z/manifest.json",
+      "sha256": "5c561ee218aa494e23a8ec646fa15d0d1b8ef5cba0050f9fd1034147d6904bdf",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.006407126775",
+      "path": "data/futures/ba012-reference-history/20260910T131219516098Z/manifest.json",
+      "sha256": "3d3b8a431e258f4fcaf2cf05186c3240ec7fde32d7d602fb09bbc3f5e74e4777",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.008608549819",
+      "path": "data/futures/ba012-reference-history/20260910T132601614651Z/manifest.json",
+      "sha256": "7d85cd4b2f0180c88fad920687250842de3190e63f7d965231b52fe8817a0461",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.010079815965",
+      "path": "data/futures/ba012-reference-history/20260910T132806615166Z/manifest.json",
+      "sha256": "c75e1a918a81314e8198171db43d163842d9345e99eafcc109873bf136b3dc70",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.009090453370",
+      "path": "data/futures/ba012-reference-history/20260910T133016442966Z/manifest.json",
+      "sha256": "693b31baa55743c6d666609c37293014e0e77b0d6452c20d4ca88cd91d3fb0bd",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.006925538175",
+      "path": "data/futures/ba012-reference-history/20260910T133233459085Z/manifest.json",
+      "sha256": "c0fdd778f9f58606d323ee76746458da0232d0c689dbb59b266b08f49322cbc4",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.006684586396",
+      "path": "data/futures/ba012-reference-history/20260910T133425413785Z/manifest.json",
+      "sha256": "b962c5077a94e5e019c770a077bff7777dd3158932c59574d93281114337fa1d",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.009919181449",
+      "path": "data/futures/ba012-reference-history/20260910T133611636673Z/manifest.json",
+      "sha256": "b8da5bf8daa633cd4ffdd1e81f5e9ebf85ec82566a42d56448813bebe9c1fb89",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.009824261053",
+      "path": "data/futures/ba012-reference-history/20260910T133813644947Z/manifest.json",
+      "sha256": "8f25afdfa6ef25bcc2875107629c10325b1cca463f7c14119b3f4a7b6b276cc6",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.011901557428",
+      "path": "data/futures/ba012-reference-history/20260910T134019947432Z/manifest.json",
+      "sha256": "2524485cd5812d6704f41574a3455a3af80bbbe38907fe237a712361f9183c41",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.072219818760",
+      "path": "data/futures/ba012-reference-history/20260910T134246230859Z/manifest.json",
+      "sha256": "6b062c1e63c301836549848cd64d1b3c51a850a6bb24d178e8f0ff96b7abff23",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.002792850134",
+      "path": "data/futures/ba012-reference-history/20260910T135317285936Z/manifest.json",
+      "sha256": "497f10230cd5753fb63c63924bbabe837ad412485782147ce3368e006e83531a",
+      "status": "failed"
+    },
+    {
+      "attempted_estimate_usd": "0.000149682164",
+      "path": "data/futures/ba012-reference-history/20260910T135430746917Z/manifest.json",
+      "sha256": "10798364e1f515d4059129c541322783fb2e24d0853973383bf742d038be3b7b",
+      "status": "complete"
+    }
+  ],
+  "budget_basis": "Provider estimates including failed/uncertain data attempts; actual billing not queried",
+  "capital_failure_established": false,
+  "expected_archive_dates": 2080,
+  "input_sha256": "603629b98c3d9f7c65dd9ed66865cf1c5c36df7ae7a75d4328901e3170846b0b",
+  "monthly_cases": 72,
+  "raw_records_in_complete_archives": 42944,
+  "ready_monthly_cases": 0,
+  "reference_issue_dates": 125,
+  "reference_issue_reasons": {
+    "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR": 134
+  },
+  "reference_issues_by_contract": {
+    "GCJ0": 1,
+    "GCQ0": 1,
+    "GCQ1": 1,
+    "GCV0": 5,
+    "GCV1": 14,
+    "GCV2": 14,
+    "GCV3": 13,
+    "GCV6": 10,
+    "GCV7": 3,
+    "GCV8": 13,
+    "GCV9": 10,
+    "TNH4": 1,
+    "TNH6": 1,
+    "TNH7": 3,
+    "TNH9": 1,
+    "TNM0": 1,
+    "TNM1": 1,
+    "TNM6": 9,
+    "TNM7": 2,
+    "TNM8": 2,
+    "TNM9": 5,
+    "TNU0": 2,
+    "TNU6": 5,
+    "TNU7": 4,
+    "TNU8": 2,
+    "TNU9": 2,
+    "TNZ6": 4,
+    "TNZ7": 1,
+    "TNZ8": 1,
+    "ZCK0": 1,
+    "ZCU0": 1
+  },
+  "reference_issues_by_market": {
+    "1OZ": 85,
+    "MTN": 47,
+    "MZC": 2
+  },
+  "reference_issues_by_year": {
+    "2016": {
+      "1OZ": 10,
+      "MTN": 22
+    },
+    "2017": {
+      "1OZ": 3,
+      "MTN": 7
+    },
+    "2018": {
+      "1OZ": 13,
+      "MTN": 6
+    },
+    "2019": {
+      "1OZ": 10,
+      "MTN": 7
+    },
+    "2020": {
+      "1OZ": 7,
+      "MTN": 3,
+      "MZC": 2
+    },
+    "2021": {
+      "1OZ": 15,
+      "MTN": 1
+    },
+    "2022": {
+      "1OZ": 14
+    },
+    "2023": {
+      "1OZ": 13,
+      "MTN": 1
+    }
+  },
+  "reserved_data_attempts": 2155,
+  "status": "COMPLETE_ARCHIVE_DATA_INCOMPLETE_STUDY",
+  "strategy_pnl_calculated": false,
+  "valid_intervals_by_month": {
+    "2018-01-31": 233,
+    "2018-02-28": 233,
+    "2018-03-29": 231,
+    "2018-04-30": 231,
+    "2018-05-31": 237,
+    "2018-06-29": 239,
+    "2018-07-31": 235,
+    "2018-08-31": 224,
+    "2018-09-28": 219,
+    "2018-10-31": 221,
+    "2018-11-30": 219,
+    "2018-12-31": 219,
+    "2019-01-31": 219,
+    "2019-02-28": 219,
+    "2019-03-29": 219,
+    "2019-04-30": 215,
+    "2019-05-31": 213,
+    "2019-06-28": 213,
+    "2019-07-31": 212,
+    "2019-08-30": 219,
+    "2019-09-30": 219,
+    "2019-10-31": 219,
+    "2019-11-29": 221,
+    "2019-12-31": 221,
+    "2020-01-31": 221,
+    "2020-02-28": 222,
+    "2020-03-31": 223,
+    "2020-04-30": 227,
+    "2020-05-29": 227,
+    "2020-06-30": 226,
+    "2020-07-31": 233,
+    "2020-08-31": 233,
+    "2020-09-30": 236,
+    "2020-10-30": 236,
+    "2020-11-30": 236,
+    "2020-12-31": 236,
+    "2021-01-29": 236,
+    "2021-02-26": 236,
+    "2021-03-31": 238,
+    "2021-04-30": 236,
+    "2021-05-28": 236,
+    "2021-06-30": 237,
+    "2021-07-30": 235,
+    "2021-08-31": 228,
+    "2021-09-30": 224,
+    "2021-10-29": 224,
+    "2021-11-30": 224,
+    "2021-12-31": 224,
+    "2022-01-31": 224,
+    "2022-02-28": 224,
+    "2022-03-31": 224,
+    "2022-04-29": 226,
+    "2022-05-31": 228,
+    "2022-06-30": 228,
+    "2022-07-29": 227,
+    "2022-08-31": 229,
+    "2022-09-30": 229,
+    "2022-10-31": 229,
+    "2022-11-30": 229,
+    "2022-12-30": 229,
+    "2023-01-31": 229,
+    "2023-02-28": 229,
+    "2023-03-31": 229,
+    "2023-04-28": 229,
+    "2023-05-31": 229,
+    "2023-06-30": 229,
+    "2023-07-31": 231,
+    "2023-08-31": 228,
+    "2023-09-29": 230,
+    "2023-10-31": 230,
+    "2023-11-30": 228,
+    "2023-12-29": 228
+  },
+  "verified_complete_archive_dates": 2080
+}

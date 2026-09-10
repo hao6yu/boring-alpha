@@ -1,0 +1,201 @@
+{
+  "description": "Unmodified public CME PDFs; current URLs are mutable. Retrieval timestamps use browser download-file mtime; preserved_utc records byte-copy time. Report dates and FINAL/PRELIMINARY status are preserved in header_lines.",
+  "initial_failed_attempts": [
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01A_Summary_Volume_And_Open_Interest_AlT_Investment_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.840099+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01B_Summary_Volume_And_Open_Interest_FX_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.840604+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01C_Summary_Volume_And_Open_Interest_Equity_Index_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.840679+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section02A_Summary_Volume_And_Open_Interest_Int_Rates_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.840729+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section02B_Summary_Volume_And_Open_Interest_Metals_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.885271+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section03_Agricultural_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.885371+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section06_Currency_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.885437+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section09_Interest_Rate_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.885506+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section11_Equity_And_Index_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.912035+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section62_Metals_Futures_Products.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:34.912124+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    }
+  ],
+  "curl_failed_attempts": [
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01A_Summary_Volume_And_Open_Interest_AlT_Investment_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.423305+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section01A_Summary_Volume_And_Open_Interest_AlT_Investment_Futures_And_Options.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01B_Summary_Volume_And_Open_Interest_FX_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.423553+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section01B_Summary_Volume_And_Open_Interest_FX_Futures_And_Options.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01C_Summary_Volume_And_Open_Interest_Equity_Index_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.423633+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section01C_Summary_Volume_And_Open_Interest_Equity_Index_Futures_And_Options.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section02A_Summary_Volume_And_Open_Interest_Int_Rates_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.423678+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section02A_Summary_Volume_And_Open_Interest_Int_Rates_Futures_And_Options.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section02B_Summary_Volume_And_Open_Interest_Metals_Futures_And_Options.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.566675+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section02B_Summary_Volume_And_Open_Interest_Metals_Futures_And_Options.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section03_Agricultural_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.570679+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section03_Agricultural_Futures.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section06_Currency_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.591563+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section06_Currency_Futures.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section09_Interest_Rate_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.592789+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section09_Interest_Rate_Futures.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section11_Equity_And_Index_Futures.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.616937+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section11_Equity_And_Index_Futures.pdf']' returned non-zero exit status 92."
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section62_Metals_Futures_Products.pdf",
+      "retrieval_started_utc": "2026-09-10T05:58:52.620991+00:00",
+      "error": "Command '['/usr/bin/curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '35', 'https://www.cmegroup.com/daily_bulletin/current/Section62_Metals_Futures_Products.pdf']' returned non-zero exit status 92."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01A_Summary_Volume_And_Open_Interest_AlT_Investment_Futures_And_Options.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section01A_Summary_Volume_And_Open_Interest_AlT_Investment_Futures_And_Options.pdf",
+      "preserved_utc": "2026-09-10T06:00:13.367711+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01B_Summary_Volume_And_Open_Interest_FX_Futures_And_Options.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section01B_Summary_Volume_And_Open_Interest_FX_Futures_And_Options.pdf",
+      "preserved_utc": "2026-09-10T06:00:13.367855+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section01C_Summary_Volume_And_Open_Interest_Equity_Index_Futures_And_Options.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section01C_Summary_Volume_And_Open_Interest_Equity_Index_Futures_And_Options.pdf",
+      "preserved_utc": "2026-09-10T06:00:13.367873+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section02A_Summary_Volume_And_Open_Interest_Int_Rates_Futures_And_Options.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section02A_Summary_Volume_And_Open_Interest_Int_Rates_Futures_And_Options.pdf",
+      "preserved_utc": "2026-09-10T06:00:13.367886+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section02B_Summary_Volume_And_Open_Interest_Metals_Futures_And_Options.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section02B_Summary_Volume_And_Open_Interest_Metals_Futures_And_Options.pdf",
+      "preserved_utc": "2026-09-10T06:00:13.367898+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section03_Agricultural_Futures.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section03_Agricultural_Futures.pdf",
+      "preserved_utc": "2026-09-10T06:00:13.367908+00:00",
+      "path": "/Users/haoyu/development/boring-alpha/research/trend-feasibility/2026-09-10/Section03_Agricultural_Futures.pdf",
+      "bytes": 94188,
+      "sha256": "3e326538da41ab8496f4eee981553037908238df7e403e388652275e97efd94e",
+      "retrieval_finished_utc": "2026-09-10T05:59:07.512604+00:00",
+      "retrieval_timestamp_method": "browser downloaded-file mtime",
+      "header_lines": [
+        "03                                                              AGRICULTURAL FUTURES                                                                                  03",
+        "Side 01                                                                                                                                                       Side 01",
+        "                                                 2026 DAILY INFORMATION BULLETIN - http://www.cmegroup.com/dailybulletin",
+        "                                                                             CME Group, Inc.",
+        "                                                             20 South Wacker Drive, Chicago, Illinois 60606-7499.",
+        "                                                                      Customer Service: (312) 930-1000",
+        "                                                                      PRELIMINARY",
+        "PG03 BULLETIN # 173@                                                AGRICULTURAL FUTURES                                                Wed, Sep 09, 2026       PG03",
+        "FOR PRODUCTS THAT ARE TRADED IN BOTH Open Outcry(RTH) AND on CME Globex (ETH) THE INFORMATION REPRESENTED ON THIS PAGE FOR OPENING RANGE, HIGH, LOW,",
+        "CLOSING RANGE, SETTLEMENT PRICE AND VOLUME REPRESENTS RTH ACTIVITY ONLY. NOTE: LIFE OF CONTRACT HIGH AND LOW REPRESENTS BOTH RTH AND ETH. RTH VOLUME",
+        "REFLECTS PIT TRADING, BLOCK TRADES AND CASH-FOR-FUTURES ONLY. ETH REPRESENTS GLOBEX VOLUME TRANSACTIONS FROM THE GLOBEX\u00ae ELECTRONIC SESSION ONLY.",
+        "VOLUME OR OPEN INTEREST (BOTH BEFORE AND AFTER THE LAST DAY OF TRADING) MAY BE AFFECTED BY: CASH FOR FUTURES, SPREADS, AND PRIOR DAYS\u2019 CLEARED TRADES",
+        "(OUT-TRADES), POSITION ADJUSTMENTS, OPTION EXERCISES, POSITIONS IN DELIVERY, OR POSITIONS IN A CASH SETTLEMENT CYCLE. PRODUCT LISTINGS REPRESENT",
+        "CONTRACTS WITH PRICE/VOLUME ACTIVITY AND/OR HAVE ESTABLISHED OPEN INTEREST. PRODUCTS THAT ARE ELIGIBLE TO TRADE, BUT ARE INACTIVE, DO NOT APPEAR IN THIS",
+        "REPORT. LEGEND: B=BID, A=ASK, N=NOMINAL, P=POST SETTLEMENT SESSION, #=NEW CONTRACT HIGH PRICE, *=NEW CONTRACT LOW PRICE, R=RECORD VOLUME OR OPEN",
+        "INTEREST. SETTLEMENT PRICES ARE DETERMINED BY CME RULE 813."
+      ]
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section06_Currency_Futures.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section06_Currency_Futures.pdf",
+      "preserved_utc": "2026-09-10T06:00:16.361352+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section09_Interest_Rate_Futures.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section09_Interest_Rate_Futures.pdf",
+      "preserved_utc": "2026-09-10T06:00:16.361400+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section11_Equity_And_Index_Futures.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section11_Equity_And_Index_Futures.pdf",
+      "preserved_utc": "2026-09-10T06:00:16.361414+00:00",
+      "error": "Browser download not found"
+    },
+    {
+      "url": "https://www.cmegroup.com/daily_bulletin/current/Section62_Metals_Futures_Products.pdf",
+      "download_method": "CME public link downloaded through browser",
+      "source_download_path": "/Users/haoyu/Downloads/Section62_Metals_Futures_Products.pdf",
+      "preserved_utc": "2026-09-10T06:00:16.361432+00:00",
+      "error": "Browser download not found"
+    }
+  ]
+}

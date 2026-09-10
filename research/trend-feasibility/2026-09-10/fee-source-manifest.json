@@ -1,0 +1,65 @@
+[
+  {
+    "file": "ibkr-commissions-futures.html",
+    "url": "https://www.interactivebrokers.com/en/pricing/commissions-futures.php",
+    "retrieved_utc": "2026-09-10T05:59:38.430603+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 571559,
+    "sha256": "639c09bce12ceaf5bb21d411650fef197ac65a57a51011044f08e40e7adbd886",
+    "retrieval": "curl with certificate verification"
+  },
+  {
+    "file": "ibkr-cme-fees.html",
+    "url": "https://www.interactivebrokers.com/en/accounts/fees/CME.php",
+    "retrieved_utc": "2026-09-10T05:59:38.430828+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 214536,
+    "sha256": "89784fd4e660ff7e5813b57630fed6668e2818e03e605cecf8ac8209838725c7",
+    "retrieval": "curl with certificate verification"
+  },
+  {
+    "file": "ibkr-cbot-fees.html",
+    "url": "https://www.interactivebrokers.com/en/accounts/fees/CBOT.php",
+    "retrieved_utc": "2026-09-10T05:59:38.430894+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 213367,
+    "sha256": "b7fc6f84f8bf4d8c3d72ccdefad0ae218f45774fa613d5f64fc23e163c2f85f2",
+    "retrieval": "curl with certificate verification"
+  },
+  {
+    "file": "ibkr-comex-fees.html",
+    "url": "https://portal.interactivebrokers.com/en/accounts/fees/COMEX.php",
+    "retrieved_utc": "2026-09-10T05:59:38.430942+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 199969,
+    "sha256": "086ad70a01da876b8c559e967a4efeb79f436dce2a106b1f3d01297a41586551",
+    "retrieval": "curl with certificate verification"
+  },
+  {
+    "file": "ibkr-fixed-plan.html",
+    "url": "https://www.interactivebrokers.com/en/accounts/fees/futnorthambundcoms.php?path=3",
+    "retrieved_utc": "2026-09-10T05:59:38.772047+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 11437,
+    "sha256": "dcb9f18195bc76f651f218c33c5043c1853457c35c8c523aedb60bae230e2964",
+    "retrieval": "curl with certificate verification"
+  },
+  {
+    "file": "ibkr-market-data.html",
+    "url": "https://www.interactivebrokers.com/en/pricing/market-data-pricing.php",
+    "retrieved_utc": "2026-09-10T05:59:38.794873+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 438282,
+    "sha256": "9bfef04fcbdf95db38478d3f99cabefb3950ea5688d547096d82c539b5777edf",
+    "retrieval": "curl with certificate verification"
+  },
+  {
+    "file": "ibkr-interest.html",
+    "url": "https://www.interactivebrokers.com/en/accounts/fees/pricing-interest-rates.php",
+    "retrieved_utc": "2026-09-10T05:59:38.829146+00:00",
+    "initial_fetch_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "bytes": 323668,
+    "sha256": "99a001829853a1edc688f007017a53fe028bd0daa28b101a2491a66b429bc933",
+    "retrieval": "curl with certificate verification"
+  }
+]

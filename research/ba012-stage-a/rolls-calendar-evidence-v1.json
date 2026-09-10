@@ -1,0 +1,57 @@
+{
+  "capture_method": "Read-only browser, calendar tables only; no API keys or market-data archive reads",
+  "gold_interpretation": "These exclude Thanksgiving 2026-11-26 and Memorial Day 2027-05-31 from the prior-month third-last-business-day count.",
+  "gold_rows": [
+    {
+      "contract": "1OZZ26",
+      "last_trade": "2026-11-25",
+      "settlement": "2026-11-25"
+    },
+    {
+      "contract": "1OZM27",
+      "last_trade": "2027-05-26",
+      "settlement": "2027-05-26"
+    }
+  ],
+  "mtn_interpretation": "Rule54 uses two business days before the named month. Current MTN last-trade dates match TN first-position dates; TN June2027 month-start sequence explicitly excludes MemorialDay. This is documented support for the shared Treasury business-day interpretation, not observed prelaunch MTN expirations.",
+  "mtn_rows": [
+    {
+      "contract": "MTNZ26",
+      "last_trade": "2026-11-27"
+    },
+    {
+      "contract": "MTNH27",
+      "last_trade": "2027-02-25"
+    }
+  ],
+  "review_date": "2026-09-10",
+  "sources": {
+    "databento_units": "https://databento.com/docs/examples/instrument-definitions/contract-notional",
+    "gold_calendar": "https://www.cmegroup.com/markets/metals/precious/1-ounce-gold.calendar.html",
+    "gold_faq": "https://www.cmegroup.com/articles/faqs/faq-1-oz-gold-futures.html",
+    "gold_rule131": "https://www.cmegroup.com/rulebook/COMEX/1a/131.pdf",
+    "ibkr_delivery_policy": "https://www.interactivebrokers.ca/en/trading/marginRequirements/physicalDeliveryLiquidationRules.php",
+    "m6e_rule292": "https://www.cmegroup.com/content/dam/cmegroup/rulebook/CME/III/250/292/292.pdf",
+    "mtn_calendar": "https://www.cmegroup.com/markets/interest-rates/us-treasury/micro-ultra-10-year-us-treasury-note.calendar.html",
+    "mtn_rule54": "https://www.cmegroup.com/rulebook/CBOT/III/54.pdf?redirect=/rulebook/CBOT/V/54.pdf",
+    "mzc_rule_filing": "https://www.cmegroup.com/content/dam/cmegroup/market-regulation/rule-filings/2025/1/25-024.pdf",
+    "nes_faq": "https://www.cmegroup.com/articles/faqs/faq-e-nano-equity-index-futures.html",
+    "tn_calendar": "https://www.cmegroup.com/markets/interest-rates/us-treasury/ultra-10-year-us-treasury-note.calendar.html"
+  },
+  "tn_rows": [
+    {
+      "contract": "TNZ26",
+      "first_delivery": "2026-12-01",
+      "first_holding": "2026-11-24",
+      "first_notice": "2026-11-30",
+      "first_position": "2026-11-27"
+    },
+    {
+      "contract": "TNM27",
+      "first_delivery": "2027-06-01",
+      "first_holding": "2027-05-25",
+      "first_notice": "2027-05-28",
+      "first_position": "2027-05-27"
+    }
+  ]
+}

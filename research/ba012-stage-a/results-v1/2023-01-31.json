@@ -1,0 +1,49 @@
+{
+  "capital_results": {
+    "100000": {
+      "decision": "UNRESOLVED",
+      "optimum_verified": false,
+      "quantities": null,
+      "status": "DATA_INCOMPLETE"
+    },
+    "25000": {
+      "decision": "UNRESOLVED",
+      "optimum_verified": false,
+      "quantities": null,
+      "status": "DATA_INCOMPLETE"
+    },
+    "5000": {
+      "decision": "UNRESOLVED",
+      "optimum_verified": false,
+      "quantities": null,
+      "status": "DATA_INCOMPLETE"
+    }
+  },
+  "decision_date_chicago": "2023-01-31",
+  "input_status": "DATA_INCOMPLETE",
+  "missing_interval_dates": [
+    "2022-07-20",
+    "2022-07-21",
+    "2022-07-26",
+    "2022-07-27",
+    "2022-08-01",
+    "2022-08-02",
+    "2022-08-15",
+    "2022-08-16",
+    "2022-08-17",
+    "2022-08-23",
+    "2022-08-24",
+    "2022-08-25",
+    "2022-08-26",
+    "2022-09-07",
+    "2022-09-08",
+    "2022-09-09",
+    "2022-09-12",
+    "2022-09-13",
+    "2022-09-14",
+    "2022-09-19",
+    "2022-09-20",
+    "2022-09-21",
+    "2022-09-22"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "annual_volatility_target_fraction": "0.08",
+  "authorized_by": "User: okay go test those two cases; virtual $25,000 and $100,000 sizing",
+  "baseline_source": "Reuse verified $5,000 results from the pinned input report; do not recompute them",
+  "baseline_usd": 5000,
+  "capitals_usd": [
+    25000,
+    100000
+  ],
+  "input_ready_cases": 25,
+  "inputs": [
+    {
+      "path": "research/ba012-stage-a/settlement-inputs-v2-continuation.json",
+      "sha256": "2b309c135d3b8982450a186e4e05f0d400bd02ec71f8ba6c98044cb77c3986cf"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-amendment-v2.json",
+      "sha256": "a556ee73b7d2d54a054b88afebf3c8f9d736680b17657af71af4c3a0fae397a3"
+    },
+    {
+      "path": "research/ba012-stage-a/rolls-v2.json",
+      "sha256": "ae99c75f4d6da08a83afeb60c89d4d9d2073c45e8b180ce341a47cbcfca0fafd"
+    },
+    {
+      "path": "research/ba012-stage-a/calendar-v1.json",
+      "sha256": "b1034a5462f09723f297faba748291c304ee6597f02f0212e765b171226789b3"
+    },
+    {
+      "path": "docs/strategies/BA-012.md",
+      "sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f"
+    },
+    {
+      "path": "tools/ba012_sizing.py",
+      "sha256": "5b51ffe91ed845be846801c0d695897801a1c0430c910852310ac9ca4c397726"
+    },
+    {
+      "path": "tools/run_ba012_stage_a.py",
+      "sha256": "5da0f0167b1fbd374d380f6c3a41e5d63b61a8d10ff67744fc0786349ac0ed50"
+    }
+  ],
+  "max_search_nodes_per_case": 2000000,
+  "missing_policy": "Retain DATA_INCOMPLETE and SEARCH_LIMIT as UNRESOLVED with null quantities; exclude from participation denominator",
+  "monthly_cases": 72,
+  "operating_buffer_usd": "100",
+  "registered_at_utc": "2026-09-10T19:56:38.494594+00:00",
+  "schema": "ba012-v2-capital-sensitivity-plan-v1",
+  "scope": "Independent from-cash sizing on already seen v2 development inputs; no returns, account-path simulation, price purchase, holdout reading or funded recommendation",
+  "simulated_loss_budget_fraction": "0.20",
+  "unchanged": "Signals, covariance, shrinkage, parent-to-child sensitivities, costs, margin proxies, stress shocks, group/concentration rules, partial-fill feasibility, objective and ties"
+}

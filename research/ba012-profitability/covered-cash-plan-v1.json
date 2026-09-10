@@ -1,0 +1,59 @@
+{
+  "account_rules": "Continuous marked equity, no deposits, no resets, zero positions, zero trade costs, fixed1000 drawdown halt threshold; no taxes or hosting costs per existing protocol.",
+  "authorized_by": "User: test the profitability?",
+  "base_and_stress": "Both use unchanged zero positions established by necessary-infeasibility proofs; execution-cost scenarios coincide because there are no executions.",
+  "benchmark_annual_rates": [
+    "0.04",
+    "0.06"
+  ],
+  "benchmark_day_basis": 365,
+  "cash_interest_rate": "0",
+  "daily_data_requirement": "Verify all account joint dates have complete preceding-day and same-day252interval windows.",
+  "end_exclusive": "2024-01-01",
+  "fee_schedule": "First joint session of every calendar month, including while flat.",
+  "initial_equity_usd": "5000.00",
+  "inputs": [
+    {
+      "path": "docs/strategies/BA-012.md",
+      "sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-amendment-v2.json",
+      "sha256": "a556ee73b7d2d54a054b88afebf3c8f9d736680b17657af71af4c3a0fae397a3"
+    },
+    {
+      "path": "research/ba012-stage-a/calendar-v1.json",
+      "sha256": "b1034a5462f09723f297faba748291c304ee6597f02f0212e765b171226789b3"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-inputs-v2-continuation.json",
+      "sha256": "2b309c135d3b8982450a186e4e05f0d400bd02ec71f8ba6c98044cb77c3986cf"
+    },
+    {
+      "path": "tools/ba012_sizing.py",
+      "sha256": "5b51ffe91ed845be846801c0d695897801a1c0430c910852310ac9ca4c397726"
+    }
+  ],
+  "label": "Coverage-selected development cash-only profitability diagnostic; not the planned full 2018\u20132023 Stage B study",
+  "last_used_signal_date_chicago": "2023-11-30",
+  "limitations": [
+    "The window is selected after observing coverage and all-cash sizing; this is not independent validation.",
+    "No larger-capital or fractional implementation is substituted.",
+    "No claim about trading returns or expected future returns.",
+    "Original paid data acquisition is research expense, separate from the predeclared recurring4.65 monthly operating-data charge."
+  ],
+  "monthly_data_fee_usd": "4.65",
+  "outputs": [
+    "Full daily/event cash ledger",
+    "Monthly and annual-period return summaries",
+    "Ending equity, net dollars, calendar CAGR, maximum drawdown and halt state",
+    "Four/six percent cash scenario comparisons",
+    "Explicit unresolved status for the full2018\u20132023 strategy test"
+  ],
+  "registered_at_utc": "2026-09-10T18:38:43.482535+00:00",
+  "required_proof": "Every used monthly signal has complete252interval input and a verified necessary proof of fewer than three feasible market groups at5000. Each decision is lagged to the next month. Equity declines cannot relax the one-contract risk/funding/loss bounds; verify monthly at actual pre/post-fee equity.",
+  "schema": "ba012-covered-cash-profitability-plan-v1",
+  "seed_signal_date_chicago": "2022-06-30",
+  "start_inclusive": "2022-07-01",
+  "window_selection": "Longest fully covered contiguous signal run supporting return months within2018\u20132023, selected from already observed input coverage and sizing proofs, before computing this account ledger. No return-based window or rule search."
+}

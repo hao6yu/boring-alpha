@@ -8,12 +8,37 @@ BoringAlpha is a small, dependency-light laboratory for systematic trading
 research. Its first job is not to make money. Its first job is to make it hard
 to fool ourselves.
 
-**Active research, September 9, 2026:** the current mandate is U.S.-accessible
-quantitative crypto trading with a $5,000 pilot, not ETF allocation. BA-007's
-simulator is under a documented economic correction; its historical headline
-results are not reliable deployment evidence. [Current status and commands](docs/QUANT_RESEARCH.md)
-cover the repairs and BA-009's public spot/futures feasibility screen. Earlier
-ETF research below remains historical context.
+**Active research, September 10, 2026:** the current mandate is U.S.-accessible
+quantitative trading with a possible $5,000 pilot, not ETF allocation.
+[BA-012](docs/strategies/BA-012.md) defines a slow, diversified futures-trend
+research protocol. **All 181 settlement downloads are now complete and verified.**
+The [completion report](docs/notes/2026-09-10-ba012-download-complete.md) records
+3.28 million raw statistics records and $0.611430853385 in cumulative provider
+estimates, including failed and interrupted attempts. Under the unchanged data
+rules, 25 of 72 monthly windows have complete inputs. All 25 return verified
+cash decisions at $5,000 because the required three-group basket cannot fit
+the risk and money limits; 47 windows remain unresolved. The subsequent
+[covered-period profitability diagnostic](docs/notes/2026-09-10-ba012-profitability-diagnostic.md)
+used July 2022–December 2023 with complete daily risk history. The continuous
+$5,000 account made no trades and ended at $4,916.30 after modeled data fees
+(−1.1161% annualized). This is a cash/expense result; the full protocol's capital
+verdict and trading profitability remain unestablished. The subsequent
+[virtual capital checks](docs/notes/2026-09-10-ba012-capital-sensitivity.md)
+found nonzero portfolios at both $25,000 and $100,000 in all 25 usable cases
+under the same percentage risk policies. The subsequent
+[larger-account profitability diagnostic](docs/notes/2026-09-10-ba012-traded-profitability.md)
+is negative at both balances: July 2022–November 23, 2023 base/stress annualized
+returns are −1.96%/−4.49% at $25,000 and −0.99%/−6.69% at $100,000. All four
+full December-2023 runs remain unresolved at a missing November 24 held Treasury
+mark; the shorter boundary was fixed before returns. These are hypothetical
+parent-price exposures. No holdout, native execution or funded pass follows.
+The original [Stage A result](docs/notes/2026-09-10-ba012-stage-a-result.md),
+the [earlier bounded attempt](docs/notes/2026-09-10-ba012-final-feasibility.md),
+and both frozen data specifications are preserved. No return study or bot follows
+automatically from this partial sizing result.
+[Current status and history](docs/QUANT_RESEARCH.md) preserve the earlier
+crypto corrections and failed MES experiments. Earlier ETF research below
+remains historical context.
 
 The initial strategy, **BA-001 Multi-Asset Trend**, is deliberately simple:
 eight fixed ETF sleeves are invested when their trailing 12-month total return

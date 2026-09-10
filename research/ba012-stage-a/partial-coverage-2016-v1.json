@@ -1,0 +1,157 @@
+{
+  "schema": "ba012-partial-coverage-audit-v1",
+  "recorded_utc": "2026-09-10T13:11:56.005901+00:00",
+  "scope": "Partial acquisition only, not the final coverage or sizing result",
+  "acquired_joint_dates": 103,
+  "first_acquired_date": "2016-01-11",
+  "last_acquired_date": "2016-06-13",
+  "reference_issues_within_acquired_dates": [
+    {
+      "date_chicago": "2016-01-11",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNH6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-02-19",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-02-22",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-02-23",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-02-24",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-02-25",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-03-18",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-04-12",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-04-15",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-05-18",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNM6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-05-20",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNU6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-05-23",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNU6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    },
+    {
+      "date_chicago": "2016-05-24",
+      "issues": [
+        {
+          "market": "MTN",
+          "symbol": "TNU6",
+          "reason": "MISSING_EXACT_OUTRIGHT_REFERENCE_BAR"
+        }
+      ]
+    }
+  ],
+  "mapping_sha256": "f933f9ca008c4f75ea5abd76224dc9a20a9bc48247f07f769c44be08bce7b117",
+  "archive_manifests": [
+    {
+      "path": "/Users/haoyu/development/boring-alpha/data/futures/ba012-reference-history/20260910T125552254289Z/manifest.json",
+      "sha256": "9de97a06d20b115d1f994eb5f457546d60361df95ce5123903d82452cf0e414b"
+    },
+    {
+      "path": "/Users/haoyu/development/boring-alpha/data/futures/ba012-reference-history/20260910T130231714069Z/manifest.json",
+      "sha256": "7125df8a35ccc1f34c32b661c8191352c3114b69384b73cddeb3d3044c6f7256"
+    },
+    {
+      "path": "/Users/haoyu/development/boring-alpha/data/futures/ba012-reference-history/20260910T130443676272Z/manifest.json",
+      "sha256": "5c561ee218aa494e23a8ec646fa15d0d1b8ef5cba0050f9fd1034147d6904bdf"
+    }
+  ],
+  "strategy_pnl_calculated": false,
+  "interpretation": "Early TN exact reference gaps observed; no inference about later years or capital feasibility."
+}

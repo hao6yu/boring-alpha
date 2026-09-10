@@ -1,0 +1,48 @@
+{
+  "schema": "ba012-settlement-query-plan-v1",
+  "rolls_sha256": "462d0ac1658382b43076b0ce276a4dd8100ca7ed567842363e99349a799e8f21",
+  "calendar_sha256": "b1034a5462f09723f297faba748291c304ee6597f02f0212e765b171226789b3",
+  "gold_change": "Replace each GCV maturity with same-year GCZ; deduplicate.",
+  "queries": [
+    {
+      "dataset": "GLBX.MDP3",
+      "schema": "statistics",
+      "stype_in": "raw_symbol",
+      "symbols": "ESH0,ESH1,ESH2,ESH3,ESH4,ESH6,ESH7,ESH8,ESH9,ESM0,ESM1,ESM2,ESM3,ESM6,ESM7,ESM8,ESM9,ESU0,ESU1,ESU2,ESU3,ESU6,ESU7,ESU8,ESU9,ESZ0,ESZ1,ESZ2,ESZ3,ESZ6,ESZ7,ESZ8,ESZ9",
+      "start": "2016-01-11",
+      "end": "2024-01-01"
+    },
+    {
+      "dataset": "GLBX.MDP3",
+      "schema": "statistics",
+      "stype_in": "raw_symbol",
+      "symbols": "TNH0,TNH1,TNH2,TNH3,TNH4,TNH6,TNH7,TNH8,TNH9,TNM0,TNM1,TNM2,TNM3,TNM6,TNM7,TNM8,TNM9,TNU0,TNU1,TNU2,TNU3,TNU6,TNU7,TNU8,TNU9,TNZ0,TNZ1,TNZ2,TNZ3,TNZ6,TNZ7,TNZ8,TNZ9",
+      "start": "2016-01-11",
+      "end": "2024-01-01"
+    },
+    {
+      "dataset": "GLBX.MDP3",
+      "schema": "statistics",
+      "stype_in": "raw_symbol",
+      "symbols": "6EH0,6EH1,6EH2,6EH3,6EH4,6EH6,6EH7,6EH8,6EH9,6EM0,6EM1,6EM2,6EM3,6EM6,6EM7,6EM8,6EM9,6EU0,6EU1,6EU2,6EU3,6EU6,6EU7,6EU8,6EU9,6EZ0,6EZ1,6EZ2,6EZ3,6EZ6,6EZ7,6EZ8,6EZ9",
+      "start": "2016-01-11",
+      "end": "2024-01-01"
+    },
+    {
+      "dataset": "GLBX.MDP3",
+      "schema": "statistics",
+      "stype_in": "raw_symbol",
+      "symbols": "GCG0,GCG1,GCG2,GCG3,GCG4,GCG6,GCG7,GCG8,GCG9,GCJ0,GCJ1,GCJ2,GCJ3,GCJ6,GCJ7,GCJ8,GCJ9,GCM0,GCM1,GCM2,GCM3,GCM6,GCM7,GCM8,GCM9,GCQ0,GCQ1,GCQ2,GCQ3,GCQ6,GCQ7,GCQ8,GCQ9,GCZ0,GCZ1,GCZ2,GCZ3,GCZ6,GCZ7,GCZ8,GCZ9",
+      "start": "2016-01-11",
+      "end": "2024-01-01"
+    },
+    {
+      "dataset": "GLBX.MDP3",
+      "schema": "statistics",
+      "stype_in": "raw_symbol",
+      "symbols": "ZCH0,ZCH1,ZCH2,ZCH3,ZCH4,ZCH6,ZCH7,ZCH8,ZCH9,ZCK0,ZCK1,ZCK2,ZCK3,ZCK6,ZCK7,ZCK8,ZCK9,ZCN0,ZCN1,ZCN2,ZCN3,ZCN6,ZCN7,ZCN8,ZCN9,ZCU0,ZCU1,ZCU2,ZCU3,ZCU6,ZCU7,ZCU8,ZCU9,ZCZ0,ZCZ1,ZCZ2,ZCZ3,ZCZ6,ZCZ7,ZCZ8,ZCZ9",
+      "start": "2016-01-11",
+      "end": "2024-01-01"
+    }
+  ]
+}

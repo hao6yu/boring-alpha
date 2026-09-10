@@ -1,0 +1,14 @@
+{
+  "authorized_by": "User: lets finish the download, i hae enough credits still",
+  "automatic_paid_retries": false,
+  "deadline_utc": null,
+  "frozen_amendment_sha256": "a556ee73b7d2d54a054b88afebf3c8f9d736680b17657af71af4c3a0fae397a3",
+  "live_trades_authorized": false,
+  "maximum_concurrent_downloads": 4,
+  "maximum_total_provider_estimate_usd": "1",
+  "prior_deadline_superseded": true,
+  "recorded_at_utc": "2026-09-10T16:50:04.304984+00:00",
+  "schema": "ba012-download-continuation-authorization-v1",
+  "scope": "Finish the existing 181-query active-interval settlement download and verify archived coverage; reuse completed files. Existing data rules and $1 cumulative estimated ceiling remain unchanged.",
+  "strategy_pnl_authorized_by_this_extension": false
+}

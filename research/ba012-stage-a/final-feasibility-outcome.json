@@ -1,0 +1,99 @@
+{
+  "acquisition": {
+    "complete_queries": 3,
+    "interrupted_queries": 1,
+    "planned_narrow_queries": 181,
+    "raw_records": 81972,
+    "unacquired_queries": 177
+  },
+  "acquisition_stopped_at_utc": "2026-09-10T16:35:51Z",
+  "artifacts": [
+    {
+      "path": "research/ba012-stage-a/final-feasibility-attempt.json",
+      "sha256": "23c536e8505bdafbcd2a361bb020e129f32022f3a3bafcf9d5a7d18239f6794a"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-amendment-v2.json",
+      "sha256": "a556ee73b7d2d54a054b88afebf3c8f9d736680b17657af71af4c3a0fae397a3"
+    },
+    {
+      "path": "research/ba012-stage-a/rolls-v2.json",
+      "sha256": "ae99c75f4d6da08a83afeb60c89d4d9d2073c45e8b180ce341a47cbcfca0fafd"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-inputs-v2.json",
+      "sha256": "096c328bd3f1cfe701031c9c2f567b722c8bf011c7e9969a93c463e9f98c19da"
+    },
+    {
+      "path": "/Users/haoyu/development/boring-alpha/data/futures/ba012-settlements/20260910T162059838707Z/manifest.json",
+      "sha256": "4463976323797352987553b9a72442e89def287e33a34666e418d63300ebc1c7"
+    },
+    {
+      "path": "/Users/haoyu/development/boring-alpha/data/futures/ba012-settlements/20260910T162414397199Z/manifest.json",
+      "sha256": "918f9ac52c76b6cf23d716eb09e24737f3aa1decc149e39a6b73e9905874991d"
+    },
+    {
+      "path": "/Users/haoyu/development/boring-alpha/data/futures/ba012-settlements/20260910T163244052927Z/manifest.json",
+      "sha256": "3a285f6d1011c3d21d67939633b3cf34ad7d622e7d210ef17d3de557b832ff60"
+    },
+    {
+      "path": "tools/fetch_ba012_settlements.py",
+      "sha256": "291e267d505f681697479319a1f8c2392ce1a9e66aeea7a35c10fe23be1f3179"
+    },
+    {
+      "path": "tools/prepare_ba012_settlements.py",
+      "sha256": "515070545001afda34855120b95db99c6a69bca4c5d6bbea6e03cb4a1d7f00ea"
+    },
+    {
+      "path": "docs/notes/2026-09-10-ba012-final-feasibility.md",
+      "sha256": "9c80578e520469c5e5d376bc0c990085cd2697bd076724171a34c2d3e982c847"
+    }
+  ],
+  "budget": {
+    "actual_billing_verified": false,
+    "ceiling_usd": "1",
+    "cumulative_reserved_estimate_usd": "0.365269779944",
+    "failed_and_interrupted_reservations_included": true,
+    "full_plan_projected_cumulative_usd": "0.601324364323",
+    "narrow_full_plan_quote_usd": "0.244202017778",
+    "original_reserved_estimate_usd": "0.162474512840",
+    "statistics_reserved_estimate_usd": "0.202795267104"
+  },
+  "capital_result": {
+    "cash_cases": 0,
+    "equity_usd": 5000,
+    "nonzero_cases": 0,
+    "unresolved_cases": 72,
+    "verdict": "INCOMPLETE_STUDY_NO_CAPITAL_VERDICT",
+    "verified_cases": 0
+  },
+  "coverage": {
+    "missing_in_complete_ranges": 0,
+    "missing_in_interrupted_range": 57,
+    "missing_in_unacquired_ranges": 9967,
+    "missing_references": 10024,
+    "ready_monthly_cases": 0,
+    "required_in_complete_ranges": 187,
+    "required_references": 10211,
+    "selected_references": 187,
+    "total_monthly_cases": 72
+  },
+  "deadline_utc": "2026-09-10T16:42:18Z",
+  "further_work_scheduled": false,
+  "holdout_prices_read": false,
+  "interpretation": "Completed sample supports the data path. Full panel, $5,000 portfolio feasibility and economics remain unresolved. Missing acquisition is not evidence of strategy failure.",
+  "known_transport_error": "Initial grouped statistics response HTTP206 incorrectly rejected; later collector handles statistics206 explicitly. Failed reservation retained.",
+  "live_trades_placed": false,
+  "recorded_at_utc": "2026-09-10T16:38:43.723715+00:00",
+  "schema": "ba012-final-feasibility-outcome-v1",
+  "status": "PARKED_INCOMPLETE_ACQUISITION_WITHIN_EFFORT_LIMIT",
+  "stop_reason": "Three sequential downloads required about 21, 11 and 30 seconds; 178 remaining requests could not plausibly complete in the remaining six minutes without further transport development.",
+  "strategy_pnl_calculated": false,
+  "validation": {
+    "download_locks_remaining": false,
+    "five_preserved_hashes_verified": true,
+    "focused_collector_tests_passed": 7,
+    "independent_collector_and_outcome_reviews_completed": true,
+    "settlement_adapter_tests_passed": 14
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "strategy_id": "BA-012",
+  "protocol_version": 1,
+  "registered_utc": "2026-09-10T07:19:12.460142+00:00",
+  "registration_type": "Local reviewed protocol snapshot; not an external timestamp or performance result",
+  "base_git_commit": "5011c83f0f271d9c8f353281cfce6fb478554d14",
+  "implementation_frozen": false,
+  "strategy_returns_calculated": false,
+  "data_acquisition_authorized_by_this_record": false,
+  "live_trading_authorized": false,
+  "canonical_protocol": {
+    "path": "docs/strategies/BA-012.md",
+    "sha256": "095fa832c82645a6f570668813b59b08afa4a21c93466980703ff78c46eec67f"
+  },
+  "supporting_documents": [
+    {
+      "path": "docs/notes/2026-09-10-futures-trend-feasibility.md",
+      "sha256": "9f459f1984201426247601a798ea02fbff6024f6f801d756fbd7696ae5753801"
+    },
+    {
+      "path": "docs/notes/2026-09-10-strategy-research.md",
+      "sha256": "a26b1f328a72c4d976748194bbf4cfbbd940a09c15741db87e04cf39d3e5c3cf"
+    },
+    {
+      "path": "research/trend-feasibility/2026-09-10/worksheet.json",
+      "sha256": "fd9f0a0850f6e03226643978e33fbd5ea9e029b5dc4cc6cd8cfa2ed4abe6e2fb"
+    },
+    {
+      "path": "research/trend-feasibility/2026-09-10/fee-source-manifest.json",
+      "sha256": "cb855553cca4a95f51fcadc76c0b21f1de6c854923046f9d9bbe06ab88f98e20"
+    }
+  ],
+  "outstanding_evidence": [
+    "Parent input availability and exact acquisition quote",
+    "Measured dollar risk and integer sizing outcomes",
+    "IBKR Pro/quote access and exact-contract bid/ask coverage"
+  ],
+  "review": "Two bounded methodology reviews; execution-order, partial-fill, missing-data and statistical reproducibility issues corrected before registration."
+}

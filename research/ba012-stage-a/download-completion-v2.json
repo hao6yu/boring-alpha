@@ -1,0 +1,113 @@
+{
+  "acquisition_status": "COMPLETE",
+  "artifacts": [
+    {
+      "path": "data/futures/ba012-settlements/20260910T162059838707Z/manifest.json",
+      "sha256": "4463976323797352987553b9a72442e89def287e33a34666e418d63300ebc1c7"
+    },
+    {
+      "path": "data/futures/ba012-settlements/20260910T162414397199Z/manifest.json",
+      "sha256": "918f9ac52c76b6cf23d716eb09e24737f3aa1decc149e39a6b73e9905874991d"
+    },
+    {
+      "path": "data/futures/ba012-settlements/20260910T163244052927Z/manifest.json",
+      "sha256": "3a285f6d1011c3d21d67939633b3cf34ad7d622e7d210ef17d3de557b832ff60"
+    },
+    {
+      "path": "data/futures/ba012-settlements/20260910T165420619462Z/manifest.json",
+      "sha256": "43d5b473029ab5ecc37d01420b9d2ef1a8ec856751f622f59b764e96f0f0a0ba"
+    },
+    {
+      "path": "data/futures/ba012-settlements/20260910T170011016256Z/manifest.json",
+      "sha256": "0445ac815cb8d419226d8a0dccc388b7f42c05258b35736c0594fe6a37a61d36"
+    },
+    {
+      "path": "data/futures/ba012-settlements/20260910T170345461034Z/manifest.json",
+      "sha256": "9928215ad098e4037850cca90d519c06475bf746ae6061c48057104a117fb841"
+    },
+    {
+      "path": "data/futures/ba012-settlements/20260910T171039613878Z/manifest.json",
+      "sha256": "5a4d0a7ea73a89e780dde30fa388939c12ccc6a5fc353b1dd5635d0c9b9c125d"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-inputs-v2-continuation.json",
+      "sha256": "2b309c135d3b8982450a186e4e05f0d400bd02ec71f8ba6c98044cb77c3986cf"
+    },
+    {
+      "path": "research/ba012-stage-a/download-continuation-20260910.json",
+      "sha256": "0d1a1d447cc538da98fb9023dcd9ddfbf7b464bfd12709d38ddafca58f378122"
+    },
+    {
+      "path": "research/ba012-stage-a/settlement-amendment-v2.json",
+      "sha256": "a556ee73b7d2d54a054b88afebf3c8f9d736680b17657af71af4c3a0fae397a3"
+    },
+    {
+      "path": "research/ba012-stage-a/rolls-v2.json",
+      "sha256": "ae99c75f4d6da08a83afeb60c89d4d9d2073c45e8b180ce341a47cbcfca0fafd"
+    },
+    {
+      "path": "tools/fetch_ba012_settlements.py",
+      "sha256": "c4303c8a5959ad4ea8735c296a8d13f1d7d36b1b9b07326299c2884e22b6b73e"
+    },
+    {
+      "path": "tools/prepare_ba012_settlements.py",
+      "sha256": "515070545001afda34855120b95db99c6a69bca4c5d6bbea6e03cb4a1d7f00ea"
+    }
+  ],
+  "budget": {
+    "actual_billing_verified": false,
+    "ceiling_usd": "1",
+    "cumulative_reserved_estimate_usd": "0.611430853385",
+    "failed_and_interrupted_reservations_included": true,
+    "original_reserved_estimate_usd": "0.162474512840",
+    "statistics_reserved_estimate_usd": "0.448956340545"
+  },
+  "completed_unique_queries": 181,
+  "existing_pilot_sizing": {
+    "cash_cases": 25,
+    "equity_usd": 5000,
+    "nonzero_cases": 0,
+    "strategy_pnl_calculated": false,
+    "unresolved_cases": 47,
+    "verdict": "INCOMPLETE_STUDY_NO_CAPITAL_VERDICT",
+    "verified_cases": 25
+  },
+  "input_coverage": {
+    "complete_monthly_cases": 25,
+    "incomplete_monthly_cases": 47,
+    "issue_reasons_overlapping": {
+      "MISSING_GENUINE_RECEIVE_TIME": 207,
+      "NO_ELIGIBLE_PRE_CUTOFF_SETTLEMENT": 1686
+    },
+    "missing_joint_dates": 422,
+    "required_references": 10211,
+    "selected_references": 8488,
+    "status": "DATA_INCOMPLETE",
+    "unresolved_references": 1723
+  },
+  "interpretation": "Download is complete. Under unchanged v2 eligibility rules, 25 months are fully usable and none allows a permitted nonzero $5,000 basket; 47 remain unresolved. The prescribed full 72-case capital rejection has not been met. No return or larger-capital study was run.",
+  "last_acquisition_completed_at_utc": "2026-09-10T17:20:19.009661+00:00",
+  "live_trades_placed": false,
+  "nonzero_infeasibility_proved_in_complete_cases": 25,
+  "planned_queries": 181,
+  "raw_bytes": 1019518878,
+  "raw_records": 3277624,
+  "recorded_at_utc": "2026-09-10T17:25:01.636247+00:00",
+  "schema": "ba012-settlement-download-completion-v1",
+  "statistics_request_results": {
+    "attempting": 1,
+    "http_error": 1,
+    "ok": 181,
+    "transport_error": 4
+  },
+  "statistics_reserved_attempts": 187,
+  "strategy_pnl_calculated": false,
+  "validation": {
+    "complete_query_set_equals_frozen_plan": true,
+    "focused_collector_tests_passed": 12,
+    "frozen_data_rule_hashes_preserved": true,
+    "gzip_raw_hash_and_count_checks_passed": true,
+    "independent_acquisition_and_sizing_reviews_passed": true,
+    "no_remaining_download_locks": true
+  }
+}

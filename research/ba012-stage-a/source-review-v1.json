@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "review_date": "2026-09-10",
+  "kind": "Primary documentation review; no market data acquisition",
+  "sources": [
+    {
+      "url": "https://databento.com/docs/examples/instrument-definitions/contract-notional",
+      "title": "Computing tick value and contract notional",
+      "reviewed_sections": ["Fractionally quoted products", "Result"],
+      "supports": "Normalized corn closes use cents per bushel; Treasury closes use decimal percent-of-par. The Treasury sample is ZN, not a historical TN definition. Fractional-product tick-value metadata may be unusable.",
+      "remaining_check": "Reconcile actual historical TN/ZC instrument definitions and CME tick specifications; do not infer scale solely from min_price_increment_amount."
+    },
+    {
+      "url": "https://issues.databento.com/roadmap/cme-globex-mdp2-data-has-incomplete-bars-for-many-days",
+      "title": "CME Globex MDP2 data has incomplete bars for many days",
+      "vendor_id": "D-8175",
+      "stated_scope": "GLBX.MDP3 OHLCV before 2017-05-21; listed example affected dates precede 2016",
+      "status_observation": "Fix in progress on vendor issue-board view checked 2026-09-10; older indexed issue view said Confirmed",
+      "status_source": "https://issues.databento.com/b/6vrl98vl/feature-ideas",
+      "research_consequence": "Potential warmup and early 2018 input-window incompleteness; not proof all warmup bars fail, and not proof of capital infeasibility."
+    },
+    {
+      "url": "https://issues.databento.com/b/6vrl98vl/feature-ideas",
+      "title": "GLBX.MDP3 - Channel 348 missing from 2018-01-21 to 2020-08-01",
+      "vendor_id": "D-8238",
+      "status_observation": "Fix in progress on reviewed vendor board",
+      "stated_scope": "Some weeks; CBOT Globex Interest Rate Futures II, channel 348",
+      "remaining_check": "TN historical channel membership not established in this review; no assertion that TN was affected."
+    },
+    {
+      "url": "https://databento.com/docs/standards-and-conventions/symbology",
+      "title": "Symbology",
+      "supports": "Futures .FUT parent expansion includes outright futures and futures spreads.",
+      "research_consequence": "Do not require all raw archive prices to be positive; enforce protocol positivity only after exact outright selection."
+    }
+  ],
+  "missing_data_classification": "DATA_INCOMPLETE",
+  "new_downloads_authorized_by_this_record": false,
+  "strategy_returns_calculated": false
+}
