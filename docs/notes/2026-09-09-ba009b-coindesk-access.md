@@ -64,6 +64,26 @@ does not establish that a free CDE futures entitlement exists. The derivatives
 page separately advertises team-arranged trials. No numeric price, trial
 duration, or applicable exact-contract entitlement was verified.
 
+### Account-specific follow-up at approximately 02:25 UTC
+
+The user supplied a billing screenshot showing **FREE, 100 calls per month,
+capped at 250,000 lifetime calls**. The same labels were confirmed in the
+signed-in billing UI. This corrects any inference that the pricing redirect
+alone established that this user had no free allowance. The displayed quota
+does not, by itself, verify a functioning key or CDE data permissions.
+
+The current account navigation omits API keys. Account and email settings
+showed no explicit pending-verification prompt; no cause for the key-settings
+redirect was established. No account fields or settings were changed.
+
+CoinDesk's [official migration guide](https://downloads.coindesk.com/cd3/CDI/IA/CoinDesk%20Indices_CCData_API_Migration_Guide.pdf)
+(June 27, 2025, printed page 2) documents the normal key-creation procedure:
+open `/settings/api-keys`, select Add New API Key, enter a name, grant
+Read All Price Streaming and Polling Endpoints, and submit Add API Key.
+This verifies the intended route, not its availability for this session.
+If that route remains unavailable, ask CoinDesk to diagnose key-management
+access for the displayed free account before choosing a paid plan.
+
 ## Concrete next access request (draft only; not sent)
 
 > I am a US-based individual researching a quantitative futures strategy for
