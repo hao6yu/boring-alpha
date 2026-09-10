@@ -65,6 +65,11 @@ research does not define the user's active objective.
     opening-range strategy failed its 2021–2023 development gate: the pilot
     hit its trailing-drawdown halt, and unrestricted one-contract trading lost
     money after costs. Version 1 is parked; no 2024–2025 strategy test was run.
+13. [Bounded evidence shortlist](notes/2026-09-09-shortlist-screen.md): reviewed
+    three families without new return calculations. Late-day futures momentum
+    merits one cost/implementation screen; simple overnight drift is rejected
+    on the paper's own cost evidence; pre-FOMC drift is deprioritized. No new
+    strategy is registered or queued for a backtest.
 
 ## Commands
 
@@ -87,6 +92,13 @@ BTC/ETH screen did not justify a trade after modeled fees and cash opportunity
 cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
+
+**Immediate scope:** the user wants a bounded shortlist and to avoid open-ended
+research spending. Complete one paper-to-MES feasibility note for late-day
+futures momentum, following the [shortlist gates](notes/2026-09-09-shortlist-screen.md).
+If it fails, stop this round. At most one separately registered development
+test can follow a pass; do not expand to more candidates, vendor searches,
+additional data spending or infrastructure by default.
 
 The first **CME MES intraday experiment**, [BA-010](strategies/BA-010.md), is
 complete and failed development. Its base pilot ended up $106.65 over three
