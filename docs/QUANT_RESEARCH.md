@@ -41,6 +41,11 @@ research does not define the user's active objective.
    minute alignment diagnostic. No credible retail edge has emerged. The
    apparent BTC signal predates the opening implied by the published rollover
    rule; ETH movement falls short of assumed costs.
+8. [Public historical-data source search](notes/2026-09-09-ba009b-public-data-search.md):
+   Coin Metrics catalogs the exact expired contracts, but tested Community
+   price access is denied. No usable free replacement was verified. Separate
+   CDE funding-event marks are documented, with authenticated access required
+   by the tested endpoint. BA-009B remains parked pending usable data access.
 
 ## Commands
 
