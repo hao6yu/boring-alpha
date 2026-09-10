@@ -7,8 +7,8 @@ research does not define the user's active objective.
 
 - Active, systematic trading with a measurable edge. No ETF or regular-stock
   allocation proposals: the user already manages those investments.
-- U.S. resident using Robinhood and Coinbase; other accessible venues are
-  possible if justified.
+- U.S. resident using Robinhood, Coinbase, and IBKR. The user requested an
+  IBKR Lite-to-Pro switch; review is pending. Databento historical access works.
 - $5,000 eventual pilot, approximately $1,000 loss tolerance. Larger capital
   is conditional and is not authorized by a successful backtest.
 - Beat an investable cash alternative after realistic costs, with drawdowns,
@@ -55,6 +55,11 @@ research does not define the user's active objective.
     anonymous catalog requests require a key. Signed-in key settings return
     to pricing, and no usable key or exact August contract sample was obtained.
     A narrow derivatives-trial request is drafted, not sent.
+11. [Databento access and research costs](notes/2026-09-09-databento-access.md):
+    $125 signup credits verified; an expired MESZ5 contract returned 390 valid
+    one-minute bars with no missing minutes in the requested session. A five-year
+    MES continuous minute series was quoted at about $6.45, but not downloaded.
+    A new CME experiment can proceed independently of IBKR approval.
 
 ## Commands
 
@@ -78,22 +83,24 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
 
-Current priority: [BA-009B, dated/perpetual futures spreads](strategies/BA-009B.md),
-which investigates a different construction with two futures legs to reduce
-the spot-fee burden. Its first quote screen, conditional price diagnostic,
-and minute timing audit are complete. The immediate next experiment is a
-separately declared, time-aware monthly contract universe using the same
-fixed signal and timing; it must not treat inaccessible later-month contracts
-or contract switches as executable opportunities. That retest is parked
-pending usable expired-contract history: both August BTC/ETH candle probes
-returned invalid-product errors through public and authenticated Advanced
-Trade routes, despite valid metadata and a working futures control. Do not
-buy data or build paper execution to rescue the current weak result. Stop or park the rule if
-that bounded check lacks credible cost coverage. Synchronized executable
-quotes and funding-event reconciliation remain prerequisites for a paper
-execution model. The original
-BA-007 candidate is retired from deployment consideration; its broader
-funding-ranking hypothesis remains unresolved after the audit.
+Current priority: a separately specified **CME MES intraday experiment** using
+Databento historical data and, if warranted, IBKR Pro paper execution. First
+declare the hypothesis, timing, costs, risk/abstention rules, and chronological
+development/holdout periods. Then acquire the quoted history, map actual contracts,
+audit sessions and rolls, and backtest with realistic delayed execution and cost
+stress. The successful sample is access evidence only; no MES strategy is yet
+validated, and the five-year quote is not a completed backtest.
+
+[BA-009B, dated/perpetual futures spreads](strategies/BA-009B.md), is parked.
+Its quote screen, conditional price diagnostic, and minute timing audit are
+complete and weak after costs. Both August BTC/ETH candle probes failed through
+public and authenticated Advanced Trade routes. Databento's CME contracts are
+different instruments and cannot substitute for that missing Coinbase history.
+Do not buy data or build paper execution to rescue the weak result. The original
+BA-007 candidate is retired from deployment consideration; its broader funding
+ranking hypothesis remains unresolved after the audit.
+
+The remaining Coinbase carry work is optional follow-up, not a blocker for CME:
 
 1. U.S. CDE funding history has been downloaded and checked for 90 days via
    the public portal's CSV export. Next obtain event-time settlement marks,

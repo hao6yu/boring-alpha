@@ -22,6 +22,7 @@ data/snapshots/
 data/crypto/
 data/perps/
 data/us_crypto/
+data/futures/
 data/current
 
 # Generated experiments are immutable local artifacts.
