@@ -4,6 +4,12 @@ September 9, 2026. Three families reviewed; five primary papers/publication
 records consulted. No market-data return calculation, new strategy code,
 purchase, account connection, or holdout evaluation in this screen.
 
+**Follow-up complete:** the [late-day cost/implementation review](2026-09-09-late-day-feasibility.md)
+returned **no-go for insufficient evidence**. The paper does not provide the
+single-S&P trade expectancy needed to clear the MES hurdle. This round is
+closed; no candidate advanced to implementation or a backtest. The initial
+ranking below is retained as the decision history.
+
 Decision: **advance only late-day futures momentum to a cost/implementation
 feasibility review.** This is a research priority, not a validated trade.
 BA-010 remains retired. No new candidate is registered or approved for backtesting.

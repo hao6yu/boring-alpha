@@ -70,6 +70,11 @@ research does not define the user's active objective.
     merits one cost/implementation screen; simple overnight drift is rejected
     on the paper's own cost evidence; pre-FOMC drift is deprioritized. No new
     strategy is registered or queued for a backtest.
+14. [Late-day MES feasibility](notes/2026-09-09-late-day-feasibility.md): **no-go
+    for insufficient evidence**. The published single-S&P trade magnitude is
+    unavailable, while the reported portfolio statistics and one-tick cost
+    comment cannot establish profitability at MES base/stress costs. The
+    bounded shortlist round is complete; no new backtest or purchase occurred.
 
 ## Commands
 
@@ -93,11 +98,12 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
 
-**Immediate scope:** the user wants a bounded shortlist and to avoid open-ended
-research spending. Complete one paper-to-MES feasibility note for late-day
-futures momentum, following the [shortlist gates](notes/2026-09-09-shortlist-screen.md).
-If it fails, stop this round. At most one separately registered development
-test can follow a pass; do not expand to more candidates, vendor searches,
+**Current status: bounded shortlist round complete; no further work queued.**
+The user wants to avoid open-ended research spending. The one authorized
+paper-to-MES feasibility review returned [no-go](notes/2026-09-09-late-day-feasibility.md)
+because required single-instrument economics could not be established from
+the evidence. Stop this round as agreed. Reopening requires a deliberate scope
+change or new evidence; do not expand to more candidates, vendor searches,
 additional data spending or infrastructure by default.
 
 The first **CME MES intraday experiment**, [BA-010](strategies/BA-010.md), is
