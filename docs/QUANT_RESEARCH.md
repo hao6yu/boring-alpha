@@ -36,6 +36,11 @@ research does not define the user's active objective.
    four-book spread scanner and exact U.S. paired-candle archive. The sampled
    entry does not justify a pilot after cost stresses; no fitted model or
    executable historical return is claimed.
+7. [BA-009B conditional screen and retail availability audit](notes/2026-09-09-ba009b-conditional-screen.md):
+   a fixed past-only gap rule, preserved missing outcomes, and an independent
+   minute alignment diagnostic. No credible retail edge has emerged. The
+   apparent BTC signal predates the opening implied by the published rollover
+   rule; ETH movement falls short of assumed costs.
 
 ## Commands
 
@@ -61,9 +66,17 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 Current priority: [BA-009B, dated/perpetual futures spreads](strategies/BA-009B.md),
 which investigates a different construction with two futures legs to reduce
-the spot-fee burden. Its first feasibility screen is complete; the next
-requirement is synchronized quote history and funding-event reconciliation,
-not parameter fitting or pilot funding. The original
+the spot-fee burden. Its first quote screen, conditional price diagnostic,
+and minute timing audit are complete. The immediate next experiment is a
+separately declared, time-aware monthly contract universe using the same
+fixed signal and timing; it must not treat inaccessible later-month contracts
+or contract switches as executable opportunities. That retest is parked
+pending a usable public expired-contract history source: both August BTC/ETH
+candle probes returned invalid-product errors despite valid metadata. Do not
+buy data or build paper execution to rescue the current weak result. Stop or park the rule if
+that bounded check lacks credible cost coverage. Synchronized executable
+quotes and funding-event reconciliation remain prerequisites for a paper
+execution model. The original
 BA-007 candidate is retired from deployment consideration; its broader
 funding-ranking hypothesis remains unresolved after the audit.
 

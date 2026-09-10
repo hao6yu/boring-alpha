@@ -1,0 +1,30 @@
+{
+  "candidate": "BA-009B",
+  "stage": "exploratory conditional price-proxy screen on previously inspected history",
+  "history_snapshot": "data/us_crypto/futures-history/20260910T000515491884Z",
+  "quote_snapshot": "data/us_crypto/spread-snapshots/20260910T000602055125Z",
+  "lookback_hours": 168,
+  "minimum_past_paired_bars": 84,
+  "quantile_method": "nearest_rank",
+  "high_quantile": 0.90,
+  "require_high_gap_positive": true,
+  "entry_delay_hours": 1,
+  "holding_hours": 24,
+  "nonoverlap_spacing_hours": 25,
+  "capital_usd": 5000,
+  "max_leg_fraction": 0.5,
+  "reference_funding_simple_annual": 0.10,
+  "reference_cash_rate": 0.04,
+  "reference_fee_cases": ["base_assumed", "both_fee_stress"],
+  "reference_spread_multipliers": [1, 2],
+  "decision": "Describe whether delayed gap changes warrant further data work. No Sharpe, annualized strategy return, significance claim, forecast, or deployment verdict.",
+  "limitations": [
+    "Current hourly close gap is a price proxy, not a synchronized executable signal.",
+    "Signal candle starting s is known at s+1h; delayed entry candle starts s+1h and ends s+2h; exit starts s+25h.",
+    "Classifications and nonoverlap flags are frozen before checking any outcomes.",
+    "Observed endpoint changes do not establish a complete held-position path.",
+    "Cash/fee/funding/spread hurdles are reference scenarios, not realized historical costs.",
+    "Current contract metadata does not establish historical account tradability or margin.",
+    "The date and broad historical distribution were already seen; this is not preregistered independent evidence."
+  ]
+}
