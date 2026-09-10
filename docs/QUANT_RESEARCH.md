@@ -46,6 +46,10 @@ research does not define the user's active objective.
    price access is denied. No usable free replacement was verified. Separate
    CDE funding-event marks are documented, with authenticated access required
    by the tested endpoint. BA-009B remains parked pending usable data access.
+9. [Authenticated Coinbase history probe](notes/2026-09-09-ba009b-authenticated-history.md):
+   Ed25519 authentication and view-only permissions verified. A BTC futures
+   control returned 24 hourly bars, but both expired August contracts still
+   returned invalid-product errors. Retail API access did not unlock them.
 
 ## Commands
 
@@ -76,8 +80,9 @@ and minute timing audit are complete. The immediate next experiment is a
 separately declared, time-aware monthly contract universe using the same
 fixed signal and timing; it must not treat inaccessible later-month contracts
 or contract switches as executable opportunities. That retest is parked
-pending a usable public expired-contract history source: both August BTC/ETH
-candle probes returned invalid-product errors despite valid metadata. Do not
+pending usable expired-contract history: both August BTC/ETH candle probes
+returned invalid-product errors through public and authenticated Advanced
+Trade routes, despite valid metadata and a working futures control. Do not
 buy data or build paper execution to rescue the current weak result. Stop or park the rule if
 that bounded check lacks credible cost coverage. Synchronized executable
 quotes and funding-event reconciliation remain prerequisites for a paper

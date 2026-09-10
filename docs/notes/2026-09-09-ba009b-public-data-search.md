@@ -35,7 +35,7 @@ not a validation of downloaded price records.
 
 The Community API rejected both hourly and daily August BTC price probes
 with HTTP 403 and a market-entitlement error. Its Community-access candle
-catalog exposed no CDE markets. [Coin Metrics access documentation](https://docs.coinmetrics.io/api)
+catalog exposed no CDE markets. [Coin Metrics access documentation](https://gitbook-docs.coinmetrics.io/getting-started)
 distinguishes the free Community service from Pro access. A reproducible
 [hourly probe](https://community-api.coinmetrics.io/v4/timeseries/market-candles?markets=coinbase_derivatives-BITQ26-future&frequency=1h&start_time=2026-08-01&end_time=2026-08-02&page_size=10)
 therefore establishes an access barrier, not a missing or zero-trade day.
@@ -66,6 +66,10 @@ establish another exact, anonymously downloadable CDE dataset. This is a
 bounded search result, not proof that no such source exists anywhere.
 
 ## Coinbase's own routes
+
+A subsequent [authenticated probe](2026-09-09-ba009b-authenticated-history.md)
+verified view-only retail API access and a successful futures control, but
+both expired August candle requests still returned invalid-product errors.
 
 The [public historical-data page](https://www.coinbase.com/derivatives/historical-data)
 is linked from Coinbase's exchange site. Its reports could not be inspected
