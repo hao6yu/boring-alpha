@@ -1,0 +1,20 @@
+{
+  "cells_reviewed": 32,
+  "comparisons_reviewed": 16,
+  "created_utc": "2026-09-13T20:07:49.532268+00:00",
+  "feature_source_audit_sha256": "9c2115bc7328e9e7347708fae9ee74e867e99508aac5f6c6b2adb82d0a7534a7",
+  "original_tables_reviewed": 11,
+  "passed": true,
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "review_pack": {
+    "path": "data/snapshots/equity-event-expansion-2026-09-13/feature-cell-review-pack.json",
+    "sha256": "8b87c8bb94378e1662c19315907eddbcee6f09ce82701a9da637ba4b240f3f45"
+  },
+  "review_script_sha256": "96f36e01985e6c702b131d03a251f4f9179597810bff4b4ebc70f283d5cd5901",
+  "reviewer": "Root agent; separate HTML parser, not an independent human or separate-agent review.",
+  "scope": "Fixed hash-selected new-company financial-cell sample. Source bytes and year, scope, signs, units and GAAP labels checked; not a population accuracy certification. Existing regulatory USD inference remains an assumption. No prices, predictions or returns read.",
+  "versions": {
+    "beautifulsoup4": "4.15.0",
+    "lxml": "6.1.3"
+  }
+}

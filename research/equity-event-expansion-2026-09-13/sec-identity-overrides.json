@@ -1,0 +1,2397 @@
+{
+  "events": {
+    "0000055242-20-000004": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2019-11-06 10:24:27",
+        "accession": "0000055242-19-000029",
+        "available_by_daily_anchor": "2020-02-03",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b4f6b11ee14fe5ab7da6111aa01de871e3cd34c32dcdf326062bddd3f675eb51.htm",
+        "filing_date": "2019-11-06",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/cfc1a04a9cccd45421a051fee1d77c3bf8493c3b7de5d17a0c961b8cbdaa7eb4.html",
+        "index_sha256": "cf7880e53b23fc539905fad23c04263b7c8478dd37a2748edc156328c202f689",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "29fc26b8447edfdd586088faa848ab216cf012bfc0817c113a074f70c98ff3c1",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524219000029/kmt930201910-q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-20-000011": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-02-04 14:01:14",
+        "accession": "0000055242-20-000007",
+        "available_by_daily_anchor": "2020-05-04",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7782f20e79084f6e34e198a4204d5b881596635f4c407794826604c8aca7bab4.htm",
+        "filing_date": "2020-02-04",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/eb2720fa5aae37b13f54b3bcd84f2b50c96724cddb0e10fa5a9c12ac2b32cf58.html",
+        "index_sha256": "8b4d5b1d7266a84b642128dc1e91b39f6b14771e1b371c1979dc784dd363c55c",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "e74b7423ec405435a4a3f7549245e4a48a3e23a94ae504db1618dadc71ca1055",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524220000007/kmt1231201910-q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-20-000021": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-05-05 17:24:55",
+        "accession": "0000055242-20-000013",
+        "available_by_daily_anchor": "2020-08-03",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a9a9a7f67c15f52807af9c656406668909743a948bdee7b83bc9822ccfcdc01a.htm",
+        "filing_date": "2020-05-05",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e41a4c6d9e23c5bb9e5e7469767ea3365783f8dec955342613bc043c6dd49160.html",
+        "index_sha256": "c35aef7ef8632b041343e70d40575447616c6e737f321603f365778bcb457e05",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "5cb9255f2deb9073b558f24917e88281957dbac5a85c8ee735fa23b7832ae2a7",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524220000013/kmt331202010-q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-20-000044": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-08-20 16:56:57",
+        "accession": "0000055242-20-000026",
+        "available_by_daily_anchor": "2020-11-02",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/fd0093f5b9ae239a9188e09aeef1608a7ea21acc28d22eaef58b4c701109c92c.htm",
+        "filing_date": "2020-08-20",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/660e033b4c439fe4e8791c32aa644339c9e10cad11c21304e480a73fffe54583.html",
+        "index_sha256": "abe2165a768d3e14a6b5e479908b6735673f06555879fe02ae546d0aba83ffc3",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "2943575144eb18b29cbafd68466451e4bedfa16f005f71c02eac0678809669ce",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524220000026/kmt630202010k.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-21-000009": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-11-03 12:25:18",
+        "accession": "0000055242-20-000046",
+        "available_by_daily_anchor": "2021-02-01",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6638cb011501698173a543871e2648ddc4efb7a3944a7729ca5c48064941617d.htm",
+        "filing_date": "2020-11-03",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8cd536af78156b66b4752824c6a504a05ba3d62272dca40abeb6d28517963b69.html",
+        "index_sha256": "5fff154fc2cb3d606f88b63a44493fbc3f81d67d5bf065c01012a1a2ccd9b1ac",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "997c658e9b1b0efe6052cfd95df0174ed3f5a358f5d161eadee7ebbb957f15ad",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524220000046/kmt-20200930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-21-000016": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-02-03 15:32:30",
+        "accession": "0000055242-21-000012",
+        "available_by_daily_anchor": "2021-05-03",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0aad4e7020b934e0bc560d724081da2832bc8b141ed43bc371d72a79674c6cd4.htm",
+        "filing_date": "2021-02-03",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/26e0e16026a073ff87cd7741482e38b4526129d9bcc940205eed2b61c89fdfe2.html",
+        "index_sha256": "a818ac35e752e7e5d47cab082cfa9320e0f0f959bb15de6c5b85b264be0c8377",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "e2b1c26cbe1fdcfdae8ea738f63408b31879cf7647991261b0e422d3f8094ba5",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524221000012/kmt-20201231.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-21-000037": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-05-04 12:02:47",
+        "accession": "0000055242-21-000020",
+        "available_by_daily_anchor": "2021-08-02",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0fdff8e9d17fe701750b76f86168c8acd71dfc771f37f383c985df5abbeca11e.htm",
+        "filing_date": "2021-05-04",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/afdc18c280af74bc5cc053c22871d11427f819be906fe33b0717568cf81b429d.html",
+        "index_sha256": "d9e86f61630699bce46ab8543456e85fa1f066029f73a8ce82fb43e41e11501f",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "c5c553b26784ae65e0005b1fd809adfee20598f8dfbdb7f22497d6bcd818d2c3",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524221000020/kmt-20210331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-21-000047": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-08-10 16:27:32",
+        "accession": "0000055242-21-000042",
+        "available_by_daily_anchor": "2021-11-01",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0365e33837e131e382b0afee50e584010bc6dbe308e74cd772a43e2cef188ec9.htm",
+        "filing_date": "2021-08-10",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/82267f085670d4df2f11d12c50c251bb81c4f5199f41ea52ed9386b90446d027.html",
+        "index_sha256": "2b10b9364b0ef761849d859c4a381eb096f6dbcd98a734e30b5803532af8d176",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "2885343c793343da0eb01b1ef62bd0dc1a4cdbd7fc8247f525aaa36ef387ff88",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524221000042/kmt-20210630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-22-000003": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-11-02 16:22:27",
+        "accession": "0000055242-21-000050",
+        "available_by_daily_anchor": "2022-02-07",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1bf742db1998105d9018e32a60c88225e9a18cfe35f833ecf14a609353872e1b.htm",
+        "filing_date": "2021-11-02",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8905151dae0dcb80fc83aa9dd41d931d501f6ae5b21d6f0ce0611b91f382a304.html",
+        "index_sha256": "78347f38af94a10fdfad0e3a05a8f7ae319ddc0be55690485b27c884f0f56d41",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "a83e38c1119efddcbbdabe29859fd568bab3b214e6c06eec2c3914861da81f7a",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524221000050/kmt-20210930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-22-000013": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-02-09 12:31:34",
+        "accession": "0000055242-22-000007",
+        "available_by_daily_anchor": "2022-05-02",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d5a4b5e7139419d9c6ce00b7335a01148b748a37d897361da97d05a923ff4a4e.htm",
+        "filing_date": "2022-02-09",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ad90ba528cd03430b7e5ec3f9918b6e8a93733233a6412801205cf378b6df68d.html",
+        "index_sha256": "0f998a8b1d5968b3eb67f765e9cf9e16b0d5da5d7d4989f9889f26b8729c932f",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "165378c00a121616ff39341b30611d8dfb281b3e4a3979f62d69077d6e79cfdb",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524222000007/kmt-20211231.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-22-000036": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-05-04 14:38:40",
+        "accession": "0000055242-22-000017",
+        "available_by_daily_anchor": "2022-08-01",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3b175ec9c80fbc820115753dd96abc896a85e61d42d5f96fd4aaf4100cdb6a25.htm",
+        "filing_date": "2022-05-04",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/bc4189758e0ed113f649599e534d64d7ae3ae482a7c057d7927f60fa58db3243.html",
+        "index_sha256": "58eac29106d3d546bbc5e541e4f2bb80fa29d4b527bc3544b13a6ae9be5a02e1",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "06951fdb730b9336677ef6b751967dcbda1f06811134aa5e6c7666c8f96055b8",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524222000017/kmt-20220331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-22-000043": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-08-10 13:38:47",
+        "accession": "0000055242-22-000039",
+        "available_by_daily_anchor": "2022-10-31",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/bb05c59822e186cf08385e41d1416eab424dd63a973ae53e25adbfa39773a41f.htm",
+        "filing_date": "2022-08-10",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f8a593230554a04e523c0c5b842d5b2b301de63bc305ba6ed9cd8cfb6b23ab39.html",
+        "index_sha256": "767b4a6727746c7c6ec17a33e7beb636dbfa6a5d67fdddcad2e6ab0747eb232b",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "0b7961695452c51b4c99960897922507d2bc547fef29751aa7b779365c231368",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524222000039/kmt-20220630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-23-000009": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-11-03 14:31:17",
+        "accession": "0000055242-22-000047",
+        "available_by_daily_anchor": "2023-02-06",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d4a0c677167acea37ad62614156294334d53877b4df364a628831ac8982bc75e.htm",
+        "filing_date": "2022-11-03",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f912fe8cced5ba4abe547a9d2f86767cb7f191b04deeddb2830ded7695b5839d.html",
+        "index_sha256": "25d1839275c53c39fe395f81768f77dc51eb96258013e485f34faf237f1f9ab5",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "55b42e6ae98e0c236885a32c09d6fb427051964808c99caf4a038a51938f272e",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524222000047/kmt-20220930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-23-000018": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-02-08 11:02:08",
+        "accession": "0000055242-23-000014",
+        "available_by_daily_anchor": "2023-05-01",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0fbcf57515d3f3be1095d88126231a7b7adf645834710af0631574d099d611e4.htm",
+        "filing_date": "2023-02-08",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9dd83aa604a55263429707a0177c03fba1370f619d93f39c3b8ef6224fc75a6a.html",
+        "index_sha256": "2bb3d8de8c46d7486fb0ff4ce7352a9ea91f8d59af06f87c4c5b5e05177ea173",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "1714b72766c5cd53dabb263e52335adf8e005b2ff67f3e3bfae8b09a21b98362",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524223000014/kmt-20221231.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-23-000035": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-05-03 14:10:00",
+        "accession": "0000055242-23-000022",
+        "available_by_daily_anchor": "2023-08-01",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8387b625ba07ef97f8c1eaf5dc2c12c1e10db8a806da12ec5015de656d964260.htm",
+        "filing_date": "2023-05-03",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9f60e5a2947cf0e87593377dc7ddcab6cbfed12457f1afeebc34670cecab9bb2.html",
+        "index_sha256": "1be4958fc05617ebb116ee3ad8835595dee3e4948b0f4a2e46156ad922edf051",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "065cb8e5da5831ef81454b5f39ccc193894b11e9499ea4f3ed5236e48b8f592b",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524223000022/kmt-20230331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000055242-23-000047": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-08-09 16:59:28",
+        "accession": "0000055242-23-000040",
+        "available_by_daily_anchor": "2023-11-01",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a34d79bbbe591cf079ef7fdf4e792a8417bf8f8d23a0b8ea6f320efe478e751a.htm",
+        "filing_date": "2023-08-09",
+        "index_ciks": [
+          "0000055242"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e9c71c76bea2fdc884cf6f1e0309a09cc1997fe964cfa2b47ae70607c3537985.html",
+        "index_sha256": "5ddd4f01368bc43623a040f1c91215d03f3423e47f53d5003e9a919090c6ad2a",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "c1a136f7f96aa5e1adb349b590c32207da41e5f01291e51ad8fb6f1bc245d243",
+        "url": "https://www.sec.gov/Archives/edgar/data/55242/000005524223000040/kmt-20230630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange",
+            "symbols": [
+              "KMT"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "KMT",
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a5723f26cd4e11315cb1310cbd8cb6921c7c64460dd1c07e7719405a1515984d.htm",
+            "sha256": "883581cc6e21bca828a21dee951ccbdc73c28533ebd63d189b8309a99ecb7cb7"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85d83cb11161cffa1927fe1ea8b3318756600c23d6f259e7b55bc25983620f2b.htm",
+            "sha256": "300a108b731788aa97f9dcb260d5252d25585b8ca0bbf1a16e5443b1177fbe64"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "KMT"
+        ]
+      }
+    },
+    "0000706863-20-000062": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-03-13 16:56:09",
+        "accession": "0000706863-20-000044",
+        "available_by_daily_anchor": "2020-04-15",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2fd91fefb346232cfa7a91321f89911e37ab73d1447ff2483670a30463efe2d1.htm",
+        "filing_date": "2020-03-13",
+        "index_ciks": [
+          "0000706863"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9b9796bd60538ddd584900f4226f8a0fe41115e65974e0c55e41dd267b5bfec8.html",
+        "index_sha256": "957a54e960a5dbe30ce27fea1413cb387d9479395e70947f7aa56fa0ddb93599",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "609002e7ab517c8541b8919014bbbdbfa004912903262db9dabab12337013697",
+        "url": "https://www.sec.gov/Archives/edgar/data/706863/000070686320000044/unb10k123119-4thqtr.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": " | Common Stock, $2.00 par value | UNB | The NASDAQ Stock Market LLC | ",
+            "symbols": [
+              "UNB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UNB",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UNB"
+        ]
+      }
+    },
+    "0000706863-20-000087": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-05-08 14:40:31",
+        "accession": "0000706863-20-000066",
+        "available_by_daily_anchor": "2020-07-15",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e68e336ace0eb5e8c6ecc41fbaa762ca7ddb0fdbb0a29252fa43b5d241fbb180.htm",
+        "filing_date": "2020-05-08",
+        "index_ciks": [
+          "0000706863"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7b6ccbcd8fbd76a024928238f9077af7fd4587ea328666d1cf3ac31a053f5b32.html",
+        "index_sha256": "a5b9ca428ff174966a1b9dcf356190442f8e0f9c92bc34e641a829794b5762fc",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "4e230d9693456daa1a3c56ad27767e0539395bb3e108a54e2284d5a95d0dd6a0",
+        "url": "https://www.sec.gov/Archives/edgar/data/706863/000070686320000066/a2020unb10-qx1stquarter.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": " | Common Stock, $2.00 par value | UNB | Nasdaq Stock Market | ",
+            "symbols": [
+              "UNB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UNB",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UNB"
+        ]
+      }
+    },
+    "0000706863-20-000093": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-08-10 08:11:36",
+        "accession": "0000706863-20-000091",
+        "available_by_daily_anchor": "2020-10-21",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/71f53c18690a4757f1436d6edd1475e1dfa9afbfba3320b970c268e71cbf04eb.htm",
+        "filing_date": "2020-08-10",
+        "index_ciks": [
+          "0000706863"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1f565663a6b424461b69510d4293c58473e5ace54e6d132c2ab13ec4272fdf8e.html",
+        "index_sha256": "9f0215fd364be10b8f74b292d78a5ed160d71e09929cf9890d06d7045340c0ab",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "b4ac397dabfadb58ec0d294155d9cda4a875e18f351edea7733d192a39a6a9c7",
+        "url": "https://www.sec.gov/Archives/edgar/data/706863/000070686320000091/unb-20200630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": " | Common Stock, $2.00 par value | UNB | Nasdaq Stock Market | ",
+            "symbols": [
+              "UNB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UNB",
+        "inline_trading_symbols": [
+          "UNB"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UNB"
+        ]
+      }
+    },
+    "0000706863-21-000002": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-11-09 17:09:08",
+        "accession": "0000706863-20-000098",
+        "available_by_daily_anchor": "2021-01-20",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d86fc8f36444837899775e9bb601555035b909bebc54c5e4880ba526807c5fc2.htm",
+        "filing_date": "2020-11-09",
+        "index_ciks": [
+          "0000706863"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ed2105261375618bb3b9e56229b72209fddac237a9e0b79dc83d4cc455ae21a5.html",
+        "index_sha256": "c0b500a58b14c0a2d5cd019c68d3c27816cab4611eeeeb6b261cf688bbd5b7c5",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "ab02f9b0c409fe7b3b7bde063dc6d00c17747a8d2328ce9bb2b2650c0b1924e1",
+        "url": "https://www.sec.gov/Archives/edgar/data/706863/000070686320000098/unb-20200930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": " | Common Stock, $2.00 par value | UNB | Nasdaq Stock Market | ",
+            "symbols": [
+              "UNB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UNB",
+        "inline_trading_symbols": [
+          "UNB"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UNB"
+        ]
+      }
+    },
+    "0000706863-21-000077": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-03-19 17:11:30",
+        "accession": "0000706863-21-000047",
+        "available_by_daily_anchor": "2021-04-22",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0f20c6cca4a7d1163e1edd60de876cf541ebdd22806c578cc3bb46a828586cde.htm",
+        "filing_date": "2021-03-19",
+        "index_ciks": [
+          "0000706863"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/765d8a50cc0f20197c20ef52138f9a279c130d6e440c9bf2da933f3ce7629a04.html",
+        "index_sha256": "e3b98e0dde9c129f2da343066d91d64207f4088f23dfdaf7479186af0d8d7695",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "f31a26c96a093c9588eb768ff3e7e10069d9870aecb9f8a65af987f2b65e681c",
+        "url": "https://www.sec.gov/Archives/edgar/data/706863/000070686321000047/unb-20201231.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": " | Common Stock, $2.00 par value | UNB | The NASDAQ Stock Market LLC | ",
+            "symbols": [
+              "UNB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UNB",
+        "inline_trading_symbols": [
+          "UNB"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UNB"
+        ]
+      }
+    },
+    "0000706863-21-000110": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-05-10 16:45:59",
+        "accession": "0000706863-21-000082",
+        "available_by_daily_anchor": "2021-07-21",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7851a0794fdfce6cf49dcf00ba5ef4bb14b4c6d3bae4a878302222d82c268683.htm",
+        "filing_date": "2021-05-10",
+        "index_ciks": [
+          "0000706863"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1169313f3d2e8820f97927b5b44b846c2d831825ecaadab003f24c60825b0f8d.html",
+        "index_sha256": "75b0fd679369f922e7636342134a698ea4376cea16501ab0981851aa76d8732a",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "ad811daa257e145917cf913f5e7c7930dd83c2b2cad23c45ba5cf4cc4ca38fe5",
+        "url": "https://www.sec.gov/Archives/edgar/data/706863/000070686321000082/unb-20210331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": " | Common Stock, $2.00 par value | UNB | Nasdaq Stock Market | ",
+            "symbols": [
+              "UNB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UNB",
+        "inline_trading_symbols": [
+          "UNB"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UNB"
+        ]
+      }
+    },
+    "0001104659-20-061632": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-03-30 13:01:50",
+        "accession": "0001104659-20-040172",
+        "available_by_daily_anchor": "2020-05-14",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d2884993445fb56f6feab0f1cbce772a2298b89ddc172212c5c8fe4b102f7b50.htm",
+        "filing_date": "2020-03-30",
+        "index_ciks": [
+          "0001362190"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6f6939b8d6a6d5d5a3bf4b5313112b291a4c20c5528496229dcdb287a15f2787.html",
+        "index_sha256": "effccea614848fc8c0cd85edd939773784a2ee7bbf9bd169f3790ec74fa8bee6",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "f8f877fb6e286b24dc396f9adc6f2392b73544e3c2f560e68b1d15318c851f67",
+        "url": "https://www.sec.gov/Archives/edgar/data/1362190/000110465920040172/tm205327d1_10k.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, par value $0.00001 per share | AEYE | The Nasdaq Stock Market LLC",
+            "symbols": [
+              "AEYE"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AEYE",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AEYE"
+        ]
+      }
+    },
+    "0001104659-20-094675": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-08-13 16:46:09",
+        "accession": "0001104659-20-094732",
+        "available_by_daily_anchor": "2020-08-13",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e0f524fa9267f3b249cd2d0c353e09d9603c5b886a9d909713677b7c9c2d41ae.htm",
+        "filing_date": "2020-08-13",
+        "index_ciks": [
+          "0001362190"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1152db647c62169b620631db209feeb8f1d250980835af3944523c296267fb64.html",
+        "index_sha256": "9cdbde338a37a2366c7e4c32b48522abaab80cea56643b1f07574d0c1ff0b972",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "1439ab2dd7b5cad544bd6926f51abb3c60f9d9f7de6361d494bc1798698a86c2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1362190/000110465920094732/tm2020536d1_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, par value $0.00001 per share | AEYE | The NASDAQ Capital Market",
+            "symbols": [
+              "AEYE"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AEYE",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AEYE"
+        ]
+      }
+    },
+    "0001171843-21-003352": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-03-26 17:00:31",
+        "accession": "0001171843-21-002107",
+        "available_by_daily_anchor": "2021-05-10",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2cf9715ac466ffc0e0ea3eb6aa905ef4b839c5f0f1fd07164fc8ce4d15273072.htm",
+        "filing_date": "2021-03-26",
+        "index_ciks": [
+          "0000806517"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/68e4701b466d76f280904183887bb0260147827d0a75abfd3afdf39e341fc226.html",
+        "index_sha256": "6b678a2524571871ff56e604ff4ee24f090e4b06fa5064d011ff9f8880858605",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "d434808c2b2cf1c9e132f6c110c6d56fde52b6fa9c39272f37e308bd2d34d24b",
+        "url": "https://www.sec.gov/Archives/edgar/data/806517/000117184321002107/f10k_032621p.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock. $0.005 par value | PMD | The Nasdaq Stock Market, LLC.",
+            "symbols": [
+              "PMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "PMD",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "PMD"
+        ]
+      }
+    },
+    "0001437749-21-002511": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-11-05 16:22:39",
+        "accession": "0000866609-20-000069",
+        "available_by_daily_anchor": "2021-02-11",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/15f3d450db0f0b880ad4bb38d7feb22e99dee90e074cb6612082ca51cefb0a7e.htm",
+        "filing_date": "2020-11-05",
+        "index_ciks": [
+          "0000866609"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b16bd7ee7a15cb60d9934296e9f578a4e102f69c991cdcdad9a7c8d024220909.html",
+        "index_sha256": "79369da28c97e64600959060f1d33be69e7abec0e33a64a2c3ddc51c69557544",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "fdc3faa532c13aff0b9d5ce62d86cd0a4a1280fa07a07cfac6a4df1cba64475e",
+        "url": "https://www.sec.gov/Archives/edgar/data/866609/000086660920000069/io-20200930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, $0.01 par value | IO | New York Stock Exchange",
+            "symbols": [
+              "IO"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "IO",
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "IO"
+        ]
+      }
+    },
+    "0001437749-21-010997": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-05-06 15:47:40",
+        "accession": "0001437749-21-011127",
+        "available_by_daily_anchor": "2021-05-06",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5693be7d33418eead07ae564df9b8aed50109527fa87db1d48d02e29b66c424b.htm",
+        "filing_date": "2021-05-06",
+        "index_ciks": [
+          "0000866609"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/fb07c99ee4e4cb26386ceaa77e91c26ff7087d2c9fc52760ba8cfe9f4ddc187d.html",
+        "index_sha256": "a441ae190b7a03d908e12395749f9da7d7146d0cabea4de56bd283ff87832e10",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "449d727a1ce859a9458a59cfc412e0e964a50d3141787a1ecd559c0f2c7a512c",
+        "url": "https://www.sec.gov/Archives/edgar/data/866609/000143774921011127/io20210331_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, $0.01 par value | IO | New York Stock Exchange",
+            "symbols": [
+              "IO"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "IO",
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "IO"
+        ]
+      }
+    },
+    "0001437749-21-019549": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-08-12 09:21:15",
+        "accession": "0001437749-21-019553",
+        "available_by_daily_anchor": "2021-08-12",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f6d73f35f47934c55218a8671724ffae64aa7e54534ecdf74bc53d1a843a7f70.htm",
+        "filing_date": "2021-08-12",
+        "index_ciks": [
+          "0000866609"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/43310d3ed803acf39d69beca11c681e0be2b094d5cb9d8aade70581ad6d6b057.html",
+        "index_sha256": "5bb26466b90350bb2690613dd809e2630e6bc284f07d03771673637dcc3e8370",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "da8cc8cc03fd23d40555b203b7d08aec7e1962f892c3e0e05c19ebb732d6169b",
+        "url": "https://www.sec.gov/Archives/edgar/data/866609/000143774921019553/io-20210630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, $0.01 par value | IO | New York Stock Exchange",
+            "symbols": [
+              "IO"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "IO",
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "IO"
+        ]
+      }
+    },
+    "0001437749-21-025103": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-11-03 16:34:51",
+        "accession": "0001437749-21-025105",
+        "available_by_daily_anchor": "2021-11-03",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b974121e8b353307e41ef5bf7e7fde6050fd388919fefd3d5a84236c638a8c5d.htm",
+        "filing_date": "2021-11-03",
+        "index_ciks": [
+          "0000866609"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/de5c3de70be1bfe997a9cab7d36442b56ad547a50e56a158dd317c72f32b7c13.html",
+        "index_sha256": "588b6671eceb140d04699ce1ccdb070d422ae87e8ec94de027265e29e9006d34",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "69c6f7a8fdbf8b50b5943619b740743baeccca62a7a7f77846fbaeaa1fd0c230",
+        "url": "https://www.sec.gov/Archives/edgar/data/866609/000143774921025105/io20210930_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, $0.01 par value | IO | New York Stock Exchange",
+            "symbols": [
+              "IO"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "IO",
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "IO"
+        ]
+      }
+    },
+    "0001654954-20-006841": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-06-17 17:01:17",
+        "accession": "0001477932-20-003428",
+        "available_by_daily_anchor": "2020-06-19",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2adeeed75685d81a9a6afd4cf87205c88cd1c017ceadae5ec7eb0a5a81651c4d.htm",
+        "filing_date": "2020-06-17",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f9363732d25df12e0ebdabd9466366ecd8b10877de239f7144cbe277536d9981.html",
+        "index_sha256": "d00d95021fe44cdd8154bcec065d3ad3ed37cb51fbf0db34a600771cc9eb3685",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "8248ddadbc180e8ec23d54aa23189ec47e6f7e20f8950ac1dcbc10eb4a5f598d",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793220003428/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-20-007976": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-07-23 16:30:29",
+        "accession": "0001477932-20-004218",
+        "available_by_daily_anchor": "2020-07-24",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7881fc3398c118f7c622784ef25fd4f6018bb50fb49787f2104b63d341b21456.htm",
+        "filing_date": "2020-07-23",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/fbc0235efe8a25bea275ff6ec2996feadb1ced8f99b986ecaaa7b4ff1bbfbfb3.html",
+        "index_sha256": "f62fcef124a88b3b26616e7cb81900d09624b919ae7d42901ae14201e902f5cb",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "2c5f4a46096d721d1f49dc95d32d48cbe3a555127cba9907274d91e4a7ce343f",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793220004218/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-20-011620": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-10-29 16:00:27",
+        "accession": "0001477932-20-006152",
+        "available_by_daily_anchor": "2020-10-30",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/331d11511c03695cec64850be04314f00ac5cc94a12bca16928f4eab78c653b4.htm",
+        "filing_date": "2020-10-29",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/35ed517ac3cc80d06d2da103fd66a4e861c3a5521b17a5fef448026aaa46910d.html",
+        "index_sha256": "271387a12133be46680d4754fa4f63e702ece9cd4e40f2e7de805d2af5f43982",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "5927d7a799273c41c44cfd313475cfa9b08e5a95aa969526612963e9e38e6c57",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793220006152/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-21-002626": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-10-29 16:00:27",
+        "accession": "0001477932-20-006152",
+        "available_by_daily_anchor": "2021-03-11",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/331d11511c03695cec64850be04314f00ac5cc94a12bca16928f4eab78c653b4.htm",
+        "filing_date": "2020-10-29",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/35ed517ac3cc80d06d2da103fd66a4e861c3a5521b17a5fef448026aaa46910d.html",
+        "index_sha256": "271387a12133be46680d4754fa4f63e702ece9cd4e40f2e7de805d2af5f43982",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "5927d7a799273c41c44cfd313475cfa9b08e5a95aa969526612963e9e38e6c57",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793220006152/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-21-005505": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-05-12 16:00:28",
+        "accession": "0001477932-21-003060",
+        "available_by_daily_anchor": "2021-05-12",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/18ee882c16a892df706bf74f4c1a893a0fb3424a17e00dd06f9eb48f17e0c81a.htm",
+        "filing_date": "2021-05-12",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5d603c86b7daa0b7db674e300e41a8b0b15cf9e2635c6417b67607a699a6e51b.html",
+        "index_sha256": "f4860ff84b63fafa33f0150a39468d7f2e1b0927691e298287cea3cd395a5754",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "d70c6db8941638a12f65af44b7984da8c48b4dce2fab2f7a9b9b0d0c46b46361",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793221003060/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-21-009068": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-05-12 16:00:28",
+        "accession": "0001477932-21-003060",
+        "available_by_daily_anchor": "2021-08-16",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/18ee882c16a892df706bf74f4c1a893a0fb3424a17e00dd06f9eb48f17e0c81a.htm",
+        "filing_date": "2021-05-12",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5d603c86b7daa0b7db674e300e41a8b0b15cf9e2635c6417b67607a699a6e51b.html",
+        "index_sha256": "f4860ff84b63fafa33f0150a39468d7f2e1b0927691e298287cea3cd395a5754",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "d70c6db8941638a12f65af44b7984da8c48b4dce2fab2f7a9b9b0d0c46b46361",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793221003060/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-22-006908": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-05-16 16:00:51",
+        "accession": "0001477932-22-003505",
+        "available_by_daily_anchor": "2022-05-16",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/767e14760cc83e5a1e4b6e39e983f0d23e0c55c8e2c27d11985ba13a344e7ec7.htm",
+        "filing_date": "2022-05-16",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7da5ea8b44635894d76887aab47c368c17aa7976634c01e59a78289fd25d54f2.html",
+        "index_sha256": "67c302d20acfeaefdfc1507372a1a0e098ad9ebf5607fd4e807a031531975c71",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "018c8945acc4faf1a540f26d307adb23fffc723b39eff9f0fa56cbe4cd608db2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793222003505/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common |  | AREC |  | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [
+          "AREC"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-22-011374": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-05-16 16:00:51",
+        "accession": "0001477932-22-003505",
+        "available_by_daily_anchor": "2022-08-15",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/767e14760cc83e5a1e4b6e39e983f0d23e0c55c8e2c27d11985ba13a344e7ec7.htm",
+        "filing_date": "2022-05-16",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7da5ea8b44635894d76887aab47c368c17aa7976634c01e59a78289fd25d54f2.html",
+        "index_sha256": "67c302d20acfeaefdfc1507372a1a0e098ad9ebf5607fd4e807a031531975c71",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "018c8945acc4faf1a540f26d307adb23fffc723b39eff9f0fa56cbe4cd608db2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793222003505/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common |  | AREC |  | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [
+          "AREC"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-23-006565": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-05-15 16:06:05",
+        "accession": "0001477932-23-003561",
+        "available_by_daily_anchor": "2023-05-15",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f952e046832c227ce074de90efa47ae85cf6e826a3b001a83ab7f912026acbf1.htm",
+        "filing_date": "2023-05-15",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/caa9f27882a4121b80ed218e068f5c7c833fcf1a47639b1fdf2a17182df738da.html",
+        "index_sha256": "9a746e1f6bb6442d5c26484c7749543c352bc51ef091721951064bb38a8f63fa",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "7ed44ca559bd8fafdfc32c3c1e9886f2f5068074513c689eacd015c584de8768",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793223003561/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common |  | AREC |  | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [
+          "AREC"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    },
+    "0001654954-23-010762": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-05-15 16:06:05",
+        "accession": "0001477932-23-003561",
+        "available_by_daily_anchor": "2023-08-14",
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f952e046832c227ce074de90efa47ae85cf6e826a3b001a83ab7f912026acbf1.htm",
+        "filing_date": "2023-05-15",
+        "index_ciks": [
+          "0001590715"
+        ],
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/caa9f27882a4121b80ed218e068f5c7c833fcf1a47639b1fdf2a17182df738da.html",
+        "index_sha256": "9a746e1f6bb6442d5c26484c7749543c352bc51ef091721951064bb38a8f63fa",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "7ed44ca559bd8fafdfc32c3c1e9886f2f5068074513c689eacd015c584de8768",
+        "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793223003561/arec_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "class_interpretation": "Exact current cover class/ticker row corroborates the independently reviewed original2019 common-equity class; no generic capital-stock inference.",
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common |  | AREC |  | NASDAQ Capital Market",
+            "symbols": [
+              "AREC"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "AREC",
+        "inline_trading_symbols": [
+          "AREC"
+        ],
+        "original_2019_class_evidence": [
+          {
+            "accession": "0001477932-19-004698",
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f954cb20116b5e04779b72c2b12bb3a759c1ea8fa0ed37d5fffd3a5004a6f98f.htm",
+            "filing_date": "2019-08-12",
+            "scope": "Original report available before cohort cutoff; no intraday release-time claim",
+            "sha256": "ecb91a8ef1128412afc59e789438aed7829754355dd6fb51c55cad6f12ea17fe",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590715/000147793219004698/arec_10q.htm"
+          }
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "AREC"
+        ]
+      }
+    }
+  },
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "unresolved": {
+    "0000706863-20-000002": {
+      "attempted_covers": [
+        {
+          "accession": "0000706863-19-000068",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0000706863-19-000060",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0000706863-20-000002",
+        "anchor_date": "2020-01-15",
+        "cik": "0000706863",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 exhibit9914thqtr2019earnin.htm EXHIBIT 99.1 Exhibit Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Reports Record Earnings for the year ended December 31, 2019 and Declares Increase in Quarterly Dividend Morrisville, VT January 15, 2020 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three and twelve months ended December 31, 2019 . Net income was $2.8 million and $10.6 million for the three and twelve months ended December 31, 2019 , resulting in earnings per share of $0.61 and $2.38 for the same periods, respectively. The Board of Directors also declared a cash dividend of $0.32 per share for the quarter, and increase of 3.2% from the cash dividend of $0.31 paid in recent prior quarters, payable February 6, 2020 to shareholders of record as of January 27, 2020 . The Company reported a consolidated net loss for the three months ended December 31, 2018 of $(436) thousand, or $(0.10) per share, and consolidated net income for the twelve months then ended of $7.1 million, or $1.58 per share. Results for the three and twelve months ended December 31, 2018 included a reduction in net earnings due to one-time charges related to the termination of the Company's defined benefit pension plan. The one-time reduction in earnings was $3.7 million for the year ended December 31, 2018 , of which, $3.2 million was recorded in the fourth quarter of 2018. Fourth Quarter Highlights Net income of $2.8 million was recorded for the three months ended December 31, 2019 , compared to a loss of $436 thousand for the three months ended December 31, 2018 . Net interest income increased $352 thousand, or 4.7%, from fourth quarter 2018 , with an increase of $723 thousand in interest income, partially offset by a $37",
+        "slot_id": "0000706863-2020Q1"
+      }
+    },
+    "0001104659-21-035303": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001104659-21-035303",
+        "anchor_date": "2021-03-12",
+        "cik": "0001084384",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 tm218964d2_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Pareteum Announces Full Year 2019 Financial Results with Revenues of $62M, an Increase of $42M Another milestone completed in returning to a normal cadence of public company reporting NEW YORK, NY \u2013 March 12, 2021 \u2013 Pareteum Corporation (OTC Pink Open Market: TEUM) , a global cloud platform-as-a-service (CPaaS) company, achieved another significant milestone today with the announcement of its full-year 2019 financial results and restated first and second quarter financial results for 2019. The Company expects to release its 2019 annual report on Form 10-K and interim periods included therein later today. The Company expects to complete the process and file full-year 2020 financial information soon by becoming fully current with respect to the filing of its quarterly and annual financial results. Pareteum's Board of Directors and executive management have instituted significant changes to reconstitute the company to position for future growth and value creation. \u201cWith our 2019 results completed, we are now fully focused on filing 2020 full-year and quarterly results followed by the cadence of regular quarterly reporting for 2021,\u201d said Bart Weijermars, Pareteum's interim CEO. \u201cOur management team and the Board have worked diligently to bring the Company back into routine reporting compliance while upgrading talent within the organization and positioning the business for future growth. Pareteum\u2019s technology and broad group of network connectivity partners position us well to take advantage of industry growth trends going forward. Entering 2021, we see tremendous opportunity ahead as our connectivity and IoT platform is uniquely able to support digital services, transformation and the large and growing sectors in ne",
+        "slot_id": "0001084384-2021Q1"
+      }
+    },
+    "0001193125-20-049004": {
+      "attempted_covers": [
+        {
+          "accession": "0001193125-20-049035",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001193125-19-281097",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001193125-20-049004",
+        "anchor_date": "2020-02-26",
+        "cik": "0001593222",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 d882550dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 City Office REIT Reports Fourth Quarter and Full Year 2019 Results VANCOUVER\u2014February 26, 2020\u2014City Office REIT, Inc. (NYSE: CIO) (the \u201cCompany\u201d or \u201cCity Office\u201d), today announced its results for the quarter and full year ended December 31, 2019. Fourth Quarter Highlights \u2022 GAAP net income attributable to common stockholders was approximately $1.0 million, or $0.02 per fully diluted share; \u2022 Core FFO was approximately $13.4 million, or $0.25 per fully diluted share; \u2022 AFFO was approximately $7.9 million, or $0.14 per fully diluted share; \u2022 In-place occupancy closed the quarter at 91.9%; the Company executed approximately 331,000 square feet of new and renewal leases during the quarter; \u2022 Same Store Cash NOI increased 3.9% as compared to the fourth quarter 2018; \u2022 Closed the disposition of the Logan Tower property in Denver, Colorado for $12.6 million; \u2022 Issued 6,900,000 shares of common stock in a public follow-on offering for aggregate gross proceeds of approximately $95.6 million; \u2022 Declared a fourth quarter dividend of $0.235 per share of common stock, paid on January 24, 2020; \u2022 Declared a fourth quarter dividend of $0.4140625 per share of Series A Preferred Stock, paid on January 24, 2020; and \u2022 Gained entry into the MSCI US REIT Index (RMZ). Highlights Subsequent to Quarter End \u2022 Executed a 70,000 square foot lease at the Denver Tech property with a 10.6 year term. \u201c2019 was an exceptional year for City Office REIT, in which the total return for our common stock was 42.6%,\u201d commented James Farrar, the Company\u2019s Chief Executive Officer. \u201cWe executed on our strategy of expanding our footprint in 18-hour cities in the southern and western United States and significantly grew the scale of the Company. We accompl",
+        "slot_id": "0001593222-2020Q1"
+      }
+    },
+    "0001437749-20-017671": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001437749-20-017671",
+        "anchor_date": "2020-08-12",
+        "cik": "0001434647",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 ex_198479.htm EXHIBIT 99.1 ex_165063.htm Exhibit 99.1 KemPharm Reports Second Quarter 2020 Financial Results Conference Call and Live Audio Webcast with Slide Presentation Scheduled for Today at 4:30 p.m. ET Corporate and Regulatory Highlights: \u25cf Received Day-74 Letter for KP415 NDA; FDA has set PDUFA date of March 2, 2021 \u25cf Announced that Corium, Inc., a portfolio company of GPC, will lead all commercialization activities for KP415 \u25cf Announced issuance of two additional U.S. patents governing KP415 and KP484 Financial Highlights: \u25cf Reported Q2 2020 revenue of $6.9 million, including $5 million milestone payment for NDA acceptance on May 1, 2020, and $1.9 million from research and development consulting services \u25cf Q2 2020 net income of $0.01 per basic share and diluted share compared to a net loss of $0.33 per basic and diluted share for Q2 2019 \u25cf Total cash, cash equivalents and restricted cash was $6.6 million at June 30, 2020 Celebration, FL \u2013 August 12, 2020 \u2013 KemPharm, Inc. (OTCQB: KMPH), a specialty pharmaceutical company focused on the discovery and development of proprietary prodrugs, today reported its financial results for the second quarter ended June 30, 2020. \u201cThe second quarter was a period of continued advancement at KemPharm, highlighted by the FDA\u2019s acceptance of the New Drug Application (NDA) for KP415 and, following that, receipt of the \u2018Day-74 Letter\u2019 from the FDA,\u201d said Travis C. Mickle, Ph.D., President and Chief Executive Officer of KemPharm. \u201cContained within the Day-74 Letter were two important updates from the FDA. The FDA informed us that the action date (PDUFA) for KP415 is March 2, 2021, and that an advisory committee is not required at this time.\u201d Dr. Mickle continued, \u201cDovetailing with these important regulatory advancements, Kem",
+        "slot_id": "0001434647-2020Q3"
+      }
+    },
+    "0001558370-20-005293": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001558370-20-005293",
+        "anchor_date": "2020-05-06",
+        "cik": "0001641614",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 pmts-20200506xex99d1.htm EX-99.1 Current folio Ex_99_1_ER Exhibit 99.1 CPI Card Group Inc. Reports First Quarter 2020 Results Date: May 6, 2020 Net Sales Up 11% Year Over Year Net Income from Continuing Operations of $2.4 Million, an Improvement of 179% Year Over Year Adjusted EBITDA of $12.4 Million Up 55% Year Over Year Cash of $46.9 Million at Quarter End Littleton, CO. May 6, 2020 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI Card Group\u201d or the \u201cCompany\u201d) today reported financial results for the first quarter ended March 31, 2020. \u201cOur hearts go out to those who have been impacted by the COVID-19 pandemic,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cAs this pandemic continues to evolve, the health and safety of our employees remains paramount. We continue to follow the safety precautions and other appropriate measures recommended by the Centers for Disease Control and Prevention. I want to thank our employees for their dedication and commitment to continuing to serve our customers through these unprecedented times. All of CPI\u2019s operations remain open and continue to provide direct and essential support to the financial services industry, including the production, personalization and fulfillment of debit, credit, and prepaid cards such as payroll, government benefit, and health savings account cards. In addition, we have made COVID-19 support-related contributions to organizations in the communities in which we operate and source materials.\u201d Scheirman added, \u201cWe delivered strong results to start the year, though we did see some impact from the pandemic late in the first quarter. During the first quarter, our differentiated products and solutions such as our dual-interface EMV\u00ae products, including our Second Wave\u2122 card, expe",
+        "slot_id": "0001641614-2020Q2"
+      }
+    },
+    "0001558370-20-009286": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001558370-20-009286",
+        "anchor_date": "2020-08-05",
+        "cik": "0001641614",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 pmts-20200805xex99d1.htm EX-99.1 Exhibit 99.1 CPI Card Group Inc. Reports Second Quarter and First Half 2020 Results Date: August 5, 2020 \u200b Net Sales of $71.4 Million, Up 7% and 9% Year-over-Year in Second Quarter and First Half Net Income of $0.1 Million, Down 93% Second Quarter Year-over-Year, and Up 265% in First Half Adjusted EBITDA of $10.1 Million, Up 19% and 36% Year-over-Year in Second Quarter and First Half Cash of $54 Million at Quarter End \u200b Littleton, CO. August 5, 2020 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the second quarter and the first half ended June 30, 2020. \u201cOur hearts go out to those impacted by the COVID-19 pandemic,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cAmid a highly challenging environment, I\u2019m proud of the way our organization has demonstrated an unwavering commitment to the health and safety of our employees and the community. All of CPI\u2019s facilities have been operating and continue to provide essential products and services to the financial services industry, including the production, personalization and fulfillment of debit, credit, and prepaid cards.\u201d Scheirman added, \u201cOur results reflect the significant progress we have made executing against our strategic priorities, resulting in top-line growth of 7% year-over-year through unprecedented times. In the second quarter, we delivered strong net sales growth due to our differentiated products and solutions, such as our dual interface EMV \u00ae Second Wave TM product, our card made with recovered ocean-bound plastic. We continue to develop and launch innovative solutions. We announced with Visa the introduction of our Earthwise\u2122 High Content Card, a more sustainable payment card made wit",
+        "slot_id": "0001641614-2020Q3"
+      }
+    },
+    "0001558370-20-012313": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001558370-20-012313",
+        "anchor_date": "2020-11-03",
+        "cik": "0001641614",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 pmts-20201103xex99d1.htm EX-99.1 \u200b CPI Card Group Inc. Reports Third Quarter and Year-to-Date 2020 Results Date: November 3, 2020 \u200b Net Sales of $82.7 Million, Up 15% and 11% Year-over-Year in the Third Quarter and First Nine Months Net Income of $5.8 Million, Up 984% and 425% Year-over-Year in the Third Quarter and First Nine Months Adjusted EBITDA of $17.5 Million, Up 43% and 39% Year-over-Year in the Third Quarter and First Nine Months Cash of $50 Million at Quarter End \u200b Littleton, CO. November 3, 2020 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the third quarter and nine months ended September 30, 2020. \u201cAs we continue to navigate these unprecedented times, we are pleased with our strong third quarter performance,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cOur 15% top-line growth underscores the resilience of the business, our ability to capitalize on the dual interface card demand in the U.S. and the strong market for our innovative and differentiated products, including our eco-focused solutions. Operating margins also expanded significantly in the quarter, driven by operating leverage and ongoing efficiency initiatives. We continue to win new business with our existing customers, add new customers and pursue opportunities.\u201d Scheirman continued, \u201cWe remain steadfast and intensely focused on our strategies of deep customer focus, providing market-leading quality products and customer service, delivering innovative solutions and a market-competitive business model.\u201d Third Quarter and First Nine Months 2020 Financial Highlights Net sales increased 15% and 11% year-over-year to $82.7 million and $228.0 million in the third quarter and first nine months of 2020, resp",
+        "slot_id": "0001641614-2020Q4"
+      }
+    },
+    "0001558370-21-001713": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001558370-21-001713",
+        "anchor_date": "2021-02-25",
+        "cik": "0001641614",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 pmts-20210224xex99d1.htm EX-99.1 \u200b CPI Card Group Inc. Reports Fourth Quarter and Full Year 2020 Results Date: February 25, 2021 Strong Net Sales Growth, Significantly Improved Bottom-Line Performance Net Sales Up 16% and 12% Year Over Year in the Fourth Quarter and Full Year, Respectively Net Income of $7.3 Million and $16.1 Million, Improving 404% and 415% in the Fourth Quarter and Full Year, Respectively \u200b Adjusted EBITDA of $17.5 Million and $57.5 Million, Up 99% and 53% in the Fourth Quarter and Full Year, Respectively Cash of $58 Million at Year End \u200b Littleton, CO. February 25, 2021 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the fourth quarter and full year ended December 31, 2020. \u201cOur 2020 results were strong, driven by another year of solid execution of our customer-centric strategy whereby net sales increased 12% and our profitability significantly increased,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cDespite challenges presented by the COVID-19 pandemic, we believe we gained overall market share in 2020 and executed key initiatives to even better position CPI to meet market and customer needs in 2021 and beyond.\u201d Scheirman continued, \u201cWe believe we are well-positioned to capitalize on market opportunities, including the ongoing transition to contactless cards in the U.S. and the market demand for innovative and differentiated products such as our eco-focused Second Wave \u00ae contactless product, a debit or credit card featuring a core made with recovered ocean-bound plastic, and Card@Once \u00ae , our Software-as-a-Service instant issuance solution that enables financial institutions to instantly issue debit and credit cards in branch.\u201d Fourth Quarter and Full Yea",
+        "slot_id": "0001641614-2021Q1"
+      }
+    },
+    "0001558370-21-006756": {
+      "reason": "CURRENT_RELEASE_INDICATES_OTC",
+      "target": {
+        "accession": "0001558370-21-006756",
+        "anchor_date": "2021-05-11",
+        "cik": "0001641614",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 pmts-20210511xex99d1.htm EX-99.1 \u200b CPI Card Group Inc. Reports First Quarter 2021 Results Date: May 11, 2021 Net Sales Up 20% and Diluted EPS of $0.21 per share, Up 37% Year Over Year \u200b Net Income of $2.4 Million, Up 37% Year Over Year \u200b Adjusted EBITDA of $22.1 Million, Up 78% Year Over Year Debt Maturities Extended Approximately Five Years Cash of $25 Million and $34 Million available under the ABL Revolver at Quarter End \u200b Littleton, CO. May 11, 2021 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the first quarter ended March 31, 2021. \u201cOur first quarter results reflect the strength and commitment of our organization to be the partner of choice to our customers by providing market-leading quality products and customer service,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cDuring the quarter, we delivered 20% year over year net sales growth, improved our net income by 37% and grew Adjusted EBITDA 78%, as a result of strong performance across all of our businesses and new customer sales.\u201d Scheirman continued, \u201cWe continue to focus on our strategic priorities, including our commitment to meeting customers\u2019 needs by delivering high quality and differentiated products and services such as our eco-focused payment cards, secure prepaid packaging, personalization solutions and Card@Once\u00ae, our Software-as-a-Service instant issuance solution. Our strong start to 2021 is encouraging and we believe we are well-positioned to capitalize on market opportunities.\u201d First Quarter 2021 Financial Highlights Net sales increased 20% year over year to $89.1 million in the first quarter of 2021. Gross profit increased 39% year over year in the first quarter of 2021 to $35.7 million. Gross profit",
+        "slot_id": "0001641614-2021Q2"
+      }
+    },
+    "0001628280-21-012458": {
+      "attempted_covers": [
+        {
+          "accession": "0001628280-21-012457",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001104659-21-035333",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001628280-21-012458",
+        "anchor_date": "2021-06-17",
+        "cik": "0001084384",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 earningsrelease-6172021.htm EX-99.1 Document Pareteum Corporation Announces 2020 Financial Results \u2022 2020 total revenue of $69.6 million, 12% year-over-year growth \u2022 Net loss attributable to common equity decreased to $45.5 million in 2020, an 80% improvement from $222.3 million in 2019 \u2022 Surpassed 1,100 clients and partners globally, including key enterprise customers and MVNE/MNVOs \u2022 Management to host conference call today at 4:30 p.m. ET NEW YORK, NY \u2013 June 17, 2021 \u2013 Pareteum Corporation (OTC: TEUM), a global cloud Communications-Platform-as-a-Service (CPaaS) company, today announced financial results for full year 2020. \u201cWhile 2020 was a transitional year for Pareteum as we worked towards resolving corporate legacy issues and financial restatements, we continued to make progress across our business that we believe has laid a foundation for significant future growth,\u201d commented Bart Weijermars, Pareteum's interim Chief Executive Officer. \u201cOur mission is to empower our customers to simply create and control their wireless communication products and experiences through our powerful cloud platform and global connectivity. We have grown revenue 244% over the past three years and improved net loss attributable to common equity from $222.3 million in 2019 to $45.5 million in 2020. We added over 50 additional customers last year, and have grown platform connections 156% since 2018. We believe Pareteum is well positioned to address a large, rapidly growing global opportunity and have developed an expanded corporate strategy to do so.\u201d Full-Year 2020 Financial Results Highlights : \u2022 Revenue : Total revenue was $69.6 million for the full year 2020, up 12% compared to $62.0 million in 2019. This increase was primarily due to strong demand for services in our mobilit",
+        "slot_id": "0001084384-2021Q2"
+      }
+    },
+    "0001628280-21-017681": {
+      "attempted_covers": [
+        {
+          "accession": "0001628280-21-017682",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001628280-21-016441",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001628280-21-017681",
+        "anchor_date": "2021-08-27",
+        "cik": "0001084384",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 exhibit991earningsrelease-.htm EX-99.1 Document Pareteum Corporation Announces First Quarter 2021 Financial Results and Provides Business Update \u2022 Net loss attributable to common equity improved 24% to $7.2 million in Q1 2021, down from $9.4 million in Q1 2020 \u2022 First quarter 2021 gross margin (adjusted) improved to 34% compared to 28% in first quarter 2020 \u2022 First quarter 2021 revenue of $15.5 million decreased versus comparable 2020 period primarily due to the negative impact of COVID on the Enterprise business NEW YORK, NY \u2013 August 26, 2021 \u2013 Pareteum Corporation (OTC: TEUM), a global cloud Communications-Platform-as-a-Service (CPaaS) company, today announced financial results for the first quarter of 2021 and provided a business update. \u201cThe first quarter of 2021 reflected our emphasis in 2020 and 2021 on working to rectify legacy issues and complete our financial restatements,\u201d commented Bart Weijermars, Pareteum's Interim Chief Executive Officer. \u201cWe recognize and appreciate that this work is not progressing as fast as we and our shareholders would like. With the filing of the first quarter financials, reporting second quarter 2021 financials is the last item that remains for Pareteum to return to being fully compliant on our financial reporting. The Company anticipates reporting second quarter 2021 results as soon as possible and ahead of the September 28, 2021 implementation date of the U.S. Securities and Exchange Commission (SEC) amendments to Exchange Act Rule 15c2-11 governing quotations for over-the-counter (OTC) securities.\u201d Mr. Weijermars continued: \u201cWhile $15.5 million in quarterly revenue is below where we would like to be, over the past two full years, our revenue has increased 244%. Importantly, we have focused on smart growth, emphasizing m",
+        "slot_id": "0001084384-2021Q3"
+      }
+    },
+    "0001654954-21-012135": {
+      "attempted_covers": [
+        {
+          "accession": "0001477932-21-008195",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001477932-21-005584",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001654954-21-012135",
+        "anchor_date": "2021-11-15",
+        "cik": "0001590715",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE DATED NOVEMBER 15, 2021 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Third Quarter 2021 Financial Results and Provides Business Outlook Company highly aligned with major U.S. priorities in both infrastructure and electrification Significant execution has positioned the Company to be a low-cost, stable provider of raw materials to high-growth markets Company seeing significantly increasing carbon demand and price realization as it scales operations Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 11:00 AM ET November 15, 2021 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / November 15, 2021 / American Resources Corporation (NASDAQ:AREC) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of raw materials to the new infrastructure and electrification marketplace, today reported its third quarter of 2021 financial results and provided a corporate update. The Company will host a conference call and webcast, today, November 15, 2021, at 11:00 a.m. ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cOver the course of the third quarter of 2021, we continued to position our Company to be one of the most unique growth platforms to reposition old-world, legacy assets to strategically align with a more modern economy. With the advancement of our nation\u2019s infrastructure initiatives, we find ourselves extremely well aligned with our American Carbon and American Rare Earth divisions to support these important aspects of our national and global economies. Both traditional infrastructure li",
+        "slot_id": "0001590715-2021Q4"
+      }
+    },
+    "0001654954-22-004026": {
+      "attempted_covers": [
+        {
+          "accession": "0001477932-21-008195",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001477932-21-005584",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001654954-22-004026",
+        "anchor_date": "2022-03-29",
+        "cik": "0001590715",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 arec_ex991.htm EX-99.1 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Fourth Quarter and Full Year 2021 Financial Results and Provides Business Outlook Company highly aligned with major U.S. priorities in both infrastructure and electrification On track be the first in the U.S. to produce isolated and purified critical and rare earth elements (REEs) and bring the most environmentally-safe refining solutions to the domestic marketplace Significant increase in carbon demand and price realization being seen as Company scales operations and on track this March to realize operating profit Current specialty and metallurgical carbon backlog represents approximately $110 million Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 4:30 PM ET March 29, 2022 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / March 29, 2022 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the fourth quarter and full year ended December 31, 2021. The Company will host a conference call and webcast, today, March 29, 2022, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout 2021 we further established our pillars of growth and believe the year was marked by tremendous success in transforming our Company to expand our near term and future potential and opportunities. In retrospect and as a point of referenc",
+        "slot_id": "0001590715-2022Q1"
+      }
+    },
+    "0001654954-22-015340": {
+      "attempted_covers": [
+        {
+          "accession": "0001477932-22-008528",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001477932-22-006111",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001654954-22-015340",
+        "anchor_date": "2022-11-15",
+        "cik": "0001590715",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Third Quarter 2022 Financial Results and Provides Business Outlook The first domestic, commercial producer of separated and high-purity REEs from recycled permanent magnets On track to commercially produce separated and high-purity battery elements from recycled lithium-based batteries in 4Q 2022 Company\u2019s patented chromatographic separation and purification process defining itself as the only complete recycling solution for all the critical and REEs in the EV powertrain Carbon sales increase 240% year-over-year as Company\u2019s carbon platform well positioned to capitalize on continued market strength and opportunities over the next several years Company to host update conference call today at 4:30 PM ET November 15, 2022 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / November 15, 2022 / American Resources Corporation (NASDAQ:AREC) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the third quarter of 2022 and provided a corporate update. The Company will host a conference call and webcast, today, November 15, 2022, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThe third quarter of 2022 showcased groundbreaking milestones and continued execution on all fronts as we position our innovative platform of assets to create long-term shareholder value. While we idled our Perry County Resources complex due to some maintenance and labor disruptions from the disastrous flooding w",
+        "slot_id": "0001590715-2022Q4"
+      }
+    },
+    "0001654954-23-003921": {
+      "attempted_covers": [
+        {
+          "accession": "0001477932-22-008528",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001477932-22-006111",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001654954-23-003921",
+        "anchor_date": "2023-03-30",
+        "cik": "0001590715",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Fourth Quarter and Record Full Year 2022 Financial Results and Provides Business Outlook 2022 revenues increased over 400% vs. 2021 and carbon operations continue to scale The first domestic, commercial producer of separated and high-purity REEs from recycled permanent magnets and high-purity battery elements from recycled lithium-based batteries Company\u2019s patented chromatographic separation and purification process defining itself as the world-leading critical mineral refining technology Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 4:30 PM ET March 30, 2023 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / March 30, 2023 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the fourth quarter and full year ended December 31, 2022. The Company will host a conference call and webcast, today, March 30, 2023, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout 2022 we further established our pillars of growth and have uniquely positioned our businesses to capitalize on defined growth opportunities across the markets we serve. We believe the past year, where we realized record revenues, marks an exciting inflection point in our transformational evolution as a Company. Our American Carbon division i",
+        "slot_id": "0001590715-2023Q1"
+      }
+    },
+    "0001654954-23-014358": {
+      "attempted_covers": [
+        {
+          "accession": "0001477932-23-008446",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        },
+        {
+          "accession": "0001477932-23-006093",
+          "reason": "UNRESOLVED_COMMON_CLASS"
+        }
+      ],
+      "target": {
+        "accession": "0001654954-23-014358",
+        "anchor_date": "2023-11-14",
+        "cik": "0001590715",
+        "original_security": {
+          "common_stock_evidence": [],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": null,
+          "inline_trading_symbols": [],
+          "status": "UNRESOLVED_COMMON_CLASS",
+          "symbols": []
+        },
+        "release_opening": "EX-99.1 2 arec_ex991.htm EX-99.1 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Third Quarter 2023 Financial Results and Provides Business Outlook Company reports a 165% YoY increase in net income of $3.48 million and EPS of $0.05 for the third quarter of 2023 Company is executing on the monetization of its carbon platform entering into letters of intent (LOI) to sell select assets of American Carbon LOIs for American Carbon represents approximately $300 million in value or $3.84 per share The first domestic, commercial producer of separated and ultra-pure rare earth oxides from recycled permanent magnets and ultra-pure lithium carbonate from recycled lithium-based batteries manufacturing scrap and ore-based feedstocks Secured initial non-dilutive capital sources for critical mineral refining capacity expansion Executing on global expansion and resource diversification strategy to secure partnerships to refine lithium ores from international sources Company to host update conference call today at 4:30 PM ET November 14, 2023 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / November 14, 2023 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the third quarter of 2023. The Company will host a conference call and webcast, today, November 14, 2023, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout the past several months we\u2019ve continued to execute on our strategic plan of action to monetize our unique plat",
+        "slot_id": "0001590715-2023Q4"
+      }
+    }
+  },
+  "updated_at": "2026-09-13T19:55:18.328083+00:00"
+}

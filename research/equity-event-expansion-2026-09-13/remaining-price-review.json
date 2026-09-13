@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-13T20:53:46.349107+00:00",
+  "new_unverified_action_fields": [
+    {
+      "date": "2019-12-12",
+      "reason": "Not covered by the source reviews completed before price arrival; remains unverified.",
+      "split_factor": 0.0769230769230769,
+      "ticker": "ASXC"
+    },
+    {
+      "date": "2020-05-29",
+      "reason": "Not covered by the source reviews completed before price arrival; remains unverified.",
+      "split_factor": 0.2,
+      "ticker": "AYRO"
+    },
+    {
+      "date": "2020-12-28",
+      "reason": "Not covered by the source reviews completed before price arrival; remains unverified.",
+      "split_factor": 0.0625,
+      "ticker": "ZVRA"
+    }
+  ],
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "price_manifest_sha256": "0f288f27d4ef6338ada23ecdc3cdf9076071e0782d6859f03e036f00cfe17a12",
+  "reviewed_action_keys": [
+    "DNTH:2023-09-12:split",
+    "AYRO:2023-09-18:split"
+  ],
+  "scope": "Action metadata and original status sources only; no returns."
+}

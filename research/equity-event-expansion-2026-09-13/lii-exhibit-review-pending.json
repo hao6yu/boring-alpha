@@ -1,0 +1,190 @@
+{
+  "classification": {
+    "accounting_flags": {
+      "constant_currency": true,
+      "non_gaap": true,
+      "restated_or_recast": false
+    },
+    "classification": "EARNINGS_RELEASE",
+    "classification_evidence": {
+      "earnings_pattern": true,
+      "future_release_notice": false,
+      "guidance_only": false,
+      "numerical_results": true,
+      "posted_actual_results_in_companion": false,
+      "preliminary": false
+    },
+    "period_candidates": [
+      {
+        "excerpt": " Refrigeration Segment Consolidated For the Three Months Ended June 30, For the Three Months Ended June 30, 2019 2018 2019 2018 Net sales, a GAAP measure $ 148.7 $ 207.3 $ 1,099.1 $ 1,175.4 Net sales from non-cor",
+        "explicit_scopes": [
+          "quarter"
+        ],
+        "kind": "three months",
+        "period_end": "2019-06-30",
+        "raw_kind": "three months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": " Refrigeration Segment Consolidated For the Three Months Ended June 30, For the Three Months Ended June 30, 2019 2018 2019 2018 Gross profit, a GAAP measure $ 45.7 $ 61.7 $ 332.1 $ 361.6 Non-GAAP adjustments to g",
+        "explicit_scopes": [
+          "quarter"
+        ],
+        "kind": "three months",
+        "period_end": "2019-06-30",
+        "raw_kind": "three months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": " Refrigeration Segment Consolidated For the Three Months Ended June 30, For the Three Months Ended June 30, 2019 2018 2019 2018 Segment profit, a GAAP measure $ 19.1 $ 23.4 $ 202.3 $ 205.3 Gross (loss) profit fro",
+        "explicit_scopes": [
+          "quarter"
+        ],
+        "kind": "three months",
+        "period_end": "2019-06-30",
+        "raw_kind": "three months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": " Refrigeration Segment Consolidated For the Three Months Ended June 30, For the Three Months Ended June 30, 2019 2018 2019 2018 Selling, general and administrative expenses, a GAAP measure $ 29.5 $ 42.8 $ 152.4 $",
+        "explicit_scopes": [
+          "quarter"
+        ],
+        "kind": "three months",
+        "period_end": "2019-06-30",
+        "raw_kind": "three months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "in millions, except per share data) For the Three Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Net sales $ 1,099.1 $ 1,175.4 $ 1,889.4 $ 2,010.2 Cost of goods sold 767.0 813.8 1,3",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": ") (Unaudited) (Amounts in millions) For the Three Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Adjusted Net Sales Residential Heating & Cooling $ 689.1 $ 716.0 $ 1,154.6 $ 1,169.7",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "Consolidated Statements of Cash Flows (Unaudited) (Amounts in millions) For the Six Months Ended June 30, 2019 2018 Cash flows from operating activities: Net income $ 180.0 $ 175.5 Adjustments to reconcile net ",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "lost profits are collected in full. For the Three Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Components of Losses (gains) and other expenses, net (pre-tax): Realized losses (gai",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "-GAAP measure (shares in millions): For the Three Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Average shares outstanding - diluted, a GAAP measure 39.5 41.1 39.8 $ 41.6 Impact on",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "s. Refrigeration Segment Consolidated For the Six Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Net sales, a GAAP measure $ 300.1 $ 409.3 $ 1,889.4 $ 2,010.2 Net sales from non-cor",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "s. Refrigeration Segment Consolidated For the Six Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Gross profit, a GAAP measure $ 88.3 $ 116.4 $ 533.6 $ 584.7 Non-GAAP adjustments to ",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      },
+      {
+        "excerpt": "s. Refrigeration Segment Consolidated For the Six Months Ended June 30, For the Six Months Ended June 30, 2019 2018 2019 2018 Segment profit, a GAAP measure $ 27.5 $ 32.1 $ 300.3 $ 276.1 Gross profit from non-c",
+        "explicit_scopes": [],
+        "kind": "six months",
+        "period_end": "2019-06-30",
+        "raw_kind": "six months",
+        "source": "earnings_exhibit"
+      }
+    ],
+    "period_end": "2019-06-30",
+    "period_evidence": {
+      "excerpt": " Refrigeration Segment Consolidated For the Three Months Ended June 30, For the Three Months Ended June 30, 2019 2018 2019 2018 Net sales, a GAAP measure $ 148.7 $ 207.3 $ 1,099.1 $ 1,175.4 Net sales from non-cor",
+      "explicit_scopes": [
+        "quarter"
+      ],
+      "kind": "three months",
+      "period_end": "2019-06-30",
+      "raw_kind": "three months",
+      "source": "earnings_exhibit"
+    },
+    "primary_release_date_candidates": [
+      "2019-07-22"
+    ],
+    "quarter_ordinal": 2,
+    "release_date": "2019-07-22",
+    "release_date_candidates": [
+      "2019-07-22"
+    ],
+    "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date"
+  },
+  "event": {
+    "acceptance_eastern": "2019-07-22T07:47:24-04:00",
+    "acceptance_utc": "2019-07-22T11:47:24.000Z",
+    "accession": "0001069202-19-000027",
+    "accounting_companions": [],
+    "classification": "UNRESOLVED",
+    "classification_evidence": [],
+    "daily_entry_anchor_api": "2019-07-22",
+    "daily_entry_anchor_index": "2019-07-22",
+    "daily_entry_invariant": true,
+    "exhibit_candidates": [],
+    "filing_date": "2019-07-22",
+    "form": "8-K",
+    "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d4ddedccaf944d01defb7cfdb09257227023db0a4c7b4be34e6ad36cf461f44e.html",
+    "item_202_excerpt": "Item 2.02 Results of Operations and Financial Condition.* On July 22, 2019, Lennox International Inc. issued a press release announcing its financial results for the second quarter of 2019. A copy of the press release is furnished as Exhibit 99.1 to this report. ",
+    "items": "2.02,9.01",
+    "metadata_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5af9d50d750751cf6cc9781aaf2335b467a021463a5189531404f6d92b2ce274.json",
+    "period_end": null,
+    "primary_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7345592c010b1b24949b1c811ab75bdba69cb8854e3e5e376bc5d3a3b5fff4c5.htm",
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1069202/000106920219000027/a2019-3x318k2.htm",
+    "release_date": null,
+    "security": {
+      "common_stock_evidence": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | LII |  | New York Stock Exchange",
+          "symbols": [
+            "LII"
+          ]
+        }
+      ],
+      "excluded_common_unit_rows": [],
+      "historical_symbol": "LII",
+      "inline_trading_symbols": [],
+      "status": "VERIFIED_SINGLE_COMMON_CLASS",
+      "symbols": [
+        "LII"
+      ]
+    },
+    "timing_match": true,
+    "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+  },
+  "excerpt": "EX-99..1 2 ex-991pressreleasetables20.htm EXHIBIT 99..1 Exhibit Exhibit-99.1 Lennox International Reports Second Quarter Results \u2022 Revenue on a GAAP basis down 6%, including 8% of negative impact from the tornado, divestitures and foreign exchange \u2022 Excluding divestitures, adjusted revenue down 1%, including 3% of negative tornado impact and 1% of negative foreign exchange \u2022 GAAP EPS from continuing operations down 17% to $2.81, including a previously announced non-cash pension settlement charge of $1.14 \u2022 Adjusted EPS from continuing operations up 2% to $3.74 \u2022 Updating 2019 guidance following the adverse weather conditions of the second quarter and a reduced outlook on commercial and refrigeration end markets \u2022 Updating 2019 guidance for adjusted revenue growth from 3-7% to 2-5% \u2022 Updating 2019 guidance for GAAP EPS from continuing operations from $12.65-$13.25 to $11.91-$12.51 \u2022 Updating adjusted EPS from continuing operations from $12.00-$12.60 to $11.30-$11.90 \u2022 Reiterating 2019 guidance for $400 million of stock repurchases DALLAS, July 22, 2019 - Lennox International Inc. (NYSE: LII) today reported financial results for the second quarter of 2019. All comparisons are to the prior-year period. The company\u2019s tornado references relate to the July 2018 tornado damage at a Residential manufacturing facility in Iowa. Adjusted revenue and profit exclude non-core Refrigeration businesses divested in 2018 and 2019. For the second quarter, Lennox International reported GAAP and adjusted revenue of $1,099 million. GAAP revenue was down 6%. At constant currency, GAAP revenue was down 5%. Adjusted revenue, excluding the impact from divestitures, was down 1%. At constant currency, adjusted revenue was flat, including 3% of negative tornado impact. GAAP operating income was $214 million, up 10%. GAAP earnings per share from continuing operations was $2.81, down 17%, including a non-cash pension settlement charge of $1.14. Total adjusted segment profit declined 2% to $202 million in the second quarter, and total segment margin was relatively flat at 18.4%. Adjusted earnings per share from continuing operations was up 2% to $3.74. \u201cSignificantly cooler temperatures and higher precipitation across the United States adversely impacted the HVAC market in the second quarter, and especially in key Central regions where cooling degree days were down over 30% and precipitation was up over 60% ,\u201d said Chairman and CEO Todd Bluedorn. \u201cResidential segment revenue was down 3% at constant currency and down 4% on a reported basis in the quarter, profit was flat, and margin expanded 80 basis points to 22.3%. Residential price yield was 3.6% in the quarter. Our Residential business had negative tornado impact of $28 million to revenue in the second quarter and $16 million to segment profit offset by $18 million of insurance recovery. Adjusting for the net impact from the tornado and insurance proceeds, Residential revenue was flat, profit was down 1%, and margin was down 40 basis points to 21.1%. \u201cSlower moving shipments in the industry due to adverse weather has slowed regaining market share following the tornado and extends our recovery timeline to include the fourth quarter,\u201d Bluedorn added. \u201cFor 2019 overall, we now expect $99 million of negative tornado impact to Residential revenue, up from $70 million previously; a negative $54 million impact to segment profit, up from $40 million previously; and insurance recovery for lost profits of $94 million, up from $80 million previously. The resulting $40 million of net benefit to Residential segment profit in 2019 is unchanged. \u201cOur Commercial business hit a new second-quarter high for revenue and set new records for segment profit and margin. Commercial revenue was up 4%, led by high-single digit growth in National Account equipment business. Segment profit rose 6% to a record $54 million, and segment margin expanded 50 basis points to a record 20.6%. In Refrigeration, adjusted segment revenue rose 5% at constant currency with volume up in Europe and down in North America. Adjusted segment profit was down 19%, and adjusted segment margin declined 340 basis points to 12.8%, due in part to lower mix and the timing of the sale of refrigerant allocations in Europe compared to the prior-year quarter. We continue to expect revenue growth for both of these businesses in the second half but have reduced the outlook on commercial and refrigeration end markets. \u201cFor the company overall, we are updating 2019 guidance to adjusted revenue growth of 2-5% and adjusted EPS from continuing operations of $11.30-$11.90 and reiterate stock repurchases of $400 million for the full year.\u201d FINANCIAL HIGHLIGHTS Revenue: On a GAAP and adjusted basis, second-quarter revenue was $1,099 million. GAAP revenue was down 6%, and adjusted revenue was down 1%. Foreign exchange was unfavorable to revenue growth by 1%. Volume was down, and price and mix were favorable. Gross Profit: On a GAAP and adjusted basis, gross profit was $332 million and gross margin was 30.2%. Gross profit was down 8% on a GAAP basis and down 6% on an adjusted basis. Gross margin was down 60 basis points on a GAAP basis and down 140 basis points on an adjusted basis. Gross profit was impacted by the tornado, cooler and wetter weather and factory productivity, unfavorable mix, higher commodity, freight, tariff and other product costs, distribution investments, and unfavorable foreign exchange. On a GAAP basis, divestitures also had a negative impact on gross profit. Partial offsets to gross profit included favorable price and warranty, and sourcing and engineering-led cost reductions. Income from Continuing Operations: On a GAAP basis, income from continuing operations for the second quarter was $111.0 million, or $2.81 per share, compared to $139.2 million, or $3.39 per share, in the prior-year quarter. Adjusted income from continuing operations in the second quarter was $147.6 million, or $3.74 per share, compared to $150.6 million, or $3.67 per share, in the prior-year quarter. Adjusted earnings from continuing operations for the second quarter of 2019 excludes net after-tax charges of $36.6 million: a charge of $45.5 million for pension settlement, a net charge of $1.5 million for various other items, and a gain of $10.4 million from insurance recoveries, net of losses incurred. Cash from Operations, Free Cash Flow and Total Debt: Net cash from operations in the second quarter was $30 million compared to $49 million in the prior-year quarter. Capital expenditures and purchases of short-term investments were $18 million compared to $21 million in the prior-year quarter. Insurance recoveries for damage to property and proceeds from the disposal of property, plant and equipment were approximately $6 million in the second quarter of 2019. Free cash flow was $20 million compared to $28 million in the second quarter a year ago. Total debt at the end of the second quarter was $1.47 billion. Total cash and cash equivalents were $36 million at the end of June. In the second quarter, the company repurchased $150 million of stock and paid $25 million in dividends. BUSINESS SEGMENT HIGHLIGHTS Residential Heating & Cooling Revenue in the Residential Heating & Cooling business segment declined 4% to $689 million. Foreign exchange had a negative 1% impact on revenue. Segment profit was flat at $153 million. Segment margin expanded 80 basis points to 22.3%. Residential results were impacted by favorable price, sourcing and engineering-led cost reductions, favorable warranty, and insurance proceeds. Offsets included cooler and wetter weather, tornado impact, factory productivity, unfavorable mix, higher commodity, freight, tariff and other product costs, distribution and SG&A investments, and unfavorable foreign exchange. Commercial Heating & Cooling Revenue in the Commercial Heating & Cooling business segment was a second-quarter record $261 million, up 4%. Foreign exchange was neutral to revenue. Segment profit was a record $54 million, up 6%, and segment margin was a record 20.6%, up 50 basis points. Results were impacted by favorable price, favorable mix, and sourcing and engineering-led cost reductions. Partial offsets included lower volume, higher commodity and other product costs, tariffs, freight, and distribution and SG&A investments. Refrigeration Adjusted revenue in the Refrigeration business segment was $149 million in the second quarter, up 2%. Foreign exchange had a negative 3% impact on revenue. Refrigeration adjusted profit was $19 million, down 19%, and adjusted segment margin was 12.8%, down 340 basis points. Results were impacted by lower mix and the timing on the sale of refrigerant allocations in Europe compared to the prior-year quarter, higher commodity, freight, distribution, tariffs and other product costs, and unfavorable foreign exchange. Partial offsets included higher volume, favorable price, sourcing and engineering-led cost reductions, and lower ",
+  "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d300539b9a8c1e91d406938a7b4fdec6b78a4479e8528c7892916583ae34e66e.htm",
+  "sha256": "2d3916a724b5517805f2ef446007c901afa3060590aa935db1940c674542cd7f",
+  "text_characters": 40066,
+  "url": "https://www.sec.gov/Archives/edgar/data/1069202/000106920219000027/ex-991pressreleasetables20.htm"
+}

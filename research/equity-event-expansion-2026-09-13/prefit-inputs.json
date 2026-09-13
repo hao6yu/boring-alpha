@@ -1,0 +1,59 @@
+{
+  "bound_execution_inputs_sha256": {
+    "corporate-action-evidence.json": "6ef9c0e06c1fa1570ec8280c28b4da054196265eccee55d35ff7c724f8105a27",
+    "data-expense.json": "d2a0843d255bda8b3a9b73532f0c900e5ae0d11f6ce28067531b9cab1f07a856",
+    "panel-inventory.json": "ce7e99868f3b11bc1fcd7d06215335d13634fab58b99e115386aba989a6667cb",
+    "price-source-exceptions.json": "54f04a86ac6305b803463e45935817aedcf81f9b4edd4d82682e615adc0e2497",
+    "source-readiness.json": "07a942e1245eb2b7bc57d5ce28b758cdb48a6188d5a493dae26a5a38cd048f79",
+    "tiingo-directory-source.json": "ec75976ede25eea648b3f75a7a800a523a20a7cbe3b7ac6e9440b23fa0d857af"
+  },
+  "code_sha256": {
+    "evaluation_metrics.py": "993c108144b4f75fdd9dc172bd9060a8f6ea5672085479b5d5ab585ce846d29c",
+    "feature_extract.py": "5eecb127cb91cab0d95fccd6b2e1e6cb591adaa8b1ca54fd8ce1757de1a60c0d",
+    "model.py": "a11af1a7582f4bca9d3dd66d7021fbe7c86545e4b0705f382007ce435da9f8e2",
+    "panel.py": "2e37eff3d2ece71e852988dbf08b4ff4e5300b050adf990623c7f06c6f95ecdc",
+    "portfolio.py": "efbbcb943a900053e4e172546644d92d407fd32a78c350542cc3cb5c1aecbb85",
+    "price_data.py": "a3440bcd170b5e9926147717692277a4c6207af5e8689a8d1403c2d98cb11185",
+    "run_experiment.py": "f42855bc9f8593b81aec71ff7c9e6508cf9c2c2f640891eccc1a60c3bfea2d0a"
+  },
+  "cohort_sha256": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270",
+  "created_utc": "2026-09-13T20:57:09.721753+00:00",
+  "evaluation_outcomes_masked": true,
+  "evaluation_pool": {
+    "issuers": 117,
+    "observations": 731,
+    "path": "data/snapshots/equity-event-expansion-2026-09-13/frozen-evaluation-pool.json",
+    "sha256": "acbc91adddbc01146f953fb401caf7510318899ba66bd9bffdaaec29a06c2963"
+  },
+  "excluded_registered_slots": {
+    "note": "Includes development observations and non-actionable evaluation slots; full original statuses preserved.",
+    "path": "research/equity-event-expansion-2026-09-13/registered-slot-exclusions.json",
+    "sha256": "ee07eb51fde56919a9a103e763b057c0aa913117afb85157c65786ca22f564fd"
+  },
+  "inventory_sha256": "ce7e99868f3b11bc1fcd7d06215335d13634fab58b99e115386aba989a6667cb",
+  "panel": {
+    "path": "data/snapshots/equity-event-expansion-2026-09-13/development-panel.json",
+    "sha256": "246c208e8fc4b98668afbae3e68346b3fe2dfcb3b0cfc00a117bb1994e087de4"
+  },
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "price_manifest_sha256": "0f288f27d4ef6338ada23ecdc3cdf9076071e0782d6859f03e036f00cfe17a12",
+  "readiness_sha256": "07a942e1245eb2b7bc57d5ce28b758cdb48a6188d5a493dae26a5a38cd048f79",
+  "runtime": {
+    "session_schedule_sha256": "d0cc5b709e47e69de7e072e088d8e5c01bd77e6bc92601f98cfd7f94053f1ef1",
+    "sessions": 1070,
+    "versions": {
+      "exchange-calendars": "4.13.2",
+      "joblib": "1.6.0",
+      "numpy": "2.5.3",
+      "scikit-learn": "1.8.0"
+    }
+  },
+  "sample_counts": {
+    "evaluation": 731,
+    "evaluation_issuers": 117,
+    "fit_2020": 360,
+    "validation_2021": 393
+  },
+  "sec_events_sha256": "b609659897eabe4a91a8d52a4879c1f9b870af16ecc895e5169ab30a47027eaf",
+  "status_source_assumption": "Original contemporaneous listing covers carry forward between explicitly reviewed status events. This is not daily independent venue corroboration. Pre-open knowledge uses available_at; closing status uses effective_at."
+}

@@ -1,0 +1,47 @@
+{
+  "earlier_review_superseded": {
+    "0000910638-21-000005": {
+      "decision": "RETAIN_FULL_ORIGINAL_RELEASE_CLASSIFICATION",
+      "reason": "Original3D Systems release presents actual full2020Q4/year results unaudited, while delaying10-K to review cash-flow presentation. Preliminary refers to that review; it is not merely an advance revenue estimate. Later amendments are not substituted.",
+      "scope": "Release classification, not certification of reported accounts",
+      "source_cik": "0000910638"
+    }
+  },
+  "event_reviews": {
+    "0000910638-21-000005": {
+      "decision": "PRELIMINARY",
+      "reason": "Expanded original release opening explicitly calls the reported period preliminary financial results or preview. Under the frozen full-release rule it cannot be the current full release or an original-prior full release.",
+      "reviewed_utc": "2026-09-13T19:56:17.808318+00:00",
+      "source_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7ce21af2bbbb552ddbde6f42255342a059491da9f66486c608e9c068c872a7c7.htm",
+      "source_sha256": "3ff905c48b9ce1f2f476b2e6e41d5689fafd3b4ee64556e90a7dadc545b8fe80"
+    },
+    "0001193125-23-256539": {
+      "decision": "PRELIMINARY",
+      "reason": "Expanded original release opening explicitly calls the reported period preliminary financial results or preview. Under the frozen full-release rule it cannot be the current full release or an original-prior full release.",
+      "reviewed_utc": "2026-09-13T19:56:17.812434+00:00",
+      "source_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/c199f008cfc14faacc7c7916eb1dac19e6fc1c401bf84b4042ca9f364d8ce6db.htm",
+      "source_sha256": "76ab6a419af4f8c6a5872af8842fe59f85933eed7f320c7f25ff6ff042e142c4"
+    }
+  },
+  "final_source_flags": [
+    {
+      "accession": "0000910638-21-000005",
+      "flags": [
+        "preliminary analysis, the company believes that any financial",
+        "preliminary financial results"
+      ],
+      "head": "EX-99.1 2 ddd2020-12x31earningsrelea.htm EX-99.1 Document EXHIBIT 99.1 3D Systems Reports Fourth Quarter and Full Year 2020 Financial Results (Unaudited), Reschedules Form 10-K Filing ROCK HILL, South Carolina - March 1, 2021 - 3D Systems Corporation (NYSE:DDD) announced today that it will delay filing its Annual Report on Form 10-K for the fiscal year ended December 31, 2020. The company will file a Form 12b-25, Notification of Late Filing, with the Securities and Exchange Commission, which extends the deadline to file the Form 10-K. The company confirms its plans to hold a fourth quarter and full year 2020 conference call on Tuesday, March 2, 2021. The company noted the delay in filing is primarily related to the presentation of cash flows associated with the divestiture process for its Cimatron and GibbsCam software businesses. Based on preliminary analysis, the company believes that any financial impact resulting from this review is accounted for within its fourth quarter and full year 2020 results presented below. The delayed filing has no impact on the operations of the company\u2019s business. 3D Systems CEO, Dr. Jeff Graves commented \u201cWhile we were greatly disappointed that we were not able to conclude the audit in a timely fashion, we are pleased to provide our preliminary financial results for the fourth quarter and full year 2020, and look forward to discussing these results and our progress in positioning 3D Systems for sustained profitable growth on our conference cal",
+      "slot_id": "0000910638-2021Q1"
+    },
+    {
+      "accession": "0001193125-23-256539",
+      "flags": [
+        "preliminary second quarter FY24 results"
+      ],
+      "head": "EX-99.1 7 d569820dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 News Release For Immediate Release Investor Contact: Media Contact: Tyler Lindwall Eric Smith Phone: 612-704-0147 Phone: 720-772-0877 E-mail: investor.relations@vistaoutdoor.com E-mail: media.relations@vistaoutdoor.com Vista Outdoor Enters into Definitive Agreement to Sell Sporting Products Business to Czechoslovak Group for $1.91 Billion \u2022 Sale aligns with previous plan to separate the company and creates two separate highly focused businesses \u2022 Transaction valued at approximately 5x enterprise value to Sporting Products Fiscal Year 2024 EBITDA, including estimated standalone costs \u2022 Outdoor Products, recently rebranded as Revelyst, will become standalone public company upon transaction close \u2022 Provides preview of second quarter Fiscal Year 2024 results and revised Fiscal Year 2024 guidance \u2022 Company to host conference call at 9 a.m. ET. on October 16, 2023, to discuss the transaction and its preliminary second quarter FY24 results \u2022 Leadership appointments include Outdoor Products naming Andy Keegan as CFO and Sporting Products naming Al Kerfeld as CFO \u2022 Vista Outdoor postpones Investor Day planned for October 19, 2023, and will provide an update regarding a rescheduled event closer to the sale closing ANOKA, Minn., October 16, 2023 \u2013 Vista Outdoor Inc. (NYSE: VSTO) (\u201cVista Outdoor\u201d), the parent company of 41 renowned brands that design, manufacture and market sporting and outdoor products to consumers around the glob",
+      "slot_id": "0001616318-2023Q4"
+    }
+  ],
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "reviewed_utc": "2026-09-13T19:39:44.926207+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "file": "data/snapshots/equity-event-test-2026-09-10/supported-tickers.zip",
+  "scope": "Current provider directory only for source/alias availability; not cohort membership or trading predictors. Contains no price observations.",
+  "sha256": "0ce300ce5b788eaa6ebcdfbcf23e06e85797cec2f2513c65a7b6c14574a543b9",
+  "url": "https://apimedia.tiingo.com/docs/tiingo/daily/supported_tickers.zip"
+}

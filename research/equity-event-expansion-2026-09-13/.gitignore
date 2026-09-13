@@ -1,0 +1,8 @@
+sec-parsed/
+sec-issuers/
+sec-checkpoints/
+sec-events.json
+sec-events-current-roster.json
+sec-collector.lock
+__pycache__/
+*.log

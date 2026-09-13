@@ -1,0 +1,2069 @@
+{
+  "complete": true,
+  "inherited_100_issuers_exactly_preserved": true,
+  "inherited_155_rank_decisions_exactly_preserved": true,
+  "new_selected_issuers": 100,
+  "new_verified_owners": 100,
+  "original_selection_sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0",
+  "passed": true,
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "rank_order_verified": true,
+  "rows": [
+    {
+      "cik": "0000766421",
+      "index_ciks": [
+        "0000766421"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/aaa348e5d418aef80e8a7b3e874e6988ce912d2c7321ce015de3d6f38a91de9c.html",
+      "index_sha256": "5fa9bf5bb6e0d5f87602e097b6ff3da26ac8ed93b286d15d46147a8225fece3e",
+      "issuer_name": "ALASKA AIR GROUP, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.01 par value | New York Stock Exchange | ALK",
+          "symbols": [
+            "ALK"
+          ]
+        }
+      ],
+      "seed_rank": 157,
+      "symbol": "ALK",
+      "verified": true
+    },
+    {
+      "cik": "0001580670",
+      "index_ciks": [
+        "0001580670"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/87a90e7b18ffb14677287b0794ebe926af72bb7fce52d4b205fb7dee905a49d3.html",
+      "index_sha256": "eebab0e758f56a77f0731c79d98343fa8031e1a55a32200ee32d3bf523625fb9",
+      "issuer_name": "LGI Homes, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | LGIH |  | NASDAQ Global Select Market",
+          "symbols": [
+            "LGIH"
+          ]
+        }
+      ],
+      "seed_rank": 158,
+      "symbol": "LGIH",
+      "verified": true
+    },
+    {
+      "cik": "0000891482",
+      "index_ciks": [
+        "0000891482"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5a3428c75828fb2bdcee8a51e724f66b5f76342a2c892762f4cfe14c6e14794e.html",
+      "index_sha256": "e2f32275f8e3a788acc3c40dbe20c91e6d06b59471deae77594f66287e0e449b",
+      "issuer_name": "FULL HOUSE RESORTS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.0001 par value per share |  | FLL |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FLL"
+          ]
+        }
+      ],
+      "seed_rank": 162,
+      "symbol": "FLL",
+      "verified": true
+    },
+    {
+      "cik": "0001175483",
+      "index_ciks": [
+        "0001175483"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2f0bc2a9594e29f2015f3f6b0030861c73935ec76b820acd6bfade24c3198e8d.html",
+      "index_sha256": "245784e995f0a07210a84013131a5688a951adc7a7c1778b364a20ef6c11c686",
+      "issuer_name": "Drive Shack Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": " | Common Stock, $0.01 par value per share | DS | New York Stock Exchange (NYSE)",
+          "symbols": [
+            "DS"
+          ]
+        }
+      ],
+      "seed_rank": 164,
+      "symbol": "DS",
+      "verified": true
+    },
+    {
+      "cik": "0000896262",
+      "index_ciks": [
+        "0000896262"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4e540223b554cca70489e0c80a7f6f848a5e19fdd143f308118773ddce9bf3bc.html",
+      "index_sha256": "9591db2fbe56f9e07af9cafb0a02c05eb4b3ed2134bf0a5f8a422a01841aa391",
+      "issuer_name": "AMEDISYS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share |  | AMED |  | The NASDAQ Global Select Market",
+          "symbols": [
+            "AMED"
+          ]
+        }
+      ],
+      "seed_rank": 165,
+      "symbol": "AMED",
+      "verified": true
+    },
+    {
+      "cik": "0001685040",
+      "index_ciks": [
+        "0001685040"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f212e05886dea985c167a7a89b1c332887921de0095b20afa7811d0211270f8c.html",
+      "index_sha256": "b885f0639860367ee4b9f20c16a2c430d59701a2f74a54a587d6f9e6a17bf389",
+      "issuer_name": "Brighthouse Financial, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share | BHF | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "BHF"
+          ]
+        }
+      ],
+      "seed_rank": 167,
+      "symbol": "BHF",
+      "verified": true
+    },
+    {
+      "cik": "0001742924",
+      "index_ciks": [
+        "0001742924"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d3c0d859f1637153e92fff428fa739e24e2590a8a26135c4dd748f9d51b4c514.html",
+      "index_sha256": "9b0083f628bf315f29d16764e2d314cc0195afe7d170f0b2be1729304d5d2a1e",
+      "issuer_name": "Livent Corp.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | LTHM | New York Stock Exchange",
+          "symbols": [
+            "LTHM"
+          ]
+        }
+      ],
+      "seed_rank": 170,
+      "symbol": "LTHM",
+      "verified": true
+    },
+    {
+      "cik": "0001626199",
+      "index_ciks": [
+        "0001626199"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6f4eadd196f684f644875010a98a8bcbc53f646223bf9f2e7d75658bda03c970.html",
+      "index_sha256": "ddabbf7e3b8e79a6e919fc23dd9d631f1fda93f7440426ad98093a0e5ebc2a36",
+      "issuer_name": "ALPINE IMMUNE SCIENCES, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share |  | ALPN |  | The Nasdaq Global Market",
+          "symbols": [
+            "ALPN"
+          ]
+        }
+      ],
+      "seed_rank": 172,
+      "symbol": "ALPN",
+      "verified": true
+    },
+    {
+      "cik": "0001401040",
+      "index_ciks": [
+        "0001401040"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a2bbf2c4cd6a891a7262a46ef71b4344d303af62759c0caf7b70c8b210a635a9.html",
+      "index_sha256": "fd84fbc39b51ba3d80122979d53d4281b48e54b73b9c2e8e335f889bf1037322",
+      "issuer_name": "DiaMedica Therapeutics Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Voting common shares, no par value per share | DMAC | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "DMAC"
+          ]
+        }
+      ],
+      "seed_rank": 173,
+      "symbol": "DMAC",
+      "verified": true
+    },
+    {
+      "cik": "0000883569",
+      "index_ciks": [
+        "0000883569"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3432c8ee0bd640f8bea2e354cd2c474401cda3ee1a916e1bcbaf083a2e5641b5.html",
+      "index_sha256": "2c9843f5f3d6cb27cfb91b9d09d18e49d16a1f309739eccd7543a1b5b03877a4",
+      "issuer_name": "Fossil Group, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | FOSL |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FOSL"
+          ]
+        }
+      ],
+      "seed_rank": 176,
+      "symbol": "FOSL",
+      "verified": true
+    },
+    {
+      "cik": "0000730464",
+      "index_ciks": [
+        "0000730464"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6abe6ce6ee04e7a76833243487e083e4234f814384ed854466a413fb0c56dd84.html",
+      "index_sha256": "276456482d21e0f55c8d8f8818c9945452ebe67b1c88d7c87ad285cbbf7b8742",
+      "issuer_name": "Adtalem Global Education Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock $0.01 Par Value |  | NYSE , CSE |  | ATGE",
+          "symbols": [
+            "ATGE"
+          ]
+        }
+      ],
+      "seed_rank": 177,
+      "symbol": "ATGE",
+      "verified": true
+    },
+    {
+      "cik": "0001730984",
+      "index_ciks": [
+        "0001730984"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/381ea62fa0247257b431ebe4f809ad9e1c9f4de38a7d64232d58873023f13469.html",
+      "index_sha256": "19bd6627fc3ffae382b96cc72e26b5d0947bffeae06c4a64b7908f5e8c36b293",
+      "issuer_name": "BayCom Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | BCML | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "BCML"
+          ]
+        }
+      ],
+      "seed_rank": 178,
+      "symbol": "BCML",
+      "verified": true
+    },
+    {
+      "cik": "0001385292",
+      "index_ciks": [
+        "0001385292"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/12b8704c612631cfdf6fa3dd3cc20a467f18f175f59191eb97f861411eda025b.html",
+      "index_sha256": "86ec22552b5c8a95f515ba3184f96912b66d242f2b0b8e62efc3b39cd0dec089",
+      "issuer_name": "Monotype Imaging Holdings Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share |  | TYPE |  | NASDAQ Global Select Market",
+          "symbols": [
+            "TYPE"
+          ]
+        }
+      ],
+      "seed_rank": 180,
+      "symbol": "TYPE",
+      "verified": true
+    },
+    {
+      "cik": "0001020569",
+      "index_ciks": [
+        "0001020569"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7021733f859427e40bcaa01c3242c9b4ee09fdc5228f78edebdd81aae039b423.html",
+      "index_sha256": "bcf96a1954b25d4f5de3d57b745700d555ef66bf207f1d4315bdea647e2c20ca",
+      "issuer_name": "IRON MOUNTAIN INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $.01 par value |  | IRM |  | NYSE",
+          "symbols": [
+            "IRM"
+          ]
+        }
+      ],
+      "seed_rank": 181,
+      "symbol": "IRM",
+      "verified": true
+    },
+    {
+      "cik": "0001158114",
+      "index_ciks": [
+        "0001158114"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a687ed372251a64979064528954520912324f472ae29affb10a62653678ba1ce.html",
+      "index_sha256": "6cf8b68716ae46d31486394410077fcda298cc1cec35e597e1e2c01519b0ae3f",
+      "issuer_name": "APPLIED OPTOELECTRONICS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par value $0.001 | AAOI | NASDAQ Global Market",
+          "symbols": [
+            "AAOI"
+          ]
+        }
+      ],
+      "seed_rank": 182,
+      "symbol": "AAOI",
+      "verified": true
+    },
+    {
+      "cik": "0001362190",
+      "index_ciks": [
+        "0001362190"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8791b21e12e097b65b9cb35dd58ce0c8d9dd71d68c15e02fd63aa8d9f1032369.html",
+      "index_sha256": "859422171afc55a35243cfef2baf8b38ee6a44dc76c77b42f287a5e4785877a7",
+      "issuer_name": "AUDIOEYE INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.00001 per share | AEYE | The NASDAQ Capital Market",
+          "symbols": [
+            "AEYE"
+          ]
+        }
+      ],
+      "seed_rank": 186,
+      "symbol": "AEYE",
+      "verified": true
+    },
+    {
+      "cik": "0001427925",
+      "index_ciks": [
+        "0001427925"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/891c98d99b5af293bee4e492ce19b5fce086ead6ab0a9669c4e2fb4e01874292.html",
+      "index_sha256": "140eaa8bbf024f361a6523660353f3de16332323b636c30eabee2b8b3b7e6456",
+      "issuer_name": "ACELRX PHARMACEUTICALS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value | ACRX | The Nasdaq Global Market",
+          "symbols": [
+            "ACRX"
+          ]
+        }
+      ],
+      "seed_rank": 187,
+      "symbol": "ACRX",
+      "verified": true
+    },
+    {
+      "cik": "0001623613",
+      "index_ciks": [
+        "0001623613"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b4f6fc757f25294c3597ed76352a4591f61b06ea39dbb0f3fb0997bf49e4a58e.html",
+      "index_sha256": "1729f6b92210d8a691b7d6b3494742b44339affe6b2ab9ea282f96f34aeb616a",
+      "issuer_name": "Mylan N.V.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Ordinary shares, nominal value \u20ac0.01 |  | MYL |  | The NASDAQ Stock Market",
+          "symbols": [
+            "MYL"
+          ]
+        }
+      ],
+      "seed_rank": 188,
+      "symbol": "MYL",
+      "verified": true
+    },
+    {
+      "cik": "0000906709",
+      "index_ciks": [
+        "0000906709"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/42821ab615510c703e75056e112f2365b90e98c35970674ee86daac816a8c77a.html",
+      "index_sha256": "3b09e37f1849083e8ad3780f280baf988526bc1f416ea524abe3d10e692218e7",
+      "issuer_name": "NEKTAR THERAPEUTICS",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.0001 par value |  | NKTR |  | NASDAQ Global Select Market",
+          "symbols": [
+            "NKTR"
+          ]
+        }
+      ],
+      "seed_rank": 190,
+      "symbol": "NKTR",
+      "verified": true
+    },
+    {
+      "cik": "0001045609",
+      "index_ciks": [
+        "0001045609",
+        "0001045610"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3b78b644bfe87f812207234aef841ebc35d64e41a203404c325c4a09fe61529c.html",
+      "index_sha256": "83d5f02780dd183a37ee600370f012e7774fe4084ea11c1c5d362c59f467dbfe",
+      "issuer_name": "Prologis, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Prologis, Inc. |  | Common Stock, $0.01 par value |  | PLD |  | New York Stock Exchange",
+          "symbols": [
+            "PLD"
+          ]
+        }
+      ],
+      "manual_review": {
+        "index_sha256": "83d5f02780dd183a37ee600370f012e7774fe4084ea11c1c5d362c59f467dbfe",
+        "listed_symbol": "PLD",
+        "listing_evidence": [
+          {
+            "row_excerpt": "Prologis, Inc. |  | Common Stock, $0.01 par value |  | PLD |  | New York Stock Exchange",
+            "symbols": [
+              "PLD"
+            ]
+          }
+        ],
+        "reason": "Original joint cover explicitly assigns PLD common stock to Prologis, Inc.; Prologis, L.P. rows list debt. Item2.02 specifies Prologis, Inc. financial results. SelectedCIK1045609 is Inc., not the operating partnership.",
+        "sources": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4aad2f4a3e5b0f160e82616dc27cc3a950de7aa6171d4b7edab10a4b0fb2f29b.htm",
+            "sha256": "6336ac0f80c29d46e27f1c882dec013d3f2b55cda022256a9485a9e092e24132",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459019024994/pld-8k_20190715.htm"
+          }
+        ],
+        "verified": true
+      },
+      "seed_rank": 192,
+      "symbol": "PLD",
+      "verified": true
+    },
+    {
+      "cik": "0001453687",
+      "index_ciks": [
+        "0001453687"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e5cdfee6e1c66d476683ade90bb100e4005d05ebe3edbba37de5ba09c68c9ce4.html",
+      "index_sha256": "0944235ff6b85c6b8db121e3cf98ad873442a01b6846e555e4b8476c1a105574",
+      "issuer_name": "SELECTA BIOSCIENCES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, | SELB | Nasdaq Global Market",
+          "symbols": [
+            "SELB"
+          ]
+        }
+      ],
+      "seed_rank": 194,
+      "symbol": "SELB",
+      "verified": true
+    },
+    {
+      "cik": "0000908255",
+      "index_ciks": [
+        "0000908255"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ac315355678a0c522c2def3ecc1dd3666954641f0734bf1a8fbc228da248c50b.html",
+      "index_sha256": "1cca208bfa4beace32226b8f4fe5a052e0e74c92271d23f08d04455b5c773230",
+      "issuer_name": "BORGWARNER INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | BWA |  | New York Stock Exchange",
+          "symbols": [
+            "BWA"
+          ]
+        }
+      ],
+      "seed_rank": 195,
+      "symbol": "BWA",
+      "verified": true
+    },
+    {
+      "cik": "0001585364",
+      "index_ciks": [
+        "0001585364"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/48ca04b30db5a022eff6eb0a955ad48890919854ae28096da46a2580a0584f1b.html",
+      "index_sha256": "ccfc505c16976a629e1d8b840a1541c3fc62e2b6e1829844ac7eacc36a710a4f",
+      "issuer_name": "PERRIGO Co plc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Ordinary shares | PRGO | New York Stock Exchange",
+          "symbols": [
+            "PRGO"
+          ]
+        }
+      ],
+      "seed_rank": 196,
+      "symbol": "PRGO",
+      "verified": true
+    },
+    {
+      "cik": "0000906107",
+      "index_ciks": [
+        "0000906107"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/bb2f086b04045037bdd4f9c4784c74ae54ae5393e19e4534dd49555c0566d368.html",
+      "index_sha256": "95f7b3208a35e4b45c8420724322a0276ce98cf786ddcebc8a2ef4f0c2cedcee",
+      "issuer_name": "EQUITY RESIDENTIAL",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares of Beneficial Interest, $0.01 Par Value |  | EQR |  | New York Stock Exchange",
+          "symbols": [
+            "EQR"
+          ]
+        }
+      ],
+      "seed_rank": 197,
+      "symbol": "EQR",
+      "verified": true
+    },
+    {
+      "cik": "0001689923",
+      "index_ciks": [
+        "0001689923"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/433b9db585d8bad1bc52e8efdefb8544b5959241414dc044e497ac8d5147d95e.html",
+      "index_sha256": "02c043f0fa9fcf27bb57ed20c976c08f41165384bd001672248551435acd1f0b",
+      "issuer_name": "Alteryx, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, $0.0001 par value per share |  | AYX |  | New York Stock Exchange",
+          "symbols": [
+            "AYX"
+          ]
+        }
+      ],
+      "seed_rank": 198,
+      "symbol": "AYX",
+      "verified": true
+    },
+    {
+      "cik": "0001138118",
+      "index_ciks": [
+        "0001138118"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/aeebc125b2403ebe5901dee9629a488c873cbf04166bfa626630c6b0b2b7a243.html",
+      "index_sha256": "d1ae802a1b188f375940b9e7a3be5a2064ebb8ead025626f87f465216f9a52ba",
+      "issuer_name": "CBRE GROUP, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, $0.01 par value per share | \u201cCBRE\u201d | New York Stock Exchange",
+          "symbols": [
+            "CBRE"
+          ]
+        }
+      ],
+      "seed_rank": 199,
+      "symbol": "CBRE",
+      "verified": true
+    },
+    {
+      "cik": "0000910638",
+      "index_ciks": [
+        "0000910638"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b14245ee8462cd0ff654255ecabe9a4fb758e75ea16913fdec06e7254d5a4ccf.html",
+      "index_sha256": "dcbe032959d2f66d7005fdf2dee24d1b4c0a53087279141c6732d166f915fb28",
+      "issuer_name": "3D SYSTEMS CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.001 per share | DDD | The New York Stock Exchange",
+          "symbols": [
+            "DDD"
+          ]
+        }
+      ],
+      "seed_rank": 200,
+      "symbol": "DDD",
+      "verified": true
+    },
+    {
+      "cik": "0000030625",
+      "index_ciks": [
+        "0000030625"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9c9a5569efe0a9b338ac47d8bb44e028a478ec8f50f816b8706a9edd0c76495b.html",
+      "index_sha256": "fdd2f8cf6b6b696de36418ff5155b39598bfbdbb66c4bdfe3100a25bf04bb118",
+      "issuer_name": "FLOWSERVE CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock , $1.25 Par Value | FLS | New York Stock Exchange LLC",
+          "symbols": [
+            "FLS"
+          ]
+        }
+      ],
+      "seed_rank": 202,
+      "symbol": "FLS",
+      "verified": true
+    },
+    {
+      "cik": "0001418076",
+      "index_ciks": [
+        "0001418076"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a34feed2d2bd0a413ed08c5859eacf87582983def6769d2f085dd7939fabcb90.html",
+      "index_sha256": "5212b956d95acee36bbe3b15eb972c4217c38e5a78fa7a02d1e96af123ea0578",
+      "issuer_name": "Solar Capital Ltd.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.01 per share | SLRC | The NASDAQ Global Select Market",
+          "symbols": [
+            "SLRC"
+          ]
+        }
+      ],
+      "seed_rank": 205,
+      "symbol": "SLRC",
+      "verified": true
+    },
+    {
+      "cik": "0001607716",
+      "index_ciks": [
+        "0001607716"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1c0ca38d771427af3d498dcd6b1ed642f62e7c47b2ef3b5d1a7cc8247699906a.html",
+      "index_sha256": "b1cc4001a14162a8edcc361e8b0730c73a5d2d10042e90b33ebfd5b4253dafc5",
+      "issuer_name": "Vivint Solar, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | VSLR |  | New York Stock Exchange",
+          "symbols": [
+            "VSLR"
+          ]
+        }
+      ],
+      "seed_rank": 207,
+      "symbol": "VSLR",
+      "verified": true
+    },
+    {
+      "cik": "0000891024",
+      "index_ciks": [
+        "0000891024"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e28d5350c11a127ab9e25cd5b23a9e204455a30b74945226bd9f0d354f80d35c.html",
+      "index_sha256": "fbce6a14db14ca7063f51e9e397cef9fa934bcbd453c538f4a91b10792a7dd67",
+      "issuer_name": "PATTERSON COMPANIES, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.01 |  | PDCO |  | NASDAQ Global Select Market",
+          "symbols": [
+            "PDCO"
+          ]
+        }
+      ],
+      "seed_rank": 209,
+      "symbol": "PDCO",
+      "verified": true
+    },
+    {
+      "cik": "0001262039",
+      "index_ciks": [
+        "0001262039"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/54bf7b958052def20b4ca8bb06b27daa2a5e31cbd42c094f544a33d3dfcc6d40.html",
+      "index_sha256": "820acc269118a9dc43e236f1df0de4bddd5a6d116a3f52d29fa07354c539f71f",
+      "issuer_name": "Fortinet, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 Par Value |  | FTNT |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FTNT"
+          ]
+        }
+      ],
+      "seed_rank": 210,
+      "symbol": "FTNT",
+      "verified": true
+    },
+    {
+      "cik": "0001282637",
+      "index_ciks": [
+        "0001282637"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9fa6d39fd2c74048030317d68233be3e18873c23ba207488d1dca3a738bce6e4.html",
+      "index_sha256": "661fd9d853a79fb7bfe29d7a9e3b40a68be85da0a9af21bd41103dd5917d6303",
+      "issuer_name": "NEWMARKET CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, without par value | NEU | New York Stock Exchange",
+          "symbols": [
+            "NEU"
+          ]
+        }
+      ],
+      "seed_rank": 211,
+      "symbol": "NEU",
+      "verified": true
+    },
+    {
+      "cik": "0001045450",
+      "index_ciks": [
+        "0001045450"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4f5b6b80c10c3ea12f059125f4a4b00820d700d022ad3223185e8ad548797a07.html",
+      "index_sha256": "64b3da53c6cde240d8448b4fead42b141e84a0e70ca5a154157d04c4b9af7b2b",
+      "issuer_name": "EPR PROPERTIES",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common shares of beneficial interest, par value $0.01 per share |  | EPR |  | New York Stock Exchange",
+          "symbols": [
+            "EPR"
+          ]
+        }
+      ],
+      "seed_rank": 214,
+      "symbol": "EPR",
+      "verified": true
+    },
+    {
+      "cik": "0001177394",
+      "index_ciks": [
+        "0001177394"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/949c41633e26066ec116ce923f2b922a2b3352a51b9b91861a2fa268033cf277.html",
+      "index_sha256": "4a914e345cf91a4463e6c40525be0d5a518f1f6b633e9b69705729cd5596cc23",
+      "issuer_name": "SYNNEX CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | SNX | The New York Stock Exchange",
+          "symbols": [
+            "SNX"
+          ]
+        }
+      ],
+      "seed_rank": 215,
+      "symbol": "SNX",
+      "verified": true
+    },
+    {
+      "cik": "0000706863",
+      "index_ciks": [
+        "0000706863"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/c95c1a33cc598fbc7349025ff7d53f5e72ec0f637db74450d38b25f455e4a502.html",
+      "index_sha256": "a21089558ca1e9e6320835976919af3128e9c08319e3fb4a107640fbf98fe47e",
+      "issuer_name": "UNION BANKSHARES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $2.00 par value | The NASDAQ Stock Market LLC",
+          "source_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9d2befd2608ef8b7c41b694e4805a8b52bea43569bc7707ff5a5331df823025e.htm",
+          "symbol_evidence_excerpt": "The Company's common stock is traded on the NASDAQ Global Select Market under the symbol \"UNB\"",
+          "symbols": [
+            "UNB"
+          ]
+        }
+      ],
+      "seed_rank": 216,
+      "symbol": "UNB",
+      "verified": true
+    },
+    {
+      "cik": "0001169988",
+      "index_ciks": [
+        "0001169988"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/c6e674e37a3f3bf12c90a9ea0c11fedeedceb5b7bc0bb8cfba5dd9c387bb9ad3.html",
+      "index_sha256": "77b29b2e821654a34031fc5bd15ea7aff5c1106ab5dc85f54e04a7d02364af31",
+      "issuer_name": "BOINGO WIRELESS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.0001 par value |  | WIFI |  | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "WIFI"
+          ]
+        }
+      ],
+      "seed_rank": 217,
+      "symbol": "WIFI",
+      "verified": true
+    },
+    {
+      "cik": "0001587987",
+      "index_ciks": [
+        "0001587987"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/320b6b165bcfce0a7983f97e9b59c392be7cbc2cc79765b6bd8c836b29d31ee5.html",
+      "index_sha256": "9b5449cdf0174b281662222fc27729853e2acae4b41187da17892b54d1e5dffa",
+      "issuer_name": "Newtek Business Services Corp.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.02 per share |  | NEWT |  | Nasdaq Global Market LLC",
+          "symbols": [
+            "NEWT"
+          ]
+        }
+      ],
+      "seed_rank": 218,
+      "symbol": "NEWT",
+      "verified": true
+    },
+    {
+      "cik": "0001286043",
+      "index_ciks": [
+        "0001286043"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f729bd68940da0fb84205b12acdecb4920137cf6cd12d7f84dfb0ca19b0d6421.html",
+      "index_sha256": "a82207ca050cf2011eee444e3bf3dd59e303d7d4a523759fd893806f7bfdc3c2",
+      "issuer_name": "KITE REALTY GROUP TRUST",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares, $0.01 par value per share | KRG | New York Stock Exchange",
+          "symbols": [
+            "KRG"
+          ]
+        }
+      ],
+      "seed_rank": 219,
+      "symbol": "KRG",
+      "verified": true
+    },
+    {
+      "cik": "0001481792",
+      "index_ciks": [
+        "0001481792"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/61cb1bfd1c39c634018299d24818bfae1626c0487eb405e2abe46bad868f1a84.html",
+      "index_sha256": "7169d25d21eb29f30c623c7917bf8b0616d7a020634855e014b0409d93851538",
+      "issuer_name": "Quad/Graphics, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, par value $0.025 per share | QUAD | The New York Stock Exchange",
+          "symbols": [
+            "QUAD"
+          ]
+        }
+      ],
+      "seed_rank": 220,
+      "symbol": "QUAD",
+      "verified": true
+    },
+    {
+      "cik": "0000806517",
+      "index_ciks": [
+        "0000806517"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/877e55aeb579bc2a277a124d7cb0dbaceb6247d854ea67caefdb315614a5dfa2.html",
+      "index_sha256": "a142e3265b3c10be84951bf46dff351be48a6827a9dff0512d1b48034db8849c",
+      "issuer_name": "PSYCHEMEDICS CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.005 par value | PMD | NASDAQ",
+          "symbols": [
+            "PMD"
+          ]
+        }
+      ],
+      "seed_rank": 221,
+      "symbol": "PMD",
+      "verified": true
+    },
+    {
+      "cik": "0001506307",
+      "index_ciks": [
+        "0001506307"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6626ebf65add96a94c49aaefe488241504ae60d81b6c6958e45f1ec2c57668c5.html",
+      "index_sha256": "747a6a0ea024bbd1a911b1a7edc06e7d0581425a5b608dea6e6ace25a08d6a2e",
+      "issuer_name": "KINDER MORGAN, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class P Common Stock | KMI | New York Stock Exchange",
+          "symbols": [
+            "KMI"
+          ]
+        }
+      ],
+      "seed_rank": 224,
+      "symbol": "KMI",
+      "verified": true
+    },
+    {
+      "cik": "0001560672",
+      "index_ciks": [
+        "0001560672"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b6061dc08457285a1441b3f98e72551ccb3e3c51237893e009e2b657db85b868.html",
+      "index_sha256": "c31447feb1f85602d636fa9e804003766f6ff1461dc0a53e8b6ef057c77c9dd9",
+      "issuer_name": "Ellington Residential Mortgage REIT",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares of Beneficial Interest, $0.01 par value per share |  | EARN |  | The New York Stock Exchange",
+          "symbols": [
+            "EARN"
+          ]
+        }
+      ],
+      "seed_rank": 225,
+      "symbol": "EARN",
+      "verified": true
+    },
+    {
+      "cik": "0001592016",
+      "index_ciks": [
+        "0001592016"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/dd073bfe77977747361570586ce6c031d3f04c35a1ddde4c7fed4dcf76397340.html",
+      "index_sha256": "0a2b84d8003172a681a7ae60d865e19a3e05979d3341c4ad3bda50fc1cb31c5d",
+      "issuer_name": "AgroFresh Solutions, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 per share |  | AGFS |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "AGFS"
+          ]
+        }
+      ],
+      "seed_rank": 228,
+      "symbol": "AGFS",
+      "verified": true
+    },
+    {
+      "cik": "0000707549",
+      "index_ciks": [
+        "0000707549"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d61727a0fa5a3dd25a3f88138910ce5df971a6f961c2222e219f6ea46aff8cfe.html",
+      "index_sha256": "cdfbb14e4577a743ccca9fd760b57d5a30d802240fb0fc4108c7c343f830770c",
+      "issuer_name": "LAM RESEARCH CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par Value $0.001 Per Share | LRCX | The Nasdaq Stock Market (Nasdaq Global Select Market)",
+          "symbols": [
+            "LRCX"
+          ]
+        }
+      ],
+      "seed_rank": 229,
+      "symbol": "LRCX",
+      "verified": true
+    },
+    {
+      "cik": "0001534504",
+      "index_ciks": [
+        "0001534504",
+        "0001566011",
+        "0001645026"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4847a241708a8e75619fec110c6c06adf4202429f2dfd22b60d8990c272562a7.html",
+      "index_sha256": "9f08033264d277beafdb76e87fb1a6026e946d847acd0f918604ba86ebabaaf2",
+      "issuer_name": "PBF Energy Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.001 | PBF | New York Stock Exchange",
+          "symbols": [
+            "PBF"
+          ]
+        }
+      ],
+      "manual_review": {
+        "index_sha256": "9f08033264d277beafdb76e87fb1a6026e946d847acd0f918604ba86ebabaaf2",
+        "listed_symbol": "PBF",
+        "listing_evidence": [
+          {
+            "row_excerpt": "Common Stock, par value $.001 | PBF | New York Stock Exchange",
+            "symbols": [
+              "PBF"
+            ]
+          }
+        ],
+        "reason": "Jointcover names PBF Energy Inc. plus two LLCsubsidiaries; originalItem2.02 identifies Inc. as reportingparent and originalrelease explicitly associates Inc. withNYSE:PBF. Listedcommonstock belongs to selectedparent CIK1534504.",
+        "release_owner_excerpt": "PBF Energy Inc. (NYSE:PBF",
+        "sources": [
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/107858b5d7769e91e9a08cd629946c24d1129ba5f1ce88e1108f833e6377a1a3.htm",
+            "sha256": "3d5138221800d8e0dbe4fce77dc5014cbee594617c5756065fa0620a42bb8bf3",
+            "url": "https://www.sec.gov/Archives/edgar/data/1534504/000153450419000037/earningsrelease6-30x19xene.htm"
+          },
+          {
+            "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/dde1926f3abdc46a8e15da7c285334cf0ebabbcb60074353b31198cce82005cc.htm",
+            "sha256": "6172ae3a72f772a49dd103a321bc1310fac5f89f86480c32ef5e6e4ff1b5a4a5",
+            "url": "https://www.sec.gov/Archives/edgar/data/1534504/000153450419000037/pressreleaseq2-19xpressrel.htm"
+          }
+        ],
+        "verified": true
+      },
+      "seed_rank": 231,
+      "symbol": "PBF",
+      "verified": true
+    },
+    {
+      "cik": "0001086745",
+      "index_ciks": [
+        "0001086745"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2169ce8139c0031192801ac62d087416050221a05214aba10a9156a98c36d4df.html",
+      "index_sha256": "491f75912f16355d49d0d81eb960f9f4f9110b7cd2da670d8d6629411ddb4d29",
+      "issuer_name": "DropCar, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.0001 per share | DCAR | The Nasdaq Stock Market",
+          "symbols": [
+            "DCAR"
+          ]
+        }
+      ],
+      "seed_rank": 235,
+      "symbol": "DCAR",
+      "verified": true
+    },
+    {
+      "cik": "0000788329",
+      "index_ciks": [
+        "0000788329"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/10e6db8f21e1d05143b79c895e52d569bd3f5ecc6f1fcd0af510420cbaa9cbf9.html",
+      "index_sha256": "155dd0d34f4df6a53ceb1fb05d6474fb4fa5b0b73234c4607f9f87b2baabddfa",
+      "issuer_name": "JOHNSON OUTDOORS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, $.05 par value per share | JOUT | NASDAQ Global Select Market SM",
+          "symbols": [
+            "JOUT"
+          ]
+        }
+      ],
+      "seed_rank": 236,
+      "symbol": "JOUT",
+      "verified": true
+    },
+    {
+      "cik": "0001308606",
+      "index_ciks": [
+        "0001308606"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/cdc8802349f6029fa82ce28b89861a17f47e7652f05629482d1888236309c355.html",
+      "index_sha256": "e7785400fd11b4d0fcf4b65c84affc28640d8101b62f3bc998acc5511170d34a",
+      "issuer_name": "SPIRIT REALTY CAPITAL, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.05 per share | SRC | New York Stock Exchange",
+          "symbols": [
+            "SRC"
+          ]
+        }
+      ],
+      "seed_rank": 237,
+      "symbol": "SRC",
+      "verified": true
+    },
+    {
+      "cik": "0001761940",
+      "index_ciks": [
+        "0001761940"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d058f0bc3ba62eba62b40811fdfbfdd0a85ad9beed87b385332fa5b17ec8687a.html",
+      "index_sha256": "bdc1eae791a6006f3037f6f243d23eef105d50589d08fd935e417d98d7ef42fa",
+      "issuer_name": "Diamond S Shipping Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares, $0.001 par value per share | DSSI | New York Stock Exchange",
+          "symbols": [
+            "DSSI"
+          ]
+        }
+      ],
+      "seed_rank": 239,
+      "symbol": "DSSI",
+      "verified": true
+    },
+    {
+      "cik": "0000814184",
+      "index_ciks": [
+        "0000814184"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/77d6c465bac8d34951008b71dee03da0455a3df3deada771040718c82c769542.html",
+      "index_sha256": "9bd9d64e40757e85cc31fe221869bfd6e3f9196d9daec8b6fa44a99a3275b05e",
+      "issuer_name": "TCF FINANCIAL CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock (par value $.01 per share) | TCF | New York Stock Exchange",
+          "symbols": [
+            "TCF"
+          ]
+        }
+      ],
+      "seed_rank": 242,
+      "symbol": "TCF",
+      "verified": true
+    },
+    {
+      "cik": "0000945841",
+      "index_ciks": [
+        "0000945841"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8e6b3ca17dbae069a6ffd6cab9ea2d8548578e57ee73df058ae1eac67ab55267.html",
+      "index_sha256": "ed90353e64959160ff0acf7a8f878683e7dd60e48e88751480005c7ab0e7a4a4",
+      "issuer_name": "POOL CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | POOL | NASDAQ Global Select Market",
+          "symbols": [
+            "POOL"
+          ]
+        }
+      ],
+      "seed_rank": 244,
+      "symbol": "POOL",
+      "verified": true
+    },
+    {
+      "cik": "0000844059",
+      "index_ciks": [
+        "0000844059"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/76fe805bb6afc9bac55780854f23a672355c7ee6b5d52adee00bb4d9a3c7dd38.html",
+      "index_sha256": "f7ff653244ba009ff07a3ce675e8110aadabcc53e84c99bdc136bcd583dbaaa7",
+      "issuer_name": "FRP HOLDINGS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $.10 par value per share; sole class in original June 30 2019 10-Q cover. Issuer-authored August 5 earnings release identifies NASDAQ: FRPH.",
+          "symbols": [
+            "FRPH"
+          ]
+        }
+      ],
+      "seed_rank": 249,
+      "symbol": "FRPH",
+      "verified": true
+    },
+    {
+      "cik": "0000768710",
+      "index_ciks": [
+        "0000768710"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/91d6a6424f3e3b88f33a59c93e8b01bc0d456cc7abfe23e1f1bcb21fa0ef6363.html",
+      "index_sha256": "05b9dfa129a1cb12957d839a27ddeca69a69ea6244b7e0b34f6308a5f9bf6b35",
+      "issuer_name": "RELIV INTERNATIONAL INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 | RELV | NASDAQ Capital Market",
+          "symbols": [
+            "RELV"
+          ]
+        }
+      ],
+      "seed_rank": 250,
+      "symbol": "RELV",
+      "verified": true
+    },
+    {
+      "cik": "0001041368",
+      "index_ciks": [
+        "0001041368"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/30170e74e3dfe3a69e3cfb5059060181482b39d5c5b9b1da035896484071989c.html",
+      "index_sha256": "e2904ddc619e77b9bd41ca56a7bd7dfa167f4150bdbcc22afdc0d21276ed4de7",
+      "issuer_name": "RIVERVIEW BANCORP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par Value $0.01 per share |  | RVSB |  | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "RVSB"
+          ]
+        }
+      ],
+      "seed_rank": 251,
+      "symbol": "RVSB",
+      "verified": true
+    },
+    {
+      "cik": "0001593222",
+      "index_ciks": [
+        "0001593222"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/58817af67769dfde9d5d6fc893f0b0822c5911b9b67e891b66b7f5936110ae70.html",
+      "index_sha256": "c89a2749f50e5f10ff2cdaf68260f2353d4d0ed96ad5bcdfd3bd30ffabf86d19",
+      "issuer_name": "City Office REIT, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value |  | \u201cCIO\u201d |  | New York Stock Exchange",
+          "symbols": [
+            "CIO"
+          ]
+        }
+      ],
+      "seed_rank": 252,
+      "symbol": "CIO",
+      "verified": true
+    },
+    {
+      "cik": "0001034054",
+      "index_ciks": [
+        "0001034054"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/94916dc9dc032357b86b2cbfad3849733a2d5cbcab7d95e29778fe300be6879d.html",
+      "index_sha256": "d9edad4cd2c8750b47b0fb27527284e61edd96b6ac3940302170c0afe1cc08c8",
+      "issuer_name": "SBA COMMUNICATIONS CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, $0.01 par value per share |  | SBAC |  | The NASDAQ Stock Market LLC (NASDAQ Global Select Market)",
+          "symbols": [
+            "SBAC"
+          ]
+        }
+      ],
+      "seed_rank": 254,
+      "symbol": "SBAC",
+      "verified": true
+    },
+    {
+      "cik": "0001616318",
+      "index_ciks": [
+        "0001616318"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/97a7cd8281f8226f12e45c0acba74ac25046fcf38dd8a4080f36fb201b0ee94d.html",
+      "index_sha256": "d2d464f49e497cfd88640f23908310f65a5e9a4213e3aa926e0719e4e21ac5c4",
+      "issuer_name": "Vista Outdoor Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.01 |  | VSTO |  | New York Stock Exchange",
+          "symbols": [
+            "VSTO"
+          ]
+        }
+      ],
+      "seed_rank": 255,
+      "symbol": "VSTO",
+      "verified": true
+    },
+    {
+      "cik": "0001694426",
+      "index_ciks": [
+        "0001694426"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ee35e3d5bf3697bc72e678da2c4b556dd5b9f72a4900dd8969ad7491d18cef7e.html",
+      "index_sha256": "ce9030ce883dce6e8d5dc04c2b5e82f305db8b13b76849b7c1b6610998c4e747",
+      "issuer_name": "Delek US Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | DK | New York Stock Exchange",
+          "symbols": [
+            "DK"
+          ]
+        }
+      ],
+      "seed_rank": 257,
+      "symbol": "DK",
+      "verified": true
+    },
+    {
+      "cik": "0001126328",
+      "index_ciks": [
+        "0001126328"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ac1aee6acfb58995c34b7db59eed948069ce43e11e8e475345dc1d81f2d6afbb.html",
+      "index_sha256": "b5739925eca17e300c7a897e4dbc8eb504cf045d7c771394b12868eb8d6d5270",
+      "issuer_name": "PRINCIPAL FINANCIAL GROUP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | PFG | Nasdaq Global Select Market",
+          "symbols": [
+            "PFG"
+          ]
+        }
+      ],
+      "seed_rank": 258,
+      "symbol": "PFG",
+      "verified": true
+    },
+    {
+      "cik": "0001626853",
+      "index_ciks": [
+        "0001626853"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/aace942761a7e99f2fe80aa9483f37697d6fb09c832fe3fa498138d2170244b7.html",
+      "index_sha256": "03d4dda91354675f22239e0f658e01c75b4c10ff31771135ea1dce020675ad7a",
+      "issuer_name": "Majesco",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.002 par value |  | MJCO |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "MJCO"
+          ]
+        }
+      ],
+      "seed_rank": 259,
+      "symbol": "MJCO",
+      "verified": true
+    },
+    {
+      "cik": "0001267238",
+      "index_ciks": [
+        "0001267238"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5d15bdea29c5520d507aeece265fba2f0547eafbb4f8fac22d162025f50f06a2.html",
+      "index_sha256": "615da1243e736da65b0f95b3a57f8d7679960d041328d829f66a277d2df48356",
+      "issuer_name": "ASSURANT INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 Par Value | AIZ | New York Stock Exchange",
+          "symbols": [
+            "AIZ"
+          ]
+        }
+      ],
+      "seed_rank": 261,
+      "symbol": "AIZ",
+      "verified": true
+    },
+    {
+      "cik": "0000055242",
+      "index_ciks": [
+        "0000055242"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/fdb4b340fb37c3dac96116cb5354ac0ba73488aa236c1b32286c562f3a6217dd.html",
+      "index_sha256": "c4b0cd1159180b97d244ee79872d7a9fdcd5bc1f45b69e066ad51cc53dd47eff",
+      "issuer_name": "KENNAMETAL INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Capital Stock, par value $1.25 per share | KMT | New York Stock Exchange. Original 2019 Form10-K Item5 Common Equity calls repurchase shares common stock; preferred shares authorized but none issued. Attached preferred purchase rights are not a second traded common class.",
+          "symbols": [
+            "KMT"
+          ]
+        }
+      ],
+      "seed_rank": 263,
+      "symbol": "KMT",
+      "verified": true
+    },
+    {
+      "cik": "0001069202",
+      "index_ciks": [
+        "0001069202"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d4ddedccaf944d01defb7cfdb09257227023db0a4c7b4be34e6ad36cf461f44e.html",
+      "index_sha256": "0aa663339c557d41eac3b75b307c820bda9d8427b768a1f9fbaf1c64a47f15d3",
+      "issuer_name": "LENNOX INTERNATIONAL INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | LII |  | New York Stock Exchange",
+          "symbols": [
+            "LII"
+          ]
+        }
+      ],
+      "seed_rank": 266,
+      "symbol": "LII",
+      "verified": true
+    },
+    {
+      "cik": "0001495320",
+      "index_ciks": [
+        "0001495320"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8c94d055c64ce37cd8e367baa573eefd3ebb4e24bc15343f5220e995359fec36.html",
+      "index_sha256": "bc344a339fbd76b5227c4be8bb5f08a3653fd43e4ba25cd5a621cb56ab8a0d52",
+      "issuer_name": "Vera Bradley, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | NASDAQ Global Select Market. Original Item5 explicitly assigns symbol VRA.",
+          "symbols": [
+            "VRA"
+          ]
+        }
+      ],
+      "seed_rank": 267,
+      "symbol": "VRA",
+      "verified": true
+    },
+    {
+      "cik": "0001314727",
+      "index_ciks": [
+        "0001314727"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ea1947eae9b130734488ac2d16a4a60fc4c6fe3e5d54a98f822e1fe2dca0fbe3.html",
+      "index_sha256": "90fe280d583cedb351f84ee6e49c945f2adfc37c0f2910f24582513c7a58a81f",
+      "issuer_name": "Sonos Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.0001 par value | SONO | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "SONO"
+          ]
+        }
+      ],
+      "seed_rank": 269,
+      "symbol": "SONO",
+      "verified": true
+    },
+    {
+      "cik": "0001571949",
+      "index_ciks": [
+        "0001571949"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/815a54e3bc9854ee1461f42c56bcd40d35485a1e2db4960aa729e05efbd06a82.html",
+      "index_sha256": "6112f13b2d6c9001bc9ff41050cb3c260aa0454c4e812afd4eba52deb682240d",
+      "issuer_name": "Intercontinental Exchange, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value per share |  | ICE |  | New York Stock Exchange",
+          "symbols": [
+            "ICE"
+          ]
+        }
+      ],
+      "seed_rank": 270,
+      "symbol": "ICE",
+      "verified": true
+    },
+    {
+      "cik": "0000900075",
+      "index_ciks": [
+        "0000900075"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/33fc00e1cae4e2ffc5a37f17323e5a08bbcfc6c9f26b97cec48fb4ac23ee769c.html",
+      "index_sha256": "50421ae48baa141d8a99056648bcdc9f031f3fb9880393807ea8b30335794b7c",
+      "issuer_name": "COPART INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 | CPRT | The NASDAQ Global Select Market",
+          "symbols": [
+            "CPRT"
+          ]
+        }
+      ],
+      "seed_rank": 271,
+      "symbol": "CPRT",
+      "verified": true
+    },
+    {
+      "cik": "0000866609",
+      "index_ciks": [
+        "0000866609"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/91d1f18de88938653467215c4028a328eb57590e201cad6632fe78664cc3b3c4.html",
+      "index_sha256": "2bf13b5c0b647664d80ad95d4b071d95ab4ce045f0e12cfcd5a12b3a67ba57ba",
+      "issuer_name": "ION GEOPHYSICAL CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | IO | New York Stock Exchange",
+          "symbols": [
+            "IO"
+          ]
+        }
+      ],
+      "seed_rank": 273,
+      "symbol": "IO",
+      "verified": true
+    },
+    {
+      "cik": "0001120914",
+      "index_ciks": [
+        "0001120914"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5ddd982a8df5d5c320a1694c6a0c5a7eecacd3d2a8af2eb1098f96b5dab2bea2.html",
+      "index_sha256": "2a33c2d4e9b15b7da07d686690ecb3870faa844432dd27faf4a01b5911f8fabf",
+      "issuer_name": "PDF SOLUTIONS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.00015 par value | PDFS | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "PDFS"
+          ]
+        }
+      ],
+      "seed_rank": 276,
+      "symbol": "PDFS",
+      "verified": true
+    },
+    {
+      "cik": "0001070985",
+      "index_ciks": [
+        "0001070985"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/990c07c06f58b8db182a7bc8780afce0ccb93ccb397be27cb463fbf6ea8dbcdb.html",
+      "index_sha256": "15382637a6e9553907b0bdb903918f80f296a009e935159089dcde2def713d63",
+      "issuer_name": "CoreCivic, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock |  | CXW |  | New York Stock Exchange",
+          "symbols": [
+            "CXW"
+          ]
+        }
+      ],
+      "seed_rank": 277,
+      "symbol": "CXW",
+      "verified": true
+    },
+    {
+      "cik": "0000866706",
+      "index_ciks": [
+        "0000866706"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8c9ed7291285891a4d4b8aac73110591f1dcc6ea2685124fe59af704ef2497dc.html",
+      "index_sha256": "d095b3eaf9467a3c07ead18da5e7e3629ee6f53811db0ea05c4192d18a6bc675",
+      "issuer_name": "ESCO TECHNOLOGIES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | ESE |  | New York Stock Exchange",
+          "symbols": [
+            "ESE"
+          ]
+        }
+      ],
+      "seed_rank": 280,
+      "symbol": "ESE",
+      "verified": true
+    },
+    {
+      "cik": "0000799292",
+      "index_ciks": [
+        "0000799292"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4e57df778f7478e809b1b1b94d9ef2a8721cb86c9bcb00748db0528e6fad61dd.html",
+      "index_sha256": "63b37e7210623af4298e5a2c941655090d1ab4ef1544eac3027410c3969ad228",
+      "issuer_name": "M/I HOMES, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares, par value $.01 | MHO | New York Stock Exchange",
+          "symbols": [
+            "MHO"
+          ]
+        }
+      ],
+      "seed_rank": 281,
+      "symbol": "MHO",
+      "verified": true
+    },
+    {
+      "cik": "0001357204",
+      "index_ciks": [
+        "0001357204"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9f75f885892507931c47765b477556405e57521528a96c481570f58607b4bfc9.html",
+      "index_sha256": "68c1543624effee5adb5e52a2c31ac393d21f004436dab0c5c32e51e9c9dfb02",
+      "issuer_name": "DUNKIN' BRANDS GROUP, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value per share | DNKN | Nasdaq Global Select Market",
+          "symbols": [
+            "DNKN"
+          ]
+        }
+      ],
+      "seed_rank": 282,
+      "symbol": "DNKN",
+      "verified": true
+    },
+    {
+      "cik": "0000799165",
+      "index_ciks": [
+        "0000799165"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/144e5ab50b114b9795b8031e1bb5b23aeb9d91931034060e52726c9a04973cde.html",
+      "index_sha256": "95f5d5297468b210755cb9dc44f5921f6ca77b74f9b97795da5c79cd79d5560f",
+      "issuer_name": "DAWSON GEOPHYSICAL CO",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value |  | DWSN |  | The NASDAQ Stock Market",
+          "symbols": [
+            "DWSN"
+          ]
+        }
+      ],
+      "seed_rank": 285,
+      "symbol": "DWSN",
+      "verified": true
+    },
+    {
+      "cik": "0001761312",
+      "index_ciks": [
+        "0001761312"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6076e24948faea5a8fe172c3855bac76b6a5bb73f34e2a66661680976a3e0793.html",
+      "index_sha256": "1f39bd0a34607ae28e9aeec141533dca04f8f473212453936bc6d50f4efffe73",
+      "issuer_name": "Palomar Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 per share | PLMR | Nasdaq Global Select Market",
+          "symbols": [
+            "PLMR"
+          ]
+        }
+      ],
+      "seed_rank": 286,
+      "symbol": "PLMR",
+      "verified": true
+    },
+    {
+      "cik": "0000029989",
+      "index_ciks": [
+        "0000029989"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/db84aa737d00268383a2dee595820cd3a480f979860f5a7f923ded8e6c05ec1e.html",
+      "index_sha256": "f0aa32336a620146d8ca5bbe9cd5191a3bd29862fedf2227177d4663490ec28b",
+      "issuer_name": "OMNICOM GROUP INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.15 per share | OMC | New York Stock Exchange",
+          "symbols": [
+            "OMC"
+          ]
+        }
+      ],
+      "seed_rank": 287,
+      "symbol": "OMC",
+      "verified": true
+    },
+    {
+      "cik": "0001641614",
+      "index_ciks": [
+        "0001641614"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2b0f22df683be2684a646342942ff5c4b0b3fc395c6da494140e2e39ecefb5bb.html",
+      "index_sha256": "99cb76754729c31d8ce0752dfbeab80c0cf86d9ea688160a9802da0c6205def4",
+      "issuer_name": "CPI Card Group Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value | PMTS | Nasdaq Capital Market",
+          "symbols": [
+            "PMTS"
+          ]
+        }
+      ],
+      "seed_rank": 289,
+      "symbol": "PMTS",
+      "verified": true
+    },
+    {
+      "cik": "0001326801",
+      "index_ciks": [
+        "0001326801"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1c355a30f160925509e8230879cfbacf7b3921eb0eefd6395fe7623137cb9080.html",
+      "index_sha256": "30a0c5c111bccd87f30bfd1a10412bf6fc72bdef09f149e2ed8aea0f55e8c20e",
+      "issuer_name": "Facebook Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, $0.000006 par value | FB | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FB"
+          ]
+        }
+      ],
+      "seed_rank": 290,
+      "symbol": "FB",
+      "verified": true
+    },
+    {
+      "cik": "0001434647",
+      "index_ciks": [
+        "0001434647"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0366ad7057161c8e4fa1e67d876d5b91e68e1e973141c8ff63c68e6c5040d74d.html",
+      "index_sha256": "966eb711750448a6e47220d32bb84fb0f00ad18700956fdcd5fc97344113c65f",
+      "issuer_name": "KEMPHARM, INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | KMPH | Nasdaq Global Market",
+          "symbols": [
+            "KMPH"
+          ]
+        }
+      ],
+      "seed_rank": 294,
+      "symbol": "KMPH",
+      "verified": true
+    },
+    {
+      "cik": "0001084384",
+      "index_ciks": [
+        "0001084384"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/602621fc061cd4682fcaa6c2c2e417bfb0bdc18ac47e3651eaee69f065b35860.html",
+      "index_sha256": "e3585b93311f4911ffcfa1f49faae232c12d8db015fc75f92d8fc5849eae3ff6",
+      "issuer_name": "PARETEUM Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | TEUM | NASDAQ",
+          "symbols": [
+            "TEUM"
+          ]
+        }
+      ],
+      "seed_rank": 295,
+      "symbol": "TEUM",
+      "verified": true
+    },
+    {
+      "cik": "0000885978",
+      "index_ciks": [
+        "0000885978"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/81e09c120061850576ce48a82c93c526367d9bca4f5ae52e15c70d486f405194.html",
+      "index_sha256": "2bb9790b484a1c1d8ed0b73b7afbf994bd918e10e1ff613760e46d63e69a4ba5",
+      "issuer_name": "U S PHYSICAL THERAPY INC /NV",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $.01 par value | USPH | New York Stock Exchange",
+          "symbols": [
+            "USPH"
+          ]
+        }
+      ],
+      "seed_rank": 298,
+      "symbol": "USPH",
+      "verified": true
+    },
+    {
+      "cik": "0001177702",
+      "index_ciks": [
+        "0001177702"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b00540568b6d499d6fa9658f3d0a21e9444a3db039291a39ec55e12a1f3687e9.html",
+      "index_sha256": "9bc4d4f7b0ef7d6b5fd591903b16a917070e05dcd8a49407ba491c9f8ec7ce7a",
+      "issuer_name": "SAIA INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.001 per share |  | SAIA |  | The Nasdaq Global Select Market",
+          "symbols": [
+            "SAIA"
+          ]
+        }
+      ],
+      "seed_rank": 303,
+      "symbol": "SAIA",
+      "verified": true
+    },
+    {
+      "cik": "0001633917",
+      "index_ciks": [
+        "0001633917"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/92b23bf2c4c601f6e17480a27d428675748dfb6758f7fbc68141a04c5c76eae4.html",
+      "index_sha256": "4db88d6bd6e84f8f8057e1cae8cc85fdbba80e9ee0665f994ed0f92a87e46ac4",
+      "issuer_name": "PayPal Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.0001 par value per share | PYPL | NASDAQ Global Select Market",
+          "symbols": [
+            "PYPL"
+          ]
+        }
+      ],
+      "seed_rank": 305,
+      "symbol": "PYPL",
+      "verified": true
+    },
+    {
+      "cik": "0001020214",
+      "index_ciks": [
+        "0001020214"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e3b0f278d7ce6d349e1743520e41fdf3109e15e725525a678a5604437e201c18.html",
+      "index_sha256": "9a538ff7ed3af069d80870c4c526c16ca949dca04ce70e6b0073f3d0571757f5",
+      "issuer_name": "CERUS CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share |  | CERS |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "CERS"
+          ]
+        }
+      ],
+      "seed_rank": 307,
+      "symbol": "CERS",
+      "verified": true
+    },
+    {
+      "cik": "0000774569",
+      "index_ciks": [
+        "0000774569"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3cc60d705c3f705af874c992b528b9f81ed054d7bfc929862a86f9b5c9cf2aaa.html",
+      "index_sha256": "e2cdb47e826754148cb801ae98ba93ccc81d019c2211e6731cb852786fd73b80",
+      "issuer_name": "CORTLAND BANCORP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, No Par Value | CLDB | NASDAQ Capital Market",
+          "symbols": [
+            "CLDB"
+          ]
+        }
+      ],
+      "seed_rank": 308,
+      "symbol": "CLDB",
+      "verified": true
+    },
+    {
+      "cik": "0001728117",
+      "index_ciks": [
+        "0001728117"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3ff8e7b62b35cc11c945d85118fce3a65c963e3f50d39a994238bbf8c7a4ff60.html",
+      "index_sha256": "1dc44e0e9843f98ca3e73b55f4bc22348611bde08061ae982f781e62f6769d97",
+      "issuer_name": "Gossamer Bio, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.0001 par value per share |  | GOSS |  | Nasdaq Global Select Market",
+          "symbols": [
+            "GOSS"
+          ]
+        }
+      ],
+      "seed_rank": 309,
+      "symbol": "GOSS",
+      "verified": true
+    },
+    {
+      "cik": "0001014473",
+      "index_ciks": [
+        "0001014473"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8067d316a47ed987e89e7cb23c54866c650d34ef96bfe9db75d0b85cd7084429.html",
+      "index_sha256": "93bc0d76e5d02b30c3beddb5c62b8fde7453c76484605d0e5d9eefa87acf611b",
+      "issuer_name": "VERISIGN INC/CA",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 Par Value Per Share | VRSN | Nasdaq Global Select Market",
+          "symbols": [
+            "VRSN"
+          ]
+        }
+      ],
+      "seed_rank": 311,
+      "symbol": "VRSN",
+      "verified": true
+    },
+    {
+      "cik": "0001539638",
+      "index_ciks": [
+        "0001539638"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/31946537cd52c9008b36e210ba053297cc61bc937f651b49b2938f5f18a84544.html",
+      "index_sha256": "db6491c864ce9faba108746fbba94ba9ea54368881b1a0cfdda3b484b8f368ad",
+      "issuer_name": "Triumph Bancorp, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.01 per share |  | TBK |  | NASDAQ Global Select Market",
+          "symbols": [
+            "TBK"
+          ]
+        }
+      ],
+      "seed_rank": 314,
+      "symbol": "TBK",
+      "verified": true
+    },
+    {
+      "cik": "0000034903",
+      "index_ciks": [
+        "0000034903"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/26480c1a108123278ee9f44ffdd868ddb5ca9b9d0b23abf49cdec1efc2b381ea.html",
+      "index_sha256": "2d1b3da8e61c1c3172b18bb401c1ff037d1b8ba7d1234adfc889d7cf8cba8c99",
+      "issuer_name": "FEDERAL REALTY INVESTMENT TRUST",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares of Beneficial Interest | FRT | New York Stock Exchange",
+          "symbols": [
+            "FRT"
+          ]
+        }
+      ],
+      "seed_rank": 317,
+      "symbol": "FRT",
+      "verified": true
+    },
+    {
+      "cik": "0000101984",
+      "index_ciks": [
+        "0000101984"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6ccc391a54135b2eabacb29c01021a2a4796689e1e529ee22a99ced24addffa8.html",
+      "index_sha256": "cbc37bfd258010651378fdfc444ad601156632414b54b036eccf86e255669751",
+      "issuer_name": "UNIVERSAL ELECTRONICS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share | UEIC | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "UEIC"
+          ]
+        }
+      ],
+      "seed_rank": 318,
+      "symbol": "UEIC",
+      "verified": true
+    },
+    {
+      "cik": "0001085869",
+      "index_ciks": [
+        "0001085869"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9652aae9fe50f07443570ecc883cf2ed5f468c53d7286d458fd9d327ebd92b9a.html",
+      "index_sha256": "ba719530c61d3a4097e90af38e1d9aafa6d78cfcfa8bb0f9a28612d3447cca68",
+      "issuer_name": "PERFICIENT INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value | PRFT | The Nasdaq Global Select Market",
+          "symbols": [
+            "PRFT"
+          ]
+        }
+      ],
+      "seed_rank": 319,
+      "symbol": "PRFT",
+      "verified": true
+    },
+    {
+      "cik": "0001590715",
+      "index_ciks": [
+        "0001590715"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6ea2b86d061796a460294c7dfc5fb9f9899a4ddf4bc54ea1b1a6abd2260d019b.html",
+      "index_sha256": "ae89e07681481ef218ae1060803aed27bbedf2702bba8e4bb953e8bbbc977359",
+      "issuer_name": "American Resources Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common | AREC | NASDAQ Capital Market; cover explicitly enumerates23,367,197 shares Class A common stock.",
+          "symbols": [
+            "AREC"
+          ]
+        }
+      ],
+      "seed_rank": 322,
+      "symbol": "AREC",
+      "verified": true
+    },
+    {
+      "cik": "0001465885",
+      "index_ciks": [
+        "0001465885"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9b54b327b3e4377d019882ee85c3ee0571a7f51187aefe55efbcc19cf13d56bd.html",
+      "index_sha256": "951450823f806a2fdcb8c43dbe1551749a8674a07343a87fca93ef277958900b",
+      "issuer_name": "Western Asset Mortgage Capital Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value |  | WMC |  | New York Stock Exchange",
+          "symbols": [
+            "WMC"
+          ]
+        }
+      ],
+      "seed_rank": 323,
+      "symbol": "WMC",
+      "verified": true
+    },
+    {
+      "cik": "0001626971",
+      "index_ciks": [
+        "0001626971"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/913b4c40f94f471ffc22d191a332dcc2ba52adedcf49d0daf706d24c39f2ce00.html",
+      "index_sha256": "b272050ba7cf58effe5bc21464e05503b22257fd7d3f6c7b79e88d3b04215a0e",
+      "issuer_name": "Corvus Pharmaceuticals, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par Value $0.0001 per share | CRVS | Nasdaq Global Market",
+          "symbols": [
+            "CRVS"
+          ]
+        }
+      ],
+      "seed_rank": 324,
+      "symbol": "CRVS",
+      "verified": true
+    },
+    {
+      "cik": "0001034760",
+      "index_ciks": [
+        "0001034760"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/106dccdb0e7a59031e2c622b0165e6b97d5f67bc0ef9f1c514bcac7809727734.html",
+      "index_sha256": "b28243ce8dc1e77900aa4a795789c0a5615d3e820d0903b7cb55570182db5f9b",
+      "issuer_name": "WIDEPOINT CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value per share | WYY | NYSE American",
+          "symbols": [
+            "WYY"
+          ]
+        }
+      ],
+      "seed_rank": 326,
+      "symbol": "WYY",
+      "verified": true
+    },
+    {
+      "cik": "0000870826",
+      "index_ciks": [
+        "0000870826"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4a6836297c1169b499fd8b56fe5efed8406b4c6ca0628f612ec9c443f63cfcba.html",
+      "index_sha256": "0fd43e7f192a8b67e3f664d8b45f9730af4a469fa617e8f0eb4a3c7ac41132ff",
+      "issuer_name": "iMedia Brands, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | IMBI | Nasdaq Capital Market",
+          "symbols": [
+            "IMBI"
+          ]
+        }
+      ],
+      "seed_rank": 327,
+      "symbol": "IMBI",
+      "verified": true
+    },
+    {
+      "cik": "0001610250",
+      "index_ciks": [
+        "0001610250"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b2fb93c52f09918fa629bc9817ef55fdb796f85455415f4a8d6d76f2faeb29be.html",
+      "index_sha256": "d4fe8dbcb7a105889236c935e16e42fed41047865945d2c66ff82422b82bf017",
+      "issuer_name": "Boot Barn Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.0001 par value | BOOT | New York Stock Exchange",
+          "symbols": [
+            "BOOT"
+          ]
+        }
+      ],
+      "seed_rank": 328,
+      "symbol": "BOOT",
+      "verified": true
+    },
+    {
+      "cik": "0000037472",
+      "index_ciks": [
+        "0000037472"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0694a027687961a510dff8b8a039ae08da0ff720e29add0605951d426e53caeb.html",
+      "index_sha256": "94f6de6298264143f215dcedc5783d2ff6319baaa326602f43a7f857cc112042",
+      "issuer_name": "FLEXSTEEL INDUSTRIES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | FLXS | The Nasdaq Stock Market, LLC",
+          "symbols": [
+            "FLXS"
+          ]
+        }
+      ],
+      "seed_rank": 331,
+      "symbol": "FLXS",
+      "verified": true
+    },
+    {
+      "cik": "0001336920",
+      "index_ciks": [
+        "0001336920"
+      ],
+      "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d37de317405adb06351e290075d292b2cd295dde0eab4a05850cc5821016031f.html",
+      "index_sha256": "0e3d790257721e83c9a70f3fe158b844ec4dbe8c8a85e7e6cdf77a924717ff48",
+      "issuer_name": "Leidos Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $.0001 per share |  | LDOS |  | New York Stock Exchange",
+          "symbols": [
+            "LDOS"
+          ]
+        }
+      ],
+      "seed_rank": 333,
+      "symbol": "LDOS",
+      "verified": true
+    }
+  ],
+  "scope": "Original company rank and cover ownership only; no price or return access.",
+  "selection_sha256": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270",
+  "unresolved_owners": []
+}

@@ -1,0 +1,1381 @@
+{
+  "action_evidence_sha256": "6ef9c0e06c1fa1570ec8280c28b4da054196265eccee55d35ff7c724f8105a27",
+  "after_data_expense": {
+    "accounts": {
+      "base": {
+        "matched_event": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {},
+          "annualized_daily_volatility": null,
+          "annualized_mean_daily_return": null,
+          "cagr": null,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 70,
+          "daily_nav_complete": false,
+          "delayed_completed_positions": 0,
+          "diagnostics": {},
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 4906.617166767633,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.012873232367,
+          "max_drawdown_dollars": null,
+          "max_drawdown_fraction": null,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [
+            "Simulator reports unresolved accounting or candidate-source coverage."
+          ],
+          "status": "UNRESOLVED",
+          "stopped": false,
+          "total_return": null,
+          "unpaid_claims": 25
+        },
+        "numeric": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 5007.664586767633,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": 0.001532917353526786,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5695.985566767633,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.1374534911581009,
+              "opening_nav": 5007.664586767633,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.14983964541319478,
+          "annualized_mean_daily_return": 0.07663437817785233,
+          "cagr": 0.0677150335414558,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": 290.30951241218554,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": 81.57187065491507,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 45,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.4637326325472243,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.771854697481494,
+              "mean": 0.08774577757424885
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.6030450974890929
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7783374502641581,
+              "mean": 0.30920912493665836
+            },
+            "trading_costs": {
+              "fees": 92.27,
+              "slippage": 76.22806
+            },
+            "turnover": {
+              "annualized_ratio": 7.741058151894004,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 15.397282789794648,
+              "two_sided_reference_notional": 76228.06
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5695.985566767633,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.012873232367,
+          "max_drawdown_dollars": 721.14977,
+          "max_drawdown_fraction": 0.14262645703702026,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.13919711335352658,
+          "unpaid_claims": 16
+        },
+        "text": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 5090.507586767633,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": 0.01810151735352661,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5552.970036767633,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.09084800329187881,
+              "opening_nav": 5090.507586767633,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.13511840119145263,
+          "annualized_mean_daily_return": 0.06178942586173724,
+          "cagr": 0.05415181205393993,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": 147.29398241218587,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": -61.4436593450846,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 45,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.4306217703467933,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.8030902703166984,
+              "mean": 0.0825527606195994
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.6064377930718212
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.8043913246627645,
+              "mean": 0.31100944630857935
+            },
+            "trading_costs": {
+              "fees": 92.41,
+              "slippage": 78.45709
+            },
+            "turnover": {
+              "annualized_ratio": 7.835413101113183,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 15.584958661392248,
+              "two_sided_reference_notional": 78457.09
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5552.970036767633,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.012873232367,
+          "max_drawdown_dollars": 613.6710199999998,
+          "max_drawdown_fraction": 0.1199439255091866,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.11059400735352676,
+          "unpaid_claims": 11
+        }
+      },
+      "stress": {
+        "matched_event": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {},
+          "annualized_daily_volatility": null,
+          "annualized_mean_daily_return": null,
+          "cagr": null,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 69,
+          "daily_nav_complete": false,
+          "delayed_completed_positions": 0,
+          "diagnostics": {},
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 4702.416076767633,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.012873232367,
+          "max_drawdown_dollars": null,
+          "max_drawdown_fraction": null,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [
+            "Simulator reports unresolved accounting or candidate-source coverage."
+          ],
+          "status": "UNRESOLVED",
+          "stopped": false,
+          "total_return": null,
+          "unpaid_claims": 23
+        },
+        "numeric": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 23,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 4783.217026767633,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": -0.043356594646473456,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5020.287076767633,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.04956288804654263,
+              "opening_nav": 4783.217026767633,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.1522707793846507,
+          "annualized_mean_daily_return": 0.013489385360781396,
+          "cagr": 0.0020378315209881315,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": -385.3889775878142,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": -594.1266193450847,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 45,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.47271147436370625,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7672748639923929,
+              "mean": 0.09115325873033402
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.5889747781776719
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7808170575737464,
+              "mean": 0.31987196309199417
+            },
+            "trading_costs": {
+              "fees": 92.42,
+              "slippage": 373.01155
+            },
+            "turnover": {
+              "annualized_ratio": 8.066813579822144,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 16.045223723153086,
+              "two_sided_reference_notional": 74602.31
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5020.287076767633,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.012873232367,
+          "max_drawdown_dollars": 793.9877999999999,
+          "max_drawdown_fraction": 0.1571519488127679,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.004057415353526661,
+          "unpaid_claims": 16
+        },
+        "text": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 4910.245876767633,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": -0.017950824646473462,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5206.306026767633,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.06029436354720663,
+              "opening_nav": 4910.245876767633,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.14219149845402268,
+          "annualized_mean_daily_return": 0.030299355824114076,
+          "cagr": 0.020535737981399738,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": -199.37002758781455,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": -408.107669345085,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 47,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.44928959671811336,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7786349103676544,
+              "mean": 0.08380236943311706
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.598730695855828
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7940315617688425,
+              "mean": 0.3174669347110549
+            },
+            "trading_costs": {
+              "fees": 95.08,
+              "slippage": 387.9611
+            },
+            "turnover": {
+              "annualized_ratio": 8.011441941978207,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 15.935087259934733,
+              "two_sided_reference_notional": 77592.22
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5206.306026767633,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.012873232367,
+          "max_drawdown_dollars": 663.3631000000005,
+          "max_drawdown_fraction": 0.13011632152172276,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.04126120535352662,
+          "unpaid_claims": 10
+        }
+      }
+    },
+    "bootstrap": {
+      "annualization_sessions": 252,
+      "confidence": 0.95,
+      "estimate": -0.014844952316115096,
+      "expected_block_sessions": 20,
+      "generator": "PCG64",
+      "limitation": "Paired whole-account daily differences preserve contemporaneous pairing. Circular time blocks approximate serial dependence; this is not an issuer-cluster bootstrap or proof that the short historical sample is stationary.",
+      "lower": -0.07941416954570055,
+      "method": "circular_stationary_bootstrap",
+      "observations": 501,
+      "percentile_method": "linear",
+      "replicate_sha256": "7279e70e165edc8e069717faf88ee95f1128eaca4247557c8392a994475348a9",
+      "replicates": 2000,
+      "seed": 20260910,
+      "status": "COMPLETE",
+      "upper": 0.045923634328053874
+    },
+    "comparisons": {
+      "base": {
+        "annualized_net_text_minus_numeric_cagr": null,
+        "paired_annualized_mean_daily_difference": null,
+        "text_minus_matched_event_cagr": null
+      },
+      "stress": {
+        "annualized_net_text_minus_numeric_cagr": null,
+        "paired_annualized_mean_daily_difference": null,
+        "text_minus_matched_event_cagr": null
+      }
+    },
+    "gates": [
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "base:numeric:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "base:text:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": false
+        },
+        "name": "base:matched_event:qualified_account",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:text_cagr_above_6pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:text_advantage_at_least_1pp",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:text_cagr_above_matched_event",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:at_least_40_completed_positions",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:at_least_12_active_months",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:max_drawdown_at_most_20pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:no_account_stop",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "stress:numeric:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "stress:text:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": false
+        },
+        "name": "stress:matched_event:qualified_account",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:text_cagr_above_6pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:text_advantage_at_least_1pp",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:text_cagr_above_matched_event",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:at_least_40_completed_positions",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:at_least_12_active_months",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:max_drawdown_at_most_20pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:no_account_stop",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:paired_bootstrap_lower_bound_positive",
+        "status": "FAIL"
+      }
+    ],
+    "status": "UNRESOLVED"
+  },
+  "evaluated_utc": "2026-09-13T20:57:33.786246+00:00",
+  "expected_dates_sha256": "ed8ccc4f63a933b1a5b10ca3c464bb9b58be156aefc3a2e000a41ab98c9a6ce5",
+  "frozen_models_sha256": "df1db5f5cef231ee496aed9fd136f0710f0acff2d42ee273c21fe98349dfd71b",
+  "gates": [
+    {
+      "details": null,
+      "name": "full_frozen_evaluation_window",
+      "status": "PASS"
+    },
+    {
+      "details": null,
+      "name": "dedicated_data_expense_declared",
+      "status": "PASS"
+    },
+    {
+      "details": [],
+      "name": "upstream_source_identity_readiness",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "minimum": 200,
+        "observed": 360
+      },
+      "name": "sample_count:fit_2020",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "minimum": 100,
+        "observed": 393
+      },
+      "name": "sample_count:validation_2021",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "minimum": 200,
+        "observed": 731
+      },
+      "name": "sample_count:evaluation",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "minimum": 40,
+        "observed": 117
+      },
+      "name": "sample_count:evaluation_issuers",
+      "status": "PASS"
+    },
+    {
+      "details": null,
+      "name": "trading_only_performance",
+      "status": "UNRESOLVED"
+    },
+    {
+      "details": null,
+      "name": "after_data_expense_performance",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "implementation_sha256": "993c108144b4f75fdd9dc172bd9060a8f6ea5672085479b5d5ab585ce846d29c",
+  "interpretation": "Conditional on original-source-qualified pre-entry events. This is an exploratory historical comparison, not live fill evidence or authorization to invest.",
+  "label_coverage": {
+    "frozen_pool": 731,
+    "pool_not_filtered_by_outcome_availability": true,
+    "qualified_outcomes": 731,
+    "unresolved_outcomes": 0
+  },
+  "ledgers": {
+    "path": "data/snapshots/equity-event-expansion-2026-09-13/evaluation-ledgers.json",
+    "sha256": "5766f13ab6245bff02ccacfba3bbd121a412b55486173ac715e9e8d9b9f7fa80"
+  },
+  "metadata": {
+    "advantage_gate_estimand": "text net CAGR minus numeric net CAGR",
+    "bootstrap_estimand": "252*mean(text daily net return - numeric daily net return)",
+    "cagr_year_days": 365,
+    "calendar_day_interval": "inclusive start through end",
+    "capital_basis": "$5,000 original capital for accounts and both effective4/6% cash comparisons.",
+    "data_expense": {
+      "amount_usd": "0.012873232367",
+      "basis": "quote",
+      "excluded_costs": "Usertime, computing and agenttoken usage are not priced as a cash data purchase; no live broker costs incurred. Trade costs are separately simulated.",
+      "items": [
+        {
+          "amount_usd": "0.012873232367",
+          "basis": "cumulative provider quotes for executed requests; not invoice reconciliation",
+          "provider": "Databento"
+        },
+        {
+          "amount_usd": 0,
+          "basis": "Existing free account quota; no upgrade or new subscription",
+          "provider": "Tiingo"
+        },
+        {
+          "amount_usd": 0,
+          "basis": "Public downloads",
+          "provider": "SEC and issuer public sources"
+        }
+      ],
+      "scope": "Entire dedicated study acquisition quote, including PTN repair samples and full histories; charged once at accountstart in a separate simulation.",
+      "source": "research/equity-event-test-2026-09-10/ptn-download-manifest.json",
+      "source_sha256": "59438471e680169287bc11669f33098f1aad3971a4023cf81775b46cd9c266d0"
+    },
+    "expense_treatment": "Separate initial-expense account reruns; no terminal subtraction.",
+    "fractional_return_comparison_tolerance": 1e-12,
+    "interpretation": "Passing is exploratory evidence, not funding approval. Unknown measures stay null.",
+    "outcome_filtering": "None; exact independent dates and all required accounts are retained."
+  },
+  "numpy_version": "2.5.3",
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "prediction_diagnostics": {
+    "numeric": {
+      "mse_percentage_points_squared": 94.09402726066287,
+      "pearson_prediction_target": 0.07996121831641623,
+      "qualification": "Diagnostic on the labeled subset only; labels did not select the simulated event pool.",
+      "qualified_labels": 731
+    },
+    "text": {
+      "mse_percentage_points_squared": 102.92061888854653,
+      "pearson_prediction_target": -0.003074671448274468,
+      "qualification": "Diagnostic on the labeled subset only; labels did not select the simulated event pool.",
+      "qualified_labels": 731
+    }
+  },
+  "source_readiness_sha256": "07a942e1245eb2b7bc57d5ce28b758cdb48a6188d5a493dae26a5a38cd048f79",
+  "status": "UNRESOLVED",
+  "trading_only": {
+    "accounts": {
+      "base": {
+        "matched_event": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {},
+          "annualized_daily_volatility": null,
+          "annualized_mean_daily_return": null,
+          "cagr": null,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 70,
+          "daily_nav_complete": false,
+          "delayed_completed_positions": 0,
+          "diagnostics": {},
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 4906.63004,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.0,
+          "max_drawdown_dollars": null,
+          "max_drawdown_fraction": null,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [
+            "Simulator reports unresolved accounting or candidate-source coverage."
+          ],
+          "status": "UNRESOLVED",
+          "stopped": false,
+          "total_return": null,
+          "unpaid_claims": 25
+        },
+        "numeric": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 5007.67746,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": 0.0015354919999999161,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5695.99844,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.13745313780652335,
+              "opening_nav": 5007.67746,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.1498392437602596,
+          "annualized_mean_daily_return": 0.07663545628178099,
+          "cagr": 0.06771624673498633,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": 290.3223856445529,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": 81.58474388728246,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 45,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.4637315752136606,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7718527393072732,
+              "mean": 0.08774554864674464
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.603046140682382
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7783353677337397,
+              "mean": 0.30920831067087345
+            },
+            "trading_costs": {
+              "fees": 92.27,
+              "slippage": 76.22806
+            },
+            "turnover": {
+              "annualized_ratio": 7.741038023180049,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 15.397242752955384,
+              "two_sided_reference_notional": 76228.06
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5695.99844,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.0,
+          "max_drawdown_dollars": 721.14977,
+          "max_drawdown_fraction": 0.1426260939077795,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.13919968800000015,
+          "unpaid_claims": 16
+        },
+        "text": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 5090.52046,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": 0.01810409199999996,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5552.98291,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.09084777354966178,
+              "opening_nav": 5090.52046,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.13511804655644466,
+          "annualized_mean_daily_return": 0.0617905450824957,
+          "cagr": 0.05415304068483384,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": 147.30685564455234,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": -61.430786112718124,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 45,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.4306208351179358,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.8030882656275561,
+              "mean": 0.08255254910005448
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.6064388069569758
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.8043893936574669,
+              "mean": 0.3110086439429698
+            },
+            "trading_costs": {
+              "fees": 92.41,
+              "slippage": 78.45709
+            },
+            "turnover": {
+              "annualized_ratio": 7.835393064613445,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 15.584918807970853,
+              "two_sided_reference_notional": 78457.09
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5552.98291,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.0,
+          "max_drawdown_dollars": 613.6710200000007,
+          "max_drawdown_fraction": 0.11994362371739907,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.11059658199999989,
+          "unpaid_claims": 11
+        }
+      },
+      "stress": {
+        "matched_event": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {},
+          "annualized_daily_volatility": null,
+          "annualized_mean_daily_return": null,
+          "cagr": null,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": null,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 69,
+          "daily_nav_complete": false,
+          "delayed_completed_positions": 0,
+          "diagnostics": {},
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 4702.42895,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.0,
+          "max_drawdown_dollars": null,
+          "max_drawdown_fraction": null,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [
+            "Simulator reports unresolved accounting or candidate-source coverage."
+          ],
+          "status": "UNRESOLVED",
+          "stopped": false,
+          "total_return": null,
+          "unpaid_claims": 23
+        },
+        "numeric": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 23,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 4783.2299,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": -0.04335401999999999,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5020.29995,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.04956275465663884,
+              "opening_nav": 4783.2299,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.1522703559730754,
+          "annualized_mean_daily_return": 0.013490611855812665,
+          "cagr": 0.0020391233324736913,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": -385.37610435544775,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": -594.1137461127182,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 45,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.4727103500109337,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7672726966325716,
+              "mean": 0.0911530055676369
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.5889759210554485
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7808150261698646,
+              "mean": 0.31987107337691467
+            },
+            "trading_costs": {
+              "fees": 92.42,
+              "slippage": 373.01155
+            },
+            "turnover": {
+              "annualized_ratio": 8.066791245029313,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 16.045179298332275,
+              "two_sided_reference_notional": 74602.31
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5020.29995,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.0,
+          "max_drawdown_dollars": 793.9877999999999,
+          "max_drawdown_fraction": 0.15715154839603793,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.004059990000000013,
+          "unpaid_claims": 16
+        },
+        "text": {
+          "active_month_definition": "Any stock holding or actual fill; claims alone do not count.",
+          "active_months": 24,
+          "annual_returns": {
+            "2022": {
+              "capital_reset": false,
+              "ending_nav": 4910.25875,
+              "first_session": "2022-01-03",
+              "last_session": "2022-12-30",
+              "net_return": -0.01794825,
+              "opening_nav": 5000.0,
+              "scope": "Observed calendar-year portion; not annualized."
+            },
+            "2023": {
+              "capital_reset": false,
+              "ending_nav": 5206.3189,
+              "first_session": "2023-01-03",
+              "last_session": "2023-12-29",
+              "net_return": 0.06029420547338771,
+              "opening_nav": 4910.25875,
+              "scope": "Observed calendar-year portion; not annualized."
+            }
+          },
+          "annualized_daily_volatility": 0.14219111572820253,
+          "annualized_mean_daily_return": 0.03030054640597671,
+          "cagr": 0.020537006632237897,
+          "cash_comparisons": [
+            {
+              "account_minus_cash": -199.35715435544716,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.04,
+              "ending_value": 5405.676054355447,
+              "initial_all_capital": 5000.0
+            },
+            {
+              "account_minus_cash": -408.09479611271763,
+              "basis": "Effective annual rate,365-day year,inclusive study dates; no study-data expense charged to cash comparator.",
+              "effective_annual_rate": 0.06,
+              "ending_value": 5614.413696112718,
+              "initial_all_capital": 5000.0
+            }
+          ],
+          "completed_positions": 47,
+          "daily_nav_complete": true,
+          "delayed_completed_positions": 0,
+          "diagnostics": {
+            "beta": 0.4492885825894583,
+            "beta_status": "COMPLETE",
+            "claim_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7786329732663133,
+              "mean": 0.08380214712236929
+            },
+            "settled_cash_fraction": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 1.0,
+              "mean": 0.5987317636327579
+            },
+            "stock_exposure": {
+              "basis": "End-of-day asset value / same-day NAV.",
+              "maximum": 0.7940296047049934,
+              "mean": 0.3174660892448728
+            },
+            "trading_costs": {
+              "fees": 95.08,
+              "slippage": 387.9611
+            },
+            "turnover": {
+              "annualized_ratio": 8.01142076161426,
+              "basis": "Sum of buy and sell quantities*raw reference close / mean end-of-day NAV; not half-turnover.",
+              "ratio_to_mean_daily_nav": 15.93504513132042,
+              "two_sided_reference_notional": 77592.22
+            }
+          },
+          "elapsed_calendar_days_inclusive": 726,
+          "ending_nav": 5206.3189,
+          "expected_sessions": 501,
+          "initial_capital": 5000.0,
+          "initial_expense": 0.0,
+          "max_drawdown_dollars": 663.3631000000005,
+          "max_drawdown_fraction": 0.13011599297377716,
+          "observed_rows": 501,
+          "open_stock_lots": 0,
+          "reasons": [],
+          "status": "COMPLETE",
+          "stopped": false,
+          "total_return": 0.04126377999999997,
+          "unpaid_claims": 10
+        }
+      }
+    },
+    "bootstrap": {
+      "annualization_sessions": 252,
+      "confidence": 0.95,
+      "estimate": -0.014844911199285292,
+      "expected_block_sessions": 20,
+      "generator": "PCG64",
+      "limitation": "Paired whole-account daily differences preserve contemporaneous pairing. Circular time blocks approximate serial dependence; this is not an issuer-cluster bootstrap or proof that the short historical sample is stationary.",
+      "lower": -0.07941394403857131,
+      "method": "circular_stationary_bootstrap",
+      "observations": 501,
+      "percentile_method": "linear",
+      "replicate_sha256": "ca40b9bf65b092e6a7d3e5add73ba62143abf707e44f0b74d46119e90f7099c0",
+      "replicates": 2000,
+      "seed": 20260910,
+      "status": "COMPLETE",
+      "upper": 0.04592350353913047
+    },
+    "comparisons": {
+      "base": {
+        "annualized_net_text_minus_numeric_cagr": null,
+        "paired_annualized_mean_daily_difference": null,
+        "text_minus_matched_event_cagr": null
+      },
+      "stress": {
+        "annualized_net_text_minus_numeric_cagr": null,
+        "paired_annualized_mean_daily_difference": null,
+        "text_minus_matched_event_cagr": null
+      }
+    },
+    "gates": [
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "base:numeric:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "base:text:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": false
+        },
+        "name": "base:matched_event:qualified_account",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:text_cagr_above_6pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:text_advantage_at_least_1pp",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:text_cagr_above_matched_event",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:at_least_40_completed_positions",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:at_least_12_active_months",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:max_drawdown_at_most_20pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:no_account_stop",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "stress:numeric:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": true
+        },
+        "name": "stress:text:qualified_account",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "capital_matches": true,
+          "cost_case_matches": true,
+          "initial_expense_matches": true,
+          "ranking_mode_matches": true,
+          "source_complete": false
+        },
+        "name": "stress:matched_event:qualified_account",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:text_cagr_above_6pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:text_advantage_at_least_1pp",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:text_cagr_above_matched_event",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:at_least_40_completed_positions",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:at_least_12_active_months",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:max_drawdown_at_most_20pct",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "stress:no_account_stop",
+        "status": "UNRESOLVED"
+      },
+      {
+        "details": null,
+        "name": "base:paired_bootstrap_lower_bound_positive",
+        "status": "FAIL"
+      }
+    ],
+    "status": "UNRESOLVED"
+  }
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "ticker": "AGFS",
+    "identity_ambiguous": false,
+    "splits": [],
+    "end": "2023-03-31"
+  },
+  {
+    "ticker": "BWA",
+    "identity_ambiguous": false,
+    "splits": [
+      {
+        "date": "2023-07-05",
+        "divCash": 0.0,
+        "issues": [],
+        "qualified": true,
+        "splitFactor": 1.136
+      }
+    ],
+    "end": "2023-12-29"
+  },
+  {
+    "ticker": "DCAR",
+    "identity_ambiguous": false,
+    "splits": [
+      {
+        "date": "2020-05-29",
+        "divCash": 0.0,
+        "issues": [],
+        "qualified": true,
+        "splitFactor": 0.2
+      },
+      {
+        "date": "2023-09-18",
+        "divCash": 0.0,
+        "issues": [],
+        "qualified": true,
+        "splitFactor": 0.125
+      }
+    ],
+    "end": "2023-12-29"
+  },
+  {
+    "ticker": "DSSI",
+    "identity_ambiguous": false,
+    "splits": [],
+    "end": "2021-07-19"
+  },
+  {
+    "ticker": "FTNT",
+    "identity_ambiguous": false,
+    "splits": [
+      {
+        "date": "2022-06-23",
+        "divCash": 0.0,
+        "issues": [],
+        "qualified": true,
+        "splitFactor": 5.0
+      }
+    ],
+    "end": "2023-12-29"
+  },
+  {
+    "ticker": "LTHM",
+    "identity_ambiguous": true,
+    "splits": [],
+    "end": "2023-12-29"
+  },
+  {
+    "ticker": "MYL",
+    "identity_ambiguous": false,
+    "splits": [],
+    "end": "2020-11-19"
+  },
+  {
+    "ticker": "SNX",
+    "identity_ambiguous": false,
+    "splits": [
+      {
+        "date": "2020-12-01",
+        "divCash": 0.0,
+        "issues": [],
+        "qualified": true,
+        "splitFactor": 2.0
+      }
+    ],
+    "end": "2023-12-29"
+  },
+  {
+    "ticker": "TYPE",
+    "identity_ambiguous": false,
+    "splits": [],
+    "end": "2019-10-11"
+  },
+  {
+    "ticker": "VSLR",
+    "identity_ambiguous": false,
+    "splits": [],
+    "end": "2020-10-09"
+  },
+  {
+    "ticker": "WIFI",
+    "identity_ambiguous": false,
+    "splits": [],
+    "end": "2021-06-02"
+  }
+]

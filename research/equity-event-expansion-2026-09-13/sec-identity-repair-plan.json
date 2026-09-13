@@ -1,0 +1,872 @@
+{
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "rule": "Original10-Q/10-K cover filed and accepted no later than the current daily decision anchor. Single indexregistrant must matchCIK; preserve original8-Kcover and exactprice-independent timing. No newprice/return access.",
+  "selection_sha256": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270",
+  "targets": [
+    {
+      "accession": "0001104659-20-061632",
+      "anchor_date": "2020-05-14",
+      "cik": "0001362190",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm2019401d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 AudioEye Reports First Quarter 2020 Results Seventeenth Straight Quarter of Record Revenue and Continued New Customer Adoption Drives Significantly Improved Profitability Metrics TUCSON, Ariz. \u2014 May 14, 2020 \u2014 AudioEye, Inc. (NASDAQ: AEYE) , an industry-leading software solution provider delivering website accessibility compliance to businesses of all sizes, reported financial results for the first quarter ended March 31, 2020. First Quarter 2020 Financial Results and April Update \u25cf Total revenue increased 115% to a record $4.3M from $2M in the same period a year ago. The increase in revenue was primarily due to continued growth in the Company\u2019s enterprise and vertical partner channels during the period. \u25cf As of March 31, 2020, monthly recurring revenue (MRR) was approximately $1.4M, which was an increase of 17% compared to approximately $1.2M at December 31, 2019. \u25cf Gross profit increased over 170% to $2.9M (~69% of total revenue) from $1.1M (~54% of total revenue) in the same year-ago period. The increase in gross profit and gross margin was primarily due to increased efficiencies being realized as the Company continues to improve and expand the level of automation in its remediations as well as an increase in revenues. \u25cf Operating expenses increased 45% to $4.6M from $3.2M in the same year-ago period. The increase in total operating expenses was primarily due to increases in sales and marketing expenses as well as research and development and general and administrative expenses. \u25cf Net loss available to common stockholders was $1.7M, or $(0.19) per share, compared to $2.1M, or $(0.28) per share, in the same year-ago period. The improved net loss was primarily due to increased efficiencies being realized as the",
+      "slot_id": "0001362190-2020Q2"
+    },
+    {
+      "accession": "0001104659-20-094675",
+      "anchor_date": "2020-08-13",
+      "cik": "0001362190",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm2027514d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 AudioEye Reports Second Quarter 2020 Results Eighteenth Straight Quarter of Record Revenue, First-Ever $5M Revenue Quarter, Nearly Triples Customer Count to over 20,000 since last year-end TUCSON, Ariz. \u2014 August 13, 2020 \u2014 AudioEye, Inc. (NASDAQ: AEYE) , an industry-leading software solution provider delivering website accessibility compliance to businesses of all sizes, reported financial results for the second quarter ended June 30, 2020. Second Quarter 2020 Financial Results \u25cf Total revenue increased 117% to a record $5.3M from $2.4M in the same period a year ago. The increase in revenue was primarily due to continued growth in the Company\u2019s vertical partner channels, coupled with new business and renewals in Enterprise channel during the period, and represents the Company\u2019s first-ever $5M revenue quarter. \u25cf As of June 30, 2020, monthly recurring revenue (MRR) was about $1.6M, this is an increase of 105% on a year-over-year basis. \u25cf Gross profit increased more than 180% to $3.7M (~70% of total revenue) from $1.3M (~54% of total revenue) in the same year-ago period. The increase in gross profit and gross margin was primarily due to increased efficiencies being realized as the Company continues to improve and expand the level of automation in its remediations as well as an increase in revenues. \u25cf Operating expenses increased 36% to $4.5M from $3.3M in the same year-ago period. The increase in total operating expenses was primarily due to increased investments in talent across various functions, infrastructure and product development. \u25cf Net loss available to common stockholders was $1.4M, or $(0.16) per share, compared to $2M, or $(0.27) per share, in the same year-ago period. The improved net loss was expected ",
+      "slot_id": "0001362190-2020Q3"
+    },
+    {
+      "accession": "0000706863-20-000002",
+      "anchor_date": "2020-01-15",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9914thqtr2019earnin.htm EXHIBIT 99.1 Exhibit Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Reports Record Earnings for the year ended December 31, 2019 and Declares Increase in Quarterly Dividend Morrisville, VT January 15, 2020 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three and twelve months ended December 31, 2019 . Net income was $2.8 million and $10.6 million for the three and twelve months ended December 31, 2019 , resulting in earnings per share of $0.61 and $2.38 for the same periods, respectively. The Board of Directors also declared a cash dividend of $0.32 per share for the quarter, and increase of 3.2% from the cash dividend of $0.31 paid in recent prior quarters, payable February 6, 2020 to shareholders of record as of January 27, 2020 . The Company reported a consolidated net loss for the three months ended December 31, 2018 of $(436) thousand, or $(0.10) per share, and consolidated net income for the twelve months then ended of $7.1 million, or $1.58 per share. Results for the three and twelve months ended December 31, 2018 included a reduction in net earnings due to one-time charges related to the termination of the Company's defined benefit pension plan. The one-time reduction in earnings was $3.7 million for the year ended December 31, 2018 , of which, $3.2 million was recorded in the fourth quarter of 2018. Fourth Quarter Highlights Net income of $2.8 million was recorded for the three months ended December 31, 2019 , compared to a loss of $436 thousand for the three months ended December 31, 2018 . Net interest income increased $352 thousand, or 4.7%, from fourth quarter 2018 , with an increase of $723 thousand in interest income, partially offset by a $37",
+      "slot_id": "0000706863-2020Q1"
+    },
+    {
+      "accession": "0000706863-20-000062",
+      "anchor_date": "2020-04-15",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9911stqtr2020earnin.htm EXHIBIT 99.1 Exhibit Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Announces Earnings for the three months ended March 31, 2020 and Declares Quarterly Dividend Morrisville, VT April 15, 2020 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three months ended March 31, 2020 and declared a regular quarterly cash dividend. Consolidated net income for the first quarter was $2.2 million , or $0.49 per share, compared to $2.6 million, or $0.59 per share, for the same period in 2019 . The reduction in earnings from the 2019 comparison period was due to a combination of factors including an anticipated flat interest rate environment, planned technology infrastructure spending, discretionary hiring of high value staff to allow continued growth in the franchise, continued development of newer branch locations, ongoing competition in all aspects of the business, and the initial impacts of the outbreak of the COVID-19 public health emergency. Interest income increased $185 thousand, or 2.1%, to $8.8 million for the three months ended March 31, 2020 compared to $8.6 million for the three months ended March 31, 2019. The Federal Reserve initiated a 150 basis point reduction in short term interest rates in March 2020 which will impact interest income in future periods. Interest expense was $1.4 million for the three months ended March 31, 2020 compared to $1.2 million for the three months ended March 31, 2019, an increase of $225 thousand, or 18.3%. The provision for loan losses was $300 thousand for the three months ended March 31, 2020 compared to $50 thousand for the same period in 2019 . The increase in the provision resulted from management's adjustment to the economic",
+      "slot_id": "0000706863-2020Q2"
+    },
+    {
+      "accession": "0000706863-20-000087",
+      "anchor_date": "2020-07-15",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9912ndqtr2020ea.htm EXHIBIT 99.1 Document Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Announces Earnings for the three and six months ended June 30, 2020 and Declares Quarterly Dividend Morrisville, VT July 15, 2020 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three and six months ended June 30, 2020 and declared a regular quarterly cash dividend. Consolidated net income for the three months ended June 30, 2020 were $2.7 million, or $0.60 per share, compared to $2.5 million, or $0.56 per share, for the same period in 2019 and $4.9 million, or $1.09 per share, for the six months ended June 30, 2020, compared to $5.2 million, or $1.15 per share, for the same period in 2019. Second Quarter Highlights Consolidated net income increased $138 thousand, or 5.4%, to $2.7 million for the second quarter of 2020 compared to the second quarter of 2019 due to increases in net interest income of $271 thousand and noninterest income of $517 thousand, partially offset by increases in the provision for loan losses of $350 thousand and noninterest expenses of $311 thousand. Union originated $68.5 million in Paycheck Protection Program (\"PPP\") loans to assist customers during the economic disruption caused by COVID-19. Interest income and origination fees from PPP loans was $368 thousand for the three months ended June 30, 2020. Additionally, sales of qualifying residential loans to the secondary market for the second quarter of 2020 were $55.4 million resulting in gain on sales of $1.4 million, compared to sales of $35.2 million and gain on sales of $683 thousand for the second quarter of 2019. Year-to-Date Highlights Consolidated net income was $4.9 million, or $1.09 per share, compared to $5.2",
+      "slot_id": "0000706863-2020Q3"
+    },
+    {
+      "accession": "0000706863-20-000093",
+      "anchor_date": "2020-10-21",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9913rdqtr2020ea.htm EXHIBIT 99.1 Document Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Announces Earnings for the three and nine months ended September 30, 2020 and Declares Quarterly Dividend Morrisville, VT October 21, 2020 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three and nine months ended September 30, 2020 and declared a regular quarterly cash dividend. Consolidated net income for the three months ended September 30, 2020 was $4.1 million, or $0.92 per share, compared to $2.7 million, or $0.62 per share, for the same period in 2019 and $9.0 million, or $2.01 per share, for the nine months ended September 30, 2020, compared to $7.9 million, or $1.77 per share, for the same period in 2019. President and CEO David Silverman commented on the third quarter results, \"Over the past weeks and months we have had to adapt to new ways of operating and serving our customers and communities due to the pandemic. Our operations have run smoothly and we have served our customers and communities admirably. We are pleased with our financial performance thus far in 2020 and I could not be more proud of the way our teammates have stepped up and handled their respective tasks with grace.\" Third Quarter Highlights Consolidated net income increased $1.4 million, or 51.5%, to $4.1 million for the third quarter of 2020 compared to the third quarter of 2019 due to increases in net interest income of $538 thousand and noninterest income of $2.8 million, partially offset by increases in the provision for loan losses of $650 thousand and noninterest expenses of $990 thousand. The provision for loan losses has been increased substantially compared to prior years as management continues to evaluate",
+      "slot_id": "0000706863-2020Q4"
+    },
+    {
+      "accession": "0000706863-21-000002",
+      "anchor_date": "2021-01-20",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9914thqtr2020earnin.htm EXHIBIT 99.1 Document Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Reports Record Earnings for the year ended December 31, 2020 and Declares Increase in Quarterly Dividend Morrisville, VT January 20, 2021 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three months and year ended December 31, 2020. Net income was $3.8 million and $12.8 million for the three months and year ended December 31, 2020, resulting in earnings per share of $0.85 and $2.86 for the same periods, respectively. The Board of Directors also declared a cash dividend of $0.33 per share for the quarter, an increase of 3.1% from the cash dividend of $0.32 paid in recent prior quarters, payable February 5, 2021 to shareholders of record as of February 1, 2021. President and CEO David Silverman commented on the year end results, \"As we look back at 2020, we thank our employees who have persevered through difficult times, handled unprecedented volumes of work, and adapted to new ways of interacting and collaborating with each other and our customers. We are pleased with our financial performance for 2020. The effective operation of the core business lines that are fundamental to our success have provided another solid year of earnings and growth for our shareholders.\" Fourth Quarter Highlights Consolidated net income increased $1.0 million, or 37.5%, to $3.8 million for the fourth quarter of 2020 compared to the fourth quarter of 2019 due to increases in net interest income of $383 thousand and noninterest income of $2.0 million, partially offset by increases in the provision for loan losses of $175 thousand, noninterest expenses of $764 thousand, and income taxes of $369 thousand. Sales of qua",
+      "slot_id": "0000706863-2021Q1"
+    },
+    {
+      "accession": "0000706863-21-000077",
+      "anchor_date": "2021-04-22",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9911stqtr2021earnin.htm EXHIBIT 99.1 Document Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Announces Earnings for the three months ended March 31, 2021 and Declares Quarterly Dividend Morrisville, VT April 21, 2021 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three months ended March 31, 2021 and declared a regular quarterly cash dividend. Consolidated net income for the first quarter was $2.9 million, or $0.64 per share compared to $2.2 million, or $0.49 cents per share, for the same period in 2020, an increase of $680 thousand, or 30.9%. The increase in net income for the comparison period was led by an increase of $893 thousand in net interest income. Interest income was $9.5 million for the three months ended March 31, 2021 compared to $9.0 million for the comparable period in 2020, an increase of $537 thousand, or 6.0%, due to higher volumes of interest earning assets partially offset by lower average yields. Conversely, despite higher customer deposit balances, interest expense decreased $356 thousand, or 24.5%, to $1.1 million for the three months ended March 31, 2021 compared to $1.5 million for the comparable period in 2020 attributable to lower interest rates. The provision for loan losses was $150 thousand for the three months ended March 31, 2021 compared to $300 thousand for the comparable quarter in 2020. Net recoveries were $8 thousand as of March 31, 2021 compared to net charge-offs of $31 thousand for the comparable period in 2020. Noninterest income was $2.6 million for the three months ended March 31, 2021 compared to $2.5 million for the three months ended March 31, 2020, an increase of $103 thousand, or 4.1%. Sales of qualifying residential loans to the sec",
+      "slot_id": "0000706863-2021Q2"
+    },
+    {
+      "accession": "0000706863-21-000110",
+      "anchor_date": "2021-07-21",
+      "cik": "0000706863",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit9912ndqtr2021earnin.htm EXHIBIT 99.1 Document Exhibit 99.1 For Immediate Release Contact: David S. Silverman (802) 888-6600 Union Bankshares Announces Earnings for the three and six months ended June 30, 2021 and Declares Quarterly Dividend Morrisville, VT July 21, 2021 - Union Bankshares, Inc. (NASDAQ - UNB) today announced results for the three and six months ended June 30, 2021 and declared a regular quarterly cash dividend. Consolidated net income for the three months ended June 30, 2021 were $3.0 million, or $0.67 per share, compared to $2.7 million, or $0.60 per share, for the same period in 2020 and $5.9 million, or $1.31 per share, for the six months ended June 30, 2021, compared to $4.9 million, or $1.09 per share, for the same period in 2020. Union continued its participation in the Paycheck Protection Program (\"PPP\") initiated by the Small Business Administration (\"SBA\") and originated $31.8 million in PPP loans in 2021. This was in addition to the $70.3 million in PPP loans originated in 2020, for a total of $102.1 million in origination under the PPP. As of June 30, 2021, $44.8 million in PPP loans have been forgiven by the SBA. Second Quarter Highlights Consolidated net income increased $323 thousand, or 12.1%, to $3.0 million for the second quarter of 2021 compared to the second quarter of 2020 due to increases in net interest income of $1.1 million, noninterest income of $151 thousand, and a reduction of $425 thousand in the provision for loan losses, partially offset by increases in noninterest expenses of $1.3 million and income tax expense of $116 thousand. Net interest income improved to $8.9 million for the three months ended June 30, 2021 compared to $7.8 million for the three months ended June 30, 2020, an increase of $1.1 million",
+      "slot_id": "0000706863-2021Q3"
+    },
+    {
+      "accession": "0001171843-21-003352",
+      "anchor_date": "2021-05-10",
+      "cik": "0000806517",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exh_991.htm PRESS RELEASE EdgarFiling EXHIBIT 99.1 Psychemedics Corporation Reports First Quarter 2021 Financial Results ACTON, Mass., May 10, 2021 (GLOBE NEWSWIRE) -- Psychemedics Corporation (NASDAQ:PMD), the world\u2019s largest provider of hair testing for drugs of abuse, today announced financial results for the first quarter ended March 31, 2021. The Company\u2019s revenue for the quarter ended March 31, 2021 was $5.7 million versus $7.5 million for the quarter ended March 31, 2020, a decrease of 24%. Net income for the quarter ended March 31, 2021 was $0.1 million or $0.01 per diluted share, versus net loss of $0.2 million or ($0.03) per diluted share, for the comparable period last year, an increase of $0.04 per diluted share. Raymond C. Kubacki, Chairman and Chief Executive Officer, stated: \"We continued to see improvement in total revenues, month-to-month and quarter-to-quarter, since the COVID-19 shutdown hit full force in April last year. The driving force in the continuing improvement is the growth in our domestic business. While total revenues for this first quarter declined 24% vs. Q1 2020, domestic revenues declined a lesser 15% and March showed an increase in total revenues and domestic revenues vs. March 2020. International volumes, primarily Brazil, continued to be off significantly as anticipated and as mentioned in our Q4 press release and shareholder letter in our Annual Report. We will keep our options open, but our focus is on our domestic business. Our first quarter earnings were impacted primarily by two countervailing factors: 1) lower volume and revenues compared to Q1 2020 had a significant negative impact and 2) application of the Employee Retention Credit (\"ERC\") had a positive impact. The ERC is a refundable federal payroll tax credit for",
+      "slot_id": "0000806517-2021Q2"
+    },
+    {
+      "accession": "0001193125-20-049004",
+      "anchor_date": "2020-02-26",
+      "cik": "0001593222",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 d882550dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 City Office REIT Reports Fourth Quarter and Full Year 2019 Results VANCOUVER\u2014February 26, 2020\u2014City Office REIT, Inc. (NYSE: CIO) (the \u201cCompany\u201d or \u201cCity Office\u201d), today announced its results for the quarter and full year ended December 31, 2019. Fourth Quarter Highlights \u2022 GAAP net income attributable to common stockholders was approximately $1.0 million, or $0.02 per fully diluted share; \u2022 Core FFO was approximately $13.4 million, or $0.25 per fully diluted share; \u2022 AFFO was approximately $7.9 million, or $0.14 per fully diluted share; \u2022 In-place occupancy closed the quarter at 91.9%; the Company executed approximately 331,000 square feet of new and renewal leases during the quarter; \u2022 Same Store Cash NOI increased 3.9% as compared to the fourth quarter 2018; \u2022 Closed the disposition of the Logan Tower property in Denver, Colorado for $12.6 million; \u2022 Issued 6,900,000 shares of common stock in a public follow-on offering for aggregate gross proceeds of approximately $95.6 million; \u2022 Declared a fourth quarter dividend of $0.235 per share of common stock, paid on January 24, 2020; \u2022 Declared a fourth quarter dividend of $0.4140625 per share of Series A Preferred Stock, paid on January 24, 2020; and \u2022 Gained entry into the MSCI US REIT Index (RMZ). Highlights Subsequent to Quarter End \u2022 Executed a 70,000 square foot lease at the Denver Tech property with a 10.6 year term. \u201c2019 was an exceptional year for City Office REIT, in which the total return for our common stock was 42.6%,\u201d commented James Farrar, the Company\u2019s Chief Executive Officer. \u201cWe executed on our strategy of expanding our footprint in 18-hour cities in the southern and western United States and significantly grew the scale of the Company. We accompl",
+      "slot_id": "0001593222-2020Q1"
+    },
+    {
+      "accession": "0000055242-20-000004",
+      "anchor_date": "2020-02-03",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt12312019exhibit991.htm EXHIBIT 99.1 Exhibit Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: February 3, 2020 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2020 Second Quarter Results \u2022 Sales down from prior year due to weakening end-markets \u2022 Incremental simplification/modernization benefits of approximately $11 million in the quarter, with $69 million in annualized total savings inception to date; benefits expected to accelerate in the second half of fiscal 2020 \u2022 FY20 and FY21 Restructuring Actions on-track to deliver projected savings \u2022 Fiscal 2020 outlook adjusted earnings per diluted share of $1.20 to $1.50 reflects further weakening in end-markets and higher adjusted effective tax rate PITTSBURGH, ( February 3, 2020 ) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2020 second quarter ended December 31, 2019 , with loss per diluted share (LPS) of $0.07 , compared with earnings per diluted share (EPS) of $0.66 in the prior year quarter, and adjusted EPS of $0.17 , compared with adjusted EPS of $0.71 in the prior year quarter. \u201cOur second quarter results reflect weakening end-market conditions, particularly from greater than expected deceleration in the U.S., Germany and India, combined with headwinds developing in the 737 MAX supply chain,\u201d said Christopher Rossi, President and CEO. Rossi continued, \"We expect increased profitability in the second half driven by progress on simplification/ modernization and raw material cost improvements now that higher-priced inventory has moved through the P&L. Nevertheless, we are reducing our full-year outlook to reflect further second",
+      "slot_id": "0000055242-2020Q1"
+    },
+    {
+      "accession": "0000055242-20-000011",
+      "anchor_date": "2020-05-04",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt3312020exhibit991.htm EXHIBIT 99.1 Exhibit Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: May 4, 2020 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2020 Third Quarter Results \u2022 COVID-19 protocols implemented to protect health and safety of employees while continuing to serve customers globally as an essential business \u2022 Strong cash balance and liquidity position at quarter-end; continuing with simplification/modernization program \u2022 Incremental simplification/modernization benefits of approximately $15 million in the quarter, with $87 million in annualized total savings inception to date \u2022 Sales declined from prior year due to global manufacturing slow down \u2022 Ongoing cost-control actions to align with the current market environment PITTSBURGH, ( May 4, 2020 ) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2020 third quarter ended March 31, 2020 , with earnings per diluted share (EPS) of $0.03 , compared with EPS of $0.82 in the prior year quarter, and adjusted EPS of $0.46 , compared with adjusted EPS of $0.77 in the prior year quarter. \u201cDespite the many headwinds we faced in the third quarter, we delivered solid results that were strengthened by our early cost-control actions and the continued benefits of our simplification/modernization investments,\u201d said President and CEO Christopher Rossi. \u201cKennametal is considered an essential business by governments around the world, so we have kept almost all of our production facilities open and serving customers throughout this crisis. We ended the quarter with a strong liquidity position that will allow us to manage the uncertain tim",
+      "slot_id": "0000055242-2020Q2"
+    },
+    {
+      "accession": "0000055242-20-000021",
+      "anchor_date": "2020-08-03",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt6302020exhibit991.htm EXHIBIT 99.1 Exhibit Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: August 3, 2020 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fourth Quarter and Fiscal 2020 Results \u2022 Significantly mitigating effect of COVID-19 on operating leverage by aggressively managing costs and aligning production levels to lower demand \u2022 Strong cash balance and liquidity position at year-end \u2022 FY20 simplification/modernization benefits of $48 million, up 12 percent year-over-year despite lower volumes \u2022 FY21 Restructuring Actions expected to generate $65 to $75 million of annualized savings upon completion \u2022 By the end of FY21, Company expects ~$180 million of simplification/modernization program savings \u2022 Industrial and WIDIA combined into one Metal Cutting organization as of July 1 to drive share gain; repositioning the WIDIA brand to access a multi-billion-dollar segment within metal cutting PITTSBURGH, ( August 3, 2020 ) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today announced fourth quarter and fiscal 2020 results. For the fourth quarter, the Company reported loss per share (LPS) of $0.11 , compared with earnings per share (EPS) of $0.74 in the prior year quarter. The current quarter adjusted EPS was $0.15 , compared with $0.84 in the prior year quarter. For fiscal 2020 , the Company reported LPS of $0.07 , compared with EPS of $2.90 in the prior year. Adjusted EPS was $0.94 in the current year, compared with $3.02 in the prior year. \u201cThe effects of COVID-19 were felt in every region during the quarter and created a challenging environment. Nevertheless, we have continued to aggressively manage our costs and pr",
+      "slot_id": "0000055242-2020Q3"
+    },
+    {
+      "accession": "0000055242-20-000044",
+      "anchor_date": "2020-11-02",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt9302020exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: November 2, 2020 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2021 First Quarter Results \u2022 Sales of $400 million decreased 23 percent year-over-year, but increased 6 percent sequentially, outpacing the normal seasonal decline \u2022 Commercial excellence proceeding well with early wins in fit-for-purpose market segment \u2022 Strong execution on simplification/modernization initiatives and cost control measures protecting margins \u2022 First quarter incremental simplification/modernization benefits of $22 million, up 166 percent year-over-year; $180 million of cumulative savings expected by end of FY21 \u2022 Strong cash balance and liquidity position maintained PITTSBURGH, (November 2, 2020) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2021 first quarter ended September 30, 2020, with loss per diluted share (LPS) of $0.26, compared with earnings per diluted share (EPS) of $0.08 in the prior year quarter, and adjusted EPS of $0.03, compared with adjusted EPS of $0.17 in the prior year quarter. \u201cOur results demonstrate effective execution on several fronts despite low levels of industrial activity. Benefits from our simplification/modernization initiatives increased, as we move into the final stages of footprint rationalization, positioning us well for the economic recovery. Furthermore, we continue to gain traction on our growth initiatives, including a recent win in the fit-for-purpose market segment with a major machine tool builder,\u201d said Christopher Rossi, President and CEO. Rossi continued: \u201cOur first ",
+      "slot_id": "0000055242-2020Q4"
+    },
+    {
+      "accession": "0000055242-21-000009",
+      "anchor_date": "2021-02-01",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt12312020exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: February 1, 2021 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2021 Second Quarter Results \u2022 Sales of $441 million increased 10 percent sequentially \u2022 Strong free operating cash flow further strengthening liquidity position \u2022 Simplification/modernization initiatives and cost control measures supported year-over-year margin improvement \u2022 Second quarter incremental simplification/modernization benefits of $23 million, up 117 percent year-over-year; $180 million of cumulative savings expected by end of FY21 \u2022 Gaining traction in Metal Cutting fit-for-purpose applications globally with new and existing customers PITTSBURGH, (February 1, 2021) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2021 second quarter ended December 31, 2020, with earnings per diluted share (EPS) of $0.23, compared with loss per diluted share (LPS) of $0.07 in the prior year quarter, and adjusted EPS of $0.16, compared with adjusted EPS of $0.17 in the prior year quarter. \u201cWe experienced strong sequential sales growth in the quarter that outpaced our expectations, driven by improving demand mainly in the Transportation and General Engineering end-markets. These end-market trends coupled with the progress on our growth initiatives and continued delivery of simplification/modernization benefits led to solid margin improvement and strong free operating cash flow in the quarter,\u201d said Christopher Rossi, President and CEO. Rossi continued: \u201cOur transformation is well underway, and we have permanently improved the cost-structu",
+      "slot_id": "0000055242-2021Q1"
+    },
+    {
+      "accession": "0000055242-21-000016",
+      "anchor_date": "2021-05-03",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt3312021exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: May 3, 2021 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2021 Third Quarter Results \u2022 Sales of $485 million increased 10 percent sequentially, outperforming expectations \u2022 Strong third quarter cash generation delivering year-to-date cash flow from operations of $139 million and free operating cash flow of $46 million \u2022 Third quarter incremental simplification/modernization benefits of approximately $18 million, $180 million of cumulative program savings expected by end of FY21 \u2022 Fourth quarter sales expected to be up mid-single digits sequentially from continued market recovery and commercial excellence PITTSBURGH, (May 3, 2021) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2021 third quarter ended March 31, 2021, with earnings per diluted share (EPS) of $0.26, compared with $0.03 in the prior year quarter, and adjusted EPS of $0.32, compared with $0.46 in the prior year quarter. \u201cI am encouraged by our results, which reflect solid execution of our initiatives as well as improving sales and free operating cash flow. Sales increased 10 percent sequentially, exceeding expectations, with improvement across all end-markets and regions and a return to growth on a year-over-year basis in Transportation, General Engineering and Asia Pacific. Although near-term uncertainties remain due to customer supply chain constraints and the effects of ongoing COVID-19 restrictions, we are optimistic that the worst of this crisis is behind us, and the momentum of the recovery will continue,\u201d said Christopher ",
+      "slot_id": "0000055242-2021Q2"
+    },
+    {
+      "accession": "0000055242-21-000037",
+      "anchor_date": "2021-08-02",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt6302021exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: August 2, 2021 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Reports Q4 and Fiscal 2021 Results; Announces Share Repurchase Program \u2022 Sales of $516 million increased 36 percent year-over-year and 6 percent sequentially \u2022 Earnings per diluted share (EPS) of $0.41 and adjusted EPS of $0.53 \u2022 Strong cash flow from operations of $236 million and free operating cash flow of $113 million \u2022 Simplification/modernization capital spend and restructuring substantially complete; achieved total savings of approximately $186 million \u2022 First quarter sales expected to outpace normal seasonality \u2022 Announces share repurchase program of up to $200 million over three years PITTSBURGH, (August 2, 2021) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today announced fourth quarter and fiscal 2021 results. For the fourth quarter, the Company reported earnings per diluted share (EPS) of $0.41, compared with loss per diluted share (LPS) of $0.11 in the prior year quarter. The current quarter adjusted EPS was $0.53, compared with $0.15 in the prior year quarter. For fiscal 2021, the Company reported EPS of $0.65, compared with LPS of $0.07 in the prior year. Adjusted EPS was $1.04 in the current year, compared with $0.94 in the prior year. \u201cWe ended fiscal 2021 with positive momentum driven by solid execution of our strategic Commercial and Operational Excellence initiatives and continued recovery in our end-markets. Sales increased 6 percent sequentially and 36 percent year-over-year, with notable sequential improvement in General Engineering and Aerospace end-markets. I",
+      "slot_id": "0000055242-2021Q3"
+    },
+    {
+      "accession": "0000055242-21-000047",
+      "anchor_date": "2021-11-01",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt9302021exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: November 1, 2021 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2022 First Quarter Results \u2022 Sales of $484 million increased 21 percent year-over-year; growth across all regions and end markets \u2022 Earnings per diluted share (EPS) of $0.43 and adjusted EPS of $0.44 \u2022 Strong cash flow from operations of $16 million; up approximately 60 percent year-over-year \u2022 Significant operating leverage drove more than 1,500 basis point improvement in operating margin; 870 basis points on an adjusted basis \u2022 Share repurchase program initiated; $13 million of common stock purchased in the quarter PITTSBURGH, (November 1, 2021) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2022 first quarter ended September 30, 2021, with earnings per diluted share (EPS) of $0.43, compared with loss per share (LPS) of $0.26 in the prior year quarter, and adjusted EPS of $0.44, compared with $0.03 in the prior year quarter. \u201cThe continued execution of our Commercial and Operational Excellence initiatives in an improving market environment resulted in strong performance this quarter, with sales and free operating cash flow outpacing normal quarterly sequential patterns. The results show substantial year-over-year margin improvement, driven by strong operating leverage and timely, strategic pricing actions,\u201d said Christopher Rossi, President and CEO. \u201cLooking ahead, despite existing market and supply chain uncertainties, we remain confident in our ability to drive strong operating leverage for the full year,\u201d Rossi added. Fiscal",
+      "slot_id": "0000055242-2021Q4"
+    },
+    {
+      "accession": "0000055242-22-000003",
+      "anchor_date": "2022-02-07",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt12312021exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: February 7, 2022 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2022 Second Quarter Results \u2022 Sales of $487 million increased 10 percent year-over-year \u2022 Earnings per diluted share (EPS) of $0.37 and adjusted EPS of $0.35 \u2022 Strong operating leverage driving significant improvement in operating margin \u2022 Solid year-to-date cash flow from operations of $58 million \u2022 Repurchased $23 million of common stock in the quarter; $35 million year-to-date PITTSBURGH, (February 7, 2022) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2022 second quarter ended December 31, 2021, with earnings per diluted share (EPS) of $0.37, compared with $0.23 in the prior year quarter, and adjusted EPS of $0.35, compared with adjusted EPS of $0.16 in the prior year quarter. \u201cWe posted strong results again this quarter, reflected in both operating leverage and free operating cash flow. As expected, we delivered year-over-year and sequential growth in all our end markets, with the exception of Transportation where supply chain issues continue to challenge our customers. Our results also demonstrated continued success in the execution on our Commercial and Operational Excellence programs, including wins in key growth areas like electric vehicles and further pricing actions to address inflationary pressures,\u201d said Christopher Rossi, President and CEO. Rossi continued, \u201cUnderlying demand is strong and we expect higher than normal sequential sales trends through the balance of the fiscal year despite the continuing macroeconom",
+      "slot_id": "0000055242-2022Q1"
+    },
+    {
+      "accession": "0000055242-22-000013",
+      "anchor_date": "2022-05-02",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt3312022exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: May 2, 2022 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2022 Third Quarter Results \u2022 Sales of $512 million increased 6 percent year-over-year; 8 percent on an organic basis \u2022 Earnings per diluted share (EPS) of $0.42 and adjusted EPS of $0.47 \u2022 Strong operating leverage drove significant improvement in operating margin \u2022 Repurchased $15 million of common stock in the quarter; $50 million year-to-date PITTSBURGH, (May 2, 2022) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2022 third quarter ended March 31, 2022, with earnings per diluted share (EPS) of $0.42, compared with $0.26 in the prior year quarter, and adjusted EPS of $0.47, compared with adjusted EPS of $0.32 in the prior year quarter. \u201cWe posted strong results again this quarter marked by solid operating leverage that delivered approximately 300 basis points of adjusted operating margin improvement. These results demonstrate disciplined execution of our Commercial and Operational Excellence initiatives and timely pricing actions to cover inflation,\u201d said Christopher Rossi, President and CEO. Rossi continued, \u201cWe are experiencing broad-based demand in most of our end-markets, despite short-term challenges in China related to COVID-19 and ongoing headwinds in Transportation. Given the confidence we have in our strategy to deliver improved margins and shareholder value over the long term, we continue to move forward with our share repurchase program.\" Fiscal 2022 Third Quarter Key Developments Sales of $512 million increased 6 percen",
+      "slot_id": "0000055242-2022Q2"
+    },
+    {
+      "accession": "0000055242-22-000036",
+      "anchor_date": "2022-08-01",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt6302022exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: August 1, 2022 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Reports Fiscal 2022 and Fourth Quarter Results \u2022 FY22 sales increased 9 percent year-over-year to $2.0 billion; 11 percent on an organic basis \u2022 Strong full-year operating leverage drove significant improvement in annual operating margin \u2022 FY22 earnings per diluted share (EPS) of $1.72 and adjusted EPS of $1.78 versus $0.65 and $1.04, respectively, in FY21 \u2022 Returned $152 million to shareholders in FY22; $85 million in share repurchases and $67 million in dividends \u2022 Q4 sales increased 3 percent year-over-year to $530 million; 7 percent on an organic basis PITTSBURGH, (August 1, 2022) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today announced fourth quarter and fiscal 2022 results. For the fourth quarter, the Company reported earnings per diluted share (EPS) of $0.50, compared with $0.41 in the prior year quarter. The current quarter adjusted EPS was $0.53, compared with $0.53 in the prior year quarter. For fiscal 2022, the Company reported EPS of $1.72, compared with $0.65 in the prior year. Adjusted EPS was $1.78 in the current year, compared with $1.04 in the prior year. \u201cWe posted solid results this year with strong full-year operating leverage delivering over 300 basis points of year-over-year adjusted operating margin improvement. These results demonstrate continued success in executing our Operational and Commercial Excellence initiatives, including timely pricing actions to cover inflationary pressures,\u201d said Christopher Rossi, President and CEO. Rossi continued, \u201cGiven our",
+      "slot_id": "0000055242-2022Q3"
+    },
+    {
+      "accession": "0000055242-22-000043",
+      "anchor_date": "2022-10-31",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt9302022exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: October 31, 2022 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2023 First Quarter Results \u2022 Sales of $495 million increased 2 percent year-over-year \u2022 9 percent organic sales growth offset by negative 7 percent foreign currency effect \u2022 Strong pricing actions continued to cover inflationary pressures \u2022 Earnings per diluted share (EPS) of $0.34 \u2022 Returned approximately $36 million to shareholders; $19 million in share repurchases and $16 million in dividends PITTSBURGH, (October 31, 2022) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2023 first quarter ended September 30, 2022, with earnings per diluted share (EPS) of $0.34, compared with $0.43 in the prior year quarter. EPS was not adjusted in the current quarter, whereas adjusted EPS was $0.44 in the prior year quarter. \u201cOur first quarter fiscal 2023 results were in line with expectations, delivering constant currency sales growth in all our end markets and regions from continued execution on our Commercial Excellence initiatives and improvement in customer demand,\u201d said Christopher Rossi, President and CEO. Rossi continued, \u201cLooking ahead, despite macroeconomic uncertainties, we see demand in line with normal seasonal patterns through this fiscal year. Regardless of the exact path the economy takes, however, we remain confident in our proven ability to advance our strategic initiatives and secure market leading positions.\u201d Fiscal 2023 First Quarter Key Developments Sales of $495 million increased 2 percent from $484 million in the prior y",
+      "slot_id": "0000055242-2022Q4"
+    },
+    {
+      "accession": "0000055242-23-000009",
+      "anchor_date": "2023-02-06",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt12312022exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: February 6, 2023 Investor Relations Media Relations CONTACT: Kelly Boyer CONTACT: Lori Lecker PHONE: 412-248-8287 PHONE: 412-248-8224 kelly.boyer@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2023 Second Quarter Results \u2022 Sales of $497 million increased 2 percent year-over-year, driven by 11 percent organic growth \u2022 Sales growth driven by pricing actions and end market resiliency, especially in the Americas and EMEA \u2022 US dollar strength and inflation remain significant headwinds \u2022 Earnings per diluted share (EPS) of $0.27 \u2022 Returned approximately $27 million to shareholders; $11 million in share repurchases and $16 million in dividends PITTSBURGH, (February 6, 2023) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2023 second quarter ended December 31, 2022, with earnings per diluted share (EPS) of $0.27, compared with $0.37 in the prior year quarter. EPS was not adjusted in the current quarter, whereas adjusted EPS was $0.35 in the prior year quarter. \u201cOur second quarter fiscal 2023 results reflect strong organic sales growth and cash flow generation,\u201d said Christopher Rossi, President and CEO. \u201cWe are encouraged by the resiliency of our end markets and our expectations for the full year remain largely the same. While each quarter can present challenges in this environment, we are confident in our Commercial and Operational Excellence initiatives driving long-term growth and profitability. \" Fiscal 2023 Second Quarter Key Developments Sales of $497 million increased 2 percent from $487 million in the prior year quarter, reflecting organic growth of 11 percent, partially offset by an unfavorable currency exchange effec",
+      "slot_id": "0000055242-2023Q1"
+    },
+    {
+      "accession": "0000055242-23-000018",
+      "anchor_date": "2023-05-01",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt3312023exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: May 1, 2023 Investor Relations Media Relations CONTACT: Michael Pici CONTACT: Lori Lecker PHONE: 412-790-0792 PHONE: 412-248-8224 michael.pici@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2023 Third Quarter Results \u2022 Sales of $536 million increased 5 percent year-over-year, driven by 8 percent organic growth \u2022 Earnings per diluted share (EPS) of $0.39 \u2022 Returned approximately $23 million to shareholders; $7 million in share repurchases and $16 million in dividends \u2022 Strong cash from operations and FOCF; up 36 percent and 78 percent, respectively, year-over-year \u2022 Raising full year sales and EPS outlook PITTSBURGH, (May 1, 2023) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2023 third quarter ended March 31, 2023, with earnings per diluted share (EPS) of $0.39, compared with $0.42 in the prior year quarter. EPS was not adjusted in the current quarter, whereas adjusted EPS was $0.47 in the prior year quarter. \u201cWe delivered year-over-year organic sales growth and strong cash flow in the quarter and continued the successful execution of our strategic initiatives, while navigating macroeconomic headwinds, such as a slower recovery in China and high inflation,\" said Christopher Rossi, President and CEO. \u201cDriven by these results and the continued confidence in our strategic initiatives, we are raising our full year sales and EPS outlook.\" Fiscal 2023 Third Quarter Key Developments Sales of $536 million increased 5 percent from $512 million in the prior year quarter, reflecting organic growth of 8 percent and a favorable business days effect of 1 percent, partially offset by an unfavorable currency exchange effect of 4 perc",
+      "slot_id": "0000055242-2023Q2"
+    },
+    {
+      "accession": "0000055242-23-000035",
+      "anchor_date": "2023-08-01",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt6302023exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: August 1, 2023 Investor Relations Media Relations CONTACT: Michael Pici CONTACT: Lori Lecker PHONE: 412-790-0792 PHONE: 412-248-8224 michael.pici@kennametal.com lori.lecker@kennametal.com Kennametal Reports Fiscal 2023 and Fourth Quarter Results \u2022 FY23 sales increased 3 percent year-over-year to $2.1 billion; 9 percent on an organic basis \u2022 FY23 earnings per diluted share (EPS) of $1.46 and adjusted EPS of $1.52 \u2022 Q4 sales increased 4 percent year-over-year to $550 million; 7 percent on an organic basis \u2022 Returned $114 million to shareholders in FY23; $49 million in share repurchases and $65 million in dividends \u2022 Strong cash from operations of $258 million and FOCF of $169 million; highest FOCF in the last eight years \u2022 Provides FY24 Q1 and annual Outlook PITTSBURGH, (August 1, 2023) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today announced fourth quarter and fiscal 2023 results. For the fourth quarter, the Company reported earnings per diluted share (EPS) of $0.45, compared with $0.50 in the prior year quarter. The current quarter adjusted EPS was $0.51, compared with $0.53 in the prior year quarter. For fiscal 2023, the Company reported EPS of $1.46, compared with $1.72 in the prior year. Adjusted EPS was $1.52 in the current year, compared with $1.78 in the prior year. \u201cIn fiscal year 2023 we generated $169 million in free operating cash flow, the highest level in eight years. For the full year, we delivered on our revenue and EPS outlook despite macroeconomic uncertainties and headwinds from inflation, foreign exchange, supply chain disruptions and a slower recovery in China,\u201d said Christopher Rossi, President and CEO. Rossi continued, \u201cNow as we look ahead to fiscal y",
+      "slot_id": "0000055242-2023Q3"
+    },
+    {
+      "accession": "0000055242-23-000047",
+      "anchor_date": "2023-11-01",
+      "cik": "0000055242",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "KMT"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 kmt9302023exhibit991.htm EX-99.1 Document Exhibit 99.1 FOR IMMEDIATE RELEASE: DATE: November 1, 2023 Investor Relations Media Relations CONTACT: Michael Pici CONTACT: Lori Lecker PHONE: 412-790-0792 PHONE: 412-248-8224 michael.pici@kennametal.com lori.lecker@kennametal.com Kennametal Announces Fiscal 2024 First Quarter Results \u2022 Earnings per diluted share (EPS) of $0.37 compared to $0.34 in the prior year quarter \u2022 Strong cash flow from operations of $26 million compared to negative $11 million in the prior year quarter \u2022 Returned approximately $30 million to shareholders; $14 million in share repurchases and $16 million in dividends PITTSBURGH, (November 1, 2023) \u2013 Kennametal Inc. (NYSE: KMT) (the \"Company\") today reported results for its fiscal 2024 first quarter ended September 30, 2023, with sales of $492 million, compared to $495 million in the prior year quarter, and earnings per diluted share (EPS) of $0.37, compared with $0.34 in the prior year quarter. Adjusted EPS was $0.41 in the current quarter, whereas EPS was not adjusted in the prior year quarter. \u201cSales were generally in line with the outlook we shared last quarter, despite weaker than expected results in China,\u201d said Christopher Rossi, President and CEO. \"We also generated strong cash flow from operations, and executed on our Commercial and Operational Excellence initiatives and previously announced restructuring program to offset the weaker market conditions.\u201d Rossi continued, \"We remain focused on our multi-year growth and innovation strategy and the long-term targets we shared at Investor Day. The growth and margin expansion initiatives, including the $100 million cost reduction target, within our plan continue to give me confidence that we will drive long-term value for shareholders.\" Fisc",
+      "slot_id": "0000055242-2023Q4"
+    },
+    {
+      "accession": "0001437749-21-002511",
+      "anchor_date": "2021-02-11",
+      "cik": "0000866609",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 ex_219955.htm EXHIBIT 99.1 ex_219955.htm Exhibit 99.1 ION reports fourth quarter and full year 2020 results Fourth quarter revenues increased 68% sequentially and backlog increased for second consecutive quarter driven by strategic entry into 3D new acquisition multi-client market and commercialization of Gemini extended frequency source HOUSTON \u2013 February 10, 2021 \u2013 ION Geophysical Corporation (NYSE: IO) today reported net revenues of $27.3 million in the fourth quarter 2020 , a 68% increase compared to $16.2 million in the third quarter and a 36% decrease compared to $42.7 million one year ago. At December 31, 2020, backlog, which consists of commitments for multi-client programs and proprietary imaging and reservoir services work, was $19.7 million or 11% higher sequentially and 4% higher versus last year. Net loss attributable to ION for the fourth quarter 2020 was $13.1 million, or a loss of $0.92 per share, compared to $14.5 million, or a loss of $1.02 per share in the fourth quarter 2019 . Excluding special items in both periods, the Company reported an Adjusted net loss the fourth quarter 2020 of $6.2 million, or a loss of $0.43 per share, compared to $5.7 million or a loss of $0.40 per share in the fourth quarter 2019 . The Company reported Adjusted EBITDA of $1.1 million for the fourth quarter 2020 , a decrease from $9.2 million one year ago. A reconciliation of special items to the reported financial results can be found in the tables of this press release. Net revenues for the full year 2020 were $122.7 million compared to $174.7 million in 2019 . The net loss attributable to ION for the full year 2020 was $37.2 million, or a loss of $2.61 per share, compared to $48.2 million, or a loss of $3.41 per share in 2019 . Excluding special items in both p",
+      "slot_id": "0000866609-2021Q1"
+    },
+    {
+      "accession": "0001437749-21-010997",
+      "anchor_date": "2021-05-06",
+      "cik": "0000866609",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 ex_227973.htm EXHIBIT 99.1 ex_227973.htm Exhibit 99.1 ION reports first quarter 2021 results, reflecting third consecutive increase in backlog and transformed capital structure HOUSTON \u2013 May 5, 2021 \u2013 ION Geophysical Corporation (NYSE: IO) today reported total net revenues of $14.0 million in the first quarter 2021 , a 49% decrease compared to $27.3 million in the fourth quarter 2020 and a 75% decrease compared to $56.4 million one year ago. At March 31, 2021 , backlog, which consists of commitments for multi-client programs and proprietary imaging work, was $21.4 million or 9% higher compared to December 31, 2020. Net loss attributable to ION in the first quarter 2021 was $7.2 million, or a loss of $0.46 per share, compared to a net loss attributable to ION of $2.3 million, or a loss of $0.16 per share in the first quarter 2020 . Excluding special items in both periods, the Company reported an Adjusted net loss attributable to ION in the first quarter 2021 of $14.9 million, or a loss of $0.95 per share, compared to an Adjusted net income attributable to ION of $4.7 million or $0.33 per share in the first quarter 2020 . The Company reported Adjusted EBITDA of $(6.6) million for the first quarter 2021 , compared to $23.1 million one year ago. A reconciliation of Adjusted EBITDA to the closest comparable GAAP numbers can be found in the tables of this press release. At quarter close, the Company\u2019s total liquidity of $39.5 million consisted of $34.2 million of cash (including net revolver borrowings of $21.3 million) and $5.3 million of remaining available borrowing capacity under the revolving credit facility. In April 2021, the Company successfully completed its previously announced offer to exchange its 9.125% Senior Secured Notes Due in December 2021 (the \u201cOl",
+      "slot_id": "0000866609-2021Q2"
+    },
+    {
+      "accession": "0001437749-21-019549",
+      "anchor_date": "2021-08-12",
+      "cik": "0000866609",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 ex_251253.htm ex_251253.htm Exhibit 99.1 ION reports second quarter 2021 results, 3D strategy contributes to 40% sequential revenue increase despite challenging market backdrop HOUSTON \u2013 August 11, 2021 \u2013 ION Geophysical Corporation (NYSE: IO) today reported revenues of $19.7 million in the second quarter 2021 , a 40% increase compared to $14.0 million in the first quarter 2021 and a 13% decrease compared to $22.7 million one year ago. Net loss attributable to ION in the second quarter 2021 was $23.6 million, or a loss of $0.90 per share, compared to $5.2 million, or a loss of $0.37 per share in the second quarter 2020 . Excluding special items in both periods, the Company reported an Adjusted net loss attributable to ION in the second quarter 2021 of $11.1 million, or a loss of $0.43 per share, compared to an Adjusted net loss attributable to ION of $12.1 million, or a loss of $0.85 per share in the second quarter 2020 . The Company reported Adjusted EBITDA of $0.1 million for the second quarter 2021 , compared to $(6.6) million in the first quarter 2021 and $0.2 million one year ago. Reconciliations of special items to the reported financial results and Adjusted EBITDA to the closest comparable GAAP numbers can be found in the tables of this press release. Year-to-date revenues were $33.8 million, a 57% decrease compared to $79.1 million one year ago. Net loss attributable to ION was $30.7 million in the first half of 2021 , or a loss of $1.47 per share, compared to $7.5 million, or a loss of $0.53 per share in the first half of 2020 . Excluding special items in both periods, Adjusted net loss attributable to ION in the first half of 2021 was $26.0 million, or a loss of $1.24 per share, compared to $7.3 million, or a loss of $0.52 per share in the first half",
+      "slot_id": "0000866609-2021Q3"
+    },
+    {
+      "accession": "0001437749-21-025103",
+      "anchor_date": "2021-11-03",
+      "cik": "0000866609",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [
+          "IO"
+        ],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 ex_276649.htm EXHIBIT 99.1 ex_276649.htm Exhibit 99.1 ION reports third quarter 2021 revenues of $44 million, an increase of 125% sequentially, driven by successful execution of 3D strategy amid gradual market recovery HOUSTON \u2013 November 3, 2021 \u2013 ION Geophysical Corporation (NYSE: IO) today reported revenues of $44.4 million in the third quarter 2021 , a 125% increase compared to $19.7 million in the second quarter 2021 and a 173% increase compared to $16.2 million one year ago. Net loss attributable to ION in the third quarter 2021 was $0.5 million, or a loss of $0.02 per share, compared to $16.6 million, or a loss of $1.16 per share in the third quarter 2020 . Excluding special items in both periods, the Company reported an Adjusted net income (loss) attributable to ION in the third quarter 2021 of $1.5 million, or $0.05 per share, compared to $(16.5) million, or $(1.16) per share in the third quarter 2020 . The Company reported Adjusted EBITDA of $22.0 million for the third quarter 2021 , compared to $0.1 million in the second quarter 2021 and $(6.6) million one year ago. Reconciliations of special items to the reported financial results and Adjusted EBITDA to the closest comparable GAAP numbers can be found in the tables of this press release. Year-to-date revenues were $78.1 million, an 18% decrease compared to $95.4 million one year ago. While the revenues generated in the third quarter 2021 significantly increased compared to the third quarter 2020, the increase was not enough to offset a one-time significant data library sale during the first quarter 2020. Net loss attributable to ION was $31.2 million in the first nine months of 2021 , or a loss of $1.33 per share, compared to $24.1 million, or a loss of $1.69 per share in the first nine months of 20",
+      "slot_id": "0000866609-2021Q4"
+    },
+    {
+      "accession": "0001558370-20-005293",
+      "anchor_date": "2020-05-06",
+      "cik": "0001641614",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 pmts-20200506xex99d1.htm EX-99.1 Current folio Ex_99_1_ER Exhibit 99.1 CPI Card Group Inc. Reports First Quarter 2020 Results Date: May 6, 2020 Net Sales Up 11% Year Over Year Net Income from Continuing Operations of $2.4 Million, an Improvement of 179% Year Over Year Adjusted EBITDA of $12.4 Million Up 55% Year Over Year Cash of $46.9 Million at Quarter End Littleton, CO. May 6, 2020 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI Card Group\u201d or the \u201cCompany\u201d) today reported financial results for the first quarter ended March 31, 2020. \u201cOur hearts go out to those who have been impacted by the COVID-19 pandemic,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cAs this pandemic continues to evolve, the health and safety of our employees remains paramount. We continue to follow the safety precautions and other appropriate measures recommended by the Centers for Disease Control and Prevention. I want to thank our employees for their dedication and commitment to continuing to serve our customers through these unprecedented times. All of CPI\u2019s operations remain open and continue to provide direct and essential support to the financial services industry, including the production, personalization and fulfillment of debit, credit, and prepaid cards such as payroll, government benefit, and health savings account cards. In addition, we have made COVID-19 support-related contributions to organizations in the communities in which we operate and source materials.\u201d Scheirman added, \u201cWe delivered strong results to start the year, though we did see some impact from the pandemic late in the first quarter. During the first quarter, our differentiated products and solutions such as our dual-interface EMV\u00ae products, including our Second Wave\u2122 card, expe",
+      "slot_id": "0001641614-2020Q2"
+    },
+    {
+      "accession": "0001558370-20-009286",
+      "anchor_date": "2020-08-05",
+      "cik": "0001641614",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 pmts-20200805xex99d1.htm EX-99.1 Exhibit 99.1 CPI Card Group Inc. Reports Second Quarter and First Half 2020 Results Date: August 5, 2020 \u200b Net Sales of $71.4 Million, Up 7% and 9% Year-over-Year in Second Quarter and First Half Net Income of $0.1 Million, Down 93% Second Quarter Year-over-Year, and Up 265% in First Half Adjusted EBITDA of $10.1 Million, Up 19% and 36% Year-over-Year in Second Quarter and First Half Cash of $54 Million at Quarter End \u200b Littleton, CO. August 5, 2020 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the second quarter and the first half ended June 30, 2020. \u201cOur hearts go out to those impacted by the COVID-19 pandemic,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cAmid a highly challenging environment, I\u2019m proud of the way our organization has demonstrated an unwavering commitment to the health and safety of our employees and the community. All of CPI\u2019s facilities have been operating and continue to provide essential products and services to the financial services industry, including the production, personalization and fulfillment of debit, credit, and prepaid cards.\u201d Scheirman added, \u201cOur results reflect the significant progress we have made executing against our strategic priorities, resulting in top-line growth of 7% year-over-year through unprecedented times. In the second quarter, we delivered strong net sales growth due to our differentiated products and solutions, such as our dual interface EMV \u00ae Second Wave TM product, our card made with recovered ocean-bound plastic. We continue to develop and launch innovative solutions. We announced with Visa the introduction of our Earthwise\u2122 High Content Card, a more sustainable payment card made wit",
+      "slot_id": "0001641614-2020Q3"
+    },
+    {
+      "accession": "0001558370-20-012313",
+      "anchor_date": "2020-11-03",
+      "cik": "0001641614",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 pmts-20201103xex99d1.htm EX-99.1 \u200b CPI Card Group Inc. Reports Third Quarter and Year-to-Date 2020 Results Date: November 3, 2020 \u200b Net Sales of $82.7 Million, Up 15% and 11% Year-over-Year in the Third Quarter and First Nine Months Net Income of $5.8 Million, Up 984% and 425% Year-over-Year in the Third Quarter and First Nine Months Adjusted EBITDA of $17.5 Million, Up 43% and 39% Year-over-Year in the Third Quarter and First Nine Months Cash of $50 Million at Quarter End \u200b Littleton, CO. November 3, 2020 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the third quarter and nine months ended September 30, 2020. \u201cAs we continue to navigate these unprecedented times, we are pleased with our strong third quarter performance,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cOur 15% top-line growth underscores the resilience of the business, our ability to capitalize on the dual interface card demand in the U.S. and the strong market for our innovative and differentiated products, including our eco-focused solutions. Operating margins also expanded significantly in the quarter, driven by operating leverage and ongoing efficiency initiatives. We continue to win new business with our existing customers, add new customers and pursue opportunities.\u201d Scheirman continued, \u201cWe remain steadfast and intensely focused on our strategies of deep customer focus, providing market-leading quality products and customer service, delivering innovative solutions and a market-competitive business model.\u201d Third Quarter and First Nine Months 2020 Financial Highlights Net sales increased 15% and 11% year-over-year to $82.7 million and $228.0 million in the third quarter and first nine months of 2020, resp",
+      "slot_id": "0001641614-2020Q4"
+    },
+    {
+      "accession": "0001558370-21-001713",
+      "anchor_date": "2021-02-25",
+      "cik": "0001641614",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 pmts-20210224xex99d1.htm EX-99.1 \u200b CPI Card Group Inc. Reports Fourth Quarter and Full Year 2020 Results Date: February 25, 2021 Strong Net Sales Growth, Significantly Improved Bottom-Line Performance Net Sales Up 16% and 12% Year Over Year in the Fourth Quarter and Full Year, Respectively Net Income of $7.3 Million and $16.1 Million, Improving 404% and 415% in the Fourth Quarter and Full Year, Respectively \u200b Adjusted EBITDA of $17.5 Million and $57.5 Million, Up 99% and 53% in the Fourth Quarter and Full Year, Respectively Cash of $58 Million at Year End \u200b Littleton, CO. February 25, 2021 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the fourth quarter and full year ended December 31, 2020. \u201cOur 2020 results were strong, driven by another year of solid execution of our customer-centric strategy whereby net sales increased 12% and our profitability significantly increased,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cDespite challenges presented by the COVID-19 pandemic, we believe we gained overall market share in 2020 and executed key initiatives to even better position CPI to meet market and customer needs in 2021 and beyond.\u201d Scheirman continued, \u201cWe believe we are well-positioned to capitalize on market opportunities, including the ongoing transition to contactless cards in the U.S. and the market demand for innovative and differentiated products such as our eco-focused Second Wave \u00ae contactless product, a debit or credit card featuring a core made with recovered ocean-bound plastic, and Card@Once \u00ae , our Software-as-a-Service instant issuance solution that enables financial institutions to instantly issue debit and credit cards in branch.\u201d Fourth Quarter and Full Yea",
+      "slot_id": "0001641614-2021Q1"
+    },
+    {
+      "accession": "0001558370-21-006756",
+      "anchor_date": "2021-05-11",
+      "cik": "0001641614",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 pmts-20210511xex99d1.htm EX-99.1 \u200b CPI Card Group Inc. Reports First Quarter 2021 Results Date: May 11, 2021 Net Sales Up 20% and Diluted EPS of $0.21 per share, Up 37% Year Over Year \u200b Net Income of $2.4 Million, Up 37% Year Over Year \u200b Adjusted EBITDA of $22.1 Million, Up 78% Year Over Year Debt Maturities Extended Approximately Five Years Cash of $25 Million and $34 Million available under the ABL Revolver at Quarter End \u200b Littleton, CO. May 11, 2021 -- CPI Card Group Inc. (OTCQX: PMTS; TSX: PMTS) (\u201cCPI\u201d or the \u201cCompany\u201d) today reported financial results for the first quarter ended March 31, 2021. \u201cOur first quarter results reflect the strength and commitment of our organization to be the partner of choice to our customers by providing market-leading quality products and customer service,\u201d said Scott Scheirman, President and Chief Executive Officer of CPI. \u201cDuring the quarter, we delivered 20% year over year net sales growth, improved our net income by 37% and grew Adjusted EBITDA 78%, as a result of strong performance across all of our businesses and new customer sales.\u201d Scheirman continued, \u201cWe continue to focus on our strategic priorities, including our commitment to meeting customers\u2019 needs by delivering high quality and differentiated products and services such as our eco-focused payment cards, secure prepaid packaging, personalization solutions and Card@Once\u00ae, our Software-as-a-Service instant issuance solution. Our strong start to 2021 is encouraging and we believe we are well-positioned to capitalize on market opportunities.\u201d First Quarter 2021 Financial Highlights Net sales increased 20% year over year to $89.1 million in the first quarter of 2021. Gross profit increased 39% year over year in the first quarter of 2021 to $35.7 million. Gross profit",
+      "slot_id": "0001641614-2021Q2"
+    },
+    {
+      "accession": "0001437749-20-017671",
+      "anchor_date": "2020-08-12",
+      "cik": "0001434647",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 ex_198479.htm EXHIBIT 99.1 ex_165063.htm Exhibit 99.1 KemPharm Reports Second Quarter 2020 Financial Results Conference Call and Live Audio Webcast with Slide Presentation Scheduled for Today at 4:30 p.m. ET Corporate and Regulatory Highlights: \u25cf Received Day-74 Letter for KP415 NDA; FDA has set PDUFA date of March 2, 2021 \u25cf Announced that Corium, Inc., a portfolio company of GPC, will lead all commercialization activities for KP415 \u25cf Announced issuance of two additional U.S. patents governing KP415 and KP484 Financial Highlights: \u25cf Reported Q2 2020 revenue of $6.9 million, including $5 million milestone payment for NDA acceptance on May 1, 2020, and $1.9 million from research and development consulting services \u25cf Q2 2020 net income of $0.01 per basic share and diluted share compared to a net loss of $0.33 per basic and diluted share for Q2 2019 \u25cf Total cash, cash equivalents and restricted cash was $6.6 million at June 30, 2020 Celebration, FL \u2013 August 12, 2020 \u2013 KemPharm, Inc. (OTCQB: KMPH), a specialty pharmaceutical company focused on the discovery and development of proprietary prodrugs, today reported its financial results for the second quarter ended June 30, 2020. \u201cThe second quarter was a period of continued advancement at KemPharm, highlighted by the FDA\u2019s acceptance of the New Drug Application (NDA) for KP415 and, following that, receipt of the \u2018Day-74 Letter\u2019 from the FDA,\u201d said Travis C. Mickle, Ph.D., President and Chief Executive Officer of KemPharm. \u201cContained within the Day-74 Letter were two important updates from the FDA. The FDA informed us that the action date (PDUFA) for KP415 is March 2, 2021, and that an advisory committee is not required at this time.\u201d Dr. Mickle continued, \u201cDovetailing with these important regulatory advancements, Kem",
+      "slot_id": "0001434647-2020Q3"
+    },
+    {
+      "accession": "0001104659-21-035303",
+      "anchor_date": "2021-03-12",
+      "cik": "0001084384",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm218964d2_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Pareteum Announces Full Year 2019 Financial Results with Revenues of $62M, an Increase of $42M Another milestone completed in returning to a normal cadence of public company reporting NEW YORK, NY \u2013 March 12, 2021 \u2013 Pareteum Corporation (OTC Pink Open Market: TEUM) , a global cloud platform-as-a-service (CPaaS) company, achieved another significant milestone today with the announcement of its full-year 2019 financial results and restated first and second quarter financial results for 2019. The Company expects to release its 2019 annual report on Form 10-K and interim periods included therein later today. The Company expects to complete the process and file full-year 2020 financial information soon by becoming fully current with respect to the filing of its quarterly and annual financial results. Pareteum's Board of Directors and executive management have instituted significant changes to reconstitute the company to position for future growth and value creation. \u201cWith our 2019 results completed, we are now fully focused on filing 2020 full-year and quarterly results followed by the cadence of regular quarterly reporting for 2021,\u201d said Bart Weijermars, Pareteum's interim CEO. \u201cOur management team and the Board have worked diligently to bring the Company back into routine reporting compliance while upgrading talent within the organization and positioning the business for future growth. Pareteum\u2019s technology and broad group of network connectivity partners position us well to take advantage of industry growth trends going forward. Entering 2021, we see tremendous opportunity ahead as our connectivity and IoT platform is uniquely able to support digital services, transformation and the large and growing sectors in ne",
+      "slot_id": "0001084384-2021Q1"
+    },
+    {
+      "accession": "0001628280-21-012458",
+      "anchor_date": "2021-06-17",
+      "cik": "0001084384",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 earningsrelease-6172021.htm EX-99.1 Document Pareteum Corporation Announces 2020 Financial Results \u2022 2020 total revenue of $69.6 million, 12% year-over-year growth \u2022 Net loss attributable to common equity decreased to $45.5 million in 2020, an 80% improvement from $222.3 million in 2019 \u2022 Surpassed 1,100 clients and partners globally, including key enterprise customers and MVNE/MNVOs \u2022 Management to host conference call today at 4:30 p.m. ET NEW YORK, NY \u2013 June 17, 2021 \u2013 Pareteum Corporation (OTC: TEUM), a global cloud Communications-Platform-as-a-Service (CPaaS) company, today announced financial results for full year 2020. \u201cWhile 2020 was a transitional year for Pareteum as we worked towards resolving corporate legacy issues and financial restatements, we continued to make progress across our business that we believe has laid a foundation for significant future growth,\u201d commented Bart Weijermars, Pareteum's interim Chief Executive Officer. \u201cOur mission is to empower our customers to simply create and control their wireless communication products and experiences through our powerful cloud platform and global connectivity. We have grown revenue 244% over the past three years and improved net loss attributable to common equity from $222.3 million in 2019 to $45.5 million in 2020. We added over 50 additional customers last year, and have grown platform connections 156% since 2018. We believe Pareteum is well positioned to address a large, rapidly growing global opportunity and have developed an expanded corporate strategy to do so.\u201d Full-Year 2020 Financial Results Highlights : \u2022 Revenue : Total revenue was $69.6 million for the full year 2020, up 12% compared to $62.0 million in 2019. This increase was primarily due to strong demand for services in our mobilit",
+      "slot_id": "0001084384-2021Q2"
+    },
+    {
+      "accession": "0001628280-21-017681",
+      "anchor_date": "2021-08-27",
+      "cik": "0001084384",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exhibit991earningsrelease-.htm EX-99.1 Document Pareteum Corporation Announces First Quarter 2021 Financial Results and Provides Business Update \u2022 Net loss attributable to common equity improved 24% to $7.2 million in Q1 2021, down from $9.4 million in Q1 2020 \u2022 First quarter 2021 gross margin (adjusted) improved to 34% compared to 28% in first quarter 2020 \u2022 First quarter 2021 revenue of $15.5 million decreased versus comparable 2020 period primarily due to the negative impact of COVID on the Enterprise business NEW YORK, NY \u2013 August 26, 2021 \u2013 Pareteum Corporation (OTC: TEUM), a global cloud Communications-Platform-as-a-Service (CPaaS) company, today announced financial results for the first quarter of 2021 and provided a business update. \u201cThe first quarter of 2021 reflected our emphasis in 2020 and 2021 on working to rectify legacy issues and complete our financial restatements,\u201d commented Bart Weijermars, Pareteum's Interim Chief Executive Officer. \u201cWe recognize and appreciate that this work is not progressing as fast as we and our shareholders would like. With the filing of the first quarter financials, reporting second quarter 2021 financials is the last item that remains for Pareteum to return to being fully compliant on our financial reporting. The Company anticipates reporting second quarter 2021 results as soon as possible and ahead of the September 28, 2021 implementation date of the U.S. Securities and Exchange Commission (SEC) amendments to Exchange Act Rule 15c2-11 governing quotations for over-the-counter (OTC) securities.\u201d Mr. Weijermars continued: \u201cWhile $15.5 million in quarterly revenue is below where we would like to be, over the past two full years, our revenue has increased 244%. Importantly, we have focused on smart growth, emphasizing m",
+      "slot_id": "0001084384-2021Q3"
+    },
+    {
+      "accession": "0001654954-20-006841",
+      "anchor_date": "2020-06-19",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arc_ex991.htm PRESS RELEASE arc_ex991 Exhibit 99.1 American Resources Corporation Reports First Quarter 2020 Financial Results and Provides Business Outlook Company prepared to rapidly emerge as leading infrastructure company solely focused on mining metallurgical carbon used in the steelmaking process Company well-positioned to be a long-term supplier of raw material to the global infrastructure market while bringing a more efficient and modernized business model to the industry Strategic steps taken to transform Company into infrastructure company producing pure metallurgical carbon, while enhancing environmental, social and governance (ESG) profile Company expects multiple value driving milestones over the course of 2020 June 18, 2020 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / June 18, 2020 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a supplier of raw materials to the rapidly growing global infrastructure marketplace with a primary focus on the extraction, processing, transportation and distribution of metallurgical carbon to the steel and specialty metals industries, today reported its first quarter of 2020 financial results. Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThe first three months of 2020 continued to be very productive in the transformation of the Company in becoming an infrastructure company and pure producer of metallurgical carbon. We continued to advance our efforts and position the company to be a stable, long-term supplier of metallurgical carbon to the worldwide steel markets to support growing global infrastructure demand, while bringing a more efficient and modernized business model to the industry.\u201d First Quarter 2020 Key Highl",
+      "slot_id": "0001590715-2020Q2"
+    },
+    {
+      "accession": "0001654954-20-007976",
+      "anchor_date": "2020-07-24",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arc_exhibit991.htm EARNINGS RELEASE arc_exhibit991 Exhibit 99.1 American Resources Corporation Reports Second Quarter 2020 Financial Results and Provides Business Outlook Company reports record $1.3 million of net income and $5.7 million of adjusted EBITDA Launch of American Metal LLC subsidiary enables Company to generate additional revenue utilizing many of its existing resources Well-positioned to be a long-term supplier of raw material to the global infrastructure market while bringing a more efficient and modernized business model to the industry Strategic steps taken to transform Company into infrastructure company producing pure metallurgical carbon and metal aggregation, while enhancing environmental, social and governance (ESG) profile Company expects multiple value driving milestones over the course of 2020 July 24, 2020 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / July 24, 2020 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a supplier of raw materials to the rapidly growing global infrastructure marketplace, today reported its second quarter of 2020 financial results and provided a corporate update. Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cOver the course of the second quarter our team continued to execute on the strategic transformation of the Company to become a more diversified infrastructure company. In tandem, we made significant progress in advancing our efforts to better our industry-leading position as a stable, long-term and low-cost supplier of metallurgical carbon. Additionally, we were able to further demonstrate our ability to innovate and adapt by generating high-margin revenue from our recently established American Metals LLC sub",
+      "slot_id": "0001590715-2020Q3"
+    },
+    {
+      "accession": "0001654954-20-011620",
+      "anchor_date": "2020-10-30",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE DATED OCTOBER 30, 2020 arec_ex991 Exhibit 99.1 American Resources Corporation Reports Third Quarter 2020 Financial Results and Provides Business Outlook Company reports $127,982 of net income and $2.8 million of adjusted EBITDA American Metal LLC subsidiary grew 30% over second quarter of 2020 Well-positioned to be a long-term supplier of raw material and critical elements to the modern-day infrastructure market Strategic steps taken to transform into an infrastructure company producing pure metallurgical carbon, rare earth elements and metal aggregation, while enhancing environmental, social and governance (ESG) profile Company expects multiple value driving milestones over the remainder of 2020 Company to host conference call on Monday, November 9, 2020 at 10:30 AM ET October 30, 2020 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / October 30, 2020 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of raw materials to the new infrastructure marketplace, today reported its third quarter of 2020 financial results and provided a corporate update. Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cOver the course of the third quarter, our team continued to execute on the strategic transformation of the Company to solidify our position as a next generation and socially responsible supplier of raw materials. Our first-class portfolio of assets, which have been strategically acquired at a substantial discount to replacement value, has never been in a better position to deliver long term value for our stakeholders. Bolstered by our restructuring efforts that eliminate the industry\u2019s legacy menta",
+      "slot_id": "0001590715-2020Q4"
+    },
+    {
+      "accession": "0001654954-21-002626",
+      "anchor_date": "2021-03-11",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm PRESS RELEASE arec_ex991 Exhibit 99.1 American Resources Corporation Reports Fourth Quarter and Full Year 2020 Financial Results and Provides Business Outlook Well-positioned to be a long-term supplier of raw material and critical elements to the modern-day infrastructure market Near-term catalysts expected to drive significant growth and value Balance sheet improvements provides financial strength and flexibility to execute on its innovation and growth plans Company to host update conference call on Monday, March 15, 2021 at 8:30 AM ET March 11, 2021 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / March 11, 2021 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of raw materials to the new infrastructure and electrification marketplace, today reported its fourth quarter of 2020 and full year ended December 31, 2020 financial results. Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201c2020 marked the most transformational year to date for American Resources as we demonstrated our ability to be innovators and, what we believe to be, first movers in our industry in order to catalyze our asset base. Our broad and dynamic platform is positioned for near term inflection points and the beginning of a new era to where we are positioned to provide the infrastructure and electrification marketplaces the resources needed to advance to a greener economy. Furthermore, the game changing technology we have acquired enables us capture, process and purify critical and rare earth elements in the most environmentally safe methods while using feedstocks that do not require traditional mining-based extraction while cleaning u",
+      "slot_id": "0001590715-2021Q1"
+    },
+    {
+      "accession": "0001654954-21-005505",
+      "anchor_date": "2021-05-12",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm PRESS RELEASE arec_ex991 Exhibit 99.1 American Resources Corporation Reports First Quarter 2021 Financial Results and Provides Business Outlook Well-positioned to be a long-term supplier of raw material and critical elements to the modern-day infrastructure market Near-term catalysts expected to drive significant growth and value Balance sheet improvements provides financial strength and flexibility to execute on its innovation and growth plans Company to host update conference call on Wednesday, May 12 at 4:30 PM ET May 12, 2021 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / May 12, 2021 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of raw materials to the new infrastructure and electrification marketplace, today reported its first quarter of 2021 financial results and provided a corporate update. Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cOver the course of the first quarter of 2021, we had the opportunity to continue to position our dynamic platform to provide the infrastructure and electrification marketplaces the resources needed to advance to a greener economy. We\u2019ve had one of the most active three months to date in terms of transforming our Company. We had the opportunity to further define our suite of technology that has brought together some of the best and most innovative universities and chemical engineers that have developed technologies and processes that enable us to capture, process and purify critical and rare earth elements, and do it in the most environmentally safe, and in certain instances environmentally positive, methods ever developed. We are confident that our process",
+      "slot_id": "0001590715-2021Q2"
+    },
+    {
+      "accession": "0001654954-21-009068",
+      "anchor_date": "2021-08-16",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm PRESS RELEASE arec_ex991 Exhibit 99.1 American Resources Corporation Reports Second Quarter 2021 Financial Results and Provides Business Outlook Company aligned with major U.S. priorities in both infrastructure and electrification Significant execution over the first half of the year has positioned the Company to be a low-cost, stable provider of raw materials to high-growth markets Company seeing significant increasing demand; Major offtake partner increases annual purchase order by 20 percent Recent balance sheet improvements provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 4:30 PM ET August 16, 2021 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / August 16, 2021 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of raw materials to the new infrastructure and electrification marketplace, today reported its second quarter of 2021 financial results and provided a corporate update. Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cOver the course of the second quarter of 2021, we continued to position our Company to be one of the most unique growth platforms to reposition old-world, legacy assets to strategically align with a more modern economy. While the first quarter of this year highlighted the advancement of our American Rare Earth division by acquiring and synthesizing an innovative suite of technologies to establish what we believe will be the most sustainable and environmentally safe sources of critical and rare earth elements, our second quarter clearly demonstrated our commitment and ability to",
+      "slot_id": "0001590715-2021Q3"
+    },
+    {
+      "accession": "0001654954-21-012135",
+      "anchor_date": "2021-11-15",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE DATED NOVEMBER 15, 2021 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Third Quarter 2021 Financial Results and Provides Business Outlook Company highly aligned with major U.S. priorities in both infrastructure and electrification Significant execution has positioned the Company to be a low-cost, stable provider of raw materials to high-growth markets Company seeing significantly increasing carbon demand and price realization as it scales operations Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 11:00 AM ET November 15, 2021 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / November 15, 2021 / American Resources Corporation (NASDAQ:AREC) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of raw materials to the new infrastructure and electrification marketplace, today reported its third quarter of 2021 financial results and provided a corporate update. The Company will host a conference call and webcast, today, November 15, 2021, at 11:00 a.m. ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cOver the course of the third quarter of 2021, we continued to position our Company to be one of the most unique growth platforms to reposition old-world, legacy assets to strategically align with a more modern economy. With the advancement of our nation\u2019s infrastructure initiatives, we find ourselves extremely well aligned with our American Carbon and American Rare Earth divisions to support these important aspects of our national and global economies. Both traditional infrastructure li",
+      "slot_id": "0001590715-2021Q4"
+    },
+    {
+      "accession": "0001654954-22-004026",
+      "anchor_date": "2022-03-29",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EX-99.1 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Fourth Quarter and Full Year 2021 Financial Results and Provides Business Outlook Company highly aligned with major U.S. priorities in both infrastructure and electrification On track be the first in the U.S. to produce isolated and purified critical and rare earth elements (REEs) and bring the most environmentally-safe refining solutions to the domestic marketplace Significant increase in carbon demand and price realization being seen as Company scales operations and on track this March to realize operating profit Current specialty and metallurgical carbon backlog represents approximately $110 million Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 4:30 PM ET March 29, 2022 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / March 29, 2022 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the fourth quarter and full year ended December 31, 2021. The Company will host a conference call and webcast, today, March 29, 2022, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout 2021 we further established our pillars of growth and believe the year was marked by tremendous success in transforming our Company to expand our near term and future potential and opportunities. In retrospect and as a point of referenc",
+      "slot_id": "0001590715-2022Q1"
+    },
+    {
+      "accession": "0001654954-22-006908",
+      "anchor_date": "2022-05-16",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE DATED MAY 16, 2022 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports First Quarter 2022 Financial Results and Provides Business Outlook Company reports adjusted EBITDA for the 1Q 2022 of $5.8 million On track be the first in the U.S. to produce isolated and purified critical and rare earth elements (REEs) and bring the most environmentally-safe refining solutions to the domestic marketplace Significant increase in carbon demand and price realization being seen as Company scales operations and on track this March to realize operating profit Current specialty and metallurgical carbon backlog represents approximately $110 million Company highly aligned with major U.S. priorities in both infrastructure and electrification Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 4:30 PM ET May 16, 2022 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / May 16, 2022 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the first quarter of 2022 and provided a corporate update. The Company will host a conference call and webcast, today, May 16, 2022, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThe first three months of 2022 showcased the steady progression of our carbon business. As we\u2019ve recently discussed, the majority of our carbon sales during the first quarter ",
+      "slot_id": "0001590715-2022Q2"
+    },
+    {
+      "accession": "0001654954-22-011374",
+      "anchor_date": "2022-08-15",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Second Quarter 2022 Financial Results and Provides Business Outlook Record quarterly revenues of $16.2 million represents the best in Company\u2019s history with significant expansion opportunities over the balance of the year Company boasts 78% quarter-over-quarter revenue growth; adjusted EBITDA for the 2Q 2022 of $11.5 million The first domestic, commercial producer of separated and high-purity REEs from recycled permanent magnets On track to commercially produce separated and high-purity battery elements from recycled lithium-based batteries in 4Q 2022 Company\u2019s patented chromatographic separation and purification process defining itself as the only complete recycling solution for all the critical and REEs in the EV powertrain Company\u2019s carbon platform well positioned to capitalize on continued market strength and opportunities over the next several years Company to host update conference call today at 4:30 PM ET August 15, 2022 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / August 15, 2022 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the second quarter of 2022 and provided a corporate update. The Company will host a conference call and webcast, today, August 15, 2022, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThe second quarter of 2022 continued to showcase the steady progression of our carbon business resulti",
+      "slot_id": "0001590715-2022Q3"
+    },
+    {
+      "accession": "0001654954-22-015340",
+      "anchor_date": "2022-11-15",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Third Quarter 2022 Financial Results and Provides Business Outlook The first domestic, commercial producer of separated and high-purity REEs from recycled permanent magnets On track to commercially produce separated and high-purity battery elements from recycled lithium-based batteries in 4Q 2022 Company\u2019s patented chromatographic separation and purification process defining itself as the only complete recycling solution for all the critical and REEs in the EV powertrain Carbon sales increase 240% year-over-year as Company\u2019s carbon platform well positioned to capitalize on continued market strength and opportunities over the next several years Company to host update conference call today at 4:30 PM ET November 15, 2022 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / November 15, 2022 / American Resources Corporation (NASDAQ:AREC) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the third quarter of 2022 and provided a corporate update. The Company will host a conference call and webcast, today, November 15, 2022, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThe third quarter of 2022 showcased groundbreaking milestones and continued execution on all fronts as we position our innovative platform of assets to create long-term shareholder value. While we idled our Perry County Resources complex due to some maintenance and labor disruptions from the disastrous flooding w",
+      "slot_id": "0001590715-2022Q4"
+    },
+    {
+      "accession": "0001654954-23-003921",
+      "anchor_date": "2023-03-30",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EARNINGS RELEASE arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Fourth Quarter and Record Full Year 2022 Financial Results and Provides Business Outlook 2022 revenues increased over 400% vs. 2021 and carbon operations continue to scale The first domestic, commercial producer of separated and high-purity REEs from recycled permanent magnets and high-purity battery elements from recycled lithium-based batteries Company\u2019s patented chromatographic separation and purification process defining itself as the world-leading critical mineral refining technology Strong balance sheet provides financial strength and flexibility to execute on its innovation, collaboration and growth plans Company to host update conference call today at 4:30 PM ET March 30, 2023 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / March 30, 2023 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the fourth quarter and full year ended December 31, 2022. The Company will host a conference call and webcast, today, March 30, 2023, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout 2022 we further established our pillars of growth and have uniquely positioned our businesses to capitalize on defined growth opportunities across the markets we serve. We believe the past year, where we realized record revenues, marks an exciting inflection point in our transformational evolution as a Company. Our American Carbon division i",
+      "slot_id": "0001590715-2023Q1"
+    },
+    {
+      "accession": "0001654954-23-006565",
+      "anchor_date": "2023-05-15",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_991.htm EARNINGS RELEASE arec_991.htm EXHIBIT 99.1 American Resources Corporation Reports First Quarter 2023 Financial Results and Provides Business Outlook The first domestic, commercial producer of separated and high-purity REEs from recycled permanent magnets and high-purity battery elements from recycled lithium-based batteries Company\u2019s patented chromatographic separation and purification process defining itself as the world-leading critical mineral refining technology Company has showcased its ability to sustainably produce ultra-high pure lithium carbonate (99.986% pure) from recycled batteries through independent lab analysis Executing on global expansion and resource diversification strategy to secure partnerships to refine lithium ores from international sources Company to host update conference call today at 4:30 PM ET May 15, 2023 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / May 15, 2023 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the first quarter of 2023. The Company will host a conference call and webcast, today, May 15, 2023, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout the first quarter of 2023 we continued to focus on solidifying our strategic positioning within the value chain of our addressable markets. Our ReElement Technologies division continues to be the most exciting enterprise we have ever been a part of as it establishes itself as a world leader in innovative criti",
+      "slot_id": "0001590715-2023Q2"
+    },
+    {
+      "accession": "0001654954-23-010762",
+      "anchor_date": "2023-08-14",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm FOLLOWING EXHIBITS ARE ATTACHED arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Second Quarter 2023 Financial Results and Provides Business Outlook Company is executing on the monetization of its carbon platform receiving non-binding letters of intent (LOI) to sell the remaining assets of American Carbon and executing a LOI to sell Deane Mining LOI for American Carbon represents approximately $300 million in cash value or $3.83 per share The first domestic, commercial producer of separated and ultra-pure REEs from recycled permanent magnets and ultra-pure lithium from recycled lithium-based batteries and manufacturing scrap Company has showcased its ability to sustainably produce ultra-high pure lithium carbonate (>99.99% pure) from recycled feedstock through independent lab analysis Executing on global expansion and resource diversification strategy to secure partnerships to refine lithium ores from international sources Company to host update conference call today at 4:30 PM ET August 14, 2023 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / August 14, 2023 / American Resources Corporation (NASDAQ:AREC) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the second quarter of 2023. The Company will host a conference call and webcast, today, August 14, 2023, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout the past several months we\u2019ve continued to execute on our strategic plan of action to monetize our unique platform of ass",
+      "slot_id": "0001590715-2023Q3"
+    },
+    {
+      "accession": "0001654954-23-014358",
+      "anchor_date": "2023-11-14",
+      "cik": "0001590715",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 arec_ex991.htm EX-99.1 arec_ex991.htm EXHIBIT 99.1 American Resources Corporation Reports Third Quarter 2023 Financial Results and Provides Business Outlook Company reports a 165% YoY increase in net income of $3.48 million and EPS of $0.05 for the third quarter of 2023 Company is executing on the monetization of its carbon platform entering into letters of intent (LOI) to sell select assets of American Carbon LOIs for American Carbon represents approximately $300 million in value or $3.84 per share The first domestic, commercial producer of separated and ultra-pure rare earth oxides from recycled permanent magnets and ultra-pure lithium carbonate from recycled lithium-based batteries manufacturing scrap and ore-based feedstocks Secured initial non-dilutive capital sources for critical mineral refining capacity expansion Executing on global expansion and resource diversification strategy to secure partnerships to refine lithium ores from international sources Company to host update conference call today at 4:30 PM ET November 14, 2023 | Source : American Resources Corporation FISHERS, INDIANA / ACCESSWIRE / November 14, 2023 / American Resources Corporation (NASDAQ: AREC ) (\u201cAmerican Resources\u201d or the \u201cCompany\u201d), a next generation and socially responsible supplier of rare earth and critical elements, carbon and advanced carbon materials to the new infrastructure and electrification marketplace, today announced financial results for the third quarter of 2023. The Company will host a conference call and webcast, today, November 14, 2023, at 4:30 PM ET (details below). Mark Jensen, Chairman and CEO of American Resources Corporation commented, \u201cThroughout the past several months we\u2019ve continued to execute on our strategic plan of action to monetize our unique plat",
+      "slot_id": "0001590715-2023Q4"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "changed_policy_fields": {
+    "authorization": {
+      "after": "User: commit all pending changes, then continue with the suggested larger predefined cohort.",
+      "before": "User asked to get the data and test it; this protocol fixes choices before strategy returns. No live trading."
+    },
+    "cohort_count": {
+      "after": 200,
+      "before": 100
+    },
+    "cohort_rule": {
+      "after": "Rank unique original8-K CIKs from2019Q3 bySHA256(seed+pipe+10digitCIK). First200 with full original Item2.02 quarterly/year-end release and unambiguous single USlistedordinary/common class before2019-09-30. Preserve ranked screens. Resolve unclear higher-ranked eligibility; no replacement based on later source/price failures. Incumbent-only universe fixed before2020.",
+      "before": "Rank unique original8-K CIKs from2019Q3 bySHA256(seed+pipe+10digitCIK). First100 with full original Item2.02 quarterly/year-end release and unambiguous single USlistedordinary/common class before2019-09-30. Preserve ranked screens. Resolve unclear higher-ranked eligibility; no replacement based on later source/price failures. Incumbent-only universe fixed before2020."
+    },
+    "created_utc": {
+      "after": "2026-09-13T18:46:01.994510+00:00",
+      "before": "2026-09-11T02:29:01.888381+00:00"
+    },
+    "databento_scope": {
+      "after": "No new paid requests in this expansion; reuse existing qualified data only.",
+      "before": "PTN qualification cappedat10USDquotedexistingcredits perdata-policy, nofurtherdatasetpurchasewithoutnewfinitequoteandneededcoverage."
+    },
+    "event_slots": {
+      "after": 3200,
+      "before": 1600
+    },
+    "expansion_price_max_requests": {
+      "after": 110,
+      "before": null
+    },
+    "expansion_price_order": {
+      "after": "New seed members in fixed rank order, then missing original seed symbols, then contemporaneous filing identifiers; no source-success replacements.",
+      "before": null
+    },
+    "name": {
+      "after": "Earnings-language incremental-value exploratory test: 200-company expansion",
+      "before": "Earnings-language incremental-value exploratory test v1"
+    },
+    "notes": {
+      "after": "New exploratory expansion after the original study failed coverage; only cohort breadth changes statistically. First100 original issuers preserved; no evaluation returns observed.",
+      "before": "This protocol is a boundedfirstincumbent-cohortscreen, notfullmarketresearch. ExistingavailabilitysourcesreusedonlywithidenticalCIK/accession independentlyneeded; originalpilot/repairfilesunchanged."
+    },
+    "parent_commit": {
+      "after": "b579208",
+      "before": null
+    },
+    "parent_policy_sha256": {
+      "after": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+      "before": null
+    },
+    "sec_collection_deadline_utc": {
+      "after": "2026-09-13T21:46:01.994510+00:00",
+      "before": "2026-09-11T04:29:01.889219+00:00"
+    },
+    "sec_network_owner": {
+      "after": "root",
+      "before": "research_trend"
+    }
+  },
+  "created_utc": "2026-09-13T18:46:01.994510+00:00",
+  "evaluation_returns_examined": false,
+  "model_fitted": false,
+  "parent_policy": {
+    "path": "research/equity-event-test-2026-09-10/experiment-policy.json",
+    "sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3"
+  },
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "reason": "Coverage-driven expansion only; fixed new total200 before selecting new issuers."
+}

@@ -1,0 +1,32 @@
+{
+  "cohort_target": 200,
+  "collection_deadline_utc": "2026-09-13T21:46:01.994510+00:00",
+  "completed_issuer_source_passes": 200,
+  "coverage": {
+    "evaluation_preentry_issuers": 117,
+    "evaluation_preentry_observations": 731,
+    "fit_observations": 360,
+    "fixed_slots": 3200,
+    "validation_observations": 393
+  },
+  "evaluation_result": "research/equity-event-expansion-2026-09-13/evaluation-result.json",
+  "inherited_quarterly_slots": 1600,
+  "model_fitted": true,
+  "new_paid_data_cost_usd": 0,
+  "new_price_requests": 109,
+  "new_price_responses": {
+    "DOWNLOADED": 99,
+    "EMPTY_HISTORY": 10
+  },
+  "parent_commit": "b579208",
+  "pilot_decision": "DO_NOT_ADVANCE_TO_PILOT",
+  "price_quota_wait_until_utc": null,
+  "profitability": "UNRESOLVED",
+  "screened_ranks": 333,
+  "sec_attempts": 6346,
+  "sec_stop_reason": null,
+  "selected_issuers": 200,
+  "selection_status": "COMPLETE_200",
+  "stage": "EVALUATION_COMPLETE",
+  "updated_utc": "2026-09-13T21:03:41.592338+00:00"
+}

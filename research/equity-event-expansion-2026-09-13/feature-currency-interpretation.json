@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-09-11T03:34:37.871953+00:00",
+  "extractor_sha256": "43e5c40c37672afd362fbda48d43c7cd66f7084b5aee9780dec6a01f836468dd",
+  "inference_requirements": [
+    "Same-accession current original8-K cover URL must bind exact slotCIK; source ledger hash/path must match actual cached cover bytes.",
+    "Original cover has exactly one consistent explicit USstate/DC incorporation jurisdiction from DEI facts or actual labeled table column.",
+    "Parsed current-original GAAP metric evidence uses only literal DOLLAR_SYMBOL; no inferred numerical values.",
+    "No IFRS/FPI mention, conflicting named non-USD or reporting-exception evidence in original release/companions.",
+    "Cover acceptance has timezone and original filing date is on/after effective ruledate. Upstream event timing/admission gates still apply."
+  ],
+  "method": "REGULATORY_USD_INFERENCE",
+  "no_prices_or_outcomes_read": true,
+  "output_interface": "current.currency_resolution.currency/method/literal_metric_currencies/cover_evidence/reasons/rule_sources; same optional field on original_prior. Existing evidence.currency and flags.current_metric_currency remain literal.",
+  "rule_sources": [
+    {
+      "effective_date": "2018-11-05",
+      "facts": "Final S-X3-20(a)(2) requires non-foreign-private issuers to present financial statements in USD; exceptional non-USD requests remain possible. The date precedes all2019\u201323 original documents.",
+      "pages": [
+        1,
+        78,
+        178
+      ],
+      "published_year": 2018,
+      "release": "33-10532",
+      "url": "https://www.sec.gov/files/rules/final/2018/33-10532.pdf"
+    },
+    {
+      "facts": "Foreign incorporation is distinct from use of domestic forms. Limited non-USD reporting exceptions concern issuers with little/no US operations and a single foreign functional/reporting currency.",
+      "sections": [
+        "6110.1",
+        "6120.6",
+        "6640"
+      ],
+      "url": "https://www.sec.gov/about/divisions-offices/division-corporation-finance/financial-reporting-manual/frm-topic-6"
+    }
+  ],
+  "schema": "earnings-reporting-currency-interpretation-v1",
+  "scope": "Source-only implementation clarification before model fitting/outcome inspection; no numerical amounts or literal labels changed.",
+  "tests_sha256": "2002b7bf9eb68d763a2246395514a3817afe7e13e613b2c04b1ed4a4a7b22534",
+  "unresolved": [
+    "Foreign/conflicting/missing incorporation, unavailable cover/hash/accession or original timing evidence, non-dollar/missing metric currency, or detected reporting exception never receive this inference.",
+    "A furnished earnings exhibit is not independently proven a filed S-X financial statement. This is a transparent domestic-reporting convention inference and cannot prove absence of undisclosed exceptional relief.",
+    "Literal namedUSD evidence is kept as EXPLICIT_ORIGINAL_RELEASE_USD and remains separate from regulatory inference.",
+    "Currency resolution does not resolve missingGAAP metrics, accounting/duration comparability, or the EPS/preentry-price share basis."
+  ],
+  "validation": "11 focused extractor tests pass, including actual RLJ2020Q1 original Maryland cover, wrongCIK rejection, literal-label immutability, foreign incorporation, namedCAD and FPI/missing-cover rejection."
+}

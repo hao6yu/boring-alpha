@@ -1,0 +1,10 @@
+{
+  "before_strategy_returns": true,
+  "cash_dividend_entitlement": "A routine vendor EOD divCash record can be source-qualified after historicalsecurityidentity and internaladjustment consistency checks; explicitlyvendor-only, notindependentissuer corroboration. Receivable belongs toshares heldbeforeexdate.",
+  "consistency_tolerance": "Relative1e-5 for provider adjustedfactor transition; notexact independententitlement verification.",
+  "created_utc": "2026-09-11T03:17:09.778427+00:00",
+  "payment_availability": "Null until separatelysupported. Carry knownentitlement inNAV but do notspendit; paymenttransfersclaim tocashwithoutdoubleincome.",
+  "primary_source": "https://www.tiingo.com/documentation/end-of-day",
+  "review": "Research_volatility independentreview agreedbeforeactualresults.",
+  "split_factor": "Priceadjustment factor is not necessarily a deliveredstockunitratio; require actionkind/ratio evidence before multiplyingunits. Unknown distributions and mixedbases remainunresolved."
+}

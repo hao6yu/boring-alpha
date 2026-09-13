@@ -1,0 +1,26 @@
+{
+  "corrected": {
+    "common_stock_evidence": [
+      {
+        "row_excerpt": "Class A Common Stock, $0.01 par value per share | \u201cCBRE\u201d | New York Stock Exchange",
+        "symbols": [
+          "CBRE"
+        ]
+      }
+    ],
+    "excluded_common_unit_rows": [],
+    "historical_symbol": "CBRE",
+    "inline_trading_symbols": [],
+    "status": "VERIFIED_SINGLE_COMMON_CLASS",
+    "symbols": [
+      "CBRE"
+    ]
+  },
+  "no_prices_or_returns_used": true,
+  "other_new_selected_issuers_changed": [],
+  "other_selected_sources_checked": 29,
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "rule": "Strip only paired literal quotation marks around the TradingSymbol cell, retaining original row evidence; no symbol inference or class rule change.",
+  "source_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/24449de09f1594633f3cd236071dbf629c0d4ff16b97d252ff598fe3069042a4.htm",
+  "source_sha256": "93d7a7c807cca6db2e01fe208e70f28be4c1d1b69ff3774947fe6d6a15535e27"
+}

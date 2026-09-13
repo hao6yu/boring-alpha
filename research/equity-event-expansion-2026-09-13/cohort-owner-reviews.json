@@ -1,0 +1,50 @@
+{
+  "0001045609": {
+    "index_sha256": "83d5f02780dd183a37ee600370f012e7774fe4084ea11c1c5d362c59f467dbfe",
+    "listed_symbol": "PLD",
+    "listing_evidence": [
+      {
+        "row_excerpt": "Prologis, Inc. |  | Common Stock, $0.01 par value |  | PLD |  | New York Stock Exchange",
+        "symbols": [
+          "PLD"
+        ]
+      }
+    ],
+    "reason": "Original joint cover explicitly assigns PLD common stock to Prologis, Inc.; Prologis, L.P. rows list debt. Item2.02 specifies Prologis, Inc. financial results. SelectedCIK1045609 is Inc., not the operating partnership.",
+    "sources": [
+      {
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4aad2f4a3e5b0f160e82616dc27cc3a950de7aa6171d4b7edab10a4b0fb2f29b.htm",
+        "sha256": "6336ac0f80c29d46e27f1c882dec013d3f2b55cda022256a9485a9e092e24132",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459019024994/pld-8k_20190715.htm"
+      }
+    ],
+    "verified": true
+  },
+  "0001534504": {
+    "index_sha256": "9f08033264d277beafdb76e87fb1a6026e946d847acd0f918604ba86ebabaaf2",
+    "listed_symbol": "PBF",
+    "listing_evidence": [
+      {
+        "row_excerpt": "Common Stock, par value $.001 | PBF | New York Stock Exchange",
+        "symbols": [
+          "PBF"
+        ]
+      }
+    ],
+    "reason": "Jointcover names PBF Energy Inc. plus two LLCsubsidiaries; originalItem2.02 identifies Inc. as reportingparent and originalrelease explicitly associates Inc. withNYSE:PBF. Listedcommonstock belongs to selectedparent CIK1534504.",
+    "release_owner_excerpt": "PBF Energy Inc. (NYSE:PBF",
+    "sources": [
+      {
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/107858b5d7769e91e9a08cd629946c24d1129ba5f1ce88e1108f833e6377a1a3.htm",
+        "sha256": "3d5138221800d8e0dbe4fce77dc5014cbee594617c5756065fa0620a42bb8bf3",
+        "url": "https://www.sec.gov/Archives/edgar/data/1534504/000153450419000037/earningsrelease6-30x19xene.htm"
+      },
+      {
+        "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/dde1926f3abdc46a8e15da7c285334cf0ebabbcb60074353b31198cce82005cc.htm",
+        "sha256": "6172ae3a72f772a49dd103a321bc1310fac5f89f86480c32ef5e6e4ff1b5a4a5",
+        "url": "https://www.sec.gov/Archives/edgar/data/1534504/000153450419000037/pressreleaseq2-19xpressrel.htm"
+      }
+    ],
+    "verified": true
+  }
+}

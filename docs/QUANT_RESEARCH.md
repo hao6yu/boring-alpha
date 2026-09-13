@@ -1,6 +1,6 @@
 # Active quantitative trading research
 
-Updated 2026-09-10. This is the current work brief; earlier ETF/withdrawal
+Updated 2026-09-13. This is the current work brief; earlier ETF/withdrawal
 research does not define the user's active objective.
 
 ## Mandate
@@ -132,9 +132,28 @@ cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
 
-**Current direction: active equity event research.** The latest
-[earnings-language experiment](notes/2026-09-10-equity-event-test.md) stopped
-at its training-sample gate. Profitability remains untested.
+**September 13 result: stop this earnings-language candidate.** Previous pending
+work was committed as `b579208`; the authorized
+[200-company expansion](../research/equity-event-expansion-2026-09-13/RESULTS.md)
+completed acquisition and evaluation. It retained all 3,200 slots and supplied
+360 training events, 393 validation events and 731 evaluation candidates across
+117 companies. Collection used 6,346 new SEC attempts and 109 free price requests;
+no new paid data was purchased. Both models selected the registered alpha 1.0.
+
+Text-plus-numeric returned **5.42% CAGR/base and 2.05%/stress**, versus
+numeric-only **6.77%/base and 0.20%/stress**, after fees and the recorded study
+expense. The scored-model accounts are complete. Text fails the 6% requirement
+in both cases and does not establish a positive base-cost language advantage.
+The full-suite status is preserved as UNRESOLVED because the matched-event
+control has one TBK/TFIN liquidity-source gap; repairing that control cannot
+turn the text model's known failures into passes. No further tuning, holdout
+opening or pilot is justified by this result.
+
+**Current direction: active quantitative research, with no deployable candidate.**
+Another experiment needs a distinct economic hypothesis and a new fixed budget.
+The preceding [100-company experiment](notes/2026-09-10-equity-event-test.md)
+stopped at its training-sample gate. Its own profitability was never tested;
+the larger expansion above is a separate exploratory test.
 
 The preceding availability repair now passes **97/100**, above its unchanged
 95 requirement, after qualified Databento PTN histories supplied four windows.
@@ -150,12 +169,12 @@ leaving an optimistic 199; they were not acquired. Clearing CADE's ticker
 warning cannot rescue the count: independent original-price anchors identify
 the downloaded history as the acquirer rather than the selected issuer.
 
-This is an inadequate sample under the frozen sourcing/trading rules, not a
+That original run had an inadequate sample under the frozen sourcing/trading rules, not a
 negative profitability result. The minimum was not lowered and failed issuers
-were not replaced. Any continuation requires a separately specified larger
-cohort or materially better historical coverage and a finite effort/data
-budget. Reuse the retained source collection and accounting tests. Do not
-open evaluation returns or tune the strategy to rescue this run. No live
+were not replaced. The separately registered September 13 expansion above
+completed the authorized larger-cohort continuation. Reuse the retained source
+collection and accounting tests, while preserving both experiments. Do not
+tune against the opened 2022–2023 expansion results to rescue the candidate. No live
 trade, account change or monitor occurred; 2024–2025 equity strategy prices remain
 reserved for this experiment.
 

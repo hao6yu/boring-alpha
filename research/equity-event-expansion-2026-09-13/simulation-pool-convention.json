@@ -1,0 +1,18 @@
+{
+  "before_model_fitting_and_strategy_returns": true,
+  "counts": "Unchanged200fit,100validation,200scorable pre-entry evaluation events over40issuers. Future label coverage is separately reported.",
+  "coverage": "Finish the declared collection attempt and report archive/parser failures, source checks and predecessor searchcoverage. The frozen protocol does not impose100percent source availability.",
+  "created_utc": "2026-09-11T03:07:00.131844+00:00",
+  "freeze_artifacts": [
+    "panel hash",
+    "pool eventIDs and hash",
+    "excluded slots and reasons",
+    "collection status and source hashes",
+    "model and simulation code hashes"
+  ],
+  "future_boundary": "No evaluation endpoint, target availability, realized return or completed trade affects pool membership. Missing committed entry close or held mark remains whole-account unresolved.",
+  "interpretation": "Conditional-on-source-qualified exploratory comparison. Source qualification established by todays archive/parser is not proof a historical system would select the same events. Source availability may correlate with company characteristics or survival.",
+  "registered_population": "Retain all100fixed-rule historical issuers and1600slots, with documented source-definition corrections and all earlier snapshots. No replacement based on future source/price outcomes.",
+  "review": "Independent research_volatility interpretation agreed before historical outcomes.",
+  "simulation_pool": "Common pre-entry READY evaluation eventIDs for numerical, text+numerical and matched-event accounts, frozen before model selection and evaluation. Retain all excluded statuses/reasons in the full panel; never relabel source-UNRESOLVED as INELIGIBLE."
+}

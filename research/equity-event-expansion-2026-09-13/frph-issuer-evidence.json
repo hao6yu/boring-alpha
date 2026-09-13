@@ -1,0 +1,31 @@
+{
+  "requests": [
+    {
+      "error": "TimeoutError",
+      "started_utc": "2026-09-13T19:10:13.604288+00:00",
+      "status": null,
+      "url": "https://www.globenewswire.com/news-release/2019/08/05/1896995/0/en/frp-holdings-inc-nasdaq-frph-announces-results-for-the-second-quarter-and-six-months-ended-june-30-2019.html"
+    },
+    {
+      "started_utc": "2026-09-13T19:11:45.182383+00:00",
+      "status": 200,
+      "url": "https://www.frpdev.com/wp-content/uploads/2020/08/frph-20190331-10q.pdf"
+    },
+    {
+      "error": "TimeoutError",
+      "started_utc": "2026-09-13T19:11:46.096746+00:00",
+      "status": null,
+      "url": "https://www.globenewswire.com/news-release/2019/08/05/1896995/0/en/frp-holdings-inc-nasdaq-frph-announces-results-for-the-second-quarter-and-six-months-ended-june-30-2019.html"
+    }
+  ],
+  "scope": "Original issuer-authored publications for2019cohort eligibility only. Blocked SEC document is not retried; these independent public sources do not substitute for2020\u20132023 SEC model inputs.",
+  "sources": {
+    "frph-original-2019-q1-10q.pdf": {
+      "bytes": 761143,
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/issuer-evidence/frph-original-2019-q1-10q.pdf",
+      "retrieved_utc": "2026-09-13T19:11:46.096426+00:00",
+      "sha256": "01157457e05e67d81ebbd45b875dd6b1ba9a30477723a809e7d401eb6ea83d7d",
+      "url": "https://www.frpdev.com/wp-content/uploads/2020/08/frph-20190331-10q.pdf"
+    }
+  }
+}

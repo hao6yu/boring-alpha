@@ -1,0 +1,34 @@
+{
+  "flags": [
+    {
+      "accession": "0000766421-19-000039",
+      "cik": "0000766421",
+      "flags": [
+        "estimate of $2.13 per share. \u2022 Paid a $0.35 per-share quarter"
+      ],
+      "head": "EX-99.1 2 ex9917252019earningsre.htm SECOND QUARTER 2019 EARNINGS RELEASE Exhibit Exhibit 99.1 July 25, 2019 Media contact: Investor/analyst contact: Media Relations Chris Berry (206) 304-0008 VP Finance and Controller (206) 392-5260 Alaska Air Group reports second quarter 2019 results Financial Highlights: \u2022 Reported net income for the second quarter of 2019 under Generally Accepted Accounting Principles (GAAP) of $262 million , or $2.11 per diluted share, compared to net income of $193 million , or $1.56 per diluted share in the second quarter of 2018 . \u2022 Reported net income for the second quarter of 2019 , excluding merger-related costs and mark-to-market fuel hedge accounting adjustments of $270 million , or $2.17 per diluted share, compared to $206 million or $1.66 per diluted share, in the second quarter of 2018 . This quarter's adjusted results compare to the First Call analyst consensus estimate of $2.13 per share. \u2022 Paid a $0.35 per-share quarterly cash dividend in the second quarter, a 9% increase over the dividend paid in the second quarter of 2018 . \u2022 Repurchased a total of 408,665 shares of common stock for approximately $25 million in the first six months of 2019 . \u2022 Generated $1 billion of operating cash flow in the first six months of 2019, including merger-related costs. \u2022 Held $1.6 billion in unrestricted cash and marketable securities as of June 30, 2019 . \u2022 Reduced debt-to-capitalization ratio to 45% as of June 30, 2019 compared to 47% as of December 31, 2018 . Operational Highlights: \u2022 Alaska technicians, represented by the Aircraft Mechanics Fraternal Association, ratified an integrated seniority list and a transition agreement, including a two-year contract extension, in July 2019. \u2022 Reached a tentative agreement with the International Association of Machinists on a new five-year contract for Alaska's clerical, office, passenger service, ramp and stores employees. \u2022 Added EL AL Israel Airlines as a new global Mileage Plan partner. \u2022 Announced ",
+      "primary_item": "ITEM 2.02. Results of Operations And Financial Condition On July 25, 2019 , Alaska Air Group, Inc. (Air Group) issued a press release reporting financial results for the second quarter of 2019 . The press release is furnished herein as Exhibit 99.1. ",
+      "rank": 157,
+      "symbol": "ALK"
+    },
+    {
+      "accession": "0001564590-19-030769",
+      "cik": "0001607716",
+      "flags": [
+        "Estimated Gross Retained Value per Watt at quarter"
+      ],
+      "head": "EX-99.1 2 vslr-ex991_20.htm EX-99.1 vslr-ex991_20.htm Exhibit 99.1 Vivint Solar Reports Second Quarter 2019 Results LEHI, Utah, August 8, 2019 -- Vivint Solar, Inc. (NYSE: VSLR), today announced financial results for the second quarter ended June 30, 2019. Second Quarter 2019 Operating Highlights Key operating and development highlights include: \u2022 MW Installed of approximately 56 MWs for the quarter. Total cumulative MWs installed were approximately 1,163 MWs. \u2022 Installations were 8,163 for the quarter. Cumulative installations were 169,275. \u2022 Estimated Gross Retained Value increased by approximately $68 million during the quarter to approximately $2.1 billion. Estimated Gross Retained Value per Watt at quarter end was $2.02. \u2022 Cost per Watt was $3.56, an increase from $3.46 in the first quarter of 2019 and an increase from $3.23 in the second quarter of 2018. \u2022 Margin created was $49 million, a 21% increase from the second quarter of 2018. Unlevered NPV per Watt was $0.88. Financing Activity As of June 30, 2019, the company had approximately $153 million in undrawn capacity in the forward flow loan facilities and approximately 186 MWs of undeployed tax equity financing capacity. Subsequent to quarter end, the company entered into a $325 million credit facility that replaces its existing aggregation facility. The new credit facility reduces the cost of debt by 87.5 basis points and significantly increases the amount of upfront proceeds on a per system basis. Summary Second Quarter 2019 Financial Results $ amounts in millions, except per share data Three Months Ended Jun. 30, 2019 2018 YoY Revenue: Customer agreements and incentives $ 63.4 $ 54.8 up 16% Solar energy system and product sales 27.4 26.0 up 5% Total Revenue 90.8 80.8 up 12% Cost of revenue: Operating leases and incentives 43.1 41.4 up 4% Solar energy system and product sales 15.8 19.0 down 17% Total cost of revenue 58.9 60.4 down 2% Gross profit 31.9 20.4 up 56% Loss from operations (36.9 ) (16.1 ) down ",
+      "primary_item": "Item 2.02 Results of Operations and Financial Condition. On August 8, 2019, Vivint Solar, Inc. (the \u201cCompany\u201d) issued a press release reporting its financial results for the quarter ended June 30, 2019. A copy of the press release is furnished herewith as Exhibit 99.1. The Company makes reference to non-GAAP financial measures in the press release and includes information regarding such measures in the press release. The Company also posted a memorandum to the Investors section of its website outlining the Company\u2019s methodology for estimating its cost per watt for installing solar energy systems, which has been updated for its financial results for the quarter ended June 30, 2019. The information furnished in this Current Report under ",
+      "rank": 207,
+      "symbol": "VSLR"
+    }
+  ],
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "reviewed_utc": "2026-09-13T19:30:01.548285+00:00",
+  "reviews": {
+    "ALK": "Flag refers to analyst consensus estimate; original report explicitly supplies actual GAAP net income and EPS. Full earnings release.",
+    "VSLR": "Estimated gross retained value is one operating metric; original release separately includes complete actual income statement and EPS. Full earnings release."
+  },
+  "scope": "Original selected2019 publications only. No returns.",
+  "status": "FLAGGED_SEED_RELEASES_REVIEWED_NO_CLASSIFICATION_CHANGE"
+}

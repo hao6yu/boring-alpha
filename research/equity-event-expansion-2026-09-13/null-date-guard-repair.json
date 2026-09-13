@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-13T20:56:59.339064+00:00",
+  "explanation": "Check whether a target exists before comparing its date. This preserves the evaluation-label prohibition and accepts unresolved slots with no date and no label.",
+  "failure": "TypeError comparing missing registered entry_date None to date string; first freeze stopped before any Regressor.fit call.",
+  "model_sha256": "a11af1a7582f4bca9d3dd66d7021fbe7c86545e4b0705f382007ce435da9f8e2",
+  "old_guard": "r['entry_date'] >= '2022-01-01' and r.get('target_pp') is not None",
+  "repaired_guard": "r.get('target_pp') is not None and r['entry_date'] >= '2022-01-01'",
+  "statistical_rule_change": false,
+  "tests": "7 model tests passed, including two new synthetic regressions: missing source slots preserve fitted coefficients/report and cannot conceal unmasked evaluation targets."
+}

@@ -1,0 +1,104 @@
+{
+  "all_registered_slot_status_counts": {
+    "INELIGIBLE": 630,
+    "READY": 1505,
+    "UNRESOLVED": 1065
+  },
+  "checks": {
+    "action_audit_matches_final_prices": true,
+    "all_issuer_source_passes_completed": true,
+    "bounded_price_acquisition_completed": true,
+    "complete_fixed_cohort_and_slots": true,
+    "evaluation_targets_masked": true,
+    "feature_snapshot_matches_final_sources": true,
+    "minimum_evaluation_count_and_issuers_pass": true,
+    "minimum_training_count_pass": true,
+    "minimum_validation_count_pass": true,
+    "original_prefix_and_owner_audit": true,
+    "panel_prices_and_exceptions_bound": true,
+    "policy_hash_unchanged": true,
+    "registered_slot_ids_preserved": true,
+    "sampled_original_financial_cells_checked": true,
+    "timing_and_prior_availability_checked": true,
+    "unchanged_model_and_synthetic_checks": true
+  },
+  "created_utc": "2026-09-13T20:57:08.304177+00:00",
+  "limits": "Exploratory expanded incumbent cohort after coverage failure. Root source review reuses earlier independent code audits; this is not an independent replication. Listing carry-forward, daily-close fill proxy, vendor-only distributions, unresolved corporate actions and missing historical observations remain explicit. No live trading or allocation is authorized by a pass.",
+  "new_price_requests": 109,
+  "panel_inventory_sha256": "ce7e99868f3b11bc1fcd7d06215335d13634fab58b99e115386aba989a6667cb",
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "price_requests_still_pending": [],
+  "ready": true,
+  "references": {
+    "action-source-qualification.json": {
+      "path": "research/equity-event-expansion-2026-09-13/action-source-qualification.json",
+      "sha256": "e7e8d32f5c99c4a814f702a09293e609fae3f5dfe0d13e1db9d40cf9527cd581"
+    },
+    "cohort-prefix-audit.json": {
+      "path": "research/equity-event-expansion-2026-09-13/cohort-prefix-audit.json",
+      "sha256": "bb399fdabfc9b5ada6501145fe0c7fcc1729de114592d5efa3cd2c0945e269ed"
+    },
+    "corporate-action-evidence.json": {
+      "path": "research/equity-event-expansion-2026-09-13/corporate-action-evidence.json",
+      "sha256": "6ef9c0e06c1fa1570ec8280c28b4da054196265eccee55d35ff7c724f8105a27"
+    },
+    "data-expense.json": {
+      "path": "research/equity-event-expansion-2026-09-13/data-expense.json",
+      "sha256": "d2a0843d255bda8b3a9b73532f0c900e5ae0d11f6ce28067531b9cab1f07a856"
+    },
+    "experiment-policy.json": {
+      "path": "research/equity-event-expansion-2026-09-13/experiment-policy.json",
+      "sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc"
+    },
+    "feature-cell-review.json": {
+      "path": "research/equity-event-expansion-2026-09-13/feature-cell-review.json",
+      "sha256": "2f3b33fb534b8422d23a625b11369ba1c3143f4d95ddcf332c3d7119785619ec"
+    },
+    "feature-source-audit.json": {
+      "path": "research/equity-event-expansion-2026-09-13/feature-source-audit.json",
+      "sha256": "9c2115bc7328e9e7347708fae9ee74e867e99508aac5f6c6b2adb82d0a7534a7"
+    },
+    "inherited-evidence.json": {
+      "path": "research/equity-event-expansion-2026-09-13/inherited-evidence.json",
+      "sha256": "27ed3697750cce314f1d3e7cb292c255a83e01e60bbc23a86dc0f028015eb77d"
+    },
+    "new-event-owner-audit.json": {
+      "path": "research/equity-event-expansion-2026-09-13/new-event-owner-audit.json",
+      "sha256": "4cf665e4a07b7cd74bc9ec7e1c9cad8b6a994f50427b963d27e66539ec0ef137"
+    },
+    "panel-inventory.json": {
+      "path": "research/equity-event-expansion-2026-09-13/panel-inventory.json",
+      "sha256": "ce7e99868f3b11bc1fcd7d06215335d13634fab58b99e115386aba989a6667cb"
+    },
+    "price-manifest.json": {
+      "path": "research/equity-event-expansion-2026-09-13/price-manifest.json",
+      "sha256": "0f288f27d4ef6338ada23ecdc3cdf9076071e0782d6859f03e036f00cfe17a12"
+    },
+    "price-source-exceptions.json": {
+      "path": "research/equity-event-expansion-2026-09-13/price-source-exceptions.json",
+      "sha256": "54f04a86ac6305b803463e45935817aedcf81f9b4edd4d82682e615adc0e2497"
+    },
+    "registration.json": {
+      "path": "research/equity-event-expansion-2026-09-13/registration.json",
+      "sha256": "daea276e2357c15e84f882ae5c87c8569bb896a99f5ef6ee653f7e4e8dca27d3"
+    },
+    "sec-cohort.json": {
+      "path": "research/equity-event-expansion-2026-09-13/sec-cohort.json",
+      "sha256": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270"
+    },
+    "sec-coverage.json": {
+      "path": "research/equity-event-expansion-2026-09-13/sec-coverage.json",
+      "sha256": "cac5c8f8778779f462d3a83e35708d41ad174523411770d442b1caf88822a9fa"
+    },
+    "sec-events-current-roster.json": {
+      "path": "research/equity-event-expansion-2026-09-13/sec-events-current-roster.json",
+      "sha256": "b609659897eabe4a91a8d52a4879c1f9b870af16ecc895e5169ab30a47027eaf"
+    },
+    "unchanged-model-audit.json": {
+      "path": "research/equity-event-expansion-2026-09-13/unchanged-model-audit.json",
+      "sha256": "cbf7be3250c32569b5bc2051db86c1acdb8cbcde87b4ac488e5917982e55bbc5"
+    }
+  },
+  "status": "READY_FOR_SINGLE_FROZEN_FIT",
+  "timing_errors": []
+}

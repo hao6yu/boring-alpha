@@ -1,0 +1,39 @@
+{
+  "annualized_account_returns": {
+    "base": {
+      "numeric": 0.0677150335414558,
+      "text": 0.05415181205393993
+    },
+    "stress": {
+      "numeric": 0.0020378315209881315,
+      "text": 0.020535737981399738
+    }
+  },
+  "created_utc": "2026-09-13T21:01:46.453404+00:00",
+  "decision": "DO_NOT_ADVANCE_TO_PILOT",
+  "evaluation_refits_or_reruns": 0,
+  "evaluation_result_sha256": "9c15cca3bfc35ea7ad6ed3ccc6932518271db7867cd69b265b7a241c2f5011eb",
+  "formal_frozen_suite_status": "UNRESOLVED",
+  "inference": "Complete scored-model accounts already fail required conditions; a third-control repair cannot turn these observed failures into passes.",
+  "known_required_conditions": {
+    "base_bootstrap_lower_bound_positive": false,
+    "base_text_advantage_at_least_1pp": false,
+    "text_cagr_above_6pct_base": false,
+    "text_cagr_above_6pct_stress": false
+  },
+  "matched_control_gap": {
+    "date": "2023-01-26",
+    "event_id": "0001539638-2023Q1",
+    "scope": "TBK/TFIN historical identity/price join; candidate-input gap, no unpriced holding days.",
+    "status": "LIQUIDITY_DATA_UNRESOLVED"
+  },
+  "new_paid_data_usd": 0,
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "sample_counts": {
+    "evaluation": 731,
+    "evaluation_issuers": 117,
+    "fit_2020": 360,
+    "validation_2021": 393
+  },
+  "scope": "Post-evaluation interpretation only; frozen accounts, metrics, forecasts and source inputs remain unchanged."
+}

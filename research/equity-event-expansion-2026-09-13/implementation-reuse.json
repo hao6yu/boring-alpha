@@ -1,0 +1,101 @@
+{
+  "files": [
+    {
+      "expansion_sha256": "385d90d72d6e64eae0b93ae7e2b55519afc8a5fa2628baeebc8eee7dcd93a62d",
+      "name": "sec_collect.py",
+      "parent_sha256": "176b57ebc68939d4c04c90d4cf430a4666cea152c701c3470bd60eb9483b1b28"
+    },
+    {
+      "expansion_sha256": "18e7ae23261898989f69b7b89d36d4b61cbdf26de16a0bb67e0571d5a90f6c7f",
+      "name": "sec_period_annotations.py",
+      "parent_sha256": "18e7ae23261898989f69b7b89d36d4b61cbdf26de16a0bb67e0571d5a90f6c7f"
+    },
+    {
+      "expansion_sha256": "aef470c2c5bf6cd713c9979c9a87318b44ed2a820b0a0e4d4bce61ba4828453c",
+      "name": "model.py",
+      "parent_sha256": "57cf58cba7d8c004b280efa64b432cf444989f37e0a172a1b76b0544ccecd11a"
+    },
+    {
+      "expansion_sha256": "2e37eff3d2ece71e852988dbf08b4ff4e5300b050adf990623c7f06c6f95ecdc",
+      "name": "panel.py",
+      "parent_sha256": "750e9209b47c247ece06359a583d587ca56bc8910ef1658ed8762516f7fed563"
+    },
+    {
+      "expansion_sha256": "324a084f7229a61f30bd85a508d760e8815c9edbd4fd99bfa89f0306835ddd09",
+      "name": "price_data.py",
+      "parent_sha256": "b9ffc59c39a9b5d6028f049c04df44c64efd4561168cd8e2b95d5a28b48eaba6"
+    },
+    {
+      "expansion_sha256": "5eecb127cb91cab0d95fccd6b2e1e6cb591adaa8b1ca54fd8ce1757de1a60c0d",
+      "name": "feature_extract.py",
+      "parent_sha256": "5eecb127cb91cab0d95fccd6b2e1e6cb591adaa8b1ca54fd8ce1757de1a60c0d"
+    },
+    {
+      "expansion_sha256": "efbbcb943a900053e4e172546644d92d407fd32a78c350542cc3cb5c1aecbb85",
+      "name": "portfolio.py",
+      "parent_sha256": "2d2ef977f8c00ef77d5218bc55e620c1237ab0137ef38a6597b4cfd85d49790f"
+    },
+    {
+      "expansion_sha256": "993c108144b4f75fdd9dc172bd9060a8f6ea5672085479b5d5ab585ce846d29c",
+      "name": "evaluation_metrics.py",
+      "parent_sha256": "406be5526b87f01f2eddf55e2c865e8ac310a80ba3f78cfd1ccae43d87a0ddb9"
+    },
+    {
+      "expansion_sha256": "f42855bc9f8593b81aec71ff7c9e6508cf9c2c2f640891eccc1a60c3bfea2d0a",
+      "name": "run_experiment.py",
+      "parent_sha256": "40c7b00792c0ccb6b322cc225ebfb4547d5b2f246cc70ecdefb40c850d2d4260"
+    },
+    {
+      "expansion_sha256": "4764e826f916e145ceec63fa22ddbbbccb1f95c34655854f1372de24850138bb",
+      "name": "audit_feature_sources.py",
+      "parent_sha256": "afb9f0c1b6d83445ada01a1bc3b5d5d23f4babad6782311ac15b44f5bf2f2b54"
+    },
+    {
+      "expansion_sha256": "e6c35ec2ddfc6f066cc2f7b133d0ff0d5742ae68c92b4669bc0be43c0bce5391",
+      "name": "audit_price_actions.py",
+      "parent_sha256": "e6c35ec2ddfc6f066cc2f7b133d0ff0d5742ae68c92b4669bc0be43c0bce5391"
+    },
+    {
+      "expansion_sha256": "bbeda610a0f629a46744603e66579940e8ba057bed55b1f5a77da2b65526aed4",
+      "name": "action_inventory.py",
+      "parent_sha256": "e369e26013fc32b0a645ff25083bf4b9dbdb4a3440f43d8efe3ee9f2ed3aea84"
+    }
+  ],
+  "final_collection_code_sha256": {
+    "action_inventory.py": "bbeda610a0f629a46744603e66579940e8ba057bed55b1f5a77da2b65526aed4",
+    "audit_feature_sources.py": "77d1acd98f3e4c34bd19772ebee8106f6a16f2ef4258b772d58a6751a63d07d9",
+    "audit_new_owners.py": "499557aeaf83538fe755224a515c7dec13b8181ffcbea34974e1d875ce8eb563",
+    "audit_prefix.py": "f917cb89bc06c3358da40c3e5a9825808f182f1a8a41c9495e8e159427849af4",
+    "audit_price_actions.py": "e6c35ec2ddfc6f066cc2f7b133d0ff0d5742ae68c92b4669bc0be43c0bce5391",
+    "check_readiness.py": "7671b7e19d9a1daa05ed83459c51c3a6c8aa5dfb98298cacc790bcb4df8c2b48",
+    "complete_price_pass.py": "e2ade8a9d03cb97862f7edb534cbf836675e1b482392ff025c559734d19fb56d",
+    "evaluation_metrics.py": "993c108144b4f75fdd9dc172bd9060a8f6ea5672085479b5d5ab585ce846d29c",
+    "feature_extract.py": "5eecb127cb91cab0d95fccd6b2e1e6cb591adaa8b1ca54fd8ce1757de1a60c0d",
+    "get_frph_evidence.py": "174292eab3bdb20a1de9dde9e1ef842958d284dc556a8ecad6850ca55583b624",
+    "model.py": "a11af1a7582f4bca9d3dd66d7021fbe7c86545e4b0705f382007ce435da9f8e2",
+    "panel.py": "2e37eff3d2ece71e852988dbf08b4ff4e5300b050adf990623c7f06c6f95ecdc",
+    "portfolio.py": "efbbcb943a900053e4e172546644d92d407fd32a78c350542cc3cb5c1aecbb85",
+    "price_data.py": "a3440bcd170b5e9926147717692277a4c6207af5e8689a8d1403c2d98cb11185",
+    "project_sources.py": "c3a7b71742dadcc139f513d011d415603c6204cfc135c5b82b475b9a9facddc1",
+    "register.py": "b6ba16cf2f76fe3234f2cedfe27ddcbe6aa2b2c4fcb36db6162719fa2244b8f8",
+    "review_feature_cells.py": "96f36e01985e6c702b131d03a251f4f9179597810bff4b4ebc70f283d5cd5901",
+    "review_known_status.py": "4b5f0fcc7f3fc0c704d8a701d124ee36cb674baf52bd5108f54e8b4de1aaaf67",
+    "review_new_actions.py": "36438bd686847fc65f9c58b05fb7f97a9b2db441722a01940f60cf953d1d8720",
+    "review_remaining_prices.py": "ae878d90eb075327a18f05cd835a6afda187a52bb790b9105790964c6025a4ca",
+    "review_second_batch_actions.py": "13ada3bd3e4fd4393c1a97359a4b6aa0a874b505d50f714387c67299b829ae24",
+    "run_experiment.py": "f42855bc9f8593b81aec71ff7c9e6508cf9c2c2f640891eccc1a60c3bfea2d0a",
+    "sec_annotate_predecessors.py": "258592588b08a344e32736cbb48a687c1e41b327528c85efd7003c43992f9416",
+    "sec_apply_identity.py": "56950936dc69356178cbd7adb61541fa346d65ffeedd19292f476342f4630a7c",
+    "sec_collect.py": "f409a92bfb4ea8fe739384e4494900b52917ab8db096fc9b5486bc81f243be87",
+    "sec_period_annotations.py": "18e7ae23261898989f69b7b89d36d4b61cbdf26de16a0bb67e0571d5a90f6c7f",
+    "sec_repair_identities.py": "ff203e693c56687f51dd6f981095313156fbf0d421f68f8f3b97e4babd13efda",
+    "status.py": "7e96eb857bb7783d095ae4c766f6ffd3ed2c957dee358b757e3780172b06f9a3"
+  },
+  "initial_copy_hashes_scope": "Path/policy bindings, cohort size and deterministic bounded acquisition; no model/feature/trading-parameter changes.",
+  "null_date_guard_repair": {
+    "path": "research/equity-event-expansion-2026-09-13/null-date-guard-repair.json",
+    "sha256": "91008c8c0fe68e3bca5422c0d5d139aef5b96f42728280084dc2197e00f191cc"
+  },
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc",
+  "source_corrections_scope": "Original-source parsing/ownership exceptions, exact inherited source cache reuse, bounded acquisition only; fixed model and execution are unchanged."
+}

@@ -1,0 +1,64 @@
+{
+  "events": {
+    "0001474506-19-000153": {
+      "event": {
+        "acceptance_eastern": "2019-08-05T13:16:44-04:00",
+        "accession": "0001474506-19-000153",
+        "cik": "0000844059",
+        "classification": "EARNINGS_RELEASE",
+        "cohort_identity_source": {
+          "accession": "0000844059-19-000010",
+          "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/647d3f4dec9e941797c7cce216935962f0874347a2a0457fbd9c207898e11fdb.htm",
+          "filing_date": "2019-08-08",
+          "scope": "Already public before September 30 cohort cutoff; not August 5 earnings-time evidence",
+          "sha256": "14b4629d9b5b1218cd1c0dde02048e07ec87eeab84c9f7286213c542e238e2fc",
+          "url": "https://www.sec.gov/Archives/edgar/data/844059/000084405919000010/frphjunq19.htm"
+        },
+        "cohort_only_source_recovery": true,
+        "exhibit_file": null,
+        "filing_date": "2019-08-05",
+        "index_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/76fe805bb6afc9bac55780854f23a672355c7ee6b5d52adee00bb4d9a3c7dd38.html",
+        "metadata_file": "data/snapshots/equity-event-expansion-2026-09-13/sec/c021c07989fe201b7e195f41fdf1f40f732086ba1a818c46a9887cf2cf9744f5.json",
+        "period_end": "2019-06-30",
+        "primary_file": null,
+        "primary_unavailable": "HTTP403; no retry; original SEC exhibit unavailable",
+        "primary_url": "https://www.sec.gov/Archives/edgar/data/844059/000147450619000153/frphform8k2qfy20190805.txt",
+        "publisher_evidence": {
+          "file": "data/snapshots/equity-event-expansion-2026-09-13/issuer-evidence/frph-2019-08-05-newswire-web-extraction.txt",
+          "publication_time": "2019-08-05T11:33:00-04:00",
+          "representation": "Web-tool extracted original issuer-authored newswire publication, not SEC exhibit bytes",
+          "scope": "Cohort eligibility only. Never model input.",
+          "table_file": "data/snapshots/equity-event-expansion-2026-09-13/issuer-evidence/frph-2019-08-05-financial-table-extraction.txt",
+          "url": "https://www.globenewswire.com/news-release/2019/08/05/1896995/0/en/frp-holdings-inc-nasdaq-frph-announces-results-for-the-second-quarter-and-six-months-ended-june-30-2019.html"
+        },
+        "release_date": "2019-08-05",
+        "release_excerpt": "FRP Holdings, Inc. (NASDAQ: FRPH) Announces Results for the Second Quarter and Six Months Ended June 30, 2019",
+        "security": {
+          "common_stock_evidence": [
+            {
+              "row_excerpt": "Common Stock, $.10 par value per share; sole class in original June 30 2019 10-Q cover. Issuer-authored August 5 earnings release identifies NASDAQ: FRPH.",
+              "symbols": [
+                "FRPH"
+              ]
+            }
+          ],
+          "historical_symbol": "FRPH",
+          "inline_trading_symbols": [],
+          "status": "VERIFIED_SINGLE_COMMON_CLASS",
+          "symbols": [
+            "FRPH"
+          ]
+        }
+      },
+      "raw_hashes": {
+        "data/snapshots/equity-event-expansion-2026-09-13/issuer-evidence/frph-2019-08-05-financial-table-extraction.txt": "75e4d5ea657bd3cb0254db8eafd8a5ba9876d8114ab36e49b3f3ac538717c232",
+        "data/snapshots/equity-event-expansion-2026-09-13/issuer-evidence/frph-2019-08-05-newswire-web-extraction.txt": "222993ab1c77281610935f56172f6df32d12917608bef9393c0702078062ed1e",
+        "data/snapshots/equity-event-expansion-2026-09-13/sec/647d3f4dec9e941797c7cce216935962f0874347a2a0457fbd9c207898e11fdb.htm": "14b4629d9b5b1218cd1c0dde02048e07ec87eeab84c9f7286213c542e238e2fc",
+        "data/snapshots/equity-event-expansion-2026-09-13/sec/76fe805bb6afc9bac55780854f23a672355c7ee6b5d52adee00bb4d9a3c7dd38.html": "f7ff653244ba009ff07a3ce675e8110aadabcc53e84c99bdc136bcd583dbaaa7",
+        "data/snapshots/equity-event-expansion-2026-09-13/sec/c021c07989fe201b7e195f41fdf1f40f732086ba1a818c46a9887cf2cf9744f5.json": "2c2f5fdb9884fcba25111d2a3856630210e9ee6ff66779c8416d1af7738c6ecc"
+      },
+      "review": "Original SEC index and submissions identify sole issuer and Item2.02 on August 5. Independent issuer-authored original publication contains full Q2 income, EPS and balance-sheet results. Original August 8 10-Q cover shows one common class. Independent issuer-hosted Q1 PDF cover visually cross-checked. Missing SEC model inputs remain unavailable; no claim of byte identity to blocked exhibit."
+    }
+  },
+  "policy_sha256": "5c9daa1573ead42077ea323e641433c69112d6d3977f5e20c91d8bd1d04513bc"
+}
