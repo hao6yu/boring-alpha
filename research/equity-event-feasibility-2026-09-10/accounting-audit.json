@@ -1,0 +1,48 @@
+{
+  "status": "manual document audit only; not model features or investment signals",
+  "units": "USD; revenue rounded to billions as in release headline",
+  "samples": [
+    {
+      "ticker": "MSFT",
+      "period_end": "2023-06-30",
+      "fiscal_period": "Q4 FY2023",
+      "revenue_reported_billions": 56.2,
+      "eps_reported": 2.69,
+      "hazards": [
+        "quarter and full-year values occur in the same release",
+        "constant-currency growth differs from reported growth"
+      ],
+      "source": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-ex99_1.htm"
+    },
+    {
+      "ticker": "WMT",
+      "period_end": "2023-07-31",
+      "fiscal_period": "Q2 FY2024",
+      "revenue_reported_billions": 161.6,
+      "eps_reported": 2.92,
+      "eps_adjusted": 1.84,
+      "hazards": [
+        "GAAP and adjusted EPS differ materially",
+        "fiscal year differs from calendar year",
+        "8-K says it will issue the release that day; actual first release timestamp unverified",
+        "figures retain the original filing share basis, not subsequently split-adjusted values"
+      ],
+      "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/earningsreleasefy24q2.htm"
+    },
+    {
+      "ticker": "JPM",
+      "period_end": "2023-06-30",
+      "fiscal_period": "Q2 2023",
+      "revenue_reported_billions": 41.3,
+      "revenue_managed_billions": 42.4,
+      "eps_reported": 4.75,
+      "eps_excluding_significant_items": 4.37,
+      "hazards": [
+        "reported and managed revenue are different measures",
+        "First Republic transaction gain affects comparability",
+        "earnings financial supplement is Exhibit99.2, distinct from release99.1"
+      ],
+      "source": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000425/a2q23erfexhibit991narrative.htm"
+    }
+  ]
+}

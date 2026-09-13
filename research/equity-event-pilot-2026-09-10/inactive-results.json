@@ -1,0 +1,273 @@
+{
+  "bounded_extensions": [
+    {
+      "acquisition_row_close_equals_public_cash_entitlement": false,
+      "acquisition_row_present": true,
+      "acquisition_row_repeats_prior_OHLC": false,
+      "cash_credit_date_resolved": false,
+      "cash_entitlement_supported_by_official_source": true,
+      "control_verdict": "UNRESOLVED_TERMINAL_CASH_AVAILABILITY_AND_EXECUTION_STATUS",
+      "corporate_action_gate": "NOT_FULLY_VALIDATED",
+      "declared_dividend_adjustment_checks": [
+        {
+          "concurrent_split_declared": false,
+          "declared_dividend_exdate": "2023-08-01",
+          "factor_changed": true,
+          "post_adjustment_factor": "1",
+          "pre_adjustment_factor": "0.9893410852716688227684346701",
+          "preceding_available_date": "2023-07-31"
+        }
+      ],
+      "declared_dividends_without_adjustment_factor_change": 0,
+      "declared_dividends_without_pre_action_row": 0,
+      "defensible_treatment": [
+        "The issuer-hosted completion filing supports the ordinary-share $95 cash entitlement and acquisition date, subject to its exclusions.",
+        "Do not treat the acquisition-date daily OHLC or positive volume as proof of an executable regular Nasdaq session; administrative, off-exchange or other provenance is not resolved here.",
+        "The terminal OHLC and divCash fields do not encode the verified merger cash entitlement. No terminal return is inferred from their labels or filled by assumption.",
+        "A future ledger needs a separately documented cash-entitlement event and a defensible cash-credit availability date or explicit unresolved credit delay; neither automatic same-day cash nor reinvestment is justified by these rows.",
+        "Check the before/after adjustment factors at each declared dividend. A boundary action lacking a preceding row cannot establish either correct adjustment or a missing adjustment. Identical raw and adjusted prices after the last action can be normal. The field-validation PASS only checks numeric shape; it does not pass the corporate-action gate."
+      ],
+      "existing_metadata": {
+        "endDate": "2023-10-13",
+        "exchangeCode": "NASDAQ",
+        "startDate": "1993-10-25",
+        "ticker": "ATVI"
+      },
+      "field_validation": "PASS",
+      "first_date": "2023-07-25",
+      "investment_returns_calculated": false,
+      "last_date": "2023-10-13",
+      "metadata_sha256": "aec57d5aa606f3643d9c3539e66255f29a3b44497a228f29763a8f60411bc358",
+      "raw_adjusted_OHLC_differ_rows": 5,
+      "requested_end": "2023-11-15",
+      "requested_start": "2023-07-25",
+      "rows": 58,
+      "segments": [
+        {
+          "end": "2023-10-12",
+          "first_date": "2023-07-25",
+          "last_date": "2023-10-12",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 1,
+          "positive_volume_rows": 57,
+          "rows": 57,
+          "segment": "before_acquisition",
+          "start": "2023-07-25",
+          "zero_volume_rows": 0
+        },
+        {
+          "end": "2023-10-13",
+          "first_date": "2023-10-13",
+          "last_date": "2023-10-13",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 1,
+          "rows": 1,
+          "segment": "acquisition_date",
+          "start": "2023-10-13",
+          "zero_volume_rows": 0
+        },
+        {
+          "end": "2023-11-15",
+          "first_date": null,
+          "last_date": null,
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 0,
+          "rows": 0,
+          "segment": "after_acquisition",
+          "start": "2023-10-14",
+          "zero_volume_rows": 0
+        }
+      ],
+      "symbol": "ATVI",
+      "terminal_cash_dividend_field_equals_public_cash_entitlement": false,
+      "terminal_return_imputed": false
+    }
+  ],
+  "generated_at": "2026-09-10T23:43:46.023608+00:00",
+  "inactive_controls_gate": "UNRESOLVED_NOT_PASSED",
+  "investment_returns_calculated": false,
+  "limitations": [
+    "Price-row existence does not prove executable trading during a halt.",
+    "Adjusted daily OHLC and divCash do not alone establish delisting consideration or cash-availability timing.",
+    "An OTC ticker-history series must be joined by historical security identity; current PINK metadata cannot label every historical date.",
+    "No missing price, halt fill or terminal return is imputed; this is availability analysis only."
+  ],
+  "manifest_sha256": "e8ee821c86f9218d21172d62b3bf680d6fda37924b5e5ec5bc4abff28d47a31b",
+  "paid_data_usd": 0,
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "primary_sources": [
+    {
+      "fact": "Issuer-hosted October 13, 2023 8-K: completed acquisition, ordinary shares converted to a $95 cash entitlement subject to stated exclusions; pre-open trading halt requested. This establishes entitlement, not brokerage cash-availability date.",
+      "url": "https://investor.activision.com/static-files/6439fa79-7018-4f4d-adf5-192a2cd2007b"
+    },
+    {
+      "fact": "Nasdaq halted SIVB and SIVBP on March 10, 2023 at 08:35:18 Eastern; halt continued pending requested information.",
+      "url": "https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-halts-svb-financial-group"
+    },
+    {
+      "fact": "OCC memo 52179: underlying SIVB becomes SIVBQ March 28, 2023 on OTC market; common-share CUSIP 78486Q101. Memo does not establish fills or ultimate recovery.",
+      "url": "https://infomemo.theocc.com/infomemos?number=52179"
+    },
+    {
+      "fact": "Tiingo documents raw and adjusted prices, with CRSP-methodology split and dividend adjustments; divCash dates represent ex-dates. Numeric schema validity alone does not verify these adjustments.",
+      "url": "https://www.tiingo.com/documentation/end-of-day"
+    }
+  ],
+  "raw_rows_published": false,
+  "request_attempts": 3,
+  "results": [
+    {
+      "acquisition_row_close_equals_public_cash_entitlement": false,
+      "acquisition_row_present": true,
+      "acquisition_row_repeats_prior_OHLC": false,
+      "cash_credit_date_resolved": false,
+      "cash_entitlement_supported_by_official_source": true,
+      "control_verdict": "UNRESOLVED_TERMINAL_CASH_AVAILABILITY_AND_EXECUTION_STATUS",
+      "corporate_action_gate": "NOT_FULLY_VALIDATED",
+      "declared_dividend_adjustment_checks": [
+        {
+          "concurrent_split_declared": false,
+          "declared_dividend_exdate": "2023-08-01",
+          "factor_changed": null,
+          "post_adjustment_factor": "1",
+          "pre_adjustment_factor": null,
+          "preceding_available_date": null
+        }
+      ],
+      "declared_dividends_without_adjustment_factor_change": 0,
+      "declared_dividends_without_pre_action_row": 1,
+      "defensible_treatment": [
+        "The issuer-hosted completion filing supports the ordinary-share $95 cash entitlement and acquisition date, subject to its exclusions.",
+        "Do not treat the acquisition-date daily OHLC or positive volume as proof of an executable regular Nasdaq session; administrative, off-exchange or other provenance is not resolved here.",
+        "The terminal OHLC and divCash fields do not encode the verified merger cash entitlement. No terminal return is inferred from their labels or filled by assumption.",
+        "A future ledger needs a separately documented cash-entitlement event and a defensible cash-credit availability date or explicit unresolved credit delay; neither automatic same-day cash nor reinvestment is justified by these rows.",
+        "Check the before/after adjustment factors at each declared dividend. A boundary action lacking a preceding row cannot establish either correct adjustment or a missing adjustment. Identical raw and adjusted prices after the last action can be normal. The field-validation PASS only checks numeric shape; it does not pass the corporate-action gate."
+      ],
+      "existing_metadata": {
+        "endDate": "2023-10-13",
+        "exchangeCode": "NASDAQ",
+        "startDate": "1993-10-25",
+        "ticker": "ATVI"
+      },
+      "field_validation": "PASS",
+      "first_date": "2023-08-01",
+      "investment_returns_calculated": false,
+      "last_date": "2023-10-13",
+      "metadata_sha256": "aec57d5aa606f3643d9c3539e66255f29a3b44497a228f29763a8f60411bc358",
+      "raw_adjusted_OHLC_differ_rows": 0,
+      "requested_end": "2023-11-15",
+      "requested_start": "2023-08-01",
+      "rows": 53,
+      "segments": [
+        {
+          "end": "2023-10-12",
+          "first_date": "2023-08-01",
+          "last_date": "2023-10-12",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 1,
+          "positive_volume_rows": 52,
+          "rows": 52,
+          "segment": "before_acquisition",
+          "start": "2023-08-01",
+          "zero_volume_rows": 0
+        },
+        {
+          "end": "2023-10-13",
+          "first_date": "2023-10-13",
+          "last_date": "2023-10-13",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 1,
+          "rows": 1,
+          "segment": "acquisition_date",
+          "start": "2023-10-13",
+          "zero_volume_rows": 0
+        },
+        {
+          "end": "2023-11-15",
+          "first_date": null,
+          "last_date": null,
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 0,
+          "rows": 0,
+          "segment": "after_acquisition",
+          "start": "2023-10-14",
+          "zero_volume_rows": 0
+        }
+      ],
+      "symbol": "ATVI",
+      "terminal_cash_dividend_field_equals_public_cash_entitlement": false,
+      "terminal_return_imputed": false
+    },
+    {
+      "control_verdict": "UNRESOLVED_HALT_VALUATION_AND_EXECUTABILITY",
+      "defensible_treatment": [
+        "OCC memo 52179 supports the historical SIVB to SIVBQ common-security ticker link and March 28 OTC transition; current PINK metadata is not a historical exchange classification.",
+        "Rows during Nasdaq's halt are not evidence of regular Nasdaq execution. Positive volume could reflect other venue, administrative or reporting provenance; this audit does not establish that the provider is wrong.",
+        "Apply the official halt state before price-window completeness: no assumed fill during the halt, no gap compression and no zero-return substitution. A retained holding's executable exit and valuation remain unresolved without an explicit supported treatment.",
+        "This bounded window covers the halt and OTC transition only; it does not establish ultimate liquidation recovery or a terminal cash payment."
+      ],
+      "existing_metadata": {
+        "endDate": "2026-09-10",
+        "exchangeCode": "PINK",
+        "startDate": "1990-03-26",
+        "ticker": "SIVBQ"
+      },
+      "field_validation": "PASS",
+      "first_date": "2023-02-01",
+      "halt_rows_with_flat_OHLC": 12,
+      "investment_returns_calculated": false,
+      "last_date": "2023-05-31",
+      "metadata_sha256": "7bc2d7703379f1604826b3143fa0dae74501c6dcbe45a4013822720b4434aa74",
+      "raw_adjusted_OHLC_differ_rows": 0,
+      "requested_end": "2023-05-31",
+      "requested_start": "2023-02-01",
+      "rows": 83,
+      "segments": [
+        {
+          "end": "2023-03-09",
+          "first_date": "2023-02-01",
+          "last_date": "2023-03-09",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 26,
+          "rows": 26,
+          "segment": "before_halt",
+          "start": "2023-02-01",
+          "zero_volume_rows": 0
+        },
+        {
+          "end": "2023-03-27",
+          "first_date": "2023-03-10",
+          "last_date": "2023-03-27",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 4,
+          "rows": 12,
+          "segment": "halt_before_otc",
+          "start": "2023-03-10",
+          "zero_volume_rows": 8
+        },
+        {
+          "end": "2023-05-31",
+          "first_date": "2023-03-28",
+          "last_date": "2023-05-31",
+          "nonunit_splitFactor_rows": 0,
+          "nonzero_divCash_rows": 0,
+          "positive_volume_rows": 45,
+          "rows": 45,
+          "segment": "otc_period",
+          "start": "2023-03-28",
+          "zero_volume_rows": 0
+        }
+      ],
+      "symbol": "SIVBQ",
+      "terminal_return_imputed": false
+    }
+  ],
+  "schema": "inactive-price-availability-audit-v1",
+  "script_sha256": "3332868486f0809bdf1e76855b900ee60f733e6367b096554d71c79f30d44c31"
+}

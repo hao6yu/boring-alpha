@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "base_SEC_checks": 1198,
+    "current": 1257,
+    "prior": 1199,
+    "reason:CANDIDATE_SOURCE_FAILURE": 19,
+    "reason:NO_VERIFIED_CURRENT_FULL_RELEASE": 343,
+    "reason:ORIGINAL_PRIOR_NOT_YET_VERIFIED": 58,
+    "slots": 1600
+  },
+  "events_sha256": "f931061fdbfe0a44d6598c5dcdc8fe9f2a185321a897cf88b387f2cc2a329ca1",
+  "initial_pass_issuers": 100,
+  "issuer_blocks_present": 100,
+  "network_stop": null,
+  "note": "Source joins only; not liquidity, label, feature, or performance qualification.",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "selection_sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0",
+  "status": "INITIAL_SOURCE_PASS_PENDING_AUDIT",
+  "years": {
+    "2020": {
+      "base_SEC_checks": 330,
+      "current": 345,
+      "prior": 331,
+      "slots": 400
+    },
+    "2021": {
+      "base_SEC_checks": 301,
+      "current": 320,
+      "prior": 301,
+      "slots": 400
+    },
+    "2022": {
+      "base_SEC_checks": 295,
+      "current": 306,
+      "prior": 295,
+      "slots": 400
+    },
+    "2023": {
+      "base_SEC_checks": 272,
+      "current": 286,
+      "prior": 272,
+      "slots": 400
+    }
+  }
+}

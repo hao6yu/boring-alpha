@@ -1,0 +1,8 @@
+{
+  "exception_class": "ValueError",
+  "model_fitted": false,
+  "readiness_sha256": "7d735c59ecc1ebc7b2b0bc241c1832dcf8826881e02109fc5316cc579be05962",
+  "reason": "source-readiness.ready is false because training175<200 and remaining-query ceiling199<200",
+  "runner_sha256": "40c7b00792c0ccb6b322cc225ebfb4547d5b2f246cc70ecdefb40c850d2d4260",
+  "status": "EXPECTED_PREFIT_GATE_REJECTION"
+}

@@ -1,0 +1,223 @@
+{
+  "aggregation": "Replace all matching publisher/instrument/event-timestamp auction trades with one official statistics price/quantity. Core ordinary prints use09:30<=ts_event<scheduled close; official closing auction is separately included even when publication is later. Sample days are full sessions. No entire16:00minute inclusion.",
+  "anchor": {
+    "date": "2023-06-16",
+    "issuer_reference_close": 2.19,
+    "sample_close": 2.19,
+    "source": "research/equity-event-repair-2026-09-10/ptn-evidence.json"
+  },
+  "created_at": "2026-09-11T02:28:55.598229+00:00",
+  "days": [
+    {
+      "auction_groups": [
+        {
+          "additional_fill_shares_removed": 9452,
+          "canonical_shares": 9452,
+          "close_publication_offset_seconds": null,
+          "event_ns": 1661866200125116160,
+          "price": 0.1991,
+          "same_event_reported_shares": 18904,
+          "same_event_trade_rows": 37,
+          "sequence": 179717,
+          "stat_type": 1
+        },
+        {
+          "additional_fill_shares_removed": 0,
+          "canonical_shares": 644,
+          "close_publication_offset_seconds": 0.079031552,
+          "event_ns": 1661889600079031552,
+          "price": 0.1837,
+          "same_event_reported_shares": 644,
+          "same_event_trade_rows": 1,
+          "sequence": 15366623,
+          "stat_type": 11
+        }
+      ],
+      "date": "2022-08-30",
+      "exact_duplicate_records": 0,
+      "proxy": {
+        "close": 0.1837,
+        "high": 0.2071,
+        "low": 0.1822,
+        "open": 0.1991,
+        "volume": 194904
+      },
+      "source_stat_rows": 2,
+      "source_trade_rows": 603
+    },
+    {
+      "auction_groups": [
+        {
+          "additional_fill_shares_removed": 3967,
+          "canonical_shares": 3967,
+          "close_publication_offset_seconds": null,
+          "event_ns": 1661952600137805824,
+          "price": 4.61,
+          "same_event_reported_shares": 7934,
+          "same_event_trade_rows": 30,
+          "sequence": 226642,
+          "stat_type": 1
+        },
+        {
+          "additional_fill_shares_removed": 128,
+          "canonical_shares": 1654,
+          "close_publication_offset_seconds": 0.090858496,
+          "event_ns": 1661976000090858496,
+          "price": 5.02,
+          "same_event_reported_shares": 1782,
+          "same_event_trade_rows": 8,
+          "sequence": 15061394,
+          "stat_type": 11
+        }
+      ],
+      "date": "2022-08-31",
+      "exact_duplicate_records": 0,
+      "proxy": {
+        "close": 5.02,
+        "high": 5.54,
+        "low": 4.36,
+        "open": 4.61,
+        "volume": 31009
+      },
+      "source_stat_rows": 2,
+      "source_trade_rows": 380
+    },
+    {
+      "auction_groups": [
+        {
+          "additional_fill_shares_removed": 304,
+          "canonical_shares": 304,
+          "close_publication_offset_seconds": null,
+          "event_ns": 1686922200093363456,
+          "price": 2.24,
+          "same_event_reported_shares": 608,
+          "same_event_trade_rows": 18,
+          "sequence": 216813,
+          "stat_type": 1
+        },
+        {
+          "additional_fill_shares_removed": 5205,
+          "canonical_shares": 6824,
+          "close_publication_offset_seconds": 0.094100736,
+          "event_ns": 1686945600094100736,
+          "price": 2.19,
+          "same_event_reported_shares": 12029,
+          "same_event_trade_rows": 29,
+          "sequence": 7739522,
+          "stat_type": 11
+        }
+      ],
+      "date": "2023-06-16",
+      "exact_duplicate_records": 0,
+      "proxy": {
+        "close": 2.19,
+        "high": 2.24,
+        "low": 2.18,
+        "open": 2.24,
+        "volume": 8742
+      },
+      "source_stat_rows": 2,
+      "source_trade_rows": 74
+    }
+  ],
+  "files": [
+    {
+      "bytes": 144107,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-30-2022-08-31-trades.jsonl",
+      "rows": 603,
+      "sha256": "9f092467f1075fd518b5f5f15ca1c4acdc749f7b4a09567d56f9e3218d59bead"
+    },
+    {
+      "bytes": 588,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-30-2022-08-31-statistics.jsonl",
+      "rows": 2,
+      "sha256": "812813e0d7cee658b748a9f3b13d792defdd2015bf616aeeff7d69de24d344ed"
+    },
+    {
+      "bytes": 1684,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-30-2022-08-31-definition.jsonl",
+      "rows": 1,
+      "sha256": "34ba52249f651c42d2f921cb715217eecf8192be313a2777620b5a54c248b4bc"
+    },
+    {
+      "bytes": 91118,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-31-2022-09-01-trades.jsonl",
+      "rows": 380,
+      "sha256": "d5331eb257bddd53b90cd85a432e30bd14a89b69ea7b763ddaf7ec4c1dab6185"
+    },
+    {
+      "bytes": 591,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-31-2022-09-01-statistics.jsonl",
+      "rows": 2,
+      "sha256": "b0b667c927e6e72df208fa4ac1685900ba616855601fb3addc191f4947d0eed5"
+    },
+    {
+      "bytes": 1685,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-31-2022-09-01-definition.jsonl",
+      "rows": 1,
+      "sha256": "d681cacaed8348ce95c0a4e479b484c18f694d3ceb8931a54ca0384dfab131c1"
+    },
+    {
+      "bytes": 17713,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2023-06-16-2023-06-17-trades.jsonl",
+      "rows": 74,
+      "sha256": "35d8dfe587631223e37c56636e45944135d91817154941c0c278f0ac77154431"
+    },
+    {
+      "bytes": 591,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2023-06-16-2023-06-17-statistics.jsonl",
+      "rows": 2,
+      "sha256": "61e79404f888a82dc341bd97cf2e451ad9856e4fe7ba392b7de77eb4be6210da"
+    },
+    {
+      "bytes": 1685,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2023-06-16-2023-06-17-definition.jsonl",
+      "rows": 1,
+      "sha256": "f5015550663fff466ba068db6a147d8d7893ac234e7d69327ed7e113f10c2624"
+    }
+  ],
+  "full_download_recommended": true,
+  "identities": [
+    {
+      "date": "2022-08-30",
+      "exchange": "XASE",
+      "instrument_class": "K",
+      "instrument_id": 13132,
+      "publisher_id": 11,
+      "raw_symbol": "PTN",
+      "security_type": "C"
+    },
+    {
+      "date": "2022-08-31",
+      "exchange": "XASE",
+      "instrument_class": "K",
+      "instrument_id": 13132,
+      "publisher_id": 11,
+      "raw_symbol": "PTN",
+      "security_type": "C"
+    },
+    {
+      "date": "2023-06-16",
+      "exchange": "XASE",
+      "instrument_class": "K",
+      "instrument_id": 13132,
+      "publisher_id": 11,
+      "raw_symbol": "PTN",
+      "security_type": "C"
+    }
+  ],
+  "limitations": [
+    "NYSE American primary-venue proxy, not consolidated volume/extrema or actual execution prices.",
+    "Native non-printable individual auction fills coexist with bulk trades; the sample-specific duplication is removed. Future same-timestamp price conflicts must remain unresolved.",
+    "Vendor handling of later trade cancellations remains a disclosed aggregation limitation, not a new audit gate; the sample contains no statistics deletes or revisions.",
+    "No inference about absence of dividends or complete336-session/four-window coverage. Full history and in-window actions still need checks.",
+    "This is a whole-archived-day sample audit, not a causal strategy ledger; eventual revision cutoff is separately frozen before returns."
+  ],
+  "manifest_path": "research/equity-event-test-2026-09-10/ptn-download-manifest.json",
+  "manifest_sha256": "070b26f983886d52984282050c4da648a0b757660f13f778fdd8bc01670f3cc3",
+  "no_network_by_auditor": true,
+  "no_strategy_returns": true,
+  "script_sha256": "455fc745e71821fff2cb12b80da9c88a9805ec8d202872c7505214982d4a3b70",
+  "split_check": "Unadjusted sub-dollar pre-split close and post-1:25 split dollar prices are consistent with issuer Aug31 adjusted-trading date; no exact overnight ratio is required or inferred.",
+  "status": "SAMPLE_PASSES_DECLARED_PRIMARY_VENUE_PROXY_CHECKS"
+}

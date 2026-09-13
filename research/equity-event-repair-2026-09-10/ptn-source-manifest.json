@@ -1,0 +1,133 @@
+{
+  "end": "2023-10-31",
+  "finished_at": "2026-09-11T01:59:48.725400+00:00",
+  "new_paid_cost_usd": 0,
+  "no_reserved_period_prices": true,
+  "no_strategy_returns": true,
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "requests": [
+    {
+      "bytes": 16451,
+      "content_type": "application/json;charset=utf-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-yahoo-chart.json",
+      "payload_classification": "BOUNDED_HISTORICAL_CHART_336_SESSIONS",
+      "received_at": "2026-09-11T01:52:30.907627+00:00",
+      "sha256": "3de76aee683beaec0a0952a0e9fad78439286e0cf6dc6aec6a37f275fa184b33",
+      "started_at": "2026-09-11T01:52:30.677651+00:00",
+      "status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PTN?period1=1656633600&period2=1698796800&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "bytes": 165,
+      "content_type": "application/json; charset=utf-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-nasdaq-history.json",
+      "payload_classification": "PROVIDER_PARAMETER_ERROR",
+      "provider_status": {
+        "bCodeMessage": [
+          {
+            "code": 1011,
+            "errorMessage": "Bad or No parameter fromdate : 07/01/2022"
+          }
+        ],
+        "developerMessage": null,
+        "rCode": 400
+      },
+      "received_at": "2026-09-11T01:55:19.727361+00:00",
+      "sha256": "b51438b441b772c6ba07b5f49265ff3ef76b4e19fff978db1b3401536f6edca7",
+      "started_at": "2026-09-11T01:55:19.550964+00:00",
+      "status": 200,
+      "url": "https://api.nasdaq.com/api/quote/PTN/historical?assetclass=stocks&fromdate=07%2F01%2F2022&todate=10%2F31%2F2023&limit=9999"
+    },
+    {
+      "bytes": 179,
+      "content_type": "application/json; charset=utf-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-nasdaq-history-iso.json",
+      "payload_classification": "EMPTY_HISTORICAL_RESPONSE",
+      "provider_status": {
+        "bCodeMessage": null,
+        "developerMessage": null,
+        "rCode": 200
+      },
+      "received_at": "2026-09-11T01:55:55.359797+00:00",
+      "sha256": "bfe530ccc5c78a8b0dd434c0910452fe230caa8537d46bd7e64d576f34546482",
+      "started_at": "2026-09-11T01:55:55.133784+00:00",
+      "status": 200,
+      "url": "https://api.nasdaq.com/api/quote/PTN/historical?assetclass=stocks&fromdate=2022-07-01&todate=2023-10-31&limit=9999"
+    },
+    {
+      "bytes": 163082,
+      "content_type": "text/html; charset=UTF-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-issuer-split-2022.html",
+      "payload_classification": "SOURCE_DOCUMENT",
+      "received_at": "2026-09-11T01:56:26.337599+00:00",
+      "sha256": "b04af1dfd663c448a84f82eb3d38d2b56f9ef19c30e75af56be1eeec877ef7f9",
+      "started_at": "2026-09-11T01:56:25.195332+00:00",
+      "status": 200,
+      "url": "https://palatin.com/press_releases/palatin-announces-intent-to-effect-reverse-stock-split/"
+    },
+    {
+      "bytes": 163893,
+      "content_type": "text/html; charset=UTF-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-issuer-split-2025.html",
+      "payload_classification": "SOURCE_DOCUMENT",
+      "received_at": "2026-09-11T01:56:26.751893+00:00",
+      "sha256": "6451dc532322e4d74efb7b2e93950be392f4d68f97e2940831c2d32e54eee678",
+      "started_at": "2026-09-11T01:56:26.348307+00:00",
+      "status": 200,
+      "url": "https://palatin.com/press_releases/palatin-announces-1-for-50-reverse-stock-split/"
+    },
+    {
+      "error_type": "HTTPError",
+      "finished_at": "2026-09-11T01:56:27.268038+00:00",
+      "payload_classification": "HTTP_FAILURE",
+      "retry_after": null,
+      "started_at": "2026-09-11T01:56:26.764748+00:00",
+      "status": 404,
+      "url": "https://finance.yahoo.com/quote/PTN/history/?period1=1656633600&period2=1698796800"
+    },
+    {
+      "bytes": 747289,
+      "content_type": "application/pdf",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-annual-report-2023.pdf",
+      "payload_classification": "SOURCE_DOCUMENT",
+      "received_at": "2026-09-11T01:57:24.061462+00:00",
+      "sha256": "d8ee79382f1aa440b769683677fa756acb0c28fd2e06954e72a33c7862c3d9ad",
+      "started_at": "2026-09-11T01:57:23.588921+00:00",
+      "status": 200,
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/AMEX_PTN_2023.pdf"
+    },
+    {
+      "bytes": 796,
+      "content_type": "text/html; charset=utf-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-stooq.csv",
+      "payload_classification": "BROWSER_VERIFICATION_HTML_NOT_PRICE_DATA",
+      "received_at": "2026-09-11T01:57:43.564360+00:00",
+      "sha256": "1690d6d7c26413ab40d424651adad66c24f15de1fb5da46f7a227fe9bcd77d43",
+      "started_at": "2026-09-11T01:57:42.991537+00:00",
+      "status": 200,
+      "url": "https://stooq.com/q/d/l/?s=ptn.us&i=d&d1=20220701&d2=20231031"
+    },
+    {
+      "error_type": "HTTPError",
+      "finished_at": "2026-09-11T01:57:43.715141+00:00",
+      "payload_classification": "HTTP_FAILURE",
+      "retry_after": null,
+      "started_at": "2026-09-11T01:57:43.579943+00:00",
+      "status": 404,
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/AMEX_PTN_2024.pdf"
+    },
+    {
+      "bytes": 120248,
+      "content_type": "text/html;charset=utf-8",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-yahoo-adjusted-close-help.html",
+      "payload_classification": "SOURCE_DOCUMENT",
+      "received_at": "2026-09-11T01:57:44.131196+00:00",
+      "sha256": "461fec64928b7bfae48c129402727e9c9f9f70ff945456ca621d04e25b218424",
+      "started_at": "2026-09-11T01:57:43.728220+00:00",
+      "status": 200,
+      "url": "https://help.yahoo.com/kb/SLN28256.html"
+    }
+  ],
+  "start": "2022-07-01",
+  "status": "BOUNDED_PASS_FINISHED_NO_QUALIFIED_PRICE_WINDOWS"
+}

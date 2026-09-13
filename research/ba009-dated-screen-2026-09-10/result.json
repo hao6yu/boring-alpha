@@ -1,0 +1,868 @@
+{
+  "account_eligibility": "unverified",
+  "analysis_sha256": "7b7e66c46f45f9d60e0297e755a1d07376ef8cbf9c94257975fd16699cbbc34d",
+  "assets": [
+    {
+      "asset": "BTC",
+      "auxiliary_fee_free_no_reserve_fractional_margin_only_annual_return": 0.0503595428115043,
+      "book_age_seconds": {
+        "future": 0.576937,
+        "spot": 0.981372
+      },
+      "book_skew_seconds": 0.437999,
+      "contract_size": 0.01,
+      "days_to_expiry": 14.705848686921298,
+      "expiry": "2026-09-25T15:00:00Z",
+      "fee_free_best_level_simple_annual_basis_on_spot": 0.06495436980710335,
+      "future": "BIT-25SEP26-CDE",
+      "future_best_ask": [
+        77320.0,
+        100.0
+      ],
+      "future_best_bid": [
+        77305.0,
+        79.0
+      ],
+      "observed_at": "2026-09-10T22:03:34.673450+00:00",
+      "short_overnight_margin_rate": 0.289,
+      "spot_best_ask": [
+        77103.22,
+        0.07741707
+      ]
+    },
+    {
+      "asset": "ETH",
+      "auxiliary_fee_free_no_reserve_fractional_margin_only_annual_return": 0.0305147197623191,
+      "book_age_seconds": {
+        "future": 0.594708,
+        "spot": 0.396398
+      },
+      "book_skew_seconds": 0.190799,
+      "contract_size": 0.1,
+      "days_to_expiry": 14.705848688078703,
+      "expiry": "2026-09-25T15:00:00Z",
+      "fee_free_best_level_simple_annual_basis_on_spot": 0.04018837362470082,
+      "future": "ET-25SEP26-CDE",
+      "future_best_ask": [
+        2463.0,
+        57.0
+      ],
+      "future_best_bid": [
+        2462.0,
+        78.0
+      ],
+      "observed_at": "2026-09-10T22:03:34.673350+00:00",
+      "short_overnight_margin_rate": 0.316375,
+      "spot_best_ask": [
+        2458.02,
+        2.436
+      ]
+    }
+  ],
+  "cash_stress_convention": "F_stress=F_entry+(price_rise+additional_basis_fraction)*S_entry; stress entry fees already paid; unsold spot gains unavailable",
+  "fee_scenarios": "unchanged entry prices used only for fee budget; future closing/expiry budget counted once; actual fees and terminal spot price unknown",
+  "interpretation": "One synchronized displayed-book packet, not fills, a backtest or expected annual return. Perfect settlement match is a reference, not an absolute bound when mismatch is nonzero.",
+  "paid_data_cost_usd": 0,
+  "policy_sha256": "6344b9189e2196761b8827d3436a08f427b1357bd028071d07dac1110aea6ce7",
+  "rows": [
+    {
+      "asset": "BTC",
+      "capital_usd": 5000,
+      "cash_hurdles": {
+        "0.04": 8.05799928050482,
+        "0.06": 12.086998920757232
+      },
+      "contracts": 3,
+      "entry_fee_stress": 57.8334684,
+      "fees": [
+        {
+          "case": "low_assumed",
+          "future_entry_plus_exit_fee_budget": 0.9276600000000002,
+          "future_fee_bps_each_side": 2,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -22.631419200000035
+            },
+            {
+              "allowance_usd": 2.3130966,
+              "bps": 10,
+              "net_usd": -24.944515800000037
+            },
+            {
+              "allowance_usd": 5.782741499999999,
+              "bps": 25,
+              "net_usd": -28.414160700000036
+            }
+          ],
+          "net_perfect_match": -22.631419200000035,
+          "spot_fee_bps_each_side": 60,
+          "spot_round_trip_fee": 27.7571592
+        },
+        {
+          "case": "base_assumed",
+          "future_entry_plus_exit_fee_budget": 2.3191500000000005,
+          "future_fee_bps_each_side": 5,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -51.78006840000003
+            },
+            {
+              "allowance_usd": 2.3130966,
+              "bps": 10,
+              "net_usd": -54.093165000000035
+            },
+            {
+              "allowance_usd": 5.782741499999999,
+              "bps": 25,
+              "net_usd": -57.56280990000003
+            }
+          ],
+          "net_perfect_match": -51.78006840000003,
+          "spot_fee_bps_each_side": 120,
+          "spot_round_trip_fee": 55.5143184
+        },
+        {
+          "case": "stress_assumed",
+          "future_entry_plus_exit_fee_budget": 4.638300000000001,
+          "future_fee_bps_each_side": 10,
+          "future_min_per_contract_each_side": 0.5,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -109.61353680000003
+            },
+            {
+              "allowance_usd": 2.3130966,
+              "bps": 10,
+              "net_usd": -111.92663340000003
+            },
+            {
+              "allowance_usd": 5.782741499999999,
+              "bps": 25,
+              "net_usd": -115.39627830000003
+            }
+          ],
+          "net_perfect_match": -109.61353680000003,
+          "spot_fee_bps_each_side": 240,
+          "spot_round_trip_fee": 111.0286368
+        }
+      ],
+      "free_cash_after_initial_margin_and_stress_entry_fee": 1958.7055316,
+      "future_buyback_mark_vwap": 77320.0,
+      "future_sell_vwap": 77305.0,
+      "initial_margin": 670.3643999999999,
+      "liquidity_scenarios": [
+        {
+          "cash_headroom": 468.0448229000002,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_current_margin",
+          "required_margin": 1004.4768086999999,
+          "spot_gain_not_available_for_margin": 1156.5483,
+          "stressed_future_price": 115856.61,
+          "variation_margin_outflow": 1156.5483
+        },
+        {
+          "cash_headroom": -536.4319857999997,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_double_margin",
+          "required_margin": 2008.9536173999998,
+          "spot_gain_not_available_for_margin": 1156.5483,
+          "stressed_future_price": 115856.61,
+          "variation_margin_outflow": 1156.5483
+        },
+        {
+          "cash_headroom": -718.9353075399997,
+          "hedge_mark_loss_from_added_basis": 115.65483,
+          "name": "price_rise_double_margin_extra_basis",
+          "required_margin": 2075.8021091399996,
+          "spot_gain_not_available_for_margin": 1156.5483,
+          "stressed_future_price": 119711.77100000001,
+          "variation_margin_outflow": 1272.20313
+        }
+      ],
+      "quantity": 0.03,
+      "spot_buy_vwap": 77103.22,
+      "spot_cost": 2313.0966,
+      "status": "REJECT_SAMPLED_ENTRY",
+      "total_cost_budget_to_beat_cash": {
+        "0.04": -2.0045992805048547,
+        "0.06": -6.0335989207572664
+      },
+      "zero_fee_perfect_match_capture": 6.053399999999965,
+      "zero_fee_simple_annual_return_on_all_capital": 0.03004914639119069
+    },
+    {
+      "asset": "BTC",
+      "capital_usd": 25000,
+      "cash_hurdles": {
+        "0.04": 40.2899964025241,
+        "0.06": 60.43499460378616
+      },
+      "contracts": 16,
+      "entry_fee_stress": 308.44545743140725,
+      "fees": [
+        {
+          "case": "low_assumed",
+          "future_entry_plus_exit_fee_budget": 4.947520000000001,
+          "future_fee_bps_each_side": 2,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -120.71324169100276
+            },
+            {
+              "allowance_usd": 12.3365273929753,
+              "bps": 10,
+              "net_usd": -133.04976908397808
+            },
+            {
+              "allowance_usd": 30.841318482438247,
+              "bps": 25,
+              "net_usd": -151.55456017344102
+            }
+          ],
+          "net_perfect_match": -120.71324169100276,
+          "spot_fee_bps_each_side": 60,
+          "spot_round_trip_fee": 148.0383287157036
+        },
+        {
+          "case": "base_assumed",
+          "future_entry_plus_exit_fee_budget": 12.368800000000002,
+          "future_fee_bps_each_side": 5,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -276.1728504067064
+            },
+            {
+              "allowance_usd": 12.3365273929753,
+              "bps": 10,
+              "net_usd": -288.5093777996817
+            },
+            {
+              "allowance_usd": 30.841318482438247,
+              "bps": 25,
+              "net_usd": -307.0141688891446
+            }
+          ],
+          "net_perfect_match": -276.1728504067064,
+          "spot_fee_bps_each_side": 120,
+          "spot_round_trip_fee": 296.0766574314072
+        },
+        {
+          "case": "stress_assumed",
+          "future_entry_plus_exit_fee_budget": 24.737600000000004,
+          "future_fee_bps_each_side": 10,
+          "future_min_per_contract_each_side": 0.5,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -584.6183078381137
+            },
+            {
+              "allowance_usd": 12.3365273929753,
+              "bps": 10,
+              "net_usd": -596.954835231089
+            },
+            {
+              "allowance_usd": 30.841318482438247,
+              "bps": 25,
+              "net_usd": -615.4596263205519
+            }
+          ],
+          "net_perfect_match": -584.6183078381137,
+          "spot_fee_bps_each_side": 240,
+          "spot_round_trip_fee": 592.1533148628145
+        }
+      ],
+      "free_cash_after_initial_margin_and_stress_entry_fee": 8779.750349593292,
+      "future_buyback_mark_vwap": 77320.0,
+      "future_sell_vwap": 77305.0,
+      "initial_margin": 3575.2768,
+      "liquidity_scenarios": [
+        {
+          "cash_headroom": 829.5520448207135,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_current_margin",
+          "required_margin": 5357.21140828493,
+          "spot_gain_not_available_for_margin": 6168.26369648765,
+          "stressed_future_price": 115856.6481030478,
+          "variation_margin_outflow": 6168.263696487648
+        },
+        {
+          "cash_headroom": -4527.659363464217,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_double_margin",
+          "required_margin": 10714.42281656986,
+          "spot_gain_not_available_for_margin": 6168.26369648765,
+          "stressed_future_price": 115856.6481030478,
+          "variation_margin_outflow": 6168.263696487648
+        },
+        {
+          "cash_headroom": -5501.011374769972,
+          "hedge_mark_loss_from_added_basis": 616.8263696487651,
+          "name": "price_rise_double_margin_extra_basis",
+          "required_margin": 11070.948458226849,
+          "spot_gain_not_available_for_margin": 6168.26369648765,
+          "stressed_future_price": 119711.8129133526,
+          "variation_margin_outflow": 6785.090066136415
+        }
+      ],
+      "quantity": 0.16,
+      "spot_buy_vwap": 77103.29620609562,
+      "spot_cost": 12336.5273929753,
+      "status": "REJECT_SAMPLED_ENTRY",
+      "total_cost_budget_to_beat_cash": {
+        "0.04": -8.017389377823257,
+        "0.06": -28.162387579085312
+      },
+      "zero_fee_perfect_match_capture": 32.27260702470085,
+      "zero_fee_simple_annual_return_on_all_capital": 0.032040317603680916
+    },
+    {
+      "asset": "BTC",
+      "capital_usd": 100000,
+      "cash_hurdles": {
+        "0.04": 161.1599856100964,
+        "0.06": 241.73997841514463
+      },
+      "contracts": 64,
+      "entry_fee_stress": 1233.8050131499795,
+      "fees": [
+        {
+          "case": "low_assumed",
+          "future_entry_plus_exit_fee_budget": 19.790080000000003,
+          "future_fee_bps_each_side": 2,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -483.8305344907892
+            },
+            {
+              "allowance_usd": 49.3470755479158,
+              "bps": 10,
+              "net_usd": -533.177610038705
+            },
+            {
+              "allowance_usd": 123.3676888697895,
+              "bps": 25,
+              "net_usd": -607.1982233605787
+            }
+          ],
+          "net_perfect_match": -483.8305344907892,
+          "spot_fee_bps_each_side": 60,
+          "spot_round_trip_fee": 592.1649065749897
+        },
+        {
+          "case": "base_assumed",
+          "future_entry_plus_exit_fee_budget": 49.47520000000001,
+          "future_fee_bps_each_side": 5,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -1105.680561065779
+            },
+            {
+              "allowance_usd": 49.3470755479158,
+              "bps": 10,
+              "net_usd": -1155.027636613695
+            },
+            {
+              "allowance_usd": 123.3676888697895,
+              "bps": 25,
+              "net_usd": -1229.0482499355685
+            }
+          ],
+          "net_perfect_match": -1105.680561065779,
+          "spot_fee_bps_each_side": 120,
+          "spot_round_trip_fee": 1184.3298131499794
+        },
+        {
+          "case": "stress_assumed",
+          "future_entry_plus_exit_fee_budget": 98.95040000000002,
+          "future_fee_bps_each_side": 10,
+          "future_min_per_contract_each_side": 0.5,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -2339.4855742157583
+            },
+            {
+              "allowance_usd": 49.3470755479158,
+              "bps": 10,
+              "net_usd": -2388.832649763674
+            },
+            {
+              "allowance_usd": 123.3676888697895,
+              "bps": 25,
+              "net_usd": -2462.853263085548
+            }
+          ],
+          "net_perfect_match": -2339.4855742157583,
+          "spot_fee_bps_each_side": 240,
+          "spot_round_trip_fee": 2368.6596262999587
+        }
+      ],
+      "free_cash_after_initial_margin_and_stress_entry_fee": 35118.01223893422,
+      "future_buyback_mark_vwap": 77320.0,
+      "future_sell_vwap": 77305.0,
+      "initial_margin": 14301.1072,
+      "liquidity_scenarios": [
+        {
+          "cash_headroom": 3316.59644830248,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_current_margin",
+          "required_margin": 21428.985216673835,
+          "spot_gain_not_available_for_margin": 24673.5377739579,
+          "stressed_future_price": 115857.40277180923,
+          "variation_margin_outflow": 24673.537773957905
+        },
+        {
+          "cash_headroom": -18112.388768371355,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_double_margin",
+          "required_margin": 42857.97043334767,
+          "spot_gain_not_available_for_margin": 24673.5377739579,
+          "stressed_future_price": 115857.40277180923,
+          "variation_margin_outflow": 24673.537773957905
+        },
+        {
+          "cash_headroom": -22005.8730291019,
+          "hedge_mark_loss_from_added_basis": 2467.3537773957905,
+          "name": "price_rise_double_margin_extra_basis",
+          "required_margin": 44284.10091668243,
+          "spot_gain_not_available_for_margin": 24673.5377739579,
+          "stressed_future_price": 119712.64304899014,
+          "variation_margin_outflow": 27140.89155135369
+        }
+      ],
+      "quantity": 0.64,
+      "spot_buy_vwap": 77104.80554361844,
+      "spot_cost": 49347.0755479158,
+      "status": "REJECT_SAMPLED_ENTRY",
+      "total_cost_budget_to_beat_cash": {
+        "0.04": -33.03553352589594,
+        "0.06": -113.61552633094416
+      },
+      "zero_fee_perfect_match_capture": 128.12445208420047,
+      "zero_fee_simple_annual_return_on_all_capital": 0.03180056180798608
+    },
+    {
+      "asset": "ETH",
+      "capital_usd": 5000,
+      "cash_hurdles": {
+        "0.04": 8.057999281139017,
+        "0.06": 12.086998921708524
+      },
+      "contracts": 10,
+      "entry_fee_stress": 63.99248000000001,
+      "fees": [
+        {
+          "case": "low_assumed",
+          "future_entry_plus_exit_fee_budget": 3.0,
+          "future_fee_bps_each_side": 2,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -28.516239999999986
+            },
+            {
+              "allowance_usd": 2.45802,
+              "bps": 10,
+              "net_usd": -30.974259999999987
+            },
+            {
+              "allowance_usd": 6.14505,
+              "bps": 25,
+              "net_usd": -34.66128999999999
+            }
+          ],
+          "net_perfect_match": -28.516239999999986,
+          "spot_fee_bps_each_side": 60,
+          "spot_round_trip_fee": 29.496240000000004
+        },
+        {
+          "case": "base_assumed",
+          "future_entry_plus_exit_fee_budget": 3.0,
+          "future_fee_bps_each_side": 5,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -58.01247999999999
+            },
+            {
+              "allowance_usd": 2.45802,
+              "bps": 10,
+              "net_usd": -60.47049999999999
+            },
+            {
+              "allowance_usd": 6.14505,
+              "bps": 25,
+              "net_usd": -64.15753
+            }
+          ],
+          "net_perfect_match": -58.01247999999999,
+          "spot_fee_bps_each_side": 120,
+          "spot_round_trip_fee": 58.99248000000001
+        },
+        {
+          "case": "stress_assumed",
+          "future_entry_plus_exit_fee_budget": 10.0,
+          "future_fee_bps_each_side": 10,
+          "future_min_per_contract_each_side": 0.5,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -124.00496
+            },
+            {
+              "allowance_usd": 2.45802,
+              "bps": 10,
+              "net_usd": -126.46298
+            },
+            {
+              "allowance_usd": 6.14505,
+              "bps": 25,
+              "net_usd": -130.15001
+            }
+          ],
+          "net_perfect_match": -124.00496,
+          "spot_fee_bps_each_side": 240,
+          "spot_round_trip_fee": 117.98496000000002
+        }
+      ],
+      "free_cash_after_initial_margin_and_stress_entry_fee": 1698.7558950000002,
+      "future_buyback_mark_vwap": 2463.0,
+      "future_sell_vwap": 2462.0,
+      "initial_margin": 779.231625,
+      "liquidity_scenarios": [
+        {
+          "cash_headroom": 81.23423124999977,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_current_margin",
+          "required_margin": 1167.7432887500001,
+          "spot_gain_not_available_for_margin": 1229.01,
+          "stressed_future_price": 3691.01,
+          "variation_margin_outflow": 1229.0100000000002
+        },
+        {
+          "cash_headroom": -1086.5090575000004,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_double_margin",
+          "required_margin": 2335.4865775000003,
+          "spot_gain_not_available_for_margin": 1229.01,
+          "stressed_future_price": 3691.01,
+          "variation_margin_outflow": 1229.0100000000002
+        },
+        {
+          "cash_headroom": -1287.1756652500003,
+          "hedge_mark_loss_from_added_basis": 122.90100000000001,
+          "name": "price_rise_double_margin_extra_basis",
+          "required_margin": 2413.2521852500004,
+          "spot_gain_not_available_for_margin": 1229.01,
+          "stressed_future_price": 3813.911,
+          "variation_margin_outflow": 1351.911
+        }
+      ],
+      "quantity": 1.0,
+      "spot_buy_vwap": 2458.02,
+      "spot_cost": 2458.02,
+      "status": "REJECT_SAMPLED_ENTRY",
+      "total_cost_budget_to_beat_cash": {
+        "0.04": -4.0779992811389985,
+        "0.06": -8.106998921708506
+      },
+      "zero_fee_perfect_match_capture": 3.980000000000018,
+      "zero_fee_simple_annual_return_on_all_capital": 0.01975676522739742
+    },
+    {
+      "asset": "ETH",
+      "capital_usd": 25000,
+      "cash_hurdles": {
+        "0.04": 40.28999640569508,
+        "0.06": 60.43499460854261
+      },
+      "contracts": 50,
+      "entry_fee_stress": 319.96547680000003,
+      "fees": [
+        {
+          "case": "low_assumed",
+          "future_entry_plus_exit_fee_budget": 15.0,
+          "future_fee_bps_each_side": 2,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -142.7109384000014
+            },
+            {
+              "allowance_usd": 12.290228200000001,
+              "bps": 10,
+              "net_usd": -155.0011666000014
+            },
+            {
+              "allowance_usd": 30.7255705,
+              "bps": 25,
+              "net_usd": -173.4365089000014
+            }
+          ],
+          "net_perfect_match": -142.7109384000014,
+          "spot_fee_bps_each_side": 60,
+          "spot_round_trip_fee": 147.48273840000002
+        },
+        {
+          "case": "base_assumed",
+          "future_entry_plus_exit_fee_budget": 15.0,
+          "future_fee_bps_each_side": 5,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -290.1936768000014
+            },
+            {
+              "allowance_usd": 12.290228200000001,
+              "bps": 10,
+              "net_usd": -302.4839050000014
+            },
+            {
+              "allowance_usd": 30.7255705,
+              "bps": 25,
+              "net_usd": -320.9192473000014
+            }
+          ],
+          "net_perfect_match": -290.1936768000014,
+          "spot_fee_bps_each_side": 120,
+          "spot_round_trip_fee": 294.96547680000003
+        },
+        {
+          "case": "stress_assumed",
+          "future_entry_plus_exit_fee_budget": 50.0,
+          "future_fee_bps_each_side": 10,
+          "future_min_per_contract_each_side": 0.5,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -620.1591536000014
+            },
+            {
+              "allowance_usd": 12.290228200000001,
+              "bps": 10,
+              "net_usd": -632.4493818000014
+            },
+            {
+              "allowance_usd": 30.7255705,
+              "bps": 25,
+              "net_usd": -650.8847241000014
+            }
+          ],
+          "net_perfect_match": -620.1591536000014,
+          "spot_fee_bps_each_side": 240,
+          "spot_round_trip_fee": 589.9309536000001
+        }
+      ],
+      "free_cash_after_initial_margin_and_stress_entry_fee": 8493.648198199999,
+      "future_buyback_mark_vwap": 2463.0,
+      "future_sell_vwap": 2462.0,
+      "initial_margin": 3896.1581250000004,
+      "liquidity_scenarios": [
+        {
+          "cash_headroom": 405.9554998124977,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_current_margin",
+          "required_margin": 5838.7367233875,
+          "spot_gain_not_available_for_margin": 6145.114100000001,
+          "stressed_future_price": 3691.02282,
+          "variation_margin_outflow": 6145.114100000001
+        },
+        {
+          "cash_headroom": -5432.7812235750025,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_double_margin",
+          "required_margin": 11677.473446775,
+          "spot_gain_not_available_for_margin": 6145.114100000001,
+          "stressed_future_price": 3691.02282,
+          "variation_margin_outflow": 6145.114100000001
+        },
+        {
+          "cash_headroom": -6436.124728252505,
+          "hedge_mark_loss_from_added_basis": 614.5114100000001,
+          "name": "price_rise_double_margin_extra_basis",
+          "required_margin": 12066.305541452502,
+          "spot_gain_not_available_for_margin": 6145.114100000001,
+          "stressed_future_price": 3813.925102,
+          "variation_margin_outflow": 6759.625510000001
+        }
+      ],
+      "quantity": 5.0,
+      "spot_buy_vwap": 2458.0456400000003,
+      "spot_cost": 12290.228200000001,
+      "status": "REJECT_SAMPLED_ENTRY",
+      "total_cost_budget_to_beat_cash": {
+        "0.04": -20.518196405696457,
+        "0.06": -40.66319460854399
+      },
+      "zero_fee_perfect_match_capture": 19.77179999999862,
+      "zero_fee_simple_annual_return_on_all_capital": 0.019629487976031524
+    },
+    {
+      "asset": "ETH",
+      "capital_usd": 100000,
+      "cash_hurdles": {
+        "0.04": 161.1599856227803,
+        "0.06": 241.73997843417044
+      },
+      "contracts": 203,
+      "entry_fee_stress": 1299.102941547263,
+      "fees": [
+        {
+          "case": "low_assumed",
+          "future_entry_plus_exit_fee_budget": 60.9,
+          "future_fee_bps_each_side": 2,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -587.4740352429238
+            },
+            {
+              "allowance_usd": 49.90012256446929,
+              "bps": 10,
+              "net_usd": -637.3741578073931
+            },
+            {
+              "allowance_usd": 124.75030641117324,
+              "bps": 25,
+              "net_usd": -712.2243416540971
+            }
+          ],
+          "net_perfect_match": -587.4740352429238,
+          "spot_fee_bps_each_side": 60,
+          "spot_round_trip_fee": 598.8014707736315
+        },
+        {
+          "case": "base_assumed",
+          "future_entry_plus_exit_fee_budget": 60.9,
+          "future_fee_bps_each_side": 5,
+          "future_min_per_contract_each_side": 0.15,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -1186.2755060165555
+            },
+            {
+              "allowance_usd": 49.90012256446929,
+              "bps": 10,
+              "net_usd": -1236.1756285810247
+            },
+            {
+              "allowance_usd": 124.75030641117324,
+              "bps": 25,
+              "net_usd": -1311.0258124277286
+            }
+          ],
+          "net_perfect_match": -1186.2755060165555,
+          "spot_fee_bps_each_side": 120,
+          "spot_round_trip_fee": 1197.602941547263
+        },
+        {
+          "case": "stress_assumed",
+          "future_entry_plus_exit_fee_budget": 203.0,
+          "future_fee_bps_each_side": 10,
+          "future_min_per_contract_each_side": 0.5,
+          "mismatch_scenarios": [
+            {
+              "allowance_usd": 0.0,
+              "bps": 0,
+              "net_usd": -2525.9784475638185
+            },
+            {
+              "allowance_usd": 49.90012256446929,
+              "bps": 10,
+              "net_usd": -2575.8785701282877
+            },
+            {
+              "allowance_usd": 124.75030641117324,
+              "bps": 25,
+              "net_usd": -2650.728753974992
+            }
+          ],
+          "net_perfect_match": -2525.9784475638185,
+          "spot_fee_bps_each_side": 240,
+          "spot_round_trip_fee": 2395.205883094526
+        }
+      ],
+      "free_cash_after_initial_margin_and_stress_entry_fee": 32980.06296898343,
+      "future_buyback_mark_vwap": 2463.35960591133,
+      "future_sell_vwap": 2461.692118226601,
+      "initial_margin": 15820.711525000002,
+      "liquidity_scenarios": [
+        {
+          "cash_headroom": 147.13534233179962,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_current_margin",
+          "required_margin": 23703.57786941699,
+          "spot_gain_not_available_for_margin": 24950.06128223465,
+          "stressed_future_price": 3690.759176464761,
+          "variation_margin_outflow": 24950.06128223465
+        },
+        {
+          "cash_headroom": -23556.44252708519,
+          "hedge_mark_loss_from_added_basis": 0.0,
+          "name": "price_rise_double_margin",
+          "required_margin": 47407.15573883398,
+          "spot_gain_not_available_for_margin": 24950.06128223465,
+          "stressed_future_price": 3690.759176464761,
+          "variation_margin_outflow": 24950.06128223465
+        },
+        {
+          "cash_headroom": -27630.16378294205,
+          "hedge_mark_loss_from_added_basis": 2495.006128223465,
+          "name": "price_rise_double_margin_extra_basis",
+          "required_margin": 48985.870866467376,
+          "spot_gain_not_available_for_margin": 24950.06128223465,
+          "stressed_future_price": 3813.665882288577,
+          "variation_margin_outflow": 27445.067410458112
+        }
+      ],
+      "quantity": 20.3,
+      "spot_buy_vwap": 2458.13411647632,
+      "spot_cost": 49900.1225644693,
+      "status": "REJECT_SAMPLED_ENTRY",
+      "total_cost_budget_to_beat_cash": {
+        "0.04": -88.93255009207267,
+        "0.06": -169.51254290346282
+      },
+      "zero_fee_perfect_match_capture": 72.22743553070764,
+      "zero_fee_simple_annual_return_on_all_capital": 0.017926890537150342
+    }
+  ],
+  "schema": "dated-cash-carry-single-packet-v1"
+}

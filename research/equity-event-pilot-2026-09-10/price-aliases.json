@@ -1,0 +1,17 @@
+{
+  "purpose": "Targeted identifier repair after the original historical ticker returned an empty CSV; never replace the selected issuer or historical ticker.",
+  "aliases": {
+    "PTN": {
+      "provider_symbol": "PTNT",
+      "issuer_name": "Palatin Technologies, Inc.",
+      "historical_cik": "0000911216",
+      "evidence_url": "https://www.nasdaq.com/press-release/palatin-technologies-announces-transition-otc-pink-following-nyse-american-delisting",
+      "evidence": "Issuer announcement dated May 7, 2025 states common shares transition from PTN to PTNT on May 8, 2025. This later alias is used only to locate the original issuer's earlier data; its later listing state is not applied backward.",
+      "provider_identity_verified": false,
+      "status": "REJECTED_PROVIDER_IDENTIFIER_COLLISION",
+      "provider_metadata_name": "Internet Patents Corp",
+      "original_symbol_metadata_start": "2025-11-12",
+      "reason": "PTN has no requested history. The provider maps PTNT to a different issuer, so its rows cannot repair Palatin history."
+    }
+  }
+}

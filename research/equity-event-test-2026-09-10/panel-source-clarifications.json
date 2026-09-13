@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-11T02:59:52.686750+00:00",
+  "before_fitting_or_strategy_returns": true,
+  "narrative_source_checks": [
+    "Require nonempty current and original-prior clean narrative.",
+    "Unstructured financial-table narrative flagged by the extractor remains unresolved.",
+    "At least20 interior-letter substitution artifacts in a document and at least1% of its words is material corruption requiring source resolution. Isolated markers alone do not fail a document."
+  ],
+  "original_fixture_basis": "Known prior TEAM companion has933 corrupted words (12.09%); its main release haszero. Threshold is a source-integrity rule, not a trading parameter.",
+  "development_label_mask": "Do not calculate any label whose exit is after2021-12-31 until models and evaluation predictions are frozen. READY never depends on future endpoint availability.",
+  "eps_action_coverage": "Inspect all available strictly pre-entry action rows after the reported period, not only61sessions. Uncovered period-to-source-start interval remains missing."
+}

@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-09-11T01:59:48.724995+00:00",
+  "dividends": {
+    "absence_of_dividend_key_is_not_zero_event_proof": true,
+    "document_current_information_date": "2023-09-27",
+    "document_fiscal_year_end": "2023-06-30",
+    "issuer_statement": "Dividends and dividend policy. We have never declared or paid any dividends.",
+    "reported_yahoo_dividend_events": 0,
+    "through_october_2023_verified": false
+  },
+  "historical_close_anchor": {
+    "conclusion": "The downloaded close is not contemporaneous raw; this one anchor is consistent with the later 1:50 split. It does not certify every OHLC field or the complete adjustment chain.",
+    "grant_date": "2023-06-20",
+    "issuer_reported_close_usd": 2.19,
+    "matches_50_factor": true,
+    "preceding_regular_session": "2023-06-16",
+    "source_excerpt": "On June 20, 2023, the Chairman of the board of directors received 13,000 restricted stock units which vest on June 20, 2024 and an option to purchase 22,000 shares of common stock, and each other serving non-employee director received 10,000 restricted stock units which vest on June 20, 2024 and an option to purchase 16,000 shares of common stock. All of the options have an exercise price of $2.19 per share, the closing price of our common stock on the business day immediately preceding the date of grant",
+    "source_to_contemporaneous_ratio": 50.0,
+    "yahoo_current_historical_close": 109.5
+  },
+  "identity": {
+    "cik": "0000911216",
+    "current_provider_exchange_is_not_historical_evidence": true,
+    "current_provider_name_match": true,
+    "historical_common_stock_symbol": "PTN",
+    "historical_exchange": "NYSE American",
+    "issuer": "Palatin Technologies, Inc."
+  },
+  "network_stop": "Bounded ten-request pass completed; no browser verification workaround or further vendor search.",
+  "no_strategy_returns": true,
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "reconstruction": {
+    "performed": false,
+    "reason": "Complete subsequent corporate actions and OHLC/volume adjustment semantics remain unresolved; a single price anchor cannot justify a full raw reconstruction."
+  },
+  "source_documents": [
+    {
+      "facts": {
+        "expected_adjusted_trading_session": "2022-08-31",
+        "historical_exchange": "NYSE American",
+        "historical_symbol": "PTN",
+        "legal_effective_eastern": "2022-08-30T17:00:00-04:00",
+        "new_shares": 1,
+        "old_shares": 25,
+        "post_split_cusip": "696077502"
+      },
+      "id": "issuer_2022_split",
+      "scope": "Issuer announcement; corroborated by the FY2023 annual report and the chart split event.",
+      "url": "https://palatin.com/press_releases/palatin-announces-intent-to-effect-reverse-stock-split/"
+    },
+    {
+      "facts": {
+        "announced_legal_effective_eastern": "2025-08-08T17:00:00-04:00",
+        "expected_adjusted_trading_session": "2025-08-11",
+        "new_shares": 1,
+        "old_shares": 50,
+        "post_split_cusip": "696077601"
+      },
+      "id": "issuer_2025_split",
+      "scope": "Action-only issuer announcement. Not a complete later-action ledger or an executed-date confirmation; no 2024\u20132025 price series was requested.",
+      "url": "https://palatin.com/press_releases/palatin-announces-1-for-50-reverse-stock-split/"
+    },
+    {
+      "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-annual-report-2023.pdf",
+      "id": "issuer_2023_annual_report",
+      "scope": "Issuer-authored FY2023 report on a third-party document mirror. Its dividend statement is not extended through October 2023.",
+      "sha256": "d8ee79382f1aa440b769683677fa756acb0c28fd2e06954e72a33c7862c3d9ad",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/p/AMEX_PTN_2023.pdf"
+    },
+    {
+      "id": "yahoo_adjusted_close_help",
+      "scope": "Official provider definition: adjusted close incorporates splits and dividend distributions; this does not establish raw OHLC or volume adjustment semantics.",
+      "url": "https://help.yahoo.com/kb/SLN28256.html"
+    }
+  ],
+  "volume": {
+    "independent_historical_volume_anchor": null,
+    "inversion_performed": false,
+    "provider_basis_verified": false
+  }
+}

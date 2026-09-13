@@ -1,0 +1,19 @@
+{
+  "authorization": "Root approved this conservative rounding interpretation before candidate performance calculation.",
+  "base_execution_plan_sha256": "ccd3340ceb24d1e1cf0a7a6a41a8701157f88085c4057a2855a9b22a43621ed6",
+  "base_protocol_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "clarifications": [
+    {
+      "id": "rounded_entry_reserve",
+      "reason": "For odd quantities above 200 shares, upward-rounded $0.005/share commission can exceed the unrounded reserve by half a cent. Forward splits can produce such quantities even when the decision raw close exceeds $5.",
+      "rule": "Both prior-close integer sizing and stressed closing-limit eligibility must satisfy the stated reserve and actual rounded stressed purchase cost <= the committed budget. Never increase a quantity beyond the stated-reserve solution.",
+      "scope": "Numerical cash-envelope correction; no parameter or signal change."
+    },
+    {
+      "id": "fractional_corporate_action_units",
+      "rule": "Preserve exact units after a verified split. A fractional entitlement remains unresolved until explicit treatment exists; do not invent a cash-in-lieu amount or execute fractional stock under the whole-share policy."
+    }
+  ],
+  "created_utc": "2026-09-11T02:37:24.077558+00:00",
+  "schema_version": 1
+}

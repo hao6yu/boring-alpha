@@ -1,0 +1,47 @@
+[
+  {
+    "accessionNumber": "0000950170-23-034400",
+    "filingDate": "2023-07-25",
+    "reportDate": "2023-07-25",
+    "acceptanceDateTime": "2023-07-25T20:02:47.000Z",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "primaryDocument": "msft-20230725.htm",
+    "ticker": "MSFT",
+    "cik": "0000789019",
+    "exhibit_filename": "msft-ex99_1.htm",
+    "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-ex99_1.htm",
+    "text_characters": 29530,
+    "text_words": 4392
+  },
+  {
+    "accessionNumber": "0000104169-23-000088",
+    "filingDate": "2023-08-17",
+    "reportDate": "2023-08-17",
+    "acceptanceDateTime": "2023-08-17T10:59:53.000Z",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "primaryDocument": "wmt-20230817.htm",
+    "ticker": "WMT",
+    "cik": "0000104169",
+    "exhibit_filename": "earningsreleasefy24q2.htm",
+    "exhibit_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/earningsreleasefy24q2.htm",
+    "text_characters": 40474,
+    "text_words": 6322
+  },
+  {
+    "accessionNumber": "0000019617-23-000425",
+    "filingDate": "2023-07-14",
+    "reportDate": "2023-07-14",
+    "acceptanceDateTime": "2023-07-14T10:46:08.000Z",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "primaryDocument": "jpm-20230714.htm",
+    "ticker": "JPM",
+    "cik": "0000019617",
+    "exhibit_filename": "a2q23erfexhibit991narrative.htm",
+    "exhibit_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000425/a2q23erfexhibit991narrative.htm",
+    "text_characters": 28608,
+    "text_words": 4594
+  }
+]

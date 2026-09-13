@@ -1,0 +1,61 @@
+{
+  "adverse_exit_mismatch_bps": [
+    0,
+    10,
+    25
+  ],
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "assets_are_separate_alternatives": true,
+  "capital_usd": [
+    5000,
+    25000,
+    100000
+  ],
+  "cash_margin_rate": "observed short overnight rate",
+  "cash_rates": [
+    0.04,
+    0.06
+  ],
+  "collateral_interest": 0,
+  "cost_scenarios_paired_not_grid": [
+    "low_assumed",
+    "base_assumed",
+    "stress_assumed"
+  ],
+  "created_at": "2026-09-10T22:03:34.520504+00:00",
+  "dated_future_fee_bps_per_side": [
+    2,
+    5,
+    10
+  ],
+  "dated_future_fee_min_usd_per_contract": [
+    0.15,
+    0.15,
+    0.5
+  ],
+  "decision": "sampled opportunity must clear 6% on all capital after base and stress modeled friction and 25bps adverse exit mismatch, and funding stress; no annual profitability claim",
+  "entry_prices": "spot ask depth VWAP and futures bid depth VWAP; no second spread charge",
+  "exit_price_for_fee_scenarios": "unchanged entry spot price; not an exit forecast",
+  "fees_are_assumptions_not_verified_personal_rates": true,
+  "futures_exit_fee": "same as entry fee budgeted for closing/settlement, actual expiry fee unverified",
+  "max_book_age_seconds": 15,
+  "max_data_only_attempts": 3,
+  "max_leg_fraction": 0.5,
+  "max_pair_skew_seconds": 2,
+  "min_hours_to_expiry": 48,
+  "min_initial_free_cash_fraction": 0.2,
+  "scope": "one Coinbase retail spot/expiring futures quote screen; no orders or private endpoints",
+  "sizing_fee_case": "stress_assumed",
+  "spot_fee_bps_per_side": [
+    60,
+    120,
+    240
+  ],
+  "stress_additional_future_basis_fraction": 0.05,
+  "stress_margin_rate_multiplier": 2,
+  "stress_price_rise": 0.5,
+  "zero_fee_case": "perfect settlement match, no fees, no interest, no exit slippage; reference only"
+}

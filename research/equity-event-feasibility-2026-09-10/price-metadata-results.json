@@ -1,0 +1,94 @@
+{
+  "results": [
+    {
+      "ticker_requested": "MSFT",
+      "url": "https://api.tiingo.com/tiingo/daily/msft",
+      "started_at": "2026-09-10T22:53:18.106034+00:00",
+      "http_status": 200,
+      "received_at": "2026-09-10T22:53:18.302641+00:00",
+      "raw_sha256": "4bd550f37a13c65f381b2d8b1ba6bc328fbbd2662312577264e8c2a8553f7cfc",
+      "raw_bytes": 516,
+      "metadata": {
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "exchangeCode": "NASDAQ",
+        "startDate": "1986-03-13",
+        "endDate": "2026-09-10"
+      }
+    },
+    {
+      "ticker_requested": "WMT",
+      "url": "https://api.tiingo.com/tiingo/daily/wmt",
+      "started_at": "2026-09-10T22:53:18.562605+00:00",
+      "http_status": 200,
+      "received_at": "2026-09-10T22:53:18.725820+00:00",
+      "raw_sha256": "18751c330c61094324619f1ea11b4138859f73819e9449a8ebaec555a04f3bef",
+      "raw_bytes": 678,
+      "metadata": {
+        "ticker": "WMT",
+        "name": "Walmart Inc",
+        "exchangeCode": "NASDAQ",
+        "startDate": "1972-08-25",
+        "endDate": "2026-09-10"
+      }
+    },
+    {
+      "ticker_requested": "JPM",
+      "url": "https://api.tiingo.com/tiingo/daily/jpm",
+      "started_at": "2026-09-10T22:53:18.982586+00:00",
+      "http_status": 200,
+      "received_at": "2026-09-10T22:53:19.170294+00:00",
+      "raw_sha256": "2199776a82f7db431f9f183d3624bc5e905f859c40f28381f62e71552f6ed4e1",
+      "raw_bytes": 734,
+      "metadata": {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase & Company",
+        "exchangeCode": "NYSE",
+        "startDate": "1983-12-30",
+        "endDate": "2026-09-10"
+      }
+    },
+    {
+      "ticker_requested": "ATVI",
+      "url": "https://api.tiingo.com/tiingo/daily/atvi",
+      "started_at": "2026-09-10T22:53:19.424566+00:00",
+      "http_status": 200,
+      "received_at": "2026-09-10T22:53:19.658261+00:00",
+      "raw_sha256": "aec57d5aa606f3643d9c3539e66255f29a3b44497a228f29763a8f60411bc358",
+      "raw_bytes": 528,
+      "metadata": {
+        "ticker": "ATVI",
+        "name": "Activision Blizzard Inc",
+        "exchangeCode": "NASDAQ",
+        "startDate": "1993-10-25",
+        "endDate": "2023-10-13"
+      }
+    },
+    {
+      "ticker_requested": "SIVB",
+      "url": "https://api.tiingo.com/tiingo/daily/sivb",
+      "started_at": "2026-09-10T22:53:19.913019+00:00",
+      "http_error": 404
+    }
+  ],
+  "raw_directory": "data/snapshots/equity-event-metadata-2026-09-10",
+  "interpretation": "metadata ranges only; row continuity, corporate actions and terminal delisting outcomes remain unverified",
+  "targeted_alias_followup": {
+    "ticker_requested": "SIVBQ",
+    "url": "https://api.tiingo.com/tiingo/daily/sivbq",
+    "started_at": "2026-09-10T22:55:27.589564+00:00",
+    "reason": "targeted alias followup after SIVB404; symbol change corroborated by OCCmemo52179",
+    "alias_source": "https://infomemo.theocc.com/infomemos?number=52179",
+    "http_status": 200,
+    "received_at": "2026-09-10T22:55:27.785804+00:00",
+    "raw_sha256": "7bc2d7703379f1604826b3143fa0dae74501c6dcbe45a4013822720b4434aa74",
+    "raw_bytes": 223,
+    "metadata": {
+      "ticker": "SIVBQ",
+      "name": "SVB Financial Group",
+      "exchangeCode": "PINK",
+      "startDate": "1990-03-26",
+      "endDate": "2026-09-10"
+    }
+  }
+}

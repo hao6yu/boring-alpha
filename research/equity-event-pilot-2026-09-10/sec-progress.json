@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "daily_timing_proxy_success": 99,
+    "exact_timestamp_mismatches_current": 20,
+    "fixed_slots": 100,
+    "historical_security_cover_success": 99,
+    "original_prior_document_matches": 97,
+    "preliminary_predecessor_policy_ambiguity": 4,
+    "sec_join_ready_excluding_prices_and_accounting_feature_validation": 93,
+    "selected_full_earnings_releases": 99
+  },
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "sec_events_sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+  "status": "SEC_COLLECTION_COMPLETE_PENDING_INDEPENDENT_AUDIT",
+  "updated_at": "2026-09-11T00:09:07.689272+00:00"
+}

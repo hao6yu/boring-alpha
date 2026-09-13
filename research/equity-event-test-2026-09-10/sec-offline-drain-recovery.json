@@ -1,0 +1,31 @@
+{
+  "network_requests_made": 0,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "preserved_request_count": 1134,
+  "results": [
+    {
+      "cik": "0001443669",
+      "current": 4,
+      "prior": 4,
+      "source_failures": 12
+    },
+    {
+      "cik": "0000100493",
+      "current": 2,
+      "prior": 2,
+      "source_failures": 14
+    },
+    {
+      "cik": "0001562401",
+      "current": 6,
+      "prior": 6,
+      "source_failures": 11
+    },
+    {
+      "cik": "0001683695",
+      "current": 6,
+      "prior": 6,
+      "source_failures": 10
+    }
+  ]
+}

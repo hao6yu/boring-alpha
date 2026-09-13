@@ -1,0 +1,206 @@
+{
+  "created_utc": "2026-09-11T02:47:03.264170+00:00",
+  "data_gate": {
+    "changed_slots": [
+      "0000911216-W1",
+      "0000911216-W2",
+      "0000911216-W3",
+      "0000911216-W4"
+    ],
+    "data_gate_sha256": "9b895b627fce30888f1f6a86d0bcc57746408e649f4312dfc41d2c408739686d",
+    "fixed_slots_new": 100,
+    "fixed_slots_old": 100,
+    "new_cohort_training_data_certified": false,
+    "new_combined_qualified": 97,
+    "non_ptn_slots_unchanged": true,
+    "note": "PTN rows preserve alternative_price_unresolved_reasons from the earlier source. Those are historical alternative-source limitations, not a newly failed Databento source gate; the named source and top-level limitations distinguish scope.",
+    "old_combined_qualified": 93,
+    "old_repair_sha256": "8b808bea7816499efa6f29b8bf45a487cb0ea276a53c41d1cf8dd4b048f75f06",
+    "ptn_complete_windows": [
+      {
+        "actions_pass": true,
+        "observed_sessions": 81,
+        "required_sessions": 81,
+        "slot_id": "0000911216-W1",
+        "source_gate_pass": true
+      },
+      {
+        "actions_pass": true,
+        "observed_sessions": 81,
+        "required_sessions": 81,
+        "slot_id": "0000911216-W2",
+        "source_gate_pass": true
+      },
+      {
+        "actions_pass": true,
+        "observed_sessions": 81,
+        "required_sessions": 81,
+        "slot_id": "0000911216-W3",
+        "source_gate_pass": true
+      },
+      {
+        "actions_pass": true,
+        "observed_sessions": 81,
+        "required_sessions": 81,
+        "slot_id": "0000911216-W4",
+        "source_gate_pass": true
+      }
+    ],
+    "ptn_expected_sessions": 336,
+    "ptn_full_audit_sha256": "e42d6f51f81660718b7548d9735a4f5622d72d759a1c5b1afe44c01cae6467ab",
+    "ptn_observed_sessions": 336,
+    "remaining_failures": [
+      "0001631282-W1",
+      "0001631282-W2",
+      "0001631282-W3"
+    ]
+  },
+  "findings": [
+    {
+      "description": "Original final fit reused the2020-cutoff subset, omitting late2020 observations mature by2021. Root now reconstructs2020 training rows at the final2021 cutoff.",
+      "id": "late2020_final_refit",
+      "status": "RESOLVED_BY_ROOT_BEFORE_LABELS"
+    },
+    {
+      "description": "Original DictVectorizer input could encode an absent numeric key as0 without a missing indicator. Root now derives a training-only feature schema and normalizes omission to missing.",
+      "id": "omitted_numeric_key",
+      "status": "RESOLVED_BY_ROOT_BEFORE_LABELS"
+    }
+  ],
+  "historical_labels_constructed": false,
+  "limitations": [
+    "This does not certify historical feature extraction, label construction, leakage-free upstream status/identity gates, sample sufficiency, or profitability.",
+    "The97/100 result concerns the old fixed availability-control cohort, not the new100-issuer2019 cohort or its1600 event slots.",
+    "PTN remains a primary-venue daily proxy with recorded fallback trades and source limitations, not proof of consolidated volume or actual auction fills.",
+    "The numeric/text models may legitimately fail fit on an empty vocabulary, all unusable labels, nonconvergence, or deficient sample size; no rescue parameter changes were introduced."
+  ],
+  "model_sha256": "57cf58cba7d8c004b280efa64b432cf444989f37e0a172a1b76b0544ccecd11a",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "schema_version": 1,
+  "scope": "Independent bounded model-code and source-gate audit before actual labels. Synthetic tests only; raw source files were byte-hashed, not parsed for prices or strategy returns. No network or model.py edits by this reviewer.",
+  "source_hash_checks": [
+    {
+      "actual_sha256": "8b808bea7816499efa6f29b8bf45a487cb0ea276a53c41d1cf8dd4b048f75f06",
+      "expected_sha256": "8b808bea7816499efa6f29b8bf45a487cb0ea276a53c41d1cf8dd4b048f75f06",
+      "match": true,
+      "path": "research/equity-event-repair-2026-09-10/result.json"
+    },
+    {
+      "actual_sha256": "e42d6f51f81660718b7548d9735a4f5622d72d759a1c5b1afe44c01cae6467ab",
+      "expected_sha256": "e42d6f51f81660718b7548d9735a4f5622d72d759a1c5b1afe44c01cae6467ab",
+      "match": true,
+      "path": "research/equity-event-test-2026-09-10/ptn-full-audit.json"
+    },
+    {
+      "actual_sha256": "6bb4e99273e3e1adff331b0d94035000bdf1eaae982126f5139b23553a76e6e5",
+      "expected_sha256": "6bb4e99273e3e1adff331b0d94035000bdf1eaae982126f5139b23553a76e6e5",
+      "match": true,
+      "path": "research/equity-event-test-2026-09-10/ptn-actions.json"
+    },
+    {
+      "actual_sha256": "59438471e680169287bc11669f33098f1aad3971a4023cf81775b46cd9c266d0",
+      "expected_sha256": "59438471e680169287bc11669f33098f1aad3971a4023cf81775b46cd9c266d0",
+      "match": true,
+      "path": "research/equity-event-test-2026-09-10/ptn-download-manifest.json"
+    },
+    {
+      "actual_sha256": "e6f787ea138dc7e025ec0c7739fc21cd5d15bdca70edd87ad644c687c83c9c81",
+      "expected_sha256": "e6f787ea138dc7e025ec0c7739fc21cd5d15bdca70edd87ad644c687c83c9c81",
+      "match": true,
+      "path": "research/equity-event-test-2026-09-10/full_audit_ptn.py"
+    },
+    {
+      "actual_sha256": "805e440ef803fef350e3dc59b3f8e7ba6bab7edc48849e002dc46671d4486517",
+      "expected_sha256": "805e440ef803fef350e3dc59b3f8e7ba6bab7edc48849e002dc46671d4486517",
+      "match": true,
+      "path": "research/equity-event-test-2026-09-10/databento-source-review.json"
+    },
+    {
+      "actual_sha256": "1c6db40e2622a4031811078611f85d01c11314295c223db49722fd801112e431",
+      "expected_sha256": "1c6db40e2622a4031811078611f85d01c11314295c223db49722fd801112e431",
+      "match": true,
+      "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/04489fa8cf4235daa196cbf4ccc7e00fe3f2f31de4f95bb69fc787c72e6e3770.htm"
+    },
+    {
+      "actual_sha256": "55af40f15ef189a9138aeb88838aacfb6d6cbf12d0305befba48eb0a9f90908e",
+      "expected_sha256": "55af40f15ef189a9138aeb88838aacfb6d6cbf12d0305befba48eb0a9f90908e",
+      "match": true,
+      "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/a163e0b52a05ee33d86d7ed7559e5761f23747fefd8608b5fbc2f01b86a96733.htm"
+    },
+    {
+      "actual_sha256": "36fcbbe7281ca1580213d8e516ed820c94a6b22b98efe136d1c2d8d114db23bd",
+      "expected_sha256": "36fcbbe7281ca1580213d8e516ed820c94a6b22b98efe136d1c2d8d114db23bd",
+      "match": true,
+      "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/cd170674c0e28abadcd739c7f9ccd26424380ca11e52bf33715fca20fc3a444c.htm"
+    },
+    {
+      "actual_sha256": "c031680f0eb140d2e29c65e0d30813caa4f1f9453e56c95aa324b646b1609fe5",
+      "expected_sha256": "c031680f0eb140d2e29c65e0d30813caa4f1f9453e56c95aa324b646b1609fe5",
+      "match": true,
+      "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/df81ed4f170c8e6dcf23f1d91e5dc8f02febe513382e7cdbb60d33e50d158b49.htm"
+    },
+    {
+      "actual_sha256": "f3242388a631edae7c02dba04a5b22a87fefba4b0d0a8d4419ad708fe562b565",
+      "expected_sha256": "f3242388a631edae7c02dba04a5b22a87fefba4b0d0a8d4419ad708fe562b565",
+      "match": true,
+      "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/f7e479c110c0121491121a2e2d19d8d928f3694d37144d505925591809a2f665.htm"
+    },
+    {
+      "actual_sha256": "b04af1dfd663c448a84f82eb3d38d2b56f9ef19c30e75af56be1eeec877ef7f9",
+      "expected_sha256": "b04af1dfd663c448a84f82eb3d38d2b56f9ef19c30e75af56be1eeec877ef7f9",
+      "match": true,
+      "path": "data/snapshots/equity-event-repair-2026-09-10/ptn-issuer-split-2022.html"
+    },
+    {
+      "actual_sha256": "fa27208fea50ef32a7716ea37c8f4beeb0488ed710e32b9b4cef17327505e165",
+      "expected_sha256": "fa27208fea50ef32a7716ea37c8f4beeb0488ed710e32b9b4cef17327505e165",
+      "match": true,
+      "path": "data/snapshots/equity-event-test-2026-09-10/sec/0d080f7d4bb62444e029867b6ca3077b9e47f70b13ab9c9237364df98727aef8.htm"
+    },
+    {
+      "actual_sha256": "66764e7a82d7a08ab4cf412c34326a7a38e6d5c2dbc0a805f515f87d668ec4d5",
+      "expected_sha256": "66764e7a82d7a08ab4cf412c34326a7a38e6d5c2dbc0a805f515f87d668ec4d5",
+      "match": true,
+      "path": "data/snapshots/equity-event-test-2026-09-10/sec/12da602575652749952941cc2c76c67109ab4f98f1b159b4aa45ae1526bba649.html"
+    },
+    {
+      "actual_sha256": "71d550416622266465389c90bdf913f680499cbf8120b0f350a98619d0d1f732",
+      "expected_sha256": "71d550416622266465389c90bdf913f680499cbf8120b0f350a98619d0d1f732",
+      "match": true,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-trades.jsonl"
+    },
+    {
+      "actual_sha256": "bf5e58d1c53330602c2bb6404c9078d87f081b4959ca79ce7d8614136aa2370f",
+      "expected_sha256": "bf5e58d1c53330602c2bb6404c9078d87f081b4959ca79ce7d8614136aa2370f",
+      "match": true,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-statistics.jsonl"
+    },
+    {
+      "actual_sha256": "842fd41ad851afc8d343fd9845d059beadac3116d6c2ba0cb3b8d2b5761faa9d",
+      "expected_sha256": "842fd41ad851afc8d343fd9845d059beadac3116d6c2ba0cb3b8d2b5761faa9d",
+      "match": true,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-definition.jsonl"
+    },
+    {
+      "actual_sha256": "f20ccfb0aec8982a3567cdf2d8ebea848716d92adad496cd3677466fa6b24fc2",
+      "expected_sha256": "f20ccfb0aec8982a3567cdf2d8ebea848716d92adad496cd3677466fa6b24fc2",
+      "match": true,
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/rawcanonicaldaily.json"
+    }
+  ],
+  "status": "PASS_BOUNDED_CHECKS_AFTER_ROOT_CORRECTIONS",
+  "strategy_returns_calculated": false,
+  "synthetic_tests": {
+    "checks": [
+      "Initial2020 fit rejects labels maturing in2021; predictions cannot precede fitted cutoff.",
+      "Final2020-2021 fit vocabulary/IDF/term selection/imputation/scaling/coefficients remain unchanged by2022-2023 heldout words, categories, extreme features or target changes.",
+      "Unmasked evaluation labels are rejected before model selection.",
+      "Each model chooses its own alpha from2021 MSE; initial fits exclude late2020 labels but final2021-cutoff refits include them; evaluation observations never enter a fit.",
+      "Omitted numeric keys are treated consistently with explicit missing values, not as observed zeros."
+    ],
+    "command": ".venv/bin/python -m pytest tests/test_equity_event_model.py -q",
+    "passed": 5
+  },
+  "test_file": "tests/test_equity_event_model.py",
+  "test_sha256": "51b85fdf97a862141e69c776ce439985b2626935232d41cf4860b26ea41df83e"
+}

@@ -1,0 +1,223 @@
+{
+  "changes": [
+    {
+      "accession": "0001193125-20-065263",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/8ecbb45c83075053cb41d81aee68c22b344dd0caa026796cc72bc0a161d18699.htm",
+      "source_sha256": "0b6466b709f5fd2604299d2f9f2f268147422332bcb3c1aa95568523371cd7a0"
+    },
+    {
+      "accession": "0001055160-20-000012",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/7a8c0ac3f6be2067334ff9f730bf7dd4d33026ddd08f399e8de66d0a5ee4d9b4.htm",
+      "source_sha256": "9caa184a4be8a71838dea96953b7a519e418dec8800916052d24089936ecc1f7"
+    },
+    {
+      "accession": "0001193125-20-005816",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/2175bbfdf272293aca1b19eedb0ad42d71c50e983ef3f68a558df7f1c46a4f1b.htm",
+      "source_sha256": "2644862aa8df2be717c6abf00926453fc003dbfc6567a60e63eb42310a8d17f0"
+    },
+    {
+      "accession": "0001193125-21-010198",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/838a743530e3f3501972ba0681bf6e548d745e82b1da2ebb73aa5a0ef3c6ccf1.htm",
+      "source_sha256": "f48aadb22a0a80959bea24c5a6ef5728f64806d8e1122c2e8b38089baa6df26c"
+    },
+    {
+      "accession": "0001564590-20-000550",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/958954ac550a488b32c11f5cb7f39287e5312d369feebfe77babf1a10b611cc2.htm",
+      "source_sha256": "a5d6531a3b8419f62345d45d35e907ac286dd0310ac7f3323b8cc6d7fcf37311"
+    },
+    {
+      "accession": "0001564590-21-000493",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/1ddb5cec481c347509ee212a11a3aa9d198345e45e7e177188760cc009341182.htm",
+      "source_sha256": "0b0069adb2309c93d2d8039f2ebd6710d7ee94a087393f69b3c7f7a6496bd9bc"
+    },
+    {
+      "accession": "0000950170-22-000098",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/78600cd9484b0b34c5f1d590b3e8b314089a8c070b32b34c425b783bb3332fd2.htm",
+      "source_sha256": "b655d61f56a17b8d393fb87ae478bf0b16ac1fd3448daac9a6e6fd00e9693014"
+    },
+    {
+      "accession": "0000950170-23-000179",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/caacce4ad355de42cd30a29fc4e0b76cfd342e3621c176f919229a0a9f695ae1.htm",
+      "source_sha256": "4919f8f2e9852644abaa19088ec3f183752c32f3991a0cee9f113c745df1f844"
+    },
+    {
+      "accession": "0001193125-21-225843",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/ac89387d960aa3ccf90c74300607360feb84d65233e22537104789f53e333f4d.htm",
+      "source_sha256": "3d4bd87ce3128833e26dc868f4b2f85917e37b4cf8c0d86d7c47dfaf17574e03"
+    },
+    {
+      "accession": "0001193125-23-026931",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/21647fafe5e1624c7231bf069af418da2e68f6ae5e8db795df72608ecf04a3d0.htm",
+      "source_sha256": "9bdd4a9b31a5b3b56d8a5d18a9c831ca5568f5ab5961b454adebc172972ceb82"
+    },
+    {
+      "accession": "0001490281-20-000048",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/160959f046377505e26e132a0bc6d6c83ce62723f9b3ea72cf95707df3bdd571.htm",
+      "source_sha256": "e96cc31238913196fcda38444aafd7ff06518ebdff871e5e24c4da54941c624c"
+    },
+    {
+      "accession": "0001493152-21-009909",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/93830c6991d4fa8ce719cf9a71434abcf7d5cf775887c8768412256dcc67b157.htm",
+      "source_sha256": "6739e607b9ee6011287d734859e58da60b55fb3d99b8fb9cdd65f7188e0bbb3f"
+    },
+    {
+      "accession": "0001091907-20-000003",
+      "classification": "PRELIMINARY",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/73226a280092b4d0ffb45a4a9602406d4656b941f46d65c2c30964a66aeb6f1b.htm",
+      "source_sha256": "c6f4cebda8bc8bbf7d64f44a967079ab2ab1a2302f713b82f48d6ad262b533ad"
+    },
+    {
+      "accession": "0001493152-21-002462",
+      "classification": "GUIDANCE_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/ca2881c7a5dd18980be201be4bbe9ee1c41272f5a8fbc859a36afb69f43b4a49.htm",
+      "source_sha256": "5423a332e09170e16589a65b3a44744087d9df179c5f3e22e6e5ceec214b25be"
+    },
+    {
+      "accession": "0001638833-21-000008",
+      "classification": "GUIDANCE_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/740a96fe9f54dc3ecb8284bf6b627949a29889ddb6873590c98e0fbd8c7df82a.htm",
+      "source_sha256": "d0c2b78ecfd61a1934851894081b9b52f469dd5498c8246c845dad4823ea6244"
+    },
+    {
+      "accession": "0001638833-23-000002",
+      "classification": "GUIDANCE_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/0155a6f6810cb78acf1ddd547ba3b94e1a0569bbd31e17bd2bb896e7ce07645c.htm",
+      "source_sha256": "0aeeb1e3eaf0449b9943d6970446a5fd9d05a7e5dfa23885097009f8bf7d6c14"
+    },
+    {
+      "accession": "0001055160-20-000015",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/48615ce7d076ef8699d2ddda2ffbe2698e90753244a6de68ef5b8a28ea904cc2.htm",
+      "source_sha256": "286f9057d26326c63a1b1c0089e20bf4d887d1cf830b9fa280912fe95d8a1a99"
+    },
+    {
+      "accession": "0001104659-20-069459",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/3e1134d2ab2be05bb8df67ffc2d56659b0fedad7090afffd8b54ff1713ab8db9.htm",
+      "source_sha256": "095df2a4c3f8421324b025b6a469bbdd1c01edeb838cd933749ee7e459455ddb"
+    },
+    {
+      "accession": "0000065984-23-000086",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/10834958c94fe691acf60670d3f7b50a5b925a175c074dad2e77843ce1874bd0.htm",
+      "source_sha256": "c0732c41997a4a0994aa81935ca83768f89f3775b37a88f3b98a016c7a516bf7"
+    },
+    {
+      "accession": "0000922224-20-000007",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/180bccb446d21cb2db06c95aa36a6ed9a466ad2117872efbb05c69fcfce046f2.htm",
+      "source_sha256": "855128a83c5dac4472b2695df5ed087bf62baa4109d68e8ace3911db71cd65df"
+    },
+    {
+      "accession": "0000922224-21-000008",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/2868aa191253b438e34473452b383fbd9c1606479543974ad5b8bd725900f750.htm",
+      "source_sha256": "bbf82aad61464f03d82f96c23b4992c18199566b7e1d4f304897892db6809026"
+    },
+    {
+      "accession": "0001638833-20-000032",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/caf97529d98222e05274a50d77d2c07a521eb174154f05329a150b197f04fe50.htm",
+      "source_sha256": "4b8077bb62f0457649c38cdc053cfa68731e6817c8a27005de88d606f0db770a"
+    },
+    {
+      "accession": "0001193125-20-105921",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/ea57335a286692ec538f13af4f45b951ccab1de96d9a97f45db66404797bdc90.htm",
+      "source_sha256": "c6830b2ea0bc2e614ccd692c0198c3afd6a48811739727f53a1b0304160a9a64"
+    },
+    {
+      "accession": "0001171843-20-003653",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/e00305e9dcda540f2f35042c9bc2a99e6e0970fed2ebe14162fbe2ebf41fbcb7.htm",
+      "source_sha256": "e3838789362861c4bbc3e42ef1a98f58d2623dad132210d9228cfbbbaa5de48e"
+    },
+    {
+      "accession": "0001171843-21-000155",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/298499f29b40b69c6ec21a6af19302632d053993315441bdb1546b4cc8fde433.htm",
+      "source_sha256": "fb891af485db71b772b067785ee362e19860c153023ba1669e30692643f37245"
+    },
+    {
+      "accession": "0001171843-21-002382",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/5845abd1954153d212ee0f300a2e9bb9be9dd7106ea97f4ed450a96cf1902f23.htm",
+      "source_sha256": "982bb813bfb5a97c518b3ab3bec9b283d6c22ff666aac69237f3cec95decaf34"
+    },
+    {
+      "accession": "0001193125-21-034362",
+      "classification": "OTHER_CORPORATE_UPDATE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/028989002748cd804fb14cbaa596b24388459e3852ed4258d9be5f5a25834fe5.htm",
+      "source_sha256": "aa4a403860e5b6a0b41f3cea8c6eb606ec35508c69f475fcc734c25f026ed96c"
+    },
+    {
+      "accession": "0000950170-23-058156",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/3e4882cf936b9f876440ca92e071e0767dd939ca5125f36b562bb9cf9ac74fb0.htm",
+      "source_sha256": "8dd561dd757b357fb00e203b744b516be387a5e637b58ecf6de27d2cbdaf197c"
+    },
+    {
+      "accession": "0001193125-19-312046",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/4659fd65d3665c9d24bbd5d953268001b08eb8a5158a441027c81a7f1fc5539c.htm",
+      "source_sha256": "9c58b07e1b26baa1e488e6f35a20b80a4a149e8752675e1156b69e6421383c91"
+    },
+    {
+      "accession": "0001193125-20-032157",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/4a06504e284bcadafc1ac1ae0efd01050e4d3c0ab2f12bfb8faf4d867634444b.htm",
+      "source_sha256": "1ff6e79bcf931c3de6bf3544e87587021293e20fafbdff0946d3045718f92183"
+    },
+    {
+      "accession": "0001193125-20-218274",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/823ba8ac67b5aef024656b0d1c5092e9334c9bb39c45a63b271c7cb8480d0d2b.htm",
+      "source_sha256": "b53966c284cc24de4c97072de210077a4f29497e886cb2359af2b911e4d16c57"
+    },
+    {
+      "accession": "0001193125-21-035313",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/7b9547d7f3a86ea0096fc3fac5b7662401706d47e6ecb14fa71264eb7325f00c.htm",
+      "source_sha256": "093e72902314972f1971e2d00716123e3130e1232b4b61a09238433ef29f0bd7"
+    },
+    {
+      "accession": "0001193125-21-243807",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/37bb8b63ef0f7c041ec64acf435c1cb3868956d99d3811ec4c2cafaded0e841a.htm",
+      "source_sha256": "d0205c692d0ee5458fe870439aa29d5634225b4839b568623fc4ef6bfa0d0898"
+    },
+    {
+      "accession": "0001193125-21-345937",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/03b2821f49f1232ed1d192c649d47f3185f6bbf5daddaa65efb32a7d399926f4.htm",
+      "source_sha256": "ed01c6c7f143a222a8ab80dd2f02903accd4bd3df858c331c6cf09747cc69328"
+    },
+    {
+      "accession": "0000950170-22-001865",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/967d6f3b6c46c84d16679a7bdac33b7c6e4494639a30e625e987096eb87605fb.htm",
+      "source_sha256": "4ea9b30154b99b5e1f9f0168e2975eaff747af3a2d0f5c4c5c4f0df33ceaaeb8"
+    },
+    {
+      "accession": "0001628280-22-028987",
+      "classification": "EARNINGS_RELEASE",
+      "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/8e65593b0fb2e55a9e1eaa4dd724d299c77dd0635c00f96591b54f6499698b92.htm",
+      "source_sha256": "f364a63d24770b8a0c110299b5b88c339a94e099a3c936f9173a596bf8b51d16"
+    }
+  ],
+  "network_requests": 0,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "scope": "Named original-document source review before fitting; predecessor fiscal scope remains separately checked."
+}

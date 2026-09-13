@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "ticker": "MSFT",
+      "accession": "0000950170-23-034400",
+      "official_filing_date": "2023-07-25",
+      "acceptance_time_index_eastern": "2023-07-25T16:02:47-04:00",
+      "acceptance_time_api_utc": "2023-07-25T20:02:47+00:00",
+      "timezone_reconciled": true,
+      "issuer_release_date_in_8k": "2023-07-25",
+      "issuer_first_publication_time": "unverified",
+      "SEC_first_public_dissemination_time": "not_provided",
+      "earliest_policy_session": "2023-07-26",
+      "proposed_daily_execution_proxy": "regular_session_close_on_2023-07-26",
+      "exhibit": "msft-ex99_1.htm",
+      "source": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-ex99_1.htm",
+      "release_text_characters": 29530,
+      "source_bytes_sha256": "212cab200b9210a2897c6d99969d24fbf5a617970f01753176d9d57f080ce833"
+    },
+    {
+      "ticker": "WMT",
+      "accession": "0000104169-23-000088",
+      "official_filing_date": "2023-08-17",
+      "acceptance_time_index_eastern": "2023-08-17T06:59:53-04:00",
+      "acceptance_time_api_utc": "2023-08-17T10:59:53+00:00",
+      "timezone_reconciled": true,
+      "issuer_release_date_in_8k": "2023-08-17",
+      "issuer_first_publication_time": "unverified",
+      "SEC_first_public_dissemination_time": "not_provided",
+      "earliest_policy_session": "2023-08-18",
+      "proposed_daily_execution_proxy": "regular_session_close_on_2023-08-18",
+      "exhibit": "earningsreleasefy24q2.htm",
+      "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/earningsreleasefy24q2.htm",
+      "release_text_characters": 40474,
+      "source_bytes_sha256": "7a5f655f1d90e7bbc215e095bcbf505f916493ea075920772980cc617402fe2b"
+    },
+    {
+      "ticker": "JPM",
+      "accession": "0000019617-23-000425",
+      "official_filing_date": "2023-07-14",
+      "acceptance_time_index_eastern": "2023-07-14T06:46:08-04:00",
+      "acceptance_time_api_utc": "2023-07-14T10:46:08+00:00",
+      "timezone_reconciled": true,
+      "issuer_release_date_in_8k": "2023-07-14",
+      "issuer_first_publication_time": "unverified",
+      "SEC_first_public_dissemination_time": "not_provided",
+      "earliest_policy_session": "2023-07-17",
+      "proposed_daily_execution_proxy": "regular_session_close_on_2023-07-17",
+      "exhibit": "a2q23erfexhibit991narrative.htm",
+      "source": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000425/a2q23erfexhibit991narrative.htm",
+      "release_text_characters": 28608,
+      "source_bytes_sha256": "20f8dfaee6956f99a60c59b0da348a01b3a576760445b3a2f8b395b78f1d986d"
+    }
+  ],
+  "calendar_sha256": "e8221a9c5f4571596ed4597c148da35c0f45c201dfba829294d3b29f52dc3647",
+  "policy": "No trade before first NYSE session strictly after both filing date and Eastern acceptance date. Daily close proxy proposed for subsequent research; not a verified historical fill or guaranteed dissemination timestamp."
+}

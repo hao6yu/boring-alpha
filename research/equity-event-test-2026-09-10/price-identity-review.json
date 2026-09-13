@@ -1,0 +1,181 @@
+{
+  "directory_sha256": "0ce300ce5b788eaa6ebcdfbcf23e06e85797cec2f2513c65a7b6c14574a543b9",
+  "cohort_snapshot_sha256": "a894f8e4fdd48983ea993a573a9ec7457b36c6bc5e8bdae10daabeaa6fa22e3d",
+  "cases": [
+    {
+      "cik": "0001622353",
+      "historical_symbol": "JCAP",
+      "historical_issuer": "Jernigan Capital, Inc.",
+      "directory_rows": [
+        {
+          "ticker": "JCAP",
+          "exchange": "NYSE",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2015-03-27",
+          "endDate": "2020-11-09"
+        },
+        {
+          "ticker": "JCAP",
+          "exchange": "NASDAQ",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2025-06-26",
+          "endDate": "2026-09-10"
+        }
+      ],
+      "download_status": "EMPTY_HISTORY",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0000821130",
+      "historical_symbol": "USM",
+      "historical_issuer": "UNITED STATES CELLULAR CORP",
+      "directory_rows": [],
+      "download_status": "EMPTY_HISTORY",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001069530",
+      "historical_symbol": "SAVA",
+      "historical_issuer": "CASSAVA SCIENCES INC",
+      "directory_rows": [
+        {
+          "ticker": "SAVA",
+          "exchange": "NASDAQ",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2026-05-28",
+          "endDate": "2026-09-10"
+        }
+      ],
+      "download_status": "EMPTY_HISTORY",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001708599",
+      "historical_symbol": "AGE",
+      "historical_issuer": "AgeX Therapeutics, Inc.",
+      "directory_rows": [],
+      "download_status": "EMPTY_HISTORY",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0000874501",
+      "historical_symbol": "AMBC",
+      "historical_issuer": "AMBAC FINANCIAL GROUP INC",
+      "directory_rows": [],
+      "download_status": "EMPTY_HISTORY",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001676667",
+      "historical_symbol": "CART",
+      "historical_issuer": "Carolina Trust BancShares, Inc.",
+      "directory_rows": [
+        {
+          "ticker": "CART",
+          "exchange": "NASDAQ",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2023-09-19",
+          "endDate": "2026-09-10"
+        },
+        {
+          "ticker": "CART",
+          "exchange": "NASDAQ",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2004-12-21",
+          "endDate": "2019-12-31"
+        }
+      ],
+      "download_status": "DOWNLOADED",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001600470",
+      "historical_symbol": "MR",
+      "historical_issuer": "Montage Resources Corp",
+      "directory_rows": [
+        {
+          "ticker": "MR",
+          "exchange": "NYSE",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2014-06-20",
+          "endDate": "2020-11-12"
+        },
+        {
+          "ticker": "MR",
+          "exchange": "NYSE",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2006-09-25",
+          "endDate": "2020-11-13"
+        }
+      ],
+      "download_status": "DOWNLOADED",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001101680",
+      "historical_symbol": "DZSI",
+      "historical_issuer": "DASAN ZHONE SOLUTIONS INC",
+      "directory_rows": [],
+      "download_status": "DOWNLOADED",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001614184",
+      "historical_symbol": "CADE",
+      "historical_issuer": "Cadence Bancorporation",
+      "directory_rows": [
+        {
+          "ticker": "CADE",
+          "exchange": "NYSE",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2017-04-13",
+          "endDate": "2021-10-28"
+        },
+        {
+          "ticker": "CADE",
+          "exchange": "NYSE",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "1985-10-16",
+          "endDate": "2026-01-30"
+        }
+      ],
+      "download_status": "PENDING",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    },
+    {
+      "cik": "0001667939",
+      "historical_symbol": "FSBC",
+      "historical_issuer": "FSB Bancorp, Inc.",
+      "directory_rows": [
+        {
+          "ticker": "FSBC",
+          "exchange": "NASDAQ",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2021-05-04",
+          "endDate": "2026-09-10"
+        },
+        {
+          "ticker": "FSBC",
+          "exchange": "NASDAQ",
+          "assetType": "Stock",
+          "priceCurrency": "USD",
+          "startDate": "2007-08-31",
+          "endDate": "2020-05-01"
+        }
+      ],
+      "download_status": "PENDING",
+      "source_scope": "Current provider directory is recovery metadata only. Original SEC security/time identity remains required."
+    }
+  ],
+  "no_return_inspection": true
+}

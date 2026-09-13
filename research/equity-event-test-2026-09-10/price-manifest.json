@@ -1,0 +1,2854 @@
+{
+  "cohort_snapshots": [
+    {
+      "issuers": 19,
+      "observed_utc": "2026-09-11T02:38:16.259622+00:00",
+      "sha256": "41dc04458c3b4130168a924be33ad96741ea619cc704d35d378f47cb37812bb4"
+    },
+    {
+      "issuers": 47,
+      "observed_utc": "2026-09-11T02:44:28.977111+00:00",
+      "sha256": "d11bc02a78c5a6a8905896a1c252ed173d7e931c8c16f077f823570fccfefcda"
+    },
+    {
+      "issuers": 72,
+      "observed_utc": "2026-09-11T02:49:14.922256+00:00",
+      "sha256": "bbd0fd1bdda16f0a62099158d2519f1abd64cda13b4d1f3f7c45d017ebd4a2d2"
+    },
+    {
+      "issuers": 100,
+      "observed_utc": "2026-09-11T03:36:15.949559+00:00",
+      "sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0"
+    }
+  ],
+  "created_utc": "2026-09-11T02:38:16.258684+00:00",
+  "end": "2023-12-29",
+  "internal_use_only": true,
+  "new_paid_data_usd": 0,
+  "pending_symbols": [
+    "PEGI",
+    "EPRT",
+    "LE",
+    "DNTH",
+    "ASXC",
+    "AD",
+    "FLNA",
+    "OSG",
+    "SER"
+  ],
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "provider": "Tiingo",
+  "quota_wait_until_utc": "2026-09-11T04:38:39.319526+00:00",
+  "requests": [
+    {
+      "bytes": 148889,
+      "finished_utc": "2026-09-11T02:38:16.664767+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SPY.csv",
+      "requested_utc": "2026-09-11T02:38:16.277329+00:00",
+      "sha256": "eab798682ee5ae83f0a6ee03414edfea51ec1828d06a7325cc29cdf2afa8ecef",
+      "symbol": "SPY",
+      "url": "https://api.tiingo.com/tiingo/daily/spy/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 140314,
+      "finished_utc": "2026-09-11T02:38:17.325759+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/RLJ.csv",
+      "requested_utc": "2026-09-11T02:38:16.924814+00:00",
+      "sha256": "ab2860c1089259b9eece97a494868d88c467e6bade3bf20401adf25c3612b43b",
+      "symbol": "RLJ",
+      "url": "https://api.tiingo.com/tiingo/daily/rlj/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 134285,
+      "finished_utc": "2026-09-11T02:38:18.004190+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/UTMD.csv",
+      "requested_utc": "2026-09-11T02:38:17.583945+00:00",
+      "sha256": "7c1b8cd78bdaf2dbd77224d0f6aa3712fd3f8f7dd628efb4de9921d9d5ded3dc",
+      "symbol": "UTMD",
+      "url": "https://api.tiingo.com/tiingo/daily/utmd/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 146285,
+      "finished_utc": "2026-09-11T02:38:18.642755+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GS.csv",
+      "requested_utc": "2026-09-11T02:38:18.266809+00:00",
+      "sha256": "e23a9156b26ebf781e3e77ae70f41463c212168bbb22b81d77f388a58c50e260",
+      "symbol": "GS",
+      "url": "https://api.tiingo.com/tiingo/daily/gs/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 137818,
+      "finished_utc": "2026-09-11T02:38:19.243642+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/HURC.csv",
+      "requested_utc": "2026-09-11T02:38:18.898946+00:00",
+      "sha256": "7925ba4fdb0dc342a1e3d94627c42ad9c322762b3b6069418464694ba5c5e165",
+      "symbol": "HURC",
+      "url": "https://api.tiingo.com/tiingo/daily/hurc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 75405,
+      "finished_utc": "2026-09-11T02:38:19.809157+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MGTA.csv",
+      "requested_utc": "2026-09-11T02:38:19.499101+00:00",
+      "sha256": "0e7b24cc9cf93e74155f11fc538c69fef01b3ea2d034e2efdc309c353d64cadc",
+      "symbol": "MGTA",
+      "url": "https://api.tiingo.com/tiingo/daily/mgta/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 136587,
+      "finished_utc": "2026-09-11T02:38:20.477478+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GPMT.csv",
+      "requested_utc": "2026-09-11T02:38:20.069652+00:00",
+      "sha256": "b7de7758f40b8bd0fd7ef0fe0a2f07fb7a94548446c324a73b7cb42cf62a2c70",
+      "symbol": "GPMT",
+      "url": "https://api.tiingo.com/tiingo/daily/gpmt/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 88844,
+      "finished_utc": "2026-09-11T02:38:21.094755+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PRLB.csv",
+      "requested_utc": "2026-09-11T02:38:20.738014+00:00",
+      "sha256": "ba2e4ef98223d31897d1e469db69adcf981dc71a9dccec661b935618420a2406",
+      "symbol": "PRLB",
+      "url": "https://api.tiingo.com/tiingo/daily/prlb/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 53424,
+      "finished_utc": "2026-09-11T02:38:21.777751+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MBII.csv",
+      "requested_utc": "2026-09-11T02:38:21.345553+00:00",
+      "sha256": "cca28f6b440a51014f89825c3b222aa03f834a95a8d97f773332404417497b55",
+      "symbol": "MBII",
+      "url": "https://api.tiingo.com/tiingo/daily/mbii/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 86001,
+      "finished_utc": "2026-09-11T02:38:22.314325+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/IMXI.csv",
+      "requested_utc": "2026-09-11T02:38:22.028181+00:00",
+      "sha256": "7c72cc7069877b4513f5c376eb74f7b12b8b8b3d9e759ca9ff9f7e4c671d9c27",
+      "symbol": "IMXI",
+      "url": "https://api.tiingo.com/tiingo/daily/imxi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 140589,
+      "finished_utc": "2026-09-11T02:38:22.933426+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/TSN.csv",
+      "requested_utc": "2026-09-11T02:38:22.565252+00:00",
+      "sha256": "2abda1355c4dcc981da83843ae1741a569251ce922ba94619cb8ad7a4004abfb",
+      "symbol": "TSN",
+      "url": "https://api.tiingo.com/tiingo/daily/tsn/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 82716,
+      "finished_utc": "2026-09-11T02:38:23.463433+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/UFI.csv",
+      "requested_utc": "2026-09-11T02:38:23.192126+00:00",
+      "sha256": "ed49fd36a7fda3f4106f2e5074657adaa1abe2370a0db30a049eb61e767bdc9b",
+      "symbol": "UFI",
+      "url": "https://api.tiingo.com/tiingo/daily/ufi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 88643,
+      "finished_utc": "2026-09-11T02:38:24.009202+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NTLA.csv",
+      "requested_utc": "2026-09-11T02:38:23.718310+00:00",
+      "sha256": "3695938c2dc11c555aab70ab21ea5db6e98e01a659c944f4b15eb149024b609a",
+      "symbol": "NTLA",
+      "url": "https://api.tiingo.com/tiingo/daily/ntla/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 133942,
+      "finished_utc": "2026-09-11T02:38:24.670045+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CPIX.csv",
+      "requested_utc": "2026-09-11T02:38:24.270970+00:00",
+      "sha256": "b4320c82800761d1ed1ba598a03bd6db170a87704306b01f6f648da8efd1b26f",
+      "symbol": "CPIX",
+      "url": "https://api.tiingo.com/tiingo/daily/cpix/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 94,
+      "finished_utc": "2026-09-11T02:38:25.187653+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/JCAP.csv",
+      "requested_utc": "2026-09-11T02:38:24.928921+00:00",
+      "sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31",
+      "symbol": "JCAP",
+      "url": "https://api.tiingo.com/tiingo/daily/jcap/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 18784,
+      "finished_utc": "2026-09-11T02:38:25.809309+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SHLO.csv",
+      "requested_utc": "2026-09-11T02:38:25.445580+00:00",
+      "sha256": "99966e44962ba9d5a52b613591ff914f3d403a9241755e006e7cbbbf2b903c35",
+      "symbol": "SHLO",
+      "url": "https://api.tiingo.com/tiingo/daily/shlo/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 57954,
+      "finished_utc": "2026-09-11T02:38:26.481550+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ECOL.csv",
+      "requested_utc": "2026-09-11T02:38:26.069814+00:00",
+      "sha256": "784545a8675d20d8017a0586f0ad174c941883b653df789a7bfdac94a225da09",
+      "symbol": "ECOL",
+      "url": "https://api.tiingo.com/tiingo/daily/ecol/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 143072,
+      "finished_utc": "2026-09-11T02:38:27.066873+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PPL.csv",
+      "requested_utc": "2026-09-11T02:38:26.733590+00:00",
+      "sha256": "980e094ffc0633246e89e9c5567779de7545a0be5e80aea63e9b1abc9b3078a7",
+      "symbol": "PPL",
+      "url": "https://api.tiingo.com/tiingo/daily/ppl/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 2,
+      "error_class": "AssertionError",
+      "finished_utc": "2026-09-11T02:38:27.510118+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/USM.csv",
+      "requested_utc": "2026-09-11T02:38:27.319885+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "symbol": "USM",
+      "url": "https://api.tiingo.com/tiingo/daily/usm/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 35709,
+      "finished_utc": "2026-09-11T02:38:28.101270+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MSGN.csv",
+      "requested_utc": "2026-09-11T02:38:27.768716+00:00",
+      "sha256": "d51e834aa484253f9430829696c829c8219ccf59a0c8f04dd0d22f09dda1b30f",
+      "symbol": "MSGN",
+      "url": "https://api.tiingo.com/tiingo/daily/msgn/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 142097,
+      "finished_utc": "2026-09-11T02:44:29.406941+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AMH.csv",
+      "requested_utc": "2026-09-11T02:44:28.991398+00:00",
+      "sha256": "5322d99549f162b10f7fc1709aefacc8a2ace6057799a012c22f0274f8e3c43e",
+      "symbol": "AMH",
+      "url": "https://api.tiingo.com/tiingo/daily/amh/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 139275,
+      "finished_utc": "2026-09-11T02:44:30.073082+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/IIIN.csv",
+      "requested_utc": "2026-09-11T02:44:29.662454+00:00",
+      "sha256": "4ac493d45b43e4e6a59de0ee92ccbdffe5ead55d748f31b70e3e74ac91754084",
+      "symbol": "IIIN",
+      "url": "https://api.tiingo.com/tiingo/daily/iiin/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 109796,
+      "finished_utc": "2026-09-11T02:44:30.695556+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EDUC.csv",
+      "requested_utc": "2026-09-11T02:44:30.329747+00:00",
+      "sha256": "2dbd41fb8e6e3c0a60238b04adbc1ac3cb604e29a60e3cff2a04e964fdcd52cf",
+      "symbol": "EDUC",
+      "url": "https://api.tiingo.com/tiingo/daily/educ/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 81096,
+      "finished_utc": "2026-09-11T02:44:31.240742+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/RCMT.csv",
+      "requested_utc": "2026-09-11T02:44:30.946405+00:00",
+      "sha256": "9d004461ac99c3893c48820cdb1e17d4db7b0cce852e3988eea8c3c82d4075a1",
+      "symbol": "RCMT",
+      "url": "https://api.tiingo.com/tiingo/daily/rcmt/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 141695,
+      "finished_utc": "2026-09-11T02:44:31.940443+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/OGE.csv",
+      "requested_utc": "2026-09-11T02:44:31.496134+00:00",
+      "sha256": "de5439efc7b0accfa11a72850ec65429e5ac67a48b7d9f1bf995b9a8530454ce",
+      "symbol": "OGE",
+      "url": "https://api.tiingo.com/tiingo/daily/oge/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 126795,
+      "finished_utc": "2026-09-11T02:44:32.615602+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WWE.csv",
+      "requested_utc": "2026-09-11T02:44:32.192889+00:00",
+      "sha256": "d5e2509a0d1d05bd78984972096e9ca6a428a0c6751d5ac4daf7caff1a0e38e0",
+      "symbol": "WWE",
+      "url": "https://api.tiingo.com/tiingo/daily/wwe/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 94,
+      "finished_utc": "2026-09-11T02:44:33.123551+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SAVA.csv",
+      "requested_utc": "2026-09-11T02:44:32.870090+00:00",
+      "sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31",
+      "symbol": "SAVA",
+      "url": "https://api.tiingo.com/tiingo/daily/sava/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138001,
+      "finished_utc": "2026-09-11T02:44:33.809975+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FBIZ.csv",
+      "requested_utc": "2026-09-11T02:44:33.377662+00:00",
+      "sha256": "0bbc5eaff793bc9cb05fb36f538b88fadda59900f9752988450302d933c03c97",
+      "symbol": "FBIZ",
+      "url": "https://api.tiingo.com/tiingo/daily/fbiz/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 2,
+      "error_class": "AssertionError",
+      "finished_utc": "2026-09-11T02:44:34.280232+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AGE.csv",
+      "requested_utc": "2026-09-11T02:44:34.065280+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "symbol": "AGE",
+      "url": "https://api.tiingo.com/tiingo/daily/age/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 2,
+      "error_class": "AssertionError",
+      "finished_utc": "2026-09-11T02:44:34.721258+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AMBC.csv",
+      "requested_utc": "2026-09-11T02:44:34.533875+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "symbol": "AMBC",
+      "url": "https://api.tiingo.com/tiingo/daily/ambc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 24023,
+      "finished_utc": "2026-09-11T02:44:35.272634+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MYOK.csv",
+      "requested_utc": "2026-09-11T02:44:34.974113+00:00",
+      "sha256": "fd7d8bb1f4fc790af100208f0d56b17fbf8cbb636a41d608c76d7a54d8e12ac5",
+      "symbol": "MYOK",
+      "url": "https://api.tiingo.com/tiingo/daily/myok/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 145710,
+      "finished_utc": "2026-09-11T02:44:35.923166+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EFX.csv",
+      "requested_utc": "2026-09-11T02:44:35.528179+00:00",
+      "sha256": "60315351ed0758fa090b79160b40d67d8a8206d6a43e7da4a02947f2dab73d0f",
+      "symbol": "EFX",
+      "url": "https://api.tiingo.com/tiingo/daily/efx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138478,
+      "finished_utc": "2026-09-11T02:44:36.613553+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CLAR.csv",
+      "requested_utc": "2026-09-11T02:44:36.178721+00:00",
+      "sha256": "62b06e7fdcc292778ec5e420c866255153014de00c5f099039ab963dfb296f2d",
+      "symbol": "CLAR",
+      "url": "https://api.tiingo.com/tiingo/daily/clar/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 86404,
+      "finished_utc": "2026-09-11T02:44:37.230080+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SGRY.csv",
+      "requested_utc": "2026-09-11T02:44:36.869109+00:00",
+      "sha256": "ea876e53b8848702680f86aa7000aab65c26813d2c026c7937ace34431b0297a",
+      "symbol": "SGRY",
+      "url": "https://api.tiingo.com/tiingo/daily/sgry/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 5998,
+      "finished_utc": "2026-09-11T02:44:37.751694+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CART.csv",
+      "requested_utc": "2026-09-11T02:44:37.485664+00:00",
+      "sha256": "b6c510d7be7bbfb3cb69843979688351ee7099f10ce8ea0dfd281d3e0c8d986f",
+      "symbol": "CART",
+      "url": "https://api.tiingo.com/tiingo/daily/cart/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 88636,
+      "finished_utc": "2026-09-11T02:44:38.385218+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GRPN.csv",
+      "requested_utc": "2026-09-11T02:44:38.003074+00:00",
+      "sha256": "b4158be5e1598d8abd4e993c6d85fd87ec08016d7c9d5c4faea836424238834d",
+      "symbol": "GRPN",
+      "url": "https://api.tiingo.com/tiingo/daily/grpn/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 143144,
+      "finished_utc": "2026-09-11T02:44:39.052902+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/VC.csv",
+      "requested_utc": "2026-09-11T02:44:38.640762+00:00",
+      "sha256": "b4bd42632b8a9f494ede52d5e446e7d042d0eb341c71c72b18c450c42466cb99",
+      "symbol": "VC",
+      "url": "https://api.tiingo.com/tiingo/daily/vc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 142213,
+      "finished_utc": "2026-09-11T02:44:40.636344+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/BX.csv",
+      "requested_utc": "2026-09-11T02:44:39.308832+00:00",
+      "sha256": "1d8b6025c2660ecb5c349b57491e1fad5cf597a2bea40d5cacf672f863a7c3de",
+      "symbol": "BX",
+      "url": "https://api.tiingo.com/tiingo/daily/bx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 147244,
+      "finished_utc": "2026-09-11T02:44:41.233960+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CAT.csv",
+      "requested_utc": "2026-09-11T02:44:40.891900+00:00",
+      "sha256": "f359cd6a865c1f4a7ca7fbbaf7abceda2adb6d922267433729462636c5965644",
+      "symbol": "CAT",
+      "url": "https://api.tiingo.com/tiingo/daily/cat/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 157,
+      "finished_utc": "2026-09-11T02:44:41.716396+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MR.csv",
+      "requested_utc": "2026-09-11T02:44:41.485606+00:00",
+      "sha256": "6f37e20e103cb51fb1900e4ddbbfbbdcfb54d9ddcc63a23fe0818b0603b751e3",
+      "symbol": "MR",
+      "url": "https://api.tiingo.com/tiingo/daily/mr/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 140401,
+      "finished_utc": "2026-09-11T02:44:42.419362+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FSK.csv",
+      "requested_utc": "2026-09-11T02:44:41.971872+00:00",
+      "sha256": "89077cb7562b1ffbca9b30dc2f078504385da298173404d35a6967add3671dda",
+      "symbol": "FSK",
+      "url": "https://api.tiingo.com/tiingo/daily/fsk/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 86946,
+      "finished_utc": "2026-09-11T02:44:42.998418+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AMCX.csv",
+      "requested_utc": "2026-09-11T02:44:42.673923+00:00",
+      "sha256": "1813a959414c762c1d5e0715e24fa69671a935ea27bcc6eb6ca6a127ebc39cd5",
+      "symbol": "AMCX",
+      "url": "https://api.tiingo.com/tiingo/daily/amcx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 81906,
+      "finished_utc": "2026-09-11T02:44:44.608327+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DZSI.csv",
+      "requested_utc": "2026-09-11T02:44:43.253384+00:00",
+      "sha256": "8bb47e1197e01e63fdadcba4a0d21055062236485fe2ff27c85680f4f023de18",
+      "symbol": "DZSI",
+      "url": "https://api.tiingo.com/tiingo/daily/dzsi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 77080,
+      "finished_utc": "2026-09-11T02:44:45.303184+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FRGI.csv",
+      "requested_utc": "2026-09-11T02:44:44.864010+00:00",
+      "sha256": "f632859814b5c0f01a902d10cfe9502e670c4792985724e990c61429ea892a77",
+      "symbol": "FRGI",
+      "url": "https://api.tiingo.com/tiingo/daily/frgi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 140009,
+      "finished_utc": "2026-09-11T02:44:45.916439+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/STBA.csv",
+      "requested_utc": "2026-09-11T02:44:45.558740+00:00",
+      "sha256": "4124ad2e54d838f49ccbcb86e72a98e0d76fbcc2c0a112c213f650bcd3d287d7",
+      "symbol": "STBA",
+      "url": "https://api.tiingo.com/tiingo/daily/stba/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 63929,
+      "finished_utc": "2026-09-11T02:44:46.567092+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CNCE.csv",
+      "requested_utc": "2026-09-11T02:44:46.172111+00:00",
+      "sha256": "d53ad8983ff557a7dd4a75f824cd65784127c7170a48e0e3fc5b430d5ed70908",
+      "symbol": "CNCE",
+      "url": "https://api.tiingo.com/tiingo/daily/cnce/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 90528,
+      "finished_utc": "2026-09-11T02:44:47.194490+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DVA.csv",
+      "requested_utc": "2026-09-11T02:44:46.822753+00:00",
+      "sha256": "a5c4b1487334781f138295788bb3e93143a0d54f2b26ef74b7ba096214d3f10b",
+      "symbol": "DVA",
+      "url": "https://api.tiingo.com/tiingo/daily/dva/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 84518,
+      "finished_utc": "2026-09-11T02:44:47.792712+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/VPG.csv",
+      "requested_utc": "2026-09-11T02:44:47.449582+00:00",
+      "sha256": "0359f815c497bde2dfe70d4912cf56e3f9bd0b212fa6b19ba5645b8ac83c34e9",
+      "symbol": "VPG",
+      "url": "https://api.tiingo.com/tiingo/daily/vpg/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 1925,
+      "finished_utc": "2026-09-11T02:49:15.242103+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NRCG.csv",
+      "requested_utc": "2026-09-11T02:49:14.936467+00:00",
+      "sha256": "2b87fd5fff683d7885b886b60c7949369390adc2d1327abbec0089e07a0a819a",
+      "symbol": "NRCG",
+      "url": "https://api.tiingo.com/tiingo/daily/nrcg/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 133710,
+      "finished_utc": "2026-09-11T02:49:15.875855+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CLRB.csv",
+      "requested_utc": "2026-09-11T02:49:15.498448+00:00",
+      "sha256": "a99551c1f4d125cfe9ff167f5a4d85e9ec6e8aff5987ca4f9baf29202e8adb81",
+      "symbol": "CLRB",
+      "url": "https://api.tiingo.com/tiingo/daily/clrb/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 146382,
+      "finished_utc": "2026-09-11T03:38:33.765954+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/TMUS.csv",
+      "requested_utc": "2026-09-11T03:38:33.319526+00:00",
+      "sha256": "64478fe9a14f323f046b35a6a4820ff27896bc6fc4854bc7656cfe7b40ba68bd",
+      "symbol": "TMUS",
+      "url": "https://api.tiingo.com/tiingo/daily/tmus/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138992,
+      "finished_utc": "2026-09-11T03:38:34.363551+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CGNX.csv",
+      "requested_utc": "2026-09-11T03:38:34.022400+00:00",
+      "sha256": "eb4f26dbc78d46cd1d4d5ee0e983f5ef0fdb9b0a364289a9a3b7e5e39b5ccdb5",
+      "symbol": "CGNX",
+      "url": "https://api.tiingo.com/tiingo/daily/cgnx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 143638,
+      "finished_utc": "2026-09-11T03:38:35.061104+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WDFC.csv",
+      "requested_utc": "2026-09-11T03:38:34.623955+00:00",
+      "sha256": "99969835141e1954daec6827bb9a439d5301ea0ddc645c8a300982a0416ef8bf",
+      "symbol": "WDFC",
+      "url": "https://api.tiingo.com/tiingo/daily/wdfc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 85288,
+      "finished_utc": "2026-09-11T03:38:35.625809+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DFIN.csv",
+      "requested_utc": "2026-09-11T03:38:35.317622+00:00",
+      "sha256": "2b0e19d944cc847233f8b8a0564162382d1759e1923ca265b50d0430bab0438b",
+      "symbol": "DFIN",
+      "url": "https://api.tiingo.com/tiingo/daily/dfin/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 104480,
+      "finished_utc": "2026-09-11T03:38:36.257764+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/INSG.csv",
+      "requested_utc": "2026-09-11T03:38:35.886406+00:00",
+      "sha256": "8e47e81b7cce63fce2606a9a92884d4440c6691867bfb28fbdb75c9030fe4bbf",
+      "symbol": "INSG",
+      "url": "https://api.tiingo.com/tiingo/daily/insg/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 145207,
+      "finished_utc": "2026-09-11T03:38:36.947458+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CASY.csv",
+      "requested_utc": "2026-09-11T03:38:36.515536+00:00",
+      "sha256": "d9248d6899ae51f49bfbec74c31b6dc459a705566e2135e8119685b8fb907aea",
+      "symbol": "CASY",
+      "url": "https://api.tiingo.com/tiingo/daily/casy/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 84670,
+      "finished_utc": "2026-09-11T03:38:37.634801+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SRDX.csv",
+      "requested_utc": "2026-09-11T03:38:37.207856+00:00",
+      "sha256": "2ad8e1f4483a3fdf5d596c541555cff87f2847ad2d81f07ec5e66bacaedb2942",
+      "symbol": "SRDX",
+      "url": "https://api.tiingo.com/tiingo/daily/srdx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 141888,
+      "finished_utc": "2026-09-11T03:38:38.311173+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MCHP.csv",
+      "requested_utc": "2026-09-11T03:38:37.895307+00:00",
+      "sha256": "6281788d78e4badf80ec551df33d4368ff5d6567ed4193f1be0b9b92741a787a",
+      "symbol": "MCHP",
+      "url": "https://api.tiingo.com/tiingo/daily/mchp/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 87780,
+      "finished_utc": "2026-09-11T03:38:38.928327+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CHGG.csv",
+      "requested_utc": "2026-09-11T03:38:38.565251+00:00",
+      "sha256": "90074eda99fb970d1ec1fb13e409d5a60cd0ac9613d8f9d7ea1f2bb7efb1b944",
+      "symbol": "CHGG",
+      "url": "https://api.tiingo.com/tiingo/daily/chgg/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138968,
+      "finished_utc": "2026-09-11T03:38:39.556950+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NPO.csv",
+      "requested_utc": "2026-09-11T03:38:39.187956+00:00",
+      "sha256": "3a227e8d9fd88441f998ee73c848269ef8aa616af9c55535f1745e4d646e805f",
+      "symbol": "NPO",
+      "url": "https://api.tiingo.com/tiingo/daily/npo/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 137189,
+      "finished_utc": "2026-09-11T03:38:40.260589+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PBI.csv",
+      "requested_utc": "2026-09-11T03:38:39.814174+00:00",
+      "sha256": "248404928ae7a72a58a4cd46ee52ce0b9191ecefce9572577efc16ca5d097ddf",
+      "symbol": "PBI",
+      "url": "https://api.tiingo.com/tiingo/daily/pbi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 24941,
+      "finished_utc": "2026-09-11T03:38:40.825614+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GCAP.csv",
+      "requested_utc": "2026-09-11T03:38:40.515016+00:00",
+      "sha256": "9ffd41d83f8069d2983c7f664324f4ddca6a460dbad7155ca4b9a43b1a6c8fe6",
+      "symbol": "GCAP",
+      "url": "https://api.tiingo.com/tiingo/daily/gcap/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 137476,
+      "finished_utc": "2026-09-11T03:38:41.441863+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ACRE.csv",
+      "requested_utc": "2026-09-11T03:38:41.082216+00:00",
+      "sha256": "7cae9d51f05dc971be9ee52f97336293b008616868cba702499ca2d24136300d",
+      "symbol": "ACRE",
+      "url": "https://api.tiingo.com/tiingo/daily/acre/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 141408,
+      "finished_utc": "2026-09-11T03:38:42.278428+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CADE.csv",
+      "requested_utc": "2026-09-11T03:38:41.695787+00:00",
+      "sha256": "40de593b7049d7b5921ad5c85c3de38c42639d04326aac12a0a68d26d9287b23",
+      "symbol": "CADE",
+      "url": "https://api.tiingo.com/tiingo/daily/cade/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 86751,
+      "finished_utc": "2026-09-11T03:38:42.924275+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FSBC.csv",
+      "requested_utc": "2026-09-11T03:38:42.539146+00:00",
+      "sha256": "15d3f7838152f8f8fd11aa636f84ea82e5e07061aea12255510e890c9a867a23",
+      "symbol": "FSBC",
+      "url": "https://api.tiingo.com/tiingo/daily/fsbc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 83260,
+      "finished_utc": "2026-09-11T03:38:44.548995+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/LIND.csv",
+      "requested_utc": "2026-09-11T03:38:43.182182+00:00",
+      "sha256": "3b50b9c56709e25a80768af3e01626b91eec62beac9a0507e7d007614cd53def",
+      "symbol": "LIND",
+      "url": "https://api.tiingo.com/tiingo/daily/lind/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 137135,
+      "finished_utc": "2026-09-11T03:38:45.237604+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MFA.csv",
+      "requested_utc": "2026-09-11T03:38:44.807188+00:00",
+      "sha256": "135c81edad168beece9502678aa59fdb3d4a45ea528dcd684195cdcfa0d2881a",
+      "symbol": "MFA",
+      "url": "https://api.tiingo.com/tiingo/daily/mfa/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 143986,
+      "finished_utc": "2026-09-11T03:38:45.848641+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ETR.csv",
+      "requested_utc": "2026-09-11T03:38:45.497573+00:00",
+      "sha256": "42801c8dfab1d723f47e80696c71586d5270a08e2fdb87d2f59765877db47fb5",
+      "symbol": "ETR",
+      "url": "https://api.tiingo.com/tiingo/daily/etr/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 86674,
+      "finished_utc": "2026-09-11T03:38:46.424922+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MTSI.csv",
+      "requested_utc": "2026-09-11T03:38:46.106351+00:00",
+      "sha256": "045de3d9af74f1de838c14fc0fed274502e03587fae777d3a062c5502cff961d",
+      "symbol": "MTSI",
+      "url": "https://api.tiingo.com/tiingo/daily/mtsi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 145346,
+      "finished_utc": "2026-09-11T03:38:47.072071+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/BR.csv",
+      "requested_utc": "2026-09-11T03:38:46.681948+00:00",
+      "sha256": "e0093f4861088107b5215527feea33d71f74b4388cbf802101813244aa63813e",
+      "symbol": "BR",
+      "url": "https://api.tiingo.com/tiingo/daily/br/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 39720,
+      "finished_utc": "2026-09-11T03:45:09.545556+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ADMS.csv",
+      "requested_utc": "2026-09-11T03:45:09.219117+00:00",
+      "sha256": "20bb00053670c0450474663c4a11ef4ef83b7c0d41d878d3803d0079d2822ea3",
+      "symbol": "ADMS",
+      "url": "https://api.tiingo.com/tiingo/daily/adms/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 103307,
+      "finished_utc": "2026-09-11T03:45:10.175668+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/VERU.csv",
+      "requested_utc": "2026-09-11T03:45:09.805421+00:00",
+      "sha256": "2f01091c2a9a27ed9dda45d1f9b3898db06f7eb0d1a48a811da2a6fb8d07209e",
+      "symbol": "VERU",
+      "url": "https://api.tiingo.com/tiingo/daily/veru/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 145904,
+      "finished_utc": "2026-09-11T03:45:10.763391+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DGX.csv",
+      "requested_utc": "2026-09-11T03:45:10.427349+00:00",
+      "sha256": "8b5c839d0deb8a2212bc13441a045f6e463f3f938623be0d61720627e4cd01f6",
+      "symbol": "DGX",
+      "url": "https://api.tiingo.com/tiingo/daily/dgx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 29355,
+      "finished_utc": "2026-09-11T03:45:11.373372+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FPRX.csv",
+      "requested_utc": "2026-09-11T03:45:11.024047+00:00",
+      "sha256": "79621bd0ecd61a231a87175794744e9566332056300ebea8be6d96bc06d5bdf9",
+      "symbol": "FPRX",
+      "url": "https://api.tiingo.com/tiingo/daily/fprx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138950,
+      "finished_utc": "2026-09-11T03:45:12.040858+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/APOG.csv",
+      "requested_utc": "2026-09-11T03:45:11.625928+00:00",
+      "sha256": "bff1c71ae545556a3cdd6f6b93012659fecb5eb148a37f314e7d14ca28f3651a",
+      "symbol": "APOG",
+      "url": "https://api.tiingo.com/tiingo/daily/apog/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 145619,
+      "finished_utc": "2026-09-11T03:45:12.721567+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MCK.csv",
+      "requested_utc": "2026-09-11T03:45:12.301488+00:00",
+      "sha256": "6c7f3dee190d30dd1e9882f1677cdee8c57fe4f88441293d53bcbb7bd015a3b0",
+      "symbol": "MCK",
+      "url": "https://api.tiingo.com/tiingo/daily/mck/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 144346,
+      "finished_utc": "2026-09-11T03:45:13.347574+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MSA.csv",
+      "requested_utc": "2026-09-11T03:45:12.982174+00:00",
+      "sha256": "7ddd5b735fb31fe6ca232b2f2629cd562bf9c944e3a2cd4149c42650b232faab",
+      "symbol": "MSA",
+      "url": "https://api.tiingo.com/tiingo/daily/msa/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 36250,
+      "finished_utc": "2026-09-11T03:45:13.907664+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MTSC.csv",
+      "requested_utc": "2026-09-11T03:45:13.607557+00:00",
+      "sha256": "a6d278dd379d164b0adb2abf48308190e45cc308ad9371be8116ac1c94fe6cb1",
+      "symbol": "MTSC",
+      "url": "https://api.tiingo.com/tiingo/daily/mtsc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138980,
+      "finished_utc": "2026-09-11T03:45:14.573302+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NWN.csv",
+      "requested_utc": "2026-09-11T03:45:14.165496+00:00",
+      "sha256": "e396cfddb9daeae88b3173fad00dc24ebe4e390335092558993281ead71e9d36",
+      "symbol": "NWN",
+      "url": "https://api.tiingo.com/tiingo/daily/nwn/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 102881,
+      "finished_utc": "2026-09-11T03:45:15.194904+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/RIGL.csv",
+      "requested_utc": "2026-09-11T03:45:14.834002+00:00",
+      "sha256": "930d9ebeb6c5b784499fa8f56300a77066203d1bb26a3b5e0f11a8aa67c5b79e",
+      "symbol": "RIGL",
+      "url": "https://api.tiingo.com/tiingo/daily/rigl/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 142379,
+      "finished_utc": "2026-09-11T03:45:15.870551+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GLW.csv",
+      "requested_utc": "2026-09-11T03:45:15.454344+00:00",
+      "sha256": "c83196ed7bfc24de0059ede3859ff7f9d5887f071a2215535b06ede58a435793",
+      "symbol": "GLW",
+      "url": "https://api.tiingo.com/tiingo/daily/glw/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 138082,
+      "finished_utc": "2026-09-11T03:45:16.478312+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MVBF.csv",
+      "requested_utc": "2026-09-11T03:45:16.126149+00:00",
+      "sha256": "4a1d68fe54c23b2455696e1a63ce0a9f814926e6d14bcd4aa81ad74f69584283",
+      "symbol": "MVBF",
+      "url": "https://api.tiingo.com/tiingo/daily/mvbf/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 100299,
+      "finished_utc": "2026-09-11T03:45:18.044362+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MICR.csv",
+      "requested_utc": "2026-09-11T03:45:16.738999+00:00",
+      "sha256": "c741d2bb8ad7ab8bb55676ca4a634669e87b709428f7a82fba611b955020bc97",
+      "symbol": "MICR",
+      "url": "https://api.tiingo.com/tiingo/daily/micr/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 143588,
+      "finished_utc": "2026-09-11T03:45:18.716863+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NXST.csv",
+      "requested_utc": "2026-09-11T03:45:18.305054+00:00",
+      "sha256": "06632d3c136b1d8c4783dbc3f29cf37b28f84a23e5f2a13c94cb1823c2b694c6",
+      "symbol": "NXST",
+      "url": "https://api.tiingo.com/tiingo/daily/nxst/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 142799,
+      "finished_utc": "2026-09-11T03:45:19.389048+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AEO.csv",
+      "requested_utc": "2026-09-11T03:45:18.977475+00:00",
+      "sha256": "b246e993470042089cf41b49ab79e5a9379edf3c0667bd0406dcc6264e61e707",
+      "symbol": "AEO",
+      "url": "https://api.tiingo.com/tiingo/daily/aeo/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 103186,
+      "finished_utc": "2026-09-11T03:45:20.013005+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PRTS.csv",
+      "requested_utc": "2026-09-11T03:45:19.649802+00:00",
+      "sha256": "69661594f8f51c3ad81ebd5c8fc82069503f3de32845921b3470131a9bf19199",
+      "symbol": "PRTS",
+      "url": "https://api.tiingo.com/tiingo/daily/prts/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 88283,
+      "finished_utc": "2026-09-11T03:45:21.687412+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ALOT.csv",
+      "requested_utc": "2026-09-11T03:45:20.273740+00:00",
+      "sha256": "18b22ed78ead8d1a77968907767b159dae5947339a0f7c0eaee9e5996b70635d",
+      "symbol": "ALOT",
+      "url": "https://api.tiingo.com/tiingo/daily/alot/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 30,
+      "error_class": "AssertionError",
+      "finished_utc": "2026-09-11T03:45:22.206929+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/TRXC.csv",
+      "requested_utc": "2026-09-11T03:45:21.941851+00:00",
+      "sha256": "fda7906d9f89c3ec5382d12c570b41e66b36052a1f583484a83d52af516e5716",
+      "symbol": "TRXC",
+      "url": "https://api.tiingo.com/tiingo/daily/trxc/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "error_class": "URLError",
+      "finished_utc": "2026-09-11T03:45:42.472515+00:00",
+      "requested_utc": "2026-09-11T03:45:22.467674+00:00",
+      "symbol": "PFBI",
+      "url": "https://api.tiingo.com/tiingo/daily/pfbi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 8626,
+      "finished_utc": "2026-09-11T03:45:43.083989+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AKS.csv",
+      "requested_utc": "2026-09-11T03:45:42.734223+00:00",
+      "sha256": "1c2489813887d8d59051ffde1e7d32c44d6ed4fe4c98f176d05bb61d4cc9d7f7",
+      "symbol": "AKS",
+      "url": "https://api.tiingo.com/tiingo/daily/aks/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 2,
+      "finished_utc": "2026-09-11T03:45:43.542469+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/LMFA.csv",
+      "requested_utc": "2026-09-11T03:45:43.344674+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "symbol": "LMFA",
+      "url": "https://api.tiingo.com/tiingo/daily/lmfa/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 141528,
+      "finished_utc": "2026-09-11T03:45:44.305547+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WIRE.csv",
+      "requested_utc": "2026-09-11T03:45:43.794624+00:00",
+      "sha256": "9ebf94f16aa50e4f7e7d06671b1e205192069b05436f2ef72a9ef8a8f50a4345",
+      "symbol": "WIRE",
+      "url": "https://api.tiingo.com/tiingo/daily/wire/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 94,
+      "finished_utc": "2026-09-11T03:45:44.827770+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EMCI.csv",
+      "requested_utc": "2026-09-11T03:45:44.566273+00:00",
+      "sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31",
+      "symbol": "EMCI",
+      "url": "https://api.tiingo.com/tiingo/daily/emci/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 141098,
+      "finished_utc": "2026-09-11T03:45:45.502036+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WLK.csv",
+      "requested_utc": "2026-09-11T03:45:45.088539+00:00",
+      "sha256": "008dffc8508dcedbcdcd501de7e0c6af67c0099afdca4a05057dcd7ef224d982",
+      "symbol": "WLK",
+      "url": "https://api.tiingo.com/tiingo/daily/wlk/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 85741,
+      "finished_utc": "2026-09-11T03:45:46.072252+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SNDX.csv",
+      "requested_utc": "2026-09-11T03:45:45.761604+00:00",
+      "sha256": "3b06765cd5ebc4bdb71b77946007603ce5a0b69b4f4fc8a2127cb283f91cd638",
+      "symbol": "SNDX",
+      "url": "https://api.tiingo.com/tiingo/daily/sndx/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 38855,
+      "finished_utc": "2026-09-11T03:45:46.669973+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SLCT.csv",
+      "requested_utc": "2026-09-11T03:45:46.323551+00:00",
+      "sha256": "5a3463c1e8c71bcd0f9f4d4773fbbd63db6db507f455c6141b03587c18a990c7",
+      "symbol": "SLCT",
+      "url": "https://api.tiingo.com/tiingo/daily/slct/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "error_class": "URLError",
+      "finished_utc": "2026-09-11T03:46:06.928534+00:00",
+      "requested_utc": "2026-09-11T03:45:46.924330+00:00",
+      "symbol": "ULTA",
+      "url": "https://api.tiingo.com/tiingo/daily/ulta/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 84806,
+      "finished_utc": "2026-09-11T03:46:07.571663+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EHTH.csv",
+      "requested_utc": "2026-09-11T03:46:07.181196+00:00",
+      "sha256": "442186647fd542b3b9253b097ad4cc0aae6123d1ffbbeb70c05f592457cbd6be",
+      "symbol": "EHTH",
+      "url": "https://api.tiingo.com/tiingo/daily/ehth/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 63898,
+      "finished_utc": "2026-09-11T03:49:31.526203+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PFBI.csv",
+      "requested_utc": "2026-09-11T03:49:31.086385+00:00",
+      "retry_of_transport_failure": {
+        "error_class": "URLError",
+        "status": "REQUEST_OR_PARSE_ERROR"
+      },
+      "sha256": "f7a186c704c8dbf297e4fec92de093de3dc556e2e016fd7977274df978bf11e8",
+      "symbol": "PFBI",
+      "url": "https://api.tiingo.com/tiingo/daily/pfbi/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    },
+    {
+      "bytes": 95642,
+      "finished_utc": "2026-09-11T03:49:32.171214+00:00",
+      "http_status": 200,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ULTA.csv",
+      "requested_utc": "2026-09-11T03:49:31.780753+00:00",
+      "retry_of_transport_failure": {
+        "error_class": "URLError",
+        "status": "REQUEST_OR_PARSE_ERROR"
+      },
+      "sha256": "6eb9578d506e004673d466d58d5723dec699ab1c9200ed562d8cbbcdd7d6856c",
+      "symbol": "ULTA",
+      "url": "https://api.tiingo.com/tiingo/daily/ulta/prices?startDate=2019-10-01&endDate=2023-12-29&format=csv&resampleFreq=daily"
+    }
+  ],
+  "resolved_cohort_prefix": [
+    {
+      "cik": "0001511337",
+      "historical_symbol": "RLJ"
+    },
+    {
+      "cik": "0000706698",
+      "historical_symbol": "UTMD"
+    },
+    {
+      "cik": "0000886982",
+      "historical_symbol": "GS"
+    },
+    {
+      "cik": "0000315374",
+      "historical_symbol": "HURC"
+    },
+    {
+      "cik": "0001690585",
+      "historical_symbol": "MGTA"
+    },
+    {
+      "cik": "0001703644",
+      "historical_symbol": "GPMT"
+    },
+    {
+      "cik": "0001443669",
+      "historical_symbol": "PRLB"
+    },
+    {
+      "cik": "0001441693",
+      "historical_symbol": "MBII"
+    },
+    {
+      "cik": "0001683695",
+      "historical_symbol": "IMXI"
+    },
+    {
+      "cik": "0001562401",
+      "historical_symbol": "AMH"
+    },
+    {
+      "cik": "0000100493",
+      "historical_symbol": "TSN"
+    },
+    {
+      "cik": "0000100726",
+      "historical_symbol": "UFI"
+    },
+    {
+      "cik": "0001652130",
+      "historical_symbol": "NTLA"
+    },
+    {
+      "cik": "0001087294",
+      "historical_symbol": "CPIX"
+    },
+    {
+      "cik": "0001622353",
+      "historical_symbol": "JCAP"
+    },
+    {
+      "cik": "0000904979",
+      "historical_symbol": "SHLO"
+    },
+    {
+      "cik": "0000742126",
+      "historical_symbol": "ECOL"
+    },
+    {
+      "cik": "0000922224",
+      "historical_symbol": "PPL"
+    },
+    {
+      "cik": "0000821130",
+      "historical_symbol": "USM"
+    },
+    {
+      "cik": "0001469372",
+      "historical_symbol": "MSGN"
+    },
+    {
+      "cik": "0000764401",
+      "historical_symbol": "IIIN"
+    },
+    {
+      "cik": "0000031667",
+      "historical_symbol": "EDUC"
+    },
+    {
+      "cik": "0000700841",
+      "historical_symbol": "RCMT"
+    },
+    {
+      "cik": "0001021635",
+      "historical_symbol": "OGE"
+    },
+    {
+      "cik": "0001091907",
+      "historical_symbol": "WWE"
+    },
+    {
+      "cik": "0001069530",
+      "historical_symbol": "SAVA"
+    },
+    {
+      "cik": "0001521951",
+      "historical_symbol": "FBIZ"
+    },
+    {
+      "cik": "0001708599",
+      "historical_symbol": "AGE"
+    },
+    {
+      "cik": "0000874501",
+      "historical_symbol": "AMBC"
+    },
+    {
+      "cik": "0001552451",
+      "historical_symbol": "MYOK"
+    },
+    {
+      "cik": "0000033185",
+      "historical_symbol": "EFX"
+    },
+    {
+      "cik": "0000913277",
+      "historical_symbol": "CLAR"
+    },
+    {
+      "cik": "0001638833",
+      "historical_symbol": "SGRY"
+    },
+    {
+      "cik": "0001676667",
+      "historical_symbol": "CART"
+    },
+    {
+      "cik": "0001490281",
+      "historical_symbol": "GRPN"
+    },
+    {
+      "cik": "0001111335",
+      "historical_symbol": "VC"
+    },
+    {
+      "cik": "0001393818",
+      "historical_symbol": "BX"
+    },
+    {
+      "cik": "0000018230",
+      "historical_symbol": "CAT"
+    },
+    {
+      "cik": "0001703038",
+      "historical_symbol": "NRCG"
+    },
+    {
+      "cik": "0001600470",
+      "historical_symbol": "MR"
+    },
+    {
+      "cik": "0001422183",
+      "historical_symbol": "FSK"
+    },
+    {
+      "cik": "0001514991",
+      "historical_symbol": "AMCX"
+    },
+    {
+      "cik": "0001101680",
+      "historical_symbol": "DZSI"
+    },
+    {
+      "cik": "0001534992",
+      "historical_symbol": "FRGI"
+    },
+    {
+      "cik": "0000719220",
+      "historical_symbol": "STBA"
+    },
+    {
+      "cik": "0001367920",
+      "historical_symbol": "CNCE"
+    },
+    {
+      "cik": "0000927066",
+      "historical_symbol": "DVA"
+    },
+    {
+      "cik": "0001487952",
+      "historical_symbol": "VPG"
+    },
+    {
+      "cik": "0001279704",
+      "historical_symbol": "CLRB"
+    },
+    {
+      "cik": "0001283699",
+      "historical_symbol": "TMUS"
+    },
+    {
+      "cik": "0000851205",
+      "historical_symbol": "CGNX"
+    },
+    {
+      "cik": "0000105132",
+      "historical_symbol": "WDFC"
+    },
+    {
+      "cik": "0001669811",
+      "historical_symbol": "DFIN"
+    },
+    {
+      "cik": "0001022652",
+      "historical_symbol": "INSG"
+    },
+    {
+      "cik": "0000726958",
+      "historical_symbol": "CASY"
+    },
+    {
+      "cik": "0000924717",
+      "historical_symbol": "SRDX"
+    },
+    {
+      "cik": "0000827054",
+      "historical_symbol": "MCHP"
+    },
+    {
+      "cik": "0001364954",
+      "historical_symbol": "CHGG"
+    },
+    {
+      "cik": "0001164863",
+      "historical_symbol": "NPO"
+    },
+    {
+      "cik": "0000078814",
+      "historical_symbol": "PBI"
+    },
+    {
+      "cik": "0001444363",
+      "historical_symbol": "GCAP"
+    },
+    {
+      "cik": "0001529377",
+      "historical_symbol": "ACRE"
+    },
+    {
+      "cik": "0001614184",
+      "historical_symbol": "CADE"
+    },
+    {
+      "cik": "0001667939",
+      "historical_symbol": "FSBC"
+    },
+    {
+      "cik": "0001512499",
+      "historical_symbol": "LIND"
+    },
+    {
+      "cik": "0001055160",
+      "historical_symbol": "MFA"
+    },
+    {
+      "cik": "0000065984",
+      "historical_symbol": "ETR"
+    },
+    {
+      "cik": "0001493594",
+      "historical_symbol": "MTSI"
+    },
+    {
+      "cik": "0001383312",
+      "historical_symbol": "BR"
+    },
+    {
+      "cik": "0001328143",
+      "historical_symbol": "ADMS"
+    },
+    {
+      "cik": "0000863894",
+      "historical_symbol": "VERU"
+    },
+    {
+      "cik": "0001022079",
+      "historical_symbol": "DGX"
+    },
+    {
+      "cik": "0001175505",
+      "historical_symbol": "FPRX"
+    },
+    {
+      "cik": "0000006845",
+      "historical_symbol": "APOG"
+    },
+    {
+      "cik": "0000927653",
+      "historical_symbol": "MCK"
+    },
+    {
+      "cik": "0000066570",
+      "historical_symbol": "MSA"
+    },
+    {
+      "cik": "0000068709",
+      "historical_symbol": "MTSC"
+    },
+    {
+      "cik": "0001733998",
+      "historical_symbol": "NWN"
+    },
+    {
+      "cik": "0001034842",
+      "historical_symbol": "RIGL"
+    },
+    {
+      "cik": "0000024741",
+      "historical_symbol": "GLW"
+    },
+    {
+      "cik": "0001277902",
+      "historical_symbol": "MVBF"
+    },
+    {
+      "cik": "0000819689",
+      "historical_symbol": "MICR"
+    },
+    {
+      "cik": "0001142417",
+      "historical_symbol": "NXST"
+    },
+    {
+      "cik": "0000919012",
+      "historical_symbol": "AEO"
+    },
+    {
+      "cik": "0001378950",
+      "historical_symbol": "PRTS"
+    },
+    {
+      "cik": "0000008146",
+      "historical_symbol": "ALOT"
+    },
+    {
+      "cik": "0000876378",
+      "historical_symbol": "TRXC"
+    },
+    {
+      "cik": "0000887919",
+      "historical_symbol": "PFBI"
+    },
+    {
+      "cik": "0000918160",
+      "historical_symbol": "AKS"
+    },
+    {
+      "cik": "0001640384",
+      "historical_symbol": "LMFA"
+    },
+    {
+      "cik": "0000850460",
+      "historical_symbol": "WIRE"
+    },
+    {
+      "cik": "0000356130",
+      "historical_symbol": "EMCI"
+    },
+    {
+      "cik": "0001262823",
+      "historical_symbol": "WLK"
+    },
+    {
+      "cik": "0001395937",
+      "historical_symbol": "SNDX"
+    },
+    {
+      "cik": "0001263762",
+      "historical_symbol": "SLCT"
+    },
+    {
+      "cik": "0001403568",
+      "historical_symbol": "ULTA"
+    },
+    {
+      "cik": "0001333493",
+      "historical_symbol": "EHTH"
+    },
+    {
+      "cik": "0001561660",
+      "historical_symbol": "PEGI"
+    },
+    {
+      "cik": "0001728951",
+      "historical_symbol": "EPRT"
+    },
+    {
+      "cik": "0000799288",
+      "historical_symbol": "LE"
+    }
+  ],
+  "source_membership_repairs": [
+    {
+      "evidence_path": "research/equity-event-test-2026-09-10/sec-parent-identity-correction.json",
+      "evidence_sha256": "1abe72aa418bbbe252a6c8cd1fbc9f300706c79f2dc3770bad79be6ccd385106",
+      "no_removed_security_prices_queried": true,
+      "removed": [
+        {
+          "cik": "0000046207",
+          "historical_symbol": "HE"
+        }
+      ]
+    }
+  ],
+  "start": "2019-10-01",
+  "symbols": {
+    "ACRE": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ACRE.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "7cae9d51f05dc971be9ee52f97336293b008616868cba702499ca2d24136300d",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "ADMS": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2021-11-24": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2021-11-24",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ADMS.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 544,
+      "sha256": "20bb00053670c0450474663c4a11ef4ef83b7c0d41d878d3803d0079d2822ea3",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "AEO": {
+      "dividend_rows": 13,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AEO.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "b246e993470042089cf41b49ab79e5a9379edf3c0667bd0406dcc6264e61e707",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "AGE": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AGE.csv",
+      "reparse": {
+        "previous": {
+          "error_class": "AssertionError",
+          "status": "REQUEST_OR_PARSE_ERROR"
+        },
+        "reason": "Provider returned literal JSON [] despite requested CSV. It remains missing data. No new network request."
+      },
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "AKS": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2020-03-13",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AKS.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 114,
+      "sha256": "1c2489813887d8d59051ffde1e7d32c44d6ed4fe4c98f176d05bb61d4cc9d7f7",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "ALOT": {
+      "dividend_rows": 2,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ALOT.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "18b22ed78ead8d1a77968907767b159dae5947339a0f7c0eaee9e5996b70635d",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "AMBC": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AMBC.csv",
+      "reparse": {
+        "previous": {
+          "error_class": "AssertionError",
+          "status": "REQUEST_OR_PARSE_ERROR"
+        },
+        "reason": "Provider returned literal JSON [] despite requested CSV. It remains missing data. No new network request."
+      },
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "AMCX": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AMCX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "1813a959414c762c1d5e0715e24fa69671a935ea27bcc6eb6ca6a127ebc39cd5",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "AMH": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/AMH.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "5322d99549f162b10f7fc1709aefacc8a2ace6057799a012c22f0274f8e3c43e",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "APOG": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/APOG.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "bff1c71ae545556a3cdd6f6b93012659fecb5eb148a37f314e7d14ca28f3651a",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "BR": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/BR.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "e0093f4861088107b5215527feea33d71f74b4388cbf802101813244aa63813e",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "BX": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/BX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "1d8b6025c2660ecb5c349b57491e1fad5cf597a2bea40d5cacf672f863a7c3de",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CADE": {
+      "dividend_rows": 19,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CADE.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "40de593b7049d7b5921ad5c85c3de38c42639d04326aac12a0a68d26d9287b23",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CART": {
+      "dividend_rows": 0,
+      "first_session": "2023-09-19",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CART.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 72,
+      "sha256": "b6c510d7be7bbfb3cb69843979688351ee7099f10ce8ea0dfd281d3e0c8d986f",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CASY": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CASY.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "d9248d6899ae51f49bfbec74c31b6dc459a705566e2135e8119685b8fb907aea",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CAT": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CAT.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "f359cd6a865c1f4a7ca7fbbaf7abceda2adb6d922267433729462636c5965644",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CGNX": {
+      "dividend_rows": 18,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CGNX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "eb4f26dbc78d46cd1d4d5ee0e983f5ef0fdb9b0a364289a9a3b7e5e39b5ccdb5",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CHGG": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CHGG.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "90074eda99fb970d1ec1fb13e409d5a60cd0ac9613d8f9d7ea1f2bb7efb1b944",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CLAR": {
+      "dividend_rows": 16,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CLAR.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "62b06e7fdcc292778ec5e420c866255153014de00c5f099039ab963dfb296f2d",
+      "split_rows": 1,
+      "status": "DOWNLOADED"
+    },
+    "CLRB": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CLRB.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "a99551c1f4d125cfe9ff167f5a4d85e9ec6e8aff5987ca4f9baf29202e8adb81",
+      "split_rows": 1,
+      "status": "DOWNLOADED"
+    },
+    "CNCE": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2023-03-06": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2023-03-06",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CNCE.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 863,
+      "sha256": "d53ad8983ff557a7dd4a75f824cd65784127c7170a48e0e3fc5b430d5ed70908",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "CPIX": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/CPIX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "b4320c82800761d1ed1ba598a03bd6db170a87704306b01f6f648da8efd1b26f",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "DFIN": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-07": [
+          "inconsistent_adjusted_low"
+        ],
+        "2020-07-08": [
+          "inconsistent_adjusted_high"
+        ]
+      },
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DFIN.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "2b0e19d944cc847233f8b8a0564162382d1759e1923ca265b50d0430bab0438b",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "DGX": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DGX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "8b5c839d0deb8a2212bc13441a045f6e463f3f938623be0d61720627e4cd01f6",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "DVA": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DVA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "a5c4b1487334781f138295788bb3e93143a0d54f2b26ef74b7ba096214d3f10b",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "DZSI": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/DZSI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "8bb47e1197e01e63fdadcba4a0d21055062236485fe2ff27c85680f4f023de18",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "ECOL": {
+      "dividend_rows": 2,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2022-05-02": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2022-09-16",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ECOL.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 675,
+      "sha256": "784545a8675d20d8017a0586f0ad174c941883b653df789a7bfdac94a225da09",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "EDUC": {
+      "dividend_rows": 10,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EDUC.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "2dbd41fb8e6e3c0a60238b04adbc1ac3cb604e29a60e3cff2a04e964fdcd52cf",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "EFX": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EFX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "60315351ed0758fa090b79160b40d67d8a8206d6a43e7da4a02947f2dab73d0f",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "EHTH": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EHTH.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "442186647fd542b3b9253b097ad4cc0aae6123d1ffbbeb70c05f592457cbd6be",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "EMCI": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/EMCI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 0,
+      "sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "ETR": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ETR.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "42801c8dfab1d723f47e80696c71586d5270a08e2fdb87d2f59765877db47fb5",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "FBIZ": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FBIZ.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "0bbc5eaff793bc9cb05fb36f538b88fadda59900f9752988450302d933c03c97",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "FPRX": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2021-04-16": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2021-04-16",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FPRX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 389,
+      "sha256": "79621bd0ecd61a231a87175794744e9566332056300ebea8be6d96bc06d5bdf9",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "FRGI": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2023-10-30": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2023-10-30",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FRGI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1028,
+      "sha256": "f632859814b5c0f01a902d10cfe9502e670c4792985724e990c61429ea892a77",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "FSBC": {
+      "dividend_rows": 10,
+      "first_session": "2021-05-04",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FSBC.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 670,
+      "sha256": "15d3f7838152f8f8fd11aa636f84ea82e5e07061aea12255510e890c9a867a23",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "FSK": {
+      "dividend_rows": 20,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/FSK.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "89077cb7562b1ffbca9b30dc2f078504385da298173404d35a6967add3671dda",
+      "split_rows": 1,
+      "status": "DOWNLOADED"
+    },
+    "GCAP": {
+      "dividend_rows": 3,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-31": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2020-07-31",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GCAP.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 211,
+      "sha256": "9ffd41d83f8069d2983c7f664324f4ddca6a460dbad7155ca4b9a43b1a6c8fe6",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "GLW": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GLW.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "c83196ed7bfc24de0059ede3859ff7f9d5887f071a2215535b06ede58a435793",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "GPMT": {
+      "dividend_rows": 16,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GPMT.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "b7de7758f40b8bd0fd7ef0fe0a2f07fb7a94548446c324a73b7cb42cf62a2c70",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "GRPN": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GRPN.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "b4158be5e1598d8abd4e993c6d85fd87ec08016d7c9d5c4faea836424238834d",
+      "split_rows": 1,
+      "status": "DOWNLOADED"
+    },
+    "GS": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/GS.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "e23a9156b26ebf781e3e77ae70f41463c212168bbb22b81d77f388a58c50e260",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "HURC": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/HURC.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "7925ba4fdb0dc342a1e3d94627c42ad9c322762b3b6069418464694ba5c5e165",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "IIIN": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/IIIN.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "4ac493d45b43e4e6a59de0ee92ccbdffe5ead55d748f31b70e3e74ac91754084",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "IMXI": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-02": [
+          "inconsistent_adjusted_low"
+        ],
+        "2020-07-07": [
+          "inconsistent_adjusted_high",
+          "inconsistent_adjusted_low"
+        ]
+      },
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/IMXI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "7c72cc7069877b4513f5c376eb74f7b12b8b8b3d9e759ca9ff9f7e4c671d9c27",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "INSG": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/INSG.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "8e47e81b7cce63fce2606a9a92884d4440c6691867bfb28fbdb75c9030fe4bbf",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "JCAP": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/JCAP.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 0,
+      "sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "LIND": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/LIND.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "3b50b9c56709e25a80768af3e01626b91eec62beac9a0507e7d007614cd53def",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "LMFA": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/LMFA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "MBII": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2022-09-07",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MBII.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 708,
+      "sha256": "cca28f6b440a51014f89825c3b222aa03f834a95a8d97f773332404417497b55",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MCHP": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MCHP.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "6281788d78e4badf80ec551df33d4368ff5d6567ed4193f1be0b9b92741a787a",
+      "split_rows": 1,
+      "status": "DOWNLOADED"
+    },
+    "MCK": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MCK.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "6c7f3dee190d30dd1e9882f1677cdee8c57fe4f88441293d53bcbb7bd015a3b0",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MFA": {
+      "dividend_rows": 16,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MFA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "135c81edad168beece9502678aa59fdb3d4a45ea528dcd684195cdcfa0d2881a",
+      "split_rows": 1,
+      "status": "DOWNLOADED"
+    },
+    "MGTA": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-09-11",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MGTA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 993,
+      "sha256": "0e7b24cc9cf93e74155f11fc538c69fef01b3ea2d034e2efdc309c353d64cadc",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MICR": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2021-08-18": [
+          "zero_volume_needs_status_review"
+        ],
+        "2021-10-07": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-03-22": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-04-13": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-05-24": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-08-23": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-08-31": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-09-27": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-11-09": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-11-25": [
+          "zero_volume_needs_status_review"
+        ],
+        "2022-12-06": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-01-12": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-01-20": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-04-17": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-04-21": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-04-27": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-05-08": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-05-11": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-05-15": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-05-16": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-05-24": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-07-03": [
+          "zero_volume_needs_status_review"
+        ],
+        "2023-09-28": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MICR.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "c741d2bb8ad7ab8bb55676ca4a634669e87b709428f7a82fba611b955020bc97",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MR": {
+      "dividend_rows": 0,
+      "first_session": "2020-11-13",
+      "invalid_sessions": {
+        "2020-11-13": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2020-11-13",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MR.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1,
+      "sha256": "6f37e20e103cb51fb1900e4ddbbfbbdcfb54d9ddcc63a23fe0818b0603b751e3",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MSA": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MSA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "7ddd5b735fb31fe6ca232b2f2629cd562bf9c944e3a2cd4149c42650b232faab",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MSGN": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2021-07-09": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2021-07-09",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MSGN.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 447,
+      "sha256": "d51e834aa484253f9430829696c829c8219ccf59a0c8f04dd0d22f09dda1b30f",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MTSC": {
+      "dividend_rows": 2,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2021-04-07": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2021-04-07",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MTSC.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 382,
+      "sha256": "a6d278dd379d164b0adb2abf48308190e45cc308ad9371be8116ac1c94fe6cb1",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MTSI": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MTSI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "045de3d9af74f1de838c14fc0fed274502e03587fae777d3a062c5502cff961d",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MVBF": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MVBF.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "4a1d68fe54c23b2455696e1a63ce0a9f814926e6d14bcd4aa81ad74f69584283",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "MYOK": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-01": [
+          "inconsistent_adjusted_low"
+        ],
+        "2020-07-02": [
+          "inconsistent_adjusted_high",
+          "inconsistent_adjusted_low"
+        ],
+        "2020-07-06": [
+          "inconsistent_adjusted_high"
+        ],
+        "2020-07-07": [
+          "inconsistent_adjusted_high"
+        ],
+        "2020-11-17": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2020-11-17",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/MYOK.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 287,
+      "sha256": "fd7d8bb1f4fc790af100208f0d56b17fbf8cbb636a41d608c76d7a54d8e12ac5",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "NPO": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NPO.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "3a227e8d9fd88441f998ee73c848269ef8aa616af9c55535f1745e4d646e805f",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "NRCG": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2019-10-31",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NRCG.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 23,
+      "sha256": "2b87fd5fff683d7885b886b60c7949369390adc2d1327abbec0089e07a0a819a",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "NTLA": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-08": [
+          "inconsistent_adjusted_high"
+        ]
+      },
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NTLA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "3695938c2dc11c555aab70ab21ea5db6e98e01a659c944f4b15eb149024b609a",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "NWN": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NWN.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "e396cfddb9daeae88b3173fad00dc24ebe4e390335092558993281ead71e9d36",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "NXST": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/NXST.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "06632d3c136b1d8c4783dbc3f29cf37b28f84a23e5f2a13c94cb1823c2b694c6",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "OGE": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/OGE.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "de5439efc7b0accfa11a72850ec65429e5ac67a48b7d9f1bf995b9a8530454ce",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "PBI": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PBI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "248404928ae7a72a58a4cd46ee52ce0b9191ecefce9572577efc16ca5d097ddf",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "PFBI": {
+      "dividend_rows": 9,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2021-09-20": [
+          "zero_volume_needs_status_review"
+        ],
+        "2021-09-21": [
+          "zero_volume_needs_status_review"
+        ],
+        "2021-09-22": [
+          "zero_volume_needs_status_review"
+        ],
+        "2021-09-23": [
+          "zero_volume_needs_status_review"
+        ],
+        "2021-09-24": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2021-09-24",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PFBI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 501,
+      "sha256": "f7a186c704c8dbf297e4fec92de093de3dc556e2e016fd7977274df978bf11e8",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "PPL": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PPL.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "980e094ffc0633246e89e9c5567779de7545a0be5e80aea63e9b1abc9b3078a7",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "PRLB": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PRLB.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "ba2e4ef98223d31897d1e469db69adcf981dc71a9dccec661b935618420a2406",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "PRTS": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/PRTS.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "69661594f8f51c3ad81ebd5c8fc82069503f3de32845921b3470131a9bf19199",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "RCMT": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/RCMT.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "9d004461ac99c3893c48820cdb1e17d4db7b0cce852e3988eea8c3c82d4075a1",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "RIGL": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/RIGL.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "930d9ebeb6c5b784499fa8f56300a77066203d1bb26a3b5e0f11a8aa67c5b79e",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "RLJ": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/RLJ.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "ab2860c1089259b9eece97a494868d88c467e6bade3bf20401adf25c3612b43b",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "SAVA": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SAVA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 0,
+      "sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "SGRY": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-07": [
+          "inconsistent_adjusted_high"
+        ],
+        "2020-07-15": [
+          "inconsistent_adjusted_low"
+        ]
+      },
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SGRY.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "ea876e53b8848702680f86aa7000aab65c26813d2c026c7937ace34431b0297a",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "SHLO": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2020-10-01",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SHLO.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 254,
+      "sha256": "99966e44962ba9d5a52b613591ff914f3d403a9241755e006e7cbbbf2b903c35",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "SLCT": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-14": [
+          "inconsistent_adjusted_open"
+        ],
+        "2021-10-18": [
+          "zero_volume_needs_status_review"
+        ]
+      },
+      "last_session": "2021-10-18",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SLCT.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 517,
+      "sha256": "5a3463c1e8c71bcd0f9f4d4773fbbd63db6db507f455c6141b03587c18a990c7",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "SNDX": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {
+        "2020-07-02": [
+          "inconsistent_adjusted_high"
+        ],
+        "2020-07-09": [
+          "inconsistent_adjusted_low"
+        ],
+        "2020-07-14": [
+          "inconsistent_adjusted_high"
+        ],
+        "2020-07-17": [
+          "inconsistent_adjusted_open",
+          "inconsistent_adjusted_high",
+          "inconsistent_adjusted_low"
+        ]
+      },
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SNDX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "3b06765cd5ebc4bdb71b77946007603ce5a0b69b4f4fc8a2127cb283f91cd638",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "SPY": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SPY.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "eab798682ee5ae83f0a6ee03414edfea51ec1828d06a7325cc29cdf2afa8ecef",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "SRDX": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/SRDX.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "2ad8e1f4483a3fdf5d596c541555cff87f2847ad2d81f07ec5e66bacaedb2942",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "STBA": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/STBA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "4124ad2e54d838f49ccbcb86e72a98e0d76fbcc2c0a112c213f650bcd3d287d7",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "TMUS": {
+      "dividend_rows": 1,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/TMUS.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "64478fe9a14f323f046b35a6a4820ff27896bc6fc4854bc7656cfe7b40ba68bd",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "TRXC": {
+      "bytes": 30,
+      "error_class": "AssertionError",
+      "interpretation": "Preserved provider HTTP200 body explicitly says ticker not found; not a valid price row.",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/TRXC.csv",
+      "prior_parse_status": {
+        "bytes": 30,
+        "error_class": "AssertionError",
+        "path": "data/snapshots/equity-event-test-2026-09-10/prices/TRXC.csv",
+        "sha256": "fda7906d9f89c3ec5382d12c570b41e66b36052a1f583484a83d52af516e5716",
+        "status": "REQUEST_OR_PARSE_ERROR"
+      },
+      "rows": 0,
+      "sha256": "fda7906d9f89c3ec5382d12c570b41e66b36052a1f583484a83d52af516e5716",
+      "status": "EMPTY_HISTORY"
+    },
+    "TSN": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/TSN.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "2abda1355c4dcc981da83843ae1741a569251ce922ba94619cb8ad7a4004abfb",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "UFI": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/UFI.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "ed49fd36a7fda3f4106f2e5074657adaa1abe2370a0db30a049eb61e767bdc9b",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "ULTA": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/ULTA.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "6eb9578d506e004673d466d58d5723dec699ab1c9200ed562d8cbbcdd7d6856c",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "USM": {
+      "dividend_rows": 0,
+      "first_session": null,
+      "invalid_sessions": {},
+      "last_session": null,
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/USM.csv",
+      "reparse": {
+        "previous": {
+          "error_class": "AssertionError",
+          "status": "REQUEST_OR_PARSE_ERROR"
+        },
+        "reason": "Provider returned literal JSON [] despite requested CSV. It remains missing data. No new network request."
+      },
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "split_rows": 0,
+      "status": "EMPTY_HISTORY"
+    },
+    "UTMD": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/UTMD.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "7c1b8cd78bdaf2dbd77224d0f6aa3712fd3f8f7dd628efb4de9921d9d5ded3dc",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "VC": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/VC.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "b4bd42632b8a9f494ede52d5e446e7d042d0eb341c71c72b18c450c42466cb99",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "VERU": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/VERU.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "2f01091c2a9a27ed9dda45d1f9b3898db06f7eb0d1a48a811da2a6fb8d07209e",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "VPG": {
+      "dividend_rows": 0,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/VPG.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "0359f815c497bde2dfe70d4912cf56e3f9bd0b212fa6b19ba5645b8ac83c34e9",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "WDFC": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WDFC.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "99969835141e1954daec6827bb9a439d5301ea0ddc645c8a300982a0416ef8bf",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "WIRE": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WIRE.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "9ebf94f16aa50e4f7e7d06671b1e205192069b05436f2ef72a9ef8a8f50a4345",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "WLK": {
+      "dividend_rows": 17,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-12-29",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WLK.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 1070,
+      "sha256": "008dffc8508dcedbcdcd501de7e0c6af67c0099afdca4a05057dcd7ef224d982",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    },
+    "WWE": {
+      "dividend_rows": 15,
+      "first_session": "2019-10-01",
+      "invalid_sessions": {},
+      "last_session": "2023-09-11",
+      "path": "data/snapshots/equity-event-test-2026-09-10/prices/WWE.csv",
+      "qualification": "Structural provider fields only; issuer, event, action and held-position checks remain separate.",
+      "rows": 993,
+      "sha256": "d5e2509a0d1d05bd78984972096e9ca6a428a0c6751d5ac4daf7caff1a0e38e0",
+      "split_rows": 0,
+      "status": "DOWNLOADED"
+    }
+  },
+  "updated_utc": "2026-09-11T03:49:32.432310+00:00"
+}

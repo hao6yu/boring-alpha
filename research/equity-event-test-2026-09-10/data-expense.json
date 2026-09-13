@@ -1,0 +1,25 @@
+{
+  "amount_usd": "0.012873232367",
+  "basis": "quote",
+  "source": "research/equity-event-test-2026-09-10/ptn-download-manifest.json",
+  "source_sha256": "59438471e680169287bc11669f33098f1aad3971a4023cf81775b46cd9c266d0",
+  "scope": "Entire dedicated study acquisition quote, including PTN repair samples and full histories; charged once at accountstart in a separate simulation.",
+  "items": [
+    {
+      "provider": "Databento",
+      "amount_usd": "0.012873232367",
+      "basis": "cumulative provider quotes for executed requests; not invoice reconciliation"
+    },
+    {
+      "provider": "Tiingo",
+      "amount_usd": 0,
+      "basis": "Existing free account quota; no upgrade or new subscription"
+    },
+    {
+      "provider": "SEC and issuer public sources",
+      "amount_usd": 0,
+      "basis": "Public downloads"
+    }
+  ],
+  "excluded_costs": "Usertime, computing and agenttoken usage are not priced as a cash data purchase; no live broker costs incurred. Trade costs are separately simulated."
+}

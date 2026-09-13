@@ -1,0 +1,5031 @@
+{
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "price_manifest_sha256": "0199f82fc88a84b054319f69db65dbf46186f2b1267de70bc5eb1457b9a7097f",
+  "price_source_exceptions_sha256": "d0436bade83ef2499b5b65df3eb8c2f7eb207b4653a0b3ce6dd69100902dcb8f",
+  "scope": "Action dates and qualification only; no price levels or return calculations.",
+  "symbols": {
+    "ACRE": {
+      "actions": {
+        "2019-12-27": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-30": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-29": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-29": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-29": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-30": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-30": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-30": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-30": {
+          "divCash": 0.35000000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-29": {
+          "divCash": 0.35000000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-28": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-28": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "7cae9d51f05dc971be9ee52f97336293b008616868cba702499ca2d24136300d"
+    },
+    "ADMS": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "20bb00053670c0450474663c4a11ef4ef83b7c0d41d878d3803d0079d2822ea3"
+    },
+    "AEO": {
+      "actions": {
+        "2019-10-10": {
+          "divCash": 0.1375,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-02": {
+          "divCash": 0.1375,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-15": {
+          "divCash": 0.1375,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-11": {
+          "divCash": 0.1375,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-08": {
+          "divCash": 0.1375,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-08": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-07": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-09": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-10": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-07": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-05": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-06": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-12": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b246e993470042089cf41b49ab79e5a9379edf3c0667bd0406dcc6264e61e707"
+    },
+    "AGE": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "AKS": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "1c2489813887d8d59051ffde1e7d32c44d6ed4fe4c98f176d05bb61d4cc9d7f7"
+    },
+    "ALOT": {
+      "actions": {
+        "2019-12-18": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-25": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "18b22ed78ead8d1a77968907767b159dae5947339a0f7c0eaee9e5996b70635d"
+    },
+    "AMBC": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "AMCX": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "1813a959414c762c1d5e0715e24fa69671a935ea27bcc6eb6ca6a127ebc39cd5"
+    },
+    "AMH": {
+      "actions": {
+        "2019-12-31": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-12": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-12": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-14": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-31": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-12": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-14": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-14": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-14": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-14": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-14": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-14": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-14": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-14": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-14": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-14": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-14": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "5322d99549f162b10f7fc1709aefacc8a2ace6057799a012c22f0274f8e3c43e"
+    },
+    "APOG": {
+      "actions": {
+        "2019-10-18": {
+          "divCash": 0.17500000000000002,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-31": {
+          "divCash": 0.1875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-13": {
+          "divCash": 0.1875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-13": {
+          "divCash": 0.1875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-23": {
+          "divCash": 0.1875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-29": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-07": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-13": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-25": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-28": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-09": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-11": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-24": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-30": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-08": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-11": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-23": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "bff1c71ae545556a3cdd6f6b93012659fecb5eb148a37f314e7d14ca28f3651a"
+    },
+    "BR": {
+      "actions": {
+        "2019-12-12": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-12": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-11": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-14": {
+          "divCash": 0.575,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-14": {
+          "divCash": 0.575,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-12": {
+          "divCash": 0.5750000000000001,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-14": {
+          "divCash": 0.5750000000000001,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-14": {
+          "divCash": 0.64,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-14": {
+          "divCash": 0.64,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-14": {
+          "divCash": 0.64,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-14": {
+          "divCash": 0.64,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-14": {
+          "divCash": 0.725,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-14": {
+          "divCash": 0.725,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-14": {
+          "divCash": 0.725,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-14": {
+          "divCash": 0.725,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-14": {
+          "divCash": 0.8,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-14": {
+          "divCash": 0.8,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "e0093f4861088107b5215527feea33d71f74b4388cbf802101813244aa63813e"
+    },
+    "BX": {
+      "actions": {
+        "2019-11-01": {
+          "divCash": 0.49,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-07": {
+          "divCash": 0.61,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-01": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-31": {
+          "divCash": 0.37,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-06": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-05": {
+          "divCash": 0.96,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-30": {
+          "divCash": 0.82,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-30": {
+          "divCash": 0.7000000000000001,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-29": {
+          "divCash": 1.09,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-04": {
+          "divCash": 1.45,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-29": {
+          "divCash": 1.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-29": {
+          "divCash": 1.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-28": {
+          "divCash": 0.9,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-03": {
+          "divCash": 0.91,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-28": {
+          "divCash": 0.82,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-28": {
+          "divCash": 0.79,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-27": {
+          "divCash": 0.8,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "1d8b6025c2660ecb5c349b57491e1fad5cf597a2bea40d5cacf672f863a7c3de"
+    },
+    "CADE": {
+      "actions": {
+        "2019-12-12": {
+          "divCash": 0.185,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2020-03-12": {
+          "divCash": 0.185,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2020-06-12": {
+          "divCash": 0.185,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2020-09-14": {
+          "divCash": 0.185,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2020-12-14": {
+          "divCash": 0.19,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-03-12": {
+          "divCash": 0.19,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-06-14": {
+          "divCash": 0.19,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-09-14": {
+          "divCash": 0.2,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-10-15": {
+          "divCash": 0.158,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-10-22": {
+          "divCash": 1.25,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-12-14": {
+          "divCash": 0.2,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-03-14": {
+          "divCash": 0.22,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-06-14": {
+          "divCash": 0.22,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-09-14": {
+          "divCash": 0.22,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-12-14": {
+          "divCash": 0.22,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-03-14": {
+          "divCash": 0.235,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-06-14": {
+          "divCash": 0.235,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-09-14": {
+          "divCash": 0.235,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-12-14": {
+          "divCash": 0.235,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": true,
+      "source_sha256": "40de593b7049d7b5921ad5c85c3de38c42639d04326aac12a0a68d26d9287b23"
+    },
+    "CART": {
+      "actions": {},
+      "provider_identity_ambiguous": true,
+      "source_sha256": "b6c510d7be7bbfb3cb69843979688351ee7099f10ce8ea0dfd281d3e0c8d986f"
+    },
+    "CASY": {
+      "actions": {
+        "2019-10-31": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-31": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-30": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-31": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-30": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-29": {
+          "divCash": 0.34,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-30": {
+          "divCash": 0.34,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-30": {
+          "divCash": 0.34,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-31": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-29": {
+          "divCash": 0.38,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-31": {
+          "divCash": 0.38,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-31": {
+          "divCash": 0.38,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-28": {
+          "divCash": 0.38,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-31": {
+          "divCash": 0.43,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-31": {
+          "divCash": 0.43,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "d9248d6899ae51f49bfbec74c31b6dc459a705566e2135e8119685b8fb907aea"
+    },
+    "CAT": {
+      "actions": {
+        "2019-10-18": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-17": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-17": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-17": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-23": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-19": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-23": {
+          "divCash": 1.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-19": {
+          "divCash": 1.11,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-22": {
+          "divCash": 1.11,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-19": {
+          "divCash": 1.11,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-22": {
+          "divCash": 1.11,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-19": {
+          "divCash": 1.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-21": {
+          "divCash": 1.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-19": {
+          "divCash": 1.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-21": {
+          "divCash": 1.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-19": {
+          "divCash": 1.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-20": {
+          "divCash": 1.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "f359cd6a865c1f4a7ca7fbbaf7abceda2adb6d922267433729462636c5965644"
+    },
+    "CGNX": {
+      "actions": {
+        "2019-11-14": {
+          "divCash": 0.055,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-27": {
+          "divCash": 0.055,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-14": {
+          "divCash": 0.055,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-13": {
+          "divCash": 0.055,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-12": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-11": {
+          "divCash": 2.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-25": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-20": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-19": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-18": {
+          "divCash": 0.065,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-03": {
+          "divCash": 0.065,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-19": {
+          "divCash": 0.065,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-18": {
+          "divCash": 0.065,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-17": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-02": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-18": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-17": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-16": {
+          "divCash": 0.075,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "eb4f26dbc78d46cd1d4d5ee0e983f5ef0fdb9b0a364289a9a3b7e5e39b5ccdb5"
+    },
+    "CHGG": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "90074eda99fb970d1ec1fb13e409d5a60cd0ac9613d8f9d7ea1f2bb7efb1b944"
+    },
+    "CLAR": {
+      "actions": {
+        "2019-11-07": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-31": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-07": {
+          "divCash": 0.025,
+          "issues": [
+            "ORIGINAL_SOURCE_CONFLICT: The provider's reported action row has divCash0.025 and splitFactor1.002, whereas the issuer's contemporaneous notice specifies a stock distribution of0.00210 new common share per old share. The0.025 figure is a stated distribution value, not a cash entitlement. Provider-reported action date is used to isolate the contradictory row; the issuer source does not independently certify that ex-date. Fractional cash-in-lieu is not imputed."
+          ],
+          "qualified": false,
+          "splitFactor": 1.002
+        },
+        "2020-11-06": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-05": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-07": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-06": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-05": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-04": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-06": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-05": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-10": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-06": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-05": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-11": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-13": {
+          "divCash": 0.025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "62b06e7fdcc292778ec5e420c866255153014de00c5f099039ab963dfb296f2d"
+    },
+    "CLRB": {
+      "actions": {
+        "2022-07-22": {
+          "divCash": 0.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 0.1
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "a99551c1f4d125cfe9ff167f5a4d85e9ec6e8aff5987ca4f9baf29202e8adb81"
+    },
+    "CNCE": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "d53ad8983ff557a7dd4a75f824cd65784127c7170a48e0e3fc5b430d5ed70908"
+    },
+    "CPIX": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b4320c82800761d1ed1ba598a03bd6db170a87704306b01f6f648da8efd1b26f"
+    },
+    "DFIN": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "2b0e19d944cc847233f8b8a0564162382d1759e1923ca265b50d0430bab0438b"
+    },
+    "DGX": {
+      "actions": {
+        "2019-10-03": {
+          "divCash": 0.53,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-13": {
+          "divCash": 0.53,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-06": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-07": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-05": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-19": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-06": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-06": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-04": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-18": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-05": {
+          "divCash": 0.66,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-05": {
+          "divCash": 0.66,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-03": {
+          "divCash": 0.66,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-17": {
+          "divCash": 0.66,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-06": {
+          "divCash": 0.71,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-10": {
+          "divCash": 0.71,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-05": {
+          "divCash": 0.71,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "8b5c839d0deb8a2212bc13441a045f6e463f3f938623be0d61720627e4cd01f6"
+    },
+    "DVA": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "a5c4b1487334781f138295788bb3e93143a0d54f2b26ef74b7ba096214d3f10b"
+    },
+    "DZSI": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "8bb47e1197e01e63fdadcba4a0d21055062236485fe2ff27c85680f4f023de18"
+    },
+    "ECOL": {
+      "actions": {
+        "2019-10-17": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-16": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "784545a8675d20d8017a0586f0ad174c941883b653df789a7bfdac94a225da09"
+    },
+    "EDUC": {
+      "actions": {
+        "2019-11-13": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-24": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-01": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-19": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-18": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-22": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-01": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-23": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-17": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-18": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "2dbd41fb8e6e3c0a60238b04adbc1ac3cb604e29a60e3cff2a04e964fdcd52cf"
+    },
+    "EFX": {
+      "actions": {
+        "2019-11-21": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-03": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-21": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-24": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-23": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-19": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-24": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-03": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-23": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-18": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-24": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-02": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-22": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-21": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-24": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-05": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-22": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "60315351ed0758fa090b79160b40d67d8a8206d6a43e7da4a02947f2dab73d0f"
+    },
+    "EHTH": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "442186647fd542b3b9253b097ad4cc0aae6123d1ffbbeb70c05f592457cbd6be"
+    },
+    "EMCI": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31"
+    },
+    "ETR": {
+      "actions": {
+        "2019-11-06": {
+          "divCash": 0.93,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-12": {
+          "divCash": 0.93,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-06": {
+          "divCash": 0.93,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-12": {
+          "divCash": 0.93,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-10": {
+          "divCash": 0.9500000000000001,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-11": {
+          "divCash": 0.95,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-05": {
+          "divCash": 0.95,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-11": {
+          "divCash": 0.95,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-12": {
+          "divCash": 1.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-10": {
+          "divCash": 1.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-04": {
+          "divCash": 1.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-10": {
+          "divCash": 1.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-10": {
+          "divCash": 1.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-09": {
+          "divCash": 1.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-03": {
+          "divCash": 1.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-10": {
+          "divCash": 1.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-13": {
+          "divCash": 1.13,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "42801c8dfab1d723f47e80696c71586d5270a08e2fdb87d2f59765877db47fb5"
+    },
+    "FBIZ": {
+      "actions": {
+        "2019-11-01": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-31": {
+          "divCash": 0.165,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-01": {
+          "divCash": 0.165,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-31": {
+          "divCash": 0.165,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-30": {
+          "divCash": 0.165,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-05": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-07": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-06": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-05": {
+          "divCash": 0.18,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-04": {
+          "divCash": 0.1975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-06": {
+          "divCash": 0.1975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-05": {
+          "divCash": 0.1975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-04": {
+          "divCash": 0.1975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-03": {
+          "divCash": 0.2275,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-05": {
+          "divCash": 0.2275,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-04": {
+          "divCash": 0.2275,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-03": {
+          "divCash": 0.2275,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "0bbc5eaff793bc9cb05fb36f538b88fadda59900f9752988450302d933c03c97"
+    },
+    "FPRX": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "79621bd0ecd61a231a87175794744e9566332056300ebea8be6d96bc06d5bdf9"
+    },
+    "FRGI": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "f632859814b5c0f01a902d10cfe9502e670c4792985724e990c61429ea892a77"
+    },
+    "FSBC": {
+      "actions": {
+        "2021-07-12": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2021-10-08": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-02-04": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-05-06": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-08-05": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2022-11-04": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-02-03": {
+          "divCash": 0.15,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-05-05": {
+          "divCash": 0.2,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-08-04": {
+          "divCash": 0.2,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        },
+        "2023-11-03": {
+          "divCash": 0.2,
+          "issues": [
+            "MULTIPLE_PROVIDER_SECURITY_HISTORIES_SHARE_TICKER_NEEDS_IDENTITY_RESOLUTION"
+          ],
+          "qualified": false,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": true,
+      "source_sha256": "15d3f7838152f8f8fd11aa636f84ea82e5e07061aea12255510e890c9a867a23"
+    },
+    "FSK": {
+      "actions": {
+        "2019-12-17": {
+          "divCash": 0.19,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-17": {
+          "divCash": 0.19,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-16": {
+          "divCash": 0.6,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 0.25
+        },
+        "2020-09-15": {
+          "divCash": 0.6,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-15": {
+          "divCash": 0.6,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-16": {
+          "divCash": 0.6,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-10": {
+          "divCash": 0.6000000000000001,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-14": {
+          "divCash": 0.65,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-14": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-15": {
+          "divCash": 0.63,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-14": {
+          "divCash": 0.68,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-13": {
+          "divCash": 0.67,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-13": {
+          "divCash": 0.68,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-14": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-16": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-13": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-15": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-12": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-14": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-12": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "89077cb7562b1ffbca9b30dc2f078504385da298173404d35a6967add3671dda"
+    },
+    "GCAP": {
+      "actions": {
+        "2019-12-09": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-23": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-22": {
+          "divCash": 0.06,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "9ffd41d83f8069d2983c7f664324f4ddca6a460dbad7155ca4b9a43b1a6c8fe6"
+    },
+    "GLW": {
+      "actions": {
+        "2019-11-14": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-27": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-28": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-27": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-12": {
+          "divCash": 0.22,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-25": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-27": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-30": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-10": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-25": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-27": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-30": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-17": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-27": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-30": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-30": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-16": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "c83196ed7bfc24de0059ede3859ff7f9d5887f071a2215535b06ede58a435793"
+    },
+    "GPMT": {
+      "actions": {
+        "2019-10-02": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2019-12-30": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-07": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-30": {
+          "divCash": 0.45,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-31": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-30": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-30": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-30": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-31": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-30": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-30": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-29": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-31": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-30": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-29": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-28": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b7de7758f40b8bd0fd7ef0fe0a2f07fb7a94548446c324a73b7cb42cf62a2c70"
+    },
+    "GRPN": {
+      "actions": {
+        "2020-06-11": {
+          "divCash": 0.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 0.05
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b4158be5e1598d8abd4e993c6d85fd87ec08016d7c9d5c4faea836424238834d"
+    },
+    "GS": {
+      "actions": {
+        "2019-11-29": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-28": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-29": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-31": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-01": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-01": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-28": {
+          "divCash": 1.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-31": {
+          "divCash": 2.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-01": {
+          "divCash": 2.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-01": {
+          "divCash": 2.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-31": {
+          "divCash": 2.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-31": {
+          "divCash": 2.5,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-30": {
+          "divCash": 2.5,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-01": {
+          "divCash": 2.5,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-31": {
+          "divCash": 2.5,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-30": {
+          "divCash": 2.75,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-29": {
+          "divCash": 2.75,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "e23a9156b26ebf781e3e77ae70f41463c212168bbb22b81d77f388a58c50e260"
+    },
+    "HURC": {
+      "actions": {
+        "2019-12-31": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-27": {
+          "divCash": 0.13,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-26": {
+          "divCash": 0.13,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-01": {
+          "divCash": 0.13,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-05": {
+          "divCash": 0.13,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-26": {
+          "divCash": 0.14,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-25": {
+          "divCash": 0.14,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-24": {
+          "divCash": 0.14,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-31": {
+          "divCash": 0.14,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-25": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-24": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-30": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-30": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-24": {
+          "divCash": 0.16,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-23": {
+          "divCash": 0.16,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-29": {
+          "divCash": 0.16,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-29": {
+          "divCash": 0.16,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "7925ba4fdb0dc342a1e3d94627c42ad9c322762b3b6069418464694ba5c5e165"
+    },
+    "IIIN": {
+      "actions": {
+        "2019-12-13": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-12": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-11": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-10": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-30": {
+          "divCash": 1.53,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-11": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-10": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-09": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-01": {
+          "divCash": 2.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-10": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-09": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-15": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-08": {
+          "divCash": 2.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-16": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-15": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-14": {
+          "divCash": 0.03,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-07": {
+          "divCash": 2.53,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4ac493d45b43e4e6a59de0ee92ccbdffe5ead55d748f31b70e3e74ac91754084"
+    },
+    "IMXI": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "7c72cc7069877b4513f5c376eb74f7b12b8b8b3d9e759ca9ff9f7e4c671d9c27"
+    },
+    "INSG": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "8e47e81b7cce63fce2606a9a92884d4440c6691867bfb28fbdb75c9030fe4bbf"
+    },
+    "JCAP": {
+      "actions": {},
+      "provider_identity_ambiguous": true,
+      "source_sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31"
+    },
+    "LIND": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "3b50b9c56709e25a80768af3e01626b91eec62beac9a0507e7d007614cd53def"
+    },
+    "LMFA": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "MBII": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "cca28f6b440a51014f89825c3b222aa03f834a95a8d97f773332404417497b55"
+    },
+    "MCHP": {
+      "actions": {
+        "2019-11-20": {
+          "divCash": 0.3665,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-20": {
+          "divCash": 0.367,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-20": {
+          "divCash": 0.3675,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-20": {
+          "divCash": 0.368,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-19": {
+          "divCash": 0.3685,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-19": {
+          "divCash": 0.39,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-20": {
+          "divCash": 0.41300000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-19": {
+          "divCash": 0.4370000000000001,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-13": {
+          "divCash": 0.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 2.0
+        },
+        "2021-11-18": {
+          "divCash": 0.23199999999999998,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-18": {
+          "divCash": 0.253,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-19": {
+          "divCash": 0.276,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-18": {
+          "divCash": 0.301,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-21": {
+          "divCash": 0.32799999999999996,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-17": {
+          "divCash": 0.358,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-19": {
+          "divCash": 0.38299999999999995,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-21": {
+          "divCash": 0.41,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-21": {
+          "divCash": 0.439,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "6281788d78e4badf80ec551df33d4368ff5d6567ed4193f1be0b9b92741a787a"
+    },
+    "MCK": {
+      "actions": {
+        "2019-11-29": {
+          "divCash": 0.41000000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-28": {
+          "divCash": 0.41000000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-29": {
+          "divCash": 0.41000000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-31": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-30": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-01": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-28": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-31": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-30": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-28": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-31": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-31": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-30": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-28": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-31": {
+          "divCash": 0.54,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-31": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-30": {
+          "divCash": 0.62,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "6c7f3dee190d30dd1e9882f1677cdee8c57fe4f88441293d53bcbb7bd015a3b0"
+    },
+    "MFA": {
+      "actions": {
+        "2019-12-27": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-30": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-29": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-29": {
+          "divCash": 0.075,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-30": {
+          "divCash": 0.075,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-29": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-29": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-30": {
+          "divCash": 0.11,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-21": {
+          "divCash": 0.11,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-05": {
+          "divCash": 0.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 0.25
+        },
+        "2022-06-29": {
+          "divCash": 0.44,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-29": {
+          "divCash": 0.44,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-30": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-29": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-28": {
+          "divCash": 0.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "135c81edad168beece9502678aa59fdb3d4a45ea528dcd684195cdcfa0d2881a"
+    },
+    "MGTA": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "0e7b24cc9cf93e74155f11fc538c69fef01b3ea2d034e2efdc309c353d64cadc"
+    },
+    "MICR": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "c741d2bb8ad7ab8bb55676ca4a634669e87b709428f7a82fba611b955020bc97"
+    },
+    "MR": {
+      "actions": {},
+      "provider_identity_ambiguous": true,
+      "source_sha256": "6f37e20e103cb51fb1900e4ddbbfbbdcfb54d9ddcc63a23fe0818b0603b751e3"
+    },
+    "MSA": {
+      "actions": {
+        "2019-11-06": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-11": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-21": {
+          "divCash": 0.43,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-14": {
+          "divCash": 0.43,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-10": {
+          "divCash": 0.43,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-18": {
+          "divCash": 0.43,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-14": {
+          "divCash": 0.44,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-13": {
+          "divCash": 0.44,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-12": {
+          "divCash": 0.44,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-11": {
+          "divCash": 0.44,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-13": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-15": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-14": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-13": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-15": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-15": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-14": {
+          "divCash": 0.47,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "7ddd5b735fb31fe6ca232b2f2629cd562bf9c944e3a2cd4149c42650b232faab"
+    },
+    "MSGN": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "d51e834aa484253f9430829696c829c8219ccf59a0c8f04dd0d22f09dda1b30f"
+    },
+    "MTSC": {
+      "actions": {
+        "2019-12-13": {
+          "divCash": 0.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-13": {
+          "divCash": 0.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "a6d278dd379d164b0adb2abf48308190e45cc308ad9371be8116ac1c94fe6cb1"
+    },
+    "MTSI": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "045de3d9af74f1de838c14fc0fed274502e03587fae777d3a062c5502cff961d"
+    },
+    "MVBF": {
+      "actions": {
+        "2019-11-27": {
+          "divCash": 0.07,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-27": {
+          "divCash": 0.09,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-29": {
+          "divCash": 0.09,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-31": {
+          "divCash": 0.09,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-30": {
+          "divCash": 0.09,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-26": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-28": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-31": {
+          "divCash": 0.14,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-30": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-28": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-31": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-31": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-30": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-28": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-31": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-31": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-30": {
+          "divCash": 0.17,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4a1d68fe54c23b2455696e1a63ce0a9f814926e6d14bcd4aa81ad74f69584283"
+    },
+    "MYOK": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "fd7d8bb1f4fc790af100208f0d56b17fbf8cbb636a41d608c76d7a54d8e12ac5"
+    },
+    "NPO": {
+      "actions": {
+        "2019-12-03": {
+          "divCash": 0.25,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-03": {
+          "divCash": 0.26,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-02": {
+          "divCash": 0.26,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-01": {
+          "divCash": 0.26,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-01": {
+          "divCash": 0.26,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-02": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-01": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-31": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-30": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-01": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-31": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-30": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-29": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-28": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-30": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-29": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-28": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "3a227e8d9fd88441f998ee73c848269ef8aa616af9c55535f1745e4d646e805f"
+    },
+    "NRCG": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "2b87fd5fff683d7885b886b60c7949369390adc2d1327abbec0089e07a0a819a"
+    },
+    "NTLA": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "3695938c2dc11c555aab70ab21ea5db6e98e01a659c944f4b15eb149024b609a"
+    },
+    "NWN": {
+      "actions": {
+        "2019-10-30": {
+          "divCash": 0.47750000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-30": {
+          "divCash": 0.47750000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-29": {
+          "divCash": 0.47750000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-30": {
+          "divCash": 0.4775,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-29": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-28": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-29": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-29": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-28": {
+          "divCash": 0.4825,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-28": {
+          "divCash": 0.4825,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-28": {
+          "divCash": 0.4825,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-28": {
+          "divCash": 0.4825,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-28": {
+          "divCash": 0.485,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-30": {
+          "divCash": 0.485,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-27": {
+          "divCash": 0.485,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-28": {
+          "divCash": 0.485,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-30": {
+          "divCash": 0.4875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "e396cfddb9daeae88b3173fad00dc24ebe4e390335092558993281ead71e9d36"
+    },
+    "NXST": {
+      "actions": {
+        "2019-11-07": {
+          "divCash": 0.45,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-13": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-14": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-06": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-05": {
+          "divCash": 0.56,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-11": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-13": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-12": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-10": {
+          "divCash": 0.7,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-10": {
+          "divCash": 0.9,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-12": {
+          "divCash": 0.9,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-10": {
+          "divCash": 0.9,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-10": {
+          "divCash": 0.9,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-09": {
+          "divCash": 1.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-11": {
+          "divCash": 1.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-09": {
+          "divCash": 1.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-09": {
+          "divCash": 1.35,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "06632d3c136b1d8c4783dbc3f29cf37b28f84a23e5f2a13c94cb1823c2b694c6"
+    },
+    "OGE": {
+      "actions": {
+        "2019-10-09": {
+          "divCash": 0.3875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-09": {
+          "divCash": 0.3875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-08": {
+          "divCash": 0.3875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-09": {
+          "divCash": 0.3875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-09": {
+          "divCash": 0.4025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-08": {
+          "divCash": 0.4025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-09": {
+          "divCash": 0.4025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-09": {
+          "divCash": 0.4025,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-08": {
+          "divCash": 0.41,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-07": {
+          "divCash": 0.41,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-08": {
+          "divCash": 0.41,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-08": {
+          "divCash": 0.41,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-07": {
+          "divCash": 0.4141,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-06": {
+          "divCash": 0.4141,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-06": {
+          "divCash": 0.4141,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-07": {
+          "divCash": 0.4141,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-06": {
+          "divCash": 0.4182,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "de5439efc7b0accfa11a72850ec65429e5ac67a48b7d9f1bf995b9a8530454ce"
+    },
+    "PBI": {
+      "actions": {
+        "2019-11-18": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-13": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-21": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-20": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-16": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-11": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-20": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-19": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-15": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-17": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-20": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-19": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-14": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-16": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-22": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-21": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-14": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "248404928ae7a72a58a4cd46ee52ce0b9191ecefce9572577efc16ca5d097ddf"
+    },
+    "PFBI": {
+      "actions": {
+        "2019-12-13": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-13": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-12": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-14": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-14": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-29": {
+          "divCash": 1.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-12": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-14": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-31": {
+          "divCash": 0.15,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "f7a186c704c8dbf297e4fec92de093de3dc556e2e016fd7977274df978bf11e8"
+    },
+    "PPL": {
+      "actions": {
+        "2019-12-09": {
+          "divCash": 0.41250000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-09": {
+          "divCash": 0.41500000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-09": {
+          "divCash": 0.41500000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-09": {
+          "divCash": 0.415,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-09": {
+          "divCash": 0.415,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-09": {
+          "divCash": 0.415,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-09": {
+          "divCash": 0.41500000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-09": {
+          "divCash": 0.415,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-09": {
+          "divCash": 0.415,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-09": {
+          "divCash": 0.2,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-17": {
+          "divCash": 0.225,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-08": {
+          "divCash": 0.225,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-08": {
+          "divCash": 0.225,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-09": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-08": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-07": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-07": {
+          "divCash": 0.24,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "980e094ffc0633246e89e9c5567779de7545a0be5e80aea63e9b1abc9b3078a7"
+    },
+    "PRLB": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "ba2e4ef98223d31897d1e469db69adcf981dc71a9dccec661b935618420a2406"
+    },
+    "PRTS": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "69661594f8f51c3ad81ebd5c8fc82069503f3de32845921b3470131a9bf19199"
+    },
+    "RCMT": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "9d004461ac99c3893c48820cdb1e17d4db7b0cce852e3988eea8c3c82d4075a1"
+    },
+    "RIGL": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "930d9ebeb6c5b784499fa8f56300a77066203d1bb26a3b5e0f11a8aa67c5b79e"
+    },
+    "RLJ": {
+      "actions": {
+        "2019-12-30": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-30": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-29": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-29": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-30": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-30": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-29": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-29": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-30": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-30": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-29": {
+          "divCash": 0.01,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-29": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-29": {
+          "divCash": 0.05,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-30": {
+          "divCash": 0.08,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-29": {
+          "divCash": 0.08,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-28": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-28": {
+          "divCash": 0.1,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "ab2860c1089259b9eece97a494868d88c467e6bade3bf20401adf25c3612b43b"
+    },
+    "SAVA": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b05e7d2775387125763890d4fd54e9813af7a0a1c89d78f865da307c9f3bfd31"
+    },
+    "SGRY": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "ea876e53b8848702680f86aa7000aab65c26813d2c026c7937ace34431b0297a"
+    },
+    "SHLO": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "99966e44962ba9d5a52b613591ff914f3d403a9241755e006e7cbbbf2b903c35"
+    },
+    "SLCT": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "5a3463c1e8c71bcd0f9f4d4773fbbd63db6db507f455c6141b03587c18a990c7"
+    },
+    "SNDX": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "3b06765cd5ebc4bdb71b77946007603ce5a0b69b4f4fc8a2127cb283f91cd638"
+    },
+    "SPY": {
+      "actions": {
+        "2019-12-20": {
+          "divCash": 1.57,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-20": {
+          "divCash": 1.405559,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-19": {
+          "divCash": 1.366242,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-18": {
+          "divCash": 1.339224,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-18": {
+          "divCash": 1.58,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-19": {
+          "divCash": 1.277788,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-18": {
+          "divCash": 1.375875,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-17": {
+          "divCash": 1.428117,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-17": {
+          "divCash": 1.636431,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-18": {
+          "divCash": 1.366009,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-17": {
+          "divCash": 1.576871,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-16": {
+          "divCash": 1.596398,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-16": {
+          "divCash": 1.7814,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-17": {
+          "divCash": 1.506204,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-16": {
+          "divCash": 1.638367,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-15": {
+          "divCash": 1.583169,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-15": {
+          "divCash": 1.906073,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "eab798682ee5ae83f0a6ee03414edfea51ec1828d06a7325cc29cdf2afa8ecef"
+    },
+    "SRDX": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "2ad8e1f4483a3fdf5d596c541555cff87f2847ad2d81f07ec5e66bacaedb2942"
+    },
+    "STBA": {
+      "actions": {
+        "2019-11-06": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-12": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-18": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-12": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-04": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-10": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-05": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-04": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-03": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-09": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-04": {
+          "divCash": 0.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-03": {
+          "divCash": 0.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-02": {
+          "divCash": 0.31,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-09": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-10": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-09": {
+          "divCash": 0.32,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-08": {
+          "divCash": 0.33,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4124ad2e54d838f49ccbcb86e72a98e0d76fbcc2c0a112c213f650bcd3d287d7"
+    },
+    "TMUS": {
+      "actions": {
+        "2023-11-30": {
+          "divCash": 0.65,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "64478fe9a14f323f046b35a6a4820ff27896bc6fc4854bc7656cfe7b40ba68bd"
+    },
+    "TRXC": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "fda7906d9f89c3ec5382d12c570b41e66b36052a1f583484a83d52af516e5716"
+    },
+    "TSN": {
+      "actions": {
+        "2019-11-27": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-27": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-29": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-31": {
+          "divCash": 0.42,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-30": {
+          "divCash": 0.445,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-02-26": {
+          "divCash": 0.445,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-28": {
+          "divCash": 0.445,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-31": {
+          "divCash": 0.445,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-30": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-28": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-31": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-31": {
+          "divCash": 0.46,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-30": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-28": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-31": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-31": {
+          "divCash": 0.48,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-30": {
+          "divCash": 0.49,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "2abda1355c4dcc981da83843ae1741a569251ce922ba94619cb8ad7a4004abfb"
+    },
+    "UFI": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "ed49fd36a7fda3f4106f2e5074657adaa1abe2370a0db30a049eb61e767bdc9b"
+    },
+    "ULTA": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "6eb9578d506e004673d466d58d5723dec699ab1c9200ed562d8cbbcdd7d6856c"
+    },
+    "USM": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "UTMD": {
+      "actions": {
+        "2019-12-12": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-12": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-16": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-14": {
+          "divCash": 0.28,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-14": {
+          "divCash": 0.285,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-16": {
+          "divCash": 0.285,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-14": {
+          "divCash": 0.28500000000000003,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-15": {
+          "divCash": 0.285,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-14": {
+          "divCash": 2.0,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-17": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-16": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-15": {
+          "divCash": 0.29,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-15": {
+          "divCash": 0.295,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-16": {
+          "divCash": 0.295,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-15": {
+          "divCash": 0.295,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-09-14": {
+          "divCash": 0.295,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-12-14": {
+          "divCash": 0.3,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "7c1b8cd78bdaf2dbd77224d0f6aa3712fd3f8f7dd628efb4de9921d9d5ded3dc"
+    },
+    "VC": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "b4bd42632b8a9f494ede52d5e446e7d042d0eb341c71c72b18c450c42466cb99"
+    },
+    "VERU": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "2f01091c2a9a27ed9dda45d1f9b3898db06f7eb0d1a48a811da2a6fb8d07209e"
+    },
+    "VPG": {
+      "actions": {},
+      "provider_identity_ambiguous": false,
+      "source_sha256": "0359f815c497bde2dfe70d4912cf56e3f9bd0b212fa6b19ba5645b8ac83c34e9"
+    },
+    "WDFC": {
+      "actions": {
+        "2019-10-17": {
+          "divCash": 0.61,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-16": {
+          "divCash": 0.67,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-16": {
+          "divCash": 0.67,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-16": {
+          "divCash": 0.67,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-15": {
+          "divCash": 0.67,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-01-14": {
+          "divCash": 0.67,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-04-15": {
+          "divCash": 0.72,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-15": {
+          "divCash": 0.72,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-10-14": {
+          "divCash": 0.72,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-13": {
+          "divCash": 0.78,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-04-13": {
+          "divCash": 0.78,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-07-14": {
+          "divCash": 0.78,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-20": {
+          "divCash": 0.78,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-12": {
+          "divCash": 0.83,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-13": {
+          "divCash": 0.83,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-13": {
+          "divCash": 0.83,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-19": {
+          "divCash": 0.83,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "99969835141e1954daec6827bb9a439d5301ea0ddc645c8a300982a0416ef8bf"
+    },
+    "WIRE": {
+      "actions": {
+        "2019-10-03": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-01-02": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-04-02": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-07-01": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-10-01": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-30": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-31": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-07-01": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-30": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-01-06": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-31": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-30": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-10-06": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-01-05": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-04-05": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-07-06": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-10-05": {
+          "divCash": 0.02,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "9ebf94f16aa50e4f7e7d06671b1e205192069b05436f2ef72a9ef8a8f50a4345"
+    },
+    "WLK": {
+      "actions": {
+        "2019-11-25": {
+          "divCash": 0.2625,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-02-24": {
+          "divCash": 0.2625,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-05-22": {
+          "divCash": 0.2625,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-08-24": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-11-23": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-01": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-05-24": {
+          "divCash": 0.27,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-08-23": {
+          "divCash": 0.2975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-11-22": {
+          "divCash": 0.2975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-02-28": {
+          "divCash": 0.2975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-05-20": {
+          "divCash": 0.2975,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-08-19": {
+          "divCash": 0.357,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-11-23": {
+          "divCash": 0.35700000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-02-28": {
+          "divCash": 0.357,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-05-22": {
+          "divCash": 0.35700000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-08-24": {
+          "divCash": 0.35700000000000004,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-11-20": {
+          "divCash": 0.5,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "008dffc8508dcedbcdcd501de7e0c6af67c0099afdca4a05057dcd7ef224d982"
+    },
+    "WWE": {
+      "actions": {
+        "2019-12-12": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-03-12": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-06-12": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-09-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2020-12-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-03-12": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-06-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-09-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2021-12-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-03-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-06-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-09-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2022-12-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-03-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        },
+        "2023-06-14": {
+          "divCash": 0.12,
+          "issues": [],
+          "qualified": true,
+          "splitFactor": 1.0
+        }
+      },
+      "provider_identity_ambiguous": false,
+      "source_sha256": "d5e2509a0d1d05bd78984972096e9ca6a428a0c6751d5ac4daf7caff1a0e38e0"
+    }
+  }
+}

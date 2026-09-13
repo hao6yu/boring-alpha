@@ -1,0 +1,15 @@
+{
+  "authorization": "Root explicitly permits resuming normal previously-unrequested HTML/index/submissions sources after observing two complete-submissionTXT403 responses and no HTML/API denial. Disable all newTXTrequests and genericTXTfallback. Keep deniedresources and exhaustedHTML attempts terminal. No IP/header/proxy workaround, counterreset, retrychange, or deadlineextension. Any laterHTML/API401/403/429 stops globally.",
+  "denied_attempt_ids": [
+    489,
+    1134
+  ],
+  "denied_urls": [
+    "https://www.sec.gov/Archives/edgar/data/819689/000081968919000073/0000819689-19-000073.txt",
+    "https://www.sec.gov/Archives/edgar/data/1443669/000143774921002673/0001437749-21-002673.txt"
+  ],
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "prior_attempt_count": 1134,
+  "source_log_sha256": "6f59b9aba068a42942f221a521b0bd8bca613d941ab83fc02286829367dd9ed2",
+  "status": "AUTHORIZED_HTML_INDEX_SUBMISSIONS_ONLY"
+}

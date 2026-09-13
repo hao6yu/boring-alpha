@@ -1,0 +1,64 @@
+{
+  "changes": [
+    {
+      "accession": "0001164863-23-000020",
+      "classification": "ACCOUNTING_MEASURE_CORRECTION",
+      "source_sha256": "84add2686cbbca67cbb7f2e60cc15acc7be0b5fe209fbde0fa866554ce550612"
+    },
+    {
+      "accession": "0001213900-20-017680",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_sha256": "0e63f8f2635b7692072238853af2c14a54ac3c81b128235968bc904927e337c0"
+    },
+    {
+      "accession": "0001534992-20-000049",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_sha256": "d71ed53d912d93c3a447c8797ef35e89ac1ff1c3cf4b98440a12feeed68fd154"
+    },
+    {
+      "accession": "0001534992-21-000007",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_sha256": "85f3fbd74710a910be7884d9788004188730ba9718d3073e47c703c8bcfe7ba6"
+    },
+    {
+      "accession": "0001444363-20-000004",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_sha256": "31a74fb5376960da55d1ee94087c564f981163fc5de220b6db6d8ee16391e128"
+    },
+    {
+      "accession": "0001529377-20-000045",
+      "classification": "SELECTED_METRICS_UPDATE",
+      "source_sha256": "62be2e7ee40160ff66753748a0f73c4ee048dff860979913aee6b16ca1c14328"
+    },
+    {
+      "accession": "0001101680-23-000096",
+      "classification": "FILING_DELAY_ACCOUNTING_REVIEW",
+      "source_sha256": "2f6d49c3871afe03951b9e042588bcb180232fa2f9e68e2398a9345aa65e3911"
+    },
+    {
+      "accession": "0001101680-23-000123",
+      "classification": "FILING_DELAY_ACCOUNTING_REVIEW",
+      "source_sha256": "0091d18b00447bf13c46087c2c109f2475913fcdb7a0abc2a871cca45434074f"
+    },
+    {
+      "accession": "0001104659-22-033970",
+      "classification": "PRELIMINARY",
+      "source_sha256": "28bcad53039412ca325e12614659286c2834270c277d9e80bbc6fde22dcd4f59"
+    },
+    {
+      "accession": "0001564590-20-048932",
+      "classification": "EARNINGS_RELEASE",
+      "companion_sha256": "6570b3692c09046413208cf615e0373583f8f0afa2d9d2c8ae00e5dfd326b155",
+      "source_sha256": "7fd85c394a97cf43011a673c8e99ce305f8f9b228bbdc4e175ee4f968f7d9015"
+    },
+    {
+      "accession": "0000950170-22-013682",
+      "classification": "EARNINGS_RELEASE",
+      "companion_sha256": "ecd58fbe230c9ec2c5d44b1315e8e1f6e01b82710fe89465f0d486db5ccfa085",
+      "source_sha256": "a238d7509207d5656deb8851ea3e15531e16a6bafe67e47c56224e16cc2ac063"
+    }
+  ],
+  "network_requests": 0,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "scope": "Original document classification, with explicit same-filing companions and no outcome or price inspection."
+}

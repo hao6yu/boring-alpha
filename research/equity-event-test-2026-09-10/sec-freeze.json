@@ -1,0 +1,142 @@
+{
+  "canonical_events": "sec-events-current-roster.json",
+  "counts": {
+    "base_SEC_checks": 1198,
+    "current": 1257,
+    "prior": 1199,
+    "reason:CANDIDATE_SOURCE_FAILURE": 19,
+    "reason:NO_VERIFIED_CURRENT_FULL_RELEASE": 343,
+    "reason:ORIGINAL_PRIOR_NOT_YET_VERIFIED": 58,
+    "slots": 1600
+  },
+  "files": {
+    "experiment-policy.json": {
+      "path": "research/equity-event-test-2026-09-10/experiment-policy.json",
+      "sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3"
+    },
+    "sec-additional-classification-review.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-additional-classification-review.json",
+      "sha256": "5272d293865448a7f60e6bbf87ad4f1e3d8cb9322f46408be7798267487d26bc"
+    },
+    "sec-classification-review.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-classification-review.json",
+      "sha256": "7c6661e0f9d77573bc3d7050a7a46739b913c9107753741f06cf0aa2590af109"
+    },
+    "sec-cohort-ownership-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-cohort-ownership-audit.json",
+      "sha256": "8bde935b3403b49871eb6ed85a852d1f423ff1efd52b9387d40cea09aa8566d3"
+    },
+    "sec-coverage.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-coverage.json",
+      "sha256": "a39a9a1792855f56341d8bc46da51b0cadfa16e64362bc1f17073acc529eb313"
+    },
+    "sec-event-source-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-event-source-audit.json",
+      "sha256": "b1af058d1e89c314ba7e03c34aa377d9edfea5b388232eca842f16f11291de31"
+    },
+    "sec-events-current-roster.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-events-current-roster.json",
+      "sha256": "f931061fdbfe0a44d6598c5dcdc8fe9f2a185321a897cf88b387f2cc2a329ca1"
+    },
+    "sec-format-restriction.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-format-restriction.json",
+      "sha256": "43ddbdd81f3c86518cf0adb58c3bb2ebd001b6ef0ccc92a7598e687af1dd6797"
+    },
+    "sec-identity-manual-review.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-identity-manual-review.json",
+      "sha256": "e1b7d6ffadd66b1d502834d2798247d8724633621f340df699d1720b41a234e0"
+    },
+    "sec-identity-overrides.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-identity-overrides.json",
+      "sha256": "cc494721aee9fe7e01b9fb7caa5cceaaa5e7832d1098f032f8cf46c7b6ece208"
+    },
+    "sec-manual-decisions.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-manual-decisions.json",
+      "sha256": "49354ed0afc47dbcd228ad6a4f1f662721fbf879a0789ac07376f4b9ce8f4391"
+    },
+    "sec-parent-identity-correction.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-parent-identity-correction.json",
+      "sha256": "1abe72aa418bbbe252a6c8cd1fbc9f300706c79f2dc3770bad79be6ccd385106"
+    },
+    "sec-period-annotation-review.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-period-annotation-review.json",
+      "sha256": "61c398c18adc0e707b5b5299cb2a1675145eeef37947d23c58ec3d5d2b25cd1d"
+    },
+    "sec-prefix-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-prefix-audit.json",
+      "sha256": "84e79cba7b973c7b4ca3970ece3630480581b830e98d24959e8ab46930ff1033"
+    },
+    "sec-selection.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-selection.json",
+      "sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0"
+    },
+    "sec-source-log.jsonl": {
+      "path": "research/equity-event-test-2026-09-10/sec-source-log.jsonl",
+      "sha256": "c582b6307d0d6d2f68ebc2ced122f30e9215ca9caca9b64191587445e1a1e153"
+    },
+    "sec-sources.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-sources.json",
+      "sha256": "295babce02ff0a017438aade5dedc45480d8e3b12d299c0c4ebc89e0f9ac6181"
+    },
+    "sec-symbol-history.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-symbol-history.json",
+      "sha256": "9b9d1d89751dba41157a2ac65b1cab5ca98ca0e9e13f20bc4ac1b880359d7aae"
+    }
+  },
+  "fixed_issuers": 100,
+  "fixed_slots": 1600,
+  "frozen_utc": "2026-09-11T03:53:48.056772+00:00",
+  "immutable_events_copy": "sec-checkpoints/events-f931061fdbfe0a44d6598c5dcdc8fe9f2a185321a897cf88b387f2cc2a329ca1.json",
+  "internal_source_checks": 19645,
+  "internal_source_failures": 0,
+  "named_identity_repairs": {
+    "automatic_original_cover": 22,
+    "manual_common_warrant_cover_pairing": 3,
+    "total": 25
+  },
+  "no_further_SEC_requests_planned": true,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "rank_provenance_checks": 6677,
+  "request_attempts": 6269,
+  "request_limit": 9000,
+  "request_outcomes": {
+    "200": 5907,
+    "403": 2,
+    "None": 360
+  },
+  "scope": [
+    "Source availability and original-document joins only; no prices, labels, returns, model fitting or outcome-based selection were inspected by this collector.",
+    "Original100availabilitypilot and laterrepair sources were not rewritten; exactneeded cachedURLs reused onlyafterhashverification.",
+    "Item2.02 predecessor frame is limited; allabsence_verified flags remainfalse, unclearfiscalscope staysUNKNOWN.",
+    "Everypost2019failure stays on the originalfixedCIK/quarter denominator; no inactiveissuers are replaced.",
+    "BaseSECchecks are not feature/price/liquidity/label qualification; those downstreamgates remain required.",
+    "The initial sec-events.json is the unrefreshed collectionpass; use the explicitlyhashed current-roster projection with reviewedannotations and identities."
+  ],
+  "status": "SOURCE_FREEZE_WITH_RECORDED_GAPS",
+  "year_counts": {
+    "2020": {
+      "base_SEC_checks": 330,
+      "current": 345,
+      "prior": 331,
+      "slots": 400
+    },
+    "2021": {
+      "base_SEC_checks": 301,
+      "current": 320,
+      "prior": 301,
+      "slots": 400
+    },
+    "2022": {
+      "base_SEC_checks": 295,
+      "current": 306,
+      "prior": 295,
+      "slots": 400
+    },
+    "2023": {
+      "base_SEC_checks": 272,
+      "current": 286,
+      "prior": 272,
+      "slots": 400
+    }
+  }
+}

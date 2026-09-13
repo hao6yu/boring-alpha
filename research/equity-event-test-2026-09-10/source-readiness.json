@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "evaluation_targets_masked": true,
+    "minimum_evaluation_preentry_count_and_issuers_pass": true,
+    "minimum_training_count_pass": false,
+    "minimum_validation_count_pass": true,
+    "prior_availability_gate_pass": true,
+    "source_audits_completed_with_explicit_gaps": true,
+    "synthetic_checks_passed": true
+  },
+  "created_utc": "2026-09-11T04:08:41.257102+00:00",
+  "panel_inventory_sha256": "e46896ff44d9ec6afbf561fa74d42e42ea4ed363ab4031384a5fba22be1846a5",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "ready": false,
+  "reason": "175 usable2020fit events < frozen200minimum. Remaining9plannedqueries can contribute at most24, for ceiling199. No model fit permitted under this protocol.",
+  "references": {
+    "cade-provider-identity-rejection.json": {
+      "path": "research/equity-event-test-2026-09-10/cade-provider-identity-rejection.json",
+      "sha256": "cb02f14aefc7e1487f708da5a2402e7810b43cfd4d131d38d2aff6f923044064"
+    },
+    "corporate-action-evidence.json": {
+      "path": "research/equity-event-test-2026-09-10/corporate-action-evidence.json",
+      "sha256": "a253285275a174960c7e9db3573a914edbdc54a5033106f1de3314031b1e6f26"
+    },
+    "data-expense.json": {
+      "path": "research/equity-event-test-2026-09-10/data-expense.json",
+      "sha256": "82fffa97c16f67d7021c544b2550159c95acd1c64752d5824f87d79981297c74"
+    },
+    "data-gate.json": {
+      "path": "research/equity-event-test-2026-09-10/data-gate.json",
+      "sha256": "9b895b627fce30888f1f6a86d0bcc57746408e649f4312dfc41d2c408739686d"
+    },
+    "experiment-policy.json": {
+      "path": "research/equity-event-test-2026-09-10/experiment-policy.json",
+      "sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3"
+    },
+    "feature-source-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/feature-source-audit.json",
+      "sha256": "56a93dc51773aa9f01a3149bcd36f85635e0155790c1d4a02324284e1f35c59a"
+    },
+    "panel-inventory.json": {
+      "path": "research/equity-event-test-2026-09-10/panel-inventory.json",
+      "sha256": "e46896ff44d9ec6afbf561fa74d42e42ea4ed363ab4031384a5fba22be1846a5"
+    },
+    "price-manifest.json": {
+      "path": "research/equity-event-test-2026-09-10/price-manifest.json",
+      "sha256": "0199f82fc88a84b054319f69db65dbf46186f2b1267de70bc5eb1457b9a7097f"
+    },
+    "price-source-exceptions.json": {
+      "path": "research/equity-event-test-2026-09-10/price-source-exceptions.json",
+      "sha256": "d0436bade83ef2499b5b65df3eb8c2f7eb207b4653a0b3ce6dd69100902dcb8f"
+    },
+    "sec-event-source-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-event-source-audit.json",
+      "sha256": "b1af058d1e89c314ba7e03c34aa377d9edfea5b388232eca842f16f11291de31"
+    },
+    "sec-freeze.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-freeze.json",
+      "sha256": "06ce476c024b8278a118c0ae23a063d61a47213cb6668f48275a5e5165872411"
+    },
+    "sec-training-feasibility-refined.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-training-feasibility-refined.json",
+      "sha256": "2592107d3228fb912e40dc60da9d68940866a56abc31768e232a665a7047c80e"
+    },
+    "sec-training-feasibility.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-training-feasibility.json",
+      "sha256": "baf9ac6e0ad0d5d54062fa29171516fa0fd421e94de859bc18e1cc5d31e2fc74"
+    }
+  },
+  "status": "STOP_INSUFFICIENT_TRAINING_SAMPLE"
+}

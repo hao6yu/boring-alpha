@@ -1,0 +1,31 @@
+{
+  "actions_scope": "Issuer/source corporate action metadata may postdate2023 to verify historical events/dividends. No2024-25pricehistory.",
+  "authorization": "User requested get the data and test it. Existing Databento credentials/credits authorized in session. No account/subscription change.",
+  "billing_observation_precision": "Approximate minute of signed-in browser observation; not an API billing timestamp.",
+  "billing_observed_utc": "2026-09-11T02:20:00Z",
+  "created_utc": "2026-09-11T02:23:01.142125+00:00",
+  "cumulative_quote_cap_usd": 10,
+  "data_gate": "Preserve fixed100cohort and95combined requirement. Independently qualify source/identity/rawsessionOHLCV/actions. Primaryvenue volume is identified as partial/conservative activity, not consolidated volume. No silent change of source semantics.",
+  "dataset": "XASE.PILLAR",
+  "full_download_requires_sample_audit": true,
+  "no_new_subscription": true,
+  "price_span_inclusive": [
+    "2022-07-01",
+    "2023-10-31"
+  ],
+  "provider": "Databento",
+  "returns": "No model/strategy-return inspection until data gate and a separate chronological test protocol pass. User authorizes that subsequent test, not live trading.",
+  "sample_sessions": [
+    "2022-08-30",
+    "2022-08-31",
+    "2023-06-16"
+  ],
+  "schemas": [
+    "trades",
+    "statistics",
+    "definition"
+  ],
+  "symbol": "PTN",
+  "verified_balance_usd": 0,
+  "verified_existing_credits_usd": 117.96
+}

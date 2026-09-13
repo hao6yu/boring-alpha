@@ -1,0 +1,214 @@
+{
+  "before_strategy_returns": true,
+  "created_utc": "2026-09-11T03:38:19.073659+00:00",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "scope": "Source-proven corporate-action contradictions only. No corrected factor, price or return is substituted.",
+  "symbols": {
+    "ADMS": [
+      {
+        "end_date": "2021-11-24",
+        "reason": "Vendor rows dated on or after the first nontrading session are not qualified old listed-common equity prices. Administrative/OTC/synthetic origin is not inferred from dates. No price-level inspection.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "raw_source_sha256": "20bb00053670c0450474663c4a11ef4ef83b7c0d41d878d3803d0079d2822ea3",
+          "row_date_metadata_only": true,
+          "source_status_note": "8.10 dollars plus two CVRs; no cash-only or zero-CVR substitution.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=eca2021-259"
+        },
+        "start_date": "2021-11-24",
+        "verified_source_conflict": true
+      }
+    ],
+    "CLAR": [
+      {
+        "end_date": "2020-05-22",
+        "reason": "Issuer declared a stock distribution of 0.00234 new common share per old share, record date May11 and distribution date May22. The provider action-only history contains no nonidentity divCash/splitFactor row in this interval. Exact ex-date is not independently established, so the explicitly bounded announcement-to-distribution interval is conservatively unqualified; no action date is imputed.",
+        "source_evidence": {
+          "announcement_date": "2020-05-01",
+          "distribution_date": "2020-05-22",
+          "price_manifest_sha256": "7cd0b29296dad5d40e030da31d6d1030fa230d36d187c7b50b444a72576d6297",
+          "raw_source_sha256": "62b06e7fdcc292778ec5e420c866255153014de00c5f099039ab963dfb296f2d",
+          "record_date": "2020-05-11",
+          "source_type": "issuer_hosted_original_quarterly_report_note",
+          "url": "https://www.claruscorp.com/quarterly-reports/xbrl_doc_only/2212"
+        },
+        "start_date": "2020-05-01",
+        "verified_source_conflict": true
+      },
+      {
+        "end_date": "2020-08-07",
+        "reason": "The provider's reported action row has divCash0.025 and splitFactor1.002, whereas the issuer's contemporaneous notice specifies a stock distribution of0.00210 new common share per old share. The0.025 figure is a stated distribution value, not a cash entitlement. Provider-reported action date is used to isolate the contradictory row; the issuer source does not independently certify that ex-date. Fractional cash-in-lieu is not imputed.",
+        "source_evidence": {
+          "distribution_date": "2020-08-21",
+          "publication_date": "2020-07-31",
+          "raw_source_sha256": "62b06e7fdcc292778ec5e420c866255153014de00c5f099039ab963dfb296f2d",
+          "record_date": "2020-08-10",
+          "source_type": "issuer_original_press_release",
+          "url": "https://www.claruscorp.com/press-releases/detail/195/clarus-announces-0-025-per-share-quarterly-stock-dividend"
+        },
+        "start_date": "2020-08-07",
+        "verified_source_conflict": true
+      }
+    ],
+    "CNCE": [
+      {
+        "end_date": "2023-03-06",
+        "reason": "Provider records exist after the original listed common security stopped trading. These are not qualified listed-market marks, fills or an unaltered old-common total-return path; their precise administrative/OTC/synthetic provenance is not established. No price-level inspection was used.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "row_date_metadata_only": true,
+          "source_status_note": "Merger includes8dollars plus one nontransferable CVR. Do not substitute cash-only consideration or value the CVR at zero.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=eca2023-127"
+        },
+        "start_date": "2023-03-06",
+        "verified_source_conflict": true
+      }
+    ],
+    "ECOL": [
+      {
+        "end_date": "2022-09-16",
+        "reason": "Provider records exist after the original listed common security stopped trading. These are not qualified listed-market marks, fills or an unaltered old-common total-return path; their precise administrative/OTC/synthetic provenance is not established. No price-level inspection was used.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 24,
+          "row_date_metadata_only": true,
+          "source_status_note": "Cash merger closed before May2 open; common shares convert to48-dollar entitlement. Later old-symbol rows cannot be treated as listed common-stock fills.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2022-80"
+        },
+        "start_date": "2022-05-02",
+        "verified_source_conflict": true
+      }
+    ],
+    "FPRX": [
+      {
+        "end_date": "2021-04-16",
+        "reason": "Vendor rows dated on or after the first nontrading session are not qualified old listed-common equity prices. Administrative/OTC/synthetic origin is not inferred from dates. No price-level inspection.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "raw_source_sha256": "79621bd0ecd61a231a87175794744e9566332056300ebea8be6d96bc06d5bdf9",
+          "row_date_metadata_only": true,
+          "source_status_note": "Cash merger completed before April16 open.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2021-61"
+        },
+        "start_date": "2021-04-16",
+        "verified_source_conflict": true
+      }
+    ],
+    "FRGI": [
+      {
+        "end_date": "2023-10-30",
+        "reason": "Provider records exist after the original listed common security stopped trading. These are not qualified listed-market marks, fills or an unaltered old-common total-return path; their precise administrative/OTC/synthetic provenance is not established. No price-level inspection was used.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "row_date_metadata_only": true,
+          "source_status_note": "Cash merger closed before Oct30 open; common shares convert to8.50-dollar entitlement.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2023-613"
+        },
+        "start_date": "2023-10-30",
+        "verified_source_conflict": true
+      }
+    ],
+    "MBII": [
+      {
+        "end_date": "2022-09-07",
+        "reason": "Provider records exist after the original listed common security stopped trading. These are not qualified listed-market marks, fills or an unaltered old-common total-return path; their precise administrative/OTC/synthetic provenance is not established. No price-level inspection was used.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 8,
+          "row_date_metadata_only": true,
+          "source_status_note": "July12 last trading session; thereafter old shares exchanged for0.088 BIOX common shares. Successor share and fractional accounting unsupported, not a cash merger.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2022-168"
+        },
+        "start_date": "2022-07-18",
+        "verified_source_conflict": true
+      }
+    ],
+    "MR": [
+      {
+        "end_date": "2020-11-13",
+        "reason": "Vendor rows dated on or after the first nontrading session are not qualified old listed-common equity prices. Administrative/OTC/synthetic origin is not inferred from dates. No price-level inspection.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "raw_source_sha256": "6f37e20e103cb51fb1900e4ddbbfbbdcfb54d9ddcc63a23fe0818b0603b751e3",
+          "row_date_metadata_only": true,
+          "source_status_note": "Old common converts to1.8656 SWN shares plus cash-in-lieu of fractions. Successor share and fractional accounting unsupported.",
+          "url": "https://infomemo.theocc.com/infomemos?number=47828"
+        },
+        "start_date": "2020-11-13",
+        "verified_source_conflict": true
+      }
+    ],
+    "MSGN": [
+      {
+        "end_date": "2021-07-09",
+        "reason": "Provider records exist after the original listed common security stopped trading. These are not qualified listed-market marks, fills or an unaltered old-common total-return path; their precise administrative/OTC/synthetic provenance is not established. No price-level inspection was used.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "row_date_metadata_only": true,
+          "source_status_note": "Merger completed before July9 open; each old classA share entitled to0.172 MSGE classA shares, fractions rounded up. Option deliverable multiplier is not a stock-share ratio.",
+          "url": "https://infomemo.theocc.com/infomemos?number=48960"
+        },
+        "start_date": "2021-07-09",
+        "verified_source_conflict": true
+      }
+    ],
+    "MTSC": [
+      {
+        "end_date": "2021-04-07",
+        "reason": "Vendor rows dated on or after the first nontrading session are not qualified old listed-common equity prices. Administrative/OTC/synthetic origin is not inferred from dates. No price-level inspection.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "raw_source_sha256": "a6d278dd379d164b0adb2abf48308190e45cc308ad9371be8116ac1c94fe6cb1",
+          "row_date_metadata_only": true,
+          "source_status_note": "Cash merger completed before April7 open.",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2021-55"
+        },
+        "start_date": "2021-04-07",
+        "verified_source_conflict": true
+      }
+    ],
+    "MYOK": [
+      {
+        "end_date": "2020-11-17",
+        "reason": "Vendor rows dated on or after the first nontrading session are not qualified old listed-common equity prices. Administrative/OTC/synthetic origin is not inferred from dates. No price-level inspection.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 1,
+          "raw_source_sha256": "fd7d8bb1f4fc790af100208f0d56b17fbf8cbb636a41d608c76d7a54d8e12ac5",
+          "row_date_metadata_only": true,
+          "source_status_note": "Cash merger completed before November17 open; session-open boundary denotes first ineligible regular session, not exact legal closing clock.",
+          "url": "https://infomemo.theocc.com/infomemos?number=47838"
+        },
+        "start_date": "2020-11-17",
+        "verified_source_conflict": true
+      }
+    ],
+    "PEGI": [
+      {
+        "end_date": "2023-12-29",
+        "reason": "Old PEGI common ceased trading after March13 and converted to fixed cash entitlement before March16 open. Any provider row in this interval is not a qualified old listed-common price. This predeclared source-identity interval does not assert that such provider rows exist; none were inspected. A separately evidenced locked merger receivable is not an ordinary adjusted-price label.",
+        "source_evidence": {
+          "interval_end_scope": "End of frozen experiment price window; not an observed terminal provider date.",
+          "issuer_confirmation_url": "https://patternenergy.com/pattern-energy-and-canada-pension-plan-investment-board-complete-transaction/",
+          "observed_provider_rows": false,
+          "observed_utc": "2026-09-11T04:03:34.046157+00:00",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2020-47"
+        },
+        "start_date": "2020-03-16",
+        "verified_source_conflict": true
+      }
+    ],
+    "SHLO": [
+      {
+        "end_date": "2020-10-01",
+        "reason": "Provider records exist after the original listed common security stopped trading. These are not qualified listed-market marks, fills or an unaltered old-common total-return path; their precise administrative/OTC/synthetic provenance is not established. No price-level inspection was used.",
+        "source_evidence": {
+          "observed_row_count_in_interval": 16,
+          "row_date_metadata_only": true,
+          "source_status_note": "Nasdaq confirms no Nasdaq trading from Sep10 suspension. Exact intraday suspension clock is unavailable; opening of suspension-date session is a conservative session-boundary convention. OTC venue/identity and terminal distribution not established by this source.",
+          "url": "https://www.nasdaq.com/press-release/delisting-of-securities-of-therapix-biosciences-ltd.-stein-mart-inc.-and-shiloh"
+        },
+        "start_date": "2020-09-10",
+        "verified_source_conflict": true
+      }
+    ]
+  },
+  "updated_utc": "2026-09-11T04:03:34.046157+00:00"
+}

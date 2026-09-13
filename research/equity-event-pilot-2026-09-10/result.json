@@ -1,0 +1,806 @@
+{
+  "accounting_feature_measure_definitions": "NOT_FULLY_AUDITED; document joins do not certify GAAP/non-GAAP, 13/14-week, restatement or share-basis equivalence.",
+  "cohort": "Corrected implementation of the frozen historical rank; initial published issuer cohort preserved separately.",
+  "counts": {
+    "actual_earnings_events": 99,
+    "current_release_success": 99,
+    "exact_timestamp_mismatches": 20,
+    "fixed_slots": 100,
+    "fully_joined": 89,
+    "identity_success": 99,
+    "mechanical_source_price_joins_before_event_definition_gate": 93,
+    "price_window_success": 95,
+    "prior_release_success": 97,
+    "timing_success": 99,
+    "unresolved_by_reason": {
+      "historical_symbol_price_download_unavailable": 4,
+      "independent_current_document_available": 1,
+      "independent_daily_proxy_unresolved": 1,
+      "independent_event_definition_resolved": 4,
+      "independent_prior_document_available": 2,
+      "independent_prior_pair_unresolved": 3,
+      "missing_or_invalid_event_timing": 1,
+      "sec_current_release": 1,
+      "sec_earliest_event": 5,
+      "sec_identity": 1,
+      "sec_period_identity": 1,
+      "sec_prior_release": 3,
+      "sec_timing": 1
+    }
+  },
+  "created_utc": "2026-09-11T00:12:09.074091+00:00",
+  "global_validation_failures": [],
+  "inactive_controls_gate": "UNRESOLVED_NOT_PASSED",
+  "inputs": {
+    "inactive-results.json": "b13518bc74b73bb5241af65dc0121c0aa3a38d5b2a48d008c21ba983e6cc6c8c",
+    "manual-period-review.json": "7d9f8b2fe5813c2416667476d468fd83ab46668bafe8b8a3ae74ccc7ab2afbdc",
+    "policy.json": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+    "price-aliases.json": "a4c763784eb1c70a8804fbd0a1180132369002015b218239d02528c277d1944f",
+    "price-joins.json": "d42bdeec9cb95f5cb9a46d9cde7d3281c2c65c356283b5b2fd945b145bd3eddb",
+    "price-manifest.json": "fcf56f040c81b6c928f7cd82088f3788f1b034b6c78f2bc2da05a24476e2ebcd",
+    "price-validation.json": "efe38aa83be49291ea74b0b3f5e00c25cf669e7c71089b1f8660cc64df63612b",
+    "root-document-review.json": "d2e46d4d25529eee4795f7757698a48702a926f991063c155a1a727767d7771a",
+    "sample-audit.json": "494df2c895b2ee2f1e1e0b4934c74af1eef9627cd587c3a234965203375275e7",
+    "sec-events.json": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+    "sec-selection-correction.json": "495f297c733f314ff2367319af28ed6c9b442b03d88871bfa0ffa277b1dba99f",
+    "sec-selection.json": "026159b5a7054be7ed61941f6785de318442e37e05d6ae5509d092b335efac94",
+    "sec-sources.json": "13931953589ea2b421c5aaf532f757b5ddf4f4d565bd6ce1ff119c888aab820c"
+  },
+  "model_training_performed": false,
+  "new_paid_data_usd": 0,
+  "original_cohort_preserved": "sec-events-initial-published-cohort-v1.json",
+  "original_selection_preserved": "sec-selection-initial-published-v1.json",
+  "overall_gate": "NOT_PASSED",
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "price_action_scope": "Required sessions, positive finite OHLC, volume, action fields, common adjustment factor and action transition review flags; no independent full action or execution certification.",
+  "requests": {
+    "sec_attempts": 730,
+    "sec_unique_urls": 705,
+    "tiingo_inactive": 3,
+    "tiingo_main": 31
+  },
+  "selection_correction": "sec-selection-correction.json",
+  "slots": [
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NRIX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001549595-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NRIX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001549595-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NRIX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001549595-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NRIX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001549595-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "EGRX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827871-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "EGRX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827871-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "EGRX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827871-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "EGRX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827871-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TIL",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001789769-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TIL",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001789769-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TIL",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001789769-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TIL",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001789769-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "PTN",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0000911216-W1",
+      "unresolved_reasons": [
+        "historical_symbol_price_download_unavailable"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "PTN",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0000911216-W2",
+      "unresolved_reasons": [
+        "historical_symbol_price_download_unavailable"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "PTN",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0000911216-W3",
+      "unresolved_reasons": [
+        "historical_symbol_price_download_unavailable"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "PTN",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0000911216-W4",
+      "unresolved_reasons": [
+        "historical_symbol_price_download_unavailable"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "GDYN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001743725-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "GDYN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001743725-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "GDYN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001743725-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "GDYN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001743725-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "APRN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001701114-W1",
+      "unresolved_reasons": [
+        "independent_event_definition_resolved",
+        "sec_earliest_event"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "APRN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001701114-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "APRN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001701114-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "APRN",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001701114-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SIG",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000832988-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SIG",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000832988-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SIG",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000832988-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SIG",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000832988-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "JKHY",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000779152-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "JKHY",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000779152-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "JKHY",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000779152-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "JKHY",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000779152-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SDPI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001600422-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "SDPI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001600422-W2",
+      "unresolved_reasons": [
+        "independent_event_definition_resolved",
+        "sec_earliest_event"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SDPI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001600422-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SDPI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001600422-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNPO",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001856430-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNPO",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001856430-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNPO",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001856430-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNPO",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001856430-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNBR",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827187-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "SNBR",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827187-W2",
+      "unresolved_reasons": [
+        "independent_event_definition_resolved",
+        "sec_earliest_event"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNBR",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827187-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SNBR",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000827187-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SBH",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001368458-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SBH",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001368458-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SBH",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001368458-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SBH",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001368458-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SPGI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000064040-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SPGI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000064040-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SPGI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000064040-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SPGI",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000064040-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "BSBK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001787414-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "BSBK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001787414-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "BSBK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001787414-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "BSBK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001787414-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "UMBF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000101382-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "UMBF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000101382-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "UMBF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000101382-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "UMBF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000101382-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TEAM",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001650372-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TEAM",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001650372-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TEAM",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001650372-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "TEAM",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001650372-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ALK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000766421-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ALK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000766421-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ALK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000766421-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ALK",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000766421-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ENVX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001828318-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ENVX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001828318-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ENVX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001828318-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "ENVX",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001828318-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NXTC",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001661059-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NXTC",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001661059-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NXTC",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001661059-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NXTC",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001661059-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SMMF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000811808-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SMMF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000811808-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SMMF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000811808-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "SMMF",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0000811808-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NDAQ",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001120193-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NDAQ",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001120193-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NDAQ",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001120193-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "NDAQ",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001120193-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "DTSS",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0001631282-W1",
+      "unresolved_reasons": [
+        "independent_prior_document_available",
+        "independent_prior_pair_unresolved",
+        "sec_prior_release"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "DTSS",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0001631282-W2",
+      "unresolved_reasons": [
+        "independent_prior_document_available",
+        "independent_prior_pair_unresolved",
+        "sec_prior_release"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "DTSS",
+      "mechanical_source_price_join_before_event_definition_gate": false,
+      "slot_id": "0001631282-W3",
+      "unresolved_reasons": [
+        "independent_current_document_available",
+        "independent_daily_proxy_unresolved",
+        "independent_prior_pair_unresolved",
+        "missing_or_invalid_event_timing",
+        "sec_current_release",
+        "sec_earliest_event",
+        "sec_identity",
+        "sec_period_identity",
+        "sec_prior_release",
+        "sec_timing"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "DTSS",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001631282-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CVLT",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001169561-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": false,
+      "historical_symbol": "CVLT",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001169561-W2",
+      "unresolved_reasons": [
+        "independent_event_definition_resolved",
+        "sec_earliest_event"
+      ]
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CVLT",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001169561-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CVLT",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001169561-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CIDM",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001173204-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CIDM",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001173204-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CNVS",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001173204-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "CNVS",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001173204-W4",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "KE",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001606757-W1",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "KE",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001606757-W2",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "KE",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001606757-W3",
+      "unresolved_reasons": []
+    },
+    {
+      "fully_joined_source_and_price_window": true,
+      "historical_symbol": "KE",
+      "mechanical_source_price_join_before_event_definition_gate": true,
+      "slot_id": "0001606757-W4",
+      "unresolved_reasons": []
+    }
+  ],
+  "source_and_price_threshold_passed": false,
+  "strategy_returns_calculated": false
+}

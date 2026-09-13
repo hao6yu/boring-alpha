@@ -1,0 +1,48 @@
+{
+  "changes": [
+    {
+      "after_priors": 9,
+      "after_sha256": "509faae6ca6349452d66994895c4091b5af5646a053e5c125fce1656cd17717f",
+      "before_file": "research/equity-event-test-2026-09-10/sec-checkpoints/issuer-0000006845-8e3dab03b727af630a2985abe5f87e3dbb030af5142f25e8bc90acd7a2010217.json",
+      "before_priors": 6,
+      "before_sha256": "8e3dab03b727af630a2985abe5f87e3dbb030af5142f25e8bc90acd7a2010217",
+      "cik": "0000006845"
+    },
+    {
+      "after_priors": 15,
+      "after_sha256": "75af01749d3e42b7e9884761c2e2a95b993f8d6be3c60cb16c49c96d51c1517d",
+      "before_file": "research/equity-event-test-2026-09-10/sec-checkpoints/issuer-0000919012-3ca1c5c5675b945070a420193ea28e781f134d4ba2628e2aa47b9c1363022681.json",
+      "before_priors": 15,
+      "before_sha256": "3ca1c5c5675b945070a420193ea28e781f134d4ba2628e2aa47b9c1363022681",
+      "cik": "0000919012"
+    },
+    {
+      "after_priors": 16,
+      "after_sha256": "a84f6712d85adebc47d8b3d90d49b408aad4ad08e90e5e5eb0c5a78af86dd1ae",
+      "before_file": "research/equity-event-test-2026-09-10/sec-checkpoints/issuer-0001378950-1eb606ffe35e499d516f7b77a679db8579de6c1c14f624a72eeb2ee467e00091.json",
+      "before_priors": 16,
+      "before_sha256": "1eb606ffe35e499d516f7b77a679db8579de6c1c14f624a72eeb2ee467e00091",
+      "cik": "0001378950"
+    },
+    {
+      "after_priors": 16,
+      "after_sha256": "c6e565f431fb98e5e175f8eac0cb0716f84c6acd2583af150347c08d5bccffa3",
+      "before_file": "research/equity-event-test-2026-09-10/sec-checkpoints/issuer-0001403568-eaa7ffa42436abd5f6ca0acb3504b0ac73c4e5f6cfdcd103ca1c1f8667b12970.json",
+      "before_priors": 16,
+      "before_sha256": "eaa7ffa42436abd5f6ca0acb3504b0ac73c4e5f6cfdcd103ca1c1f8667b12970",
+      "cik": "0001403568"
+    },
+    {
+      "after_priors": 14,
+      "after_sha256": "3d8e3f1548e2ac9733f14637fc95b4da5a60954a3dc4342212e7bafb264e04ef",
+      "before_file": "research/equity-event-test-2026-09-10/sec-checkpoints/issuer-0000799288-cda96a4fc5ba6401a82a4f41135e50019c211b3abb12dfbb7680acbaf8a43ea1.json",
+      "before_priors": 14,
+      "before_sha256": "cda96a4fc5ba6401a82a4f41135e50019c211b3abb12dfbb7680acbaf8a43ea1",
+      "cik": "0000799288"
+    }
+  ],
+  "network_requests": 0,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "scope": "Original fiscalperiod parserrepair only; no prices/model outcomes read. Explicit13/14-week periods never certify equal-duration numericalgrowth.",
+  "script_sha256": "18e7ae23261898989f69b7b89d36d4b61cbdf26de16a0bb67e0571d5a90f6c7f"
+}

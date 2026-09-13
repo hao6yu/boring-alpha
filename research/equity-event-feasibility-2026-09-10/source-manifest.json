@@ -1,0 +1,114 @@
+{
+  "MSFT-submissions.json": {
+    "url": "https://data.sec.gov/submissions/CIK0000789019.json",
+    "started_at": "2026-09-10T22:48:48.436553+00:00",
+    "received_at": "2026-09-10T22:48:48.618225+00:00",
+    "status": 200,
+    "bytes": 184681,
+    "sha256": "bdf2155c43615406296f16fc81b4f6dbfb819121b874beba4730c3bbe8d015fd"
+  },
+  "WMT-submissions.json": {
+    "url": "https://data.sec.gov/submissions/CIK0000104169.json",
+    "started_at": "2026-09-10T22:48:48.920657+00:00",
+    "received_at": "2026-09-10T22:48:49.079069+00:00",
+    "status": 200,
+    "bytes": 157410,
+    "sha256": "e5e7fd1ba7396f3f41b4407fde0f2929db3d8342b07f32de30f7eda3bfcd8244"
+  },
+  "JPM-submissions.json": {
+    "url": "https://data.sec.gov/submissions/CIK0000019617.json",
+    "started_at": "2026-09-10T22:48:49.380175+00:00",
+    "received_at": "2026-09-10T22:48:49.653785+00:00",
+    "status": 200,
+    "bytes": 4610816,
+    "sha256": "d955bd921f4fad41ca0d0c9ccef4cbd972f699ca40e81ab83e52fce0fed0ea26"
+  },
+  "MSFT-index.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/0000950170-23-034400-index.html",
+    "bytes": 10396,
+    "sha256": "ee688e5cd7fc398511818040f0ed276ac6f95140885f0a831f3d98da5fe7d4f8",
+    "payload_saved_at_utc_from_filesystem": "2026-09-10T22:50:08.473049+00:00",
+    "local_inspection_error_after_successful_download": "No module named 'bs4'",
+    "note": "transport timestamps lost when local inspection exception overwrote metadata; payload retained and hashed without new download"
+  },
+  "MSFT-8k.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-20230725.htm",
+    "started_at": "2026-09-10T22:50:08.774853+00:00",
+    "received_at": "2026-09-10T22:50:08.855344+00:00",
+    "status": 200,
+    "bytes": 77186,
+    "sha256": "aad4fc0dc73b26d72c6d468455a77a5b943ca458de64e8aed0fa5d02ce58cf08"
+  },
+  "WMT-index.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/0000104169-23-000088-index.html",
+    "bytes": 25457,
+    "sha256": "1ee0e230b1d8d5006b8cc597a172bf63cd032bd934c1e3d46f45bd0cf8daa579",
+    "payload_saved_at_utc_from_filesystem": "2026-09-10T22:50:09.289249+00:00",
+    "local_inspection_error_after_successful_download": "No module named 'bs4'",
+    "note": "transport timestamps lost when local inspection exception overwrote metadata; payload retained and hashed without new download"
+  },
+  "WMT-8k.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/wmt-20230817.htm",
+    "started_at": "2026-09-10T22:50:09.594896+00:00",
+    "received_at": "2026-09-10T22:50:09.754948+00:00",
+    "status": 200,
+    "bytes": 27453,
+    "sha256": "602eeee973c244de3645fb08d100d004f709a46baa0787cd319c45c102d1ea57"
+  },
+  "CIK0000019617-submissions-023.json": {
+    "url": "https://data.sec.gov/submissions/CIK0000019617-submissions-023.json",
+    "started_at": "2026-09-10T22:50:10.070211+00:00",
+    "received_at": "2026-09-10T22:50:10.314993+00:00",
+    "status": 200,
+    "bytes": 355964,
+    "sha256": "d25c77f0c96b6b3c5a18e3aee6205d7c9ddbdb504f3b2c1926eebb3bc553de50"
+  },
+  "CIK0000019617-submissions-022.json": {
+    "url": "https://data.sec.gov/submissions/CIK0000019617-submissions-022.json",
+    "started_at": "2026-09-10T22:50:10.621439+00:00",
+    "received_at": "2026-09-10T22:50:10.841663+00:00",
+    "status": 200,
+    "bytes": 359605,
+    "sha256": "e3554a6b918dfaa51a11a2ed191bf5e016a336eecb8d86a16ff6a12797edaaf5"
+  },
+  "JPM-index.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000425/0000019617-23-000425-index.html",
+    "bytes": 11373,
+    "sha256": "56eb420482917354ae251dade2cc9e97223129b3bb9f7dbf6385c334e07ce2b6",
+    "payload_saved_at_utc_from_filesystem": "2026-09-10T22:50:11.317701+00:00",
+    "local_inspection_error_after_successful_download": "No module named 'bs4'",
+    "note": "transport timestamps lost when local inspection exception overwrote metadata; payload retained and hashed without new download"
+  },
+  "JPM-8k.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000425/jpm-20230714.htm",
+    "started_at": "2026-09-10T22:50:11.619095+00:00",
+    "received_at": "2026-09-10T22:50:11.677173+00:00",
+    "status": 200,
+    "bytes": 47723,
+    "sha256": "d50434e6938ba2f460e399a7ff9a3a3a7f1330d3df7f178e0e7b7b46cbf15b55"
+  },
+  "MSFT-ex99-1.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-ex99_1.htm",
+    "started_at": "2026-09-10T22:51:22.346493+00:00",
+    "received_at": "2026-09-10T22:51:22.657721+00:00",
+    "status": 200,
+    "bytes": 1649729,
+    "sha256": "212cab200b9210a2897c6d99969d24fbf5a617970f01753176d9d57f080ce833"
+  },
+  "WMT-ex99-1.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/earningsreleasefy24q2.htm",
+    "started_at": "2026-09-10T22:51:23.008939+00:00",
+    "received_at": "2026-09-10T22:51:23.203643+00:00",
+    "status": 200,
+    "bytes": 545782,
+    "sha256": "7a5f655f1d90e7bbc215e095bcbf505f916493ea075920772980cc617402fe2b"
+  },
+  "JPM-ex99-1.html": {
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000425/a2q23erfexhibit991narrative.htm",
+    "started_at": "2026-09-10T22:51:23.529634+00:00",
+    "received_at": "2026-09-10T22:51:23.699713+00:00",
+    "status": 200,
+    "bytes": 239695,
+    "sha256": "20f8dfaee6956f99a60c59b0da348a01b3a576760445b3a2f8b395b78f1d986d"
+  }
+}

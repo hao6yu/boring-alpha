@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-09-10T22:03:34.795335+00:00",
+  "policy_sha256": "6344b9189e2196761b8827d3436a08f427b1357bd028071d07dac1110aea6ce7",
+  "raw_directory": "/Users/haoyu/development/boring-alpha/data/us_crypto/dated-screen-2026-09-10",
+  "sources": {
+    "BTC-future-book.json": {
+      "bytes": 3466,
+      "http_date": "Thu, 10 Sep 2026 22:03:34 GMT",
+      "received_at": "2026-09-10T22:03:34.673450+00:00",
+      "sha256": "40ffb2533ee614352eb6cc613aa1a422103a3f399d7d35e918abc510ca141a0a",
+      "started_at": "2026-09-10T22:03:34.523031+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/product_book?product_id=BIT-25SEP26-CDE&limit=50"
+    },
+    "BTC-spot-book.json": {
+      "bytes": 4300,
+      "http_date": "Thu, 10 Sep 2026 22:03:34 GMT",
+      "received_at": "2026-09-10T22:03:34.639886+00:00",
+      "sha256": "b0b1f18e0a5892a96f2a389bccafb2f9fa2ab16f819783478892c18cec66cdc2",
+      "started_at": "2026-09-10T22:03:34.522754+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/product_book?product_id=BTC-USD&limit=50"
+    },
+    "BTC-spot-product.json": {
+      "bytes": 1268,
+      "http_date": "Thu, 10 Sep 2026 22:03:34 GMT",
+      "received_at": "2026-09-10T22:03:34.645929+00:00",
+      "sha256": "ca3a7d8214f19f42cf9867ce0f64f3c84abc050ac192bd0cf303ddf5f065dc39",
+      "started_at": "2026-09-10T22:03:34.523392+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/products/BTC-USD"
+    },
+    "ETH-future-book.json": {
+      "bytes": 3441,
+      "http_date": "Thu, 10 Sep 2026 22:03:34 GMT",
+      "received_at": "2026-09-10T22:03:34.673350+00:00",
+      "sha256": "ac9a2887ec203e1188b21ba636d02ad9d5a9561286eec1b41dc9c80d72374ff7",
+      "started_at": "2026-09-10T22:03:34.523340+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/product_book?product_id=ET-25SEP26-CDE&limit=50"
+    },
+    "ETH-spot-book.json": {
+      "bytes": 4269,
+      "http_date": "Thu, 10 Sep 2026 22:03:34 GMT",
+      "received_at": "2026-09-10T22:03:34.665839+00:00",
+      "sha256": "017af5945d4947f7455e8c7580ae290b336d0dbc2c80b1818bbea5d85ac543ad",
+      "started_at": "2026-09-10T22:03:34.523116+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/product_book?product_id=ETH-USD&limit=50"
+    },
+    "ETH-spot-product.json": {
+      "bytes": 1271,
+      "http_date": "Thu, 10 Sep 2026 22:03:34 GMT",
+      "received_at": "2026-09-10T22:03:34.794529+00:00",
+      "sha256": "7e551a347bed860656f81c096b2cc5b5d0f7f388179d9877098258a979b548d7",
+      "started_at": "2026-09-10T22:03:34.523437+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/products/ETH-USD"
+    },
+    "products.json": {
+      "bytes": 276790,
+      "http_date": "Thu, 10 Sep 2026 22:02:10 GMT",
+      "received_at": "2026-09-10T22:02:10.235349+00:00",
+      "sha256": "fb37d0771ad3c05bb254bd730e4dccc867da8265f4d2387faf707e3a80ccba55",
+      "started_at": "2026-09-10T22:02:10.080434+00:00",
+      "url": "https://api.coinbase.com/api/v3/brokerage/market/products?product_type=FUTURE"
+    }
+  }
+}

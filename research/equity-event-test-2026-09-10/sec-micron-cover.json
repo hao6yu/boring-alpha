@@ -1,0 +1,41 @@
+{
+  "file": "data/snapshots/equity-event-test-2026-09-10/sec/a96f9e3751091c8b77fb7e5887d0054cb242c8d04ad7af90be4ed87c2221b478.htm",
+  "row": {
+    "acceptanceDateTime": "2019-08-14T13:47:16.000Z",
+    "accessionNumber": "0000819689-19-000070",
+    "act": "34",
+    "core_type": "10-Q",
+    "fileNumber": "001-09731",
+    "filingDate": "2019-08-14",
+    "filmNumber": "191025129",
+    "form": "10-Q",
+    "isInlineXBRL": 0,
+    "isXBRL": 1,
+    "isXBRLNumeric": null,
+    "items": "",
+    "metadata_file": "data/snapshots/equity-event-test-2026-09-10/sec/a4d0b61f1f57f9d3c815581897355d3118b820f1d1209f28ac91f849dd39c638.json",
+    "primaryDocDescription": "10-Q",
+    "primaryDocument": "micr-20190630x10q.htm",
+    "reportDate": "2019-06-30",
+    "size": 3392618
+  },
+  "security": {
+    "common_stock_evidence": [
+      {
+        "row_excerpt": "Common Stock, $0.01 par value | MICR | New York Stock Exchange",
+        "symbols": [
+          "MICR"
+        ]
+      }
+    ],
+    "excluded_common_unit_rows": [],
+    "historical_symbol": "MICR",
+    "inline_trading_symbols": [],
+    "status": "VERIFIED_SINGLE_COMMON_CLASS",
+    "symbols": [
+      "MICR"
+    ]
+  },
+  "sha256": "353b093b5ea4d5fc69e5217b35f1153df1268e97c66595b34497a57fa2468ba4",
+  "url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000070/micr-20190630x10q.htm"
+}

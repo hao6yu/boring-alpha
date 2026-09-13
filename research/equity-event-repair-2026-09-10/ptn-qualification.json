@@ -1,0 +1,122 @@
+{
+  "calendar_sha256": "e8221a9c5f4571596ed4597c148da35c0f45c201dfba829294d3b29f52dc3647",
+  "complete_subsequent_actions_verified": false,
+  "created_at": "2026-09-11T01:59:48.731531+00:00",
+  "currency": "USD",
+  "dividends_through_2023_10_31_verified": false,
+  "event_field_present": true,
+  "events_sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+  "evidence": {
+    "file": "research/equity-event-repair-2026-09-10/ptn-evidence.json",
+    "sha256": "1546a4db39f89b13bc9fca43e1691d5a37e3363030f6e6ef2d5a1f46186d4a00"
+  },
+  "exchange_name": "NasdaqCM",
+  "expected_period_sessions": 336,
+  "first_session": "2022-07-01",
+  "identity_name_match": true,
+  "instrument_type": "EQUITY",
+  "invalid_sessions": {},
+  "issuer_name": "Palatin Technologies, Inc.",
+  "last_session": "2023-10-31",
+  "missing_period_sessions": [],
+  "observations": {
+    "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-yahoo-observations.json",
+    "sha256": "90c594516f75e664c7730b00d2e677ae1273a6506a7b8be708eb2de58d8e297c"
+  },
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "price_basis": "Split-restated close, independently shown at 2023-06-16; OHLC and volume have not been certified or inverted to contemporaneous raw units.",
+  "provider": "Yahoo public chart",
+  "provider_reported_events": {
+    "splits": {
+      "1661952600": {
+        "date": 1661952600,
+        "denominator": 25.0,
+        "numerator": 1.0,
+        "splitRatio": "1:25"
+      }
+    }
+  },
+  "rows": 336,
+  "script_sha256": "e77913fb427c30a636ae7490c30c88fbdad1b93a3251c93d77ae02fb3d9a9e9f",
+  "slots": [
+    {
+      "end": "2022-12-14",
+      "entry_session": "2022-11-15",
+      "expected_sessions": 81,
+      "invalid_sessions": {},
+      "missing_sessions": [],
+      "qualified_price_window_success": false,
+      "slot_id": "0000911216-W1",
+      "source_coverage_success": true,
+      "start": "2022-08-22",
+      "unresolved_reasons": [
+        "ALL_OHLC_ADJUSTMENT_SEMANTICS_UNVERIFIED",
+        "VOLUME_ADJUSTMENT_BASIS_AND_RAW_ANCHOR_UNVERIFIED",
+        "COMPLETE_SUBSEQUENT_CORPORATE_ACTIONS_UNVERIFIED"
+      ]
+    },
+    {
+      "end": "2023-03-17",
+      "entry_session": "2023-02-16",
+      "expected_sessions": 81,
+      "invalid_sessions": {},
+      "missing_sessions": [],
+      "qualified_price_window_success": false,
+      "slot_id": "0000911216-W2",
+      "source_coverage_success": true,
+      "start": "2022-11-18",
+      "unresolved_reasons": [
+        "ALL_OHLC_ADJUSTMENT_SEMANTICS_UNVERIFIED",
+        "VOLUME_ADJUSTMENT_BASIS_AND_RAW_ANCHOR_UNVERIFIED",
+        "COMPLETE_SUBSEQUENT_CORPORATE_ACTIONS_UNVERIFIED"
+      ]
+    },
+    {
+      "end": "2023-06-15",
+      "entry_session": "2023-05-17",
+      "expected_sessions": 81,
+      "invalid_sessions": {},
+      "missing_sessions": [],
+      "qualified_price_window_success": false,
+      "slot_id": "0000911216-W3",
+      "source_coverage_success": true,
+      "start": "2023-02-21",
+      "unresolved_reasons": [
+        "ALL_OHLC_ADJUSTMENT_SEMANTICS_UNVERIFIED",
+        "VOLUME_ADJUSTMENT_BASIS_AND_RAW_ANCHOR_UNVERIFIED",
+        "COMPLETE_SUBSEQUENT_CORPORATE_ACTIONS_UNVERIFIED"
+      ]
+    },
+    {
+      "end": "2023-10-27",
+      "entry_session": "2023-09-29",
+      "expected_sessions": 81,
+      "invalid_sessions": {},
+      "missing_sessions": [],
+      "qualified_price_window_success": false,
+      "slot_id": "0000911216-W4",
+      "source_coverage_success": true,
+      "start": "2023-07-06",
+      "unresolved_reasons": [
+        "ALL_OHLC_ADJUSTMENT_SEMANTICS_UNVERIFIED",
+        "VOLUME_ADJUSTMENT_BASIS_AND_RAW_ANCHOR_UNVERIFIED",
+        "COMPLETE_SUBSEQUENT_CORPORATE_ACTIONS_UNVERIFIED",
+        "DIVIDEND_HISTORY_THROUGH_WINDOW_END_UNVERIFIED"
+      ]
+    }
+  ],
+  "source_manifest": {
+    "file": "research/equity-event-repair-2026-09-10/ptn-source-manifest.json",
+    "sha256": "e8da0930370420e05189686c00559dbeeaa4c085737e255412e44319f9959ff1"
+  },
+  "status": "REPAIR_COMPLETE_COVERAGE_ONLY_UNQUALIFIED",
+  "symbol": "PTN",
+  "unexpected_dates": [],
+  "unresolved_reasons": [
+    "ALL_OHLC_ADJUSTMENT_SEMANTICS_UNVERIFIED",
+    "VOLUME_ADJUSTMENT_BASIS_AND_RAW_ANCHOR_UNVERIFIED",
+    "COMPLETE_SUBSEQUENT_CORPORATE_ACTIONS_UNVERIFIED",
+    "DIVIDEND_HISTORY_THROUGH_OCTOBER_2023_UNVERIFIED"
+  ],
+  "volume_basis_verified": false
+}

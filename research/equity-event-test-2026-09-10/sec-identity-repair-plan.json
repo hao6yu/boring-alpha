@@ -1,0 +1,382 @@
+{
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "rule": "Original10-Q/10-K cover filed and accepted no later than the current daily decision anchor. Single indexregistrant must matchCIK; preserve original8-Kcover and exactprice-independent timing. No newprice/return access.",
+  "selection_sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0",
+  "targets": [
+    {
+      "accession": "0001096906-20-000051",
+      "anchor_date": "2020-01-30",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 exh99_1.htm FINANCIAL INFORMATION FOR UTAH MEDICAL PRODUCTS, INC. FOR THE THREE AND TWELVE MONTHS ENDED DECEMBER 31, 2019 AND FORWARD-LOOKING STATEMENTS RELATING TO 2019 AND BEYOND AS PRESENTED IN A PRESS RELEASE DATED JANUARY 30, 2020. EXHIBIT 99.1 UTMD Reports Audited Year 2019 and Fourth Quarter Financial Performance Contact: Crystal Rios January 30, 2020 (801) 566-1200 Salt Lake City, Utah \u2013 In the final calendar quarter (4Q) of 2019, Utah Medical Products, Inc. (Nasdaq: UTMD) began to realize accretive profits net of the quarterly amortization of the purchase price paid to CooperSurgical Inc. (CSI) for the acquisition of exclusive Filshie Clip System distribution rights in the U.S. The 4Q results allowed UTMD to meet its beginning of 2019 year projections to stockholders for the year as a whole. Currencies in this report are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; GBP = UK Pound Sterling; EUR = Euros; and CAD = Canadian Dollars. Currency amounts are in thousands, except per share amounts and where noted. Summary of Financial Results In USD terms, changes in 4Q and Year 2019 consolidated US GAAP income statement results compared to the same time periods in the prior calendar year were as follows: 4Q (October \u2013 December) Year (January \u2013 December) Revenues: + 21% +12% Gross Profit: + 28% +12% Operating Income: + 10% ( 6%) Net Income: + 28% (21%) Earnings Per Share (EPS): + 29% (20%) UTMD sales (revenue) growth in 2019 was higher than projected at the beginning of the year primarily because of an unexpected 89% increase in demand from UTMD\u2019s largest OEM customer. The higher sales growth in 4Q 2019 compared to 4Q 2018 was primarily due to the fact that 4Q 2018 was the lowest quarter of Femcare Filshie Clip System sales to CSI in 2018. In c",
+      "slot_id": "0000706698-2020Q1"
+    },
+    {
+      "accession": "0001445866-20-000449",
+      "anchor_date": "2020-04-23",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm FINANCIAL INFORMATION EXHIBIT 99.1 Utah Medical Products, Inc. Reports Financial Performance for First Quarter 2020 Contact: Crystal Rios (801) 566-1200 April 23, 2020 Salt Lake City, Utah \u2013 In the first calendar quarter (1Q) of 2020, Utah Medical Products, Inc. (Nasdaq: UTMD) attained results consistent with 1Q 2019, despite realizing a negative impact from the public response to the corona virus (COVID-19). Summary of results . The following is a summary comparison of 1Q 2020 with 1Q 2019 income statement measures: Revenues (Sales): + 2% Gross Profit (GP): + 1% Operating Income (OI): ( 6%) Net Income (NI): - Earnings Per Share (EPS): - According to CEO Kevin Cornwell, \u201cIn order to provide investors and other stakeholders with as much information as possible from which to make informed decisions, I would like to make the following comments. Despite 1Q 2020 overall higher sales and gross profits, those increases fell short of UTMD\u2019s expectations due to a delay in \u201celective surgeries\u201d resulting from COVID-19. Sales of the Filshie Clip System (Filshie devices) worldwide fell precipitously in March, and have continued that way in April. Filshie device sales were 36% of consolidated UTMD revenues in 2019, and were projected to grow in 2020 as a result of direct to end-user distribution in the US. Stockholders will recall that UTMD purchased the remaining exclusive U.S. distribution rights of Femcare Ltd\u2019s Filshie devices from CooperSurgical Inc (CSI) in mid-1Q 2019. Consequently, 1Q 2020 U.S. Filshie device sales were up 83% on a comparative basis with 1Q 2019, but they should have been up more than that since UTMD sold directly for only about half of 1Q 2019 due to normal start-up distribution issues. The most important financial performance impac",
+      "slot_id": "0000706698-2020Q2"
+    },
+    {
+      "accession": "0001445866-20-001050",
+      "anchor_date": "2020-07-28",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm FINANCIAL INFORMATION EXHIBIT 99.1 UTMD Reports Financial Performance for Second Calendar Quarter and First Half 2020 Contact: Crystal Rios (801) 566-1200 July 28, 2020 Salt Lake City, Utah \u2013 As many of the gynecology devices provided by Utah Medical Products, Inc. (Nasdaq: UTMD) are used in \u201cnonessential\u201d or \u201celective\u201d procedures, as medical procedures have been reclassified during the COVID-19 pandemic, the Company\u2019s financial performance in the second calendar quarter (2Q) and first half (1H) of 2020 reflects a substantial negative change relative to the same periods in 2019. According to CEO Kevin Cornwell, \u201cTo put it simply, UTMD just had a bad quarter. If you regard the quarter as traversing through a short term depression rather than sliding into an abyss, I don\u2019t think a detailed comparison with the same calendar quarter in the prior year yields much helpful insight into UTMD\u2019s current and future financial performance. Because the short term \u201cship to satisfy immediate medical facility need\u201d portion of the business has been the segment most affected by the pandemic, we expect that it will recover quickly as well. UTMD\u2019s current plans and actions are guided by the following: The medical need for our specialized devices has neither decreased nor increased because of the appearance of the corona virus. UTMD\u2019s financial position is strong as shown in the accompanying balance sheet and the fact that the Company maintained substantial profitability even during a \u201cshutdown\u201d of certain medical procedures in 2Q 2020. We are well-positioned to produce and distribute devices to medical facilities on demand. In my view, the slope of a recovery curve will be driven primarily by government policy responses, at all levels, in each of our major markets.",
+      "slot_id": "0000706698-2020Q3"
+    },
+    {
+      "accession": "0001445866-20-001623",
+      "anchor_date": "2020-10-27",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99.1.htm FINANCIAL INFORMATION EXHIBIT 99.1 UTMD Reports Financial Performance for Third Quarter and Nine Months of Year 2020 Contact: Crystal Rios (801) 566-1200 October 27, 2020 Salt Lake City, Utah \u2013 For the third calendar quarter (3Q) and first nine months (9M) of 2020, Utah Medical Products, Inc. (Nasdaq: UTMD) reports financial results described by CEO Kevin Cornwell as follows, \u201cAs stockholders know, the desire to preserve capacity for treating patients with COVID-19 led to suspending many hospital medical procedures. As a result, UTMD began to experience lower demand for its specialty medical devices in March during 1Q 2020. As the largest segment of UTMD\u2019s revenues in recent years has been in gynecology procedures deemed \u201cnonessential\u201d such as tubal ligation and loop excision of the transformation zone, UTMD sales dropped precipitously in 2Q 2020. My view is that comparisons of 3Q and 9M 2020 results with the same periods in the prior year represent the magnitude of a revenue hole that UTMD fell into caused by COVID-19 management policies, not a fundamental trend. The trend which may be of more interest and cause for optimism is a comparison of successive quarterly revenues during 2020. In this report, in addition to comparing with the prior year\u2019s same time periods, which identify the \u201cCOVID-19 hole\u201d, UTMD also presents 2020 successive quarterly sales by channel and product group. In summary, 3Q 2020 U.S. domestic sales substantially recovered from 2Q 2020. Although sales outside the U.S. (OUS) have been slower to recover, they nevertheless were significantly higher in 3Q 2020 than in the dismal 2Q 2020. Unless governments again restrict medical care, we see the recovery trend continuing to be positive, so that 4Q 2020 is likely to be UTMD\u2019s b",
+      "slot_id": "0000706698-2020Q4"
+    },
+    {
+      "accession": "0001096906-21-000171",
+      "anchor_date": "2021-01-28",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99z1.htm PRESS RELEASE EXHIBIT 99.1 UTMD Reports Audited Year 2020 and Fourth Quarter Financial Performance Contact: Crystal Rios (801) 566-1200 January 28, 2021 Salt Lake City, Utah \u2013Utah Medical Products, Inc. (Nasdaq: UTMD) reports financial results for the fourth calendar quarter (4Q) which confirms a trend of recovery from the \u201cCOVID-19 depression\u201d in 2Q 2020 caused by government policies restricting medical procedures deemed \u201cnonessential\u201d such as tubal ligation and loop excision of the transformation zone. In this report, UTMD presents 2020 successive quarterly comparisons. In summary, 4Q 2020 was UTMD\u2019s best revenue quarter of the year, almost 2% higher than the pre-pandemic 4Q 2019. Consolidated total worldwide revenues for the 2020 year were 10% lower than in 2019, after being down 26% in 2Q 2020. Direct to end user sales, which drive UTMD\u2019s overall profitability, were 14% lower for the 2020 year after being down 39% in the dismal 2Q 2020. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Summary of Financial Results UTMD management believes that the presentation of sequential 2020 quarterly comparisons provides meaningful supplemental information to both management and investors. Keeping in mind that results for any given three month period in comparison with a previous year\u2019s same three month period may vary as a result of several factors: foreign currency exchange rates for sales invoiced in foreign currencies, uneven international distributor and OEM customer order patterns as a result of purchasing larger quantities of",
+      "slot_id": "0000706698-2021Q1"
+    },
+    {
+      "accession": "0001096906-21-001665",
+      "anchor_date": "2021-07-22",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm FINANCIAL INFORMATION EXHIBIT 99.1 UTMD Reports Financial Performance for Second Calendar Quarter and First Half 2021 Contact: Crystal Rios (801) 566-1200 July 22, 2021 Salt Lake City, Utah \u2013 The second calendar quarter (2Q) of 2021 financial results were dramatically different from 2Q 2020 because 2Q 2020 results were the low point of Utah Medical Products, Inc.\u2019s (Nasdaq: UTMD) performance during the COVID-19 pandemic, during a time when there were restrictions on so-called nonessential medical procedures. Therefore, UTMD management reports quarterly income statement results compared to the same periods not only in 2021 compared to 2020, but also compared to 2019. The Company\u2019s stated objective in 2021 has been to try to fully recover back to its 2019 financial performance. Please see the income statements for all three years on the last page. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Overview of Results The following summary comparison of 2Q and first half (1H) 2021 with 2Q and 1H 2020 income statement measures demonstrates UTMD\u2019s excellent recovery, despite many new challenges: 2Q 1H (April \u2013 June) (January-June) Revenues (Sales): + 43% + 20% Gross Profit (GP): + 57% + 25% Operating Income (OI): + 141% + 48% Income Before Tax (EBT): Net Income (NI): + 144% + 161% + 46% + 45% Earnings Per Share (EPS): + 161% + 46% The above increases in NI and EPS according to U.S. Generally Accepted Accounting Principles (US GAAP) were affected by long term deferred tax liability (DTL) increases on the balance of Femcare identifi",
+      "slot_id": "0000706698-2021Q3"
+    },
+    {
+      "accession": "0001096906-21-002587",
+      "anchor_date": "2021-10-26",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm FINANCIAL INFORMATION EXHIBIT 99.1 UTMD Reports Financial Performance for Third Calendar Quarter and Nine Months 2021 Contact: Crystal Rios (801) 566-1200 October 26, 2021 Salt Lake City, Utah \u2013 The third calendar quarter (3Q) of 2021 financial results continued to demonstrate Utah Medical Products, Inc.\u2019s (Nasdaq: UTMD\u2019s) recovery after a time when there were restrictions on so-called nonessential medical procedures during the COVID-19 pandemic. Because of the unusual dip in 2020 demand for its devices, UTMD management continues to report quarterly income statement results compared to the same periods not only in 2021 compared to 2020, but also compared to 2019. The Company is exceeding its stated objective in 2021 to try to fully recover back to its 2019 financial performance. Please see the income statements for all three years on the last page. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Overview of Results The following summary comparison of 3Q and first nine months (9M) of 2021 with 3Q and 9M 2020 income statement measures demonstrates UTMD\u2019s excellent recovery, despite many new challenges: 3Q 9M 2021 to 2020 Comparison (July \u2013 September) (January-September) Revenues (Sales): + 20% + 20% Gross Profit (GP): + 24% + 25% Operating Income (OI): + 42% + 46% Income Before Tax (EBT): + 44% + 45% Net Income (NI): + 43% + 44% Earnings Per Share (EPS): + 43% + 45% As longer-term UTMD stockholders appreciate, the above dramatic increases resulted from comparing 2021 financial results with the former depressed COVID-19 pande",
+      "slot_id": "0000706698-2021Q4"
+    },
+    {
+      "accession": "0001096906-22-000245",
+      "anchor_date": "2022-02-02",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm PRESS RELEASE ISSUED FEBRUARY 1, 2022 EXHIBIT 99.1 UTMD Reports Audited Year 2021 and Fourth Quarter Financial Performance Contact: Crystal Rios (801) 566-1200 February 1, 2022 Salt Lake City, Utah \u2013 The fourth calendar quarter (4Q) of 2021 financial results demonstrate Utah Medical Products, Inc.\u2019s (Nasdaq: UTMD\u2019s) continuing performance improvement despite many challenges related to the corona virus pandemic including on-again/off-again restrictions on so-called nonessential medical procedures, supply chain disruption, high inflation on raw materials, freight and labor costs as well as a continued shortage of labor and higher employee turnover. Because of UTMD\u2019s unusual dip in 2020 financial performance, UTMD management continues to report quarterly income statement results compared to the same periods not only for 2021 compared to 2020, but also for 2021 compared to the pre-pandemic year of 2019. The Company exceeded its stated objective early in 2021 to try to fully recover back to its 2019 financial performance. Please see the income statements for all three years on the last page of this report. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Overview of Results The following summary comparison of 4Q and calendar year 2021 income statement measures with the same periods of 2020 demonstrates a remarkable recovery: 2021 to 2020 Comparison 4Q (October\u2013December) Year (January-December) Revenues (Sales): + 8% + 16% Gross Profit (GP): + 12% + 21% Operating Income (OI): + 20% + 38% Income Before Tax (EBT): + 21% + 38% Net I",
+      "slot_id": "0000706698-2022Q1"
+    },
+    {
+      "accession": "0001096906-22-000948",
+      "anchor_date": "2022-04-27",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99z1.htm FINANCIAL INFORMATION FOR UTAH MEDICAL PRODUCTS, INC. EXHIBIT 99.1 Utah Medical Products, Inc. Reports Financial Performance for First Quarter 2022 Contact: Crystal Rios (801) 566-1200 April 26, 2022 Salt Lake City, Utah \u2013 In the first calendar quarter (1Q) of 2022, Utah Medical Products, Inc. (Nasdaq: UTMD) attained financial results consistent with achieving its goals for calendar year 2022. Summary of results . The following is a summary comparison of 1Q 2022 with 1Q 2021 income statement measures: Revenues (Sales): +12.4% Gross Profit (GP): + 8.4% Operating Income (OI): +16.3% Net Income (NI): +16.9% Earnings Per Share (EPS): +16.6% Profit margins in 1Q 2022 compared to 1Q 2021 follow: 1Q 2022 (JAN \u2013 MAR) 1Q 2021 (JAN \u2013 MAR) Gross Profit Margin (gross profits/ sales): 61.1% 63.4% Operating Income Margin (operating income/ sales): 36.7% 35.5% EBT Margin (profits before income taxes/ sales): 36.8% 35.6% Net Income Margin (profit after taxes/ sales): 28.7% 27.6% Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Domestic sales in 1Q 2022 were up 18%, and sales outside the U.S. (OUS) were up 4%, compared to 1Q 2021. Using the same foreign currency exchange (FX) rates for sales not invoiced in USD, i.e. in \u201cconstant currency\u201d terms, OUS sales were up 7%. Because 24% of consolidated sales were invoiced in foreign currencies, the change in FX rates for OUS sales did have an impact on period-to-period relative financial results. FX rates for income statement purposes are transaction-weighted averages. The average FX rates from th",
+      "slot_id": "0000706698-2022Q2"
+    },
+    {
+      "accession": "0001096906-22-001712",
+      "anchor_date": "2022-07-28",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm FINANCIAL INFORMATION FOR UTAH MEDICAL PRODUCTS, INC. FOR THE THREE AND SIX MONTHS ENDED JUNE 30, 2022 AND FORWARD-LOOKING STATEMENTS RELATING TO 2022 AND BEYOND AS PRESENTED IN A PRESS RELEASE DATED JULY 26, 2022. EXHIBIT 99.1 UTMD Reports Financial Performance for Second Calendar Quarter and First Half 2022 Contact: Crystal Rios (801) 566-1200 July 26, 2022 Salt Lake City, Utah \u2013 UTMD achieved second calendar quarter (2Q) and first half (1H) 2022 financial results better than those anticipated in its beginning of year projections. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Because of the relatively short span of time, results for any given three-month period in comparison with a previous three-month period may not be indicative of comparative results for the year as a whole. Overview of Results In brief, UTMD was able to adjust to the challenges of rapidly rising variable costs in the 1H of 2022. The following is an income statement summary comparison of 2Q and 1H 2022 with 2Q and 1H 2021 according to U.S. Generally Accepted Accounting Principles (US GAAP): 2Q 1H (April \u2013 June) (January-June) Revenues (Sales): + 7% + 9% Gross Profit (GP): + 5% + 6% Operating Income (OI): + 6% + 11% Income Before Tax (EBT): + 8% + 12% Net Income (NI): + 20% + 18% Earnings Per Share (EPS): + 20% + 18% The above comparisons of GP and OI indicate costs rising faster than revenues in 1H 2022. The expansion in EBT was due to better non-operating income. The high expansion in NI and EPS was due to comparison after a one-time negative incom",
+      "slot_id": "0000706698-2022Q3"
+    },
+    {
+      "accession": "0001096906-22-002547",
+      "anchor_date": "2022-10-25",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utah_ex99z1.htm FINANCIAL INFORMATION FOR UTAH MEDICAL PRODUCTS, INC. FOR THE THREE AND NINE MONTHS ENDED SEPTEMBER 30, 2022 AND FORWARD-LOOKING STATEMENTS RELATING TO 2022 AND BEYOND AS PRESENTED IN A PRESS RELEASE DATED OCTOBER 25, 2022. EXHIBIT 99.1 UTMD Reports Financial Performance for Third Calendar Quarter and Nine Months 2022 Contact: Crystal Rios (801) 566-1200 October 25, 2022 Salt Lake City, Utah \u2013 In the third calendar quarter (3Q) of 2022, despite significant cost inflation, supply chain disruption, litigation expenses and negative impact of a stronger U.S. Dollar on foreign currency sales, Utah Medical Products, Inc. (Nasdaq: UTMD) continued to achieve financial results which were better than those anticipated in its beginning of year projections. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Overview of Results The following is a summary comparison of 3Q and first nine months (9M) of calendar 2022 with 3Q and 9M 2021 income statement measures: 3Q 9M 2022 to 2021 Comparison (July\u2013September) (January-September) Revenues (Sales): + 3% + 7% Gross Profit (GP): + 1% + 5% Operating Income (OI): + 1% + 7% Income Before Tax (EBT): + 4% + 9% Net Income (NI): + 2% + 12% Earnings Per Share (EPS): + 2% + 12% The above increases in NI and EPS according to U.S. Generally Accepted Accounting Principles (US GAAP) were affected by a long-term deferred tax liability (DTL) increase in 9M 2021 on the balance of Femcare identifiable intangible assets (IIA) due to a future change enacted during 2Q 2021 in UK income tax rates. As stockholders ma",
+      "slot_id": "0000706698-2022Q4"
+    },
+    {
+      "accession": "0001096906-23-000240",
+      "anchor_date": "2023-01-31",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99z1.htm FINANCIAL INFORMATION EXHIBIT 99.1 UTMD Reports Audited Year 2022 and Fourth Quarter Financial Performance Contact: Brian Koopman (801) 566-1200 January 31, 2023 Salt Lake City, Utah \u2013 Utah Medical Products, Inc. (Nasdaq: UTMD) finished the calendar year with a solid fourth quarter (4Q) performance, which allowed financial results for the year 2022 exceeding management\u2019s beginning of year projections, despite many challenges. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Overview of Results A summary comparison of 4Q and calendar year 2022 income statement measures with the same periods of 2021 follows: 4Q Year 2022 to 2021 Comparison (October\u2013December) (January-December) Revenues (Sales): + 5% + 7% Gross Profit (GP): + 3% + 4% Operating Income (OI): (1%) + 5% Income Before Tax (EBT): Net Income (NI): + 8% + 10% + 8% + 11% Earnings Per Share (EPS): + 11% + 12% Sales invoiced in foreign currencies, which represented 25% of total consolidated sales (when expressed in USD) during 2022, were substantially diminished by a stronger USD. Using the same foreign currency exchange (FX) rates as in the prior year (\u201cconstant currency\u201d sales), revenues in 4Q 2022 were up 9%, and for the 2022 year were up almost 10%. Profit margins in 4Q and year 2022 compared to 4Q and year 2021 follow: 4Q 2022 (Oct \u2013 Dec) 4Q 2021 (Oct-Dec) 2022 (Jan\u2013Dec) 2021 (Jan\u2013Dec) Gross Profit Margin (GP/ sales): 61.3% 62.8% 61.6% 63.0% Operating Income Margin (OI/ sales): 37.3% 39.7% 37.9% 38.5% Income Before Tax Margin (EBT/ sales): 41.2% 40.1% 39.5% 38.9% Ne",
+      "slot_id": "0000706698-2023Q1"
+    },
+    {
+      "accession": "0001096906-23-000901",
+      "anchor_date": "2023-04-25",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99z1.htm FINANCIAL INFORMATION EXHIBIT 99.1 Utah Medical Products, Inc. Reports Financial Performance for First Quarter 2023 Contact: Brian Koopman (801) 566-1200 April 25, 2023 Salt Lake City, Utah \u2013 In the first calendar quarter (1Q) of 2023, Utah Medical Products, Inc. (Nasdaq: UTMD) attained financial results consistent with achieving its goals previously announced for calendar year 2023. Summary of results . The following is a summary comparison of 1Q 2023 with 1Q 2022 income statement measures: Revenues (Sales): + 1.6% Gross Profit (GP): + 4.1% Operating Income (OI): ( 1.9%) Net Income (NI): +19.2% Earnings Per Share (EPS): +20.2% Profit margins in 1Q 2023 compared to 1Q 2022 follow: 1Q 2023 (JAN \u2013 MAR) 1Q 2022 (JAN \u2013 MAR) Gross Profit Margin (gross profits/ sales): 62.6% 61.1% Operating Income Margin (operating income/ sales): 35.5% 36.7% EBT Margin (profits before income taxes/ sales): 40.9% 36.8% Net Income Margin (profit after taxes/ sales): 33.7% 28.7% Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Domestic sales in 1Q 2023 were 10% lower, but sales outside the U.S. (OUS) were up 23% in USD terms compared to 1Q 2022. Using the same foreign currency exchange (FX) rates for sales not invoiced in USD, i.e. in \u201cconstant currency\u201d terms, OUS sales were up 28%. Because 28% of consolidated USD sales were invoiced in foreign currencies, the change in FX rates for OUS sales did have an impact on period-to-period relative financial results. FX rates for income statement purposes are transaction-weighted averages. The average FX r",
+      "slot_id": "0000706698-2023Q2"
+    },
+    {
+      "accession": "0001096906-23-001449",
+      "anchor_date": "2023-07-25",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99z1.htm FINANCIAL INFORMATION FOR UTAH MEDICAL PRODUCTS, INC. FOR THE THREE AND SIX MONTHS ENDED JUNE 30, 2023 AND FORWARD-LOOKING STATEMENTS RELATING TO 2023 AND BEYOND AS PRESENTED IN A PRESS RELEASE DATED JULY 25, 2023. EXHIBIT 99.1 UTMD Reports Financial Performance for Second Calendar Quarter and First Half 2023 Contact: Brian Koopman (801) 566-1200 July 25, 2023 Salt Lake City, Utah \u2013 Utah Medical Products, Inc. [Nasdaq: UTMD] achieved second calendar quarter (2Q) and first half (1H) 2023 financial results consistent with those anticipated in its beginning of year projections. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Because of the relatively short span of time, results for any given three-month period in comparison with a previous three-month period may not be indicative of comparative results for the year as a whole. Overview of Results In brief, consolidated total 1H 2023 revenues were only $366 lower compared to 1H 2022 despite $630 lower biopharmaceutical OEM sales post COVID-pandemic, which was anticipated at the beginning of the year. Despite the lower sales, and combined with continued supply chain disruption challenges, UTMD\u2019s 1H gross profit margin improved, yielding total gross profit almost the same for the first half of the year. Operating Income, however, declined $715 (7.5%) as a result of unusual litigation expenses related to yet unresolved Filshie clip product liability claims in the U.S. However, because UTMD realized $1,236 higher interest income on its cash balances, Net Income for 1H 2023 was up ",
+      "slot_id": "0000706698-2023Q3"
+    },
+    {
+      "accession": "0001096906-23-002058",
+      "anchor_date": "2023-10-26",
+      "cik": "0000706698",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 utmd_ex99z1.htm FINANCIAL INFORMATION FOR UTAH MEDICAL PRODUCTS, INC. FOR THE THREE AND NINE MONTHS ENDED SEPTEMBER 30, 2023 AND FORWARD-LOOKING STATEMENTS RELATING TO 2023 AND BEYOND AS PRESENTED IN A PRESS RELEASE DATED OCTOBER 26, 2023. EXHIBIT 99.1 UTMD Reports Financial Performance for Third Calendar Quarter and Nine Months 2023 Contact: Brian Koopman (801) 566-1200 October 26, 2023 Salt Lake City, Utah \u2013 Utah Medical Products, Inc. [Nasdaq: UTMD], despite a difficult third calendar quarter (3Q), achieved financial results for nine months (9M) 2023 consistent with those anticipated in its beginning of year projections. Currencies in this release are denoted as $ or USD = U.S. Dollars; AUD = Australia Dollars; \u00a3 or GBP = UK Pound Sterling; C$ or CAD = Canadian Dollars; and \u20ac or EUR = Euros. Currency amounts throughout this report are in thousands, except per share amounts and where noted. Overview of Results The following is a summary comparison of 3Q and first nine months (9M) of calendar 2023 with 3Q and 9M 2022 income statement measures: 3Q 9M 2023 to 2022 Comparison (July\u2013September) (January-September) Revenues (Sales): (3%) (2%) Gross Profit (GP): (10%) (4%) Operating Income (OI): (23%) (13%) Income Before Tax (EBT): (10%) - Net Income (NI): (8%) + 4% Earnings Per Share (EPS): (8%) + 4% Worldwide (WW) consolidated sales in 3Q 2023 were $450 lower than in 3Q 2022, and were $816 lower in 9M 2023 compared to 9M 2022. This essentially was because 3Q 2023 biopharmaceutical OEM sales were $1,217 lower than in 3Q 2022, and were $1,847 lower in 9M 2023 compared to 9M 2022. Sales invoiced in foreign currencies, which did not include any biopharmaceutical OEM sales, represented 25% of total WW consolidated 3Q 2023 sales (when expressed in USD) and 29% of 9M 202",
+      "slot_id": "0000706698-2023Q4"
+    },
+    {
+      "accession": "0001622353-20-000004",
+      "anchor_date": "2020-02-26",
+      "cik": "0001622353",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 jcap-20200226ex9910f9821.htm EXHIBIT 99.1 jcap_Ex99_1 Exhibit 99.1 Jernigan Capital Reports Fourth Quarter Results; Introduces 2020 Guidance MEMPHIS, Tennessee, February 26, 2020 / Business Wire / Jernigan Capital, Inc. (NYSE: JCAP), an owner of self-storage facilities and a leading capital partner for self-storage entrepreneurs nationwide, today announced results for the quarter and year ended December 31, 2019. Fourth Quarter Highlights include: \u00a7 Earnings per share and adjusted earnings per share of $0.06 and $0.39, respectively . \u00a7 Executed a definitive asset purchase agreement with JCAP Advisors, LLC (\u201cthe Advisor\u201d), the Company\u2019s external advisor, in which Jernigan Capital Operating Company, LLC (the \u201cOperating Company\u201d), would acquire the business assets and liabilities of the Advisor, thereby internalizing the Advisor (the \"Internalization\"). \u00a7 Increased to 20 the number of self-storage facilities wholly owned either on balance sheet or in the SL1 Joint Venture through a developer buyout of the self-storage facility underlying the SL1 Joint Venture\u2019s Raleigh development investment. \u00a7 Commenced leasing of Generation V self-storage facilities underlying four development property investments in which the Company has an aggregate committed investment of $38.7 million, 49.9% profits interests and ROFRs. Full-Year 2019 Highlights include: \u00a7 Earnings per share and adjusted earnings per share of $1.11 and $2.00, respectively. \u00a7 Increased the number of wholly owned self-storage facilities from seven to 20 through developer buyouts of seven development property investments and five self-storage facilities underlying the Company\u2019s Miami bridge portfolio, as well as the acquisition of the interests in the entity that owned the property underlying the Company\u2019s Mia",
+      "slot_id": "0001622353-2020Q1"
+    },
+    {
+      "accession": "0001622353-20-000009",
+      "anchor_date": "2020-05-07",
+      "cik": "0001622353",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 jcap-20200507ex991048b1f.htm EXHIBIT 99.1 jcap_Ex99_1 Exhibit 99.1 Jernigan Capital Reports First Quarter Results MEMPHIS, Tennessee, May 7, 2020 / Business Wire / Jernigan Capital, Inc. (NYSE: JCAP), an owner of self-storage facilities and a leading capital partner for self-storage entrepreneurs nationwide, today announced results for the quarter ended March 31, 2020. First Quarter Highlights include: \u00a7 $(2.53) loss per share, including $(0.46) related to change in fair value of investments and $(1.84) related to internalization expenses, goodwill impairment and the final payment of management fees to JCAP Advisors LLC for the period prior to internalization. \u00a7 Adjusted loss per share of $(0.42), including $(0.46) related to change in fair value of investments. \u00a7 Enhanced shareholder/management alignment of interests and reduced run-rate G&A expense by approximately 40% with the internalization of JCAP Advisors LLC, the Company\u2019s external advisor, on February 20, 2020. \u00a7 Enhanced liquidity position by increasing size of revolving credit facility from $235 million to $375 million, reducing interest rate, improving covenants and attracting new banks. \u00a7 Increased the number of wholly owned self-storage facilities on its balance sheet or in its SL1 Joint Venture from 20 to 29 through developer buyouts of nine development property investments including the Fort Lauderdale, Boston 2, Atlanta 4, Atlanta 6, Atlanta 5, Atlanta 3, Charlotte 2, Knoxville, and Louisville 1 development property investments. \u00a7 Commenced leasing of Generation V self-storage facilities underlying two development property investments in which the Company has an aggregate committed investment of $25.5 million, 49.9% profits interests and ROFRs. Subsequent Events include: \u00a7 Acquired 100% of the",
+      "slot_id": "0001622353-2020Q2"
+    },
+    {
+      "accession": "0001622353-20-000019",
+      "anchor_date": "2020-08-06",
+      "cik": "0001622353",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 jcap-20200806ex99153de5e.htm EX-99.1 Exhibit 99.1 \u200b \u200b Jernigan Capital Reports Second Quarter Results \u200b MEMPHIS, Tennessee, August 6, 2020 / Business Wire / Jernigan Capital, Inc. (NYSE: JCAP), an owner of self-storage facilities and a leading capital partner for self-storage entrepreneurs nationwide, today announced results for the quarter ended June 30, 2020. \u200b Second Quarter Highlights include: \u200b \u25fe Reported $(0.24) loss per share and adjusted earnings per share of $0.04 \u200b \u25fe Increased the number of wholly owned self-storage facilities on its balance sheet or in its SL1 Joint Venture from 29 to 37 through developer buyouts of eight development property investments including the Jacksonville 3, Raleigh, Louisville 2, Baltimore 1, Minneapolis 1, Minneapolis 2, Minneapolis 3 and Columbia development property investments. \u200b Subsequent Events include: \u200b \u25fe Entered into a definitive merger agreement with an affiliate of NexPoint Advisors, LLC (\u201cNexPoint\u201d), in an all-cash transaction valued at approximately $900 million, including debt and preferred stock to be assumed or refinanced. Under the terms of the merger agreement, holders of JCAP's common stock will receive $17.30 per share in cash. Jernigan Capital's Board of Directors has unanimously approved the transaction. \u200b \u25fe Acquired 100% of the Class A membership units of the LLCs that own the New York City 2, Orlando 3 and Denver 1 development property investments. With these acquisitions, the Company now wholly owns 40 facilities on its balance sheet or in its SL1 Joint Venture, representing approximately 53% of its total portfolio by net rentable square feet. \u200b \u25fe Received repayment of the Boston 3 development property investment totaling $2.9 million, one of the five previously announced forgone investments. \u200b Fi",
+      "slot_id": "0001622353-2020Q3"
+    },
+    {
+      "accession": "0001091907-20-000022",
+      "anchor_date": "2020-04-23",
+      "cik": "0001091907",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 wwe-20200423xex99_1.htm EX-99.1 Exhibit 991 - Q1 2020 ER \ufeff FOR IMMEDIATE RELEASE Contacts: \ufeff Investors: Michael Weitz 203-352-8642 \ufeff Michael Guido, CFA 203-352-8779 \ufeff Media: Matthew Altman 203-352- 1177 \ufeff WWE \u00ae Reports Strong First Quarter 20 20 Results Takes Action on COVID-19 Impact \ufeff F irst Quarter 20 20 Highlights \u00b7 Revenue s increased 60% to $ 291.0 million as compared to the prior year quarter \u00b7 Operating income was $ 53. 3 million as compared to a loss of $ 6 .8 million in the prior year quarter \u00b7 Adj . OIBDA 1 increased t o $ 77.3 million from $12.4 million in the prior year quarter \u00b7 Annou nced multi -year distribution agreements with Sony Pictures Networks in India a nd DAZN in Germany to extend the reach of WWE content across television and digital platforms \u00b7 WWE Network average paid subscribers 2 were 1 . 46 million, consistent with the Company\u2019s guidance \u00b7 Digital video views increased 2 5% to 9.6 billion and hours consumed increased 15 % to 3 44 million across digital and social media platforms 3 WrestleMania Highlights (April 4-5, 2020) \u00b7 WWE set WrestleMania Week viewership records with more than 967 million video views across digital and social platforms 4 , representing a 20% increase from the prior year. A record 46 million hours of content was consumed during the week, an increase of 28% from the prior year \u00b7 WrestleMania (April 4 & 5 , 20 20 ) was the most social event in WWE history with more than 13.8 million total social media interactions on Facebook, Instagram and Twitter, up 57% vs. last year\u2019s WrestleMania 5 \u00b7 WWE Network \u2019s WrestleMania weekend subscriber additions (Friday-Sunday) were the highest in its history. T otal subscribers reached 2.10 million on April 6, 2020, up 5% from the day after WrestleMania last year COVID-19 Acti",
+      "slot_id": "0001091907-2020Q2"
+    },
+    {
+      "accession": "0001104659-20-030739",
+      "anchor_date": "2020-03-09",
+      "cik": "0001279704",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm2012102_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports Financial Results for Year Ended December 31, 2019 and Provides a Corporate Update FLORHAM PARK, N.J., March 9, 2020 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a clinical-stage biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the year ended December 31, 2019 and provided a corporate update. Fourth Quarter and Recent Corporate Highlights \u00b7 Announced CLR 131 achieved primary efficacy endpoints from its Phase 2 CLOVER-1 study in relapsed/refractory B-cell lymphomas and completion of the Phase 1 relapsed/refractory multiple myeloma Dose Escalation study. The data showed: o 42.8% overall response rate (ORR) in median 6th line treatment of multiple myeloma at the 75mCi total body dose o 81.8% of the multiple myeloma patients across all therapeutic doses tested experienced tumor reduction with a strong dose response o 100% ORR and 25% complete response (CR) seen in lymphoplasmacytic lymphoma/Waldenstrom\u2019s macroglobulinemia (LPL/WM) patients o 42.0% ORR and 11% CR in all non-Hodgkin\u2019s lymphoma (NHL) patients \u00b7 Received Orphan Drug Designation for CLR 131 in lymphoplasmacytic lymphoma (LPL) from the U.S. Food and Drug Administration \u00b7 Oral presentation at the American Society of Hematology (ASH) Conference entitled \u201c Fractionated Dosing of CLR 131 in Patients with Relapsed or Refractory Multiple Myeloma \u201d \u00b7 Oral presentation at the European Society of Medical Oncology (ESMO) Congress entitled \u201c Interim Evaluation of a Targeted Radiotherapeutic, CLR 131, in Relapsed/Refractory Diffuse Large B-cell Lymphoma Patients \u201d \u00b7 Scientific conference poster presentations during the quarter included: o",
+      "slot_id": "0001279704-2020Q1"
+    },
+    {
+      "accession": "0001104659-20-057785",
+      "anchor_date": "2020-05-07",
+      "cik": "0001279704",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm2018882d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports First Quarter 2020 Financial Results and Provides a Corporate Update FLORHAM PARK, N.J., May 7, 2020 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a clinical-stage biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the three months ended March 31, 2020 and provided a corporate update. First Quarter and Recent Corporate Highlights \u00b7 Announced CLR 131 achieved primary efficacy endpoints from its Phase 2 CLOVER-1 study in median third line relapsed/refractory (r/r) and Non-Hodgkin\u2019s lymphomas (NHL) and median sixth line r/r multiple myeloma (MM) and in the Phase 1 r/r MM dose escalation study at the 50mCi and 75mCi total body doses. The 75mCi total body dose demonstrated: \u00a7 Overall response rate (ORR) 42.8% in r/r MM \u00a7 33% ORR in triple class refractory r/r MM \u00a7 50% ORR in high risk r/r MM \u00a7 43.0% ORR and 14.3% complete responses (CR) in r/r NHL \u00a7 100% ORR and 25% CR in r/r Lymphoplasmacytic lymphoma/Waldenstrom\u2019s macroglobulinemia (LPL/WM) across all therapeutic doses tested \u00b7 Completed the pre-planned highest dose cohort of the Phase 1 r/r MM dose escalation study \u00b7 Received Orphan Drug Designation for CLR 131 in LPL/WM from the U.S. Food and Drug Administration (FDA) \u00b7 Appointed Dr. Igor Grachev, Chief Medical Officer \u00b7 Extended the Phase 2 CLOVER-1 study in relapsed/refractory B-cell lymphomas to enroll additional patients at a dose of CLR 131 delivering 100mCi in a two-cycle dosing regimen \u201cCLR 131 has consistently demonstrated favorable safety and tolerability across dosing levels and encouraging response rates even in a very difficult to treat sixth line patient population that in",
+      "slot_id": "0001279704-2020Q2"
+    },
+    {
+      "accession": "0001104659-20-123047",
+      "anchor_date": "2020-11-09",
+      "cik": "0001279704",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm2035498d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports Third Quarter 2020 Financial Results and Provides a Corporate Update FLORHAM PARK, N.J., November 9, 2020 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a late-stage clinical biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the third quarter ended September 30, 2020 and provided a corporate update. Third Quarter and Recent Corporate Highlights \u00b7 Held FDA Type B guidance meeting to define the registrational pathway for our priority adult hematology oncology indications and planned initiation of the pivotal study for our lead indication in the fourth quarter \u00b7 Announced CLR 131 achieved a 40% overall response rate (ORR) in Triple Class Refractory Multiple Myeloma (MM) patients with an administered total body dose (TBD) of 60mCi or greater from the Phase 2 CLOVER-1 study \u00b7 Interim results from the Phase 2 COVER-1 study at the American Association of Cancer Research (AACR) Virtual Meeting: Advances in Malignant Lymphoma demonstrated a 100% ORR and a 75% major response rate (MRR) in LPL/WM. Mean duration of response exceeding 17 months (8.4 \u2013 31.7 months); duration of response continues to increase for all patients \u00b7 Strengthened the management team with the appointment of Dr. John Friend, chief medical officer \u201cWe continue to make good progress towards the fourth quarter initiation of the CLR 131 pivotal study in our lead heme-oncology indication. Our recent FDA guidance meeting was most encouraging and we look forward to providing greater details in the near-term,\u201d said James Caruso, president and CEO of Cellectar. \u201cAdditional data from our Phase 2 CLOVER-1 study remain strong, with pat",
+      "slot_id": "0001279704-2020Q4"
+    },
+    {
+      "accession": "0001104659-21-030726",
+      "anchor_date": "2021-03-02",
+      "cik": "0001279704",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 tm218479d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports Financial Results for Year Ended December 31, 2020 and Provides a Corporate Update FLORHAM PARK, N.J., March 2, 2021 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a late-stage clinical biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the year ended December 31, 2020 and provided a corporate update. Fourth Quarter and Recent Corporate Highlights \u00b7 Received Orphan Drug Designation from the European Commission for CLR 131 in Waldenstrom\u2019s macroglobulinemia (WM) which provides certain benefits including protocol assistance, reduced EU regulatory filing fees and 10 years of European market exclusivity \u00b7 Initiated pivotal study of CLR 131 in Waldenstrom\u2019s macroglobulinemia (CLOVER-WaM) o Pivotal study is designed as a global, non-comparator, single arm, expansion cohort of the currently ongoing Phase 2 CLOVER-1 study of CLR 131 and is in alignment with feedback received from the U.S. Food and Drug Administration from the September 2020 guidance meeting o The study will enroll 50 WM patients who have failed first-line therapy, have failed to respond to a BTK inhibitor (i.e., ibrutinib) or had a suboptimal response o The primary endpoint of the study is response rate defined as a partial response or better (a minimum of a 50% reduction in the biological marker IgM) \u00b7 Announced Closing of $45.0 Million Underwritten Public Offering and Concurrent Private Placement \u00b7 Announced CLR 131 demonstrated preliminary activity in inoperable brain tumors in an international open label, dose escalation Phase 1 safety study of children and adolescents with relapsed or refractory cancers, specifically high-",
+      "slot_id": "0001279704-2021Q1"
+    },
+    {
+      "accession": "0001437749-20-009062",
+      "anchor_date": "2020-05-01",
+      "cik": "0001512499",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 2 ex_181321.htm EXHIBIT 99.1 ex_181321.htm Exhibit 99.1 Lindblad Expeditions Holdings, Inc. Reports 2020 First Quarter Financial Results First Quarter 2020 Highlights: \u25cf Tour Revenues decreased 9% to $81.2 million \u25cf Net loss available to common stockholders of $1.9 million \u25cf Adjusted EBITDA decreased $11.5 million to $10.6 million \u25cf Significantly expanded capacity with the delivery of the National Geographic Endurance in March 2020 \u25cf Net Yield increased 3% to $1,130 per night and Occupancy was 89% \u25cf First quarter results were significantly impacted by voyage disruptions, cancellations and rescheduling of expeditions due to the COVID-19 virus \u25cf Ended first quarter with $137 million in cash; implementing significant cost reduction measures to further increase liquidity profile \u25cf Monthly cash burn expected to be approximately $10-15 million excluding the impact of guest payments and refunds NEW YORK, May 1 , 2020 \u2013 Lindblad Expeditions Holdings, Inc. (NASDAQ: LIND; the \u201cCompany\u201d or \u201cLindblad\u201d), a global provider of expedition cruises and adventure travel experiences, today reported financial results for the quarter ended March 31, 2020. Sven-Olof Lindblad, President and Chief Executive Officer, said \u201cLindblad was off to another great start in 2020 with the strong momentum we generated throughout the last few years continuing during the first two months of the year. Since that point, the spread of the COVID-19 virus and the related travel restrictions around the world have created unprecedented challenges. As always, the safety of our guests and crew remains our highest priority, and we are very pleased that we have had no reported cases of COVID-19 across our fleet and were able to safely disembark all guests from our ships in a timely fashion. Given the uncertaint",
+      "slot_id": "0001512499-2020Q2"
+    },
+    {
+      "accession": "0000819689-20-000003",
+      "anchor_date": "2020-03-16",
+      "cik": "0000819689",
+      "original_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "release_opening": "EX-99.1 3 micr-20200316xex99_1.htm EX-99.1 Exhibit 991 Micron Solutions, Inc. Announces Intention to Voluntarily Delist and Deregister its Common Stock; Financial Results for Fiscal 2019 March 16, 2020 Page 1 of 2 25 Sawyer Passway \u25cf Fitchburg, Massachusetts 01420 FOR IMMEDIATE RELEASE Micron Solutions, Inc. Announces Intention to Voluntarily Delist and Deregister its Common Stock Financial Results for Fiscal Year End 2019 FITCHBURG, MA, March 16 , 2 020 \u2013 Micron Solutions, Inc. (NYSE American: MICR) (the \u201c Company \u201d), a diversified contract manufacturing organization, through its wholly-owned subsidiary, Micron Products, Inc., producing highly-engineered, innovative components requiring precision machining and injection molding, announced today its Intention to v oluntarily d elist from the NYSE American (the \u201c Exchange \u201d) and to deregister its Common Stock under Section 12(g) of the Securities Exchange Act of 1934 (the \u201c Exchange Act \u201d) and suspend its SEC reporting obligations under Section 15(d) of the Exchange Act. The Company is announcing its fourth quarter and year end results for the period ended December 31, 2019. Delisting and Deregistration : On March 16, 2020, t he Company notified the Exchange of its intent to voluntarily delist its Common Stock from the Exchange. The Company currently anticipates that it will file with the Securities and Exchange Commission a Form 25 relating to the delisting of its Common Stock on or about March 26 , 2020, and anticipates that the delisting of its Common Stock will become effective on or about April 6 , 2020. The Company has been reviewing its ability to regain compliance with the Exchange\u2019s stockholder equity requirements as set forth in Section 1003(a)(iii) of the NYSE American Company Guide by December 12, 2020 (the \u201c",
+      "slot_id": "0000819689-2020Q1"
+    }
+  ]
+}

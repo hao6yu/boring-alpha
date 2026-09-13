@@ -1,0 +1,146 @@
+{
+  "account_simulation_run": false,
+  "cohort_issuers": 100,
+  "collected": {
+    "empty_price_histories": 8,
+    "nonempty_price_histories_including_benchmark": 90,
+    "price_queries_including_retries": 100,
+    "price_symbol_responses": 98,
+    "sec_current_releases": 1257,
+    "sec_join_ready": 1198,
+    "sec_original_priors_loaded": 1199
+  },
+  "created_utc": "2026-09-11T04:08:41.257102+00:00",
+  "evaluation_targets_opened": false,
+  "interpretation": "The 100-issuer design did not produce enough usable training events. This is a sample/data feasibility stop, not evidence for or against profitability of the earnings-language hypothesis.",
+  "live_trades": false,
+  "model_fitted": false,
+  "next_decision": "Any continuation needs a larger predeclared cohort or materially improved historical coverage with a finite effort/data budget. Do not lower this run\u2019s admission threshold or open its evaluation returns to rescue it.",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "profitability_verdict": "UNTESTED",
+  "quoted_data_expense": {
+    "amount_usd": "0.012873232367",
+    "basis": "quote",
+    "excluded_costs": "Usertime, computing and agenttoken usage are not priced as a cash data purchase; no live broker costs incurred. Trade costs are separately simulated.",
+    "items": [
+      {
+        "amount_usd": "0.012873232367",
+        "basis": "cumulative provider quotes for executed requests; not invoice reconciliation",
+        "provider": "Databento"
+      },
+      {
+        "amount_usd": 0,
+        "basis": "Existing free account quota; no upgrade or new subscription",
+        "provider": "Tiingo"
+      },
+      {
+        "amount_usd": 0,
+        "basis": "Public downloads",
+        "provider": "SEC and issuer public sources"
+      }
+    ],
+    "scope": "Entire dedicated study acquisition quote, including PTN repair samples and full histories; charged once at accountstart in a separate simulation.",
+    "source": "research/equity-event-test-2026-09-10/ptn-download-manifest.json",
+    "source_sha256": "59438471e680169287bc11669f33098f1aad3971a4023cf81775b46cd9c266d0"
+  },
+  "references": {
+    "cade-provider-identity-rejection.json": {
+      "path": "research/equity-event-test-2026-09-10/cade-provider-identity-rejection.json",
+      "sha256": "cb02f14aefc7e1487f708da5a2402e7810b43cfd4d131d38d2aff6f923044064"
+    },
+    "corporate-action-evidence.json": {
+      "path": "research/equity-event-test-2026-09-10/corporate-action-evidence.json",
+      "sha256": "a253285275a174960c7e9db3573a914edbdc54a5033106f1de3314031b1e6f26"
+    },
+    "data-expense.json": {
+      "path": "research/equity-event-test-2026-09-10/data-expense.json",
+      "sha256": "82fffa97c16f67d7021c544b2550159c95acd1c64752d5824f87d79981297c74"
+    },
+    "data-gate.json": {
+      "path": "research/equity-event-test-2026-09-10/data-gate.json",
+      "sha256": "9b895b627fce30888f1f6a86d0bcc57746408e649f4312dfc41d2c408739686d"
+    },
+    "experiment-policy.json": {
+      "path": "research/equity-event-test-2026-09-10/experiment-policy.json",
+      "sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3"
+    },
+    "feature-source-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/feature-source-audit.json",
+      "sha256": "56a93dc51773aa9f01a3149bcd36f85635e0155790c1d4a02324284e1f35c59a"
+    },
+    "panel-inventory.json": {
+      "path": "research/equity-event-test-2026-09-10/panel-inventory.json",
+      "sha256": "e46896ff44d9ec6afbf561fa74d42e42ea4ed363ab4031384a5fba22be1846a5"
+    },
+    "price-manifest.json": {
+      "path": "research/equity-event-test-2026-09-10/price-manifest.json",
+      "sha256": "0199f82fc88a84b054319f69db65dbf46186f2b1267de70bc5eb1457b9a7097f"
+    },
+    "price-source-exceptions.json": {
+      "path": "research/equity-event-test-2026-09-10/price-source-exceptions.json",
+      "sha256": "d0436bade83ef2499b5b65df3eb8c2f7eb207b4653a0b3ce6dd69100902dcb8f"
+    },
+    "sec-event-source-audit.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-event-source-audit.json",
+      "sha256": "b1af058d1e89c314ba7e03c34aa377d9edfea5b388232eca842f16f11291de31"
+    },
+    "sec-freeze.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-freeze.json",
+      "sha256": "06ce476c024b8278a118c0ae23a063d61a47213cb6668f48275a5e5165872411"
+    },
+    "sec-training-feasibility-refined.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-training-feasibility-refined.json",
+      "sha256": "2592107d3228fb912e40dc60da9d68940866a56abc31768e232a665a7047c80e"
+    },
+    "sec-training-feasibility.json": {
+      "path": "research/equity-event-test-2026-09-10/sec-training-feasibility.json",
+      "sha256": "baf9ac6e0ad0d5d54062fa29171516fa0fd421e94de859bc18e1cc5d31e2fc74"
+    }
+  },
+  "registered_slots": 1600,
+  "remaining_query_decision": {
+    "CADE_identity_repair": "Existing downloaded data is BancorpSouth rather than the selected old Cadence issuer; original price anchors and dividend evidence reject simple metadata relabeling.",
+    "PEGI": "Required ordinary-stock label endsMarch31,2020 but last trading wasMarch13. No synthetic post-merger stock prices substituted.",
+    "action": "STOP_CURRENT_BOUNDED_ACQUISITION",
+    "maximum_additional_fit_observations": 24,
+    "optimistic_fit_ceiling": 199,
+    "queries": [
+      "PEGI",
+      "EPRT",
+      "LE",
+      "DNTH",
+      "ASXC",
+      "AD",
+      "FLNA",
+      "OSG",
+      "SER"
+    ],
+    "reason": "Even perfect success from these queries cannot meet the frozen200fit minimum.",
+    "scope": "Only the stated remaining queries, with existing qualified observations and source rules fixed. A different cohort or genuinely new replacement historical data would be a separately specified experiment."
+  },
+  "reserved_equity_prices": "2024\u20132025 not acquired or opened for this experiment",
+  "sample_gates": {
+    "evaluation_issuers": {
+      "actual": 57,
+      "pass": true,
+      "required": 40
+    },
+    "evaluation_preentry_2022_2023": {
+      "actual": 378,
+      "pass": true,
+      "required": 200
+    },
+    "fit_2020": {
+      "actual": 175,
+      "pass": false,
+      "required": 200
+    },
+    "validation_2021": {
+      "actual": 200,
+      "pass": true,
+      "required": 100
+    }
+  },
+  "source_readiness_sha256": "7d735c59ecc1ebc7b2b0bc241c1832dcf8826881e02109fc5316cc579be05962",
+  "status": "STOP_INSUFFICIENT_TRAINING_SAMPLE"
+}

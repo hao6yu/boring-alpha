@@ -1,0 +1,34 @@
+{
+  "after_count": 100,
+  "after_sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0",
+  "before_count": 100,
+  "before_sha256": "8cea088327ebce74dadd5228b2fed2563c1b7500839ebd956fac8c0d0f7560a0",
+  "correction": "Original fixed-CIK ownership rule implementation repair; no price, return, or later outcome used.",
+  "current_event_pass_note": "Already-running pass holds original roster; immutable documents reused for unchangedCIKs, final1600slot output will be rebuilt from correctedroster before admission.",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "removed_cik": "0000046207",
+  "result_status": "COMPLETE_100",
+  "source": {
+    "reason": "Joint cover explicitly assigns HE common stock to Hawaiian Electric Industries, Inc.; selectedCIK0000046207 belongs to Hawaiian Electric Company, Inc., a different registrant.",
+    "source_excerpt": "Hawaiian Electric Industries, Inc.1-8503 99-0208097; Hawaiian Electric Company, Inc.1-4955 99-0040500. Listed registrant: Hawaiian Electric Industries, Inc. | Common Stock, Without Par Value | HE | New York Stock Exchange.",
+    "source_file": "data/snapshots/equity-event-test-2026-09-10/sec/fa923034d847b2c8767bc4bba59137461eb239f9520f1246d0a0a94598fe4678.htm",
+    "source_sha256": "547fcf3974b86cd4bd4fd65339928653038408fe86109e606b7d96fae77f6a1b",
+    "verified_fields": {
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Hawaiian Electric Industries, Inc. | Common Stock, Without Par Value | HE | New York Stock Exchange",
+            "symbols": [
+              "HE"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "LISTED_CLASS_OWNED_BY_OTHER_REGISTRANT",
+        "symbols": []
+      }
+    }
+  }
+}

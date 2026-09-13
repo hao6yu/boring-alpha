@@ -1,0 +1,10 @@
+{
+  "next_decision": "Any continuation needs a larger predeclared cohort or materially improved historical coverage with a finite effort/data budget. Do not lower this run\u2019s admission threshold or open its evaluation returns to rescue it.",
+  "pending_queries_are_not_scheduled": true,
+  "profitability": "UNTESTED",
+  "result_path": "research/equity-event-test-2026-09-10/test-result.json",
+  "result_sha256": "51764e6710a2ed20799f25a9ada6d5df6c7f17d8a8019fe2a56100d16423760f",
+  "running_acquisition": false,
+  "stage": "FINISHED_AT_TRAINING_SAMPLE_GATE",
+  "updated_utc": "2026-09-11T04:08:41.257102+00:00"
+}

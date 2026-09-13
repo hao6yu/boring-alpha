@@ -1,0 +1,69 @@
+{
+  "accounting_scope": "Checkperiodandmeasureidentityandparseability; preserveGAAP/nonGAAPdistinction. No inferenceofprofitableearningssurprise fromgrowth; noanalystconsensusassumption.",
+  "comparative_selection": "Prior-year comparable fiscalperiod earnings release, originalaccession, publiclyfiled beforecurrentevent. Currentrelease prior-year comparative alone cannot pass the prior-document join. Date proximity alone doesnot prove period match.",
+  "created_at": "2026-09-10T23:33:03.423718+00:00",
+  "deadline_utc": "2026-09-11T01:30:01Z",
+  "denominator": 100,
+  "event_selection": "Earliest original8-K Item2.02 quarterly/year-end earnings event within each fixed calendarreleasewindow; determine samefiscalperiod duplicates fromdocument; amendments/supplements are not new events. Preservemissing/ambiguousslots, no issuer replacement afterselection.",
+  "event_windows": [
+    [
+      "2022-10-01",
+      "2022-12-31"
+    ],
+    [
+      "2023-01-01",
+      "2023-03-31"
+    ],
+    [
+      "2023-04-01",
+      "2023-06-30"
+    ],
+    [
+      "2023-07-01",
+      "2023-09-30"
+    ]
+  ],
+  "inactive_controls": [
+    "ATVI acquisition effective2023-10-13",
+    "SIVB/SIVBQ halt and OTCtransitionMarch2023"
+  ],
+  "issuer_count": 25,
+  "issuer_sampling": "Rank unique CIKs with original8-K in historical2023Q3 master by SHA256(seed|zero-padded10digitCIK). Inspect rank order until25issuers with a quarterly/year-end earnings Item2.02 event and a U.S.-listed common-stock class established from contemporaneous cover. Preserve screened exclusions. Do not use current ticker lists or price returns.",
+  "max_retry_per_transient_request": 1,
+  "max_seed_issuers_inspected": 500,
+  "name": "100-event-slot data pilot: 25 historical issuers by four calendar release windows",
+  "new_paid_data_limit_usd": 0,
+  "not_in_scope": [
+    "modeltraining",
+    "forecasting",
+    "profitabilitybacktest",
+    "2024\u20132025strategyreturninspection",
+    "tradeororder",
+    "subscriptionchange",
+    "newdata purchase"
+  ],
+  "pass_requirement": "Atleast95/100slots haveoriginalearningsrelease, verifiedpriorcomparable, unambiguoushistoricalsecurity mapping, resolvedtimingproxy and completevalidpricewindow/corporate-action checks; inactivecontrolsrequiredefensibletreatmentseparately. Nonsilentexclusions, nofailedslotreturnimputation.",
+  "price_provider": "ExistingTiingokey, Authorizationheaderonly, no redirects, no logcredentials. AssumeStarter50req/hour,1000/day,500uniques/month; no upgrade. Mainroot<=35requestsinitialround; inactiveauditor<=5requests. Stopon429andrecordquota blocker; retrywithinbudgetonlyafterserverRetry-Afterorverifiedwindowreset.",
+  "price_window": "For each eligibleevent, require60priorregularsessions through20regularsessionsafterfollowing-sessionentryclose; no pricefill. AccessrawandadjusteddailyOHLC/divCash/splitFactor. Do notcalculateinvestmentreturns.",
+  "raw_SEC_directory": "data/snapshots/equity-event-pilot-2026-09-10/sec",
+  "raw_price_directory": "data/snapshots/equity-event-pilot-2026-09-10",
+  "request_timeout_seconds": 20,
+  "result_counts": [
+    "fixed_slots",
+    "actual_earnings_events",
+    "current_release_success",
+    "prior_release_success",
+    "identity_success",
+    "timing_success",
+    "price_window_success",
+    "fully_joined",
+    "unresolved_by_reason"
+  ],
+  "sampling_limitation": "100slots neednot yield100actualevents; all100slots stayindenominator. SeedissuerselectioninQ32023canpostdateearlierevents. This is an availability audit and cannotbe usedas a point-in-time performance universe.",
+  "sec_collection_owner": "research_basis; root performs no parallelSECbulkrequests",
+  "sec_global_rate_limit_per_second": 4,
+  "seed": "BA-equity-event-pilot-20260910-v1",
+  "seed_index_url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR3/master.idx",
+  "started_at": "2026-09-10T23:30:01Z",
+  "timing": "Preserveissuerreleasedate, filingDate andEasternacceptance; compareindexEasternagainstAPIUTCwhenavailable. Earliestpolicyentryis followingregularsessionclose strictlyafterbothfilingDate andEasternacceptancedate. Disseminationtimestamp remainsproxy."
+}

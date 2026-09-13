@@ -1,0 +1,9 @@
+{
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "queries": [
+    "https://www.sec.gov/Archives/edgar/data/1631282/000121390021058737/0001213900-21-058737-index.html",
+    "https://www.sec.gov/Archives/edgar/data/1631282/000121390022006734/0001213900-22-006734-index.html",
+    "https://www.sec.gov/Archives/edgar/data/1631282/000121390021060038/0001213900-21-060038-index.html"
+  ],
+  "reason": "Inspect original DTSS report/registration filing indices for separate earnings-release exhibits; financial statements alone cannot satisfy the prior-release requirement."
+}

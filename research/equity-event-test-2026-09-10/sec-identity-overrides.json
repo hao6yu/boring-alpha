@@ -1,0 +1,1206 @@
+{
+  "events": {
+    "0000819689-20-000003": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2019-11-14 14:17:29",
+        "accession": "0000819689-19-000099",
+        "available_by_daily_anchor": "2020-03-16",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/fbfcd4126c4138c29ef5f7057592b1d87ae06a9e513f09b070f4dc2019391583.htm",
+        "filing_date": "2019-11-14",
+        "index_ciks": [
+          "0000819689"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/96662a47a71c958153fb64523626c87415e3e482b8aaa4a287043678c50e694f.html",
+        "index_sha256": "0e0649495214d0f78dbaadf485430a5d961d4fbc5863ea9163f39fe29a19c3c3",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "e7244a17295a27105523206604ce4bef3f62ed10b618e7cc0834a7bc3343d4ca",
+        "url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000099/micr-20190930x10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, $0.01 par value | MICR | New York Stock Exchange",
+            "symbols": [
+              "MICR"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "MICR",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "MICR"
+        ]
+      }
+    },
+    "0001091907-20-000022": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-04-23 16:38:53",
+        "accession": "0001091907-20-000024",
+        "available_by_daily_anchor": "2020-04-23",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/d972e88701eaf04b28998b013d43aa368607510079f05fb9ae88833027895ae1.htm",
+        "filing_date": "2020-04-23",
+        "index_ciks": [
+          "0001091907"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/b18e0261484adda6a1c0cb47a502c81f6f004b935bf056d99ccf2a2f121e6f71.html",
+        "index_sha256": "5dc1fd3e043af4f7bf5ba0b57edef9dbc164d90b1b91c072486e6c19dd54b34f",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "a2548cbbb90353bf3439e6c9e549aef4dd9717b43231e05c6c8a18b13a822cb2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1091907/000109190720000024/wwe-20200331x10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Class A Common Stock, par value $0.01 per share | WWE | New York Stock Exchange",
+            "symbols": [
+              "WWE"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "WWE",
+        "inline_trading_symbols": [
+          "WWE"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "WWE"
+        ]
+      }
+    },
+    "0001096906-20-000051": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2019-11-07 16:44:51",
+        "accession": "0001096906-19-000361",
+        "available_by_daily_anchor": "2020-01-30",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/7a654684530976bc21ab1feeed08ca89994772178fda8cbb969b7ce9a739a0f4.htm",
+        "filing_date": "2019-11-07",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/434f565f8250e6e469e90ee927ccbce0bf905292b6bc41393f21c1fc15ada2ce.html",
+        "index_sha256": "b811cd4b080dd1d35965860109464a787c5a4d2dffaa07ec964823bec1c95c09",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "3e19a7fc965c231de3553a370c2f279e34bcfeafaa1adcc56c297486771b1c3d",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000109690619000361/utah.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-21-000171": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-11-06 15:46:15",
+        "accession": "0001811884-20-000015",
+        "available_by_daily_anchor": "2021-01-28",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/65e76bcd4381a72086ba32f59243a05fa19496e9609b5e69757d9622e98dacf4.htm",
+        "filing_date": "2020-11-06",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/5f6097a4e2e2a5bb2c065b6074b0596c5350b648c216994387937de79ce14126.html",
+        "index_sha256": "56d7f62025ab5919ca0e9622fb7c84f8088c04c86c6111b85e63c4be00f63827",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "a678a39cbc8f50ca71f2a26599731a6837808584578b08888f955d1e8946ca25",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188420000015/utmd-20200930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-21-001665": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-05-11 11:45:50",
+        "accession": "0001811884-21-000008",
+        "available_by_daily_anchor": "2021-07-22",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/c254744175865ce23fa4fbcf3d763365fc9b0477a603c1f7ca8ae88530c34c8b.htm",
+        "filing_date": "2021-05-11",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/90ea8cc87c32218e90fe1d4c2237fd358c6096170b98511ad4b3af29194e883c.html",
+        "index_sha256": "b549992f2c628b3be0944575a2d9074a13548b3206836f9ae6eb02debd0833da",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "38ac6131ca271c2f1a84b6e064cca6fec860aaecea5fe0403713bfdc91df239e",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188421000008/utmd-20210331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-21-002587": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-08-06 11:18:31",
+        "accession": "0001811884-21-000012",
+        "available_by_daily_anchor": "2021-10-26",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/3e167f21e6890fb32d297a314897024b885f5debae530b6eec036de955ade93e.htm",
+        "filing_date": "2021-08-06",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/b78b14e1b8c38018448cc75e08456ab0cb3c0084d1fcb50df15e1ae99be388f3.html",
+        "index_sha256": "c1eabdd4d48be45883acaa281c219f275a1aeed692f651789d3ed1d8d675395e",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "dc6374d12abb290b4e416f3436a2ed492d3c2119f1e6cf7347bb9b138a284b3d",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188421000012/utmd-20210630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-22-000245": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-11-12 10:45:20",
+        "accession": "0001811884-21-000016",
+        "available_by_daily_anchor": "2022-02-02",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/648b605794c729020b61dfb80a7be5292518477028d985eba841f5be30fd94d9.htm",
+        "filing_date": "2021-11-12",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/96e3f47e3ed6e96c11e204a1fbb373cc765750467499e74647de1143711afcc6.html",
+        "index_sha256": "68e090b3a2c50f180f00394098c0faa0cdec2c340c2ce27dea64c069a587e8dc",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "14b46b2d13a821fa343142e8e5016710100e8c4dd84b3ceb5120540e113327b3",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188421000016/utmd-20210930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-22-000948": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-03-25 15:54:00",
+        "accession": "0001811884-22-000004",
+        "available_by_daily_anchor": "2022-04-27",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/3765448d3c9002117302a29c527197050d22f44facd9cd601238335ca23aad69.htm",
+        "filing_date": "2022-03-25",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/018d1aa9b1aca15583d484e0bacda3e66ec067f05dd8ea32f9b48e2c0e61631c.html",
+        "index_sha256": "960b465736abc4383fbc64b00877e05d4aaee63bf2f6fe7e5a497f3a652533bc",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "d15e76b8aa125fce9f065a371dc40033a8c2fda9936919b2180ae99fb96d218a",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188422000004/utmd-20211231.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-22-001712": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-05-11 12:21:47",
+        "accession": "0001811884-22-000008",
+        "available_by_daily_anchor": "2022-07-28",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/07e0250a5e2bfcdb3a987ad838c44a03c310621dd1e329472f4dbde130339932.htm",
+        "filing_date": "2022-05-11",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/d1a61b160374ce5af7f5ce325ccd698919ec9c1d9d31d86e1a4654a1c2112209.html",
+        "index_sha256": "d2b4ac9f894bcc7beff6dffe0a7c7ad04ccff72e17328bc5e2a7bfeb58468b71",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "ef0468c4c2e48ec21a97c0e1da49d9fff2c500cdd9f252e130bad6a4a463406a",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188422000008/utmd-20220331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-22-002547": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-08-12 13:14:00",
+        "accession": "0001811884-22-000012",
+        "available_by_daily_anchor": "2022-10-25",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/04f5a26d0c55b4f7002970423cc373f7e8cfbda7a588d6f23421c12242b0356c.htm",
+        "filing_date": "2022-08-12",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/29d9d8edd52b7abcc7e92dda0d3a8c5815a5764ab12f62ad19b0c4946b7ba5e1.html",
+        "index_sha256": "0cde0ce5d724e8c6cb2e25b8e57f0813849f70c94740b92f810a262984dc988e",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "67c5a3962979fdaf3c4c386ced920b757aa79252e332403aab0986c3042d36d2",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188422000012/utmd-20220630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-23-000240": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2022-11-10 11:19:10",
+        "accession": "0001811884-22-000015",
+        "available_by_daily_anchor": "2023-01-31",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/95088c0e0aaa477ac5382cc8ba6a1578415e92856c0a6bb327df3d7b1f00298e.htm",
+        "filing_date": "2022-11-10",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/2cd4fe804c0fe86a37f2fc23099b28329b3e6f7a8992a385213e5e9a563a4b02.html",
+        "index_sha256": "84a56937e91316c39da44bd3d838c29f93f93f1d50d566a9baa093c077b87828",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "835b649811f13a80173847ba07f2d3a886dc872feaa6434de46f22fe0f2b31a4",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188422000015/utmd-20220930.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-23-000901": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-03-27 16:21:36",
+        "accession": "0001811884-23-000004",
+        "available_by_daily_anchor": "2023-04-25",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/0e69d16dcf0a31fcc1419156773ccafa9e5bef47e0e76f20193221e4ddd60823.htm",
+        "filing_date": "2023-03-27",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/724201f296950ac64eea6f962215ba04405e4030ed5abb8853f25e82a2fffa3c.html",
+        "index_sha256": "25b7d6df6113f8e265fae89949da2c4190ad157a3f6623cab300c67de73c96eb",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "78e78702e98030142dbd8e1272e77038ce132dd6f87749e2293a532281c17935",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188423000004/utmd-20221231.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-23-001449": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-05-05 12:22:05",
+        "accession": "0001811884-23-000013",
+        "available_by_daily_anchor": "2023-07-25",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/ebc4eb0b1d676f0cd1ec20486498da6415d76c0d8838313886a4eb41c5402a3b.htm",
+        "filing_date": "2023-05-05",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/43ae9cf0441ccfba2c93e87ddc6d6cb656d84a7e0a04fec54ca6c30e72a50df4.html",
+        "index_sha256": "198bfdb7f67a8d464670fdb7e6da1d62813656487840e6c5a725c88d8bc034d5",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "916270476fe6f6d5d25bf88a1aae6ec58041320bd3f97d0d4978824f452b5ee4",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188423000013/utmd-20230331.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001096906-23-002058": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2023-08-11 11:54:41",
+        "accession": "0001811884-23-000017",
+        "available_by_daily_anchor": "2023-10-26",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/55bac70a5379a2f6fbe386454e8d91ab796b2b103810a1e6afd4ae0eacd8ea46.htm",
+        "filing_date": "2023-08-11",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/967292537a23fa9bbfdbdc243b0d33397c0d00a45e0a35dceb2d6f2e3f43c304.html",
+        "index_sha256": "a5d19aa207a2d255ef981c9bef2a37f7f8f1eeec61ca3d5a482ffc1b085aeb39",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "bca8c9ce3716eea8b41f098b1c30fce97a78f1fbe92d8a46a86a01dfa1f2e6e8",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188423000017/utmd-20230630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001104659-20-030739": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2019-11-12 08:16:19",
+        "accession": "0001104659-19-062109",
+        "available_by_daily_anchor": "2020-03-09",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/93345b9ba60c23204c02d423460a7bf80cb95b630d7e61eeed841de5a2c54ea3.htm",
+        "filing_date": "2019-11-12",
+        "index_ciks": [
+          "0001279704"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/3c4dfd3c83f9492c6c37f1b6d1dd5003a7b7efb5a5685aab2c77c40bb248c06b.html",
+        "index_sha256": "062bb033c37225fda7747ff8edc275c5104d728366b3226f1d2d0a2f8006b47a",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "7ae44015b04368e489f42fac6ecfa7934e1643bbb21ba9ff63a7962b99c63ce2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1279704/000110465919062109/tm1919524d1_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, par value $0.00001 |  | CLRB |  | NASDAQ Capital Market",
+            "symbols": [
+              "CLRB"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "CLRB",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "CLRB"
+        ]
+      }
+    },
+    "0001104659-20-057785": {
+      "automatic_unresolved_preserved": {
+        "attempted_covers": [
+          {
+            "accession": "0001104659-20-057790",
+            "reason": "UNRESOLVED_COMMON_CLASS"
+          },
+          {
+            "accession": "0001104659-20-030742",
+            "reason": "UNRESOLVED_COMMON_CLASS"
+          }
+        ],
+        "target": {
+          "accession": "0001104659-20-057785",
+          "anchor_date": "2020-05-07",
+          "cik": "0001279704",
+          "original_security": {
+            "common_stock_evidence": [],
+            "excluded_common_unit_rows": [],
+            "historical_symbol": null,
+            "inline_trading_symbols": [],
+            "status": "UNRESOLVED_COMMON_CLASS",
+            "symbols": []
+          },
+          "release_opening": "EX-99.1 2 tm2018882d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports First Quarter 2020 Financial Results and Provides a Corporate Update FLORHAM PARK, N.J., May 7, 2020 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a clinical-stage biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the three months ended March 31, 2020 and provided a corporate update. First Quarter and Recent Corporate Highlights \u00b7 Announced CLR 131 achieved primary efficacy endpoints from its Phase 2 CLOVER-1 study in median third line relapsed/refractory (r/r) and Non-Hodgkin\u2019s lymphomas (NHL) and median sixth line r/r multiple myeloma (MM) and in the Phase 1 r/r MM dose escalation study at the 50mCi and 75mCi total body doses. The 75mCi total body dose demonstrated: \u00a7 Overall response rate (ORR) 42.8% in r/r MM \u00a7 33% ORR in triple class refractory r/r MM \u00a7 50% ORR in high risk r/r MM \u00a7 43.0% ORR and 14.3% complete responses (CR) in r/r NHL \u00a7 100% ORR and 25% CR in r/r Lymphoplasmacytic lymphoma/Waldenstrom\u2019s macroglobulinemia (LPL/WM) across all therapeutic doses tested \u00b7 Completed the pre-planned highest dose cohort of the Phase 1 r/r MM dose escalation study \u00b7 Received Orphan Drug Designation for CLR 131 in LPL/WM from the U.S. Food and Drug Administration (FDA) \u00b7 Appointed Dr. Igor Grachev, Chief Medical Officer \u00b7 Extended the Phase 2 CLOVER-1 study in relapsed/refractory B-cell lymphomas to enroll additional patients at a dose of CLR 131 delivering 100mCi in a two-cycle dosing regimen \u201cCLR 131 has consistently demonstrated favorable safety and tolerability across dosing levels and encouraging response rates even in a very difficult to treat sixth line patient population that in",
+          "slot_id": "0001279704-2020Q2"
+        }
+      },
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-05-07 08:31:09",
+        "accession": "0001104659-20-057790",
+        "available_by_daily_anchor": "2020-05-07",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/0a2e9ef62e1361117d6dd7eb9d9dcf97ac1b9856ded834bcc0b0911f2d25ab4a.htm",
+        "filing_date": "2020-05-07",
+        "index_ciks": [
+          "0001279704"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ee6968261ac994d11169737675ef51d5114464da6141861da2bad107dd03f0a0.html",
+        "index_sha256": "efb36576941073559ac8247578f6ce9ec2e0e38ffc999a555d6c00437c34e40c",
+        "scope": "Named originalsameCIK cover common/warrant columnpairing; oldercover availableatdailydecision, not earnings8-Kbody or proofnointerveningactions.",
+        "sha256": "3ac479004e7df9e3f753f72ab20e51a81ddec03b364b4328ee8493d45429fa26",
+        "source_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1279704/000110465920057790/tm2014571d1_10q.htm"
+      },
+      "manual_review": {
+        "class": "Common stock, par value $0.00001",
+        "exchange": "NASDAQ Capital Market",
+        "manual_column_pairing": "Two classnames, two symbols and two exchanges in originaltable order; secondsecurity CLRBZ is an expiringwarrant, not anothercommonclass.",
+        "row_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+        "symbol": "CLRB"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "class": "Common stock, par value $0.00001",
+            "exchange": "NASDAQ Capital Market",
+            "manual_column_pairing": "Two classnames, two symbols and two exchanges in originaltable order; secondsecurity CLRBZ is an expiringwarrant, not anothercommonclass.",
+            "row_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+            "symbol": "CLRB"
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "excluded_derivative_rows": [
+          {
+            "class": "Warrant to purchase common stock, expiring April20,2021",
+            "symbol": "CLRBZ"
+          }
+        ],
+        "historical_symbol": "CLRB",
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "CLRB"
+        ]
+      }
+    },
+    "0001104659-20-123047": {
+      "automatic_unresolved_preserved": {
+        "attempted_covers": [
+          {
+            "accession": "0001104659-20-122799",
+            "reason": "UNRESOLVED_COMMON_CLASS"
+          },
+          {
+            "accession": "0001104659-20-092435",
+            "reason": "UNRESOLVED_COMMON_CLASS"
+          }
+        ],
+        "target": {
+          "accession": "0001104659-20-123047",
+          "anchor_date": "2020-11-09",
+          "cik": "0001279704",
+          "original_security": {
+            "common_stock_evidence": [],
+            "excluded_common_unit_rows": [],
+            "historical_symbol": null,
+            "inline_trading_symbols": [],
+            "status": "UNRESOLVED_COMMON_CLASS",
+            "symbols": []
+          },
+          "release_opening": "EX-99.1 2 tm2035498d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports Third Quarter 2020 Financial Results and Provides a Corporate Update FLORHAM PARK, N.J., November 9, 2020 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a late-stage clinical biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the third quarter ended September 30, 2020 and provided a corporate update. Third Quarter and Recent Corporate Highlights \u00b7 Held FDA Type B guidance meeting to define the registrational pathway for our priority adult hematology oncology indications and planned initiation of the pivotal study for our lead indication in the fourth quarter \u00b7 Announced CLR 131 achieved a 40% overall response rate (ORR) in Triple Class Refractory Multiple Myeloma (MM) patients with an administered total body dose (TBD) of 60mCi or greater from the Phase 2 CLOVER-1 study \u00b7 Interim results from the Phase 2 COVER-1 study at the American Association of Cancer Research (AACR) Virtual Meeting: Advances in Malignant Lymphoma demonstrated a 100% ORR and a 75% major response rate (MRR) in LPL/WM. Mean duration of response exceeding 17 months (8.4 \u2013 31.7 months); duration of response continues to increase for all patients \u00b7 Strengthened the management team with the appointment of Dr. John Friend, chief medical officer \u201cWe continue to make good progress towards the fourth quarter initiation of the CLR 131 pivotal study in our lead heme-oncology indication. Our recent FDA guidance meeting was most encouraging and we look forward to providing greater details in the near-term,\u201d said James Caruso, president and CEO of Cellectar. \u201cAdditional data from our Phase 2 CLOVER-1 study remain strong, with pat",
+          "slot_id": "0001279704-2020Q4"
+        }
+      },
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-11-09 09:00:47",
+        "accession": "0001104659-20-122799",
+        "available_by_daily_anchor": "2020-11-09",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/73871037d6f199d6d6bddd945f2a5446f75875759e03379aa332a6327ebcbbed.htm",
+        "filing_date": "2020-11-09",
+        "index_ciks": [
+          "0001279704"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/20e26b00b96acda35d2d62d1905aa3a642ee3d4c304fefe0d593cdb27b813c32.html",
+        "index_sha256": "e084844d50ab3320a3209d2d2e63ae959ded68fcc263b39fe6a2a32c8b845ba4",
+        "scope": "Named originalsameCIK cover common/warrant columnpairing; oldercover availableatdailydecision, not earnings8-Kbody or proofnointerveningactions.",
+        "sha256": "121c7a61e6073ebeb49229a4b8dde295f4ca827b776db5072d8e99110f3b4a0b",
+        "source_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1279704/000110465920122799/tm2029534-1_10q.htm"
+      },
+      "manual_review": {
+        "class": "Common stock, par value $0.00001",
+        "exchange": "NASDAQ Capital Market",
+        "manual_column_pairing": "Two classnames, two symbols and two exchanges in originaltable order; secondsecurity CLRBZ is an expiringwarrant, not anothercommonclass.",
+        "row_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+        "symbol": "CLRB"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "class": "Common stock, par value $0.00001",
+            "exchange": "NASDAQ Capital Market",
+            "manual_column_pairing": "Two classnames, two symbols and two exchanges in originaltable order; secondsecurity CLRBZ is an expiringwarrant, not anothercommonclass.",
+            "row_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+            "symbol": "CLRB"
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "excluded_derivative_rows": [
+          {
+            "class": "Warrant to purchase common stock, expiring April20,2021",
+            "symbol": "CLRBZ"
+          }
+        ],
+        "historical_symbol": "CLRB",
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "CLRB"
+        ]
+      }
+    },
+    "0001104659-21-030726": {
+      "automatic_unresolved_preserved": {
+        "attempted_covers": [
+          {
+            "accession": "0001104659-21-030445",
+            "reason": "UNRESOLVED_COMMON_CLASS"
+          },
+          {
+            "accession": "0001104659-20-122799",
+            "reason": "UNRESOLVED_COMMON_CLASS"
+          }
+        ],
+        "target": {
+          "accession": "0001104659-21-030726",
+          "anchor_date": "2021-03-02",
+          "cik": "0001279704",
+          "original_security": {
+            "common_stock_evidence": [],
+            "excluded_common_unit_rows": [],
+            "historical_symbol": null,
+            "inline_trading_symbols": [],
+            "status": "UNRESOLVED_COMMON_CLASS",
+            "symbols": []
+          },
+          "release_opening": "EX-99.1 2 tm218479d1_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Cellectar Reports Financial Results for Year Ended December 31, 2020 and Provides a Corporate Update FLORHAM PARK, N.J., March 2, 2021 -- Cellectar Biosciences, Inc. (NASDAQ: CLRB), a late-stage clinical biopharmaceutical company focused on the discovery, development and commercialization of drugs for the treatment of cancer, today announced financial results for the year ended December 31, 2020 and provided a corporate update. Fourth Quarter and Recent Corporate Highlights \u00b7 Received Orphan Drug Designation from the European Commission for CLR 131 in Waldenstrom\u2019s macroglobulinemia (WM) which provides certain benefits including protocol assistance, reduced EU regulatory filing fees and 10 years of European market exclusivity \u00b7 Initiated pivotal study of CLR 131 in Waldenstrom\u2019s macroglobulinemia (CLOVER-WaM) o Pivotal study is designed as a global, non-comparator, single arm, expansion cohort of the currently ongoing Phase 2 CLOVER-1 study of CLR 131 and is in alignment with feedback received from the U.S. Food and Drug Administration from the September 2020 guidance meeting o The study will enroll 50 WM patients who have failed first-line therapy, have failed to respond to a BTK inhibitor (i.e., ibrutinib) or had a suboptimal response o The primary endpoint of the study is response rate defined as a partial response or better (a minimum of a 50% reduction in the biological marker IgM) \u00b7 Announced Closing of $45.0 Million Underwritten Public Offering and Concurrent Private Placement \u00b7 Announced CLR 131 demonstrated preliminary activity in inoperable brain tumors in an international open label, dose escalation Phase 1 safety study of children and adolescents with relapsed or refractory cancers, specifically high-",
+          "slot_id": "0001279704-2021Q1"
+        }
+      },
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2021-03-02 08:46:53",
+        "accession": "0001104659-21-030445",
+        "available_by_daily_anchor": "2021-03-02",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/fdd206163ca058ad3391f4d6359e5222ddc63d208ec2a914e220b92c2bfeaa39.htm",
+        "filing_date": "2021-03-02",
+        "index_ciks": [
+          "0001279704"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/949abb0d2a291ed1ea74b5967ba022ebb7c2eef0c391454a19b0673ef241ae10.html",
+        "index_sha256": "6ea3d5c0961e980d05d39b0676e9acfb670260498c9fcaa00821884f74b624db",
+        "scope": "Named originalsameCIK cover common/warrant columnpairing; oldercover availableatdailydecision, not earnings8-Kbody or proofnointerveningactions.",
+        "sha256": "44c40ed43f44ca9dc736c5146a7056e5e918c8733807b13dae28dfe593dd5529",
+        "source_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1279704/000110465921030445/tm211114d1_10k.htm"
+      },
+      "manual_review": {
+        "class": "Common stock, par value $0.00001",
+        "exchange": "NASDAQ Capital Market",
+        "manual_column_pairing": "Two classnames, two symbols and two exchanges in originaltable order; secondsecurity CLRBZ is an expiringwarrant, not anothercommonclass.",
+        "row_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+        "symbol": "CLRB"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "class": "Common stock, par value $0.00001",
+            "exchange": "NASDAQ Capital Market",
+            "manual_column_pairing": "Two classnames, two symbols and two exchanges in originaltable order; secondsecurity CLRBZ is an expiringwarrant, not anothercommonclass.",
+            "row_excerpt": "Common stock, par value $0.00001 Warrant to purchase common stock, expiring April 20, 2021 CLRB CLRBZ NASDAQ Capital Market NASDAQ Capital Market",
+            "symbol": "CLRB"
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "excluded_derivative_rows": [
+          {
+            "class": "Warrant to purchase common stock, expiring April20,2021",
+            "symbol": "CLRBZ"
+          }
+        ],
+        "historical_symbol": "CLRB",
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "CLRB"
+        ]
+      }
+    },
+    "0001437749-20-009062": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-02-26 16:14:34",
+        "accession": "0001437749-20-003599",
+        "available_by_daily_anchor": "2020-05-01",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/92a5f916939e9e57f97be844f3fecbb185de8631b648e411eb4f26f3c3820f64.htm",
+        "filing_date": "2020-02-26",
+        "index_ciks": [
+          "0001512499"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ea8356966fa522fcda9bb7395d32fa8484b5dc75cac05a10a2cde72f01858ddf.html",
+        "index_sha256": "a78a9b6d6c9395ddb9d2dbb4d8a78e4e464b3c3648b1862d1b8c9d417914bab6",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "9e414043f6da1000e8c66145156369b1317e77e4654f8d07291f56eeffc59623",
+        "url": "https://www.sec.gov/Archives/edgar/data/1512499/000143774920003599/lindb20191231_10k.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, par value $0.0001 per share |  | LIND |  | The NASDAQ Stock Market LLC",
+            "symbols": [
+              "LIND"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "LIND",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "LIND"
+        ]
+      }
+    },
+    "0001445866-20-000449": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-03-16 17:17:03",
+        "accession": "0001096906-20-000111",
+        "available_by_daily_anchor": "2020-04-23",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/4b82b74f0b27364836716436013675ea7d3c83e1ab88ac92fa63734a1422d099.htm",
+        "filing_date": "2020-03-16",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/31016a68dc454f6d1ecddaa3a00a731577a237defab32175cdcba4a4a96df3e9.html",
+        "index_sha256": "01bde5a9f94cf1bcdbee03f02a6127c6652a95ad2e1ebf623e481fa36bd238ff",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "8c3d11d646af8479e5a20b71392c353ad250798d8d14a0f7c9e9f2978d62dd4e",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000109690620000111/utah.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001445866-20-001050": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-05-08 15:00:30",
+        "accession": "0001445866-20-000588",
+        "available_by_daily_anchor": "2020-07-28",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/1ea143f50ca0b608f51fc643b516d0fbcebbf77d6b01c08c915b4200790f7852.htm",
+        "filing_date": "2020-05-08",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/fcd3c344f49d7e65be666c01c27dbd371f365f60efa6ce0b65085fc605cecd17.html",
+        "index_sha256": "47f535d70102caad90e5e9e5eef198cd5a03656a8bb8e25740c7e827c2c785e2",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "f240415fec0ccbf80d9f405e0b7f4c73af4314a69899e3023e62dfe653014322",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000144586620000588/utmd_10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001445866-20-001623": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-08-07 14:52:20",
+        "accession": "0001811884-20-000011",
+        "available_by_daily_anchor": "2020-10-27",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/0840524d6184862f01e8b3718b55f3740cebed8ffca630e5db17246cd8f9c325.htm",
+        "filing_date": "2020-08-07",
+        "index_ciks": [
+          "0000706698"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/895f2c84ed247a4c5c18ffe5cbfd11901b387d457bf9216c44e4ed38fd112877.html",
+        "index_sha256": "292c693d0a81531c777e5e1ddd23f4446ee3c139004e3f78f783447addc2ffb3",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "2d84b74c96896cf8b95684cb91b5e66319f873160143d12d1dfe9cb681accd2e",
+        "url": "https://www.sec.gov/Archives/edgar/data/706698/000181188420000011/utmd-20200630.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+            "symbols": [
+              "UTMD"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "UTMD",
+        "inline_trading_symbols": [
+          "UTMD"
+        ],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "UTMD"
+        ]
+      }
+    },
+    "0001622353-20-000004": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2019-11-01 16:14:01",
+        "accession": "0001622353-19-000024",
+        "available_by_daily_anchor": "2020-02-26",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/0fe4101fbeb33764dc3a15dce464d251c1898761752f062fa7f8bdc35fdb2f25.htm",
+        "filing_date": "2019-11-01",
+        "index_ciks": [
+          "0001622353"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/78291c26834ec83e032e2cb9fc6bfc405b0fba582a111d4677c4d069befbe471.html",
+        "index_sha256": "937ae3fb597bc9798f740ed7390ec396a8e530d394c9d41cbcde4ed2277418fc",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "3c6f2205b6ccdffbaafa23ec1a3cdff04d7b68f4afac5e0aa11245885c41f5d7",
+        "url": "https://www.sec.gov/Archives/edgar/data/1622353/000162235319000024/jcap-20190930x10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, par value $0.01 per share | JCAP | New York Stock Exchange",
+            "symbols": [
+              "JCAP"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "JCAP",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "JCAP"
+        ]
+      }
+    },
+    "0001622353-20-000009": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-02-27 17:21:55",
+        "accession": "0001622353-20-000006",
+        "available_by_daily_anchor": "2020-05-07",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/b864ac0a2b51ad21bd0e5c0785a10fefbb26511ad0f1b1a67d6d49b6a604fc83.htm",
+        "filing_date": "2020-02-27",
+        "index_ciks": [
+          "0001622353"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/7ce1978db06eb0c533a3a7a39d1ffec9198af6c057be1fdc4bebb517b232d749.html",
+        "index_sha256": "6ea63c095d44bf658f30319fa41540eba0d898afb45395da41068ef263a2f4fa",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "a96c447de606250d538326b2ef7a78b173f5e350441f9da38c5cd2486b6b2687",
+        "url": "https://www.sec.gov/Archives/edgar/data/1622353/000162235320000006/jcap-20191231x10k.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common Stock, $0.01 par value |  | JCAP |  | New York Stock Exchange",
+            "symbols": [
+              "JCAP"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "JCAP",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "JCAP"
+        ]
+      }
+    },
+    "0001622353-20-000019": {
+      "identity_source_at_decision": {
+        "acceptance_eastern_wallclock": "2020-05-08 17:26:23",
+        "accession": "0001622353-20-000011",
+        "available_by_daily_anchor": "2020-08-06",
+        "file": "data/snapshots/equity-event-test-2026-09-10/sec/805ee269c05c097eebbb07d7f56633bfd1ed31cb624ce6150d0ddc7fa10fb8f7.htm",
+        "filing_date": "2020-05-08",
+        "index_ciks": [
+          "0001622353"
+        ],
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/f387fbb14ba36fe5187f5393adb82a0aa802d2a9a770e7ab87fa19318771935c.html",
+        "index_sha256": "e18f8ebe74bdabd1b12b8f1cfdb74ae078ff9b55090c8108984a8c7ab0e3dff2",
+        "scope": "Original sameCIK cover available before dailydecision; not relabeled as originalearnings8-Kbody.",
+        "sha256": "4796c0910915b242817dcd1f658840af886cdff2b612c20b851a765e640949c0",
+        "url": "https://www.sec.gov/Archives/edgar/data/1622353/000162235320000011/jcap-20200331x10q.htm"
+      },
+      "original_release_cover_security": {
+        "common_stock_evidence": [],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": null,
+        "inline_trading_symbols": [],
+        "status": "UNRESOLVED_COMMON_CLASS",
+        "symbols": []
+      },
+      "security": {
+        "common_stock_evidence": [
+          {
+            "row_excerpt": "Common stock, par value $0.01 per share | JCAP | New York Stock Exchange",
+            "symbols": [
+              "JCAP"
+            ]
+          }
+        ],
+        "excluded_common_unit_rows": [],
+        "historical_symbol": "JCAP",
+        "inline_trading_symbols": [],
+        "status": "VERIFIED_SINGLE_COMMON_CLASS",
+        "symbols": [
+          "JCAP"
+        ]
+      }
+    }
+  },
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "unresolved": {},
+  "updated_at": "2026-09-11T03:52:09.954164+00:00"
+}

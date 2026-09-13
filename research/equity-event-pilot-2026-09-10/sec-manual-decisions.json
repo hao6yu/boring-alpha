@@ -1,0 +1,43 @@
+{
+  "decisions": {
+    "0001564590-23-003498": {
+      "classification": "LIQUIDITY_CAPITAL_UPDATE",
+      "reason": "March13 bank-volatility response describes liquidity, deposits and capital positions; no quarterly income or EPS release. Postdates W2 January24 full earnings release.",
+      "reviewer": "research_trend",
+      "source_exhibit_files": [],
+      "source_primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/e2cbccd1fe62bd59eb88ba512f6b4f2a8bbe7f524ac9f0b2faec4270aee2743b.htm",
+      "source_primary_sha256": "1042d2556158dec645e8f5a0d34ebe19ad176cb0c7770e0270f603e4fb309811"
+    },
+    "0001564590-23-004344": {
+      "classification": "DEPOSIT_DIVERSITY_INVESTOR_SLIDE",
+      "reason": "Investor slide gives March23 deposit ratio and already-reported December31 balances; not new quarterly earnings. Postdates W2 January24 full earnings release.",
+      "reviewer": "research_trend",
+      "source_exhibit_files": [
+        "data/snapshots/equity-event-pilot-2026-09-10/sec/d774cbc0e698bc6dedba6fb48f5be29ddac3f9e34160e02283360bb9be9629aa.htm"
+      ],
+      "source_primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/aefbe11a5cd36688c0d53ddaa7ba2d462ac4d3a37ab812f08b57870163044731.htm",
+      "source_primary_sha256": "9d80499015027c1a8504f70b2727930764907c966227b15e4351dff65fdf0956"
+    },
+    "0001564590-23-005223": {
+      "classification": "SELECTED_PRELIMINARY_BALANCE_METRICS",
+      "reason": "Selected Q1 deposit/loan balances; expressly says full results are due April25; no income/EPS. Earlier balance-sheet information is retained as a warning, not mislabeled original earnings release.",
+      "reviewer": "research_trend",
+      "source_exhibit_files": [],
+      "source_primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/804f1ce21f80dfba6248456a323c9c06c69d6fe0bc37b0e0f8687b1eac177c93.htm",
+      "source_primary_sha256": "bae2181a52dd9f838b5b9c4cc2e483fe80d2f03c62118cea9acf83977e5d93a2"
+    },
+    "0001828318-23-000198": {
+      "classification": "POST_WINDOW_OPERATIONAL_RESTRUCTURING_UPDATE",
+      "reason": "October3 strategic Fab1 realignment, production/revenue outlook update; outside July-September release window and after selected July26 earnings release.",
+      "reviewer": "research_trend",
+      "source_exhibit_files": [
+        "data/snapshots/equity-event-pilot-2026-09-10/sec/15b0feeca0bbb7437c0a3a0c4759e0a3f23c7cd9833e87b8cb99195b619e11cc.htm"
+      ],
+      "source_primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/1687cf429e8b9bcf3e4bb762131e20b9e52c3fd9b8486c369e602a4dfbff1fab.htm",
+      "source_primary_sha256": "e7c49a8fac3bb0281c6f24fa0487b1b767f17ad395fbb0b5c31354246a201920"
+    }
+  },
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "reviewed_at": "2026-09-11T00:09:02.127365+00:00",
+  "reviewer": "research_trend; source-only independent manual review"
+}

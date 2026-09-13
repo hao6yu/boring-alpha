@@ -7,6 +7,9 @@ research does not define the user's active objective.
 
 - Active, systematic trading with a measurable edge. No ETF or regular-stock
   allocation proposals: the user already manages those investments.
+- On September 10 the user explicitly accepted active individual-stock trading
+  around events. Earnings-release models are now in scope; passive allocation
+  and an AI service business are not the current direction.
 - U.S. resident using Robinhood, Coinbase, and IBKR. The user requested an
   IBKR Lite-to-Pro switch; review is pending. Databento historical access works.
 - $5,000 eventual pilot, approximately $1,000 loss tolerance. Larger capital
@@ -128,6 +131,46 @@ BTC/ETH screen did not justify a trade after modeled fees and cash opportunity
 cost. It does not falsify all carry trading. See the dated audit for numbers.
 
 ## Next work, in order
+
+**Current direction: active equity event research.** The latest
+[earnings-language experiment](notes/2026-09-10-equity-event-test.md) stopped
+at its training-sample gate. Profitability remains untested.
+
+The preceding availability repair now passes **97/100**, above its unchanged
+95 requirement, after qualified Databento PTN histories supplied four windows.
+The original pilot and repair artifacts remain preserved. The dedicated data
+quote totals about 1.3 cents against existing credits; this is not an invoice.
+
+A separate fixed 100-issuer, 1,600-slot cohort produced **175 usable 2020 training
+events versus 200 required**, 200 validation events, and 378 evaluation events
+across 57 issuers qualified before entry. Final original-source and extraction
+audits are saved. No model was fitted or 2022–2023 evaluation targets opened.
+The nine remaining planned price queries could add at most 24 training events,
+leaving an optimistic 199; they were not acquired. Clearing CADE's ticker
+warning cannot rescue the count: independent original-price anchors identify
+the downloaded history as the acquirer rather than the selected issuer.
+
+This is an inadequate sample under the frozen sourcing/trading rules, not a
+negative profitability result. The minimum was not lowered and failed issuers
+were not replaced. Any continuation requires a separately specified larger
+cohort or materially better historical coverage and a finite effort/data
+budget. Reuse the retained source collection and accounting tests. Do not
+open evaluation returns or tune the strategy to rescue this run. No live
+trade, account change or monitor occurred; 2024–2025 equity strategy prices remain
+reserved for this experiment.
+
+**Research direction reset:** the user requested a broader review after the
+BA-012 result. The [research reset](notes/2026-09-10-research-reset.md) pauses
+BA-012 variations and defers the proposed fractional/all-long diagnostic.
+No new bot is nominated. The subsequently authorized
+[expiring crypto cash-and-carry screen](notes/2026-09-10-dated-carry-screen.md)
+is complete: both sampled September 25 entries fail even the 4% cash scenario
+before fees at $5k/$25k/$100k under the fixed reserve policy. Public quotes
+worked; insufficient entry premium ends this screen. No implementation or
+monitor follows. Broad trend/carry remains conditional on affordable history
+and attainable breadth. Pairs, options and generic ML searches are not queued.
+No backtest, paid data or account change occurred in this screen. Earlier
+research rankings below are preserved history.
 
 **Current status: the completed larger-account profitability diagnostic loses
 money under both cost assumptions at both balances.** The

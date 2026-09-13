@@ -1,0 +1,79 @@
+{
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "reviews": [
+    {
+      "slot_id": "0000766421-W4",
+      "accession": "0000766421-23-000031",
+      "review_type": "raw_primary_and_all_exhibits_read",
+      "sources": [
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/9cc5e18fcd9ea506effbe7b078cc5f42c29eadb19a52ccf6f8f8d21b5cdfc301.htm",
+          "sha256": "1b2d55a5d1dc64cfa3e84eae8f4bfde2c0fe9236bddf570d64c46ea1b585328b"
+        },
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/95281347be107837b73f872b1217c3c6176bf525bf65e1f1361c79035cabd533.htm",
+          "sha256": "1e8dddd8b06d241e5b283d1b6bbec78b8b1180544f8828746a702315883f8f22"
+        }
+      ],
+      "finding": "RELEASE_DATE_EXTRACTOR_FALSE_AMBIGUITY",
+      "verified_release_date": "2023-07-25",
+      "verified_period_end": "2023-06-30",
+      "fiscal_quarter": 2,
+      "reason": "Exhibit99.1datelineandItem2.02bothidentifyJuly25. July21belongs to separate Item8.01creditfacilityamendment, not release."
+    },
+    {
+      "slot_id": "0001828318-W1",
+      "accession": "0001828318-22-000059",
+      "review_type": "raw_primary_and_all_exhibits_read",
+      "sources": [
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/b2205caa9bd76a76f8a3af44a63a29fe9aed5658a5546ce65ca1b692442e436d.htm",
+          "sha256": "c27373bd629a0d55980c85d88a989131f93596c7d14aa263b293790b798b2e8f"
+        },
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/0da4be89903b9fce840d1f2e877d20de1ec1a7cce7564abd52764f39eb2b932d.htm",
+          "sha256": "bfde10b9d6b81547d9eb96f0d946b6513bbf77f6e3156f6171ef5b472f88c2f2"
+        },
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/a0c6c1631e186860050805e74c0e7054b7cfd49765e513865a36cdb1d8558e41.htm",
+          "sha256": "7d96aa6e3440f963476e06ba5e7f54d3acccd71baf978ac514f5c3405ba9d999"
+        }
+      ],
+      "finding": "EARNINGS_RELEASE_HAS_SEPARATE_ACCOUNTING_LETTER",
+      "verified_release_date": "2022-11-01",
+      "verified_period_end": "2022-10-02",
+      "fiscal_quarter": 3,
+      "release_exhibit": "99.2",
+      "accounting_companion_exhibit": "99.1",
+      "reason": "Item2.02explicitlyidentifiesoriginalfinancialresults,pressrelease99.2andshareholderletter99.1. Announcementcontainsnofinancialfigures; figuresareinthefiledletter. Keepdocumenttypesseparate; do notsilentlychangemodeltextinput to shareholderletter."
+    },
+    {
+      "slot_id": "0001828318-W2",
+      "accession": "0001828318-23-000059",
+      "review_type": "raw_primary_and_all_exhibits_read",
+      "sources": [
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/b93c596196e6e60ac807303ec2c1cd48f5d13016fdef1669e498f0dc409b37e8.htm",
+          "sha256": "85ee95ca335089372041f2485472c47780d0ff6c224e1a442d78eb3fa978ab85"
+        },
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/35b9db626e3dacc3384f0ac4708980ac119c7f9418adc724498c0a91dadb818f.htm",
+          "sha256": "e1cc7e633d6f3e0c7069f0b608bd484486fdc0fe5cb9702b9028065b23a3d21b"
+        },
+        {
+          "path": "data/snapshots/equity-event-pilot-2026-09-10/sec/a8631c3410263bc4b079b5b9621f65eb3fda00604d37d0abd7bba6130113527e.htm",
+          "sha256": "7abbea1de0f9d68daf35bf52e5e7208f981c20d087b65acbf0bd116bd11688db"
+        }
+      ],
+      "finding": "EARNINGS_RELEASE_HAS_SEPARATE_ACCOUNTING_LETTER",
+      "verified_release_date": "2023-02-22",
+      "verified_period_end": "2023-01-01",
+      "fiscal_quarter": 4,
+      "release_exhibit": "99.2",
+      "accounting_companion_exhibit": "99.1",
+      "reason": "Item2.02explicitlyidentifiesoriginalfinancialresults,pressrelease99.2andshareholderletter99.1. Announcementcontainsnofinancialfigures; figuresareinthefiledletter. Keepdocumenttypesseparate; do notsilentlychangemodeltextinput to shareholderletter."
+    }
+  ],
+  "network_requests": 0,
+  "strategy_returns_calculated": false
+}

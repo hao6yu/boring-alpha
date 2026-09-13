@@ -1,0 +1,118 @@
+{
+  "aliases": [
+    {
+      "change_effective": "2025-08-12",
+      "cik": "0000821130",
+      "historical_symbol": "USM",
+      "provider_directory_rows": [
+        {
+          "assetType": "Stock",
+          "endDate": "2026-09-10",
+          "exchange": "NYSE",
+          "priceCurrency": "USD",
+          "startDate": "1992-03-17",
+          "ticker": "AD"
+        }
+      ],
+      "provider_query_symbol": "AD",
+      "source": "https://investors.arrayinc.com/resources/investor-faqs/default.aspx",
+      "source_fact": "Issuer FAQ identifies common-stock ticker change USM to AD; same registrantCIK confirmed in original SEC metadata.",
+      "status": "IDENTITY_RECOVERY_CANDIDATE_PRICES_NOT_YET_QUERIED"
+    },
+    {
+      "change_effective": "2026-03-11",
+      "cik": "0001069530",
+      "historical_symbol": "SAVA",
+      "provider_directory_rows": [
+        {
+          "assetType": "Stock",
+          "endDate": "2026-05-28",
+          "exchange": "NASDAQ",
+          "priceCurrency": "USD",
+          "startDate": "2017-10-13",
+          "ticker": "FLNA"
+        },
+        {
+          "assetType": "Stock",
+          "endDate": "2026-09-10",
+          "exchange": "NASDAQ",
+          "priceCurrency": "USD",
+          "startDate": "2000-07-14",
+          "ticker": "FLNA"
+        }
+      ],
+      "provider_query_symbol": "FLNA",
+      "source": "https://www.filanatx.com/news-releases/news-release-details/cassava-sciences-announces-name-change-filana-therapeutics-inc",
+      "source_fact": "Original issuer announcement dated2026-03-10 identifies Cassava name and ticker change.",
+      "status": "IDENTITY_RECOVERY_CANDIDATE_PRICES_NOT_YET_QUERIED"
+    },
+    {
+      "change_effective": "2025-11-20",
+      "cik": "0000874501",
+      "historical_symbol": "AMBC",
+      "provider_directory_rows": [
+        {
+          "assetType": "Stock",
+          "endDate": "2026-09-10",
+          "exchange": "NYSE",
+          "priceCurrency": "USD",
+          "startDate": "2015-12-01",
+          "ticker": "OSG"
+        },
+        {
+          "assetType": "Stock",
+          "endDate": "2025-11-19",
+          "exchange": "NYSE",
+          "priceCurrency": "USD",
+          "startDate": "2013-05-01",
+          "ticker": "OSG"
+        }
+      ],
+      "provider_query_symbol": "OSG",
+      "source": "https://www.sec.gov/Archives/edgar/data/874501/000162828025051169/a04-0893q258xkex991.htm",
+      "source_fact": "Original issuer November10,2025 announcement identifies Ambac to Octave change and same CIK.",
+      "status": "IDENTITY_RECOVERY_CANDIDATE_PRICES_NOT_YET_QUERIED"
+    },
+    {
+      "change_effective": "2024-03-27",
+      "cik": "0001708599",
+      "historical_symbol": "AGE",
+      "provider_directory_rows": [
+        {
+          "assetType": "Stock",
+          "endDate": "2026-09-10",
+          "exchange": "AMEX",
+          "priceCurrency": "USD",
+          "startDate": "2018-11-29",
+          "ticker": "SER"
+        }
+      ],
+      "provider_query_symbol": "SER",
+      "source": "https://investors.agexinc.com/news/news-details/2024/Serina-Therapeutics-Announces-Completion-of-Merger-with-AgeX-Therapeutics/default.aspx",
+      "source_fact": "Original issuer merger announcement names resulting Serina ticker; historical raw/share basis still requires qualification.",
+      "status": "IDENTITY_RECOVERY_CANDIDATE_PRICES_NOT_YET_QUERIED"
+    },
+    {
+      "change_effective": "2021-03-05",
+      "cik": "0000876378",
+      "corroboration": "https://www.sec.gov/Archives/edgar/data/876378/000143774922004657/transe20211231_10k.htm",
+      "historical_symbol": "TRXC",
+      "provider_directory_rows": [
+        {
+          "assetType": "Stock",
+          "endDate": "2024-08-22",
+          "exchange": "NYSE MKT",
+          "priceCurrency": "USD",
+          "startDate": "1992-11-12",
+          "ticker": "ASXC"
+        }
+      ],
+      "provider_query_symbol": "ASXC",
+      "source": "https://ir.asensus.com/news-releases/news-release-details/asensus-surgical-announces-finalization-name-and-ticker-symbol",
+      "source_fact": "Issuer notice dated March5,2021 at06:55EST explicitly names TRXC-to-ASXC name/ticker change with no stockholder action; sameCIK original2021 annual filing corroborates the identity.",
+      "status": "IDENTITY_RECOVERY_CANDIDATE_PRICES_NOT_YET_QUERIED"
+    }
+  ],
+  "reserved_prices": "No price date after2023-12-29 permitted.",
+  "scope": "Dated name-change information used only to locate the same historical security through provider identifiers. Never a model feature, membership variable, historical trading-ticker backprojection, or permission to use future-share-restated raw prices."
+}

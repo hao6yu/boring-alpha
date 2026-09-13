@@ -1,0 +1,90 @@
+{
+  "events": {
+    "0000819689-19-000073": {
+      "event": {
+        "acceptance_eastern": "2019-08-14T17:35:51-04:00",
+        "acceptance_utc": "2019-08-14T17:35:51.000Z",
+        "accession": "0000819689-19-000073",
+        "accounting_companions": [],
+        "classification": "EARNINGS_RELEASE",
+        "classification_evidence": {
+          "manual_source_review": "Full original index-linked earnings release with actual completed-quarter results; filing index explicitly Item2.02."
+        },
+        "cohort_identity_source": {
+          "accession": "0000819689-19-000070",
+          "file": "data/snapshots/equity-event-test-2026-09-10/sec/a96f9e3751091c8b77fb7e5887d0054cb242c8d04ad7af90be4ed87c2221b478.htm",
+          "filing_date": "2019-08-14",
+          "scope": "Original10-Q cover before frozen2019cutoff; unavailable8-K primary is not imputed.",
+          "sha256": "353b093b5ea4d5fc69e5217b35f1153df1268e97c66595b34497a57fa2468ba4",
+          "url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000070/micr-20190630x10q.htm"
+        },
+        "daily_entry_anchor_api": "2019-08-15",
+        "daily_entry_anchor_index": "2019-08-15",
+        "daily_entry_invariant": true,
+        "exhibit_candidates": [],
+        "exhibit_file": "data/snapshots/equity-event-test-2026-09-10/sec/e3d66ae83cfe934c634c209b6f0b3b59ef0a89bd2b31a7ada844930f8e3a9ca9.htm",
+        "exhibit_sha256": "218d97e61e4e4f84bd8366af3ce01bef4a64bddc6ec286dbb0bf66aed4785293",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000073/micr-20190814xex99_01.htm",
+        "filing_date": "2019-08-15",
+        "form": "8-K",
+        "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/0741b88672efdfacc6d5881eaf910db9bf8cc50d2051dbbbcf5f4cf8c3d4405b.html",
+        "items": "2.02",
+        "manual_source_scope": "Cohort selection only; separate original source roles preserved.",
+        "metadata_file": "data/snapshots/equity-event-test-2026-09-10/sec/a4d0b61f1f57f9d3c815581897355d3118b820f1d1209f28ac91f849dd39c638.json",
+        "period_candidates": [
+          {
+            "excerpt": "announced results for its second quarter ended June 30, 2019",
+            "explicit_scopes": [
+              "quarter"
+            ],
+            "kind": "quarter",
+            "period_end": "2019-06-30",
+            "raw_kind": "second quarter"
+          }
+        ],
+        "period_end": "2019-06-30",
+        "period_evidence": {
+          "excerpt": "announced results for its second quarter ended June 30, 2019",
+          "explicit_scopes": [
+            "quarter"
+          ],
+          "kind": "quarter",
+          "period_end": "2019-06-30",
+          "raw_kind": "second quarter"
+        },
+        "primary_document_unavailable": true,
+        "primary_file": null,
+        "primary_url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000073/micr-20190814x8k.htm",
+        "quarter_ordinal": 2,
+        "release_date": "2019-08-14",
+        "release_excerpt": "EX-99.01 2 micr-20190814xex99_01.htm EX-99.01 Ex 9901 Micron Solutions, Inc. Reports 201 9 Second Quarter Results August 1 4 , 2019 Page 1 of 3 25 Sawyer Passway \u25cf Fitchburg, Massachusetts 01420 Exhibit 99.01 FOR IMMEDIATE RELEASE Micron Solutions, Inc. Reports 201 9 Second Quarter Results FITCHBURG, MA, August 14 , 201 9 \u2013 Micron Solutions, Inc. (NYSE American: MICR) (the \u201cCompany\u201d), a diversified contract manufacturing organization, through its wholly-owned subsidiary, Micron Products, Inc., producing highly-engineered, innovative components requiring precision machining and injection molding, announced results for its second quarter ended June 30 , 201 9 \u201cIn the second quarter 2019, the company reported $4, 892,000 in revenue, a 4.4 % increase over the first quarter 2019. Adjusted EBITDA for the period was $ 159 , 000 , \u201d said Mr. Laursen. \ufeff In comparison to Q2 201 8 , the Company reported a decrease in gross profit on lower net sales. Outlook: \u201cWe are having success converting pipeline opportunities into binding commitments. We recently received commitments from a new customer that we expect will lead to 20% revenue growth for Micron in 2020 compared to trailing 12-month levels . We are continuing to prepare to scale and are making significant improvements to the management team, including the addition of Wayne Coll, our Chief Financial Officer. Wayne is already having an impact and has broadened the depth and skills of our executive management team. His experience in directing rapid scale ups and restructurings in the medical device industry, in both organic and acquisition growth environments, dovetails with our requirements and strategies. Additionally, to further our pipeline expansion, we have also finalized agreements to increase our sales team , \u201d concluded Mr. Laursen. About Micron Solutions, Inc. Micron Solutions, Inc., through its wholly-owned subsidiary, Micron Products, Inc., is a diversified contract manufacturing organization that produces highly-engineered, innovative medical device components requiring precision machining and injection molding. The Company also manufactures components, devices and equipment for military, law enforcement, industrial and automotive applications. In addition, the Company is a market leader in the production and sale of silver/silver chloride coated and conductive resin sensors used as consumable component parts in the manufacture of integrated disposable electrophysiological sensors. The Company\u2019s strategy for growth is to build a best-in-class contract manufacturer with a specialized focus on plastic injection molding and highly-engineered medical devices and components requiring precision machining . The Company routinely posts news and other important information on its websites: http://www.micronsolutionsinc.com and http://www.micronproducts.com FINANCIAL TABLES FOLLOW. \ufeff \ufeff \ufeff -END- Micron Solutions, Inc. Reports 201 9 Second Quarter Results August 1 4 , 2019 Page 2 of 3 Second Quarter 201 9 Review \ufeff \ufeff $ In thousands Q2 2019 Q2 2018 $ Change % Change Net sales $ 4,892 $ 5,320 $ (428) -8.0 Gross profit $ 510 $ 878 $ (368) -41.9 Gross margin 10.4% 16.5% Net loss $ (471) $ 34 $ (505) Loss per share $ (0.16) $ 0.01 $ (0.17) \ufeff MICRON SOLUTIONS, INC. EBITDA RECONCILIATION (1) ($ in thousands) \ufeff \ufeff \ufeff Three Months Ended \ufeff June 30 , \ufeff 2019 2018 Net income ( loss ) $ (471) $ 34 Income tax benefit \u2014 \u2014 Other (income) expense (22) (12) Interest expense 112 96 Depreciation and amortization 374 372 Share-based compensation 116 29 Non-cash incentive plan accruals 50 \u2014 Non-recurring consulting and other expenses \u2014 8 Adjusted EBITDA $ 159 $ 527 Adjusted EBITDA margin % 3.2% 9.9% \ufeff \ufeff \ufeff (1) Non-GAAP Financial Measures In addition to reporting net loss, a U.S. generally accepted accounting principle (\u201cGAAP\u201d) measure, this news release contains information about Adjusted EBITDA (income from continuing operations adjusted for income taxes, other income and expense, interest, depreciation and amortization, share-based compensation expense and certain non-recurring charges), which is a non-GAAP measure. Share-based compensation includes directors fees paid by means of stock grants versus cash as well as non-cash incentives. Non-recurring consulting and other expenses includes a one time charge for a separation agreement with the Company\u2019s former Chief Operating Officer in 2019. The Company believes Adjusted EBITDA allows investors to view its performance in a manner similar to the methods used by management and provides additional insight into its operating results. Adjusted EBITDA is not calculated through the application of GAAP. Accordingly, it should not be considered as a substitute for the GAAP measure of net loss and, therefore, should not be used in isolation of, but in conjunction with, the GAAP measure. The use of any non-GAAP measure may produce results that vary from the GAAP measure and may not be comparable to a similarly defined non-GAAP measure used by other companies. \ufeff Safe Harbor Statement Forward-looking statements made herein are based on current expectations of Micron Solutions, Inc. (\u201cour\u201d or the \u201cCompany\u201d) that involve a number of risks and uncertainties and should not be considered as guarantees of future performance. The factors that could cause actual results to differ materially include our ability to obtain and retain order volumes from customers who represent significant proportions of net sales; our ability to maintain our pricing model, offset higher costs with price increases and/or decrease our cost of sales; variability of customer delivery -END- Micron Solutions, Inc. Reports 201 9 Second Quarter Results August 1 4 , 2019 Page 3 of 3 requirements; the level of and ability to generate sales of higher margin products and services; our ability to manage our level of debt and provisions in the debt agreements which could make the Company sensitive to the effects of economic downturns and limit our ability to react to changes in the economy or our industry; failure to comply with financial and other covenants in our credit facility; reliance on revenues from exports and impact on financial results due to economic uncertainty or downturns in foreign markets; volatility in commodity and energy prices and our ability to offset higher costs with price increases; continued availability of supplies or materials used in manufacturing at competitive prices; variations in the mix of products sold; continued availability of supplies or materials used in manufacturing at competitive prices; and the amount and timing of investments in capital equipment, sales and marketing, engineering and information technology resource s. More information about the Company's financial results is included in the Company's Annual Report on Form 10-K and other filings with the Securities and Exchange Commission. \ufeff \ufeff \ufeff \ufeff For more information, contact: \ufeff Mr. W ayne Coll Chief Financial Officer 978.345.5000 \ufeff -END-",
+        "security": {
+          "common_stock_evidence": [
+            {
+              "row_excerpt": "Common Stock, $0.01 par value | MICR | New York Stock Exchange",
+              "symbols": [
+                "MICR"
+              ]
+            }
+          ],
+          "excluded_common_unit_rows": [],
+          "historical_symbol": "MICR",
+          "inline_trading_symbols": [],
+          "status": "VERIFIED_SINGLE_COMMON_CLASS",
+          "symbols": [
+            "MICR"
+          ]
+        },
+        "timing_match": false,
+        "timing_proxy_status": "EXACT_TIMESTAMP_UNRESOLVED_DAILY_ENTRY_INVARIANT"
+      },
+      "raw_hashes": {
+        "data/snapshots/equity-event-test-2026-09-10/sec/0741b88672efdfacc6d5881eaf910db9bf8cc50d2051dbbbcf5f4cf8c3d4405b.html": "57587996ab5fdd337c2b5a4d64ef0719f2fe63c9034b57e527c64721f7308f7a",
+        "data/snapshots/equity-event-test-2026-09-10/sec/a4d0b61f1f57f9d3c815581897355d3118b820f1d1209f28ac91f849dd39c638.json": "5d13a97c6ca7f797e883044ed77ae82ce72faca412d37b922afad03d3f097144",
+        "data/snapshots/equity-event-test-2026-09-10/sec/a96f9e3751091c8b77fb7e5887d0054cb242c8d04ad7af90be4ed87c2221b478.htm": "353b093b5ea4d5fc69e5217b35f1153df1268e97c66595b34497a57fa2468ba4",
+        "data/snapshots/equity-event-test-2026-09-10/sec/e3d66ae83cfe934c634c209b6f0b3b59ef0a89bd2b31a7ada844930f8e3a9ca9.htm": "218d97e61e4e4f84bd8366af3ce01bef4a64bddc6ec286dbb0bf66aed4785293"
+      }
+    }
+  },
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3"
+}

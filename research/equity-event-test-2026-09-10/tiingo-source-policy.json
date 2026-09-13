@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-09-11T02:56:00+00:00",
+  "sources": [
+    {
+      "url": "https://www.tiingo.com/documentation/end-of-day",
+      "basis": "Raw and adjusted fields; dividend ex-date; CRSP split and cash-dividend adjustment methodology."
+    },
+    {
+      "url": "https://www.tiingo.com/documentation/appendix/symbology",
+      "basis": "Hyphen share class convention; delisted histories can be unavailable after ticker reuse."
+    },
+    {
+      "url": "https://www.tiingo.com/documentation/corporate-actions/dividends",
+      "basis": "Separate paymentDate field and null means unavailable. Header restricts beta/enterprise while body states EOD entitlement; authenticated access not yet established."
+    },
+    {
+      "url": "https://www.tiingo.com/documentation/corporate-actions/splits",
+      "basis": "splitFactor=splitTo/splitFrom; active/cancelled status is separate."
+    }
+  ],
+  "return_arithmetic": "Internally validate adj_factor_today/adj_factor_previous = splitFactor_today * (close_today + divCash_today) / close_today. This does not prove actual payment availability."
+}

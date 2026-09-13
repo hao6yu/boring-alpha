@@ -1,0 +1,2135 @@
+{
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "scope": "Known prior-document form differences; original prior clause does not require Item2.02. Current8-K Item2.02 eligibility unchanged.",
+  "started_at": "2026-09-11T00:03:33.040325+00:00",
+  "targets": [
+    {
+      "forms": [
+        "8-K"
+      ],
+      "inspected": [
+        {
+          "event": {
+            "acceptance_eastern": "2021-11-15T07:10:37-05:00",
+            "acceptance_utc": "2021-11-15T12:10:37.000Z",
+            "accession": "0001789769-21-000065",
+            "accounting_companions": [],
+            "accounting_flags": {
+              "constant_currency": false,
+              "non_gaap": false,
+              "restated_or_recast": false
+            },
+            "classification": "EARNINGS_RELEASE",
+            "classification_evidence": {
+              "earnings_pattern": true,
+              "future_release_notice": false,
+              "guidance_only": false,
+              "numerical_results": true,
+              "posted_actual_results_in_companion": false,
+              "preliminary": false
+            },
+            "daily_entry_anchor_api": "2021-11-15",
+            "daily_entry_anchor_index": "2021-11-15",
+            "daily_entry_invariant": true,
+            "document_type": "EARNINGS_RELEASE",
+            "exhibit_candidates": [
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": false,
+                  "restated_or_recast": false
+                },
+                "classification": "EARNINGS_RELEASE",
+                "classification_evidence": {
+                  "earnings_pattern": true,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "description": "2 | EX-99.1 | q3-21earningspressrelease.htm | EX-99.1 | 55686",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/6c419a92813db42b28fc668ca969c6d6795ff76e86c47214d7a4800950b96fbe.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "mpany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2021 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. Th",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": " Research and development expenses were $29.1 million and $64.7 million for the three and nine months ended September 30, 2021, compared to $4.9 million and $9.2 million for the three and nine months ended September 30, 2020. ",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three and nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "eneral and administrative expenses were $14.0 million and $37.1 million for the three and nine months ended September 30, 2021, compared to $2.9 million and $7.2 million for the three and nine months ended September 30, 2020. ",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three and nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": " the section titled \u201cRisk Factors\u201d in our Quarterly Report on Form 10-Q for the quarter ended September 30, 2021 available on the SEC\u2019s website at www.sec.gov . Additional information will be made available in ot",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "nd per share amounts) Statements of Operations Three Months Ended September 30, Nine Months Ended September 30, 2021 2020 2021 2020 Revenue $ \u2014 $ 52 $ \u2014 $ 138 Operating expenses: Research and development 29,064 4,908",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  }
+                ],
+                "period_end": "2021-09-30",
+                "period_evidence": {
+                  "excerpt": "mpany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2021 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. Th",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2021-09-30",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2021-11-15"
+                ],
+                "quarter_ordinal": 3,
+                "release_date": "2021-11-15",
+                "release_date_candidates": [
+                  "2021-11-15"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "url": "https://www.sec.gov/Archives/edgar/data/1789769/000178976921000065/q3-21earningspressrelease.htm"
+              }
+            ],
+            "exhibit_description": "2 | EX-99.1 | q3-21earningspressrelease.htm | EX-99.1 | 55686",
+            "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/6c419a92813db42b28fc668ca969c6d6795ff76e86c47214d7a4800950b96fbe.htm",
+            "exhibit_sha256": "715b6d7e251e759b14e544e2298f8857e1b1b3bb1bba57213ab8b3854c28e521",
+            "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1789769/000178976921000065/q3-21earningspressrelease.htm",
+            "filing_date": "2021-11-15",
+            "form": "8-K",
+            "index_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b6c9b46129cb5d086a3c59ef4e363b118bef15bf54f42e9d00be102f2067db35.html",
+            "item_202_excerpt": "Item 2.02 Results of Operations and Financial Condition. On November 15, 2021, Instil Bio, Inc. (the \u201cCompany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2021 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. The information in this ",
+            "items": "9.01",
+            "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a9c5f8443e977448df9abd495d7473dbccdf143ebe48f0ea5608ad5dfb7b03f2.json",
+            "period_candidates": [
+              {
+                "excerpt": "mpany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2021 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. Th",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2021-09-30",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": " Research and development expenses were $29.1 million and $64.7 million for the three and nine months ended September 30, 2021, compared to $4.9 million and $9.2 million for the three and nine months ended September 30, 2020. ",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three and nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "eneral and administrative expenses were $14.0 million and $37.1 million for the three and nine months ended September 30, 2021, compared to $2.9 million and $7.2 million for the three and nine months ended September 30, 2020. ",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three and nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": " the section titled \u201cRisk Factors\u201d in our Quarterly Report on Form 10-Q for the quarter ended September 30, 2021 available on the SEC\u2019s website at www.sec.gov . Additional information will be made available in ot",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2021-09-30",
+                "raw_kind": "quarter",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "nd per share amounts) Statements of Operations Three Months Ended September 30, Nine Months Ended September 30, 2021 2020 2021 2020 Revenue $ \u2014 $ 52 $ \u2014 $ 138 Operating expenses: Research and development 29,064 4,908",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2021-09-30",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              }
+            ],
+            "period_end": "2021-09-30",
+            "period_evidence": {
+              "excerpt": "mpany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2021 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. Th",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2021-09-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/38e7479796b59a5e31346591bd293cb732ed2f13a8e1205f3045bd20a3afc90d.htm",
+            "primary_release_date_candidates": [
+              "2021-11-15"
+            ],
+            "primary_url": "https://www.sec.gov/Archives/edgar/data/1789769/000178976921000065/til-20211115.htm",
+            "quarter_ordinal": 3,
+            "release_date": "2021-11-15",
+            "release_date_candidates": [
+              "2021-11-15"
+            ],
+            "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+            "release_excerpt": "EX-99.1 2 q3-21earningspressrelease.htm EX-99.1 Document Instil Bio Reports Third Quarter 2021 Financial Results and Provides Corporate Update \u2013 Patients enrolled and recruitment ongoing in Phase 2 trial of ITIL-168 in melanoma (DELTA-1) \u2013 Fast Track Designation granted by FDA for ITIL-168 in metastatic melanoma \u2013 CoStAR mechanism of action data presented at SITC 2021 \u2013 Successful pre-IND meeting for ITIL-306 DALLAS, TX, November 15, 2021 (GLOBE NEWSWIRE) Instil Bio, Inc. (\u201cInstil\u201d) (NASDAQ: TIL), a clinical-stage biopharmaceutical company focused on developing tumor infiltrating lymphocyte, or (TIL), therapies for the treatment of patients with cancer, today reported its third quarter 2021 financial results and provided a corporate update. \u201cWe have achieved key milestones in our continued development of ITIL-168 with clearance of our IND for the DELTA-1 study, Fast Track Designation approval and initiation of enrollment in DELTA-1,\u201d said Bronson Crouch, Chief Executive Officer of Instil. \u201cOur progress in establishing a platform for cell therapy continues with the expansion of our UK clinical manufacturing capabilities which are on track to reach an annual capacity of over 200 lots by year end 2021 as well as with US clinical manufacturing coming online next year. With this added capacity, we expect to initiate additional trials in the months ahead as we progress both ITIL-168 and ITIL-306, our first genetically-engineered CoStAR-TIL.\u201d Third Quarter 2021 Highlights and Recent Corporate Updates: Clinical Development: \u2022 Received IND Clearance from the FDA to Initiate DELTA-1, a Phase 2 Clinical Trial for Patients with Advanced Melanoma: On September 13, 2021, Instil reported clearance of its Investigational New Drug (IND) application by the U.S. Food and Drug Administration (FDA) to initiate DELTA-1, a global Phase 2 clinical trial of ITIL-168 with registrational intent in patients with advanced melanoma. The DELTA-1 trial was expanded during the IND review process in consultation with FDA to include additional populations of patients with advanced melanoma, including patients who discontinued PD-1 inhibitor therapy due to intolerable toxicity and patients who had an unsatisfactory response to prior PD-1 inhibitor. \u2022 Initiated enrollment in DELTA-1: Instil reported that patients have been enrolled and recruitment is ongoing into the pivotal study. Enrollment for Cohort 1 is expected to be completed within 12 months, with Cohorts 2 and 3 finishing enrollment thereafter. Instil expects top-line data and BLA filing submission in 2023 and a European Medicines Agency (EMA) marketing authorization application (MAA) filing in 2024. \u2022 ITIL-168 in Advanced Melanoma Granted FDA Fast Track Designation: Instil was recently granted Fast Track Designation from the U.S. FDA for ITIL-168 in advanced melanoma. Fast Track designation confers certain benefits on the development process, including more frequent communications with the FDA and potential eligibility for accelerated approval and priority review. \u2022 Readiness to Initiate DELTA-2 in H1 2022: Preparations are on track to initiate enrollment in DELTA-2, a Phase 1 study of ITIL-168 in non-small cell lung cancer (NSCLC), head and neck squamous cell carcinoma (HNSCC), cervical cancer, and cutaneous squamous cell carcinoma (CSCC). Enrollment in DELTA-2 is planned to initiate in H1 2022. \u2022 Presented Clinical Data in Advanced Cutaneous Melanoma at ESMO: Instil presented a subset analysis of treatment outcomes with TILs in 12 patients with checkpoint inhibitor-refractory advanced cutaneous melanoma, demonstrating a 58% objective response rates and median overall survival of 21.3 months; all patients in the subset analysis had experienced disease progression following treatment with a PD-1 inhibitor and CTLA-4 inhibition with ipilimumab. Manufacturing and Technical Operations: \u2022 Clinical Manufacturing Readiness: U.K. manufacturing capacity remains on track for regulatory approval of the additional IMPACT manufacturing suite in Q4 2021, which will approximately triple the current U.K. manufacturing capacity. U.S. clinical manufacturing in Tarzana, CA remains on track for launch of clinical manufacturing in H1 2022, with qualification ongoing. Research: \u2022 Appointed Mark Dudley, Ph.D. as Head of Research: Instil has appointed Mark Dudley, Ph.D. as Head of Research. Prior to Instil, Dr. Dudley led early development of T cell therapies at Adaptimmune Therapeutics plc, and before that was on the technical R&D leadership team at Novartis. Before Novartis, Dr. Dudley spent nearly two decades at the Surgery Branch of the National Cancer Institute, where he contributed to a diverse portfolio of experimental T cell therapies, including TIL, TCR-T, and CAR-T products. Dr. Dudley is a recognized pioneer in adoptive cell therapy, having published seminal studies in TIL therapy for refractory melanoma patients, and the first studies of CD19 CAR-T in humans, IL-2 and IL-12 genetically engineered T cells in clinical trials, and TCR-T cells in clinical trials. \u2022 Successful Pre-IND Meeting with FDA on First-in-Human Study of ITIL-306: Instil Bio recently completed a pre-IND meeting with the FDA for the proposed first-in-human Phase 1 study of ITIL-306, a TIL product genetically engineered to express a Costimulatory Antigen Receptor (CoStAR) molecule, to gain alignment on nonclinical, manufacturing, and clinical aspects of the program. The company expects initiate a Phase 1 study of ITIL-306 in multiple cancer indications in H1 2022. \u2022 Presented Pre-clinical Data on the CoStAR Platform at SITC: Instil presented posters highlighting pre-clinical data from the CoStAR platform which demonstrated that CoStAR expression by T cells led to marked enhancement of effector function and proliferation of T cells and TILs. The novel design of CoStAR, which includes two intracellular costimulatory domains derived from CD28 and CD40, showed significantly improved activity compared to a CoStAR that contained only a CD28 domain, demonstrating the superiority of CD40-containing CoStAR molecules and important synergies of CD40 and CD28 signaling. Further details can be found in the poster publications available here https://instilbio.com/publications/ . Third Quarter 2021 Financial and Operating Results: As of September 30, 2021, we had $20.4 million in cash and cash equivalents and $495.0 million in marketable securities, compared to $241.7 million in cash and cash equivalents and no investments in marketable securities as of December 31, 2020. The Company expects that its cash, cash equivalents and marketable securities as of September 30, 2021 will enable it to fund its operating plan into 2023. Research and development expenses were $29.1 million and $64.7 million for the three and nine months ended September 30, 2021, compared to $4.9 million and $9.2 million for the three and nine months ended September 30, 2020. General and administrative expenses were $14.0 million and $37.1 million for the three and nine months ended September 30, 2021, compared to $2.9 million and $7.2 million for the three and nine months ended September 30, 2020. INSTIL BIO, INC. SELECTED FINANCIAL DATA (Unaudited; in thousands, except share and per share amounts) Statements of Operations Three Months Ended September 30, Nine Months Ended September 30, 2021 2020 2021 2020 Revenue $ \u2014 $ 52 $ \u2014 $ 138 Operating expenses: Research and development 29,064 4,908 64,674 9,152 General and administrative 13,960 2,855 37,134 7,153 Total operating expenses 43,024 7,763 101,808 16,305 Loss from operations (43,024) (7,711) (101,808) (16,167) Interest and other (expense) income, net (639) 449 (657) (4,386) Loss before income tax benefit $ (43,663) $ (7,262) $ (102,465) $ (20,553) Income tax benefit 658 \u2014 1,021 \u2014 Net loss $ (43,005) $ (7,262) $ (101,444) $ (20,553) Net loss per share, basic and diluted $ (0.33) $ (0.43) $ (1.03) $ (1.32) Weighted-average shares used in computing net loss per share, basic and diluted 128,794,142 16,928,831 98,256,027 15,616,389 Selected Balance Sheet Data September 30, 2021 December 31, 2020 Cash, cash equivalents and marketable securities $ 515,358 $ 241,714 Total assets 647,397 319,012 Total liabilities 45,977 26,645 Convertible preferred stock and stockholders\u2019 equity (deficit) 601,420 292,367 About Instil Bio Instil Bio, Inc. (Nasdaq: TIL) is a clinical-stage biopharmaceutical company focused on developing tumor infiltrating lymphocyte, or (TIL), therapies for the treatment of patients with cancer. The Company has assembled an accomplished management team with a successful track record in the development, manufacture, and commercialization of cell therapies. Using the Company\u2019s proprietary, optimized, and scalable manufacturing processes at its in-house manufacturing facilities, Instil is advancing its lead TIL product candidate, ITIL-168, for the treatment of advanced melanoma and other solid tumors as well as ITIL-306, a next-generation",
+            "security": {
+              "common_stock_evidence": [
+                {
+                  "row_excerpt": "Common Stock, $0.000001 par value |  | TIL |  | The Nasdaq Stock Market LLC",
+                  "symbols": [
+                    "TIL"
+                  ]
+                }
+              ],
+              "historical_symbol": "TIL",
+              "inline_trading_symbols": [
+                "TIL"
+              ],
+              "status": "VERIFIED_SINGLE_COMMON_CLASS",
+              "symbols": [
+                "TIL"
+              ]
+            },
+            "text_characters": 11648,
+            "timing_match": true,
+            "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+          },
+          "match": {
+            "common_explicit_scopes": [
+              "quarter"
+            ],
+            "current_period_evidence": {
+              "excerpt": "mpany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2022 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. Th",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-09-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "current_quarter": 3,
+            "matched_scope": "quarter",
+            "numeric_measure_comparability": "NOT_CERTIFIED_BY_DOCUMENT_JOIN",
+            "prior_filed_before_current": true,
+            "prior_period_evidence": {
+              "excerpt": "mpany\u201d) provided a corporate update and announced its financial results for the quarter ended September 30, 2021 in the press release attached hereto as Exhibit 99.1, which is incorporated herein by reference. Th",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2021-09-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "prior_quarter": 3,
+            "reason": "explicit_same_period_end_and_scope",
+            "verified": true
+          }
+        },
+        {
+          "event": {
+            "acceptance_eastern": "2021-11-15T07:19:47-05:00",
+            "acceptance_utc": "2021-11-15T12:19:47.000Z",
+            "accession": "0001789769-21-000069",
+            "accounting_companions": [],
+            "classification": "UNRESOLVED",
+            "classification_evidence": [],
+            "daily_entry_anchor_api": "2021-11-15",
+            "daily_entry_anchor_index": "2021-11-15",
+            "daily_entry_invariant": true,
+            "exhibit_candidates": [
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": false,
+                  "restated_or_recast": false
+                },
+                "classification": "NOT_VERIFIED_EARNINGS",
+                "classification_evidence": {
+                  "earnings_pattern": false,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": false,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "description": "2 | EX-99.1 | a2021-11x15prsitc.htm | EX-99.1 | 18058",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/64cbc8022a02fb1201719f1ff9685fa1b11536ebd9c0b3e1fcfe723d4b490918.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": " the section titled \u201cRisk Factors\u201d in our Quarterly Report on Form 10-Q for the quarter ended September 30, 2021 available on the SEC\u2019s website at www.sec.gov . Additional information will be made available in ot",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "earnings_exhibit"
+                  }
+                ],
+                "period_end": "2021-09-30",
+                "period_evidence": {
+                  "excerpt": " the section titled \u201cRisk Factors\u201d in our Quarterly Report on Form 10-Q for the quarter ended September 30, 2021 available on the SEC\u2019s website at www.sec.gov . Additional information will be made available in ot",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2021-09-30",
+                  "raw_kind": "quarter",
+                  "source": "earnings_exhibit"
+                },
+                "primary_release_date_candidates": [],
+                "quarter_ordinal": null,
+                "release_date": "2021-11-15",
+                "release_date_candidates": [
+                  "2021-11-15"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "url": "https://www.sec.gov/Archives/edgar/data/1789769/000178976921000069/a2021-11x15prsitc.htm"
+              }
+            ],
+            "filing_date": "2021-11-15",
+            "form": "8-K",
+            "index_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/68ade3e6c91e8d6f09d2514924a305d31385493c95aedb8523ec6fa2106a6a19.html",
+            "item_202_excerpt": "til-20211115 0001789769 2021-11-15 2021-11-15 UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 8-K CURRENT REPORT Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 Date of Report (Date of earliest event reported): November 15, 2021 Instil Bio, Inc. (Exact name of registrant as specified in its Charter) Delaware 001-40215 83-2072195 (State or Other Jurisdiction of Incorporation) (Commission File Number) (IRS Employer Identification No.) 3963 Maple Avenue, Suite 350 Dallas , Texas 75219 (Address of Principal Executive Offices) (Zip Code) ( 972 ) 499-3350 (Registrant\u2019s Telephone Number, Including Area Code) Not Applicable (Former Name or Former Address, if Changed Since Last Report) Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instructions A.2. below): \u2610 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \u2610 Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \u2610 Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, $0.000001 par value TIL The Nasdaq Stock Market LLC Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter). Emerging growth company \u2612 If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 ",
+            "items": "8.01,9.01",
+            "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a9c5f8443e977448df9abd495d7473dbccdf143ebe48f0ea5608ad5dfb7b03f2.json",
+            "period_end": null,
+            "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/bdcc0b82c05992fdfb3e1159b98700eb18b0b19917d4c843190007407b06aeb7.htm",
+            "primary_url": "https://www.sec.gov/Archives/edgar/data/1789769/000178976921000069/til-20211115.htm",
+            "release_date": null,
+            "security": {
+              "common_stock_evidence": [
+                {
+                  "row_excerpt": "Common Stock, $0.000001 par value |  | TIL |  | The Nasdaq Stock Market LLC",
+                  "symbols": [
+                    "TIL"
+                  ]
+                }
+              ],
+              "historical_symbol": "TIL",
+              "inline_trading_symbols": [
+                "TIL"
+              ],
+              "status": "VERIFIED_SINGLE_COMMON_CLASS",
+              "symbols": [
+                "TIL"
+              ]
+            },
+            "timing_match": true,
+            "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+          },
+          "match": {
+            "reason": "missing_verified_earnings_period",
+            "verified": false
+          }
+        }
+      ],
+      "metadata_candidates": [
+        {
+          "accession": "0001789769-21-000065",
+          "filing_date": "2021-11-15",
+          "form": "8-K",
+          "items": "9.01",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a9c5f8443e977448df9abd495d7473dbccdf143ebe48f0ea5608ad5dfb7b03f2.json",
+          "primary_document": "til-20211115.htm"
+        },
+        {
+          "accession": "0001789769-21-000069",
+          "filing_date": "2021-11-15",
+          "form": "8-K",
+          "items": "8.01,9.01",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a9c5f8443e977448df9abd495d7473dbccdf143ebe48f0ea5608ad5dfb7b03f2.json",
+          "primary_document": "til-20211115.htm"
+        }
+      ],
+      "metadata_end": "2021-11-15",
+      "metadata_start": "2021-11-15",
+      "slot_id": "0001789769-W1"
+    },
+    {
+      "candidate_narrowing": "prior6-K primary filename explicitly earningrelease; actual release and period verified from body",
+      "forms": [
+        "6-K"
+      ],
+      "inspected": [
+        {
+          "event": {
+            "acceptance_eastern": "2021-10-28T16:09:58-04:00",
+            "acceptance_utc": "2021-10-28T20:09:58.000Z",
+            "accession": "0001650372-21-000043",
+            "accounting_companions": [
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": true
+                },
+                "classification": "NOT_VERIFIED_EARNINGS",
+                "classification_evidence": {
+                  "earnings_pattern": false,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": false,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "document_type": "SHAREHOLDER_LETTER",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/10c8b26a20226616adda4f2a8ee1c1beb71e763b9babe48a12c363c6718f3007.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "so issued a letter to its shareholders announcing its financial results for the quarter ended September 30, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  }
+                ],
+                "period_end": "2021-09-30",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2021-09-30",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2021-10-28"
+                ],
+                "quarter_ordinal": null,
+                "release_date": "2021-10-28",
+                "release_date_candidates": [
+                  "2021-10-28"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "sha256": "de1a1e93e5412a9f3b6e1c7bca7c1ffb73f3134d6f3f2955d080e6f761341d18",
+                "source_evidence": "6-K 1 a6-kearningreleaseq1fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 October 28, 2021 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On October 28, 2021, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also issued a letter to its shareholders announcing its financial results for the quarter ended September 30, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Departure of Certain Officers . The Company also announced that James Beer will be retiring as its Chief Financial Officer following the end of fiscal year 2022 on June 30, 2022. Mr. Beer indicated his pending departure is not due to a dispute or disagreement with the Company. The Company has begun a search for a Chief Financial Officer to succeed Mr. Beer. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cDeparture of Certain Officers\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d) or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: October 28, 2021 Atlassian Corporation Plc /s/ James Beer James Beer Chief Financial Officer Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated October 28, 2021. 99.2 Shareholder Letter dated October 28, 2021.",
+                "text_excerpt": "EX-99.2 3 teamq12022shareholderlet.htm EX-99.2 teamq12022shareholderlet Q1 FY22 | October 28, 2021 Shareholder Letter Q1 FY22 Fellow shareholders, Whether it\u2019s a team of two or an enterprise of tens of thousands, customers come to Atlassian and stay with us because we are leading the way into the future of work. In fact, we\u2019re building that future every day through innovative products and practices that help teams collaborate like champs. Our team of nearly 7,000 Atlassians continues to put our customers first, despite the challenging circumstances we\u2019re all facing. We have the right people, the right partners, the right purpose, and we\u2019re on the right track. We brought FY21 to a ripper close and kept the momentum high in Q1 of FY22. Revenue from our Cloud products was up more than 50% year-over-year, driving overall revenue growth of 34% year-over-year. Migrations continue on pace, and we welcomed 11,746 net new customers, with over 99% landing in the cloud. We also took a moment to re-evaluate the way we define a \u201ccustomer\u201d and the way we break down revenue in our reported results. The updated customer definition and supplemental revenue reporting provide a more team-centric view and align our stakeholders with how we evaluate our business. More details below. Good, good, goooooood, good migrations A year after announcing the end of sales for our Server products, migration momentum continues to build steadily. Revenue from our Cloud products grew 53% year-over-year with the help of strong Premium edition adoption and the steady drumbeat of continual improvements to our Cloud platform. All that said, migrating our Server customers is a multi-year journey, with much of it still ahead of us. To help smooth the way, we consolidated all our migration content in our updated Atlassian Migration Center this quarter. This hub serves as customers\u2019 one-stop shop, providing clear steps for progressing through each phase. Our original Migration Center generated thousands of Cloud migration trials in FY21, and we\u2019re excited to watch the updated version build on that success. Speaking of building on successes, we continue to improve on our world-class Cloud platform. We\u2019ve always prioritized the rights and privacy of customers (one of our values is \u201cdon\u2019t #@!% the customer,\u201d after all), and this quarter we took it to the next level when Atlassian signed on to the Trusted Cloud Principles initiative. As one of the initial signatories, we\u2019re joining tech leaders such as ",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/teamq12022shareholderlet.htm"
+              }
+            ],
+            "accounting_flags": {
+              "constant_currency": false,
+              "non_gaap": true,
+              "restated_or_recast": false
+            },
+            "classification": "EARNINGS_RELEASE",
+            "classification_evidence": {
+              "earnings_pattern": true,
+              "future_release_notice": false,
+              "guidance_only": false,
+              "numerical_results": true,
+              "posted_actual_results_in_companion": false,
+              "preliminary": false
+            },
+            "daily_entry_anchor_api": "2021-10-28",
+            "daily_entry_anchor_index": "2021-10-28",
+            "daily_entry_invariant": true,
+            "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "exhibit_candidates": [
+              {
+                "description": "3 | EX-99.2 | teamq12022shareholderlet.htm | EX-99.2 | 63365",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/10c8b26a20226616adda4f2a8ee1c1beb71e763b9babe48a12c363c6718f3007.htm",
+                "status": "ACCOUNTING_COMPANION_SHAREHOLDER_LETTER",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/teamq12022shareholderlet.htm"
+              },
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": false
+                },
+                "classification": "EARNINGS_RELEASE",
+                "classification_evidence": {
+                  "earnings_pattern": true,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "description": "2 | EX-99.1 | ex991q1fy22.htm | EX-99.1 | 281406",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f2f3eead9762f80165e2c345e0984cf0c9be62b0d3df5b3ef6d00fa119e51342.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "so issued a letter to its shareholders announcing its financial results for the quarter ended September 30, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": " Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2021 2020 Revenues: Subscription $ 435,296 $ 277,964 Maintenance 130,590 127,694 Other 48,138 53,848 Tot",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "ed 252,106 248,015 (1) Amounts include share-based payment expense, as follows: Three Months Ended September 30, 2021 2020 Cost of revenues $ 7,845 $ 5,256 Research and development 72,602 61,451 Marketing and sales 18",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "240 (2) Amounts include amortization of acquired intangible assets, as follows: Three Months Ended September 30, 2021 2020 Cost of revenues $ 5,689 $ 5,419 Research and development 94 41 Marketing and sales 2,271 2,29",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "ion Plc Consolidated Statements of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended September 30, 2021 2020 Operating activities Loss before income tax benefit (expense) $ (392,118) $ (24,324) Adjustmen",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "orporation Plc Revenues by Deployment Options (U.S. $ in thousands) (unaudited) Three Months Ended September 30, 2021 2020 Cloud $ 317,903 $ 207,320 Data Center 111,195 66,349 Server (1) 139,547 149,831 Marketplace an",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "FRS Results (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2021 2020 Gross profit IFRS gross profit $ 516,006 $ 385,822 Plus: Share-based payment expense 7,845 5,2",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "were not included in the IFRS calculation of diluted net loss per share for the three months ended September 30, 2021 and 2020 because the effect would have been anti-dilutive. 10 Atlassian Corporation Plc Reconciliat",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-09-30",
+                    "raw_kind": "three months",
+                    "source": "earnings_exhibit"
+                  }
+                ],
+                "period_end": "2021-09-30",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2021-09-30",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2021-10-28"
+                ],
+                "quarter_ordinal": 1,
+                "release_date": "2021-10-28",
+                "release_date_candidates": [
+                  "2021-10-28"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/ex991q1fy22.htm"
+              }
+            ],
+            "exhibit_description": "2 | EX-99.1 | ex991q1fy22.htm | EX-99.1 | 281406",
+            "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f2f3eead9762f80165e2c345e0984cf0c9be62b0d3df5b3ef6d00fa119e51342.htm",
+            "exhibit_sha256": "1fd3e780ea8e882dc1a051346fcaa80a03bef76d4753dd9aaf16dbcef4369a46",
+            "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/ex991q1fy22.htm",
+            "filing_date": "2021-10-28",
+            "form": "6-K",
+            "index_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b96502dd2218f81dd3206bfcf4473b45879c1d328c1c0df506f0484ded259448.html",
+            "item_202_excerpt": "6-K 1 a6-kearningreleaseq1fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 October 28, 2021 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On October 28, 2021, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also issued a letter to its shareholders announcing its financial results for the quarter ended September 30, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Departure of Certain Officers . The Company also announced that James Beer will be retiring as its Chief Financial Officer following the end of fiscal year 2022 on June 30, 2022. Mr. Beer indicated his pending departure is not due to a dispute or disagreement with the Company. The Company has begun a search for a Chief Financial Officer to succeed Mr. Beer. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cDeparture of Certain Officers\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d) or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: October 28, 2021 Atlassian Corporation Plc /s/ James Beer James Beer Chief Financial Officer Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated October 28, 2021. 99.2 Shareholder Letter dated October 28, 2021.",
+            "items": "",
+            "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+            "period_candidates": [
+              {
+                "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2021-09-30",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "so issued a letter to its shareholders announcing its financial results for the quarter ended September 30, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2021-09-30",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": " Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2021 2020 Revenues: Subscription $ 435,296 $ 277,964 Maintenance 130,590 127,694 Other 48,138 53,848 Tot",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "ed 252,106 248,015 (1) Amounts include share-based payment expense, as follows: Three Months Ended September 30, 2021 2020 Cost of revenues $ 7,845 $ 5,256 Research and development 72,602 61,451 Marketing and sales 18",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "240 (2) Amounts include amortization of acquired intangible assets, as follows: Three Months Ended September 30, 2021 2020 Cost of revenues $ 5,689 $ 5,419 Research and development 94 41 Marketing and sales 2,271 2,29",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "ion Plc Consolidated Statements of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended September 30, 2021 2020 Operating activities Loss before income tax benefit (expense) $ (392,118) $ (24,324) Adjustmen",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "orporation Plc Revenues by Deployment Options (U.S. $ in thousands) (unaudited) Three Months Ended September 30, 2021 2020 Cloud $ 317,903 $ 207,320 Data Center 111,195 66,349 Server (1) 139,547 149,831 Marketplace an",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "FRS Results (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2021 2020 Gross profit IFRS gross profit $ 516,006 $ 385,822 Plus: Share-based payment expense 7,845 5,2",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "were not included in the IFRS calculation of diluted net loss per share for the three months ended September 30, 2021 and 2020 because the effect would have been anti-dilutive. 10 Atlassian Corporation Plc Reconciliat",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-09-30",
+                "raw_kind": "three months",
+                "source": "earnings_exhibit"
+              }
+            ],
+            "period_end": "2021-09-30",
+            "period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2021-09-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/db01be570ee9c6dd99731f08cb168f811764b600b4fdc879af60ab6aa16590a5.htm",
+            "primary_release_date_candidates": [
+              "2021-10-28"
+            ],
+            "primary_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/a6-kearningreleaseq1fy22.htm",
+            "quarter_ordinal": 1,
+            "release_date": "2021-10-28",
+            "release_date_candidates": [
+              "2021-10-28"
+            ],
+            "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+            "release_excerpt": "EX-99.1 2 ex991q1fy22.htm EX-99.1 Document Atlassian Announces First Quarter Fiscal Year 2022 Results Quarterly revenue of $614 million, up 34% year-over-year Quarterly subscription revenue of $435 million, up 57% year-over-year Quarterly IFRS operating margin of 6% and non-IFRS operating margin of 27% Quarterly cash flow from operations of $78 million and free cash flow of $59 million TEAM, Anywhere/SAN FRANCISCO (October 28, 2021) \u2014 Atlassian Corporation Plc (NASDAQ: TEAM), a leading provider of team collaboration and productivity software, today announced financial results for its first quarter of fiscal year 2022 ended September 30, 2021 and released a shareholder letter available on Atlassian\u2019s Work Life blog at http://atlassian.com/blog/announcements/shareholder-letter-q1fy22 . The shareholder letter was also posted to the Investor Relations section of Atlassian\u2019s website at https://investors.atlassian.com . \u201cWhen Scott and I started Atlassian almost 20 years ago, we wanted to create an amazing company where people love coming to work every day,\u201d said Mike Cannon-Brookes, Atlassian\u2019s co-founder and co-CEO. \u201cWe are beyond thrilled to be recognized amongst the top 25 companies in the World\u2019s Best Workplaces 2021 by Great Place to Work. This is a testament to the true stewards of our culture \u2014 the many thousands of Atlassians we have around the world who live our values every day.\u201d \u201cWe continue to deliver value to our customers and innovate across all three of our core markets,\u201d said Scott Farquhar, Atlassian\u2019s co-founder and co-CEO. \u201cOne example we\u2019re most proud of is Jira Service Management being named the sole visionary in Gartner\u2019s 2021 Magic Quadrant for IT Service Management Tools in its inaugural year in market.\u201d First Quarter Fiscal Year 2022 Financial Highlights: On an IFRS basis, Atlassian reported: \u2022 Revenue: Total revenue was $614.0 million for the first quarter of fiscal year 2022, up 34% from $459.5 million for the first quarter of fiscal year 2021. \u2022 Operating Income and Operating Margin: Operating income was $39.6 million for the first quarter of fiscal year 2022, compared with an operating income of $11.9 million for the first quarter of fiscal year 2021. Operating margin was 6% for the first quarter of fiscal year 2022, compared with 3% for the first quarter of fiscal year 2021. \u2022 Net Loss and Net Loss Per Diluted Share: Net loss was $400.1 million for the first quarter of fiscal year 2022, compared with a net loss of $21.6 million for the first quarter of fiscal year 2021. Net loss per diluted share was $1.59 for the first quarter of fiscal year 2022, compared with a net loss per diluted share of $0.09 for the first quarter of fiscal year 2021. Net loss for the first quarter of fiscal year 2022 included a charge of $424.5 million recorded in \u201cother non-operating expense, net,\u201d compared with a charge of $27.5 million in the first quarter of fiscal year 2021 relating to Atlassian\u2019s exchangeable senior notes and related capped calls. Of this amount, a loss of $370.4 million is related to marking to fair value the exchange feature of the notes and related capped calls that remain outstanding as of quarter end. In addition, a net loss of $54.1 million is related to the net impact of settling the early exchange requests of the notes and unwinding of the related capped calls during this quarter. \u2022 Balance Sheet: Cash and cash equivalents, and short-term investments at the end of the first quarter of fiscal year 2022 totaled $1.6 billion. During the first quarter of fiscal year 2022, Atlassian drew $650.0 million from the term loan facility, used $314.3 million in cash to settle the early exchange requests of the notes and received $31.0 million in cash from the unwinding of the related capped calls. The net impact resulted in cash inflows of $366.7 million, which is reflected in cash provided by (used in) financing activities on our Consolidated Statements of Cash Flows. 1 On a non-IFRS basis, Atlassian reported: \u2022 Operating Income and Operating Margin: Operating income was $166.7 million for the first quarter of fiscal year 2022, compared with operating income of $105.4 million for the first quarter of fiscal year 2021. Operating margin was 27% for the first quarter of fiscal year 2022, compared with 23% for the first quarter of fiscal year 2021. \u2022 Net Income and Net Income Per Diluted Share: Net income was $118.3 million for the first quarter of fiscal year 2022, compared with net income of $76.8 million for the first quarter of fiscal year 2021. Net income per diluted share was $0.46 for the first quarter of fiscal year 2022, compared with $0.30 for the first quarter of fiscal year 2021. \u2022 Free Cash Flow: Cash flow from operations was $78.4 million and free cash flow was $59.3 million for the first quarter of fiscal year 2022. Free cash flow margin for the first quarter of fiscal year 2022 was 10%. A reconciliation of IFRS to non-IFRS financial measures has been provided in the financial statement tables included in this press release. An explanation of these measures is also included below, under the heading \u201cAbout Non-IFRS Financial Measures.\u201d Recent Business Highlights: \u2022 Ranked Among the Top 25 Companies Globally by Great Place to Work: Atlassian was included in the list of the World\u2019s Best Workplaces 2021 by Great Place to Work. Atlassian is proud to be recognized for its efforts in creating a culture in which, regardless of where employees are located across the globe, they feel connected to the company, its values, and their work. \u2022 Sustainability Annual Report: Atlassian released its fiscal year 2021 sustainability report, announcing another year of operating on 100% renewable energy and its ambitions to achieve net-zero emissions by 2050. Atlassian continues its commitment to protecting customer privacy, executing on its diversity, equity, and inclusion (DEI) strategy, and giving back through the philanthropic programs run by the Atlassian Foundation. Atlassian recently announced it had moved its climate ambitions forward and is now targeting net-zero emissions by 2040. \u2022 Recognized in Magic Quadrant for IT Service Management : Atlassian was named a Visionary in Gartner\u2019s 2021 Magic Quadrant for IT Service Management (ITSM) Tools. Atlassian\u2019s Jira Service Management solution focuses on the convergence of digital experiences for development, operational, and business teams. Over 35,000 customers rely on Jira Service Management for modern, high-velocity ITSM. \u2022 Partnership with Snyk: Atlassian deepened its partnership with Snyk, a leader in developer security and a vital part of the Atlassian ecosystem, with an investment in Snyk\u2019s Series F financing. Snyk integrates with Jira Software and Bitbucket, infusing developers\u2019 workflows with a security-first mindset and protecting their code against issues like open source vulnerabilities that may arise during the development process. \u2022 Trusted Cloud Principles Commitment: Atlassian joined other technology companies to establish the Trusted Cloud Principles - a commitment to protect the rights of its customers. With this initiative, Atlassian along with other tech leaders such as Amazon, Google, and Microsoft, commit to working with governments to ensure digital connectivity among nations, protect privacy and data security in the cloud, and promote public safety. \u2022 Customer Growth: Atlassian ended its first quarter of fiscal year 2022 with a total customer count, on an active subscription or maintenance agreement basis, of 216,500 customers, adding 11,746 net new customers during the quarter. It is important to note that the definition of a customer was updated during the quarter primarily to exclude single user customers. \u2022 Expanded Board of Directors : Atlassian appointed Michelle Zatlyn to its board of directors. Michelle is the co-Founder, COO, and President of Cloudflare, Inc., the security, performance, and reliability company helping to build a better Internet. \u2022 Executive Leadership Promotions: Anu Bharadwaj was named Atlassian\u2019s Chief Operating Officer and Joff Redfern was named Atlassian\u2019s Chief Product Officer. Anu joined Atlassian in January 2014 and was most recently Head of Enterprise and Cloud Platform. Joff joined Atlassian in June 2017 and was most recently Vice President of Product. 2 \u2022 CFO Transition: Atlassian also announced that James Beer will retire as CFO at the end of June 2022. James joined as CFO in February 2018 and has played a critical role in helping the company scale. When James joined Atlassian, the company had 2,500 employees, 119,000 customers, and would generate revenue of $881 million in fiscal year 2018. As of the end of the first quarter of fiscal year 2022, the company had nearly 7,000 employees, over 216,000 customers, and is on pace for an annualized revenue run rate of $2.5 billion. Atlassian has already begun an external search for a CFO to succeed James. \u201cJames has been invaluable in driving operational and financia",
+            "security": {
+              "common_stock_evidence": [],
+              "historical_symbol": null,
+              "inline_trading_symbols": [],
+              "status": "UNRESOLVED_COMMON_CLASS",
+              "symbols": []
+            },
+            "text_characters": 29773,
+            "timing_match": true,
+            "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+          },
+          "match": {
+            "common_explicit_scopes": [
+              "quarter"
+            ],
+            "current_period_evidence": {
+              "excerpt": "oration (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this current report on Form 8-K and is ",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-09-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "current_quarter": 1,
+            "matched_scope": "quarter",
+            "numeric_measure_comparability": "NOT_CERTIFIED_BY_DOCUMENT_JOIN",
+            "prior_filed_before_current": true,
+            "prior_period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended September 30, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2021-09-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "prior_quarter": 1,
+            "reason": "explicit_same_period_end_and_scope",
+            "verified": true
+          }
+        }
+      ],
+      "metadata_candidates": [
+        {
+          "accession": "0001650372-21-000038",
+          "filing_date": "2021-10-19",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6knoticeofagm2021.htm"
+        },
+        {
+          "accession": "0001650372-21-000043",
+          "filing_date": "2021-10-28",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kearningreleaseq1fy22.htm"
+        },
+        {
+          "accession": "0001650372-21-000048",
+          "filing_date": "2021-10-29",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kq1fy22quarterlyreport.htm"
+        },
+        {
+          "accession": "0001650372-21-000050",
+          "filing_date": "2021-12-03",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kresultsofagm2021.htm"
+        }
+      ],
+      "metadata_end": "2021-12-31",
+      "metadata_start": "2021-10-01",
+      "slot_id": "0001650372-W1"
+    },
+    {
+      "candidate_narrowing": "prior6-K primary filename explicitly earningrelease; actual release and period verified from body",
+      "forms": [
+        "6-K"
+      ],
+      "inspected": [
+        {
+          "event": {
+            "acceptance_eastern": "2022-01-27T16:06:50-05:00",
+            "acceptance_utc": "2022-01-27T21:06:50.000Z",
+            "accession": "0001650372-22-000003",
+            "accounting_companions": [
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": true
+                },
+                "classification": "NOT_VERIFIED_EARNINGS",
+                "classification_evidence": {
+                  "earnings_pattern": false,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "document_type": "SHAREHOLDER_LETTER",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a781a0dd13586c4d80e4b8abd02269c87b26c181faf78b0e1c7677381d734245.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "published a letter to its shareholders announcing its financial results for the quarter ended December 31, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  }
+                ],
+                "period_end": "2021-12-31",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2021-12-31",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2022-01-27"
+                ],
+                "quarter_ordinal": null,
+                "release_date": "2022-01-27",
+                "release_date_candidates": [
+                  "2022-01-27"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "sha256": "c9fc53eb8f056e41b7e3d46e89448a2dc99cbd52594bed23ab0d90f8db79edc9",
+                "source_evidence": "6-K 1 a6-kearningreleaseq2fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 January 27, 2022 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On January 27, 2022, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also published a letter to its shareholders announcing its financial results for the quarter ended December 31, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Departure of Certain Officers . The Company also announced that Sri Viswanath will be leaving as its Chief Technology Officer at the end of fiscal year 2022. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cDeparture of Certain Officers\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: January 27, 2022 Atlassian Corporation Plc /s/ James Beer James Beer Chief Financial Officer Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated January 27, 2022. 99.2 Shareholder Letter dated January 27, 2022.",
+                "text_excerpt": "EX-99.2 3 teamq22022shareholderlet.htm EX-99.2 teamq22022shareholderlet Q2 FY22 | January 27, 2022 Shareholder Letter Q2 FY22 Fellow shareholders, Each new year prompts us to pause and take stock. More than anything, we\u2019re grateful for our customers, staff, and stakeholders. Their determination and resilience inspire us to bring our best, most energetic selves to work every day. Customers look to Atlassian for innovative products that take the \u201cwork\u201d out of teamwork, and we\u2019re committed to coming through for them. We\u2019re building a cloud platform that lets us ship new capabilities and products quickly, as we\u2019re beginning to see with Point A. By anticipating the trends in our three addressable markets, investing heavily in R&D, playing the long game with our uniquely efficient GTM model, and staying true to our values, Atlassian is delivering a metric tonne of value. Coming off a solid start to the fiscal year, the Atlassian flywheel kept our momentum high and delivered a bonza Q2. We landed over 10,000 net new customers this quarter, 98% of whom chose Cloud, and made steady progress migrating our on-premises customers. Total revenue grew 37% year-over-year, driven by subscription revenue, which grew 64% year-over-year. Atlassian doesn\u2019t need to reinvent itself every January 1st. We play the long game. As a dedicated team of over 7,000 (and growing!), we march forward with our eyes on the horizon, shaping and living the future of work every single day so our customers are equipped for whatever comes next. Hey! You! Get off of onto my cloud! \u26c5 \ud83c\udfb8 Along with the obvious benefits like hosted infrastructure and unified user management, many long-time customers are discovering that migrating to our Cloud products also offers a chance to streamline the way they configure their Atlassian products and maximize the value they get. Marty Hagewood, a software development manager at EMC Insurance Companies, experienced this first-hand. When EMC decided to move from their Data Center deployments to Cloud, they saw a unique chance to make long-lasting improvements. \u201cWe said, \u2018Let\u2019s not just move it over. Let\u2019s rearrange the blocks a little bit and challenge ourselves to ask questions,'\u201d he recalls. Those questions prompted them to simplify. We think Marie Kondo would approve. Between migrations, customers expanding their footprint in the Cloud, strong adoption of Premium editions, and new customer additions driven by Free editions, Cloud Q2 revenue was up 58% year-over-yea",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000003/teamq22022shareholderlet.htm"
+              }
+            ],
+            "accounting_flags": {
+              "constant_currency": false,
+              "non_gaap": true,
+              "restated_or_recast": false
+            },
+            "classification": "EARNINGS_RELEASE",
+            "classification_evidence": {
+              "earnings_pattern": true,
+              "future_release_notice": false,
+              "guidance_only": false,
+              "numerical_results": true,
+              "posted_actual_results_in_companion": false,
+              "preliminary": false
+            },
+            "daily_entry_anchor_api": "2022-01-27",
+            "daily_entry_anchor_index": "2022-01-27",
+            "daily_entry_invariant": true,
+            "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "exhibit_candidates": [
+              {
+                "description": "3 | EX-99.2 | teamq22022shareholderlet.htm | EX-99.2 | 63672",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a781a0dd13586c4d80e4b8abd02269c87b26c181faf78b0e1c7677381d734245.htm",
+                "status": "ACCOUNTING_COMPANION_SHAREHOLDER_LETTER",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000003/teamq22022shareholderlet.htm"
+              },
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": false
+                },
+                "classification": "EARNINGS_RELEASE",
+                "classification_evidence": {
+                  "earnings_pattern": true,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "description": "2 | EX-99.1 | ex991q2fy22.htm | EX-99.1 | 365183",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/65cb386989383e1c85a081deeb336b5d5672c4483c5069f115e17497ffff4e74.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "published a letter to its shareholders announcing its financial results for the quarter ended December 31, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "were not included in the IFRS calculation of diluted net loss per share for the three and six months ended December 31, 2021 and 2020 because the effect would have been anti-dilutive. 10 Atlassian Corporation Plc Reconciliat",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "three and six months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "n thousands, except per share data) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Revenues: Subscription $ 508,987 $ 310,675 $ 944,283 $ 588,639 Maintenance 127,059 1",
+                    "explicit_scopes": [],
+                    "kind": "six months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "six months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "nclude share-based payment expense, as follows: Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Cost of revenues $ 13,631 $ 6,801 $ 21,476 $ 12,057 Research and development 147,233",
+                    "explicit_scopes": [],
+                    "kind": "six months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "six months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "tion of acquired intangible assets, as follows: Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Cost of revenues $ 5,599 $ 5,413 $ 11,288 $ 10,832 Research and development 93 42 18",
+                    "explicit_scopes": [],
+                    "kind": "six months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "six months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Operating activities Loss before income tax expense $ (73,038) $ (607,372) $ (465,15",
+                    "explicit_scopes": [],
+                    "kind": "six months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "six months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "yment Options (U.S. $ in thousands) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Cloud $ 364,099 $ 230,412 $ 682,002 $ 437,733 Data Center 139,108 76,060 250,303 142",
+                    "explicit_scopes": [],
+                    "kind": "six months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "six months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "n thousands, except per share data) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Gross profit IFRS gross profit $ 573,365 $ 421,877 $ 1,089,371 $ 807,699 Plus: Share",
+                    "explicit_scopes": [],
+                    "kind": "six months",
+                    "period_end": "2021-12-31",
+                    "raw_kind": "six months",
+                    "source": "earnings_exhibit"
+                  }
+                ],
+                "period_end": "2021-12-31",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2021-12-31",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2022-01-27"
+                ],
+                "quarter_ordinal": 2,
+                "release_date": "2022-01-27",
+                "release_date_candidates": [
+                  "2022-01-27"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000003/ex991q2fy22.htm"
+              }
+            ],
+            "exhibit_description": "2 | EX-99.1 | ex991q2fy22.htm | EX-99.1 | 365183",
+            "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/65cb386989383e1c85a081deeb336b5d5672c4483c5069f115e17497ffff4e74.htm",
+            "exhibit_sha256": "4c23b8f701ba7a4ab2455550e8e31bd0c132747bc30ec8fd0db9414dfae7d288",
+            "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000003/ex991q2fy22.htm",
+            "filing_date": "2022-01-27",
+            "form": "6-K",
+            "index_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/2ea4209dc0a809a8275fad2502b668d44a376da205d26e1d2ec68d0d33283609.html",
+            "item_202_excerpt": "6-K 1 a6-kearningreleaseq2fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 January 27, 2022 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On January 27, 2022, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also published a letter to its shareholders announcing its financial results for the quarter ended December 31, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Departure of Certain Officers . The Company also announced that Sri Viswanath will be leaving as its Chief Technology Officer at the end of fiscal year 2022. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cDeparture of Certain Officers\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: January 27, 2022 Atlassian Corporation Plc /s/ James Beer James Beer Chief Financial Officer Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated January 27, 2022. 99.2 Shareholder Letter dated January 27, 2022.",
+            "items": "",
+            "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+            "period_candidates": [
+              {
+                "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2021-12-31",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "published a letter to its shareholders announcing its financial results for the quarter ended December 31, 2021 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2021-12-31",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "were not included in the IFRS calculation of diluted net loss per share for the three and six months ended December 31, 2021 and 2020 because the effect would have been anti-dilutive. 10 Atlassian Corporation Plc Reconciliat",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2021-12-31",
+                "raw_kind": "three and six months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "n thousands, except per share data) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Revenues: Subscription $ 508,987 $ 310,675 $ 944,283 $ 588,639 Maintenance 127,059 1",
+                "explicit_scopes": [],
+                "kind": "six months",
+                "period_end": "2021-12-31",
+                "raw_kind": "six months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "nclude share-based payment expense, as follows: Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Cost of revenues $ 13,631 $ 6,801 $ 21,476 $ 12,057 Research and development 147,233",
+                "explicit_scopes": [],
+                "kind": "six months",
+                "period_end": "2021-12-31",
+                "raw_kind": "six months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "tion of acquired intangible assets, as follows: Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Cost of revenues $ 5,599 $ 5,413 $ 11,288 $ 10,832 Research and development 93 42 18",
+                "explicit_scopes": [],
+                "kind": "six months",
+                "period_end": "2021-12-31",
+                "raw_kind": "six months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Operating activities Loss before income tax expense $ (73,038) $ (607,372) $ (465,15",
+                "explicit_scopes": [],
+                "kind": "six months",
+                "period_end": "2021-12-31",
+                "raw_kind": "six months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "yment Options (U.S. $ in thousands) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Cloud $ 364,099 $ 230,412 $ 682,002 $ 437,733 Data Center 139,108 76,060 250,303 142",
+                "explicit_scopes": [],
+                "kind": "six months",
+                "period_end": "2021-12-31",
+                "raw_kind": "six months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "n thousands, except per share data) (unaudited) Three Months Ended December 31, Six Months Ended December 31, 2021 2020 2021 2020 Gross profit IFRS gross profit $ 573,365 $ 421,877 $ 1,089,371 $ 807,699 Plus: Share",
+                "explicit_scopes": [],
+                "kind": "six months",
+                "period_end": "2021-12-31",
+                "raw_kind": "six months",
+                "source": "earnings_exhibit"
+              }
+            ],
+            "period_end": "2021-12-31",
+            "period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2021-12-31",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d9f12e5d48d37ce4a8b33c395f95a91eec5d513f2e07ba75ea3772f80b5e776b.htm",
+            "primary_release_date_candidates": [
+              "2022-01-27"
+            ],
+            "primary_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000003/a6-kearningreleaseq2fy22.htm",
+            "quarter_ordinal": 2,
+            "release_date": "2022-01-27",
+            "release_date_candidates": [
+              "2022-01-27"
+            ],
+            "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+            "release_excerpt": "EX-99.1 2 ex991q2fy22.htm EX-99.1 Document Atlassian Announces Second Quarter Fiscal Year 2022 Results Quarterly revenue of $689 million, up 37% year-over-year Quarterly subscription revenue of $509 million, up 64% year-over-year Quarterly IFRS operating margin of (10)% and non-IFRS operating margin of 26% Quarterly cash flow from operations of $222 million and free cash flow of $197 million TEAM, Anywhere/SAN FRANCISCO (January 27, 2022) \u2014 Atlassian Corporation Plc (NASDAQ: TEAM), a leading provider of team collaboration and productivity software, today announced financial results for its second quarter of fiscal year 2022 ended December 31, 2021 and released a shareholder letter available on Atlassian\u2019s Work Life blog at http://atlassian.com/blog/announcements/shareholder-letter-q2fy22 . The shareholder letter was also posted to the Investor Relations section of Atlassian\u2019s website at https://investors.atlassian.com . \u201cQ2 was another strong quarter for Atlassian with over 10,000 net new customers this quarter, 98% of which were in the Cloud,\u201d said Scott Farquhar, Atlassian\u2019s co-founder and co-CEO. \u201cWe also saw subscription revenue grow 64% year-over-year, which reflects our continued investment in our Cloud platform and the strong focus and effort we have put in to helping our customers seamlessly move to Cloud.\u201d \u201cThe Atlassian Marketplace continues to go from strength to strength surpassing $2 billion in sales and shows no signs of slowing down,\u201d said Mike Cannon-Brookes, Atlassian\u2019s co-founder and co-CEO. \u201cWe recognise that the opportunities for Atlassian, our customers and our partners have never been greater as companies accelerate their future of work transformations, and we\u2019re incredibly proud of this partner ecosystem which is fuelling innovation and helping to deliver on our mission to unleash the potential of every team.\u201d Second Quarter Fiscal Year 2022 Financial Highlights: On an IFRS basis, Atlassian reported: \u2022 Revenue: Total revenue was $688.5 million for the second quarter of fiscal year 2022, up 37% from $501.4 million for the second quarter of fiscal year 2021. \u2022 Operating Income (Loss) and Operating Margin: Operating loss was $66.7 million for the second quarter of fiscal year 2022, compared with an operating income of $27.7 million for the second quarter of fiscal year 2021. Operating margin was (10)% for the second quarter of fiscal year 2022, compared with 6% for the second quarter of fiscal year 2021. \u2022 Net Loss and Net Loss Per Diluted Share: Net loss was $77.5 million for the second quarter of fiscal year 2022, compared with a net loss of $621.5 million for the second quarter of fiscal year 2021. Net loss per diluted share was $0.31 for the second quarter of fiscal year 2022, compared with a net loss per diluted share of $2.49 for the second quarter of fiscal year 2021. \u2022 Balance Sheet: Cash and cash equivalents plus short-term investments at the end of the second quarter of fiscal year 2022 totaled $986.0 million. During the second quarter of fiscal year 2022, Atlassian drew $350.0 million from its term loan facility, used $1.2 billion in cash to settle the remaining portion of its outstanding exchangeable senior notes and received $104.5 million in cash from the unwinding of the related capped calls. The net impact resulted in cash outflows of $779.9 million, which is reflected in net cash used in financing activities on our Consolidated Statements of Cash Flows. On a non-IFRS basis, Atlassian reported: \u2022 Operating Income and Operating Margin: Operating income was $178.3 million for the second quarter of fiscal year 2022, compared with operating income of $143.2 million for the second quarter of fiscal year 2021. Operating margin was 26% for the second quarter of fiscal year 2022, compared with 29% for the second quarter of fiscal year 2021. 1 \u2022 Net Income and Net Income Per Diluted Share: Net income was $127.3 million for the second quarter of fiscal year 2022, compared with $95.3 million for the second quarter of fiscal year 2021. Net income per diluted share was $0.50 for the second quarter of fiscal year 2022, compared with $0.37 for the second quarter of fiscal year 2021. \u2022 Free Cash Flow: Cash flow from operations was $221.7 million and free cash flow was $197.5 million for the second quarter of fiscal year 2022. Free cash flow margin for the second quarter of fiscal year 2022 was 29%. A reconciliation of IFRS to non-IFRS financial measures has been provided in the financial statement tables included in this press release. An explanation of these measures is also included below, under the heading \u201cAbout Non-IFRS Financial Measures.\u201d Recent Business Highlights: \u2022 Atlassian Marketplace Surpasses $2 Billion in Lifetime Sales: During the second quarter of fiscal 2022, the Atlassian Marketplace surpassed $2 billion in lifetime sales since its inception in 2012. Atlassian\u2019s 1,250+ Marketplace Partners help deliver additional value to the tens of thousands of customers that utilize a Marketplace app. \u2022 Leader in Forrester Wave for Enterprise Service Management: Atlassian was named a Leader in The Forrester Wave\u2122: Enterprise Service Management, Q4 2021. In addition, Atlassian\u2019s strategy for enterprise service management (ESM) received the highest score of all vendors in this report. Over 35,000 customers trust Jira Service Management to deliver exceptional service experiences for internal and external customers. \u2022 Strategic Investments in Miro and Clockwise: Atlassian deepened its partnership with Miro, a visual collaboration company, by participating in their Series C funding round earlier this month. Miro\u2019s virtual whiteboarding product integrates with Jira and Confluence to drive customer innovation. Atlassian also invested in Clockwise, a scheduling optimization app provider. Clockwise\u2019s focus on team productivity aligns with Atlassian\u2019s mission to unleash the potential of every team. These investments showcase Atlassian Ventures\u2019 focus on driving customer value and expanding the economy around Atlassian. \u2022 Percept.ai Acquisition: Atlassian announced today the acquisition of Percept.ai, an AI-powered virtual agent technology provider which will expand frontline support capabilities in Jira Service Management. The acquisition builds on Atlassian\u2019s previous investments in AI and machine learning, and will help customers efficiently deliver great employee and customer support experiences at high velocity. \u2022 Atlassian Team \u201922: Atlassian will hold its flagship customer event in Las Vegas, at the Venetian Convention and Expo Center, from April 5 through April 7, 2022. Virtual attendance and global viewing parties will also be available from April 6 through April 7, 2022. Thousands of customers will discover Atlassian solutions, skills, and ideas to transform how their teams collaborate, power digital transformation, and drive cultural change. General information on Team \u201922 can be found at https://events.atlassian.com/team22/home . \u2022 Customer Growth: Atlassian ended its second quarter of fiscal year 2022 with a total customer count, on an active subscription or maintenance agreement basis, of 226,521 customers, adding 10,021 net new customers during the quarter. CTO transition: Atlassian announced today that Sri Viswanath will transition his CTO responsibilities at the end of June 2022. Sri joined as CTO in January 2016, shortly after Atlassian\u2019s initial public offering. When Sri joined Atlassian, the company had approximately 800 employees in R&D and 54,000 customers. Sri has been instrumental in transforming the architecture of Atlassian\u2019s platform and products to establish the foundation of its cloud-first business. As of the end of the second quarter of fiscal year 2022, the company had nearly 4,000 Atlassians under Sri\u2019s leadership, supported more than 226,000 customers, and quarterly Cloud revenue had grown approximately 13x over his time at the company. \u201cTo say Sri has been instrumental in this tremendous growth and scale would be an understatement. Particularly in our shift to cloud and building a world-class cloud platform,\u201d said Mike Cannon-Brookes, Atlassian\u2019s co-founder and co-CEO. \u201cHe is a respected and inspiring leader as well as a natural mentor, nurturing the careers of countless Atlassians during his tenure. While Scott and I are sad to see him go, we are thankful for the huge impact he has had 2 on our customers, our growth, and our culture. We look forward to cheering him on in his next chapter \u2014 whatever that may be.\u201d Financial Targets: Atlassian is providing its financial targets for the third quarter of fiscal year 2022 as follows: Third Quarter Fiscal Year 2022: \u2022 Total revenue is expected to be in the range of $690 million to $705 million. \u2022 Gross margin is expected to be in the range of 82% to 83% on an IFRS basis and in the range of 84% to 85% on a non-IFRS basis. \u2022 Operating margin is expected to be in the range of (10%) to (9%) on an IFRS basis and in the range of 17% to 18% on",
+            "security": {
+              "common_stock_evidence": [],
+              "historical_symbol": null,
+              "inline_trading_symbols": [],
+              "status": "UNRESOLVED_COMMON_CLASS",
+              "symbols": []
+            },
+            "text_characters": 30399,
+            "timing_match": true,
+            "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+          },
+          "match": {
+            "common_explicit_scopes": [
+              "quarter"
+            ],
+            "current_period_evidence": {
+              "excerpt": "oration (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2022 (the \u201c Press Release \u201d). A copy of the Press Release is attached as Exhibit 99.1 to this current re",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-12-31",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "current_quarter": 2,
+            "matched_scope": "quarter",
+            "numeric_measure_comparability": "NOT_CERTIFIED_BY_DOCUMENT_JOIN",
+            "prior_filed_before_current": true,
+            "prior_period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended December 31, 2021. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2021-12-31",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "prior_quarter": 2,
+            "reason": "explicit_same_period_end_and_scope",
+            "verified": true
+          }
+        }
+      ],
+      "metadata_candidates": [
+        {
+          "accession": "0001650372-22-000003",
+          "filing_date": "2022-01-27",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kearningreleaseq2fy22.htm"
+        },
+        {
+          "accession": "0001650372-22-000006",
+          "filing_date": "2022-01-28",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kq2fy22quarterlyreport.htm"
+        },
+        {
+          "accession": "0001650372-22-000008",
+          "filing_date": "2022-02-09",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kxredomicileannouncement.htm"
+        },
+        {
+          "accession": "0001650372-22-000031",
+          "filing_date": "2022-03-25",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kxaflforhq.htm"
+        }
+      ],
+      "metadata_end": "2022-03-31",
+      "metadata_start": "2022-01-01",
+      "slot_id": "0001650372-W2"
+    },
+    {
+      "candidate_narrowing": "prior6-K primary filename explicitly earningrelease; actual release and period verified from body",
+      "forms": [
+        "6-K"
+      ],
+      "inspected": [
+        {
+          "event": {
+            "acceptance_eastern": "2022-04-28T16:06:15-04:00",
+            "acceptance_utc": "2022-04-28T20:06:15.000Z",
+            "accession": "0001650372-22-000034",
+            "accounting_companions": [
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": false
+                },
+                "classification": "NOT_VERIFIED_EARNINGS",
+                "classification_evidence": {
+                  "earnings_pattern": false,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "document_type": "SHAREHOLDER_LETTER",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/3cbfe2afd4e12780fb8d1f40ac9e8fe1b79c15bcad4e0d4042eb7bafc271aeb4.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "published a letter to its shareholders announcing its financial results for the quarter ended March 31, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  }
+                ],
+                "period_end": "2022-03-31",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2022-03-31",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2022-04-28"
+                ],
+                "quarter_ordinal": null,
+                "release_date": "2022-04-28",
+                "release_date_candidates": [
+                  "2022-04-28"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "sha256": "f7b813c7a0fe227de475189386e8fbcaeb23fde86272c6d5633bee5723394847",
+                "source_evidence": "6-K 1 a6-kearningreleaseq3fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 April 28, 2022 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On April 28, 2022, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also published a letter to its shareholders announcing its financial results for the quarter ended March 31, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Appointment of Certain Officers . On April 28, 2022, the Company announced the appointment of Rajeev Rajan as its Chief Technology Officer, effective May 19, 2022. Mr. Rajan is currently Vice President, Head of Engineering for Facebook at Meta Platforms, Inc., a social networking company, and has served in this role since September 2021. He is also Head of Office in the Pacific Northwest Region and has served in this role since March 2021. From July 2017 to March 2021, Mr. Rajan served as an Engineering Director at Meta Platforms, Inc. From September 1994 to July 2017, Mr. Rajan served in various roles at Microsoft Corporation. Mr. Rajan holds a Bachelor of Engineering (Hons.) in Computer Science from Birla Institute of Technology and Science, Pilani, and a Master of Science in Computer Science from The Ohio State University. As previously announced last quarter, Sri Viswanath, the Company's current Chief Technology Officer will be leaving the Company at the end of fiscal year 2022. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cAppointment of Certain Officers\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: April 28, 2022 Atlassian Corporation Plc /s/ James Beer James Beer Chief Financial Officer Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated April 28, 2022. 99.2 Shareholder Letter dated April 28, 2022.",
+                "text_excerpt": "EX-99.2 3 teamq32022shareholderlet.htm EX-99.2 teamq32022shareholderlet Q3 FY22 | April 28, 2022 Shareholder Letter Q3 FY22 Fellow sh!reholders, Atl!ssi!n delivered ! strong qu!rter once !g!in. Subscription revenue grew 59% ye!r-over-ye!r, with Cloud revenue growing 60% ye!r-over-ye!r. We continue to see ! high level of dem!nd for our products !cross !ll of our three m!rkets, which highlights the signific!nt opportunities in front of us. We\u2019re fresh off !n !m!zing Te!m \u201822 in L!s Veg!s !nd !re more energized th!n ever. We spoke with customers !t every opportunity !nd le!rned more !bout how Atl!ssi!n c!n meet their needs, which we\u2019ll sh!re throughout this letter. If you missed us !t our Investor D!y event held !t Te!m \u201822, you c!n view !ll the m!teri!ls !nd w!tch ! recording on our investor relations site. We\u2019d love for you to le!rn more !bout our m!ssive m!rket opportunities, pl!tform, str!tegic bets, !nd future tr!jectory. Before !nything else, however, we w!nt to !cknowledge th!t we let our customers down when !n out!ge disrupted service for 775 customers e!rlier this month. This w!s not ! result of ! cyber-!tt!ck !nd there w!s no un!uthorized !ccess to customer d!t!. Although the incident !ffected ! tiny fr!ction of our 200,000+ cloud customer b!se, even one disrupted customer is one too m!ny. All !ffected customers were fully restored, !nd in the spirit of our \u201copen comp!ny, no bullshit\u201d v!lue , we will publish ! full post-incident review !t the end of this week. Oper!tion!l excellence is !ll !bout continuous le!rning !nd improvement. Ultim!tely, we\u2019ll be stronger bec!use of this experience. We fully underst!nd wh!t c!used the problem from ! technic!l !nd oper!tion!l st!ndpoint, !nd how to prevent simil!r incidents in the future. We now h!ve more robust incident response !nd communic!tions processes in pl!ce. And we\u2019re open to le!rning more !s we spe!k with !ffected customers individu!lly !bout how we c!n rebuild trust. From the CEOs 2 Investor Day 2022 at a glance Section 1 \u2013 Our three markets (PDF) Section 2 \u2013 The Atlassian platform (PDF) Section 3 \u2013 Building an iconic 100+ year company (PDF) Recording of Q&A segments Q3 FY22 3 Cloud-first things first Atl!ssi!n\u2019s world-cl!ss pl!tform !llows us to meet the diverse needs of customers !cross the glob!l !gile/DevOps, IT service m!n!gement (ITSM), !nd work m!n!gement m!rkets. For ex!mple, we !chieved HIPAA compli!nce for Jir! Softw!re !nd Confluence Cloud in Q3, with compli!nce for Jir! Service M!n!gemen",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000034/teamq32022shareholderlet.htm"
+              }
+            ],
+            "accounting_flags": {
+              "constant_currency": false,
+              "non_gaap": true,
+              "restated_or_recast": false
+            },
+            "classification": "EARNINGS_RELEASE",
+            "classification_evidence": {
+              "earnings_pattern": true,
+              "future_release_notice": false,
+              "guidance_only": false,
+              "numerical_results": true,
+              "posted_actual_results_in_companion": false,
+              "preliminary": false
+            },
+            "daily_entry_anchor_api": "2022-04-28",
+            "daily_entry_anchor_index": "2022-04-28",
+            "daily_entry_invariant": true,
+            "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "exhibit_candidates": [
+              {
+                "description": "3 | EX-99.2 | teamq32022shareholderlet.htm | EX-99.2 | 81598",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/3cbfe2afd4e12780fb8d1f40ac9e8fe1b79c15bcad4e0d4042eb7bafc271aeb4.htm",
+                "status": "ACCOUNTING_COMPANION_SHAREHOLDER_LETTER",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000034/teamq32022shareholderlet.htm"
+              },
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": false
+                },
+                "classification": "EARNINGS_RELEASE",
+                "classification_evidence": {
+                  "earnings_pattern": true,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "description": "2 | EX-99.1 | ex991q3fy22.htm | EX-99.1 | 366334",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/5357588a5237bddecf168364a035965014ee90b3ff782a534c3397f1d86b18f5.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "published a letter to its shareholders announcing its financial results for the quarter ended March 31, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "were not included in the IFRS calculation of diluted net loss per share for the three and nine months ended March 31, 2022 and nine months ended March 31, 2021 because the effect would have been anti-dilutive. 10 Atlassian",
+                    "explicit_scopes": [
+                      "quarter"
+                    ],
+                    "kind": "three months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "three and nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "s in thousands, except per share data) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Revenues: Subscription $ 555,126 $ 349,915 $ 1,499,409 $ 938,554 Maintenance 120,333",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "s include share-based payment expense, as follows: Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Cost of revenues $ 11,731 $ 6,495 $ 33,207 $ 18,552 Research and development 115,397",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "ization of acquired intangible assets, as follows: Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Cost of revenues $ 5,709 $ 5,554 $ 16,997 $ 16,386 Research and development 94 41 28",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "ts of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Operating activities Income (loss) before income tax expense $ (30,557) $ 211,050 $ ",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "ployment Options (U.S. $ in thousands) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Cloud $ 399,453 $ 249,879 $ 1,081,455 $ 687,611 Data Center 151,095 94,739 401,398 2",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "s in thousands, except per share data) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Gross profit IFRS gross profit $ 621,117 $ 483,840 $ 1,710,488 $ 1,291,539 Plus: Sha",
+                    "explicit_scopes": [],
+                    "kind": "nine months",
+                    "period_end": "2022-03-31",
+                    "raw_kind": "nine months",
+                    "source": "earnings_exhibit"
+                  }
+                ],
+                "period_end": "2022-03-31",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2022-03-31",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2022-04-28"
+                ],
+                "quarter_ordinal": 3,
+                "release_date": "2022-04-28",
+                "release_date_candidates": [
+                  "2022-04-28"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000034/ex991q3fy22.htm"
+              }
+            ],
+            "exhibit_description": "2 | EX-99.1 | ex991q3fy22.htm | EX-99.1 | 366334",
+            "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/5357588a5237bddecf168364a035965014ee90b3ff782a534c3397f1d86b18f5.htm",
+            "exhibit_sha256": "c81fd1b18504b59700f6bd79f89a6392800eb9a7abf4a9e4487edd3bd3eeeebb",
+            "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000034/ex991q3fy22.htm",
+            "filing_date": "2022-04-28",
+            "form": "6-K",
+            "index_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/51dba4a2582b17618b6834d10f2004a3294f6f29a526ecf228dbef1f676000ba.html",
+            "item_202_excerpt": "6-K 1 a6-kearningreleaseq3fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 April 28, 2022 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On April 28, 2022, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also published a letter to its shareholders announcing its financial results for the quarter ended March 31, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Appointment of Certain Officers . On April 28, 2022, the Company announced the appointment of Rajeev Rajan as its Chief Technology Officer, effective May 19, 2022. Mr. Rajan is currently Vice President, Head of Engineering for Facebook at Meta Platforms, Inc., a social networking company, and has served in this role since September 2021. He is also Head of Office in the Pacific Northwest Region and has served in this role since March 2021. From July 2017 to March 2021, Mr. Rajan served as an Engineering Director at Meta Platforms, Inc. From September 1994 to July 2017, Mr. Rajan served in various roles at Microsoft Corporation. Mr. Rajan holds a Bachelor of Engineering (Hons.) in Computer Science from Birla Institute of Technology and Science, Pilani, and a Master of Science in Computer Science from The Ohio State University. As previously announced last quarter, Sri Viswanath, the Company's current Chief Technology Officer will be leaving the Company at the end of fiscal year 2022. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cAppointment of Certain Officers\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: April 28, 2022 Atlassian Corporation Plc /s/ James Beer James Beer Chief Financial Officer Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated April 28, 2022. 99.2 Shareholder Letter dated April 28, 2022.",
+            "items": "",
+            "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+            "period_candidates": [
+              {
+                "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2022-03-31",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "published a letter to its shareholders announcing its financial results for the quarter ended March 31, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "quarter",
+                "period_end": "2022-03-31",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "were not included in the IFRS calculation of diluted net loss per share for the three and nine months ended March 31, 2022 and nine months ended March 31, 2021 because the effect would have been anti-dilutive. 10 Atlassian",
+                "explicit_scopes": [
+                  "quarter"
+                ],
+                "kind": "three months",
+                "period_end": "2022-03-31",
+                "raw_kind": "three and nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "s in thousands, except per share data) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Revenues: Subscription $ 555,126 $ 349,915 $ 1,499,409 $ 938,554 Maintenance 120,333",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2022-03-31",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "s include share-based payment expense, as follows: Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Cost of revenues $ 11,731 $ 6,495 $ 33,207 $ 18,552 Research and development 115,397",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2022-03-31",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "ization of acquired intangible assets, as follows: Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Cost of revenues $ 5,709 $ 5,554 $ 16,997 $ 16,386 Research and development 94 41 28",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2022-03-31",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "ts of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Operating activities Income (loss) before income tax expense $ (30,557) $ 211,050 $ ",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2022-03-31",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "ployment Options (U.S. $ in thousands) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Cloud $ 399,453 $ 249,879 $ 1,081,455 $ 687,611 Data Center 151,095 94,739 401,398 2",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2022-03-31",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "s in thousands, except per share data) (unaudited) Three Months Ended March 31, Nine Months Ended March 31, 2022 2021 2022 2021 Gross profit IFRS gross profit $ 621,117 $ 483,840 $ 1,710,488 $ 1,291,539 Plus: Sha",
+                "explicit_scopes": [],
+                "kind": "nine months",
+                "period_end": "2022-03-31",
+                "raw_kind": "nine months",
+                "source": "earnings_exhibit"
+              }
+            ],
+            "period_end": "2022-03-31",
+            "period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-03-31",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/543212f1563538f1a46702fea8553956b3a9cafe61b357e0c42dead51bff2eca.htm",
+            "primary_release_date_candidates": [
+              "2022-04-28"
+            ],
+            "primary_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000034/a6-kearningreleaseq3fy22.htm",
+            "quarter_ordinal": 3,
+            "release_date": "2022-04-28",
+            "release_date_candidates": [
+              "2022-04-28"
+            ],
+            "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+            "release_excerpt": "EX-99.1 2 ex991q3fy22.htm EX-99.1 Document Atlassian Announces Third Quarter Fiscal Year 2022 Results Quarterly revenue of $740 million, up 30% year-over-year Quarterly subscription revenue of $555 million, up 59% year-over-year Quarterly IFRS operating margin of (2)% and non-IFRS operating margin of 24% Quarterly cash flow from operations of $353 million and free cash flow of $312 million TEAM, Anywhere/SAN FRANCISCO (April 28, 2022) \u2014 Atlassian Corporation Plc (NASDAQ: TEAM), a leading provider of team collaboration and productivity software, today announced financial results for its third quarter of fiscal year 2022 ended March 31, 2022 and released a shareholder letter available on Atlassian\u2019s Work Life blog at http://atlassian.com/blog/announcements/shareholder-letter-q3fy22 . The shareholder letter was also posted to the Investor Relations section of Atlassian\u2019s website at https://investors.atlassian.com . \u201cIt was amazing to experience the enthusiasm of the Atlassian community in-person at Team \u201922,\u201d said Scott Farquhar, Atlassian\u2019s co-founder and co-CEO. \u201cIt\u2019s such an honor to hear from our passionate users and partners about the mission-critical work we power. We are incredibly motivated by the role we play in transforming how teams collaborate, power digital transformation, and drive cultural change.\u201d \u201cWe now have line of sight to $10 billion in annual revenue based on our current markets and products,\u201d said Mike Cannon-Brookes, Atlassian\u2019s co-founder and co-CEO. \u201cAtlassian has a 20-year track record of growing our ambition and we\u2019ve never been more excited about the opportunities in front of us.\u201d Third Quarter Fiscal Year 2022 Financial Highlights: On an IFRS basis, Atlassian reported: \u2022 Revenue: Total revenue was $740.5 million for the third quarter of fiscal year 2022, up 30% from $568.7 million for the third quarter of fiscal year 2021. \u2022 Operating Income (Loss) and Operating Margin: Operating loss was $16.1 million for the third quarter of fiscal year 2022, compared with operating income of $69.5 million for the third quarter of fiscal year 2021. Operating margin was (2)% for the third quarter of fiscal year 2022, compared with 12% for the third quarter of fiscal year 2021. \u2022 Net Income (Loss) and Net Income (Loss) Per Diluted Share: Net loss was $31.1 million for the third quarter of fiscal year 2022, compared with net income of $159.8 million for the third quarter of fiscal year 2021. Net loss per diluted share was $0.12 for the third quarter of fiscal year 2022, compared with net income per diluted share of $0.63 for the third quarter of fiscal year 2021. \u2022 Balance Sheet: Cash and cash equivalents plus short-term investments at the end of the third quarter of fiscal year 2022 totaled $1.3 billion. On a non-IFRS basis, Atlassian reported: \u2022 Operating Income and Operating Margin: Operating income was $179.2 million for the third quarter of fiscal year 2022, compared with operating income of $175.7 million for the third quarter of fiscal year 2021. Operating margin was 24% for the third quarter of fiscal year 2022, compared with 31% for the third quarter of fiscal year 2021. \u2022 Net Income and Net Income Per Diluted Share: Net income was $120.6 million for the third quarter of fiscal year 2022, compared with net income of $123.3 million for the third quarter of fiscal year 2021. Net income per diluted share was $0.47 for the third quarter of fiscal year 2022, compared with $0.48 for the third quarter of fiscal year 2021. \u2022 Free Cash Flow: Cash flow from operations was $353.0 million and free cash flow was $312.3 million for the third quarter of fiscal year 2022. Free cash flow margin for the third quarter of fiscal year 2022 was 42%. 1 A reconciliation of IFRS to non-IFRS financial measures has been provided in the financial statement tables included in this press release. An explanation of these measures is also included below, under the heading \u201cAbout Non-IFRS Financial Measures.\u201d Recent Business Highlights: \u2022 Atlassian Team \u201922: Atlassian held its flagship Team \u201922 conference on April 5th through April 7th both in-person and virtually. Thousands of customers, partners, and Atlassians gathered in-person in Las Vegas, and an additional 12,000+ people joined virtually from around the world. On-demand streaming content and recorded sessions for Team \u201922 can be found at https://events.atlassian.com/team22 . \u2022 Atlassian Analytics: At Team \u201922, Atlassian introduced Atlassian Analytics to enable customers to build customized, interactive dashboards that offer cross-project and cross-product overviews of workflows. Atlassian Analytics is powered by the Atlassian Data Lake that will initially have data from Jira Software and Jira Service Management and will expand across other products in our portfolio over time. Now teams can bring in data around stories and bugs assigned to them from Jira Software and visualize this alongside any change requests or incidents from Jira Service Management to assess what they should prioritize first. No-code visualization with Visual SQL provides a no-code way to explore data and create charts for teams and users who want to build reports fast without using SQL. Atlassian Analytics will also allow users to incorporate data from other business intelligence systems to provide an even more comprehensive view of their organization. \u2022 Atlas: Atlassian\u2019s latest offering in work management, Atlas, serves as a teamwork directory, connecting the dots between teams, their tools, and their work so that everyone in the company can find the information they need to keep their projects moving. Atlas surfaces project summaries alongside goals and progress, dependencies with other projects, and a rundown of who\u2019s working on what. \u2022 Compass: Atlassian has developed Compass to provide an answer to the changing nature of software development and the growing number of tools that developers use, offering them a unified view of their components and the teams that collaborate on them. Its component catalog visualizes dependencies and puts information like ownership, documentation, and metrics right next to each component so everything developers need are in one place. Compass also surfaces a health scorecard for each component to ensure resiliency, performance, security, and compliance in real time. \u2022 Customer Growth: Atlassian ended its third quarter of fiscal year 2022 with a total customer count, on an active subscription or maintenance agreement basis, of 234,575 customers, adding 8,054 net new customers during the quarter. During the quarter, customer count was reduced by approximately 1,800 due primarily to Russia-based customers that were unable to pay, as a consequence of sanctions levied on their payment networks. Our public statement on Russia\u2019s invasion of Ukraine can be found at: https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine . New Chief Technology Officer: Atlassian announced that Rajeev Rajan will join the company as its new Chief Technology Officer (CTO) in May 2022. Rajeev brings a wealth of knowledge and experience in scaling global technology companies, having spent nearly five years at Meta, most recently as Vice President and Head of Engineering for Facebook and Head of Office for Meta in the Pacific Northwest Region. Prior to that, Rajeev spent over two decades at Microsoft across multiple products from Exchange to SQL Server to Active Directory, culminating in Office 365. As previously announced last quarter, Sri Viswanath, Atlassian\u2019s current CTO, will be leaving the company at the end of fiscal year 2022. Financial Targets: Atlassian is providing its financial targets for the fourth quarter of fiscal year 2022 as follows: Fourth Quarter Fiscal Year 2022: \u2022 Total revenue is expected to be in the range of $710 million to $725 million. \u2022 Gross margin is expected to be in the range of 81% to 82% on an IFRS basis and in the range of 84% to 85% on a non-IFRS basis. \u2022 Operating margin is expected to be approximately (11%) on an IFRS basis and approximately 15% on a non-IFRS basis. 2 \u2022 Net loss per diluted share is expected to be approximately ($0.40) on an IFRS basis, and net income per diluted share is expected to be approximately $0.24 on a non-IFRS basis. \u2022 Weighted average share count is expected to be in the range of 254 million to 255 million shares when calculating diluted IFRS net loss per share and in the range of 257 million to 258 million shares when calculating diluted non-IFRS net income per share. For additional commentary regarding financial targets, please see Atlassian\u2019s third quarter fiscal year 2022 shareholder letter dated April 28, 2022. With respect to Atlassian\u2019s expectations under \u201cFinancial Targets\u201d above, a reconciliation of IFRS to non-IFRS gross margin, operating margin, and net income (loss) per diluted share, has been provided in the financial statement tables included in this press release. Shareholder Letter and Webcast Details: A detaile",
+            "security": {
+              "common_stock_evidence": [],
+              "historical_symbol": null,
+              "inline_trading_symbols": [],
+              "status": "UNRESOLVED_COMMON_CLASS",
+              "symbols": []
+            },
+            "text_characters": 29502,
+            "timing_match": true,
+            "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+          },
+          "match": {
+            "common_explicit_scopes": [
+              "quarter"
+            ],
+            "current_period_evidence": {
+              "excerpt": "oration (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2023 (the \u201c Press Release \u201d). A copy of the Press Release is attached as Exhibit 99.1 to this current re",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2023-03-31",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "current_quarter": 3,
+            "matched_scope": "quarter",
+            "numeric_measure_comparability": "NOT_CERTIFIED_BY_DOCUMENT_JOIN",
+            "prior_filed_before_current": true,
+            "prior_period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter ended March 31, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-03-31",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "prior_quarter": 3,
+            "reason": "explicit_same_period_end_and_scope",
+            "verified": true
+          }
+        }
+      ],
+      "metadata_candidates": [
+        {
+          "accession": "0001650372-22-000034",
+          "filing_date": "2022-04-28",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kearningreleaseq3fy22.htm"
+        },
+        {
+          "accession": "0001650372-22-000037",
+          "filing_date": "2022-04-29",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kq3fy22quarterlyreport.htm"
+        },
+        {
+          "accession": "0001650372-22-000045",
+          "filing_date": "2022-05-27",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "team6kfounders10b-5fy22.htm"
+        },
+        {
+          "accession": "0001650372-22-000047",
+          "filing_date": "2022-06-24",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kinterimcfoannouncement.htm"
+        }
+      ],
+      "metadata_end": "2022-06-30",
+      "metadata_start": "2022-04-01",
+      "slot_id": "0001650372-W3"
+    },
+    {
+      "candidate_narrowing": "prior6-K primary filename explicitly earningrelease; actual release and period verified from body",
+      "forms": [
+        "6-K"
+      ],
+      "inspected": [
+        {
+          "event": {
+            "acceptance_eastern": "2022-08-04T16:07:03-04:00",
+            "acceptance_utc": "2022-08-04T20:07:03.000Z",
+            "accession": "0001650372-22-000050",
+            "accounting_companions": [
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": false
+                },
+                "classification": "NOT_VERIFIED_EARNINGS",
+                "classification_evidence": {
+                  "earnings_pattern": false,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "document_type": "SHAREHOLDER_LETTER",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d34ab75649b1d5600dd9f5a9a5769e8669633d8fb5bc5d27459e644e4de2538c.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter",
+                      "year"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "published a letter to its shareholders announcing its financial results for the quarter and fiscal year ended June 30, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter",
+                      "year"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  }
+                ],
+                "period_end": "2022-06-30",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter",
+                    "year"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2022-06-30",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2022-08-04"
+                ],
+                "quarter_ordinal": null,
+                "release_date": "2022-08-04",
+                "release_date_candidates": [
+                  "2022-08-04"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "sha256": "9ae46f5ac931964d77233d4495e9d34ee97252c26e5e91e4db0f4e459e223634",
+                "source_evidence": "6-K 1 a6-kearningreleaseq4fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 August 4, 2022 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On August 4, 2022, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also published a letter to its shareholders announcing its financial results for the quarter and fiscal year ended June 30, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Appointment of Chief Financial Officer . On August 4, 2022, the Company announced the appointment of Joe Binz as its Chief Financial Officer (\u201c CFO \u201d) and principal financial officer, effective September 6, 2022. Mr. Binz, age 55, is currently Corporate Vice President, Finance at Microsoft Corporation, and has served in this role since November 2014 and in various other leadership roles at the company since January 2002. From 1993 to 2001, Mr. Binz served in a variety of finance positions at Intel Corporation. Mr. Binz holds a Bachelor of Science in Finance from the University of Illinois Urbana-Champaign, and a Master of Business Administration from the University of Michigan\u2019s Ross School of Business. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cAppointment of Chief Financial Officer\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: August 4, 2022 Atlassian Corporation Plc /s/ Stan Shepard Stan Shepard General Counsel Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated August 4, 2022. 99.2 Shareholder Letter dated August 4, 2022.",
+                "text_excerpt": "EX-99.2 3 teamq4fy2022shareholderl.htm EX-99.2 teamq4fy2022shareholderl Q4 FY22 | August 4, 2022 Shareholder Letter Q4 FY22 Fellow sh!reholders, As we close out !nother fisc!l ye!r chock-!-block with wins, we find ourselves in ! clim!te of widespre!d uncert!inty. Yet despite unsettling world events !nd he!dlines reporting m!croeconomic vol!tility, Atl!ssi!n continues to m!rch forw!rd with ! long-term mindset, delivering top-notch products !nd legend!ry service to our customers. We c!pped off FY22 with strong Q4 results !cross our three m!rkets: !gile !nd DevOps, IT service m!n!gement (ITSM), !nd work m!n!gement. Not only did our customer b!se top 242,000 this qu!rter, but our he!dcount !lso grew by 634 with most new hires in R&D \u2013 ! test!ment to our te!m\u2019s !bility to execute !g!inst !mbitious hiring go!ls. We firmly believe th!t Atl!ssi!n is uniquely positioned, h!ving deep-se!ted momentum !nd ! differenti!ted business model. This gives us the confidence to m!ke increment!l investments \u2014 despite the current environment \u2014 th!t will fuel even more dur!ble growth over the long term !nd deepen our str!tegic !dv!nt!ges. We know this is !n unconvention!l choice right now !nd w!nt to be open with our investors !bout it. We will rem!in vigil!nt in this environment, !nd while we !re not insul!ted from bro!der m!croeconomic pressures, there !re three dyn!mics p!rticul!r to Atl!ssi!n\u2019s business informing our decision to press forw!rd. First, we\u2019ve observed over the ye!rs th!t developers tend to be the l!st roles comp!nies sc!le b!ck on. We believe this will continue to prove true, especi!lly for the overwhelming number of org!niz!tions undergoing digit!l tr!nsform!tion. Second, whilst our products punch !bove their weight in terms of v!lue, Atl!ssi!n is ! rel!tively sm!ll line item in over!ll IT budgets !nd likely not where customers look to reduce costs. Third, customers tell us th!t Atl!ssi!n products !re mission-critic!l for them. And bec!use our products !re !lre!dy the low-cost option, there !ren\u2019t further s!vings to be h!d from switching to ! competitor. Ag!in, we\u2019ll continue to sc!n the horizon for w!rning signs !nd be c!ndid with investors !s we h!ve throughout our six+ ye!rs !s ! public comp!ny. As we sh!red !t our Investor Day in April, we h!ve ! line of sight to $10 billion in !nnu!l revenue b!sed on our current products !nd core m!rkets. We believe our investments will propel us p!st this milestone f!ster, while further strengthening our str!tegic positio",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000050/teamq4fy2022shareholderl.htm"
+              }
+            ],
+            "accounting_flags": {
+              "constant_currency": false,
+              "non_gaap": true,
+              "restated_or_recast": false
+            },
+            "classification": "EARNINGS_RELEASE",
+            "classification_evidence": {
+              "earnings_pattern": true,
+              "future_release_notice": false,
+              "guidance_only": false,
+              "numerical_results": true,
+              "posted_actual_results_in_companion": false,
+              "preliminary": false
+            },
+            "daily_entry_anchor_api": "2022-08-04",
+            "daily_entry_anchor_index": "2022-08-04",
+            "daily_entry_invariant": true,
+            "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "exhibit_candidates": [
+              {
+                "description": "3 | EX-99.2 | teamq4fy2022shareholderl.htm | EX-99.2 | 87759",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d34ab75649b1d5600dd9f5a9a5769e8669633d8fb5bc5d27459e644e4de2538c.htm",
+                "status": "ACCOUNTING_COMPANION_SHAREHOLDER_LETTER",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000050/teamq4fy2022shareholderl.htm"
+              },
+              {
+                "accounting_flags": {
+                  "constant_currency": false,
+                  "non_gaap": true,
+                  "restated_or_recast": false
+                },
+                "classification": "EARNINGS_RELEASE",
+                "classification_evidence": {
+                  "earnings_pattern": true,
+                  "future_release_notice": false,
+                  "guidance_only": false,
+                  "numerical_results": true,
+                  "posted_actual_results_in_companion": false,
+                  "preliminary": false
+                },
+                "description": "2 | EX-99.1 | ex991q4fy22.htm | EX-99.1 | 370555",
+                "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/1883270f93ef5b005f661cf54b743bdd98b516fb5fbb1cda9e642c08e60501d1.htm",
+                "period_candidates": [
+                  {
+                    "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                    "explicit_scopes": [
+                      "quarter",
+                      "year"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "published a letter to its shareholders announcing its financial results for the quarter and fiscal year ended June 30, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                    "explicit_scopes": [
+                      "quarter",
+                      "year"
+                    ],
+                    "kind": "quarter",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "quarter",
+                    "source": "primary_item_202"
+                  },
+                  {
+                    "excerpt": "laboration and productivity software, today announced financial results for its fourth quarter and fiscal year ended June 30, 2022 and released a shareholder letter available on Atlassian\u2019s Work Life blog at http://atlassian.com/b",
+                    "explicit_scopes": [
+                      "quarter",
+                      "year"
+                    ],
+                    "kind": "fourth quarter",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fourth quarter",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "es in thousands, except per share data) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Revenues: Subscription $ 597,297 $ 385,510 $ 2,096,706 $ 1,324,064 Maintenance 117,0",
+                    "explicit_scopes": [
+                      "year"
+                    ],
+                    "kind": "fiscal year",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fiscal year",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "ts include share-based payment expense, as follows: Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Cost of revenues $ 11,641 $ 6,187 $ 44,848 $ 24,739 Research and development 102,375",
+                    "explicit_scopes": [
+                      "year"
+                    ],
+                    "kind": "fiscal year",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fiscal year",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "tization of acquired intangible assets, as follows: Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Cost of revenues $ 5,697 $ 6,008 $ 22,694 $ 22,394 Research and development 93 44 37",
+                    "explicit_scopes": [
+                      "year"
+                    ],
+                    "kind": "fiscal year",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fiscal year",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "nts of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Operating activities Loss before income tax benefit (expense) $ (68,859) $ (214,018)",
+                    "explicit_scopes": [
+                      "year"
+                    ],
+                    "kind": "fiscal year",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fiscal year",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "eployment Options (U.S. $ in thousands) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Cloud $ 433,969 $ 280,221 $ 1,515,424 $ 967,832 Data Center 158,921 99,125 560,319 3",
+                    "explicit_scopes": [
+                      "year"
+                    ],
+                    "kind": "fiscal year",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fiscal year",
+                    "source": "earnings_exhibit"
+                  },
+                  {
+                    "excerpt": "es in thousands, except per share data) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Gross profit IFRS gross profit $ 626,687 $ 461,572 $ 2,337,175 $ 1,753,111 Plus: Sha",
+                    "explicit_scopes": [
+                      "year"
+                    ],
+                    "kind": "fiscal year",
+                    "period_end": "2022-06-30",
+                    "raw_kind": "fiscal year",
+                    "source": "earnings_exhibit"
+                  }
+                ],
+                "period_end": "2022-06-30",
+                "period_evidence": {
+                  "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                  "explicit_scopes": [
+                    "quarter",
+                    "year"
+                  ],
+                  "kind": "quarter",
+                  "period_end": "2022-06-30",
+                  "raw_kind": "quarter",
+                  "source": "primary_item_202"
+                },
+                "primary_release_date_candidates": [
+                  "2022-08-04"
+                ],
+                "quarter_ordinal": 4,
+                "release_date": "2022-08-04",
+                "release_date_candidates": [
+                  "2022-08-04"
+                ],
+                "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+                "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000050/ex991q4fy22.htm"
+              }
+            ],
+            "exhibit_description": "2 | EX-99.1 | ex991q4fy22.htm | EX-99.1 | 370555",
+            "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/1883270f93ef5b005f661cf54b743bdd98b516fb5fbb1cda9e642c08e60501d1.htm",
+            "exhibit_sha256": "e366bc085ed314ae2c792c973b4bc5a6948b8d45653034ba559b7a7f753526c3",
+            "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000050/ex991q4fy22.htm",
+            "filing_date": "2022-08-04",
+            "form": "6-K",
+            "index_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/9322f57f183e77ced309cf6cb869d6bb21aa32a017cf7e7e0d1d95336bc19493.html",
+            "item_202_excerpt": "6-K 1 a6-kearningreleaseq4fy22.htm 6-K Document UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 6-K Report of Foreign Private Issuer Pursuant to Rule 13a-16 or 15d-16 under the Securities Exchange Act of 1934 August 4, 2022 Commission File Number 001-37651 Atlassian Corporation Plc (Exact name of Registrant as specified in its charter) Not Applicable (Translation of registrant\u2019s name into English) Exchange House Primrose Street London EC2A 2EG c/o Herbert Smith Freehills LLP ( Address of principal executive office ) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F: Form 20-F x Form 40-F \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(1): \u00a8 Indicate by check mark if the registrant is submitting the Form 6-K in paper as permitted by Regulation S-T Rule 101(b)(7): \u00a8 Results of Operations and Financial Condition . On August 4, 2022, Atlassian Corporation Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorporated by reference herein. The Company also published a letter to its shareholders announcing its financial results for the quarter and fiscal year ended June 30, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 to this report on Form 6-K and is incorporated by reference herein. Appointment of Chief Financial Officer . On August 4, 2022, the Company announced the appointment of Joe Binz as its Chief Financial Officer (\u201c CFO \u201d) and principal financial officer, effective September 6, 2022. Mr. Binz, age 55, is currently Corporate Vice President, Finance at Microsoft Corporation, and has served in this role since November 2014 and in various other leadership roles at the company since January 2002. From 1993 to 2001, Mr. Binz served in a variety of finance positions at Intel Corporation. Mr. Binz holds a Bachelor of Science in Finance from the University of Illinois Urbana-Champaign, and a Master of Business Administration from the University of Michigan\u2019s Ross School of Business. The information in this report on Form 6-K under the sections titled \u201cResults of Operations and Financial Condition\u201d and \u201cAppointment of Chief Financial Officer\u201d and the exhibits attached hereto shall not be deemed \u201cfiled\u201d for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \u201c Exchange Act \u201d), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act of 1933, as amended, or the Exchange Act, regardless of any general incorporation language in such filing. Signature Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: August 4, 2022 Atlassian Corporation Plc /s/ Stan Shepard Stan Shepard General Counsel Exhibit Index Exhibit Number Exhibit Title 99.1 Press Release dated August 4, 2022. 99.2 Shareholder Letter dated August 4, 2022.",
+            "items": "",
+            "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+            "period_candidates": [
+              {
+                "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+                "explicit_scopes": [
+                  "quarter",
+                  "year"
+                ],
+                "kind": "quarter",
+                "period_end": "2022-06-30",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "published a letter to its shareholders announcing its financial results for the quarter and fiscal year ended June 30, 2022 (the \u201c Shareholder Letter \u201d). The full text of the Shareholder Letter is attached as Exhibit 99.2 t",
+                "explicit_scopes": [
+                  "quarter",
+                  "year"
+                ],
+                "kind": "quarter",
+                "period_end": "2022-06-30",
+                "raw_kind": "quarter",
+                "source": "primary_item_202"
+              },
+              {
+                "excerpt": "laboration and productivity software, today announced financial results for its fourth quarter and fiscal year ended June 30, 2022 and released a shareholder letter available on Atlassian\u2019s Work Life blog at http://atlassian.com/b",
+                "explicit_scopes": [
+                  "quarter",
+                  "year"
+                ],
+                "kind": "fourth quarter",
+                "period_end": "2022-06-30",
+                "raw_kind": "fourth quarter",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "es in thousands, except per share data) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Revenues: Subscription $ 597,297 $ 385,510 $ 2,096,706 $ 1,324,064 Maintenance 117,0",
+                "explicit_scopes": [
+                  "year"
+                ],
+                "kind": "fiscal year",
+                "period_end": "2022-06-30",
+                "raw_kind": "fiscal year",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "ts include share-based payment expense, as follows: Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Cost of revenues $ 11,641 $ 6,187 $ 44,848 $ 24,739 Research and development 102,375",
+                "explicit_scopes": [
+                  "year"
+                ],
+                "kind": "fiscal year",
+                "period_end": "2022-06-30",
+                "raw_kind": "fiscal year",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "tization of acquired intangible assets, as follows: Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Cost of revenues $ 5,697 $ 6,008 $ 22,694 $ 22,394 Research and development 93 44 37",
+                "explicit_scopes": [
+                  "year"
+                ],
+                "kind": "fiscal year",
+                "period_end": "2022-06-30",
+                "raw_kind": "fiscal year",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "nts of Cash Flows (U.S. $ in thousands) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Operating activities Loss before income tax benefit (expense) $ (68,859) $ (214,018)",
+                "explicit_scopes": [
+                  "year"
+                ],
+                "kind": "fiscal year",
+                "period_end": "2022-06-30",
+                "raw_kind": "fiscal year",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "eployment Options (U.S. $ in thousands) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Cloud $ 433,969 $ 280,221 $ 1,515,424 $ 967,832 Data Center 158,921 99,125 560,319 3",
+                "explicit_scopes": [
+                  "year"
+                ],
+                "kind": "fiscal year",
+                "period_end": "2022-06-30",
+                "raw_kind": "fiscal year",
+                "source": "earnings_exhibit"
+              },
+              {
+                "excerpt": "es in thousands, except per share data) (unaudited) Three Months Ended June 30, Fiscal Year Ended June 30, 2022 2021 2022 2021 Gross profit IFRS gross profit $ 626,687 $ 461,572 $ 2,337,175 $ 1,753,111 Plus: Sha",
+                "explicit_scopes": [
+                  "year"
+                ],
+                "kind": "fiscal year",
+                "period_end": "2022-06-30",
+                "raw_kind": "fiscal year",
+                "source": "earnings_exhibit"
+              }
+            ],
+            "period_end": "2022-06-30",
+            "period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter",
+                "year"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-06-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/c2b753b178189254fe4d0c79576565864dec29bffa3b95d559c0d672b28cbc48.htm",
+            "primary_release_date_candidates": [
+              "2022-08-04"
+            ],
+            "primary_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000050/a6-kearningreleaseq4fy22.htm",
+            "quarter_ordinal": 4,
+            "release_date": "2022-08-04",
+            "release_date_candidates": [
+              "2022-08-04"
+            ],
+            "release_date_selection_rule": "unique Item2.02 actual-release date takes precedence over other dates mentioned in exhibit opening; otherwise unique opening date",
+            "release_excerpt": "EX-99.1 2 ex991q4fy22.htm EX-99.1 Document Atlassian Announces Fourth Quarter and Fiscal Year 2022 Results Quarterly revenue of $760 million, up 36% year-over-year Quarterly subscription revenue of $597 million, up 55% year-over-year Quarterly IFRS operating margin of (8)% and non-IFRS operating margin of 14% Quarterly cash flow from operations of $230 million and free cash flow of $195 million TEAM, Anywhere/SYDNEY (August 4, 2022) \u2014 Atlassian Corporation Plc (NASDAQ: TEAM), a leading provider of team collaboration and productivity software, today announced financial results for its fourth quarter and fiscal year ended June 30, 2022 and released a shareholder letter available on Atlassian\u2019s Work Life blog at http://atlassian.com/blog/announcements/shareholder-letter-q4fy22 . The shareholder letter was also posted to the Investor Relations section of Atlassian\u2019s website at https://investors.atlassian.com . \u201cWe capped off fiscal year 2022 with strong Q4 results, growing Cloud revenue 55 percent year-over-year,\u201d said Mike Cannon-Brookes, Atlassian\u2019s co-founder and co-CEO. \u201cWe believe that Atlassian is uniquely positioned, with great momentum and a differentiated business model. While we can\u2019t predict what the future holds at a macro level, we\u2019re forging ahead with conviction and vigilance as we look to deepen our strategic position.\u201d \u201cOur strong competitive position provides us with the flexibility to invest purposefully and create value for our customers,\u201d said Scott Farquhar, Atlassian\u2019s co-founder and co-CEO. \u201cWe\u2019re proud of how we continue to execute against our long-term plans, which includes bringing on top-tier talent from across the globe. We added over 2,300 new Atlassians in fiscal year 2022, and they will be instrumental to helping us achieve our mission to unleash the potential of every team.\u201d Fourth Quarter Fiscal Year 2022 Financial Highlights: On an IFRS basis, Atlassian reported: \u2022 Revenue: Total revenue was $759.8 million for the fourth quarter of fiscal year 2022, up 36% from $559.5 million for the fourth quarter of fiscal year 2021. \u2022 Operating Loss and Operating Margin: Operating loss was $63.3 million for the fourth quarter of fiscal year 2022, compared with operating loss of $7.5 million for the fourth quarter of fiscal year 2021. Operating margin was (8)% for the fourth quarter of fiscal year 2022, compared with (1)% for the fourth quarter of fiscal year 2021. \u2022 Net Loss and Net Loss Per Diluted Share: Net loss was $105.5 million for the fourth quarter of fiscal year 2022, compared with net loss of $213.1 million for the fourth quarter of fiscal year 2021. Net loss per diluted share was $0.41 for the fourth quarter of fiscal year 2022, compared with net loss per diluted share of $0.85 for the fourth quarter of fiscal year 2021. \u2022 Balance Sheet: Cash and cash equivalents plus short-term investments at the end of the fourth quarter of fiscal year 2022 totaled $1.5 billion. On a non-IFRS basis, Atlassian reported: \u2022 Operating Income and Operating Margin: Operating income was $108.9 million for the fourth quarter of fiscal year 2022, compared with operating income of $94.9 million for the fourth quarter of fiscal year 2021. Operating margin was 14% for the fourth quarter of fiscal year 2022, compared with 17% for the fourth quarter of fiscal year 2021. \u2022 Net Income and Net Income Per Diluted Share: Net income was $68.1 million for the fourth quarter of fiscal year 2022, compared with net income of $62.2 million for the fourth quarter of fiscal year 2021. Net income per diluted share was $0.27 for the fourth quarter of fiscal year 2022, compared with net income per diluted share of $0.24 for the fourth quarter of fiscal year 2021. \u2022 Free Cash Flow: Cash flow from operations was $230.4 million and free cash flow was $194.7 million for the fourth quarter of fiscal year 2022. Free cash flow margin for the fourth quarter of fiscal year 2022 was 26%. 1 Fiscal Year 2022 Financial Highlights On an IFRS basis, Atlassian reported: \u2022 Revenue: Total revenue was $2.8 billion for fiscal year 2022, up 34% from $2.1 billion for fiscal year 2021. \u2022 Operating Income (Loss) and Operating Margin: Operating loss was $106.5 million for fiscal year 2022, compared with operating income of $101.6 million for fiscal year 2021. Operating margin was (4)% for fiscal year 2022, compared with 5% for fiscal year 2021. \u2022 Net Loss and Net Loss Per Diluted Share: Net loss was $614.1 million for fiscal year 2022, compared with net loss of $696.3 million for fiscal year 2021. Net loss per diluted share was $2.42 for fiscal year 2022, compared with net loss per diluted share of $2.79 for fiscal year 2021. On a non-IFRS basis, Atlassian reported: \u2022 Operating Income and Operating Margin: Operating income was $633.0 million for fiscal year 2022, compared with operating income of $519.1 million for fiscal year 2021. Operating margin was 23% for fiscal year 2022, compared with 25% for fiscal year 2021. \u2022 Net Income and Net Income Per Diluted Share: Net income was $434.3 million for fiscal year 2022, compared with net income of $357.6 million for fiscal year 2021. Net income per diluted share was $1.69 for fiscal year 2022, compared with net income per diluted share of $1.40 for fiscal year 2021. \u2022 Free Cash Flow: Cash flow from operations was $883.5 million and free cash flow was $763.8 million for fiscal year 2022. Free cash flow margin for fiscal year 2022 was 27%. A reconciliation of IFRS to non-IFRS financial measures has been provided in the financial statement tables included in this press release. An explanation of these measures is also included below, under the heading \u201cAbout Non-IFRS Financial Measures.\u201d Recent Business Highlights: \u2022 Team growth: Atlassian ended its fourth quarter of fiscal year 2022 with a total headcount of 8,813 employees, adding 634 net new Atlassians in the quarter and over 2,300 during the year. Most of the new hires were in R&D. Atlassian will build upon this momentum and continue to play offense in fiscal year 2023. \u2022 Atlassian Presents: Work Life: Atlassian will hold its first ever Work Management tailored event on September 29, 2022. Challenge conventional thinking and learn how working differently, together can enable teams to do their best work. Work Life will give attendees a unique opportunity to learn from project management leaders and teams across diverse industries. The event will also feature inspiring sessions and product deep-dives for Trello, Confluence and more. Work Life will be held in person at the Chase Center in San Francisco, as well as virtually. Learn more at https://events.atlassian.com/worklife . \u2022 Customer Growth: Atlassian ended its fourth quarter of fiscal year 2022 with a total customer count, on an active subscription or maintenance agreement basis, of 242,623 customers, adding 8,048 net new customers during the quarter. New Chief Financial Officer: Atlassian announced that Joe Binz will join the company as its new Chief Financial Officer (CFO) and Principal Financial Officer, effective September 6, 2022. Joe brings more than 25 years of finance leadership and experience in the technology industry. Since 2014, he has held the role of Corporate Vice President, Finance at Microsoft Corporation, where he was responsible for leading the company\u2019s financial planning and analysis, investor relations, acquisition integration, and procurement functions. Over his twenty-year career with Microsoft, he was a pivotal finance leader where he most notably guided the company\u2019s business transformation through its multi-billion dollar move to the cloud. Prior to his time at Microsoft, Joe spent eight years at Intel Corporation where he held a variety of finance roles supporting manufacturing operations, product groups, and Intel Capital. He holds a Bachelor of Science in Finance from the University of Illinois Urbana-Champaign, and a Master of Business Administration from the University of Michigan\u2019s Ross School of Business. 2 Financial Targets: Atlassian is providing its financial targets for the first quarter of fiscal year 2023 as follows: First Quarter Fiscal Year 2023: \u2022 Total revenue is expected to be in the range of $795 million to $810 million. \u2022 Gross margin is expected to be in the range of 80% to 81% on an IFRS basis and in the range of 84% to 85% on a non-IFRS basis. \u2022 Operating margin is expected to be approximately (37%) on an IFRS basis and approximately 18% on a non-IFRS basis. \u2022 Net loss per diluted share is expected to be approximately $1.17 to $1.16 on an IFRS basis, and net income per diluted share is expected to be approximately $0.37 to $0.38 on a non-IFRS basis. \u2022 Weighted average share count is expected to be in the range of 256 million to 257 million shares when calculating diluted IFRS net loss per share and in the range of 259 million to 260 million shares when calculating diluted non-IFRS net income per share. For additional commentary regarding financial targets, please see Atla",
+            "security": {
+              "common_stock_evidence": [],
+              "historical_symbol": null,
+              "inline_trading_symbols": [],
+              "status": "UNRESOLVED_COMMON_CLASS",
+              "symbols": []
+            },
+            "text_characters": 29999,
+            "timing_match": true,
+            "timing_proxy_status": "EXACT_TIMESTAMP_RECONCILED"
+          },
+          "match": {
+            "common_explicit_scopes": [
+              "quarter",
+              "year"
+            ],
+            "current_period_evidence": {
+              "excerpt": "oration (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2023 (the \u201c Press Release \u201d). A copy of the Press Release is attached as Exhibit 99.1 to this current re",
+              "explicit_scopes": [
+                "quarter",
+                "year"
+              ],
+              "kind": "quarter",
+              "period_end": "2023-06-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "current_quarter": 4,
+            "matched_scope": "quarter",
+            "numeric_measure_comparability": "NOT_CERTIFIED_BY_DOCUMENT_JOIN",
+            "prior_filed_before_current": true,
+            "prior_period_evidence": {
+              "excerpt": "ion Plc (the \u201c Company \u201d) issued a press release announcing its results for the quarter and fiscal year ended June 30, 2022. A copy of the press release is attached as Exhibit 99.1 to this report on Form 6-K and is incorpor",
+              "explicit_scopes": [
+                "quarter",
+                "year"
+              ],
+              "kind": "quarter",
+              "period_end": "2022-06-30",
+              "raw_kind": "quarter",
+              "source": "primary_item_202"
+            },
+            "prior_quarter": 4,
+            "reason": "explicit_same_period_end_and_scope",
+            "verified": true
+          }
+        }
+      ],
+      "metadata_candidates": [
+        {
+          "accession": "0001193125-22-191271",
+          "filing_date": "2022-07-11",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "d315666d6k.htm"
+        },
+        {
+          "accession": "0001650372-22-000050",
+          "filing_date": "2022-08-04",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kearningreleaseq4fy22.htm"
+        },
+        {
+          "accession": "0001650372-22-000065",
+          "filing_date": "2022-08-24",
+          "form": "6-K",
+          "items": "",
+          "metadata_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/32626d9dc610ef0c18fa4cec85dbeb4431a611f92645f71768eae1d72c51ce00.json",
+          "primary_document": "a6-kmeetingresults.htm"
+        }
+      ],
+      "metadata_end": "2022-09-30",
+      "metadata_start": "2022-07-01",
+      "slot_id": "0001650372-W4"
+    },
+    {
+      "forms": [
+        "8-K",
+        "6-K"
+      ],
+      "inspected": [],
+      "metadata_candidates": [],
+      "metadata_end": "2021-12-31",
+      "metadata_start": "2021-10-01",
+      "slot_id": "0001631282-W1"
+    },
+    {
+      "forms": [
+        "8-K",
+        "6-K"
+      ],
+      "inspected": [],
+      "metadata_candidates": [],
+      "metadata_end": "2022-03-31",
+      "metadata_start": "2022-01-01",
+      "slot_id": "0001631282-W2"
+    }
+  ],
+  "updated_at": "2026-09-11T00:04:21.269701+00:00"
+}

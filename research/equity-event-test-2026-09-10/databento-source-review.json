@@ -1,0 +1,233 @@
+{
+  "authorized_existing_sample_prices_read": true,
+  "bar_methodology": {
+    "facts": [
+      "Generic OHLCV aggregates source trades; ohlcv-1d is based on UTC dates, not automatically regular exchange sessions.",
+      "Daily aggregates need not equal venue official settlement/statistics or another vendor because trade conditions, corrections, timestamps and trade inclusion differ.",
+      "For regular-session bars request finer bars/trades and explicitly aggregate the authorized session, including known early closes; do not call a UTC last print the official close.",
+      "Use contemporary normalized trade prices and share quantities; do not apply Yahoo inverse factors to Databento raw trades. Independent factor/field checks are still required."
+    ],
+    "qualification_implication": "Provider-defined raw NYSE American reported share volume may meet the existing gate with identity, structural and corporate-action checks. Label its partial venue coverage and normalization limitations. Do not represent it as consolidated or fully reconstructed official daily volume.",
+    "source": "https://databento.com/docs/schemas-and-data-formats/ohlcv"
+  },
+  "conclusion": "XASE.PILLAR covers the required dates and is the historical PTN primary venue. All9 sample payload hashes/counts/bytes and historical identity checks pass; June16 closing auction equals the independent issuer2.19 anchor. The known2022split boundary is consistent with raw event-time prices. Canonical replacement removes concrete bulk-plus-individual auction duplication. Full fixed-span download is recommended; full coverage and in-window corporate actions remain pending. Primary-venue volume is permitted and clearly distinguished from consolidated volume.",
+  "corporate_actions": {
+    "coverage": "Global listing-level events, including NYSE American and listed/delisted securities, with relisting continuity. PTN itself has not been authenticated/qualified.",
+    "documented_history_start": "2018-05-01",
+    "facts": [
+      "Corporate actions update four times daily and have point-in-time record timestamps.",
+      "Adjustment factors are separate reference data, keyed by ex_date; apply, pending and rescind statuses are A/P/R. Reissues and rescissions can occur years after the ex-date.",
+      "Default factor 1.0 can be a placeholder when no factor can be calculated; it must not be interpreted as a verified absence of action.",
+      "Filter exact security/listing, event options and corrections. A current PTN ticker alone is insufficient for its historical XASE/OTC/relisting continuity.",
+      "With genuinely raw 2022\u201323 bars, only actions affecting the authorized holding/feature periods are needed; subsequent 2025 splits are needed only if inverting the already restated Yahoo history.",
+      "Adjustment-factor API is not evidence that volume is adjusted by its inverse; raw-volume use requires source trade-volume semantics."
+    ],
+    "pricing": {
+      "current_account_entitlement_and_price": "UNVERIFIED; existing historical credits do not demonstrate reference subscription access. Do not initiate subscription or contact sales automatically.",
+      "historical_advertised_not_current_quote": {
+        "adjustment_factors": "2024-10-16 launch post: starts $225/month",
+        "corporate_actions": "2024-08-21 launch post: starts $299/month"
+      },
+      "pricing_sources": [
+        "https://databento.com/blog/corporate-actions",
+        "https://databento.com/blog/adjustment-factors"
+      ]
+    },
+    "sources": [
+      "https://databento.com/docs/knowledge-base/datasets",
+      "https://databento.com/docs/venues-and-datasets/adjustment-factors",
+      "https://databento.com/docs/api-reference-reference/adjustment-factors/adjustment-factors-get-range",
+      "https://databento.com/corporate-actions"
+    ]
+  },
+  "created_at": "2026-09-11T02:18:18.945656+00:00",
+  "datasets": [
+    {
+      "documented_start": "2018-05-01",
+      "id": "XNAS.ITCH",
+      "ptn_complete_symbol_history_verified": false,
+      "scope": "Nasdaq exchange proprietary trades/order book, including US stocks listed on other venues; venue volume only, not consolidated volume. PTN historically NYSE American, so Nasdaq closing-auction records cannot stand in for its primary close.",
+      "source": "https://databento.com/datasets/XNAS.ITCH",
+      "target_dates_in_dataset_history": true
+    },
+    {
+      "documented_start": "2018-05-01",
+      "id": "XASE.PILLAR",
+      "metadata_verified_schemas": [
+        "trades",
+        "statistics",
+        "ohlcv-1m",
+        "definition",
+        "status",
+        "mbo"
+      ],
+      "ptn_complete_symbol_history_verified": false,
+      "requires_get_dataset_range": false,
+      "scope": "NYSE American primary venue. Statistics normalizes Core Opening and Closing auction execution price/matched shares. Matched auction volume is not full-day or consolidated volume.",
+      "source": "https://databento.com/docs/venues-and-datasets/xase-pillar",
+      "target_dates_in_dataset_history": true
+    },
+    {
+      "decision": "OUT_OF_RANGE_FOR_2022_2023",
+      "documented_start": "2024-07-01",
+      "id": "EQUS.SUMMARY",
+      "requires_get_dataset_range": false,
+      "scope": "Nasdaq NLS+ consolidated end-of-day OHLCV and statistics. Volume is consolidated across all US exchanges. Daily OHLCV uses only the last 20:15 ET summary and includes postmarket volume; first 16:15 and 17:00 summaries appear in statistics with stat_flags 1 and 2. Publication time does not by itself establish the closing-price field equals the official listing-venue auction.",
+      "source": "https://databento.com/docs/venues-and-datasets/equs-summary",
+      "target_dates_in_dataset_history": false
+    },
+    {
+      "documented_start": null,
+      "id": "EQUS.MINI",
+      "requires_get_dataset_range": true,
+      "scope": "Derived subset of ATS and RegNMS component venues; aggregate OHLCV over those components, anonymized original venue. Not documented as full consolidated volume and not a primary-auction substitute.",
+      "source": "https://databento.com/docs/venues-and-datasets/equs-mini"
+    }
+  ],
+  "minimal_next_requests_root_only": [
+    {
+      "dataset": "XASE.PILLAR",
+      "dates": [
+        "2022-08-30",
+        "2022-08-31",
+        "2023-06-16"
+      ],
+      "kind": "sample_quote_then_authorized_download",
+      "schemas": [
+        "definition",
+        "trades",
+        "statistics"
+      ],
+      "step": 1,
+      "stype_in": "raw_symbol",
+      "symbols": [
+        "PTN"
+      ],
+      "window": "Full UTC day per date; preserve all records. No generic1d after-hours close proxy."
+    },
+    {
+      "checks": [
+        "Verify historical Palatin common-stock identity and event-date symbol mapping.",
+        "Decode price once by1e-9, preserve reported share sizes, compare June16 primary close to issuer2.19 anchor and inspect known2022split boundary.",
+        "Check exact record duplicates and auction records/actions. Never add statistics auction quantity to trades blindly.",
+        "Distinguish New York ts_event session date and actual publication timestamps. Archive later updates but use only the eventual predeclared as-of cutoff.",
+        "Aggregate declared core-session normalized trade prints and preserve official type11 closing price separately."
+      ],
+      "kind": "offline_sample_checks",
+      "step": 2
+    },
+    {
+      "dataset": "XASE.PILLAR",
+      "end_exclusive": "2023-11-01",
+      "expected_sessions": 336,
+      "kind": "full_fixed_span_if_sample_passes",
+      "requirement": "All four fixed81-session windows checked independently; no return-dependent date selection.",
+      "schemas": [
+        "trades",
+        "statistics",
+        "definition"
+      ],
+      "start": "2022-07-01",
+      "step": 3,
+      "stype_in": "raw_symbol",
+      "symbols": [
+        "PTN"
+      ]
+    },
+    {
+      "kind": "corporate_action_coverage",
+      "requirement": "Raw data removes need to invert the2025split. Still establish in-window splits/dividends from entitled reference events or primary issuer evidence. No-action inference requires source coverage; no new subscription is implicitly authorized.",
+      "step": 4
+    }
+  ],
+  "no_api_requests": true,
+  "no_credentials": true,
+  "no_prices_downloaded": true,
+  "no_strategy_returns": true,
+  "normalization_evidence": {
+    "direct_documented_facts": [
+      "XASE ts_event is Pillar SourceTime, ts_recv is capture receipt. OHLCV interval start is based on trade ts_recv, not exchange ts_event.",
+      "NYSE American core session is09:30 to16:00 Eastern on full days, followed by a16:00 to20:00 late session. The entire16:00minute is not exclusively an auction.",
+      "XASE Cross Trade execution price and matched shares normalize to statistics: stat_type1 core opening,11 closing,16 early opening and halt/reopening.",
+      "Statistics update_action1 means add,2 delete. Auction quantity is matched shares, not daily volume. ts_ref is not populated for these auction types; do not reuse futures settlement ts_ref-date rules.",
+      "Trades action is T; price is fixed-point1e-9 and size is quantity. Generic trades does not expose native TradeID,CrossID,PrintableFlag or trade-condition fields.",
+      "NYSE native executions/non-displayed trades carry share quantities. Individual auction fills are non-printable; the Cross Trade contains bulk volume (spec pages12,18).",
+      "Native Trade Cancel112 removes original TradeID/volume; Cross Correction113 replaces auction volume (spec pages16,19). The reviewed Databento XASE normalization documentation does not specify this treatment.",
+      "Native Stock Summary223 contains OHLC/cumulative venue volume, but normalized XASE statistics docs establish auction types1/11/16 only. Native availability is not proof all fields are normalized."
+    ],
+    "interpretation": "Raw event-time share size versus future-split-restated volume is a separate question from vendor cancellation/printability methodology. The latter is a declared aggregation limitation, not a new requirement to independently rebuild every trade cancellation. Do not assert Databento ignores corrections merely because the docs do not describe them.",
+    "potential_concrete_invalidity": [
+      "Duplicate normalized records, inconsistent exact security mapping, sample anchor mismatch, unsupported corporate-action scaling, or adding an auction volume already included in trades."
+    ],
+    "sources": {
+      "adjustment_example": "https://databento.com/docs/examples/adjustment-factors/applying-adjustment-factors",
+      "hours": "https://www.nyse.com/trade/hours-calendars",
+      "nyse_native": "https://www.nyse.com/publicdocs/nyse/data/Integrated_Feed_Client_Specification_v2.4a.pdf",
+      "ohlcv": "https://databento.com/docs/schemas-and-data-formats/ohlcv",
+      "statistics": "https://databento.com/docs/schemas-and-data-formats/statistics",
+      "trades": "https://databento.com/docs/schemas-and-data-formats/trades",
+      "xase": "https://databento.com/docs/venues-and-datasets/xase-pillar"
+    }
+  },
+  "parent_metadata_evidence": {
+    "path": "research/equity-event-test-2026-09-10/databento-metadata-probe.json",
+    "scope": "Dataset/schema date coverage, not PTN session completeness.",
+    "sha256": "b6b2539acaa0a188d2a5ed07e843cfde304233fbbc8626ca8f7c6dde15e56004"
+  },
+  "prior_qualification": {
+    "file": "research/equity-event-repair-2026-09-10/ptn-qualification.json",
+    "qualified_windows": 0,
+    "sha256": "807bd8bd757bede78b56528b2822565e72d1131c67e2e0e1e347bdcc59fdf624",
+    "source_coverage_windows": 4
+  },
+  "proposed_rth_construction": {
+    "calendar": "Independent NYSE sessions and historical early-close times, never inferred from prices.",
+    "closing": "Use valid type11 completed primary auction price, permitting its announcement after scheduled close. Preserve timestamp, update/delete and tie evidence. Missing/conflicting source remains unresolved.",
+    "core_trade_filter": "09:30:00 <= New York ts_event < scheduled close. Define volume as provider-normalized reported shares inside this interval; it excludes the scheduled-close boundary and later prints.",
+    "cutoff": "Any historical revision cutoff must be before next-session decision and frozen before returns.",
+    "high_low": "Core normalized trade extrema plus eligible auction price if the proxy specification requires it. Name this primary-venue derived OHLC, not consolidated official extrema.",
+    "opening": "Retain core opening statistic and first core trade as distinct fields; choose a declared execution proxy before returns, not after inspecting outcomes.",
+    "scope_limit": "Partial venue coverage supports conservative liquidity screening with respect to missing venues; it is not a mathematical lower bound if there are duplicate/cancelled records. Vendor aggregation uncertainty is disclosed consistently with the original daily-provider audit.",
+    "status": "SAMPLE_RECIPE_NOT_A_FROZEN_PRICE_SERIES",
+    "volume": "At an eligible official auction event, replace ALL same publisher/instrument/ts_event trade rows with ONE active statistics price/quantity; require same-price consistency and unique matching bulk trade. Retain ordinary core-session trades outside those groups. Include official closing auction even shortly after scheduled close; no whole16:00minute. This removes the concrete sample duplication without applying any later split factors."
+  },
+  "required_windows": [
+    {
+      "end_inclusive": "2022-12-14",
+      "entry_session": "2022-11-15",
+      "sessions": 81,
+      "slot_id": "0000911216-W1",
+      "start": "2022-08-22"
+    },
+    {
+      "end_inclusive": "2023-03-17",
+      "entry_session": "2023-02-16",
+      "sessions": 81,
+      "slot_id": "0000911216-W2",
+      "start": "2022-11-18"
+    },
+    {
+      "end_inclusive": "2023-06-15",
+      "entry_session": "2023-05-17",
+      "sessions": 81,
+      "slot_id": "0000911216-W3",
+      "start": "2023-02-21"
+    },
+    {
+      "end_inclusive": "2023-10-27",
+      "entry_session": "2023-09-29",
+      "sessions": 81,
+      "slot_id": "0000911216-W4",
+      "start": "2023-07-06"
+    }
+  ],
+  "sample_evidence": {
+    "full_download_recommended": true,
+    "path": "research/equity-event-test-2026-09-10/ptn-sample-audit.json",
+    "sha256": "f09712cf8b22920a753ff4e9ae6c35c4a0a1831de3e0f05110a5efc2283ecbdf"
+  },
+  "status": "SAMPLE_PASSES_DECLARED_PRIMARY_VENUE_PROXY_CHECKS_FULL_COVERAGE_PENDING",
+  "stopping_rule": "Retain failures for concrete identity/unit/action/coverage errors or unresolved necessary price fields. Do not invent extra full-consolidated-volume or perfect-cancellation-replay gates. Report raw primary-venue proxy semantics and vendor aggregation limitations plainly.",
+  "supersedes_review_sha256": "cd1a70cc13232ae0d3bfeb676591a7724374c22ccd3353bcf58a7e29296e77da",
+  "updated_at": "2026-09-11T02:29:24.184430+00:00"
+}

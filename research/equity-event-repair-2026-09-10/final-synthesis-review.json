@@ -1,0 +1,353 @@
+{
+  "checks": [
+    {
+      "check": "synthesis_input:accounting-examples.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:dtss-repair.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:dtss-sources.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:event-repair.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:feature-contract.md",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:inactive-repair.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:policy.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:ptn-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:ptn-qualification.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:ptn-source-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:repair-audit.json",
+      "passed": true
+    },
+    {
+      "check": "synthesis_input:source-backed-ledger-policy.md",
+      "passed": true
+    },
+    {
+      "check": "original_input:inactive-results.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:manual-period-review.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:policy.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:price-aliases.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:price-joins.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:price-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:price-validation.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:root-document-review.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:sample-audit.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:sec-events.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:sec-selection-correction.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:sec-selection.json",
+      "passed": true
+    },
+    {
+      "check": "original_input:sec-sources.json",
+      "passed": true
+    },
+    {
+      "check": "original_result",
+      "passed": true
+    },
+    {
+      "check": "synthesis_script",
+      "passed": true
+    },
+    {
+      "check": "count:fixed_slots",
+      "passed": true
+    },
+    {
+      "check": "count:original_combined_qualified",
+      "passed": true
+    },
+    {
+      "check": "count:repaired_combined_qualified",
+      "passed": true
+    },
+    {
+      "check": "count:qualified_price_windows",
+      "passed": true
+    },
+    {
+      "check": "count:price_source_coverage_windows",
+      "passed": true
+    },
+    {
+      "check": "count:event_source_ready",
+      "passed": true
+    },
+    {
+      "check": "count:remaining_failed_slots",
+      "passed": true
+    },
+    {
+      "check": "count:required_combined",
+      "passed": true
+    },
+    {
+      "check": "count:selected_event_changes",
+      "passed": true
+    },
+    {
+      "check": "admission_threshold",
+      "passed": true
+    },
+    {
+      "check": "audit_agreement",
+      "passed": true
+    },
+    {
+      "check": "all_slot_agreement",
+      "passed": true
+    },
+    {
+      "check": "inactive_scope",
+      "passed": true
+    },
+    {
+      "check": "no_returns_or_paid_data",
+      "passed": true
+    },
+    {
+      "check": "example_raw:0001650372-22-000075",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-22-000075:acceptance_eastern",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-22-000075:acceptance_utc",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-22-000075:filing_date",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-22-000075:timing_match",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-22-000075:daily_entry_invariant",
+      "passed": true
+    },
+    {
+      "check": "example_raw:0001650372-21-000043",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-21-000043:acceptance_eastern",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-21-000043:acceptance_utc",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-21-000043:filing_date",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-21-000043:timing_match",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001650372-21-000043:daily_entry_invariant",
+      "passed": true
+    },
+    {
+      "check": "example_raw:0001856430-23-000015",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-23-000015:acceptance_eastern",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-23-000015:acceptance_utc",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-23-000015:filing_date",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-23-000015:timing_match",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-23-000015:daily_entry_invariant",
+      "passed": true
+    },
+    {
+      "check": "example_raw:0001856430-22-000009",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-22-000009:acceptance_eastern",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-22-000009:acceptance_utc",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-22-000009:filing_date",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-22-000009:timing_match",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001856430-22-000009:daily_entry_invariant",
+      "passed": true
+    },
+    {
+      "check": "example_raw:0001558370-23-002694",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001558370-23-002694:acceptance_eastern",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001558370-23-002694:acceptance_utc",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001558370-23-002694:filing_date",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001558370-23-002694:timing_match",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001558370-23-002694:daily_entry_invariant",
+      "passed": true
+    },
+    {
+      "check": "example_raw:0001104659-22-030025",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001104659-22-030025:acceptance_eastern",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001104659-22-030025:acceptance_utc",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001104659-22-030025:filing_date",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001104659-22-030025:timing_match",
+      "passed": true
+    },
+    {
+      "check": "example_preserved:0001104659-22-030025:daily_entry_invariant",
+      "passed": true
+    },
+    {
+      "check": "only_three_illustrations",
+      "passed": true
+    },
+    {
+      "check": "timing_initial_17_final_19_explicit",
+      "passed": true
+    }
+  ],
+  "checks_passed": 79,
+  "conclusions": [
+    "Counts independently reconcile: original89 preserved, v2 combined93/100 below unchanged95, seven failed slots retained.",
+    "All named original inputs and result hashes unchanged; selected cohort and accessions remain fixed.",
+    "Three accounting illustrations preserve original source/timing flags, including SNPO exact-clock conflicts, and do not certify full-sample or EPS/price readiness.",
+    "Inactive pass is explicitly limited to declared receivable/holding valuation policy; actual cash credit, complete NAV and executable liquidation are not certified.",
+    "Synthesis correctly calls this a data-readiness failure with profitability untested; it does not reject all earnings-text, trend or other strategies.",
+    "No model trained, P&L computed, paid source called or primary artifact modified in this independent review."
+  ],
+  "created_utc": "2026-09-11T02:09:37.715693+00:00",
+  "network_requests": 0,
+  "original_files_modified": false,
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "remaining_findings": [],
+  "resolved_findings": [
+    {
+      "issue": "Initial versus final synthesis timing was not explicit.",
+      "resolution": "Note now distinguishes about 17-minute initial reconciliation from about 19-minute final synthesis; review completed before one-hour cutoff."
+    }
+  ],
+  "reviewed_files": {
+    "docs/QUANT_RESEARCH.md": "2a682451d2aab66b18be4e37ebf506bf3ad7e7681f47fbaae24475e88cf62104",
+    "docs/notes/2026-09-10-equity-event-repair.md": "a5ee826a3c31060573a905ce49ba9d47f8fa3bb88f642d0d07b6162d8fca7247",
+    "research/equity-event-repair-2026-09-10/accounting-examples.json": "d708039edba35d711742ee1e85981b3b51c3bdd9dd6699fbc4de52df2488af73",
+    "research/equity-event-repair-2026-09-10/feature-contract.md": "546232a1f141a5a4f1ede9faa97b4a24641755e215a2cb69cccb746d41fd1283",
+    "research/equity-event-repair-2026-09-10/repair-audit.json": "c151f52d458e2cdc3565438cdb62cd0c3b5cb4cb77dd6da7a87aa372f543ea42",
+    "research/equity-event-repair-2026-09-10/result.json": "8b808bea7816499efa6f29b8bf45a487cb0ea276a53c41d1cf8dd4b048f75f06",
+    "research/equity-event-repair-2026-09-10/synthesize_repair.py": "e85d3e9cb356b6259ac04fafbe9d72367a81ac942bd78ebce41872f6ed8c2fd6"
+  },
+  "schema": "bounded-offline-final-synthesis-review-v2",
+  "scope": "Targeted synthesis/hash/79-check review; unchanged 1882-check audit was not rerun. Accounting example source/timing bindings checked; numerical extraction independently performed earlier by the assigned source reviewer.",
+  "status": "PASS_NO_REMAINING_CONCRETE_FINDINGS",
+  "strategy_returns_calculated": false
+}

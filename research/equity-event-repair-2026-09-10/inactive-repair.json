@@ -1,0 +1,251 @@
+{
+  "ATVI": {
+    "existing_price_evidence": {
+      "acquisition_day_rows": 1,
+      "dividend_adjustment_transition_observed": "The approved July25 extension includes a pre-August1 row and an observed adjustment-factor change. This is narrower than full adjustment accuracy.",
+      "extended_rows": 58,
+      "extension_pre_acquisition_rows": 57,
+      "new_assessment": "The October13 row is affirmatively ineligible as a regular Nasdaq execution price, irrespective of positive reported volume. Its unexplained provenance does not itself prove vendor corruption.",
+      "original_rows": 53,
+      "rows_after_acquisition_through_requested_end": 0,
+      "terminal_row_equals_cash_claim": false
+    },
+    "full_account_performance_verdict": "NOT_TESTED; observed cash timing remains unresolved, but an explicitly cash-locked receivable ledger can be evaluated without that observation",
+    "historical_cash_credit_verdict": "UNRESOLVED_OBSERVATION_NOT_REQUIRED_FOR_EXPLICIT_CASH_LOCKED_POLICY",
+    "remaining_observed_data_gap": "Broker corporate-action cash entry and settled-cash availability or equivalent event-specific custody evidence; generic DTCC/IBKR descriptions do not supply it.",
+    "resolved_by_policy": "A claim can be preserved while preventing unsupported cash reinvestment. No assumed historical credit date is needed for this conservative locked-claim treatment.",
+    "security": {
+      "CUSIP": "00507V109",
+      "historical_symbol": "ATVI",
+      "share_class": "ordinary common shares"
+    },
+    "structural_ledger_policy": {
+      "cash_credit_date": null,
+      "cash_interest_on_uncredited_claim": "0",
+      "classification": "Conservative declared policy; not an observed customer ledger.",
+      "eligibility": "Apply only to eligible ordinary shares held at the event, with ownership/settlement and excluded-share status reconciled. Any unsettled ownership mismatch remains unresolved.",
+      "event": "After confirmed completion, reduce eligible tradable share units to zero and create a separate merger-claim lot of the same entitlement units; face claim=95*units. Preserve original lot basis and event provenance. This is a corporate action, not a sale fill or cash dividend.",
+      "reinvestment_from_claim_before_verified_credit": false,
+      "resolution": "Transfer receivable to spendable settled cash only on separately evidenced broker receipt/availability, with any documented withholding or charges reconciled. Cash receipt reduces the claim by the same amount; no double counting.",
+      "spendable_cash_increase_on_effective_date": "0",
+      "unknown_credit_policy": "Keep the claim locked for the entire unresolved interval, including the study endpoint; assign no automatic T+1/T+2, October16, October20 or fixed-delay credit. Do not turn the claim into idle cash.",
+      "valuation": "Use contractual face amount 95*entitled units as the explicitly declared receivable carrying-value convention after completed conversion. It is not an observed trade or customer cash balance. Display receivable and settled cash separately, assign zero reinvestment capacity to the claim, and do not accrue cash interest. This resolves economic entitlement under the stated convention without pretending to observe settlement.",
+      "verdict": "PASS_FOR_EXPLICIT_LOCKED_RECEIVABLE_TREATMENT_ONLY"
+    },
+    "verified_facts": {
+      "cash_claim_per_eligible_share_usd": "95",
+      "claim_interest_entitlement": "none",
+      "halt_at_eastern": "2023-10-12T20:00:00-04:00",
+      "halt_utc": "2023-10-13T00:00:00Z",
+      "last_nasdaq_trading_date": "2023-10-12",
+      "merger_effective_date": "2023-10-13",
+      "merger_effective_time_precision": "Before regular market open; exact merger timestamp not asserted.",
+      "nasdaq_suspension_date": "2023-10-16",
+      "sources": [
+        "nasdaq_atvi",
+        "atvi_completion"
+      ]
+    }
+  },
+  "SIVB_SIVBQ": {
+    "existing_price_evidence": {
+      "OTC_period_rows": 45,
+      "OTC_rows_window_end": "2023-05-31",
+      "halt_before_OTC_rows": 12,
+      "halt_rows_flat_OHLC": 12,
+      "halt_rows_positive_volume": 4,
+      "halt_rows_zero_volume": 8,
+      "interpretation": "Exclude March10-27 daily rows from regular Nasdaq execution and from qualified current valuation; retain them as archived observations. For March28-May31, the matched common-security series has45 structurally valid, positive-volume OTC daily bars. Their closes can be used as explicitly labeled vendor OTC valuation proxies, without claiming they are executable liquidation prices.",
+      "pre_halt_rows": 26,
+      "total_rows": 83
+    },
+    "guard_policy": {
+      "OTC_new_entry": "No new entry under the proposed U.S.-listed-stock universe.",
+      "OTC_transition": "On March28 update historical symbol/venue using the common CUSIP without creating a sale, cash receipt or share cancellation. Do not back-label pre-March28 history as OTC.",
+      "account_path": "A marked-holding endpoint after OTC trading resumes may be evaluable under this proxy. Complete daily NAV/drawdown through the unpriced halt remains unavailable unless a separately declared stale-mark or valuation convention is explicitly reported as such. Neither unpriced days nor unexecuted exits may be silently omitted.",
+      "existing_holdings": "Retain quantity and basis through the halt. Preserve the last supported quote only as a separately labeled stale reference; qualified_current_mark=null and executable_exit=null during March10-27. An unpriced holding remains in the ledger rather than disappearing or becoming cash.",
+      "held_OTC_exit": "Valuation and sale are distinct. Use an available March28-May31 matched vendor OTC daily close as a declared holding-value proxy. Do not create a sale or release cash from that mark. A simulated sale later requires a separately frozen delayed-exit/OTC execution and cost policy; it need not be a guaranteed actual customer fill, but cannot be introduced after evaluating returns.",
+      "terminal_handling": "If a fixed horizon ends on a qualified March28-May31 OTC observation, report a terminal marked holding under the declared proxy, plus actual/cash-ledger balance separately. If the horizon ends during the halt or after available coverage, retain an unpriced holding and label that requested outcome unresolved. Do not require ultimate bankruptcy recovery outside a horizon that only needs a marked holding.",
+      "unfilled_orders": "No simulated fill on or after the halt while Nasdaq remains halted/suspended; cancel an unfilled planned entry without changing cash or positions. Retain the event and the rejected-order reason.",
+      "verdict": "PASS_FOR_EXPLICIT_HALT_IDENTITY_AND_POST_TRANSITION_VALUATION_POLICY"
+    },
+    "held_position_valuation_and_exit_verdict": {
+      "actual_or_simulated_liquidation": "NOT_ESTABLISHED; requires a later frozen execution/cost policy, not proof that every close guarantees a fill",
+      "halt_current_valuation": "UNRESOLVED_OBSERVATION_RETAIN_AS_UNPRICED",
+      "post_transition_valuation": "PASS_FOR_DECLARED_VENDOR_OTC_CLOSE_PROXY",
+      "ultimate_bankruptcy_recovery": "NOT_REQUIRED_FOR_A_FIXED_HORIZON_ENDING_ON_A_QUALIFIED_MARKED_HOLDING"
+    },
+    "provider_identity_evidence": {
+      "metadata_path": "data/snapshots/equity-event-metadata-2026-09-10/SIVBQ.json",
+      "metadata_sha256": "7bc2d7703379f1604826b3143fa0dae74501c6dcbe45a4013822720b4434aa74",
+      "name": "SVB Financial Group",
+      "scope": "Current provider name supports archive identity; historical common-CUSIP and OTC-effective-date evidence comes from OCC, not backward application of current PINK metadata.",
+      "ticker": "SIVBQ"
+    },
+    "remaining_observed_data_gap": "Current valuation during the halt and customer-specific execution/cash records are not observed. Future model work must declare what result it needs: marked-holding endpoint, complete daily valuation path, or executed 20-session liquidation. The45 post-transition marks can support the first; the others need explicit additional conventions/evidence. No requirement to research an eventual bankruptcy payout outside that horizon.",
+    "security": {
+      "CUSIP": "78486Q101",
+      "post_transition_symbol": "SIVBQ",
+      "pre_transition_symbol": "SIVB",
+      "share_class": "SVB Financial Group common stock, distinct from SIVBP preferred and the bank deposit liabilities"
+    },
+    "valuation_proxy_policy": {
+      "data_checks": "Existing audit establishes finite positive internally consistent OHLC and positive volume for all45 post-transition rows. These are data qualifications for this proxy, not a guarantee of liquidity or execution.",
+      "eligible_observation_dates": "2023-03-28 through 2023-05-31 within existing archive",
+      "eligible_rows": 45,
+      "identity": "SVB Financial Group common CUSIP 78486Q101; same holding as SIVB, not a new entity or bank deposit.",
+      "measure": "Raw vendor daily close of matched SIVBQ common shares, multiplied by preserved units; no calculation performed here.",
+      "missing_mark": "null/unpriced, never forward-fill as observed current market value",
+      "new_trade_authorization": false,
+      "status": "PASS_AS_DECLARED_DATA_CONVENTION",
+      "terminal_sale_assumed": false
+    },
+    "verified_facts": {
+      "OTC_symbol_effective_date": "2023-03-28",
+      "formal_delisting_effective_date": null,
+      "halt_at_eastern": "2023-03-10T08:35:18-05:00",
+      "halt_utc": "2023-03-10T13:35:18Z",
+      "last_daily_session_not_excluded_by_this_halt": "2023-03-09",
+      "nasdaq_suspension_date": "2023-03-28",
+      "sources": [
+        "nasdaq_sivb_halt",
+        "occ_sivb",
+        "nasdaq_sivb_delisting"
+      ]
+    }
+  },
+  "created_utc": "2026-09-11T01:54:57.076537+00:00",
+  "decision": {
+    "defensible_inactive_treatment_gate": "PASS_FOR_DECLARED_LEDGER_POLICY",
+    "future_model_blockers": [
+      "If a requested horizon ends while a held position has no qualified mark, that outcome stays unresolved.",
+      "If the model needs complete daily NAV/drawdown through the halt, it must predeclare any stale-mark or other valuation convention and label it distinctly; otherwise that metric remains incomplete.",
+      "If the20-session rule requires liquidation, freeze delayed-exit treatment, OTC eligibility, and execution/cost proxies before return calculation; current valuationrows do not silently create a fill."
+    ],
+    "inactive_gate": "PASS_FOR_DECLARED_LEDGER_POLICY_ONLY",
+    "narrow_passes": [
+      "ATVI exchange cutoff and eligible-share entitlement",
+      "ATVI face-value receivable carrying convention with cash locked until separately evidenced credit",
+      "SIVB halt guard and same-common-security OTC identity transition",
+      "SIVBQ March28-May31 vendor close as an explicit held-asset valuation proxy, not a fill"
+    ],
+    "next_action": "Use the explicit control policy in the data-readiness synthesis, separately from source/price qualification and future model specification. No additional price query or ultimate bankruptcy-outcome search is required for the existing marked-or-unpriced ledger control.",
+    "reason": "ATVI has a source-supported fixed receivable carried separately and locked against reinvestment. SIVB preserves its shares through the halt as unpriced, then admits matched post-March28 OTC closes as explicitly labeled valuation proxies. No cash credit, fill, zero recovery, or observed halt valuation is invented.",
+    "scope": "This is a narrow data/ledger-treatment pass under repair v2. It does not certify a complete historical daily NAV, executable liquidation, fully qualified 100-slot data set, or strategy performance.",
+    "unresolved_observations": [
+      "ATVI actual customer settled-cash credit date",
+      "SIVB qualified current valuation during March10-27 halt",
+      "Actual customer liquidation/credit records"
+    ]
+  },
+  "investment_returns_calculated": false,
+  "network_summary": {
+    "method": "Bounded web searches and reads of official Nasdaq, OCC, issuer-hosted, DTCC and IBKR materials.",
+    "new_price_requests": 0,
+    "new_tiingo_requests": 0,
+    "paid_data_usd": 0,
+    "sec_endpoint_requests": 0
+  },
+  "observed_credit_date_found": false,
+  "original_control_verdict": "UNRESOLVED_NOT_PASSED",
+  "original_inactive_files_unchanged": true,
+  "original_inputs_sha256": {
+    "research/equity-event-pilot-2026-09-10/inactive-manifest-initial.json": "3cac30d10bf04e414787671619c401d90b36c4d91f906369672190333ac237c1",
+    "research/equity-event-pilot-2026-09-10/inactive-manifest.json": "e8ee821c86f9218d21172d62b3bf680d6fda37924b5e5ec5bc4abff28d47a31b",
+    "research/equity-event-pilot-2026-09-10/inactive-results-initial.json": "21f2c1684f75e10bd5f5f052b95492317a5ac5cdad94e2cea69c2de5efd9dc63",
+    "research/equity-event-pilot-2026-09-10/inactive-results.json": "b13518bc74b73bb5241af65dc0121c0aa3a38d5b2a48d008c21ba983e6cc6c8c",
+    "research/equity-event-pilot-2026-09-10/inactive_audit.py": "3332868486f0809bdf1e76855b900ee60f733e6367b096554d71c79f30d44c31"
+  },
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "prohibited_inferences": [
+    "OCC option exercise settlement dates are not shareholder merger-credit dates.",
+    "Employee stock-award payment deadlines are not ordinary broker-held common-stock credit dates.",
+    "Nasdaq suspension dates are not automatically formal delisting dates.",
+    "A zero divCash field does not encode merger consideration or prove no capital entitlement.",
+    "Zero-volume or repeated bars are not valid zero-return observations; positive volume is not proof of regular exchange executability.",
+    "Stated stress values such as zero available value may be used only in a separately labeled risk scenario, never as historical recovery, price or performance."
+  ],
+  "raw_price_rows_published": false,
+  "refined_at_utc": "2026-09-11T01:58:25.442259+00:00",
+  "refinement": {
+    "previous_draft_sha256": "a7eeaab1b1dfef012de808c41b4900cf7b266340d4f269dfbca4f4e72d510ba5",
+    "reason": "Clarify that this stage evaluates defensible data/ledger policies, not guaranteed execution at a daily close. Allow a declared post-transition OTC close valuation proxy; retain unavailable halt marks and separate execution/complete-daily-NAV gates. No original pilot files changed."
+  },
+  "schema": "inactive-controls-repair-v2",
+  "scope": "Primary-source repair of existing ATVI/SIVB inactive controls. No new price queries, model returns, SEC endpoint requests, account access, paid data or original-file edits.",
+  "sources": [
+    {
+      "fact": "ATVI common CUSIP 00507V109 last traded October 12, was halted after 20:00 Eastern that day, remained halted on the October 13 closing day, and was suspended October 16. Consideration was USD95 per share.",
+      "id": "nasdaq_atvi",
+      "published_date": "2023-10-13",
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Official marketplace event; not customer cash-credit evidence.",
+      "title": "Nasdaq Equity Corporate Actions Alert 2023-588",
+      "url": "https://nasdaqtrader.com/TraderNews.aspx?id=ECA2023-588"
+    },
+    {
+      "fact": "At the effective time eligible ordinary common shares were cancelled and converted into a right to USD95 cash without interest; stated excluded-share categories remain excluded.",
+      "id": "atvi_completion",
+      "published_date": "2023-10-13",
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Completed legal entitlement, not actual brokerage receipt or fair-value discount.",
+      "title": "Activision Blizzard October 13, 2023 completion 8-K, issuer-hosted",
+      "url": "https://investor.activision.com/static-files/6439fa79-7018-4f4d-adf5-192a2cd2007b"
+    },
+    {
+      "fact": "SIVB and SIVBP were halted March10,2023 at08:35:18 Eastern pending further information.",
+      "id": "nasdaq_sivb_halt",
+      "published_date": "2023-03-10",
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Halt and timestamp; common SIVB must not be confused with preferred SIVBP.",
+      "title": "Nasdaq Halts SVB Financial Group",
+      "url": "https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-halts-svb-financial-group"
+    },
+    {
+      "fact": "Underlying SIVB becomes SIVBQ effective March28,2023 on an OTC market. The common-share CUSIP is78486Q101.",
+      "id": "occ_sivb",
+      "published_date": "2023-03-27",
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Supports historical common-security identity and venue transition; an option-adjustment memo does not prove stock fills, broker permission or terminal recovery.",
+      "title": "OCC Information Memo 52179",
+      "url": "https://infomemo.theocc.com/infomemos?number=52179"
+    },
+    {
+      "fact": "Nasdaq says SVB securities were suspended March28 and had not traded there since; legal delisting takes effect ten days after its Form25 filing.",
+      "id": "nasdaq_sivb_delisting",
+      "published_date": "2023-04-28",
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Do not equate March28 suspension with the later formal delisting date. Exact Form25 effective date was not established in this bounded review and is unnecessary for the earlier no-Nasdaq-fill rule.",
+      "title": "Nasdaq April28,2023 delisting announcement including SVB Financial Group",
+      "url": "https://ir.nasdaq.com/news-releases/news-release-details/delisting-securities-pingtan-marine-enterprise-ltd-srax-inc-svb"
+    },
+    {
+      "fact": "DTCC allocates after receiving and verifying funds; actual allocations have dates and times. Anticipated payment dates are not guaranteed.",
+      "id": "dtcc_allocation",
+      "published_date": null,
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Current general processing guidance explains distinct stages; it does not establish the historical ATVI allocation or a retail cash-credit date.",
+      "title": "DTCC Allocation Status Challenge guidance",
+      "url": "https://dtcclearning.com/helpfiles/data/ca_web_ts/Content/Topics/ca_web/coveo_exclude/factor_rate/alloc_status.htm"
+    },
+    {
+      "fact": "The report distinguishes settlement cash received from a clearing organization and includes corporate-action cash receipts.",
+      "id": "ibkr_cash_report",
+      "published_date": null,
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "Identifies suitable account evidence. No account was accessed, and the page stale illustrative stock-settlement interval was not used.",
+      "title": "IBKR Cash and Collateral Report guide",
+      "url": "https://www.ibkrguides.com/reportingreference/reportguide/cash-and-collateral-report.htm"
+    },
+    {
+      "fact": "IBKR classifies mandatory events such as acquisitions and notifies affected holders.",
+      "id": "ibkr_corporate_actions",
+      "published_date": null,
+      "reviewed_at_utc": "2026-09-11T01:54:57.076537+00:00",
+      "scope": "General process; notification does not prove the time money became spendable.",
+      "title": "IBKR Corporate Actions",
+      "url": "https://www.interactivebrokers.com/en/general/corporate-actions.php"
+    }
+  ],
+  "terminal_return_imputed": false
+}

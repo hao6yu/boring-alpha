@@ -1,0 +1,31 @@
+{
+  "accounting": "Define measures, fiscal duration, GAAP/non-GAAP and IFRS transition handling before feature extraction. Document joins are separate from numerical-feature readiness.",
+  "cohort": "Keep all 100 slots from the independently corrected original cohort. No issuer replacement, deletion or return imputation.",
+  "cohort_selection_sha256": "026159b5a7054be7ed61941f6785de318442e37e05d6ae5509d092b335efac94",
+  "deadline_utc": "2026-09-11T02:48:37Z",
+  "event_rule": "Select the earliest original, regularly scheduled FULL quarterly/year-end earnings release within each fixed window. Preliminary or estimated results, guidance, selected financial metrics and accounting-transition presentations are distinct information predecessors, not the target full-release event. Do not claim the full release is the first earnings information.",
+  "event_rule_change": "This is an explicit exploratory amendment to previously ambiguous wording, based on document inspection and before any strategy-return calculation. Preserve original failure and all preliminary predecessors. Apply to every slot, not just four previously blocked cases.",
+  "inactive_controls": "Use primary-source halt, corporate-action and settlement information for existing ATVI/SIVB cases. A defensible cash receivable may be distinguished from spendable cash, but an assumed credit date or fill is not an observed fact. Explicit stress bounds can be reported separately, never relabeled historical performance. Unresolved events remain unresolved.",
+  "name": "Targeted earnings-event data and rule repair v2",
+  "network_ownership": {
+    "PTN_alternative_prices": "research_basis",
+    "SEC_and_DTSS": "research_trend",
+    "inactive_controls_primary_sources": "research_volatility"
+  },
+  "new_paid_data_limit_usd": 0,
+  "no_model_training": true,
+  "no_strategy_returns": true,
+  "original_policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "original_result_sha256": "aebe924d4dca494d8d9a39bfc9f937b54f0ce833bd64238f740235404c18dc82",
+  "outputs": "Reconciled before/after counts, exact repairs and remaining blockers, independent audit, a concrete next decision. Preserve original pilot artifacts byte-for-byte.",
+  "pass_requirement": "At least 95/100 combined source/event/identity/timing/qualified-price joins, plus defensible inactive-security treatment. Report any narrower evidence separately; do not move the threshold.",
+  "preliminary_information": "Retain original accession, availability date, scope and source for all known predecessors. Future numeric and text baselines must share the same known-preliminary-information flag and pre-entry prices; do not infer consensus surprise from earnings growth.",
+  "price_qualification": "Separate source coverage from fully qualified raw/adjusted/action history. A download or apparent row continuity alone cannot pass the price gate.",
+  "price_repair": "Only PTN original 2022-07-01 through 2023-10-31 history. Free publicly available alternative sources or already-authorized local history; no paid data or account signup. Verify issuer identity, raw versus adjusted basis, splits/dividends and every required 81-session window. A current split-restated close is not raw historical OHLC. Do not substitute another issuer or infer missing dividends as zero.",
+  "prior_repair": "Targeted DTSS original prior-quarter releases only, with original publicly filed source before each current event. Keep unverified priors and the missing current-event slot.",
+  "quotas": "No new Tiingo calls initially; previous pilot used 34 in its window. Alternative public requests must be modest and respect errors/rate limits. SEC owner max4 requests/sec, timeout20sec, max1 transient retry. No secret in URL/log.",
+  "raw_directory": "data/snapshots/equity-event-repair-2026-09-10",
+  "reserved_equity_strategy_period": "2024-2025 remains unopened",
+  "started_at": "2026-09-11T01:48:37Z",
+  "timing": "Unchanged following regular-session close after official filing date and Eastern acceptance date; preserve exact clock conflicts and require source-invariant daily entry."
+}

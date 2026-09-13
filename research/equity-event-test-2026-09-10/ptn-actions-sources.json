@@ -1,0 +1,47 @@
+{
+  "attempts": [
+    {
+      "bytes": 13382,
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/12da602575652749952941cc2c76c67109ab4f98f1b159b4aa45ae1526bba649.html",
+      "received_at": "2026-09-11T02:22:32.597507+00:00",
+      "sha256": "66764e7a82d7a08ab4cf412c34326a7a38e6d5c2dbc0a805f515f87d668ec4d5",
+      "started_at": "2026-09-11T02:22:32.413641+00:00",
+      "status": 200,
+      "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/0001654954-24-012498-index.html"
+    },
+    {
+      "bytes": 1807641,
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0d080f7d4bb62444e029867b6ca3077b9e47f70b13ab9c9237364df98727aef8.htm",
+      "received_at": "2026-09-11T02:22:33.144091+00:00",
+      "sha256": "fa27208fea50ef32a7716ea37c8f4beeb0488ed710e32b9b4cef17327505e165",
+      "started_at": "2026-09-11T02:22:32.902043+00:00",
+      "status": 200,
+      "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/ptn_10k.htm"
+    }
+  ],
+  "fixed_urls": [
+    "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/0001654954-24-012498-index.html",
+    "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/ptn_10k.htm"
+  ],
+  "scope": "Original FY2024 10-K/index, corporate-action and identity evidence only; no prices or returns.",
+  "sources": [
+    {
+      "bytes": 13382,
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/12da602575652749952941cc2c76c67109ab4f98f1b159b4aa45ae1526bba649.html",
+      "received_at": "2026-09-11T02:22:32.597507+00:00",
+      "sha256": "66764e7a82d7a08ab4cf412c34326a7a38e6d5c2dbc0a805f515f87d668ec4d5",
+      "started_at": "2026-09-11T02:22:32.413641+00:00",
+      "status": 200,
+      "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/0001654954-24-012498-index.html"
+    },
+    {
+      "bytes": 1807641,
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0d080f7d4bb62444e029867b6ca3077b9e47f70b13ab9c9237364df98727aef8.htm",
+      "received_at": "2026-09-11T02:22:33.144091+00:00",
+      "sha256": "fa27208fea50ef32a7716ea37c8f4beeb0488ed710e32b9b4cef17327505e165",
+      "started_at": "2026-09-11T02:22:32.902043+00:00",
+      "status": 200,
+      "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/ptn_10k.htm"
+    }
+  ]
+}

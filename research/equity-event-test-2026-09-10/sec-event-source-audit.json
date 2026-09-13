@@ -1,0 +1,8508 @@
+{
+  "base_SEC_checks_by_year": {
+    "2020": 330,
+    "2021": 301,
+    "2022": 295,
+    "2023": 272
+  },
+  "checks_count": 19645,
+  "created_utc": "2026-09-11T03:52:34.515552+00:00",
+  "failures": [],
+  "limitations": [
+    "Internal consistency and original-source provenance audit, not independent semantic verification of every extracted value.",
+    "Recorded missing original/current/identity sources remain missing; source joins alone do not qualify prices, features, labels, fills or P&L.",
+    "Item2.02 predecessor frame does not prove comprehensive absence of earlier earnings information."
+  ],
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "reviewed_files": {
+    "sec-cohort-ownership-audit.json": "8bde935b3403b49871eb6ed85a852d1f423ff1efd52b9387d40cea09aa8566d3",
+    "sec-events-current-roster.json": "f931061fdbfe0a44d6598c5dcdc8fe9f2a185321a897cf88b387f2cc2a329ca1",
+    "sec-manual-decisions.json": "49354ed0afc47dbcd228ad6a4f1f662721fbf879a0789ac07376f4b9ce8f4391",
+    "sec-selection.json": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0",
+    "sec-sources.json": "295babce02ff0a017438aade5dedc45480d8e3b12d299c0c4ebc89e0f9ac6181"
+  },
+  "slot_blocking": [
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001511337-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000706698-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2022Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000706698-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000706698-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000886982-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000315374-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000315374-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000315374-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000315374-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000315374-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001690585-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001690585-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001690585-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001690585-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001703644-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2020Q4"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001443669-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2021Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001443669-2022Q1"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001443669-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2023Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001443669-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001443669-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001441693-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001441693-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001441693-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001441693-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001441693-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001441693-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001441693-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001683695-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001562401-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100493-2023Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000100726-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2020Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000100726-2020Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000100726-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000100726-2023Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001652130-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001652130-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2021Q2"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001087294-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001087294-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001087294-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001087294-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001087294-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001087294-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001087294-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001622353-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001622353-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001622353-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001622353-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000904979-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000904979-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000904979-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000742126-2023Q4"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000922224-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2020Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000922224-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000922224-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000922224-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000922224-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2020Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2020Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2021Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2021Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2022Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2022Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000821130-2023Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2023Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000821130-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001469372-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001469372-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001469372-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001469372-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001469372-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001469372-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001469372-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2021Q4"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000764401-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2022Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000764401-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000764401-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000031667-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2021Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000031667-2021Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000031667-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2022Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000031667-2022Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000031667-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000031667-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000700841-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2022Q3"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000700841-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000700841-2023Q2"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000700841-2023Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000700841-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001021635-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001021635-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001091907-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001091907-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001091907-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001069530-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001521951-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001708599-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000874501-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001552451-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001552451-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001552451-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001552451-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001552451-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000033185-2023Q3"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000033185-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000913277-2023Q3"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000913277-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001638833-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001676667-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001490281-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2021Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001490281-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001490281-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001111335-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001393818-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000018230-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001703038-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001600470-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001600470-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001600470-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001600470-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001600470-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001422183-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2023Q2"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001514991-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001514991-2023Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001101680-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2020Q2"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001101680-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2021Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001101680-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001101680-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001101680-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001101680-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001534992-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001534992-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000719220-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001367920-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001367920-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001367920-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001367920-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001367920-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927066-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001487952-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2020Q2"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001279704-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2021Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001279704-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001279704-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001279704-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001283699-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000851205-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000105132-2020Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000105132-2020Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000105132-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000105132-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000105132-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001669811-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2021Q1"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001022652-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001022652-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2022Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001022652-2022Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001022652-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022652-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000726958-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2020Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000924717-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000924717-2023Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000827054-2020Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE"
+      ],
+      "slot_id": "0000827054-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000827054-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000827054-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001364954-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001164863-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001164863-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001164863-2023Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001164863-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000078814-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001444363-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001444363-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001444363-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001444363-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001529377-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001614184-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001614184-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001614184-2020Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001614184-2020Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001614184-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001614184-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001614184-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001614184-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001614184-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001667939-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001667939-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001512499-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2020Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001512499-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001512499-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2023Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001512499-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001512499-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001055160-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001055160-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001055160-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001055160-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001055160-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001055160-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000065984-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001493594-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001383312-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001328143-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001328143-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2020Q1"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000863894-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2021Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000863894-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000863894-2023Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000863894-2023Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000863894-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000863894-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001022079-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001022079-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2020Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001022079-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2021Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001022079-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001022079-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001175505-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001175505-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001175505-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001175505-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001175505-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000006845-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2020Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000006845-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000006845-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000006845-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000006845-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000006845-2023Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000006845-2023Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000006845-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000927653-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000927653-2020Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000927653-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000927653-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000066570-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000068709-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000068709-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000068709-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000068709-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000068709-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2020Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001733998-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001733998-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001034842-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000024741-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001277902-2023Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000819689-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000819689-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001142417-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2023Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000919012-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000919012-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001378950-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000008146-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000008146-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2021Q3"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000876378-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2022Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000876378-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000876378-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000887919-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000887919-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000887919-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000887919-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000887919-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000887919-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000887919-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000918160-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000918160-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2021Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001640384-2021Q2"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001640384-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001640384-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001640384-2022Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001640384-2022Q4"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001640384-2023Q1"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001640384-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001640384-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001640384-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2021Q3"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000850460-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2022Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000850460-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000850460-2023Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000356130-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001262823-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001395937-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2020Q3"
+    },
+    {
+      "blocking": [
+        "CANDIDATE_SOURCE_FAILURE",
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001395937-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2021Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001395937-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2021Q3"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0001395937-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001395937-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001263762-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001263762-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001403568-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001333493-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001561660-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2020Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2020Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2020Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2021Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2021Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2021Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2021Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2022Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2022Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2022Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2022Q4"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2023Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2023Q2"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2023Q3"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0001561660-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2020Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2021Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0001728951-2023Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2020Q1"
+    },
+    {
+      "blocking": [
+        "NO_VERIFIED_CURRENT_FULL_RELEASE"
+      ],
+      "slot_id": "0000799288-2020Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2020Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2020Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2021Q1"
+    },
+    {
+      "base_SEC_checks": false,
+      "blocking": [
+        "ORIGINAL_PRIOR_NOT_YET_VERIFIED"
+      ],
+      "slot_id": "0000799288-2021Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2021Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2021Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2022Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2022Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2022Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2022Q4"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2023Q1"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2023Q2"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2023Q3"
+    },
+    {
+      "base_SEC_checks": true,
+      "blocking": [],
+      "slot_id": "0000799288-2023Q4"
+    }
+  ],
+  "source_files_checked": 5133,
+  "status": "PASS_INTERNAL_SOURCE_CONSISTENCY_WITH_RECORDED_GAPS",
+  "unique_events_checked": 1722
+}

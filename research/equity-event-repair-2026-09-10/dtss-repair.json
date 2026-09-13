@@ -1,0 +1,198 @@
+{
+  "created_utc": "2026-09-11T01:58:53.574934+00:00",
+  "filings_in_window": [
+    {
+      "accessionNumber": "0001213900-22-017054",
+      "filingDate": "2022-03-31",
+      "form": "CORRESP",
+      "items": "",
+      "primaryDocument": "filename1.htm",
+      "reportDate": ""
+    },
+    {
+      "accessionNumber": "0001213900-22-013862",
+      "filingDate": "2022-03-21",
+      "form": "DEFR14A",
+      "items": "",
+      "primaryDocument": "ea157161-defr14a_datasea.htm",
+      "reportDate": ""
+    },
+    {
+      "accessionNumber": "0001213900-22-013580",
+      "filingDate": "2022-03-18",
+      "form": "DEF 14A",
+      "items": "",
+      "primaryDocument": "ea157084-def14a_datasea.htm",
+      "reportDate": "2022-04-28"
+    },
+    {
+      "accessionNumber": "0001213900-22-008871",
+      "filingDate": "2022-02-23",
+      "form": "CORRESP",
+      "items": "",
+      "primaryDocument": "filename1.htm",
+      "reportDate": ""
+    },
+    {
+      "accessionNumber": "0000000000-22-001893",
+      "filingDate": "2022-02-16",
+      "form": "UPLOAD",
+      "items": "",
+      "primaryDocument": "filename1.pdf",
+      "reportDate": ""
+    },
+    {
+      "accessionNumber": "0001213900-22-006734",
+      "filingDate": "2022-02-11",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "f10q1221_dataseainc.htm",
+      "reportDate": "2021-12-31"
+    },
+    {
+      "accessionNumber": "0001213900-21-060038",
+      "filingDate": "2021-11-16",
+      "form": "S-1/A",
+      "items": "",
+      "primaryDocument": "ea150848-s1a2_dataseainc.htm",
+      "reportDate": ""
+    },
+    {
+      "accessionNumber": "0001213900-21-058737",
+      "filingDate": "2021-11-12",
+      "form": "10-Q",
+      "items": "",
+      "primaryDocument": "f10q0921_dataseainc.htm",
+      "reportDate": "2021-09-30"
+    },
+    {
+      "accessionNumber": "0001213900-21-055568",
+      "filingDate": "2021-10-29",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X03/ownership.xml",
+      "reportDate": "2021-10-10"
+    },
+    {
+      "accessionNumber": "0001213900-21-055566",
+      "filingDate": "2021-10-29",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X03/ownership.xml",
+      "reportDate": "2021-10-10"
+    },
+    {
+      "accessionNumber": "0001213900-21-055564",
+      "filingDate": "2021-10-29",
+      "form": "4",
+      "items": "",
+      "primaryDocument": "xslF345X03/ownership.xml",
+      "reportDate": "2021-09-10"
+    },
+    {
+      "accessionNumber": "0001213900-21-055562",
+      "filingDate": "2021-10-29",
+      "form": "3",
+      "items": "",
+      "primaryDocument": "xslF345X02/ownership.xml",
+      "reportDate": "2020-11-16"
+    },
+    {
+      "accessionNumber": "0001213900-21-052466",
+      "filingDate": "2021-10-12",
+      "form": "S-1/A",
+      "items": "",
+      "primaryDocument": "ea148728-s1a1_dataseainc.htm",
+      "reportDate": ""
+    }
+  ],
+  "inspected_index_findings": [
+    {
+      "accession": "0001213900-21-058737",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/sec/03916827ae5f5cb0c4ce2c6678169f22704e1e7d40b5db2b0fb1cd9c56023294.html",
+      "finding": "No separate press-release exhibit listed; reports/certifications/XBRL or registration amendment and graphics only.",
+      "sha256": "435a35195097d91edaa2303ae9e6c015d334b8e494cb4a650f69b86ae27df511",
+      "url": "https://www.sec.gov/Archives/edgar/data/1631282/000121390021058737/0001213900-21-058737-index.html"
+    },
+    {
+      "accession": "0001213900-22-006734",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/sec/9870d72fc96191021ec2cd2b5d35e1d0ad7e8bc24706e9e900926343694989c1.html",
+      "finding": "No separate press-release exhibit listed; reports/certifications/XBRL or registration amendment and graphics only.",
+      "sha256": "263b4cecc83b7b1a753c2669df4b97c6db71a1adf1c9f48318fbe511b49da785",
+      "url": "https://www.sec.gov/Archives/edgar/data/1631282/000121390022006734/0001213900-22-006734-index.html"
+    },
+    {
+      "accession": "0001213900-21-060038",
+      "file": "data/snapshots/equity-event-repair-2026-09-10/sec/8b039f0317c7961561541389500485780d8aa3b72155e308193b1f44f543f9fa.html",
+      "finding": "No separate press-release exhibit listed; reports/certifications/XBRL or registration amendment and graphics only.",
+      "sha256": "733e6755ebb0f8ea6f6a618c597084b65f16122557de3bfba6b90781a3ab1b04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1631282/000121390021060038/0001213900-21-060038-index.html"
+    }
+  ],
+  "inspected_metadata_window": [
+    "2021-10-01",
+    "2022-03-31"
+  ],
+  "inspection_sha256": "ce287ad834fb6a3b40e5f060b1d8c26547c2fdd953132795bbcf9baa01d5df9e",
+  "limitations": [
+    "A bounded unsuccessful recovery does not establish that no public prior release ever existed.",
+    "Only the specified original filing indexes were newly fetched; financial statement values were not substituted for an original earnings release.",
+    "The complete cached submission listing supplies filing metadata; it is not an exhaustive text search of every historical attachment.",
+    "Two SEC-domain search-engine queries returned unrelated issuers and supplied no probative DTSS evidence; no result was accepted.",
+    "A later website copy without verified original availability was not used."
+  ],
+  "new_sec_requests": 3,
+  "original_8k_6k_count_in_window": 0,
+  "original_events_sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+  "original_result_sha256": "aebe924d4dca494d8d9a39bfc9f937b54f0ce833bd64238f740235404c18dc82",
+  "original_result_unchanged": true,
+  "original_source_manifest_sha256": "13931953589ea2b421c5aaf532f757b5ddf4f4d565bd6ce1ff119c888aab820c",
+  "paid_requests": 0,
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "preserved_no_current_slot": {
+    "blocking": true,
+    "slot_id": "0001631282-W3",
+    "status": "NO_CURRENT_ORIGINAL"
+  },
+  "prices_read": false,
+  "slots": [
+    {
+      "blocking": true,
+      "current_accession": "0001213900-22-072594",
+      "current_filing_date": "2022-11-15",
+      "current_release_date": "2022-11-14",
+      "prior_release": null,
+      "repaired": false,
+      "required_prior_period_end": "2021-09-30",
+      "slot_id": "0001631282-W1",
+      "status": "UNRESOLVED_ORIGINAL_PRIOR_RELEASE_NOT_RECOVERED"
+    },
+    {
+      "blocking": true,
+      "current_accession": "0001213900-23-012441",
+      "current_filing_date": "2023-02-16",
+      "current_release_date": "2023-02-13",
+      "prior_release": null,
+      "repaired": false,
+      "required_prior_period_end": "2021-12-31",
+      "slot_id": "0001631282-W2",
+      "status": "UNRESOLVED_ORIGINAL_PRIOR_RELEASE_NOT_RECOVERED"
+    }
+  ],
+  "source_manifest_sha256": "6a5a40141fed870968121e6d3a293689768117494126391fde85d8a3a04134ad",
+  "status": "NO_QUALIFIED_REPAIR_WITHIN_TARGETED_SOURCE_SEARCH",
+  "strategy_returns_calculated": false,
+  "submissions_historical_pages": [],
+  "submissions_source": {
+    "attempt_in_call": 1,
+    "bytes": 42893,
+    "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/fcaa48bbb14e6e80a8786ab6b5aa50f1a5ce646504f348e047798f4c6c65c608.json",
+    "received_at": "2026-09-10T23:44:00.637073+00:00",
+    "response_url": "https://data.sec.gov/submissions/CIK0001631282.json",
+    "sha256": "84eabe8e2a981f83e5a561951398444564f96881e5b5b20ad786031a03832bf1",
+    "started_at": "2026-09-10T23:44:00.459976+00:00",
+    "status": 200,
+    "url": "https://data.sec.gov/submissions/CIK0001631282.json"
+  },
+  "submissions_url": "https://data.sec.gov/submissions/CIK0001631282.json"
+}

@@ -1,0 +1,1577 @@
+{
+  "created_at": "2026-09-11T02:57:21.170779+00:00",
+  "extractor_sha256": "118a6cc47df768d44bc5215ea618e8243b68ca8d273a5f4c2cccc62df10271ec",
+  "fixtures": [
+    {
+      "comparisons": {
+        "diluted_eps": {
+          "current_release_comparable_prior_value": "-1.63",
+          "current_value": "-0.05",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "-1.59",
+          "original_prior_value": null,
+          "original_vs_current_comparative_difference": null,
+          "same_current_release_comparison_eligible": true
+        },
+        "revenue": {
+          "current_release_comparable_prior_value": "614024000",
+          "current_value": "807392000",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "614024000",
+          "original_prior_value": null,
+          "original_vs_current_comparative_difference": null,
+          "same_current_release_comparison_eligible": true
+        }
+      },
+      "current": {
+        "accounting_basis": "US_GAAP_EXPLICIT",
+        "documents": [
+          {
+            "accession": "0001650372-22-000075",
+            "available_at": "2022-11-03T16:06:50-04:00",
+            "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d25a5197b76f089207adb0557dfb24e3135cec94e2a242f8d4269a5bdf18baaf.htm",
+            "financial_tables_removed": 7,
+            "narrative_sha256": "a84f31eea9885758fc9658d6c6177c7292257acb3a1cedc08cfc0ff043b4b3a4",
+            "narrative_words": 2514,
+            "replacement_character_count": 0,
+            "sha256": "f97d7554b23c9cecce6380b3574bad90bcf8b304335d0437e789c7935bc848d4",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/ex991q1fy23.htm"
+          },
+          {
+            "accession": "0001650372-22-000075",
+            "available_at": "2022-11-03T16:06:50-04:00",
+            "document_type": "SHAREHOLDER_LETTER",
+            "encoding_artifact_word_count": 933,
+            "encoding_artifact_word_fraction": 0.12087057909055578,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/dee98a9bd58bd56162ba36fdb0cfb51b8efb6a9687c529de9792b2c424d750c5.htm",
+            "financial_tables_removed": 0,
+            "narrative_sha256": "1c9b23725500d2cb51fa4e7032c748ce1f460a19f6ac02f64f8bc800859a6b1a",
+            "narrative_words": 7719,
+            "replacement_character_count": 0,
+            "sha256": "6d1f547d6e548fcc07412641c05de640397c0955a8b4bce783bf77d947d22a4f",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/teamq12023shareholderlet.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": true,
+          "recast_or_restated_mentioned": true,
+          "source_document_types": [
+            "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "SHAREHOLDER_LETTER"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": true,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": true
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001650372-22-000075",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-03T16:06:50-04:00",
+                  "cell_text": "(1.63)",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 10,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Mon"
+                  },
+                  "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d25a5197b76f089207adb0557dfb24e3135cec94e2a242f8d4269a5bdf18baaf.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "-1.63",
+                  "row_index": 26,
+                  "row_label": "Diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "f97d7554b23c9cecce6380b3574bad90bcf8b304335d0437e789c7935bc848d4",
+                  "table_caption": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2022 2021 Revenues: Subscription $ 650,984 $ 435,296 Maintenance 113,565 130,590 Other 42,843 48,138 Total revenues 807,392 614,024 Cost of revenues (1) (2) 139,392 96,256 Gross profit 668,000 517,768 Operating expenses: Research and development (1) (2) 399,006 272,140 Marketing and sales (1) (2) 160,128 99,329 General and administrative (1) 142,893 89,822 Total operating expenses 702,027 461,291 Operating income (loss) (34,027) 56,477 Other income (expense), net 29,289 (455,804) Interest income 5,143 277 Interest expense (6,121) (11,518) Loss before income tax",
+                  "table_index": 0,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/ex991q1fy23.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-1.63"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001650372-22-000075",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-03T16:06:50-04:00",
+                  "cell_text": "(0.05)",
+                  "column_header": "Three Months Ended September 30, 2022",
+                  "column_index": 4,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Mon"
+                  },
+                  "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d25a5197b76f089207adb0557dfb24e3135cec94e2a242f8d4269a5bdf18baaf.htm",
+                  "period_end": "2022-09-30",
+                  "raw_display_value": "-0.05",
+                  "row_index": 26,
+                  "row_label": "Diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "f97d7554b23c9cecce6380b3574bad90bcf8b304335d0437e789c7935bc848d4",
+                  "table_caption": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2022 2021 Revenues: Subscription $ 650,984 $ 435,296 Maintenance 113,565 130,590 Other 42,843 48,138 Total revenues 807,392 614,024 Cost of revenues (1) (2) 139,392 96,256 Gross profit 668,000 517,768 Operating expenses: Research and development (1) (2) 399,006 272,140 Marketing and sales (1) (2) 160,128 99,329 General and administrative (1) 142,893 89,822 Total operating expenses 702,027 461,291 Operating income (loss) (34,027) 56,477 Other income (expense), net 29,289 (455,804) Interest income 5,143 277 Interest expense (6,121) (11,518) Loss before income tax",
+                  "table_index": 0,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/ex991q1fy23.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.05"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001650372-22-000075",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-03T16:06:50-04:00",
+                  "cell_text": "614,024",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 9,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Mon"
+                  },
+                  "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d25a5197b76f089207adb0557dfb24e3135cec94e2a242f8d4269a5bdf18baaf.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "614024",
+                  "row_index": 7,
+                  "row_label": "Total revenues",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "f97d7554b23c9cecce6380b3574bad90bcf8b304335d0437e789c7935bc848d4",
+                  "table_caption": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2022 2021 Revenues: Subscription $ 650,984 $ 435,296 Maintenance 113,565 130,590 Other 42,843 48,138 Total revenues 807,392 614,024 Cost of revenues (1) (2) 139,392 96,256 Gross profit 668,000 517,768 Operating expenses: Research and development (1) (2) 399,006 272,140 Marketing and sales (1) (2) 160,128 99,329 General and administrative (1) 142,893 89,822 Total operating expenses 702,027 461,291 Operating income (loss) (34,027) 56,477 Other income (expense), net 29,289 (455,804) Interest income 5,143 277 Interest expense (6,121) (11,518) Loss before income tax",
+                  "table_index": 0,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/ex991q1fy23.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "614024000"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001650372-22-000075",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-03T16:06:50-04:00",
+                  "cell_text": "807,392",
+                  "column_header": "Three Months Ended September 30, 2022",
+                  "column_index": 3,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Mon"
+                  },
+                  "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d25a5197b76f089207adb0557dfb24e3135cec94e2a242f8d4269a5bdf18baaf.htm",
+                  "period_end": "2022-09-30",
+                  "raw_display_value": "807392",
+                  "row_index": 7,
+                  "row_label": "Total revenues",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "f97d7554b23c9cecce6380b3574bad90bcf8b304335d0437e789c7935bc848d4",
+                  "table_caption": "Condensed Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2022 2021 Revenues: Subscription $ 650,984 $ 435,296 Maintenance 113,565 130,590 Other 42,843 48,138 Total revenues 807,392 614,024 Cost of revenues (1) (2) 139,392 96,256 Gross profit 668,000 517,768 Operating expenses: Research and development (1) (2) 399,006 272,140 Marketing and sales (1) (2) 160,128 99,329 General and administrative (1) 142,893 89,822 Total operating expenses 702,027 461,291 Operating income (loss) (34,027) 56,477 Other income (expense), net 29,289 (455,804) Interest income 5,143 277 Interest expense (6,121) (11,518) Loss before income tax",
+                  "table_index": 0,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/ex991q1fy23.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "807392000"
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 10233,
+        "period_end": "2022-09-30",
+        "quarter_ordinal": 1,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "fixture_symbol": "TEAM",
+      "flags": {
+        "accounting_transition": true,
+        "canonical_document_roles": {
+          "current": [
+            "PRESS_RELEASE",
+            "SHAREHOLDER_LETTER"
+          ],
+          "original_prior": [
+            "PRESS_RELEASE",
+            "SHAREHOLDER_LETTER"
+          ]
+        },
+        "current_metric_currency": {
+          "diluted_eps": [
+            "USD"
+          ],
+          "revenue": [
+            "USD"
+          ]
+        },
+        "document_types_match": true,
+        "eps_price_share_basis_status": "REQUIRES_VERIFIED_PREENTRY_PRICE_AND_EFFECTIVE_SPLIT_JOIN",
+        "fiscal_quarter_ordinal": 1,
+        "period_join_verified": true,
+        "predecessor_search_coverage": "NOT_PROVIDED",
+        "scope": "quarter",
+        "scope_unresolved": false,
+        "unequal_duration": false
+      },
+      "missing_reasons": [],
+      "narrative_hashes": {
+        "current": "c862907420a6808ac6ac65fa101f4e38845d1ff03971382b3eb2ece95fe65f27",
+        "original_prior": "6d5182da5744912884156b141747805830d0959035ee4bd16f49cc5026873577"
+      },
+      "original_prior": {
+        "accounting_basis": "IFRS_EXPLICIT",
+        "documents": [
+          {
+            "accession": "0001650372-21-000043",
+            "available_at": "2021-10-28T16:09:58-04:00",
+            "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f2f3eead9762f80165e2c345e0984cf0c9be62b0d3df5b3ef6d00fa119e51342.htm",
+            "financial_tables_removed": 7,
+            "narrative_sha256": "4f368fd545c4c1028959ce0bc3cb269680b02665ffc4e784d83d8972092bcc89",
+            "narrative_words": 3294,
+            "replacement_character_count": 0,
+            "sha256": "1fd3e780ea8e882dc1a051346fcaa80a03bef76d4753dd9aaf16dbcef4369a46",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/ex991q1fy22.htm"
+          },
+          {
+            "accession": "0001650372-21-000043",
+            "available_at": "2021-10-28T16:09:58-04:00",
+            "document_type": "SHAREHOLDER_LETTER",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/10c8b26a20226616adda4f2a8ee1c1beb71e763b9babe48a12c363c6718f3007.htm",
+            "financial_tables_removed": 0,
+            "narrative_sha256": "5f45e8ff5f2b8a63451c651d816bae954b0ef5113181ebbbd36bd00cc292530b",
+            "narrative_words": 9441,
+            "replacement_character_count": 0,
+            "sha256": "de1a1e93e5412a9f3b6e1c7bca7c1ffb73f3134d6f3f2955d080e6f761341d18",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/teamq12022shareholderlet.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": true,
+          "recast_or_restated_mentioned": false,
+          "source_document_types": [
+            "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+            "SHAREHOLDER_LETTER"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": false
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "ORIGINAL_ACCOUNTING_BASIS_IFRS_NOT_GAAP"
+              ],
+              "reported_value_before_basis_gate": null,
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001650372-21-000043",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2021-10-28T16:09:58-04:00",
+                  "cell_text": "(1.59)",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 4,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": "Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Mon"
+                  },
+                  "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f2f3eead9762f80165e2c345e0984cf0c9be62b0d3df5b3ef6d00fa119e51342.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "-1.59",
+                  "row_index": 27,
+                  "row_label": "Diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "1fd3e780ea8e882dc1a051346fcaa80a03bef76d4753dd9aaf16dbcef4369a46",
+                  "table_caption": "Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2021 2020 Revenues: Subscription $ 435,296 $ 277,964 Maintenance 130,590 127,694 Other 48,138 53,848 Total revenues 614,024 459,506 Cost of revenues (1) (2) 98,018 73,684 Gross profit 516,006 385,822 Operating expenses: Research and development (1) (2) 279,846 232,235 Marketing and sales (1) (2) 102,928 70,286 General and administrative (1) 93,586 71,369 Total operating expenses 476,360 373,890 Operating income 39,646 11,932 Other non-operating expense, net (424,933) (26,271) Finance income 280 2,590 Finance costs (7,111) (12,575) Loss before income tax benefit",
+                  "table_index": 0,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/ex991q1fy22.htm"
+                }
+              ],
+              "reasons": [
+                "ORIGINAL_ACCOUNTING_BASIS_IFRS_NOT_GAAP"
+              ],
+              "reported_value_before_basis_gate": "-1.59",
+              "value": null
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "ORIGINAL_ACCOUNTING_BASIS_IFRS_NOT_GAAP"
+              ],
+              "reported_value_before_basis_gate": null,
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001650372-21-000043",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2021-10-28T16:09:58-04:00",
+                  "cell_text": "614,024",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 3,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": "Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Mon"
+                  },
+                  "document_type": "PRESS_RELEASE_WITH_ACCOUNTING_COMPANION",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f2f3eead9762f80165e2c345e0984cf0c9be62b0d3df5b3ef6d00fa119e51342.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "614024",
+                  "row_index": 8,
+                  "row_label": "Total revenues",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "1fd3e780ea8e882dc1a051346fcaa80a03bef76d4753dd9aaf16dbcef4369a46",
+                  "table_caption": "Consolidated Statements of Operations (U.S. $ and shares in thousands, except per share data) (unaudited) Three Months Ended September 30, 2021 2020 Revenues: Subscription $ 435,296 $ 277,964 Maintenance 130,590 127,694 Other 48,138 53,848 Total revenues 614,024 459,506 Cost of revenues (1) (2) 98,018 73,684 Gross profit 516,006 385,822 Operating expenses: Research and development (1) (2) 279,846 232,235 Marketing and sales (1) (2) 102,928 70,286 General and administrative (1) 93,586 71,369 Total operating expenses 476,360 373,890 Operating income 39,646 11,932 Other non-operating expense, net (424,933) (26,271) Finance income 280 2,590 Finance costs (7,111) (12,575) Loss before income tax benefit",
+                  "table_index": 0,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/ex991q1fy22.htm"
+                }
+              ],
+              "reasons": [
+                "ORIGINAL_ACCOUNTING_BASIS_IFRS_NOT_GAAP"
+              ],
+              "reported_value_before_basis_gate": "614024000",
+              "value": null
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 12735,
+        "period_end": "2021-09-30",
+        "quarter_ordinal": 1,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "schema": "earnings-source-features-v1",
+      "slot_id": "0001650372-W1",
+      "status": "SOURCE_PAIR_READ_NUMERIC_COVERAGE_EXPLICIT"
+    },
+    {
+      "comparisons": {
+        "diluted_eps": {
+          "current_release_comparable_prior_value": null,
+          "current_value": null,
+          "missing_reasons": [
+            "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL",
+            "UNEQUAL_FISCAL_DURATION"
+          ],
+          "original_prior_reported_value_before_basis_gate": null,
+          "original_prior_value": null,
+          "original_vs_current_comparative_difference": null,
+          "same_current_release_comparison_eligible": false
+        },
+        "revenue": {
+          "current_release_comparable_prior_value": null,
+          "current_value": null,
+          "missing_reasons": [
+            "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL",
+            "UNEQUAL_FISCAL_DURATION"
+          ],
+          "original_prior_reported_value_before_basis_gate": null,
+          "original_prior_value": null,
+          "original_vs_current_comparative_difference": null,
+          "same_current_release_comparison_eligible": false
+        }
+      },
+      "current": {
+        "accounting_basis": "US_GAAP_EXPLICIT",
+        "documents": [
+          {
+            "accession": "0001856430-23-000015",
+            "available_at": "2023-03-14T16:14:08-04:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": true,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/91ac22323887371a5bf8bb2368ef9abc5973fb0904c25d5dc9423575788a3bb6.htm",
+            "financial_tables_removed": 0,
+            "narrative_sha256": "4bc78401adc9fc4d9b499c8506d9dc32091b79455443ecbc279f2a69cd7a8d4f",
+            "narrative_words": 3034,
+            "replacement_character_count": 0,
+            "sha256": "fb806c731adf535d67eb1b64f1c11bb4afcf22bf861810aaf3ea4641e6087679",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1856430/000185643023000015/snpoq4andfy2022earningsr.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [
+            "2022) to 2021 fiscal fourth quarter end (December 31, 2021) unless otherwise indicated. 2022 fiscal fourth quarter is a 13-week period, while 2021 fiscal fourth quarter included a 14th week. Results are represented on an as reported basis, unless otherwise indicated. \u25cf Net sales decreased 1.9% to $268.2 million from $273.5 million in the comparable year-ago period. Excluding the extra fiscal week in 2021, net sales increased 5.0% year-over-year. \u25cf Contribution margin, a non-GAAP measurement of operating performance reconciled below, decreased 0.1% to $105.8 million (39.4% of net sales) in the fiscal fourth quarter from "
+          ],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": true,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": true,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": true
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 3034,
+        "period_end": "2022-12-30",
+        "quarter_ordinal": 4,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "fixture_symbol": "SNPO",
+      "flags": {
+        "accounting_transition": false,
+        "canonical_document_roles": {
+          "current": [
+            "PRESS_RELEASE"
+          ],
+          "original_prior": [
+            "PRESS_RELEASE"
+          ]
+        },
+        "current_metric_currency": {
+          "diluted_eps": [],
+          "revenue": []
+        },
+        "document_types_match": true,
+        "eps_price_share_basis_status": "REQUIRES_VERIFIED_PREENTRY_PRICE_AND_EFFECTIVE_SPLIT_JOIN",
+        "fiscal_quarter_ordinal": 4,
+        "period_join_verified": true,
+        "predecessor_search_coverage": "NOT_PROVIDED",
+        "scope": "quarter",
+        "scope_unresolved": false,
+        "unequal_duration": true
+      },
+      "missing_reasons": [],
+      "narrative_hashes": {
+        "current": "4bc78401adc9fc4d9b499c8506d9dc32091b79455443ecbc279f2a69cd7a8d4f",
+        "original_prior": "2d286bbbcadd178b35ff36620ffd65c64d027b795324dbb387e87ff3be914c65"
+      },
+      "original_prior": {
+        "accounting_basis": "US_GAAP_EXPLICIT",
+        "documents": [
+          {
+            "accession": "0001856430-22-000009",
+            "available_at": "2022-03-22T16:17:11-04:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": true,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b917ab091643a9ac62ed2aeb9e56ccfa836bf015566207a5603f6478ea29a78f.htm",
+            "financial_tables_removed": 0,
+            "narrative_sha256": "2d286bbbcadd178b35ff36620ffd65c64d027b795324dbb387e87ff3be914c65",
+            "narrative_words": 2757,
+            "replacement_character_count": 0,
+            "sha256": "ffc66555ca7c9c67f688dd9180b9850c09021b8aef2a9ec93ccbfccc4abd0fc8",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1856430/000185643022000009/snpofq42021earningsrelea.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [
+            "020) unless otherwise indicated. 2021 fiscal fourth quarter included a 14th week, while 2020 fiscal fourth quarter is a 13-week period. \u25cf Net sales increased 21% to $273.5 million from $226.1 million in the comparable year-ago period. The 14th week in fiscal fourth quarter 2021 added approximately $17.9 million in net sales. Excluding the 14th week, net sales increased approximately 13%. \u25cf Contribution margin, a non-GAAP measurement of operating performance reconciled below, increased 13% to $105.9 million (38.7% of net sales) in the fiscal fourth quarter from $94.1 million (41.6% of net sales) in the comparable year-ag"
+          ],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": true,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": true,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": true
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 2757,
+        "period_end": "2021-12-31",
+        "quarter_ordinal": 4,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "schema": "earnings-source-features-v1",
+      "slot_id": "0001856430-W2",
+      "status": "SOURCE_PAIR_READ_NUMERIC_COVERAGE_EXPLICIT"
+    },
+    {
+      "comparisons": {
+        "diluted_eps": {
+          "current_release_comparable_prior_value": "-2.51",
+          "current_value": "-2.69",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "-2.51",
+          "original_prior_value": "-2.51",
+          "original_vs_current_comparative_difference": "0.00",
+          "same_current_release_comparison_eligible": true
+        },
+        "revenue": {
+          "current_release_comparable_prior_value": null,
+          "current_value": null,
+          "missing_reasons": [
+            "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+          ],
+          "original_prior_reported_value_before_basis_gate": null,
+          "original_prior_value": null,
+          "original_vs_current_comparative_difference": null,
+          "same_current_release_comparison_eligible": false
+        }
+      },
+      "current": {
+        "accounting_basis": "GAAP_STATEMENT_WHERE_EXTRACTED",
+        "documents": [
+          {
+            "accession": "0001558370-23-002694",
+            "available_at": "2023-03-02T16:30:33-05:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/5132efb182f96fcc412f13a3023442f6f52ba529b7a72b17d84f1a6b2da3ae94.htm",
+            "financial_tables_removed": 1,
+            "narrative_sha256": "77cf02dc107311e96c896dac431d3f7446a653d3de4fa9b6a522f7b3df5438f7",
+            "narrative_words": 938,
+            "replacement_character_count": 0,
+            "sha256": "82f7682ea88a6984c6af9421f472afe1974e4dc490162d95fc86d4fe0dd449ab",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1661059/000155837023002694/nxtc-20230302xex99d1.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": false,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": false
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001558370-23-002694",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2023-03-02T16:30:33-05:00",
+                  "cell_text": "(2.51)",
+                  "column_header": "Year Ended December 31, 2021",
+                  "column_index": 6,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/5132efb182f96fcc412f13a3023442f6f52ba529b7a72b17d84f1a6b2da3ae94.htm",
+                  "period_end": "2021-12-31",
+                  "raw_display_value": "-2.51",
+                  "row_index": 10,
+                  "row_label": "Net loss per common share - basic and diluted",
+                  "scale": 1,
+                  "scope": "year",
+                  "sha256": "82f7682ea88a6984c6af9421f472afe1974e4dc490162d95fc86d4fe0dd449ab",
+                  "table_caption": "s; NextCure\u2019s limited operating history and no products approved for commercial sale; NextCure\u2019s history of significant losses; NextCure\u2019s need to obtain additional financing on acceptable terms or at all; risks related to clinical development, marketing approval and commercialization; the unproven approach to the discovery and development of product candidates based on NextCure\u2019s FIND-IO platform; and dependence on key personnel. More detailed information on these and additional factors that could affect NextCure\u2019s actual results are described under the heading \u201cRisk Factors\u201d in NextCure\u2019s most recent Annual Report on Form 10-K and in the Company\u2019s other filings with the Securities and Exchange Commission. You should not place undue relian",
+                  "table_index": 14,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1661059/000155837023002694/nxtc-20230302xex99d1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-2.51"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001558370-23-002694",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2023-03-02T16:30:33-05:00",
+                  "cell_text": "(2.69)",
+                  "column_header": "Year Ended December 31, 2022",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/5132efb182f96fcc412f13a3023442f6f52ba529b7a72b17d84f1a6b2da3ae94.htm",
+                  "period_end": "2022-12-31",
+                  "raw_display_value": "-2.69",
+                  "row_index": 10,
+                  "row_label": "Net loss per common share - basic and diluted",
+                  "scale": 1,
+                  "scope": "year",
+                  "sha256": "82f7682ea88a6984c6af9421f472afe1974e4dc490162d95fc86d4fe0dd449ab",
+                  "table_caption": "s; NextCure\u2019s limited operating history and no products approved for commercial sale; NextCure\u2019s history of significant losses; NextCure\u2019s need to obtain additional financing on acceptable terms or at all; risks related to clinical development, marketing approval and commercialization; the unproven approach to the discovery and development of product candidates based on NextCure\u2019s FIND-IO platform; and dependence on key personnel. More detailed information on these and additional factors that could affect NextCure\u2019s actual results are described under the heading \u201cRisk Factors\u201d in NextCure\u2019s most recent Annual Report on Form 10-K and in the Company\u2019s other filings with the Securities and Exchange Commission. You should not place undue relian",
+                  "table_index": 14,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1661059/000155837023002694/nxtc-20230302xex99d1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-2.69"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 938,
+        "period_end": "2022-12-31",
+        "quarter_ordinal": null,
+        "scope": "year",
+        "source_ready": true
+      },
+      "fixture_symbol": "NXTC",
+      "flags": {
+        "accounting_transition": false,
+        "canonical_document_roles": {
+          "current": [
+            "PRESS_RELEASE"
+          ],
+          "original_prior": [
+            "PRESS_RELEASE"
+          ]
+        },
+        "current_metric_currency": {
+          "diluted_eps": [
+            "DOLLAR_SYMBOL"
+          ],
+          "revenue": []
+        },
+        "document_types_match": true,
+        "eps_price_share_basis_status": "REQUIRES_VERIFIED_PREENTRY_PRICE_AND_EFFECTIVE_SPLIT_JOIN",
+        "fiscal_quarter_ordinal": null,
+        "period_join_verified": true,
+        "predecessor_search_coverage": "NOT_PROVIDED",
+        "scope": "year",
+        "scope_unresolved": false,
+        "unequal_duration": false
+      },
+      "missing_reasons": [],
+      "narrative_hashes": {
+        "current": "77cf02dc107311e96c896dac431d3f7446a653d3de4fa9b6a522f7b3df5438f7",
+        "original_prior": "ab22a14130ae3d7d7f22738b14b32f59a786b0d2dbea48be0c4f230b5142e863"
+      },
+      "original_prior": {
+        "accounting_basis": "GAAP_STATEMENT_WHERE_EXTRACTED",
+        "documents": [
+          {
+            "accession": "0001104659-22-030025",
+            "available_at": "2022-03-03T16:22:43-05:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b238fe1728ba649ff633009151acf895a4e70e32a6258b36fa1114a2236ec371.htm",
+            "financial_tables_removed": 2,
+            "narrative_sha256": "ab22a14130ae3d7d7f22738b14b32f59a786b0d2dbea48be0c4f230b5142e863",
+            "narrative_words": 1395,
+            "replacement_character_count": 0,
+            "sha256": "d6b6c62a0edb12c298913cefd1189bf247d73c917062582d345fd41675af2739",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1661059/000110465922030025/tm228329d1_ex99-1.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": true,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": false
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001104659-22-030025",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-03-03T16:22:43-05:00",
+                  "cell_text": "(2.51",
+                  "column_header": "Year Ended December 31, 2021",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b238fe1728ba649ff633009151acf895a4e70e32a6258b36fa1114a2236ec371.htm",
+                  "period_end": "2021-12-31",
+                  "raw_display_value": "-2.51",
+                  "row_index": 11,
+                  "row_label": "Net loss per common share - basic and diluted",
+                  "scale": 1,
+                  "scope": "year",
+                  "sha256": "d6b6c62a0edb12c298913cefd1189bf247d73c917062582d345fd41675af2739",
+                  "table_caption": "ure\u2019s need to obtain additional financing; risks related to clinical development, marketing approval and commercialization; the unproven approach to the discovery and development of product candidates based on NextCure\u2019s FIND-IO\u2122 platform; and dependence on key personnel. More detailed information on these and additional factors that could affect NextCure\u2019s actual results are described in NextCure\u2019s filings with the Securities and Exchange Commission (the \u201cSEC\u201d), including in Item 1A of NextCure\u2019s most recent Form 10-K and elsewhere in the Company\u2019s filings with the SEC. You should not place undue reliance on any forward-looking statements. Forward-looking statements speak only as of the date of this press release, and NextCure assumes no o",
+                  "table_index": 26,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1661059/000110465922030025/tm228329d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-2.51"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 1395,
+        "period_end": "2021-12-31",
+        "quarter_ordinal": 4,
+        "scope": "year",
+        "source_ready": true
+      },
+      "schema": "earnings-source-features-v1",
+      "slot_id": "0001661059-W2",
+      "status": "SOURCE_PAIR_READ_NUMERIC_COVERAGE_EXPLICIT"
+    },
+    {
+      "comparisons": {
+        "diluted_eps": {
+          "current_release_comparable_prior_value": "-0.65",
+          "current_value": "-0.90",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "-0.65",
+          "original_prior_value": "-0.65",
+          "original_vs_current_comparative_difference": "0.00",
+          "same_current_release_comparison_eligible": true
+        },
+        "revenue": {
+          "current_release_comparable_prior_value": "10252000",
+          "current_value": "10791000",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "10252000",
+          "original_prior_value": "10252000",
+          "original_vs_current_comparative_difference": "0",
+          "same_current_release_comparison_eligible": true
+        }
+      },
+      "current": {
+        "accounting_basis": "GAAP_STATEMENT_WHERE_EXTRACTED",
+        "documents": [
+          {
+            "accession": "0001564590-22-033701",
+            "available_at": "2022-10-06T16:10:43-04:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/81059edf32c2ac9084bde31adc8c8cbb0fed0f3cc7a515668f7b9c034d32dcfb.htm",
+            "financial_tables_removed": 2,
+            "narrative_sha256": "21f272ad3a390ea60a48009a6e4c3e8088535da8c1e2c470004b1fff9d981396",
+            "narrative_words": 1736,
+            "replacement_character_count": 0,
+            "sha256": "fa662f5842105485755b2e721d02bcd7582d634517b8b8854b0bb4ba181d9ced",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459022033701/nrix-ex991_6.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": false,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": false
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001564590-22-033701",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-10-06T16:10:43-04:00",
+                  "cell_text": "(0.65",
+                  "column_header": "Three Months Ended August 31, 2021",
+                  "column_index": 7,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/81059edf32c2ac9084bde31adc8c8cbb0fed0f3cc7a515668f7b9c034d32dcfb.htm",
+                  "period_end": "2021-08-31",
+                  "raw_display_value": "-0.65",
+                  "row_index": 12,
+                  "row_label": "Net loss per share, basic and diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "fa662f5842105485755b2e721d02bcd7582d634517b8b8854b0bb4ba181d9ced",
+                  "table_caption": "Condensed consolidated statements of operations (in thousands, except share and per share amounts) (unaudited) Three Months Ended August 31, Nine Months Ended August 31, 2022 2021 2022 2021 Collaboration revenue $ 10,791 $ 10,252 $ 31,844 $ 22,354 Operating expenses: Research and development 47,761 30,906 138,391 79,903 General and administrative 9,748 8,343 28,630 22,384 Total operating expenses 57,509 39,249 167,021 102,287 Loss from operations (46,718 ) (28,997 ) (135,177 ) (79,933 ) Interest and other income, net 1,009 39 1,534 528 Loss before income taxes (45,709 ) (28,958 ) (133,643 ) (79,405 ) Provision for (benefit from) income taxes \u2014 (123 ) \u2014 87 Net loss $ (45,709 ) $ (28,835 ) $ (133,643 ) $",
+                  "table_index": 8,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459022033701/nrix-ex991_6.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.65"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001564590-22-033701",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-10-06T16:10:43-04:00",
+                  "cell_text": "(0.90",
+                  "column_header": "Three Months Ended August 31, 2022",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/81059edf32c2ac9084bde31adc8c8cbb0fed0f3cc7a515668f7b9c034d32dcfb.htm",
+                  "period_end": "2022-08-31",
+                  "raw_display_value": "-0.90",
+                  "row_index": 12,
+                  "row_label": "Net loss per share, basic and diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "fa662f5842105485755b2e721d02bcd7582d634517b8b8854b0bb4ba181d9ced",
+                  "table_caption": "Condensed consolidated statements of operations (in thousands, except share and per share amounts) (unaudited) Three Months Ended August 31, Nine Months Ended August 31, 2022 2021 2022 2021 Collaboration revenue $ 10,791 $ 10,252 $ 31,844 $ 22,354 Operating expenses: Research and development 47,761 30,906 138,391 79,903 General and administrative 9,748 8,343 28,630 22,384 Total operating expenses 57,509 39,249 167,021 102,287 Loss from operations (46,718 ) (28,997 ) (135,177 ) (79,933 ) Interest and other income, net 1,009 39 1,534 528 Loss before income taxes (45,709 ) (28,958 ) (133,643 ) (79,405 ) Provision for (benefit from) income taxes \u2014 (123 ) \u2014 87 Net loss $ (45,709 ) $ (28,835 ) $ (133,643 ) $",
+                  "table_index": 8,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459022033701/nrix-ex991_6.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.90"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001564590-22-033701",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-10-06T16:10:43-04:00",
+                  "cell_text": "10,252",
+                  "column_header": "Three Months Ended August 31, 2021",
+                  "column_index": 7,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/81059edf32c2ac9084bde31adc8c8cbb0fed0f3cc7a515668f7b9c034d32dcfb.htm",
+                  "period_end": "2021-08-31",
+                  "raw_display_value": "10252",
+                  "row_index": 2,
+                  "row_label": "Collaboration revenue",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "fa662f5842105485755b2e721d02bcd7582d634517b8b8854b0bb4ba181d9ced",
+                  "table_caption": "Condensed consolidated statements of operations (in thousands, except share and per share amounts) (unaudited) Three Months Ended August 31, Nine Months Ended August 31, 2022 2021 2022 2021 Collaboration revenue $ 10,791 $ 10,252 $ 31,844 $ 22,354 Operating expenses: Research and development 47,761 30,906 138,391 79,903 General and administrative 9,748 8,343 28,630 22,384 Total operating expenses 57,509 39,249 167,021 102,287 Loss from operations (46,718 ) (28,997 ) (135,177 ) (79,933 ) Interest and other income, net 1,009 39 1,534 528 Loss before income taxes (45,709 ) (28,958 ) (133,643 ) (79,405 ) Provision for (benefit from) income taxes \u2014 (123 ) \u2014 87 Net loss $ (45,709 ) $ (28,835 ) $ (133,643 ) $",
+                  "table_index": 8,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459022033701/nrix-ex991_6.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "10252000"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001564590-22-033701",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-10-06T16:10:43-04:00",
+                  "cell_text": "10,791",
+                  "column_header": "Three Months Ended August 31, 2022",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/81059edf32c2ac9084bde31adc8c8cbb0fed0f3cc7a515668f7b9c034d32dcfb.htm",
+                  "period_end": "2022-08-31",
+                  "raw_display_value": "10791",
+                  "row_index": 2,
+                  "row_label": "Collaboration revenue",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "fa662f5842105485755b2e721d02bcd7582d634517b8b8854b0bb4ba181d9ced",
+                  "table_caption": "Condensed consolidated statements of operations (in thousands, except share and per share amounts) (unaudited) Three Months Ended August 31, Nine Months Ended August 31, 2022 2021 2022 2021 Collaboration revenue $ 10,791 $ 10,252 $ 31,844 $ 22,354 Operating expenses: Research and development 47,761 30,906 138,391 79,903 General and administrative 9,748 8,343 28,630 22,384 Total operating expenses 57,509 39,249 167,021 102,287 Loss from operations (46,718 ) (28,997 ) (135,177 ) (79,933 ) Interest and other income, net 1,009 39 1,534 528 Loss before income taxes (45,709 ) (28,958 ) (133,643 ) (79,405 ) Provision for (benefit from) income taxes \u2014 (123 ) \u2014 87 Net loss $ (45,709 ) $ (28,835 ) $ (133,643 ) $",
+                  "table_index": 8,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459022033701/nrix-ex991_6.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "10791000"
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 1736,
+        "period_end": "2022-08-31",
+        "quarter_ordinal": 3,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "fixture_symbol": "NRIX",
+      "flags": {
+        "accounting_transition": false,
+        "canonical_document_roles": {
+          "current": [
+            "PRESS_RELEASE"
+          ],
+          "original_prior": [
+            "PRESS_RELEASE"
+          ]
+        },
+        "current_metric_currency": {
+          "diluted_eps": [
+            "DOLLAR_SYMBOL"
+          ],
+          "revenue": [
+            "DOLLAR_SYMBOL"
+          ]
+        },
+        "document_types_match": true,
+        "eps_price_share_basis_status": "REQUIRES_VERIFIED_PREENTRY_PRICE_AND_EFFECTIVE_SPLIT_JOIN",
+        "fiscal_quarter_ordinal": 3,
+        "period_join_verified": true,
+        "predecessor_search_coverage": "NOT_PROVIDED",
+        "scope": "quarter",
+        "scope_unresolved": false,
+        "unequal_duration": false
+      },
+      "missing_reasons": [],
+      "narrative_hashes": {
+        "current": "21f272ad3a390ea60a48009a6e4c3e8088535da8c1e2c470004b1fff9d981396",
+        "original_prior": "194d149c83505db85dd6ae484c6be9cb7811246dbabc9cf41cfe9026bb0396ca"
+      },
+      "original_prior": {
+        "accounting_basis": "GAAP_STATEMENT_WHERE_EXTRACTED",
+        "documents": [
+          {
+            "accession": "0001564590-21-050869",
+            "available_at": "2021-10-14T17:10:41-04:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": false,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/09af51caf95ab33df1ab676cfe2a1e48e5c4788e86deecdc8c0149629afd248a.htm",
+            "financial_tables_removed": 2,
+            "narrative_sha256": "194d149c83505db85dd6ae484c6be9cb7811246dbabc9cf41cfe9026bb0396ca",
+            "narrative_words": 1622,
+            "replacement_character_count": 0,
+            "sha256": "e022d7a5159ad8b2f4a4062fd3ad7967b8e4d5f331971e6cb21dce7c1857ff0b",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459021050869/nrix-ex991_6.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": false,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": false
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001564590-21-050869",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2021-10-14T17:10:41-04:00",
+                  "cell_text": "(0.65",
+                  "column_header": "Three Months Ended August 31, 2021",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/09af51caf95ab33df1ab676cfe2a1e48e5c4788e86deecdc8c0149629afd248a.htm",
+                  "period_end": "2021-08-31",
+                  "raw_display_value": "-0.65",
+                  "row_index": 12,
+                  "row_label": "Net loss per share attributable to common stockholders, basic and diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "e022d7a5159ad8b2f4a4062fd3ad7967b8e4d5f331971e6cb21dce7c1857ff0b",
+                  "table_caption": "Condensed consolidated statements of operations (in thousands, except share and per share amounts) (unaudited) Three Months Ended August 31, Nine Months Ended August 31, 2021 2020 2021 2020 Collaboration revenue $ 10,252 $ 4,085 $ 22,354 $ 11,131 Operating expenses: Research and development 30,906 18,939 79,903 46,049 General and administrative 8,343 4,338 22,384 10,057 Total operating expenses 39,249 23,277 102,287 56,106 Loss from operations (28,997 ) (19,192 ) (79,933 ) (44,975 ) Interest and other income, net 39 675 528 1,071 Loss before income taxes (28,958 ) (18,517 ) (79,405 ) (43,904 ) Provision (benefit) for income taxes (123 ) \u2014 87 (20,576 ) Net loss $ (28,835 ) $ (18,517 ) $ (79,492 ) $ (23,",
+                  "table_index": 7,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459021050869/nrix-ex991_6.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.65"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001564590-21-050869",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2021-10-14T17:10:41-04:00",
+                  "cell_text": "10,252",
+                  "column_header": "Three Months Ended August 31, 2021",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/09af51caf95ab33df1ab676cfe2a1e48e5c4788e86deecdc8c0149629afd248a.htm",
+                  "period_end": "2021-08-31",
+                  "raw_display_value": "10252",
+                  "row_index": 2,
+                  "row_label": "Collaboration revenue",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "e022d7a5159ad8b2f4a4062fd3ad7967b8e4d5f331971e6cb21dce7c1857ff0b",
+                  "table_caption": "Condensed consolidated statements of operations (in thousands, except share and per share amounts) (unaudited) Three Months Ended August 31, Nine Months Ended August 31, 2021 2020 2021 2020 Collaboration revenue $ 10,252 $ 4,085 $ 22,354 $ 11,131 Operating expenses: Research and development 30,906 18,939 79,903 46,049 General and administrative 8,343 4,338 22,384 10,057 Total operating expenses 39,249 23,277 102,287 56,106 Loss from operations (28,997 ) (19,192 ) (79,933 ) (44,975 ) Interest and other income, net 39 675 528 1,071 Loss before income taxes (28,958 ) (18,517 ) (79,405 ) (43,904 ) Provision (benefit) for income taxes (123 ) \u2014 87 (20,576 ) Net loss $ (28,835 ) $ (18,517 ) $ (79,492 ) $ (23,",
+                  "table_index": 7,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/1549595/000156459021050869/nrix-ex991_6.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "10252000"
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 1622,
+        "period_end": "2021-08-31",
+        "quarter_ordinal": 3,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "schema": "earnings-source-features-v1",
+      "slot_id": "0001549595-W1",
+      "status": "SOURCE_PAIR_READ_NUMERIC_COVERAGE_EXPLICIT"
+    },
+    {
+      "comparisons": {
+        "diluted_eps": {
+          "current_release_comparable_prior_value": "-0.43",
+          "current_value": "-0.27",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "-0.43",
+          "original_prior_value": "-0.43",
+          "original_vs_current_comparative_difference": "0.00",
+          "same_current_release_comparison_eligible": true
+        },
+        "revenue": {
+          "current_release_comparable_prior_value": "39853000",
+          "current_value": "65901000",
+          "missing_reasons": [],
+          "original_prior_reported_value_before_basis_gate": "39853000",
+          "original_prior_value": "39853000",
+          "original_vs_current_comparative_difference": "0",
+          "same_current_release_comparison_eligible": true
+        }
+      },
+      "current": {
+        "accounting_basis": "US_GAAP_EXPLICIT",
+        "documents": [
+          {
+            "accession": "0001104659-22-115101",
+            "available_at": "2022-11-07T06:55:41-05:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": true,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/9c9b46649aec330281d6764e62c2c8cac13e9d146255a096921e649f68331df1.htm",
+            "financial_tables_removed": 6,
+            "narrative_sha256": "6d4c98572c2711e30ef90a3bbda21b0e3dfd1e99ccdf72a7085fbd35d391c558",
+            "narrative_words": 3832,
+            "replacement_character_count": 0,
+            "sha256": "d255642fc8c9c1f6b32385a96c323472efc91634449710a801fd9d27b85a43bd",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465922115101/tm2229832d1_ex99-1.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": true,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": true
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001104659-22-115101",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-07T06:55:41-05:00",
+                  "cell_text": "(0.43",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 7,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/9c9b46649aec330281d6764e62c2c8cac13e9d146255a096921e649f68331df1.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "-0.43",
+                  "row_index": 23,
+                  "row_label": "Diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "d255642fc8c9c1f6b32385a96c323472efc91634449710a801fd9d27b85a43bd",
+                  "table_caption": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (UNAUDITED) (In thousands, except share and per share amounts) Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 Revenue: Product sales, net $ 38,086 $ 12,124 $ 177,375 $ 48,865 Royalty revenue 24,007 27,729 74,728 80,361 License and other revenue 3,808 \u2014 3,808 \u2014 Total revenue 65,901 39,853 255,911 129,226 Operating expenses: Cost of product sales 20,869 5,486 67,216 21,835 Cost of royalty revenue 2,782 2,773 7,854 8,036 Research and development 9,326 23,289 26,871 47,488 Selling, general and administrative 23,462 18,482 82,476 54,997 Total operating expenses 56,439 50,030 184,417 132,356 Income (loss) from operations 9,",
+                  "table_index": 9,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465922115101/tm2229832d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.43"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001104659-22-115101",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-07T06:55:41-05:00",
+                  "cell_text": "(0.27",
+                  "column_header": "Three Months Ended September 30, 2022",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/9c9b46649aec330281d6764e62c2c8cac13e9d146255a096921e649f68331df1.htm",
+                  "period_end": "2022-09-30",
+                  "raw_display_value": "-0.27",
+                  "row_index": 23,
+                  "row_label": "Diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "d255642fc8c9c1f6b32385a96c323472efc91634449710a801fd9d27b85a43bd",
+                  "table_caption": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (UNAUDITED) (In thousands, except share and per share amounts) Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 Revenue: Product sales, net $ 38,086 $ 12,124 $ 177,375 $ 48,865 Royalty revenue 24,007 27,729 74,728 80,361 License and other revenue 3,808 \u2014 3,808 \u2014 Total revenue 65,901 39,853 255,911 129,226 Operating expenses: Cost of product sales 20,869 5,486 67,216 21,835 Cost of royalty revenue 2,782 2,773 7,854 8,036 Research and development 9,326 23,289 26,871 47,488 Selling, general and administrative 23,462 18,482 82,476 54,997 Total operating expenses 56,439 50,030 184,417 132,356 Income (loss) from operations 9,",
+                  "table_index": 9,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465922115101/tm2229832d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.27"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [
+                {
+                  "accession": "0001104659-22-115101",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-07T06:55:41-05:00",
+                  "cell_text": "39,853",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 7,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/9c9b46649aec330281d6764e62c2c8cac13e9d146255a096921e649f68331df1.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "39853",
+                  "row_index": 6,
+                  "row_label": "Total revenue",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "d255642fc8c9c1f6b32385a96c323472efc91634449710a801fd9d27b85a43bd",
+                  "table_caption": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (UNAUDITED) (In thousands, except share and per share amounts) Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 Revenue: Product sales, net $ 38,086 $ 12,124 $ 177,375 $ 48,865 Royalty revenue 24,007 27,729 74,728 80,361 License and other revenue 3,808 \u2014 3,808 \u2014 Total revenue 65,901 39,853 255,911 129,226 Operating expenses: Cost of product sales 20,869 5,486 67,216 21,835 Cost of royalty revenue 2,782 2,773 7,854 8,036 Research and development 9,326 23,289 26,871 47,488 Selling, general and administrative 23,462 18,482 82,476 54,997 Total operating expenses 56,439 50,030 184,417 132,356 Income (loss) from operations 9,",
+                  "table_index": 9,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465922115101/tm2229832d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "39853000"
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001104659-22-115101",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2022-11-07T06:55:41-05:00",
+                  "cell_text": "65,901",
+                  "column_header": "Three Months Ended September 30, 2022",
+                  "column_index": 3,
+                  "currency": "DOLLAR_SYMBOL",
+                  "currency_source_evidence": null,
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/9c9b46649aec330281d6764e62c2c8cac13e9d146255a096921e649f68331df1.htm",
+                  "period_end": "2022-09-30",
+                  "raw_display_value": "65901",
+                  "row_index": 6,
+                  "row_label": "Total revenue",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "d255642fc8c9c1f6b32385a96c323472efc91634449710a801fd9d27b85a43bd",
+                  "table_caption": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (UNAUDITED) (In thousands, except share and per share amounts) Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 Revenue: Product sales, net $ 38,086 $ 12,124 $ 177,375 $ 48,865 Royalty revenue 24,007 27,729 74,728 80,361 License and other revenue 3,808 \u2014 3,808 \u2014 Total revenue 65,901 39,853 255,911 129,226 Operating expenses: Cost of product sales 20,869 5,486 67,216 21,835 Cost of royalty revenue 2,782 2,773 7,854 8,036 Research and development 9,326 23,289 26,871 47,488 Selling, general and administrative 23,462 18,482 82,476 54,997 Total operating expenses 56,439 50,030 184,417 132,356 Income (loss) from operations 9,",
+                  "table_index": 9,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465922115101/tm2229832d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "65901000"
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 3832,
+        "period_end": "2022-09-30",
+        "quarter_ordinal": 3,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "fixture_symbol": "EGRX",
+      "flags": {
+        "accounting_transition": false,
+        "canonical_document_roles": {
+          "current": [
+            "PRESS_RELEASE"
+          ],
+          "original_prior": [
+            "PRESS_RELEASE"
+          ]
+        },
+        "current_metric_currency": {
+          "diluted_eps": [
+            "DOLLAR_SYMBOL"
+          ],
+          "revenue": [
+            "DOLLAR_SYMBOL"
+          ]
+        },
+        "document_types_match": true,
+        "eps_price_share_basis_status": "REQUIRES_VERIFIED_PREENTRY_PRICE_AND_EFFECTIVE_SPLIT_JOIN",
+        "fiscal_quarter_ordinal": 3,
+        "period_join_verified": true,
+        "predecessor_search_coverage": "NOT_PROVIDED",
+        "scope": "quarter",
+        "scope_unresolved": false,
+        "unequal_duration": false
+      },
+      "missing_reasons": [],
+      "narrative_hashes": {
+        "current": "6d4c98572c2711e30ef90a3bbda21b0e3dfd1e99ccdf72a7085fbd35d391c558",
+        "original_prior": "7029f3a56187e23794984145fa12d1801e261f46bb69c444a801af04fd565e48"
+      },
+      "original_prior": {
+        "accounting_basis": "US_GAAP_EXPLICIT",
+        "documents": [
+          {
+            "accession": "0001104659-21-136141",
+            "available_at": "2021-11-09T12:46:39-05:00",
+            "document_type": "EARNINGS_RELEASE",
+            "encoding_artifact_word_count": 0,
+            "encoding_artifact_word_fraction": 0.0,
+            "explicit_financial_section_marker_applied": true,
+            "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/c684bbe5f590cf8119a60b3662135af66819d31b8ca754c27725124be0cdd690.htm",
+            "financial_tables_removed": 6,
+            "narrative_sha256": "7029f3a56187e23794984145fa12d1801e261f46bb69c444a801af04fd565e48",
+            "narrative_words": 2492,
+            "replacement_character_count": 0,
+            "sha256": "9d4cb5a9e397dff64be19f795a271272c4227d93faec42d51f2c1c758447e410",
+            "unstructured_financial_text_unresolved": false,
+            "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465921136141/tm2132412d1_ex99-1.htm"
+          }
+        ],
+        "flags": {
+          "duration_evidence": [],
+          "ifrs_mentioned": false,
+          "recast_or_restated_mentioned": false,
+          "source_document_types": [
+            "EARNINGS_RELEASE"
+          ],
+          "split_mentioned": false,
+          "text_encoding_artifact": false,
+          "unequal_quarter_duration": false,
+          "unstructured_financial_text_unresolved": false,
+          "us_gaap_explicit": true
+        },
+        "metrics": {
+          "diluted_eps": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001104659-21-136141",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2021-11-09T12:46:39-05:00",
+                  "cell_text": "(0.43",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 3,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": " had $99.7 million in cash and cash equivalents plus $45.3 million in net accounts receivable. The Company had $28.0 million"
+                  },
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/c684bbe5f590cf8119a60b3662135af66819d31b8ca754c27725124be0cdd690.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "-0.43",
+                  "row_index": 23,
+                  "row_label": "Diluted",
+                  "scale": 1,
+                  "scope": "quarter",
+                  "sha256": "9d4cb5a9e397dff64be19f795a271272c4227d93faec42d51f2c1c758447e410",
+                  "table_caption": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (UNAUDITED) (In thousands, except share and per share amounts) Three Months Ended September 30, Nine Months Ended September 30, 2021 2020 2021 2020 Revenue: Product sales, net $ 12,124 $ 17,317 $ 48,865 $ 49,387 Royalty revenue 27,729 27,611 80,361 83,499 License and other revenue \u2014 5,000 \u2014 5,000 Total revenue 39,853 49,928 129,226 137,886 Operating expenses: Cost of product sales 5,486 8,726 21,835 23,804 Cost of royalty revenue 2,773 3,260 8,036 9,120 Research and development 23,289 4,828 47,488 21,390 Selling, general and administrative 18,482 17,697 54,997 60,411 Total operating expenses 50,030 34,511 132,356 114,725 (Loss) income from operations (10,",
+                  "table_index": 17,
+                  "units": "currency_per_share",
+                  "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465921136141/tm2132412d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "-0.43"
+            }
+          },
+          "revenue": {
+            "comparable_prior": {
+              "evidence": [],
+              "reasons": [
+                "NO_UNAMBIGUOUS_GAAP_SCOPE_ALIGNED_TABLE_CELL"
+              ],
+              "value": null
+            },
+            "current": {
+              "evidence": [
+                {
+                  "accession": "0001104659-21-136141",
+                  "accounting_basis": "GAAP_STATEMENT",
+                  "available_at": "2021-11-09T12:46:39-05:00",
+                  "cell_text": "39,853",
+                  "column_header": "Three Months Ended September 30, 2021",
+                  "column_index": 3,
+                  "currency": "USD",
+                  "currency_source_evidence": {
+                    "currency": "USD",
+                    "excerpt": " had $99.7 million in cash and cash equivalents plus $45.3 million in net accounts receivable. The Company had $28.0 million"
+                  },
+                  "document_type": "EARNINGS_RELEASE",
+                  "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/c684bbe5f590cf8119a60b3662135af66819d31b8ca754c27725124be0cdd690.htm",
+                  "period_end": "2021-09-30",
+                  "raw_display_value": "39853",
+                  "row_index": 6,
+                  "row_label": "Total revenue",
+                  "scale": 1000,
+                  "scope": "quarter",
+                  "sha256": "9d4cb5a9e397dff64be19f795a271272c4227d93faec42d51f2c1c758447e410",
+                  "table_caption": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (UNAUDITED) (In thousands, except share and per share amounts) Three Months Ended September 30, Nine Months Ended September 30, 2021 2020 2021 2020 Revenue: Product sales, net $ 12,124 $ 17,317 $ 48,865 $ 49,387 Royalty revenue 27,729 27,611 80,361 83,499 License and other revenue \u2014 5,000 \u2014 5,000 Total revenue 39,853 49,928 129,226 137,886 Operating expenses: Cost of product sales 5,486 8,726 21,835 23,804 Cost of royalty revenue 2,773 3,260 8,036 9,120 Research and development 23,289 4,828 47,488 21,390 Selling, general and administrative 18,482 17,697 54,997 60,411 Total operating expenses 50,030 34,511 132,356 114,725 (Loss) income from operations (10,",
+                  "table_index": 17,
+                  "units": "currency_units",
+                  "url": "https://www.sec.gov/Archives/edgar/data/827871/000110465921136141/tm2132412d1_ex99-1.htm"
+                }
+              ],
+              "reasons": [],
+              "value": "39853000"
+            }
+          }
+        },
+        "missing_reasons": [],
+        "narrative_words": 2492,
+        "period_end": "2021-09-30",
+        "quarter_ordinal": 3,
+        "scope": "quarter",
+        "source_ready": true
+      },
+      "schema": "earnings-source-features-v1",
+      "slot_id": "0000827871-W1",
+      "status": "SOURCE_PAIR_READ_NUMERIC_COVERAGE_EXPLICIT"
+    }
+  ],
+  "no_prices_or_strategy_returns": true,
+  "schema": "earnings-extraction-source-fixtures-v1",
+  "selection": "Five previously known source-mechanics fixtures selected before any new strategy returns, not a representative extraction-coverage sample.",
+  "source_events_sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+  "validation": "8 tests passed, including synthetic column alignment, narrative scope, currency presentation, uncertain units and source hash failures."
+}

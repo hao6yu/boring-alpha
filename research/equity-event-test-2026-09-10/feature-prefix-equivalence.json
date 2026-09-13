@@ -1,0 +1,158 @@
+{
+  "all_equal": true,
+  "applied_live_sha256": "5eecb127cb91cab0d95fccd6b2e1e6cb591adaa8b1ca54fd8ce1757de1a60c0d",
+  "audited_sample_pairs": 16,
+  "before_sha256": "43e5c40c37672afd362fbda48d43c7cd66f7084b5aee9780dec6a01f836468dd",
+  "candidate_scope": "Only Document stores bounded visible text before each table during the original parse, and extract_tables reads that cache instead of reparsing each raw prefix. No source selection, financial rule, numerical cell, currency, or narrative policy change.",
+  "candidate_sha256": "5eecb127cb91cab0d95fccd6b2e1e6cb591adaa8b1ca54fd8ce1757de1a60c0d",
+  "checks": [
+    {
+      "after_seconds": 0.11112762500124518,
+      "after_semantic_sha256": "5fe298cba3a52c22c857c9355bf6c7043d2c81c951e253291049d3e5733113e9",
+      "before_seconds": 0.1409475830005249,
+      "before_semantic_sha256": "5fe298cba3a52c22c857c9355bf6c7043d2c81c951e253291049d3e5733113e9",
+      "semantic_equal": true,
+      "slot_id": "0001690585-2020Q1"
+    },
+    {
+      "after_seconds": 0.26294179099204484,
+      "after_semantic_sha256": "daea6e5b38362a10ddfe04ae4935c4bb009b3adb79ed1b2594e9497391a0f146",
+      "before_seconds": 0.13172770800883882,
+      "before_semantic_sha256": "daea6e5b38362a10ddfe04ae4935c4bb009b3adb79ed1b2594e9497391a0f146",
+      "semantic_equal": true,
+      "slot_id": "0000764401-2020Q3"
+    },
+    {
+      "after_seconds": 0.4751396250067046,
+      "after_semantic_sha256": "0a561f7b849f3b4c75ba38872686ce34be815b16e228dd7749af4d72ef329711",
+      "before_seconds": 0.38686841700109653,
+      "before_semantic_sha256": "0a561f7b849f3b4c75ba38872686ce34be815b16e228dd7749af4d72ef329711",
+      "semantic_equal": true,
+      "slot_id": "0001091907-2022Q2"
+    },
+    {
+      "after_seconds": 0.22418558300705627,
+      "after_semantic_sha256": "14ae282f66e30031c00365be96ee9cd6ab9b9582f29bfc6ca4f4ad420e8b26c0",
+      "before_seconds": 0.45464129200263415,
+      "before_semantic_sha256": "14ae282f66e30031c00365be96ee9cd6ab9b9582f29bfc6ca4f4ad420e8b26c0",
+      "semantic_equal": true,
+      "slot_id": "0000874501-2020Q2"
+    },
+    {
+      "after_seconds": 0.10441570900729857,
+      "after_semantic_sha256": "a89c0def3ed076853f5c3689ffba2b868872080f2e2f9a9cec716bfea5624bff",
+      "before_seconds": 0.17652412499592174,
+      "before_semantic_sha256": "a89c0def3ed076853f5c3689ffba2b868872080f2e2f9a9cec716bfea5624bff",
+      "semantic_equal": true,
+      "slot_id": "0001111335-2022Q2"
+    },
+    {
+      "after_seconds": 0.1870522919925861,
+      "after_semantic_sha256": "1b9990b2f7e37e9a45833935ff7e753785eb1aa11090121373b239c57ea65dd1",
+      "before_seconds": 0.44514645799063146,
+      "before_semantic_sha256": "1b9990b2f7e37e9a45833935ff7e753785eb1aa11090121373b239c57ea65dd1",
+      "semantic_equal": true,
+      "slot_id": "0001514991-2023Q1"
+    },
+    {
+      "after_seconds": 0.29947591699601617,
+      "after_semantic_sha256": "b7e1c433bfa33b94dedbcde38d142f85c605dc0d7218ed020bd3bfc1b7e40089",
+      "before_seconds": 0.19175349999568425,
+      "before_semantic_sha256": "b7e1c433bfa33b94dedbcde38d142f85c605dc0d7218ed020bd3bfc1b7e40089",
+      "semantic_equal": true,
+      "slot_id": "0000105132-2023Q1"
+    },
+    {
+      "after_seconds": 0.8350522089895094,
+      "after_semantic_sha256": "3daac4f5450b8ffd146e7ea1ec1a32763e968026bfdad24c32e598a6c2fec932",
+      "before_seconds": 1.2301987079990795,
+      "before_semantic_sha256": "3daac4f5450b8ffd146e7ea1ec1a32763e968026bfdad24c32e598a6c2fec932",
+      "semantic_equal": true,
+      "slot_id": "0001669811-2021Q2"
+    },
+    {
+      "after_seconds": 0.19783133300370537,
+      "after_semantic_sha256": "9f4e7ae6edf37b12be33b626ddb8f64863befbc668e539842165f4fa3e56e6fc",
+      "before_seconds": 0.49930095799209084,
+      "before_semantic_sha256": "9f4e7ae6edf37b12be33b626ddb8f64863befbc668e539842165f4fa3e56e6fc",
+      "semantic_equal": true,
+      "slot_id": "0001022652-2021Q1"
+    },
+    {
+      "after_seconds": 0.22478058400156442,
+      "after_semantic_sha256": "322b4faf81b4a1614e4f8c5cca928a37cc98f4b53e9e9b35d80a08dc2aba83bb",
+      "before_seconds": 0.5511296249896986,
+      "before_semantic_sha256": "322b4faf81b4a1614e4f8c5cca928a37cc98f4b53e9e9b35d80a08dc2aba83bb",
+      "semantic_equal": true,
+      "slot_id": "0001364954-2021Q3"
+    },
+    {
+      "after_seconds": 0.23137466701155063,
+      "after_semantic_sha256": "a57963203268b82b98885d0c3bc9a3242f40cf06a8da590d01e3d3da8fb9bf6d",
+      "before_seconds": 0.5848545829940122,
+      "before_semantic_sha256": "a57963203268b82b98885d0c3bc9a3242f40cf06a8da590d01e3d3da8fb9bf6d",
+      "semantic_equal": true,
+      "slot_id": "0001364954-2023Q1"
+    },
+    {
+      "after_seconds": 0.5355831249908078,
+      "after_semantic_sha256": "e7c2679814ee13f617a5c3b2c8b1f9005a4340b8ffb32e3dd716ff9f7f09fb07",
+      "before_seconds": 0.45308420799847227,
+      "before_semantic_sha256": "e7c2679814ee13f617a5c3b2c8b1f9005a4340b8ffb32e3dd716ff9f7f09fb07",
+      "semantic_equal": true,
+      "slot_id": "0000078814-2022Q4"
+    },
+    {
+      "after_seconds": 0.22145391699450556,
+      "after_semantic_sha256": "bf274d74ee86be6cee55060061de555e0d2b28b2d7d398d8bfd5443e30454ddf",
+      "before_seconds": 0.32621462500537746,
+      "before_semantic_sha256": "bf274d74ee86be6cee55060061de555e0d2b28b2d7d398d8bfd5443e30454ddf",
+      "semantic_equal": true,
+      "slot_id": "0001650372-W1"
+    },
+    {
+      "after_seconds": 0.07342141699336935,
+      "after_semantic_sha256": "6d72a2c6b6ebd1f4d8c7228fd5faf021e1a5dda5a61418e263a7b7fa9b938a19",
+      "before_seconds": 0.06612558300548699,
+      "before_semantic_sha256": "6d72a2c6b6ebd1f4d8c7228fd5faf021e1a5dda5a61418e263a7b7fa9b938a19",
+      "semantic_equal": true,
+      "slot_id": "0001856430-W2"
+    },
+    {
+      "after_seconds": 0.057487583995680325,
+      "after_semantic_sha256": "b9aacf1d981cd2188ee864fbbce7fb8d409fe6642aa1e3e1234eeeedc9bffee6",
+      "before_seconds": 0.046353666999493726,
+      "before_semantic_sha256": "b9aacf1d981cd2188ee864fbbce7fb8d409fe6642aa1e3e1234eeeedc9bffee6",
+      "semantic_equal": true,
+      "slot_id": "0001661059-W2"
+    },
+    {
+      "after_seconds": 0.14128033400629647,
+      "after_semantic_sha256": "474d75d859e2073bc670c3b3b1413db2e84d3fbee5c2fc519b61bff7d0d1969b",
+      "before_seconds": 0.19183104200055823,
+      "before_semantic_sha256": "474d75d859e2073bc670c3b3b1413db2e84d3fbee5c2fc519b61bff7d0d1969b",
+      "semantic_equal": true,
+      "slot_id": "0001549595-W1"
+    },
+    {
+      "after_seconds": 0.27073291699343827,
+      "after_semantic_sha256": "ff7bf8d3df29360141cb8b0a14def8be340681b6df81720862e451d38e3f2d81",
+      "before_seconds": 0.24251604100572877,
+      "before_semantic_sha256": "ff7bf8d3df29360141cb8b0a14def8be340681b6df81720862e451d38e3f2d81",
+      "semantic_equal": true,
+      "slot_id": "0000827871-W1"
+    }
+  ],
+  "comparison_scope": "Exact complete extract_pair outputs, excluding only source_manifest_snapshot_sha256 because concurrently growing acquisition ledger can change between calls; underlying original source hashes, paths, accessions, currency inference evidence, metrics, flags, errors and narratives must all match.",
+  "no_prices_or_outcomes_read": true,
+  "prior_source_fixtures": 5,
+  "regression_tests": "12 focused extractor tests passed after applying only the prefix cache; tests/test_equity_event_features.py",
+  "schema": "earnings-prefix-cache-equivalence-v1",
+  "source_snapshot_path": "data/snapshots/equity-event-test-2026-09-10/feature-audit-snapshots/2466c3d2595c3871c0015e69b73eb482d976e70940f562e07fe9de5eec0dfb75-sec-events.json",
+  "source_snapshot_sha256": "2466c3d2595c3871c0015e69b73eb482d976e70940f562e07fe9de5eec0dfb75",
+  "synthetic_nested_hidden_entity_long_prefix_tables_checked": 3,
+  "tests_sha256": "833b2fb899a06aa20014a8d43862c05bef1df50ed51bbcfa76509ec7837fd39a",
+  "total_after_seconds": 4.453336628983379,
+  "total_before_seconds": 6.11921812298533,
+  "unique_audited_sample_slots": 12
+}

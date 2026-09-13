@@ -1,0 +1,271 @@
+{
+  "finished_utc": "2026-09-11T02:19:33.233264+00:00",
+  "market_data_downloaded": false,
+  "new_paid_data_usd": 0,
+  "requests": [
+    {
+      "finished_utc": "2026-09-11T02:19:31.999153+00:00",
+      "http_status": 200,
+      "method": "metadata.get_dataset_range",
+      "params": {
+        "dataset": "EQUS.SUMMARY"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/databento-probe/EQUS.SUMMARY-get_dataset_range.json",
+      "payload": {
+        "end": "2026-09-10T04:00:00.000000000Z",
+        "schema": {
+          "definition": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2024-07-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1d": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2024-07-01T00:00:00.000000000Z"
+          },
+          "statistics": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2024-07-01T00:00:00.000000000Z"
+          }
+        },
+        "start": "2024-07-01T00:00:00.000000000Z"
+      },
+      "requested_utc": "2026-09-11T02:19:31.747601+00:00",
+      "sha256": "bbc302864364be97e9152f3e9bd4c4235a173071abaecff2c022cea0165fa69a",
+      "status": "OK"
+    },
+    {
+      "finished_utc": "2026-09-11T02:19:32.273505+00:00",
+      "http_status": 200,
+      "method": "metadata.list_schemas",
+      "params": {
+        "dataset": "EQUS.SUMMARY"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/databento-probe/EQUS.SUMMARY-list_schemas.json",
+      "payload": [
+        "ohlcv-1d",
+        "definition",
+        "statistics"
+      ],
+      "requested_utc": "2026-09-11T02:19:31.999601+00:00",
+      "sha256": "bbf58e84ca6941264e3f7ed6a32f8cf08aae5467207f7863bf58ac6c4ff83566",
+      "status": "OK"
+    },
+    {
+      "finished_utc": "2026-09-11T02:19:32.522447+00:00",
+      "http_status": 200,
+      "method": "metadata.get_dataset_range",
+      "params": {
+        "dataset": "XASE.PILLAR"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/databento-probe/XASE.PILLAR-get_dataset_range.json",
+      "payload": {
+        "end": "2026-09-10T04:00:00.000000000Z",
+        "schema": {
+          "bbo-1m": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "bbo-1s": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "definition": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "imbalance": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "mbo": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "mbp-1": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "mbp-10": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1d": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1h": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1m": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1s": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "statistics": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "status": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "tbbo": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "trades": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          }
+        },
+        "start": "2018-05-01T00:00:00.000000000Z"
+      },
+      "requested_utc": "2026-09-11T02:19:32.274353+00:00",
+      "sha256": "311d578c1b215e69d8caab210098270d43a4bba1dafc6fa9823aed8bf95bf205",
+      "status": "OK"
+    },
+    {
+      "finished_utc": "2026-09-11T02:19:32.802849+00:00",
+      "http_status": 200,
+      "method": "metadata.list_schemas",
+      "params": {
+        "dataset": "XASE.PILLAR"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/databento-probe/XASE.PILLAR-list_schemas.json",
+      "payload": [
+        "mbo",
+        "mbp-1",
+        "mbp-10",
+        "tbbo",
+        "trades",
+        "bbo-1s",
+        "bbo-1m",
+        "ohlcv-1s",
+        "ohlcv-1m",
+        "ohlcv-1h",
+        "ohlcv-1d",
+        "definition",
+        "imbalance",
+        "statistics",
+        "status"
+      ],
+      "requested_utc": "2026-09-11T02:19:32.523575+00:00",
+      "sha256": "f4c25879893e375239127d159a63e5b41f8aeda2b222f38ab8a12e7136a86612",
+      "status": "OK"
+    },
+    {
+      "finished_utc": "2026-09-11T02:19:33.009872+00:00",
+      "http_status": 200,
+      "method": "metadata.get_dataset_range",
+      "params": {
+        "dataset": "XNAS.ITCH"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/databento-probe/XNAS.ITCH-get_dataset_range.json",
+      "payload": {
+        "end": "2026-09-10T04:00:00.000000000Z",
+        "schema": {
+          "bbo-1m": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "bbo-1s": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "definition": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "imbalance": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "mbo": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "mbp-1": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "mbp-10": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1d": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1h": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1m": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "ohlcv-1s": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "statistics": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "status": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "tbbo": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          },
+          "trades": {
+            "end": "2026-09-10T04:00:00.000000000Z",
+            "start": "2018-05-01T00:00:00.000000000Z"
+          }
+        },
+        "start": "2018-05-01T00:00:00.000000000Z"
+      },
+      "requested_utc": "2026-09-11T02:19:32.803208+00:00",
+      "sha256": "c04681a8c389ace4a1e0ba9b7bf9144dadbd3badf61dfd8e570ed8b99cd3afb7",
+      "status": "OK"
+    },
+    {
+      "finished_utc": "2026-09-11T02:19:33.233013+00:00",
+      "http_status": 200,
+      "method": "metadata.list_schemas",
+      "params": {
+        "dataset": "XNAS.ITCH"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/databento-probe/XNAS.ITCH-list_schemas.json",
+      "payload": [
+        "mbo",
+        "mbp-1",
+        "mbp-10",
+        "bbo-1s",
+        "bbo-1m",
+        "tbbo",
+        "trades",
+        "ohlcv-1s",
+        "ohlcv-1m",
+        "ohlcv-1h",
+        "ohlcv-1d",
+        "definition",
+        "statistics",
+        "status",
+        "imbalance"
+      ],
+      "requested_utc": "2026-09-11T02:19:33.010681+00:00",
+      "sha256": "2b21d172f60bd2f6faff07b3f5355f3022241936801ccbe3277ad4c5960c47a1",
+      "status": "OK"
+    }
+  ],
+  "scope": "PTN metadata and quotes only; no purchases or data requests",
+  "script_sha256": "0ef00df0141cfd0fba825ce2160323e2c2a44fab2e0010cc13b703fe0df737c0",
+  "started_utc": "2026-09-11T02:19:31.747386+00:00"
+}

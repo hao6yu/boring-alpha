@@ -1,0 +1,2131 @@
+{
+  "correction_record": {
+    "file": "sec-parent-identity-correction.json",
+    "sha256": "1abe72aa418bbbe252a6c8cd1fbc9f300706c79f2dc3770bad79be6ccd385106"
+  },
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "rows": [
+    {
+      "cik": "0001511337",
+      "historical_symbol": "RLJ",
+      "index_ciks": [
+        "0001511337"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/59dec068a5fbd4bd9d06d19dfb1cc0a0d9b88ef28dec10f0257064b377160637.html",
+      "index_sha256": "23c53b9baaa8e9d359ab8d2f075a689975e312213d078077c57a3535709ec39b",
+      "issuer_name": "RLJ Lodging Trust",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares of beneficial interest, par value $0.01 per share |  | RLJ |  | New York Stock Exchange",
+          "symbols": [
+            "RLJ"
+          ]
+        }
+      ],
+      "seed_rank": 1,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000706698",
+      "historical_symbol": "UTMD",
+      "index_ciks": [
+        "0000706698"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/65b1210d593f1b0b093adc5196c27a5d00bdd2f3270fd6d556fb5938b6c1cd3f.html",
+      "index_sha256": "e85abcffa15422384273fddd1d97be3ab7579293c069a54ded543eac644dbd18",
+      "issuer_name": "UTAH MEDICAL PRODUCTS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.01 par value | UTMD | NASDAQ",
+          "symbols": [
+            "UTMD"
+          ]
+        }
+      ],
+      "seed_rank": 2,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000886982",
+      "historical_symbol": "GS",
+      "index_ciks": [
+        "0000886982"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/f441f45a7e9f28d2132d9ece7e4f78a3968b4098e746e3848f6cd3f433ad9cb0.html",
+      "index_sha256": "f3045d6b3e8a777da9d1d5eecbc1bc03ff139b41325c575f3d141f01b6e85a23",
+      "issuer_name": "GOLDMAN SACHS GROUP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $.01 per share |  | GS |  | NYSE",
+          "symbols": [
+            "GS"
+          ]
+        }
+      ],
+      "seed_rank": 3,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000315374",
+      "historical_symbol": "HURC",
+      "index_ciks": [
+        "0000315374"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c027b470a4a8981622e23726d2b2385561b4218d63ef443f7ae1fd1b6c0ebd39.html",
+      "index_sha256": "73e9a88897d185b095f33e6545f5fd2a1a1b0f761de63410b6907fd05f8367b4",
+      "issuer_name": "HURCO COMPANIES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, no par value | HURC | Nasdaq Global Select Market",
+          "symbols": [
+            "HURC"
+          ]
+        }
+      ],
+      "seed_rank": 5,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001690585",
+      "historical_symbol": "MGTA",
+      "index_ciks": [
+        "0001690585"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/845bf1766e4daa0008089187afe3864eee50f7b71690e0d8e7dc9133542f0195.html",
+      "index_sha256": "ecfcc06cf3239999371fa6e9d50eeaf19285008abf3b60c6801c7002bd37e449",
+      "issuer_name": "Magenta Therapeutics, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 Par Value |  | MGTA |  | The Nasdaq Global Market",
+          "symbols": [
+            "MGTA"
+          ]
+        }
+      ],
+      "seed_rank": 6,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001703644",
+      "historical_symbol": "GPMT",
+      "index_ciks": [
+        "0001703644"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/247d13468d2d79f33afbda7a3b7999aa8488557723513e3b40ab85815b7e386b.html",
+      "index_sha256": "cb9e9ab1c18944058b907ad244706cff4bee674b13e39b93fc439235df3e0058",
+      "issuer_name": "Granite Point Mortgage Trust Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | GPMT |  | NYSE",
+          "symbols": [
+            "GPMT"
+          ]
+        }
+      ],
+      "seed_rank": 7,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001443669",
+      "historical_symbol": "PRLB",
+      "index_ciks": [
+        "0001443669"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/9f296febdc538bb14e92d4daab462f3bdbd9951ba896641cd2753f0d1f9bf31b.html",
+      "index_sha256": "16ffeb2e2fc325967b72ce39fc17f14d4d17c58fec6f7955450b832fbc21435f",
+      "issuer_name": "Proto Labs Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par Value $0.001 Per Share | PRLB | New York Stock Exchange",
+          "symbols": [
+            "PRLB"
+          ]
+        }
+      ],
+      "seed_rank": 8,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001441693",
+      "historical_symbol": "MBII",
+      "index_ciks": [
+        "0001441693"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e23e903e69b423659e2288122a9d6937723adf5136ebdf00894e7cb5f99bc139.html",
+      "index_sha256": "5809a95311e8884f92b86a6fdf831cb650760a900ff1961e2880ec11077cad60",
+      "issuer_name": "MARRONE BIO INNOVATIONS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.00001 par value |  | MBII |  | Nasdaq Capital Market",
+          "symbols": [
+            "MBII"
+          ]
+        }
+      ],
+      "seed_rank": 9,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001683695",
+      "historical_symbol": "IMXI",
+      "index_ciks": [
+        "0001683695"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/13f27db1f84d688dbaf0931cac134ef949d948b03fb1f7807c7c26851cd7a6c8.html",
+      "index_sha256": "516ada03da3ac44766c3276926729d258885601b981117bdac54d524ccaf10a4",
+      "issuer_name": "International Money Express, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock ($0.0001 par value) | IMXI | The Nasdaq Capital Market",
+          "symbols": [
+            "IMXI"
+          ]
+        }
+      ],
+      "seed_rank": 10,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001562401",
+      "historical_symbol": "AMH",
+      "index_ciks": [
+        "0001562401",
+        "0001716558"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/f5495bc3564ea4eca3ee8793db5a0c5e81c2b127a86c4f8478d05bf4c4e9a5dc.html",
+      "index_sha256": "11cf2fbf9a79dbab08c279a395387026ae44498dd54d7b63af83171b26f92e2e",
+      "issuer_name": "American Homes 4 Rent",
+      "listed_owner": "American Homes 4 Rent",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A common shares of beneficial interest, $.01 par value |  | AMH |  | New York Stock Exchange",
+          "symbols": [
+            "AMH"
+          ]
+        }
+      ],
+      "reason": "JointcovernamesMarylandAmericanHomes4Rent andDelawareLP separately. Originalrelease explicitly AmericanHomes4Rent(NYSE:AMH); coverlistsClassAcommonshares; LP operatinginterest is separate.",
+      "release_file": "data/snapshots/equity-event-test-2026-09-10/sec/495354aa938cb7c8bbfa3446eddf4538b1296bbc1c69b35d12df131d6210a6ce.htm",
+      "release_owner_excerpt": "American Homes 4 Rent (NYSE: AMH)",
+      "release_sha256": "172163a137e2c73b4b3c92c2a6c5a8ba4c5314bd627cbf964954efc40893db91",
+      "seed_rank": 13,
+      "status": "SOURCE_REVIEWED_JOINT_REGISTRANT_OWNER",
+      "verified": true
+    },
+    {
+      "cik": "0000100493",
+      "historical_symbol": "TSN",
+      "index_ciks": [
+        "0000100493"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e3dde453b4a02cbf618a00e4c77ab2f329cb7db8c374a257f337c0d73f59502a.html",
+      "index_sha256": "2d86b3c88c4f746db1a6db0fcc95acf45d6068f4e8d59c5cf4768ee7ba83f0dd",
+      "issuer_name": "TYSON FOODS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock | Par Value $0.10 | TSN | New York Stock Exchange",
+          "symbols": [
+            "TSN"
+          ]
+        }
+      ],
+      "seed_rank": 15,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000100726",
+      "historical_symbol": "UFI",
+      "index_ciks": [
+        "0000100726"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c3bcacee63c1f3396dbea68841d2be8edc604907f73914f4709b87fcaf5d67c1.html",
+      "index_sha256": "871df5659bd09c3b1601069dc1b44942f644a7096206c49f3402bd6ed754c704",
+      "issuer_name": "UNIFI INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.10 per share |  | UFI |  | New York Stock Exchange",
+          "symbols": [
+            "UFI"
+          ]
+        }
+      ],
+      "seed_rank": 17,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001652130",
+      "historical_symbol": "NTLA",
+      "index_ciks": [
+        "0001652130"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/9965763778738b7592003d0399b14633f7b7b5299704097777dd9b46645b8f7f.html",
+      "index_sha256": "1b1d7489b5f9bd4c9cbff7484f020e23968b4cad21eaea07eab972936cfafbe5",
+      "issuer_name": "Intellia Therapeutics, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 per share |  | NTLA |  | The Nasdaq Global Market",
+          "symbols": [
+            "NTLA"
+          ]
+        }
+      ],
+      "seed_rank": 19,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001087294",
+      "historical_symbol": "CPIX",
+      "index_ciks": [
+        "0001087294"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/83991c8d920bd793d69e6e226950f3fc6e7dd94ebc8269acaf061b23e9358c93.html",
+      "index_sha256": "0e38b801bcea81bcb91fd820fea26f2349c81258b1d6c903f52ef2a1e653af5b",
+      "issuer_name": "CUMBERLAND PHARMACEUTICALS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, no par value |  | CPIX |  | NASDAQ Global Select Market",
+          "symbols": [
+            "CPIX"
+          ]
+        }
+      ],
+      "seed_rank": 22,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001622353",
+      "historical_symbol": "JCAP",
+      "index_ciks": [
+        "0001622353"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/475642dfdaa33a16c41c281924017e49fe6e4c990cfaab8cb1b52930071300f5.html",
+      "index_sha256": "9434da10f8ca200477f15967c2722fa3fc5512864912dd965306e59bafb56040",
+      "issuer_name": "Jernigan Capital, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.01 per share | JCAP | New York Stock Exchange",
+          "symbols": [
+            "JCAP"
+          ]
+        }
+      ],
+      "seed_rank": 23,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000904979",
+      "historical_symbol": "SHLO",
+      "index_ciks": [
+        "0000904979"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/35e0ab12170e7b2744c2f1699ca0dffc491e874099de5ae0038aa9b88ebb7aad.html",
+      "index_sha256": "037e311d4f1fc255a1188f40cf762f996fbfd9f3883b57c61ebfa657de0fc7a3",
+      "issuer_name": "SHILOH INDUSTRIES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | SHLO | The NASDAQ Global Select Market",
+          "symbols": [
+            "SHLO"
+          ]
+        }
+      ],
+      "seed_rank": 24,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000742126",
+      "historical_symbol": "ECOL",
+      "index_ciks": [
+        "0000742126"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/d07c8bdf99605a8e33fc0712058fbfba879c514df1ab3486b4c9ce80e9ce2929.html",
+      "index_sha256": "b320016767e7cf5193c8954aa327ef3ab65f5205602695e198d099816600e6d4",
+      "issuer_name": "US ECOLOGY, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | ECOL | Nasdaq Global Market",
+          "symbols": [
+            "ECOL"
+          ]
+        }
+      ],
+      "seed_rank": 26,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000922224",
+      "historical_symbol": "PPL",
+      "index_ciks": [
+        "0000922224"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/24d0f18781ce52f6cf4f2018a25d39cff7704f64a1d5f73fd539fb84e826bc43.html",
+      "index_sha256": "f2262c576ffc06818d2b1812b8d9448ab8afa5dc5e3d097af7efb34adfe0d605",
+      "issuer_name": "PPL Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock of PPL Corporation | PPL | New York Stock Exchange",
+          "symbols": [
+            "PPL"
+          ]
+        }
+      ],
+      "seed_rank": 27,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000821130",
+      "historical_symbol": "USM",
+      "index_ciks": [
+        "0000821130"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/2efd3c02c0945cf05328043f7347a70e2385b96a2c0fc4d5153c1bdd04a453b0.html",
+      "index_sha256": "5710862b9c6e0c080d016a877a497140eb545f1a9f73ebbb4b647566b6aedc19",
+      "issuer_name": "UNITED STATES CELLULAR CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Shares, $1 par value |  | USM |  | New York Stock Exchange",
+          "symbols": [
+            "USM"
+          ]
+        }
+      ],
+      "seed_rank": 30,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001469372",
+      "historical_symbol": "MSGN",
+      "index_ciks": [
+        "0001469372"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/0a4c0b75a89f2f133521409543436fb2f4d0f34d021809d9761c44c58c300219.html",
+      "index_sha256": "0cccfa139b5bb8d91684e5365ca8063af2f5457ac7e5294aa8fe83879e629fd6",
+      "issuer_name": "MSG NETWORKS INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock |  | MSGN |  | New York Stock Exchange",
+          "symbols": [
+            "MSGN"
+          ]
+        }
+      ],
+      "seed_rank": 31,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000764401",
+      "historical_symbol": "IIIN",
+      "index_ciks": [
+        "0000764401"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ab3c268d859705a6eda7b0243704335b3c020ad8c2bc438dea69c430ef1b9b78.html",
+      "index_sha256": "24bfec156ba741adbe68f2c42c4b6d2f081dda8e6268737d71364bad8468772c",
+      "issuer_name": "INSTEEL INDUSTRIES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock (No Par Value) | IIIN | The Nasdaq Stock Market LLC (Nasdaq Global Select Market)",
+          "symbols": [
+            "IIIN"
+          ]
+        }
+      ],
+      "seed_rank": 34,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000031667",
+      "historical_symbol": "EDUC",
+      "index_ciks": [
+        "0000031667"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/5abb604007f62349f1afba153fcb0c8fc576a5f1360c388961b20524477c5ab3.html",
+      "index_sha256": "09bb7129a2ff8250e2ca272fee8106bd01205468ad90640e571761344ab32891",
+      "issuer_name": "EDUCATIONAL DEVELOPMENT CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.20 par value | EDUC | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "EDUC"
+          ]
+        }
+      ],
+      "seed_rank": 36,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000700841",
+      "historical_symbol": "RCMT",
+      "index_ciks": [
+        "0000700841"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/4f64a1a74db8683bab2017e6f6ed42580dcd4fcd2354f88bf6cc020716e8b5e0.html",
+      "index_sha256": "5323bf1588d53c32b64169faf6d0e5d4f8639f96452b916bd4792fbd0fc000ca",
+      "issuer_name": "RCM TECHNOLOGIES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.05 per share |  | RCMT |  | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "RCMT"
+          ]
+        }
+      ],
+      "seed_rank": 37,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001021635",
+      "historical_symbol": "OGE",
+      "index_ciks": [
+        "0001021635"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/2f1df8f716e76b9f23099e1fc4e4c25767e52c2a7a90a4e3523663135661201c.html",
+      "index_sha256": "9ea390036cf1a809fd7b5559c5f5f6049fc83ce295f6111d7a4407a1af067e7f",
+      "issuer_name": "OGE ENERGY CORP.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | OGE | New York Stock Exchange",
+          "symbols": [
+            "OGE"
+          ]
+        }
+      ],
+      "seed_rank": 40,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001091907",
+      "historical_symbol": "WWE",
+      "index_ciks": [
+        "0001091907"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e24ab1ad8373c8b74e7bb20c98bfb73137dc509cf34102931254a8a999d58612.html",
+      "index_sha256": "27303c374f48a228d4c9d3cd805856ac4f062e66a545829336afbb7b2bbcd4b9",
+      "issuer_name": "WORLD WRESTLING ENTERTAINMENTINC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, par value $0.01 per share | WWE | New York Stock Exchange",
+          "symbols": [
+            "WWE"
+          ]
+        }
+      ],
+      "seed_rank": 43,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001069530",
+      "historical_symbol": "SAVA",
+      "index_ciks": [
+        "0001069530"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ee820a72b7446f6c7d27577d7cdd11f8c03b07451907fdb28d9a2c18da9a4d4d.html",
+      "index_sha256": "b24f03716c02553b0c7e1596cc117267602f919b6190a6dabb436538ee1c8c46",
+      "issuer_name": "CASSAVA SCIENCES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value |  | SAVA |  | NASDAQ Capital Market",
+          "symbols": [
+            "SAVA"
+          ]
+        }
+      ],
+      "seed_rank": 44,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001521951",
+      "historical_symbol": "FBIZ",
+      "index_ciks": [
+        "0001521951"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/35c00c65ce7d1b9dddb89e3ef4ea14c0c4a82c00efeee58a21080c71ea75fccc.html",
+      "index_sha256": "66069e029c078bd78730d75d371a354c0e7f878f197649427acbc7e74d72c4ca",
+      "issuer_name": "FIRST BUSINESS FINANCIAL SERVICES, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value |  | FBIZ |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FBIZ"
+          ]
+        }
+      ],
+      "seed_rank": 45,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001708599",
+      "historical_symbol": "AGE",
+      "index_ciks": [
+        "0001708599"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/7991897aa72b1f51cf0c986bb9f74bdd9b2d52173f673f362f3c737d397573a5.html",
+      "index_sha256": "d8ae5754ce5604c7a1feb4404636d178ca1145b2022e8dc1f2f49cbcd834d61c",
+      "issuer_name": "AgeX Therapeutics, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 per share | AGE | NYSE American",
+          "symbols": [
+            "AGE"
+          ]
+        }
+      ],
+      "seed_rank": 46,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000874501",
+      "historical_symbol": "AMBC",
+      "index_ciks": [
+        "0000874501"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/0eeb290225b063420ee1851f278f62d3e9ae790da14163dfbf28379b8ee3bc7a.html",
+      "index_sha256": "f8897c5df274f724f6e48bf47b9a92221adaeb8eaaf517e6e9b14a5adfc99009",
+      "issuer_name": "AMBAC FINANCIAL GROUP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.01 per share |  | AMBC |  | NASDAQ",
+          "symbols": [
+            "AMBC"
+          ]
+        }
+      ],
+      "seed_rank": 48,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001552451",
+      "historical_symbol": "MYOK",
+      "index_ciks": [
+        "0001552451"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/41ced009e2dc7ce9e9eb4d5f301b015b1913b3a0b63f55168abe8abf885c494e.html",
+      "index_sha256": "0b69b3b9242960c078e907e63d1968084285aa3c4360507e8c3e0d8f8b59b827",
+      "issuer_name": "MyoKardia Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 | MYOK | Nasdaq Global Select Market",
+          "symbols": [
+            "MYOK"
+          ]
+        }
+      ],
+      "seed_rank": 49,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000033185",
+      "historical_symbol": "EFX",
+      "index_ciks": [
+        "0000033185"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c07de6a15a6a8bafdeb17a7719fa7d645e5d9a8b81e97e9588c4eec151e48cf4.html",
+      "index_sha256": "455d5838bfc3c8d91514bc47df3436995160fb6946a03de43d9d16b5cc6651c7",
+      "issuer_name": "EQUIFAX INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $1.25 par value per share |  | EFX |  | New York Stock Exchange",
+          "symbols": [
+            "EFX"
+          ]
+        }
+      ],
+      "seed_rank": 51,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000913277",
+      "historical_symbol": "CLAR",
+      "index_ciks": [
+        "0000913277"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/eac2cfd7df514a8ade427a8d233bc8b9ae1f099262d57e6a511a1b9ac5c43bf9.html",
+      "index_sha256": "081c9a8ab24083ad86aaa461b2209659847b0b8c5ac316e4ba98eed0be2c731c",
+      "issuer_name": "Clarus Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.0001 per share |  | CLAR |  | NASDAQ Global Select Market",
+          "symbols": [
+            "CLAR"
+          ]
+        }
+      ],
+      "seed_rank": 52,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001638833",
+      "historical_symbol": "SGRY",
+      "index_ciks": [
+        "0001638833"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ecf486e8b07ce7d0144ec965115ff7a8ad9ef104f7531433661e9acb2dee366d.html",
+      "index_sha256": "7241faba354d3aa768850a4cf5bb3efa83e24410c8b12e84f7e1cb0543eecab8",
+      "issuer_name": "Surgery Partners, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | SGRY |  | The Nasdaq Global Select Market",
+          "symbols": [
+            "SGRY"
+          ]
+        }
+      ],
+      "seed_rank": 53,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001676667",
+      "historical_symbol": "CART",
+      "index_ciks": [
+        "0001676667"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/090e1724a0d7da66c8f025054727e067d93e161f543385c1a34c2b7c9461cdf1.html",
+      "index_sha256": "729a798ff1bdad644809ae2ec6a4686d4eb05c00b8a7ef908598eb79215acd5a",
+      "issuer_name": "Carolina Trust BancShares, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $2.50 per share |  | CART |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "CART"
+          ]
+        }
+      ],
+      "seed_rank": 55,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001490281",
+      "historical_symbol": "GRPN",
+      "index_ciks": [
+        "0001490281"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/1c2f068daf0148bbbc0836e7f800de266746be788542547345651040d22a8e8b.html",
+      "index_sha256": "4263b64e1c27db227fb70bfd134dd355d5182dd603eb6e7270ce62725f3f90e8",
+      "issuer_name": "Groupon, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.0001 per share |  | GRPN |  | NASDAQ Global Select Market",
+          "symbols": [
+            "GRPN"
+          ]
+        }
+      ],
+      "seed_rank": 57,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001111335",
+      "historical_symbol": "VC",
+      "index_ciks": [
+        "0001111335"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/f603c9b534adfe6ecd6d769976b098751a5cfa133da39c3327712efe95f339b9.html",
+      "index_sha256": "28d059f3949b5c545eec39c4d5c61a8de70469240eed9b3264461d01e643edc0",
+      "issuer_name": "VISTEON CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | VC |  | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "VC"
+          ]
+        }
+      ],
+      "seed_rank": 58,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001393818",
+      "historical_symbol": "BX",
+      "index_ciks": [
+        "0001393818"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/4fd04b88de30c1276e255558e41e2176ade3d83ccb5417da8003faa4b5a112a3.html",
+      "index_sha256": "e4c3f4c294174a0fc4b78a443603b4c7501be51416216c44a5732212b3ee3e19",
+      "issuer_name": "Blackstone Group Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock |  | BX |  | New York Stock Exchange",
+          "symbols": [
+            "BX"
+          ]
+        }
+      ],
+      "seed_rank": 59,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000018230",
+      "historical_symbol": "CAT",
+      "index_ciks": [
+        "0000018230"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e8f96a7d749c1a4eefa5dde569ba568aded28f92185954cc06bc80fd0296b0fa.html",
+      "index_sha256": "717005d0373f8464cd62d77690782510a2e4ff1e247f5d5d80c5623b0d98facb",
+      "issuer_name": "CATERPILLAR INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock($1.00 par value) | CAT | New York Stock Exchange",
+          "symbols": [
+            "CAT"
+          ]
+        }
+      ],
+      "seed_rank": 60,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001703038",
+      "historical_symbol": "NRCG",
+      "index_ciks": [
+        "0001703038"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/7e38928153fa018edae3e9df2580b61f7bcf8d574d7115bc9bdc2d2218454ee8.html",
+      "index_sha256": "ad03c0ab1e8da780bee2f95697825fe9fadab58c3a68dc38e7eabe919c0733f2",
+      "issuer_name": "NRC GROUP HOLDINGS CORP.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 per share |  | NRCG |  | NYSE American",
+          "symbols": [
+            "NRCG"
+          ]
+        }
+      ],
+      "seed_rank": 65,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001600470",
+      "historical_symbol": "MR",
+      "index_ciks": [
+        "0001600470"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/0838e04524159020385f6f19b25ef7604db58a8477b64dcc87b1692fe71677c2.html",
+      "index_sha256": "7cfaf820b3d6b14f8bf2e4179a3ae56679e25a213bdf702d65fe67d8f1c55e81",
+      "issuer_name": "Montage Resources Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par Value $0.01 Per Share |  | MR |  | New York Stock Exchange",
+          "symbols": [
+            "MR"
+          ]
+        }
+      ],
+      "seed_rank": 66,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001422183",
+      "historical_symbol": "FSK",
+      "index_ciks": [
+        "0001422183"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/1b47e5603eeaecabf1ec3588e8e4940813b68355a047eae5564a60fb58908952.html",
+      "index_sha256": "a884430017e19b3507331ee5f9526a004c5d923f0336a909d73b9971a10f250e",
+      "issuer_name": "FS KKR Capital Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock |  | FSK |  | New York Stock Exchange",
+          "symbols": [
+            "FSK"
+          ]
+        }
+      ],
+      "seed_rank": 67,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001514991",
+      "historical_symbol": "AMCX",
+      "index_ciks": [
+        "0001514991"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/722def7d9b2179b8fadb83c41837ffe813edae095b0b9f902c40cf46f10c5657.html",
+      "index_sha256": "8d0a94afdd513e47f52e706f36b937877cfc452790de83930f512455e7607a72",
+      "issuer_name": "AMC Networks Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock, par value $0.01 per share | AMCX | The | NASDAQ | Stock Market LLC",
+          "symbols": [
+            "AMCX"
+          ]
+        }
+      ],
+      "seed_rank": 68,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001101680",
+      "historical_symbol": "DZSI",
+      "index_ciks": [
+        "0001101680"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/d12bceb95dcb419166037ac0fc56e98eca7f30ef8fbd3d54acbe6fde6719b590.html",
+      "index_sha256": "f3b7454039be4a4ed367977de9bde75bc62cd741e72d4cf1bf5362b71b5e0ddd",
+      "issuer_name": "DASAN ZHONE SOLUTIONS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.001 par value | DZSI | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "DZSI"
+          ]
+        }
+      ],
+      "seed_rank": 73,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001534992",
+      "historical_symbol": "FRGI",
+      "index_ciks": [
+        "0001534992"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/2b1556045c93e87e19cc35f0fff78efb26fb237af421e59c9c5dba1b98f87360.html",
+      "index_sha256": "297531899497692eb75de7e2cafcdc5b179b80446f967462171d3182a3885e34",
+      "issuer_name": "Fiesta Restaurant Group, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | FRGI |  | The NASDAQ Global Select Market",
+          "symbols": [
+            "FRGI"
+          ]
+        }
+      ],
+      "seed_rank": 74,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000719220",
+      "historical_symbol": "STBA",
+      "index_ciks": [
+        "0000719220"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/989802e1813fac20eb9d6162ae11928949c6a0286662b6e2f05257de8552e528.html",
+      "index_sha256": "cf312fac943db6b04ac3d6e714fca861e1232bea30658f43226685a2b9184f13",
+      "issuer_name": "S&T BANCORP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $2.50 par value | STBA | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "STBA"
+          ]
+        }
+      ],
+      "seed_rank": 75,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001367920",
+      "historical_symbol": "CNCE",
+      "index_ciks": [
+        "0001367920"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ca981e9b9487ee76a6eee6ec49cf32c07e33fc36a7ff4980f54cde865b148ef1.html",
+      "index_sha256": "9b63de632c57f9fb669825d95c3a7e1b25e35b886c8f19aa9705da03c966eeee",
+      "issuer_name": "CONCERT PHARMACEUTICALS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | CNCE | The NASDAQ Global Market",
+          "symbols": [
+            "CNCE"
+          ]
+        }
+      ],
+      "seed_rank": 77,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000927066",
+      "historical_symbol": "DVA",
+      "index_ciks": [
+        "0000927066"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/2361863e873eb97873132f174c5285fb42fc2c5e497954ed579863ab487c8bc8.html",
+      "index_sha256": "1d147a9c2e82d229e7fc8f8a048d0c064ff1c2736fb7e72ebdb79f69707e6828",
+      "issuer_name": "DAVITA INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value |  | DVA |  | NYSE",
+          "symbols": [
+            "DVA"
+          ]
+        }
+      ],
+      "seed_rank": 78,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001487952",
+      "historical_symbol": "VPG",
+      "index_ciks": [
+        "0001487952"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/19b7070ab435e668b2a2a1010e5c8c3bdf86b4f65a4aeecb92ca57ea481c9984.html",
+      "index_sha256": "720d516056b2ba5a2785e6ce1ef5811835574bfbeaf568f53516d89127f428c9",
+      "issuer_name": "Vishay Precision Group, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.10 par value | VPG | New York Stock Exchange",
+          "symbols": [
+            "VPG"
+          ]
+        }
+      ],
+      "seed_rank": 79,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001279704",
+      "historical_symbol": "CLRB",
+      "index_ciks": [
+        "0001279704"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/821af5c8a18d1a97a6212f550f343c654b83fb4f00d1fcfad400dfb5b311c59d.html",
+      "index_sha256": "192cb201d377092e31744ac3dc2624e5e3dac32ee47a7473505f013ddc1f2898",
+      "issuer_name": "Cellectar Biosciences, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.00001; first security in combined listing row; corresponding first symbol CLRB and first exchange NASDAQ Capital Market.",
+          "symbols": [
+            "CLRB"
+          ]
+        }
+      ],
+      "seed_rank": 80,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001283699",
+      "historical_symbol": "TMUS",
+      "index_ciks": [
+        "0001283699"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/b9025eca402bdbc9c99d5c1e03c702f28408548f9107f1b350612552b56e6dfe.html",
+      "index_sha256": "6937c475792197dc1c8cc5f3f0f05ad378a6db313549620bf922264b74f51e0e",
+      "issuer_name": "T-Mobile US, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.00001 per share |  | TMUS |  | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "TMUS"
+          ]
+        }
+      ],
+      "seed_rank": 81,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000851205",
+      "historical_symbol": "CGNX",
+      "index_ciks": [
+        "0000851205"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/d8bcf80c1c172378c02f43ae4b0ffc2779af9961a7209c2af68cec9a78b717e5.html",
+      "index_sha256": "bbad20a0224d33d49f6f35b2017111b11499eb45b5302a778b20288e45940b42",
+      "issuer_name": "COGNEX CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.002 per share | CGNX | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "CGNX"
+          ]
+        }
+      ],
+      "seed_rank": 82,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000105132",
+      "historical_symbol": "WDFC",
+      "index_ciks": [
+        "0000105132"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/30034630525cc1d5488fc6de56eec369a862871d5cd81eec4e43b41d656edebb.html",
+      "index_sha256": "5c959d8365637b154d5272c6788c7e2d82f8d610a992891b20257df6b3387a1f",
+      "issuer_name": "WD 40 CO",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, par value $0.001 per share |  | WDFC |  | NASDAQ",
+          "symbols": [
+            "WDFC"
+          ]
+        }
+      ],
+      "seed_rank": 83,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001669811",
+      "historical_symbol": "DFIN",
+      "index_ciks": [
+        "0001669811"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/118d9d71525052b239426457cbb247f22a90e2f94717a6562baec454c8425f0a.html",
+      "index_sha256": "ca0659718d5ef7f4979c3e0569939bb4a00e3d8cd8737f162f864c7abe37a049",
+      "issuer_name": "Donnelley Financial Solutions, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock (Par Value $0.01) |  | DFIN |  | NYSE",
+          "symbols": [
+            "DFIN"
+          ]
+        }
+      ],
+      "seed_rank": 85,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001022652",
+      "historical_symbol": "INSG",
+      "index_ciks": [
+        "0001022652"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/dc6cb4a9cfe4011d795f253a52e2678b005970b1f75a44fdaf1af77bc6f3abae.html",
+      "index_sha256": "ec9429eccc47bd8b67c288b81621094b0a34d5eee2d32f9442886ebd15d10887",
+      "issuer_name": "INSEEGO CORP.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | INSG | Nasdaq Global Select Market",
+          "symbols": [
+            "INSG"
+          ]
+        }
+      ],
+      "seed_rank": 86,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000726958",
+      "historical_symbol": "CASY",
+      "index_ciks": [
+        "0000726958"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/9d287a58708f1406c4b6f0392a1145d57ef5656563f8640965c471c31b34e547.html",
+      "index_sha256": "5ce224ffc6a6a6dec552b3e70283fb0c756deaab426a3ed865588e404f0a9929",
+      "issuer_name": "CASEYS GENERAL STORES INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, no par value per share | CASY | The NASDAQ Global Select Market",
+          "symbols": [
+            "CASY"
+          ]
+        }
+      ],
+      "seed_rank": 87,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000924717",
+      "historical_symbol": "SRDX",
+      "index_ciks": [
+        "0000924717"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/4dd9a0e7fffd7df0c738641e4d5581c5ce73a36c58020c7eb77231d84bdd43fb.html",
+      "index_sha256": "2c91631936df1cdc8b2d4b2be21582685a6a17554cf9c540225c063d560e056f",
+      "issuer_name": "SURMODICS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.05 par value | SRDX | Nasdaq Global Select Market",
+          "symbols": [
+            "SRDX"
+          ]
+        }
+      ],
+      "seed_rank": 88,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000827054",
+      "historical_symbol": "MCHP",
+      "index_ciks": [
+        "0000827054"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/d51b42be3ce9a0520e6cfe78dcb37f73c32cc9cd351dbfc57a0bfe3242c805fc.html",
+      "index_sha256": "7ff492a655a9f341f0c86a646355b9be662e6b4167d83ab4ebfdec0b5735266a",
+      "issuer_name": "MICROCHIP TECHNOLOGY INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.001 par value |  | MCHP |  | NASDAQ | Stock Market LLC |  | 238,043,610 shares",
+          "symbols": [
+            "MCHP"
+          ]
+        }
+      ],
+      "seed_rank": 89,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001364954",
+      "historical_symbol": "CHGG",
+      "index_ciks": [
+        "0001364954"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/4e345c08323310076441dbdf772addd7efb805761d1680c3e04a3a44344ecc02.html",
+      "index_sha256": "22ae44b3ecb026aa4ddcd01001009e51eee550768317746146593a9e34b695ca",
+      "issuer_name": "CHEGG, INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.001 par value per share | CHGG | The New York Stock Exchange",
+          "symbols": [
+            "CHGG"
+          ]
+        }
+      ],
+      "seed_rank": 92,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001164863",
+      "historical_symbol": "NPO",
+      "index_ciks": [
+        "0001164863"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c2bb35d496c92e9ef2ecda609904f48de72c4a1b3209fcd07ddfde0124c0f626.html",
+      "index_sha256": "c5629dbe5fccd5216abb4e1e3c78ec1ab0d543e3c558b1027c7eaeba877106e8",
+      "issuer_name": "ENPRO INDUSTRIES, INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.01 par value | NPO | New York Stock Exchange",
+          "symbols": [
+            "NPO"
+          ]
+        }
+      ],
+      "seed_rank": 93,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000078814",
+      "historical_symbol": "PBI",
+      "index_ciks": [
+        "0000078814"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e70a1398213dcb528968944847ec2bfaf3cbb512be39ee60646004c3b1535c26.html",
+      "index_sha256": "72c46b5a201ac51d9200ae56dfa7dd870add551e2d463c336b1828b24bc8a999",
+      "issuer_name": "PITNEY BOWES INC /DE/",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $1 par value per share |  | PBI |  | New York Stock Exchange",
+          "symbols": [
+            "PBI"
+          ]
+        }
+      ],
+      "seed_rank": 94,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001444363",
+      "historical_symbol": "GCAP",
+      "index_ciks": [
+        "0001444363"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/4eba98ad27781826d7d868b1ce5816163b7583b5bf1bd41034ea623e3d1ff094.html",
+      "index_sha256": "f0856e033f123df98d7a8a45944de0e3bd1493615be7aa35cd13ece17fa2b96d",
+      "issuer_name": "GAIN Capital Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.00001 | GCAP | New York Stock Exchange",
+          "symbols": [
+            "GCAP"
+          ]
+        }
+      ],
+      "seed_rank": 95,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001529377",
+      "historical_symbol": "ACRE",
+      "index_ciks": [
+        "0001529377"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/17fa09cabad08e2b3e59a4a65f87444cf0a991aa28f0200d1f48ca3bc5d815d1.html",
+      "index_sha256": "edc2e157b9547a64e471407ef1703aeb1beb7407496a3d36b16f32c18757d555",
+      "issuer_name": "Ares Commercial Real Estate Corp",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value per share | ACRE | New York Stock Exchange",
+          "symbols": [
+            "ACRE"
+          ]
+        }
+      ],
+      "seed_rank": 96,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001614184",
+      "historical_symbol": "CADE",
+      "index_ciks": [
+        "0001614184"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/de7f51d8bcb491889bcc49dcddb61442acf9baf6f8bc1874cb12dbcb12e6bbfd.html",
+      "index_sha256": "9bda81f44b9fbf495433c0690ce7b8376846f79020d5548aed6793b23386d8e5",
+      "issuer_name": "Cadence Bancorporation",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock |  | CADE |  | New York Stock Exchange",
+          "symbols": [
+            "CADE"
+          ]
+        }
+      ],
+      "seed_rank": 97,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001667939",
+      "historical_symbol": "FSBC",
+      "index_ciks": [
+        "0001667939"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/27397927f84375b82a2029b72b6fe420f2bf997704a31734521a95dc09ebd6f6.html",
+      "index_sha256": "28920df17a8c883ea60d08ec3ca2135d02d04fe9fd9de87e5e54546183e3a11e",
+      "issuer_name": "FSB Bancorp, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | FSBC | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FSBC"
+          ]
+        }
+      ],
+      "seed_rank": 98,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001512499",
+      "historical_symbol": "LIND",
+      "index_ciks": [
+        "0001512499"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e8aa37e6e9d2d4592576c5ad13d8ded66695c926fc9b769822a03802b214f825.html",
+      "index_sha256": "4d94955018bbbc5c2528cfb119b016bb40b35342eb6f6619ef0fc27b3405972e",
+      "issuer_name": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.0001 per share |  | LIND |  | The NASDAQ Stock Exchange LLC",
+          "symbols": [
+            "LIND"
+          ]
+        }
+      ],
+      "seed_rank": 100,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001055160",
+      "historical_symbol": "MFA",
+      "index_ciks": [
+        "0001055160"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/1811ff8be61e8dba90b08e32417d73229d52bae26e8d28a36aa040eae26530b1.html",
+      "index_sha256": "acace91671eb524bc0001f2233cc9f1703fbbed286ee1cc14fa22301e5303507",
+      "issuer_name": "MFA FINANCIAL, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share |  | MFA |  | New York Stock Exchange",
+          "symbols": [
+            "MFA"
+          ]
+        }
+      ],
+      "seed_rank": 101,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000065984",
+      "historical_symbol": "ETR",
+      "index_ciks": [
+        "0000007323",
+        "0000065984",
+        "0000066901",
+        "0000071508",
+        "0000202584",
+        "0001348952",
+        "0001427437"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/9334b37d55f92d9c0b648f4eaec5ff6da80c35bf5c5de6375280bb47e1712406.html",
+      "index_sha256": "3bfd41bb60177e34bb2004cbc0b7d77e76f46e6bbd8195080c430f4977bbfd29",
+      "issuer_name": "ENTERGY CORP /DE/",
+      "listed_owner": "Entergy Corporation",
+      "listing_rows": [
+        {
+          "row_excerpt": "Entergy Corporation | ETR | Common Stock, $0.01 Par Value | New York Stock Exchange LLC NYSE Chicago, Inc.",
+          "symbols": [
+            "ETR"
+          ]
+        }
+      ],
+      "reason": "JointcoverlistingrowexplicitlyassignsETRcommonstocktoEntergyCorporation, the selectedparentCIK.",
+      "seed_rank": 103,
+      "status": "SOURCE_REVIEWED_JOINT_REGISTRANT_OWNER",
+      "verified": true
+    },
+    {
+      "cik": "0001493594",
+      "historical_symbol": "MTSI",
+      "index_ciks": [
+        "0001493594"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/3f4a119c870146c0fb05bdbf60e9e7d8fe3c90cb21fa413e4e966671ea05fe11.html",
+      "index_sha256": "8847185e764a54e769e5a52ca0259ffb3ee4cb246de48027f83cf93953b2a209",
+      "issuer_name": "MACOM Technology Solutions Holdings, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | MTSI | Nasdaq Global Select Market",
+          "symbols": [
+            "MTSI"
+          ]
+        }
+      ],
+      "seed_rank": 105,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001383312",
+      "historical_symbol": "BR",
+      "index_ciks": [
+        "0001383312"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/6797439728449ef70465838452bdbc22ffbdb9f83b3d08adc6bff35c58dd6917.html",
+      "index_sha256": "a8e3f5b2204e74ca1bcd2b24a684f2f91fd5715d5d636aed271077612c36f25e",
+      "issuer_name": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share | BR | New York Stock Exchange",
+          "symbols": [
+            "BR"
+          ]
+        }
+      ],
+      "seed_rank": 106,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001328143",
+      "historical_symbol": "ADMS",
+      "index_ciks": [
+        "0001328143"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/fd3e539aad637969492c1d585e78c5ae536cd2913b44efe2430a5f3a6b5e5c6f.html",
+      "index_sha256": "7afd87cceca8fa1a10e2a304dfe4cb85b959f745f988384e9bde2969acd0ae51",
+      "issuer_name": "Adamas Pharmaceuticals Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Title of each class Common Stock, par value $0.001 per share |  | Trading Symbol(s) ADMS |  | Name of each exchange on which registered The Nasdaq Global Market",
+          "symbols": [
+            "ADMS"
+          ]
+        }
+      ],
+      "seed_rank": 109,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000863894",
+      "historical_symbol": "VERU",
+      "index_ciks": [
+        "0000863894"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/cbed1ba96589a8c7c59ed3d6cc2e3c08485fa30673a403f6b18b57fe3df77042.html",
+      "index_sha256": "dd0a35ad3da839031bc0179b16da4cf1a64b9bc7e157e7977298030072539d94",
+      "issuer_name": "VERU INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value per share |  | VERU |  | NASDAQ Capital Market",
+          "symbols": [
+            "VERU"
+          ]
+        }
+      ],
+      "seed_rank": 110,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001022079",
+      "historical_symbol": "DGX",
+      "index_ciks": [
+        "0001022079"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/dd748258b85fbdfb1e4083009c6230ae179026c80b742ad5dc7757ff06a0d468.html",
+      "index_sha256": "ff3736039697da2cfb08cbca6e93eb5b55f64fbe16ed73cd61997e4ea9e319d9",
+      "issuer_name": "QUEST DIAGNOSTICS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 Par Value | DGX | New York Stock Exchange",
+          "symbols": [
+            "DGX"
+          ]
+        }
+      ],
+      "seed_rank": 114,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001175505",
+      "historical_symbol": "FPRX",
+      "index_ciks": [
+        "0001175505"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/466962549a29da302cc52eaf4bf5c9e1fbec5ba546514e240de4d95b5838fe49.html",
+      "index_sha256": "d7bc39c00de24ffbe32066193016e6bb62981f7e3a01c97d420e9bbfe4a24b5c",
+      "issuer_name": "FIVE PRIME THERAPEUTICS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share |  | FPRX |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "FPRX"
+          ]
+        }
+      ],
+      "seed_rank": 115,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000006845",
+      "historical_symbol": "APOG",
+      "index_ciks": [
+        "0000006845"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/5dbe1391d57b08c6f66434e3eb47db8108b8f396cb86029aa860c4b96afcb270.html",
+      "index_sha256": "7785f6499e83d69fc72a8f7d5ace2206616b4a7f91f55c7a68547ec2fe5b844a",
+      "issuer_name": "APOGEE ENTERPRISES, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.33 1/3 Par Value |  | APOG |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "APOG"
+          ]
+        }
+      ],
+      "seed_rank": 116,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000927653",
+      "historical_symbol": "MCK",
+      "index_ciks": [
+        "0000927653"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/ef788429d25a3305a932f34c010e361737b9d11de6e0f75e1b6d064849bf43a9.html",
+      "index_sha256": "ac28aa166b1b3fd9ee1ce16cf12168ce891a33b7ba10bfeb9e341e05233bfce0",
+      "issuer_name": "MCKESSON CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.01 par value |  | MCK |  | New York Stock Exchange",
+          "symbols": [
+            "MCK"
+          ]
+        }
+      ],
+      "seed_rank": 117,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000066570",
+      "historical_symbol": "MSA",
+      "index_ciks": [
+        "0000066570"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/af42380119464d0a44c61c4cf56c12a7b079cf11ca38d923663331e2195a9f05.html",
+      "index_sha256": "48cfdbecd5c52a43a4c2126516fbf3dcd04860771837c7d7072c4bf577ffc030",
+      "issuer_name": "MSA Safety Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.00 par value | MSA | New York Stock Exchange",
+          "symbols": [
+            "MSA"
+          ]
+        }
+      ],
+      "seed_rank": 119,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000068709",
+      "historical_symbol": "MTSC",
+      "index_ciks": [
+        "0000068709"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/f889396fce34724bb059fb422bb3cb6613eaa6505f646f08e4aef8b8e2939b9a.html",
+      "index_sha256": "65458fc4618a78bf1ba90d8b8aa0af01f181313219a6b8fa426118a540c31c02",
+      "issuer_name": "MTS SYSTEMS CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $0.25 par value | MTSC | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "MTSC"
+          ]
+        }
+      ],
+      "seed_rank": 120,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001733998",
+      "historical_symbol": "NWN",
+      "index_ciks": [
+        "0000073020",
+        "0001733998"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/b97e4617a447e993823461ec6275eef3ba2efd5cad78cdac02567a1f2be2911a.html",
+      "index_sha256": "d44c6a445dffc0c12f57af9b35eba6ae85303edfcc02abfa3a5ef847cdf69db8",
+      "issuer_name": "Northwest Natural Holding Co",
+      "listed_owner": "Northwest Natural Holding Company",
+      "listing_rows": [
+        {
+          "row_excerpt": "Northwest Natural Holding Company | Common Stock | NWN | New York Stock Exchange | ",
+          "symbols": [
+            "NWN"
+          ]
+        }
+      ],
+      "reason": "JointcoverlistingrowexplicitlyassignsNWNcommonstocktoNorthwestNaturalHoldingCompany, the selectedparentCIK.",
+      "seed_rank": 122,
+      "status": "SOURCE_REVIEWED_JOINT_REGISTRANT_OWNER",
+      "verified": true
+    },
+    {
+      "cik": "0001034842",
+      "historical_symbol": "RIGL",
+      "index_ciks": [
+        "0001034842"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c43b336a8cf5e5a18e36c05aa407432deafcbff86473420f43cfe134a08fc94d.html",
+      "index_sha256": "156c870f90e383b5a64d68d34e8d4ef9cbf4df34d5f890b03592a41e052df939",
+      "issuer_name": "RIGEL PHARMACEUTICALS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share |  | RIGL |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "RIGL"
+          ]
+        }
+      ],
+      "seed_rank": 123,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000024741",
+      "historical_symbol": "GLW",
+      "index_ciks": [
+        "0000024741"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/18a2d6ca8c4d1051764b03e994690c54c5001240e86a5dcad6d6fac3f29904ce.html",
+      "index_sha256": "530080af3f83295b76c206ad3e60028b22c554dca8a05488d3368d2f7a705107",
+      "issuer_name": "CORNING INC /NY",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock |  | GLW |  | New York Stock Exchange ( NYSE )",
+          "symbols": [
+            "GLW"
+          ]
+        }
+      ],
+      "seed_rank": 124,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001277902",
+      "historical_symbol": "MVBF",
+      "index_ciks": [
+        "0001277902"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/d547a8b10e156548b3494bef78583e0e024e451cc89064e489c85ac5b1eb159f.html",
+      "index_sha256": "cf98594afa7db18390c81429d8010bcaf3c8b5dbe068243422b9cf256a1d866f",
+      "issuer_name": "MVB FINANCIAL CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common stock, $1.00 par value |  | MVBF |  | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "MVBF"
+          ]
+        }
+      ],
+      "seed_rank": 127,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000819689",
+      "historical_symbol": "MICR",
+      "index_ciks": [
+        "0000819689"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/0741b88672efdfacc6d5881eaf910db9bf8cc50d2051dbbbcf5f4cf8c3d4405b.html",
+      "index_sha256": "57587996ab5fdd337c2b5a4d64ef0719f2fe63c9034b57e527c64721f7308f7a",
+      "issuer_name": "MICRON SOLUTIONS INC /DE/",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | MICR | New York Stock Exchange",
+          "symbols": [
+            "MICR"
+          ]
+        }
+      ],
+      "seed_rank": 128,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001142417",
+      "historical_symbol": "NXST",
+      "index_ciks": [
+        "0001142417"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/8a040c34f8f64fe55a8947e05f993fc73cc9710b4d9b94bc474bac1e055a2c7e.html",
+      "index_sha256": "673b112f4709689f94cf923b7390c5fc170b221dbd5992abf397d10b43327353",
+      "issuer_name": "NEXSTAR MEDIA GROUP, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A Common Stock |  | NXST |  | NASDAQ Global Select Market",
+          "symbols": [
+            "NXST"
+          ]
+        }
+      ],
+      "seed_rank": 130,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000919012",
+      "historical_symbol": "AEO",
+      "index_ciks": [
+        "0000919012"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/037113e567c8f6c700781a08a522ad6084321df459f5151654d2298ca9f46647.html",
+      "index_sha256": "1cb49fe25764635009270f81921b807cd0fdb7f365c95eca35a0af8c4fe4cb34",
+      "issuer_name": "AMERICAN EAGLE OUTFITTERS INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value |  | AEO |  | New York Stock Exchange",
+          "symbols": [
+            "AEO"
+          ]
+        }
+      ],
+      "seed_rank": 131,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001378950",
+      "historical_symbol": "PRTS",
+      "index_ciks": [
+        "0001378950"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/b552042d47d675475aebb659e81e159a5c9604837d45be68f12cb4fb36791614.html",
+      "index_sha256": "19c104b90483eea9567473998f16065bfdb5d46ab383eb9334f2ae28f235279a",
+      "issuer_name": "U.S. Auto Parts Network, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock ($0.001 par value) | PRTS | NASDAQ",
+          "symbols": [
+            "PRTS"
+          ]
+        }
+      ],
+      "seed_rank": 132,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000008146",
+      "historical_symbol": "ALOT",
+      "index_ciks": [
+        "0000008146"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/fa0f17e37bf1682831e7d0378204aec7ee46b899fa844fc4df038314ed4b6101.html",
+      "index_sha256": "edcc381677aae6f86ccb6b1df75bdc0615fe9cafb3c671411c2120c26534abcd",
+      "issuer_name": "AstroNova, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.05 Par Value |  | ALOT |  | NASDAQ Global Market",
+          "symbols": [
+            "ALOT"
+          ]
+        }
+      ],
+      "seed_rank": 134,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000876378",
+      "historical_symbol": "TRXC",
+      "index_ciks": [
+        "0000876378"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/5ff863ca819d05bab4afb86bc3c96def53861f0a2afa32fd37784374b24a99dc.html",
+      "index_sha256": "6c34f746c0e6500e6595882b31f8b775ba17b5edc4b1c3cb6dac176a914c8109",
+      "issuer_name": "TRANSENTERIX INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock $0.001 par value per share |  | TRXC |  | NYSE American",
+          "symbols": [
+            "TRXC"
+          ]
+        }
+      ],
+      "seed_rank": 135,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000887919",
+      "historical_symbol": "PFBI",
+      "index_ciks": [
+        "0000887919"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c6dccc7650b6bffed2c5983b3989e4cbd3f0202cee6dcb10433f867244d9692a.html",
+      "index_sha256": "61bf08ad681939f9d82916051bb534b7f76a5587b96cb2f25d7b1e8d73637ad9",
+      "issuer_name": "PREMIER FINANCIAL BANCORP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, no par value | PFBI | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "PFBI"
+          ]
+        }
+      ],
+      "seed_rank": 136,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000918160",
+      "historical_symbol": "AKS",
+      "index_ciks": [
+        "0000918160"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/5d5fea68ab29bc5e047a8301979a62c301ec0fa7d2c47d80efee488411e6f160.html",
+      "index_sha256": "c5c39ea0a398587078fef16fa99577a070f49e917fb9222a377d9e01e90273bf",
+      "issuer_name": "AK STEEL HOLDING CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock $0.01 Par Value | AKS | The New York Stock Exchange",
+          "symbols": [
+            "AKS"
+          ]
+        }
+      ],
+      "seed_rank": 139,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001640384",
+      "historical_symbol": "LMFA",
+      "index_ciks": [
+        "0001640384"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/13a55ece05ad74a61b0b982ce018813b136bf1a2154420162ebaeaa14f8ecbd0.html",
+      "index_sha256": "9af89b1a424ac5ec09b9f01f7ddac994ac3caeab40bb6b7249170a37079951c3",
+      "issuer_name": "LM FUNDING AMERICA, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock par value $0.001 per share; Common Stock Purchase Warrants | LMFA LMFAW | The NASDAQ Stock Market LLC The NASDAQ Stock Market LLC",
+          "symbols": [
+            "LMFA"
+          ]
+        }
+      ],
+      "seed_rank": 142,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000850460",
+      "historical_symbol": "WIRE",
+      "index_ciks": [
+        "0000850460"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/98a53d7421dd80cdab4068159294a58cc6c07320328ba24a33fde0c6fb08ee13.html",
+      "index_sha256": "1d8d8e6fe55302ecd47ec22d911d1c0c64434b089a784c51bae3382cbc45dfc3",
+      "issuer_name": "ENCORE WIRE CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $.01 per share | WIRE | The NASDAQ Global Select Market",
+          "symbols": [
+            "WIRE"
+          ]
+        }
+      ],
+      "seed_rank": 143,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000356130",
+      "historical_symbol": "EMCI",
+      "index_ciks": [
+        "0000356130"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/45b2ea9111b36488444c01340e88ca473eab5e5ec464ae5250b0041000c22850.html",
+      "index_sha256": "1af898de02966320ed123547683c96f49db8021d26d365fe06a9766f10e5b394",
+      "issuer_name": "EMC INSURANCE GROUP INC",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, Par Value $1.00 | EMCI | The Nasdaq Global Select Market",
+          "symbols": [
+            "EMCI"
+          ]
+        }
+      ],
+      "seed_rank": 144,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001262823",
+      "historical_symbol": "WLK",
+      "index_ciks": [
+        "0001262823"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/79c8cb3cd52b9b44c68d2b2976075817c030cff5fb54bc1fef57f831b810795c.html",
+      "index_sha256": "0089f38516d294e85d7fa78fdc3e4a56825f809c8a96e70f94b16757eb253078",
+      "issuer_name": "WESTLAKE CHEMICAL CORP",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock |  | WLK |  | The New York Stock Exchange",
+          "symbols": [
+            "WLK"
+          ]
+        }
+      ],
+      "seed_rank": 145,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001395937",
+      "historical_symbol": "SNDX",
+      "index_ciks": [
+        "0001395937"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/4f115e5a002b76c643ee2b8aba13061affbcae635a262fc7b5b7635896e0cc6a.html",
+      "index_sha256": "3e7f1d89352aa8568c4e5eefab98ef3371c6910d9703041212db77e6a728ddfa",
+      "issuer_name": "Syndax Pharmaceuticals Inc",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock | SNDX | The Nasdaq Stock Market, LLC",
+          "symbols": [
+            "SNDX"
+          ]
+        }
+      ],
+      "seed_rank": 147,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001263762",
+      "historical_symbol": "SLCT",
+      "index_ciks": [
+        "0001263762"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/c1b9a8669e956e08a138468ead1cca50ee0cf777bd6dc0f50086247b641a27ec.html",
+      "index_sha256": "baa1a2af1a70223a1de2b309c8f4e108ef98a51de769585c1f4c3f9701435306",
+      "issuer_name": "SELECT BANCORP, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $1.00 per share | SLCT | The Nasdaq Stock Market LLC",
+          "symbols": [
+            "SLCT"
+          ]
+        }
+      ],
+      "seed_rank": 148,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001403568",
+      "historical_symbol": "ULTA",
+      "index_ciks": [
+        "0001403568"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/3c6fb36e11861cac402b32449b252eaee7c298570778a17e4685f21fc00f1ba8.html",
+      "index_sha256": "2ca6a5df839bc8f837f1687ea3abd43d99e9fb8ac7d61550ad0e64201e781ae5",
+      "issuer_name": "Ulta Beauty, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share | \u200b | ULTA | \u200b | The NASDAQ Global Select Market",
+          "symbols": [
+            "ULTA"
+          ]
+        }
+      ],
+      "seed_rank": 150,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001333493",
+      "historical_symbol": "EHTH",
+      "index_ciks": [
+        "0001333493"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/a6d9cae02b2c938c1b472d229e7db9d695f60f202319767a3076b65939bace24.html",
+      "index_sha256": "dbe028bcf942c6df39731ebb2f9ce9fe4129a7735039fa2a60318654bd2bcfed",
+      "issuer_name": "eHealth, Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.001 per share | EHTH | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "EHTH"
+          ]
+        }
+      ],
+      "seed_rank": 151,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001561660",
+      "historical_symbol": "PEGI",
+      "index_ciks": [
+        "0001561660"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/bb1f42e18b1ce485cc315f8930958f92b5839cb0ef7762b0256fe4c622250143.html",
+      "index_sha256": "f3c9cd8ea11cf46883f03ecda10a8739badb823f97c3b2201cc4f545da94805f",
+      "issuer_name": "Pattern Energy Group Inc.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Class A common stock |  | PEGI |  | Nasdaq Global Select Market",
+          "symbols": [
+            "PEGI"
+          ]
+        }
+      ],
+      "seed_rank": 152,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0001728951",
+      "historical_symbol": "EPRT",
+      "index_ciks": [
+        "0001728951"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/052f65fa317d09f7343404c6064ec06685ba1dcd609da2ec2bdc2b91974c9358.html",
+      "index_sha256": "06f4f2ac5a1a1d4e2bc4a4a8dc5c9ee73631cc44986e1fdaeb8c0af3cbeca329",
+      "issuer_name": "ESSENTIAL PROPERTIES REALTY TRUST, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, $0.01 par value | EPRT | New York Stock Exchange",
+          "symbols": [
+            "EPRT"
+          ]
+        }
+      ],
+      "seed_rank": 154,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    },
+    {
+      "cik": "0000799288",
+      "historical_symbol": "LE",
+      "index_ciks": [
+        "0000799288"
+      ],
+      "index_file": "data/snapshots/equity-event-test-2026-09-10/sec/e69c7fcbc9c3bbc09bcb988586d0ef7f9d94da11af04b5510581a430d93f9601.html",
+      "index_sha256": "9d983d670c3f6df0e3ddd84c6e2492dbebb1022845f9bc14aeb4979452d87002",
+      "issuer_name": "LANDS' END, INC.",
+      "listing_rows": [
+        {
+          "row_excerpt": "Common Stock, par value $0.01 per share | LE | The NASDAQ Stock Market LLC",
+          "symbols": [
+            "LE"
+          ]
+        }
+      ],
+      "seed_rank": 155,
+      "status": "SINGLE_INDEX_REGISTRANT_AND_LISTED_COMMON_COVER",
+      "verified": true
+    }
+  ],
+  "scope": "Original2019cohortownership only. Eachlaterdecisionstillrequiresdatedsecurityidentity; thisdoesnotcertifyeventcoverage.",
+  "selected_count": 100,
+  "selection_sha256": "48e8b9692bf255dfb2578c17b43932e018063bab5df5ed359d0e9ba290fc84a0",
+  "source_reviewed_joint_cases": 3,
+  "status": "PASS"
+}

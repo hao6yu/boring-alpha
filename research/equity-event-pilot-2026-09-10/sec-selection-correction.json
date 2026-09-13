@@ -1,0 +1,26 @@
+{
+  "additional_parser_corrections": [
+    "Relevant Item2.02 section and dateline disambiguation",
+    "Full-document period extraction; explicit quarter/YTD and quarter/year scope",
+    "Guidance-only predecessors distinguished from actual releases",
+    "Press release and accounting companion retain actual exhibit identities",
+    "Exact clock conflicts retained; equal daily timing anchors separately verified",
+    "Preliminary actual-results predecessor ambiguity blocks earliest-event admission"
+  ],
+  "auditor": "research_trend",
+  "corrected_events_sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+  "corrected_selection_sha256": "026159b5a7054be7ed61941f6785de318442e37e05d6ae5509d092b335efac94",
+  "initial_events_file": "research/equity-event-pilot-2026-09-10/sec-events-initial-published-cohort-v1.json",
+  "initial_events_sha256": "2f5d11b8ed244ebd8284eba19358f52ea9a30b0a09ce6f94b52d9d4907dfa50c",
+  "initial_selection_file": "research/equity-event-pilot-2026-09-10/sec-selection-initial-published-v1.json",
+  "initial_selection_sha256": "76de33360a0a4b8d4b5f304f9aefb94cbc1fe12ea7f1f8306407e31eddbb2111",
+  "other_excluded_candidate_sets": "Independent audit matched all original8-K master accessions for all17 excluded CIKs to archived submissions; no missing accession. Only BSBK had Item2.02. Other16 have none.",
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "proof_accession": "0001193125-23-197167",
+  "proof_exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/8b3941261de0c53ebb87daf9479c6007a4b5642b47253c7f9af11bb5ca91adb1.htm",
+  "reason": "Classifier omitted explicit three-and-six-month earnings language; independent source review confirmed BSBK seed rank25 as qualifying original quarterly Item2.02 with Nasdaq common stock. Corrected ranking adds BSBK and displaces rank42 CCLD. This changes the initially published realized cohort; both cohorts and all source/price failures must remain auditable.",
+  "recorded_at": "2026-09-10T23:46:45.557864+00:00",
+  "script_after_sha256": "75ab86dc530899d4ef29a7068f9384146f34f3e054e6ceafc60e4221d02a32b2",
+  "script_before_sha256": "2bd263f9cca2238123b4b3896220bb6f6a8e0d4ab6197c752d76f9a1c67b60ac",
+  "type": "IMPLEMENTATION_CORRECTION_TO_FROZEN_RANKING"
+}

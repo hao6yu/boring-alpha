@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-10T22:53:18.091081+00:00",
+  "scope": "existing Tiingo credential; metadata endpoints only; no price values or strategy returns",
+  "symbols": [
+    "MSFT",
+    "WMT",
+    "JPM",
+    "ATVI",
+    "SIVB"
+  ],
+  "negative_controls": "ATVI acquired and SIVB failed: selected as data coverage challenges, never a performance sample",
+  "paid_data_budget_usd": 0,
+  "no_subscription_change": true
+}

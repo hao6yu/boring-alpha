@@ -1,0 +1,14 @@
+{
+  "attempt_count": 490,
+  "authorization": "Root explicitly authorized a single first request after cooldown to this already-index-linked previously unrequested original document. No retry of denied complete-submission endpoint, identity rotation, proxy, count reset, or deadline extension.",
+  "completed_at": "2026-09-11T02:58:12.749144+00:00",
+  "created_at": "2026-09-11T02:58:12.618445+00:00",
+  "denied_url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000073/0000819689-19-000073.txt",
+  "file": "data/snapshots/equity-event-test-2026-09-10/sec/e3d66ae83cfe934c634c209b6f0b3b59ef0a89bd2b31a7ada844930f8e3a9ca9.htm",
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "prior_attempts": 489,
+  "prior_stop": "HTTP_403",
+  "sha256": "218d97e61e4e4f84bd8366af3ce01bef4a64bddc6ec286dbb0bf66aed4785293",
+  "status": "RECOVERED_LINKED_HTML",
+  "url": "https://www.sec.gov/Archives/edgar/data/819689/000081968919000073/micr-20190814xex99_01.htm"
+}

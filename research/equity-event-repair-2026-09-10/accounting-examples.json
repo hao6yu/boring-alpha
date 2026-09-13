@@ -1,0 +1,254 @@
+{
+  "created_utc": "2026-09-11T02:04:22.086134+00:00",
+  "examples": [
+    {
+      "basis_evidence_quote": "The below financial information has been prepared in accordance with GAAP",
+      "current_source": {
+        "acceptance_eastern": "2022-11-03T16:06:50-04:00",
+        "acceptance_utc": "2022-11-03T20:06:50.000Z",
+        "accession": "0001650372-22-000075",
+        "daily_entry_invariant": true,
+        "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/d25a5197b76f089207adb0557dfb24e3135cec94e2a242f8d4269a5bdf18baaf.htm",
+        "exhibit_sha256": "f97d7554b23c9cecce6380b3574bad90bcf8b304335d0437e789c7935bc848d4",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000075/ex991q1fy23.htm",
+        "filing_date": "2022-11-03",
+        "form": "8-K",
+        "issuer_release_date": "2022-11-03",
+        "timestamp_scope": "Acceptance timestamps and timing flags are preserved verbatim from the original collector record, including any known clock conflict. This example extraction does not certify exact timestamp agreement; daily-entry invariance is a separate original-record flag.",
+        "timing_match": true
+      },
+      "example_id": "TEAM-W1-current-GAAP-comparatives",
+      "feature_status": "ILLUSTRATIVE_SAME_BASIS_VALUE_EXTRACTION_ONLY; no growth or EPS-price calculation",
+      "original_prior_annotation": {
+        "basis": "IFRS as originally published",
+        "original_prior_diluted_EPS": "-1.59",
+        "parser_global_row_index_zero_based": 27,
+        "treatment": "Retain separately for original-document provenance. Current-release same-period GAAP comparator is -1.63; do not substitute originally reported IFRS EPS or the non-IFRS/non-GAAP adjusted measure.",
+        "unit": "USD per ordinary share"
+      },
+      "original_prior_source": {
+        "acceptance_eastern": "2021-10-28T16:09:58-04:00",
+        "acceptance_utc": "2021-10-28T20:09:58.000Z",
+        "accession": "0001650372-21-000043",
+        "daily_entry_invariant": true,
+        "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f2f3eead9762f80165e2c345e0984cf0c9be62b0d3df5b3ef6d00fa119e51342.htm",
+        "exhibit_sha256": "1fd3e780ea8e882dc1a051346fcaa80a03bef76d4753dd9aaf16dbcef4369a46",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037221000043/ex991q1fy22.htm",
+        "filing_date": "2021-10-28",
+        "form": "6-K",
+        "issuer_release_date": "2021-10-28",
+        "timestamp_scope": "Acceptance timestamps and timing flags are preserved verbatim from the original collector record, including any known clock conflict. This example extraction does not certify exact timestamp agreement; daily-entry invariance is a separate original-record flag.",
+        "timing_match": true
+      },
+      "scope": {
+        "accounting_basis": "U.S. GAAP for both current-release columns; current release explicitly describes the transition from IFRS after U.S. redomiciliation",
+        "column_labels": [
+          "2022",
+          "2021"
+        ],
+        "comparable": "FY2022 Q1, three months ended 2021-09-30",
+        "current": "FY2023 Q1, three months ended 2022-09-30",
+        "duration_match": "same three-month fiscal-quarter scope explicitly displayed",
+        "table": "Condensed Consolidated Statements of Operations; unaudited"
+      },
+      "share_price_alignment": {
+        "reason": "No historical raw pre-entry close, effective split ledger, or share-price basis reconciliation was read or performed in these examples. No EPS/price feature is produced.",
+        "status": "UNRESOLVED_NOT_CHECKED"
+      },
+      "slot_id": "0001650372-W1",
+      "verified_values": [
+        {
+          "comparable": "614024",
+          "currency": "USD",
+          "current": "807392",
+          "measure": "Total revenues",
+          "parser_global_row_index_zero_based": 7,
+          "row_label": "Total revenues",
+          "unit": "USD thousands"
+        },
+        {
+          "comparable": "-1.63",
+          "currency": "USD",
+          "current": "-0.05",
+          "measure": "GAAP diluted net loss per share",
+          "parser_global_row_index_zero_based": 26,
+          "row_label": "Net loss per share: Diluted",
+          "unit": "USD per share; do not multiply by 1000"
+        }
+      ]
+    },
+    {
+      "accounting_basis": "No revenue or EPS values extracted in this duration example. Current release differentiates as-reported measures and extra-week-excluded information; neither is automatically substituted.",
+      "current_duration_quote": "2022 fiscal fourth quarter is a 13-week period, while 2021 fiscal fourth quarter included a 14th week.",
+      "current_source": {
+        "acceptance_eastern": "2023-03-14T16:14:08-04:00",
+        "acceptance_utc": "2023-03-14T16:14:08.000Z",
+        "accession": "0001856430-23-000015",
+        "daily_entry_invariant": true,
+        "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/91ac22323887371a5bf8bb2368ef9abc5973fb0904c25d5dc9423575788a3bb6.htm",
+        "exhibit_sha256": "fb806c731adf535d67eb1b64f1c11bb4afcf22bf861810aaf3ea4641e6087679",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1856430/000185643023000015/snpoq4andfy2022earningsr.htm",
+        "filing_date": "2023-03-14",
+        "form": "8-K",
+        "issuer_release_date": "2023-03-14",
+        "timestamp_scope": "Acceptance timestamps and timing flags are preserved verbatim from the original collector record, including any known clock conflict. This example extraction does not certify exact timestamp agreement; daily-entry invariance is a separate original-record flag.",
+        "timing_match": false
+      },
+      "document_join_status": "ORIGINAL_SAME_FISCAL_QUARTER_DOCUMENTS_VERIFIED_WITH_UNEQUAL_DURATION",
+      "example_id": "SNPO-W2-unequal-quarter-duration",
+      "feature_status": {
+        "EPS_change_over_price": null,
+        "reason": "UNEQUAL_DURATION_13_VERSUS_14_WEEKS under first numerical specification",
+        "revenue_growth": null
+      },
+      "normalization_performed": false,
+      "original_prior_duration_quote": "2021 fiscal fourth quarter included a 14th week",
+      "original_prior_source": {
+        "acceptance_eastern": "2022-03-22T16:17:11-04:00",
+        "acceptance_utc": "2022-03-22T16:17:11.000Z",
+        "accession": "0001856430-22-000009",
+        "daily_entry_invariant": true,
+        "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b917ab091643a9ac62ed2aeb9e56ccfa836bf015566207a5603f6478ea29a78f.htm",
+        "exhibit_sha256": "ffc66555ca7c9c67f688dd9180b9850c09021b8aef2a9ec93ccbfccc4abd0fc8",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1856430/000185643022000009/snpofq42021earningsrelea.htm",
+        "filing_date": "2022-03-22",
+        "form": "8-K",
+        "issuer_release_date": "2022-03-22",
+        "timestamp_scope": "Acceptance timestamps and timing flags are preserved verbatim from the original collector record, including any known clock conflict. This example extraction does not certify exact timestamp agreement; daily-entry invariance is a separate original-record flag.",
+        "timing_match": false
+      },
+      "scope": {
+        "annual_scopes_present_but_not_used": "FY2022 52 weeks and FY2021 53 weeks are separate annual scopes",
+        "comparable": "FY2021 Q4 ended 2021-12-31",
+        "comparable_duration_weeks": 14,
+        "current": "FY2022 Q4 ended 2022-12-30",
+        "current_duration_weeks": 13,
+        "table_or_narrative": "Fiscal Fourth Quarter Financial Results comparison preambles in the original current and prior releases"
+      },
+      "share_price_alignment": {
+        "reason": "No historical raw pre-entry close, effective split ledger, or share-price basis reconciliation was read or performed in these examples. No EPS/price feature is produced.",
+        "status": "UNRESOLVED_NOT_CHECKED"
+      },
+      "slot_id": "0001856430-W2",
+      "units": "weeks of fiscal quarter, not calendar-quarter date proximity"
+    },
+    {
+      "accounting_basis": {
+        "classification": "Reported selected statement-of-operations EPS; no adjusted/non-GAAP label attached to this row",
+        "explicit_GAAP_label_in_current_exhibit": false,
+        "qualification": "Selected annual statement values and scope verified. Separate standards/currency confirmation remains distinct from this illustrative extraction; omission of the literal GAAP label is not evidence that the figures are non-GAAP."
+      },
+      "current_source": {
+        "acceptance_eastern": "2023-03-02T16:30:33-05:00",
+        "acceptance_utc": "2023-03-02T21:30:33.000Z",
+        "accession": "0001558370-23-002694",
+        "daily_entry_invariant": true,
+        "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/5132efb182f96fcc412f13a3023442f6f52ba529b7a72b17d84f1a6b2da3ae94.htm",
+        "exhibit_sha256": "82f7682ea88a6984c6af9421f472afe1974e4dc490162d95fc86d4fe0dd449ab",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1661059/000155837023002694/nxtc-20230302xex99d1.htm",
+        "filing_date": "2023-03-02",
+        "form": "8-K",
+        "issuer_release_date": "2023-03-02",
+        "timestamp_scope": "Acceptance timestamps and timing flags are preserved verbatim from the original collector record, including any known clock conflict. This example extraction does not certify exact timestamp agreement; daily-entry invariance is a separate original-record flag.",
+        "timing_match": true
+      },
+      "example_id": "NXTC-W2-selected-annual-statement-EPS",
+      "feature_status": "ILLUSTRATIVE_ANNUAL_VALUE_EXTRACTION_ONLY; not Q4 EPS and not EPS/price ready",
+      "original_prior_annotation": {
+        "annual_2021_EPS": "-2.51",
+        "parser_global_row_index_zero_based": 37,
+        "table_scope": "Year Ended December 31,2021/2020; prior release also discusses quarterly figures elsewhere",
+        "treatment": "This is the original prior annual EPS, not its quarterly EPS.",
+        "unit": "dollars per common share"
+      },
+      "original_prior_source": {
+        "acceptance_eastern": "2022-03-03T16:22:43-05:00",
+        "acceptance_utc": "2022-03-03T21:22:43.000Z",
+        "accession": "0001104659-22-030025",
+        "daily_entry_invariant": true,
+        "exhibit_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/b238fe1728ba649ff633009151acf895a4e70e32a6258b36fa1114a2236ec371.htm",
+        "exhibit_sha256": "d6b6c62a0edb12c298913cefd1189bf247d73c917062582d345fd41675af2739",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1661059/000110465922030025/tm228329d1_ex99-1.htm",
+        "filing_date": "2022-03-03",
+        "form": "8-K",
+        "issuer_release_date": "2022-03-03",
+        "timestamp_scope": "Acceptance timestamps and timing flags are preserved verbatim from the original collector record, including any known clock conflict. This example extraction does not certify exact timestamp agreement; daily-entry invariance is a separate original-record flag.",
+        "timing_match": true
+      },
+      "revenue": {
+        "current": null,
+        "prior_original_disclosure": "The prior release separately says no revenue was recognized for 2021; that explicit prior-year statement does not supply 2022 revenue.",
+        "reason": "NO_REVENUE_ROW_OR_REVENUE_VALUE_IN_CURRENT_SELECTED_STATEMENT; omission does not establish zero"
+      },
+      "scope": {
+        "column_labels": [
+          "2022",
+          "2021"
+        ],
+        "comparable": "Full year ended 2021-12-31",
+        "current": "Full year ended 2022-12-31",
+        "quarterly_substitution_allowed": false,
+        "scope_type": "ANNUAL_ONLY_FOR_THIS_EXTRACTION",
+        "table": "Selected Statement of Operations Items",
+        "unit_header": "in thousands, except share and per share amounts"
+      },
+      "share_price_alignment": {
+        "reason": "No historical raw pre-entry close, effective split ledger, or share-price basis reconciliation was read or performed in these examples. No EPS/price feature is produced.",
+        "status": "UNRESOLVED_NOT_CHECKED"
+      },
+      "slot_id": "0001661059-W2",
+      "verified_values": [
+        {
+          "comparable": "-2.51",
+          "currency_display": "$",
+          "currency_iso_status": "USD is consistent with issuer context but not expressly stated in the selected-table header; no separate currency-verification source read here",
+          "current": "-2.69",
+          "measure": "Reported net loss per common share, basic and diluted",
+          "parser_global_row_index_zero_based": 24,
+          "row_label": "Net loss per common share - basic and diluted",
+          "unit": "dollars per common share, not thousands of dollars per share"
+        }
+      ]
+    }
+  ],
+  "feature_contract_review": {
+    "concrete_contradictions_found": [],
+    "remaining_example_qualifications": [
+      "All three share-price alignments are unreviewed.",
+      "NXTC selected annual values do not independently establish current revenue, and the literal GAAP/currency label is not stated in that selected table."
+    ],
+    "result": "No concrete contradiction found in the three cases. The contract permits current-release same-basis comparatives, rejects unequal-duration features, separates annual from quarterly scope, and requires share-price alignment before EPS scaling."
+  },
+  "inputs": {
+    "HTML_parser": {
+      "path": "research/equity-event-pilot-2026-09-10/sec_collect.py",
+      "sha256": "75ab86dc530899d4ef29a7068f9384146f34f3e054e6ceafc60e4221d02a32b2",
+      "usage": "Imported module and called only HTML(raw). No Collector instantiated; no network or file-writing collector method called."
+    },
+    "feature_contract": {
+      "path": "research/equity-event-repair-2026-09-10/feature-contract.md",
+      "sha256": "546232a1f141a5a4f1ede9faa97b4a24641755e215a2cb69cccb746d41fd1283"
+    },
+    "repair_policy": {
+      "path": "research/equity-event-repair-2026-09-10/policy.json",
+      "sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05"
+    },
+    "sec_events": {
+      "path": "research/equity-event-pilot-2026-09-10/sec-events.json",
+      "sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452"
+    }
+  },
+  "schema": "three-source-accounting-examples-v2",
+  "scope": "Exactly three illustrative extractions from archived original current/prior exhibits. Not100-event feature readiness, no model training, prices, network, growth, EPS-price scaling or strategy returns.",
+  "verification_summary": {
+    "EPS_price_feature_calculated": false,
+    "current_original_exhibits_read": 3,
+    "growth_calculated": false,
+    "investment_returns_calculated": false,
+    "new_output_only": "accounting-examples.json",
+    "original_files_modified": false,
+    "prior_original_exhibits_read": 3,
+    "source_hashes_match_saved_sec_events": true,
+    "source_value_assertions_passed": true
+  }
+}

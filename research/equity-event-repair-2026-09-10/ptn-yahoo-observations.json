@@ -1,0 +1,10 @@
+{
+  "local_observations": {
+    "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-yahoo-observations.json",
+    "sha256": "90c594516f75e664c7730b00d2e677ae1273a6506a7b8be708eb2de58d8e297c"
+  },
+  "policy_sha256": "023eacfa0bf521fe3b1382950371f547ea18f888c5472e997b6650aceaebba05",
+  "price_basis": "Not yet qualified; Yahoo Close may be restated for subsequent splits. adjusted_close is split/dividend adjusted per official documentation. Never relabeled raw.",
+  "qualified": false,
+  "rows": 336
+}

@@ -1,0 +1,174 @@
+{
+  "additional_common_split_finding_scope": "No additional split was disclosed in the reviewed original annual/stockholder materials covering the interval. This is source-backed issuer-document verification, not a universal corporate-action database certification. Offerings,warrant exercises and compensation share issuance change shares outstanding but are not per-held-common-share split/dividend adjustments.",
+  "additional_common_split_found_in_target_span": false,
+  "cached_original_events_sha256": "fe508fddb17c35957a89c57fcc21ed99b1f2d6d11c5bd579870614c342604452",
+  "cash_dividends": {
+    "common_cash_dividends_in_target_span": [],
+    "qualification": "Explicit issuer statement in the original FY2024 filing covers the earlier target interval; not inferred from an empty API event field. Used only for ex-post actions verification, not as a historical predictor.",
+    "section": "Item5, Dividends and dividend policy",
+    "statement": "We have never declared or paid any dividends.",
+    "statement_available_on": "2024-09-30",
+    "status": "ISSUER_EXPLICIT_ABSENCE_COVERS_TARGET_SPAN",
+    "through_target_end_verified": true
+  },
+  "common_share_adjustment_actions": [
+    {
+      "FY2024_corrobation": "The original FY2024 financing/stockholder notes say the approved reverse split ultimately became effective August30,2022; equity rollforward separately identifies reverse-split fractional shares.",
+      "cash_in_lieu_credit_observed": false,
+      "cash_in_lieu_price_calculated": false,
+      "first_split_adjusted_regular_session": "2022-08-31",
+      "fractional_share_policy": "No fractional shares will be issued in connection with the Reverse Stock Split. Stockholders who otherwise would be entitled to receive a fractional share will instead be entitled to receive cash (rounded down to the nearest cent, without interest and subject to applicable withholding taxes) in lieu of such fractional share from the Company\u2019s transfer agent, American Stock Transfer & Trust Company, LLC, in an amount equal to the product obtained by multiplying (a) the average closing price per share of the Company\u2019s common stock as reported on NYSE American for the five trading days prior to the Effective Date, by (b) the number of shares of common stock outstanding immediately prior to the Effective Date that were converted into fractional shares. ",
+      "legal_effective_eastern": "2022-08-30T17:00:00-04:00",
+      "new_common_CUSIP": "696077502",
+      "new_shares": 1,
+      "old_shares": 25,
+      "price_units_before_after": "One new common share replaces25old common shares. Native raw prices remain in the units actually traded on each date.",
+      "share_multiplier": "0.04",
+      "source_at_time": {
+        "file": "data/snapshots/equity-event-repair-2026-09-10/ptn-issuer-split-2022.html",
+        "publication_date": "2022-08-19",
+        "sha256": "b04af1dfd663c448a84f82eb3d38d2b56f9ef19c30e75af56be1eeec877ef7f9",
+        "url": "https://palatin.com/press_releases/palatin-announces-intent-to-effect-reverse-stock-split/"
+      },
+      "subsequent_original_filing_confirmation": {
+        "accession": "0001654954-22-015138",
+        "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/df81ed4f170c8e6dcf23f1d91e5dc8f02febe513382e7cdbb60d33e50d158b49.htm",
+        "quote": "The Board of Directors approved the implementation of a 1-for-25 reverse stock split effective as of 5:00 p.m. Eastern Time on August 30, 2022.",
+        "sha256": "c031680f0eb140d2e29c65e0d30813caa4f1f9453e56c95aa324b646b1609fe5",
+        "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495422015138/ptn_ex991.htm"
+      },
+      "ticker_after": "PTN",
+      "type": "REVERSE_SPLIT"
+    }
+  ],
+  "created_utc": "2026-09-11T02:24:54.792955+00:00",
+  "issuer": {
+    "FY2024_cover_row": [
+      "Common Stock, par value $.01 per share",
+      "",
+      "PTN",
+      "",
+      "NYSE American"
+    ],
+    "cik": "0000911216",
+    "contemporaneous_covers": [
+      {
+        "accession": "0001654954-22-015138",
+        "filing_date": "2022-11-14",
+        "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/f7e479c110c0121491121a2e2d19d8d928f3694d37144d505925591809a2f665.htm",
+        "primary_sha256": "f3242388a631edae7c02dba04a5b22a87fefba4b0d0a8d4419ad708fe562b565",
+        "primary_url": "https://www.sec.gov/Archives/edgar/data/911216/000165495422015138/ptn_8k.htm",
+        "security_cover_evidence": [
+          {
+            "row_excerpt": "Common Stock, par value $.01 per share |  | PTN |  | NYSE American",
+            "symbols": [
+              "PTN"
+            ]
+          }
+        ],
+        "slot_id": "0000911216-W1"
+      },
+      {
+        "accession": "0001654954-23-001757",
+        "filing_date": "2023-02-15",
+        "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/04489fa8cf4235daa196cbf4ccc7e00fe3f2f31de4f95bb69fc787c72e6e3770.htm",
+        "primary_sha256": "1c6db40e2622a4031811078611f85d01c11314295c223db49722fd801112e431",
+        "primary_url": "https://www.sec.gov/Archives/edgar/data/911216/000165495423001757/ptn_8k.htm",
+        "security_cover_evidence": [
+          {
+            "row_excerpt": "Common Stock, par value $.01 per share |  | PTN |  | NYSE American",
+            "symbols": [
+              "PTN"
+            ]
+          }
+        ],
+        "slot_id": "0000911216-W2"
+      },
+      {
+        "accession": "0001654954-23-006648",
+        "filing_date": "2023-05-16",
+        "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/cd170674c0e28abadcd739c7f9ccd26424380ca11e52bf33715fca20fc3a444c.htm",
+        "primary_sha256": "36fcbbe7281ca1580213d8e516ed820c94a6b22b98efe136d1c2d8d114db23bd",
+        "primary_url": "https://www.sec.gov/Archives/edgar/data/911216/000165495423006648/ptn_8k.htm",
+        "security_cover_evidence": [
+          {
+            "row_excerpt": "Common Stock |  | PTN |  | NYSE American",
+            "symbols": [
+              "PTN"
+            ]
+          }
+        ],
+        "slot_id": "0000911216-W3"
+      },
+      {
+        "accession": "0001654954-23-012336",
+        "filing_date": "2023-09-28",
+        "primary_file": "data/snapshots/equity-event-pilot-2026-09-10/sec/a163e0b52a05ee33d86d7ed7559e5761f23747fefd8608b5fbc2f01b86a96733.htm",
+        "primary_sha256": "55af40f15ef189a9138aeb88838aacfb6d6cbf12d0305befba48eb0a9f90908e",
+        "primary_url": "https://www.sec.gov/Archives/edgar/data/911216/000165495423012336/ptn_8k.htm",
+        "security_cover_evidence": [
+          {
+            "row_excerpt": "Common Stock |  | PTN |  | NYSE American",
+            "symbols": [
+              "PTN"
+            ]
+          }
+        ],
+        "slot_id": "0000911216-W4"
+      }
+    ],
+    "historical_symbol": "PTN",
+    "historical_venue": "NYSE American",
+    "name": "Palatin Technologies, Inc.",
+    "share_class": "Common Stock, par value $.01 per share"
+  },
+  "later_strategy_prices_read": false,
+  "new_SEC_requests": 2,
+  "new_paid_data_usd": 0,
+  "old_artifacts_modified": false,
+  "original_FY2024_source": {
+    "accepted_eastern": "2024-09-30T16:31:04-04:00",
+    "accession": "0001654954-24-012498",
+    "filed_date": "2024-09-30",
+    "fiscal_year_end": "2024-06-30",
+    "form": "10-K",
+    "index": {
+      "bytes": 13382,
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/12da602575652749952941cc2c76c67109ab4f98f1b159b4aa45ae1526bba649.html",
+      "received_at": "2026-09-11T02:22:32.597507+00:00",
+      "sha256": "66764e7a82d7a08ab4cf412c34326a7a38e6d5c2dbc0a805f515f87d668ec4d5",
+      "started_at": "2026-09-11T02:22:32.413641+00:00",
+      "status": 200,
+      "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/0001654954-24-012498-index.html"
+    },
+    "information_date_in_report": "2024-09-27",
+    "primary": {
+      "bytes": 1807641,
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0d080f7d4bb62444e029867b6ca3077b9e47f70b13ab9c9237364df98727aef8.htm",
+      "received_at": "2026-09-11T02:22:33.144091+00:00",
+      "sha256": "fa27208fea50ef32a7716ea37c8f4beeb0488ed710e32b9b4cef17327505e165",
+      "started_at": "2026-09-11T02:22:32.902043+00:00",
+      "status": 200,
+      "url": "https://www.sec.gov/Archives/edgar/data/911216/000165495424012498/ptn_10k.htm"
+    }
+  },
+  "price_qualification_limits": [
+    "This record does not establish consolidated market OHLCV, full tape volume, or Databento publisher semantics; the native feed still needs its own validation.",
+    "No2025split reversal is needed for native contemporaneous raw prices. Later actions are not applied backward to raw shares or prices.",
+    "Reverse-split cash-in-lieu is a separate action from ordinary dividends; neither amount nor customer receipt is fabricated. All four existing PTN event entries occur after the2022split, so those event positions do not cross this split."
+  ],
+  "reviewed_action_sections": [
+    "Original FY2024 Item5 dividend policy and listing cover",
+    "Original FY2024 equity rollforward for fiscal2023/fiscal2024 and equity financing/preferred-stock notes",
+    "Cached original November2022 earnings exhibit reverse-split confirmation",
+    "Cached August2022 issuer announcement effective-session,CUSIP and cash-in-lieu terms"
+  ],
+  "schema": "PTN-original-actions-evidence-v1",
+  "scope": "Corporate-action and historical common-security metadata only for native contemporaneous PTN prices; no adjusted-price inversion or strategy return calculation.",
+  "source_manifest_sha256": "cd28cc104da90710536f2fa7f9dd1bc99041f3bfecdde3681c50f848f459de91",
+  "strategy_returns_calculated": false,
+  "target_span": [
+    "2022-07-01",
+    "2023-10-31"
+  ]
+}

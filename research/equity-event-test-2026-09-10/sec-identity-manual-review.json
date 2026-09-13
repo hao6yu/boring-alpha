@@ -1,0 +1,24 @@
+{
+  "after_sha256": "cc494721aee9fe7e01b9fb7caa5cceaaa5e7832d1098f032f8cf46c7b6ece208",
+  "before_file": "research/equity-event-test-2026-09-10/sec-checkpoints/identity-before-CLRB-review-e92c8a846027007122bc5c90239c33f1a7e6708647fa383abbe5483d55b95f76.json",
+  "before_sha256": "e92c8a846027007122bc5c90239c33f1a7e6708647fa383abbe5483d55b95f76",
+  "changes": [
+    {
+      "cover_accession": "0001104659-20-057790",
+      "event_accession": "0001104659-20-057785",
+      "source_sha256": "3ac479004e7df9e3f753f72ab20e51a81ddec03b364b4328ee8493d45429fa26"
+    },
+    {
+      "cover_accession": "0001104659-20-122799",
+      "event_accession": "0001104659-20-123047",
+      "source_sha256": "121c7a61e6073ebeb49229a4b8dde295f4ca827b776db5072d8e99110f3b4a0b"
+    },
+    {
+      "cover_accession": "0001104659-21-030445",
+      "event_accession": "0001104659-21-030726",
+      "source_sha256": "44c40ed43f44ca9dc736c5146a7056e5e918c8733807b13dae28dfe593dd5529"
+    }
+  ],
+  "network_requests": 0,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3"
+}

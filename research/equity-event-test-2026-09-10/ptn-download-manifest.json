@@ -1,0 +1,685 @@
+{
+  "billing_note": "Quotes are estimates, not invoice reconciliation or server-enforced limits.",
+  "cumulative_quote_usd": "0.012873232367",
+  "downloads": [
+    {
+      "bytes": 144107,
+      "label": "2022-08-30-2022-08-31-trades",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-30-2022-08-31-trades.jsonl",
+      "quote_usd": "0.000161737204",
+      "rows": 603,
+      "sha256": "9f092467f1075fd518b5f5f15ca1c4acdc749f7b4a09567d56f9e3218d59bead"
+    },
+    {
+      "bytes": 588,
+      "label": "2022-08-30-2022-08-31-statistics",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-30-2022-08-31-statistics.jsonl",
+      "quote_usd": "0.000001907349",
+      "rows": 2,
+      "sha256": "812813e0d7cee658b748a9f3b13d792defdd2015bf616aeeff7d69de24d344ed"
+    },
+    {
+      "bytes": 1684,
+      "label": "2022-08-30-2022-08-31-definition",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-30-2022-08-31-definition.jsonl",
+      "quote_usd": "0.000005364418",
+      "rows": 1,
+      "sha256": "34ba52249f651c42d2f921cb715217eecf8192be313a2777620b5a54c248b4bc"
+    },
+    {
+      "bytes": 91118,
+      "label": "2022-08-31-2022-09-01-trades",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-31-2022-09-01-trades.jsonl",
+      "quote_usd": "0.000101923943",
+      "rows": 380,
+      "sha256": "d5331eb257bddd53b90cd85a432e30bd14a89b69ea7b763ddaf7ec4c1dab6185"
+    },
+    {
+      "bytes": 591,
+      "label": "2022-08-31-2022-09-01-statistics",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-31-2022-09-01-statistics.jsonl",
+      "quote_usd": "0.000001907349",
+      "rows": 2,
+      "sha256": "b0b667c927e6e72df208fa4ac1685900ba616855601fb3addc191f4947d0eed5"
+    },
+    {
+      "bytes": 1685,
+      "label": "2022-08-31-2022-09-01-definition",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-08-31-2022-09-01-definition.jsonl",
+      "quote_usd": "0.000005364418",
+      "rows": 1,
+      "sha256": "d681cacaed8348ce95c0a4e479b484c18f694d3ceb8931a54ca0384dfab131c1"
+    },
+    {
+      "bytes": 17713,
+      "label": "2023-06-16-2023-06-17-trades",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2023-06-16-2023-06-17-trades.jsonl",
+      "quote_usd": "0.000019848347",
+      "rows": 74,
+      "sha256": "35d8dfe587631223e37c56636e45944135d91817154941c0c278f0ac77154431"
+    },
+    {
+      "bytes": 591,
+      "label": "2023-06-16-2023-06-17-statistics",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2023-06-16-2023-06-17-statistics.jsonl",
+      "quote_usd": "0.000001907349",
+      "rows": 2,
+      "sha256": "61e79404f888a82dc341bd97cf2e451ad9856e4fe7ba392b7de77eb4be6210da"
+    },
+    {
+      "bytes": 1685,
+      "label": "2023-06-16-2023-06-17-definition",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2023-06-16-2023-06-17-definition.jsonl",
+      "quote_usd": "0.000005364418",
+      "rows": 1,
+      "sha256": "f5015550663fff466ba068db6a147d8d7893ac234e7d69327ed7e113f10c2624"
+    },
+    {
+      "bytes": 9024225,
+      "label": "2022-07-01-2023-11-01-trades",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-trades.jsonl",
+      "quote_usd": "0.010129362345",
+      "rows": 37765,
+      "sha256": "71d550416622266465389c90bdf913f680499cbf8120b0f350a98619d0d1f732"
+    },
+    {
+      "bytes": 196591,
+      "label": "2022-07-01-2023-11-01-statistics",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-statistics.jsonl",
+      "quote_usd": "0.000636100769",
+      "rows": 667,
+      "sha256": "bf5e58d1c53330602c2bb6404c9078d87f081b4959ca79ce7d8614136aa2370f"
+    },
+    {
+      "bytes": 566118,
+      "label": "2022-07-01-2023-11-01-definition",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-definition.jsonl",
+      "quote_usd": "0.001802444458",
+      "rows": 336,
+      "sha256": "842fd41ad851afc8d343fd9845d059beadac3116d6c2ba0cb3b8d2b5761faa9d"
+    }
+  ],
+  "last_script_sha256": "d023da8d4cfa659a69aca952e8c505299d967e66e41bb0ca2e60601e20edaa34",
+  "last_stage": "full",
+  "policy_sha256": "902e24f6ea8ffe809abb860b59bde189d9c06d05f64d5883458535a8ad76ebc2",
+  "requests": [
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:09.364593+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000161737204",
+      "requested_utc": "2026-09-11T02:23:08.535084+00:00",
+      "sha256": "cfb3f3a82b8bbef909bc25eac953467d206cdf1b4a0e8afa389362c411e5d365",
+      "status": "OK"
+    },
+    {
+      "bytes": 144107,
+      "finished_utc": "2026-09-11T02:23:14.497132+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:09.367398+00:00",
+      "sha256": "9f092467f1075fd518b5f5f15ca1c4acdc749f7b4a09567d56f9e3218d59bead",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:14.806658+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000001907349",
+      "requested_utc": "2026-09-11T02:23:14.498012+00:00",
+      "sha256": "54e0d2ae698790bca823e298043aac7df43904cc2ca5421ca272b998fa244b8b",
+      "status": "OK"
+    },
+    {
+      "bytes": 588,
+      "finished_utc": "2026-09-11T02:23:18.707035+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:14.807391+00:00",
+      "sha256": "812813e0d7cee658b748a9f3b13d792defdd2015bf616aeeff7d69de24d344ed",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:19.470351+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000005364418",
+      "requested_utc": "2026-09-11T02:23:18.707754+00:00",
+      "sha256": "2703fc0b49f5402d7f552fe5bee61b15347922d6368a9d3361346427580deec0",
+      "status": "OK"
+    },
+    {
+      "bytes": 1684,
+      "finished_utc": "2026-09-11T02:23:21.722181+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2022-08-31",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-08-30",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:19.472224+00:00",
+      "sha256": "34ba52249f651c42d2f921cb715217eecf8192be313a2777620b5a54c248b4bc",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:22.255244+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000101923943",
+      "requested_utc": "2026-09-11T02:23:21.723761+00:00",
+      "sha256": "b4dff1b83b105b376238aa66ecd5310b15d555d376883121fff1add72c91565c",
+      "status": "OK"
+    },
+    {
+      "bytes": 91118,
+      "finished_utc": "2026-09-11T02:23:23.776143+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:22.256851+00:00",
+      "sha256": "d5331eb257bddd53b90cd85a432e30bd14a89b69ea7b763ddaf7ec4c1dab6185",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:24.150983+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000001907349",
+      "requested_utc": "2026-09-11T02:23:23.778255+00:00",
+      "sha256": "54e0d2ae698790bca823e298043aac7df43904cc2ca5421ca272b998fa244b8b",
+      "status": "OK"
+    },
+    {
+      "bytes": 591,
+      "finished_utc": "2026-09-11T02:23:28.983243+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:24.152100+00:00",
+      "sha256": "b0b667c927e6e72df208fa4ac1685900ba616855601fb3addc191f4947d0eed5",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:29.344365+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000005364418",
+      "requested_utc": "2026-09-11T02:23:28.984733+00:00",
+      "sha256": "2703fc0b49f5402d7f552fe5bee61b15347922d6368a9d3361346427580deec0",
+      "status": "OK"
+    },
+    {
+      "bytes": 1685,
+      "finished_utc": "2026-09-11T02:23:35.260497+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2022-09-01",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-08-31",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:29.345329+00:00",
+      "sha256": "d681cacaed8348ce95c0a4e479b484c18f694d3ceb8931a54ca0384dfab131c1",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:36.348734+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000019848347",
+      "requested_utc": "2026-09-11T02:23:35.262257+00:00",
+      "sha256": "24cf450e8dbb69511586dcc8a27bffb77cf6e18da450d233b2ae8a3ddbd0e977",
+      "status": "OK"
+    },
+    {
+      "bytes": 17713,
+      "finished_utc": "2026-09-11T02:23:41.346669+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:36.350179+00:00",
+      "sha256": "35d8dfe587631223e37c56636e45944135d91817154941c0c278f0ac77154431",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:41.647994+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000001907349",
+      "requested_utc": "2026-09-11T02:23:41.348555+00:00",
+      "sha256": "54e0d2ae698790bca823e298043aac7df43904cc2ca5421ca272b998fa244b8b",
+      "status": "OK"
+    },
+    {
+      "bytes": 591,
+      "finished_utc": "2026-09-11T02:23:45.632813+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:41.651709+00:00",
+      "sha256": "61e79404f888a82dc341bd97cf2e451ad9856e4fe7ba392b7de77eb4be6210da",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:23:45.946725+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000005364418",
+      "requested_utc": "2026-09-11T02:23:45.633854+00:00",
+      "sha256": "2703fc0b49f5402d7f552fe5bee61b15347922d6368a9d3361346427580deec0",
+      "status": "OK"
+    },
+    {
+      "bytes": 1685,
+      "finished_utc": "2026-09-11T02:23:47.704939+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2023-06-17",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2023-06-16",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:23:45.947759+00:00",
+      "sha256": "f5015550663fff466ba068db6a147d8d7893ac234e7d69327ed7e113f10c2624",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:29:36.088964+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.010129362345",
+      "requested_utc": "2026-09-11T02:29:35.563186+00:00",
+      "sha256": "cb170883c35a39173ed62aca6d653cd0dbfd4eabc90d00fc5e228a9e2da56d77",
+      "status": "OK"
+    },
+    {
+      "bytes": 9024225,
+      "finished_utc": "2026-09-11T02:30:14.683927+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "trades",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:29:36.092600+00:00",
+      "sha256": "71d550416622266465389c90bdf913f680499cbf8120b0f350a98619d0d1f732",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:30:14.971450+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.000636100769",
+      "requested_utc": "2026-09-11T02:30:14.705522+00:00",
+      "sha256": "54b82b75d41fa3b3bdb587ac44fe7d1caea5fc182d5ccf943b6323c08bab8183",
+      "status": "OK"
+    },
+    {
+      "bytes": 196591,
+      "finished_utc": "2026-09-11T02:30:35.454372+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "statistics",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:30:14.974198+00:00",
+      "sha256": "bf5e58d1c53330602c2bb6404c9078d87f081b4959ca79ce7d8614136aa2370f",
+      "status": "OK"
+    },
+    {
+      "bytes": 14,
+      "finished_utc": "2026-09-11T02:30:35.832412+00:00",
+      "http_status": 200,
+      "method": "metadata.get_cost",
+      "params": {
+        "dataset": "XASE.PILLAR",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "quote_usd": "0.001802444458",
+      "requested_utc": "2026-09-11T02:30:35.457075+00:00",
+      "sha256": "dc0da4454121efbfccf5299afe20fc87407379c94d35fcc953dcbc4a4ae69a55",
+      "status": "OK"
+    },
+    {
+      "bytes": 566118,
+      "finished_utc": "2026-09-11T02:30:45.006647+00:00",
+      "http_status": 200,
+      "method": "timeseries.get_range",
+      "params": {
+        "compression": "none",
+        "dataset": "XASE.PILLAR",
+        "encoding": "json",
+        "end": "2023-11-01",
+        "limit": 3000000,
+        "schema": "definition",
+        "start": "2022-07-01",
+        "stype_in": "raw_symbol",
+        "symbols": "PTN"
+      },
+      "requested_utc": "2026-09-11T02:30:35.833240+00:00",
+      "sha256": "842fd41ad851afc8d343fd9845d059beadac3116d6c2ba0cb3b8d2b5761faa9d",
+      "status": "OK"
+    }
+  ],
+  "started_utc": "2026-09-11T02:23:08.534883+00:00",
+  "updated_utc": "2026-09-11T02:30:45.008316+00:00"
+}

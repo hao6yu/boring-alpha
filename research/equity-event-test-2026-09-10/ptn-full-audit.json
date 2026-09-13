@@ -1,0 +1,180 @@
+{
+  "action_source_hashes_verified": {
+    "data/snapshots/equity-event-pilot-2026-09-10/sec/04489fa8cf4235daa196cbf4ccc7e00fe3f2f31de4f95bb69fc787c72e6e3770.htm": "1c6db40e2622a4031811078611f85d01c11314295c223db49722fd801112e431",
+    "data/snapshots/equity-event-pilot-2026-09-10/sec/a163e0b52a05ee33d86d7ed7559e5761f23747fefd8608b5fbc2f01b86a96733.htm": "55af40f15ef189a9138aeb88838aacfb6d6cbf12d0305befba48eb0a9f90908e",
+    "data/snapshots/equity-event-pilot-2026-09-10/sec/cd170674c0e28abadcd739c7f9ccd26424380ca11e52bf33715fca20fc3a444c.htm": "36fcbbe7281ca1580213d8e516ed820c94a6b22b98efe136d1c2d8d114db23bd",
+    "data/snapshots/equity-event-pilot-2026-09-10/sec/df81ed4f170c8e6dcf23f1d91e5dc8f02febe513382e7cdbb60d33e50d158b49.htm": "c031680f0eb140d2e29c65e0d30813caa4f1f9453e56c95aa324b646b1609fe5",
+    "data/snapshots/equity-event-pilot-2026-09-10/sec/f7e479c110c0121491121a2e2d19d8d928f3694d37144d505925591809a2f665.htm": "f3242388a631edae7c02dba04a5b22a87fefba4b0d0a8d4419ad708fe562b565",
+    "data/snapshots/equity-event-repair-2026-09-10/ptn-issuer-split-2022.html": "b04af1dfd663c448a84f82eb3d38d2b56f9ef19c30e75af56be1eeec877ef7f9",
+    "data/snapshots/equity-event-test-2026-09-10/sec/0d080f7d4bb62444e029867b6ca3077b9e47f70b13ab9c9237364df98727aef8.htm": "fa27208fea50ef32a7716ea37c8f4beeb0488ed710e32b9b4cef17327505e165",
+    "data/snapshots/equity-event-test-2026-09-10/sec/12da602575652749952941cc2c76c67109ab4f98f1b159b4aa45ae1526bba649.html": "66764e7a82d7a08ab4cf412c34326a7a38e6d5c2dbc0a805f515f87d668ec4d5"
+  },
+  "anchor_june16_2023": {
+    "expected_close": 2.19,
+    "observed_close": 2.19
+  },
+  "auction_extra_print_shares_removed": 1481204,
+  "auction_groups_canonicalized": 667,
+  "basis": "NYSE American provider-normalized core-session trades, replacing complete same-event auction groups with one official auction statistic. Official close where present; otherwise last core trade with explicit age. Raw contemporary share and price units.",
+  "created_at": "2026-09-11T02:38:47.914802+00:00",
+  "expected_sessions": 336,
+  "failures": [],
+  "fallback_close_days": [
+    {
+      "close": 0.29,
+      "close_age_before_scheduled_close_seconds": 40.51574016,
+      "close_basis": "LAST_CORE_TRADE",
+      "date": "2022-07-08",
+      "source_core_trade_rows": 310
+    },
+    {
+      "close": 0.2752,
+      "close_age_before_scheduled_close_seconds": 256.879515904,
+      "close_basis": "LAST_CORE_TRADE",
+      "date": "2022-07-13",
+      "source_core_trade_rows": 363
+    },
+    {
+      "close": 0.2341,
+      "close_age_before_scheduled_close_seconds": 7.390652672,
+      "close_basis": "LAST_CORE_TRADE",
+      "date": "2022-08-22",
+      "source_core_trade_rows": 623
+    },
+    {
+      "close": 5.09,
+      "close_age_before_scheduled_close_seconds": 8.258050816,
+      "close_basis": "LAST_CORE_TRADE",
+      "date": "2022-10-25",
+      "source_core_trade_rows": 42
+    },
+    {
+      "close": 3.36,
+      "close_age_before_scheduled_close_seconds": 3.75601152,
+      "close_basis": "LAST_CORE_TRADE",
+      "date": "2022-12-09",
+      "source_core_trade_rows": 173
+    }
+  ],
+  "fallback_open_days": [],
+  "limitations": [
+    "Source qualification is not a profitability result or claim of executable daily auction fills.",
+    "Primary-venue volume excludes other venues; provider cancellation/printability methodology remains disclosed. No perfect-tape or consolidated-volume gate was added.",
+    "Historical issuer2024 dividend statement is used solely to verify actions ex post; it is not a2022-2023 predictor.",
+    "Original four event entries occur after the2022 reverse split. Feature windows crossing it need separately declared action normalization; raw data is never automatically back-adjusted.",
+    "Five missing closing auctions use regular-session last trades; their age is preserved. Missing records do not imply zero returns or hypothetical execution."
+  ],
+  "no_network": true,
+  "provenance": {
+    "actions_sha256": "6bb4e99273e3e1adff331b0d94035000bdf1eaae982126f5139b23553a76e6e5",
+    "calendar": "XNYS",
+    "early_close_dates": [
+      "2022-11-25",
+      "2023-07-03"
+    ],
+    "exchange_calendars_version": "4.13.2",
+    "manifest_sha256": "59438471e680169287bc11669f33098f1aad3971a4023cf81775b46cd9c266d0",
+    "raw_files": [
+      {
+        "bytes": 9024225,
+        "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-trades.jsonl",
+        "rows": 37765,
+        "sha256": "71d550416622266465389c90bdf913f680499cbf8120b0f350a98619d0d1f732"
+      },
+      {
+        "bytes": 196591,
+        "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-statistics.jsonl",
+        "rows": 667,
+        "sha256": "bf5e58d1c53330602c2bb6404c9078d87f081b4959ca79ce7d8614136aa2370f"
+      },
+      {
+        "bytes": 566118,
+        "path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/2022-07-01-2023-11-01-definition.jsonl",
+        "rows": 336,
+        "sha256": "842fd41ad851afc8d343fd9845d059beadac3116d6c2ba0cb3b8d2b5761faa9d"
+      }
+    ],
+    "schedule_sha256": "5989c16b84ff8d0b73464b594a575191207b5b8cd23b626985aece06a2d64426",
+    "script_sha256": "e6f787ea138dc7e025ec0c7739fc21cd5d15bdca70edd87ad644c687c83c9c81",
+    "source_review_sha256": "805e440ef803fef350e3dc59b3f8e7ba6bab7edc48849e002dc46671d4486517"
+  },
+  "qualified_sessions": 336,
+  "qualified_windows": 4,
+  "raw_counts": {
+    "definition": 336,
+    "statistics": 667,
+    "trades": 37765
+  },
+  "rawcanonicaldaily_path": "data/snapshots/equity-event-test-2026-09-10/ptn-xase/rawcanonicaldaily.json",
+  "rawcanonicaldaily_sha256": "f20ccfb0aec8982a3567cdf2d8ebea848716d92adad496cd3677466fa6b24fc2",
+  "required_windows": [
+    {
+      "actions_pass": true,
+      "end_inclusive": "2022-12-14",
+      "entry_session": "2022-11-15",
+      "fallback_close_dates": [
+        "2022-08-22",
+        "2022-10-25",
+        "2022-12-09"
+      ],
+      "observed_sessions": 81,
+      "price_and_volume_basis": "Raw event-time prices and shares; NYSE American partial venue; auction duplication canonicalized.",
+      "sessions": 81,
+      "slot_id": "0000911216-W1",
+      "source_gate_pass": true,
+      "start": "2022-08-22",
+      "unresolved_dates": []
+    },
+    {
+      "actions_pass": true,
+      "end_inclusive": "2023-03-17",
+      "entry_session": "2023-02-16",
+      "fallback_close_dates": [
+        "2022-12-09"
+      ],
+      "observed_sessions": 81,
+      "price_and_volume_basis": "Raw event-time prices and shares; NYSE American partial venue; auction duplication canonicalized.",
+      "sessions": 81,
+      "slot_id": "0000911216-W2",
+      "source_gate_pass": true,
+      "start": "2022-11-18",
+      "unresolved_dates": []
+    },
+    {
+      "actions_pass": true,
+      "end_inclusive": "2023-06-15",
+      "entry_session": "2023-05-17",
+      "fallback_close_dates": [],
+      "observed_sessions": 81,
+      "price_and_volume_basis": "Raw event-time prices and shares; NYSE American partial venue; auction duplication canonicalized.",
+      "sessions": 81,
+      "slot_id": "0000911216-W3",
+      "source_gate_pass": true,
+      "start": "2023-02-21",
+      "unresolved_dates": []
+    },
+    {
+      "actions_pass": true,
+      "end_inclusive": "2023-10-27",
+      "entry_session": "2023-09-29",
+      "fallback_close_dates": [],
+      "observed_sessions": 81,
+      "price_and_volume_basis": "Raw event-time prices and shares; NYSE American partial venue; auction duplication canonicalized.",
+      "sessions": 81,
+      "slot_id": "0000911216-W4",
+      "source_gate_pass": true,
+      "start": "2023-07-06",
+      "unresolved_dates": []
+    }
+  ],
+  "schema": "PTN-full-source-audit-v1",
+  "statistics_types": {
+    "1": 336,
+    "11": 331
+  },
+  "statistics_update_actions": {
+    "1": 667
+  },
+  "status": "FULL_SOURCE_GATE_MET",
+  "strategy_returns_calculated": false
+}

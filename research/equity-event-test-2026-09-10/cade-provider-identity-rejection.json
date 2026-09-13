@@ -1,0 +1,30 @@
+{
+  "comparisons": {
+    "April8_provider_close_does_not_match": "Selected Cadence Bancorporation",
+    "April8_provider_close_matches": "BancorpSouth",
+    "February4_provider_close_matches_selected_issuer": false,
+    "provider2020_dividend_sum_matches": "BancorpSouth"
+  },
+  "created_utc": "2026-09-11T04:03:14.744710+00:00",
+  "historical_symbol": "CADE",
+  "implication": "Current ticker metadata cannot convert this downloaded acquirer history into the old selected issuer history. No price corrections or substituted issuers are authorized by this review. The existing series remains unqualified.",
+  "no_return_or_model_calculation": true,
+  "policy_sha256": "3bda0898cd02318535333636b2416deb035d2adc1bf401f67f5c5655daea19a3",
+  "primary_source": "https://www.sec.gov/Archives/edgar/data/1614184/000114036121023608/nt10025002x2_defm14a.htm",
+  "primary_source_facts": {
+    "2020_annual_dividends_declared": {
+      "BancorpSouth": 0.745,
+      "Cadence_Bancorporation": 0.35
+    },
+    "2021-02-04": {
+      "selected_Cadence_Bancorporation_close": 19.2
+    },
+    "2021-04-08": {
+      "BancorpSouth_close": 31.87,
+      "selected_Cadence_Bancorporation_close": 20.89
+    }
+  },
+  "raw_source_sha256": "40de593b7049d7b5921ad5c85c3de38c42639d04326aac12a0a68d26d9287b23",
+  "selected_cik": "0001614184",
+  "status": "DOWNLOADED_HISTORY_IDENTIFIES_BANCORPSOUTH_NOT_SELECTED_CADENCE_BANCORPORATION"
+}

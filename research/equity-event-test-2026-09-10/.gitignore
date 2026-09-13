@@ -1,0 +1,9 @@
+# Large reproducible SEC working caches. Their provenance and result summaries
+# are kept separately; raw provider data and detailed model rows live in data/.
+sec-parsed/
+sec-issuers/
+sec-checkpoints/
+sec-events.json
+sec-events-current-roster.json
+sec-collector.lock
+__pycache__/

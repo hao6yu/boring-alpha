@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-09-10T22:48:48.436120+00:00",
+  "purpose": "three issuer SEC earnings-release data audit, no prices or return analysis",
+  "issuers": [
+    {
+      "ticker": "MSFT",
+      "cik": "0000789019"
+    },
+    {
+      "ticker": "WMT",
+      "cik": "0000104169"
+    },
+    {
+      "ticker": "JPM",
+      "cik": "0000019617"
+    }
+  ],
+  "sample_rule": "earliest Form8-K with Item2.02 and filing date from2023-07-01through2023-09-30 for each fixed issuer; no selection onreturns",
+  "representativeness": "convenience sample of known issuers for parsing/timing only, not investment universe",
+  "max_paid_data_usd": 0,
+  "not_a_strategy_registration": true,
+  "revisions": "keep accession-level originals; preserve filingDate and acceptanceDateTime separately"
+}

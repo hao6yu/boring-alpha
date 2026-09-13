@@ -1,0 +1,42 @@
+{
+  "max_attempts": 5,
+  "paid_data_usd": 0,
+  "policy_sha256": "f6178cb98b4716a8744b79a3bae2b0709f6c4ee056f3a66be0789fc38cb2e188",
+  "requests": [
+    {
+      "bytes": 11685,
+      "file": "data/snapshots/equity-event-pilot-2026-09-10/ATVI.inactive-prices.json",
+      "finished_at": "2026-09-10T23:40:02.123369+00:00",
+      "http_status": 200,
+      "sha256": "e3ec113ce085863d834ae0e627a9f1ad630071583c2a1f6a9e83259b5bd9748c",
+      "started_at": "2026-09-10T23:40:01.767885+00:00",
+      "status": "COMPLETE",
+      "symbol": "ATVI",
+      "url": "https://api.tiingo.com/tiingo/daily/atvi/prices?startDate=2023-08-01&endDate=2023-11-15&resampleFreq=daily&format=json"
+    },
+    {
+      "bytes": 18394,
+      "file": "data/snapshots/equity-event-pilot-2026-09-10/SIVBQ.inactive-prices.json",
+      "finished_at": "2026-09-10T23:40:02.451782+00:00",
+      "http_status": 200,
+      "sha256": "e1fe5af488e137539c16bba025dde265451baa60543cb825bc56ab9b5e872900",
+      "started_at": "2026-09-10T23:40:02.151478+00:00",
+      "status": "COMPLETE",
+      "symbol": "SIVBQ",
+      "url": "https://api.tiingo.com/tiingo/daily/sivbq/prices?startDate=2023-02-01&endDate=2023-05-31&resampleFreq=daily&format=json"
+    },
+    {
+      "bytes": 12951,
+      "file": "data/snapshots/equity-event-pilot-2026-09-10/ATVI.inactive-extension-prices.json",
+      "finished_at": "2026-09-10T23:43:46.015667+00:00",
+      "http_status": 200,
+      "scope": "Explicitly approved third request: extend ATVI to July 25 solely to check adjustment across first-row August 1 dividend; original packet retained.",
+      "sha256": "82f56a70d70b5a96e1145b4301d26be3fba8dcd54172b49af5bd6b466eade174",
+      "started_at": "2026-09-10T23:43:45.723429+00:00",
+      "status": "COMPLETE",
+      "symbol": "ATVI",
+      "url": "https://api.tiingo.com/tiingo/daily/atvi/prices?startDate=2023-07-25&endDate=2023-11-15&resampleFreq=daily&format=json"
+    }
+  ],
+  "schema": "inactive-price-request-audit-v1"
+}
