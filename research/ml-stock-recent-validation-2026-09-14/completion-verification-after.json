@@ -1,0 +1,164 @@
+{
+  "completion_freeze_preserved": true,
+  "original_artifacts_unchanged": true,
+  "passed": true,
+  "scenarios": {
+    "cash0-delay0-base": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash0-delay0-stress": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash0-delay5-base": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash0-delay5-stress": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1-delay0-base": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1-delay0-stress": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1-delay5-base": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1-delay5-stress": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1.25-delay0-base": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1.25-delay0-stress": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1.25-delay5-base": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    },
+    "cash1.25-delay5-stress": {
+      "claims": 120,
+      "complete": true,
+      "fills": 77,
+      "independent_cashflow_reconciled": true,
+      "nav_days": 676,
+      "reference": {
+        "days": 676,
+        "decimal_arithmetic_reconciled": true
+      },
+      "stop_date": null,
+      "strict_prefix_days_identical": 85
+    }
+  },
+  "strict_freeze_preserved": true
+}

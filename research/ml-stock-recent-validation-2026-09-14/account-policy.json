@@ -1,0 +1,25 @@
+{
+  "capital": 10000,
+  "costs_bps_per_side": [
+    10,
+    50
+  ],
+  "entry_top_fraction": 0.1,
+  "evaluation_end": "2026-09-11",
+  "evaluation_start": "2024-01-02",
+  "fees": "Preserved current-rate Pro Fixed counterfactual from preceding experiment; actual historical/account tariff not asserted.",
+  "halt_execution": "Next executable session, no restarts.",
+  "liquidity": "63 sessions, median raw dollar turnover at least $10m, prior close at least $5.",
+  "max_entry_dollars": 800,
+  "max_entry_nav_fraction": 0.08,
+  "no_leverage": true,
+  "permanent_trailing_dollar_halt": 2000,
+  "retention_top_fraction": 0.2,
+  "sale_proceeds_lock_calendar_days": 7,
+  "settled_cash_reserve": 2000,
+  "signal": "Prior month-end only; execute second NYSE session close.",
+  "slots": 10,
+  "stock_distributions": "Entitlements sourced; any held distribution with unqualified delivery/fractional cash handling makes account explicitly incomplete.",
+  "unknown_payment_dates": "Known receivable in NAV, no spending before payment supported.",
+  "whole_shares": true
+}

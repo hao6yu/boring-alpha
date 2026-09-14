@@ -1,0 +1,89 @@
+{
+  "at_utc": "2026-09-14T19:51:58.143054+00:00",
+  "cases": [
+    {
+      "cash_multiplier": 0,
+      "cost": "base",
+      "delay_sessions": 0,
+      "name": "cash0-delay0-base"
+    },
+    {
+      "cash_multiplier": 0,
+      "cost": "stress",
+      "delay_sessions": 0,
+      "name": "cash0-delay0-stress"
+    },
+    {
+      "cash_multiplier": 0,
+      "cost": "base",
+      "delay_sessions": 5,
+      "name": "cash0-delay5-base"
+    },
+    {
+      "cash_multiplier": 0,
+      "cost": "stress",
+      "delay_sessions": 5,
+      "name": "cash0-delay5-stress"
+    },
+    {
+      "cash_multiplier": 1,
+      "cost": "base",
+      "delay_sessions": 0,
+      "name": "cash1-delay0-base"
+    },
+    {
+      "cash_multiplier": 1,
+      "cost": "stress",
+      "delay_sessions": 0,
+      "name": "cash1-delay0-stress"
+    },
+    {
+      "cash_multiplier": 1,
+      "cost": "base",
+      "delay_sessions": 5,
+      "name": "cash1-delay5-base"
+    },
+    {
+      "cash_multiplier": 1,
+      "cost": "stress",
+      "delay_sessions": 5,
+      "name": "cash1-delay5-stress"
+    },
+    {
+      "cash_multiplier": 1.25,
+      "cost": "base",
+      "delay_sessions": 0,
+      "name": "cash1.25-delay0-base"
+    },
+    {
+      "cash_multiplier": 1.25,
+      "cost": "stress",
+      "delay_sessions": 0,
+      "name": "cash1.25-delay0-stress"
+    },
+    {
+      "cash_multiplier": 1.25,
+      "cost": "base",
+      "delay_sessions": 5,
+      "name": "cash1.25-delay5-base"
+    },
+    {
+      "cash_multiplier": 1.25,
+      "cost": "stress",
+      "delay_sessions": 5,
+      "name": "cash1.25-delay5-stress"
+    }
+  ],
+  "central_cases": [
+    "cash1-delay5-base",
+    "cash1-delay5-stress"
+  ],
+  "files": {
+    "research/ml-stock-recent-validation-2026-09-14/completion-protocol.json": "5e21e42ece768fd34a8faa870199a3567a999c0e796b1694e57a5cef3d4ee4cc",
+    "research/ml-stock-recent-validation-2026-09-14/completion-verification-before.json": "7cca6a9c5e3f79f6af9bd1e86f50e704f8e5b99ba8fcd7435478ba9fef4b30d8",
+    "research/ml-stock-recent-validation-2026-09-14/completion.py": "6a0cfec5b16ed27999b2d282eee4bde85706ef49268152e7a092d90eae307d3d",
+    "research/ml-stock-recent-validation-2026-09-14/completion_engine.py": "3291317e6640c20915fe88d75489bdac0c720a6e6c34d15eb4a1db6b996678d1",
+    "research/ml-stock-recent-validation-2026-09-14/completion_verify.py": "116c536ffdfd59c8ec5464d26dc595ac5d3b992cc22539a210f2cb5f2e14fe24"
+  },
+  "ranking_orders_unchanged": true
+}

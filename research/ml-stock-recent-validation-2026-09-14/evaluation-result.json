@@ -1,0 +1,215 @@
+{
+  "account_files": {
+    "base": {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/fixed-base-account.json",
+      "sha256": "2b529ceeb39d94d40d31e5aeb054b407c5edae90a3c82af7d99eea8c4b7aa495"
+    },
+    "stress": {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/fixed-stress-account.json",
+      "sha256": "c6e396e5e692e8b2cb8f59e38b87ca339bf8832a74c38766f66a76b05d047a66"
+    }
+  },
+  "accounts": {
+    "base": {
+      "buys": 13,
+      "cagr": null,
+      "fees": 25.62,
+      "final_nav": null,
+      "max_drawdown": null,
+      "mean_stock_exposure": 0.6503080882557271,
+      "profit": null,
+      "slippage": 18.80255,
+      "status": "UNRESOLVED",
+      "stop_date": null,
+      "stopped": false,
+      "unpriced_days": 591,
+      "yearly": {
+        "2024": {
+          "ending_nav": null,
+          "first_date": "2024-01-02",
+          "last_date": "2024-12-31",
+          "profit": null,
+          "return_fraction": null,
+          "start_nav": 10000.0,
+          "year_to_date": false
+        },
+        "2025": {
+          "ending_nav": null,
+          "first_date": "2025-01-02",
+          "last_date": "2025-12-31",
+          "profit": null,
+          "return_fraction": null,
+          "start_nav": null,
+          "year_to_date": false
+        },
+        "2026": {
+          "ending_nav": null,
+          "first_date": "2026-01-02",
+          "last_date": "2026-09-11",
+          "profit": null,
+          "return_fraction": null,
+          "start_nav": null,
+          "year_to_date": true
+        }
+      }
+    },
+    "stress": {
+      "buys": 13,
+      "cagr": null,
+      "fees": 25.62,
+      "final_nav": null,
+      "max_drawdown": null,
+      "mean_stock_exposure": 0.6523513457050978,
+      "profit": null,
+      "slippage": 94.01275,
+      "status": "UNRESOLVED",
+      "stop_date": null,
+      "stopped": false,
+      "unpriced_days": 591,
+      "yearly": {
+        "2024": {
+          "ending_nav": null,
+          "first_date": "2024-01-02",
+          "last_date": "2024-12-31",
+          "profit": null,
+          "return_fraction": null,
+          "start_nav": 10000.0,
+          "year_to_date": false
+        },
+        "2025": {
+          "ending_nav": null,
+          "first_date": "2025-01-02",
+          "last_date": "2025-12-31",
+          "profit": null,
+          "return_fraction": null,
+          "start_nav": null,
+          "year_to_date": false
+        },
+        "2026": {
+          "ending_nav": null,
+          "first_date": "2026-01-02",
+          "last_date": "2026-09-11",
+          "profit": null,
+          "return_fraction": null,
+          "start_nav": null,
+          "year_to_date": true
+        }
+      }
+    }
+  },
+  "evaluation_end": "2026-09-11",
+  "evaluation_start": "2024-01-02",
+  "exposure_references": {
+    "base": {
+      "complete": false,
+      "days": 85,
+      "ending_nav": null,
+      "first_gap": {
+        "account_nav_missing": true,
+        "date": "2024-05-03",
+        "reference_missing": []
+      },
+      "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+      "selection_difference": null
+    },
+    "stress": {
+      "complete": false,
+      "days": 85,
+      "ending_nav": null,
+      "first_gap": {
+        "account_nav_missing": true,
+        "date": "2024-05-03",
+        "reference_missing": []
+      },
+      "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+      "selection_difference": null
+    }
+  },
+  "model_fits": 0,
+  "new_paid_data_usd": 0,
+  "parameter_searches": 0,
+  "seen_2022_2023_source": "/Users/haoyu/development/boring-alpha/research/ml-stock-comparison-2026-09-14/evaluation-result.json",
+  "selection_uncertainty": {
+    "base": {
+      "interval": {
+        "ci95": [
+          0.0027794510196156863,
+          0.011599403703624944
+        ],
+        "expected_block_months": 12,
+        "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+        "mean": 0.007189427361620315,
+        "months": 4,
+        "resamples": 2000,
+        "seed": 20260914
+      },
+      "monthly": [
+        {
+          "difference": 0.016511665637274797,
+          "month": "2024-01",
+          "reference_return": 0.0037243883627249286,
+          "strategy_return": 0.020236053999999726
+        },
+        {
+          "difference": 0.012139360713269376,
+          "month": "2024-02",
+          "reference_return": 0.021258134764772008,
+          "strategy_return": 0.033397495478041384
+        },
+        {
+          "difference": 0.005607227750686228,
+          "month": "2024-03",
+          "reference_return": 0.031198279841007315,
+          "strategy_return": 0.03680550759169354
+        },
+        {
+          "difference": -0.00550054465474914,
+          "month": "2024-04",
+          "reference_return": -0.03517156927959386,
+          "strategy_return": -0.040672113934343
+        }
+      ]
+    },
+    "stress": {
+      "interval": {
+        "ci95": [
+          0.002771973474192946,
+          0.011618461810401326
+        ],
+        "expected_block_months": 12,
+        "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+        "mean": 0.007195217642297136,
+        "months": 4,
+        "resamples": 2000,
+        "seed": 20260914
+      },
+      "monthly": [
+        {
+          "difference": 0.01651181352237785,
+          "month": "2024-01",
+          "reference_return": 0.001404456477622995,
+          "strategy_return": 0.017916270000000845
+        },
+        {
+          "difference": 0.012169487207164265,
+          "month": "2024-02",
+          "reference_return": 0.02044679566254559,
+          "strategy_return": 0.032616282869709856
+        },
+        {
+          "difference": 0.005623059304898925,
+          "month": "2024-03",
+          "reference_return": 0.030995093681441155,
+          "strategy_return": 0.03661815298634008
+        },
+        {
+          "difference": -0.005523489465252496,
+          "month": "2024-04",
+          "reference_return": -0.03571729290407677,
+          "strategy_return": -0.041240782369329265
+        }
+      ]
+    }
+  },
+  "status": "FROZEN_RECENT_WINDOW_HISTORICAL_EVALUATION"
+}

@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-09-14T19:34:51.751650+00:00",
+  "files": {
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/monthly-fundamentals.json": "bb0b7388f7172f88281abdf3d1f9f8cf5664502e4ff2d8dc04dbdbd25cd03507",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/monthly-panel.json": "3eb719fee4dbc13dbf7ef7e3865f64294ee584c95ca2229414f043d9a6c7d777",
+    "research/ml-stock-recent-validation-2026-09-14/account-policy.json": "171a4411cc4d35c7b6981db256e9a4913ec291f204482e6f0ca9f49788a15d50",
+    "research/ml-stock-recent-validation-2026-09-14/acquire.py": "489220136fe35823950727c7d2ec15c071e54f9920dc5a048daf001e3d23dae3",
+    "research/ml-stock-recent-validation-2026-09-14/collect_bulk.py": "cc4c9c88a7443c5171cd8d5ad47bfd20d38d979260ae5d475aa1f980b6a67791",
+    "research/ml-stock-recent-validation-2026-09-14/evaluate.py": "c5075adc525b68a6d773b122aaf7e45f1f6449416ace9e71ccc3bbb1947b6fa4",
+    "research/ml-stock-recent-validation-2026-09-14/fundamental-coverage.json": "4448b4f0159dcd26bb8f39c6820df1f59b5c5dc2b5039228dfb6965e86166ff7",
+    "research/ml-stock-recent-validation-2026-09-14/panel-coverage.json": "e2b35eeb85425c6b672f31fc88841facb6331b6913acf7af777393e59c97afa5",
+    "research/ml-stock-recent-validation-2026-09-14/price-manifest.json": "1c5384c21d55e5cc270abcee8b7bdd6eccf359400433f632f7531a12d2a848e3",
+    "research/ml-stock-recent-validation-2026-09-14/protocol.json": "b86d4677a944f51d6ac3847b71245e9d8911004e87f7632db0579bb6951b05ac",
+    "research/ml-stock-recent-validation-2026-09-14/recent.py": "cf7e0b1e5612710ff33dbbb60ad109a997ecb6db31bcaa857b6443afc9f27d9f",
+    "research/ml-stock-recent-validation-2026-09-14/recent_sources.py": "eb8946ceca939f075fc8bf8084e99697f578953dc14ff44c5f55958c6935ff00",
+    "research/ml-stock-recent-validation-2026-09-14/report.py": "059a7fc5c8b80ca5011911f3ab50d6cee4b7b98288df8278657ffc0e08fc643f",
+    "research/ml-stock-recent-validation-2026-09-14/sec-manifest.json": "aa8ee793f8775a563168150906f32a3da95866c6600b86c546f9dbb2005576e7",
+    "research/ml-stock-recent-validation-2026-09-14/verification-before.json": "240239ef41b6512d0f589a9025156e135b3605381910d42666b7c32c082da4c7",
+    "research/ml-stock-recent-validation-2026-09-14/verify_recent.py": "b2d9700a070829c06d723eafa50160b62576ebfbd9a5cd4aaa684eaede9f1d64"
+  },
+  "model_fits": 0,
+  "parameter_searches": 0
+}

@@ -1,0 +1,618 @@
+{
+  "issuers": [
+    {
+      "cik": "0000077360",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "PNR"
+    },
+    {
+      "cik": "0000103379",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "VFC"
+    },
+    {
+      "cik": "0000858877",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CSCO"
+    },
+    {
+      "cik": "0000106640",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "WHR"
+    },
+    {
+      "cik": "0000927628",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "COF"
+    },
+    {
+      "cik": "0000315293",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "AON"
+    },
+    {
+      "cik": "0000315213",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "RHI"
+    },
+    {
+      "cik": "0001585689",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "HLT"
+    },
+    {
+      "cik": "0001103982",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MDLZ"
+    },
+    {
+      "cik": "0000879169",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "INCY"
+    },
+    {
+      "cik": "0000026172",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CMI"
+    },
+    {
+      "cik": "0001521332",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "APTV"
+    },
+    {
+      "cik": "0000030625",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "FLS"
+    },
+    {
+      "cik": "0001308161",
+      "filing_eligible": 0,
+      "shares_available": 0,
+      "symbol": "FOXA"
+    },
+    {
+      "cik": "0000068505",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MSI"
+    },
+    {
+      "cik": "0000310764",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "SYK"
+    },
+    {
+      "cik": "0001099800",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "EW"
+    },
+    {
+      "cik": "0001374310",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CBOE"
+    },
+    {
+      "cik": "0001059556",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MCO"
+    },
+    {
+      "cik": "0001688568",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "DXC"
+    },
+    {
+      "cik": "0000018926",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CTL"
+    },
+    {
+      "cik": "0001087423",
+      "filing_eligible": 0,
+      "shares_available": 0,
+      "symbol": "RHT"
+    },
+    {
+      "cik": "0000080424",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "PG"
+    },
+    {
+      "cik": "0000895421",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MS"
+    },
+    {
+      "cik": "0000100517",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "UAL"
+    },
+    {
+      "cik": "0000058492",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "LEG"
+    },
+    {
+      "cik": "0001364742",
+      "filing_eligible": 33,
+      "shares_available": 22,
+      "symbol": "BLK"
+    },
+    {
+      "cik": "0001168054",
+      "filing_eligible": 0,
+      "shares_available": 0,
+      "symbol": "XEC"
+    },
+    {
+      "cik": "0001130310",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CNP"
+    },
+    {
+      "cik": "0001701605",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "BHGE"
+    },
+    {
+      "cik": "0001489393",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "LYB"
+    },
+    {
+      "cik": "0001039684",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "OKE"
+    },
+    {
+      "cik": "0001034054",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "SBAC"
+    },
+    {
+      "cik": "0000051434",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "IP"
+    },
+    {
+      "cik": "0000055785",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "KMB"
+    },
+    {
+      "cik": "0001361658",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "WYN"
+    },
+    {
+      "cik": "0001396009",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "VMC"
+    },
+    {
+      "cik": "0000827054",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MCHP"
+    },
+    {
+      "cik": "0000046080",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "HAS"
+    },
+    {
+      "cik": "0000029905",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "DOV"
+    },
+    {
+      "cik": "0000054480",
+      "filing_eligible": 2,
+      "shares_available": 0,
+      "symbol": "KSU"
+    },
+    {
+      "cik": "0001510295",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MPC"
+    },
+    {
+      "cik": "0001530721",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "KORS"
+    },
+    {
+      "cik": "0000320187",
+      "filing_eligible": 33,
+      "shares_available": 0,
+      "symbol": "NKE"
+    },
+    {
+      "cik": "0001281761",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "RF"
+    },
+    {
+      "cik": "0000896878",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "INTU"
+    },
+    {
+      "cik": "0000831259",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "FCX"
+    },
+    {
+      "cik": "0001442145",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "VRSK"
+    },
+    {
+      "cik": "0000315852",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "RRC"
+    },
+    {
+      "cik": "0001532063",
+      "filing_eligible": 0,
+      "shares_available": 0,
+      "symbol": "ESRX"
+    },
+    {
+      "cik": "0000916365",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "TSCO"
+    },
+    {
+      "cik": "0000047111",
+      "filing_eligible": 33,
+      "shares_available": 0,
+      "symbol": "HSY"
+    },
+    {
+      "cik": "0001633917",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "PYPL"
+    },
+    {
+      "cik": "0001555280",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ZTS"
+    },
+    {
+      "cik": "0000076334",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "PH"
+    },
+    {
+      "cik": "0000097745",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "TMO"
+    },
+    {
+      "cik": "0000874716",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "IDXX"
+    },
+    {
+      "cik": "0000764478",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "BBY"
+    },
+    {
+      "cik": "0001136869",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ZBH"
+    },
+    {
+      "cik": "0001601712",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "SYF"
+    },
+    {
+      "cik": "0000072741",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ES"
+    },
+    {
+      "cik": "0001012100",
+      "filing_eligible": 33,
+      "shares_available": 32,
+      "symbol": "SEE"
+    },
+    {
+      "cik": "0000091419",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "SJM"
+    },
+    {
+      "cik": "0001613103",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "MDT"
+    },
+    {
+      "cik": "0001267238",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "AIZ"
+    },
+    {
+      "cik": "0001413329",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "PM"
+    },
+    {
+      "cik": "0000202058",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "HRS"
+    },
+    {
+      "cik": "0001297996",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "DLR"
+    },
+    {
+      "cik": "0001038357",
+      "filing_eligible": 17,
+      "shares_available": 10,
+      "symbol": "PXD"
+    },
+    {
+      "cik": "0000874766",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "HIG"
+    },
+    {
+      "cik": "0000354190",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "AJG"
+    },
+    {
+      "cik": "0000833444",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "JCI"
+    },
+    {
+      "cik": "0001770450",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "XRX"
+    },
+    {
+      "cik": "0000796343",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ADBE"
+    },
+    {
+      "cik": "0001063761",
+      "filing_eligible": 33,
+      "shares_available": 0,
+      "symbol": "SPG"
+    },
+    {
+      "cik": "0000106535",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "WY"
+    },
+    {
+      "cik": "0001437107",
+      "filing_eligible": 11,
+      "shares_available": 4,
+      "symbol": "DISCK"
+    },
+    {
+      "cik": "0000006951",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "AMAT"
+    },
+    {
+      "cik": "0001124198",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "FLR"
+    },
+    {
+      "cik": "0001047862",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ED"
+    },
+    {
+      "cik": "0000047217",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "HPQ"
+    },
+    {
+      "cik": "0000073309",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "NUE"
+    },
+    {
+      "cik": "0000001800",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ABT"
+    },
+    {
+      "cik": "0000940944",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "DRI"
+    },
+    {
+      "cik": "0001014473",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "VRSN"
+    },
+    {
+      "cik": "0000200406",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "JNJ"
+    },
+    {
+      "cik": "0001326160",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "DUK"
+    },
+    {
+      "cik": "0001730168",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "AVGO"
+    },
+    {
+      "cik": "0000804753",
+      "filing_eligible": 0,
+      "shares_available": 0,
+      "symbol": "CERN"
+    },
+    {
+      "cik": "0000815556",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "FAST"
+    },
+    {
+      "cik": "0000049826",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ITW"
+    },
+    {
+      "cik": "0000009389",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "BLL"
+    },
+    {
+      "cik": "0001123360",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "GPN"
+    },
+    {
+      "cik": "0001739940",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CI"
+    },
+    {
+      "cik": "0000898173",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ORLY"
+    },
+    {
+      "cik": "0000021076",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "CLX"
+    },
+    {
+      "cik": "0000051253",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "IFF"
+    },
+    {
+      "cik": "0000723531",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "PAYX"
+    },
+    {
+      "cik": "0001156039",
+      "filing_eligible": 33,
+      "shares_available": 33,
+      "symbol": "ANTM"
+    },
+    {
+      "cik": "0001336917",
+      "filing_eligible": 33,
+      "shares_available": 0,
+      "symbol": "UAA"
+    }
+  ],
+  "months": 33,
+  "registrant_bridges": {
+    "BLK": {
+      "effective": "2024-10-01",
+      "new": "0002012383",
+      "old": "0001364742",
+      "ratio": 1,
+      "selection": "Use old reports before reorganization, then combine only matching source concepts with filing availability cutoffs; conflicting equal-date facts stay unavailable.",
+      "source": "https://www.sec.gov/Archives/edgar/data/2012383/000095017025026584/blk-20241231.htm"
+    }
+  },
+  "rows": 3300,
+  "sha256": "bb0b7388f7172f88281abdf3d1f9f8cf5664502e4ff2d8dc04dbdbd25cd03507",
+  "source_file": "data/snapshots/ml-stock-recent-validation-2026-09-14/monthly-fundamentals.json"
+}

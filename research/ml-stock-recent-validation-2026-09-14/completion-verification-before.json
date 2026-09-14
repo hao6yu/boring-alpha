@@ -1,0 +1,15 @@
+{
+  "fixed_scores_and_orders_unchanged": true,
+  "original_artifacts_unchanged": true,
+  "passed": true,
+  "strict_freeze_preserved": true,
+  "synthetic": {
+    "child_sale_waits_for_availability": true,
+    "fractional_cash_never_spendable": true,
+    "future_cash_quote_cannot_change_earlier_NAV": true,
+    "merger_value_and_whole_units": true,
+    "missing_child_price_fails_closed": true,
+    "no_action_exact_regression": true,
+    "spinoff_value_conserved": true
+  }
+}

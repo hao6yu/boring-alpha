@@ -1,0 +1,20 @@
+{
+  "account_complete": {
+    "base": false,
+    "stress": false
+  },
+  "annualized_above_4_percent": {
+    "base": null,
+    "stress": null
+  },
+  "annualized_above_6_percent": {
+    "base": null,
+    "stress": null
+  },
+  "commit_before_work": "95dd022",
+  "funded_ready": false,
+  "model_fits": 0,
+  "new_paid_data_usd": 0,
+  "parameter_searches": 0,
+  "reason": "Historical result requires interpretation alongside coverage, attribution uncertainty, execution assumptions and risk; no funding follows automatically."
+}

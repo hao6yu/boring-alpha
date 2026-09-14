@@ -1,0 +1,33 @@
+{
+  "accounts": {
+    "base": {
+      "complete": false,
+      "fills": 25,
+      "nav_days": 85,
+      "stop_date": null,
+      "total_days": 676
+    },
+    "stress": {
+      "complete": false,
+      "fills": 25,
+      "nav_days": 85,
+      "stop_date": null,
+      "total_days": 676
+    }
+  },
+  "frozen_files_unchanged": true,
+  "original_artifacts_unchanged": true,
+  "passed": true,
+  "reference_checks": {
+    "base": {
+      "complete": false,
+      "days": 85,
+      "decimal_arithmetic_reconciled": true
+    },
+    "stress": {
+      "complete": false,
+      "days": 85,
+      "decimal_arithmetic_reconciled": true
+    }
+  }
+}

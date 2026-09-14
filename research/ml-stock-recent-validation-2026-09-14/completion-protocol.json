@@ -1,0 +1,51 @@
+{
+  "APTV": {
+    "child": "VGNT",
+    "child_cik": "0002078008",
+    "publication_date": "2026-04-10",
+    "published_cash_unit_price": "27.28",
+    "ratio_denominator": 3,
+    "ratio_numerator": 1,
+    "source": "https://infomemo.theocc.com/infomemos?number=58752"
+  },
+  "LEG": {
+    "cash_unit_reference": "Child closing price on the documented merger date, an assumption because an OCC cash price has not been sourced.",
+    "child": "SGI",
+    "child_cik": "0001206264",
+    "fixed_cash_date": "Five sessions after conversion",
+    "ratio": "0.1455"
+  },
+  "PXD": {
+    "child": "XOM",
+    "child_cik": "0000034088",
+    "publication_date": "2024-05-10",
+    "published_cash_unit_price": "116.5789",
+    "ratio": "2.3234",
+    "source": "https://infomemo.theocc.com/infomemos?number=54574"
+  },
+  "cash_multipliers": [
+    0,
+    1,
+    1.25
+  ],
+  "cash_timing": "No fractional payment becomes spendable cash in any case. Mark the fractional claim with the dated child close until the quoted/assumed fixed-cash date; then use the scenario multiple of the quoted/reference amount, rounded to cents. Quote amounts are not used before publication. These are sensitivity assumptions, not verified brokerage receipts or exhaustive bounds.",
+  "cost_cases": [
+    "base",
+    "stress"
+  ],
+  "fixed_predictions_sha256": "931fefac8e6b3e4d38ad499add93e0f7306252584c1e493c72eb8854d99ba773",
+  "frozen_utc": "2026-09-14T19:40:29.059185+00:00",
+  "new_network_data_requests": 0,
+  "new_paid_data_usd": 0,
+  "original_engine_sha256": "e4c3697a980b44d74fc1965ab552cfc6c75f3199cbab87bbd896bf2f2d07afa3",
+  "reason": "The original account has an unresolved 3-PXD-share conversion on 2024-05-03. Complete corporate-action accounting under explicitly conditional settlement cases; preserve the original strict output.",
+  "scenario_count": 12,
+  "stock_handling": "Recognize whole-child legal entitlements at conversion; trade only after the declared delay. Children follow the existing monthly retention review and are not new score candidates. A forced spinoff can temporarily add a holding beyond the entry slot cap; report any occurrence and block additional entries under the existing cap.",
+  "strict_result_sha256": "88cabc90de6c29b654c50f9383b01cfe9db87ca58964cba648c3ad6aceb9d12e",
+  "unchanged": "All signal ranks, candidate orders, normal entry/retention/fee/liquidity/cash-reserve/risk-stop rules remain unchanged. No model fitting or parameter search.",
+  "verification": "Exact reproduction of the 85 valid original days, independent Decimal ledger replay including conversions/claims, full accounting in each completed scenario, and preservation of all strict files.",
+  "whole_share_trade_delay_sessions": [
+    0,
+    5
+  ]
+}

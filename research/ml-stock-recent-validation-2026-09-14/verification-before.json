@@ -1,0 +1,19 @@
+{
+  "financial": {
+    "components": 35900,
+    "later_restatement_cannot_change_earlier_features": true,
+    "rows": 3300
+  },
+  "independent_scores": 2859,
+  "labels_cannot_change_scores": true,
+  "original_artifacts_unchanged": true,
+  "overlap_rows_identical": 46593,
+  "passed": true,
+  "source_payloads": 190,
+  "synthetic": {
+    "constant_price_cost_loss": true,
+    "second_session_execution": true,
+    "unqualified_held_distribution_fails_closed": true,
+    "whole_split_units_and_value": true
+  }
+}

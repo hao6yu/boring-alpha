@@ -1,0 +1,3502 @@
+{
+  "cases": [
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash0-delay0-base.json.gz",
+        "sha256": "9eb6c73aa12db95a4411fd3eadc74e91b6d58215f30d4cd031a1dce886a3c091"
+      },
+      "cash_multiplier": 0,
+      "cost": "base",
+      "delay_sessions": 0,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05531677019780168,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 3054.79901,
+        "fees": 78.91,
+        "final_nav": 11562.12268,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1696.5498000000005,
+        "max_drawdown": 0.0848154267893253,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6230992868533437,
+        "profit": 1562.1226800000004,
+        "slippage": 55.51712,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8507.32367,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10320.54789,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 320.5478899999998,
+            "return_fraction": 0.03205478900000003,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10767.46674,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 446.91885,
+            "return_fraction": 0.043303791112973666,
+            "start_nav": 10320.54789,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11562.12268,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 794.6559400000006,
+            "return_fraction": 0.07380156904018453,
+            "start_nav": 10767.46674,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash0-delay0-base",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11939.330388168039,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -377.20770816803815
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004715015135295979,
+            0.0022732027581034565
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0012414785171720802,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.016511665637274797,
+            "month": "2024-01",
+            "reference_return": 0.0037243883627249286,
+            "strategy_return": 0.020236053999999726
+          },
+          {
+            "difference": 0.012139360713269376,
+            "month": "2024-02",
+            "reference_return": 0.021258134764772008,
+            "strategy_return": 0.033397495478041384
+          },
+          {
+            "difference": 0.005607227750686228,
+            "month": "2024-03",
+            "reference_return": 0.031198279841007315,
+            "strategy_return": 0.03680550759169354
+          },
+          {
+            "difference": -0.00550054465474914,
+            "month": "2024-04",
+            "reference_return": -0.03517156927959386,
+            "strategy_return": -0.040672113934343
+          },
+          {
+            "difference": -0.018521580503223167,
+            "month": "2024-05",
+            "reference_return": 0.013026133860289502,
+            "strategy_return": -0.005495446642933666
+          },
+          {
+            "difference": -0.001278705922639678,
+            "month": "2024-06",
+            "reference_return": -0.0008488304224520959,
+            "strategy_return": -0.002127536345091774
+          },
+          {
+            "difference": -0.013271201995155302,
+            "month": "2024-07",
+            "reference_return": 0.028552895038781,
+            "strategy_return": 0.0152816930436257
+          },
+          {
+            "difference": -0.01059116286873607,
+            "month": "2024-08",
+            "reference_return": 0.018711083947099416,
+            "strategy_return": 0.008119921078363346
+          },
+          {
+            "difference": -0.02278231965456179,
+            "month": "2024-09",
+            "reference_return": 0.018909520694868842,
+            "strategy_return": -0.003872798959692947
+          },
+          {
+            "difference": 0.011503675744347408,
+            "month": "2024-10",
+            "reference_return": -0.014573209086946148,
+            "strategy_return": -0.0030695333425987403
+          },
+          {
+            "difference": -0.015185604387286666,
+            "month": "2024-11",
+            "reference_return": 0.037229917901786536,
+            "strategy_return": 0.02204431351449987
+          },
+          {
+            "difference": -0.005961270441534827,
+            "month": "2024-12",
+            "reference_return": -0.03939712646582749,
+            "strategy_return": -0.04535839690736232
+          },
+          {
+            "difference": 0.0003441591624513407,
+            "month": "2025-01",
+            "reference_return": 0.02499436382947029,
+            "strategy_return": 0.02533852299192163
+          },
+          {
+            "difference": 0.027830637207210573,
+            "month": "2025-02",
+            "reference_return": -0.001660862870942914,
+            "strategy_return": 0.02616977433626766
+          },
+          {
+            "difference": 0.020259721599675817,
+            "month": "2025-03",
+            "reference_return": -0.031567407932097113,
+            "strategy_return": -0.011307686332421296
+          },
+          {
+            "difference": 0.01690944430696173,
+            "month": "2025-04",
+            "reference_return": -0.017020545117196417,
+            "strategy_return": -0.00011110081023468776
+          },
+          {
+            "difference": -0.00510965897995197,
+            "month": "2025-05",
+            "reference_return": 0.02858533952084885,
+            "strategy_return": 0.02347568054089688
+          },
+          {
+            "difference": -0.029791169570765108,
+            "month": "2025-06",
+            "reference_return": 0.016448949406746127,
+            "strategy_return": -0.01334222016401898
+          },
+          {
+            "difference": -0.006190754579989299,
+            "month": "2025-07",
+            "reference_return": 0.0018996313829735545,
+            "strategy_return": -0.004291123197015745
+          },
+          {
+            "difference": -3.045313420280138e-05,
+            "month": "2025-08",
+            "reference_return": 0.022454445558217184,
+            "strategy_return": 0.022423992424014383
+          },
+          {
+            "difference": 0.007542566942793538,
+            "month": "2025-09",
+            "reference_return": -0.005889326055566579,
+            "strategy_return": 0.0016532408872269588
+          },
+          {
+            "difference": -0.01965028977822325,
+            "month": "2025-10",
+            "reference_return": -0.006357731359240781,
+            "strategy_return": -0.026008021137464032
+          },
+          {
+            "difference": 0.01204608301824428,
+            "month": "2025-11",
+            "reference_return": 0.02115889548401695,
+            "strategy_return": 0.03320497850226123
+          },
+          {
+            "difference": -0.02828658575246379,
+            "month": "2025-12",
+            "reference_return": -0.003781892321875757,
+            "strategy_return": -0.032068478074339546
+          },
+          {
+            "difference": -0.0009705095750196513,
+            "month": "2026-01",
+            "reference_return": 0.022486758995075684,
+            "strategy_return": 0.021516249420056033
+          },
+          {
+            "difference": 0.01031688634070349,
+            "month": "2026-02",
+            "reference_return": 0.01888652997951379,
+            "strategy_return": 0.02920341632021728
+          },
+          {
+            "difference": 0.016352739830245766,
+            "month": "2026-03",
+            "reference_return": -0.03233994727003486,
+            "strategy_return": -0.015987207439789097
+          },
+          {
+            "difference": -0.028013937463318483,
+            "month": "2026-04",
+            "reference_return": 0.02409134716757766,
+            "strategy_return": -0.003922590295740824
+          },
+          {
+            "difference": 0.011632165224723656,
+            "month": "2026-05",
+            "reference_return": -0.0007056375945807547,
+            "strategy_return": 0.010926527630142902
+          },
+          {
+            "difference": 0.04665128023887122,
+            "month": "2026-06",
+            "reference_return": 0.007706058508950786,
+            "strategy_return": 0.054357338747822004
+          },
+          {
+            "difference": -0.03498840722833596,
+            "month": "2026-07",
+            "reference_return": 0.022301115671719884,
+            "strategy_return": -0.012687291556616076
+          },
+          {
+            "difference": -0.009250769776808832,
+            "month": "2026-08",
+            "reference_return": 0.007810551313706338,
+            "strategy_return": -0.001440218463102494
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash0-delay0-stress.json.gz",
+        "sha256": "c4b0ab0b0cc6e758a51833711af391b4ff1632b43359bb8ad3873832a14846a3"
+      },
+      "cash_multiplier": 0,
+      "cost": "stress",
+      "delay_sessions": 0,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.04775239233021389,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 2862.55505,
+        "fees": 78.91,
+        "final_nav": 11340.0542,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1696.5498000000007,
+        "max_drawdown": 0.09024493230202224,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6293824061944775,
+        "profit": 1340.0542000000005,
+        "slippage": 277.5856,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8477.49915,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10227.51145,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 227.51144999999997,
+            "return_fraction": 0.022751144999999973,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10615.5553,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 388.04385,
+            "return_fraction": 0.037941179718747664,
+            "start_nav": 10227.51145,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11340.0542,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 724.4989000000005,
+            "return_fraction": 0.06824879900536152,
+            "start_nav": 10615.5553,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash0-delay0-stress",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11713.874476045332,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -373.8202760453314
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004744820042239457,
+            0.0023014524876274816
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0012531173051753067,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.01651181352237785,
+            "month": "2024-01",
+            "reference_return": 0.001404456477622995,
+            "strategy_return": 0.017916270000000845
+          },
+          {
+            "difference": 0.012169487207164265,
+            "month": "2024-02",
+            "reference_return": 0.02044679566254559,
+            "strategy_return": 0.032616282869709856
+          },
+          {
+            "difference": 0.005623059304898925,
+            "month": "2024-03",
+            "reference_return": 0.030995093681441155,
+            "strategy_return": 0.03661815298634008
+          },
+          {
+            "difference": -0.005523489465252496,
+            "month": "2024-04",
+            "reference_return": -0.03571729290407677,
+            "strategy_return": -0.041240782369329265
+          },
+          {
+            "difference": -0.018590516155195136,
+            "month": "2024-05",
+            "reference_return": 0.012180720784618071,
+            "strategy_return": -0.006409795370577065
+          },
+          {
+            "difference": -0.0012802171760077918,
+            "month": "2024-06",
+            "reference_return": -0.0016542961195061823,
+            "strategy_return": -0.002934513295513974
+          },
+          {
+            "difference": -0.013347138091204247,
+            "month": "2024-07",
+            "reference_return": 0.027892895723016453,
+            "strategy_return": 0.014545757631812206
+          },
+          {
+            "difference": -0.010652807362218075,
+            "month": "2024-08",
+            "reference_return": 0.018388722892534126,
+            "strategy_return": 0.007735915530316051
+          },
+          {
+            "difference": -0.022934168073344252,
+            "month": "2024-09",
+            "reference_return": 0.01863812449229929,
+            "strategy_return": -0.0042960435810449615
+          },
+          {
+            "difference": 0.01158521785575306,
+            "month": "2024-10",
+            "reference_return": -0.014921280698500072,
+            "strategy_return": -0.003336062842747012
+          },
+          {
+            "difference": -0.015295733956202984,
+            "month": "2024-11",
+            "reference_return": 0.03686191417208007,
+            "strategy_return": 0.021566180215877084
+          },
+          {
+            "difference": -0.0060094730777224825,
+            "month": "2024-12",
+            "reference_return": -0.04054531441913145,
+            "strategy_return": -0.04655478749685393
+          },
+          {
+            "difference": 0.00034340753959427595,
+            "month": "2025-01",
+            "reference_return": 0.02492111563040922,
+            "strategy_return": 0.025264523170003494
+          },
+          {
+            "difference": 0.028085569228901708,
+            "month": "2025-02",
+            "reference_return": -0.0016758307043382992,
+            "strategy_return": 0.02640973852456341
+          },
+          {
+            "difference": 0.02043906573195997,
+            "month": "2025-03",
+            "reference_return": -0.03184777022227758,
+            "strategy_return": -0.011408704490317612
+          },
+          {
+            "difference": 0.017075547623403464,
+            "month": "2025-04",
+            "reference_return": -0.017187652416121746,
+            "strategy_return": -0.00011210479271828167
+          },
+          {
+            "difference": -0.0051556045740694945,
+            "month": "2025-05",
+            "reference_return": 0.028336437757681132,
+            "strategy_return": 0.023180833183611638
+          },
+          {
+            "difference": -0.03007176947424106,
+            "month": "2025-06",
+            "reference_return": 0.01589545830683914,
+            "strategy_return": -0.014176311167401923
+          },
+          {
+            "difference": -0.006246942008958811,
+            "month": "2025-07",
+            "reference_return": 0.0012095758022410141,
+            "strategy_return": -0.005037366206717797
+          },
+          {
+            "difference": -3.101603306432388e-05,
+            "month": "2025-08",
+            "reference_return": 0.02216177456534041,
+            "strategy_return": 0.022130758532276085
+          },
+          {
+            "difference": 0.007627853204210888,
+            "month": "2025-09",
+            "reference_return": -0.0071783686307203,
+            "strategy_return": 0.00044948457349058835
+          },
+          {
+            "difference": -0.01989187021958816,
+            "month": "2025-10",
+            "reference_return": -0.0072549705910056606,
+            "strategy_return": -0.02714684081059382
+          },
+          {
+            "difference": 0.012212554311072488,
+            "month": "2025-11",
+            "reference_return": 0.021007443336806375,
+            "strategy_return": 0.03321999764787886
+          },
+          {
+            "difference": -0.02867049466624616,
+            "month": "2025-12",
+            "reference_return": -0.0040592790400793,
+            "strategy_return": -0.03272977370632546
+          },
+          {
+            "difference": -0.0009843147420358633,
+            "month": "2026-01",
+            "reference_return": 0.022491310235714934,
+            "strategy_return": 0.02150699549367907
+          },
+          {
+            "difference": 0.01046638124731647,
+            "month": "2026-02",
+            "reference_return": 0.018942199494750955,
+            "strategy_return": 0.029408580742067425
+          },
+          {
+            "difference": 0.01657917228910455,
+            "month": "2026-03",
+            "reference_return": -0.03353771903074043,
+            "strategy_return": -0.016958546741635883
+          },
+          {
+            "difference": -0.028436907447113247,
+            "month": "2026-04",
+            "reference_return": 0.023412786687269538,
+            "strategy_return": -0.005024120759843709
+          },
+          {
+            "difference": 0.011825215520695265,
+            "month": "2026-05",
+            "reference_return": -0.001007975501940761,
+            "strategy_return": 0.010817240018754504
+          },
+          {
+            "difference": 0.047420912583165276,
+            "month": "2026-06",
+            "reference_return": 0.007510631421408176,
+            "strategy_return": 0.05493154400457345
+          },
+          {
+            "difference": -0.03554437572281555,
+            "month": "2026-07",
+            "reference_return": 0.022408574200811993,
+            "strategy_return": -0.013135801522003554
+          },
+          {
+            "difference": -0.009398172689948137,
+            "month": "2026-08",
+            "reference_return": 0.007733715101120087,
+            "strategy_return": -0.00166445758882805
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash0-delay5-base.json.gz",
+        "sha256": "dee7a9c98602456a7346b8f35b78c214d96c454d4fd2881d7b636b9d6d70182a"
+      },
+      "cash_multiplier": 0,
+      "cost": "base",
+      "delay_sessions": 5,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05531677019780168,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 3054.79901,
+        "fees": 78.91,
+        "final_nav": 11562.12268,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1696.5498000000005,
+        "max_drawdown": 0.0848154267893253,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6230992868533437,
+        "profit": 1562.1226800000004,
+        "slippage": 55.51712,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8507.32367,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10320.54789,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 320.5478899999998,
+            "return_fraction": 0.03205478900000003,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10767.46674,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 446.91885,
+            "return_fraction": 0.043303791112973666,
+            "start_nav": 10320.54789,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11562.12268,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 794.6559400000006,
+            "return_fraction": 0.07380156904018453,
+            "start_nav": 10767.46674,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash0-delay5-base",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11939.330388168039,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -377.20770816803815
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004715015135295979,
+            0.0022732027581034565
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0012414785171720802,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.016511665637274797,
+            "month": "2024-01",
+            "reference_return": 0.0037243883627249286,
+            "strategy_return": 0.020236053999999726
+          },
+          {
+            "difference": 0.012139360713269376,
+            "month": "2024-02",
+            "reference_return": 0.021258134764772008,
+            "strategy_return": 0.033397495478041384
+          },
+          {
+            "difference": 0.005607227750686228,
+            "month": "2024-03",
+            "reference_return": 0.031198279841007315,
+            "strategy_return": 0.03680550759169354
+          },
+          {
+            "difference": -0.00550054465474914,
+            "month": "2024-04",
+            "reference_return": -0.03517156927959386,
+            "strategy_return": -0.040672113934343
+          },
+          {
+            "difference": -0.018521580503223167,
+            "month": "2024-05",
+            "reference_return": 0.013026133860289502,
+            "strategy_return": -0.005495446642933666
+          },
+          {
+            "difference": -0.001278705922639678,
+            "month": "2024-06",
+            "reference_return": -0.0008488304224520959,
+            "strategy_return": -0.002127536345091774
+          },
+          {
+            "difference": -0.013271201995155302,
+            "month": "2024-07",
+            "reference_return": 0.028552895038781,
+            "strategy_return": 0.0152816930436257
+          },
+          {
+            "difference": -0.01059116286873607,
+            "month": "2024-08",
+            "reference_return": 0.018711083947099416,
+            "strategy_return": 0.008119921078363346
+          },
+          {
+            "difference": -0.02278231965456179,
+            "month": "2024-09",
+            "reference_return": 0.018909520694868842,
+            "strategy_return": -0.003872798959692947
+          },
+          {
+            "difference": 0.011503675744347408,
+            "month": "2024-10",
+            "reference_return": -0.014573209086946148,
+            "strategy_return": -0.0030695333425987403
+          },
+          {
+            "difference": -0.015185604387286666,
+            "month": "2024-11",
+            "reference_return": 0.037229917901786536,
+            "strategy_return": 0.02204431351449987
+          },
+          {
+            "difference": -0.005961270441534827,
+            "month": "2024-12",
+            "reference_return": -0.03939712646582749,
+            "strategy_return": -0.04535839690736232
+          },
+          {
+            "difference": 0.0003441591624513407,
+            "month": "2025-01",
+            "reference_return": 0.02499436382947029,
+            "strategy_return": 0.02533852299192163
+          },
+          {
+            "difference": 0.027830637207210573,
+            "month": "2025-02",
+            "reference_return": -0.001660862870942914,
+            "strategy_return": 0.02616977433626766
+          },
+          {
+            "difference": 0.020259721599675817,
+            "month": "2025-03",
+            "reference_return": -0.031567407932097113,
+            "strategy_return": -0.011307686332421296
+          },
+          {
+            "difference": 0.01690944430696173,
+            "month": "2025-04",
+            "reference_return": -0.017020545117196417,
+            "strategy_return": -0.00011110081023468776
+          },
+          {
+            "difference": -0.00510965897995197,
+            "month": "2025-05",
+            "reference_return": 0.02858533952084885,
+            "strategy_return": 0.02347568054089688
+          },
+          {
+            "difference": -0.029791169570765108,
+            "month": "2025-06",
+            "reference_return": 0.016448949406746127,
+            "strategy_return": -0.01334222016401898
+          },
+          {
+            "difference": -0.006190754579989299,
+            "month": "2025-07",
+            "reference_return": 0.0018996313829735545,
+            "strategy_return": -0.004291123197015745
+          },
+          {
+            "difference": -3.045313420280138e-05,
+            "month": "2025-08",
+            "reference_return": 0.022454445558217184,
+            "strategy_return": 0.022423992424014383
+          },
+          {
+            "difference": 0.007542566942793538,
+            "month": "2025-09",
+            "reference_return": -0.005889326055566579,
+            "strategy_return": 0.0016532408872269588
+          },
+          {
+            "difference": -0.01965028977822325,
+            "month": "2025-10",
+            "reference_return": -0.006357731359240781,
+            "strategy_return": -0.026008021137464032
+          },
+          {
+            "difference": 0.01204608301824428,
+            "month": "2025-11",
+            "reference_return": 0.02115889548401695,
+            "strategy_return": 0.03320497850226123
+          },
+          {
+            "difference": -0.02828658575246379,
+            "month": "2025-12",
+            "reference_return": -0.003781892321875757,
+            "strategy_return": -0.032068478074339546
+          },
+          {
+            "difference": -0.0009705095750196513,
+            "month": "2026-01",
+            "reference_return": 0.022486758995075684,
+            "strategy_return": 0.021516249420056033
+          },
+          {
+            "difference": 0.01031688634070349,
+            "month": "2026-02",
+            "reference_return": 0.01888652997951379,
+            "strategy_return": 0.02920341632021728
+          },
+          {
+            "difference": 0.016352739830245766,
+            "month": "2026-03",
+            "reference_return": -0.03233994727003486,
+            "strategy_return": -0.015987207439789097
+          },
+          {
+            "difference": -0.028013937463318483,
+            "month": "2026-04",
+            "reference_return": 0.02409134716757766,
+            "strategy_return": -0.003922590295740824
+          },
+          {
+            "difference": 0.011632165224723656,
+            "month": "2026-05",
+            "reference_return": -0.0007056375945807547,
+            "strategy_return": 0.010926527630142902
+          },
+          {
+            "difference": 0.04665128023887122,
+            "month": "2026-06",
+            "reference_return": 0.007706058508950786,
+            "strategy_return": 0.054357338747822004
+          },
+          {
+            "difference": -0.03498840722833596,
+            "month": "2026-07",
+            "reference_return": 0.022301115671719884,
+            "strategy_return": -0.012687291556616076
+          },
+          {
+            "difference": -0.009250769776808832,
+            "month": "2026-08",
+            "reference_return": 0.007810551313706338,
+            "strategy_return": -0.001440218463102494
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash0-delay5-stress.json.gz",
+        "sha256": "1db4f4fe91acbf1b6c189de5e748d55e4308b628b7d221bfceccb0a72c684e58"
+      },
+      "cash_multiplier": 0,
+      "cost": "stress",
+      "delay_sessions": 5,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.04775239233021389,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 2862.55505,
+        "fees": 78.91,
+        "final_nav": 11340.0542,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1696.5498000000007,
+        "max_drawdown": 0.09024493230202224,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6293824061944775,
+        "profit": 1340.0542000000005,
+        "slippage": 277.5856,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8477.49915,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10227.51145,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 227.51144999999997,
+            "return_fraction": 0.022751144999999973,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10615.5553,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 388.04385,
+            "return_fraction": 0.037941179718747664,
+            "start_nav": 10227.51145,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11340.0542,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 724.4989000000005,
+            "return_fraction": 0.06824879900536152,
+            "start_nav": 10615.5553,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash0-delay5-stress",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11713.874476045332,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -373.8202760453314
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004744820042239457,
+            0.0023014524876274816
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0012531173051753067,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.01651181352237785,
+            "month": "2024-01",
+            "reference_return": 0.001404456477622995,
+            "strategy_return": 0.017916270000000845
+          },
+          {
+            "difference": 0.012169487207164265,
+            "month": "2024-02",
+            "reference_return": 0.02044679566254559,
+            "strategy_return": 0.032616282869709856
+          },
+          {
+            "difference": 0.005623059304898925,
+            "month": "2024-03",
+            "reference_return": 0.030995093681441155,
+            "strategy_return": 0.03661815298634008
+          },
+          {
+            "difference": -0.005523489465252496,
+            "month": "2024-04",
+            "reference_return": -0.03571729290407677,
+            "strategy_return": -0.041240782369329265
+          },
+          {
+            "difference": -0.018590516155195136,
+            "month": "2024-05",
+            "reference_return": 0.012180720784618071,
+            "strategy_return": -0.006409795370577065
+          },
+          {
+            "difference": -0.0012802171760077918,
+            "month": "2024-06",
+            "reference_return": -0.0016542961195061823,
+            "strategy_return": -0.002934513295513974
+          },
+          {
+            "difference": -0.013347138091204247,
+            "month": "2024-07",
+            "reference_return": 0.027892895723016453,
+            "strategy_return": 0.014545757631812206
+          },
+          {
+            "difference": -0.010652807362218075,
+            "month": "2024-08",
+            "reference_return": 0.018388722892534126,
+            "strategy_return": 0.007735915530316051
+          },
+          {
+            "difference": -0.022934168073344252,
+            "month": "2024-09",
+            "reference_return": 0.01863812449229929,
+            "strategy_return": -0.0042960435810449615
+          },
+          {
+            "difference": 0.01158521785575306,
+            "month": "2024-10",
+            "reference_return": -0.014921280698500072,
+            "strategy_return": -0.003336062842747012
+          },
+          {
+            "difference": -0.015295733956202984,
+            "month": "2024-11",
+            "reference_return": 0.03686191417208007,
+            "strategy_return": 0.021566180215877084
+          },
+          {
+            "difference": -0.0060094730777224825,
+            "month": "2024-12",
+            "reference_return": -0.04054531441913145,
+            "strategy_return": -0.04655478749685393
+          },
+          {
+            "difference": 0.00034340753959427595,
+            "month": "2025-01",
+            "reference_return": 0.02492111563040922,
+            "strategy_return": 0.025264523170003494
+          },
+          {
+            "difference": 0.028085569228901708,
+            "month": "2025-02",
+            "reference_return": -0.0016758307043382992,
+            "strategy_return": 0.02640973852456341
+          },
+          {
+            "difference": 0.02043906573195997,
+            "month": "2025-03",
+            "reference_return": -0.03184777022227758,
+            "strategy_return": -0.011408704490317612
+          },
+          {
+            "difference": 0.017075547623403464,
+            "month": "2025-04",
+            "reference_return": -0.017187652416121746,
+            "strategy_return": -0.00011210479271828167
+          },
+          {
+            "difference": -0.0051556045740694945,
+            "month": "2025-05",
+            "reference_return": 0.028336437757681132,
+            "strategy_return": 0.023180833183611638
+          },
+          {
+            "difference": -0.03007176947424106,
+            "month": "2025-06",
+            "reference_return": 0.01589545830683914,
+            "strategy_return": -0.014176311167401923
+          },
+          {
+            "difference": -0.006246942008958811,
+            "month": "2025-07",
+            "reference_return": 0.0012095758022410141,
+            "strategy_return": -0.005037366206717797
+          },
+          {
+            "difference": -3.101603306432388e-05,
+            "month": "2025-08",
+            "reference_return": 0.02216177456534041,
+            "strategy_return": 0.022130758532276085
+          },
+          {
+            "difference": 0.007627853204210888,
+            "month": "2025-09",
+            "reference_return": -0.0071783686307203,
+            "strategy_return": 0.00044948457349058835
+          },
+          {
+            "difference": -0.01989187021958816,
+            "month": "2025-10",
+            "reference_return": -0.0072549705910056606,
+            "strategy_return": -0.02714684081059382
+          },
+          {
+            "difference": 0.012212554311072488,
+            "month": "2025-11",
+            "reference_return": 0.021007443336806375,
+            "strategy_return": 0.03321999764787886
+          },
+          {
+            "difference": -0.02867049466624616,
+            "month": "2025-12",
+            "reference_return": -0.0040592790400793,
+            "strategy_return": -0.03272977370632546
+          },
+          {
+            "difference": -0.0009843147420358633,
+            "month": "2026-01",
+            "reference_return": 0.022491310235714934,
+            "strategy_return": 0.02150699549367907
+          },
+          {
+            "difference": 0.01046638124731647,
+            "month": "2026-02",
+            "reference_return": 0.018942199494750955,
+            "strategy_return": 0.029408580742067425
+          },
+          {
+            "difference": 0.01657917228910455,
+            "month": "2026-03",
+            "reference_return": -0.03353771903074043,
+            "strategy_return": -0.016958546741635883
+          },
+          {
+            "difference": -0.028436907447113247,
+            "month": "2026-04",
+            "reference_return": 0.023412786687269538,
+            "strategy_return": -0.005024120759843709
+          },
+          {
+            "difference": 0.011825215520695265,
+            "month": "2026-05",
+            "reference_return": -0.001007975501940761,
+            "strategy_return": 0.010817240018754504
+          },
+          {
+            "difference": 0.047420912583165276,
+            "month": "2026-06",
+            "reference_return": 0.007510631421408176,
+            "strategy_return": 0.05493154400457345
+          },
+          {
+            "difference": -0.03554437572281555,
+            "month": "2026-07",
+            "reference_return": 0.022408574200811993,
+            "strategy_return": -0.013135801522003554
+          },
+          {
+            "difference": -0.009398172689948137,
+            "month": "2026-08",
+            "reference_return": 0.007733715101120087,
+            "strategy_return": -0.00166445758882805
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1-delay0-base.json.gz",
+        "sha256": "b4bd647f3f6c19bd9e47d3b825e86b7961707d216cb0eb3391abdb435332214d"
+      },
+      "cash_multiplier": 1,
+      "cost": "base",
+      "delay_sessions": 0,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05913422972327731,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 3054.79901,
+        "fees": 78.91,
+        "final_nav": 11675.22268,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1809.6498000000008,
+        "max_drawdown": 0.07456492414468996,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6175681787167299,
+        "profit": 1675.2226800000008,
+        "slippage": 55.51712,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8620.42367,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10433.64789,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 433.6478900000002,
+            "return_fraction": 0.04336478899999996,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10880.56674,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 446.91885,
+            "return_fraction": 0.04283438110158411,
+            "start_nav": 10433.64789,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11675.22268,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 794.6559400000006,
+            "return_fraction": 0.07303442541082195,
+            "start_nav": 10880.56674,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1-delay0-base",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11922.33237246998,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -247.10969246997956
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004138329958387197,
+            0.0024835864168161227
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.000890439451562048,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.016511665637274797,
+            "month": "2024-01",
+            "reference_return": 0.0037243883627249286,
+            "strategy_return": 0.020236053999999726
+          },
+          {
+            "difference": 0.012139360713269376,
+            "month": "2024-02",
+            "reference_return": 0.021258134764772008,
+            "strategy_return": 0.033397495478041384
+          },
+          {
+            "difference": 0.005607227750686228,
+            "month": "2024-03",
+            "reference_return": 0.031198279841007315,
+            "strategy_return": 0.03680550759169354
+          },
+          {
+            "difference": -0.00550054465474914,
+            "month": "2024-04",
+            "reference_return": -0.03517156927959386,
+            "strategy_return": -0.040672113934343
+          },
+          {
+            "difference": -0.007763792727135677,
+            "month": "2024-05",
+            "reference_return": 0.01305359490428315,
+            "strategy_return": 0.0052898021771474735
+          },
+          {
+            "difference": -0.0012650773448025232,
+            "month": "2024-06",
+            "reference_return": -0.000839633732585332,
+            "strategy_return": -0.0021047110773878552
+          },
+          {
+            "difference": -0.013129420995298124,
+            "month": "2024-07",
+            "reference_return": 0.028246818643673954,
+            "strategy_return": 0.01511739764837583
+          },
+          {
+            "difference": -0.010479607782328149,
+            "month": "2024-08",
+            "reference_return": 0.018513530641798503,
+            "strategy_return": 0.008033922859470355
+          },
+          {
+            "difference": -0.02253968841063092,
+            "month": "2024-09",
+            "reference_return": 0.018707579428846266,
+            "strategy_return": -0.0038321089817846543
+          },
+          {
+            "difference": 0.011382080593175248,
+            "month": "2024-10",
+            "reference_return": -0.014419239491883395,
+            "strategy_return": -0.0030371588987081477
+          },
+          {
+            "difference": -0.01502188788926162,
+            "month": "2024-11",
+            "reference_return": 0.03683299118880057,
+            "strategy_return": 0.021811103299538948
+          },
+          {
+            "difference": -0.005899772969726436,
+            "month": "2024-12",
+            "reference_return": -0.038989013144564044,
+            "strategy_return": -0.04488878611429048
+          },
+          {
+            "difference": 0.00034495865764716527,
+            "month": "2025-01",
+            "reference_return": 0.02471889654975712,
+            "strategy_return": 0.025063855207404284
+          },
+          {
+            "difference": 0.027536627152496385,
+            "month": "2025-02",
+            "reference_return": -0.0016435950781323871,
+            "strategy_return": 0.025893032074363997
+          },
+          {
+            "difference": 0.020052749714061235,
+            "month": "2025-03",
+            "reference_return": -0.031243876679166283,
+            "strategy_return": -0.011191126965105047
+          },
+          {
+            "difference": 0.016718135377964183,
+            "month": "2025-04",
+            "reference_return": -0.016828078002229074,
+            "strategy_return": -0.00010994262426489154
+          },
+          {
+            "difference": -0.005054125458992864,
+            "month": "2025-05",
+            "reference_return": 0.02828505356859279,
+            "strategy_return": 0.023230928109599924
+          },
+          {
+            "difference": -0.029484746279804575,
+            "month": "2025-06",
+            "reference_return": 0.01627847112480385,
+            "strategy_return": -0.013206275155000724
+          },
+          {
+            "difference": -0.006130051620618748,
+            "month": "2025-07",
+            "reference_return": 0.001883236181006609,
+            "strategy_return": -0.004246815439612139
+          },
+          {
+            "difference": -3.618628422441539e-05,
+            "month": "2025-08",
+            "reference_return": 0.022227653511782464,
+            "strategy_return": 0.022191467227558048
+          },
+          {
+            "difference": 0.007464821974136671,
+            "month": "2025-09",
+            "reference_return": -0.005828352164498618,
+            "strategy_return": 0.0016364698096380526
+          },
+          {
+            "difference": -0.01945285419789855,
+            "month": "2025-10",
+            "reference_return": -0.0062917631546612895,
+            "strategy_return": -0.02574461735255984
+          },
+          {
+            "difference": 0.011916542559133214,
+            "month": "2025-11",
+            "reference_return": 0.02094325636693317,
+            "strategy_return": 0.032859798926066386
+          },
+          {
+            "difference": -0.028001938533648185,
+            "month": "2025-12",
+            "reference_return": -0.0037437801677162597,
+            "strategy_return": -0.031745718701364445
+          },
+          {
+            "difference": -0.0009596259809325769,
+            "month": "2026-01",
+            "reference_return": 0.02225222089221557,
+            "strategy_return": 0.02129259491128299
+          },
+          {
+            "difference": 0.010211207956887236,
+            "month": "2026-02",
+            "reference_return": 0.018694977047229555,
+            "strategy_return": 0.02890618500411679
+          },
+          {
+            "difference": 0.016192421806998092,
+            "month": "2026-03",
+            "reference_return": -0.032021483419667485,
+            "strategy_return": -0.015829061612669393
+          },
+          {
+            "difference": -0.02773048462209937,
+            "month": "2026-04",
+            "reference_return": 0.02384732076413454,
+            "strategy_return": -0.003883163857964833
+          },
+          {
+            "difference": 0.011511142311293687,
+            "month": "2026-05",
+            "reference_return": -0.0006948666815644877,
+            "strategy_return": 0.0108162756297292
+          },
+          {
+            "difference": 0.04618322898415417,
+            "month": "2026-06",
+            "reference_return": 0.00763149666943197,
+            "strategy_return": 0.05381472565358614
+          },
+          {
+            "difference": -0.03465320981454578,
+            "month": "2026-07",
+            "reference_return": 0.02208609951459728,
+            "strategy_return": -0.012567110299948503
+          },
+          {
+            "difference": -0.009163218072465562,
+            "month": "2026-08",
+            "reference_return": 0.0077368158091961625,
+            "strategy_return": -0.0014264022632693996
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1-delay0-stress.json.gz",
+        "sha256": "c73f51646da02ccbb2cd54a430864e22459527742769668819e768cf8c6ae77f"
+      },
+      "cash_multiplier": 1,
+      "cost": "stress",
+      "delay_sessions": 0,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05161647791286739,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 2862.55505,
+        "fees": 78.91,
+        "final_nav": 11453.1542,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1809.649800000001,
+        "max_drawdown": 0.07995728415676218,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6237285276076844,
+        "profit": 1453.1542000000009,
+        "slippage": 277.5856,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8590.59915,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10340.61145,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 340.61145000000033,
+            "return_fraction": 0.034061145000000126,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10728.6553,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 388.04385,
+            "return_fraction": 0.0375261996716838,
+            "start_nav": 10340.61145,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11453.1542,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 724.4989000000005,
+            "return_fraction": 0.06752932960759783,
+            "start_nav": 10728.6553,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1-delay0-stress",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11698.75854455244,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -245.60434455243922
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004183855545799554,
+            0.0025081982405128025
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0009006293350628074,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.01651181352237785,
+            "month": "2024-01",
+            "reference_return": 0.001404456477622995,
+            "strategy_return": 0.017916270000000845
+          },
+          {
+            "difference": 0.012169487207164265,
+            "month": "2024-02",
+            "reference_return": 0.02044679566254559,
+            "strategy_return": 0.032616282869709856
+          },
+          {
+            "difference": 0.005623059304898925,
+            "month": "2024-03",
+            "reference_return": 0.030995093681441155,
+            "strategy_return": 0.03661815298634008
+          },
+          {
+            "difference": -0.005523489465252496,
+            "month": "2024-04",
+            "reference_return": -0.03571729290407677,
+            "strategy_return": -0.041240782369329265
+          },
+          {
+            "difference": -0.00779183187313115,
+            "month": "2024-05",
+            "reference_return": 0.012208415287481067,
+            "strategy_return": 0.004416583414349917
+          },
+          {
+            "difference": -0.001266557860922446,
+            "month": "2024-06",
+            "reference_return": -0.0016363249806433666,
+            "strategy_return": -0.0029028828415658126
+          },
+          {
+            "difference": -0.013203738099082818,
+            "month": "2024-07",
+            "reference_return": 0.027592253850213133,
+            "strategy_return": 0.014388515751130315
+          },
+          {
+            "difference": -0.010539962061216768,
+            "month": "2024-08",
+            "reference_return": 0.018193437345756402,
+            "strategy_return": 0.007653475284539635
+          },
+          {
+            "difference": -0.02268830800401478,
+            "month": "2024-09",
+            "reference_return": 0.01843769884734714,
+            "strategy_return": -0.00425060915666764
+          },
+          {
+            "difference": 0.011461902206236885,
+            "month": "2024-10",
+            "reference_return": -0.014762532652627391,
+            "strategy_return": -0.0033006304463905067
+          },
+          {
+            "difference": -0.015129646062164603,
+            "month": "2024-11",
+            "reference_return": 0.03646601287757045,
+            "strategy_return": 0.02133636681540585
+          },
+          {
+            "difference": -0.005946983388785521,
+            "month": "2024-12",
+            "reference_return": -0.040122071039258245,
+            "strategy_return": -0.046069054428043765
+          },
+          {
+            "difference": 0.0003443078812592759,
+            "month": "2025-01",
+            "reference_return": 0.024643885636059792,
+            "strategy_return": 0.02498819351731907
+          },
+          {
+            "difference": 0.027786177162225867,
+            "month": "2025-02",
+            "reference_return": -0.0016582520272931944,
+            "strategy_return": 0.026127925134932672
+          },
+          {
+            "difference": 0.020228432803173102,
+            "month": "2025-03",
+            "reference_return": -0.03151849696331388,
+            "strategy_return": -0.011290064160140778
+          },
+          {
+            "difference": 0.016880497072995326,
+            "month": "2025-04",
+            "reference_return": -0.016991422763928288,
+            "strategy_return": -0.00011092569093296145
+          },
+          {
+            "difference": -0.005099072427824813,
+            "month": "2025-05",
+            "reference_return": 0.028036065956119627,
+            "strategy_return": 0.022936993528294813
+          },
+          {
+            "difference": -0.029759574122564136,
+            "month": "2025-06",
+            "reference_return": 0.015729040169388808,
+            "strategy_return": -0.014030533953175328
+          },
+          {
+            "difference": -0.006185146184835788,
+            "month": "2025-07",
+            "reference_return": 0.0012003171230661192,
+            "strategy_return": -0.004984829061769669
+          },
+          {
+            "difference": -3.686901803279241e-05,
+            "month": "2025-08",
+            "reference_return": 0.021935658769016486,
+            "strategy_return": 0.021898789750983694
+          },
+          {
+            "difference": 0.007548347816089596,
+            "month": "2025-09",
+            "reference_return": -0.007103473658957027,
+            "strategy_return": 0.0004448741571325687
+          },
+          {
+            "difference": -0.019689578054113532,
+            "month": "2025-10",
+            "reference_return": -0.007178938223393327,
+            "strategy_return": -0.02686851627750686
+          },
+          {
+            "difference": 0.012079430702902405,
+            "month": "2025-11",
+            "reference_return": 0.02079057321288791,
+            "strategy_return": 0.03287000391579031
+          },
+          {
+            "difference": -0.02837810866945656,
+            "month": "2025-12",
+            "reference_return": -0.004017809942982509,
+            "strategy_return": -0.03239591861243907
+          },
+          {
+            "difference": -0.0009731209588101919,
+            "month": "2026-01",
+            "reference_return": 0.02225339268121318,
+            "strategy_return": 0.021280271722402988
+          },
+          {
+            "difference": 0.010357634363746815,
+            "month": "2026-02",
+            "reference_return": 0.018747385055866594,
+            "strategy_return": 0.02910501941961341
+          },
+          {
+            "difference": 0.016414407570353617,
+            "month": "2026-03",
+            "reference_return": -0.03320285548978685,
+            "strategy_return": -0.016788447919433236
+          },
+          {
+            "difference": -0.028144874001720943,
+            "month": "2026-04",
+            "reference_return": 0.023172007006569517,
+            "strategy_return": -0.004972866995151426
+          },
+          {
+            "difference": 0.011700168775063746,
+            "month": "2026-05",
+            "reference_return": -0.0009938327648839618,
+            "strategy_return": 0.010706336010179784
+          },
+          {
+            "difference": 0.04693737086547278,
+            "month": "2026-06",
+            "reference_return": 0.007436951984744589,
+            "strategy_return": 0.05437432285021737
+          },
+          {
+            "difference": -0.03519849275355624,
+            "month": "2026-07",
+            "reference_return": 0.022189068087357766,
+            "strategy_return": -0.013009424666198477
+          },
+          {
+            "difference": -0.009307822970484714,
+            "month": "2026-08",
+            "reference_return": 0.007659589858290516,
+            "strategy_return": -0.0016482331121941973
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1-delay5-base.json.gz",
+        "sha256": "02653d3cf557e9c61952d5635f4a8b9c2fe0d9d407d3468d29a0b04336f3355b"
+      },
+      "cash_multiplier": 1,
+      "cost": "base",
+      "delay_sessions": 5,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05913422972327731,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 3054.79901,
+        "fees": 78.91,
+        "final_nav": 11675.22268,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1809.6498000000008,
+        "max_drawdown": 0.07456492414468996,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6175681787167299,
+        "profit": 1675.2226800000008,
+        "slippage": 55.51712,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8620.42367,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10433.64789,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 433.6478900000002,
+            "return_fraction": 0.04336478899999996,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10880.56674,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 446.91885,
+            "return_fraction": 0.04283438110158411,
+            "start_nav": 10433.64789,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11675.22268,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 794.6559400000006,
+            "return_fraction": 0.07303442541082195,
+            "start_nav": 10880.56674,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1-delay5-base",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11922.33237246998,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -247.10969246997956
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004138329958387197,
+            0.0024835864168161227
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.000890439451562048,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.016511665637274797,
+            "month": "2024-01",
+            "reference_return": 0.0037243883627249286,
+            "strategy_return": 0.020236053999999726
+          },
+          {
+            "difference": 0.012139360713269376,
+            "month": "2024-02",
+            "reference_return": 0.021258134764772008,
+            "strategy_return": 0.033397495478041384
+          },
+          {
+            "difference": 0.005607227750686228,
+            "month": "2024-03",
+            "reference_return": 0.031198279841007315,
+            "strategy_return": 0.03680550759169354
+          },
+          {
+            "difference": -0.00550054465474914,
+            "month": "2024-04",
+            "reference_return": -0.03517156927959386,
+            "strategy_return": -0.040672113934343
+          },
+          {
+            "difference": -0.007763792727135677,
+            "month": "2024-05",
+            "reference_return": 0.01305359490428315,
+            "strategy_return": 0.0052898021771474735
+          },
+          {
+            "difference": -0.0012650773448025232,
+            "month": "2024-06",
+            "reference_return": -0.000839633732585332,
+            "strategy_return": -0.0021047110773878552
+          },
+          {
+            "difference": -0.013129420995298124,
+            "month": "2024-07",
+            "reference_return": 0.028246818643673954,
+            "strategy_return": 0.01511739764837583
+          },
+          {
+            "difference": -0.010479607782328149,
+            "month": "2024-08",
+            "reference_return": 0.018513530641798503,
+            "strategy_return": 0.008033922859470355
+          },
+          {
+            "difference": -0.02253968841063092,
+            "month": "2024-09",
+            "reference_return": 0.018707579428846266,
+            "strategy_return": -0.0038321089817846543
+          },
+          {
+            "difference": 0.011382080593175248,
+            "month": "2024-10",
+            "reference_return": -0.014419239491883395,
+            "strategy_return": -0.0030371588987081477
+          },
+          {
+            "difference": -0.01502188788926162,
+            "month": "2024-11",
+            "reference_return": 0.03683299118880057,
+            "strategy_return": 0.021811103299538948
+          },
+          {
+            "difference": -0.005899772969726436,
+            "month": "2024-12",
+            "reference_return": -0.038989013144564044,
+            "strategy_return": -0.04488878611429048
+          },
+          {
+            "difference": 0.00034495865764716527,
+            "month": "2025-01",
+            "reference_return": 0.02471889654975712,
+            "strategy_return": 0.025063855207404284
+          },
+          {
+            "difference": 0.027536627152496385,
+            "month": "2025-02",
+            "reference_return": -0.0016435950781323871,
+            "strategy_return": 0.025893032074363997
+          },
+          {
+            "difference": 0.020052749714061235,
+            "month": "2025-03",
+            "reference_return": -0.031243876679166283,
+            "strategy_return": -0.011191126965105047
+          },
+          {
+            "difference": 0.016718135377964183,
+            "month": "2025-04",
+            "reference_return": -0.016828078002229074,
+            "strategy_return": -0.00010994262426489154
+          },
+          {
+            "difference": -0.005054125458992864,
+            "month": "2025-05",
+            "reference_return": 0.02828505356859279,
+            "strategy_return": 0.023230928109599924
+          },
+          {
+            "difference": -0.029484746279804575,
+            "month": "2025-06",
+            "reference_return": 0.01627847112480385,
+            "strategy_return": -0.013206275155000724
+          },
+          {
+            "difference": -0.006130051620618748,
+            "month": "2025-07",
+            "reference_return": 0.001883236181006609,
+            "strategy_return": -0.004246815439612139
+          },
+          {
+            "difference": -3.618628422441539e-05,
+            "month": "2025-08",
+            "reference_return": 0.022227653511782464,
+            "strategy_return": 0.022191467227558048
+          },
+          {
+            "difference": 0.007464821974136671,
+            "month": "2025-09",
+            "reference_return": -0.005828352164498618,
+            "strategy_return": 0.0016364698096380526
+          },
+          {
+            "difference": -0.01945285419789855,
+            "month": "2025-10",
+            "reference_return": -0.0062917631546612895,
+            "strategy_return": -0.02574461735255984
+          },
+          {
+            "difference": 0.011916542559133214,
+            "month": "2025-11",
+            "reference_return": 0.02094325636693317,
+            "strategy_return": 0.032859798926066386
+          },
+          {
+            "difference": -0.028001938533648185,
+            "month": "2025-12",
+            "reference_return": -0.0037437801677162597,
+            "strategy_return": -0.031745718701364445
+          },
+          {
+            "difference": -0.0009596259809325769,
+            "month": "2026-01",
+            "reference_return": 0.02225222089221557,
+            "strategy_return": 0.02129259491128299
+          },
+          {
+            "difference": 0.010211207956887236,
+            "month": "2026-02",
+            "reference_return": 0.018694977047229555,
+            "strategy_return": 0.02890618500411679
+          },
+          {
+            "difference": 0.016192421806998092,
+            "month": "2026-03",
+            "reference_return": -0.032021483419667485,
+            "strategy_return": -0.015829061612669393
+          },
+          {
+            "difference": -0.02773048462209937,
+            "month": "2026-04",
+            "reference_return": 0.02384732076413454,
+            "strategy_return": -0.003883163857964833
+          },
+          {
+            "difference": 0.011511142311293687,
+            "month": "2026-05",
+            "reference_return": -0.0006948666815644877,
+            "strategy_return": 0.0108162756297292
+          },
+          {
+            "difference": 0.04618322898415417,
+            "month": "2026-06",
+            "reference_return": 0.00763149666943197,
+            "strategy_return": 0.05381472565358614
+          },
+          {
+            "difference": -0.03465320981454578,
+            "month": "2026-07",
+            "reference_return": 0.02208609951459728,
+            "strategy_return": -0.012567110299948503
+          },
+          {
+            "difference": -0.009163218072465562,
+            "month": "2026-08",
+            "reference_return": 0.0077368158091961625,
+            "strategy_return": -0.0014264022632693996
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1-delay5-stress.json.gz",
+        "sha256": "e2558799507cce4f465d9f484b7eb21a6d8adc2140beed87e26c60959d533a3b"
+      },
+      "cash_multiplier": 1,
+      "cost": "stress",
+      "delay_sessions": 5,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05161647791286739,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 2862.55505,
+        "fees": 78.91,
+        "final_nav": 11453.1542,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1809.649800000001,
+        "max_drawdown": 0.07995728415676218,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6237285276076844,
+        "profit": 1453.1542000000009,
+        "slippage": 277.5856,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8590.59915,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10340.61145,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 340.61145000000033,
+            "return_fraction": 0.034061145000000126,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10728.6553,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 388.04385,
+            "return_fraction": 0.0375261996716838,
+            "start_nav": 10340.61145,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11453.1542,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 724.4989000000005,
+            "return_fraction": 0.06752932960759783,
+            "start_nav": 10728.6553,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1-delay5-stress",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11698.75854455244,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -245.60434455243922
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004183855545799554,
+            0.0025081982405128025
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0009006293350628074,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.01651181352237785,
+            "month": "2024-01",
+            "reference_return": 0.001404456477622995,
+            "strategy_return": 0.017916270000000845
+          },
+          {
+            "difference": 0.012169487207164265,
+            "month": "2024-02",
+            "reference_return": 0.02044679566254559,
+            "strategy_return": 0.032616282869709856
+          },
+          {
+            "difference": 0.005623059304898925,
+            "month": "2024-03",
+            "reference_return": 0.030995093681441155,
+            "strategy_return": 0.03661815298634008
+          },
+          {
+            "difference": -0.005523489465252496,
+            "month": "2024-04",
+            "reference_return": -0.03571729290407677,
+            "strategy_return": -0.041240782369329265
+          },
+          {
+            "difference": -0.00779183187313115,
+            "month": "2024-05",
+            "reference_return": 0.012208415287481067,
+            "strategy_return": 0.004416583414349917
+          },
+          {
+            "difference": -0.001266557860922446,
+            "month": "2024-06",
+            "reference_return": -0.0016363249806433666,
+            "strategy_return": -0.0029028828415658126
+          },
+          {
+            "difference": -0.013203738099082818,
+            "month": "2024-07",
+            "reference_return": 0.027592253850213133,
+            "strategy_return": 0.014388515751130315
+          },
+          {
+            "difference": -0.010539962061216768,
+            "month": "2024-08",
+            "reference_return": 0.018193437345756402,
+            "strategy_return": 0.007653475284539635
+          },
+          {
+            "difference": -0.02268830800401478,
+            "month": "2024-09",
+            "reference_return": 0.01843769884734714,
+            "strategy_return": -0.00425060915666764
+          },
+          {
+            "difference": 0.011461902206236885,
+            "month": "2024-10",
+            "reference_return": -0.014762532652627391,
+            "strategy_return": -0.0033006304463905067
+          },
+          {
+            "difference": -0.015129646062164603,
+            "month": "2024-11",
+            "reference_return": 0.03646601287757045,
+            "strategy_return": 0.02133636681540585
+          },
+          {
+            "difference": -0.005946983388785521,
+            "month": "2024-12",
+            "reference_return": -0.040122071039258245,
+            "strategy_return": -0.046069054428043765
+          },
+          {
+            "difference": 0.0003443078812592759,
+            "month": "2025-01",
+            "reference_return": 0.024643885636059792,
+            "strategy_return": 0.02498819351731907
+          },
+          {
+            "difference": 0.027786177162225867,
+            "month": "2025-02",
+            "reference_return": -0.0016582520272931944,
+            "strategy_return": 0.026127925134932672
+          },
+          {
+            "difference": 0.020228432803173102,
+            "month": "2025-03",
+            "reference_return": -0.03151849696331388,
+            "strategy_return": -0.011290064160140778
+          },
+          {
+            "difference": 0.016880497072995326,
+            "month": "2025-04",
+            "reference_return": -0.016991422763928288,
+            "strategy_return": -0.00011092569093296145
+          },
+          {
+            "difference": -0.005099072427824813,
+            "month": "2025-05",
+            "reference_return": 0.028036065956119627,
+            "strategy_return": 0.022936993528294813
+          },
+          {
+            "difference": -0.029759574122564136,
+            "month": "2025-06",
+            "reference_return": 0.015729040169388808,
+            "strategy_return": -0.014030533953175328
+          },
+          {
+            "difference": -0.006185146184835788,
+            "month": "2025-07",
+            "reference_return": 0.0012003171230661192,
+            "strategy_return": -0.004984829061769669
+          },
+          {
+            "difference": -3.686901803279241e-05,
+            "month": "2025-08",
+            "reference_return": 0.021935658769016486,
+            "strategy_return": 0.021898789750983694
+          },
+          {
+            "difference": 0.007548347816089596,
+            "month": "2025-09",
+            "reference_return": -0.007103473658957027,
+            "strategy_return": 0.0004448741571325687
+          },
+          {
+            "difference": -0.019689578054113532,
+            "month": "2025-10",
+            "reference_return": -0.007178938223393327,
+            "strategy_return": -0.02686851627750686
+          },
+          {
+            "difference": 0.012079430702902405,
+            "month": "2025-11",
+            "reference_return": 0.02079057321288791,
+            "strategy_return": 0.03287000391579031
+          },
+          {
+            "difference": -0.02837810866945656,
+            "month": "2025-12",
+            "reference_return": -0.004017809942982509,
+            "strategy_return": -0.03239591861243907
+          },
+          {
+            "difference": -0.0009731209588101919,
+            "month": "2026-01",
+            "reference_return": 0.02225339268121318,
+            "strategy_return": 0.021280271722402988
+          },
+          {
+            "difference": 0.010357634363746815,
+            "month": "2026-02",
+            "reference_return": 0.018747385055866594,
+            "strategy_return": 0.02910501941961341
+          },
+          {
+            "difference": 0.016414407570353617,
+            "month": "2026-03",
+            "reference_return": -0.03320285548978685,
+            "strategy_return": -0.016788447919433236
+          },
+          {
+            "difference": -0.028144874001720943,
+            "month": "2026-04",
+            "reference_return": 0.023172007006569517,
+            "strategy_return": -0.004972866995151426
+          },
+          {
+            "difference": 0.011700168775063746,
+            "month": "2026-05",
+            "reference_return": -0.0009938327648839618,
+            "strategy_return": 0.010706336010179784
+          },
+          {
+            "difference": 0.04693737086547278,
+            "month": "2026-06",
+            "reference_return": 0.007436951984744589,
+            "strategy_return": 0.05437432285021737
+          },
+          {
+            "difference": -0.03519849275355624,
+            "month": "2026-07",
+            "reference_return": 0.022189068087357766,
+            "strategy_return": -0.013009424666198477
+          },
+          {
+            "difference": -0.009307822970484714,
+            "month": "2026-08",
+            "reference_return": 0.007659589858290516,
+            "strategy_return": -0.0016482331121941973
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1.25-delay0-base.json.gz",
+        "sha256": "7f1cb1f81d7c9dc2bc31aad24bd42a671f3ca32f81786262792a12854e840f0e"
+      },
+      "cash_multiplier": 1.25,
+      "cost": "base",
+      "delay_sessions": 0,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.06008512444405878,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 3054.79901,
+        "fees": 78.91,
+        "final_nav": 11703.50268,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1837.9297999999997,
+        "max_drawdown": 0.07200184532249454,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6162029629470707,
+        "profit": 1703.5026799999996,
+        "slippage": 55.51712,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8648.70367,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10461.92789,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 461.92789000000084,
+            "return_fraction": 0.04619278900000001,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10908.84674,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 446.91885,
+            "return_fraction": 0.042718594000938026,
+            "start_nav": 10461.92789,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11703.50268,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 794.6559399999987,
+            "return_fraction": 0.07284509159764752,
+            "start_nav": 10908.84674,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1.25-delay0-base",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11918.138988262295,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -214.63630826229564
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004046960247843892,
+            0.0025147872504562244
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0008027053508478203,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.016511665637274797,
+            "month": "2024-01",
+            "reference_return": 0.0037243883627249286,
+            "strategy_return": 0.020236053999999726
+          },
+          {
+            "difference": 0.012139360713269376,
+            "month": "2024-02",
+            "reference_return": 0.021258134764772008,
+            "strategy_return": 0.033397495478041384
+          },
+          {
+            "difference": 0.005607227750686228,
+            "month": "2024-03",
+            "reference_return": 0.031198279841007315,
+            "strategy_return": 0.03680550759169354
+          },
+          {
+            "difference": -0.00550054465474914,
+            "month": "2024-04",
+            "reference_return": -0.03517156927959386,
+            "strategy_return": -0.040672113934343
+          },
+          {
+            "difference": -0.00507377944670373,
+            "month": "2024-05",
+            "reference_return": 0.01306037063032206,
+            "strategy_return": 0.00798659118361833
+          },
+          {
+            "difference": -0.0012617148874122242,
+            "month": "2024-06",
+            "reference_return": -0.0008373652006889998,
+            "strategy_return": -0.002099080088101224
+          },
+          {
+            "difference": -0.013094441638699772,
+            "month": "2024-07",
+            "reference_return": 0.02817130879951235,
+            "strategy_return": 0.01507686716081258
+          },
+          {
+            "difference": -0.010452079774129874,
+            "month": "2024-08",
+            "reference_return": 0.018464783213160807,
+            "strategy_return": 0.008012703439030933
+          },
+          {
+            "difference": -0.022479825417791255,
+            "month": "2024-09",
+            "reference_return": 0.018657757453108603,
+            "strategy_return": -0.0038220679646826516
+          },
+          {
+            "difference": 0.01135207704031671,
+            "month": "2024-10",
+            "reference_return": -0.014381247343135173,
+            "strategy_return": -0.0030291703028184624
+          },
+          {
+            "difference": -0.014981501551885268,
+            "month": "2024-11",
+            "reference_return": 0.03673506110657554,
+            "strategy_return": 0.02175355955469027
+          },
+          {
+            "difference": -0.005884593607687227,
+            "month": "2024-12",
+            "reference_return": -0.03888828483304396,
+            "strategy_return": -0.04477287844073119
+          },
+          {
+            "difference": 0.00034514043270328365,
+            "month": "2025-01",
+            "reference_return": 0.02465096379871312,
+            "strategy_return": 0.024996104231416405
+          },
+          {
+            "difference": 0.027464079909990224,
+            "month": "2025-02",
+            "reference_return": -0.0016393333173322366,
+            "strategy_return": 0.025824746592657988
+          },
+          {
+            "difference": 0.020001656721051808,
+            "month": "2025-03",
+            "reference_return": -0.031164013271623103,
+            "strategy_return": -0.011162356550571295
+          },
+          {
+            "difference": 0.016670971904345966,
+            "month": "2025-04",
+            "reference_return": -0.016780628694927913,
+            "strategy_return": -0.00010965679058194677
+          },
+          {
+            "difference": -0.005040427517091661,
+            "month": "2025-05",
+            "reference_return": 0.028210952211757734,
+            "strategy_return": 0.023170524694666073
+          },
+          {
+            "difference": -0.029409109631513775,
+            "month": "2025-06",
+            "reference_return": 0.016236394886102623,
+            "strategy_return": -0.013172714745411152
+          },
+          {
+            "difference": -0.0061150583406544,
+            "month": "2025-07",
+            "reference_return": 0.0018791791691719073,
+            "strategy_return": -0.004235879171482493
+          },
+          {
+            "difference": -3.758195904746131e-05,
+            "month": "2025-08",
+            "reference_return": 0.022171659308086955,
+            "strategy_return": 0.022134077349039494
+          },
+          {
+            "difference": 0.00744563209413962,
+            "month": "2025-09",
+            "reference_return": -0.005813302752364136,
+            "strategy_return": 0.0016323293417754847
+          },
+          {
+            "difference": -0.019404104906492914,
+            "month": "2025-10",
+            "reference_return": -0.006275481581479947,
+            "strategy_return": -0.02567958648797286
+          },
+          {
+            "difference": 0.011884585264132719,
+            "month": "2025-11",
+            "reference_return": 0.020890022177330714,
+            "strategy_return": 0.03277460744146343
+          },
+          {
+            "difference": -0.027931657196282544,
+            "month": "2025-12",
+            "reference_return": -0.003734370207714277,
+            "strategy_return": -0.03166602740399682
+          },
+          {
+            "difference": -0.0009569424379964886,
+            "month": "2026-01",
+            "reference_return": 0.022194338610270314,
+            "strategy_return": 0.021237396172273826
+          },
+          {
+            "difference": 0.010185121140748654,
+            "month": "2026-02",
+            "reference_return": 0.018647686072425174,
+            "strategy_return": 0.028832807213173828
+          },
+          {
+            "difference": 0.016152825220347555,
+            "month": "2026-03",
+            "reference_return": -0.03194283115153518,
+            "strategy_return": -0.015790005931187623
+          },
+          {
+            "difference": -0.02766050303664558,
+            "month": "2026-04",
+            "reference_return": 0.023787073977860285,
+            "strategy_return": -0.0038734290587852938
+          },
+          {
+            "difference": 0.011481273097364575,
+            "month": "2026-05",
+            "reference_return": -0.0006922184943030096,
+            "strategy_return": 0.010789054603061565
+          },
+          {
+            "difference": 0.04606765949479419,
+            "month": "2026-06",
+            "reference_return": 0.007613077711212224,
+            "strategy_return": 0.05368073720600641
+          },
+          {
+            "difference": -0.03457039700028164,
+            "month": "2026-07",
+            "reference_return": 0.022032982334954543,
+            "strategy_return": -0.012537414665327096
+          },
+          {
+            "difference": -0.009141584643231004,
+            "month": "2026-08",
+            "reference_return": 0.0077185957121328475,
+            "strategy_return": -0.001422988931098157
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1.25-delay0-stress.json.gz",
+        "sha256": "44c60a4fa27de5682b913ebb78640f72efa460f8c107f456cb71615795be5aee"
+      },
+      "cash_multiplier": 1.25,
+      "cost": "stress",
+      "delay_sessions": 0,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05257891527925396,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 2862.55505,
+        "fees": 78.91,
+        "final_nav": 11481.4342,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1837.9298,
+        "max_drawdown": 0.07738491731725772,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6223332031041303,
+        "profit": 1481.4341999999997,
+        "slippage": 277.5856,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8618.87915,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10368.89145,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 368.89144999999917,
+            "return_fraction": 0.03688914499999996,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10756.9353,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 388.04385,
+            "return_fraction": 0.0374238511292353,
+            "start_nav": 10368.89145,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11481.4342,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 724.4989000000005,
+            "return_fraction": 0.06735179489273313,
+            "start_nav": 10756.9353,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1.25-delay0-stress",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11695.029529214493,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -213.59532921449318
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004086976611672831,
+            0.0025321535184959017
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0008125335513173883,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.01651181352237785,
+            "month": "2024-01",
+            "reference_return": 0.001404456477622995,
+            "strategy_return": 0.017916270000000845
+          },
+          {
+            "difference": 0.012169487207164265,
+            "month": "2024-02",
+            "reference_return": 0.02044679566254559,
+            "strategy_return": 0.032616282869709856
+          },
+          {
+            "difference": 0.005623059304898925,
+            "month": "2024-03",
+            "reference_return": 0.030995093681441155,
+            "strategy_return": 0.03661815298634008
+          },
+          {
+            "difference": -0.005523489465252496,
+            "month": "2024-04",
+            "reference_return": -0.03571729290407677,
+            "strategy_return": -0.041240782369329265
+          },
+          {
+            "difference": -0.005091591464517986,
+            "month": "2024-05",
+            "reference_return": 0.012215248194851203,
+            "strategy_return": 0.0071236567303332166
+          },
+          {
+            "difference": -0.0012631878641647942,
+            "month": "2024-06",
+            "reference_return": -0.0016318922447108308,
+            "strategy_return": -0.002895080108875625
+          },
+          {
+            "difference": -0.013168362014454926,
+            "month": "2024-07",
+            "reference_return": 0.027518090214732283,
+            "strategy_return": 0.014349728200277356
+          },
+          {
+            "difference": -0.01051211775974914,
+            "month": "2024-08",
+            "reference_return": 0.01814525321384175,
+            "strategy_return": 0.00763313545409261
+          },
+          {
+            "difference": -0.022627653757231303,
+            "month": "2024-09",
+            "reference_return": 0.018388255420498822,
+            "strategy_return": -0.0042393983367324806
+          },
+          {
+            "difference": 0.01143147696149327,
+            "month": "2024-10",
+            "reference_return": -0.0147233650583527,
+            "strategy_return": -0.00329188809685943
+          },
+          {
+            "difference": -0.015088678737384287,
+            "month": "2024-11",
+            "reference_return": 0.03636834546373757,
+            "strategy_return": 0.021279666726353286
+          },
+          {
+            "difference": -0.00593156071487122,
+            "month": "2024-12",
+            "reference_return": -0.04001761891612832,
+            "strategy_return": -0.04594917963099954
+          },
+          {
+            "difference": 0.00034451392607115494,
+            "month": "2025-01",
+            "reference_return": 0.02457552706828192,
+            "strategy_return": 0.024920040994353077
+          },
+          {
+            "difference": 0.027712310815136254,
+            "month": "2025-02",
+            "reference_return": -0.0016539140448941225,
+            "strategy_return": 0.02605839677024213
+          },
+          {
+            "difference": 0.020176441905266573,
+            "month": "2025-03",
+            "reference_return": -0.03143722536755833,
+            "strategy_return": -0.011260783462291757
+          },
+          {
+            "difference": 0.01683241772470201,
+            "month": "2025-04",
+            "reference_return": -0.01694305245422245,
+            "strategy_return": -0.0001106347295204424
+          },
+          {
+            "difference": -0.005085129866793103,
+            "month": "2025-05",
+            "reference_return": 0.02796195231658083,
+            "strategy_return": 0.022876822449787726
+          },
+          {
+            "difference": -0.029682522041808213,
+            "month": "2025-06",
+            "reference_return": 0.015687971486011643,
+            "strategy_return": -0.01399455055579657
+          },
+          {
+            "difference": -0.0061698846069292435,
+            "month": "2025-07",
+            "reference_return": 0.001198021333296495,
+            "strategy_return": -0.004971863273632748
+          },
+          {
+            "difference": -3.8293440370429366e-05,
+            "month": "2025-08",
+            "reference_return": 0.021879838739250035,
+            "strategy_return": 0.021841545298879605
+          },
+          {
+            "difference": 0.007528726270720876,
+            "month": "2025-09",
+            "reference_return": -0.007084990178180206,
+            "strategy_return": 0.0004437360925406697
+          },
+          {
+            "difference": -0.019639637283283218,
+            "month": "2025-10",
+            "reference_return": -0.007160175195825791,
+            "strategy_return": -0.02679981247910901
+          },
+          {
+            "difference": 0.012046595514019875,
+            "month": "2025-11",
+            "reference_return": 0.020737044026546858,
+            "strategy_return": 0.032783639540566734
+          },
+          {
+            "difference": -0.028305928865245633,
+            "month": "2025-12",
+            "reference_return": -0.004007572931772674,
+            "strategy_return": -0.03231350179701831
+          },
+          {
+            "difference": -0.0009703614798917126,
+            "month": "2026-01",
+            "reference_return": 0.022194687334115892,
+            "strategy_return": 0.02122432585422418
+          },
+          {
+            "difference": 0.010330795050802699,
+            "month": "2026-02",
+            "reference_return": 0.01869929749880317,
+            "strategy_return": 0.029030092549605868
+          },
+          {
+            "difference": 0.016373719582102098,
+            "month": "2026-03",
+            "reference_return": -0.0331201672230661,
+            "strategy_return": -0.016746447640964002
+          },
+          {
+            "difference": -0.028072787691743484,
+            "month": "2026-04",
+            "reference_return": 0.02311257338874917,
+            "strategy_return": -0.004960214302994315
+          },
+          {
+            "difference": 0.011669313054760266,
+            "month": "2026-05",
+            "reference_return": -0.0009903534561488403,
+            "strategy_return": 0.010678959598611426
+          },
+          {
+            "difference": 0.04681800116101531,
+            "month": "2026-06",
+            "reference_return": 0.007418754048570175,
+            "strategy_return": 0.054236755209585485
+          },
+          {
+            "difference": -0.03511305622499694,
+            "month": "2026-07",
+            "reference_return": 0.022134852239267477,
+            "strategy_return": -0.012978203985729464
+          },
+          {
+            "difference": -0.00928550236399972,
+            "month": "2026-08",
+            "reference_return": 0.007641276776114925,
+            "strategy_return": -0.0016442255878847956
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1.25-delay5-base.json.gz",
+        "sha256": "134d5edfa9af9f950e86cd5d9869535468a3c0294ed2fce259a3c130889f0617"
+      },
+      "cash_multiplier": 1.25,
+      "cost": "base",
+      "delay_sessions": 5,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.06008512444405878,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 3054.79901,
+        "fees": 78.91,
+        "final_nav": 11703.50268,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1837.9297999999997,
+        "max_drawdown": 0.07200184532249454,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6162029629470707,
+        "profit": 1703.5026799999996,
+        "slippage": 55.51712,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8648.70367,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10461.92789,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 461.92789000000084,
+            "return_fraction": 0.04619278900000001,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10908.84674,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 446.91885,
+            "return_fraction": 0.042718594000938026,
+            "start_nav": 10461.92789,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11703.50268,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 794.6559399999987,
+            "return_fraction": 0.07284509159764752,
+            "start_nav": 10908.84674,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1.25-delay5-base",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11918.138988262295,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -214.63630826229564
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004046960247843892,
+            0.0025147872504562244
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0008027053508478203,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.016511665637274797,
+            "month": "2024-01",
+            "reference_return": 0.0037243883627249286,
+            "strategy_return": 0.020236053999999726
+          },
+          {
+            "difference": 0.012139360713269376,
+            "month": "2024-02",
+            "reference_return": 0.021258134764772008,
+            "strategy_return": 0.033397495478041384
+          },
+          {
+            "difference": 0.005607227750686228,
+            "month": "2024-03",
+            "reference_return": 0.031198279841007315,
+            "strategy_return": 0.03680550759169354
+          },
+          {
+            "difference": -0.00550054465474914,
+            "month": "2024-04",
+            "reference_return": -0.03517156927959386,
+            "strategy_return": -0.040672113934343
+          },
+          {
+            "difference": -0.00507377944670373,
+            "month": "2024-05",
+            "reference_return": 0.01306037063032206,
+            "strategy_return": 0.00798659118361833
+          },
+          {
+            "difference": -0.0012617148874122242,
+            "month": "2024-06",
+            "reference_return": -0.0008373652006889998,
+            "strategy_return": -0.002099080088101224
+          },
+          {
+            "difference": -0.013094441638699772,
+            "month": "2024-07",
+            "reference_return": 0.02817130879951235,
+            "strategy_return": 0.01507686716081258
+          },
+          {
+            "difference": -0.010452079774129874,
+            "month": "2024-08",
+            "reference_return": 0.018464783213160807,
+            "strategy_return": 0.008012703439030933
+          },
+          {
+            "difference": -0.022479825417791255,
+            "month": "2024-09",
+            "reference_return": 0.018657757453108603,
+            "strategy_return": -0.0038220679646826516
+          },
+          {
+            "difference": 0.01135207704031671,
+            "month": "2024-10",
+            "reference_return": -0.014381247343135173,
+            "strategy_return": -0.0030291703028184624
+          },
+          {
+            "difference": -0.014981501551885268,
+            "month": "2024-11",
+            "reference_return": 0.03673506110657554,
+            "strategy_return": 0.02175355955469027
+          },
+          {
+            "difference": -0.005884593607687227,
+            "month": "2024-12",
+            "reference_return": -0.03888828483304396,
+            "strategy_return": -0.04477287844073119
+          },
+          {
+            "difference": 0.00034514043270328365,
+            "month": "2025-01",
+            "reference_return": 0.02465096379871312,
+            "strategy_return": 0.024996104231416405
+          },
+          {
+            "difference": 0.027464079909990224,
+            "month": "2025-02",
+            "reference_return": -0.0016393333173322366,
+            "strategy_return": 0.025824746592657988
+          },
+          {
+            "difference": 0.020001656721051808,
+            "month": "2025-03",
+            "reference_return": -0.031164013271623103,
+            "strategy_return": -0.011162356550571295
+          },
+          {
+            "difference": 0.016670971904345966,
+            "month": "2025-04",
+            "reference_return": -0.016780628694927913,
+            "strategy_return": -0.00010965679058194677
+          },
+          {
+            "difference": -0.005040427517091661,
+            "month": "2025-05",
+            "reference_return": 0.028210952211757734,
+            "strategy_return": 0.023170524694666073
+          },
+          {
+            "difference": -0.029409109631513775,
+            "month": "2025-06",
+            "reference_return": 0.016236394886102623,
+            "strategy_return": -0.013172714745411152
+          },
+          {
+            "difference": -0.0061150583406544,
+            "month": "2025-07",
+            "reference_return": 0.0018791791691719073,
+            "strategy_return": -0.004235879171482493
+          },
+          {
+            "difference": -3.758195904746131e-05,
+            "month": "2025-08",
+            "reference_return": 0.022171659308086955,
+            "strategy_return": 0.022134077349039494
+          },
+          {
+            "difference": 0.00744563209413962,
+            "month": "2025-09",
+            "reference_return": -0.005813302752364136,
+            "strategy_return": 0.0016323293417754847
+          },
+          {
+            "difference": -0.019404104906492914,
+            "month": "2025-10",
+            "reference_return": -0.006275481581479947,
+            "strategy_return": -0.02567958648797286
+          },
+          {
+            "difference": 0.011884585264132719,
+            "month": "2025-11",
+            "reference_return": 0.020890022177330714,
+            "strategy_return": 0.03277460744146343
+          },
+          {
+            "difference": -0.027931657196282544,
+            "month": "2025-12",
+            "reference_return": -0.003734370207714277,
+            "strategy_return": -0.03166602740399682
+          },
+          {
+            "difference": -0.0009569424379964886,
+            "month": "2026-01",
+            "reference_return": 0.022194338610270314,
+            "strategy_return": 0.021237396172273826
+          },
+          {
+            "difference": 0.010185121140748654,
+            "month": "2026-02",
+            "reference_return": 0.018647686072425174,
+            "strategy_return": 0.028832807213173828
+          },
+          {
+            "difference": 0.016152825220347555,
+            "month": "2026-03",
+            "reference_return": -0.03194283115153518,
+            "strategy_return": -0.015790005931187623
+          },
+          {
+            "difference": -0.02766050303664558,
+            "month": "2026-04",
+            "reference_return": 0.023787073977860285,
+            "strategy_return": -0.0038734290587852938
+          },
+          {
+            "difference": 0.011481273097364575,
+            "month": "2026-05",
+            "reference_return": -0.0006922184943030096,
+            "strategy_return": 0.010789054603061565
+          },
+          {
+            "difference": 0.04606765949479419,
+            "month": "2026-06",
+            "reference_return": 0.007613077711212224,
+            "strategy_return": 0.05368073720600641
+          },
+          {
+            "difference": -0.03457039700028164,
+            "month": "2026-07",
+            "reference_return": 0.022032982334954543,
+            "strategy_return": -0.012537414665327096
+          },
+          {
+            "difference": -0.009141584643231004,
+            "month": "2026-08",
+            "reference_return": 0.0077185957121328475,
+            "strategy_return": -0.001422988931098157
+          }
+        ]
+      }
+    },
+    {
+      "account_file": {
+        "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/completion-cash1.25-delay5-stress.json.gz",
+        "sha256": "54f3de38664444c96b3cc689879738cb8949c63d3152bc9a0dd8f962446ba78d"
+      },
+      "cash_multiplier": 1.25,
+      "cost": "stress",
+      "delay_sessions": 5,
+      "held_stock_actions": [
+        {
+          "action_id": "PXD:2024-05-03:unresolved_merger",
+          "child_security_id": "XOM",
+          "date": "2024-05-03",
+          "fractional_quantity": "0.9702",
+          "security_id": "PXD",
+          "source_effective_date": "2024-05-03",
+          "source_quantity": "3",
+          "type": "stock_merger",
+          "whole_child_quantity": "6"
+        }
+      ],
+      "metrics": {
+        "buys": 39,
+        "cagr": 0.05257891527925396,
+        "cash_reference_end_values": {
+          "0.04": 11115.26998750471,
+          "0.06": 11700.969289896377
+        },
+        "ending_cash": 2862.55505,
+        "fees": 78.91,
+        "final_nav": 11481.4342,
+        "forced_extra_holding_days": 0,
+        "gross_same_fills_profit": 1837.9298,
+        "max_drawdown": 0.07738491731725772,
+        "max_holdings": 10,
+        "mean_stock_exposure": 0.6223332031041303,
+        "profit": 1481.4341999999997,
+        "slippage": 277.5856,
+        "status": "COMPLETE_ACCOUNTING",
+        "stop_date": null,
+        "stopped": false,
+        "unpaid_claims": 8618.87915,
+        "unpriced_days": 0,
+        "yearly": {
+          "2024": {
+            "ending_nav": 10368.89145,
+            "first_date": "2024-01-02",
+            "last_date": "2024-12-31",
+            "profit": 368.89144999999917,
+            "return_fraction": 0.03688914499999996,
+            "start_nav": 10000.0,
+            "year_to_date": false
+          },
+          "2025": {
+            "ending_nav": 10756.9353,
+            "first_date": "2025-01-02",
+            "last_date": "2025-12-31",
+            "profit": 388.04385,
+            "return_fraction": 0.0374238511292353,
+            "start_nav": 10368.89145,
+            "year_to_date": false
+          },
+          "2026": {
+            "ending_nav": 11481.4342,
+            "first_date": "2026-01-02",
+            "last_date": "2026-09-11",
+            "profit": 724.4989000000005,
+            "return_fraction": 0.06735179489273313,
+            "start_nav": 10756.9353,
+            "year_to_date": true
+          }
+        }
+      },
+      "name": "cash1.25-delay5-stress",
+      "reference": {
+        "complete": true,
+        "days": 676,
+        "ending_nav": 11695.029529214493,
+        "first_gap": null,
+        "qualification": "Fractional equal-eligible-universe daily return at actual lagged stock exposure, subtracting actual dated fee/slippage rate. Not executable, not sector/beta adjusted, no cash interest.",
+        "selection_difference": -213.59532921449318
+      },
+      "uncertainty": {
+        "interval": {
+          "ci95": [
+            -0.004086976611672831,
+            0.0025321535184959017
+          ],
+          "expected_block_months": 12,
+          "limitation": "Few calendar years, selection after the earlier experiment, and dependence across months limit inference; this is not a probability of profitable trading.",
+          "mean": -0.0008125335513173883,
+          "months": 32,
+          "resamples": 2000,
+          "seed": 20260914
+        },
+        "monthly": [
+          {
+            "difference": 0.01651181352237785,
+            "month": "2024-01",
+            "reference_return": 0.001404456477622995,
+            "strategy_return": 0.017916270000000845
+          },
+          {
+            "difference": 0.012169487207164265,
+            "month": "2024-02",
+            "reference_return": 0.02044679566254559,
+            "strategy_return": 0.032616282869709856
+          },
+          {
+            "difference": 0.005623059304898925,
+            "month": "2024-03",
+            "reference_return": 0.030995093681441155,
+            "strategy_return": 0.03661815298634008
+          },
+          {
+            "difference": -0.005523489465252496,
+            "month": "2024-04",
+            "reference_return": -0.03571729290407677,
+            "strategy_return": -0.041240782369329265
+          },
+          {
+            "difference": -0.005091591464517986,
+            "month": "2024-05",
+            "reference_return": 0.012215248194851203,
+            "strategy_return": 0.0071236567303332166
+          },
+          {
+            "difference": -0.0012631878641647942,
+            "month": "2024-06",
+            "reference_return": -0.0016318922447108308,
+            "strategy_return": -0.002895080108875625
+          },
+          {
+            "difference": -0.013168362014454926,
+            "month": "2024-07",
+            "reference_return": 0.027518090214732283,
+            "strategy_return": 0.014349728200277356
+          },
+          {
+            "difference": -0.01051211775974914,
+            "month": "2024-08",
+            "reference_return": 0.01814525321384175,
+            "strategy_return": 0.00763313545409261
+          },
+          {
+            "difference": -0.022627653757231303,
+            "month": "2024-09",
+            "reference_return": 0.018388255420498822,
+            "strategy_return": -0.0042393983367324806
+          },
+          {
+            "difference": 0.01143147696149327,
+            "month": "2024-10",
+            "reference_return": -0.0147233650583527,
+            "strategy_return": -0.00329188809685943
+          },
+          {
+            "difference": -0.015088678737384287,
+            "month": "2024-11",
+            "reference_return": 0.03636834546373757,
+            "strategy_return": 0.021279666726353286
+          },
+          {
+            "difference": -0.00593156071487122,
+            "month": "2024-12",
+            "reference_return": -0.04001761891612832,
+            "strategy_return": -0.04594917963099954
+          },
+          {
+            "difference": 0.00034451392607115494,
+            "month": "2025-01",
+            "reference_return": 0.02457552706828192,
+            "strategy_return": 0.024920040994353077
+          },
+          {
+            "difference": 0.027712310815136254,
+            "month": "2025-02",
+            "reference_return": -0.0016539140448941225,
+            "strategy_return": 0.02605839677024213
+          },
+          {
+            "difference": 0.020176441905266573,
+            "month": "2025-03",
+            "reference_return": -0.03143722536755833,
+            "strategy_return": -0.011260783462291757
+          },
+          {
+            "difference": 0.01683241772470201,
+            "month": "2025-04",
+            "reference_return": -0.01694305245422245,
+            "strategy_return": -0.0001106347295204424
+          },
+          {
+            "difference": -0.005085129866793103,
+            "month": "2025-05",
+            "reference_return": 0.02796195231658083,
+            "strategy_return": 0.022876822449787726
+          },
+          {
+            "difference": -0.029682522041808213,
+            "month": "2025-06",
+            "reference_return": 0.015687971486011643,
+            "strategy_return": -0.01399455055579657
+          },
+          {
+            "difference": -0.0061698846069292435,
+            "month": "2025-07",
+            "reference_return": 0.001198021333296495,
+            "strategy_return": -0.004971863273632748
+          },
+          {
+            "difference": -3.8293440370429366e-05,
+            "month": "2025-08",
+            "reference_return": 0.021879838739250035,
+            "strategy_return": 0.021841545298879605
+          },
+          {
+            "difference": 0.007528726270720876,
+            "month": "2025-09",
+            "reference_return": -0.007084990178180206,
+            "strategy_return": 0.0004437360925406697
+          },
+          {
+            "difference": -0.019639637283283218,
+            "month": "2025-10",
+            "reference_return": -0.007160175195825791,
+            "strategy_return": -0.02679981247910901
+          },
+          {
+            "difference": 0.012046595514019875,
+            "month": "2025-11",
+            "reference_return": 0.020737044026546858,
+            "strategy_return": 0.032783639540566734
+          },
+          {
+            "difference": -0.028305928865245633,
+            "month": "2025-12",
+            "reference_return": -0.004007572931772674,
+            "strategy_return": -0.03231350179701831
+          },
+          {
+            "difference": -0.0009703614798917126,
+            "month": "2026-01",
+            "reference_return": 0.022194687334115892,
+            "strategy_return": 0.02122432585422418
+          },
+          {
+            "difference": 0.010330795050802699,
+            "month": "2026-02",
+            "reference_return": 0.01869929749880317,
+            "strategy_return": 0.029030092549605868
+          },
+          {
+            "difference": 0.016373719582102098,
+            "month": "2026-03",
+            "reference_return": -0.0331201672230661,
+            "strategy_return": -0.016746447640964002
+          },
+          {
+            "difference": -0.028072787691743484,
+            "month": "2026-04",
+            "reference_return": 0.02311257338874917,
+            "strategy_return": -0.004960214302994315
+          },
+          {
+            "difference": 0.011669313054760266,
+            "month": "2026-05",
+            "reference_return": -0.0009903534561488403,
+            "strategy_return": 0.010678959598611426
+          },
+          {
+            "difference": 0.04681800116101531,
+            "month": "2026-06",
+            "reference_return": 0.007418754048570175,
+            "strategy_return": 0.054236755209585485
+          },
+          {
+            "difference": -0.03511305622499694,
+            "month": "2026-07",
+            "reference_return": 0.022134852239267477,
+            "strategy_return": -0.012978203985729464
+          },
+          {
+            "difference": -0.00928550236399972,
+            "month": "2026-08",
+            "reference_return": 0.007641276776114925,
+            "strategy_return": -0.0016442255878847956
+          }
+        ]
+      }
+    }
+  ],
+  "model_fits": 0,
+  "new_network_data_requests": 0,
+  "new_paid_data_usd": 0,
+  "ranking_orders_unchanged": true,
+  "status": "CONDITIONAL_CORPORATE_ACTION_SETTLEMENT_SENSITIVITIES",
+  "strict_result_unchanged": true
+}

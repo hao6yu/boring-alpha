@@ -1,0 +1,54 @@
+{
+  "central_cases": {
+    "base": "cash1-delay5-base",
+    "stress": "cash1-delay5-stress"
+  },
+  "conditional_accounting": "Ordinary dividends and cash-merger entitlements are valued but not spendable without supported payment dates; fractional cash and stock availability are declared sensitivities, not brokerage receipts.",
+  "funded_ready": false,
+  "model_fits": 0,
+  "new_paid_data_usd": 0,
+  "prior_commit": "95dd022",
+  "ranges": {
+    "base": {
+      "cagr": [
+        0.05531677019780168,
+        0.06008512444405878
+      ],
+      "max_drawdown": [
+        0.07200184532249454,
+        0.0848154267893253
+      ],
+      "profit": [
+        1562.1226800000004,
+        1703.5026799999996
+      ],
+      "selection_difference": [
+        -377.20770816803815,
+        -214.63630826229564
+      ]
+    },
+    "stress": {
+      "cagr": [
+        0.04775239233021389,
+        0.05257891527925396
+      ],
+      "max_drawdown": [
+        0.07738491731725772,
+        0.09024493230202224
+      ],
+      "profit": [
+        1340.0542000000005,
+        1481.4341999999997
+      ],
+      "selection_difference": [
+        -373.8202760453314,
+        -213.59532921449318
+      ]
+    }
+  },
+  "ranking_parameter_searches": 0,
+  "recent_cohort_prices_now_seen": true,
+  "recommendation": "Keep the fixed score as a research baseline; do not scale capital or tune these now-seen years. Any next experiment needs fresh evidence of selection advantage and realistic execution.",
+  "settlement_scenarios": 12,
+  "status": "PROFITABLE_CONDITIONAL_BACKTEST_NO_DEMONSTRATED_SELECTION_EDGE"
+}

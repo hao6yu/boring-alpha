@@ -1,0 +1,1481 @@
+{
+  "ABT": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ABT.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "16c649b44cc6d588edb6b7cfac1597c27d57958642dd10bc38bc2966e582d694"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ABT-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "17f8a6ccec0e17f51846a762e95c90c4065af48f519920986e0297e0339732c6"
+    }
+  ],
+  "ADBE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ADBE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "9bbe6e263f30f2071654a9270e1903bec9cb51214e43a3e38828eaff80ae2c1b"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ADBE-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "9b7011dc4a7d268569bf3a965040cb44adbc790c2df803394ba48a6ed660676d"
+    }
+  ],
+  "AIZ": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-AIZ.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "c3eed66ea4620fc18afbde2b53f9f289a5b78abc3b6375ad3360ca2c926307f5"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-AIZ-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "e9c0dfed36459e2d4bbd348feb588bb1733ded0926dc16b3a645f0fd44618caa"
+    }
+  ],
+  "AJG": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-AJG.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "8d5b8a2d6134fb1e649f0081799d175a331395c3fa92d8b88f10875669b472c5"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-AJG-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "c1e7ca3d2065970064469111e1c8b5e0dbdddd7e9f16e86b7b04b4699e48e412"
+    }
+  ],
+  "AMAT": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-AMAT.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "0511c6aa91d5380594beef98bca4dfd27c77855f91c3c93c3a43e5e4915c0e1a"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-AMAT-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "d2210d9db485a6c92eb8b8e380108df31cc2bff763566761af8bb94f95deddcd"
+    }
+  ],
+  "ANTM": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ANTM.json",
+      "origin": "old",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "AON": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-AON.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "b1ec643e1bfb48659c1b1fb04322a7686874fb5ec90254da2038b74d207d7796"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-AON-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "55727433079038bfe369a49e2946441f33c13a5d7ccb609ebd9af263afbc86ce"
+    }
+  ],
+  "APTV": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-APTV.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "b82623ddcff280c6881a9668db6b21e6f1a9ab8d1ecdab610310992168621218"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-APTV-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3dbd4a88eaeb50a8cfef6bfeeba3f1ad5a04aad81b7ca09210a9ec33bb3b2d28"
+    }
+  ],
+  "APY": [],
+  "AVGO": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-AVGO.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "57805279105233e9e3da925838db6cef6f7a2d3eb3e31cf05e7ccc7e9fc85ba0"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-AVGO-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "2728ad55cce4b5ea2a3094907bd1d09cbfee1a9e78d1a0208ebdee29ce9c2257"
+    }
+  ],
+  "BALL": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-BALL.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "823b8e861285100445df476011dffa0e56efd834be0cbae7b0f6171d3477b674"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-BALL-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "7d6b62bff015852690da9a9bd5489040952f87db9f2ce4e458c4bcb56a71f5be"
+    }
+  ],
+  "BBY": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-BBY.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "cfc531b0c07910270884e3a99598706764fe9b8882aa3f5c9c5b52c25b499ee0"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-BBY-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "db87d95e77d214a03a228988e67458121ede4aff5995db70313ac8f3e3eac39f"
+    }
+  ],
+  "BHGE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-BHGE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "2af06159937a141374bc34c47d4071fc1e439220ca56e50ce03a52cf6ab929e1"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-BHGE-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "ad9556eab45ab7af0434e72b2d2bcf076842349113ef83390c14b98910bf2df1"
+    }
+  ],
+  "BLK": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-BLK.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "e979ae4215f98816fed31db1c135e456d3db7f11946906dc0fbca7084cbdb25d"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-BLK-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "6a965467e29746a2b2487b4825f18bdfec3575bdf8caea00bc2bb9fefb6f424c"
+    }
+  ],
+  "BLL": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-BLL.json",
+      "origin": "old",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "CBOE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CBOE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "afac5d74842737463a907c3af53e4d93f182356ebbb3a64dba2c5172a01c3ecd"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CBOE-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5a4c6fa6a3b3a8cee6181eb19ad2df8c29d78ec696207ec695b40ee2626edb3d"
+    }
+  ],
+  "CERN": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CERN.json",
+      "origin": "old",
+      "rows": 1053,
+      "sha256": "d34dc545740014e326c24116a580cb8392d1dfee4f8383caa30d0e16a5ec8740"
+    }
+  ],
+  "CHX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CHX.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "5d60eb7613e866a80671183ed835194c7b625712d7671e9317b0454d57c0d90b"
+    }
+  ],
+  "CI": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CI.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "844812198e73e926c98de45e4d5dddc03fc570d3090229be18be42ba51c529b9"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "a2a81a6fb6d3f591044e21cb11202c5516fccc9b59f9e9f47dd66b1519d910df"
+    }
+  ],
+  "CLX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CLX.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "a8efd1e318a88d27c43028809a1d12074726cb41b8164f66c6fdf6a375428a15"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CLX-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "02255d6f7f07878864d8e319ca5c7bac3aa3bdc1c564311f91e10697eec7a795"
+    }
+  ],
+  "CMI": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CMI.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "b6da7bdbfa207848109bdd7f83eaec37b10fd72ddb12b4e63aaa7911c311733e"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CMI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "bbba98b6ed6e14f7ee79c3440c77d6280f32aaeab8af5774b734eed4cbe2299d"
+    }
+  ],
+  "CNP": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CNP.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "dc9bf52a179f7e9f2693f743dfa141eb0c0901e75c4e1d9f9735eb1a0e00d59f"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CNP-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "cd377e866224d1adc316cd28576ce7553ec14a5dcea4b889d6d623145f20a743"
+    }
+  ],
+  "COF": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-COF.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "b0c70b572138d1498e300c00b430da06b5e59d1c980479dce088096d1e1fe965"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-COF-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "f5c9a8d934ca3c32f1cf9f9e1ef5b7f4eab2518475024e3749b9775840778936"
+    }
+  ],
+  "CP": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CP.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "a636427272c20a4dd2789018019176484aab5c88f67c0ca67fbfcc6cb9f649fb"
+    }
+  ],
+  "CSCO": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CSCO.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "f65dd98ff0d7d4b868859aee1fca7d13d0dfa3f45058a4d88167878b8a0ad990"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CSCO-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "b02b3cac251d652bdfacf204c4864b0f765a8c4ba538f929bfd677a0f81a224e"
+    }
+  ],
+  "CTL": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CTL.json",
+      "origin": "old",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "CTRA": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-CTRA.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "89e5b9b7cf3af2b594c0267a6b40117be83bc2c243953bf6f28ca6adedc5f7ef"
+    }
+  ],
+  "DISCK": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-DISCK.json",
+      "origin": "old",
+      "rows": 1019,
+      "sha256": "d1e2b59353e69772ff14effff46160d91106a492e23dba3767f7d752566cb060"
+    }
+  ],
+  "DLR": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-DLR.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "808af2ba70726871a3203507b111b4c98fedacf9bd023ccfa3cb9c6c55bb8c96"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-DLR-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "39f7780de80f6059bffde1426373f695528b99d4388fb91626cb00792ec0ff95"
+    }
+  ],
+  "DOV": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-DOV.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "db14fe002a3c74b6abb3cef77eb4e1d9206a4dc139082c44a82e963a0ecd9713"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-DOV-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5305f7e065a0ccc0f99e7c80afe4341b36a42fcd7a8ff585acc647fed323f6e4"
+    }
+  ],
+  "DRI": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-DRI.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "d593491f187b0da3e532f3316482d2cff68cfe37ac3d7b22525c8ff8d914d22b"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-DRI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5b4662b2e01faf583723c3e5667ffe86f96afa975046c089c96424bfbc2193cd"
+    }
+  ],
+  "DUK": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-DUK.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "60d02fed2a8ecbeb82ef8f84b56fe05b5bb04660c91b3659926f24a6883cab03"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-DUK-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3b99a2bf95840be23ca4d9b8beceb5e0eae76152da2a793871f7bee4dfb7e63c"
+    }
+  ],
+  "DXC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-DXC.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "eecd1ee8cffe0da5769a5b9ac415ec834c74049fc9119a4e3a87b8ab3bdfbf40"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-DXC-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "10c69fc2917c6333fbef509dcc0ab0c041ee52048e2f2fa82fcd64dbd959b3fa"
+    }
+  ],
+  "ED": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ED.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "c850ec4627d201607ddf5da06291512fada7c84f87d399d960a68a56450740ee"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ED-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "456bba056ec4782ee2b38431bdefea4768e3866d0dea44137c4b9518da300730"
+    }
+  ],
+  "ELV": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ELV.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "13389606213115a771a7c0263251951cb9207e22a037a8fc1fb59784f0205f2b"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ELV-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "84f326beb260aa516866714ae36abf3290b7b522fb8c1d9cf7848665ccbe7c4b"
+    }
+  ],
+  "ES": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ES.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "afc9ba57ff4c03001ab1b4adb8111b6411ec19453c6518c86b05d62b8828761e"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ES-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "56ea56da631d7cbf5598ca8fd9012cc584dcb2d63448b89f44065e3e3ebaa5db"
+    }
+  ],
+  "ESRX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ESRX.json",
+      "origin": "old",
+      "rows": 163,
+      "sha256": "bb701472b588578a31090c62cf8b87c370ef68b5dadcd7492ee28bbd01be16d2"
+    }
+  ],
+  "EW": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-EW.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "244bc2853dc24bfb9243531d273566c1831a8e9ed3c7a5c3a08ce445f8165e9c"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-EW-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "ea11085b3b81c955a4ea5c422f3f2bdaed9eda846a9a954b24f46d6c1601444b"
+    }
+  ],
+  "FAST": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-FAST.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "7b9ba0073b575c4a8db4b3fc743a104e74fb3df678d34cd87b3b752e773665ac"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-FAST-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "cd57f5038f1d15d2a14f612cae8c38efd0a81a80053af13247780461c02399e0"
+    }
+  ],
+  "FCX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-FCX.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "d2b498193b87b7900812494efa848533e74de284364a21b25f6db26c1bc4f4fa"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-FCX-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "1a0ec9124496a640691c200ef6f70ed905c53f3181ae6070b7f3e204b90e7367"
+    }
+  ],
+  "FLR": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-FLR.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "cab9567fc75aa10e99858a9ad07b9152be2f2bf979c6197b2a906f271c10d417"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-FLR-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "e7be22fafb13e775312df19fea8256948b7123a66c9621248b31b09e9859a729"
+    }
+  ],
+  "FLS": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-FLS.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "78bf504b158defab4238a404907729b36480d54d918111d478fec2decbfd1e9f"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-FLS-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "20b418b811dcb60fd99d924365d78f2c5a45ea1f11e1bee5c092fab2f7c2d061"
+    }
+  ],
+  "FOXA": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-FOXA.json",
+      "origin": "old",
+      "rows": 1211,
+      "sha256": "a605994aa54466ddc052fafd23ee6bc85fa4d648aea8976041313ee24195f65f"
+    }
+  ],
+  "GPN": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-GPN.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "79cf3ab4efb2a6269754f9b3b1f5dc5c68b4c135c40f374316602851299aca38"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-GPN-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "52f34a09345668f7c66be070ac1b42f4c4eaf530d079fafe9fb4aabbb6e6e199"
+    }
+  ],
+  "HAS": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-HAS.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "ac7d400de3e523073becbdfa61adf1a5810347c1ffea43e7bc786a87186d3fe5"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-HAS-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3eeebf6704623dc52edd4694effa142f9fade426b7ec650c865f0ba1b9810d75"
+    }
+  ],
+  "HIG": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-HIG.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "612898a1d06b501c2542c1350a38c2f6078ffb7a45a5d45e7d8f963754ae4bb1"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-HIG-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5f57a3050da4dd037ec40a445164290bacb6d633aa0cf171dee96ce10d7d4dc0"
+    }
+  ],
+  "HLT": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-HLT.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "aa6715a26a43d8253ea18f6e0b3586d1cd22d47d5d688344cbb50e67deb280b1"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-HLT-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "257851690463ae3726e74ba01662b3ca06d96f04ec1bc58f04e41f875c607c0f"
+    }
+  ],
+  "HPQ": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-HPQ.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "e4d3b75755852bde42c022b5ae7e0fb28194f77f0676bf2a7bbf1179b5741058"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-HPQ-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5a4bcb3578e72a3010c21ec4fad5e25ee23ac0c7c474a10bddfb86356de96590"
+    }
+  ],
+  "HRS": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-HRS.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "702968bdf69f76fbe4d0d3b9fb447114f004c941af4e7d3d198268d945bc3513"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-HRS-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "db386c0b78ae814286c84bdd225efc293af3f06accfcf39f2b1915a21a614eda"
+    }
+  ],
+  "HSY": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-HSY.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "bfa1626fb8864bb3f3c46b8c0283f2ce46d5b0efdaf5026047e42738cce9b5ef"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-HSY-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5720071a39f9457f6a15e3d9d9fe03fbe15d7b44eaeb8064a920f7123b1dcbf6"
+    }
+  ],
+  "IDXX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-IDXX.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "76cab1b45f9e171fe242d9654f66d1d11e4058014673b8c5b475349c91292807"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-IDXX-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "464c5921d631d33542a244e1087bdae4e2d682d66175caa22ad434a358ec8527"
+    }
+  ],
+  "IFF": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-IFF.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "14fb7e5850150d6b12c6a36858fef3b7920280945100e533eea9d7e6e8113b2c"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-IFF-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "9f3bc9bbf6e6db26d35607a75b37ced447bc9f8ca5f6ad137f1d5033030b9897"
+    }
+  ],
+  "INCY": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-INCY.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "9ac5f847158b1c46cc2aa8c07c4aa373e12376992ecac2fc3ef9564ce3737b74"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-INCY-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "af694e8742830abdd712c70d92a0d3ff54537b85bdc520e522d9c7704c5b8727"
+    }
+  ],
+  "INTU": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-INTU.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "b07a9028b635bdb8641c361b6c3bdd7b383068d45518992bb8ec7ac618f98ab8"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-INTU-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "41f553f85e2d6d9e1e071734868c4f301f19468635a96cfd8b957643d40a6e32"
+    }
+  ],
+  "IP": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-IP.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "b769be5a6ad7a4b164e7e1a742a811a8bf35e7db8c5dc8e7339d02ee257769fc"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-IP-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "2d0fafbe147906d445743bc7f867dcde2b79953462a7e28b3f2115836316fdcd"
+    }
+  ],
+  "ITW": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ITW.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "0bcb93e07ca70d572aa620ecc0e3540562d542c9188eb22fb8ebe3af13c0a90e"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ITW-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "07fab10b6e5c5cd7b572a90ca91b479cda0dbb13a3b1738b5c7d45856c9f1bf3"
+    }
+  ],
+  "JCI": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-JCI.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "e826e30064bbe6a5f4554ae2b19ce4067da8d0eb1db663aeee62e79f6a2fcd75"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-JCI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "8d4b1b72fef5359c296c2b470ddd384a909525993bbbca99e118b1c9e8de858f"
+    }
+  ],
+  "JNJ": [
+    {
+      "file": "data/snapshots/ml-free-data-preparation-2026-09-13/tiingo-JNJ.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "d0eb236187b2e6f932af790d50dc3980a53adaff4d3bf71c9e5c05481f90eab4"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-JNJ-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "62073ae7953ab801d1fdb6f2902b941bdfb83afb31245693c69c64118b6b3268"
+    }
+  ],
+  "KMB": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-KMB.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "672d4da77d7de806d82475f22440f43f2227c70ea038be819ad0744e7b2b871d"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-KMB-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "91ab1d63b12d3ea86d8c93f489d7d24abf105d10257c8dfac9c012a7c2d9c143"
+    }
+  ],
+  "KORS": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-KORS.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "0628040eb8a1aa5d0b6cec928896d74da0411717431f870b9927b1aff7d9027d"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-KORS-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "59d990bb4f7ba4c3150b1e9d72fdf971be7cc4a18e090264c255bb66ec0accfa"
+    }
+  ],
+  "KSU": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-KSU.json",
+      "origin": "old",
+      "rows": 913,
+      "sha256": "336f025f49f1371d80d78d51f80d1e6e734dd17e7089c453fdd5fcc96222602d"
+    }
+  ],
+  "KTB": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-KTB.json",
+      "origin": "old",
+      "rows": 1169,
+      "sha256": "a3abf23d106acfb8e5b0f85d17ca6ced8a3b4c0444317fbc53f604b83bb89c3f"
+    }
+  ],
+  "LEG": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-LEG.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "91b3e146b2adb725b0bb852183337f7eca276edd1985bd6375ddcd06d24d163d"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-LEG-recent.json",
+      "origin": "recent",
+      "rows": 1167,
+      "sha256": "92d933efc3fe94d2b1ea0524a274e736a32c311a743edc7fbe3aa0a54f656e5f"
+    }
+  ],
+  "LUMN": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-LUMN.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "7f494626bf1f41e79c9933b6f26eec993125d32c0cebc536b17d8d3a3cb44c52"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-LUMN-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "db7b4d7b9ce3739161214d1ad1d7c3f72a4ff7bef0c15d9341aa011dc1d4f257"
+    }
+  ],
+  "LYB": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-LYB.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "fedf8255dfb3feea44368068239c10a87ac2335e2b45c80a08fb78f6fcb0ee57"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-LYB-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "93778cf880822779326a76fe4c808c353d2bf698d0ccb83dc834653556d96f5b"
+    }
+  ],
+  "MCHP": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MCHP.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "96afd582d72d39c6ca78225b7c1b95ce1395df1da41f44e116aa487b3ac12f9e"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MCHP-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "1c0a43ec0131161b1563b37d4b19a85e306c30640af7325d620e1b60891d2b3f"
+    }
+  ],
+  "MCO": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MCO.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "9f65a7a354aa598b32dc4c5e3e7add8290828476369440481dc36d6e78f37543"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MCO-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "54ab34f24e2da85c0ad859f152bbf54d82647caa3c759917f97a23917603046d"
+    }
+  ],
+  "MDLZ": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MDLZ.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "81bc3ac9d8e7a3b385a96a0fdd35a5890896a87841e60bdaa0a8b3bab565d846"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MDLZ-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "306918b257b63b47925d63662ad0e576551ffa822fde23ece5d3c47e3229a764"
+    }
+  ],
+  "MDT": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MDT.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "bd338eff45eb7497b8c2aba8a40ffeffdd0cfe8bff845c93e932e07f646ada27"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MDT-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "ef647e371b82a04f889d818d80bce44f8d524874adb83ba82509e2954a696429"
+    }
+  ],
+  "MPC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MPC.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "fcd6986a9dd3c872cbfa484ad2f941810128bb8cc2c479b36da5f149e63558bc"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MPC-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "ff237c1ad5783056736ebf24bd2d6f9fd308c2e6312f0b946f7921d604868d53"
+    }
+  ],
+  "MS": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MS.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "f9a3afba41ebe33c3337bae7f74bc61408c3f2b22be68931d789c490dedb3225"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MS-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "a3f7a51008707e8b2af9ecd05c99159a57283936b551a9cbce60b41d9e020bdb"
+    }
+  ],
+  "MSI": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-MSI.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "17f4855de52cc0961f069e8608baa110bc3533f3f99932aa8acb52bd6243a28a"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-MSI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "206186455975a68da2a79b5b683090d4dbe445cfc8d071a1db55ddb43ea4dbfc"
+    }
+  ],
+  "NKE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-NKE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "57fde0c7b065e45648367b343bda114d9730f94357407accef0a96ea09bf8643"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-NKE-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "698b18acd17bf628be09081d6aa4624832c3b192abb2ed182b4a20d7dd96f832"
+    }
+  ],
+  "NUE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-NUE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "f2bd7e87fab4a506b12189c128336e765146199fe1cfcc82d1e2a80d846baf7c"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-NUE-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "47ea5b5148412faa63f060afdf1c33687d41a28aa129b02017a7e4fc0235425e"
+    }
+  ],
+  "OKE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-OKE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "7789f59c2cb8648e5145e6dd7e8b2d4c2b87a96b5eab1c3465d09626bcff7d4b"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-OKE-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "c34b0ff626c65ef41cd4a0ef7089e9e65f944b54015eeb368aa45af39abb9431"
+    }
+  ],
+  "ORLY": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ORLY.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "63800da7f5a76dd4f6e695632464302e9506792125543db454ac67cc40e0b293"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ORLY-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "fef5acc0bae0ddc3160a792ef9ac378c0429ee3f55ab7eb5614fe5c381c405f7"
+    }
+  ],
+  "PAYX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PAYX.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "0a439cf058d659eecc618f80629738ad001806e6affc449087aa0c3839123a20"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PAYX-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "00bcde0b05f850320c90e416ef892ee602a90077ca1d3d9e4de04509168e1522"
+    }
+  ],
+  "PG": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PG.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "8efd3e814b789ddc70f283c36544ccfe95e199f28d9017efba07b2e8bf8f6fa4"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PG-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "302cab8187368615efaee54bcfbede03417684c1e3108e302dc64050218a6084"
+    }
+  ],
+  "PH": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PH.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "58a26950a888db68e08f7bf0c82f809b6d901525187dd742abe963f78c6ae74c"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PH-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "174f0e31c581dedf7b9146e3f5c015f747021ce21186b58eee78f8e42e0b9671"
+    }
+  ],
+  "PM": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PM.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "62450d11d43a3ce6150c7fe8fcb68e72f105a9f8d63fd195339d6ff894a6fb92"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PM-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "b30d91e63967efc861c4854a98322a3ac4585a02866e8b2d6a7e223ee0753320"
+    }
+  ],
+  "PNR": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PNR.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "be00271b04f4fac8acf16212634d1f259d13c76b508f3122b5dd731c658ed5e0"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PNR-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "8a60765f57c26d63b63d169865d897d47f398835fc4a20cbc464918372b275d0"
+    }
+  ],
+  "PRSP": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PRSP.json",
+      "origin": "old",
+      "rows": 738,
+      "sha256": "1809dbc009f71e1bab8b4f5c2865c49ea0cb0cc180651c994952aa8a2dc678fc"
+    }
+  ],
+  "PXD": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PXD.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "8cbd251889cf84913615ae02e7d6c358eb4087f4363a6ada3ba9d93905e8516c"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PXD-recent.json",
+      "origin": "recent",
+      "rows": 587,
+      "sha256": "32d9cf861c4d1ace887bdc1c38b1a3a8f623dd5258f72a34006ccaa036440439"
+    }
+  ],
+  "PYPL": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-PYPL.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "82b2dfb0fc907197684d56e6d7baf1a0686c59f09fd9ddefab05cd0cfa21c14f"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PYPL-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "dc31241eea3651629f943d41e073eca39b05342b4e4bb77a15033c55b9007a53"
+    }
+  ],
+  "RF": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-RF.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "ec111e7c8db61e1ef873afdbd64a62d58f5bdba7cd35921769c783a4d3695a7e"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-RF-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "eac022a9f7cf7697287b5e7129647560bf8e110581d20e20aae4e2346b09d87d"
+    }
+  ],
+  "RHI": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-RHI.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "6cd198d4e0dab1c5c96a9d1dc7186cf7a5b38cf4702be4c4d41de3ea4b0b06e5"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-RHI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "6ab11b08f41ab58a8ab0fa03b06f917667f445863fe2f0f1cd4b87d1875cb117"
+    }
+  ],
+  "RHT": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-RHT.json",
+      "origin": "old",
+      "rows": 298,
+      "sha256": "eadade8fcf6c293f1672abcad5866807a8c9d5d6b791ca0505a9a1a88b07ef55"
+    }
+  ],
+  "RRC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-RRC.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "d700a1af831ba986901a852cbd671bf3b51b8236061e2d942a92098ae65b94c0"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-RRC-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "c785c948f369e6275c5eb3df9678fe5cc3a22a3bd9ba718dadb554e2ee104919"
+    }
+  ],
+  "SBAC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SBAC.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "37939ea79b105e42459841cc849a3371bda37405d23ec2feda7d260dbf310921"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SBAC-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "a31b558f04489251b24df5cd756ae558e575e9638c3fe5ed09f226b03d4fa4b6"
+    }
+  ],
+  "SEE": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SEE.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "de060a205941707e5724567b86b6d0cf3f342e33b0983fe946c87ba98f143936"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SEE-recent.json",
+      "origin": "recent",
+      "rows": 1070,
+      "sha256": "a6e6ffbd6cb875b6c61071f28f8b32e1a9a879f42d84685380667229b3500d18"
+    }
+  ],
+  "SGI": [
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SGI-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "1bbb0b8ada97506480cbe779b639a0fcd1cd9c6fa188470c19b79bfab036c2be"
+    }
+  ],
+  "SJM": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SJM.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "218e97bc7c92d835c3ca94299344d4d5fe248bca8d4a1d5f68151d09064e8da7"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SJM-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "c902221d23a1e81d40d682cbe68ed56e421c5f854be6399371cb654a16c4b179"
+    }
+  ],
+  "SLVM": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SLVM.json",
+      "origin": "old",
+      "rows": 571,
+      "sha256": "1a46bd39ea6bfa0591ac92ef6685e6c0fa2c5c20a74b92c822820d702be23d38"
+    }
+  ],
+  "SPG": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SPG.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "92ae151954176e588c3056fb315a88bc6e6fe53088a9b04a0c22f6c33e4da2e6"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SPG-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3a0d431ad0579613562b0a525331bb825f30d44972a3cc4fb563abde11ab030c"
+    }
+  ],
+  "SYF": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SYF.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "d235e0de118aad213cbabec1c0a12055d5c0fabe951ac3824368ad209f26c017"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SYF-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "76600d5e9d1b05b1757d8972a56f1d6bfdb14f7c8aa547693c380ffa907686a5"
+    }
+  ],
+  "SYK": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-SYK.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "ffb0da0a378f0d44ccd0a8df9d3b2a429445eb20bfcfdeca914841b89df290d4"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-SYK-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3b46d6dfc60a36316dd6de1f9110a95d7533215681aa15f5ab69ea411bb03efc"
+    }
+  ],
+  "TMO": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-TMO.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "dcdf2413462032b82aff3604b4c2eb2519d2c0579ace57d45730fc7e0289bd80"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-TMO-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3f36d7e79b8f92fa04ce3c99727695aa41e8ad2a1f1a0cd3f27fac4b8789d1e4"
+    }
+  ],
+  "TNL": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-TNL.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "dbdf4686ba5fd243aa16ee0976ee7e0b21866a075d51f5219b1fb16b15cc9616"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-TNL-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "1c392a5d3de638ee2460afe8eb3ed9c448672af84f5ab9174d2be8e851335ab1"
+    }
+  ],
+  "TSCO": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-TSCO.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "649db2f2fab8130b21a97195978a9f7e7d2c3479093a43190fff7831ba5bbffc"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-TSCO-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "c5e80324c6c2870afc6f17e7a35effeee66247376b198e4e0881b3a00c1f0ce6"
+    }
+  ],
+  "UAA": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-UAA.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "499c7829f44baa8be95a189aecc5fc7cae8b7a7e39931fbc1b1691dabc36607f"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-UAA-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "0dab05833ffc8549376d4627202ac29b06d96d4a97d5b2860ca55383b3b67e27"
+    }
+  ],
+  "UAL": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-UAL.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "6300d980d66e65a5aed196fa8ab11d75c1d7300ca4314cc723b6110c6dab2434"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-UAL-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "cfb730a524ed2c58385d4c203945ac10918fe6c91e4f74f20bb4b3cdbf3a220c"
+    }
+  ],
+  "VFC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-VFC.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "7b260d83daf1c701ee64a72bbe82a4c03d61adf60ba2ef88c472d9c383828305"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VFC-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "3fa79952240c3bcb19ec5987c09a49e29b17f7233015c3f2efd63b16a6f4f9cb"
+    }
+  ],
+  "VGNT": [
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VGNT-recent.json",
+      "origin": "recent",
+      "rows": 113,
+      "sha256": "b48b35cb54ccc047302507b94dd036811d46cc8fab283a9db24d6cc0b14c3979"
+    }
+  ],
+  "VMC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-VMC.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "e7a3289cab21a13ca5e4e3699202244d2aee9c4ef6d483a5f89791901c7138d5"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VMC-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "05cb4d69da5190acb14438d63538f850d98acb732a1128a25ac24a57ec1e29cc"
+    }
+  ],
+  "VRSK": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-VRSK.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "c474ffdf8084bdb7fb0d7804e736be58884e6e255037d1b13de1dc77f12a024e"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VRSK-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "d17ee2705c73e16bec172381c71e56de71f629440c62ed8c9f85c7d721a7bfd6"
+    }
+  ],
+  "VRSN": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-VRSN.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "0cbf8ab2faf05b50c1a6bb99ae96b1f0d878df384663201c17c79d233cc5db99"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VRSN-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "f845e6b739a33956e08e1af3d500c42e2af9398580fae400ff87732977a1859f"
+    }
+  ],
+  "WH": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-WH.json",
+      "origin": "old",
+      "rows": 1411,
+      "sha256": "3483eb687c99a1f08cc3816f82c8d60441b0ddf69c2422fe87bb6b6ba06aff51"
+    }
+  ],
+  "WHR": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-WHR.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "805ba0351c7d445b3d988101dd7ce166ed9feeb5f647306cc4c5cb63a1f70634"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-WHR-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "ec9a48a120d9dfe49a91ebc87c41289c05dba554912322850827d67800e60206"
+    }
+  ],
+  "WY": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-WY.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "61b88707baf334c269a683f300db8b01d6935bed517537e1d57bcdce3f3275b5"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-WY-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "a7a1b4bbcb2cae5bf03b333aec6d0a538920e1a3ed36720ba7d6480f26211507"
+    }
+  ],
+  "WYN": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-WYN.json",
+      "origin": "old",
+      "rows": 22,
+      "sha256": "fbc5e3aa63754da3543776f479e9ee5ceddde33e36f93ced69b713513dbaac72"
+    }
+  ],
+  "XEC": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-XEC.json",
+      "origin": "old",
+      "rows": 864,
+      "sha256": "077fa361ac56b2ffd075ef7fdc75bd7a8763d9ceebd642aa5bcad923dca7f57c"
+    }
+  ],
+  "XOM": [
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-XOM-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "bd7994a090696bb2a0256eee0cc97bc611c56ac1acfe55392d1e19a002ceda61"
+    }
+  ],
+  "XRX": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-XRX.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "f4e7ce974f2bf2f67c62906583dc87e6b572174d9675d5d1b2d0686afc4b69e6"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-XRX-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "20a93ed4a33077af7ebf1af89e86efdd2d1ad7b34fb3e903babbad7e703ffbac"
+    }
+  ],
+  "ZBH": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ZBH.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "56239b5714809894556b864bd1b7a8a350610c4b70542384dece64826b258259"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ZBH-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "5d2903bfa089ee8f8dd8df5a9de8f6074a93c7b164cd3eee0cb50b8cd6df21d7"
+    }
+  ],
+  "ZIMV": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ZIMV.json",
+      "origin": "old",
+      "rows": 462,
+      "sha256": "ef33aaf4dead6adadc618d3d19d27f8a6c69dbece840e1a47797eec925ef6c46"
+    }
+  ],
+  "ZTS": [
+    {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tiingo-ZTS.json",
+      "origin": "old",
+      "rows": 1427,
+      "sha256": "f47de279428c97f3e95729d1d4e6f42959e112cc9b392e39c88523a8bcc2ea2c"
+    },
+    {
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-ZTS-recent.json",
+      "origin": "recent",
+      "rows": 1177,
+      "sha256": "6a1c9ad6027263369fddbed41eda9774a57f9403a65558636238c17a80c6f0b8"
+    }
+  ]
+}

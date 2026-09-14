@@ -1,0 +1,18 @@
+{
+  "scope": "Supporting corporate-action research before evaluation; not applied to the frozen account.",
+  "PXD": {
+    "source": "https://infomemo.theocc.com/infomemos?number=54574",
+    "publication_date": "2024-05-10",
+    "cash_in_lieu_price_per_child_share": 116.5789,
+    "OCC_deliverable_cash_per_100_parent_shares": 39.64,
+    "child": "XOM"
+  },
+  "APTV": {
+    "source": "https://infomemo.theocc.com/infomemos?number=58752",
+    "publication_date": "2026-04-10",
+    "cash_in_lieu_price_per_child_share": 27.28,
+    "OCC_deliverable_cash_per_100_parent_shares": 9.09,
+    "child": "VGNT"
+  },
+  "qualification": "These are OCC adjusted-option settlement facts, not verified ordinary-share broker cash receipts or payment dates. They cannot silently replace missing account-specific cash/delivery assumptions. No sensitivity or extra strategy variant has been run."
+}

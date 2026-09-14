@@ -1,0 +1,572 @@
+{
+  "all_original_slots_retained": true,
+  "full_months_only_for_labels": true,
+  "monthly": [
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 37,
+        "cfo_assets": 85,
+        "earnings_price": 39,
+        "roa": 71
+      },
+      "known_labels": 88,
+      "month": "2024-01",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 7,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 37,
+        "cfo_assets": 85,
+        "earnings_price": 39,
+        "roa": 71
+      },
+      "known_labels": 88,
+      "month": "2024-02",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 7,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 42,
+        "cfo_assets": 85,
+        "earnings_price": 40,
+        "roa": 74
+      },
+      "known_labels": 88,
+      "month": "2024-03",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 7,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 44,
+        "cfo_assets": 85,
+        "earnings_price": 40,
+        "roa": 74
+      },
+      "known_labels": 88,
+      "month": "2024-04",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 7,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 42,
+        "cfo_assets": 85,
+        "earnings_price": 40,
+        "roa": 73
+      },
+      "known_labels": 88,
+      "month": "2024-05",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 7,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 84,
+        "earnings_price": 37,
+        "roa": 71
+      },
+      "known_labels": 87,
+      "month": "2024-06",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 36,
+        "cfo_assets": 84,
+        "earnings_price": 36,
+        "roa": 71
+      },
+      "known_labels": 87,
+      "month": "2024-07",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 36,
+        "cfo_assets": 84,
+        "earnings_price": 36,
+        "roa": 71
+      },
+      "known_labels": 87,
+      "month": "2024-08",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 85,
+        "earnings_price": 37,
+        "roa": 73
+      },
+      "known_labels": 88,
+      "month": "2024-09",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 85,
+        "earnings_price": 37,
+        "roa": 73
+      },
+      "known_labels": 88,
+      "month": "2024-10",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 33,
+        "cfo_assets": 84,
+        "earnings_price": 37,
+        "roa": 73
+      },
+      "known_labels": 88,
+      "month": "2024-11",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 84,
+        "earnings_price": 37,
+        "roa": 72
+      },
+      "known_labels": 88,
+      "month": "2024-12",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 88,
+      "financial_feature_available": {
+        "book_price": 35,
+        "cfo_assets": 84,
+        "earnings_price": 38,
+        "roa": 73
+      },
+      "known_labels": 88,
+      "month": "2025-01",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 35,
+        "cfo_assets": 83,
+        "earnings_price": 37,
+        "roa": 72
+      },
+      "known_labels": 87,
+      "month": "2025-02",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 40,
+        "cfo_assets": 83,
+        "earnings_price": 37,
+        "roa": 73
+      },
+      "known_labels": 87,
+      "month": "2025-03",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 43,
+        "cfo_assets": 82,
+        "earnings_price": 34,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-04",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 41,
+        "cfo_assets": 82,
+        "earnings_price": 33,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-05",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 31,
+        "cfo_assets": 82,
+        "earnings_price": 31,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-06",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 33,
+        "cfo_assets": 83,
+        "earnings_price": 32,
+        "roa": 72
+      },
+      "known_labels": 87,
+      "month": "2025-07",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 82,
+        "earnings_price": 31,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-08",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 33,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-09",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 87,
+      "financial_feature_available": {
+        "book_price": 32,
+        "cfo_assets": 83,
+        "earnings_price": 31,
+        "roa": 72
+      },
+      "known_labels": 87,
+      "month": "2025-10",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 4
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 32,
+        "cfo_assets": 82,
+        "earnings_price": 31,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-11",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 33,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2025-12",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2026-01",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 2,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 71
+      },
+      "known_labels": 86,
+      "month": "2026-02",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5,
+        "TURNOVER_BELOW_10M": 1
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 41,
+        "cfo_assets": 83,
+        "earnings_price": 34,
+        "roa": 72
+      },
+      "known_labels": 86,
+      "month": "2026-03",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5,
+        "TURNOVER_BELOW_10M": 1
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 86,
+      "financial_feature_available": {
+        "book_price": 44,
+        "cfo_assets": 83,
+        "earnings_price": 34,
+        "roa": 75
+      },
+      "known_labels": 86,
+      "month": "2026-04",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 8,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5,
+        "TURNOVER_BELOW_10M": 1
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 85,
+      "financial_feature_available": {
+        "book_price": 40,
+        "cfo_assets": 82,
+        "earnings_price": 32,
+        "roa": 74
+      },
+      "known_labels": 85,
+      "month": "2026-05",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 9,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5,
+        "TURNOVER_BELOW_10M": 1
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 85,
+      "financial_feature_available": {
+        "book_price": 32,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 74
+      },
+      "known_labels": 85,
+      "month": "2026-06",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 9,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5,
+        "TURNOVER_BELOW_10M": 1
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 85,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 74
+      },
+      "known_labels": 85,
+      "month": "2026-07",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 9,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 85,
+      "financial_feature_available": {
+        "book_price": 35,
+        "cfo_assets": 82,
+        "earnings_price": 30,
+        "roa": 75
+      },
+      "known_labels": 85,
+      "month": "2026-08",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 9,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5
+      },
+      "slots": 100
+    },
+    {
+      "eligible": 84,
+      "financial_feature_available": {
+        "book_price": 34,
+        "cfo_assets": 81,
+        "earnings_price": 29,
+        "roa": 74
+      },
+      "known_labels": 0,
+      "month": "2026-09",
+      "reasons": {
+        "ORIGINAL_SECURITY_NO_LONGER_ENTRY_ELIGIBLE": 10,
+        "PRICE_BELOW_5": 1,
+        "REPORTED_COMMON_SHARES_UNAVAILABLE_OR_STALE": 5,
+        "TURNOVER_BELOW_10M": 1
+      },
+      "slots": 100
+    }
+  ],
+  "months": 33,
+  "panel_file": "data/snapshots/ml-stock-recent-validation-2026-09-14/monthly-panel.json",
+  "panel_sha256": "3eb719fee4dbc13dbf7ef7e3865f64294ee584c95ca2229414f043d9a6c7d777",
+  "rows": 3300
+}

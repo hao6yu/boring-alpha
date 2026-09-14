@@ -1,0 +1,14 @@
+{
+  "failed_direct_source_fetch": {
+    "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/blackrock-handover.html",
+    "sha256": "dcf2a25b877bb24061b453c03bd906dbed30aa76271ad46ca5662e9ae1d93bfb",
+    "required_terms_found": false,
+    "used_as_evidence": false,
+    "note": "Direct archive response did not contain the filing. No direct archive retry. Primary filing passage was verified via web search."
+  },
+  "verified_primary_web_sources": {
+    "blackrock_handover": "https://www.sec.gov/Archives/edgar/data/2012383/000095017024122256/blk-20240930.htm",
+    "leg_completion": "https://www.sec.gov/Archives/edgar/data/1206264/000120626426000121/sgi-20260826.htm",
+    "aptiv_distribution": "https://www.sec.gov/Archives/edgar/data/2078008/000119312526138219/d52176dex991.htm"
+  }
+}

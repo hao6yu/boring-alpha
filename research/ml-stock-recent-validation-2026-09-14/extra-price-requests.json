@@ -1,0 +1,9 @@
+{
+  "symbols": ["XOM", "SGI", "VGNT"],
+  "reason": "Source-identified successor/distributed securities for PXD, LEG and APTV. Required for corporate-action reference paths; not new strategy candidates.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/34088/000095010324006322/dp210867_ex9901.htm",
+    "https://somnigroup.com/newsroom/news-details/2026/Somnigroup-Completes-Combination-with-Leggett--Platt/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/2078008/000119312526138219/d52176dex991.htm"
+  ]
+}

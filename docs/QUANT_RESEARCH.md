@@ -4,17 +4,43 @@ Updated 2026-09-14. This is the current work brief; earlier ETF/withdrawal
 research does not define the user's active objective.
 
 Current direction: prioritize 2022 through current 2026. The
-[recent-window protocol](../research/ml-stock-recent-validation-2026-09-14/README.md)
-freezes the unchanged fixed score for January 2, 2024–September 11, 2026,
-with 2022–2023 retained as the already-seen comparison. A three-security
-Tiingo endpoint check reached September 11 for all three names at $0 new
-paid data cost. Full acquisition and the new backtest have not run. Later
-prices are now opened for these three date probes under the new scope;
-the earlier statements about reserved prices remain true at their original
-experiment dates. This changes the recommended chronology, not the strategy
-or historical cohort, and does not establish that older regimes are obsolete.
+[completed recent-window test](../research/ml-stock-recent-validation-2026-09-14/COMPLETION_RESULTS.md)
+evaluates the unchanged fixed score from January 2, 2024 through September 11,
+2026, with 2022–2023 retained separately as the already-seen comparison.
+Pending earlier research was committed as `95dd022` before this continuation.
+All acquisition is complete: 96 Tiingo price requests and 94 SEC company-fact
+responses, with $0 new paid data cost and no running collector.
 
-Latest follow-up: the [cached benchmark and spinoff sensitivity](../research/ml-stock-followup-2026-09-14/RESULTS.md)
+The preselected central settlement scenario earned $1,675.22/$1,453.15 under
+base/stressed costs, or 5.91%/5.16% annualized, on a $10,000 starting account.
+Maximum drawdowns were 7.46%/8.00%; neither account halted. The stock ranking
+trailed its exposure-matched, cost-matched attribution reference by
+$247.11/$245.60. Planned 95% monthly block intervals include zero. This is
+profitable historical performance without demonstrated selection advantage.
+
+The old engine's strict account remains unresolved at the held PXD-to-XOM
+conversion. A separately frozen conditional completion recognizes the received
+whole shares and tests declared fractional-cash/availability assumptions;
+these are not verified brokerage receipts. All 12 scenarios reconcile across
+8,112 daily observations and 924 fills. Annualized returns range from
+5.53–6.01% base and 4.78–5.26% stressed; all trail their matched references.
+Known dividends, cash-merger entitlements and conditional fractional cash
+remain non-spendable without supported payment dates. Ending NAV includes
+receivables and proceeds from the final liquidation.
+
+Keep the fixed score as a research baseline, with no capital scaling justified
+by this evidence. Do not tune the now-seen years or claim older regimes are
+obsolete. The frozen 2018 cohort remains narrower than today's market.
+A prospective locked score-versus-control paper comparison could check
+execution and signal availability; a few months would not prove annual
+outperformance. No new experiment, paid data or monitoring is queued.
+
+Recent prices for the full authorized cohort and successor series are now
+opened and evaluated. Statements below about unopened reserved prices describe
+their earlier experiment dates, not the current data state. Original
+comparison/follow-up files, strict outputs and all scoring rules are preserved.
+
+Earlier follow-up: the [cached benchmark and spinoff sensitivity](../research/ml-stock-followup-2026-09-14/RESULTS.md)
 provides exploratory evidence for retaining the fixed score as a research lead.
 It beats a reference with matched daily stock exposure and trading costs by
 $518.48/$479.58 under base/stress costs. Average monthly differences are positive
