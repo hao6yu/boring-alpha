@@ -1,0 +1,5342 @@
+[
+  {
+    "accn": "0000077360-23-000038",
+    "cik": "0000077360",
+    "filed": "2023-10-24",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 1,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "PNR",
+        "2023-11",
+        "book"
+      ],
+      [
+        "PNR",
+        "2023-11",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-12",
+        "book"
+      ],
+      [
+        "PNR",
+        "2023-12",
+        "income"
+      ],
+      [
+        "PNR",
+        "2024-01",
+        "book"
+      ],
+      [
+        "PNR",
+        "2024-01",
+        "income"
+      ],
+      [
+        "PNR",
+        "2024-02",
+        "book"
+      ],
+      [
+        "PNR",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000038/pnr-20230930.htm"
+  },
+  {
+    "accn": "0000077360-23-000006",
+    "cik": "0000077360",
+    "filed": "2023-02-21",
+    "fixture": true,
+    "form": "10-K",
+    "id": 2,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "PNR",
+        "2023-03",
+        "book"
+      ],
+      [
+        "PNR",
+        "2023-03",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-04",
+        "book"
+      ],
+      [
+        "PNR",
+        "2023-04",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-05",
+        "book"
+      ],
+      [
+        "PNR",
+        "2023-05",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-06",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-07",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-08",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-09",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-10",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-11",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-12",
+        "income"
+      ],
+      [
+        "PNR",
+        "2024-01",
+        "income"
+      ],
+      [
+        "PNR",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000006/pnr-20221231.htm"
+  },
+  {
+    "accn": "0000077360-25-000047",
+    "cik": "0000077360",
+    "filed": "2025-10-21",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 3,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "PNR",
+        "2025-11",
+        "book"
+      ],
+      [
+        "PNR",
+        "2025-11",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-12",
+        "book"
+      ],
+      [
+        "PNR",
+        "2025-12",
+        "income"
+      ],
+      [
+        "PNR",
+        "2026-01",
+        "book"
+      ],
+      [
+        "PNR",
+        "2026-01",
+        "income"
+      ],
+      [
+        "PNR",
+        "2026-02",
+        "book"
+      ],
+      [
+        "PNR",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm"
+  },
+  {
+    "accn": "0000077360-25-000006",
+    "cik": "0000077360",
+    "filed": "2025-02-25",
+    "fixture": true,
+    "form": "10-K",
+    "id": 4,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "PNR",
+        "2025-03",
+        "book"
+      ],
+      [
+        "PNR",
+        "2025-03",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-04",
+        "book"
+      ],
+      [
+        "PNR",
+        "2025-04",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-05",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-06",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-07",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-08",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-09",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-10",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-11",
+        "income"
+      ],
+      [
+        "PNR",
+        "2025-12",
+        "income"
+      ],
+      [
+        "PNR",
+        "2026-01",
+        "income"
+      ],
+      [
+        "PNR",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000006/pnr-20241231.htm"
+  },
+  {
+    "accn": "0000103379-23-000018",
+    "cik": "0000103379",
+    "filed": "2023-11-03",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 5,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "VFC",
+        "2023-12",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-01",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000018/vfc-20230930.htm"
+  },
+  {
+    "accn": "0000103379-23-000006",
+    "cik": "0000103379",
+    "filed": "2023-05-25",
+    "fixture": true,
+    "form": "10-K",
+    "id": 6,
+    "report_end": "2023-04-01",
+    "supports": [
+      [
+        "VFC",
+        "2023-06",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-07",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-08",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-09",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-10",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-11",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-12",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-01",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-02",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-03",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-04",
+        "income"
+      ],
+      [
+        "VFC",
+        "2024-05",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000006/vfc-20230401.htm"
+  },
+  {
+    "accn": "0000103379-25-000060",
+    "cik": "0000103379",
+    "filed": "2025-10-28",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 7,
+    "report_end": "2025-09-27",
+    "supports": [
+      [
+        "VFC",
+        "2025-11",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-12",
+        "income"
+      ],
+      [
+        "VFC",
+        "2026-01",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000060/vfc-20250927.htm"
+  },
+  {
+    "accn": "0000103379-25-000023",
+    "cik": "0000103379",
+    "filed": "2025-05-22",
+    "fixture": true,
+    "form": "10-K",
+    "id": 8,
+    "report_end": "2025-03-29",
+    "supports": [
+      [
+        "VFC",
+        "2025-06",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-07",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-08",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-09",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-10",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-11",
+        "income"
+      ],
+      [
+        "VFC",
+        "2025-12",
+        "income"
+      ],
+      [
+        "VFC",
+        "2026-01",
+        "income"
+      ],
+      [
+        "VFC",
+        "2026-02",
+        "income"
+      ],
+      [
+        "VFC",
+        "2026-03",
+        "income"
+      ],
+      [
+        "VFC",
+        "2026-04",
+        "income"
+      ],
+      [
+        "VFC",
+        "2026-05",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000023/vfc-20250329.htm"
+  },
+  {
+    "accn": "0000858877-23-000031",
+    "cik": "0000858877",
+    "filed": "2023-11-21",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 9,
+    "report_end": "2023-10-28",
+    "supports": [
+      [
+        "CSCO",
+        "2023-12",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-01",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000031/csco-20231028.htm"
+  },
+  {
+    "accn": "0000858877-23-000023",
+    "cik": "0000858877",
+    "filed": "2023-09-07",
+    "fixture": true,
+    "form": "10-K",
+    "id": 10,
+    "report_end": "2023-07-29",
+    "supports": [
+      [
+        "CSCO",
+        "2023-10",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-11",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-12",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-01",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-02",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-03",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-04",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-05",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-06",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-07",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-08",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2024-09",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000023/csco-20230729.htm"
+  },
+  {
+    "accn": "0000858877-25-000171",
+    "cik": "0000858877",
+    "filed": "2025-11-18",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 11,
+    "report_end": "2025-10-25",
+    "supports": [
+      [
+        "CSCO",
+        "2025-12",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-01",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000171/csco-20251025.htm"
+  },
+  {
+    "accn": "0000858877-25-000111",
+    "cik": "0000858877",
+    "filed": "2025-09-03",
+    "fixture": true,
+    "form": "10-K",
+    "id": 12,
+    "report_end": "2025-07-26",
+    "supports": [
+      [
+        "CSCO",
+        "2025-10",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2025-11",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2025-12",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-01",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-02",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-03",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-04",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-05",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-06",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-07",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-08",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2026-09",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm"
+  },
+  {
+    "accn": "0000106640-23-000131",
+    "cik": "0000106640",
+    "filed": "2023-10-26",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 13,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "WHR",
+        "2023-11",
+        "book"
+      ],
+      [
+        "WHR",
+        "2023-11",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-12",
+        "book"
+      ],
+      [
+        "WHR",
+        "2023-12",
+        "income"
+      ],
+      [
+        "WHR",
+        "2024-01",
+        "book"
+      ],
+      [
+        "WHR",
+        "2024-01",
+        "income"
+      ],
+      [
+        "WHR",
+        "2024-02",
+        "book"
+      ],
+      [
+        "WHR",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000131/whr-20230930.htm"
+  },
+  {
+    "accn": "0000106640-23-000015",
+    "cik": "0000106640",
+    "filed": "2023-02-10",
+    "fixture": true,
+    "form": "10-K",
+    "id": 14,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "WHR",
+        "2023-03",
+        "book"
+      ],
+      [
+        "WHR",
+        "2023-03",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-04",
+        "book"
+      ],
+      [
+        "WHR",
+        "2023-04",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-05",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-06",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-07",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-08",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-09",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-10",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-11",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-12",
+        "income"
+      ],
+      [
+        "WHR",
+        "2024-01",
+        "income"
+      ],
+      [
+        "WHR",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000015/whr-20221231.htm"
+  },
+  {
+    "accn": "0000106640-25-000140",
+    "cik": "0000106640",
+    "filed": "2025-10-28",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 15,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "WHR",
+        "2025-11",
+        "book"
+      ],
+      [
+        "WHR",
+        "2025-11",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-12",
+        "book"
+      ],
+      [
+        "WHR",
+        "2025-12",
+        "income"
+      ],
+      [
+        "WHR",
+        "2026-01",
+        "book"
+      ],
+      [
+        "WHR",
+        "2026-01",
+        "income"
+      ],
+      [
+        "WHR",
+        "2026-02",
+        "book"
+      ],
+      [
+        "WHR",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm"
+  },
+  {
+    "accn": "0000106640-25-000011",
+    "cik": "0000106640",
+    "filed": "2025-02-13",
+    "fixture": true,
+    "form": "10-K",
+    "id": 16,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "WHR",
+        "2025-03",
+        "book"
+      ],
+      [
+        "WHR",
+        "2025-03",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-04",
+        "book"
+      ],
+      [
+        "WHR",
+        "2025-04",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-05",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-06",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-07",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-08",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-09",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-10",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-11",
+        "income"
+      ],
+      [
+        "WHR",
+        "2025-12",
+        "income"
+      ],
+      [
+        "WHR",
+        "2026-01",
+        "income"
+      ],
+      [
+        "WHR",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000011/whr-20241231.htm"
+  },
+  {
+    "accn": "0001628280-23-035412",
+    "cik": "0000315293",
+    "filed": "2023-10-27",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 17,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "AON",
+        "2023-11",
+        "book"
+      ],
+      [
+        "AON",
+        "2023-11",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-12",
+        "book"
+      ],
+      [
+        "AON",
+        "2023-12",
+        "income"
+      ],
+      [
+        "AON",
+        "2024-01",
+        "book"
+      ],
+      [
+        "AON",
+        "2024-01",
+        "income"
+      ],
+      [
+        "AON",
+        "2024-02",
+        "book"
+      ],
+      [
+        "AON",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023035412/aon-20230930.htm"
+  },
+  {
+    "accn": "0001628280-23-004087",
+    "cik": "0000315293",
+    "filed": "2023-02-17",
+    "fixture": true,
+    "form": "10-K",
+    "id": 18,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "AON",
+        "2023-03",
+        "book"
+      ],
+      [
+        "AON",
+        "2023-03",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-04",
+        "book"
+      ],
+      [
+        "AON",
+        "2023-04",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-05",
+        "book"
+      ],
+      [
+        "AON",
+        "2023-05",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-06",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-07",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-08",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-09",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-10",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-11",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-12",
+        "income"
+      ],
+      [
+        "AON",
+        "2024-01",
+        "income"
+      ],
+      [
+        "AON",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023004087/aon-20221231.htm"
+  },
+  {
+    "accn": "0001628280-25-047805",
+    "cik": "0000315293",
+    "filed": "2025-10-31",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 19,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "AON",
+        "2025-12",
+        "book"
+      ],
+      [
+        "AON",
+        "2025-12",
+        "income"
+      ],
+      [
+        "AON",
+        "2026-01",
+        "book"
+      ],
+      [
+        "AON",
+        "2026-01",
+        "income"
+      ],
+      [
+        "AON",
+        "2026-02",
+        "book"
+      ],
+      [
+        "AON",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025047805/aon-20250930.htm"
+  },
+  {
+    "accn": "0001628280-25-006093",
+    "cik": "0000315293",
+    "filed": "2025-02-18",
+    "fixture": true,
+    "form": "10-K",
+    "id": 20,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "AON",
+        "2025-03",
+        "book"
+      ],
+      [
+        "AON",
+        "2025-03",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-04",
+        "book"
+      ],
+      [
+        "AON",
+        "2025-04",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-05",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-06",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-07",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-08",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-09",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-10",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-11",
+        "income"
+      ],
+      [
+        "AON",
+        "2025-12",
+        "income"
+      ],
+      [
+        "AON",
+        "2026-01",
+        "income"
+      ],
+      [
+        "AON",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025006093/aon-20241231.htm"
+  },
+  {
+    "accn": "0000315213-23-000105",
+    "cik": "0000315213",
+    "filed": "2023-10-31",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 21,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "RHI",
+        "2023-12",
+        "income"
+      ],
+      [
+        "RHI",
+        "2024-01",
+        "income"
+      ],
+      [
+        "RHI",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000105/rhi-20230930.htm"
+  },
+  {
+    "accn": "0000315213-23-000016",
+    "cik": "0000315213",
+    "filed": "2023-02-10",
+    "fixture": true,
+    "form": "10-K",
+    "id": 22,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "RHI",
+        "2023-03",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-04",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-05",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-06",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-07",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-08",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-09",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-10",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-11",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-12",
+        "income"
+      ],
+      [
+        "RHI",
+        "2024-01",
+        "income"
+      ],
+      [
+        "RHI",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000016/rhi-20221231.htm"
+  },
+  {
+    "accn": "0000315213-25-000074",
+    "cik": "0000315213",
+    "filed": "2025-10-31",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 23,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "RHI",
+        "2025-12",
+        "income"
+      ],
+      [
+        "RHI",
+        "2026-01",
+        "income"
+      ],
+      [
+        "RHI",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000074/rhi-20250930.htm"
+  },
+  {
+    "accn": "0000315213-25-000007",
+    "cik": "0000315213",
+    "filed": "2025-02-13",
+    "fixture": true,
+    "form": "10-K",
+    "id": 24,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "RHI",
+        "2025-03",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-04",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-05",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-06",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-07",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-08",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-09",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-10",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-11",
+        "income"
+      ],
+      [
+        "RHI",
+        "2025-12",
+        "income"
+      ],
+      [
+        "RHI",
+        "2026-01",
+        "income"
+      ],
+      [
+        "RHI",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000007/rhi-20241231.htm"
+  },
+  {
+    "accn": "0001585689-23-000193",
+    "cik": "0001585689",
+    "filed": "2023-10-25",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 25,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "HLT",
+        "2023-11",
+        "book"
+      ],
+      [
+        "HLT",
+        "2023-12",
+        "book"
+      ],
+      [
+        "HLT",
+        "2024-01",
+        "book"
+      ],
+      [
+        "HLT",
+        "2024-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568923000193/hlt-20230930.htm"
+  },
+  {
+    "accn": "0001585689-25-000160",
+    "cik": "0001585689",
+    "filed": "2025-10-22",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 26,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "HLT",
+        "2025-11",
+        "book"
+      ],
+      [
+        "HLT",
+        "2025-12",
+        "book"
+      ],
+      [
+        "HLT",
+        "2026-01",
+        "book"
+      ],
+      [
+        "HLT",
+        "2026-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568925000160/hlt-20250930.htm"
+  },
+  {
+    "accn": "0001103982-23-000075",
+    "cik": "0001103982",
+    "filed": "2023-11-01",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 27,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "MDLZ",
+        "2023-12",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2023-12",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2024-01",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2024-01",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2024-02",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm"
+  },
+  {
+    "accn": "0001103982-23-000006",
+    "cik": "0001103982",
+    "filed": "2023-02-03",
+    "fixture": true,
+    "form": "10-K",
+    "id": 28,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "MDLZ",
+        "2023-03",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-04",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-05",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-06",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-07",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-08",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-09",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-10",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-11",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-12",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2024-01",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+  },
+  {
+    "accn": "0001628280-25-046773",
+    "cik": "0001103982",
+    "filed": "2025-10-28",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 29,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "MDLZ",
+        "2025-11",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2025-11",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-12",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2025-12",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2026-01",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2026-01",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2026-02",
+        "book"
+      ],
+      [
+        "MDLZ",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm"
+  },
+  {
+    "accn": "0001103982-25-000030",
+    "cik": "0001103982",
+    "filed": "2025-02-05",
+    "fixture": true,
+    "form": "10-K",
+    "id": 30,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "MDLZ",
+        "2025-03",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-04",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-05",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-06",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-07",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-08",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-09",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-10",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-11",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2025-12",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2026-01",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+  },
+  {
+    "accn": "0000026172-23-000045",
+    "cik": "0000026172",
+    "filed": "2023-11-02",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 31,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "CMI",
+        "2023-12",
+        "book"
+      ],
+      [
+        "CMI",
+        "2024-01",
+        "book"
+      ],
+      [
+        "CMI",
+        "2024-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617223000045/cmi-20230930.htm"
+  },
+  {
+    "accn": "0000026172-25-000039",
+    "cik": "0000026172",
+    "filed": "2025-11-06",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 32,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "CMI",
+        "2025-12",
+        "book"
+      ],
+      [
+        "CMI",
+        "2026-01",
+        "book"
+      ],
+      [
+        "CMI",
+        "2026-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617225000039/cmi-20250930.htm"
+  },
+  {
+    "accn": "0000030625-23-000136",
+    "cik": "0000030625",
+    "filed": "2023-10-25",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 33,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "FLS",
+        "2023-11",
+        "book"
+      ],
+      [
+        "FLS",
+        "2023-12",
+        "book"
+      ],
+      [
+        "FLS",
+        "2024-01",
+        "book"
+      ],
+      [
+        "FLS",
+        "2024-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062523000136/fls-20230930.htm"
+  },
+  {
+    "accn": "0000030625-25-000072",
+    "cik": "0000030625",
+    "filed": "2025-10-28",
+    "fixture": true,
+    "form": "10-Q",
+    "id": 34,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "FLS",
+        "2025-11",
+        "book"
+      ],
+      [
+        "FLS",
+        "2025-12",
+        "book"
+      ],
+      [
+        "FLS",
+        "2026-01",
+        "book"
+      ],
+      [
+        "FLS",
+        "2026-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062525000072/fls-20250930.htm"
+  },
+  {
+    "accn": "0000077360-22-000006",
+    "cik": "0000077360",
+    "filed": "2022-02-22",
+    "fixture": false,
+    "form": "10-K",
+    "id": 35,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "PNR",
+        "2022-03",
+        "book"
+      ],
+      [
+        "PNR",
+        "2022-03",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-04",
+        "book"
+      ],
+      [
+        "PNR",
+        "2022-04",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-05",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-06",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-07",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-08",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-09",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-10",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-11",
+        "income"
+      ],
+      [
+        "PNR",
+        "2022-12",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-01",
+        "income"
+      ],
+      [
+        "PNR",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736022000006/pnr-20211231.htm"
+  },
+  {
+    "accn": "0000103379-22-000006",
+    "cik": "0000103379",
+    "filed": "2022-05-26",
+    "fixture": false,
+    "form": "10-K",
+    "id": 36,
+    "report_end": "2022-04-02",
+    "supports": [
+      [
+        "VFC",
+        "2022-06",
+        "income"
+      ],
+      [
+        "VFC",
+        "2022-07",
+        "income"
+      ],
+      [
+        "VFC",
+        "2022-08",
+        "income"
+      ],
+      [
+        "VFC",
+        "2022-09",
+        "income"
+      ],
+      [
+        "VFC",
+        "2022-10",
+        "income"
+      ],
+      [
+        "VFC",
+        "2022-11",
+        "income"
+      ],
+      [
+        "VFC",
+        "2022-12",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-01",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-02",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-03",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-04",
+        "income"
+      ],
+      [
+        "VFC",
+        "2023-05",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337922000006/vfc-20220402.htm"
+  },
+  {
+    "accn": "0000858877-22-000013",
+    "cik": "0000858877",
+    "filed": "2022-09-08",
+    "fixture": false,
+    "form": "10-K",
+    "id": 37,
+    "report_end": "2022-07-30",
+    "supports": [
+      [
+        "CSCO",
+        "2022-10",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2022-11",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2022-12",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-01",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-02",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-03",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-04",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-05",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-06",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-07",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-08",
+        "income"
+      ],
+      [
+        "CSCO",
+        "2023-09",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887722000013/csco-20220730.htm"
+  },
+  {
+    "accn": "0000106640-22-000015",
+    "cik": "0000106640",
+    "filed": "2022-02-10",
+    "fixture": false,
+    "form": "10-K",
+    "id": 38,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "WHR",
+        "2022-03",
+        "book"
+      ],
+      [
+        "WHR",
+        "2022-03",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-04",
+        "book"
+      ],
+      [
+        "WHR",
+        "2022-04",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-05",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-06",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-07",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-08",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-09",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-10",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-11",
+        "income"
+      ],
+      [
+        "WHR",
+        "2022-12",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-01",
+        "income"
+      ],
+      [
+        "WHR",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664022000015/whr-20211231.htm"
+  },
+  {
+    "accn": "0001628280-22-003180",
+    "cik": "0000315293",
+    "filed": "2022-02-18",
+    "fixture": false,
+    "form": "10-K",
+    "id": 39,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "AON",
+        "2022-03",
+        "book"
+      ],
+      [
+        "AON",
+        "2022-03",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-04",
+        "book"
+      ],
+      [
+        "AON",
+        "2022-04",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-05",
+        "book"
+      ],
+      [
+        "AON",
+        "2022-05",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-06",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-07",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-08",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-09",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-10",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-11",
+        "income"
+      ],
+      [
+        "AON",
+        "2022-12",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-01",
+        "income"
+      ],
+      [
+        "AON",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828022003180/aon-20211231.htm"
+  },
+  {
+    "accn": "0000315213-22-000018",
+    "cik": "0000315213",
+    "filed": "2022-02-14",
+    "fixture": false,
+    "form": "10-K",
+    "id": 40,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "RHI",
+        "2022-03",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-04",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-05",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-06",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-07",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-08",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-09",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-10",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-11",
+        "income"
+      ],
+      [
+        "RHI",
+        "2022-12",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-01",
+        "income"
+      ],
+      [
+        "RHI",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521322000018/rhi-20211231.htm"
+  },
+  {
+    "accn": "0001585689-24-000101",
+    "cik": "0001585689",
+    "filed": "2024-04-24",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 41,
+    "report_end": "2024-03-31",
+    "supports": [
+      [
+        "HLT",
+        "2024-05",
+        "book"
+      ],
+      [
+        "HLT",
+        "2024-06",
+        "book"
+      ],
+      [
+        "HLT",
+        "2024-07",
+        "book"
+      ],
+      [
+        "HLT",
+        "2024-08",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568924000101/hlt-20240331.htm"
+  },
+  {
+    "accn": "0001103982-22-000003",
+    "cik": "0001103982",
+    "filed": "2022-02-04",
+    "fixture": false,
+    "form": "10-K",
+    "id": 42,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "MDLZ",
+        "2022-03",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-04",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-05",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-06",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-07",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-08",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-09",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-10",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-11",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2022-12",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-01",
+        "income"
+      ],
+      [
+        "MDLZ",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+  },
+  {
+    "accn": "0000026172-22-000008",
+    "cik": "0000026172",
+    "filed": "2022-02-08",
+    "fixture": false,
+    "form": "10-K",
+    "id": 43,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "CMI",
+        "2022-03",
+        "book"
+      ],
+      [
+        "CMI",
+        "2022-04",
+        "book"
+      ],
+      [
+        "CMI",
+        "2022-05",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617222000008/cmi-20211231.htm"
+  },
+  {
+    "accn": "0001521332-25-000010",
+    "cik": "0001521332",
+    "filed": "2025-02-07",
+    "fixture": false,
+    "form": "10-K",
+    "id": 44,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "APTV",
+        "2025-06",
+        "income"
+      ],
+      [
+        "APTV",
+        "2025-07",
+        "income"
+      ],
+      [
+        "APTV",
+        "2025-08",
+        "income"
+      ],
+      [
+        "APTV",
+        "2025-09",
+        "income"
+      ],
+      [
+        "APTV",
+        "2025-10",
+        "income"
+      ],
+      [
+        "APTV",
+        "2025-11",
+        "income"
+      ],
+      [
+        "APTV",
+        "2025-12",
+        "income"
+      ],
+      [
+        "APTV",
+        "2026-01",
+        "income"
+      ],
+      [
+        "APTV",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1521332/000152133225000010/aptv-20241231.htm"
+  },
+  {
+    "accn": "0000030625-22-000083",
+    "cik": "0000030625",
+    "filed": "2022-07-27",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 45,
+    "report_end": "2022-06-30",
+    "supports": [
+      [
+        "FLS",
+        "2022-08",
+        "book"
+      ],
+      [
+        "FLS",
+        "2022-09",
+        "book"
+      ],
+      [
+        "FLS",
+        "2022-10",
+        "book"
+      ],
+      [
+        "FLS",
+        "2022-11",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062522000083/fls-20220630.htm"
+  },
+  {
+    "accn": "0000068505-22-000010",
+    "cik": "0000068505",
+    "filed": "2022-02-16",
+    "fixture": false,
+    "form": "10-K",
+    "id": 46,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "MSI",
+        "2022-03",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-04",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-05",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-06",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-07",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-08",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-09",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-10",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-11",
+        "income"
+      ],
+      [
+        "MSI",
+        "2022-12",
+        "income"
+      ],
+      [
+        "MSI",
+        "2023-01",
+        "income"
+      ],
+      [
+        "MSI",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/68505/000006850522000010/msi-20211231.htm"
+  },
+  {
+    "accn": "0000310764-22-000028",
+    "cik": "0000310764",
+    "filed": "2022-02-11",
+    "fixture": false,
+    "form": "10-K",
+    "id": 47,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "SYK",
+        "2022-03",
+        "book"
+      ],
+      [
+        "SYK",
+        "2022-03",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-04",
+        "book"
+      ],
+      [
+        "SYK",
+        "2022-04",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-05",
+        "book"
+      ],
+      [
+        "SYK",
+        "2022-05",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-06",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-07",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-08",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-09",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-10",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-11",
+        "income"
+      ],
+      [
+        "SYK",
+        "2022-12",
+        "income"
+      ],
+      [
+        "SYK",
+        "2023-01",
+        "income"
+      ],
+      [
+        "SYK",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/310764/000031076422000028/syk-20211231.htm"
+  },
+  {
+    "accn": "0001099800-25-000005",
+    "cik": "0001099800",
+    "filed": "2025-02-28",
+    "fixture": false,
+    "form": "10-K",
+    "id": 48,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "EW",
+        "2025-04",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-05",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-06",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-07",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-08",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-09",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-10",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-11",
+        "income"
+      ],
+      [
+        "EW",
+        "2025-12",
+        "income"
+      ],
+      [
+        "EW",
+        "2026-01",
+        "income"
+      ],
+      [
+        "EW",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980025000005/ew-20241231.htm"
+  },
+  {
+    "accn": "0001059556-22-000012",
+    "cik": "0001059556",
+    "filed": "2022-02-22",
+    "fixture": false,
+    "form": "10-K",
+    "id": 49,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "MCO",
+        "2022-03",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-04",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-05",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-06",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-07",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-08",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-09",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-10",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-11",
+        "income"
+      ],
+      [
+        "MCO",
+        "2022-12",
+        "income"
+      ],
+      [
+        "MCO",
+        "2023-01",
+        "income"
+      ],
+      [
+        "MCO",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955622000012/mco-20211231.htm"
+  },
+  {
+    "accn": "0001688568-22-000027",
+    "cik": "0001688568",
+    "filed": "2022-05-26",
+    "fixture": false,
+    "form": "10-K",
+    "id": 50,
+    "report_end": "2022-03-31",
+    "supports": [
+      [
+        "DXC",
+        "2022-06",
+        "income"
+      ],
+      [
+        "DXC",
+        "2022-07",
+        "income"
+      ],
+      [
+        "DXC",
+        "2022-08",
+        "income"
+      ],
+      [
+        "DXC",
+        "2022-09",
+        "income"
+      ],
+      [
+        "DXC",
+        "2022-10",
+        "income"
+      ],
+      [
+        "DXC",
+        "2022-11",
+        "income"
+      ],
+      [
+        "DXC",
+        "2022-12",
+        "income"
+      ],
+      [
+        "DXC",
+        "2023-01",
+        "income"
+      ],
+      [
+        "DXC",
+        "2023-02",
+        "income"
+      ],
+      [
+        "DXC",
+        "2023-03",
+        "income"
+      ],
+      [
+        "DXC",
+        "2023-04",
+        "income"
+      ],
+      [
+        "DXC",
+        "2023-05",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1688568/000168856822000027/dxc-20220331.htm"
+  },
+  {
+    "accn": "0000018926-22-000007",
+    "cik": "0000018926",
+    "filed": "2022-02-24",
+    "fixture": false,
+    "form": "10-K",
+    "id": 51,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "CTL",
+        "2022-03",
+        "book"
+      ],
+      [
+        "CTL",
+        "2022-04",
+        "book"
+      ],
+      [
+        "CTL",
+        "2022-05",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/18926/000001892622000007/lumn-20211231.htm"
+  },
+  {
+    "accn": "0000080424-22-000035",
+    "cik": "0000080424",
+    "filed": "2022-04-20",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 52,
+    "report_end": "2022-03-31",
+    "supports": [
+      [
+        "PG",
+        "2022-05",
+        "book"
+      ],
+      [
+        "PG",
+        "2022-06",
+        "book"
+      ],
+      [
+        "PG",
+        "2022-07",
+        "book"
+      ],
+      [
+        "PG",
+        "2022-08",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000035/pg-20220331.htm"
+  },
+  {
+    "accn": "0000895421-25-000539",
+    "cik": "0000895421",
+    "filed": "2025-11-03",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 53,
+    "report_end": "2025-09-30",
+    "supports": [
+      [
+        "MS",
+        "2025-12",
+        "book"
+      ],
+      [
+        "MS",
+        "2026-01",
+        "book"
+      ],
+      [
+        "MS",
+        "2026-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/895421/000089542125000539/ms-20250930.htm"
+  },
+  {
+    "accn": "0000100517-23-000153",
+    "cik": "0000100517",
+    "filed": "2023-07-20",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 54,
+    "report_end": "2023-06-30",
+    "supports": [
+      [
+        "UAL",
+        "2023-08",
+        "book"
+      ],
+      [
+        "UAL",
+        "2023-08",
+        "income"
+      ],
+      [
+        "UAL",
+        "2023-09",
+        "book"
+      ],
+      [
+        "UAL",
+        "2023-09",
+        "income"
+      ],
+      [
+        "UAL",
+        "2023-10",
+        "book"
+      ],
+      [
+        "UAL",
+        "2023-10",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/100517/000010051723000153/ual-20230630.htm"
+  },
+  {
+    "accn": "0000058492-25-000136",
+    "cik": "0000058492",
+    "filed": "2025-02-26",
+    "fixture": false,
+    "form": "10-K",
+    "id": 55,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "LEG",
+        "2025-03",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-04",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-05",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-06",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-07",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-08",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-09",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-10",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-11",
+        "income"
+      ],
+      [
+        "LEG",
+        "2025-12",
+        "income"
+      ],
+      [
+        "LEG",
+        "2026-01",
+        "income"
+      ],
+      [
+        "LEG",
+        "2026-02",
+        "income"
+      ],
+      [
+        "LEG",
+        "2026-03",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/58492/000005849225000136/leg-20241231.htm"
+  },
+  {
+    "accn": "0000950170-24-019271",
+    "cik": "0001364742",
+    "filed": "2024-02-23",
+    "fixture": false,
+    "form": "10-K",
+    "id": 56,
+    "report_end": "2023-12-31",
+    "supports": [
+      [
+        "BLK",
+        "2024-03",
+        "book"
+      ],
+      [
+        "BLK",
+        "2024-03",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-04",
+        "book"
+      ],
+      [
+        "BLK",
+        "2024-04",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-05",
+        "book"
+      ],
+      [
+        "BLK",
+        "2024-05",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-06",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-07",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-08",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-09",
+        "income"
+      ],
+      [
+        "BLK",
+        "2024-10",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1364742/000095017024019271/blk-20231231.htm"
+  },
+  {
+    "accn": "0001168054-21-000025",
+    "cik": "0001168054",
+    "filed": "2021-08-06",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 57,
+    "report_end": "2021-06-30",
+    "supports": [
+      [
+        "XEC",
+        "2022-01",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-02",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-03",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-04",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-05",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-06",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-07",
+        "book"
+      ],
+      [
+        "XEC",
+        "2022-08",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1168054/000116805421000025/xec-20210630.htm"
+  },
+  {
+    "accn": "0001130310-25-000040",
+    "cik": "0001130310",
+    "filed": "2025-02-20",
+    "fixture": false,
+    "form": "10-K",
+    "id": 58,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "CNP",
+        "2025-03",
+        "book"
+      ],
+      [
+        "CNP",
+        "2025-04",
+        "book"
+      ],
+      [
+        "CNP",
+        "2025-05",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-06",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-07",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-08",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-09",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-10",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-11",
+        "income"
+      ],
+      [
+        "CNP",
+        "2025-12",
+        "income"
+      ],
+      [
+        "CNP",
+        "2026-01",
+        "income"
+      ],
+      [
+        "CNP",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1130310/000113031025000040/cnp-20241231.htm"
+  },
+  {
+    "accn": "0001701605-22-000050",
+    "cik": "0001701605",
+    "filed": "2022-02-11",
+    "fixture": false,
+    "form": "10-K",
+    "id": 59,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "BHGE",
+        "2022-03",
+        "book"
+      ],
+      [
+        "BHGE",
+        "2022-03",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-04",
+        "book"
+      ],
+      [
+        "BHGE",
+        "2022-04",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-05",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-06",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-07",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-08",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-09",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-10",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-11",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2022-12",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2023-01",
+        "income"
+      ],
+      [
+        "BHGE",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000050/bkr-20211231.htm"
+  },
+  {
+    "accn": "0001489393-23-000043",
+    "cik": "0001489393",
+    "filed": "2023-10-27",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 60,
+    "report_end": "2023-09-30",
+    "supports": [
+      [
+        "LYB",
+        "2023-11",
+        "book"
+      ],
+      [
+        "LYB",
+        "2023-12",
+        "book"
+      ],
+      [
+        "LYB",
+        "2024-01",
+        "book"
+      ],
+      [
+        "LYB",
+        "2024-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1489393/000148939323000043/lyb-20230930.htm"
+  },
+  {
+    "accn": "0001039684-22-000076",
+    "cik": "0001039684",
+    "filed": "2022-11-02",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 61,
+    "report_end": "2022-09-30",
+    "supports": [
+      [
+        "OKE",
+        "2022-12",
+        "book"
+      ],
+      [
+        "OKE",
+        "2023-01",
+        "book"
+      ],
+      [
+        "OKE",
+        "2023-02",
+        "book"
+      ],
+      [
+        "OKE",
+        "2023-03",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968422000076/oke-20220930.htm"
+  },
+  {
+    "accn": "0001034054-25-000002",
+    "cik": "0001034054",
+    "filed": "2025-02-26",
+    "fixture": false,
+    "form": "10-K",
+    "id": 62,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "SBAC",
+        "2025-03",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-04",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-05",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-06",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-07",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-08",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-09",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-10",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-11",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2025-12",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2026-01",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2026-02",
+        "income"
+      ],
+      [
+        "SBAC",
+        "2026-03",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1034054/000103405425000002/sbac-20241231x10k.htm"
+  },
+  {
+    "accn": "0000051434-22-000016",
+    "cik": "0000051434",
+    "filed": "2022-02-18",
+    "fixture": false,
+    "form": "10-K",
+    "id": 63,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "IP",
+        "2022-03",
+        "book"
+      ],
+      [
+        "IP",
+        "2022-03",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-04",
+        "book"
+      ],
+      [
+        "IP",
+        "2022-04",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-05",
+        "book"
+      ],
+      [
+        "IP",
+        "2022-05",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-06",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-07",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-08",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-09",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-10",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-11",
+        "income"
+      ],
+      [
+        "IP",
+        "2022-12",
+        "income"
+      ],
+      [
+        "IP",
+        "2023-01",
+        "income"
+      ],
+      [
+        "IP",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/51434/000005143422000016/ip-20211231.htm"
+  },
+  {
+    "accn": "0000055785-22-000010",
+    "cik": "0000055785",
+    "filed": "2022-02-10",
+    "fixture": false,
+    "form": "10-K",
+    "id": 64,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "KMB",
+        "2022-03",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-04",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-05",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-06",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-07",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-08",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-09",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-10",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-11",
+        "income"
+      ],
+      [
+        "KMB",
+        "2022-12",
+        "income"
+      ],
+      [
+        "KMB",
+        "2023-01",
+        "income"
+      ],
+      [
+        "KMB",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/55785/000005578522000010/kmb-20211231.htm"
+  },
+  {
+    "accn": "0001361658-22-000013",
+    "cik": "0001361658",
+    "filed": "2022-02-23",
+    "fixture": false,
+    "form": "10-K",
+    "id": 65,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "WYN",
+        "2022-03",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-04",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-05",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-06",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-07",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-08",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-09",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-10",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-11",
+        "income"
+      ],
+      [
+        "WYN",
+        "2022-12",
+        "income"
+      ],
+      [
+        "WYN",
+        "2023-01",
+        "income"
+      ],
+      [
+        "WYN",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1361658/000136165822000013/wyn-20211231.htm"
+  },
+  {
+    "accn": "0001396009-23-000007",
+    "cik": "0001396009",
+    "filed": "2023-02-24",
+    "fixture": false,
+    "form": "10-K",
+    "id": 66,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "VMC",
+        "2023-03",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-04",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-05",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-06",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-07",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-08",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-09",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-10",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-11",
+        "income"
+      ],
+      [
+        "VMC",
+        "2023-12",
+        "income"
+      ],
+      [
+        "VMC",
+        "2024-01",
+        "income"
+      ],
+      [
+        "VMC",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1396009/000139600923000007/vmc-20221231x10k.htm"
+  },
+  {
+    "accn": "0000827054-22-000094",
+    "cik": "0000827054",
+    "filed": "2022-05-20",
+    "fixture": false,
+    "form": "10-K",
+    "id": 67,
+    "report_end": "2022-03-31",
+    "supports": [
+      [
+        "MCHP",
+        "2022-06",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2022-07",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2022-08",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2022-09",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2022-10",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2022-11",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2022-12",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2023-01",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2023-02",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2023-03",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2023-04",
+        "income"
+      ],
+      [
+        "MCHP",
+        "2023-05",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/827054/000082705422000094/mchp-20220331.htm"
+  },
+  {
+    "accn": "0000046080-25-000027",
+    "cik": "0000046080",
+    "filed": "2025-02-27",
+    "fixture": false,
+    "form": "10-K",
+    "id": 68,
+    "report_end": "2024-12-29",
+    "supports": [
+      [
+        "HAS",
+        "2025-04",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-05",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-06",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-07",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-08",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-09",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-10",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-11",
+        "income"
+      ],
+      [
+        "HAS",
+        "2025-12",
+        "income"
+      ],
+      [
+        "HAS",
+        "2026-01",
+        "income"
+      ],
+      [
+        "HAS",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/46080/000004608025000027/has-20241229.htm"
+  },
+  {
+    "accn": "0000029905-22-000009",
+    "cik": "0000029905",
+    "filed": "2022-02-11",
+    "fixture": false,
+    "form": "10-K",
+    "id": 69,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "DOV",
+        "2022-03",
+        "book"
+      ],
+      [
+        "DOV",
+        "2022-03",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-04",
+        "book"
+      ],
+      [
+        "DOV",
+        "2022-04",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-05",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-06",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-07",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-08",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-09",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-10",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-11",
+        "income"
+      ],
+      [
+        "DOV",
+        "2022-12",
+        "income"
+      ],
+      [
+        "DOV",
+        "2023-01",
+        "income"
+      ],
+      [
+        "DOV",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/29905/000002990522000009/dov-20211231.htm"
+  },
+  {
+    "accn": "0000054480-23-000003",
+    "cik": "0000054480",
+    "filed": "2023-02-03",
+    "fixture": false,
+    "form": "10-K",
+    "id": 70,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "KSU",
+        "2023-03",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-04",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-05",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-06",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-07",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-08",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-09",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-10",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-11",
+        "book"
+      ],
+      [
+        "KSU",
+        "2023-12",
+        "book"
+      ],
+      [
+        "KSU",
+        "2024-01",
+        "book"
+      ],
+      [
+        "KSU",
+        "2024-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/54480/000005448023000003/ksu-20221231.htm"
+  },
+  {
+    "accn": "0001530721-24-000041",
+    "cik": "0001530721",
+    "filed": "2024-05-29",
+    "fixture": false,
+    "form": "10-K",
+    "id": 71,
+    "report_end": "2024-03-30",
+    "supports": [
+      [
+        "KORS",
+        "2024-06",
+        "book"
+      ],
+      [
+        "KORS",
+        "2024-06",
+        "income"
+      ],
+      [
+        "KORS",
+        "2024-07",
+        "book"
+      ],
+      [
+        "KORS",
+        "2024-07",
+        "income"
+      ],
+      [
+        "KORS",
+        "2024-08",
+        "book"
+      ],
+      [
+        "KORS",
+        "2024-08",
+        "income"
+      ],
+      [
+        "KORS",
+        "2024-09",
+        "income"
+      ],
+      [
+        "KORS",
+        "2024-10",
+        "income"
+      ],
+      [
+        "KORS",
+        "2024-11",
+        "income"
+      ],
+      [
+        "KORS",
+        "2024-12",
+        "income"
+      ],
+      [
+        "KORS",
+        "2025-01",
+        "income"
+      ],
+      [
+        "KORS",
+        "2025-02",
+        "income"
+      ],
+      [
+        "KORS",
+        "2025-03",
+        "income"
+      ],
+      [
+        "KORS",
+        "2025-04",
+        "income"
+      ],
+      [
+        "KORS",
+        "2025-05",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1530721/000153072124000041/cpri-20240330.htm"
+  },
+  {
+    "accn": "0000320187-22-000038",
+    "cik": "0000320187",
+    "filed": "2022-07-21",
+    "fixture": false,
+    "form": "10-K",
+    "id": 72,
+    "report_end": "2022-05-31",
+    "supports": [
+      [
+        "NKE",
+        "2022-08",
+        "book"
+      ],
+      [
+        "NKE",
+        "2022-08",
+        "income"
+      ],
+      [
+        "NKE",
+        "2022-09",
+        "book"
+      ],
+      [
+        "NKE",
+        "2022-09",
+        "income"
+      ],
+      [
+        "NKE",
+        "2022-10",
+        "book"
+      ],
+      [
+        "NKE",
+        "2022-10",
+        "income"
+      ],
+      [
+        "NKE",
+        "2022-11",
+        "income"
+      ],
+      [
+        "NKE",
+        "2022-12",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-01",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-02",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-03",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-04",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-05",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-06",
+        "income"
+      ],
+      [
+        "NKE",
+        "2023-07",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018722000038/nke-20220531.htm"
+  },
+  {
+    "accn": "0001281761-22-000016",
+    "cik": "0001281761",
+    "filed": "2022-02-24",
+    "fixture": false,
+    "form": "10-K",
+    "id": 73,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "RF",
+        "2022-03",
+        "book"
+      ],
+      [
+        "RF",
+        "2022-04",
+        "book"
+      ],
+      [
+        "RF",
+        "2022-05",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1281761/000128176122000016/rf-20211231.htm"
+  },
+  {
+    "accn": "0000896878-22-000028",
+    "cik": "0000896878",
+    "filed": "2022-09-02",
+    "fixture": false,
+    "form": "10-K",
+    "id": 74,
+    "report_end": "2022-07-31",
+    "supports": [
+      [
+        "INTU",
+        "2022-10",
+        "book"
+      ],
+      [
+        "INTU",
+        "2022-10",
+        "income"
+      ],
+      [
+        "INTU",
+        "2022-11",
+        "book"
+      ],
+      [
+        "INTU",
+        "2022-11",
+        "income"
+      ],
+      [
+        "INTU",
+        "2022-12",
+        "book"
+      ],
+      [
+        "INTU",
+        "2022-12",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-01",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-02",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-03",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-04",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-05",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-06",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-07",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-08",
+        "income"
+      ],
+      [
+        "INTU",
+        "2023-09",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687822000028/intu-20220731.htm"
+  },
+  {
+    "accn": "0000831259-22-000009",
+    "cik": "0000831259",
+    "filed": "2022-02-15",
+    "fixture": false,
+    "form": "10-K",
+    "id": 75,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "FCX",
+        "2022-03",
+        "book"
+      ],
+      [
+        "FCX",
+        "2022-04",
+        "book"
+      ],
+      [
+        "FCX",
+        "2022-05",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125922000009/fcx-20211231.htm"
+  },
+  {
+    "accn": "0001437749-22-004083",
+    "cik": "0001442145",
+    "filed": "2022-02-22",
+    "fixture": false,
+    "form": "10-K",
+    "id": 76,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "VRSK",
+        "2022-03",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-04",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-05",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-06",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-07",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-08",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-09",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-10",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-11",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2022-12",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2023-01",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2023-02",
+        "income"
+      ],
+      [
+        "VRSK",
+        "2023-03",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774922004083/vrsk20211231_10k.htm"
+  },
+  {
+    "accn": "0000916365-22-000049",
+    "cik": "0000916365",
+    "filed": "2022-02-17",
+    "fixture": false,
+    "form": "10-K",
+    "id": 77,
+    "report_end": "2021-12-25",
+    "supports": [
+      [
+        "TSCO",
+        "2022-03",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-04",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-05",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-06",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-07",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-08",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-09",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-10",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-11",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2022-12",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2023-01",
+        "income"
+      ],
+      [
+        "TSCO",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/916365/000091636522000049/tsco-20211225.htm"
+  },
+  {
+    "accn": "0000047111-23-000012",
+    "cik": "0000047111",
+    "filed": "2023-02-17",
+    "fixture": false,
+    "form": "10-K",
+    "id": 78,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "HSY",
+        "2023-03",
+        "book"
+      ],
+      [
+        "HSY",
+        "2023-03",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-04",
+        "book"
+      ],
+      [
+        "HSY",
+        "2023-04",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-05",
+        "book"
+      ],
+      [
+        "HSY",
+        "2023-05",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-06",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-07",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-08",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-09",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-10",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-11",
+        "income"
+      ],
+      [
+        "HSY",
+        "2023-12",
+        "income"
+      ],
+      [
+        "HSY",
+        "2024-01",
+        "income"
+      ],
+      [
+        "HSY",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/47111/000004711123000012/hsy-20221231.htm"
+  },
+  {
+    "accn": "0001633917-21-000169",
+    "cik": "0001633917",
+    "filed": "2021-11-09",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 79,
+    "report_end": "2021-09-30",
+    "supports": [
+      [
+        "PYPL",
+        "2022-01",
+        "book"
+      ],
+      [
+        "PYPL",
+        "2022-01",
+        "income"
+      ],
+      [
+        "PYPL",
+        "2022-02",
+        "book"
+      ],
+      [
+        "PYPL",
+        "2022-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391721000169/pypl-20210930.htm"
+  },
+  {
+    "accn": "0001555280-22-000078",
+    "cik": "0001555280",
+    "filed": "2022-02-15",
+    "fixture": false,
+    "form": "10-K",
+    "id": 80,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "ZTS",
+        "2022-03",
+        "book"
+      ],
+      [
+        "ZTS",
+        "2022-03",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-04",
+        "book"
+      ],
+      [
+        "ZTS",
+        "2022-04",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-05",
+        "book"
+      ],
+      [
+        "ZTS",
+        "2022-05",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-06",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-07",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-08",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-09",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-10",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-11",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2022-12",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2023-01",
+        "income"
+      ],
+      [
+        "ZTS",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1555280/000155528022000078/zts-20211231.htm"
+  },
+  {
+    "accn": "0000097745-26-000018",
+    "cik": "0000097745",
+    "filed": "2026-02-26",
+    "fixture": false,
+    "form": "10-K",
+    "id": 81,
+    "report_end": "2025-12-31",
+    "supports": [
+      [
+        "TMO",
+        "2026-04",
+        "income"
+      ],
+      [
+        "TMO",
+        "2026-05",
+        "income"
+      ],
+      [
+        "TMO",
+        "2026-06",
+        "income"
+      ],
+      [
+        "TMO",
+        "2026-07",
+        "income"
+      ],
+      [
+        "TMO",
+        "2026-08",
+        "income"
+      ],
+      [
+        "TMO",
+        "2026-09",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000018/tmo-20251231.htm"
+  },
+  {
+    "accn": "0000874716-22-000007",
+    "cik": "0000874716",
+    "filed": "2022-02-16",
+    "fixture": false,
+    "form": "10-K",
+    "id": 82,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "IDXX",
+        "2022-03",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-04",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-05",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-06",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-07",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-08",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-09",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-10",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-11",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2022-12",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2023-01",
+        "income"
+      ],
+      [
+        "IDXX",
+        "2023-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/874716/000087471622000007/idxx-20211231.htm"
+  },
+  {
+    "accn": "0000764478-22-000008",
+    "cik": "0000764478",
+    "filed": "2022-03-18",
+    "fixture": false,
+    "form": "10-K",
+    "id": 83,
+    "report_end": "2022-01-29",
+    "supports": [
+      [
+        "BBY",
+        "2022-04",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-05",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-06",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-07",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-08",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-09",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-10",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-11",
+        "income"
+      ],
+      [
+        "BBY",
+        "2022-12",
+        "income"
+      ],
+      [
+        "BBY",
+        "2023-01",
+        "income"
+      ],
+      [
+        "BBY",
+        "2023-02",
+        "income"
+      ],
+      [
+        "BBY",
+        "2023-03",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447822000008/bby-20220129x10k.htm"
+  },
+  {
+    "accn": "0000950170-23-004264",
+    "cik": "0001136869",
+    "filed": "2023-02-24",
+    "fixture": false,
+    "form": "10-K",
+    "id": 84,
+    "report_end": "2022-12-31",
+    "supports": [
+      [
+        "ZBH",
+        "2023-03",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-04",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-05",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-06",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-07",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-08",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-09",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-10",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-11",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2023-12",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2024-01",
+        "income"
+      ],
+      [
+        "ZBH",
+        "2024-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1136869/000095017023004264/zbh-20221231.htm"
+  },
+  {
+    "accn": "0001601712-22-000249",
+    "cik": "0001601712",
+    "filed": "2022-10-25",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 85,
+    "report_end": "2022-09-30",
+    "supports": [
+      [
+        "SYF",
+        "2022-11",
+        "book"
+      ],
+      [
+        "SYF",
+        "2022-12",
+        "book"
+      ],
+      [
+        "SYF",
+        "2023-01",
+        "book"
+      ],
+      [
+        "SYF",
+        "2023-02",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1601712/000160171222000249/syf-20220930.htm"
+  },
+  {
+    "accn": "0000072741-22-000015",
+    "cik": "0000072741",
+    "filed": "2022-02-17",
+    "fixture": false,
+    "form": "10-K",
+    "id": 86,
+    "report_end": "2021-12-31",
+    "supports": [
+      [
+        "ES",
+        "2022-03",
+        "book"
+      ],
+      [
+        "ES",
+        "2022-04",
+        "book"
+      ],
+      [
+        "ES",
+        "2022-05",
+        "book"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/72741/000007274122000015/es-20211231.htm"
+  },
+  {
+    "accn": "0000091419-22-000049",
+    "cik": "0000091419",
+    "filed": "2022-06-16",
+    "fixture": false,
+    "form": "10-K",
+    "id": 87,
+    "report_end": "2022-04-30",
+    "supports": [
+      [
+        "SJM",
+        "2022-07",
+        "income"
+      ],
+      [
+        "SJM",
+        "2022-08",
+        "income"
+      ],
+      [
+        "SJM",
+        "2022-09",
+        "income"
+      ],
+      [
+        "SJM",
+        "2022-10",
+        "income"
+      ],
+      [
+        "SJM",
+        "2022-11",
+        "income"
+      ],
+      [
+        "SJM",
+        "2022-12",
+        "income"
+      ],
+      [
+        "SJM",
+        "2023-01",
+        "income"
+      ],
+      [
+        "SJM",
+        "2023-02",
+        "income"
+      ],
+      [
+        "SJM",
+        "2023-03",
+        "income"
+      ],
+      [
+        "SJM",
+        "2023-04",
+        "income"
+      ],
+      [
+        "SJM",
+        "2023-05",
+        "income"
+      ],
+      [
+        "SJM",
+        "2023-06",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/91419/000009141922000049/sjm-20220430.htm"
+  },
+  {
+    "accn": "0001613103-22-000023",
+    "cik": "0001613103",
+    "filed": "2022-06-23",
+    "fixture": false,
+    "form": "10-K",
+    "id": 88,
+    "report_end": "2022-04-29",
+    "supports": [
+      [
+        "MDT",
+        "2022-07",
+        "income"
+      ],
+      [
+        "MDT",
+        "2022-08",
+        "income"
+      ],
+      [
+        "MDT",
+        "2022-09",
+        "income"
+      ],
+      [
+        "MDT",
+        "2022-10",
+        "income"
+      ],
+      [
+        "MDT",
+        "2022-11",
+        "income"
+      ],
+      [
+        "MDT",
+        "2022-12",
+        "income"
+      ],
+      [
+        "MDT",
+        "2023-01",
+        "income"
+      ],
+      [
+        "MDT",
+        "2023-02",
+        "income"
+      ],
+      [
+        "MDT",
+        "2023-03",
+        "income"
+      ],
+      [
+        "MDT",
+        "2023-04",
+        "income"
+      ],
+      [
+        "MDT",
+        "2023-05",
+        "income"
+      ],
+      [
+        "MDT",
+        "2023-06",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1613103/000161310322000023/mdt-20220429.htm"
+  },
+  {
+    "accn": "0001267238-25-000008",
+    "cik": "0001267238",
+    "filed": "2025-02-20",
+    "fixture": false,
+    "form": "10-K",
+    "id": 89,
+    "report_end": "2024-12-31",
+    "supports": [
+      [
+        "AIZ",
+        "2025-03",
+        "book"
+      ],
+      [
+        "AIZ",
+        "2025-03",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-04",
+        "book"
+      ],
+      [
+        "AIZ",
+        "2025-04",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-05",
+        "book"
+      ],
+      [
+        "AIZ",
+        "2025-05",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-06",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-07",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-08",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-09",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-10",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-11",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2025-12",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2026-01",
+        "income"
+      ],
+      [
+        "AIZ",
+        "2026-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1267238/000126723825000008/aiz-20241231.htm"
+  },
+  {
+    "accn": "0001413329-21-000091",
+    "cik": "0001413329",
+    "filed": "2021-10-27",
+    "fixture": false,
+    "form": "10-Q",
+    "id": 90,
+    "report_end": "2021-09-30",
+    "supports": [
+      [
+        "PM",
+        "2022-01",
+        "book"
+      ],
+      [
+        "PM",
+        "2022-01",
+        "income"
+      ],
+      [
+        "PM",
+        "2022-02",
+        "book"
+      ],
+      [
+        "PM",
+        "2022-02",
+        "income"
+      ]
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332921000091/pm-20210930.htm"
+  }
+]

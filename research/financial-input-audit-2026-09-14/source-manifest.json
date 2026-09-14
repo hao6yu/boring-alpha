@@ -1,0 +1,41 @@
+{
+  "browser_review": "browser-review.json",
+  "cached_numeric_and_metadata_files": {
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000026172-submissions.json": "4be43666df907d167e28713cf9127f2e4e817cdc6ca771dc68a0b1eda38c1f29",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000030625-submissions.json": "6b8fbc56b614eb3171189d4b296fdf9084b1509a35ef8077d98af719bf352779",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000077360-submissions.json": "b1c98055428ec2e0f44858ab21dcb1250edc4ea96ba9967c19f821e808f41feb",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000103379-submissions.json": "fa46fed906567cee804f74c0f49eaea173acefb26b1a129f5974e944b7a04413",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000106640-submissions.json": "d7a2f6af35d4bfe3236bcc75ee41c3e33b2dbc0781e38131aa4c633f9a5b8c71",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000315213-submissions.json": "7c97290f648c8b08964ae5c05302855eaee9b3a89d5df35e5ab16f8c2a42af38",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000315293-submissions.json": "b9a1983071b10cb51c6dfc9799b2c123964c6974cf9afc78839ddb5e87a308e8",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000858877-submissions.json": "a793dbc32faded28aa9b39219d774ccc5c52011fa220fb061136bc453c356ffb",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0001103982-submissions.json": "b9003cb412bff4152f0681b2b892282a84bf5aafeaf93978cb7492611f60563c",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0001585689-submissions.json": "fc74f842da060ae24515ec1566a4a47c17443997138af9a0c86a1818bd3e3353",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000026172-companyfacts-through-cutoff.json": "71597f71dce139c95e7969c7df45693e9a36f3bed061205adefa093a0d717e94",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000030625-companyfacts-through-cutoff.json": "0714c6564f101a57eb58cb796d0658e569f2b69938e179ff70e44809c6169312",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000077360-companyfacts-through-cutoff.json": "8485b74e5ce3eeea9bef49320a0db61d7a726b931f9cc354df9e2a73df16f467",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000103379-companyfacts-through-cutoff.json": "9d300c631fa9e681e4c2d1ccf8a53fe7bfc6664109e203bd723f0451f947c5b9",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000106640-companyfacts-through-cutoff.json": "4c517a96eda5d6bbc95ab9b5ade86888e0bf758892b7389ff325c7f35d20fd33",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000315213-companyfacts-through-cutoff.json": "69061c1779c8fdc7e4e9a0fa0fcf44346241ba2eb3f0c553bc48e0d4697751a5",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000315293-companyfacts-through-cutoff.json": "a184fad34c8120be81ba6a93a4bc6bbae45343842f0db042640f3664677d78ac",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000858877-companyfacts-through-cutoff.json": "0a6a49c5fc3b1969903c75ad4bf8d83b366284cc75baad7ef98bd7b1e4658086",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0001103982-companyfacts-through-cutoff.json": "a6aa4b8690f2536435919288aa7a376a93f979b0787abcd192f0ecfe976979a1",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0001585689-companyfacts-through-cutoff.json": "397dabd00e59cf17b1dab69d72da68d4873bbca883e4d00e87b3f9a71c6defc9"
+  },
+  "note": "Web-reader excerpts are cached, not complete original HTML. The normal browser resolved oversized annual reports; public-page observations are summarized in browser-review.json. No page export was available.",
+  "web_excerpts": {
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-001.json": "a2655e2a1b0212e08479ccf7e56acfa44929180a5c62b147809f4baac513c90b",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-002.json": "9308c1a9a8323f6d75734ade0aca5dfaea77e25c243d1efdf49f8e8e64ded471",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-003.json": "fa5de70b3afb77a61dbffe455db370899f978571c67295a9ea6614f8690dbc09",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-004.json": "3a233ebba17049c01ed3b424b0aef723e080d1b5e6317338ac0742ef155ed8a8",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-005.json": "5bbff4f6097e48a216c671e034ac7bc7ac81c1cb1994a6ed04fe48c86298e530",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-006.json": "6a1e27fd2bc567362ff159766e803d8cf4fda881c59063c872a1c34b1b9b6cd8",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-007.json": "d0e8dfea8a5ee297863fa6ccc12426d443d4e004702ea8b3acd89e71dfadd038",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-008.json": "cc22652a78cad80a9a7c635ea731ab85d4346ccf59a6a0600d06aebbfcba1b64",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-009.json": "f814fb7b6f40e96c0a74a45f2e17a29299e754a80089574238163897cd039ebd",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-010.json": "b4d5552340ff18e437a3162cda2fae9b1066f207b6760b95d04378d9990f6827",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-011.json": "c58ea7fb7e18f1514508d830a50cfd09530c86ad7cb45db84c3f14069297d214",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-012.json": "b027c6dc30cf2d168f5d5f01fc5bb3a9f129f4c94aaebf4fb60666182258abc8",
+    "data/snapshots/financial-input-audit-2026-09-14/web-evidence-013.json": "55d672bb93170a43fe1fca24a280056fb322ce1082d3c121b4b2e0502f34c10a"
+  }
+}

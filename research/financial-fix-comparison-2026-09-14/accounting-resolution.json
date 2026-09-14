@@ -1,0 +1,94 @@
+{
+  "note": "WHR discloses a changed rounding presentation, but gives no quantified explanation that closes these intervals. No earnings value is inferred backwards from rounded EPS.",
+  "policy_uses_checked": 70,
+  "remaining_issue": [
+    {
+      "accn": "0000106640-25-000140",
+      "basic_eps": "1.27",
+      "basic_shares": "55000000.0",
+      "end": "2024-09-30",
+      "eps_implied_income_interval": [
+        "69511750.0000",
+        "70188750.0000"
+      ],
+      "fact_ids": [
+        "f-96",
+        "f-112",
+        "f-100"
+      ],
+      "minimum_nonoverlap_usd": "11750.0000",
+      "net_income": "69000000",
+      "net_income_interval": [
+        "68500000.0",
+        "69500000.0"
+      ],
+      "start": "2024-01-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm"
+    },
+    {
+      "accn": "0000106640-25-000140",
+      "basic_eps": "2.01",
+      "basic_shares": "55200000.0",
+      "end": "2024-09-30",
+      "eps_implied_income_interval": [
+        "110575750.0000",
+        "111328750.0000"
+      ],
+      "fact_ids": [
+        "f-94",
+        "f-110",
+        "f-98"
+      ],
+      "minimum_nonoverlap_usd": "1075750.0000",
+      "net_income": "109000000",
+      "net_income_interval": [
+        "108500000.0",
+        "109500000.0"
+      ],
+      "start": "2024-07-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm"
+    }
+  ],
+  "resolved_targets": [
+    {
+      "actual": -215146000,
+      "correction": null,
+      "expected": -215146000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": -215146000,
+      "passed": true,
+      "symbol": "VFC"
+    },
+    {
+      "actual": 90349000,
+      "correction": null,
+      "expected": 90349000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 90349000,
+      "passed": true,
+      "symbol": "VFC"
+    },
+    {
+      "actual": 2723000000,
+      "correction": null,
+      "expected": 2723000000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": 2723000000,
+      "passed": true,
+      "symbol": "AON"
+    },
+    {
+      "actual": 2718000000,
+      "correction": null,
+      "expected": 2718000000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 2718000000,
+      "passed": true,
+      "symbol": "AON"
+    }
+  ]
+}

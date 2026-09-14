@@ -1,0 +1,24 @@
+{
+  "baseline_preservation": "99 original files verified unchanged",
+  "files": {
+    "NEXT_EXPERIMENT.md": "a1ad83b8adee4209a45ff16efffab3c6f49e0528630c9ba203dd5f6922ff6c8d",
+    "README.md": "0e63e3bd0c78757d48c504996e899e02d4ecff2c4749604749268152d5dbbba3",
+    "RESULTS.md": "9f79a4374980034c60bcae387006fdb314aa70dfb7f11ace7884b258cbe9e5b3",
+    "annual-filing-jobs.json": "80be6282151e862e5aa5fe4512b3ffef9cda3f1d13234c14d84e201b453343a9",
+    "audit-results.json": "b226d4f99ff00b838c74795c9dee0fdb53426a0ba9c5324733872999ce46adda",
+    "audit.py": "50590ce95c7a0c373832f8b287a8b728f0205ece21016fed7555528b5362e01e",
+    "baseline-inputs.json": "a9ed7055946b7f86c476b2233f4704bc2113904bc7729275422e25793c96f195",
+    "browser-review.json": "601d4f2078dff34a88a094429968d85dc4b911ef2641be0801f1ac136e1bd380",
+    "build_evidence.py": "478c2a606fb24f2ec6e72eb7cf98dc814565ec709afd077c80eba8f158230607",
+    "cached-tag-inventory.json": "676732d8bc08e8142cc00a27b3cc09c21f390b56b4c060b5740be18d7d613c1e",
+    "extraction-freeze.json": "a496982f1009d028c2176183e48742cd9e759ba68374b4b140c7460e3b127aeb",
+    "network-manifest.json": "bc6a5fe67bfe27804c208055bcb0e6eccbe61487259da07c1edadb36bcd420d4",
+    "protocol.json": "fa90fe51a6256a3f4644de6609c3dbe24bd7e7f5427fb762b8726a276b6bfe07",
+    "reviewed-evidence.json": "a3af343df52333d3dc64797457ac5ec57700913299c6a88cf1930657273e805c",
+    "source-manifest.json": "aba64fd3a1a81c2570080c76c74d5e0d03feca055dfaad7e7aa00d257570117b",
+    "verification.json": "681670e48961b751713d1a160ee7e1777f0b3fd39de367208d718cac246c28bf",
+    "verify.py": "2c5a3926ced06dbdb3ae3a95d1514a770b47344d000ebf06f728e7fa8b225a9e"
+  },
+  "next_experiment": "Proposed in NEXT_EXPERIMENT.md; not started",
+  "status": "COMPLETED_DATA_AUDIT_ONLY"
+}

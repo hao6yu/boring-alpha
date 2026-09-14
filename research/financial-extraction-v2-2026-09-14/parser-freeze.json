@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_BEFORE_BROADER_DOCUMENT_VALIDATION_AND_ANY_RETURN_TEST",
+  "at_utc": "2026-09-14T21:25:52.537143+00:00",
+  "files": {
+    "extract.py": "9906decceaed8b9de7f4950e6a3cb18dd97bec338d18a1accb3fc23af8bc209d",
+    "process.py": "3936aa512908a41043f8e3c23dfdaba50b5e2d9cb94ad8a3d3f37517be76aa1d",
+    "protocol.json": "25e908bebec7f6de0ed01569ddbe7f1b36ace04dc0296dde211e51986d3db3ac",
+    "filing-plan.json": "956160f6d0bfae591915584ed93c20c999be3cd77bf4b115daafe8143429cf38"
+  },
+  "note": "The original fixture targets remain unchanged. Rounding is handled using reported XBRL precision; discrepancies from manual targets are retained for review."
+}

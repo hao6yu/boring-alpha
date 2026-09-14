@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-09-14T22:58:47.817818+00:00",
+  "baseline_account_equality_still_exact": true,
+  "changes_to_strategy_inputs_or_accounts": false,
+  "files": {
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-base-after-account.json.gz": "e87f6279ade56b60e21f7638abfeea8d8ab61d7c72ff7801b8fd0309a1b519a8",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-base-after-reference.json.gz": "8926c4db7878f8c00fbfb2fd98f21fb5b82771d6011f30a6fd83413e16f04467",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-base-before-account.json.gz": "21eeb82013393ffe7b4871ed2b7021f57a58c0590c8ecded7207684c5c25f2ff",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-base-before-reference.json.gz": "5921ee5ba2ab51cd7dfb696ba7bfea4978ad4fbe3e3fc9950c1a653ad9cafc68",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-stress-after-account.json.gz": "df76fa06ab36d44d7e17240d93951da1b77224c5619c4c454df1a244a47b7409",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-stress-after-reference.json.gz": "b0c832d8747bb00d2544e27c944f5293265c01e4786371ed94959a0d518cd1dd",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-stress-before-account.json.gz": "48fc17c6fa6b7f9889c0c57f84ed4146a8a8c3b4f662f3e76d3d2698663b06eb",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-strict-stress-before-reference.json.gz": "3febd0f3a93a8614cdb2017d13b7b4501cba28717dab00cad396dc62286e0670",
+    "research/verified-input-comparison-2026-09-14/evaluation-freeze.json": "95f69bfd89807af90d536f14855f9b39daf295792e78c9143a98decfcd2a1b02",
+    "research/verified-input-comparison-2026-09-14/old-results.json": "57cf5c81154d24e0933394f85ccbe7144ee34c47639e5cdc2c2d5c25a66f3c07",
+    "research/verified-input-comparison-2026-09-14/resume_recent.py": "fe1130ab4bd009726160f27737648449968f6cb0d39301be7097b2b39c87c0c7"
+  },
+  "reason": "Original completion attribution sums fractional market exposure inside sum(); the shared helper added it after sum(). Floating summation differed at 1.11e-16 in the first diagnostic weight, while ending selection dollars matched. Reuse original completion reference paths and independently verify them. Preserve original frozen implementation and all completed old outcomes.",
+  "rerun_policy": "Existing strict artifacts may only be reused if the fresh replay is exactly equal; do not overwrite them.",
+  "stage": "Old results seen; recent strict runs unresolved; first recent conditional baseline ledger passed and its path-equality assertion failed before any repaired conditional account was run."
+}

@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-09-14T22:22:39.190430+00:00",
+  "files": {
+    "data/snapshots/financial-fix-comparison-2026-09-14/change-provenance.json": "bfb919b8c1b953b59741b283c8aa474899284ed053489448527512bc0800c25b",
+    "data/snapshots/financial-fix-comparison-2026-09-14/revised-monthly-fundamentals.json": "34accf31d73fb2eac62770e12fc3a22d6b00eac98cfbdc8bae6f82e24da10053",
+    "research/financial-fix-comparison-2026-09-14/coverage.json": "d3e75c46a1af183bf78d44ec6264bc410f5f4b2f3304a997dca81eb0db76238b",
+    "research/financial-fix-comparison-2026-09-14/extract_v3.py": "9bd8677c83df6868de844b819df2031ba865ebc7cd41307e6c1d3fec7767cc8a",
+    "research/financial-fix-comparison-2026-09-14/protocol.json": "89d358e229c79dc230f662143f79b630633947e0f7b5346413553cfc199eb27d",
+    "research/financial-fix-comparison-2026-09-14/replay.py": "61d7b6beb534dc11a1dc6e2c4d3d0bd26a932e03b0d52e79de5a4ab8e1762bf7"
+  },
+  "status": "FROZEN_BEFORE_ANY_REVISED_RETURN_INSPECTION"
+}

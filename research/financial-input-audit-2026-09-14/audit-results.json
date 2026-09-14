@@ -1,0 +1,207 @@
+{
+  "baseline_unchanged": true,
+  "checks": {
+    "baseline_files": 99,
+    "fact_and_submission_payloads": 20,
+    "frozen_files": 6,
+    "original_payloads": 2,
+    "web_excerpt_files": 13
+  },
+  "counts": {
+    "common_equity": {
+      "after": 20,
+      "before": 6
+    },
+    "common_income": {
+      "after": 20,
+      "before": 6
+    }
+  },
+  "new_fits": 0,
+  "new_paid_data_usd": 0,
+  "profitability_evaluations": 0,
+  "rows": [
+    {
+      "common_equity_after": 3040900000,
+      "common_equity_before": null,
+      "common_income_after": 509700000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "PNR"
+    },
+    {
+      "common_equity_after": 3782400000,
+      "common_equity_before": null,
+      "common_income_after": 654100000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "PNR"
+    },
+    {
+      "common_equity_after": 2210045000,
+      "common_equity_before": 2210045000,
+      "common_income_after": -215146000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "VFC"
+    },
+    {
+      "common_equity_after": 1477855000,
+      "common_equity_before": 1477855000,
+      "common_income_after": 90349000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "VFC"
+    },
+    {
+      "common_equity_after": 45210000000,
+      "common_equity_before": 45210000000,
+      "common_income_after": 13581000000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "CSCO"
+    },
+    {
+      "common_equity_after": 46873000000,
+      "common_equity_before": 46873000000,
+      "common_income_after": 10329000000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "CSCO"
+    },
+    {
+      "common_equity_after": 2064000000,
+      "common_equity_before": null,
+      "common_income_after": -1614000000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "WHR"
+    },
+    {
+      "common_equity_after": 2381000000,
+      "common_equity_before": null,
+      "common_income_after": -182000000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "WHR"
+    },
+    {
+      "common_equity_after": -586000000,
+      "common_equity_before": null,
+      "common_income_after": 2723000000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "AON"
+    },
+    {
+      "common_equity_after": 7939000000,
+      "common_equity_before": null,
+      "common_income_after": 2718000000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "AON"
+    },
+    {
+      "common_equity_after": 1579971000,
+      "common_equity_before": 1579971000,
+      "common_income_after": 471495000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "RHI"
+    },
+    {
+      "common_equity_after": 1286092000,
+      "common_equity_before": 1286092000,
+      "common_income_after": 155524000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "RHI"
+    },
+    {
+      "common_equity_after": -1763000000,
+      "common_equity_before": null,
+      "common_income_after": 1322000000,
+      "common_income_before": 1322000000,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "HLT"
+    },
+    {
+      "common_equity_after": -4932000000,
+      "common_equity_before": null,
+      "common_income_after": 1665000000,
+      "common_income_before": 1665000000,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "HLT"
+    },
+    {
+      "common_equity_after": 28535000000,
+      "common_equity_before": null,
+      "common_income_after": 4592000000,
+      "common_income_before": null,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "MDLZ"
+    },
+    {
+      "common_equity_after": 26177000000,
+      "common_equity_before": null,
+      "common_income_after": 3531000000,
+      "common_income_before": null,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "MDLZ"
+    },
+    {
+      "common_equity_after": 10658000000,
+      "common_equity_before": null,
+      "common_income_after": 2797000000,
+      "common_income_before": 2797000000,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "CMI"
+    },
+    {
+      "common_equity_after": 12064000000,
+      "common_equity_before": null,
+      "common_income_after": 2668000000,
+      "common_income_before": 2668000000,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "CMI"
+    },
+    {
+      "common_equity_after": 1874107000,
+      "common_equity_before": null,
+      "common_income_after": 245456000,
+      "common_income_before": 245456000,
+      "cut": "2023-12-29",
+      "month": "2024-01",
+      "symbol": "FLS"
+    },
+    {
+      "common_equity_after": 2264197000,
+      "common_equity_before": null,
+      "common_income_after": 452782000,
+      "common_income_before": 452782000,
+      "cut": "2025-12-31",
+      "month": "2026-01",
+      "symbol": "FLS"
+    }
+  ],
+  "sample_company_dates": 20,
+  "status": "COMPLETED_DATA_AUDIT_ONLY"
+}

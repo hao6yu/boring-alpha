@@ -1,0 +1,628 @@
+{
+  "accounts": [
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "strict-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "strict-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "strict-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "strict-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "zero_withheld-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "zero_withheld-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "zero_withheld-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "zero_withheld-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "cash_25.53_2022-03-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "cash_25.53_2022-03-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "cash_25.53_2022-03-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "cash_25.53_2022-03-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "cash_25.53_2022-04-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "cash_25.53_2022-04-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "cash_25.53_2022-04-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "cash_25.53_2022-04-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "cash_25.53_withheld-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "cash_25.53_withheld-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "cash_25.53_withheld-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "cash_25.53_withheld-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "cash_100_2022-03-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "cash_100_2022-03-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "cash_100_2022-03-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "cash_100_2022-03-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "cash_100_2022-04-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "cash_100_2022-04-01-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "cash_100_2022-04-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "cash_100_2022-04-01-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "6e1008ac1a98571aa7445465e0774039e2f6739661506c147e08c79dbc636ac4",
+      "case": "cash_100_withheld-base",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "aebee3caf9703b09f8855be93ad02914b30d292e5289db28f20238d30e03116e",
+      "case": "cash_100_withheld-base",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e64791ef6917960b25845dacf68a9dea5e3f4f008077edf5ff49b9e2c14e8e3a",
+      "case": "cash_100_withheld-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 43,
+      "stopped": false,
+      "variant": "after",
+      "window": "old"
+    },
+    {
+      "account_sha256": "d6ed8df80d80a700aed3e1126c60853a6a485fe60c3f01459eef23cebfc0ae78",
+      "case": "cash_100_withheld-stress",
+      "complete": true,
+      "days": 501,
+      "fills": 39,
+      "stopped": false,
+      "variant": "before",
+      "window": "old"
+    },
+    {
+      "account_sha256": "e87f6279ade56b60e21f7638abfeea8d8ab61d7c72ff7801b8fd0309a1b519a8",
+      "case": "strict-base",
+      "complete": false,
+      "days": 85,
+      "fills": 25,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "21eeb82013393ffe7b4871ed2b7021f57a58c0590c8ecded7207684c5c25f2ff",
+      "case": "strict-base",
+      "complete": false,
+      "days": 85,
+      "fills": 25,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "df76fa06ab36d44d7e17240d93951da1b77224c5619c4c454df1a244a47b7409",
+      "case": "strict-stress",
+      "complete": false,
+      "days": 85,
+      "fills": 25,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "48fc17c6fa6b7f9889c0c57f84ed4146a8a8c3b4f662f3e76d3d2698663b06eb",
+      "case": "strict-stress",
+      "complete": false,
+      "days": 85,
+      "fills": 25,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "208a442d54bf35a178dea0bd9e325e43ce797d20f9db6722898a3663668ebdfc",
+      "case": "cash0-delay0-base",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "9eb6c73aa12db95a4411fd3eadc74e91b6d58215f30d4cd031a1dce886a3c091",
+      "case": "cash0-delay0-base",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "ba2a1b941c476058dfd87b18474e41d6327bbab17784549104c569b5b80ccf13",
+      "case": "cash0-delay0-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "c4b0ab0b0cc6e758a51833711af391b4ff1632b43359bb8ad3873832a14846a3",
+      "case": "cash0-delay0-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "12bd3bcb451686862ff9a1116438780c1c49b82f394b981e8d6a1d27450a7db5",
+      "case": "cash0-delay5-base",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "dee7a9c98602456a7346b8f35b78c214d96c454d4fd2881d7b636b9d6d70182a",
+      "case": "cash0-delay5-base",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "3cf3807daad88fa0f2ebe2cad6594b8de961955f0f1d8e9019ff33d76df8c5b7",
+      "case": "cash0-delay5-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "1db4f4fe91acbf1b6c189de5e748d55e4308b628b7d221bfceccb0a72c684e58",
+      "case": "cash0-delay5-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "022613a7ba671941557b820dcd036aa7bb5bc52b0eef0f080357586545dddbcf",
+      "case": "cash1-delay0-base",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "b4bd647f3f6c19bd9e47d3b825e86b7961707d216cb0eb3391abdb435332214d",
+      "case": "cash1-delay0-base",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "3e1e367fdd3f0101e5ad0ebf07d4b39ffc36149ab5bba522540674684a2a315f",
+      "case": "cash1-delay0-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "c73f51646da02ccbb2cd54a430864e22459527742769668819e768cf8c6ae77f",
+      "case": "cash1-delay0-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "ae94721b7d2058bfa2755f438afdc1bee8c99af8ef5145ad98b495e64a696937",
+      "case": "cash1-delay5-base",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "02653d3cf557e9c61952d5635f4a8b9c2fe0d9d407d3468d29a0b04336f3355b",
+      "case": "cash1-delay5-base",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "8438c3c5c2c00adaecc954c9df38a03cada78b1b12d6acaacfad8383f5208a0b",
+      "case": "cash1-delay5-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "e2558799507cce4f465d9f484b7eb21a6d8adc2140beed87e26c60959d533a3b",
+      "case": "cash1-delay5-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "bbb8f1683c8c64c54711ca27eeed9bb88ebd1a2a1ba3898f95bc38cd16cbad98",
+      "case": "cash1.25-delay0-base",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "7f1cb1f81d7c9dc2bc31aad24bd42a671f3ca32f81786262792a12854e840f0e",
+      "case": "cash1.25-delay0-base",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "2951ae09ce4731cde3c047cdf393c22aed598856e7334649b76c92918db0a443",
+      "case": "cash1.25-delay0-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "44c60a4fa27de5682b913ebb78640f72efa460f8c107f456cb71615795be5aee",
+      "case": "cash1.25-delay0-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "de0199b08c78defe185a53ebdb8565e6a902616c0ca49e7d931ba953264d92b5",
+      "case": "cash1.25-delay5-base",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "134d5edfa9af9f950e86cd5d9869535468a3c0294ed2fce259a3c130889f0617",
+      "case": "cash1.25-delay5-base",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "1d543fb05ee71917d198e080d0541712f68ff70fcccc350b7ac5913015b61efc",
+      "case": "cash1.25-delay5-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 79,
+      "stopped": false,
+      "variant": "after",
+      "window": "recent"
+    },
+    {
+      "account_sha256": "54f3de38664444c96b3cc689879738cb8949c63d3152bc9a0dd8f962446ba78d",
+      "case": "cash1.25-delay5-stress",
+      "complete": true,
+      "days": 676,
+      "fills": 77,
+      "stopped": false,
+      "variant": "before",
+      "window": "recent"
+    }
+  ],
+  "all_scenarios_reported": true,
+  "arithmetic_adapter": "adapter-freeze.json",
+  "counts": {
+    "account_case_replays": 60,
+    "baseline_account_cases_exactly_reproduced": 30,
+    "complete_account_cases": 56,
+    "fills_recomputed_across_cases": 3284,
+    "note": "Repeated sensitivity cases are not independent observations or new strategy trials.",
+    "priced_nav_observations_reconciled": 32596,
+    "unique_account_payloads": 32,
+    "unresolved_account_prefixes": 4
+  },
+  "every_verified_repair_used": true,
+  "finished_utc": "2026-09-14T23:03:38.633188+00:00",
+  "independent_metrics_from_saved_ledgers": true,
+  "input_and_evaluation_freezes_intact": true,
+  "model_fits": 0,
+  "new_paid_data_usd": 0,
+  "no_new_network_data_requests": true,
+  "parameter_searches": 0,
+  "prior_artifacts_unchanged": 151,
+  "remaining_unqualified_fields_still_missing": true,
+  "source_audit": "../financial-fix-comparison-2026-09-14/provenance-verification.json",
+  "status": "PASS_WITH_EXPLICIT_UNRESOLVED_STRICT_CASES"
+}

@@ -1,0 +1,48 @@
+{
+  "additional_cached_source_hashes": {
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000026172-companyfacts-pre2024.json": "04058ed2fd7cf62709f4cc80157c013af6de68e136400dcbc652a6c2376eb1e4",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000030625-companyfacts-pre2024.json": "bffa5c19b315718a42e0a8a7021403afd98c1379d3dc70b38b542576cdc15a32",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000068505-companyfacts-pre2024.json": "df48d2e9f8823e6e3a170094b45989cdc1a95e31d631c46dfd599847c31afb5b",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000077360-companyfacts-pre2024.json": "19c9b9232ec6125493b8ddfb1d5ceb75b97f5a213c27fb7966e968b8c74f5fbc",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000103379-companyfacts-pre2024.json": "2ebbadc7009e6cdc6c51a7b4df9e2290ee7a93fa95b7a4fa5302d6928bf6a2a6",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000106640-companyfacts-pre2024.json": "f0c537aa1dd6beb56726d17a819fef398b38331b09617c2fcf353d2d6cec1cae",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000310764-companyfacts-pre2024.json": "91b73972deff42f852a61dc6fff1ce4b6144837820d6afcaaffd2a53addc21f6",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000315213-companyfacts-pre2024.json": "9992ead7e3610a0e7bbc310a01e53cfefc83cd072bc4247b350b9df7d0461493",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000315293-companyfacts-pre2024.json": "efcb23fd4bfedc052cfb9707fe12665f0608219799e2cb0aac5d3644e8f67192",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0000858877-companyfacts-pre2024.json": "f052f37b878dae694614e2472e0eb8f1f1b289c03f98a342b11367835bf5585e",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0001099800-companyfacts-pre2024.json": "f3caff7cd5557328043a0fabb5a2caf9e56b4a388bea5e0e182c5e243a4988bb",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0001103982-companyfacts-pre2024.json": "15313d6fceb0bcb8c0b3b775e922d8acca8021db8a4c5469248c47a19aae16c8",
+    "data/snapshots/ml-stock-comparison-2026-09-14/CIK0001585689-companyfacts-pre2024.json": "45e16a5688b86756db194d5656dc565adc08509dd1ba69044b7653025a767550",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000026172-companyfacts-through-cutoff.json": "71597f71dce139c95e7969c7df45693e9a36f3bed061205adefa093a0d717e94",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000030625-companyfacts-through-cutoff.json": "0714c6564f101a57eb58cb796d0658e569f2b69938e179ff70e44809c6169312",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000068505-companyfacts-through-cutoff.json": "dbf7710769a0283f7a305fe4b85dfdac5daf38c7ac7f28c46a074755d4069dd7",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000077360-companyfacts-through-cutoff.json": "8485b74e5ce3eeea9bef49320a0db61d7a726b931f9cc354df9e2a73df16f467",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000103379-companyfacts-through-cutoff.json": "9d300c631fa9e681e4c2d1ccf8a53fe7bfc6664109e203bd723f0451f947c5b9",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000106640-companyfacts-through-cutoff.json": "4c517a96eda5d6bbc95ab9b5ade86888e0bf758892b7389ff325c7f35d20fd33",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000310764-companyfacts-through-cutoff.json": "029f9494f311f05705ee1e2ef52504ae1185e8b67429bd50eeec26aaaa714e79",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000315213-companyfacts-through-cutoff.json": "69061c1779c8fdc7e4e9a0fa0fcf44346241ba2eb3f0c553bc48e0d4697751a5",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000315293-companyfacts-through-cutoff.json": "a184fad34c8120be81ba6a93a4bc6bbae45343842f0db042640f3664677d78ac",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000858877-companyfacts-through-cutoff.json": "0a6a49c5fc3b1969903c75ad4bf8d83b366284cc75baad7ef98bd7b1e4658086",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0001099800-companyfacts-through-cutoff.json": "f69feadb4c5fb7e3ad512531d4e3f90b408da64c97d7b1ebdfaddec3047f45e8",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0001103982-companyfacts-through-cutoff.json": "a6aa4b8690f2536435919288aa7a376a93f979b0787abcd192f0ecfe976979a1",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0001585689-companyfacts-through-cutoff.json": "397dabd00e59cf17b1dab69d72da68d4873bbca883e4d00e87b3f9a71c6defc9"
+  },
+  "changed_company_dates": 142,
+  "counts": {
+    "changed_fields_checked": 189,
+    "fact_uses_checked": 1062,
+    "unique_facts_with_matching_companyfacts": 297,
+    "unique_facts_without_exact_companyfacts_record": 1
+  },
+  "exact_api_records_absent": [
+    {
+      "accn": "0000106640-25-000140",
+      "end": "2025-09-30",
+      "start": null,
+      "tag": "whr:EquityAttributableToParentNet"
+    }
+  ],
+  "limitation": "Exact companyfacts matches verify numbers only. Missing API records do not invalidate original filing facts; accounting qualification remains subject to the failed fixture gate.",
+  "status": "PASS",
+  "unique_source_facts": 298
+}

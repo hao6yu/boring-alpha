@@ -1,0 +1,1826 @@
+[
+  {
+    "cik": "0000077360",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000038/pnr-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000077360-23-000006",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 480900000
+        },
+        {
+          "accn": "0000077360-23-000038",
+          "available": "2023-10-26",
+          "end": "2023-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 414700000
+        },
+        {
+          "accn": "0000077360-23-000038",
+          "available": "2023-10-26",
+          "end": "2022-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 385900000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 509700000
+    },
+    "parent_equity": null,
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "PNR"
+  },
+  {
+    "cik": "0000077360",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000077360-25-000006",
+          "available": "2025-02-27",
+          "end": "2024-12-31",
+          "filed": "2025-02-25",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 625400000
+        },
+        {
+          "accn": "0000077360-25-000047",
+          "available": "2025-10-23",
+          "end": "2025-09-30",
+          "filed": "2025-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 487700000
+        },
+        {
+          "accn": "0000077360-25-000047",
+          "available": "2025-10-23",
+          "end": "2024-09-30",
+          "filed": "2025-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 459000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 654100000
+    },
+    "parent_equity": null,
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "PNR"
+  },
+  {
+    "cik": "0000103379",
+    "common_equity": 2210045000,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000018/vfc-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000103379-23-000006",
+          "available": "2023-05-30",
+          "end": "2023-04-01",
+          "filed": "2023-05-25",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-04-03",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 118584000
+        },
+        {
+          "accn": "0000103379-23-000018",
+          "available": "2023-11-07",
+          "end": "2023-09-30",
+          "filed": "2023-11-03",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2023-04-02",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -508122000
+        },
+        {
+          "accn": "0000103379-23-000018",
+          "available": "2023-11-07",
+          "end": "2022-10-01",
+          "filed": "2023-11-03",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2022-04-03",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -174392000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -215146000
+    },
+    "parent_equity": {
+      "accn": "0000103379-23-000018",
+      "available": "2023-11-07",
+      "end": "2023-09-30",
+      "filed": "2023-11-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 2210045000
+    },
+    "preferred_capital": {
+      "components": [
+        {
+          "accn": "0000103379-23-000018",
+          "available": "2023-11-07",
+          "end": "2023-09-30",
+          "filed": "2023-11-03",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "tag": "PreferredStockSharesOutstanding",
+          "unit": "shares",
+          "val": 0
+        }
+      ],
+      "method": "reported_zero_preferred_outstanding",
+      "val": 0
+    },
+    "report_end": "2023-09-30",
+    "symbol": "VFC"
+  },
+  {
+    "cik": "0000103379",
+    "common_equity": 1477855000,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000060/vfc-20250927.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000103379-25-000023",
+          "available": "2025-05-27",
+          "end": "2025-03-29",
+          "filed": "2025-05-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-03-31",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -189716000
+        },
+        {
+          "accn": "0000103379-25-000060",
+          "available": "2025-10-30",
+          "end": "2025-09-27",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "namespace": "us-gaap",
+          "start": "2025-03-30",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 73357000
+        },
+        {
+          "accn": "0000103379-25-000060",
+          "available": "2025-10-30",
+          "end": "2024-09-28",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "namespace": "us-gaap",
+          "start": "2024-03-31",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -206708000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 90349000
+    },
+    "parent_equity": {
+      "accn": "0000103379-25-000060",
+      "available": "2025-10-30",
+      "end": "2025-09-27",
+      "filed": "2025-10-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 1477855000
+    },
+    "preferred_capital": {
+      "components": [
+        {
+          "accn": "0000103379-25-000060",
+          "available": "2025-10-30",
+          "end": "2025-09-27",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q2",
+          "frame": "CY2025Q3I",
+          "fy": 2026,
+          "namespace": "us-gaap",
+          "tag": "PreferredStockSharesOutstanding",
+          "unit": "shares",
+          "val": 0
+        }
+      ],
+      "method": "reported_zero_preferred_outstanding",
+      "val": 0
+    },
+    "report_end": "2025-09-27",
+    "symbol": "VFC"
+  },
+  {
+    "cik": "0000858877",
+    "common_equity": 45210000000,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000031/csco-20231028.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000858877-23-000023",
+          "available": "2023-09-11",
+          "end": "2023-07-29",
+          "filed": "2023-09-07",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-07-31",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 12613000000
+        },
+        {
+          "accn": "0000858877-23-000031",
+          "available": "2023-11-24",
+          "end": "2023-10-28",
+          "filed": "2023-11-21",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2023-07-30",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 3638000000
+        },
+        {
+          "accn": "0000858877-23-000031",
+          "available": "2023-11-24",
+          "end": "2022-10-29",
+          "filed": "2023-11-21",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q3",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2022-07-31",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2670000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 13581000000
+    },
+    "parent_equity": {
+      "accn": "0000858877-23-000031",
+      "available": "2023-11-24",
+      "end": "2023-10-28",
+      "filed": "2023-11-21",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 45210000000
+    },
+    "preferred_capital": {
+      "components": [
+        {
+          "accn": "0000858877-23-000031",
+          "available": "2023-11-24",
+          "end": "2023-10-28",
+          "filed": "2023-11-21",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2023Q3I",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "tag": "PreferredStockSharesOutstanding",
+          "unit": "shares",
+          "val": 0
+        }
+      ],
+      "method": "reported_zero_preferred_outstanding",
+      "val": 0
+    },
+    "report_end": "2023-10-28",
+    "symbol": "CSCO"
+  },
+  {
+    "cik": "0000858877",
+    "common_equity": 46873000000,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000171/csco-20251025.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000858877-25-000111",
+          "available": "2025-09-05",
+          "end": "2025-07-26",
+          "filed": "2025-09-03",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-07-28",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 10180000000
+        },
+        {
+          "accn": "0000858877-25-000171",
+          "available": "2025-11-20",
+          "end": "2025-10-25",
+          "filed": "2025-11-18",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2025Q3",
+          "fy": 2026,
+          "namespace": "us-gaap",
+          "start": "2025-07-27",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2860000000
+        },
+        {
+          "accn": "0000858877-25-000171",
+          "available": "2025-11-20",
+          "end": "2024-10-26",
+          "filed": "2025-11-18",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2024Q3",
+          "fy": 2026,
+          "namespace": "us-gaap",
+          "start": "2024-07-28",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2711000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 10329000000
+    },
+    "parent_equity": {
+      "accn": "0000858877-25-000171",
+      "available": "2025-11-20",
+      "end": "2025-10-25",
+      "filed": "2025-11-18",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 46873000000
+    },
+    "preferred_capital": {
+      "components": [
+        {
+          "accn": "0000858877-25-000171",
+          "available": "2025-11-20",
+          "end": "2025-10-25",
+          "filed": "2025-11-18",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2025Q3I",
+          "fy": 2026,
+          "namespace": "us-gaap",
+          "tag": "PreferredStockSharesOutstanding",
+          "unit": "shares",
+          "val": 0
+        }
+      ],
+      "method": "reported_zero_preferred_outstanding",
+      "val": 0
+    },
+    "report_end": "2025-10-25",
+    "symbol": "CSCO"
+  },
+  {
+    "cik": "0000106640",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000131/whr-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000106640-23-000015",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -1519000000
+        },
+        {
+          "accn": "0000106640-23-000131",
+          "available": "2023-10-30",
+          "end": "2023-09-30",
+          "filed": "2023-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -10000000
+        },
+        {
+          "accn": "0000106640-23-000131",
+          "available": "2023-10-30",
+          "end": "2022-09-30",
+          "filed": "2023-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 85000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -1614000000
+    },
+    "parent_equity": {
+      "accn": "0000106640-23-000131",
+      "available": "2023-10-30",
+      "end": "2023-09-30",
+      "filed": "2023-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 2064000000
+    },
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "WHR"
+  },
+  {
+    "cik": "0000106640",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000106640-25-000011",
+          "available": "2025-02-18",
+          "end": "2024-12-31",
+          "filed": "2025-02-13",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -323000000
+        },
+        {
+          "accn": "0000106640-25-000140",
+          "available": "2025-10-30",
+          "end": "2025-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 210000000
+        },
+        {
+          "accn": "0000106640-25-000140",
+          "available": "2025-10-30",
+          "end": "2024-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 69000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -182000000
+    },
+    "parent_equity": {
+      "components": [
+        {
+          "accn": "0000106640-25-000140",
+          "available": "2025-10-30",
+          "end": "2025-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "frame": "CY2025Q3I",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+          "unit": "USD",
+          "val": 2644000000
+        },
+        {
+          "accn": "0000106640-25-000140",
+          "available": "2025-10-30",
+          "end": "2025-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "frame": "CY2025Q3I",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "tag": "MinorityInterest",
+          "unit": "USD",
+          "val": 263000000
+        }
+      ],
+      "end": "2025-09-30",
+      "method": "total_minus_NCI",
+      "val": 2381000000
+    },
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "WHR"
+  },
+  {
+    "cik": "0000315293",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023035412/aon-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-23-004087",
+          "available": "2023-02-22",
+          "end": "2022-12-31",
+          "filed": "2023-02-17",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2589000000
+        },
+        {
+          "accn": "0001628280-23-035412",
+          "available": "2023-10-31",
+          "end": "2023-09-30",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2066000000
+        },
+        {
+          "accn": "0001628280-23-035412",
+          "available": "2023-10-31",
+          "end": "2022-09-30",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1932000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2723000000
+    },
+    "parent_equity": {
+      "accn": "0001628280-23-035412",
+      "available": "2023-10-31",
+      "end": "2023-09-30",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": -586000000
+    },
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "AON"
+  },
+  {
+    "cik": "0000315293",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025047805/aon-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-25-006093",
+          "available": "2025-02-20",
+          "end": "2024-12-31",
+          "filed": "2025-02-18",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2654000000
+        },
+        {
+          "accn": "0001628280-25-047805",
+          "available": "2025-11-04",
+          "end": "2025-09-30",
+          "filed": "2025-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2002000000
+        },
+        {
+          "accn": "0001628280-25-047805",
+          "available": "2025-11-04",
+          "end": "2024-09-30",
+          "filed": "2025-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1938000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2718000000
+    },
+    "parent_equity": {
+      "accn": "0001628280-25-047805",
+      "available": "2025-11-04",
+      "end": "2025-09-30",
+      "filed": "2025-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2025Q3I",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 7939000000
+    },
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "AON"
+  },
+  {
+    "cik": "0000315213",
+    "common_equity": 1579971000,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000105/rhi-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000315213-23-000016",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 657919000
+        },
+        {
+          "accn": "0000315213-23-000105",
+          "available": "2023-11-02",
+          "end": "2023-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 323842000
+        },
+        {
+          "accn": "0000315213-23-000105",
+          "available": "2023-11-02",
+          "end": "2022-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 510266000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 471495000
+    },
+    "parent_equity": {
+      "accn": "0000315213-23-000105",
+      "available": "2023-11-02",
+      "end": "2023-09-30",
+      "filed": "2023-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 1579971000
+    },
+    "preferred_capital": {
+      "components": [
+        {
+          "accn": "0000315213-23-000105",
+          "available": "2023-11-02",
+          "end": "2023-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "frame": "CY2023Q3I",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "tag": "PreferredStockSharesIssued",
+          "unit": "shares",
+          "val": 0
+        }
+      ],
+      "method": "reported_zero_preferred_issued",
+      "val": 0
+    },
+    "report_end": "2023-09-30",
+    "symbol": "RHI"
+  },
+  {
+    "cik": "0000315213",
+    "common_equity": 1286092000,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000074/rhi-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000315213-25-000007",
+          "available": "2025-02-18",
+          "end": "2024-12-31",
+          "filed": "2025-02-13",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 251598000
+        },
+        {
+          "accn": "0000315213-25-000074",
+          "available": "2025-11-04",
+          "end": "2025-09-30",
+          "filed": "2025-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 101234000
+        },
+        {
+          "accn": "0000315213-25-000074",
+          "available": "2025-11-04",
+          "end": "2024-09-30",
+          "filed": "2025-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 197308000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 155524000
+    },
+    "parent_equity": {
+      "accn": "0000315213-25-000074",
+      "available": "2025-11-04",
+      "end": "2025-09-30",
+      "filed": "2025-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2025Q3I",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 1286092000
+    },
+    "preferred_capital": {
+      "components": [
+        {
+          "accn": "0000315213-25-000074",
+          "available": "2025-11-04",
+          "end": "2025-09-30",
+          "filed": "2025-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "frame": "CY2025Q3I",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "tag": "PreferredStockSharesIssued",
+          "unit": "shares",
+          "val": 0
+        }
+      ],
+      "method": "reported_zero_preferred_issued",
+      "val": 0
+    },
+    "report_end": "2025-09-30",
+    "symbol": "RHI"
+  },
+  {
+    "cik": "0001585689",
+    "common_equity": null,
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0001585689-23-000036",
+          "available": "2023-02-13",
+          "end": "2022-12-31",
+          "filed": "2023-02-09",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 1255000000
+        },
+        {
+          "accn": "0001585689-23-000193",
+          "available": "2023-10-27",
+          "end": "2023-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 994000000
+        },
+        {
+          "accn": "0001585689-23-000193",
+          "available": "2023-10-27",
+          "end": "2022-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 927000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1322000000
+    },
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568923000193/hlt-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001585689-23-000036",
+          "available": "2023-02-13",
+          "end": "2022-12-31",
+          "filed": "2023-02-09",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1255000000
+        },
+        {
+          "accn": "0001585689-23-000193",
+          "available": "2023-10-27",
+          "end": "2023-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 994000000
+        },
+        {
+          "accn": "0001585689-23-000193",
+          "available": "2023-10-27",
+          "end": "2022-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 927000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1322000000
+    },
+    "parent_equity": {
+      "accn": "0001585689-23-000193",
+      "available": "2023-10-27",
+      "end": "2023-09-30",
+      "filed": "2023-10-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": -1763000000
+    },
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "HLT"
+  },
+  {
+    "cik": "0001585689",
+    "common_equity": null,
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0001585689-25-000008",
+          "available": "2025-02-10",
+          "end": "2024-12-31",
+          "filed": "2025-02-06",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 1535000000
+        },
+        {
+          "accn": "0001585689-25-000160",
+          "available": "2025-10-24",
+          "end": "2025-09-30",
+          "filed": "2025-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 1160000000
+        },
+        {
+          "accn": "0001585689-25-000160",
+          "available": "2025-10-24",
+          "end": "2024-09-30",
+          "filed": "2025-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 1030000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1665000000
+    },
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568925000160/hlt-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001585689-25-000008",
+          "available": "2025-02-10",
+          "end": "2024-12-31",
+          "filed": "2025-02-06",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1535000000
+        },
+        {
+          "accn": "0001585689-25-000160",
+          "available": "2025-10-24",
+          "end": "2025-09-30",
+          "filed": "2025-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1160000000
+        },
+        {
+          "accn": "0001585689-25-000160",
+          "available": "2025-10-24",
+          "end": "2024-09-30",
+          "filed": "2025-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1030000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1665000000
+    },
+    "parent_equity": {
+      "accn": "0001585689-25-000160",
+      "available": "2025-10-24",
+      "end": "2025-09-30",
+      "filed": "2025-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2025Q3I",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": -4932000000
+    },
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "HLT"
+  },
+  {
+    "cik": "0001103982",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001103982-23-000006",
+          "available": "2023-02-07",
+          "end": "2022-12-31",
+          "filed": "2023-02-03",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2717000000
+        },
+        {
+          "accn": "0001103982-23-000075",
+          "available": "2023-11-03",
+          "end": "2023-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 4009000000
+        },
+        {
+          "accn": "0001103982-23-000075",
+          "available": "2023-11-03",
+          "end": "2022-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2134000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 4592000000
+    },
+    "parent_equity": {
+      "accn": "0001103982-23-000075",
+      "available": "2023-11-03",
+      "end": "2023-09-30",
+      "filed": "2023-11-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 28535000000
+    },
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "MDLZ"
+  },
+  {
+    "cik": "0001103982",
+    "common_equity": null,
+    "common_income_ttm": null,
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_COMMON_INCOME_TTM"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001103982-25-000030",
+          "available": "2025-02-07",
+          "end": "2024-12-31",
+          "filed": "2025-02-05",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 4611000000
+        },
+        {
+          "accn": "0001628280-25-046773",
+          "available": "2025-10-30",
+          "end": "2025-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1786000000
+        },
+        {
+          "accn": "0001628280-25-046773",
+          "available": "2025-10-30",
+          "end": "2024-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2866000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 3531000000
+    },
+    "parent_equity": {
+      "accn": "0001628280-25-046773",
+      "available": "2025-10-30",
+      "end": "2025-09-30",
+      "filed": "2025-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2025Q3I",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 26177000000
+    },
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "MDLZ"
+  },
+  {
+    "cik": "0000026172",
+    "common_equity": null,
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000026172-23-000005",
+          "available": "2023-02-16",
+          "end": "2022-12-31",
+          "filed": "2023-02-14",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 2151000000
+        },
+        {
+          "accn": "0000026172-23-000045",
+          "available": "2023-11-06",
+          "end": "2023-09-30",
+          "filed": "2023-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 2166000000
+        },
+        {
+          "accn": "0000026172-23-000045",
+          "available": "2023-11-06",
+          "end": "2022-09-30",
+          "filed": "2023-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 1520000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2797000000
+    },
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/26172/000002617223000045/cmi-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_ROA"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": null,
+    "parent_equity": {
+      "accn": "0000026172-23-000045",
+      "available": "2023-11-06",
+      "end": "2023-09-30",
+      "filed": "2023-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 10658000000
+    },
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "CMI"
+  },
+  {
+    "cik": "0000026172",
+    "common_equity": null,
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000026172-25-000007",
+          "available": "2025-02-13",
+          "end": "2024-12-31",
+          "filed": "2025-02-11",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 3946000000
+        },
+        {
+          "accn": "0000026172-25-000039",
+          "available": "2025-11-10",
+          "end": "2025-09-30",
+          "filed": "2025-11-06",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 2250000000
+        },
+        {
+          "accn": "0000026172-25-000039",
+          "available": "2025-11-10",
+          "end": "2024-09-30",
+          "filed": "2025-11-06",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 3528000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2668000000
+    },
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/26172/000002617225000039/cmi-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED",
+      "MISSING_ROA"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": null,
+    "parent_equity": {
+      "accn": "0000026172-25-000039",
+      "available": "2025-11-10",
+      "end": "2025-09-30",
+      "filed": "2025-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2025Q3I",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 12064000000
+    },
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "CMI"
+  },
+  {
+    "cik": "0000030625",
+    "common_equity": null,
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000030625-23-000077",
+          "available": "2023-03-09",
+          "end": "2022-12-31",
+          "filed": "2023-03-07",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 188689000
+        },
+        {
+          "accn": "0000030625-23-000136",
+          "available": "2023-10-27",
+          "end": "2023-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 124126000
+        },
+        {
+          "accn": "0000030625-23-000136",
+          "available": "2023-10-27",
+          "end": "2022-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 67359000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 245456000
+    },
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/30625/000003062523000136/fls-20230930.htm",
+    "cut": "2023-12-29",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED"
+    ],
+    "month": "2024-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000030625-23-000077",
+          "available": "2023-03-09",
+          "end": "2022-12-31",
+          "filed": "2023-03-07",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 188689000
+        },
+        {
+          "accn": "0000030625-23-000136",
+          "available": "2023-10-27",
+          "end": "2023-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 124126000
+        },
+        {
+          "accn": "0000030625-23-000136",
+          "available": "2023-10-27",
+          "end": "2022-09-30",
+          "filed": "2023-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 67359000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 245456000
+    },
+    "parent_equity": {
+      "accn": "0000030625-23-000136",
+      "available": "2023-10-27",
+      "end": "2023-09-30",
+      "filed": "2023-10-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 1874107000
+    },
+    "preferred_capital": null,
+    "report_end": "2023-09-30",
+    "symbol": "FLS"
+  },
+  {
+    "cik": "0000030625",
+    "common_equity": null,
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000030625-25-000039",
+          "available": "2025-02-28",
+          "end": "2024-12-31",
+          "filed": "2025-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 282759000
+        },
+        {
+          "accn": "0000030625-25-000072",
+          "available": "2025-10-30",
+          "end": "2025-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 375241000
+        },
+        {
+          "accn": "0000030625-25-000072",
+          "available": "2025-10-30",
+          "end": "2024-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 205218000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 452782000
+    },
+    "current_filing_url": "https://www.sec.gov/Archives/edgar/data/30625/000003062525000072/fls-20250930.htm",
+    "cut": "2025-12-31",
+    "missing_reasons": [
+      "COMMON_BOOK_CAPITAL_NOT_IDENTIFIED"
+    ],
+    "month": "2026-01",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000030625-25-000039",
+          "available": "2025-02-28",
+          "end": "2024-12-31",
+          "filed": "2025-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 282759000
+        },
+        {
+          "accn": "0000030625-25-000072",
+          "available": "2025-10-30",
+          "end": "2025-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2025-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 375241000
+        },
+        {
+          "accn": "0000030625-25-000072",
+          "available": "2025-10-30",
+          "end": "2024-09-30",
+          "filed": "2025-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2025,
+          "namespace": "us-gaap",
+          "start": "2024-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 205218000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 452782000
+    },
+    "parent_equity": {
+      "accn": "0000030625-25-000072",
+      "available": "2025-10-30",
+      "end": "2025-09-30",
+      "filed": "2025-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2025Q3I",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 2264197000
+    },
+    "preferred_capital": null,
+    "report_end": "2025-09-30",
+    "symbol": "FLS"
+  }
+]

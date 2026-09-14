@@ -1,0 +1,31 @@
+{
+  "additional_corrected_book_value": 1,
+  "at_utc": "2026-09-14T21:45:29.197082+00:00",
+  "changed_company_dates": 139,
+  "changed_issuers": 13,
+  "complete_source_filings": 52,
+  "exact_fixture_matches": 23,
+  "fixture_gate_passed": false,
+  "fixture_targets": 28,
+  "full_cohort_slots_processed": 5700,
+  "new_fits": 0,
+  "new_paid_data_usd": 0,
+  "next_step_authorized_or_queued": false,
+  "operational_note": "Original filing loaded; local capture could not complete after repeated browser-provider disconnection. Excluded from parsing.",
+  "prior_artifacts_unchanged": 101,
+  "profitability_runs": 0,
+  "recovered_fields": 171,
+  "recovered_fields_outside_original_audit_issuers": 8,
+  "remaining_work": [
+    "Resolve four common-earnings qualification cases and independently certify the revised fixtures.",
+    "Formally record the reported-total policy for rounded equity without changing this run.",
+    "Scope complete annual/quarterly source sets across the cohort before considering another bounded run."
+  ],
+  "retrieval_ceiling": 90,
+  "retrieval_navigations": 60,
+  "scope_note": "Full slot replay with partial original-document coverage, not a complete financial dataset.",
+  "source_issuers": 18,
+  "status": "STOP_DATA_GATE_FAILED",
+  "stop_reason": "The frozen parser did not satisfy the original fixture gate; additional non-fixture retrievals cannot fix these accounting rules.",
+  "unqualified_earnings_targets": 4
+}

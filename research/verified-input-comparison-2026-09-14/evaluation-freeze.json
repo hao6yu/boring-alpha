@@ -1,0 +1,208 @@
+{
+  "account_runs": 60,
+  "at_utc": "2026-09-14T22:57:16.478458+00:00",
+  "cases": {
+    "old": [
+      {
+        "cost": "base",
+        "name": "strict-base",
+        "scenario": "strict"
+      },
+      {
+        "cost": "stress",
+        "name": "strict-stress",
+        "scenario": "strict"
+      },
+      {
+        "cost": "base",
+        "name": "zero_withheld-base",
+        "payment": null,
+        "scenario": "zero_withheld",
+        "value": 0
+      },
+      {
+        "cost": "stress",
+        "name": "zero_withheld-stress",
+        "payment": null,
+        "scenario": "zero_withheld",
+        "value": 0
+      },
+      {
+        "cost": "base",
+        "name": "cash_25.53_2022-03-01-base",
+        "payment": "2022-03-01",
+        "scenario": "cash_25.53_2022-03-01",
+        "value": 25.53
+      },
+      {
+        "cost": "stress",
+        "name": "cash_25.53_2022-03-01-stress",
+        "payment": "2022-03-01",
+        "scenario": "cash_25.53_2022-03-01",
+        "value": 25.53
+      },
+      {
+        "cost": "base",
+        "name": "cash_25.53_2022-04-01-base",
+        "payment": "2022-04-01",
+        "scenario": "cash_25.53_2022-04-01",
+        "value": 25.53
+      },
+      {
+        "cost": "stress",
+        "name": "cash_25.53_2022-04-01-stress",
+        "payment": "2022-04-01",
+        "scenario": "cash_25.53_2022-04-01",
+        "value": 25.53
+      },
+      {
+        "cost": "base",
+        "name": "cash_25.53_withheld-base",
+        "payment": null,
+        "scenario": "cash_25.53_withheld",
+        "value": 25.53
+      },
+      {
+        "cost": "stress",
+        "name": "cash_25.53_withheld-stress",
+        "payment": null,
+        "scenario": "cash_25.53_withheld",
+        "value": 25.53
+      },
+      {
+        "cost": "base",
+        "name": "cash_100_2022-03-01-base",
+        "payment": "2022-03-01",
+        "scenario": "cash_100_2022-03-01",
+        "value": 100
+      },
+      {
+        "cost": "stress",
+        "name": "cash_100_2022-03-01-stress",
+        "payment": "2022-03-01",
+        "scenario": "cash_100_2022-03-01",
+        "value": 100
+      },
+      {
+        "cost": "base",
+        "name": "cash_100_2022-04-01-base",
+        "payment": "2022-04-01",
+        "scenario": "cash_100_2022-04-01",
+        "value": 100
+      },
+      {
+        "cost": "stress",
+        "name": "cash_100_2022-04-01-stress",
+        "payment": "2022-04-01",
+        "scenario": "cash_100_2022-04-01",
+        "value": 100
+      },
+      {
+        "cost": "base",
+        "name": "cash_100_withheld-base",
+        "payment": null,
+        "scenario": "cash_100_withheld",
+        "value": 100
+      },
+      {
+        "cost": "stress",
+        "name": "cash_100_withheld-stress",
+        "payment": null,
+        "scenario": "cash_100_withheld",
+        "value": 100
+      }
+    ],
+    "recent": [
+      {
+        "cost": "base",
+        "name": "strict-base"
+      },
+      {
+        "cost": "stress",
+        "name": "strict-stress"
+      },
+      {
+        "cash_multiplier": 0,
+        "cost": "base",
+        "delay_sessions": 0,
+        "name": "cash0-delay0-base"
+      },
+      {
+        "cash_multiplier": 0,
+        "cost": "stress",
+        "delay_sessions": 0,
+        "name": "cash0-delay0-stress"
+      },
+      {
+        "cash_multiplier": 0,
+        "cost": "base",
+        "delay_sessions": 5,
+        "name": "cash0-delay5-base"
+      },
+      {
+        "cash_multiplier": 0,
+        "cost": "stress",
+        "delay_sessions": 5,
+        "name": "cash0-delay5-stress"
+      },
+      {
+        "cash_multiplier": 1,
+        "cost": "base",
+        "delay_sessions": 0,
+        "name": "cash1-delay0-base"
+      },
+      {
+        "cash_multiplier": 1,
+        "cost": "stress",
+        "delay_sessions": 0,
+        "name": "cash1-delay0-stress"
+      },
+      {
+        "cash_multiplier": 1,
+        "cost": "base",
+        "delay_sessions": 5,
+        "name": "cash1-delay5-base"
+      },
+      {
+        "cash_multiplier": 1,
+        "cost": "stress",
+        "delay_sessions": 5,
+        "name": "cash1-delay5-stress"
+      },
+      {
+        "cash_multiplier": 1.25,
+        "cost": "base",
+        "delay_sessions": 0,
+        "name": "cash1.25-delay0-base"
+      },
+      {
+        "cash_multiplier": 1.25,
+        "cost": "stress",
+        "delay_sessions": 0,
+        "name": "cash1.25-delay0-stress"
+      },
+      {
+        "cash_multiplier": 1.25,
+        "cost": "base",
+        "delay_sessions": 5,
+        "name": "cash1.25-delay5-base"
+      },
+      {
+        "cash_multiplier": 1.25,
+        "cost": "stress",
+        "delay_sessions": 5,
+        "name": "cash1.25-delay5-stress"
+      }
+    ]
+  },
+  "files": {
+    "data/snapshots/ml-stock-followup-2026-09-14/universe-reference.json": "5ee213826859477710ed9d3d68c843e5024d49ce8f442b18d7860aae615bbc42",
+    "data/snapshots/ml-stock-recent-validation-2026-09-14/universe-returns.json": "75eb4a6a05b933a9e11f40419ffd5bd899110fb41fd6f92542e1d9a1e521a32c",
+    "research/verified-input-comparison-2026-09-14/compare_support.py": "3809b32f5fbadb9dc019b5e3132b56c67968dd60fdfc0ff77c671e042e23c374",
+    "research/verified-input-comparison-2026-09-14/input-freeze.json": "dd92d4166ca2142c5830feda0f8c8a69efd3ea5e8b25af67c988d463a44a0c7d",
+    "research/verified-input-comparison-2026-09-14/prepare.py": "9292a736cbbc0061c9edc9a21e7951b3d72830cbfe8d7880d9bc86bbbbde7c35",
+    "research/verified-input-comparison-2026-09-14/worker.py": "8bfb2021fdcf2e9d35ecc3fa4c8baa3c75a39ab2a2c3a64879f217fac19945db"
+  },
+  "network_disabled_in_worker": true,
+  "status": "BEFORE_REVISED_ACCOUNT_RUNS"
+}

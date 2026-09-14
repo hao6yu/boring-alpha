@@ -1,0 +1,16 @@
+{
+  "all_recent_conditional_cases": 12,
+  "all_recent_profit_deltas_negative": true,
+  "all_recent_selection_differences_negative": true,
+  "conclusion": "Verified repairs reduce profit in both windows. Recent selection falls further behind its exposure/cost-matched reference. Historical results do not justify funding or scaling this strategy.",
+  "data_policy": "Retain the verified repairs as a separately versioned research input; preserve the original baseline as a comparator. Do not prefer missing-data inputs merely because their seen backtest is higher.",
+  "follow_on": "This input-repair question is complete. A prospective locked strategy-versus-control paper test is a possible next research question, but has not been started or scheduled.",
+  "interpretation": "Exploratory, already-seen historical data; no fresh out-of-sample evidence; selection reference is an attribution diagnostic, not an executable alternative portfolio.",
+  "new_model_fits": 0,
+  "new_network_requests": 0,
+  "new_paid_data_usd": 0,
+  "parameter_searches": 0,
+  "scope_correction": "The earlier 28/28 fixture gate was an assistant-imposed extraction-completeness requirement, not a necessary condition for this missing-aware controlled comparison. Its failure remains recorded.",
+  "status": "REPAIRS_TESTED_NO_RETURN_IMPROVEMENT",
+  "unresolved": "Whirlpool January 2026 earnings stay missing; strict recent corporate-action accounting remains unresolved in both variants."
+}

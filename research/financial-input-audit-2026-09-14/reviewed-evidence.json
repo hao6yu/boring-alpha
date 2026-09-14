@@ -1,0 +1,1975 @@
+{
+  "note": "Certificates are filing-specific human-readable review assertions. Reproduction verifies numbers and dates against caches; it does not automate accounting judgment or authorize reuse on other filings.",
+  "rows": [
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 3040900000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Balance sheet and changes in equity identify ordinary share capital, additional paid-in capital, retained earnings and AOCI. The complete ordinary-capital components reconcile to total equity. This is a reviewed component reconstruction; the absent NCI/preferred tags are not set to zero.",
+        "parts": [
+          {
+            "accn": "0000077360-23-000038",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValueOutstanding",
+            "unit": "USD",
+            "val": 1700000
+          },
+          {
+            "accn": "0000077360-23-000038",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapital",
+            "unit": "USD",
+            "val": 1585200000
+          },
+          {
+            "accn": "0000077360-23-000038",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 1696100000
+          },
+          {
+            "accn": "0000077360-23-000038",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -242100000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000077360-23-000038",
+          "filed": "2023-10-24",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000038/pnr-20230930.htm"
+        }
+      },
+      "cik": "0000077360",
+      "current": {
+        "accn": "0000077360-23-000038",
+        "filed": "2023-10-24",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000038/pnr-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "EPS reconciliation uses net income and weighted-average ordinary shares for basic EPS; annual and current/prior YTD numerator amounts match these facts.",
+        "parts": [
+          {
+            "accn": "0000077360-23-000006",
+            "available": "2023-02-23",
+            "common_scope_reviewed": true,
+            "end": "2022-12-31",
+            "expected": 480900000,
+            "filed": "2023-02-21",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2022,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000006/pnr-20221231.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 480900000
+          },
+          {
+            "accn": "0000077360-23-000038",
+            "available": "2023-10-26",
+            "common_scope_reviewed": true,
+            "end": "2023-09-30",
+            "expected": 414700000,
+            "filed": "2023-10-24",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000038/pnr-20230930.htm",
+            "start": "2023-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 414700000
+          },
+          {
+            "accn": "0000077360-23-000038",
+            "available": "2023-10-26",
+            "common_scope_reviewed": true,
+            "end": "2022-09-30",
+            "expected": 385900000,
+            "filed": "2023-10-24",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000038/pnr-20230930.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 385900000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "PNR"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 3782400000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Balance sheet and changes in equity identify ordinary share capital, additional paid-in capital, retained earnings and AOCI. The complete ordinary-capital components reconcile to total equity. This is a reviewed component reconstruction; the absent NCI/preferred tags are not set to zero.",
+        "parts": [
+          {
+            "accn": "0000077360-25-000047",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValueOutstanding",
+            "unit": "USD",
+            "val": 1700000
+          },
+          {
+            "accn": "0000077360-25-000047",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapital",
+            "unit": "USD",
+            "val": 1351800000
+          },
+          {
+            "accn": "0000077360-25-000047",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 2700600000
+          },
+          {
+            "accn": "0000077360-25-000047",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -271700000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000077360-25-000047",
+          "filed": "2025-10-21",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm"
+        }
+      },
+      "cik": "0000077360",
+      "current": {
+        "accn": "0000077360-25-000047",
+        "filed": "2025-10-21",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "EPS reconciliation uses net income and weighted-average ordinary shares for basic EPS; annual and current/prior YTD numerator amounts match these facts.",
+        "parts": [
+          {
+            "accn": "0000077360-25-000006",
+            "available": "2025-02-27",
+            "common_scope_reviewed": true,
+            "end": "2024-12-31",
+            "expected": 625400000,
+            "filed": "2025-02-25",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000006/pnr-20241231.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 625400000
+          },
+          {
+            "accn": "0000077360-25-000047",
+            "available": "2025-10-23",
+            "common_scope_reviewed": true,
+            "end": "2025-09-30",
+            "expected": 487700000,
+            "filed": "2025-10-21",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm",
+            "start": "2025-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 487700000
+          },
+          {
+            "accn": "0000077360-25-000047",
+            "available": "2025-10-23",
+            "common_scope_reviewed": true,
+            "end": "2024-09-30",
+            "expected": 459000000,
+            "filed": "2025-10-21",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 459000000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "PNR"
+    },
+    {
+      "book": null,
+      "cik": "0000103379",
+      "current": {
+        "accn": "0000103379-23-000018",
+        "filed": "2023-11-03",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000018/vfc-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual significant-accounting-policy disclosure explicitly defines basic EPS as total net income (loss) divided by common shares. Current statements reconcile total net income to total basic common EPS. In 2025 preserve discontinued operations in total income; the continuing-operations-only EPS footnote is not the target numerator.",
+        "parts": [
+          {
+            "accn": "0000103379-23-000006",
+            "available": "2023-05-30",
+            "common_scope_reviewed": true,
+            "end": "2023-04-01",
+            "expected": 118584000,
+            "filed": "2023-05-25",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000006/vfc-20230401.htm",
+            "start": "2022-04-03",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 118584000
+          },
+          {
+            "accn": "0000103379-23-000018",
+            "available": "2023-11-07",
+            "common_scope_reviewed": true,
+            "end": "2023-09-30",
+            "expected": -508122000,
+            "filed": "2023-11-03",
+            "form": "10-Q",
+            "fp": "Q2",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000018/vfc-20230930.htm",
+            "start": "2023-04-02",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -508122000
+          },
+          {
+            "accn": "0000103379-23-000018",
+            "available": "2023-11-07",
+            "common_scope_reviewed": true,
+            "end": "2022-10-01",
+            "expected": -174392000,
+            "filed": "2023-11-03",
+            "form": "10-Q",
+            "fp": "Q2",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000018/vfc-20230930.htm",
+            "start": "2022-04-03",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -174392000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "VFC"
+    },
+    {
+      "book": null,
+      "cik": "0000103379",
+      "current": {
+        "accn": "0000103379-25-000060",
+        "filed": "2025-10-28",
+        "report_end": "2025-09-27",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000060/vfc-20250927.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual significant-accounting-policy disclosure explicitly defines basic EPS as total net income (loss) divided by common shares. Current statements reconcile total net income to total basic common EPS. In 2025 preserve discontinued operations in total income; the continuing-operations-only EPS footnote is not the target numerator.",
+        "parts": [
+          {
+            "accn": "0000103379-25-000023",
+            "available": "2025-05-27",
+            "common_scope_reviewed": true,
+            "end": "2025-03-29",
+            "expected": -189716000,
+            "filed": "2025-05-22",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000023/vfc-20250329.htm",
+            "start": "2024-03-31",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -189716000
+          },
+          {
+            "accn": "0000103379-25-000060",
+            "available": "2025-10-30",
+            "common_scope_reviewed": true,
+            "end": "2025-09-27",
+            "expected": 73357000,
+            "filed": "2025-10-28",
+            "form": "10-Q",
+            "fp": "Q2",
+            "fy": 2026,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000060/vfc-20250927.htm",
+            "start": "2025-03-30",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 73357000
+          },
+          {
+            "accn": "0000103379-25-000060",
+            "available": "2025-10-30",
+            "common_scope_reviewed": true,
+            "end": "2024-09-28",
+            "expected": -206708000,
+            "filed": "2025-10-28",
+            "form": "10-Q",
+            "fp": "Q2",
+            "fy": 2026,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000060/vfc-20250927.htm",
+            "start": "2024-03-31",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -206708000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-09-27",
+      "symbol": "VFC"
+    },
+    {
+      "book": null,
+      "cik": "0000858877",
+      "current": {
+        "accn": "0000858877-23-000031",
+        "filed": "2023-11-21",
+        "report_end": "2023-10-28",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000031/csco-20231028.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Note 20 EPS table uses net income as the basic common EPS numerator in both annual and current filings, including prior YTD comparatives.",
+        "parts": [
+          {
+            "accn": "0000858877-23-000023",
+            "available": "2023-09-11",
+            "common_scope_reviewed": true,
+            "end": "2023-07-29",
+            "expected": 12613000000,
+            "filed": "2023-09-07",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000023/csco-20230729.htm",
+            "start": "2022-07-31",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 12613000000
+          },
+          {
+            "accn": "0000858877-23-000031",
+            "available": "2023-11-24",
+            "common_scope_reviewed": true,
+            "end": "2023-10-28",
+            "expected": 3638000000,
+            "filed": "2023-11-21",
+            "form": "10-Q",
+            "fp": "Q1",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000031/csco-20231028.htm",
+            "start": "2023-07-30",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 3638000000
+          },
+          {
+            "accn": "0000858877-23-000031",
+            "available": "2023-11-24",
+            "common_scope_reviewed": true,
+            "end": "2022-10-29",
+            "expected": 2670000000,
+            "filed": "2023-11-21",
+            "form": "10-Q",
+            "fp": "Q1",
+            "frame": "CY2022Q3",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000031/csco-20231028.htm",
+            "start": "2022-07-31",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2670000000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-10-28",
+      "symbol": "CSCO"
+    },
+    {
+      "book": null,
+      "cik": "0000858877",
+      "current": {
+        "accn": "0000858877-25-000171",
+        "filed": "2025-11-18",
+        "report_end": "2025-10-25",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000171/csco-20251025.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Note 20 EPS table uses net income as the basic common EPS numerator in both annual and current filings, including prior YTD comparatives.",
+        "parts": [
+          {
+            "accn": "0000858877-25-000111",
+            "available": "2025-09-05",
+            "common_scope_reviewed": true,
+            "end": "2025-07-26",
+            "expected": 10180000000,
+            "filed": "2025-09-03",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm",
+            "start": "2024-07-28",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 10180000000
+          },
+          {
+            "accn": "0000858877-25-000171",
+            "available": "2025-11-20",
+            "common_scope_reviewed": true,
+            "end": "2025-10-25",
+            "expected": 2860000000,
+            "filed": "2025-11-18",
+            "form": "10-Q",
+            "fp": "Q1",
+            "frame": "CY2025Q3",
+            "fy": 2026,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000171/csco-20251025.htm",
+            "start": "2025-07-27",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2860000000
+          },
+          {
+            "accn": "0000858877-25-000171",
+            "available": "2025-11-20",
+            "common_scope_reviewed": true,
+            "end": "2024-10-26",
+            "expected": 2711000000,
+            "filed": "2025-11-18",
+            "form": "10-Q",
+            "fp": "Q1",
+            "frame": "CY2024Q3",
+            "fy": 2026,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000171/csco-20251025.htm",
+            "start": "2024-07-28",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2711000000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-10-25",
+      "symbol": "CSCO"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 2064000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Common stock, paid-in capital, retained earnings, AOCI and treasury common stock reconcile to Whirlpool equity. NCI is reported separately. The 2025 parent total is consolidated equity less the separately reported NCI.",
+        "parts": [
+          {
+            "accn": "0000106640-23-000131",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 114000000
+          },
+          {
+            "accn": "0000106640-23-000131",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapital",
+            "unit": "USD",
+            "val": 3074000000
+          },
+          {
+            "accn": "0000106640-23-000131",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 7961000000
+          },
+          {
+            "accn": "0000106640-23-000131",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -2075000000
+          },
+          {
+            "accn": "0000106640-23-000131",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockCommonValue",
+            "unit": "USD",
+            "val": 7010000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000106640-23-000131",
+          "filed": "2023-10-26",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000131/whr-20230930.htm"
+        }
+      },
+      "cik": "0000106640",
+      "current": {
+        "accn": "0000106640-23-000131",
+        "filed": "2023-10-26",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000131/whr-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual and current EPS tables explicitly identify earnings available to Whirlpool as the numerator for basic and diluted common EPS. These parent earnings exclude NCI.",
+        "parts": [
+          {
+            "accn": "0000106640-23-000015",
+            "available": "2023-02-14",
+            "common_scope_reviewed": true,
+            "end": "2022-12-31",
+            "expected": -1519000000,
+            "filed": "2023-02-10",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2022,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000015/whr-20221231.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -1519000000
+          },
+          {
+            "accn": "0000106640-23-000131",
+            "available": "2023-10-30",
+            "common_scope_reviewed": true,
+            "end": "2023-09-30",
+            "expected": -10000000,
+            "filed": "2023-10-26",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000131/whr-20230930.htm",
+            "start": "2023-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -10000000
+          },
+          {
+            "accn": "0000106640-23-000131",
+            "available": "2023-10-30",
+            "common_scope_reviewed": true,
+            "end": "2022-09-30",
+            "expected": 85000000,
+            "filed": "2023-10-26",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000131/whr-20230930.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 85000000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "WHR"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 2381000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Common stock, paid-in capital, retained earnings, AOCI and treasury common stock reconcile to Whirlpool equity. NCI is reported separately. The 2025 parent total is consolidated equity less the separately reported NCI.",
+        "parts": [
+          {
+            "accn": "0000106640-25-000140",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 65000000
+          },
+          {
+            "accn": "0000106640-25-000140",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapital",
+            "unit": "USD",
+            "val": 3479000000
+          },
+          {
+            "accn": "0000106640-25-000140",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 1272000000
+          },
+          {
+            "accn": "0000106640-25-000140",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -1888000000
+          },
+          {
+            "accn": "0000106640-25-000140",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockCommonValue",
+            "unit": "USD",
+            "val": 547000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000106640-25-000140",
+          "filed": "2025-10-28",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm"
+        }
+      },
+      "cik": "0000106640",
+      "current": {
+        "accn": "0000106640-25-000140",
+        "filed": "2025-10-28",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual and current EPS tables explicitly identify earnings available to Whirlpool as the numerator for basic and diluted common EPS. These parent earnings exclude NCI.",
+        "parts": [
+          {
+            "accn": "0000106640-25-000011",
+            "available": "2025-02-18",
+            "common_scope_reviewed": true,
+            "end": "2024-12-31",
+            "expected": -323000000,
+            "filed": "2025-02-13",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000011/whr-20241231.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": -323000000
+          },
+          {
+            "accn": "0000106640-25-000140",
+            "available": "2025-10-30",
+            "common_scope_reviewed": true,
+            "end": "2025-09-30",
+            "expected": 210000000,
+            "filed": "2025-10-28",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm",
+            "start": "2025-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 210000000
+          },
+          {
+            "accn": "0000106640-25-000140",
+            "available": "2025-10-30",
+            "common_scope_reviewed": true,
+            "end": "2024-09-30",
+            "expected": 69000000,
+            "filed": "2025-10-28",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000140/whr-20250930.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 69000000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "WHR"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": -586000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Class A ordinary capital and its paid-in capital, retained deficit and AOCI reconcile to Aon shareholder equity, excluding separately presented NCI. Negative 2023 equity is retained.",
+        "parts": [
+          {
+            "accn": "0001628280-23-035412",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 2000000
+          },
+          {
+            "accn": "0001628280-23-035412",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapitalCommonStock",
+            "unit": "USD",
+            "val": 7015000000
+          },
+          {
+            "accn": "0001628280-23-035412",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": -3024000000
+          },
+          {
+            "accn": "0001628280-23-035412",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -4579000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0001628280-23-035412",
+          "filed": "2023-10-27",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023035412/aon-20230930.htm"
+        }
+      },
+      "cik": "0000315293",
+      "current": {
+        "accn": "0001628280-23-035412",
+        "filed": "2023-10-27",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023035412/aon-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual and current GAAP income statements and EPS disclosures use income attributable to Aon shareholders and basic ordinary shares, after excluding NCI. Adjusted non-GAAP EPS is not used.",
+        "parts": [
+          {
+            "accn": "0001628280-23-004087",
+            "available": "2023-02-22",
+            "common_scope_reviewed": true,
+            "end": "2022-12-31",
+            "expected": 2589000000,
+            "filed": "2023-02-17",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2022,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023004087/aon-20221231.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2589000000
+          },
+          {
+            "accn": "0001628280-23-035412",
+            "available": "2023-10-31",
+            "common_scope_reviewed": true,
+            "end": "2023-09-30",
+            "expected": 2066000000,
+            "filed": "2023-10-27",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023035412/aon-20230930.htm",
+            "start": "2023-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2066000000
+          },
+          {
+            "accn": "0001628280-23-035412",
+            "available": "2023-10-31",
+            "common_scope_reviewed": true,
+            "end": "2022-09-30",
+            "expected": 1932000000,
+            "filed": "2023-10-27",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023035412/aon-20230930.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 1932000000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "AON"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 7939000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Class A ordinary capital and its paid-in capital, retained deficit and AOCI reconcile to Aon shareholder equity, excluding separately presented NCI. Negative 2023 equity is retained.",
+        "parts": [
+          {
+            "accn": "0001628280-25-047805",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 2000000
+          },
+          {
+            "accn": "0001628280-25-047805",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapitalCommonStock",
+            "unit": "USD",
+            "val": 13379000000
+          },
+          {
+            "accn": "0001628280-25-047805",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": -1527000000
+          },
+          {
+            "accn": "0001628280-25-047805",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -3915000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0001628280-25-047805",
+          "filed": "2025-10-31",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025047805/aon-20250930.htm"
+        }
+      },
+      "cik": "0000315293",
+      "current": {
+        "accn": "0001628280-25-047805",
+        "filed": "2025-10-31",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025047805/aon-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual and current GAAP income statements and EPS disclosures use income attributable to Aon shareholders and basic ordinary shares, after excluding NCI. Adjusted non-GAAP EPS is not used.",
+        "parts": [
+          {
+            "accn": "0001628280-25-006093",
+            "available": "2025-02-20",
+            "common_scope_reviewed": true,
+            "end": "2024-12-31",
+            "expected": 2654000000,
+            "filed": "2025-02-18",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025006093/aon-20241231.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2654000000
+          },
+          {
+            "accn": "0001628280-25-047805",
+            "available": "2025-11-04",
+            "common_scope_reviewed": true,
+            "end": "2025-09-30",
+            "expected": 2002000000,
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025047805/aon-20250930.htm",
+            "start": "2025-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2002000000
+          },
+          {
+            "accn": "0001628280-25-047805",
+            "available": "2025-11-04",
+            "common_scope_reviewed": true,
+            "end": "2024-09-30",
+            "expected": 1938000000,
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025047805/aon-20250930.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 1938000000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "AON"
+    },
+    {
+      "book": null,
+      "cik": "0000315213",
+      "current": {
+        "accn": "0000315213-23-000105",
+        "filed": "2023-10-31",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000105/rhi-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual and current EPS footnotes reconcile net income and basic common shares, with no separate basic numerator adjustment in the table. Current and comparative YTD amounts and the original full year are reviewed.",
+        "parts": [
+          {
+            "accn": "0000315213-23-000016",
+            "available": "2023-02-14",
+            "common_scope_reviewed": true,
+            "end": "2022-12-31",
+            "expected": 657919000,
+            "filed": "2023-02-10",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2022,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000016/rhi-20221231.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 657919000
+          },
+          {
+            "accn": "0000315213-23-000105",
+            "available": "2023-11-02",
+            "common_scope_reviewed": true,
+            "end": "2023-09-30",
+            "expected": 323842000,
+            "filed": "2023-10-31",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000105/rhi-20230930.htm",
+            "start": "2023-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 323842000
+          },
+          {
+            "accn": "0000315213-23-000105",
+            "available": "2023-11-02",
+            "common_scope_reviewed": true,
+            "end": "2022-09-30",
+            "expected": 510266000,
+            "filed": "2023-10-31",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000105/rhi-20230930.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 510266000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "RHI"
+    },
+    {
+      "book": null,
+      "cik": "0000315213",
+      "current": {
+        "accn": "0000315213-25-000074",
+        "filed": "2025-10-31",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000074/rhi-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual and current EPS footnotes reconcile net income and basic common shares, with no separate basic numerator adjustment in the table. Current and comparative YTD amounts and the original full year are reviewed.",
+        "parts": [
+          {
+            "accn": "0000315213-25-000007",
+            "available": "2025-02-18",
+            "common_scope_reviewed": true,
+            "end": "2024-12-31",
+            "expected": 251598000,
+            "filed": "2025-02-13",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000007/rhi-20241231.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 251598000
+          },
+          {
+            "accn": "0000315213-25-000074",
+            "available": "2025-11-04",
+            "common_scope_reviewed": true,
+            "end": "2025-09-30",
+            "expected": 101234000,
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000074/rhi-20250930.htm",
+            "start": "2025-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 101234000
+          },
+          {
+            "accn": "0000315213-25-000074",
+            "available": "2025-11-04",
+            "common_scope_reviewed": true,
+            "end": "2024-09-30",
+            "expected": 197308000,
+            "filed": "2025-10-31",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000074/rhi-20250930.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 197308000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "RHI"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": -1763000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Balance sheet and Note 10 common-equity columns reconcile to Hilton shareholder deficit. NCI and redeemable NCI are outside these components. Both negative balances are retained.",
+        "parts": [
+          {
+            "accn": "0001585689-23-000193",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValueOutstanding",
+            "unit": "USD",
+            "val": 3000000
+          },
+          {
+            "accn": "0001585689-23-000193",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapital",
+            "unit": "USD",
+            "val": 10925000000
+          },
+          {
+            "accn": "0001585689-23-000193",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": -4316000000
+          },
+          {
+            "accn": "0001585689-23-000193",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -728000000
+          },
+          {
+            "accn": "0001585689-23-000193",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockValue",
+            "unit": "USD",
+            "val": 7647000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0001585689-23-000193",
+          "filed": "2023-10-25",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568923000193/hlt-20230930.htm"
+        }
+      },
+      "cik": "0001585689",
+      "current": {
+        "accn": "0001585689-23-000193",
+        "filed": "2023-10-25",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568923000193/hlt-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": null,
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "HLT"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": -4932000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Balance sheet and Note 10 common-equity columns reconcile to Hilton shareholder deficit. NCI and redeemable NCI are outside these components. Both negative balances are retained.",
+        "parts": [
+          {
+            "accn": "0001585689-25-000160",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValueOutstanding",
+            "unit": "USD",
+            "val": 3000000
+          },
+          {
+            "accn": "0001585689-25-000160",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapital",
+            "unit": "USD",
+            "val": 11220000000
+          },
+          {
+            "accn": "0001585689-25-000160",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": -1770000000
+          },
+          {
+            "accn": "0001585689-25-000160",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -713000000
+          },
+          {
+            "accn": "0001585689-25-000160",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockValue",
+            "unit": "USD",
+            "val": 13672000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0001585689-25-000160",
+          "filed": "2025-10-22",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568925000160/hlt-20250930.htm"
+        }
+      },
+      "cik": "0001585689",
+      "current": {
+        "accn": "0001585689-25-000160",
+        "filed": "2025-10-22",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568925000160/hlt-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": null,
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "HLT"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 28535000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Common stock, additional paid-in common capital, retained earnings, AOCI and treasury stock reconcile to Mondelez shareholder equity. The separately reported NCI is excluded. Rounded zero common par value is not evidence about preferred capital.",
+        "parts": [
+          {
+            "accn": "0001103982-23-000075",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 0
+          },
+          {
+            "accn": "0001103982-23-000075",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapitalCommonStock",
+            "unit": "USD",
+            "val": 32181000000
+          },
+          {
+            "accn": "0001103982-23-000075",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 33866000000
+          },
+          {
+            "accn": "0001103982-23-000075",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -11232000000
+          },
+          {
+            "accn": "0001103982-23-000075",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockCommonValue",
+            "unit": "USD",
+            "val": 26280000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0001103982-23-000075",
+          "filed": "2023-11-01",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm"
+        }
+      },
+      "cik": "0001103982",
+      "current": {
+        "accn": "0001103982-23-000075",
+        "filed": "2023-11-01",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual Note 17 and current EPS tables subtract noncontrolling-interest earnings before basic common EPS. Use parent net earnings, not consolidated earnings including NCI.",
+        "parts": [
+          {
+            "accn": "0001103982-23-000006",
+            "available": "2023-02-07",
+            "common_scope_reviewed": true,
+            "end": "2022-12-31",
+            "expected": 2717000000,
+            "filed": "2023-02-03",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2022,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2717000000
+          },
+          {
+            "accn": "0001103982-23-000075",
+            "available": "2023-11-03",
+            "common_scope_reviewed": true,
+            "end": "2023-09-30",
+            "expected": 4009000000,
+            "filed": "2023-11-01",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm",
+            "start": "2023-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 4009000000
+          },
+          {
+            "accn": "0001103982-23-000075",
+            "available": "2023-11-03",
+            "common_scope_reviewed": true,
+            "end": "2022-09-30",
+            "expected": 2134000000,
+            "filed": "2023-11-01",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2023,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm",
+            "start": "2022-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2134000000
+          }
+        ]
+      },
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "MDLZ"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 26177000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Common stock, additional paid-in common capital, retained earnings, AOCI and treasury stock reconcile to Mondelez shareholder equity. The separately reported NCI is excluded. Rounded zero common par value is not evidence about preferred capital.",
+        "parts": [
+          {
+            "accn": "0001628280-25-046773",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 0
+          },
+          {
+            "accn": "0001628280-25-046773",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapitalCommonStock",
+            "unit": "USD",
+            "val": 32299000000
+          },
+          {
+            "accn": "0001628280-25-046773",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 36390000000
+          },
+          {
+            "accn": "0001628280-25-046773",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -11464000000
+          },
+          {
+            "accn": "0001628280-25-046773",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockCommonValue",
+            "unit": "USD",
+            "val": 31048000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0001628280-25-046773",
+          "filed": "2025-10-28",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm"
+        }
+      },
+      "cik": "0001103982",
+      "current": {
+        "accn": "0001628280-25-046773",
+        "filed": "2025-10-28",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": {
+        "method": "reviewed_total_basic_common_eps_numerators",
+        "note": "Annual Note 17 and current EPS tables subtract noncontrolling-interest earnings before basic common EPS. Use parent net earnings, not consolidated earnings including NCI.",
+        "parts": [
+          {
+            "accn": "0001103982-25-000030",
+            "available": "2025-02-07",
+            "common_scope_reviewed": true,
+            "end": "2024-12-31",
+            "expected": 4611000000,
+            "filed": "2025-02-05",
+            "form": "10-K",
+            "fp": "FY",
+            "fy": 2024,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 4611000000
+          },
+          {
+            "accn": "0001628280-25-046773",
+            "available": "2025-10-30",
+            "common_scope_reviewed": true,
+            "end": "2025-09-30",
+            "expected": 1786000000,
+            "filed": "2025-10-28",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm",
+            "start": "2025-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 1786000000
+          },
+          {
+            "accn": "0001628280-25-046773",
+            "available": "2025-10-30",
+            "common_scope_reviewed": true,
+            "end": "2024-09-30",
+            "expected": 2866000000,
+            "filed": "2025-10-28",
+            "form": "10-Q",
+            "fp": "Q3",
+            "fy": 2025,
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm",
+            "start": "2024-01-01",
+            "tag": "NetIncomeLoss",
+            "unit": "USD",
+            "val": 2866000000
+          }
+        ]
+      },
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "MDLZ"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 10658000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Common-stock balance already includes additional paid-in capital. Add retained earnings and AOCI, subtract treasury stock. The result reconciles to Cummins shareholder equity, excluding NCI and any redeemable NCI. Do not add paid-in capital twice.",
+        "parts": [
+          {
+            "accn": "0000026172-23-000045",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValueOutstanding",
+            "unit": "USD",
+            "val": 2558000000
+          },
+          {
+            "accn": "0000026172-23-000045",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 19520000000
+          },
+          {
+            "accn": "0000026172-23-000045",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -2051000000
+          },
+          {
+            "accn": "0000026172-23-000045",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockValue",
+            "unit": "USD",
+            "val": 9369000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000026172-23-000045",
+          "filed": "2023-11-02",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617223000045/cmi-20230930.htm"
+        }
+      },
+      "cik": "0000026172",
+      "current": {
+        "accn": "0000026172-23-000045",
+        "filed": "2023-11-02",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617223000045/cmi-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": null,
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "CMI"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 12064000000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "Common-stock balance already includes additional paid-in capital. Add retained earnings and AOCI, subtract treasury stock. The result reconciles to Cummins shareholder equity, excluding NCI and any redeemable NCI. Do not add paid-in capital twice.",
+        "parts": [
+          {
+            "accn": "0000026172-25-000039",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValueOutstanding",
+            "unit": "USD",
+            "val": 2651000000
+          },
+          {
+            "accn": "0000026172-25-000039",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 22300000000
+          },
+          {
+            "accn": "0000026172-25-000039",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -2211000000
+          },
+          {
+            "accn": "0000026172-25-000039",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockValue",
+            "unit": "USD",
+            "val": 10676000000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000026172-25-000039",
+          "filed": "2025-11-06",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617225000039/cmi-20250930.htm"
+        }
+      },
+      "cik": "0000026172",
+      "current": {
+        "accn": "0000026172-25-000039",
+        "filed": "2025-11-06",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617225000039/cmi-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": null,
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "CMI"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 1874107000,
+        "method": "reviewed_complete_common_equity_components",
+        "note": "2023: the complete parent equity statement includes a deferred compensation equity obligation of $7,878,000 in addition to the five standard common-equity components, and excludes separately presented NCI. This additional component is manually transcribed because the same-date fact is absent from companyfacts. 2025: the balance sheet explicitly states no preferred shares issued; subtract zero preferred capital from the reported parent equity, not from equity including NCI.",
+        "parts": [
+          {
+            "accn": "0000030625-23-000136",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "CommonStockValue",
+            "unit": "USD",
+            "val": 220991000
+          },
+          {
+            "accn": "0000030625-23-000136",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AdditionalPaidInCapitalCommonStock",
+            "unit": "USD",
+            "val": 501378000
+          },
+          {
+            "accn": "0000030625-23-000136",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "RetainedEarningsAccumulatedDeficit",
+            "unit": "USD",
+            "val": 3818392000
+          },
+          {
+            "accn": "0000030625-23-000136",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+            "unit": "USD",
+            "val": -659653000
+          },
+          {
+            "accn": "0000030625-23-000136",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": -1,
+            "source": "companyfacts",
+            "tag": "TreasuryStockValue",
+            "unit": "USD",
+            "val": 2014879000
+          },
+          {
+            "accn": "0000030625-23-000136",
+            "end": "2023-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "manual_filing_transcription",
+            "tag": "DeferredCompensationEquity",
+            "unit": "USD",
+            "val": 7878000
+          }
+        ],
+        "preferred_issued_explicit_zero": false,
+        "source": {
+          "accn": "0000030625-23-000136",
+          "filed": "2023-10-25",
+          "report_end": "2023-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062523000136/fls-20230930.htm"
+        }
+      },
+      "cik": "0000030625",
+      "current": {
+        "accn": "0000030625-23-000136",
+        "filed": "2023-10-25",
+        "report_end": "2023-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062523000136/fls-20230930.htm"
+      },
+      "cut": "2023-12-29",
+      "income": null,
+      "month": "2024-01",
+      "report_end": "2023-09-30",
+      "symbol": "FLS"
+    },
+    {
+      "book": {
+        "common_scope_reviewed": true,
+        "expected": 2264197000,
+        "method": "parent_less_explicit_zero_preferred_issued",
+        "note": "2023: the complete parent equity statement includes a deferred compensation equity obligation of $7,878,000 in addition to the five standard common-equity components, and excludes separately presented NCI. This additional component is manually transcribed because the same-date fact is absent from companyfacts. 2025: the balance sheet explicitly states no preferred shares issued; subtract zero preferred capital from the reported parent equity, not from equity including NCI.",
+        "parts": [
+          {
+            "accn": "0000030625-25-000072",
+            "end": "2025-09-30",
+            "namespace": "us-gaap",
+            "sign": 1,
+            "source": "companyfacts",
+            "tag": "StockholdersEquity",
+            "unit": "USD",
+            "val": 2264197000
+          }
+        ],
+        "preferred_issued_explicit_zero": true,
+        "source": {
+          "accn": "0000030625-25-000072",
+          "filed": "2025-10-28",
+          "report_end": "2025-09-30",
+          "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+          "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062525000072/fls-20250930.htm"
+        }
+      },
+      "cik": "0000030625",
+      "current": {
+        "accn": "0000030625-25-000072",
+        "filed": "2025-10-28",
+        "report_end": "2025-09-30",
+        "sections": "Balance sheet, statement of equity, income statement and EPS disclosures",
+        "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062525000072/fls-20250930.htm"
+      },
+      "cut": "2025-12-31",
+      "income": null,
+      "month": "2026-01",
+      "report_end": "2025-09-30",
+      "symbol": "FLS"
+    }
+  ],
+  "status": "MANUALLY_REVIEWED_NUMERIC_AND_SEMANTIC_CERTIFICATES"
+}

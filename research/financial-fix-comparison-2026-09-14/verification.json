@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "27 source-qualified fixture values; remaining WHR failure is retained",
+    "failed gate has produced no return comparison, fit or acquisition",
+    "missing, wrong-issuer, wrong-period, future and ambiguous policy sources rejected",
+    "participating-security acceptance depends on the explicit basic denominator policy",
+    "policy linkage does not override EPS mismatch or disclosed allocation adjustments",
+    "all prior v2 candidate values, company identities and 5700 slots are preserved",
+    "all accepted policy excerpts and historical availability independently checked",
+    "independent interval arithmetic confirms WHR discrepancy without widening tolerance"
+  ],
+  "count": 8,
+  "data_gate_passed": false,
+  "policy_uses_checked": 70,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-09-14T22:28:19.488968+00:00",
+  "baseline_files_unchanged": 136,
+  "baseline_vs_revised_performance": "UNKNOWN",
+  "condition_to_reconsider": "Independent source support resolving Whirlpool common-earnings discrepancy and satisfaction of the frozen data gate.",
+  "earnings_cases_resolved_this_round": 3,
+  "fixture_checks_passed": 27,
+  "fixture_targets": 28,
+  "new_data_requests": 0,
+  "new_income_inputs_vs_v2": 18,
+  "new_model_fits": 0,
+  "new_paid_data_usd": 0,
+  "next_work_queued": false,
+  "original_raw_input_hashes_verified": true,
+  "profitability_runs": 0,
+  "recommendation": "Park this upgrade; retain the original as the only evaluated baseline.",
+  "recovered_fields_vs_original": 189,
+  "reported_equity_target_corrected": true,
+  "return_comparison": "NOT_RUN",
+  "status": "STOP_DATA_GATE_FAILED",
+  "unresolved_earnings_cases": 1
+}

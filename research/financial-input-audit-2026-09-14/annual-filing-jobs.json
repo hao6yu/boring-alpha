@@ -1,0 +1,268 @@
+[
+  {
+    "symbol": "PNR",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0000077360-23-000006",
+      "available": "2023-02-23",
+      "end": "2022-12-31",
+      "filed": "2023-02-21",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "start": "2022-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 480900000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736023000006/pnr-20221231.htm"
+  },
+  {
+    "symbol": "PNR",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0000077360-25-000006",
+      "available": "2025-02-27",
+      "end": "2024-12-31",
+      "filed": "2025-02-25",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "start": "2024-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 625400000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000006/pnr-20241231.htm"
+  },
+  {
+    "symbol": "VFC",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0000103379-23-000006",
+      "available": "2023-05-30",
+      "end": "2023-04-01",
+      "filed": "2023-05-25",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "start": "2022-04-03",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 118584000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000006/vfc-20230401.htm"
+  },
+  {
+    "symbol": "VFC",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0000103379-25-000023",
+      "available": "2025-05-27",
+      "end": "2025-03-29",
+      "filed": "2025-05-22",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "start": "2024-03-31",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": -189716000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000023/vfc-20250329.htm"
+  },
+  {
+    "symbol": "CSCO",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0000858877-23-000023",
+      "available": "2023-09-11",
+      "end": "2023-07-29",
+      "filed": "2023-09-07",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "start": "2022-07-31",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 12613000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887723000023/csco-20230729.htm"
+  },
+  {
+    "symbol": "CSCO",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0000858877-25-000111",
+      "available": "2025-09-05",
+      "end": "2025-07-26",
+      "filed": "2025-09-03",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2025,
+      "namespace": "us-gaap",
+      "start": "2024-07-28",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 10180000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm"
+  },
+  {
+    "symbol": "WHR",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0000106640-23-000015",
+      "available": "2023-02-14",
+      "end": "2022-12-31",
+      "filed": "2023-02-10",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "start": "2022-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": -1519000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000015/whr-20221231.htm"
+  },
+  {
+    "symbol": "WHR",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0000106640-25-000011",
+      "available": "2025-02-18",
+      "end": "2024-12-31",
+      "filed": "2025-02-13",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "start": "2024-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": -323000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000011/whr-20241231.htm"
+  },
+  {
+    "symbol": "AON",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0001628280-23-004087",
+      "available": "2023-02-22",
+      "end": "2022-12-31",
+      "filed": "2023-02-17",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "start": "2022-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 2589000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828023004087/aon-20221231.htm"
+  },
+  {
+    "symbol": "AON",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0001628280-25-006093",
+      "available": "2025-02-20",
+      "end": "2024-12-31",
+      "filed": "2025-02-18",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "start": "2024-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 2654000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828025006093/aon-20241231.htm"
+  },
+  {
+    "symbol": "RHI",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0000315213-23-000016",
+      "available": "2023-02-14",
+      "end": "2022-12-31",
+      "filed": "2023-02-10",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "start": "2022-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 657919000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521323000016/rhi-20221231.htm"
+  },
+  {
+    "symbol": "RHI",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0000315213-25-000007",
+      "available": "2025-02-18",
+      "end": "2024-12-31",
+      "filed": "2025-02-13",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "start": "2024-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 251598000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/315213/000031521325000007/rhi-20241231.htm"
+  },
+  {
+    "symbol": "MDLZ",
+    "month": "2024-01",
+    "annual_component": {
+      "accn": "0001103982-23-000006",
+      "available": "2023-02-07",
+      "end": "2022-12-31",
+      "filed": "2023-02-03",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "start": "2022-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 2717000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+  },
+  {
+    "symbol": "MDLZ",
+    "month": "2026-01",
+    "annual_component": {
+      "accn": "0001103982-25-000030",
+      "available": "2025-02-07",
+      "end": "2024-12-31",
+      "filed": "2025-02-05",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "start": "2024-01-01",
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "val": 4611000000
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+  }
+]

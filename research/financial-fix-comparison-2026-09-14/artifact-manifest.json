@@ -1,0 +1,25 @@
+{
+  "files": {
+    "research/financial-fix-comparison-2026-09-14/README.md": "9371156609ab1debe755ca0fb355ffc7f5af3d1aa898059bb7c05d6beb95e665",
+    "research/financial-fix-comparison-2026-09-14/RESULTS.md": "f5c3318b9b22569a25d1c5ea28509e292196e57ca74bd75f90dc3edc44ae348d",
+    "research/financial-fix-comparison-2026-09-14/accounting-resolution.json": "89c107558efe27c67f37f2f719583f674f72011148f4d4384beaaafa8706c150",
+    "research/financial-fix-comparison-2026-09-14/cached-comparative-check.json": "7bd1f6cb6b45b8456efeff105ff52f45b2296b1b32a4118b7d17e84e666d1853",
+    "research/financial-fix-comparison-2026-09-14/coverage.json": "d3e75c46a1af183bf78d44ec6264bc410f5f4b2f3304a997dca81eb0db76238b",
+    "research/financial-fix-comparison-2026-09-14/decision.json": "3d11be266528c51047013e60bb996f0509b44ef388bb32fc3958f4ca5f757909",
+    "research/financial-fix-comparison-2026-09-14/extract_v3.py": "9bd8677c83df6868de844b819df2031ba865ebc7cd41307e6c1d3fec7767cc8a",
+    "research/financial-fix-comparison-2026-09-14/extraction-freeze.json": "677e3a33b06b6ddb5d6a86bb4ee4eb08624a1e4c7f3ebf8fdd574d7a901628c5",
+    "research/financial-fix-comparison-2026-09-14/protocol.json": "89d358e229c79dc230f662143f79b630633947e0f7b5346413553cfc199eb27d",
+    "research/financial-fix-comparison-2026-09-14/provenance-verification.json": "ca8970912cf118d3b41d5e7c7a73d7fe2bf7ea8ffdeec17975b0cac3113539d1",
+    "research/financial-fix-comparison-2026-09-14/replay.py": "61d7b6beb534dc11a1dc6e2c4d3d0bd26a932e03b0d52e79de5a4ab8e1762bf7",
+    "research/financial-fix-comparison-2026-09-14/verification.json": "597be894725812c038755fe5c71d5ae8c178d8c0a28fcf1e36d1f92627592b02",
+    "research/financial-fix-comparison-2026-09-14/verify.py": "b36ce3d81b0fd096a4de29d0bcc2cfed4321455bdbc509b0a973c0fa548cd2ea",
+    "research/financial-fix-comparison-2026-09-14/verify_sources.py": "402901b5c11caa2369af6cc7c9f7bb7fcc36b40d1f5b393335bc92c2cba09558"
+  },
+  "local_snapshot_files": {
+    "data/snapshots/financial-fix-comparison-2026-09-14/change-provenance.json": "bfb919b8c1b953b59741b283c8aa474899284ed053489448527512bc0800c25b",
+    "data/snapshots/financial-fix-comparison-2026-09-14/extracted-documents.json": "242db840d23aefdac71715bef74f3b34d6ced0544dad921122e177da257ff57c",
+    "data/snapshots/financial-fix-comparison-2026-09-14/revised-monthly-fundamentals.json": "34accf31d73fb2eac62770e12fc3a22d6b00eac98cfbdc8bae6f82e24da10053"
+  },
+  "raw_snapshots_gitignored": true,
+  "status": "FINAL_STOP_DATA_GATE_FAILED"
+}

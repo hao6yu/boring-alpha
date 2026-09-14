@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "ordinary equity, deferred compensation and negative book reproduced",
+    "rounded equity uses the reported parent total and records discrepancy",
+    "omitted deferred compensation fails full equity reconciliation",
+    "non-USD balances cannot fill USD equity",
+    "dimensional noncontrolling balances are excluded",
+    "material equity mismatch rejected beyond rounding bounds",
+    "truncated document rejected",
+    "basic EPS arithmetic rejects a substituted numerator",
+    "participating-security scope requires explicit additional handling",
+    "zero preferred par value alone is not zero issued shares",
+    "filing lag respects weekends and exchange holidays",
+    "future or insufficiently delayed filings cannot repair historical inputs",
+    "one quarterly document cannot fill a trailing annual earnings input",
+    "all 5700 slots and 100 original issuer identities retained",
+    "data gate reflects every original fixture, including discrepancies",
+    "retrieval budget and complete/partial source hashes verified"
+  ],
+  "count": 16,
+  "fixture_gate_passed": false,
+  "note": "Passing defensive checks is distinct from passing the coverage/fixture gate. No profitability result is produced when the latter fails.",
+  "status": "PASS"
+}

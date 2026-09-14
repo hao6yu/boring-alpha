@@ -1,0 +1,31 @@
+{
+  "all_original_slots_retained": true,
+  "baseline_scores_exactly_reproduced": true,
+  "eligibility_unchanged": true,
+  "full_extraction_gate_still_failed": true,
+  "parameter_tuning": false,
+  "source_repairs": 189,
+  "status": "PASS",
+  "translated_feature_repairs": 189,
+  "unresolved_WHR_income_still_missing": true,
+  "windows": {
+    "old": {
+      "changed_entry_months": 8,
+      "changed_retention_months": 16,
+      "changed_scores": 988,
+      "eligible": 2115,
+      "eligible_feature_repairs": 86,
+      "feature_repairs": 86,
+      "slots": 2400
+    },
+    "recent": {
+      "changed_entry_months": 13,
+      "changed_retention_months": 17,
+      "changed_scores": 790,
+      "eligible": 2859,
+      "eligible_feature_repairs": 103,
+      "feature_repairs": 103,
+      "slots": 3300
+    }
+  }
+}

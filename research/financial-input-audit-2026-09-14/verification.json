@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "filing date before the two-session lag",
+    "equity components from wrong period",
+    "equity component from different filing",
+    "incomplete trailing-year earnings",
+    "net income without common EPS qualification",
+    "YTD periods with different fiscal starts",
+    "consolidated income substituted for parent income",
+    "continuing income substituted for total earnings",
+    "preferred tag absence treated as zero",
+    "equity including NCI substituted for parent",
+    "deferred-compensation equity omitted",
+    "unreviewed manual equity value",
+    "negative book changed to positive",
+    "negative equity retained",
+    "unreviewed fields remain missing",
+    "independent signed accounting arithmetic",
+    "weekend and exchange-holiday filing lag",
+    "all twelve existing fields unchanged"
+  ],
+  "count": 18,
+  "limitation": "These checks verify arithmetic, source matching and rejection behavior. Accounting-scope certificates remain manual review assertions, not independently certified accounting opinions.",
+  "status": "PASS"
+}

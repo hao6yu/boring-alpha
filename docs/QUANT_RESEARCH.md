@@ -3,7 +3,60 @@
 Updated 2026-09-14. This is the current work brief; earlier ETF/withdrawal
 research does not define the user's active objective.
 
-Current direction: prioritize 2022 through current 2026. The
+Latest completed work: the [verified-input comparison](../research/verified-input-comparison-2026-09-14/RESULTS.md)
+applies every one of the 189 source-verified repairs to the same fixed strategy.
+**The repairs lower profit in both periods.** On separate $10,000 accounts,
+2022–2023 base/stress profit changes from $599.63/$390.74 to $492.68/$381.75,
+or 2.45%/1.90% annualized after repairs. The recent central conditional case
+changes from $1,675.22/$1,453.15 to $1,286.56/$1,061.39, or 4.59%/3.81%
+annualized. Recent maximum drawdown improves slightly to 7.12%/7.69%; no
+complete account halts. Recent selection trails its exposure/cost-matched
+reference by $623.69/$619.19 after repairs, versus $247.11/$245.60 before.
+All 12 recent conditional cases earn less after repairs and trail the reference.
+Central paired monthly bootstrap intervals include zero; these are seen years,
+not fresh out-of-sample evidence.
+
+The original profit calculations reproduce exactly for the original incomplete
+inputs; this was not an arithmetic error. Their higher historical returns do
+not describe the repaired version or establish expected future earnings.
+The completed round and remaining limitations are summarized in the
+[research closeout](notes/2026-09-14-financial-input-research-closeout.md).
+
+The prior stop was too broad: the assistant had treated the 28/28 extraction
+fixture gate as necessary for any comparison. The fixed score already treats
+missing financial features neutrally, so this separately frozen test leaves
+all unresolved inputs missing in both versions. The [accounting follow-up](../research/financial-fix-comparison-2026-09-14/RESULTS.md)
+and its failed completeness gate remain intact. WHR January 2026 earnings
+remain unqualified; this does not prevent comparison of the verified repairs.
+The earlier report's claim that the comparison had to remain parked is
+superseded by this explicit scope clarification, not by a new source finding.
+
+All 5,700 slots, eligible names, other features, prices, strategy rules and
+cost assumptions are preserved. Repairs affect 142 company-months and 13
+issuers; book/earnings coverage is 41.0%/45.5%, versus 39.5%/43.7% originally.
+Thirty baseline account cases reproduce exactly. All 60 before/after case
+replays were run: 56 complete and four unresolved recent strict prefixes at
+the PXD conversion. Conditional settlement remains hypothetical, not verified
+broker receipts. Independent ledger checks reconcile 32,596 priced daily
+observations and recompute 3,284 fills across cases; repeated scenarios are
+not independent evidence. All 151 protected prior artifacts and frozen raw
+inputs remain unchanged. New network requests, paid data, fits and tuning: zero.
+
+Retain verified repairs as a separately versioned research input and the
+original baseline as its comparator. Do not choose missing inputs because
+their observed returns are higher. This repair question is complete and does
+not justify funding or scaling the strategy. No further parser loop, data
+acquisition, paper monitor or trading process is running or scheduled.
+
+The preceding [v2 extraction run](../research/financial-extraction-v2-2026-09-14/RESULTS.md)
+had 23/28 exact fixture matches and 171 recovered inputs. The earlier
+[ten-company audit](../research/financial-input-audit-2026-09-14/RESULTS.md)
+overstated exact recovery; its historical 28/28 claim is not an automation
+certificate. See the preserved [correction](../research/financial-extraction-v2-2026-09-14/ERRATA.md)
+and the newer accounting follow-up for the subsequent resolutions.
+No collector, evaluation, paper monitor or trading process is running.
+
+Earlier baseline evaluation: prioritize 2022 through current 2026. The
 [completed recent-window test](../research/ml-stock-recent-validation-2026-09-14/COMPLETION_RESULTS.md)
 evaluates the unchanged fixed score from January 2, 2024 through September 11,
 2026, with 2022–2023 retained separately as the already-seen comparison.

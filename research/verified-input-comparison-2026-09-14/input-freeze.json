@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-09-14T22:51:07.792519+00:00",
+  "files": {
+    "data/snapshots/verified-input-comparison-2026-09-14/old-after-panel.json": "650ff9d31141505b3df492db2b81dae2e51624152e73d7cea0579a58a6ae7444",
+    "data/snapshots/verified-input-comparison-2026-09-14/old-after-predictions.json": "9d7e477cdecdc12ab2dc00022adf6c560f342dea0bf944c9713796daef2fe5f8",
+    "data/snapshots/verified-input-comparison-2026-09-14/old-after-schedule.json": "720fa287abc72537f22d64defa1f472c00d8cf5a0cf97fe18de2f03c00b385a0",
+    "data/snapshots/verified-input-comparison-2026-09-14/old-before-panel.json": "48e6a79632749c3ac313d86118953b92b3ae138e92a327202e0e52a346dca306",
+    "data/snapshots/verified-input-comparison-2026-09-14/old-before-predictions.json": "d2c137c648089ea8a7f0182f80c92f4c5cc8515ac3e74a09465725a8e7f9bc4a",
+    "data/snapshots/verified-input-comparison-2026-09-14/old-before-schedule.json": "cf0e5ef7f0eeee1fa8c1d4222957be1871b98bc1f8eeebf85eab2e070c9ab108",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-after-panel.json": "d659e73372c9c454edfc809f9922d6d749531cb81660b4bfb4f7f95c46ba8189",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-after-predictions.json": "0d4ec00d804ed3422b03d04bcc442c229d17848d90225d1e4cd3b4dea3784a90",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-after-schedule.json": "cd9c3cc2a214c62f7950df1d715bcb9f720080dc57992b92f1c8311263ea924b",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-before-panel.json": "3eb719fee4dbc13dbf7ef7e3865f64294ee584c95ca2229414f043d9a6c7d777",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-before-predictions.json": "931fefac8e6b3e4d38ad499add93e0f7306252584c1e493c72eb8854d99ba773",
+    "data/snapshots/verified-input-comparison-2026-09-14/recent-before-schedule.json": "75b486735d37274432e0c6d65b1f095bb2ff1d613de472ef602b9f912942dced",
+    "research/verified-input-comparison-2026-09-14/feature-changes.json": "491a6fff1730676b818767e81aca7e6bd5ab8ff8019cf7cbe4464d596cbc3dc0",
+    "research/verified-input-comparison-2026-09-14/input-checks.json": "6f14864e843c7c6f3eb739b4aa7d4e6e4a3c8e95408a7e1f6387666d09b74020",
+    "research/verified-input-comparison-2026-09-14/prepare.py": "9292a736cbbc0061c9edc9a21e7951b3d72830cbfe8d7880d9bc86bbbbde7c35",
+    "research/verified-input-comparison-2026-09-14/protocol.json": "e1822cc16a06c0d1b3bc7c3960e8ba388e90cf72fc23cd9e0c16bbe11ac8c20d"
+  },
+  "status": "BEFORE_REVISED_RETURN_EVALUATION"
+}

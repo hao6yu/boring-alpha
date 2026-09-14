@@ -1,0 +1,40 @@
+{
+  "observed_on": "2026-09-14",
+  "method": "Normal read-only Codex in-app browser navigation and visible document text. These are paraphrased review observations, not archived original HTML.",
+  "observations": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664023000015/whr-20221231.htm",
+      "section": "Note 12, Net Earnings per Share, page 104",
+      "finding": "The 2022 basic and diluted common EPS numerator is loss available to Whirlpool of $1,519 million. Basic denominator 55.9 million shares. Prior years shown separately.",
+      "value_usd": -1519000000
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm",
+      "section": "Note 17, Earnings per Share, page 122",
+      "finding": "2022 consolidated earnings $2,726 million less $9 million NCI earnings equals $2,717 million attributable to Mondelez, used with 1,378 million basic common shares.",
+      "value_usd": 2717000000
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337923000006/vfc-20230401.htm",
+      "section": "Significant accounting policies, Earnings Per Share; Note 22",
+      "finding": "The accounting policy explicitly defines basic EPS using net income divided by weighted-average common shares. Note 22 shows fiscal 2023 income of $118.584 million and 387.763 million basic common shares.",
+      "value_usd": 118584000
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/103379/000010337925000023/vfc-20250329.htm",
+      "section": "Significant accounting policies, Earnings (Loss) Per Share",
+      "finding": "The accounting policy explicitly defines basic EPS using total net income or loss divided by weighted-average common shares. The continuing-operations EPS footnote alone is insufficient for total common earnings. Current statement comparatives and total basic EPS were separately reviewed."
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/30625/000003062523000136/fls-20230930.htm",
+      "section": "Balance sheet page 3 and statements of shareholder equity pages 4-5",
+      "finding": "The parent equity columns include a $7.878 million deferred compensation obligation alongside common stock, paid-in capital, retained earnings, treasury stock and AOCI. They reconcile to $1,874.107 million parent equity; $39.184 million NCI is separately presented.",
+      "manual_component_usd": 7878000
+    }
+  ],
+  "access_limitations": [
+    "One direct SEC archive request returned 403; direct requests stopped.",
+    "The web text reader could not read three annual reports over its size limit; all three were readable through normal browser navigation.",
+    "In-app browser content export was unsupported; only the observations above are retained from browser-only reads."
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "by_issuer": {
+    "AON": {
+      "book": 15,
+      "income": 15
+    },
+    "CMI": {
+      "book": 9
+    },
+    "CSCO": {
+      "income": 12
+    },
+    "EW": {
+      "income": 2
+    },
+    "FLS": {
+      "book": 12
+    },
+    "HLT": {
+      "book": 12
+    },
+    "MDLZ": {
+      "book": 7,
+      "income": 15
+    },
+    "MSI": {
+      "income": 3
+    },
+    "PNR": {
+      "book": 15,
+      "income": 15
+    },
+    "RHI": {
+      "income": 15
+    },
+    "SYK": {
+      "book": 3
+    },
+    "VFC": {
+      "income": 15
+    },
+    "WHR": {
+      "book": 14,
+      "income": 10
+    }
+  },
+  "changed_company_dates": 142,
+  "changed_issuers": 13,
+  "counts": {
+    "common_equity": {
+      "after": 2338,
+      "before": 2251
+    },
+    "common_income_ttm": {
+      "after": 2595,
+      "before": 2493
+    }
+  },
+  "data_gate_passed": false,
+  "documents": 52,
+  "fixture_results": [
+    {
+      "actual": 3040900000,
+      "correction": null,
+      "expected": 3040900000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": 3040900000,
+      "passed": true,
+      "symbol": "PNR"
+    },
+    {
+      "actual": 509700000,
+      "correction": null,
+      "expected": 509700000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": 509700000,
+      "passed": true,
+      "symbol": "PNR"
+    },
+    {
+      "actual": 3782400000,
+      "correction": null,
+      "expected": 3782400000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": 3782400000,
+      "passed": true,
+      "symbol": "PNR"
+    },
+    {
+      "actual": 654100000,
+      "correction": null,
+      "expected": 654100000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 654100000,
+      "passed": true,
+      "symbol": "PNR"
+    },
+    {
+      "actual": -215146000,
+      "correction": null,
+      "expected": -215146000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": -215146000,
+      "passed": true,
+      "symbol": "VFC"
+    },
+    {
+      "actual": 90349000,
+      "correction": null,
+      "expected": 90349000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 90349000,
+      "passed": true,
+      "symbol": "VFC"
+    },
+    {
+      "actual": 13581000000,
+      "correction": null,
+      "expected": 13581000000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": 13581000000,
+      "passed": true,
+      "symbol": "CSCO"
+    },
+    {
+      "actual": 10329000000,
+      "correction": null,
+      "expected": 10329000000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 10329000000,
+      "passed": true,
+      "symbol": "CSCO"
+    },
+    {
+      "actual": 2064000000,
+      "correction": null,
+      "expected": 2064000000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": 2064000000,
+      "passed": true,
+      "symbol": "WHR"
+    },
+    {
+      "actual": -1614000000,
+      "correction": null,
+      "expected": -1614000000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": -1614000000,
+      "passed": true,
+      "symbol": "WHR"
+    },
+    {
+      "actual": 2380000000,
+      "correction": "Reported parent equity replaces the sum of rounded components; prior ERRATA.md.",
+      "expected": 2380000000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": 2381000000,
+      "passed": true,
+      "symbol": "WHR"
+    },
+    {
+      "actual": null,
+      "correction": null,
+      "expected": -182000000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": -182000000,
+      "passed": false,
+      "symbol": "WHR"
+    },
+    {
+      "actual": -586000000,
+      "correction": null,
+      "expected": -586000000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": -586000000,
+      "passed": true,
+      "symbol": "AON"
+    },
+    {
+      "actual": 2723000000,
+      "correction": null,
+      "expected": 2723000000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": 2723000000,
+      "passed": true,
+      "symbol": "AON"
+    },
+    {
+      "actual": 7939000000,
+      "correction": null,
+      "expected": 7939000000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": 7939000000,
+      "passed": true,
+      "symbol": "AON"
+    },
+    {
+      "actual": 2718000000,
+      "correction": null,
+      "expected": 2718000000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 2718000000,
+      "passed": true,
+      "symbol": "AON"
+    },
+    {
+      "actual": 471495000,
+      "correction": null,
+      "expected": 471495000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": 471495000,
+      "passed": true,
+      "symbol": "RHI"
+    },
+    {
+      "actual": 155524000,
+      "correction": null,
+      "expected": 155524000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 155524000,
+      "passed": true,
+      "symbol": "RHI"
+    },
+    {
+      "actual": -1763000000,
+      "correction": null,
+      "expected": -1763000000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": -1763000000,
+      "passed": true,
+      "symbol": "HLT"
+    },
+    {
+      "actual": -4932000000,
+      "correction": null,
+      "expected": -4932000000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": -4932000000,
+      "passed": true,
+      "symbol": "HLT"
+    },
+    {
+      "actual": 28535000000,
+      "correction": null,
+      "expected": 28535000000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": 28535000000,
+      "passed": true,
+      "symbol": "MDLZ"
+    },
+    {
+      "actual": 4592000000,
+      "correction": null,
+      "expected": 4592000000,
+      "field": "common_income_ttm",
+      "month": "2024-01",
+      "original_target": 4592000000,
+      "passed": true,
+      "symbol": "MDLZ"
+    },
+    {
+      "actual": 26177000000,
+      "correction": null,
+      "expected": 26177000000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": 26177000000,
+      "passed": true,
+      "symbol": "MDLZ"
+    },
+    {
+      "actual": 3531000000,
+      "correction": null,
+      "expected": 3531000000,
+      "field": "common_income_ttm",
+      "month": "2026-01",
+      "original_target": 3531000000,
+      "passed": true,
+      "symbol": "MDLZ"
+    },
+    {
+      "actual": 10658000000,
+      "correction": null,
+      "expected": 10658000000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": 10658000000,
+      "passed": true,
+      "symbol": "CMI"
+    },
+    {
+      "actual": 12064000000,
+      "correction": null,
+      "expected": 12064000000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": 12064000000,
+      "passed": true,
+      "symbol": "CMI"
+    },
+    {
+      "actual": 1874107000,
+      "correction": null,
+      "expected": 1874107000,
+      "field": "common_equity",
+      "month": "2024-01",
+      "original_target": 1874107000,
+      "passed": true,
+      "symbol": "FLS"
+    },
+    {
+      "actual": 2264197000,
+      "correction": null,
+      "expected": 2264197000,
+      "field": "common_equity",
+      "month": "2026-01",
+      "original_target": 2264197000,
+      "passed": true,
+      "symbol": "FLS"
+    }
+  ],
+  "fixture_targets": 28,
+  "fixtures_passed": 27,
+  "new_model_fits": 0,
+  "new_network_requests": 0,
+  "new_paid_data_usd": 0,
+  "profitability_runs": 0,
+  "revised_payload_sha256": "34accf31d73fb2eac62770e12fc3a22d6b00eac98cfbdc8bae6f82e24da10053",
+  "slots": 5700,
+  "unresolved_reasons": {
+    "BOOK_DOCUMENT_UNAVAILABLE": 3162,
+    "BOOK_STRUCTURE_UNQUALIFIED": 7,
+    "INCOMPLETE_QUALIFIED_COMMON_EARNINGS": 2991,
+    "INELIGIBLE_FILING": 329
+  }
+}

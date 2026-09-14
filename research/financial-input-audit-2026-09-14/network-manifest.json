@@ -1,0 +1,13 @@
+{
+  "requests": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736025000047/pnr-20250930.htm",
+      "http_status": 403,
+      "curl_exit": 0,
+      "response_bytes": 4819,
+      "file": "data/snapshots/financial-input-audit-2026-09-14/PNR-2025-09-30.htm",
+      "sha256": "f9e420ac1e6adca7e37677f62e903db1578819267631cfff0c9c4c3082db4b1b",
+      "at_utc": "2026-09-14T20:33:44.932290+00:00"
+    }
+  ]
+}

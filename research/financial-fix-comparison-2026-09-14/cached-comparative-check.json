@@ -1,0 +1,79 @@
+{
+  "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/CIK0000106640-companyfacts-through-cutoff.json",
+  "interpretation": "The three comparative nine-month figures match in the original 2024 accession and later 2025 comparative accession.",
+  "rows": {
+    "EarningsPerShareBasic": [
+      {
+        "accn": "0000106640-24-000151",
+        "end": "2024-09-30",
+        "filed": "2024-10-24",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "unit": "USD/shares",
+        "val": 1.27
+      },
+      {
+        "accn": "0000106640-25-000140",
+        "end": "2024-09-30",
+        "filed": "2025-10-28",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2025,
+        "start": "2024-01-01",
+        "unit": "USD/shares",
+        "val": 1.27
+      }
+    ],
+    "NetIncomeLoss": [
+      {
+        "accn": "0000106640-24-000151",
+        "end": "2024-09-30",
+        "filed": "2024-10-24",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "unit": "USD",
+        "val": 69000000
+      },
+      {
+        "accn": "0000106640-25-000140",
+        "end": "2024-09-30",
+        "filed": "2025-10-28",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2025,
+        "start": "2024-01-01",
+        "unit": "USD",
+        "val": 69000000
+      }
+    ],
+    "WeightedAverageNumberOfSharesOutstandingBasic": [
+      {
+        "accn": "0000106640-24-000151",
+        "end": "2024-09-30",
+        "filed": "2024-10-24",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "unit": "shares",
+        "val": 55000000
+      },
+      {
+        "accn": "0000106640-25-000140",
+        "end": "2024-09-30",
+        "filed": "2025-10-28",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2025,
+        "start": "2024-01-01",
+        "unit": "shares",
+        "val": 55000000
+      }
+    ]
+  },
+  "sha256": "4c517a96eda5d6bbc95ab9b5ade86888e0bf758892b7389ff325c7f35d20fd33"
+}
