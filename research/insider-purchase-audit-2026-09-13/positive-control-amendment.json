@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-09-13T21:50:41.086544+00:00",
+  "reason": "The twelve fixed functional-sample filings contain no non-derivative code P purchases. Preserve them unchanged and add one explicitly selected positive parser control; this is not a signal-frequency sample or a return test.",
+  "max_total_filings_after_control": 13,
+  "remaining_original_limits_unchanged": true,
+  "accession": "0000899243-23-008575",
+  "index_directory_cik": "1056513",
+  "rendered_document": "xslF345X03/doc4.xml",
+  "source": "https://www.sec.gov/Archives/edgar/data/1056513/000089924323008575/xslF345X03/doc4.xml",
+  "selection": "First SEC original Form 4 result returned for the fixed disclosure-date query: 03/13/2023 P FORM 4. Search displayed purchase rows; no security price history or subsequent returns consulted. Joint reporting owners also provide a duplicate-counting control."
+}

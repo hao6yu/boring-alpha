@@ -1,0 +1,32 @@
+{
+  "all_issuer_months": 4800,
+  "classifications": {
+    "MIXED_OR_UNKNOWN": 45,
+    "NONROUTINE": 32,
+    "NO_P_DISCLOSURE": 4450,
+    "NO_QUALIFIED_PURCHASE": 57,
+    "ROUTINE": 7,
+    "UNKNOWN_HISTORY": 6,
+    "UNKNOWN_INSUFFICIENT_YEARS": 196,
+    "UNRESOLVED_CURRENT_PURCHASE": 7
+  },
+  "frozen_at_utc": "2026-09-13T23:57:26.619156+00:00",
+  "limitations": [
+    "Unresolved source histories, ambiguous joint owners and amendments cause abstention under the fixed rules.",
+    "This is a diagnostic of the identifiable subset; unresolved events are not certified ineligible in economic reality.",
+    "No missing or ambiguous record is recoded as a non-routine purchase."
+  ],
+  "policy_sha256": "16c563cda8d5b98367f5fd9165e066227d4f58f63bc400d6cb3a7eddc4133e0b",
+  "security_price_outcomes_read": false,
+  "signals": {
+    "path": "data/snapshots/insider-purchase-diagnostic-2026-09-13/frozen-signals.json",
+    "sha256": "33f95562ec93e1f8ec5e34dfe792b58f422011bcdcd4065c36fa686291d81936"
+  },
+  "source_files": {
+    "build_candidate_ledger.py": "63464ec44940b93355da76af2f22059bb9709ac5f517a9f7d9878428bdde4162",
+    "experiment-policy.json": "16c563cda8d5b98367f5fd9165e066227d4f58f63bc400d6cb3a7eddc4133e0b",
+    "footnote-review.json": "05fabca3986041110e6c242e1cc881aaad39725042404b3d57797d164df44974",
+    "insider_rules.py": "6ed0786304890cba5d38f028058b5142ea414b8082ee979cb13cd4b7fe68b3ca"
+  },
+  "status": "SOURCE_CLASSIFICATION_FROZEN_WITH_EXPLICIT_ABSTENTIONS"
+}

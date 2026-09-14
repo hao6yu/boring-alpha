@@ -1,0 +1,62 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "method": "Use every source P/S row, even amendments, private/prearranged trades, non-common securities, missing prices and any owner role. Ignore mixed-owner/month exclusions and liquidity. Invalid dates can fill every historical month. Nonroutine ceiling further counts routine-capable owners too. Only causal three-year presence remains necessary.",
+  "raw_purchase_rows": 1898,
+  "raw_purchase_issuer_months": 350,
+  "nonroutine_upper_bound": {
+    "issuer_months": 131,
+    "issuers": 49,
+    "months": 23
+  },
+  "routine_upper_bound": {
+    "issuer_months": 61,
+    "issuers": 26,
+    "months": 21
+  },
+  "gates": [
+    {
+      "sample": "nonroutine",
+      "metric": "issuer_months",
+      "optimistic_upper_bound": 131,
+      "required": 80,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "nonroutine",
+      "metric": "issuers",
+      "optimistic_upper_bound": 49,
+      "required": 30,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "nonroutine",
+      "metric": "months",
+      "optimistic_upper_bound": 23,
+      "required": 18,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "routine",
+      "metric": "issuer_months",
+      "optimistic_upper_bound": 61,
+      "required": 40,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "routine",
+      "metric": "issuers",
+      "optimistic_upper_bound": 26,
+      "required": 20,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "routine",
+      "metric": "months",
+      "optimistic_upper_bound": 21,
+      "required": 12,
+      "cannot_reach_minimum": false
+    }
+  ],
+  "status": "UPPER_BOUND_DOES_NOT_REJECT",
+  "security_return_observations_read": 0
+}

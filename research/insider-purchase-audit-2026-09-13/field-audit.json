@@ -1,0 +1,918 @@
+{
+  "created_at_utc": "2026-09-13T22:00:06.408756+00:00",
+  "scope": "field feasibility, not a strategy backtest",
+  "summary": {
+    "filings": 13,
+    "fixed_functional_sample_filings": 12,
+    "selected_positive_controls": 1,
+    "html_xml_matches": 13,
+    "cached_metadata_timestamp_matches": 11,
+    "metadata_timestamp_comparisons": 12,
+    "accepted_at_or_after_16_eastern": 12,
+    "non_derivative_transaction_codes": {
+      "S": 5,
+      "A": 5,
+      "F": 9,
+      "M": 1,
+      "P": 3
+    },
+    "filings_with_10b5_1_footnote": 2,
+    "insiders_classified": 0,
+    "security_return_observations_read": 0,
+    "new_paid_data_usd": 0,
+    "sec_requests": 42,
+    "successful_sec_requests": 40,
+    "captured_bytes_all_sources": 1585467
+  },
+  "filings": [
+    {
+      "accession": "0001140361-23-013426",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001777393",
+      "issuer_name": "ChargePoint Holdings, Inc.",
+      "issuer_symbol": "CHPT",
+      "accepted_eastern": "2023-03-23T16:31:25-04:00",
+      "accepted_utc": "2023-03-23T20:31:25+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-03-23T20:31:25.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001847025",
+          "name": "Chavez Rebecca",
+          "relationship": {
+            "isOfficer": "true",
+            "officerTitle": "General Counsel and Secretary"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-21",
+          "code": "S",
+          "shares": "3983",
+          "acquired_disposed": "D",
+          "price": "9.4",
+          "owned_after": "357182",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": "false",
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "The sales reported on this Form 4 represent shares required to be sold by the Reporting Person to cover tax withholding obligations in connection with the vesting and settlement of restricted stock units. These sales are mandated by the Issuer's election under its equity incentive plans to require the satisfaction of tax withholding obligations to be funded by a \"sell to cover\" transaction and do not represent discretionary trades by the Reporting Person."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1777393/000114036123013426/0001140361-23-013426-index.html"
+    },
+    {
+      "accession": "0001225208-23-002190",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001164863",
+      "issuer_name": "ENPRO INDUSTRIES, INC",
+      "issuer_symbol": "NPO",
+      "accepted_eastern": "2023-02-17T12:25:50-05:00",
+      "accepted_utc": "2023-02-17T17:25:50+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-02-17T17:25:50.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": false,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001599335",
+          "name": "Brueck Felix M.",
+          "relationship": {
+            "isDirector": "1"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-02-16",
+          "code": "A",
+          "shares": "942",
+          "acquired_disposed": "A",
+          "price": "116.69",
+          "owned_after": "5365",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "Shares acquired pursuant to the EnPro Industries, Inc. 2020 Equity Compensation Plan."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1164863/000122520823002190/0001225208-23-002190-index.html"
+    },
+    {
+      "accession": "0001209191-23-011721",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001534504",
+      "issuer_name": "PBF Energy Inc.",
+      "issuer_symbol": "PBF",
+      "accepted_eastern": "2023-02-22T17:00:49-05:00",
+      "accepted_utc": "2023-02-22T22:00:49+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-02-22T22:00:49.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001923559",
+          "name": "Ho Tai Wendy",
+          "relationship": {
+            "isDirector": "0",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "Senior Vice President, HR"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-02-21",
+          "code": "A",
+          "shares": "3542",
+          "acquired_disposed": "A",
+          "price": "0",
+          "owned_after": "60022",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        },
+        {
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-02-21",
+          "code": "F",
+          "shares": "1089",
+          "acquired_disposed": "D",
+          "price": "44.25",
+          "owned_after": "58933",
+          "ownership": "D",
+          "footnote_ids": []
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "The shares were granted to the reporting person in connection with the final payout of 2,707 performance share unit awards granted to the reporting person on February 10, 2020, relating to the performance cycle from January 1, 2020 to December 31, 2022."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1534504/000120919123011721/0001209191-23-011721-index.html"
+    },
+    {
+      "accession": "0001626199-23-000025",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001626199",
+      "issuer_name": "ALPINE IMMUNE SCIENCES, INC.",
+      "issuer_symbol": "ALPN",
+      "accepted_eastern": "2023-01-05T19:32:19-05:00",
+      "accepted_utc": "2023-01-06T00:32:19+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-01-05T19:32:19.000Z",
+      "cached_acceptance_matches_index": false,
+      "timestamp_status": "CONFLICT_QUARANTINE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001596060",
+          "name": "Sandler Andrew Seth",
+          "relationship": {
+            "isDirector": "0",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "Chief Medical Officer",
+            "otherText": null
+          }
+        }
+      ],
+      "non_derivative_transactions": [],
+      "derivative_transaction_count": 1,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "The exercise price is equal to the closing price per share of Common Stock as reported on the Nasdaq Global Market on the date of grant.",
+        "F2": "One-fourth (1/4th) of the Shares subject to the Option will vest on January 4, 2024, and one thirty-sixth (1/36th) of the remaining Shares subject to the Option shall vest each month thereafter, subject to the Reporting Person continuing to be a service provider through each such date."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1626199/000162619923000025/0001626199-23-000025-index.html"
+    },
+    {
+      "accession": "0001562180-23-000015",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001650372",
+      "issuer_name": "Atlassian Corp",
+      "issuer_symbol": "TEAM",
+      "accepted_eastern": "2023-01-03T16:04:39-05:00",
+      "accepted_utc": "2023-01-03T21:04:39+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-01-03T21:04:39.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001666120",
+          "name": "Cannon-Brookes Michael",
+          "relationship": {
+            "isDirector": "true",
+            "isOfficer": "true",
+            "isTenPercentOwner": "true",
+            "isOther": "false",
+            "officerTitle": "Co-CEO, Co-Founder",
+            "otherText": null
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-12-30",
+          "code": "S",
+          "shares": "2426",
+          "acquired_disposed": "D",
+          "price": "128.6972",
+          "owned_after": "6188",
+          "ownership": "I",
+          "footnote_ids": [
+            "F1",
+            "F2",
+            "F3"
+          ]
+        },
+        {
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-12-30",
+          "code": "S",
+          "shares": "3988",
+          "acquired_disposed": "D",
+          "price": "128.0084",
+          "owned_after": "2200",
+          "ownership": "I",
+          "footnote_ids": [
+            "F1",
+            "F4",
+            "F3"
+          ]
+        },
+        {
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-12-30",
+          "code": "S",
+          "shares": "2200",
+          "acquired_disposed": "D",
+          "price": "126.7543",
+          "owned_after": "0",
+          "ownership": "I",
+          "footnote_ids": [
+            "F1",
+            "F5",
+            "F3"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": true,
+      "footnotes": {
+        "F1": "This transaction was effected pursuant to a Rule 10b5-1 trading plan adopted by the reporting person on February 14, 2022.",
+        "F2": "This transaction was executed in multiple trades during the day at prices ranging from $128.39 to $129.38. The weighted-average price is reported above. The reporting person hereby undertakes to provide upon request to the SEC staff, the issuer or a security holder of the issuer full information regarding the number of shares and prices at which the transactions were effected.",
+        "F3": "Shares held by CBC Co Pty Limited as trustee for the Cannon-Brookes Head Trust.",
+        "F4": "This transaction was executed in multiple trades during the day at prices ranging from $127.38 to $128.37. The weighted-average price is reported above. The reporting person hereby undertakes to provide upon request to the SEC staff, the issuer or a security holder of the issuer full information regarding the number of shares and prices at which the transactions were effected.",
+        "F5": "This transaction was executed in multiple trades during the day at prices ranging from $126.37 to $127.33. The weighted-average price is reported above. The reporting person hereby undertakes to provide upon request to the SEC staff, the issuer or a security holder of the issuer full information regarding the number of shares and prices at which the transactions were effected."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1650372/000156218023000015/0001562180-23-000015-index.html"
+    },
+    {
+      "accession": "0000707549-23-000058",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0000707549",
+      "issuer_name": "LAM RESEARCH CORP",
+      "issuer_symbol": "LRCX",
+      "accepted_eastern": "2023-03-03T16:15:09-05:00",
+      "accepted_utc": "2023-03-03T21:15:09+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-03-03T21:15:09.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001966626",
+          "name": "Corrreia Christina",
+          "relationship": {
+            "isDirector": "0",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "CVP , Chief Accounting Officer",
+            "otherText": null
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-01",
+          "code": "A",
+          "shares": "603",
+          "acquired_disposed": "A",
+          "price": "0",
+          "owned_after": "5837",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1",
+            "F2"
+          ]
+        },
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-01",
+          "code": "A",
+          "shares": "2413",
+          "acquired_disposed": "A",
+          "price": "0",
+          "owned_after": "8250",
+          "ownership": "D",
+          "footnote_ids": [
+            "F3",
+            "F2"
+          ]
+        },
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-01",
+          "code": "F",
+          "shares": "57",
+          "acquired_disposed": "D",
+          "price": "490.92",
+          "owned_after": "8193",
+          "ownership": "D",
+          "footnote_ids": [
+            "F4",
+            "F2"
+          ]
+        },
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-01",
+          "code": "F",
+          "shares": "58",
+          "acquired_disposed": "D",
+          "price": "490.92",
+          "owned_after": "8135",
+          "ownership": "D",
+          "footnote_ids": [
+            "F4",
+            "F2"
+          ]
+        },
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-02",
+          "code": "F",
+          "shares": "317",
+          "acquired_disposed": "D",
+          "price": "489.98",
+          "owned_after": "7818",
+          "ownership": "D",
+          "footnote_ids": [
+            "F4",
+            "F2"
+          ]
+        },
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-02",
+          "code": "F",
+          "shares": "111",
+          "acquired_disposed": "D",
+          "price": "489.98",
+          "owned_after": "7707",
+          "ownership": "D",
+          "footnote_ids": [
+            "F4",
+            "F2"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 1,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "The restricted stock units will vest in three equal installments on 03/01/2024, 03/01/2025, and 03/01/2026",
+        "F2": "The amount reported includes shares subject to unvested restricted stock units.",
+        "F3": "The restricted stock units will vest on 03/01/2026.",
+        "F4": "Represents shares that were automatically withheld upon vesting of restricted stock units to satisfy tax withholding obligations.",
+        "F5": "The Market-based performance restricted stock units will vest between 0% and 150% on 03/01/2026. The performance of this award is based on the Lam Research Total Shareholder Return performance relative to the PHLX Semiconductor Total Return Index Total Shareholder Return during the performance period of 02/01/2023 through 01/31/2026."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754923000058/0000707549-23-000058-index.html"
+    },
+    {
+      "accession": "0000034903-23-000036",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0000034903",
+      "issuer_name": "FEDERAL REALTY INVESTMENT TRUST",
+      "issuer_symbol": "FRT",
+      "accepted_eastern": "2023-02-14T17:19:36-05:00",
+      "accepted_utc": "2023-02-14T22:19:36+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-02-14T22:19:36.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001681724",
+          "name": "Guglielmone Daniel",
+          "relationship": {
+            "isDirector": "0",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "EVP-CFO and Treasurer",
+            "otherText": null
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Shares of Beneficial Interest",
+          "transaction_date": "2023-02-12",
+          "code": "F",
+          "shares": "3522",
+          "acquired_disposed": "D",
+          "price": "109.97",
+          "owned_after": "53282",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        },
+        {
+          "title": "Common Shares of Beneficial Interest",
+          "transaction_date": "2023-02-13",
+          "code": "S",
+          "shares": "2500",
+          "acquired_disposed": "D",
+          "price": "110.6927",
+          "owned_after": "50782",
+          "ownership": "D",
+          "footnote_ids": []
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "Reflects common shares surrendered to the Issuer to satisfy tax withholding obligations in connection with the vesting of restricted shares."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/34903/000003490323000036/0000034903-23-000036-index.html"
+    },
+    {
+      "accession": "0001225208-23-004006",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001164863",
+      "issuer_name": "ENPRO INDUSTRIES, INC",
+      "issuer_symbol": "NPO",
+      "accepted_eastern": "2023-03-16T16:38:18-04:00",
+      "accepted_utc": "2023-03-16T20:38:18+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-03-16T20:38:18.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001549688",
+          "name": "van der Graaf Kees",
+          "relationship": {
+            "isDirector": "1"
+          }
+        }
+      ],
+      "non_derivative_transactions": [],
+      "derivative_transaction_count": 1,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "1-for-1",
+        "F2": "Dividend equivalent rights accrued to previously granted phantom stock awards under the Amended and Restated 2002 Equity Compensation Plan of EnPro Industries, Inc.",
+        "F3": "Vesting and payout occurs on the earliest of death, disability or the vesting and payout of the underlying award with respect to which the dividend equivalents relate.",
+        "F4": "Balance includes multiple phantom stock grants, phantom stock accruals and previously accrued dividend equivalents."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1164863/000122520823004006/0001225208-23-004006-index.html"
+    },
+    {
+      "accession": "0001127602-23-001160",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0000024741",
+      "issuer_name": "CORNING INC /NY",
+      "issuer_symbol": "GLW",
+      "accepted_eastern": "2023-01-09T16:12:40-05:00",
+      "accepted_utc": "2023-01-09T21:12:40+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-01-09T21:12:40.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001323968",
+          "name": "Musser Eric S",
+          "relationship": {
+            "isOfficer": "1",
+            "officerTitle": "President and COO"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-01-05",
+          "code": "M",
+          "shares": "1673",
+          "acquired_disposed": "A",
+          "price": "0",
+          "owned_after": "106066",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        },
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-01-05",
+          "code": "F",
+          "shares": "1673",
+          "acquired_disposed": "D",
+          "price": "34.39",
+          "owned_after": "104393",
+          "ownership": "D",
+          "footnote_ids": []
+        }
+      ],
+      "derivative_transaction_count": 1,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "Each Restricted Stock Unit represents a contingent right to receive one share of Corning Incorporated Common Stock.",
+        "F2": "Vesting to satisfy tax requirement pursuant to the 2022 agreement.",
+        "F3": "The Restricted Stock Units vest 100% on April 14, 2023. Events such as retirement, death, disability, and others specified in the agreement may result in vesting prior to April 14, 2023.",
+        "F4": "The Restricted Stock Units vest 100% on April 15, 2024. Events such as retirement, death, disability, and others specified in the agreement may result in vesting prior to April 15, 2024.",
+        "F5": "The Restricted Stock Units vest ratably over three years from grant date.  Events such as retirement, death, disability, and others specified in the agreement may result in vesting prior to the vesting dates."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/24741/000112760223001160/0001127602-23-001160-index.html"
+    },
+    {
+      "accession": "0001209191-23-019042",
+      "is_selected_positive_control": false,
+      "document_type": "4",
+      "issuer_cik": "0001743725",
+      "issuer_name": "GRID DYNAMICS HOLDINGS, INC.",
+      "issuer_symbol": "GDYN",
+      "accepted_eastern": "2023-03-15T19:03:36-04:00",
+      "accepted_utc": "2023-03-15T23:03:36+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-03-15T23:03:36.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001805657",
+          "name": "Livschitz Leonard",
+          "relationship": {
+            "isDirector": "1",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "Chief Executive Officer"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-03-13",
+          "code": "F",
+          "shares": "43863",
+          "acquired_disposed": "D",
+          "price": "9.92",
+          "owned_after": "3230273",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "Represents shares that have been withheld by the Issuer to satisfy tax withholding and remittance obligations in connection with the net settlement of restricted stock units."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1743725/000120919123019042/0001209191-23-019042-index.html"
+    },
+    {
+      "accession": "0001828318-23-000061",
+      "is_selected_positive_control": false,
+      "document_type": "4/A",
+      "issuer_cik": "0001828318",
+      "issuer_name": "Enovix Corp",
+      "issuer_symbol": "ENVX",
+      "accepted_eastern": "2023-02-22T20:58:52-05:00",
+      "accepted_utc": "2023-02-23T01:58:52+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-02-23T01:58:52.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": "2023-02-16",
+      "owners": [
+        {
+          "cik": "0001183968",
+          "name": "Schmitt Ralph H",
+          "relationship": {
+            "isDirector": "0",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "Chief Commercial Officer",
+            "otherText": null
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common Stock",
+          "transaction_date": "2023-02-14",
+          "code": "F",
+          "shares": "3299",
+          "acquired_disposed": "D",
+          "price": "8.45",
+          "owned_after": "144077",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1",
+            "F2"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "On February 16, 2023, the Reporting Person filed a Form 4 which inadvertently neglected to report the withholding of shares of the Issuer's common stock to satisfy tax withholding obligations in connection with the vesting of 8,089 performance restricted stock units (\"RSUs\") on February 14, 2023. Each RSU represents a contingent right to receive one share of the Issuer's common stock.",
+        "F2": "Includes 49,848 shares issuable upon the settlement of RSUs granted to the Reporting Person."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1828318/000182831823000061/0001828318-23-000061-index.html"
+    },
+    {
+      "accession": "0001209191-23-006185",
+      "is_selected_positive_control": false,
+      "document_type": "4/A",
+      "issuer_cik": "0001534504",
+      "issuer_name": "PBF Energy Inc.",
+      "issuer_symbol": "PBF",
+      "accepted_eastern": "2023-02-02T16:08:01-05:00",
+      "accepted_utc": "2023-02-02T21:08:01+00:00",
+      "cached_acceptance_utc_as_supplied": "2023-02-02T21:08:01.000Z",
+      "cached_acceptance_matches_index": true,
+      "timestamp_status": "INDEX_AND_METADATA_AGREE",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": "2022-12-06",
+      "owners": [
+        {
+          "cik": "0001606746",
+          "name": "Fedena James E.",
+          "relationship": {
+            "isDirector": "0",
+            "isOfficer": "1",
+            "isTenPercentOwner": "0",
+            "isOther": "0",
+            "officerTitle": "Senior Vice President"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-12-02",
+          "code": "A",
+          "shares": "24017",
+          "acquired_disposed": "A",
+          "price": "0",
+          "owned_after": "58282",
+          "ownership": "D",
+          "footnote_ids": [
+            "F1"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 0,
+      "reported_purchase_notional_counted_once": "0",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": false,
+      "footnotes": {
+        "F1": "Constitutes restricted stock issued under the Amended and Restated 2017 Equity Incentive Plan, as amended."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1534504/000120919123006185/0001209191-23-006185-index.html"
+    },
+    {
+      "accession": "0000899243-23-008575",
+      "is_selected_positive_control": true,
+      "document_type": "4",
+      "issuer_cik": "0001498828",
+      "issuer_name": "Howard Hughes Corp",
+      "issuer_symbol": "HHC",
+      "accepted_eastern": "2023-03-15T16:46:23-04:00",
+      "accepted_utc": "2023-03-15T20:46:23+00:00",
+      "cached_acceptance_utc_as_supplied": null,
+      "cached_acceptance_matches_index": null,
+      "timestamp_status": "INDEX_ONLY",
+      "accepted_at_or_after_16_eastern": true,
+      "original_submission_date": null,
+      "owners": [
+        {
+          "cik": "0001336528",
+          "name": "Pershing Square Capital Management, L.P.",
+          "relationship": {
+            "isDirector": "1",
+            "isOfficer": "0",
+            "isTenPercentOwner": "1",
+            "isOther": "0"
+          }
+        },
+        {
+          "cik": "0001336477",
+          "name": "PS Management GP, LLC",
+          "relationship": {
+            "isDirector": "1",
+            "isOfficer": "0",
+            "isTenPercentOwner": "1",
+            "isOther": "0"
+          }
+        },
+        {
+          "cik": "0001056513",
+          "name": "ACKMAN WILLIAM A",
+          "relationship": {
+            "isDirector": "1",
+            "isOfficer": "0",
+            "isTenPercentOwner": "1",
+            "isOther": "0"
+          }
+        }
+      ],
+      "non_derivative_transactions": [
+        {
+          "title": "Common stock, par value $0.01 per share",
+          "transaction_date": "2023-03-13",
+          "code": "P",
+          "shares": "27889",
+          "acquired_disposed": "A",
+          "price": "74.59",
+          "owned_after": "15923024",
+          "ownership": "I",
+          "footnote_ids": [
+            "F4",
+            "F4",
+            "F4",
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5"
+          ]
+        },
+        {
+          "title": "Common stock, par value $0.01 per share",
+          "transaction_date": "2023-03-14",
+          "code": "P",
+          "shares": "15029",
+          "acquired_disposed": "A",
+          "price": "74.9",
+          "owned_after": "15938053",
+          "ownership": "I",
+          "footnote_ids": [
+            "F4",
+            "F4",
+            "F4",
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5"
+          ]
+        },
+        {
+          "title": "Common stock, par value $0.01 per share",
+          "transaction_date": "2023-03-15",
+          "code": "P",
+          "shares": "19556",
+          "acquired_disposed": "A",
+          "price": "74.63",
+          "owned_after": "15957609",
+          "ownership": "I",
+          "footnote_ids": [
+            "F4",
+            "F4",
+            "F4",
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5"
+          ]
+        }
+      ],
+      "derivative_transaction_count": 0,
+      "html_xml_transaction_fields_match": true,
+      "code_p_positive_price_acquisition_count": 3,
+      "reported_purchase_notional_counted_once": "4665376.89",
+      "aff10b5one_xml": null,
+      "footnote_mentions_10b5_1": true,
+      "footnotes": {
+        "F1": "In addition to Pershing Square Capital Management, L.P., a Delaware limited partnership (\"Pershing Square\"), this Form 4 is being filed jointly by PS Management GP, LLC, a Delaware limited liability company (\"PS Management\"), and William A. Ackman, a citizen of the United States of America (collectively, the \"Reporting Persons\"), each of whom has the same business address as Pershing Square and may be deemed to have a pecuniary interest in securities reported on this Form 4 (the \"Subject Securities\").",
+        "F2": "Pershing Square advises the accounts of Pershing Square, L.P., a Delaware limited partnership (\"PS\"), Pershing Square International, Ltd., a Cayman Islands exempted company (\"PS International\"), and Pershing Square Holdings, Ltd., a limited liability company incorporated in Guernsey (\"PSH\" and together with PS and PS International, the \"Pershing Square Funds\").",
+        "F3": "Pershing Square, as the investment adviser to the Pershing Square Funds, may be deemed to be the beneficial owner of the Subject Securities for purposes of Rule 16a-1(a) under the Securities Exchange Act of 1934. As the general partner of Pershing Square, PS Management may be deemed to be the beneficial owner of the Subject Securities for purposes of Rule 16a-1(a). By virtue of Mr. Ackman's position as Chief Executive Officer of Pershing Square and managing member of PS Management, Mr. Ackman may be deemed to be the beneficial owner of the Subject Securities for purposes of Rule 16a-1(a).  Each of the Reporting Persons disclaims any beneficial ownership of any of the Subject Securities, except to the extent of any pecuniary interest therein.",
+        "F4": "This Form 4 is being filed as a result of purchases in compliance with Rule 10b-18 and Rule 10b5-1 under the Securities Exchange Act of 1934 (the \"Plan\"). Purchases are conducted and allocated among the Pershing Square Funds as further detailed in the Plan set out in the Schedule 13D/A of the Reporting Persons dated December 5, 2022 as filed December 7, 2022.",
+        "F5": "Mr. Ackman, a member of the board of directors of the Issuer of the Subject Securities, was elected to that board as a representative of Pershing Square, PS Management, the Pershing Square Funds and Pershing Square GP, LLC.  As a result, each of those entities are directors by deputization for purposes of Section 16 of the Securities Exchange Act of 1934."
+      },
+      "full_past_insider_history_status": "NOT_ACQUIRED_OR_CLASSIFIED",
+      "index_url": "https://www.sec.gov/Archives/edgar/data/1056513/000089924323008575/0000899243-23-008575-index.html"
+    }
+  ]
+}

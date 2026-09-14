@@ -1,0 +1,5283 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "original_checks": [
+    {
+      "accession": "0001140361-23-013426",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 1,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001225208-23-002190",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 1,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001209191-23-011721",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 2,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001626199-23-000025",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 0,
+      "prior_api_timestamp_conflict_preserved": true
+    },
+    {
+      "accession": "0001562180-23-000015",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 3,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0000707549-23-000058",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 6,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0000034903-23-000036",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 2,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001225208-23-004006",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 0,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001127602-23-001160",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 2,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001209191-23-019042",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 1,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001828318-23-000061",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 1,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0001209191-23-006185",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 1,
+      "prior_api_timestamp_conflict_preserved": false
+    },
+    {
+      "accession": "0000899243-23-008575",
+      "metadata_versions": 1,
+      "acceptance_matches_original_index": true,
+      "issuer_matches": true,
+      "transaction_rows_match": true,
+      "owner_ids_match": true,
+      "footnotes_match": true,
+      "transaction_row_count": 3,
+      "prior_api_timestamp_conflict_preserved": false
+    }
+  ],
+  "all_original_checks_pass": true,
+  "known_cached_index_accessions": 47386,
+  "missing_from_bulk": [],
+  "index_cik_differs_from_actual_issuer": [
+    {
+      "accession": "0000897069-23-000819",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2023-07-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001968915"
+      ]
+    },
+    {
+      "accession": "0001567619-22-005897",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2022-03-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001757932"
+      ]
+    },
+    {
+      "accession": "0001567619-22-005821",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2022-02-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001757932"
+      ]
+    },
+    {
+      "accession": "0001567619-22-005719",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2022-02-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001757932"
+      ]
+    },
+    {
+      "accession": "0001567619-22-005524",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2022-02-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001757932"
+      ]
+    },
+    {
+      "accession": "0001567619-22-005408",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2022-02-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001757932"
+      ]
+    },
+    {
+      "accession": "0001567619-22-005326",
+      "issuer_index_cik": "0000908255",
+      "filing_date": "2022-02-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001757932"
+      ]
+    },
+    {
+      "accession": "0000899243-23-010270",
+      "issuer_index_cik": "0001138118",
+      "filing_date": "2023-04-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-22-031965",
+      "issuer_index_cik": "0001138118",
+      "filing_date": "2022-09-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015182",
+      "issuer_index_cik": "0001138118",
+      "filing_date": "2022-04-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0001803599-20-000035",
+      "issuer_index_cik": "0001177394",
+      "filing_date": "2020-12-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001803599"
+      ]
+    },
+    {
+      "accession": "0000899243-18-013711",
+      "issuer_index_cik": "0001308606",
+      "filing_date": "2018-05-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001722992"
+      ]
+    },
+    {
+      "accession": "0001140361-22-043846",
+      "issuer_index_cik": "0001534504",
+      "filing_date": "2022-11-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001582568"
+      ]
+    },
+    {
+      "accession": "0001209191-19-014871",
+      "issuer_index_cik": "0001534504",
+      "filing_date": "2019-03-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001582568"
+      ]
+    },
+    {
+      "accession": "0000899243-21-025106",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-20-016601",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-06-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-20-015349",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-06-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-20-014776",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-06-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-20-014354",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-05-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-029658",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-11-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-029516",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-11-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-029058",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-11-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-023089",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-08-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-022735",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-08-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-022375",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-08-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-014725",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-06-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-014301",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-05-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-013841",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-05-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-013443",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-05-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-012985",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-05-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-008067",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-03-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-007331",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-03-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-18-006878",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001560672"
+      ]
+    },
+    {
+      "accession": "0000899243-20-028081",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-10-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001607716"
+      ]
+    },
+    {
+      "accession": "0000899243-20-023297",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-08-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001607716"
+      ]
+    },
+    {
+      "accession": "0000899243-20-019927",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-07-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001607716"
+      ]
+    },
+    {
+      "accession": "0000899243-20-001698",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-01-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001607716"
+      ]
+    },
+    {
+      "accession": "0000899243-18-030301",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-12-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001607716"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000079",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-03-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000077",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-03-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000064",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-03-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000062",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-03-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000056",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-03-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000054",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-03-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000045",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-02-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000038",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-02-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000036",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-02-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000034",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-02-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000032",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-02-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000029",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-02-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000020",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000018",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000015",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000013",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000011",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000004",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-22-000002",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2022-01-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-21-000207",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2021-12-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-21-000205",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2021-12-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001552797-20-000077",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2020-08-17",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001552797-20-000076",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2020-08-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-20-000042",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2020-04-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0001694426-20-000027",
+      "issuer_index_cik": "0001694426",
+      "filing_date": "2020-03-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001552797"
+      ]
+    },
+    {
+      "accession": "0000886982-23-000015",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-12-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001645070"
+      ]
+    },
+    {
+      "accession": "0001209191-23-055092",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-11-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001029125"
+      ]
+    },
+    {
+      "accession": "0001209191-23-040513",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-07-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001645070"
+      ]
+    },
+    {
+      "accession": "0001209191-23-037175",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-06-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001645070"
+      ]
+    },
+    {
+      "accession": "0001209191-23-028499",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-05-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001759655"
+      ]
+    },
+    {
+      "accession": "0000899243-23-009615",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-03-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001907982"
+      ]
+    },
+    {
+      "accession": "0000895345-23-000212",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-03-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000876883"
+      ]
+    },
+    {
+      "accession": "0000895345-23-000203",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-03-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000876883"
+      ]
+    },
+    {
+      "accession": "0001209191-23-017433",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001849475"
+      ]
+    },
+    {
+      "accession": "0001209191-23-008573",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-02-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001833498"
+      ]
+    },
+    {
+      "accession": "0001209191-23-006528",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-02-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001849475"
+      ]
+    },
+    {
+      "accession": "0001209191-23-004954",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-01-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001941365"
+      ]
+    },
+    {
+      "accession": "0001209191-23-004496",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-01-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001849475"
+      ]
+    },
+    {
+      "accession": "0001209191-23-004402",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2023-01-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001866816"
+      ]
+    },
+    {
+      "accession": "0001209191-22-062360",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-12-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001819496"
+      ]
+    },
+    {
+      "accession": "0001209191-22-061240",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-12-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-060726",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-12-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-060404",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-12-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-060002",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-12-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-059414",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-12-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-059009",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-058829",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-058590",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0000895345-22-000791",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001759655"
+      ]
+    },
+    {
+      "accession": "0001209191-22-058255",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-057598",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-056992",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-11-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-050097",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-09-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-049785",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-09-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-049288",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-09-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-049071",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-09-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-048509",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-09-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-048443",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-09-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001823086"
+      ]
+    },
+    {
+      "accession": "0001209191-22-048186",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-08-31",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-047909",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-08-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-047574",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-08-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-047250",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-08-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-046831",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-08-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-046507",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-08-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-037391",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-06-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-035797",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-06-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-035265",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-06-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-034699",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-06-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-033737",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-06-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-032985",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-31",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-032388",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001867072"
+      ]
+    },
+    {
+      "accession": "0001209191-22-031725",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-031464",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001867072"
+      ]
+    },
+    {
+      "accession": "0001209191-22-031032",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-030783",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-22-030301",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-05-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001664998"
+      ]
+    },
+    {
+      "accession": "0001209191-22-019288",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-03-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-22-018471",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-03-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-22-018042",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-03-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-22-017181",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-22-016467",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-03-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-22-013350",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-02-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001664998"
+      ]
+    },
+    {
+      "accession": "0001209191-22-004156",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2022-01-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001432133"
+      ]
+    },
+    {
+      "accession": "0001209191-21-071005",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-12-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001846510"
+      ]
+    },
+    {
+      "accession": "0001209191-21-070431",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-12-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-21-069842",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-12-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-21-069354",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-12-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0001209191-21-067339",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-12-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-21-067031",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-21-066936",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001653909"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000986",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001759655"
+      ]
+    },
+    {
+      "accession": "0001209191-21-066815",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-21-066219",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-21-065693",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000976",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001664998"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000954",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-11-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000876883"
+      ]
+    },
+    {
+      "accession": "0000899243-21-040306",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-10-14",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001273931"
+      ]
+    },
+    {
+      "accession": "0001209191-21-058130",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-09-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001645070"
+      ]
+    },
+    {
+      "accession": "0001209191-21-053989",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0001209191-21-053556",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000738",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001664998"
+      ]
+    },
+    {
+      "accession": "0001209191-21-050294",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000701",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001179060"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000697",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000876883"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000692",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000876883"
+      ]
+    },
+    {
+      "accession": "0000899243-21-031378",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000876883"
+      ]
+    },
+    {
+      "accession": "0000899243-21-031362",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001492674"
+      ]
+    },
+    {
+      "accession": "0000899243-21-031354",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-08-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000899243-21-028549",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-07-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0000899243-21-027830",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-07-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0001209191-21-037897",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-06-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001580560"
+      ]
+    },
+    {
+      "accession": "0000899243-21-020264",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-05-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001697851"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000519",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-05-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000899243-21-018645",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-05-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001722482"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000499",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-05-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001759655"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000469",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-04-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001664998"
+      ]
+    },
+    {
+      "accession": "0000899243-21-016265",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-04-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0000899243-21-010786",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-03-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0000899243-21-010043",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-03-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0000899243-21-007237",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-02-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001237746"
+      ]
+    },
+    {
+      "accession": "0000895345-21-000200",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-02-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000905148-21-000152",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-02-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001110611"
+      ]
+    },
+    {
+      "accession": "0000899243-21-001879",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2021-01-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0000899243-20-033078",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-12-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0000899243-20-032801",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-12-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0001567619-20-020073",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-11-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000899243-20-030890",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-11-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0001209191-20-058160",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-11-12",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001722482"
+      ]
+    },
+    {
+      "accession": "0000899243-20-029730",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-10-29",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001273931"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000346",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-09-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0001140361-20-021223",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-09-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001772921"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000331",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-08-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001722482"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000328",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-08-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000323",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-08-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000298",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-08-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001273931"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000295",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-08-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001273931"
+      ]
+    },
+    {
+      "accession": "0001140361-20-015386",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-07-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000256",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-06-12",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001280263"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000251",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-05-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001517375"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000245",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-05-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001722482"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000239",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-05-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001000229"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000234",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-05-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0001209191-20-023891",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-04-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001280263"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000186",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-02-18",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0000879682"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000185",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-02-18",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0000879682"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000179",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-02-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-20-000005",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2020-01-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001492674"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000578",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-12-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001655020"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000569",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-11-25",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000563",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-11-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000533",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-10-23",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0000879682"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000532",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-10-23",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0000879682"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000518",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-10-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000879682"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000512",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-09-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000879682"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000479",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-08-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000463",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-08-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000456",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-08-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001179060"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000431",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-07-31",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001634038"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000383",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-05-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001722482"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000341",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-05-20",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000322",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-05-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000269",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-04-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001496268"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000246",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-03-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001576169"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000236",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-02-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0000769993-19-000115",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-02-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001592000"
+      ]
+    },
+    {
+      "accession": "0001567619-19-001871",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2019-01-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001179060"
+      ]
+    },
+    {
+      "accession": "0000769993-18-000575",
+      "issuer_index_cik": "0000886982",
+      "filing_date": "2018-12-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001455863"
+      ]
+    },
+    {
+      "accession": "0001527096-21-000010",
+      "issuer_index_cik": "0000927066",
+      "filing_date": "2021-06-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001527096"
+      ]
+    },
+    {
+      "accession": "0001527096-21-000008",
+      "issuer_index_cik": "0000927066",
+      "filing_date": "2021-06-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001527096"
+      ]
+    },
+    {
+      "accession": "0000950103-20-005132",
+      "issuer_index_cik": "0000927653",
+      "filing_date": "2020-03-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001756497"
+      ]
+    },
+    {
+      "accession": "0001021635-21-000173",
+      "issuer_index_cik": "0001021635",
+      "filing_date": "2021-12-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001591763"
+      ]
+    },
+    {
+      "accession": "0000899243-23-020643",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-12-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-23-020549",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-12-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001830043"
+      ]
+    },
+    {
+      "accession": "0000899243-23-020504",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-11-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001593275"
+      ]
+    },
+    {
+      "accession": "0000899243-23-020408",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-11-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001593275"
+      ]
+    },
+    {
+      "accession": "0000899243-23-020347",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-11-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-23-020335",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-11-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-23-018737",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-09-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000889900"
+      ]
+    },
+    {
+      "accession": "0000899243-23-018353",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-08-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001809104"
+      ]
+    },
+    {
+      "accession": "0000899243-23-018185",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-08-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001796209"
+      ]
+    },
+    {
+      "accession": "0000899243-23-018176",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-08-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-23-018137",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-08-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-23-017734",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-08-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-23-015774",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-06-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-23-015616",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-06-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001827075"
+      ]
+    },
+    {
+      "accession": "0000899243-23-015401",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-06-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-23-014948",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-06-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-23-013897",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-05-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-23-012325",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-05-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-23-011484",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-04-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-23-011395",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-04-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-23-011287",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-04-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-23-011202",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-04-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-23-010456",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-04-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-23-010437",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-04-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-23-010097",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-03-31",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-23-009999",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-03-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-23-008352",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-03-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-23-007539",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001830043"
+      ]
+    },
+    {
+      "accession": "0000899243-23-007245",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-03-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001809104"
+      ]
+    },
+    {
+      "accession": "0000899243-23-003493",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-02-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-23-002983",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-01-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-23-001875",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2023-01-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-22-039526",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-12-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001703785"
+      ]
+    },
+    {
+      "accession": "0000899243-22-038921",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-12-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001809104"
+      ]
+    },
+    {
+      "accession": "0000899243-22-038475",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-12-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001096339"
+      ]
+    },
+    {
+      "accession": "0000899243-22-036217",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001809104"
+      ]
+    },
+    {
+      "accession": "0000899243-22-036052",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-035518",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-035332",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-035120",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-22-034936",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-034693",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-11-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-034489",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-034275",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-034064",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-033893",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-033671",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-033516",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-033485",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-22-033000",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001756497"
+      ]
+    },
+    {
+      "accession": "0000899243-22-032443",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-10-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828723"
+      ]
+    },
+    {
+      "accession": "0000899243-22-030010",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-08-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-029786",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-08-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-028269",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-08-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-22-027867",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-08-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-22-022017",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-06-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-021781",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-06-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001703785"
+      ]
+    },
+    {
+      "accession": "0000899243-22-021544",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-06-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-021290",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-06-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-021003",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-06-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-22-020828",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-06-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-020007",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-05-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000895126"
+      ]
+    },
+    {
+      "accession": "0000899243-22-017367",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-05-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000895126"
+      ]
+    },
+    {
+      "accession": "0000899243-22-016930",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-05-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-22-016476",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-05-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001818331"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015510",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015259",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015254",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000895126"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015133",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015029",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000895126"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015012",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-015009",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-014818",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-014816",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-014454",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-014452",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-014305",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-014302",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-013983",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-013899",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-013848",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-22-013151",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001623715"
+      ]
+    },
+    {
+      "accession": "0000899243-22-013152",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-04-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-22-012734",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-012721",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-012670",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001735803"
+      ]
+    },
+    {
+      "accession": "0000899243-22-011956",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-011755",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-010915",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-010557",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-010471",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-010055",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-010053",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-009971",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-22-009675",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001707178"
+      ]
+    },
+    {
+      "accession": "0000899243-22-009471",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-009257",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000928022"
+      ]
+    },
+    {
+      "accession": "0000899243-22-008736",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-03-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-008104",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-02-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-22-007907",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-02-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-22-007083",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-02-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001709682"
+      ]
+    },
+    {
+      "accession": "0000899243-22-005631",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-02-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001692787"
+      ]
+    },
+    {
+      "accession": "0000899243-22-001604",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2022-01-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-21-048176",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-12-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001735803"
+      ]
+    },
+    {
+      "accession": "0000899243-21-047327",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-12-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001589029"
+      ]
+    },
+    {
+      "accession": "0000899243-21-047325",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-12-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001588807"
+      ]
+    },
+    {
+      "accession": "0000899243-21-045659",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-11-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001709682"
+      ]
+    },
+    {
+      "accession": "0000899243-21-045284",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-11-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001124524"
+      ]
+    },
+    {
+      "accession": "0000899243-21-045073",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-11-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001735803"
+      ]
+    },
+    {
+      "accession": "0000899243-21-042833",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-11-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001693853"
+      ]
+    },
+    {
+      "accession": "0000899243-21-041722",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001829864"
+      ]
+    },
+    {
+      "accession": "0000899243-21-041469",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001818502"
+      ]
+    },
+    {
+      "accession": "0000899243-21-040989",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001602065"
+      ]
+    },
+    {
+      "accession": "0000899243-21-039704",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-21-039264",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-21-038854",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-21-038658",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-10-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001828937"
+      ]
+    },
+    {
+      "accession": "0000899243-21-038096",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-09-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-21-037634",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-09-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-21-036120",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-09-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001830043"
+      ]
+    },
+    {
+      "accession": "0000899243-21-034284",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001124524"
+      ]
+    },
+    {
+      "accession": "0000899243-21-034149",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-21-033841",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-21-033478",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-21-032969",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-21-031824",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-21-031302",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-08-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0001567619-21-013733",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-07-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001623715"
+      ]
+    },
+    {
+      "accession": "0000899243-21-024566",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001829864"
+      ]
+    },
+    {
+      "accession": "0000899243-21-024555",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001124524"
+      ]
+    },
+    {
+      "accession": "0000899243-21-024333",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001735803"
+      ]
+    },
+    {
+      "accession": "0000899243-21-023351",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001124524"
+      ]
+    },
+    {
+      "accession": "0000899243-21-022907",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-21-022663",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-06-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-21-019456",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-05-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001827506"
+      ]
+    },
+    {
+      "accession": "0000899243-21-017293",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-04-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001588807"
+      ]
+    },
+    {
+      "accession": "0000899243-21-017289",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-04-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001589029"
+      ]
+    },
+    {
+      "accession": "0000899243-21-017223",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-04-28",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001830043"
+      ]
+    },
+    {
+      "accession": "0000899243-21-014784",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-04-05",
+      "form": "4/A",
+      "actual_bulk_issuer_ciks": [
+        "0001712463"
+      ]
+    },
+    {
+      "accession": "0000899243-21-014782",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-04-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001712463"
+      ]
+    },
+    {
+      "accession": "0000899243-21-013735",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-03-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-21-013339",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-03-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001693853"
+      ]
+    },
+    {
+      "accession": "0000899243-21-010069",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-03-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-21-007263",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-02-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001735803"
+      ]
+    },
+    {
+      "accession": "0000899243-21-007222",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-02-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001830043"
+      ]
+    },
+    {
+      "accession": "0000899243-21-005529",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-02-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001124524"
+      ]
+    },
+    {
+      "accession": "0000899243-21-004368",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-02-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001758730"
+      ]
+    },
+    {
+      "accession": "0000899243-21-003416",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-01-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001589029"
+      ]
+    },
+    {
+      "accession": "0000899243-21-003415",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-01-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001588807"
+      ]
+    },
+    {
+      "accession": "0000899243-21-001413",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-01-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001803498"
+      ]
+    },
+    {
+      "accession": "0000899243-21-000779",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-01-06",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-21-000501",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2021-01-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-035568",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-12-31",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-029157",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-10-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001803498"
+      ]
+    },
+    {
+      "accession": "0000899243-20-029060",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-10-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001689548"
+      ]
+    },
+    {
+      "accession": "0000899243-20-028234",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-10-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001469367"
+      ]
+    },
+    {
+      "accession": "0000899243-20-027349",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-10-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001593936"
+      ]
+    },
+    {
+      "accession": "0000899243-20-026702",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-10-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001534133"
+      ]
+    },
+    {
+      "accession": "0000899243-20-026436",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-09-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-025846",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-09-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-20-024213",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-09-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001712463"
+      ]
+    },
+    {
+      "accession": "0000899243-20-020805",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-07-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001528115"
+      ]
+    },
+    {
+      "accession": "0000899243-20-015124",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-06-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-20-014233",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-05-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-20-013785",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-05-20",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-20-013318",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-05-15",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-20-012904",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-05-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-20-010891",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-04-17",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-20-009405",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-009298",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-008857",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-008513",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-008331",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-20-008316",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-20-008128",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-12",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-20-007795",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-03-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-20-006367",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-02-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001713952"
+      ]
+    },
+    {
+      "accession": "0000899243-20-002646",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2020-02-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-028449",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-12-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000031235"
+      ]
+    },
+    {
+      "accession": "0000899243-19-028249",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-11-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001687229"
+      ]
+    },
+    {
+      "accession": "0000899243-19-027289",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-11-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001563577"
+      ]
+    },
+    {
+      "accession": "0000899243-19-027042",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-11-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001563577"
+      ]
+    },
+    {
+      "accession": "0000899243-19-026565",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-11-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001334036"
+      ]
+    },
+    {
+      "accession": "0000899243-19-025047",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-10-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-024261",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-09-25",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001687229"
+      ]
+    },
+    {
+      "accession": "0000899243-19-024060",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-09-23",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0000070866"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022871",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-09-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022764",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-09-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022630",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-30",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022598",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022537",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022475",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-26",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022337",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022236",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022066",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-022000",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-16",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-19-021747",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-021666",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-13",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001718512"
+      ]
+    },
+    {
+      "accession": "0000899243-19-020844",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-08-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-018525",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-06-28",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001687229"
+      ]
+    },
+    {
+      "accession": "0000899243-19-015634",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-06-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001687229"
+      ]
+    },
+    {
+      "accession": "0000899243-19-013126",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-05-10",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-012584",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-05-07",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-011915",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-05-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-011349",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-04-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-011070",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-04-24",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-010941",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-04-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-19-010932",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-04-19",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-010531",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-04-11",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-009270",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-29",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-009067",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-009048",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-27",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001687229"
+      ]
+    },
+    {
+      "accession": "0000899243-19-008806",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-22",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001401708"
+      ]
+    },
+    {
+      "accession": "0000899243-19-008734",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-008265",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-18",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001633651"
+      ]
+    },
+    {
+      "accession": "0000899243-19-005475",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2019-03-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001509991"
+      ]
+    },
+    {
+      "accession": "0000899243-18-030053",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-12-04",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001334036"
+      ]
+    },
+    {
+      "accession": "0000899243-18-028856",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-11-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001736035"
+      ]
+    },
+    {
+      "accession": "0000899243-18-026460",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-10-09",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-18-025011",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-09-21",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001509991"
+      ]
+    },
+    {
+      "accession": "0000899243-18-014744",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-06-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001594617"
+      ]
+    },
+    {
+      "accession": "0000899243-18-012713",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-05-14",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001691303"
+      ]
+    },
+    {
+      "accession": "0000899243-18-009617",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-04-05",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001668428"
+      ]
+    },
+    {
+      "accession": "0000899243-18-000077",
+      "issuer_index_cik": "0001393818",
+      "filing_date": "2018-01-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001383650"
+      ]
+    },
+    {
+      "accession": "0000899243-18-027898",
+      "issuer_index_cik": "0001514991",
+      "filing_date": "2018-11-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001546381"
+      ]
+    },
+    {
+      "accession": "0000899243-18-025817",
+      "issuer_index_cik": "0001514991",
+      "filing_date": "2018-10-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001546381"
+      ]
+    },
+    {
+      "accession": "0000899243-18-019220",
+      "issuer_index_cik": "0001514991",
+      "filing_date": "2018-07-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001546381"
+      ]
+    },
+    {
+      "accession": "0000899243-18-009062",
+      "issuer_index_cik": "0001514991",
+      "filing_date": "2018-04-02",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001546381"
+      ]
+    },
+    {
+      "accession": "0000899243-18-000698",
+      "issuer_index_cik": "0001514991",
+      "filing_date": "2018-01-08",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001546381"
+      ]
+    },
+    {
+      "accession": "0000899243-18-000298",
+      "issuer_index_cik": "0001514991",
+      "filing_date": "2018-01-03",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001546381"
+      ]
+    },
+    {
+      "accession": "0001567619-22-018993",
+      "issuer_index_cik": "0001640384",
+      "filing_date": "2022-11-01",
+      "form": "4",
+      "actual_bulk_issuer_ciks": [
+        "0001831868"
+      ]
+    }
+  ],
+  "cached_index_sources": [
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/911d0658bcc2b209893279c23db9159da053a0aad69c10af8dd51990006a50e2.json",
+      "sha256": "fa77c36385597afbc6752063fd008a8c287133acec4dca93e8838371e39bb69f",
+      "url": "https://data.sec.gov/submissions/CIK0000029989.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/c77fc126c8a7f9f7112f8c704d582ab5b678e086b1a961cc04dad9a10701504c.json",
+      "sha256": "6b8fbc56b614eb3171189d4b296fdf9084b1509a35ef8077d98af719bf352779",
+      "url": "https://data.sec.gov/submissions/CIK0000030625.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f04e796040227f780bad048c5839ecb772d0a2dfa20ecd66e9d794046f63dfc7.json",
+      "sha256": "ce3c9be2f794a0c9510a19923f600d31508ea7a3dd11d22222592d364b5f6956",
+      "url": "https://data.sec.gov/submissions/CIK0000034903.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/244bc851b55a3a7980452d27df7c9973c2172be74fc6674a7b0b1e113131d425.json",
+      "sha256": "f875e6cd722f951a6b6a703afcba6604986c0ba0955d53c3dc3e604be04ffb91",
+      "url": "https://data.sec.gov/submissions/CIK0000037472.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3f8a707b088e9323b2dbf98bc9645abf7411aae5dc9c191b7133332287652c6c.json",
+      "sha256": "44eb42609f7c8b4abbf594b6022da359f36163db8f0c8ed13668cc183266d587",
+      "url": "https://data.sec.gov/submissions/CIK0000055242.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2d695ef73ab1d535494d7ed3b02dfab5a4c30581a2293fd560fec8ef1b60d2fc.json",
+      "sha256": "cce141ab36f57b52d3126dfce2e7d19b43abd9662c9eacc8d8cedc9248f6a4c6",
+      "url": "https://data.sec.gov/submissions/CIK0000101984.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/94992dd3691e4f9087381510161455447f7a1b3a31523f7db72dde6e6548ef03.json",
+      "sha256": "9aa7e62e3c6630a009696dd06426b1849e51a8ed186ec59f068625ee017147e9",
+      "url": "https://data.sec.gov/submissions/CIK0000706863.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d19bd384e3d6a76135377ecfbbe419f18a0b3aac8806a3fcc2703436b357759d.json",
+      "sha256": "4b1e52e0cf56205194f103aef70c7fec186bde7de38d14cdf3fa35774bf32c52",
+      "url": "https://data.sec.gov/submissions/CIK0000707549.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/0783019c60b123f82d7a85148942def2e76a06bb489f2d759463de23456f12a6.json",
+      "sha256": "e2f31598807b076107b3836bd4905b79fb1dfda85a8e21184376435f140f6574",
+      "url": "https://data.sec.gov/submissions/CIK0000730464.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/74432994e23c2ec074fd59afdae6893f2d0443ded76ce4c9ee0abc728062f009.json",
+      "sha256": "ccd41c3c39f932dced6df9242ff1f12df1d5e1f71afac1d4cfca32a9ad44b51d",
+      "url": "https://data.sec.gov/submissions/CIK0000768710.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/edc5b98e5588ed78a7cc945ba2e75339a1aa05ee7b477f41b05416c99de10abb.json",
+      "sha256": "05e59cef2b0c7929783f16bb9ebcc9cdfe83b72facc175cfc4da3e552c0e68e4",
+      "url": "https://data.sec.gov/submissions/CIK0000774569.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e8867deabf020d66cb9878bcaafd3abf5048c5453fd4241250076f922a341453.json",
+      "sha256": "bc55538eb5fd95f7583876fc536a756997e004e37bdbc89efaa4dd9e04d3e83b",
+      "url": "https://data.sec.gov/submissions/CIK0000788329.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1ad6f4f79e62c66f14fa0e29e5d1ba33065153d42879fcf71e3f690100e0bcb2.json",
+      "sha256": "b01147ee85ecec9b63d8614bf333a7709fc1af5146ad967dbe0757f771714cba",
+      "url": "https://data.sec.gov/submissions/CIK0000799165.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4be288f681912ff28990987bf3f7118febf98634b4cd62102e699889cb3980d5.json",
+      "sha256": "724fa6e818f4bc143f3fa3ad0541a07ab96ac644dd8fadc3ebd36ee454e4eaf9",
+      "url": "https://data.sec.gov/submissions/CIK0000799292.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/666c73236f17dc43889a767f4840873bde8c2dabeec2e82e7d9f4b9929484ccc.json",
+      "sha256": "6c0740e84c529905610d8ee1cb97f04c0be5d1f935ae1a6a5af2d9404218e3dd",
+      "url": "https://data.sec.gov/submissions/CIK0000806517.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a59a8e165d4fa99851fdc36f499ac5c49a2afe4ab650fb9bcae1dc083c7aabcb.json",
+      "sha256": "c3de7dfb91f7a2ad60507cc84445de480f599465613ee40c52f989822c92aba3",
+      "url": "https://data.sec.gov/submissions/CIK0000814184.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/c021c07989fe201b7e195f41fdf1f40f732086ba1a818c46a9887cf2cf9744f5.json",
+      "sha256": "2c2f5fdb9884fcba25111d2a3856630210e9ee6ff66779c8416d1af7738c6ecc",
+      "url": "https://data.sec.gov/submissions/CIK0000844059.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/01f7ea928a061a1f6b28bbf72a46afef2d54754cae63e78e47570bd160f3f981.json",
+      "sha256": "88ff5f1a546f62194cb7ac00a2c6ec4514bd3607ef439f777235625d7b10f779",
+      "url": "https://data.sec.gov/submissions/CIK0000866609.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/57275be40c0d55ed072704e1ef7d445274225f537ed2a06277ab4cde9e3b3970.json",
+      "sha256": "6b2fb59e153d03d4276ddc43c12ff481152ee966cf9bd316fbdfb13094519b6c",
+      "url": "https://data.sec.gov/submissions/CIK0000866706.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/63db43000b9ee11a05184e35c9fa1ae1ecdb3f9dbfeff119605a7451003abfc8.json",
+      "sha256": "389d8521be666863798653012962d8db1b8a25fe569624b111dc5fb4b9128bc1",
+      "url": "https://data.sec.gov/submissions/CIK0000870826.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1209f4524d1156e43ceda6d8b78828d6815884487d92aa37cd890448cb302aea.json",
+      "sha256": "9e2127c7fc88ffb1d4e79f47dceda6083b5f02c4b736ba8a65530805d9b10ece",
+      "url": "https://data.sec.gov/submissions/CIK0000883569.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b1cfce2f6c52bf7b04d83beddb0306a2472984ee8913f401c87fd0b9e7b2ae31.json",
+      "sha256": "7496157bbebaa2b2d75a6afdf5f4a1b0733d640ad48666a366b7fb89d7656f80",
+      "url": "https://data.sec.gov/submissions/CIK0000885978.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/dc70576e7eeff083d6fecb4400b8e2a69e945bdaca4ebd9f190057ac6ef82282.json",
+      "sha256": "fcadb65cafe20149a7c8743ba39c7b6800caef1a2526d65a339b59440778a0a8",
+      "url": "https://data.sec.gov/submissions/CIK0000891024.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8f20b7932db2ca8959ee3235f05f7a345fa6c54e6e9b867773acf52407ec51c7.json",
+      "sha256": "1e0ba7203a9eaafd2209c00fee9619b1fc2cabb65e302b9844401b149bc7dd6f",
+      "url": "https://data.sec.gov/submissions/CIK0000891482.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b9dd35a2071f0949778a5ea38e3b336be33e00fbc721edf4a0db92d945668d2b.json",
+      "sha256": "e7d118c197ec8469afed3fd3c754d5463fc43cd476a5f1c2e57ca0f2067d8a5d",
+      "url": "https://data.sec.gov/submissions/CIK0000896262.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d34b632f2e994c0c6a0eab63ccf9afe28f0b4c5ea40a0f602ea605b23ad41ec1.json",
+      "sha256": "bc9c44366a786a598a0aacca40b3281cc69c0b8612baa872e3b1ccd780802b6b",
+      "url": "https://data.sec.gov/submissions/CIK0000900075.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/edeea9f635645d171cdab939c2e7488d61b0051c305a5580df5b23567509a1ce.json",
+      "sha256": "bef02f7fa7f7e4e449fffa8e65fbcb03a2b329fcde2e9fd2a64598ef76c128e0",
+      "url": "https://data.sec.gov/submissions/CIK0000906107.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/caf19e5efb0a401e7e8123bc5bd9d65e120633a64a14aa5cf2d0cfc2c8450c9e.json",
+      "sha256": "09115a6feda5295571e5279a3961141b66bb4314096b6e8c06de50b2fc04018b",
+      "url": "https://data.sec.gov/submissions/CIK0000906709.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/1b0bb8f96bfcdad2405971b5aa94b1aa232ba25b952f0cea70612a0a5174fde4.json",
+      "sha256": "ac8f7417ea0c5e484f7af49fd78a2c6c81b43e770a996128d384e9072fdf70e3",
+      "url": "https://data.sec.gov/submissions/CIK0000908255.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/79a98b06ca066601e3c096af1461369b39e6ba915c4606cbed18d8336e09bc46.json",
+      "sha256": "0792df81f1fc6dd0d33ac4a31ca6b9d5bf559cd2d66513d96727caa6e2f33390",
+      "url": "https://data.sec.gov/submissions/CIK0000910638.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/67e59edd916bacb13acdb5c80e9d220b247d34811fc4e55895f3ed69e783eaac.json",
+      "sha256": "f31d3744661ce1d5ed6780eb231126d6b34d86b17e5041a6648f8c36e642de06",
+      "url": "https://data.sec.gov/submissions/CIK0000945841.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/96bd0bd90c723ec7cbad7a65e4e04172b05aeedaa4b78ec35c2d37bdc47b2ce3.json",
+      "sha256": "8565c3a772e2f7cc6d93dd8d5d0fc026f6a4940a7a39730194eceb1e0fbf9164",
+      "url": "https://data.sec.gov/submissions/CIK0001014473.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5d90851508a6c471b1c29b8bbb0649eab60952ce6ff62203404d75e996fb0204.json",
+      "sha256": "4a6e9a8d94033739be83b2d1e883792e4cdf8631ec4fb62d5372e0f38977c542",
+      "url": "https://data.sec.gov/submissions/CIK0001020214.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/eb379d048004230575a7c17eebe3b7f78ef201d09b1c62d1bc4954cd2f819241.json",
+      "sha256": "c2879f8619f46e1ea9a75945d64e0be154899c5e391cd3b0b885239c844bc03d",
+      "url": "https://data.sec.gov/submissions/CIK0001020569-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6f532b40b71b858adb8a5553525764fc7a900bba2571f173105ab2e381313493.json",
+      "sha256": "3f816e6d134b66b0bed5067ea5bcf7f3c004578785a93684b093b10f3a99cfa6",
+      "url": "https://data.sec.gov/submissions/CIK0001020569.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ba26b9e2037d5adc159cceac62c033e93a75fb4f4d7e04391d734a3e45b69fa6.json",
+      "sha256": "1f510c4bf25e94c1f9be5994a08996bfd0d13c8adae1aca098a52c115ca30bc0",
+      "url": "https://data.sec.gov/submissions/CIK0001034054.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d6bbf88cdd13c389fbf3be4c6760c9e96ef7885070cda7ce9e31495c6e40a74f.json",
+      "sha256": "1061c46586e01e1e1e4b0fb9669f392df18ecc9350b28d03fe4ba4b1427c83dc",
+      "url": "https://data.sec.gov/submissions/CIK0001034760.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9091b94d41e76acf9d7b8802bade20dcd5a0e0c7558e5a0e6a28e25f811455a1.json",
+      "sha256": "5a3fa3bba5f9e2c6c7c2763c13096b4dc5d560c73f970bcc1d6f88ef9bf31ea5",
+      "url": "https://data.sec.gov/submissions/CIK0001041368.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2d05c892beca484bd4f9e8c9da7534de9368c3260723bad21c763c9064bfc2ee.json",
+      "sha256": "43e113899fdc4212e4e50618f7b47275bf69b0ab89b3115c348640870ab8eaf3",
+      "url": "https://data.sec.gov/submissions/CIK0001045450.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/542fdeacfeadd27e85a6c000f4e31b98d87b3643eb1a2c7258040e799390ed25.json",
+      "sha256": "bee2e40a4df45376917d276fa95295466733558c4c581d1b89dad8e4c2243f66",
+      "url": "https://data.sec.gov/submissions/CIK0001045609-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2e2e61c2ff1a0acd1a7685eb5656ae0dd71d3cb0e08c2a700ef4e0d4730ab06d.json",
+      "sha256": "d442e442178c5b0dd94b5aef32d9d5d0148cf11ecc05e51004f7cb4cbb1b56d8",
+      "url": "https://data.sec.gov/submissions/CIK0001045609.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5af9d50d750751cf6cc9781aaf2335b467a021463a5189531404f6d92b2ce274.json",
+      "sha256": "44a24a4ff6fb8338dd3f8f8a2693d56045fedf45c65157009a41744b9eca73bf",
+      "url": "https://data.sec.gov/submissions/CIK0001069202.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8065cd3dd5bbc9d606aa390bf7f929c4131a56a18710e1a3be60609aab3f8a59.json",
+      "sha256": "903adcafa16ed8ae517e03ac9d8daf9ed17f48554d78f777091b165ad73060ae",
+      "url": "https://data.sec.gov/submissions/CIK0001070985.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/00359bc2588cabe2902c2ef3bb5015d21f9976a3c4cebed3c0d7e2a176c9e3da.json",
+      "sha256": "a24cf8d969c356bc1a58b8210732546042cbabee74af72dabe4a9f0f9dd73fd8",
+      "url": "https://data.sec.gov/submissions/CIK0001084384.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3152db6a392c48d859fd760480aea925b2af5dfe035ebd62c71bb16825ade49e.json",
+      "sha256": "5a8ba1873547efc9144636a35d914bfac6b36c6f79cf958042c187774e091c4c",
+      "url": "https://data.sec.gov/submissions/CIK0001085869.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6ad8f3dbae642ce7812eda4303771f00e2cab8302c838f3860ee77877dc745e9.json",
+      "sha256": "f1b38e2d500f39f5a9bae3d24cfc9f134866f9fcebefe61cb00531a5c99f3bb3",
+      "url": "https://data.sec.gov/submissions/CIK0001086745.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3ca9fc0749914e7da6972caeda9d6891b48bf2038ebc23e8e0f18c57c41d6b59.json",
+      "sha256": "650d3999145280d988b4589dc9c637256954ad664f808818a06cf0c21c005067",
+      "url": "https://data.sec.gov/submissions/CIK0001120914.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/afcad2d0ca88986ae5f25c185afa2700e2ce14380844744e059c48a7100908ed.json",
+      "sha256": "683abd5e8ce87510e1e781360c5e1ef555bd99d4fa71bff68591d5fc52a086f0",
+      "url": "https://data.sec.gov/submissions/CIK0001126328-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/30006dc0ef29e0b960c4de25c48d23e3d71a88addbdd4f6a91388ef202741d66.json",
+      "sha256": "43fb3606bfbfae52d2bee62b8e9fd62ef768eaff12f26f69ff30a811187cb9c0",
+      "url": "https://data.sec.gov/submissions/CIK0001126328.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/4cc76139c091aa0af53d21d850296ef491b8f289e9122d3535f06ee072be4828.json",
+      "sha256": "7b2a8b8606cbc0f4c8bb1db400cdb6c8a166246710f88aec36ca082cc2099995",
+      "url": "https://data.sec.gov/submissions/CIK0001138118.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/38f50a9e91af5f1065bcaa5753a4ddfd847f4246e752f888dbc00b492ec95985.json",
+      "sha256": "466c0e4e578cf90abad05645b982d333836b90f495a1d01083c27899849a69f0",
+      "url": "https://data.sec.gov/submissions/CIK0001158114.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b9aa6fe3d532862d001b2b0f76df3eb6f0bcceb6df95b2ac870657c048cf8ed5.json",
+      "sha256": "444698d33dd3f09508935e94413df48a2345932cdbc36de2be4278d39bdd7f80",
+      "url": "https://data.sec.gov/submissions/CIK0001169988.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a97845b287176255f53faef238a4e53e6ca8082ba40dc53845a5f54f6fde951e.json",
+      "sha256": "1eca5b3b6e95e764f30edca8fe03ffd811174aa40fe7d4e2b64f431ba539d10e",
+      "url": "https://data.sec.gov/submissions/CIK0001175483.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/2f99e01881f94834a2ca4bf6d51fbaa51e6ec8a97e2196f8e82cf1e469bd5360.json",
+      "sha256": "9e8994475135fb4ac04c66dc908843d4638abb3d088c0703a8ab38f0179f56df",
+      "url": "https://data.sec.gov/submissions/CIK0001177394-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7d1e094fb17897876c457d45dbe569584c97c79d1086329d64070d9639637327.json",
+      "sha256": "025d8e61f4fd0c6e2ab21583227951ba4c719259428d0ea574efa837f9510df2",
+      "url": "https://data.sec.gov/submissions/CIK0001177394.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/338a66b7f8bc2f62c5dd826be7e4a1d53167ba8c5bfd4f7ae2fdfb8021d29738.json",
+      "sha256": "6b98d1e3ee5480d9d144293ba56824d7c1cd5a3f881c6fb90140f244fccf76c4",
+      "url": "https://data.sec.gov/submissions/CIK0001177702.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b1aded3f7c8a1b29a8a04db423e1bc809faf3a358bd26a1c5ef58c7156fbef78.json",
+      "sha256": "09cfce08ba2fd0e4ee6f3c61a5183dd686afcb3d24fbbf470e93ea85a8a46127",
+      "url": "https://data.sec.gov/submissions/CIK0001262039.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/802aac034453a84a82824745d1a2b089c122b062f7734f413b2657d8ace8ae1a.json",
+      "sha256": "5e33b757f6cacb6b3f43210f1fcf301def1e0eb317bfdf9fa50db3032513122e",
+      "url": "https://data.sec.gov/submissions/CIK0001267238.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/dc34778a95f549dca1870c2f776dbe8fc3c5e11b3f66a8f20eaa89696149c101.json",
+      "sha256": "116591e25d8f4afc71ed9c00657366be1f34a5b3ddff9bc0fe18fb9927f7160b",
+      "url": "https://data.sec.gov/submissions/CIK0001282637.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8f52fe9be5174635f87a02978124ff7940601edbc3d3be3b607898e5cf93a88c.json",
+      "sha256": "d4fafe3e0f735a13168f49a8baaf3dc0e0a31f8927fb57f1b9282f1541fe7673",
+      "url": "https://data.sec.gov/submissions/CIK0001286043.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e5b6d173e50f5b5d2ba1a3b20a23af9098f3e5f19a964b58415d99cf3ca56742.json",
+      "sha256": "68f410fa79a73624588e9302d977766e3e234e4b949ad601da1d0f364399dd52",
+      "url": "https://data.sec.gov/submissions/CIK0001308606.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/75fb8276c73751695f3cacde2c59781757a15bb74c0891977aff60e67bf86deb.json",
+      "sha256": "287a276249818f2726d8a02b7645961862464eb22d5c1cca286df851418713de",
+      "url": "https://data.sec.gov/submissions/CIK0001314727.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e132d14d5955f32ee4da2bee939c50da894cdf354f0e59db3a7033f570a25b01.json",
+      "sha256": "89b00072f33fed915183c585b1663ebc37410d0bd0f7e0b39a528e33e4e60334",
+      "url": "https://data.sec.gov/submissions/CIK0001326801-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d8deed0f49b443df157aa66e7831eb4fdb4a21750853ff1ff6bc6eecf8b15bbb.json",
+      "sha256": "009af7b78bafe69ea35948fd261f14ad2f56076c2f7feb47d6241599f3f4391d",
+      "url": "https://data.sec.gov/submissions/CIK0001326801.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/52a8576aed87f12499d834f4f26b2875d302ed6b084f61ee48338cdf8033a731.json",
+      "sha256": "7de59b4a29584bd4afb205b8220e9c490e9dbd811d458ca2e3276b56ed913ab8",
+      "url": "https://data.sec.gov/submissions/CIK0001336920-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/daef8192c01fe0ce977efd271a0c7c0553ea2b32d3f8ca6a00566cddb43355c9.json",
+      "sha256": "8f118b3c6211f84043a860d88a5c4f5cdd2881bc50086570d837ec92119f9319",
+      "url": "https://data.sec.gov/submissions/CIK0001336920.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/12cfac758801e31543c07282a41e9fcf8b47fc4f913ccf47f82a803ade2ec01e.json",
+      "sha256": "855a82d59973caa07dc67e778b3f6995dafc4e5e4812f9434d1d1a7516975f96",
+      "url": "https://data.sec.gov/submissions/CIK0001357204.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3cfb0272f12a76d30386c088d8ed428a1cfb52447566d1c34ce76867c79de4c4.json",
+      "sha256": "c003a7339a23c9a808eeb1190722a0fe3af8e408fd5fe0455c1e225cd6f6ccdc",
+      "url": "https://data.sec.gov/submissions/CIK0001362190.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/3abbabb95aed49734beafaf3b50ef994e3b09d52a90beea0b83c806c540bab31.json",
+      "sha256": "5d4a84024f64ed8cca422bf7d070abf34c6290c4f500131bf2a4c26c814f26df",
+      "url": "https://data.sec.gov/submissions/CIK0001385292.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e61077fe17823c5e6cfc45c02f8682e33fbee88443f4392191b574be10c5b3c9.json",
+      "sha256": "1ab9fd9dacfd303735363d006c2c96812662e00cf19fb61b3140cd5cd238a453",
+      "url": "https://data.sec.gov/submissions/CIK0001401040.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/eec2aa42d40be0faf5e27e69854384d0d06c9ea3c2f42cd442dbc62e99febf10.json",
+      "sha256": "213c23c1fb906944e30396688b022991d6ca7471c94e0726c57e7fe9a66936d7",
+      "url": "https://data.sec.gov/submissions/CIK0001418076.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/d23b1176b49d7ec9247848cebb8f3bb288df438bdca5ed2bc83e156f8793281e.json",
+      "sha256": "aa861e3ab62d4ae728ec880f5a3e3dfdca22d7cd2aedc8c1fd3141a39acc27b6",
+      "url": "https://data.sec.gov/submissions/CIK0001427925.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/38fc0bbb98ecaffd674099e53b55fe4ae5b57e89e404dbf30478131ba360ccb2.json",
+      "sha256": "6899578c33def203b327dbe1db3c251a724b45859932dac1c0fa92137ca56033",
+      "url": "https://data.sec.gov/submissions/CIK0001434647.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ff2d00716b6c1954484590e5c6b58054df4f6b072462955090ede89218cbee1c.json",
+      "sha256": "23089388d63bf221efd0a63ff52d616939ea86c4991283c95542995e2a47571f",
+      "url": "https://data.sec.gov/submissions/CIK0001453687.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/85330c344e2157db3aec447bdf8effd27657540b3fa31ef5002e2e777fae122a.json",
+      "sha256": "d1866eb1aa0f936ca6bed415e5ff7aeb93a16df6952b47a162e653052b99b138",
+      "url": "https://data.sec.gov/submissions/CIK0001465885.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/ef37e3254a822df8cf476d575c6e59d642306224a3e5443018e36e9eefadfb3f.json",
+      "sha256": "4c10c83a5ca8146cc68dc72b03c64a6d3e79896e7c6b6b9a9f16de87e694ec7b",
+      "url": "https://data.sec.gov/submissions/CIK0001481792.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/bfded87b3165477f04e7cc19a560c525be7e39f08b80cf995c8a3933bf32fef1.json",
+      "sha256": "13c77355ff7be7e4de5af973166606d77165fc9fc14d8f8ab545fb5aff0f414a",
+      "url": "https://data.sec.gov/submissions/CIK0001495320.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/271a61b2b9643fdbb69ea0552e925b4ba2a15320ca61d115f9aec8c0f7b0c16b.json",
+      "sha256": "145d9b029eb75e31f06c8fc4d022bdc6bc6cfade216bb6aedcaeb683b6b366e7",
+      "url": "https://data.sec.gov/submissions/CIK0001506307.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/46cf9ce77b179cf864eb41db4be7a7c8ae2e644fc78c97a0b95a268345b042fa.json",
+      "sha256": "d5f55af57f0893ea230709d94d6e6f0ece27cbbd16fc6ff432aa9129f4b74cbb",
+      "url": "https://data.sec.gov/submissions/CIK0001534504.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/341bb94ae3212b7b4492949e9f09285758d393f9e2bd5945c0537d571c8ea638.json",
+      "sha256": "2e3f3a1d1101a08775e11ea1720b6db11f07704163a2c5f85511000e3f3a45fe",
+      "url": "https://data.sec.gov/submissions/CIK0001539638.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/33fc8bf1a00a155f9890d23457487b20d515fd253efa505ff6908faffa743692.json",
+      "sha256": "2adfc9d631c30ce21e797f6aee7d8e583a92ecc1ccdf6d9b3bd1b6affb3b819d",
+      "url": "https://data.sec.gov/submissions/CIK0001560672.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/600e1770b880439f6b3bb3ea19cf56fb21cd3c6f9f4ffb0cd17ff3e8caa61068.json",
+      "sha256": "2445987001790cd3957be9b9c30de92fcdb349b19c7040837c1eabb980dcf2e8",
+      "url": "https://data.sec.gov/submissions/CIK0001571949-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7d1295882975e6fd6d1773564b6e40cab9b7e8b3fbb6332ad4cb597ca1155b03.json",
+      "sha256": "5d5ff29561e4541ade89a87b89a57c11aa3c48d21e8718393dbc8529d5a63c58",
+      "url": "https://data.sec.gov/submissions/CIK0001571949.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8b0bfdeb35511948aa31ad3d07c1b7830e9f377cfc4b1a8b7d0e9f6c29dc829d.json",
+      "sha256": "374189a8eff7c78b59785fd9f0d81a75f0161ef0754fb67732f43e7bf47a84c6",
+      "url": "https://data.sec.gov/submissions/CIK0001580670.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f72bc36777756235f43dceb0443ef604609e46f1d96e066d72c51d7b52395892.json",
+      "sha256": "39201c82a379c93775ae46edcf73a154b381a5e98b8e799137d1392e3c177541",
+      "url": "https://data.sec.gov/submissions/CIK0001585364.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7a08e7da6523cb50944560a3a62e4c960ac01134366a5a8c122766f984113679.json",
+      "sha256": "270925084f50528861893123fe4d4cc21ff9d47d0eceb412a393b24c090c11ee",
+      "url": "https://data.sec.gov/submissions/CIK0001587987.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b8bc05f9d9de83a7cec7cf1cdf6782e5101e89aab2935f8e5b483d7b759fe025.json",
+      "sha256": "23122f064481c86ca6920f36b76b17ba9dff34b1d91bfab0a51975f4a85f10ca",
+      "url": "https://data.sec.gov/submissions/CIK0001590715.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/a1f15f1832ca4d4eb993d2aed67225b86b047bea06827c1cd3c72c4dfdd11569.json",
+      "sha256": "e4a8512b3fc129584a21565372dc6e3f66a243d0e6029fc6712421d12f7c77d4",
+      "url": "https://data.sec.gov/submissions/CIK0001592016.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/5b5f3675496fd5b8a154e1b5027c35146e960b9d42a4a1928a331da5e407f445.json",
+      "sha256": "9f6d66bc5a4a67755c7fd7b3a0bb980d2cc9c464e1284722a279a60382556469",
+      "url": "https://data.sec.gov/submissions/CIK0001593222.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/597a88a8b180af3ab877eb8333ddb50c5d7a1620ed1ab448bcf7329482ca89fb.json",
+      "sha256": "ad1701e14123eff0e8e0e5a0a3556577ea9db1e53b56adc8602762c0da11fcfd",
+      "url": "https://data.sec.gov/submissions/CIK0001607716.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/6f828974ffc09f42e09ec8c8dcc09b3f5cfb0270e6e03281d530fc023f517352.json",
+      "sha256": "642a117caa81133b40d65e084ca0f4bafb7e5810ee0621d43c4a433f4f766a55",
+      "url": "https://data.sec.gov/submissions/CIK0001610250.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/842cceaa1ac7a23ee244d500326e02517d879063d6e05fe2d3c7d825032022f1.json",
+      "sha256": "0f9bbb973e0429ede5c4a3b4bb285546200b9e20828f40ce1f013588d37eeeb3",
+      "url": "https://data.sec.gov/submissions/CIK0001616318.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/7b40d0b5f6ae98a252a80185624ea3231dd23bfdea5466a08575868de63b833e.json",
+      "sha256": "d7a4bdc1d5d0068c3653322f9dd051b444665514330717ce6410444f1dcbbb7e",
+      "url": "https://data.sec.gov/submissions/CIK0001623613.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8a083210f961b65fa61f25e6e497f83cfe7d38780598d45888c68cf31c6546ff.json",
+      "sha256": "ab186e223ff37526515ed41b328687c2505931235b0d6f82ec87014340b75cd3",
+      "url": "https://data.sec.gov/submissions/CIK0001626199.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9fe1600bed8ecd3f8c80bebe1243fa6cc327ff20d6e2531abbb7927876281999.json",
+      "sha256": "5ce1a8c2e89da7ea7914fd8e13bbd2aa2df6371ea068f0d33a261be93c5eb610",
+      "url": "https://data.sec.gov/submissions/CIK0001626853.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/353b30fa714db3fb186197b9a76f697ed68b414f9bbdedbc4f9dda6afd8b5f14.json",
+      "sha256": "c8ffb57ccf2f9a0b35fbcadf5e621029159ad1cb9fec35327df5004527b5f3c5",
+      "url": "https://data.sec.gov/submissions/CIK0001626971.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/b0beec7d6dc80b12f521d99a41ff58f5fea0657f38b3da66ae227fe1d2c5cc70.json",
+      "sha256": "fcf9dba72d2add20a6a53e967c4c63a462529586c5050eaf79833224ccd866bc",
+      "url": "https://data.sec.gov/submissions/CIK0001633917.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/612991df46f3308f5441b6723b3161ac2a2f7967ce9a24fac5f27148faa31aa2.json",
+      "sha256": "10809b21ca58698162fe150c832a5dfac4a9fa0fc593ea5f0b7e1994f9c7d6a7",
+      "url": "https://data.sec.gov/submissions/CIK0001641614.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9a276db87e3257e549a3ab2587994f36dca20466b615b4d2e9496f2a82b79894.json",
+      "sha256": "cb7b7981276dd850d98d28310e0a26d4c2216ca59a5a5812f1477a905469b86b",
+      "url": "https://data.sec.gov/submissions/CIK0001685040.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/8c0f67f0599425122c9f5e66e1184627e9c4d0126cf6f2e1f4f79c9d9a572008.json",
+      "sha256": "54ba5bc533cf25db0a7309794c2d1bd93ae4a52bc219fe6d2c058daacf0b4187",
+      "url": "https://data.sec.gov/submissions/CIK0001689923.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/f72a19720c1239913c3f01925b918507af84d73d87203bfe178318e947e28d24.json",
+      "sha256": "dbeeaf1981d89adbcec566ee9d4fe88718e326740f96524953a3696430367967",
+      "url": "https://data.sec.gov/submissions/CIK0001694426.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/9d86c25e772a52bc85471cb441e8252cfc538fa1919553035e4e1eb82c287657.json",
+      "sha256": "ce1b56fcf2ac5bf088dc4b4fc0fb0b86c00b0a4811b9d83637b68e64ee283da0",
+      "url": "https://data.sec.gov/submissions/CIK0001728117.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/db14cda4b525fb081861fd830eae1099ea55e3ef77ef8d011b783cc0670b3c33.json",
+      "sha256": "933b94a163887e72cc2ad24376689e4462e906890a57f8b5ba68ba3f1c2d3c63",
+      "url": "https://data.sec.gov/submissions/CIK0001730984.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/547da7e057fc13b3ea33d2fc408a900f913133f1a9481dc986bd2f438b134d40.json",
+      "sha256": "01b60a8170b9ffa037eb4938ac0340abf355422e44a81dec05ae0a515d831b4f",
+      "url": "https://data.sec.gov/submissions/CIK0001742924.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/fd3afdf209df1ee3ba8fc3a849c59dcb0782a803d019252fe9432ff64e8a198e.json",
+      "sha256": "c0d96c9f3869222c126e298ddb7d063ace37e3dfece009a3d9f8178cd20ffebf",
+      "url": "https://data.sec.gov/submissions/CIK0001761312.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-expansion-2026-09-13/sec/e5220890bf81a474d182f3e01e35f2d2a2be8fe6f301058e0c58817fc4209c4d.json",
+      "sha256": "7b0e309c55b569d09878cdbe515a4588bbb5377693b0ae01a9a055797e5e5d5a",
+      "url": "https://data.sec.gov/submissions/CIK0001761940.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/672d9cfda7aeef53c1251964aa3a32ca6e48161165558cf0873efe8bdd0e35d4.json",
+      "sha256": "ca08eb5dc9cacfcab82e4044823e32f762bf9ed077b6985b5b495a3b4a5c6f42",
+      "url": "https://data.sec.gov/submissions/CIK0000006845.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/9350ffeca5f8f7f03c64db22c198d1e10d9f417f77f34b3ab3285be3cc7ff7f7.json",
+      "sha256": "246350893ea04297fe881a768fb6c8217afd67fa7c7664d1cb9f12288b9c1267",
+      "url": "https://data.sec.gov/submissions/CIK0000008146.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ff656d7fc6b46d1b9fea9acbbc3ab5a8e2a1f447fbb869d825d00f5e2c9747b3.json",
+      "sha256": "8b3ff9dbe554f641b2289b1d1bb7ca669609ef32c341d426e14768dc6b21aaa3",
+      "url": "https://data.sec.gov/submissions/CIK0000018230-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/13d0ca77e0f5a566976b7e7c26457130a536c5bd60778ccd7b3f5b2f27beec39.json",
+      "sha256": "10f85df00c7188650eac7c288c7f6633c972a9bf76905387b0a0d4c3d922bd15",
+      "url": "https://data.sec.gov/submissions/CIK0000018230.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/16fda97baeb951c9d1b50c26a3777d34efdf843d22a99903fa8149c12e0993d5.json",
+      "sha256": "e7cb2a8933afc4a69170097d005726c399b277f89957d404e0234d3bd74d9484",
+      "url": "https://data.sec.gov/submissions/CIK0000024741-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/e4d59deb33e1b5f532534b656c7d54483c114eb1b19a10bcb3dc056c81a493ff.json",
+      "sha256": "e2470cd006bda8998e7e98dd13bfde8b3894da66a9c6d6698ce24ffaf4a6fcfd",
+      "url": "https://data.sec.gov/submissions/CIK0000024741.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/bf5bc4ffc809b49343cdb75d7f07c02128f40308000b6891f0bc7ab96a74f6dc.json",
+      "sha256": "28c9fe465e0c8b8b861b668fba9030ede3f1f55ec580ede992bed7498ae77ce0",
+      "url": "https://data.sec.gov/submissions/CIK0000031667.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/4704f864c93041e1f0dbd1939498bf0cd6728c1f6d7352afb618b9de99fde170.json",
+      "sha256": "1bb7f577d22a7f8051f395be1d794c661ced9bbf7afdc1d0fc1ace948e0c7017",
+      "url": "https://data.sec.gov/submissions/CIK0000033185.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/7783386828d8ab91e5696e3492a7209584c993ca9a4783cbb2cfd9f90a4fd8b4.json",
+      "sha256": "f2b68017b79948f53f9499ca12900423366c85254f347180c11506846e6ec81e",
+      "url": "https://data.sec.gov/submissions/CIK0000065984-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/2f8f959eab22ed6844675decd3285e72fdf579e2d1b8a44cb005a06f08a06fdd.json",
+      "sha256": "abd0957514696191d8ae5d50b849feab5f38e210413c7ea9c6bd08ef85699893",
+      "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0a561029e043f5c965bdd9ab48de0b8a5b3d1e415c32b2f84e47edf91f596cc0.json",
+      "sha256": "a7e35a624359aa1279cd16bea476eded950d9ae81324040896855cf9a5a2704e",
+      "url": "https://data.sec.gov/submissions/CIK0000066570.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/6294e8944e6dfd2790cbf44c77a4c490d84ed30f4afe042efcffe372ef343ca8.json",
+      "sha256": "45ac6aeadca8494839fc5257b878e7281f1c0f5187848fe9b9aae05aa9b9d0d3",
+      "url": "https://data.sec.gov/submissions/CIK0000068709.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/1bfdd9d321fdea1684ffd30baf2fdc5d3803f19a432cead67eeb6f38fe8e0bd3.json",
+      "sha256": "7357cd2facba71d610e8458f31b5b2ea36156de0fc6f7658f2ba7b96c4c6c142",
+      "url": "https://data.sec.gov/submissions/CIK0000078814.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/8a565feee590513ae91678f7cb2d9dcd308946abea4396a8a67233b88976a67b.json",
+      "sha256": "cf10257a4acbafbc6f7647a65b83aecb56432d6160296278a875e68b5b0bbdca",
+      "url": "https://data.sec.gov/submissions/CIK0000100493.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/e80088881cd1cfe8e03b578d346440d3f55d779e198f11ce705fb0368318e8b9.json",
+      "sha256": "4c29c1b3dabddb65a3db474accfa9ab6dc3c6c04da56dfba8b735e7d72132538",
+      "url": "https://data.sec.gov/submissions/CIK0000100726.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/5a40e2fccaebc89f502397e099541a1dc3f03e9ad8dfc392c3eaec7ad118b002.json",
+      "sha256": "486990c118aefc25dd7cda2a8981b65b8aac90047a052a593ed09e03616f3eca",
+      "url": "https://data.sec.gov/submissions/CIK0000105132.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/52819c298d277685d79f61188e14b28fc8ed1cf66b2b9e21aa0ea1275176c652.json",
+      "sha256": "a680537030f5bc5cb9ee6c6b596a368ddb71bf690d5ba9edb0e4e7aa72143b48",
+      "url": "https://data.sec.gov/submissions/CIK0000315374.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/44488470e5902395c22f28e0a16a5cad12bac15d0ecccb232801429d3ff6b078.json",
+      "sha256": "2133a128b93be58c60e9f6ec297b0be02d69097fdc886d2ab742d05935aeb861",
+      "url": "https://data.sec.gov/submissions/CIK0000356130.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/fcea64f8c796aa21ab29f3942d61dc909e62099e07907ffff146af63cddf4b32.json",
+      "sha256": "ea24f13c1a763893aea959ce0963651d1f5b0faffe8c1b3fbb347639d1e2a087",
+      "url": "https://data.sec.gov/submissions/CIK0000700841.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/44865f9dc3452ac1f9b934d347c574a5459f03a57e0f22c06603a46280832011.json",
+      "sha256": "4a4c2aba0517f00a24b45009f76891975316b82c5f70e329e015ffbc00e1b380",
+      "url": "https://data.sec.gov/submissions/CIK0000706698.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b9d4d0d94592c3564c1dd3ce5359b3255c8db7bf2b5e8a6028edc1b6ebe31172.json",
+      "sha256": "7b3308cc989da0e8af6ce4920b05dbe9d9c40b590c208a2a87c2d9854f493b7d",
+      "url": "https://data.sec.gov/submissions/CIK0000719220.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/4315b96b1535086103cbf45ca4bf9f55479a552aeb5a3f255befb9e7b3a3067c.json",
+      "sha256": "496126e291646555b6fdc9aa549a9a9b0ab480fe9be69f3b94e68b4117c161bf",
+      "url": "https://data.sec.gov/submissions/CIK0000726958.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/09b6f90c70935a49b1070b323a113fb4ffe98c0530dfcb93bf81f98942fa0f17.json",
+      "sha256": "1f49722253239d8a3d110cb5acfd1e5838af426c96dbd1e044596e336deb6759",
+      "url": "https://data.sec.gov/submissions/CIK0000742126.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/add02f37bea195c71d7c47a53093a1c7b4da90bc9808374d69bba67b440cf49c.json",
+      "sha256": "633c4ae92e4142930571bb9f3e0863067e91d62b34031b9217efc2550c9437c7",
+      "url": "https://data.sec.gov/submissions/CIK0000764401.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/398fdc5f5d0ab300c56e6014eb5f95aa6919351e87481ad63acfb1c4c481dd37.json",
+      "sha256": "3cf812531f183840a538d0b1a97f29069b0566277ff2611e27e439f6f6773e61",
+      "url": "https://data.sec.gov/submissions/CIK0000799288.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/a4d0b61f1f57f9d3c815581897355d3118b820f1d1209f28ac91f849dd39c638.json",
+      "sha256": "5d13a97c6ca7f797e883044ed77ae82ce72faca412d37b922afad03d3f097144",
+      "url": "https://data.sec.gov/submissions/CIK0000819689.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/3b38a030b361f1562d3ea6a3a684212ed8be4aebaccd68c8fba60cef54e8fffa.json",
+      "sha256": "c2beca87e3deea91905ed9b9b36f9b8f18660fa3d61f1d71d9c077f4e53bd940",
+      "url": "https://data.sec.gov/submissions/CIK0000821130.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/a4b0aa69b4c79fefd4f68d54928bd049847625c5fe2c963f14ab73cfcb465529.json",
+      "sha256": "237b55072310f19e6976ab2736ed453fa76edc1461e72ab06449f9a7c904e0b1",
+      "url": "https://data.sec.gov/submissions/CIK0000827054-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/7118142caaaf5ce4bfbf6f915fc1c41a8a9298fbbefe44bb29d17234a5015019.json",
+      "sha256": "6d67cef746486f703b27501bdfd115c65542c92e47b0f6844502c6a0bc9b115b",
+      "url": "https://data.sec.gov/submissions/CIK0000827054.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ac61d407e7b42afa893f020844b897273ca944240c7c6ede00d24cf61bebf962.json",
+      "sha256": "000e0c038fcfbcc27e8fd411f59b678f3a40ee19886daf2397f22bbe0fb8ab4e",
+      "url": "https://data.sec.gov/submissions/CIK0000850460.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/07120387d19cbedaf6e520c27b7895e3cbf495e4fb99c3ade2ae146e6b35f1de.json",
+      "sha256": "fd84eb0c02c79499e8f6db785198dd6e78b6ff3edc5b74f0288c40d07457a7d5",
+      "url": "https://data.sec.gov/submissions/CIK0000851205.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/2c4eea3634939b3341f4d65864f8e13bd41f94882104106858ad905ab49f4413.json",
+      "sha256": "705e75fcee5416da590a867cf8744d76b8ba0a0945b1d45f607e13f672376be0",
+      "url": "https://data.sec.gov/submissions/CIK0000863894.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/f4c9e31d9e19c7e4c9660174b04927399ae0b761c252350d3ac45385fdeac2e5.json",
+      "sha256": "82eea650ed7f1535c1a697fc835a2cda459813b449b57784ad51c9e7136b75cb",
+      "url": "https://data.sec.gov/submissions/CIK0000874501.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/7e85f91cfefb20242c76c7e396f5961341d4f3a6b7bae4bc92139a678f17ea49.json",
+      "sha256": "1c96054c0337c6f602bf243a9bb53e14cf359889ea65283576e2a64e76263de7",
+      "url": "https://data.sec.gov/submissions/CIK0000876378.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/45a3d42c15b37291b4c6e6919caa6b66524455016aa2a4c4683ba00ab1b110d8.json",
+      "sha256": "4f71eeada9ab85fef83c3f1f7a40571ff837d59fa949d305ed10e645dfd9aa86",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-009.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/8deaeb24edb04832bd7b1b59aa03c6afc29d1fd92b65680fb893aa1aa5c35893.json",
+      "sha256": "de4baa64250b3afeb562ede2ac3821f9779adc6a6ffef17bce40b17d93ba1ae8",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-010.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/5eb0b1dbfe5175405b6493fa842b9914628bd5cdf57e21bb834c9f9e2964220a.json",
+      "sha256": "1ea2d3da4386206b6dc0962f9775cfa165c2e526a0af5cf41d29341c8f9a1748",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-011.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/be4644102f21c4f9e86370d783bb33962c1ccdc056efe6384e975b3d05ea1a59.json",
+      "sha256": "a6103e28e06cf8d2db0e20b2e41fb290bd6dd949b01cddd36194695f5ea5f459",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-012.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/fb941748e5edee12f08ab7227c02d19e60ab453544e3ed1ea700d47e6bd3bdd4.json",
+      "sha256": "4de8d1855452c04d58a2092ed7ab7c00d9f5591e9e1e353f8fd551c708f5097f",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-013.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/a9823b25c3073d14c3c7c0901ef3eadf654813752bb691bb88ce026d3deb6869.json",
+      "sha256": "5c613c8c927ab78f193524d79dfd58a6afcd763ee4f7f957e9f8ef494ba8287d",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-014.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/361bb3f1a1e5500a5aebfc914cd47456b4b8bece42610c1fddebd58f100f5fcf.json",
+      "sha256": "8781d3f99dcdd76a40110b2afb63cd009c7442ae2e7570f7facd75186e2680b3",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-015.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/441fa3848b23f1edddb61fce096c8fe5d7ce7e9a8bb0c328dd7fe5d3338829ce.json",
+      "sha256": "0a37ca3fc7da015081be7bf0fb1a21de5cfa9568d331633964152fcae17fe89b",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-016.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ae88999bea297240ff4115ee9e4a06ab0171be2de807c6698062c566ff3b50d0.json",
+      "sha256": "dc4ac40f7e036f3e3ba7031e7de809b051702e8c6804f3ae11d3aeaa606c3ea8",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-017.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/c267e1336d043559e540eb167b41264c8883179fdd8f1d0681a07b271076238a.json",
+      "sha256": "b5fc954c83f4f4c7e83faa52207d55a05991fdb98285be35086786d2f0a8a19a",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-018.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/aa65198c15169027a61d1f88b5bacc666015478837f1ca93aeb7aaad4217cf0a.json",
+      "sha256": "10a679eb9e2c896b9fae7f42eb7abd1abde44fc5631ecbd2aeecd57bfb20f3a3",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-019.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/4557e88a3edaf3c063eac4bc1e34afe8a7900f2d46e91f06988fa982363cc9a3.json",
+      "sha256": "7c238e346db00f2d93a36de503e2a166ae694225d8062c860bc048f19cc7dac5",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-020.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/47dec3b2a72576c5029b1cf361819d206680e0b6f6c12188b6a8203734bb2128.json",
+      "sha256": "8fd55f2b0470a1192e184151ec0dd841bc5ddf391612db4866f322806835ff8e",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-021.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/135b4eaefe37a853448b73bf9a2dcd65da120992d5c1aaa5001bd7f2fe5a9f66.json",
+      "sha256": "2c2abaaead490dfa98e064099db599f0a81d1661a182745850b00c921f4ad697",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-022.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/6a01d939416a2a7bfa19322f65c3eb8db8d0f49b9865d5fbff70dd9421640ece.json",
+      "sha256": "e04b4b3b110fc64e0cb49007f229d6932e78432b70a8bcd159c8074830d3b01f",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-023.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b6201feaeae50b7fb4e1b8f7125596ab160c0bf6b690d6c34558fe2fc1ce48b2.json",
+      "sha256": "404992ba63c8b9cf469919b2682c63e903bb708bb869e2995c2f06ebccfb87db",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-024.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/38ddb721c008af08c2cde2546f7b23132e61908839a9c066283993cd1c17453e.json",
+      "sha256": "3a1e9b07ded1857873755688dd5dc77d778c3031be3f29e55056428590694cac",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-025.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/c902119be1be039afc53893cf068300f961c306906f75dbd0f7041a8876239b9.json",
+      "sha256": "e42681fb5317c1be82d3b95c7780393782ea2de33ba827508edbf4607c08a8d3",
+      "url": "https://data.sec.gov/submissions/CIK0000886982-submissions-026.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/25507c82303987ceb5cb332df7c255f56dedefd19978712e4b17ff95d80d2ad5.json",
+      "sha256": "3734260656efa3dd5a8a7c6f27605d86d0c11b6af43a83eb25af5b913a60e0d8",
+      "url": "https://data.sec.gov/submissions/CIK0000886982.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/2d175c4d47573ebe50bfcb31bd39acb2af13b982550f80dc5a3647841e2d4c54.json",
+      "sha256": "b24307101b59c51d6b0dca15072f38883a9f75f93472fbd4d2f2f7bd21c4c6e9",
+      "url": "https://data.sec.gov/submissions/CIK0000887919.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b92cc33c399cb04f42da9e2ab40e7a5a6b68b7a00fbed9599439679b3aa16416.json",
+      "sha256": "555a87fbdc99eee41f1d9b539719dc02d71ef3c37eaafeb67cd70160a19b2983",
+      "url": "https://data.sec.gov/submissions/CIK0000904979.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/7d8fce040b073b8643ff3df5025e112e2d26f756956aff5c66c37046674282d5.json",
+      "sha256": "e47b94fce8c4582e7cbdbaadf30a793fad110e6f455637f2f71a9db9d47b584c",
+      "url": "https://data.sec.gov/submissions/CIK0000913277.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/c586c55b4c837bb5e1279153633ae2676c542fc8724a5bf5a2b4c2f44ca91e6e.json",
+      "sha256": "acb6fe08643040bc06fc25e42eb7698efaa7975b7495d88cd1366e54d7e5aadc",
+      "url": "https://data.sec.gov/submissions/CIK0000918160.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/158c7ea19cbd6d86aebbfce2640d1b33ff6de231c7511854431bdda8c6904280.json",
+      "sha256": "cc703046fb1556fca62d69ce45048375b789d5424f9b74e5781a0cdd8d28878c",
+      "url": "https://data.sec.gov/submissions/CIK0000919012-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ddd63e54f0158b451d53c51f9b1eb8562d5c040520d5d001e7e94e16f8817a2f.json",
+      "sha256": "0a39f1081ff1c75f9ca7ed6b5d3642bf6a3b4e8d4407f07963d34c8421da0ecc",
+      "url": "https://data.sec.gov/submissions/CIK0000919012.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/48f8cf5b46fa77f27ea4c931632525441509394b9cc281559577dddf18d788e6.json",
+      "sha256": "dd745f64e4e11c88d34636f93b1f7767d982e2539b24760fdb55bab983d1c059",
+      "url": "https://data.sec.gov/submissions/CIK0000922224.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/29923830c89ee8dfc3cd854993c42ab14faefb734670c47bccae148f10a4d883.json",
+      "sha256": "685dc15b0765b1d7872f209f945747042bc3215018628e8e429b778944c7daba",
+      "url": "https://data.sec.gov/submissions/CIK0000924717.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/9ebe753d8b6032a19f9565a239bda33f609e296bb5a42dd15c9db596aea9354f.json",
+      "sha256": "017a48264e9442bd9a0edff897e63dce921115638492ecb5338d21c5ea463812",
+      "url": "https://data.sec.gov/submissions/CIK0000927066.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/54e457feee44059a76783538ab250c53c66656d3280a76233503954cc696ecc7.json",
+      "sha256": "cb9a339304d33153f5e3b3f24108dfcdff62b24c9878eaa635576957d7a56a8b",
+      "url": "https://data.sec.gov/submissions/CIK0000927653.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b07d1a3de8c44deeae6b0c57cc799ff7fd4130c614fee8c19620bc1ea6758986.json",
+      "sha256": "a9f0dd553eb83c69515f827a4c056c0c416d9ccc3df6364df7a630f807424841",
+      "url": "https://data.sec.gov/submissions/CIK0001021635.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/9ff3583c8b9f3928db40511842a86f3c301c1c9e09f8d9dae4ff89f9f15281cc.json",
+      "sha256": "15fa0eb65e8bee45b834c19ef266c62a33f0d3be9c316897e2ea068c63cfec58",
+      "url": "https://data.sec.gov/submissions/CIK0001022079.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0f99fd8dff3e6fce2049c0d7d173496ebfa8cf042c4cdc83f917b5307277dd95.json",
+      "sha256": "6b03e06e376c4a9fcc7b24632d0f5286c2f23844a484e14c9bb8aff7147d59f0",
+      "url": "https://data.sec.gov/submissions/CIK0001022652.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/5cc20a6a405752023cc1c2f8aaea423305ea058b81a2efed032441656fa03bd6.json",
+      "sha256": "7d12666e03bc058d5dc5381cbb5f10c34eb1d4066674380ad02e9014230bcfc4",
+      "url": "https://data.sec.gov/submissions/CIK0001034842.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/cbb76d98c7985722f6df582f7993487ab8687249c2119614436354ecd9cc4d17.json",
+      "sha256": "f6f0c2f4004840dd47f708d579a78110cbeec481a6d7ba3c713287dbd492480c",
+      "url": "https://data.sec.gov/submissions/CIK0001055160.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ed80c3e2add6ef8d43a96d4da92d958bb4f22b2ad3297b1749e4bdaad6ec7c26.json",
+      "sha256": "45acf60414168efdfb2ea35767aca71975cae1a231bf10898681c631a45e8c19",
+      "url": "https://data.sec.gov/submissions/CIK0001069530.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/821d2656ad59718167ec5c271db933be710f020afff0ffe6b4bc60e2ca1d39f8.json",
+      "sha256": "1a5aa58c6b43bd6e17a6e19191f44329c48c6147e4b8071f5bc6e9cade572348",
+      "url": "https://data.sec.gov/submissions/CIK0001087294.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/fb0a05c05806e57d628f7e70b3e2a075a5bcdb985079b8066258b5f8d62c9d7a.json",
+      "sha256": "a637c1c80ce6d55ed86390ef7443d4b8056aa00ca4036d1527c4d1f7be8e315a",
+      "url": "https://data.sec.gov/submissions/CIK0001091907.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/57dd01421d81ee35d2b8b559e59a47a8ca26657d0c66556748cb69e8fc06bdb0.json",
+      "sha256": "9f88379a81f67a311e2500cdafffe74d6dda3adfd36181d77a68a157d5157bf5",
+      "url": "https://data.sec.gov/submissions/CIK0001101680.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0f6d8b68488f7b0add39b8c8c8bc27aa2c529fdf2eb1a0a72060987c41a3cdce.json",
+      "sha256": "02602220b3182bf1297979ef30c05c4091a33ff25dcc52d4f2350e662e141226",
+      "url": "https://data.sec.gov/submissions/CIK0001111335.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/1acc47bc105d868a7a0f697c85208e4fc64cc7f01522bbd1b677f6c360f7b69e.json",
+      "sha256": "38303bf22b86d968f83f627b3052b0c6bce2208e9189fa4af3cc1b10c9b6157f",
+      "url": "https://data.sec.gov/submissions/CIK0001142417-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/40c354f6602c6363ba43186966c8b7780cae5148996f6d49929a32f3741a0387.json",
+      "sha256": "f9dc79aabd9f72ca48ef3bf2a7f535606e18f9f6b33a69ac2531a089dee46ff1",
+      "url": "https://data.sec.gov/submissions/CIK0001142417.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/601c1b00bb3c4be1415cd69f19bc142f62cf1fb4a2e482e55fcefaaecf398c0f.json",
+      "sha256": "79d0e69ea1571dabcfc0e026491798e149434658d7155745c584577de99b7f2f",
+      "url": "https://data.sec.gov/submissions/CIK0001164863.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/f704df580bd287471550d774b031a826143a5c9f123494bd3795ad08304c39d5.json",
+      "sha256": "ad7e9febe07934561e069432e3bedd59f86f2f406a61b3cd34bb8825608f21ef",
+      "url": "https://data.sec.gov/submissions/CIK0001175505.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/36d6c02c5ce326fe50b78d82a3d6e378b0bec16a956892489b90987cc5438a98.json",
+      "sha256": "5ac6b219de15d79751391077e23aceced530e4075e134c477890e995a08926b8",
+      "url": "https://data.sec.gov/submissions/CIK0001262823.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/c6048743c5c7fcb9c2210ab3b46cd4a549939c10c742085e9ec7d40a4fafce2d.json",
+      "sha256": "0fe50faea42d01d2ec38d161b236ae8b4d23bcb3ec56f9f931a506b9061e8443",
+      "url": "https://data.sec.gov/submissions/CIK0001263762.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/47651992f72e2dcc8d98b0b1bddbcc3bb04f7acacf9391bd561557578cf78181.json",
+      "sha256": "b426c9a6c3cbda0c3aa2cad0f5e7392cc553edf62c1ad1c152f42f1f2ae87565",
+      "url": "https://data.sec.gov/submissions/CIK0001277902.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/99726be45297334d07a9ad406af8a0656f84986f31d83ad908b14a9806c8cf13.json",
+      "sha256": "ecfd8b3ad471119f9de9452a83dc555b80b9134e50ba5113760b350d4b9b53bb",
+      "url": "https://data.sec.gov/submissions/CIK0001279704.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0357d9e9df0ec69ce7ce5abcc17257c0a0f34fa01bca676222c6f1fb75cc2fdc.json",
+      "sha256": "bbe2a7508e1969c8096825da43f15e67bf14b58eaf9ac0191f798ad114c9611f",
+      "url": "https://data.sec.gov/submissions/CIK0001283699-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/264985d7f8e4e2119cf7f9d2a7ea03c945c1d0454767efa981823f47052a2251.json",
+      "sha256": "8e139b38f298204ce52626226ec8768f7cf604ba60e45a8939d5238e06253661",
+      "url": "https://data.sec.gov/submissions/CIK0001283699.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/dbdd034bca7611321ebc0fb5c638a946bd76bbb447e9a51abc43cf07fa65a3cc.json",
+      "sha256": "ca95605f7e96c595f35c2e7b0a8e1086cdd80c82dfb565ee5fdc9428c6b09557",
+      "url": "https://data.sec.gov/submissions/CIK0001328143.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/d98bcd706bf4598d81381b4423c6efa8cd391662b35debf8cd2139aedbe85b0e.json",
+      "sha256": "7d3e2b6d39d3f7c36c2d9500b2925553ac0e9b1d7f4950f3aff80660cf6f8ceb",
+      "url": "https://data.sec.gov/submissions/CIK0001333493.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/8759f575307ac6bc41afed369587dc36f323f1d945b6c1e40377736c42e206fe.json",
+      "sha256": "f4413aabd0fd0ef066323ce5a7289c8b72da65007676022cfbcabd3034fd87ae",
+      "url": "https://data.sec.gov/submissions/CIK0001364954.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b79f808c494bea557e958915026d3e57fd0678cf3f502a9b1364df4e63db50e3.json",
+      "sha256": "fffdd28019a36ef85e82e9e14d7d8e078c52ff5237521469a19d830770b14bfe",
+      "url": "https://data.sec.gov/submissions/CIK0001367920.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ec9b54416435b4f84f6219f39bb7dcc84810c6c59c07cac5d0c061296d61eb77.json",
+      "sha256": "92f7158907c65d7ff12baf82f645cdb8da7bd87a132500c7cc80ee0187ec555e",
+      "url": "https://data.sec.gov/submissions/CIK0001378950.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/172702b51ec91145bb8e891a0ec4e7744a9da5c1723375ed3d9783d2dde48261.json",
+      "sha256": "acf38b08dad9566f30cd2201d690e518b5d85bb323d78583ad120b08a4235c62",
+      "url": "https://data.sec.gov/submissions/CIK0001383312-submissions-001.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/08d33753ab103f0f4576a8a727f383bc9bf434013692c28f2a71f0b69f720c17.json",
+      "sha256": "9315e23af82d5e8cca0db442b4080e730eeac1bf769c3d7d758d711e0de55e5b",
+      "url": "https://data.sec.gov/submissions/CIK0001383312.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/06fa806d2ea3cb4c736723661390a78ba316d264eab1030cfba62981f43b0d93.json",
+      "sha256": "bfd4d9a7a106cf670f350b6112a644c8209ffbe36e859171e4f59c11eb3435cd",
+      "url": "https://data.sec.gov/submissions/CIK0001393818.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/ba74b133f161b68eb4554a3aa28eb607db47b752a3ae3627d3528b6bc38e2350.json",
+      "sha256": "2fc5ed6217d3d3144558cdeb3fbde78f01d9b3c8237a9247f8919a5b62a78a0f",
+      "url": "https://data.sec.gov/submissions/CIK0001395937.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/3dd92468eee50beb51f5624e4e6a1eae811a1564763f1cf29821d6436084ad7b.json",
+      "sha256": "58ce458c16c324a54f78a33b1c9ee63bd3df1f75c45136a2c3166eb54eee6f78",
+      "url": "https://data.sec.gov/submissions/CIK0001403568.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/88f6aafc121a08e316c2c3b7c8f85a47494b028b133acb9ec042ca6d453bd990.json",
+      "sha256": "a03e31fd286dc4a2ee36b2d1fda593fb5fd123ae51945d0be99dcc0e44bdc139",
+      "url": "https://data.sec.gov/submissions/CIK0001422183.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/c388546b8f33cec40e20ea19115609f7e6d164841ae43736965df6c3aa386542.json",
+      "sha256": "3a58cd017bfdd1f2486729215bad27d56249909867563d15de600e7bdeda350e",
+      "url": "https://data.sec.gov/submissions/CIK0001441693.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/83659076200cbff92d9296484906cbd59130e9ba949ee5fa1b29c2f49d1829d2.json",
+      "sha256": "7b4acac5a0182dbeffef1212a9f3c4ff1f88d171995d7ff96129eb2f41eb18d0",
+      "url": "https://data.sec.gov/submissions/CIK0001443669.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/37bdd8a11b4d450b3a7aba2de334f444c13e044cd01e862027b26df7332f1053.json",
+      "sha256": "f4b518357e12e994e901cb031830a4ad6ed02e3c496c3a387c5ba47d32222146",
+      "url": "https://data.sec.gov/submissions/CIK0001444363.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/80a41731c1cd3685f21eb6e494109002a40384c9be65b9bd5f0ec2b6dba837ad.json",
+      "sha256": "02e8f5a28a04d7b1d24d628b8061b3deab15b1e2e1def33da76ee18c98174ac7",
+      "url": "https://data.sec.gov/submissions/CIK0001469372.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/889587affeb9a98aa511abf32a531c073a474f1b1c7c23df4c5d6e0a29903d98.json",
+      "sha256": "e1308f7e291d73be3590bbb071dfb2f8198cd551416a2e01a20b8a2387ba18eb",
+      "url": "https://data.sec.gov/submissions/CIK0001487952.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/dd86cf9f2de87e1790d5d813a6f63241707461dd2d3ecb1ff147961a5f6d9de6.json",
+      "sha256": "43d6e091ac468f693c60e3870f46cd9cce382bf44b0487ca6f80eb223234636e",
+      "url": "https://data.sec.gov/submissions/CIK0001490281.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/2d7def6b037a288b5427635593ee09cabcc4fda054db3748bc4d1e456a0dab78.json",
+      "sha256": "60b52a3182284af4a0c6c1ebfeec4686efb2d6f634c9f9c64c95ca990c36e528",
+      "url": "https://data.sec.gov/submissions/CIK0001493594.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/74551907a68451180667b308d47c07d223db9fec7f71d032e230c4aeaf9a851b.json",
+      "sha256": "b46fb01b9763a79ce20e3674b9412205721945bb781077100278e51329869039",
+      "url": "https://data.sec.gov/submissions/CIK0001511337.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/05ba1d786574346dacb319adf28ff4eaedf8af604609ac91a472c0a67e481ec3.json",
+      "sha256": "cc4ae36c6b757fefe4c80ed9e92264b82281ff918339207dc9322c6544322450",
+      "url": "https://data.sec.gov/submissions/CIK0001512499.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/5091661223016f094836e3d69437514165f8cf5668fb82e1cc64e1db83a0c520.json",
+      "sha256": "ae165310070969246fa211f6784a216024da488d3ac9050d255c07a28dce3948",
+      "url": "https://data.sec.gov/submissions/CIK0001514991.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/273e92d436548714691e4dcdb3d9278469a1ac7b9d29c4290beb0bb9d4644536.json",
+      "sha256": "b70274b88f9458310330f765536ba29ec6b7403cad3d26b992c6fd2971fa1c68",
+      "url": "https://data.sec.gov/submissions/CIK0001521951.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/60ddf7820f6b9b4931342473b3c187ad4983452592d8048ca66c7ce522ac140d.json",
+      "sha256": "0a2f5dcaba4e76ec0eb5c1184a41a5626272deeeb7b5d4b846777992457443f4",
+      "url": "https://data.sec.gov/submissions/CIK0001529377.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/1fe6a92e679aaf672c983682802108befc587a49681dd636f5a4be22012cffca.json",
+      "sha256": "70f688429cee2e6dfb467a1e205346a8f469cda81cd3ba93c71f541e3649a30f",
+      "url": "https://data.sec.gov/submissions/CIK0001534992.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/1a3a2a2e0dda9b8c6646155acf19ac929f75157d324538b415e1af2ccde84179.json",
+      "sha256": "d0e7c15abaada75f5807dd4a72b99b98635ca7d5b1107288bbfe24e2668d2080",
+      "url": "https://data.sec.gov/submissions/CIK0001552451.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/07779b79f0d632b827cc0d9a6793119b57e5d0b60b9324d895012449c1b62add.json",
+      "sha256": "4d53ac8aaff6dedf0149a1976b6717a62bc0770e3a209ba28b6a7bebcd4614eb",
+      "url": "https://data.sec.gov/submissions/CIK0001561660.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/effff5efbb6c779f398377de9e2eff1276ba18b412602ec8a83d5810a92fd2ce.json",
+      "sha256": "4e47f7e01d4fdbcea3609cf8d903208fe6992affbfc4559822b7233d3bb72393",
+      "url": "https://data.sec.gov/submissions/CIK0001562401.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/759af03c32056f7ad9f0d6e4b17df75a5050b793314dbb3b2931640ceef4835d.json",
+      "sha256": "781a9063832327c52a4b20045208d54eb1e64a686659c90ca9be565be323d4f7",
+      "url": "https://data.sec.gov/submissions/CIK0001600470.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/de056608fdce61d14e933865d8e26fd65e68dc354b90b19890e8cf40d1bea83d.json",
+      "sha256": "1e25fbb93e025979ce8b993e55fb60eab231014e6bf3d364183b23d270952aff",
+      "url": "https://data.sec.gov/submissions/CIK0001614184.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b10498f30e24367e378a33423b31a05cc350e7f6834ecbeda1ffe2b6af66f039.json",
+      "sha256": "34a8c1804ab069aad21aaf70fd7293e57afd516cd93d5424cbf03ee3ddcfd96f",
+      "url": "https://data.sec.gov/submissions/CIK0001622353.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/019584f4822fe187f2c1cf5d4e04f1849c8e1d5e99c675cd309b07049382e0b3.json",
+      "sha256": "683ed161fa921e8cafae81c4154276693bfcea44089cc22696c7614d84d47a24",
+      "url": "https://data.sec.gov/submissions/CIK0001638833.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/202f6ffab59b393696141151c77961f181ac93a26539f31a138c78099bd3d52e.json",
+      "sha256": "3a71fd53184efd7e690f8892217b20eb421939810d3d11b062c7b6b68ab7f69e",
+      "url": "https://data.sec.gov/submissions/CIK0001640384.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/11ec601f0b894f7c23a5ce8423ea3d590d0ba75f2627e6b92d4b6d882607b4c5.json",
+      "sha256": "950ed1af4ce84455254ac256c23b8e81ded85286843d92b21869afded09fb8b5",
+      "url": "https://data.sec.gov/submissions/CIK0001652130.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0dd5b46a66aa02e2469da941c93956acd31952702bb86e1f41331ad968fe5805.json",
+      "sha256": "27767b95bc614f962232ce30acae9d5b2c5c6074dc192450777c957cc05e3332",
+      "url": "https://data.sec.gov/submissions/CIK0001667939.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/874d5128b723bfcb06abc9b516f741531b21224249552ac2d3e84d6dcc2f6b57.json",
+      "sha256": "2a673ec6d44d28b10ee158d22217c8abc769d4705a00fb4c2213f5b9ee93579b",
+      "url": "https://data.sec.gov/submissions/CIK0001669811.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/0a27ed8c1fa48a200f4260b4ba970d395b67615a53b90f0480bf1004883f3662.json",
+      "sha256": "3ce06cad7341bc1dc739fb5ac04764ad18986530f026c51907be6e2fa8cf3322",
+      "url": "https://data.sec.gov/submissions/CIK0001676667.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b1b28148c17f290e2a433db5d71f04cac2573a6281c115f6bd93a8088877b35f.json",
+      "sha256": "fec3ec9662019508d1e6bedc8e1f5ae49383c596f2a3f1c4edfcfde60b2ee066",
+      "url": "https://data.sec.gov/submissions/CIK0001683695.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/1c9453c81ef33178b46295d6142c3e69b118f908d761be0911cc7519212078c7.json",
+      "sha256": "b6b06582e51e4e3b6b0ab0303a5daf21809f4846da9202834f42e864dfb364aa",
+      "url": "https://data.sec.gov/submissions/CIK0001690585.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/8ef22d53ce57cf77c3a777e1624acd11964845de1cb442d3a576278b6de61d26.json",
+      "sha256": "123235d3e5ac4df58922dfa1f2fff67c720b47260e547d08fa5224147d2cfe2f",
+      "url": "https://data.sec.gov/submissions/CIK0001703038.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/d5f5dee4ec0b343707324fdcf97abd829676c58954cb7d5b445bac9bdb62bad9.json",
+      "sha256": "30a71773f49bec68972ad74925c1b3863b410cb07cfc9e4ebdb829338ebc0887",
+      "url": "https://data.sec.gov/submissions/CIK0001703644.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/3d342ef03fae37d200a00cf55dc4d3c6d9807faf63b6449e180b03438b66ee12.json",
+      "sha256": "98fef689d0ef76c70d13929b279699dd6e1d19e50e76030881b0ffacc36e7968",
+      "url": "https://data.sec.gov/submissions/CIK0001708599.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/c42164b7bc3b37405e72de7a955adee46b15f1e710b0edffbe2924ca48a6bcab.json",
+      "sha256": "d044a4786e3559cf78d75f4023b2e17bfb277a62937245c556b6596ccbf5c14c",
+      "url": "https://data.sec.gov/submissions/CIK0001728951.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-test-2026-09-10/sec/b829d4c8a21e3a35e0b64196e79f61879e1b43ffcd212070f02b5f36035f7324.json",
+      "sha256": "e64c6711b36db546653d9583251e3fa43377a0be61fee7d83cf2dc77d9b5b28c",
+      "url": "https://data.sec.gov/submissions/CIK0001733998.json"
+    },
+    {
+      "file": "data/snapshots/equity-event-pilot-2026-09-10/sec/8c2b498791cd22dd15bab5f6f6f8553cc819894dc2a99f764a98b1a5a0a7ee7d.json",
+      "sha256": "2bf6f4fa41de1d94a70424257f75853d324f979887cf6b9499b0f387af182b01",
+      "url": "https://data.sec.gov/submissions/CIK0000766421.json"
+    }
+  ],
+  "coverage_scope": "Comparison with available historical SEC index caches, not a complete market census.",
+  "security_return_observations_read": 0,
+  "completed_at_utc": "2026-09-13T22:42:35.916298+00:00"
+}

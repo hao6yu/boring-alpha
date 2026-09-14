@@ -1,0 +1,824 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "source_archive_sha256": "84a9a5e3830af113806d80cb79758d014f1b4acbc6c94f3bb797baf667c12897",
+  "status": "COMPLETE_METADATA_PASS",
+  "source_rows_scanned": 10479716,
+  "in_period_source_rows": 2330290,
+  "unique_accessions": 1116270,
+  "accessions_with_distinct_source_payloads": 0,
+  "source_year_row_counts": {
+    "2003": 298478,
+    "2004": 570348,
+    "2005": 561208,
+    "2006": 553577,
+    "2007": 574094,
+    "2008": 524581,
+    "2009": 444706,
+    "2010": 461710,
+    "2011": 448016,
+    "2012": 449721,
+    "2013": 451995,
+    "2014": 456750,
+    "2015": 450461,
+    "2016": 427290,
+    "2017": 423115,
+    "2018": 421632,
+    "2019": 409249,
+    "2020": 425853,
+    "2021": 475135,
+    "2022": 424836,
+    "2023": 417160,
+    "2024": 406748,
+    "2025": 403053
+  },
+  "in_period_form_counts": {
+    "4": 2284589,
+    "4/A": 45701
+  },
+  "cohort_submission_versions": 46997,
+  "upstream_source_errors": [
+    {
+      "CIK": "1204653",
+      "Accession No": "000120465203000002",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204653/000120465203000002/0001204652-03-000002.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204653:000120465203000002"
+    },
+    {
+      "CIK": "1204652",
+      "Accession No": "000120465203000001",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204652/000120465203000001/0001204652-03-000001.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204652:000120465203000001"
+    },
+    {
+      "CIK": "1204651",
+      "Accession No": "000120465103000002",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204651/000120465103000002/0001204651-03-000002.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204651:000120465103000002"
+    },
+    {
+      "CIK": "1204659",
+      "Accession No": "000120465203000006",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204659/000120465203000006/0001204652-03-000006.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204659:000120465203000006"
+    },
+    {
+      "CIK": "1204655",
+      "Accession No": "000120465203000003",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204655/000120465203000003/0001204652-03-000003.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204655:000120465203000003"
+    },
+    {
+      "CIK": "1204656",
+      "Accession No": "000120465203000005",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204656/000120465203000005/0001204652-03-000005.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204656:000120465203000005"
+    },
+    {
+      "CIK": "1204662",
+      "Accession No": "000120465203000011",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204662/000120465203000011/0001204652-03-000011.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204662:000120465203000011"
+    },
+    {
+      "CIK": "1204674",
+      "Accession No": "000120465203000007",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204674/000120465203000007/0001204652-03-000007.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204674:000120465203000007"
+    },
+    {
+      "CIK": "1204675",
+      "Accession No": "000120465203000008",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204675/000120465203000008/0001204652-03-000008.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204675:000120465203000008"
+    },
+    {
+      "CIK": "1204679",
+      "Accession No": "000120465203000010",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204679/000120465203000010/0001204652-03-000010.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204679:000120465203000010"
+    },
+    {
+      "CIK": "1204676",
+      "Accession No": "000120465203000009",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204676/000120465203000009/0001204652-03-000009.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204676:000120465203000009"
+    },
+    {
+      "CIK": "1204991",
+      "Accession No": "000120465203000004",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1204991/000120465203000004/0001204652-03-000004.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:1204991:000120465203000004"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000001",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000001/0001204652-03-000001.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000001"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465103000002",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465103000002/0001204651-03-000002.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465103000002"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000002",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000002/0001204652-03-000002.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000002"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000004",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000004/0001204652-03-000004.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000004"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000003",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000003/0001204652-03-000003.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000003"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000005",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000005/0001204652-03-000005.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000005"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000007",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000007/0001204652-03-000007.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000007"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000006",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000006/0001204652-03-000006.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000006"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000008",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000008/0001204652-03-000008.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000008"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000009",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000009/0001204652-03-000009.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000009"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000010",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000010/0001204652-03-000010.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000010"
+    },
+    {
+      "CIK": "46195",
+      "Accession No": "000120465203000011",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/46195/000120465203000011/0001204652-03-000011.txt",
+      "Message": "Unexpected status code 404 when retrieving form.txt for 4:46195:000120465203000011"
+    },
+    {
+      "CIK": "1208957",
+      "Accession No": "000089566303000042",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1208957/000089566303000042/0000895663-03-000042.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1208957:000089566303000042"
+    },
+    {
+      "CIK": "1271633",
+      "Accession No": "000117911004003360",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1271633/000117911004003360/0001179110-04-003360.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 5:1271633:000117911004003360"
+    },
+    {
+      "CIK": "1208957",
+      "Accession No": "000089566304000026",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1208957/000089566304000026/0000895663-04-000026.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1208957:000089566304000026"
+    },
+    {
+      "CIK": "1271633",
+      "Accession No": "000117911007000480",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1271633/000117911007000480/0001179110-07-000480.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1271633:000117911007000480"
+    },
+    {
+      "CIK": "1230977",
+      "Accession No": "000001605806000072",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1230977/000001605806000072/0000016058-06-000072.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1230977:000001605806000072"
+    },
+    {
+      "CIK": "1230977",
+      "Accession No": "000001605805000087",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1230977/000001605805000087/0000016058-05-000087.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4/A:1230977:000001605805000087"
+    },
+    {
+      "CIK": "1047059",
+      "Accession No": "000118143113000779",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1047059/000118143113000779/0001181431-13-000779.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1047059:000118143113000779"
+    },
+    {
+      "CIK": "1230977",
+      "Accession No": "000001605809000015",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1230977/000001605809000015/0000016058-09-000015.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1230977:000001605809000015"
+    },
+    {
+      "CIK": "1008790",
+      "Accession No": "000112760211032574",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1008790/000112760211032574/0001127602-11-032574.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4/A:1008790:000112760211032574"
+    },
+    {
+      "CIK": "1290166",
+      "Accession No": "000120919114012941",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1290166/000120919114012941/0001209191-14-012941.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1290166:000120919114012941"
+    },
+    {
+      "CIK": "1230977",
+      "Accession No": "000001605813000056",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1230977/000001605813000056/0000016058-13-000056.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1230977:000001605813000056"
+    },
+    {
+      "CIK": "1175807",
+      "Accession No": "000120919113053678",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1175807/000120919113053678/0001209191-13-053678.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1175807:000120919113053678"
+    },
+    {
+      "CIK": "1207097",
+      "Accession No": "000120709722000006",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1207097/000120709722000006/0001207097-22-000006.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1207097:000120709722000006"
+    },
+    {
+      "CIK": "100493",
+      "Accession No": "000010049322000018",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000018/0000100493-22-000018.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:100493:000010049322000018"
+    },
+    {
+      "CIK": "1003078",
+      "Accession No": "000100307822000032",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1003078/000100307822000032/0001003078-22-000032.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1003078:000100307822000032"
+    },
+    {
+      "CIK": "1769914",
+      "Accession No": "000162828022002506",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1769914/000162828022002506/0001628280-22-002506.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1769914:000162828022002506"
+    },
+    {
+      "CIK": "1418091",
+      "Accession No": "000141809122000023",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1418091/000141809122000023/0001418091-22-000023.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1418091:000141809122000023"
+    },
+    {
+      "CIK": "1575833",
+      "Accession No": "000141809122000023",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1575833/000141809122000023/0001418091-22-000023.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1575833:000141809122000023"
+    },
+    {
+      "CIK": "1238734",
+      "Accession No": "000120919122039717",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1238734/000120919122039717/0001209191-22-039717.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1238734:000120919122039717"
+    },
+    {
+      "CIK": "715579",
+      "Accession No": "000071557922000033",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/715579/000071557922000033/0000715579-22-000033.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:715579:000071557922000033"
+    },
+    {
+      "CIK": "1332108",
+      "Accession No": "000120919122030380",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1332108/000120919122030380/0001209191-22-030380.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1332108:000120919122030380"
+    },
+    {
+      "CIK": "1378950",
+      "Accession No": "000156761922011865",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1378950/000156761922011865/0001567619-22-011865.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1378950:000156761922011865"
+    },
+    {
+      "CIK": "1296804",
+      "Accession No": "000120919122046301",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1296804/000120919122046301/0001209191-22-046301.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1296804:000120919122046301"
+    },
+    {
+      "CIK": "1722010",
+      "Accession No": "000162828022019075",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1722010/000162828022019075/0001628280-22-019075.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1722010:000162828022019075"
+    },
+    {
+      "CIK": "1945770",
+      "Accession No": "000141588922009812",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1945770/000141588922009812/0001415889-22-009812.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1945770:000141588922009812"
+    },
+    {
+      "CIK": "1938699",
+      "Accession No": "000120919122047601",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1938699/000120919122047601/0001209191-22-047601.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1938699:000120919122047601"
+    },
+    {
+      "CIK": "1828937",
+      "Accession No": "000162828022022217",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1828937/000162828022022217/0001628280-22-022217.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1828937:000162828022022217"
+    },
+    {
+      "CIK": "63296",
+      "Accession No": "000006329622000062",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/63296/000006329622000062/0000063296-22-000062.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:63296:000006329622000062"
+    },
+    {
+      "CIK": "900764",
+      "Accession No": "000107742822000118",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/900764/000107742822000118/0001077428-22-000118.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:900764:000107742822000118"
+    },
+    {
+      "CIK": "935596",
+      "Accession No": "000120919122049849",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/935596/000120919122049849/0001209191-22-049849.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:935596:000120919122049849"
+    },
+    {
+      "CIK": "1035909",
+      "Accession No": "000121390022077150",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1035909/000121390022077150/0001213900-22-077150.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1035909:000121390022077150"
+    },
+    {
+      "CIK": "1063623",
+      "Accession No": "000089924322038022",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1063623/000089924322038022/0000899243-22-038022.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1063623:000089924322038022"
+    },
+    {
+      "CIK": "1075736",
+      "Accession No": "000165495422014199",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1075736/000165495422014199/0001654954-22-014199.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1075736:000165495422014199"
+    },
+    {
+      "CIK": "1171788",
+      "Accession No": "000120919122053341",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1171788/000120919122053341/0001209191-22-053341.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1171788:000120919122053341"
+    },
+    {
+      "CIK": "1180262",
+      "Accession No": "000120919122060932",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1180262/000120919122060932/0001209191-22-060932.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1180262:000120919122060932"
+    },
+    {
+      "CIK": "1191102",
+      "Accession No": "000141588922012020",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1191102/000141588922012020/0001415889-22-012020.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1191102:000141588922012020"
+    },
+    {
+      "CIK": "1254843",
+      "Accession No": "000141588922011479",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1254843/000141588922011479/0001415889-22-011479.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1254843:000141588922011479"
+    },
+    {
+      "CIK": "1193996",
+      "Accession No": "000120919122054475",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1193996/000120919122054475/0001209191-22-054475.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1193996:000120919122054475"
+    },
+    {
+      "CIK": "1308075",
+      "Accession No": "000143774922026378",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1308075/000143774922026378/0001437749-22-026378.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1308075:000143774922026378"
+    },
+    {
+      "CIK": "1443863",
+      "Accession No": "000147793222007470",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1443863/000147793222007470/0001477932-22-007470.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1443863:000147793222007470"
+    },
+    {
+      "CIK": "1656207",
+      "Accession No": "000106299322024142",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1656207/000106299322024142/0001062993-22-024142.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1656207:000106299322024142"
+    },
+    {
+      "CIK": "1449556",
+      "Accession No": "000142050622001936",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1449556/000142050622001936/0001420506-22-001936.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1449556:000142050622001936"
+    },
+    {
+      "CIK": "1721235",
+      "Accession No": "000110465922115786",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1721235/000110465922115786/0001104659-22-115786.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1721235:000110465922115786"
+    },
+    {
+      "CIK": "1721484",
+      "Accession No": "000121465922015255",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1721484/000121465922015255/0001214659-22-015255.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1721484:000121465922015255"
+    },
+    {
+      "CIK": "1740279",
+      "Accession No": "000120919122054506",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1740279/000120919122054506/0001209191-22-054506.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1740279:000120919122054506"
+    },
+    {
+      "CIK": "1775433",
+      "Accession No": "000120919122054924",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1775433/000120919122054924/0001209191-22-054924.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1775433:000120919122054924"
+    },
+    {
+      "CIK": "1759425",
+      "Accession No": "000120919122056887",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1759425/000120919122056887/0001209191-22-056887.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1759425:000120919122056887"
+    },
+    {
+      "CIK": "1832038",
+      "Accession No": "000089924322037804",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1832038/000089924322037804/0000899243-22-037804.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1832038:000089924322037804"
+    },
+    {
+      "CIK": "1849211",
+      "Accession No": "000169442622000175",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1849211/000169442622000175/0001694426-22-000175.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1849211:000169442622000175"
+    },
+    {
+      "CIK": "45012",
+      "Accession No": "000106299322023529",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/45012/000106299322023529/0001062993-22-023529.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:45012:000106299322023529"
+    },
+    {
+      "CIK": "1872873",
+      "Accession No": "000120919122058475",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1872873/000120919122058475/0001209191-22-058475.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1872873:000120919122058475"
+    },
+    {
+      "CIK": "1229452",
+      "Accession No": "000143774923002425",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1229452/000143774923002425/0001437749-23-002425.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1229452:000143774923002425"
+    },
+    {
+      "CIK": "1581280",
+      "Accession No": "000121465923000270",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1581280/000121465923000270/0001214659-23-000270.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1581280:000121465923000270"
+    },
+    {
+      "CIK": "1657120",
+      "Accession No": "000010956323000027",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1657120/000010956323000027/0000109563-23-000027.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1657120:000010956323000027"
+    },
+    {
+      "CIK": "1694207",
+      "Accession No": "000105091523000033",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1694207/000105091523000033/0001050915-23-000033.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1694207:000105091523000033"
+    },
+    {
+      "CIK": "1677143",
+      "Accession No": "000070928323000003",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1677143/000070928323000003/0000709283-23-000003.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1677143:000070928323000003"
+    },
+    {
+      "CIK": "1799332",
+      "Accession No": "000149315223001325",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1799332/000149315223001325/0001493152-23-001325.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1799332:000149315223001325"
+    },
+    {
+      "CIK": "1854401",
+      "Accession No": "000185440123000006",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1854401/000185440123000006/0001854401-23-000006.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1854401:000185440123000006"
+    },
+    {
+      "CIK": "1860864",
+      "Accession No": "000120919123010175",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1860864/000120919123010175/0001209191-23-010175.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1860864:000120919123010175"
+    },
+    {
+      "CIK": "1876435",
+      "Accession No": "000122520823002235",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1876435/000122520823002235/0001225208-23-002235.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1876435:000122520823002235"
+    },
+    {
+      "CIK": "1963119",
+      "Accession No": "000121390023012814",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1963119/000121390023012814/0001213900-23-012814.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1963119:000121390023012814"
+    },
+    {
+      "CIK": "923338",
+      "Accession No": "000089924323001000",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/923338/000089924323001000/0000899243-23-001000.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:923338:000089924323001000"
+    },
+    {
+      "CIK": "1936112",
+      "Accession No": "000156761923001792",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1936112/000156761923001792/0001567619-23-001792.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3/A:1936112:000156761923001792"
+    },
+    {
+      "CIK": "1019849",
+      "Accession No": "000101984923000072",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1019849/000101984923000072/0001019849-23-000072.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1019849:000101984923000072"
+    },
+    {
+      "CIK": "1059262",
+      "Accession No": "000117184323003279",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1059262/000117184323003279/0001171843-23-003279.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1059262:000117184323003279"
+    },
+    {
+      "CIK": "1042729",
+      "Accession No": "000141588923009828",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1042729/000141588923009828/0001415889-23-009828.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1042729:000141588923009828"
+    },
+    {
+      "CIK": "1125376",
+      "Accession No": "000112537623000093",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1125376/000112537623000093/0001125376-23-000093.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1125376:000112537623000093"
+    },
+    {
+      "CIK": "1128728",
+      "Accession No": "000149315223023198",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1128728/000149315223023198/0001493152-23-023198.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1128728:000149315223023198"
+    },
+    {
+      "CIK": "1236626",
+      "Accession No": "000009114223000062",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1236626/000009114223000062/0000091142-23-000062.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1236626:000009114223000062"
+    },
+    {
+      "CIK": "1327567",
+      "Accession No": "000120919123026534",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1327567/000120919123026534/0001209191-23-026534.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1327567:000120919123026534"
+    },
+    {
+      "CIK": "1246530",
+      "Accession No": "000141588923009360",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1246530/000141588923009360/0001415889-23-009360.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1246530:000141588923009360"
+    },
+    {
+      "CIK": "1353283",
+      "Accession No": "000120919123039374",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1353283/000120919123039374/0001209191-23-039374.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1353283:000120919123039374"
+    },
+    {
+      "CIK": "1753108",
+      "Accession No": "000120919123031956",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1753108/000120919123031956/0001209191-23-031956.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1753108:000120919123031956"
+    },
+    {
+      "CIK": "1415738",
+      "Accession No": "000010898523000054",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1415738/000010898523000054/0000108985-23-000054.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1415738:000010898523000054"
+    },
+    {
+      "CIK": "1504164",
+      "Accession No": "000168847623000092",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1504164/000168847623000092/0001688476-23-000092.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1504164:000168847623000092"
+    },
+    {
+      "CIK": "1757327",
+      "Accession No": "000110465923051314",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1757327/000110465923051314/0001104659-23-051314.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1757327:000110465923051314"
+    },
+    {
+      "CIK": "1790117",
+      "Accession No": "000120919123029966",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1790117/000120919123029966/0001209191-23-029966.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1790117:000120919123029966"
+    },
+    {
+      "CIK": "1794515",
+      "Accession No": "000179451523000084",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1794515/000179451523000084/0001794515-23-000084.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1794515:000179451523000084"
+    },
+    {
+      "CIK": "1803367",
+      "Accession No": "000120919123033695",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1803367/000120919123033695/0001209191-23-033695.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1803367:000120919123033695"
+    },
+    {
+      "CIK": "1862592",
+      "Accession No": "000110465923051314",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1862592/000110465923051314/0001104659-23-051314.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1862592:000110465923051314"
+    },
+    {
+      "CIK": "1901336",
+      "Accession No": "000110465923056226",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1901336/000110465923056226/0001104659-23-056226.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1901336:000110465923056226"
+    },
+    {
+      "CIK": "1932895",
+      "Accession No": "000162828023012098",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1932895/000162828023012098/0001628280-23-012098.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1932895:000162828023012098"
+    },
+    {
+      "CIK": "1952073",
+      "Accession No": "000120919123025043",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1952073/000120919123025043/0001209191-23-025043.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1952073:000120919123025043"
+    },
+    {
+      "CIK": "3453",
+      "Accession No": "000122520823005216",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/3453/000122520823005216/0001225208-23-005216.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:3453:000122520823005216"
+    },
+    {
+      "CIK": "737468",
+      "Accession No": "000159396823000687",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/737468/000159396823000687/0001593968-23-000687.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:737468:000159396823000687"
+    },
+    {
+      "CIK": "811596",
+      "Accession No": "000120919123024845",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/811596/000120919123024845/0001209191-23-024845.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:811596:000120919123024845"
+    },
+    {
+      "CIK": "834365",
+      "Accession No": "000143774923014864",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/834365/000143774923014864/0001437749-23-014864.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4/A:834365:000143774923014864"
+    },
+    {
+      "CIK": "84129",
+      "Accession No": "000120919123025666",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/84129/000120919123025666/0001209191-23-025666.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:84129:000120919123025666"
+    },
+    {
+      "CIK": "1528129",
+      "Accession No": "000152812923000159",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1528129/000152812923000159/0001528129-23-000159.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1528129:000152812923000159"
+    },
+    {
+      "CIK": "84246",
+      "Accession No": "000112760223014878",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/84246/000112760223014878/0001127602-23-014878.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:84246:000112760223014878"
+    },
+    {
+      "CIK": "1709738",
+      "Accession No": "000170973823000011",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1709738/000170973823000011/0001709738-23-000011.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1709738:000170973823000011"
+    },
+    {
+      "CIK": "1173420",
+      "Accession No": "000121465923015693",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1173420/000121465923015693/0001214659-23-015693.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1173420:000121465923015693"
+    },
+    {
+      "CIK": "1379160",
+      "Accession No": "000141588923015976",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1379160/000141588923015976/0001415889-23-015976.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1379160:000141588923015976"
+    },
+    {
+      "CIK": "719955",
+      "Accession No": "000112760223028777",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/719955/000112760223028777/0001127602-23-028777.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:719955:000112760223028777"
+    },
+    {
+      "CIK": "1718227",
+      "Accession No": "000171822723000107",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1718227/000171822723000107/0001718227-23-000107.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1718227:000171822723000107"
+    },
+    {
+      "CIK": "829224",
+      "Accession No": "000112760223027125",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/829224/000112760223027125/0001127602-23-027125.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:829224:000112760223027125"
+    },
+    {
+      "CIK": "1174567",
+      "Accession No": "000141588924004287",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1174567/000141588924004287/0001415889-24-004287.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1174567:000141588924004287"
+    },
+    {
+      "CIK": "1065280",
+      "Accession No": "000106528024000074",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1065280/000106528024000074/0001065280-24-000074.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1065280:000106528024000074"
+    },
+    {
+      "CIK": "1230245",
+      "Accession No": "000123024524000024",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1230245/000123024524000024/0001230245-24-000024.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1230245:000123024524000024"
+    },
+    {
+      "CIK": "1635164",
+      "Accession No": "000162828024009176",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1635164/000162828024009176/0001628280-24-009176.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1635164:000162828024009176"
+    },
+    {
+      "CIK": "1515139",
+      "Accession No": "000149315224001866",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1515139/000149315224001866/0001493152-24-001866.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1515139:000149315224001866"
+    },
+    {
+      "CIK": "1397829",
+      "Accession No": "000156218024000271",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1397829/000156218024000271/0001562180-24-000271.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1397829:000156218024000271"
+    },
+    {
+      "CIK": "70318",
+      "Accession No": "000120919124000176",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/70318/000120919124000176/0001209191-24-000176.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:70318:000120919124000176"
+    },
+    {
+      "CIK": "1682639",
+      "Accession No": "000110465924023640",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1682639/000110465924023640/0001104659-24-023640.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:1682639:000110465924023640"
+    },
+    {
+      "CIK": "72971",
+      "Accession No": "000112760224002193",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/72971/000112760224002193/0001127602-24-002193.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 4:72971:000112760224002193"
+    },
+    {
+      "CIK": "1522540",
+      "Accession No": "000162828024032646",
+      "HTTP_NAME_TEXT": "https://www.sec.gov/Archives/edgar/data/1522540/000162828024032646/0001628280-24-032646.txt",
+      "Message": "Unexpected status code 404 when retrieving hdr.sgml for 3:1522540:000162828024032646"
+    }
+  ],
+  "database": "data/snapshots/insider-purchase-test-2026-09-13/submission-index.sqlite",
+  "created_at_utc": "2026-09-13T22:35:50.109571+00:00",
+  "security_return_observations_read": 0
+}

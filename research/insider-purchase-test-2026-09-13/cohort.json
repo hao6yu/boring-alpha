@@ -1,0 +1,1006 @@
+{
+  "source": "research/equity-event-expansion-2026-09-13/sec-cohort.json",
+  "sha256": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270",
+  "issuers": [
+    {
+      "cik": "0001511337",
+      "historical_symbol": "RLJ",
+      "issuer_name": "RLJ Lodging Trust"
+    },
+    {
+      "cik": "0000706698",
+      "historical_symbol": "UTMD",
+      "issuer_name": "UTAH MEDICAL PRODUCTS INC"
+    },
+    {
+      "cik": "0000886982",
+      "historical_symbol": "GS",
+      "issuer_name": "GOLDMAN SACHS GROUP INC"
+    },
+    {
+      "cik": "0000315374",
+      "historical_symbol": "HURC",
+      "issuer_name": "HURCO COMPANIES INC"
+    },
+    {
+      "cik": "0001690585",
+      "historical_symbol": "MGTA",
+      "issuer_name": "Magenta Therapeutics, Inc."
+    },
+    {
+      "cik": "0001703644",
+      "historical_symbol": "GPMT",
+      "issuer_name": "Granite Point Mortgage Trust Inc."
+    },
+    {
+      "cik": "0001443669",
+      "historical_symbol": "PRLB",
+      "issuer_name": "Proto Labs Inc"
+    },
+    {
+      "cik": "0001441693",
+      "historical_symbol": "MBII",
+      "issuer_name": "MARRONE BIO INNOVATIONS INC"
+    },
+    {
+      "cik": "0001683695",
+      "historical_symbol": "IMXI",
+      "issuer_name": "International Money Express, Inc."
+    },
+    {
+      "cik": "0001562401",
+      "historical_symbol": "AMH",
+      "issuer_name": "American Homes 4 Rent"
+    },
+    {
+      "cik": "0000100493",
+      "historical_symbol": "TSN",
+      "issuer_name": "TYSON FOODS, INC."
+    },
+    {
+      "cik": "0000100726",
+      "historical_symbol": "UFI",
+      "issuer_name": "UNIFI INC"
+    },
+    {
+      "cik": "0001652130",
+      "historical_symbol": "NTLA",
+      "issuer_name": "Intellia Therapeutics, Inc."
+    },
+    {
+      "cik": "0001087294",
+      "historical_symbol": "CPIX",
+      "issuer_name": "CUMBERLAND PHARMACEUTICALS INC"
+    },
+    {
+      "cik": "0001622353",
+      "historical_symbol": "JCAP",
+      "issuer_name": "Jernigan Capital, Inc."
+    },
+    {
+      "cik": "0000904979",
+      "historical_symbol": "SHLO",
+      "issuer_name": "SHILOH INDUSTRIES INC"
+    },
+    {
+      "cik": "0000742126",
+      "historical_symbol": "ECOL",
+      "issuer_name": "US ECOLOGY, INC."
+    },
+    {
+      "cik": "0000922224",
+      "historical_symbol": "PPL",
+      "issuer_name": "PPL Corp"
+    },
+    {
+      "cik": "0000821130",
+      "historical_symbol": "USM",
+      "issuer_name": "UNITED STATES CELLULAR CORP"
+    },
+    {
+      "cik": "0001469372",
+      "historical_symbol": "MSGN",
+      "issuer_name": "MSG NETWORKS INC."
+    },
+    {
+      "cik": "0000764401",
+      "historical_symbol": "IIIN",
+      "issuer_name": "INSTEEL INDUSTRIES INC"
+    },
+    {
+      "cik": "0000031667",
+      "historical_symbol": "EDUC",
+      "issuer_name": "EDUCATIONAL DEVELOPMENT CORP"
+    },
+    {
+      "cik": "0000700841",
+      "historical_symbol": "RCMT",
+      "issuer_name": "RCM TECHNOLOGIES INC"
+    },
+    {
+      "cik": "0001021635",
+      "historical_symbol": "OGE",
+      "issuer_name": "OGE ENERGY CORP."
+    },
+    {
+      "cik": "0001091907",
+      "historical_symbol": "WWE",
+      "issuer_name": "WORLD WRESTLING ENTERTAINMENTINC"
+    },
+    {
+      "cik": "0001069530",
+      "historical_symbol": "SAVA",
+      "issuer_name": "CASSAVA SCIENCES INC"
+    },
+    {
+      "cik": "0001521951",
+      "historical_symbol": "FBIZ",
+      "issuer_name": "FIRST BUSINESS FINANCIAL SERVICES, INC."
+    },
+    {
+      "cik": "0001708599",
+      "historical_symbol": "AGE",
+      "issuer_name": "AgeX Therapeutics, Inc."
+    },
+    {
+      "cik": "0000874501",
+      "historical_symbol": "AMBC",
+      "issuer_name": "AMBAC FINANCIAL GROUP INC"
+    },
+    {
+      "cik": "0001552451",
+      "historical_symbol": "MYOK",
+      "issuer_name": "MyoKardia Inc"
+    },
+    {
+      "cik": "0000033185",
+      "historical_symbol": "EFX",
+      "issuer_name": "EQUIFAX INC"
+    },
+    {
+      "cik": "0000913277",
+      "historical_symbol": "CLAR",
+      "issuer_name": "Clarus Corp"
+    },
+    {
+      "cik": "0001638833",
+      "historical_symbol": "SGRY",
+      "issuer_name": "Surgery Partners, Inc."
+    },
+    {
+      "cik": "0001676667",
+      "historical_symbol": "CART",
+      "issuer_name": "Carolina Trust BancShares, Inc."
+    },
+    {
+      "cik": "0001490281",
+      "historical_symbol": "GRPN",
+      "issuer_name": "Groupon, Inc."
+    },
+    {
+      "cik": "0001111335",
+      "historical_symbol": "VC",
+      "issuer_name": "VISTEON CORP"
+    },
+    {
+      "cik": "0001393818",
+      "historical_symbol": "BX",
+      "issuer_name": "Blackstone Group Inc"
+    },
+    {
+      "cik": "0000018230",
+      "historical_symbol": "CAT",
+      "issuer_name": "CATERPILLAR INC"
+    },
+    {
+      "cik": "0001703038",
+      "historical_symbol": "NRCG",
+      "issuer_name": "NRC GROUP HOLDINGS CORP."
+    },
+    {
+      "cik": "0001600470",
+      "historical_symbol": "MR",
+      "issuer_name": "Montage Resources Corp"
+    },
+    {
+      "cik": "0001422183",
+      "historical_symbol": "FSK",
+      "issuer_name": "FS KKR Capital Corp"
+    },
+    {
+      "cik": "0001514991",
+      "historical_symbol": "AMCX",
+      "issuer_name": "AMC Networks Inc."
+    },
+    {
+      "cik": "0001101680",
+      "historical_symbol": "DZSI",
+      "issuer_name": "DASAN ZHONE SOLUTIONS INC"
+    },
+    {
+      "cik": "0001534992",
+      "historical_symbol": "FRGI",
+      "issuer_name": "Fiesta Restaurant Group, Inc."
+    },
+    {
+      "cik": "0000719220",
+      "historical_symbol": "STBA",
+      "issuer_name": "S&T BANCORP INC"
+    },
+    {
+      "cik": "0001367920",
+      "historical_symbol": "CNCE",
+      "issuer_name": "CONCERT PHARMACEUTICALS, INC."
+    },
+    {
+      "cik": "0000927066",
+      "historical_symbol": "DVA",
+      "issuer_name": "DAVITA INC."
+    },
+    {
+      "cik": "0001487952",
+      "historical_symbol": "VPG",
+      "issuer_name": "Vishay Precision Group, Inc."
+    },
+    {
+      "cik": "0001279704",
+      "historical_symbol": "CLRB",
+      "issuer_name": "Cellectar Biosciences, Inc."
+    },
+    {
+      "cik": "0001283699",
+      "historical_symbol": "TMUS",
+      "issuer_name": "T-Mobile US, Inc."
+    },
+    {
+      "cik": "0000851205",
+      "historical_symbol": "CGNX",
+      "issuer_name": "COGNEX CORP"
+    },
+    {
+      "cik": "0000105132",
+      "historical_symbol": "WDFC",
+      "issuer_name": "WD 40 CO"
+    },
+    {
+      "cik": "0001669811",
+      "historical_symbol": "DFIN",
+      "issuer_name": "Donnelley Financial Solutions, Inc."
+    },
+    {
+      "cik": "0001022652",
+      "historical_symbol": "INSG",
+      "issuer_name": "INSEEGO CORP."
+    },
+    {
+      "cik": "0000726958",
+      "historical_symbol": "CASY",
+      "issuer_name": "CASEYS GENERAL STORES INC"
+    },
+    {
+      "cik": "0000924717",
+      "historical_symbol": "SRDX",
+      "issuer_name": "SURMODICS INC"
+    },
+    {
+      "cik": "0000827054",
+      "historical_symbol": "MCHP",
+      "issuer_name": "MICROCHIP TECHNOLOGY INC"
+    },
+    {
+      "cik": "0001364954",
+      "historical_symbol": "CHGG",
+      "issuer_name": "CHEGG, INC"
+    },
+    {
+      "cik": "0001164863",
+      "historical_symbol": "NPO",
+      "issuer_name": "ENPRO INDUSTRIES, INC"
+    },
+    {
+      "cik": "0000078814",
+      "historical_symbol": "PBI",
+      "issuer_name": "PITNEY BOWES INC /DE/"
+    },
+    {
+      "cik": "0001444363",
+      "historical_symbol": "GCAP",
+      "issuer_name": "GAIN Capital Holdings, Inc."
+    },
+    {
+      "cik": "0001529377",
+      "historical_symbol": "ACRE",
+      "issuer_name": "Ares Commercial Real Estate Corp"
+    },
+    {
+      "cik": "0001614184",
+      "historical_symbol": "CADE",
+      "issuer_name": "Cadence Bancorporation"
+    },
+    {
+      "cik": "0001667939",
+      "historical_symbol": "FSBC",
+      "issuer_name": "FSB Bancorp, Inc."
+    },
+    {
+      "cik": "0001512499",
+      "historical_symbol": "LIND",
+      "issuer_name": "LINDBLAD EXPEDITIONS HOLDINGS, INC."
+    },
+    {
+      "cik": "0001055160",
+      "historical_symbol": "MFA",
+      "issuer_name": "MFA FINANCIAL, INC."
+    },
+    {
+      "cik": "0000065984",
+      "historical_symbol": "ETR",
+      "issuer_name": "ENTERGY CORP /DE/"
+    },
+    {
+      "cik": "0001493594",
+      "historical_symbol": "MTSI",
+      "issuer_name": "MACOM Technology Solutions Holdings, Inc."
+    },
+    {
+      "cik": "0001383312",
+      "historical_symbol": "BR",
+      "issuer_name": "BROADRIDGE FINANCIAL SOLUTIONS, INC."
+    },
+    {
+      "cik": "0001328143",
+      "historical_symbol": "ADMS",
+      "issuer_name": "Adamas Pharmaceuticals Inc"
+    },
+    {
+      "cik": "0000863894",
+      "historical_symbol": "VERU",
+      "issuer_name": "VERU INC."
+    },
+    {
+      "cik": "0001022079",
+      "historical_symbol": "DGX",
+      "issuer_name": "QUEST DIAGNOSTICS INC"
+    },
+    {
+      "cik": "0001175505",
+      "historical_symbol": "FPRX",
+      "issuer_name": "FIVE PRIME THERAPEUTICS INC"
+    },
+    {
+      "cik": "0000006845",
+      "historical_symbol": "APOG",
+      "issuer_name": "APOGEE ENTERPRISES, INC."
+    },
+    {
+      "cik": "0000927653",
+      "historical_symbol": "MCK",
+      "issuer_name": "MCKESSON CORP"
+    },
+    {
+      "cik": "0000066570",
+      "historical_symbol": "MSA",
+      "issuer_name": "MSA Safety Inc"
+    },
+    {
+      "cik": "0000068709",
+      "historical_symbol": "MTSC",
+      "issuer_name": "MTS SYSTEMS CORP"
+    },
+    {
+      "cik": "0001733998",
+      "historical_symbol": "NWN",
+      "issuer_name": "Northwest Natural Holding Co"
+    },
+    {
+      "cik": "0001034842",
+      "historical_symbol": "RIGL",
+      "issuer_name": "RIGEL PHARMACEUTICALS INC"
+    },
+    {
+      "cik": "0000024741",
+      "historical_symbol": "GLW",
+      "issuer_name": "CORNING INC /NY"
+    },
+    {
+      "cik": "0001277902",
+      "historical_symbol": "MVBF",
+      "issuer_name": "MVB FINANCIAL CORP"
+    },
+    {
+      "cik": "0000819689",
+      "historical_symbol": "MICR",
+      "issuer_name": "MICRON SOLUTIONS INC /DE/"
+    },
+    {
+      "cik": "0001142417",
+      "historical_symbol": "NXST",
+      "issuer_name": "NEXSTAR MEDIA GROUP, INC."
+    },
+    {
+      "cik": "0000919012",
+      "historical_symbol": "AEO",
+      "issuer_name": "AMERICAN EAGLE OUTFITTERS INC"
+    },
+    {
+      "cik": "0001378950",
+      "historical_symbol": "PRTS",
+      "issuer_name": "U.S. Auto Parts Network, Inc."
+    },
+    {
+      "cik": "0000008146",
+      "historical_symbol": "ALOT",
+      "issuer_name": "AstroNova, Inc."
+    },
+    {
+      "cik": "0000876378",
+      "historical_symbol": "TRXC",
+      "issuer_name": "TRANSENTERIX INC."
+    },
+    {
+      "cik": "0000887919",
+      "historical_symbol": "PFBI",
+      "issuer_name": "PREMIER FINANCIAL BANCORP INC"
+    },
+    {
+      "cik": "0000918160",
+      "historical_symbol": "AKS",
+      "issuer_name": "AK STEEL HOLDING CORP"
+    },
+    {
+      "cik": "0001640384",
+      "historical_symbol": "LMFA",
+      "issuer_name": "LM FUNDING AMERICA, INC."
+    },
+    {
+      "cik": "0000850460",
+      "historical_symbol": "WIRE",
+      "issuer_name": "ENCORE WIRE CORP"
+    },
+    {
+      "cik": "0000356130",
+      "historical_symbol": "EMCI",
+      "issuer_name": "EMC INSURANCE GROUP INC"
+    },
+    {
+      "cik": "0001262823",
+      "historical_symbol": "WLK",
+      "issuer_name": "WESTLAKE CHEMICAL CORP"
+    },
+    {
+      "cik": "0001395937",
+      "historical_symbol": "SNDX",
+      "issuer_name": "Syndax Pharmaceuticals Inc"
+    },
+    {
+      "cik": "0001263762",
+      "historical_symbol": "SLCT",
+      "issuer_name": "SELECT BANCORP, INC."
+    },
+    {
+      "cik": "0001403568",
+      "historical_symbol": "ULTA",
+      "issuer_name": "Ulta Beauty, Inc."
+    },
+    {
+      "cik": "0001333493",
+      "historical_symbol": "EHTH",
+      "issuer_name": "eHealth, Inc."
+    },
+    {
+      "cik": "0001561660",
+      "historical_symbol": "PEGI",
+      "issuer_name": "Pattern Energy Group Inc."
+    },
+    {
+      "cik": "0001728951",
+      "historical_symbol": "EPRT",
+      "issuer_name": "ESSENTIAL PROPERTIES REALTY TRUST, INC."
+    },
+    {
+      "cik": "0000799288",
+      "historical_symbol": "LE",
+      "issuer_name": "LANDS' END, INC."
+    },
+    {
+      "cik": "0000766421",
+      "historical_symbol": "ALK",
+      "issuer_name": "ALASKA AIR GROUP, INC."
+    },
+    {
+      "cik": "0001580670",
+      "historical_symbol": "LGIH",
+      "issuer_name": "LGI Homes, Inc."
+    },
+    {
+      "cik": "0000891482",
+      "historical_symbol": "FLL",
+      "issuer_name": "FULL HOUSE RESORTS INC"
+    },
+    {
+      "cik": "0001175483",
+      "historical_symbol": "DS",
+      "issuer_name": "Drive Shack Inc."
+    },
+    {
+      "cik": "0000896262",
+      "historical_symbol": "AMED",
+      "issuer_name": "AMEDISYS INC"
+    },
+    {
+      "cik": "0001685040",
+      "historical_symbol": "BHF",
+      "issuer_name": "Brighthouse Financial, Inc."
+    },
+    {
+      "cik": "0001742924",
+      "historical_symbol": "LTHM",
+      "issuer_name": "Livent Corp."
+    },
+    {
+      "cik": "0001626199",
+      "historical_symbol": "ALPN",
+      "issuer_name": "ALPINE IMMUNE SCIENCES, INC."
+    },
+    {
+      "cik": "0001401040",
+      "historical_symbol": "DMAC",
+      "issuer_name": "DiaMedica Therapeutics Inc."
+    },
+    {
+      "cik": "0000883569",
+      "historical_symbol": "FOSL",
+      "issuer_name": "Fossil Group, Inc."
+    },
+    {
+      "cik": "0000730464",
+      "historical_symbol": "ATGE",
+      "issuer_name": "Adtalem Global Education Inc."
+    },
+    {
+      "cik": "0001730984",
+      "historical_symbol": "BCML",
+      "issuer_name": "BayCom Corp"
+    },
+    {
+      "cik": "0001385292",
+      "historical_symbol": "TYPE",
+      "issuer_name": "Monotype Imaging Holdings Inc."
+    },
+    {
+      "cik": "0001020569",
+      "historical_symbol": "IRM",
+      "issuer_name": "IRON MOUNTAIN INC"
+    },
+    {
+      "cik": "0001158114",
+      "historical_symbol": "AAOI",
+      "issuer_name": "APPLIED OPTOELECTRONICS, INC."
+    },
+    {
+      "cik": "0001362190",
+      "historical_symbol": "AEYE",
+      "issuer_name": "AUDIOEYE INC"
+    },
+    {
+      "cik": "0001427925",
+      "historical_symbol": "ACRX",
+      "issuer_name": "ACELRX PHARMACEUTICALS INC"
+    },
+    {
+      "cik": "0001623613",
+      "historical_symbol": "MYL",
+      "issuer_name": "Mylan N.V."
+    },
+    {
+      "cik": "0000906709",
+      "historical_symbol": "NKTR",
+      "issuer_name": "NEKTAR THERAPEUTICS"
+    },
+    {
+      "cik": "0001045609",
+      "historical_symbol": "PLD",
+      "issuer_name": "Prologis, Inc."
+    },
+    {
+      "cik": "0001453687",
+      "historical_symbol": "SELB",
+      "issuer_name": "SELECTA BIOSCIENCES INC"
+    },
+    {
+      "cik": "0000908255",
+      "historical_symbol": "BWA",
+      "issuer_name": "BORGWARNER INC"
+    },
+    {
+      "cik": "0001585364",
+      "historical_symbol": "PRGO",
+      "issuer_name": "PERRIGO Co plc"
+    },
+    {
+      "cik": "0000906107",
+      "historical_symbol": "EQR",
+      "issuer_name": "EQUITY RESIDENTIAL"
+    },
+    {
+      "cik": "0001689923",
+      "historical_symbol": "AYX",
+      "issuer_name": "Alteryx, Inc."
+    },
+    {
+      "cik": "0001138118",
+      "historical_symbol": "CBRE",
+      "issuer_name": "CBRE GROUP, INC."
+    },
+    {
+      "cik": "0000910638",
+      "historical_symbol": "DDD",
+      "issuer_name": "3D SYSTEMS CORP"
+    },
+    {
+      "cik": "0000030625",
+      "historical_symbol": "FLS",
+      "issuer_name": "FLOWSERVE CORP"
+    },
+    {
+      "cik": "0001418076",
+      "historical_symbol": "SLRC",
+      "issuer_name": "Solar Capital Ltd."
+    },
+    {
+      "cik": "0001607716",
+      "historical_symbol": "VSLR",
+      "issuer_name": "Vivint Solar, Inc."
+    },
+    {
+      "cik": "0000891024",
+      "historical_symbol": "PDCO",
+      "issuer_name": "PATTERSON COMPANIES, INC."
+    },
+    {
+      "cik": "0001262039",
+      "historical_symbol": "FTNT",
+      "issuer_name": "Fortinet, Inc."
+    },
+    {
+      "cik": "0001282637",
+      "historical_symbol": "NEU",
+      "issuer_name": "NEWMARKET CORP"
+    },
+    {
+      "cik": "0001045450",
+      "historical_symbol": "EPR",
+      "issuer_name": "EPR PROPERTIES"
+    },
+    {
+      "cik": "0001177394",
+      "historical_symbol": "SNX",
+      "issuer_name": "SYNNEX CORP"
+    },
+    {
+      "cik": "0000706863",
+      "historical_symbol": "UNB",
+      "issuer_name": "UNION BANKSHARES INC"
+    },
+    {
+      "cik": "0001169988",
+      "historical_symbol": "WIFI",
+      "issuer_name": "BOINGO WIRELESS, INC."
+    },
+    {
+      "cik": "0001587987",
+      "historical_symbol": "NEWT",
+      "issuer_name": "Newtek Business Services Corp."
+    },
+    {
+      "cik": "0001286043",
+      "historical_symbol": "KRG",
+      "issuer_name": "KITE REALTY GROUP TRUST"
+    },
+    {
+      "cik": "0001481792",
+      "historical_symbol": "QUAD",
+      "issuer_name": "Quad/Graphics, Inc."
+    },
+    {
+      "cik": "0000806517",
+      "historical_symbol": "PMD",
+      "issuer_name": "PSYCHEMEDICS CORP"
+    },
+    {
+      "cik": "0001506307",
+      "historical_symbol": "KMI",
+      "issuer_name": "KINDER MORGAN, INC."
+    },
+    {
+      "cik": "0001560672",
+      "historical_symbol": "EARN",
+      "issuer_name": "Ellington Residential Mortgage REIT"
+    },
+    {
+      "cik": "0001592016",
+      "historical_symbol": "AGFS",
+      "issuer_name": "AgroFresh Solutions, Inc."
+    },
+    {
+      "cik": "0000707549",
+      "historical_symbol": "LRCX",
+      "issuer_name": "LAM RESEARCH CORP"
+    },
+    {
+      "cik": "0001534504",
+      "historical_symbol": "PBF",
+      "issuer_name": "PBF Energy Inc."
+    },
+    {
+      "cik": "0001086745",
+      "historical_symbol": "DCAR",
+      "issuer_name": "DropCar, Inc."
+    },
+    {
+      "cik": "0000788329",
+      "historical_symbol": "JOUT",
+      "issuer_name": "JOHNSON OUTDOORS INC"
+    },
+    {
+      "cik": "0001308606",
+      "historical_symbol": "SRC",
+      "issuer_name": "SPIRIT REALTY CAPITAL, INC."
+    },
+    {
+      "cik": "0001761940",
+      "historical_symbol": "DSSI",
+      "issuer_name": "Diamond S Shipping Inc."
+    },
+    {
+      "cik": "0000814184",
+      "historical_symbol": "TCF",
+      "issuer_name": "TCF FINANCIAL CORP"
+    },
+    {
+      "cik": "0000945841",
+      "historical_symbol": "POOL",
+      "issuer_name": "POOL CORP"
+    },
+    {
+      "cik": "0000844059",
+      "historical_symbol": "FRPH",
+      "issuer_name": "FRP HOLDINGS, INC."
+    },
+    {
+      "cik": "0000768710",
+      "historical_symbol": "RELV",
+      "issuer_name": "RELIV INTERNATIONAL INC"
+    },
+    {
+      "cik": "0001041368",
+      "historical_symbol": "RVSB",
+      "issuer_name": "RIVERVIEW BANCORP INC"
+    },
+    {
+      "cik": "0001593222",
+      "historical_symbol": "CIO",
+      "issuer_name": "City Office REIT, Inc."
+    },
+    {
+      "cik": "0001034054",
+      "historical_symbol": "SBAC",
+      "issuer_name": "SBA COMMUNICATIONS CORP"
+    },
+    {
+      "cik": "0001616318",
+      "historical_symbol": "VSTO",
+      "issuer_name": "Vista Outdoor Inc."
+    },
+    {
+      "cik": "0001694426",
+      "historical_symbol": "DK",
+      "issuer_name": "Delek US Holdings, Inc."
+    },
+    {
+      "cik": "0001126328",
+      "historical_symbol": "PFG",
+      "issuer_name": "PRINCIPAL FINANCIAL GROUP INC"
+    },
+    {
+      "cik": "0001626853",
+      "historical_symbol": "MJCO",
+      "issuer_name": "Majesco"
+    },
+    {
+      "cik": "0001267238",
+      "historical_symbol": "AIZ",
+      "issuer_name": "ASSURANT INC"
+    },
+    {
+      "cik": "0000055242",
+      "historical_symbol": "KMT",
+      "issuer_name": "KENNAMETAL INC"
+    },
+    {
+      "cik": "0001069202",
+      "historical_symbol": "LII",
+      "issuer_name": "LENNOX INTERNATIONAL INC"
+    },
+    {
+      "cik": "0001495320",
+      "historical_symbol": "VRA",
+      "issuer_name": "Vera Bradley, Inc."
+    },
+    {
+      "cik": "0001314727",
+      "historical_symbol": "SONO",
+      "issuer_name": "Sonos Inc"
+    },
+    {
+      "cik": "0001571949",
+      "historical_symbol": "ICE",
+      "issuer_name": "Intercontinental Exchange, Inc."
+    },
+    {
+      "cik": "0000900075",
+      "historical_symbol": "CPRT",
+      "issuer_name": "COPART INC"
+    },
+    {
+      "cik": "0000866609",
+      "historical_symbol": "IO",
+      "issuer_name": "ION GEOPHYSICAL CORP"
+    },
+    {
+      "cik": "0001120914",
+      "historical_symbol": "PDFS",
+      "issuer_name": "PDF SOLUTIONS INC"
+    },
+    {
+      "cik": "0001070985",
+      "historical_symbol": "CXW",
+      "issuer_name": "CoreCivic, Inc."
+    },
+    {
+      "cik": "0000866706",
+      "historical_symbol": "ESE",
+      "issuer_name": "ESCO TECHNOLOGIES INC"
+    },
+    {
+      "cik": "0000799292",
+      "historical_symbol": "MHO",
+      "issuer_name": "M/I HOMES, INC."
+    },
+    {
+      "cik": "0001357204",
+      "historical_symbol": "DNKN",
+      "issuer_name": "DUNKIN' BRANDS GROUP, INC."
+    },
+    {
+      "cik": "0000799165",
+      "historical_symbol": "DWSN",
+      "issuer_name": "DAWSON GEOPHYSICAL CO"
+    },
+    {
+      "cik": "0001761312",
+      "historical_symbol": "PLMR",
+      "issuer_name": "Palomar Holdings, Inc."
+    },
+    {
+      "cik": "0000029989",
+      "historical_symbol": "OMC",
+      "issuer_name": "OMNICOM GROUP INC."
+    },
+    {
+      "cik": "0001641614",
+      "historical_symbol": "PMTS",
+      "issuer_name": "CPI Card Group Inc."
+    },
+    {
+      "cik": "0001326801",
+      "historical_symbol": "FB",
+      "issuer_name": "Facebook Inc"
+    },
+    {
+      "cik": "0001434647",
+      "historical_symbol": "KMPH",
+      "issuer_name": "KEMPHARM, INC"
+    },
+    {
+      "cik": "0001084384",
+      "historical_symbol": "TEUM",
+      "issuer_name": "PARETEUM Corp"
+    },
+    {
+      "cik": "0000885978",
+      "historical_symbol": "USPH",
+      "issuer_name": "U S PHYSICAL THERAPY INC /NV"
+    },
+    {
+      "cik": "0001177702",
+      "historical_symbol": "SAIA",
+      "issuer_name": "SAIA INC"
+    },
+    {
+      "cik": "0001633917",
+      "historical_symbol": "PYPL",
+      "issuer_name": "PayPal Holdings, Inc."
+    },
+    {
+      "cik": "0001020214",
+      "historical_symbol": "CERS",
+      "issuer_name": "CERUS CORP"
+    },
+    {
+      "cik": "0000774569",
+      "historical_symbol": "CLDB",
+      "issuer_name": "CORTLAND BANCORP INC"
+    },
+    {
+      "cik": "0001728117",
+      "historical_symbol": "GOSS",
+      "issuer_name": "Gossamer Bio, Inc."
+    },
+    {
+      "cik": "0001014473",
+      "historical_symbol": "VRSN",
+      "issuer_name": "VERISIGN INC/CA"
+    },
+    {
+      "cik": "0001539638",
+      "historical_symbol": "TBK",
+      "issuer_name": "Triumph Bancorp, Inc."
+    },
+    {
+      "cik": "0000034903",
+      "historical_symbol": "FRT",
+      "issuer_name": "FEDERAL REALTY INVESTMENT TRUST"
+    },
+    {
+      "cik": "0000101984",
+      "historical_symbol": "UEIC",
+      "issuer_name": "UNIVERSAL ELECTRONICS INC"
+    },
+    {
+      "cik": "0001085869",
+      "historical_symbol": "PRFT",
+      "issuer_name": "PERFICIENT INC"
+    },
+    {
+      "cik": "0001590715",
+      "historical_symbol": "AREC",
+      "issuer_name": "American Resources Corp"
+    },
+    {
+      "cik": "0001465885",
+      "historical_symbol": "WMC",
+      "issuer_name": "Western Asset Mortgage Capital Corp"
+    },
+    {
+      "cik": "0001626971",
+      "historical_symbol": "CRVS",
+      "issuer_name": "Corvus Pharmaceuticals, Inc."
+    },
+    {
+      "cik": "0001034760",
+      "historical_symbol": "WYY",
+      "issuer_name": "WIDEPOINT CORP"
+    },
+    {
+      "cik": "0000870826",
+      "historical_symbol": "IMBI",
+      "issuer_name": "iMedia Brands, Inc."
+    },
+    {
+      "cik": "0001610250",
+      "historical_symbol": "BOOT",
+      "issuer_name": "Boot Barn Holdings, Inc."
+    },
+    {
+      "cik": "0000037472",
+      "historical_symbol": "FLXS",
+      "issuer_name": "FLEXSTEEL INDUSTRIES INC"
+    },
+    {
+      "cik": "0001336920",
+      "historical_symbol": "LDOS",
+      "issuer_name": "Leidos Holdings, Inc."
+    }
+  ]
+}

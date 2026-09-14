@@ -1,0 +1,73 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "current_rules_applied": true,
+  "mandatory_witnesses_applied": true,
+  "share_class_safe": true,
+  "method": "Historical upper bound uses every source P/S row, even amendments, private/prearranged trades, non-common securities and missing prices. Ignore mixed-owner/month exclusions and liquidity. Invalid dates can fill every historical month. Nonroutine ceiling also counts routine-capable owners. Unprojected/unknown owners may qualify both ways. Refined current rules, when enabled, remove only amendments, explicitly negative officer/director roles, clearly noncommon securities and six exact reviewed trading-plan disclosures.",
+  "current_row_exclusions": {
+    "EXPLICIT_PLAN": 885,
+    "AMENDMENT_NOT_NEW_SIGNAL": 27,
+    "CLEARLY_NONCOMMON": 32,
+    "NO_OFFICER_DIRECTOR": 86
+  },
+  "mandatory_witness_rule": "Only exact matching security titles are grouped for necessary witnesses; alternative possible classes/titles remain allowed, and any surviving class keeps the issuer-month in the bound. A valid single-owner current purchase with no possible three-year history blocks both classes for its title; no possible shared month blocks routine for its title. Ignore any issuer-month with a known amendment. Current cases needing review never act as witnesses.",
+  "mandatory_witness_count": 691,
+  "raw_purchase_rows": 868,
+  "raw_purchase_issuer_months": 313,
+  "nonroutine_upper_bound": {
+    "issuer_months": 75,
+    "issuers": 37,
+    "months": 22
+  },
+  "routine_upper_bound": {
+    "issuer_months": 30,
+    "issuers": 14,
+    "months": 16
+  },
+  "gates": [
+    {
+      "sample": "nonroutine",
+      "metric": "issuer_months",
+      "optimistic_upper_bound": 75,
+      "required": 80,
+      "cannot_reach_minimum": true
+    },
+    {
+      "sample": "nonroutine",
+      "metric": "issuers",
+      "optimistic_upper_bound": 37,
+      "required": 30,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "nonroutine",
+      "metric": "months",
+      "optimistic_upper_bound": 22,
+      "required": 18,
+      "cannot_reach_minimum": false
+    },
+    {
+      "sample": "routine",
+      "metric": "issuer_months",
+      "optimistic_upper_bound": 30,
+      "required": 40,
+      "cannot_reach_minimum": true
+    },
+    {
+      "sample": "routine",
+      "metric": "issuers",
+      "optimistic_upper_bound": 14,
+      "required": 20,
+      "cannot_reach_minimum": true
+    },
+    {
+      "sample": "routine",
+      "metric": "months",
+      "optimistic_upper_bound": 16,
+      "required": 12,
+      "cannot_reach_minimum": false
+    }
+  ],
+  "status": "STOP_INSUFFICIENT_OPPORTUNITY_UPPER_BOUND",
+  "security_return_observations_read": 0
+}

@@ -1,0 +1,210 @@
+{
+  "reviewed_at_utc": "2026-09-13T22:50:59.987748+00:00",
+  "scope": "Eight current purchase-context texts; other historical-review items remain unresolved. No returns consulted.",
+  "decisions": {
+    "37b508e0c9a292cf7f33b56cff9d0823c5545582b7f730dd913a0f2c08c46808": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "The purchases reported in this Form 4 were effected pursuant to a Rule 10b5-1 trading plan adopted by the reporting person during March 2021.",
+      "examples": [
+        {
+          "accession": "0001209191-21-067888",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-01"
+        },
+        {
+          "accession": "0001209191-21-067888",
+          "row": "2",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-02"
+        },
+        {
+          "accession": "0001209191-21-067888",
+          "row": "3",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-03"
+        },
+        {
+          "accession": "0001209191-21-067888",
+          "row": "4",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-04"
+        }
+      ]
+    },
+    "095a110bb2a20c8bf17bc4ffd27e4ab9e5fe4f443990cc7cb601d1fd5bd203c4": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "Purchased pursuant to Rule 10b5-1 under the Securities Exchange Act of 1934.",
+      "examples": [
+        {
+          "accession": "0001697936-22-000001",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-01-06"
+        },
+        {
+          "accession": "0001697940-22-000004",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-02-18"
+        },
+        {
+          "accession": "0001697940-22-000002",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-01-25"
+        },
+        {
+          "accession": "0001697940-22-000005",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-03-16"
+        }
+      ]
+    },
+    "22f49351fb3b9797e7b8ce2bdceb4cca69af982b9b70a32061d6ff801caa5044": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "The purchases reported in this Form 4 were effected pursuant to a Rule 10b5-1 trading plan adopted by the reporting person during March 2022.",
+      "examples": [
+        {
+          "accession": "0001209191-22-027643",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-16"
+        },
+        {
+          "accession": "0001209191-22-027643",
+          "row": "2",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-18"
+        },
+        {
+          "accession": "0001209191-22-027643",
+          "row": "3",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-19"
+        },
+        {
+          "accession": "0001209191-22-027643",
+          "row": "4",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-20"
+        }
+      ]
+    },
+    "14a8525d9aae1dfe25172d095354e482f9951f62c2c1751a0320adbb6b89a77c": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "Purchased pursuant to Rule 10b5-1 under the Securities Exchange Act of 1934, adopted by Reporting Person on or about November 18, 2021",
+      "examples": [
+        {
+          "accession": "0001697940-23-000004",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-04-11"
+        },
+        {
+          "accession": "0001697940-23-000005",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-05-10"
+        }
+      ]
+    },
+    "17c172e140b73322e747c6979621147af461f19fb39ab3f1d59878718f70340c": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "Purchased pursuant to Rule 10b5-1 under the Securities Exchange Act of 1934, adopted by Reporting Person on or about March 15, 2023",
+      "examples": [
+        {
+          "accession": "0001698135-23-000001",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-05-23"
+        },
+        {
+          "accession": "0001698135-23-000002",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-06-15"
+        }
+      ]
+    },
+    "471ebff507d7d13a521d5bc517acc941c6247c46eb6f1b2958370193e444ed57": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "The transaction reported in this Form 4 was effected pursuant to a Rule 10b5-1 trading plan adopted by the Reporting Person on June 9, 2023.",
+      "examples": [
+        {
+          "accession": "0001209191-23-048791",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2023-09-08"
+        }
+      ]
+    },
+    "4e48dec96e9568beb103f180b3a6dcc1f9108cd5d5f43748afa29b3cf3840704": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "The issuer RSU grant is separate row 3, code A, linked to F2; purchase rows 1-2 are separate and row 1 links to weighted-average execution F1.",
+      "text": "The price reported in Column 4 is a weighted average price. These shares were purchased in multiple transactions at prices ranging from $7.94 to $7.97, inclusive. The reporting person undertakes to provide to the issuer, any security holder of the issuer, or the staff of the Securities and Exchange Commission, upon request, full information regarding the number of shares purchased at each separate price. Represents a grant of restricted stock units from the issuer for services as Chief Executive Officer of the issuer. Each restricted stock unit represents a right to receive one share of the issuer's common stock. The restricted stock units vest over a three-year period, with 25% vesting on December 21, 2023, 25% vesting on November 21, 2024, and 50% vesting on November 21, 2025.",
+      "examples": [
+        {
+          "accession": "0001214659-22-014078",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-11-17"
+        },
+        {
+          "accession": "0001214659-22-014078",
+          "row": "2",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-11-21"
+        }
+      ]
+    },
+    "c88bc8b34d912a333abf77ffebc086492ea3ddc8f4840f61830f543e7b45f64c": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Common-stock purchase row 1 links only to F1 and F2. Public-offering text is F3 attached to a separate preferred-depositary holding row, not the common purchase.",
+      "text": "The reported price in column 4 represents the weighted average price per share. Reporting person shall provide upon request by the Commission staff, the Issuer, or a security holder of the issuer, full information regarding the number of shares purchased at each separate price. Consists of (i) 18,626 shares of common stock of Issuer beneficially owned by the reporting person, and (ii) 16,134 shares of common stock of Issuer beneficially owned jointly with reporting person's spouse Linda B. Rafferty. Each Depository Share represents a I/40th interest in a share of the Issuer's 7.125% Series C Fixed Rate Non-Cumulative Perpetual Preferred Stock, par value $0.01 per share. Shares purchased in an underwritten public offering.",
+      "examples": [
+        {
+          "accession": "0001209191-23-005722",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2023-01-31"
+        }
+      ]
+    }
+  }
+}

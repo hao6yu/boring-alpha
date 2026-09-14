@@ -1,0 +1,27 @@
+{
+  "account_returns_computed": false,
+  "all_cohort_prior_price_states": {
+    "LIQUIDITY_INELIGIBLE": 1131,
+    "LIQUIDITY_INELIGIBLE_KNOWN_STATUS": 491,
+    "PRIOR_PRICE_OR_IDENTITY_UNRESOLVED": 645,
+    "READY": 2533
+  },
+  "at_utc": "2026-09-14T00:01:15.887477+00:00",
+  "candidates": {
+    "matched": 11,
+    "nonroutine": 18,
+    "routine": 6
+  },
+  "match_states": {
+    "MATCHED": 11,
+    "NO_SAME_DECILE_CONTROL": 7
+  },
+  "policy_sha256": "16c563cda8d5b98367f5fd9165e066227d4f58f63bc400d6cb3a7eddc4133e0b",
+  "price_files_loaded_but_candidate_functions_access_preentry_dates_only": true,
+  "ranked_signal_states": {
+    "LIQUIDITY_INELIGIBLE": 11,
+    "PRIOR_PRICE_OR_IDENTITY_UNRESOLVED": 4,
+    "SELECTED": 24
+  },
+  "sha256": "9caf2fe5dbbaef71cb8f19da2c44b91dc08d2110d3cda40d39bfd75187ed2e32"
+}

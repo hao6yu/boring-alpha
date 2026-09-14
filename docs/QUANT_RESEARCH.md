@@ -3,6 +3,45 @@
 Updated 2026-09-13. This is the current work brief; earlier ETF/withdrawal
 research does not define the user's active objective.
 
+Latest result: the user-authorized [$10,000 stock momentum diagnostic](../research/equity-momentum-diagnostic-2026-09-13/RESULTS.md)
+lost $1,938.22/$1,976.70 under base/stressed costs. Both accounts hit their
+$2,000 trailing dollar-loss halt on May 9, 2022 and liquidated on May 10;
+maximum drawdowns were 20.28%/20.34%. Adding back base costs on the same fills
+still leaves a $1,895.01 loss. This fixed implementation is shelved.
+The momentum accounts have complete conditional accounting, but 662 of 4,800
+issuer-month slots lack required qualified prices. Two of 20 predeclared
+unranked control seeds need absent WWE-to-TKO successor history, so the full
+ranking comparison remains unresolved. All 38 complete accounts and valid
+prefixes of four incomplete control runs reconcile. One fixed rule was tested
+within the two-hour/$0 cap; no tuning, new data, or reserved-window prices were
+used. This does not establish that stock momentum generally fails.
+
+The preceding [$10,000 insider diagnostic](../research/insider-purchase-diagnostic-2026-09-13/RESULTS.md)
+lost $1,095.69/$1,142.50 under base/stressed costs on the identifiable subset
+over January 2022–December 2023. Both accounts completed nine positions and
+triggered their $2,000 trailing dollar-loss halt in December 2022. Base maximum
+drawdown was 18.88%; removing costs from those same fills still leaves a
+$1,043.48 loss. All six strategy/control account ledgers reconcile, but four
+non-routine signal months lack qualified cached prices and seven of 18 selected
+signals lack exact-decile controls. The complete-data strategy and full matched
+comparison remain unresolved; the negative observed subset supports shelving
+this version. No funded pilot, retuning, cohort expansion or reserved-window
+test is justified or queued. New paid data cost $0.
+
+The original [sample-size gate stop](../research/insider-purchase-test-2026-09-13/RESULTS.md)
+is preserved unchanged. That four-hour/$0 acquisition captured 2.60 GB of free
+filings but stopped before profitability because optimistic 75/30 ceilings
+fell below the registered 80/40 minimums. The later diagnostic was separately
+authorized, with a three-hour effort cap and $10,000 simulated capital;
+it did not convert the prior gate failure into a validation pass.
+All 200 issuers and 4,800 monthly slots remain recorded.
+The preceding [evidence audit](../research/insider-purchase-audit-2026-09-13/RESULTS.md)
+and [open articles/GitHub review](notes/2026-09-13-open-research-shortlist.md)
+remain preserved.
+Use Open Source Asset Pricing and published trading-cost research as references.
+Earnings-surprise examples overlap the completed earnings family, and
+pysystemtrade overlaps BA-012. The previous failures remain on the record.
+
 ## Mandate
 
 - Active, systematic trading with a measurable edge. No ETF or regular-stock
@@ -12,8 +51,10 @@ research does not define the user's active objective.
   and an AI service business are not the current direction.
 - U.S. resident using Robinhood, Coinbase, and IBKR. The user requested an
   IBKR Lite-to-Pro switch; review is pending. Databento historical access works.
-- $5,000 eventual pilot, approximately $1,000 loss tolerance. Larger capital
-  is conditional and is not authorized by a successful backtest.
+- Original pilot discussion: $5,000 and approximately $1,000/20% loss tolerance.
+  The user subsequently authorized $10,000 simulated capital for the insider
+  and stock momentum diagnostics, with recorded sizing and loss limits. No deposit or
+  live trading is authorized by that change or by a successful backtest.
 - Beat an investable cash alternative after realistic costs, with drawdowns,
   collateral needs, and uncertainty made explicit.
 - Use published fees and labeled cost ranges for research. Missing personal

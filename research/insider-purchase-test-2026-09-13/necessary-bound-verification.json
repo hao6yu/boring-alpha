@@ -1,0 +1,144 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "status": "NECESSARY_HISTORY_BOUND_VERIFIED",
+  "method": "Separate SQLite date parsing and per-owner calendar reconstruction; verify every compulsory current purchase against source tables, check absence of same-month issuer amendments, and reconstruct final class-specific opportunity sets.",
+  "witness_rows_verified": 691,
+  "unique_owner_years_verified": 331,
+  "reconstructed_counts": {
+    "NONROUTINE": {
+      "issuer_months": 75,
+      "issuers": 37,
+      "months": 22
+    },
+    "ROUTINE": {
+      "issuer_months": 30,
+      "issuers": 14,
+      "months": 16
+    }
+  },
+  "examples": [
+    {
+      "issuer_cik": "0000100726",
+      "month": "202303",
+      "accession": "0001214659-23-003389",
+      "security_title": "Common Stock",
+      "table_row": "1",
+      "owner_cik": "0001935471",
+      "excluded_classes": [
+        "NONROUTINE",
+        "ROUTINE"
+      ],
+      "maximal_history_months": {
+        "2020": [],
+        "2021": [],
+        "2022": [
+          8
+        ]
+      }
+    },
+    {
+      "issuer_cik": "0001069530",
+      "month": "202308",
+      "accession": "0001069530-23-000043",
+      "security_title": "Common Stock",
+      "table_row": "1",
+      "owner_cik": "0001562371",
+      "excluded_classes": [
+        "NONROUTINE",
+        "ROUTINE"
+      ],
+      "maximal_history_months": {
+        "2020": [
+          5,
+          8
+        ],
+        "2021": [],
+        "2022": [
+          8
+        ]
+      }
+    },
+    {
+      "issuer_cik": "0001393818",
+      "month": "202208",
+      "accession": "0001209191-22-045275",
+      "security_title": "Common Stock",
+      "table_row": "3",
+      "owner_cik": "0001479258",
+      "excluded_classes": [
+        "NONROUTINE",
+        "ROUTINE"
+      ],
+      "maximal_history_months": {
+        "2019": [],
+        "2020": [],
+        "2021": []
+      }
+    },
+    {
+      "issuer_cik": "0000100493",
+      "month": "202305",
+      "accession": "0000100493-23-000077",
+      "security_title": "Class A Common Stock",
+      "table_row": "1",
+      "owner_cik": "0001628361",
+      "excluded_classes": [
+        "NONROUTINE",
+        "ROUTINE"
+      ],
+      "maximal_history_months": {
+        "2020": [],
+        "2021": [],
+        "2022": []
+      }
+    },
+    {
+      "issuer_cik": "0000730464",
+      "month": "202202",
+      "accession": "0001127602-22-004575",
+      "security_title": "Common Stock",
+      "table_row": "2",
+      "owner_cik": "0001739876",
+      "excluded_classes": [
+        "NONROUTINE",
+        "ROUTINE"
+      ],
+      "maximal_history_months": {
+        "2019": [],
+        "2020": [],
+        "2021": [
+          2,
+          3,
+          5,
+          6,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "issuer_cik": "0001730984",
+      "month": "202209",
+      "accession": "0001437749-22-021953",
+      "security_title": "Common Stock",
+      "table_row": "3",
+      "owner_cik": "0001738193",
+      "excluded_classes": [
+        "NONROUTINE",
+        "ROUTINE"
+      ],
+      "maximal_history_months": {
+        "2019": [
+          6
+        ],
+        "2020": [
+          3
+        ],
+        "2021": []
+      }
+    }
+  ],
+  "scope": "Independent computation within this task, not an external replication or population data certification.",
+  "source_selection": "Original sources/checksums and eight explicit footnote reviews are shared audited inputs.",
+  "security_return_observations_read": 0
+}

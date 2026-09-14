@@ -1,0 +1,25 @@
+{
+  "code_sha256": {
+    "diagnostic_io.py": "2d1b53551b6e05fc646830d2426922537a48439917bdb2924b064223d7c04576",
+    "portfolio.py": "344ec4634a6a8d0eaf60531b7e66955d32570768bb9cc3ba3d777c863bee6998",
+    "run_diagnostic.py": "da5b2f77e65031dd01b206bed81440e1db6c6cd6b4a78204ca01704038e0c2ae"
+  },
+  "matching_convention": "Linear empirical decile cutoffs over all qualified past-only cohort features each month; right-side bin for ties; exact price/volume decile match, nearest past60 total return, fixed hash tie-break; no replacement and no relaxed matching.",
+  "no_price_outcome_optimized_parameters": true,
+  "policy_sha256": "16c563cda8d5b98367f5fd9165e066227d4f58f63bc400d6cb3a7eddc4133e0b",
+  "reuse_code_sha256": {
+    "panel.py": "2e37eff3d2ece71e852988dbf08b4ff4e5300b050adf990623c7f06c6f95ecdc",
+    "price_data.py": "a3440bcd170b5e9926147717692277a4c6207af5e8689a8d1403c2d98cb11185",
+    "run_experiment.py": "f42855bc9f8593b81aec71ff7c9e6508cf9c2c2f640891eccc1a60c3bfea2d0a"
+  },
+  "selection_convention": "Past-only liquidity eligibility precedes fixed hash top-four selection; no replacement after no-fill or cash rejection.",
+  "source_inputs": {
+    "corporate-action-evidence.json": "6ef9c0e06c1fa1570ec8280c28b4da054196265eccee55d35ff7c724f8105a27",
+    "price-manifest.json": "0f288f27d4ef6338ada23ecdc3cdf9076071e0782d6859f03e036f00cfe17a12",
+    "price-source-exceptions.json": "54f04a86ac6305b803463e45935817aedcf81f9b4edd4d82682e615adc0e2497",
+    "sec-cohort.json": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270",
+    "sec-events.json": "60cb80df9c16cf941b3e7b6a44ef6a529446f1fa094ab2831fc27b3170a945da"
+  },
+  "source_signal_freeze_sha256": "09c1c585f929027a1b3052c6953ac099b173097e5de07d9fda3ef19355203bc8",
+  "started_at_utc": "2026-09-14T00:01:11.509939+00:00"
+}

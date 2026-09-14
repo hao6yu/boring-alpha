@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-09-13T21:42:10.256465+00:00",
+  "scope": "literature and field/timestamp feasibility only",
+  "max_elapsed_hours": 2,
+  "new_paid_data_budget_usd": 0,
+  "quarter": "2023Q1",
+  "selection_seed": "boring-alpha-insider-field-audit-v1",
+  "selection": "rank accession numbers by sha256(seed + | + accession); choose 8 unique original Form 4 filings with a non-derivative code P acquisition with positive shares and price, then 2 distinct original Form 4 filings with a non-derivative code A acquisition, then 2 distinct Form 4/A filings; no price/liquidity or return selection; retain unavailable slots",
+  "max_selected_filings": 12,
+  "max_sec_http_requests": 45,
+  "sec_max_requests_per_second": 2,
+  "max_total_download_bytes": 60000000,
+  "prohibited": [
+    "return calculations",
+    "opening reserved equity strategy price histories",
+    "live orders",
+    "credentials",
+    "framework installation",
+    "strategy parameter search"
+  ],
+  "classification_reference": "Cohen Malloy Pomorski (2012), main trader-level definition including Appendix Exhibit A1; reproduction mapping only, no labels assigned without complete required history"
+}

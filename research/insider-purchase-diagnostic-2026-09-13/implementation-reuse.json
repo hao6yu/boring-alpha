@@ -1,0 +1,11 @@
+{
+  "source": "research/equity-event-expansion-2026-09-13/portfolio.py",
+  "source_sha256": "efbbcb943a900053e4e172546644d92d407fd32a78c350542cc3cb5c1aecbb85",
+  "changes": [
+    "Capital, position ceiling, settled reserve and absolute halt scaled 2x",
+    "Monthly first-session entry/month-end exit replaces earnings 20-session horizon",
+    "Fixed hash order replaces earnings score/order",
+    "Enforce parent insider 20% of prior NAV envelope"
+  ],
+  "policy_unchanged": true
+}

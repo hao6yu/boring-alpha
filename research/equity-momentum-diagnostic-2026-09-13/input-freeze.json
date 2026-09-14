@@ -1,0 +1,296 @@
+{
+  "frozen_at_utc": "2026-09-14T00:32:05.147667+00:00",
+  "future_price_endpoint_availability_used_for_selection": false,
+  "input_file": "data/snapshots/equity-momentum-diagnostic-2026-09-13/frozen-inputs.json",
+  "issuer_months": 4800,
+  "monthly_coverage": [
+    {
+      "entry_month": "2022-01",
+      "information_cutoff": "2021-12-31",
+      "ready_issuers": 116,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 18,
+        "LIQUIDITY_INELIGIBLE": 38,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 116
+      }
+    },
+    {
+      "entry_month": "2022-02",
+      "information_cutoff": "2022-01-31",
+      "ready_issuers": 112,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 18,
+        "LIQUIDITY_INELIGIBLE": 43,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "READY": 112
+      }
+    },
+    {
+      "entry_month": "2022-03",
+      "information_cutoff": "2022-02-28",
+      "ready_issuers": 111,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 18,
+        "LIQUIDITY_INELIGIBLE": 44,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "READY": 111
+      }
+    },
+    {
+      "entry_month": "2022-04",
+      "information_cutoff": "2022-03-31",
+      "ready_issuers": 110,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 18,
+        "LIQUIDITY_INELIGIBLE": 44,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 110
+      }
+    },
+    {
+      "entry_month": "2022-05",
+      "information_cutoff": "2022-04-30",
+      "ready_issuers": 109,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 18,
+        "LIQUIDITY_INELIGIBLE": 45,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 109
+      }
+    },
+    {
+      "entry_month": "2022-06",
+      "information_cutoff": "2022-05-31",
+      "ready_issuers": 107,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 19,
+        "LIQUIDITY_INELIGIBLE": 46,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 107
+      }
+    },
+    {
+      "entry_month": "2022-07",
+      "information_cutoff": "2022-06-30",
+      "ready_issuers": 110,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 19,
+        "LIQUIDITY_INELIGIBLE": 43,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 110
+      }
+    },
+    {
+      "entry_month": "2022-08",
+      "information_cutoff": "2022-07-31",
+      "ready_issuers": 108,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 44,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 108
+      }
+    },
+    {
+      "entry_month": "2022-09",
+      "information_cutoff": "2022-08-31",
+      "ready_issuers": 107,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 45,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 107
+      }
+    },
+    {
+      "entry_month": "2022-10",
+      "information_cutoff": "2022-09-30",
+      "ready_issuers": 105,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 47,
+        "LIQUIDITY_PRICE_UNRESOLVED": 28,
+        "READY": 105
+      }
+    },
+    {
+      "entry_month": "2022-11",
+      "information_cutoff": "2022-10-31",
+      "ready_issuers": 103,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 49,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 103
+      }
+    },
+    {
+      "entry_month": "2022-12",
+      "information_cutoff": "2022-11-30",
+      "ready_issuers": 103,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 49,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 103
+      }
+    },
+    {
+      "entry_month": "2023-01",
+      "information_cutoff": "2022-12-31",
+      "ready_issuers": 102,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 50,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 102
+      }
+    },
+    {
+      "entry_month": "2023-02",
+      "information_cutoff": "2023-01-31",
+      "ready_issuers": 105,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 47,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 105
+      }
+    },
+    {
+      "entry_month": "2023-03",
+      "information_cutoff": "2023-02-28",
+      "ready_issuers": 104,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 20,
+        "LIQUIDITY_INELIGIBLE": 48,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 104
+      }
+    },
+    {
+      "entry_month": "2023-04",
+      "information_cutoff": "2023-03-31",
+      "ready_issuers": 103,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 22,
+        "LIQUIDITY_INELIGIBLE": 47,
+        "LIQUIDITY_PRICE_UNRESOLVED": 27,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 103
+      }
+    },
+    {
+      "entry_month": "2023-05",
+      "information_cutoff": "2023-04-30",
+      "ready_issuers": 103,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 22,
+        "LIQUIDITY_INELIGIBLE": 47,
+        "LIQUIDITY_PRICE_UNRESOLVED": 26,
+        "MOMENTUM_PRICE_UNRESOLVED": 2,
+        "READY": 103
+      }
+    },
+    {
+      "entry_month": "2023-06",
+      "information_cutoff": "2023-05-31",
+      "ready_issuers": 100,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 22,
+        "LIQUIDITY_INELIGIBLE": 50,
+        "LIQUIDITY_PRICE_UNRESOLVED": 26,
+        "MOMENTUM_PRICE_UNRESOLVED": 2,
+        "READY": 100
+      }
+    },
+    {
+      "entry_month": "2023-07",
+      "information_cutoff": "2023-06-30",
+      "ready_issuers": 100,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 22,
+        "LIQUIDITY_INELIGIBLE": 51,
+        "LIQUIDITY_PRICE_UNRESOLVED": 25,
+        "MOMENTUM_PRICE_UNRESOLVED": 2,
+        "READY": 100
+      }
+    },
+    {
+      "entry_month": "2023-08",
+      "information_cutoff": "2023-07-31",
+      "ready_issuers": 104,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 22,
+        "LIQUIDITY_INELIGIBLE": 48,
+        "LIQUIDITY_PRICE_UNRESOLVED": 25,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 104
+      }
+    },
+    {
+      "entry_month": "2023-09",
+      "information_cutoff": "2023-08-31",
+      "ready_issuers": 101,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 22,
+        "LIQUIDITY_INELIGIBLE": 51,
+        "LIQUIDITY_PRICE_UNRESOLVED": 25,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 101
+      }
+    },
+    {
+      "entry_month": "2023-10",
+      "information_cutoff": "2023-09-30",
+      "ready_issuers": 98,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 23,
+        "LIQUIDITY_INELIGIBLE": 52,
+        "LIQUIDITY_PRICE_UNRESOLVED": 26,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 98
+      }
+    },
+    {
+      "entry_month": "2023-11",
+      "information_cutoff": "2023-10-31",
+      "ready_issuers": 97,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 24,
+        "LIQUIDITY_INELIGIBLE": 52,
+        "LIQUIDITY_PRICE_UNRESOLVED": 26,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 97
+      }
+    },
+    {
+      "entry_month": "2023-12",
+      "information_cutoff": "2023-11-30",
+      "ready_issuers": 98,
+      "status_counts": {
+        "KNOWN_LISTING_INELIGIBLE": 24,
+        "LIQUIDITY_INELIGIBLE": 51,
+        "LIQUIDITY_PRICE_UNRESOLVED": 26,
+        "MOMENTUM_PRICE_UNRESOLVED": 1,
+        "READY": 98
+      }
+    }
+  ],
+  "note": "Price files contain the fixed 2019-2023 window; ranking/eligibility functions access strictly pre-entry dates. Source availability itself may correlate with survival.",
+  "policy_sha256": "bb794d736f507c5a3ee7838eb73cd993b10dd4a12655f6dd72f69fa7dc3bfaa9",
+  "sha256": "d86a5e5c5d96543215701a4576f6b0cbe0eec0e34ee1b79424cc0118b794e76f",
+  "slot_status_counts": {
+    "KNOWN_LISTING_INELIGIBLE": 491,
+    "LIQUIDITY_INELIGIBLE": 1131,
+    "LIQUIDITY_PRICE_UNRESOLVED": 645,
+    "MOMENTUM_PRICE_UNRESOLVED": 17,
+    "READY": 2516
+  }
+}

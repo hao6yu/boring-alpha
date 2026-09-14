@@ -1,0 +1,1494 @@
+{
+  "accounts": {
+    "base": {
+      "matched": {
+        "accounting_status": "COMPLETE_ACCOUNTING",
+        "active_months": 5,
+        "average_settled_cash_fraction": 0.9376238651683713,
+        "average_stock_exposure_fraction": 0.04758570664758007,
+        "buy_fills": 6,
+        "cagr": 0.02150034747074181,
+        "calendar_days": 726,
+        "cash_reference_scenarios": [
+          {
+            "annual_rate": 0.04,
+            "ending_value_usd": 10811.352108710895,
+            "strategy_minus_cash_usd": -379.1547787108939
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value_usd": 11228.827392225436,
+            "strategy_minus_cash_usd": -796.6300622254348
+          }
+        ],
+        "commissions_and_regulatory_usd": 12.51,
+        "completed_positions": 6,
+        "daily_nav_complete": true,
+        "decision_states": {
+          "ENTRY_LIMIT_CANCELLED": 5,
+          "FILLED": 6
+        },
+        "ending_locked_dividend_claims_usd": 76.435,
+        "ending_nav_usd": 10432.19733,
+        "ending_settled_cash_usd": 10355.76233,
+        "ending_unpaid_claims_usd": 76.435,
+        "gross_same_fills_cagr": 0.02328127102190014,
+        "gross_same_fills_profit_usd": 468.4050000000009,
+        "initial_capital_usd": 10000.0,
+        "issuer_net_profit_usd": {
+          "0000707549": 157.53584,
+          "0000851205": 306.23089000000004,
+          "0000924717": 66.18325000000004,
+          "0000927653": 18.02947999999992,
+          "0001055160": -181.05407999999989,
+          "0001571949": 65.27195000000006
+        },
+        "max_drawdown_fraction": 0.030330397489563676,
+        "max_drawdown_usd": 317.4774300000008,
+        "monthly": [
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10371.50284,
+            "month": "2022-03",
+            "net_profit_usd": 371.5028399999992,
+            "return": 0.03715028399999998
+          },
+          {
+            "ending_nav_usd": 10371.50284,
+            "month": "2022-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10371.50284,
+            "month": "2022-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10389.53232,
+            "month": "2022-06",
+            "net_profit_usd": 18.029480000001058,
+            "return": 0.0017383671660837763
+          },
+          {
+            "ending_nav_usd": 10389.53232,
+            "month": "2022-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10389.53232,
+            "month": "2022-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10389.53232,
+            "month": "2022-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10389.53232,
+            "month": "2022-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10389.53232,
+            "month": "2022-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10208.47824,
+            "month": "2022-12",
+            "net_profit_usd": -181.05407999999989,
+            "return": -0.017426586146853662
+          },
+          {
+            "ending_nav_usd": 10208.47824,
+            "month": "2023-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10208.47824,
+            "month": "2023-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10366.01408,
+            "month": "2023-03",
+            "net_profit_usd": 157.53584000000046,
+            "return": 0.015431863231360587
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-04",
+            "net_profit_usd": 66.18325000000004,
+            "return": 0.006384638250462427
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10432.19733,
+            "month": "2023-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          }
+        ],
+        "net_profit_usd": 432.1973300000009,
+        "open_stock_lots": 0,
+        "position_results": [
+          {
+            "cik": "0001571949",
+            "event_id": "matched:2022-03:0001571949",
+            "net_profit_usd": 65.27195000000006,
+            "return": 0.03401039899279707
+          },
+          {
+            "cik": "0000851205",
+            "event_id": "matched:2022-03:0000851205",
+            "net_profit_usd": 306.23089000000004,
+            "return": 0.15869378875881
+          },
+          {
+            "cik": "0000927653",
+            "event_id": "matched:2022-06:0000927653",
+            "net_profit_usd": 18.02947999999992,
+            "return": 0.00931177029419934
+          },
+          {
+            "cik": "0001055160",
+            "event_id": "matched:2022-12:0001055160",
+            "net_profit_usd": -181.05407999999989,
+            "return": -0.09127454981147272
+          },
+          {
+            "cik": "0000707549",
+            "event_id": "matched:2023-03:0000707549",
+            "net_profit_usd": 157.53584,
+            "return": 0.08010349844615246
+          },
+          {
+            "cik": "0000924717",
+            "event_id": "matched:2023-04:0000924717",
+            "net_profit_usd": 66.18325000000004,
+            "return": 0.03419947828255556
+          }
+        ],
+        "positive_position_fraction": 0.8333333333333334,
+        "slippage_usd": 23.69767,
+        "stop_date": null,
+        "stopped": false,
+        "total_return": 0.04321973300000015,
+        "unpriced_days": 0,
+        "unresolved_candidate_ids": []
+      },
+      "nonroutine": {
+        "accounting_status": "COMPLETE_ACCOUNTING",
+        "active_months": 4,
+        "average_settled_cash_fraction": 0.913740189923143,
+        "average_stock_exposure_fraction": 0.0675435580854907,
+        "buy_fills": 9,
+        "cagr": -0.05667530315492686,
+        "calendar_days": 726,
+        "cash_reference_scenarios": [
+          {
+            "annual_rate": 0.04,
+            "ending_value_usd": 10811.352108710895,
+            "strategy_minus_cash_usd": -1907.0457287108948
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value_usd": 11228.827392225436,
+            "strategy_minus_cash_usd": -2324.5210122254357
+          }
+        ],
+        "commissions_and_regulatory_usd": 18.7,
+        "completed_positions": 9,
+        "daily_nav_complete": true,
+        "decision_states": {
+          "ACCOUNT_STOPPED": 8,
+          "ENTRY_LIMIT_CANCELLED": 1,
+          "FILLED": 9
+        },
+        "ending_locked_dividend_claims_usd": 69.38,
+        "ending_nav_usd": 8904.30638,
+        "ending_settled_cash_usd": 8834.92638,
+        "ending_unpaid_claims_usd": 69.38,
+        "gross_same_fills_cagr": -0.05389834464058707,
+        "gross_same_fills_profit_usd": -1043.48,
+        "initial_capital_usd": 10000.0,
+        "issuer_net_profit_usd": {
+          "0000018230": 38.83653000000004,
+          "0000055242": -320.22318999999993,
+          "0000726958": 229.67351000000008,
+          "0000851205": -193.52441999999996,
+          "0000910638": -592.4523000000002,
+          "0001422183": -198.7038500000001,
+          "0001610250": -310.96296000000007,
+          "0001689923": 251.6630600000001
+        },
+        "max_drawdown_fraction": 0.18881591089766414,
+        "max_drawdown_usd": 2072.6179699999993,
+        "monthly": [
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10645.42656,
+            "month": "2022-03",
+            "net_profit_usd": 645.4265599999999,
+            "return": 0.06454265599999998
+          },
+          {
+            "ending_nav_usd": 10645.42656,
+            "month": "2022-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10645.42656,
+            "month": "2022-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9465.78902,
+            "month": "2022-06",
+            "net_profit_usd": -1179.6375399999997,
+            "return": -0.11081167422942606
+          },
+          {
+            "ending_nav_usd": 9465.78902,
+            "month": "2022-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9465.78902,
+            "month": "2022-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9465.78902,
+            "month": "2022-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9695.46253,
+            "month": "2022-10",
+            "net_profit_usd": 229.67351000000053,
+            "return": 0.024263535719497797
+          },
+          {
+            "ending_nav_usd": 9695.46253,
+            "month": "2022-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2022-12",
+            "net_profit_usd": -791.1561500000007,
+            "return": -0.08160066088151863
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-03",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8904.30638,
+            "month": "2023-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          }
+        ],
+        "net_profit_usd": -1095.69362,
+        "open_stock_lots": 0,
+        "position_results": [
+          {
+            "cik": "0000018230",
+            "event_id": "nonroutine:2022-03:0000018230",
+            "net_profit_usd": 393.7635,
+            "return": 0.21503755341691014
+          },
+          {
+            "cik": "0001689923",
+            "event_id": "nonroutine:2022-03:0001689923",
+            "net_profit_usd": 251.6630600000001,
+            "return": 0.1282372930354825
+          },
+          {
+            "cik": "0000018230",
+            "event_id": "nonroutine:2022-06:0000018230",
+            "net_profit_usd": -354.92697,
+            "return": -0.1809837889142243
+          },
+          {
+            "cik": "0001610250",
+            "event_id": "nonroutine:2022-06:0001610250",
+            "net_profit_usd": -310.96296000000007,
+            "return": -0.15848564513726066
+          },
+          {
+            "cik": "0000851205",
+            "event_id": "nonroutine:2022-06:0000851205",
+            "net_profit_usd": -193.52441999999996,
+            "return": -0.1000622065373895
+          },
+          {
+            "cik": "0000055242",
+            "event_id": "nonroutine:2022-06:0000055242",
+            "net_profit_usd": -320.22318999999993,
+            "return": -0.16281150966152266
+          },
+          {
+            "cik": "0000726958",
+            "event_id": "nonroutine:2022-10:0000726958",
+            "net_profit_usd": 229.67351000000008,
+            "return": 0.12315117743584479
+          },
+          {
+            "cik": "0001422183",
+            "event_id": "nonroutine:2022-12:0001422183",
+            "net_profit_usd": -198.7038500000001,
+            "return": -0.10298970575898055
+          },
+          {
+            "cik": "0000910638",
+            "event_id": "nonroutine:2022-12:0000910638",
+            "net_profit_usd": -592.4523000000002,
+            "return": -0.3073467706303482
+          }
+        ],
+        "positive_position_fraction": 0.3333333333333333,
+        "slippage_usd": 33.51362,
+        "stop_date": "2022-12-27",
+        "stopped": true,
+        "total_return": -0.109569362,
+        "unpriced_days": 0,
+        "unresolved_candidate_ids": []
+      },
+      "routine": {
+        "accounting_status": "COMPLETE_ACCOUNTING",
+        "active_months": 2,
+        "average_settled_cash_fraction": 0.981289555769769,
+        "average_stock_exposure_fraction": 0.014617718853116586,
+        "buy_fills": 2,
+        "cagr": 0.01193931815273408,
+        "calendar_days": 726,
+        "cash_reference_scenarios": [
+          {
+            "annual_rate": 0.04,
+            "ending_value_usd": 10811.352108710895,
+            "strategy_minus_cash_usd": -572.472098710894
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value_usd": 11228.827392225436,
+            "strategy_minus_cash_usd": -989.9473822254349
+          }
+        ],
+        "commissions_and_regulatory_usd": 4.18,
+        "completed_positions": 2,
+        "daily_nav_complete": true,
+        "decision_states": {
+          "ENTRY_LIMIT_CANCELLED": 4,
+          "FILLED": 2
+        },
+        "ending_locked_dividend_claims_usd": 0,
+        "ending_nav_usd": 10238.88001,
+        "ending_settled_cash_usd": 10238.88001,
+        "ending_unpaid_claims_usd": 0,
+        "gross_same_fills_cagr": 0.012548817342713958,
+        "gross_same_fills_profit_usd": 251.15000000000077,
+        "initial_capital_usd": 10000.0,
+        "issuer_net_profit_usd": {
+          "0001585364": 238.88000999999986
+        },
+        "max_drawdown_fraction": 0.0058241343971330295,
+        "max_drawdown_usd": 58.63822000000073,
+        "monthly": [
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-03",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2023-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2023-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2023-03",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10068.14335,
+            "month": "2023-04",
+            "net_profit_usd": 68.14335000000028,
+            "return": 0.00681433500000006
+          },
+          {
+            "ending_nav_usd": 10068.14335,
+            "month": "2023-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10068.14335,
+            "month": "2023-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10238.88001,
+            "month": "2023-07",
+            "net_profit_usd": 170.73666000000048,
+            "return": 0.01695810777267104
+          },
+          {
+            "ending_nav_usd": 10238.88001,
+            "month": "2023-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10238.88001,
+            "month": "2023-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10238.88001,
+            "month": "2023-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10238.88001,
+            "month": "2023-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10238.88001,
+            "month": "2023-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          }
+        ],
+        "net_profit_usd": 238.88001000000077,
+        "open_stock_lots": 0,
+        "position_results": [
+          {
+            "cik": "0001585364",
+            "event_id": "routine:2023-04:0001585364",
+            "net_profit_usd": 68.14335000000005,
+            "return": 0.03451727227470308
+          },
+          {
+            "cik": "0001585364",
+            "event_id": "routine:2023-07:0001585364",
+            "net_profit_usd": 170.7366599999998,
+            "return": 0.08750439003977802
+          }
+        ],
+        "positive_position_fraction": 1.0,
+        "slippage_usd": 8.08999,
+        "stop_date": null,
+        "stopped": false,
+        "total_return": 0.023888000999999992,
+        "unpriced_days": 0,
+        "unresolved_candidate_ids": []
+      }
+    },
+    "stress": {
+      "matched": {
+        "accounting_status": "COMPLETE_ACCOUNTING",
+        "active_months": 5,
+        "average_settled_cash_fraction": 0.9373607603017664,
+        "average_stock_exposure_fraction": 0.047798341776227694,
+        "buy_fills": 6,
+        "cagr": 0.01682332917181273,
+        "calendar_days": 726,
+        "cash_reference_scenarios": [
+          {
+            "annual_rate": 0.04,
+            "ending_value_usd": 10811.352108710895,
+            "strategy_minus_cash_usd": -473.94545871089394
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value_usd": 11228.827392225436,
+            "strategy_minus_cash_usd": -891.4207422254349
+          }
+        ],
+        "commissions_and_regulatory_usd": 12.51,
+        "completed_positions": 6,
+        "daily_nav_complete": true,
+        "decision_states": {
+          "ENTRY_LIMIT_CANCELLED": 5,
+          "FILLED": 6
+        },
+        "ending_locked_dividend_claims_usd": 76.435,
+        "ending_nav_usd": 10337.40665,
+        "ending_settled_cash_usd": 10260.97165,
+        "ending_unpaid_claims_usd": 76.435,
+        "gross_same_fills_cagr": 0.02328127102190014,
+        "gross_same_fills_profit_usd": 468.40500000000077,
+        "initial_capital_usd": 10000.0,
+        "issuer_net_profit_usd": {
+          "0000707549": 141.19920000000025,
+          "0000851205": 289.57445000000007,
+          "0000924717": 50.43624999999997,
+          "0000927653": 2.467399999999998,
+          "0001055160": -195.95039999999995,
+          "0001571949": 49.67975000000001
+        },
+        "max_drawdown_fraction": 0.03565534325074571,
+        "max_drawdown_usd": 372.6671499999993,
+        "monthly": [
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10339.2542,
+            "month": "2022-03",
+            "net_profit_usd": 339.2541999999994,
+            "return": 0.03392541999999987
+          },
+          {
+            "ending_nav_usd": 10339.2542,
+            "month": "2022-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10339.2542,
+            "month": "2022-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10341.7216,
+            "month": "2022-06",
+            "net_profit_usd": 2.467400000001362,
+            "return": 0.00023864390528305357
+          },
+          {
+            "ending_nav_usd": 10341.7216,
+            "month": "2022-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10341.7216,
+            "month": "2022-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10341.7216,
+            "month": "2022-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10341.7216,
+            "month": "2022-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10341.7216,
+            "month": "2022-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10145.7712,
+            "month": "2022-12",
+            "net_profit_usd": -195.95040000000154,
+            "return": -0.018947560916743433
+          },
+          {
+            "ending_nav_usd": 10145.7712,
+            "month": "2023-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10145.7712,
+            "month": "2023-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10286.9704,
+            "month": "2023-03",
+            "net_profit_usd": 141.19920000000093,
+            "return": 0.013917049499401424
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-04",
+            "net_profit_usd": 50.436250000000655,
+            "return": 0.004902925549392201
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10337.40665,
+            "month": "2023-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          }
+        ],
+        "net_profit_usd": 337.4066500000008,
+        "open_stock_lots": 0,
+        "position_results": [
+          {
+            "cik": "0001571949",
+            "event_id": "matched:2022-03:0001571949",
+            "net_profit_usd": 49.67975000000001,
+            "return": 0.02578300106456617
+          },
+          {
+            "cik": "0000851205",
+            "event_id": "matched:2022-03:0000851205",
+            "net_profit_usd": 289.57445000000007,
+            "return": 0.14946520183350526
+          },
+          {
+            "cik": "0000927653",
+            "event_id": "matched:2022-06:0000927653",
+            "net_profit_usd": 2.467399999999998,
+            "return": 0.001269280274255899
+          },
+          {
+            "cik": "0001055160",
+            "event_id": "matched:2022-12:0001055160",
+            "net_profit_usd": -195.95039999999995,
+            "return": -0.0983912399789078
+          },
+          {
+            "cik": "0000707549",
+            "event_id": "matched:2023-03:0000707549",
+            "net_profit_usd": 141.19920000000025,
+            "return": 0.07151106574173108
+          },
+          {
+            "cik": "0000924717",
+            "event_id": "matched:2023-04:0000924717",
+            "net_profit_usd": 50.43624999999997,
+            "return": 0.025958709458728628
+          }
+        ],
+        "positive_position_fraction": 0.8333333333333334,
+        "slippage_usd": 118.48835,
+        "stop_date": null,
+        "stopped": false,
+        "total_return": 0.03374066500000006,
+        "unpriced_days": 0,
+        "unresolved_candidate_ids": []
+      },
+      "nonroutine": {
+        "accounting_status": "COMPLETE_ACCOUNTING",
+        "active_months": 4,
+        "average_settled_cash_fraction": 0.916791996187148,
+        "average_stock_exposure_fraction": 0.06441942049150533,
+        "buy_fills": 9,
+        "cagr": -0.05917139704364327,
+        "calendar_days": 726,
+        "cash_reference_scenarios": [
+          {
+            "annual_rate": 0.04,
+            "ending_value_usd": 10811.352108710895,
+            "strategy_minus_cash_usd": -1953.848858710895
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value_usd": 11228.827392225436,
+            "strategy_minus_cash_usd": -2371.324142225436
+          }
+        ],
+        "commissions_and_regulatory_usd": 18.7,
+        "completed_positions": 9,
+        "daily_nav_complete": true,
+        "decision_states": {
+          "ACCOUNT_STOPPED": 8,
+          "ENTRY_LIMIT_CANCELLED": 1,
+          "FILLED": 9
+        },
+        "ending_locked_dividend_claims_usd": 68.7,
+        "ending_nav_usd": 8857.50325,
+        "ending_settled_cash_usd": 8788.80325,
+        "ending_unpaid_claims_usd": 68.7,
+        "gross_same_fills_cagr": -0.04927378124802717,
+        "gross_same_fills_profit_usd": -956.1900000000002,
+        "initial_capital_usd": 10000.0,
+        "issuer_net_profit_usd": {
+          "0000018230": 8.342650000000049,
+          "0000055242": -334.67595000000006,
+          "0000726958": 213.84755000000018,
+          "0000851205": -208.22209999999995,
+          "0000910638": -528.067,
+          "0001422183": -203.26239999999984,
+          "0001610250": -325.4148,
+          "0001689923": 234.95529999999985
+        },
+        "max_drawdown_fraction": 0.1883338346204334,
+        "max_drawdown_usd": 2055.2384999999995,
+        "monthly": [
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10612.4928,
+            "month": "2022-03",
+            "net_profit_usd": 612.4928,
+            "return": 0.06124927999999996
+          },
+          {
+            "ending_nav_usd": 10612.4928,
+            "month": "2022-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10612.4928,
+            "month": "2022-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9374.9851,
+            "month": "2022-06",
+            "net_profit_usd": -1237.5077,
+            "return": -0.11660857852360573
+          },
+          {
+            "ending_nav_usd": 9374.9851,
+            "month": "2022-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9374.9851,
+            "month": "2022-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9374.9851,
+            "month": "2022-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 9588.83265,
+            "month": "2022-10",
+            "net_profit_usd": 213.8475500000004,
+            "return": 0.022810441586728514
+          },
+          {
+            "ending_nav_usd": 9588.83265,
+            "month": "2022-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2022-12",
+            "net_profit_usd": -731.3294000000005,
+            "return": -0.07626886678432132
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-03",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 8857.50325,
+            "month": "2023-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          }
+        ],
+        "net_profit_usd": -1142.4967500000002,
+        "open_stock_lots": 0,
+        "position_results": [
+          {
+            "cik": "0000018230",
+            "event_id": "nonroutine:2022-03:0000018230",
+            "net_profit_usd": 377.53750000000014,
+            "return": 0.20535624681967415
+          },
+          {
+            "cik": "0001689923",
+            "event_id": "nonroutine:2022-03:0001689923",
+            "net_profit_usd": 234.95529999999985,
+            "return": 0.11924742790825765
+          },
+          {
+            "cik": "0000018230",
+            "event_id": "nonroutine:2022-06:0000018230",
+            "net_profit_usd": -369.1948500000001,
+            "return": -0.1875103371467147
+          },
+          {
+            "cik": "0001610250",
+            "event_id": "nonroutine:2022-06:0001610250",
+            "net_profit_usd": -325.4148,
+            "return": -0.16519141636618154
+          },
+          {
+            "cik": "0000851205",
+            "event_id": "nonroutine:2022-06:0000851205",
+            "net_profit_usd": -208.22209999999995,
+            "return": -0.10723339146771325
+          },
+          {
+            "cik": "0000055242",
+            "event_id": "nonroutine:2022-06:0000055242",
+            "net_profit_usd": -334.67595000000006,
+            "return": -0.16948283965482572
+          },
+          {
+            "cik": "0000726958",
+            "event_id": "nonroutine:2022-10:0000726958",
+            "net_profit_usd": 213.84755000000018,
+            "return": 0.11420914799853996
+          },
+          {
+            "cik": "0001422183",
+            "event_id": "nonroutine:2022-12:0001422183",
+            "net_profit_usd": -203.26239999999984,
+            "return": -0.10602582188080882
+          },
+          {
+            "cik": "0000910638",
+            "event_id": "nonroutine:2022-12:0000910638",
+            "net_profit_usd": -528.067,
+            "return": -0.2757570057674989
+          }
+        ],
+        "positive_position_fraction": 0.3333333333333333,
+        "slippage_usd": 167.60675,
+        "stop_date": "2022-12-19",
+        "stopped": true,
+        "total_return": -0.11424967500000005,
+        "unpriced_days": 0,
+        "unresolved_candidate_ids": []
+      },
+      "routine": {
+        "accounting_status": "COMPLETE_ACCOUNTING",
+        "active_months": 2,
+        "average_settled_cash_fraction": 0.9812729145060777,
+        "average_stock_exposure_fraction": 0.01464100188655503,
+        "buy_fills": 2,
+        "cagr": 0.010330126030592357,
+        "calendar_days": 726,
+        "cash_reference_scenarios": [
+          {
+            "annual_rate": 0.04,
+            "ending_value_usd": 10811.352108710895,
+            "strategy_minus_cash_usd": -604.8320587108956
+          },
+          {
+            "annual_rate": 0.06,
+            "ending_value_usd": 11228.827392225436,
+            "strategy_minus_cash_usd": -1022.3073422254365
+          }
+        ],
+        "commissions_and_regulatory_usd": 4.18,
+        "completed_positions": 2,
+        "daily_nav_complete": true,
+        "decision_states": {
+          "ENTRY_LIMIT_CANCELLED": 4,
+          "FILLED": 2
+        },
+        "ending_locked_dividend_claims_usd": 0,
+        "ending_nav_usd": 10206.52005,
+        "ending_settled_cash_usd": 10206.52005,
+        "ending_unpaid_claims_usd": 0,
+        "gross_same_fills_cagr": 0.012548817342713958,
+        "gross_same_fills_profit_usd": 251.14999999999918,
+        "initial_capital_usd": 10000.0,
+        "issuer_net_profit_usd": {
+          "0001585364": 206.52005000000008
+        },
+        "max_drawdown_fraction": 0.006608694069113574,
+        "max_drawdown_usd": 66.43109999999979,
+        "monthly": [
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-03",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-04",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-07",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2022-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2023-01",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2023-02",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10000.0,
+            "month": "2023-03",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10052.07675,
+            "month": "2023-04",
+            "net_profit_usd": 52.076750000000175,
+            "return": 0.005207675000000078
+          },
+          {
+            "ending_nav_usd": 10052.07675,
+            "month": "2023-05",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10052.07675,
+            "month": "2023-06",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10206.52005,
+            "month": "2023-07",
+            "net_profit_usd": 154.443299999999,
+            "return": 0.015364317627200696
+          },
+          {
+            "ending_nav_usd": 10206.52005,
+            "month": "2023-08",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10206.52005,
+            "month": "2023-09",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10206.52005,
+            "month": "2023-10",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10206.52005,
+            "month": "2023-11",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          },
+          {
+            "ending_nav_usd": 10206.52005,
+            "month": "2023-12",
+            "net_profit_usd": 0.0,
+            "return": 0.0
+          }
+        ],
+        "net_profit_usd": 206.52004999999917,
+        "open_stock_lots": 0,
+        "position_results": [
+          {
+            "cik": "0001585364",
+            "event_id": "routine:2023-04:0001585364",
+            "net_profit_usd": 52.07674999999995,
+            "return": 0.026273973722368452
+          },
+          {
+            "cik": "0001585364",
+            "event_id": "routine:2023-07:0001585364",
+            "net_profit_usd": 154.44330000000014,
+            "return": 0.0788389884873749
+          }
+        ],
+        "positive_position_fraction": 1.0,
+        "slippage_usd": 40.44995,
+        "stop_date": null,
+        "stopped": false,
+        "total_return": 0.020652004999999862,
+        "unpriced_days": 0,
+        "unresolved_candidate_ids": []
+      }
+    }
+  },
+  "candidate_freeze_sha256": "297e88d61ac8c43e7e748e28365c8560efe47fc0e0cdb373ba15fab38839e5c4",
+  "capital_usd": 10000,
+  "completed_at_utc": "2026-09-14T00:01:16.012177+00:00",
+  "evaluation_end": "2023-12-29",
+  "evaluation_start": "2022-01-03",
+  "ledger": {
+    "path": "data/snapshots/insider-purchase-diagnostic-2026-09-13/account-ledgers.json",
+    "sha256": "02defafc970421f9e4094b48e1594e6ffcc216562d46ab74f613df9ae21051b5"
+  },
+  "limitations": [
+    "Source-identified subset with explicit abstention; original sample thresholds remain unmet.",
+    "Past-price/identity gaps are reported before outcomes; missing potential signals or controls limit full-universe claims.",
+    "Close-based conservative fill proxies are modeled executions, not historical order-book fills.",
+    "2022-2023 is already-explored market history; 2024-2025 strategy prices were not opened.",
+    "No cash interest or taxes; cash benchmarks are stated constant-rate scenarios, not historical yields.",
+    "Fixed current-rate IBKR Pro counterfactual; actual user account tariff unverified."
+  ],
+  "new_paid_data_usd": 0,
+  "paired_descriptive_uncertainty": {
+    "base": {
+      "matched": {
+        "estimand": "annualized arithmetic mean daily account return difference",
+        "estimate": -0.07775000220066156,
+        "expected_block_sessions": 20,
+        "limitations": "Short, sparse, already-explored history; no issuer-cluster or multiple-search correction. Not an independent validation.",
+        "lower_95": -0.20730315567902852,
+        "observations": 501,
+        "replicates": 2000,
+        "seed": 20260913,
+        "status": "DESCRIPTIVE_ONLY",
+        "upper_95": 0.026792344440290244
+      },
+      "routine": {
+        "estimand": "annualized arithmetic mean daily account return difference",
+        "estimate": -0.06776041953732294,
+        "expected_block_sessions": 20,
+        "limitations": "Short, sparse, already-explored history; no issuer-cluster or multiple-search correction. Not an independent validation.",
+        "lower_95": -0.20766726848488717,
+        "observations": 501,
+        "replicates": 2000,
+        "seed": 20260913,
+        "status": "DESCRIPTIVE_ONLY",
+        "upper_95": 0.05723643508693644
+      }
+    },
+    "stress": {
+      "matched": {
+        "estimand": "annualized arithmetic mean daily account return difference",
+        "estimate": -0.07580282514178664,
+        "expected_block_sessions": 20,
+        "limitations": "Short, sparse, already-explored history; no issuer-cluster or multiple-search correction. Not an independent validation.",
+        "lower_95": -0.2082891578390814,
+        "observations": 501,
+        "replicates": 2000,
+        "seed": 20260913,
+        "status": "DESCRIPTIVE_ONLY",
+        "upper_95": 0.026329511263887936
+      },
+      "routine": {
+        "estimand": "annualized arithmetic mean daily account return difference",
+        "estimate": -0.06879567680209792,
+        "expected_block_sessions": 20,
+        "limitations": "Short, sparse, already-explored history; no issuer-cluster or multiple-search correction. Not an independent validation.",
+        "lower_95": -0.2096651136902897,
+        "observations": 501,
+        "replicates": 2000,
+        "seed": 20260913,
+        "status": "DESCRIPTIVE_ONLY",
+        "upper_95": 0.05366846144440977
+      }
+    }
+  },
+  "policy_sha256": "16c563cda8d5b98367f5fd9165e066227d4f58f63bc400d6cb3a7eddc4133e0b",
+  "status": "EXPLORATORY_DIAGNOSTIC_COMPLETE_NO_VALIDATION_PASS"
+}

@@ -1,0 +1,758 @@
+{
+  "reviewed_at_utc": "2026-09-13T23:54:35.797899+00:00",
+  "scope": "Inherited eight controls plus every currently necessary note text; explicit unresolved decisions retained. No price outcomes consulted.",
+  "decisions": {
+    "37b508e0c9a292cf7f33b56cff9d0823c5545582b7f730dd913a0f2c08c46808": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "The purchases reported in this Form 4 were effected pursuant to a Rule 10b5-1 trading plan adopted by the reporting person during March 2021.",
+      "examples": [
+        {
+          "accession": "0001209191-21-067888",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-01"
+        },
+        {
+          "accession": "0001209191-21-067888",
+          "row": "2",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-02"
+        },
+        {
+          "accession": "0001209191-21-067888",
+          "row": "3",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-03"
+        },
+        {
+          "accession": "0001209191-21-067888",
+          "row": "4",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2021-11-04"
+        }
+      ]
+    },
+    "095a110bb2a20c8bf17bc4ffd27e4ab9e5fe4f443990cc7cb601d1fd5bd203c4": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "Purchased pursuant to Rule 10b5-1 under the Securities Exchange Act of 1934.",
+      "examples": [
+        {
+          "accession": "0001697936-22-000001",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-01-06"
+        },
+        {
+          "accession": "0001697940-22-000004",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-02-18"
+        },
+        {
+          "accession": "0001697940-22-000002",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-01-25"
+        },
+        {
+          "accession": "0001697940-22-000005",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2022-03-16"
+        }
+      ]
+    },
+    "22f49351fb3b9797e7b8ce2bdceb4cca69af982b9b70a32061d6ff801caa5044": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "The purchases reported in this Form 4 were effected pursuant to a Rule 10b5-1 trading plan adopted by the reporting person during March 2022.",
+      "examples": [
+        {
+          "accession": "0001209191-22-027643",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-16"
+        },
+        {
+          "accession": "0001209191-22-027643",
+          "row": "2",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-18"
+        },
+        {
+          "accession": "0001209191-22-027643",
+          "row": "3",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-19"
+        },
+        {
+          "accession": "0001209191-22-027643",
+          "row": "4",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-04-20"
+        }
+      ]
+    },
+    "14a8525d9aae1dfe25172d095354e482f9951f62c2c1751a0320adbb6b89a77c": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "Purchased pursuant to Rule 10b5-1 under the Securities Exchange Act of 1934, adopted by Reporting Person on or about November 18, 2021",
+      "examples": [
+        {
+          "accession": "0001697940-23-000004",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-04-11"
+        },
+        {
+          "accession": "0001697940-23-000005",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-05-10"
+        }
+      ]
+    },
+    "17c172e140b73322e747c6979621147af461f19fb39ab3f1d59878718f70340c": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "Purchased pursuant to Rule 10b5-1 under the Securities Exchange Act of 1934, adopted by Reporting Person on or about March 15, 2023",
+      "examples": [
+        {
+          "accession": "0001698135-23-000001",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-05-23"
+        },
+        {
+          "accession": "0001698135-23-000002",
+          "row": "1",
+          "code": "P",
+          "title": "Class A Common Stock",
+          "transaction_date": "2023-06-15"
+        }
+      ]
+    },
+    "471ebff507d7d13a521d5bc517acc941c6247c46eb6f1b2958370193e444ed57": {
+      "history": "ALLOW",
+      "signal": "EXCLUDE",
+      "reason": "Footnote expressly says these reported purchases were pursuant to a 10b5-1 plan. Planned executed P/S may count in historical timing; this strategy excludes them as current signals.",
+      "text": "The transaction reported in this Form 4 was effected pursuant to a Rule 10b5-1 trading plan adopted by the Reporting Person on June 9, 2023.",
+      "examples": [
+        {
+          "accession": "0001209191-23-048791",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2023-09-08"
+        }
+      ]
+    },
+    "4e48dec96e9568beb103f180b3a6dcc1f9108cd5d5f43748afa29b3cf3840704": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "The issuer RSU grant is separate row 3, code A, linked to F2; purchase rows 1-2 are separate and row 1 links to weighted-average execution F1.",
+      "text": "The price reported in Column 4 is a weighted average price. These shares were purchased in multiple transactions at prices ranging from $7.94 to $7.97, inclusive. The reporting person undertakes to provide to the issuer, any security holder of the issuer, or the staff of the Securities and Exchange Commission, upon request, full information regarding the number of shares purchased at each separate price. Represents a grant of restricted stock units from the issuer for services as Chief Executive Officer of the issuer. Each restricted stock unit represents a right to receive one share of the issuer's common stock. The restricted stock units vest over a three-year period, with 25% vesting on December 21, 2023, 25% vesting on November 21, 2024, and 50% vesting on November 21, 2025.",
+      "examples": [
+        {
+          "accession": "0001214659-22-014078",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-11-17"
+        },
+        {
+          "accession": "0001214659-22-014078",
+          "row": "2",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2022-11-21"
+        }
+      ]
+    },
+    "c88bc8b34d912a333abf77ffebc086492ea3ddc8f4840f61830f543e7b45f64c": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Common-stock purchase row 1 links only to F1 and F2. Public-offering text is F3 attached to a separate preferred-depositary holding row, not the common purchase.",
+      "text": "The reported price in column 4 represents the weighted average price per share. Reporting person shall provide upon request by the Commission staff, the Issuer, or a security holder of the issuer, full information regarding the number of shares purchased at each separate price. Consists of (i) 18,626 shares of common stock of Issuer beneficially owned by the reporting person, and (ii) 16,134 shares of common stock of Issuer beneficially owned jointly with reporting person's spouse Linda B. Rafferty. Each Depository Share represents a I/40th interest in a share of the Issuer's 7.125% Series C Fixed Rate Non-Cumulative Perpetual Preferred Stock, par value $0.01 per share. Shares purchased in an underwritten public offering.",
+      "examples": [
+        {
+          "accession": "0001209191-23-005722",
+          "row": "1",
+          "code": "P",
+          "title": "Common Stock",
+          "transaction_date": "2023-01-31"
+        }
+      ]
+    },
+    "1608ad3c3bf9dcd2db61728abf185a02274ac78efc56b2392c8e0a83343222b6": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001728117-23-000018",
+          "code": "P",
+          "row": "2",
+          "title": "Common Stock",
+          "transaction_date": "2023-03-21"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $1.155 to $1.21 per share. The price reported above reflects the weighted average sale price for the entire number of shares sold. Information on the exact number of shares sold at each sale price can be obtained from the Issuer upon request."
+    },
+    "19c93ecff1e950b62077d03417dc18f8e2e65792707020665aec43535ed83990": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001728117-23-000136",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2023-11-13"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $0.5557 to $0.5723 per share. The price reported above reflects the weighted average sale price for the entire number of shares sold. Information on the exact number of shares sold at each sale price can be obtained from the Issuer upon request."
+    },
+    "20a0eb240119a89f3ce748a80d0b9e321de29d3e008c3a5cd1bd2519ec488ced": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001209191-19-043024",
+          "code": "P",
+          "row": "2",
+          "title": "Common Stock",
+          "transaction_date": "2019-07-22"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "The shares are held directly by Frazier Life Sciences IX, L.P. FHMLS IX, L.P. is the general partner of Frazier Life Sciences IX, L.P. FHMLS IX, L.L.C. is the general partner of FHMLS IX, L.P. James N. Topper and Patrick Heron are the managing members of FHMLS IX, L.L.C. and share voting and dispositive power over the shares held by Frazier Life Sciences IX, L.P. Mr. Topper, FHMLS IX, L.P. and FHMLS IX, L.L.C. disclaim beneficial ownership of the shares held by Frazier Life Sciences IX, L.P., except to the extent of his or its pecuniary interest therein, if any. The shares were purchased in the Issuer's initial public offering."
+    },
+    "24f1317912b21b6f3770e02dc5f6ed9005447bf8d1e45a4482487010d81cde52": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001728117-23-000018",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2023-03-20"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $0.97 to 1.09 per share. The price reported above reflects the weighted average sale price for the entire number of shares sold. Information on the exact number of shares sold at each sale price can be obtained from the Issuer upon request."
+    },
+    "2c30ff5ae0fe76218c1d91170e79b2e9f81a3b4707a17be0bf5de4bb93e8e75b": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001104659-20-134761",
+          "code": "P",
+          "row": "2",
+          "title": "Class A Ordinary Shares",
+          "transaction_date": "2020-12-11"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "Frazier Life Sciences X, L.P. is the record holder of the securities. The reported Class A ordinary shares and warrants are within the 1,000,000 units of the Issuer, as described in the Registration Statement, purchased by Frazier Lifesciences X, L.P. in the Issuer's initial public offering for $10.00 per unit. Each unit consists of one share of Class A ordinary share and one-third of one warrant, with each whole warrant entitling the holder to purchase one share of Class A ordinary share at $11.50 per share. FHMLS X, L.P. is the general partner of Frazier Life Sciences X, L.P. and FHMLS X, L.L.C. is the general partner of FHMLS X, L.P. Patrick J. Heron and James N. Topper are the members of FHMLS X, L.L.C. and therefore share voting and investment power over the shares held by Frazier Life Sciences X, L.P. and FHMLS X, L.L.C. Mr. Topper is the Chief Executive Officer and Chairman of the Board of the Issuer. By virtue of Mr. Topper's representation on the Issuer's Board, for purposes of Section 16 of the Securities Exchange Act of 1934, as amended, FHMLS X, L.P., FHMLS X, L.L.C., Mr. Topper and Mr. Heron may be deemed directors by deputization of the Issuer. As such, each such person may be deemed to have or share beneficial ownership of the common stock held directly by Frazier Life Sciences X, L.P. Each such entity or person disclaims any such beneficial ownership of such securities except to the extent of their pecuniary interest therein."
+    },
+    "2d216cd82fdebfa5ffc0c183b4ad35ac3eca376e0a4627330634d879046e1eaa": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001209191-22-034578",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2022-06-06"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "These shares were purchased as part of an underwritten public offering of common stock by the Issuer. Shares held by the Richard H. Aldrich 2018 Revocable Trust. Mr. Aldrich is the sole trustee of the Richard H. Aldrich 2018 Revocable Trust. Mr. Aldrich disclaims beneficial ownership of such shares except to the extent of any pecuniary interest therein."
+    },
+    "2f45174a4b41ea9a9ba053073131ad0a866592a57a1838354e3dafea8f42c831": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Weighted-price purchase transactions; request for information from issuer is not purchase from issuer. Restrictions describe aggregate holdings separately.",
+      "examples": [
+        {
+          "accession": "0001209191-20-054839",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-10-14"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $9.41 to $10.31 per share. The price reported above reflects the weighted average sale price for the entire number of shares purchased. Information on the exact number of shares purchased at each sale price can be obtained from the Issuer upon request."
+    },
+    "30fb66595fe43c845e0dddc6a4be365158849d13da18b64a5ac508b1cb304296": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Weighted-price purchase transactions; request for information from issuer is not purchase from issuer. Restrictions describe aggregate holdings separately.",
+      "examples": [
+        {
+          "accession": "0001209191-19-050930",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2019-09-27"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $16.63 to $16.69 per share. The price reported above reflects the weighted average sale price for the entire number of shares purchased. Information on the exact number of shares purchased at each sale price can be obtained from the Issuer upon request."
+    },
+    "450aab0529c5919cf4e639ff7fe1fb8da45924b93008d0410889049a3ee4b7c9": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001140361-19-002602",
+          "code": "P",
+          "row": "1",
+          "title": "Class A shares",
+          "transaction_date": "2019-02-04"
+        }
+      ],
+      "reasons": [
+        "SECURITY_TITLE"
+      ],
+      "row_count": 1,
+      "text": "Class A shares 2,500,000 Class A shares representing limited liability company interests in New Fortress Energy LLC (the \"Issuer\") were purchased in the Issuer's initial public offering."
+    },
+    "5402e4506652bdebedabc8b41b1d56e00275836ec79cf486851d0ec08705f463": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0000921895-20-001649",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-05-28"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "The Reporting Person purchased the shares of common stock and the warrants reported on this Form 4 directly from the underwriter in an underwritten public offering conducted by the Issuer that closed on May 28, 2020. Each share of common stock was sold together with one warrant to purchase 0.5 shares of common stock at a price of $2.25 per share and warrant, of which the price per share for common stock was $2.24 and the price per warrant was $0.01."
+    },
+    "77053ebd22bf400f5dd62cd4acb0a62a3652d8f347f948922173238436712857": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001209191-23-054619",
+          "code": "P",
+          "row": "3",
+          "title": "Common Holdings",
+          "transaction_date": "2023-11-06"
+        }
+      ],
+      "reasons": [
+        "SECURITY_TITLE"
+      ],
+      "row_count": 1,
+      "text": "Common Holdings These shares were purchased in connection with a dividend reinvestment through brokerage accounts. These securities are held by a family limited partnership, of which the Reporting Person is a general partner. The Reporting Person disclaims beneficial ownership of the securities reported on this form as indirectly beneficially owned except to the extent of her pecuniary interest."
+    },
+    "7c5094542bc1fe51a17def5af1c3e659334db4e68623791cf0f10b4e6451a389": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001437749-20-008151",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-04-17"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "Consists of: (ii) 242,341 shares of Common Stock purchased in the first tranche pursuant to the Common Stock and Warrant Purchase Agreement, dated April 14, 2020, by and between the Issuer and the Purchasers listed therein (the \"Purchase Agreement\"), which closed on April 17, 2020; (ii) 121,170 shares of Common Stock to be purchased in the second tranche pursuant to the Purchase Agreement, which is set to close on May 23, 2020; (iii) 121,170 shares of Common Stock to be purchased in the third tranche pursuant to the Purchase Agreement, which is set to close on June 13, 2020; and (iv) 166,763 shares of Common Stock to be purchased in the fourth tranche pursuant to the Purchase Agreement, which is set to close on July 11, 2020 (which assumes that the 19.999% blocker limitation set forth in the Purchase Agreement will be implicated and that 75,578 blocker warrants will be issued in lieu of shares of Common Stock which will be immediately exercisable with an exercise price of $0.001). After taking into account the 1-for-10 reverse stock split effective December 11, 2019. Exhibit List: Exhibit 24-Power of Attorney"
+    },
+    "8388003480d246b9186b4ff30f7ae32b41238f869f2d52451fa6c0c786130d64": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001728117-23-000018",
+          "code": "P",
+          "row": "3",
+          "title": "Common Stock",
+          "transaction_date": "2023-03-22"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $1.06 to $1.20 per share. The price reported above reflects the weighted average sale price for the entire number of shares sold. Information on the exact number of shares sold at each sale price can be obtained from the Issuer upon request."
+    },
+    "83d3dc8c9651434b4f37e0244add1274ec9dda6de3e3d6944f406b11ce16ebe5": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001209191-22-034581",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2022-06-06"
+        },
+        {
+          "accession": "0001209191-22-034579",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2022-06-06"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 2,
+      "text": "These shares were purchased as part of an underwritten public offering of common stock by the Issuer."
+    },
+    "9442ae3b7086c0e5b3f59077043bb7541b2d7a200fb33113943ce65537a9dc1f": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001638833-22-000138",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2022-11-21"
+        },
+        {
+          "accession": "0001638833-22-000137",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2022-11-21"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 2,
+      "text": "Represents shares purchased from the underwriters in connection with the Issuer public offering on November 21, 2022."
+    },
+    "94cfeaac4f42693793fc3988cd1571b667c4dc7b43f059812f9958fa01446db6": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001567619-19-013584",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2019-06-14"
+        },
+        {
+          "accession": "0001567619-19-013583",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2019-06-14"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 2,
+      "text": "The shares were acquired in a privately negotiated, non-open market transaction."
+    },
+    "94f3d471272d7850737576ec569e0d4a115670f37a3879eaf3cea6603d2f4c12": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001140361-19-005933",
+          "code": "P",
+          "row": "1",
+          "title": "Class A shares",
+          "transaction_date": "2019-03-28"
+        }
+      ],
+      "reasons": [
+        "SECURITY_TITLE"
+      ],
+      "row_count": 1,
+      "text": "Class A shares The shares were purchased in multiple transactions and the price reported is a weighted average. The purchase price ranged from $9.37 to $9.85. The reporting person undertakes to provide New Fortress Energy LLC (the \"Issuer\"), any security holder of the Issuer, or the staff of the Securities and Exchange Commission, upon request, full information regarding the number of shares purchased at each separate price within the range set forth in this footnote."
+    },
+    "b8575cfdbd9bb0d3a18163d9d9d68852e70300328eaee701bfdca254105f14fe": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Weighted-price purchase transactions; request for information from issuer is not purchase from issuer. Restrictions describe aggregate holdings separately.",
+      "examples": [
+        {
+          "accession": "0001209191-20-038515",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-06-23"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $12.9606 to $12.962 per share. The price reported above reflects the weighted average sale price for the entire number of shares purchased. Information on the exact number of shares purchased at each sale price can be obtained from the Issuer upon request."
+    },
+    "c2c50e403590cc9144b560b4a29b1b5b4a560a4154bbccc3f12dafe91dee8e0f": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Weighted-price purchase transactions; request for information from issuer is not purchase from issuer. Restrictions describe aggregate holdings separately.",
+      "examples": [
+        {
+          "accession": "0001209191-20-054842",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-10-14"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $9.52 to $9.53 per share. The price reported above reflects the weighted average sale price for the entire number of shares purchased. Information on the exact number of shares purchased at each sale price can be obtained from the Issuer upon request."
+    },
+    "ce77f0c30a4f6009612d92a4dbcb2684111d04c63970508588cf2c856bcbecf7": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Literal Capital (Common) Stock is common equity; punctuation caused the title regex to miss it. Other transaction fields are revalidated separately.",
+      "examples": [
+        {
+          "accession": "0001225208-19-003747",
+          "code": "S",
+          "row": "1",
+          "title": "Capital (Common) Stock",
+          "transaction_date": "2019-02-22"
+        }
+      ],
+      "reasons": [
+        "SECURITY_TITLE"
+      ],
+      "row_count": 1,
+      "text": "Capital (Common) Stock"
+    },
+    "d28b34cc7c7fc8cb64f5783f1383b01afc4ec4b06669a618092170450369aee0": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Weighted-price purchase transactions; request for information from issuer is not purchase from issuer. Restrictions describe aggregate holdings separately.",
+      "examples": [
+        {
+          "accession": "0001209191-20-054841",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-10-14"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $10.00 to $10.55 per share. The price reported above reflects the weighted average sale price for the entire number of shares purchased. Information on the exact number of shares purchased at each sale price can be obtained from the Issuer upon request. Includes 1,491,103 shares subject to forfeiture, which shares will vest in equal monthly installments as set forth in the restricted stock agreements between the Issuer and Reporting Person so that all of the shares will be released from the forfeiture restriction on January 4, 2023, subject to the Reporting Person's continuous service to the Issuer on each such vesting date."
+    },
+    "d5106b7c098be7db62f2ed85bc9a7ab7c4dd76d18556de9bd2192d5a2253e5be": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001437749-20-008154",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-04-17"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "Consists of: (ii) 244,798 shares of Common Stock purchased in the first tranche pursuant to the Common Stock and Warrant Purchase Agreement, dated April 14, 2020, by and between the Issuer and the Purchasers listed therein (the \"Purchase Agreement\"), which closed on April 17, 2020; (ii) 122,399 shares of Common Stock to be purchased in the second tranche pursuant to the Purchase Agreement, which is set to close on May 23, 2020; (iii) 122,399 shares of Common Stock to be purchased in the third tranche pursuant to the Purchase Agreement, which is set to close on June 13, 2020; and (iv) 201,474 shares of Common Stock to be purchased in the fourth tranche pursuant to the Purchase Agreement, which is set to close on July 11, 2020 (which assumes that the 19.999% blocker limitation set forth in the Purchase Agreement will be implicated and that 43,324 blocker warrants will be issued in lieu of shares of Common Stock which will be immediately exercisable with an exercise price of $0.001). After taking into account the 1-for-10 reverse stock split effective December 11, 2019. Exhibit List: Exhibit 24-Power of Attorney"
+    },
+    "d6a092cad29e21fd5f31711e8ba12b6deaa2883037b583f2bd76a00377050eb3": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001140361-19-006102",
+          "code": "P",
+          "row": "1",
+          "title": "Class A shares",
+          "transaction_date": "2019-03-29"
+        }
+      ],
+      "reasons": [
+        "SECURITY_TITLE"
+      ],
+      "row_count": 1,
+      "text": "Class A shares The shares were purchased in multiple transactions and the price reported is a weighted average. The purchase price ranged from $9.83 to $11.93. The reporting person undertakes to provide New Fortress Energy LLC (the \"Issuer\"), any security holder of the Issuer, or the staff of the Securities and Exchange Commission, upon request, full information regarding the number of shares purchased at each separate price within the range set forth in this footnote."
+    },
+    "dcd4e762016c25dd0c3842ee340dc88e6e89fe01f400f19833d0fd565f84900e": {
+      "history": "EXCLUDE",
+      "signal": "EXCLUDE",
+      "reason": "The linked note explicitly describes an issuer/underwriter offering, negotiated private sale, or securities purchase agreement, outside open-market history and current signal rules.",
+      "examples": [
+        {
+          "accession": "0001104659-20-082756",
+          "code": "S",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2020-07-08"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "The sale was a private sale to another member of the board of AudioEye, Inc. Dr. Bettis is deemed to be a beneficial owner of CSB IV US Holdings LLC."
+    },
+    "e7e84386f6cdb7401e3b0f3662c69336c5d7db1b0df8ca03748a23df187f4841": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001728117-23-000032",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2023-04-04"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 1,
+      "text": "This transaction was executed in multiple trades at prices ranging from $1.0198 to $1.02 per share. The price reported above reflects the weighted average sale price for the entire number of shares sold. Information on the exact number of shares sold at each sale price can be obtained from the Issuer upon request."
+    },
+    "ec18140da652bb6931a5e4dcebb7e52b6a6f447a1ec78b1fc37229ae84a29495": {
+      "history": "ALLOW",
+      "signal": "ALLOW",
+      "reason": "Weighted-price purchase transactions; request for information from issuer is not purchase from issuer. Restrictions describe aggregate holdings separately.",
+      "examples": [
+        {
+          "accession": "0001209191-19-050928",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2019-09-27"
+        },
+        {
+          "accession": "0001209191-19-050926",
+          "code": "P",
+          "row": "1",
+          "title": "Common Stock",
+          "transaction_date": "2019-09-27"
+        }
+      ],
+      "reasons": [
+        "HISTORY_NONMARKET"
+      ],
+      "row_count": 2,
+      "text": "This transaction was executed in multiple trades at prices ranging from $16.25 to $17.47 per share. The price reported above reflects the weighted average sale price for the entire number of shares purchased. Information on the exact number of shares purchased at each sale price can be obtained from the Issuer upon request. Includes 2,209,015 shares subject to forfeiture, which shares will vest in equal monthly installments as set forth in the restricted stock agreements between the Issuer and Reporting Person so that all of the shares will be released from the forfeiture restriction on January 4, 2023, subject to the Reporting Person's continuous service to the Issuer on each such vesting date."
+    },
+    "f018c1fc5dabc7dd0eae46e175a5f452be7f38cfca4e2c5d0d7e0fd137c1ca90": {
+      "history": "UNRESOLVED",
+      "signal": "UNRESOLVED",
+      "reason": "Purchase code conflicts with sold language, or security title/automatic dividend reinvestment does not establish the required discretionary common-equity purchase. Retain uncertainty rather than infer.",
+      "examples": [
+        {
+          "accession": "0001209191-23-054619",
+          "code": "P",
+          "row": "1",
+          "title": "Common Holdings",
+          "transaction_date": "2023-11-06"
+        },
+        {
+          "accession": "0001209191-23-054619",
+          "code": "P",
+          "row": "2",
+          "title": "Common Holdings",
+          "transaction_date": "2023-11-06"
+        }
+      ],
+      "reasons": [
+        "SECURITY_TITLE"
+      ],
+      "row_count": 2,
+      "text": "Common Holdings These shares were purchased in connection with a dividend reinvestment through brokerage accounts. The Reporting Person disclaims beneficial ownership of the securities reported on this form as indirectly beneficially owned except to the extent of her pecuniary interest."
+    }
+  }
+}

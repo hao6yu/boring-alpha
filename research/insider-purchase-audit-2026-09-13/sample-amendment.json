@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-09-13T21:47:13.286517+00:00",
+  "reason": "SEC landing page succeeded but the linked 2023Q1 ZIP returned HTTP 403. Original transaction-stratified selection cannot be executed. Preserve it as unavailable; inspect a separate metadata-stratified functional sample without prices or returns.",
+  "original_sample_status": "UNAVAILABLE_BULK_ACCESS",
+  "fallback_selection": "From SHA-verified SEC submissions already cached by the earlier earnings research, collect all indexed 2023Q1 forms 4 and 4/A, deduplicate accession; rank within form by sha256(original seed + | + accession); take first 10 original form 4 and first 2 form 4/A. Retain missing/denied documents and do not replace.",
+  "max_selected_filings": 12,
+  "scope_limit": "Convenience frame from previously collected issuers; cannot estimate population purchase frequency, signal coverage, liquidity or profitability. No purchase-code quota can be guaranteed.",
+  "network": "Only individual public /Archives/ index and original filing documents may be requested after the failed ZIP. No denied URL is retried; any individual-filing 403 or rate-limit 429 stops further SEC retrieval. Original total byte, time and request limits apply."
+}

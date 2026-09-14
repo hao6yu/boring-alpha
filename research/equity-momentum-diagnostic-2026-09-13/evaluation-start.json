@@ -1,0 +1,46 @@
+{
+  "at_utc": "2026-09-14T00:32:01.026911+00:00",
+  "code": {
+    "metrics.py": "6a44d77a3f6085555b872ac2fcdf097aa4436b59a538ca5c72c0aa1c4a75606b",
+    "momentum_io.py": "2632f532a31f00bc6abbe3f29c8c420ee9d27069f43acdd59c7f0affb574edd6",
+    "portfolio.py": "fdb2cd38f08d006efa1d1b87e7332fd269f458c49906245912dfab011d091d08",
+    "run_momentum.py": "dcf4b0c001c735bd9ae2af80b45d055ac900f1c6aec80ff75a57c4f7da0c95df"
+  },
+  "control_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "identity_source": "data/snapshots/equity-event-expansion-2026-09-13/panel-source-snapshots/sec-b609659897eabe4a91a8d52a4879c1f9b870af16ecc895e5169ab30a47027eaf.json",
+  "identity_source_sha256": "b609659897eabe4a91a8d52a4879c1f9b870af16ecc895e5169ab30a47027eaf",
+  "policy_sha256": "bb794d736f507c5a3ee7838eb73cd993b10dd4a12655f6dd72f69fa7dc3bfaa9",
+  "source_adapter_code": {
+    "panel.py": "2e37eff3d2ece71e852988dbf08b4ff4e5300b050adf990623c7f06c6f95ecdc",
+    "price_data.py": "a3440bcd170b5e9926147717692277a4c6207af5e8689a8d1403c2d98cb11185",
+    "run_experiment.py": "f42855bc9f8593b81aec71ff7c9e6508cf9c2c2f640891eccc1a60c3bfea2d0a"
+  },
+  "sources": {
+    "corporate-action-evidence.json": "6ef9c0e06c1fa1570ec8280c28b4da054196265eccee55d35ff7c724f8105a27",
+    "price-manifest.json": "0f288f27d4ef6338ada23ecdc3cdf9076071e0782d6859f03e036f00cfe17a12",
+    "price-source-exceptions.json": "54f04a86ac6305b803463e45935817aedcf81f9b4edd4d82682e615adc0e2497",
+    "sec-cohort.json": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270"
+  },
+  "strategy_outcomes_computed": false
+}

@@ -1,0 +1,30 @@
+{
+  "affected_controls_per_cost_case": [
+    "unranked_00",
+    "unranked_10"
+  ],
+  "corporate_action_evidence_sha256": "6ef9c0e06c1fa1570ec8280c28b4da054196265eccee55d35ff7c724f8105a27",
+  "first_unpriced_date": "2023-09-12",
+  "held_old_shares_per_account": 15,
+  "old_security_id": "0001091907:single_common",
+  "policy_sha256": "bb794d736f507c5a3ee7838eb73cd993b10dd4a12655f6dd72f69fa7dc3bfaa9",
+  "price_manifest_sha256": "0f288f27d4ef6338ada23ecdc3cdf9076071e0782d6859f03e036f00cfe17a12",
+  "qualified_successor_price_history_in_frozen_manifest": false,
+  "resolution": "Preserve missing NAVs and old-unit transition claim. No synthetic cash exit, stale-price fill, new provider request, control deletion, or post-result parameter change.",
+  "source_status_record": {
+    "available_at": "2023-09-12T09:30:00-04:00",
+    "effective_at": "2023-09-12T09:30:00-04:00",
+    "security_id": "0001091907:single_common",
+    "source_evidence": {
+      "displayed_publication_date": "2023-09-12",
+      "interpretation": "NYSE removal notice states old WWE classA exchanged for one TKO classA before Sep12 open and old class suspended that day. This simulator does not automatically carry old security units into a different issuer.",
+      "observed_utc": "2026-09-11T03:43:25.037833+00:00",
+      "timestamp_scope": "Actual exchange halt/suspension effective time is used as a public market-status observability convention, not archived notice receipt. Updated notice content is not backdated into predictive features.",
+      "url": "https://corporate.wwe.com/f/docs/sec-filings/16925127.PDF"
+    },
+    "source_ticker": "WWE",
+    "status": "halted",
+    "verified": true
+  },
+  "status": "FULL_CONTROL_COMPARISON_UNRESOLVED"
+}

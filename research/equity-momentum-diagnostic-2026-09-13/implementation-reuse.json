@@ -1,0 +1,11 @@
+{
+  "parent_account": "research/insider-purchase-diagnostic-2026-09-13/portfolio.py",
+  "parent_account_sha256": "344ec4634a6a8d0eaf60531b7e66955d32570768bb9cc3ba3d777c863bee6998",
+  "changes": [
+    "Ten slots, $800/8%-NAV entry envelopes, unchanged $2000 floor/halt",
+    "Monthly rank/eligibility exit and retention replace fixed month-end exit",
+    "Final evaluation liquidation remains mandatory",
+    "20 predeclared hash controls use identical account code"
+  ],
+  "no_external_code_executed": true
+}

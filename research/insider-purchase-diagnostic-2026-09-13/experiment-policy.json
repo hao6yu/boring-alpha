@@ -1,0 +1,119 @@
+{
+  "account": {
+    "cash_claims": "Preserve verified dividend/merger entitlements as locked claims until evidenced payment availability. Never invent spendable dividend cash.",
+    "cash_interest": 0,
+    "halt": "At $2000 drawdown from running NAV high, permanently stop entries and liquidate at next executable session; disclose gap/fee overshoot. Dollar sizing scales with doubled capital; four slots and other rules unchanged.",
+    "high_water_loss_halt_usd": 2000,
+    "initial_capital_usd": 10000,
+    "leverage": false,
+    "max_slots": 4,
+    "position_entry_envelope": "min(2000 USD, 20% of previous complete NAV), bounded by settled cash above $2000 floor",
+    "sale_cash_availability": "First NYSE session on/after sale plus seven calendar days; declared conservative lock, not claimed legal settlement. It can prevent next monthly purchases.",
+    "settled_cash_floor_usd": 2000
+  },
+  "amendment_handling": "Preserve parent conservative classification: unresolved amendments make affected historical owner-year UNKNOWN; current ambiguous issuer-months cannot be certified by silently dropping an unresolved relevant owner. All candidate exclusions reported.",
+  "amendments": "Do not treat 4/A as a new buy. Corrections enter knowledge only at amendment acceptance, never backdate. Material missing/corrected purchases unresolved until original is reconciled. Preserve conflicting originals; unknown history can disqualify an owner-year.",
+  "authorized_by": "User approved the capped exploratory test and authorized $10,000 simulated capital.",
+  "capital_change": "User-authorized $5000 to $10000 before any insider price outcomes. Scale dollar position/cash/halt levels proportionally; no alternative-capital sweep.",
+  "classification": "At the start of each disclosure year, use only original Form 4 non-derivative P/S acquisitions/dispositions in the three preceding calendar years, disclosed before that year began. Require positive price/shares, verifiable common stock, and at least one qualifying transaction in each year across all issuers for that owner. Disclosed private transactions excluded; executed plan/tax-cover P/S transactions remain historical trades. Routine if a calendar month occurs in all three years, otherwise non-routine. Reset annually (rolling adaptation, not permanent routine status). Insufficient or conflicting history is UNKNOWN, never non-routine by default.",
+  "cohort_count": 200,
+  "cohort_path": "research/equity-event-expansion-2026-09-13/sec-cohort.json",
+  "cohort_sha256": "92ecff24f44b1a53e04c1c411a91799f28751cb60d7c0dff5016bd375a8ec270",
+  "comparison": "Same fixed routine and past-matched control designs, sparse counts reported. Gross diagnostic uses identical base-account quantities and fill decisions with fees/slippage removed from position P&L, not a separately optimized portfolio.",
+  "controls": "Routine purchases, plus non-event cohort controls matched on same month and deciles of prior raw price and 60-session dollar volume, then closest prior 60-session total return, then fixed hash. Exclude any P disclosure that prior month using only information known by cutoff. Greedy without replacement by signal hash order; missing control retained unresolved. Matching uses past inputs only, after source gate and before future outcomes.",
+  "corporate_actions": "Reuse source-qualified splits/dividends/mergers, preserve issuer continuity. Fractional entitlements not fabricated as cash; uncertain held actions or missing held marks make full result unresolved, not zero return.",
+  "data_files": [
+    {
+      "expected_bytes": 887601633,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "79045477a390a95cc5b5749f5a82df59"
+      },
+      "id": 13148285,
+      "name": "lit_submission.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148285"
+    },
+    {
+      "expected_bytes": 414084508,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "de4ab97a117d61ec320ab67581ea7038"
+      },
+      "id": 13148287,
+      "name": "lit_reportingowner.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148287"
+    },
+    {
+      "expected_bytes": 482893509,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "3a58202a83f6d0bcf297853a9c438f3b"
+      },
+      "id": 13148294,
+      "name": "lit_nonderiv.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148294"
+    },
+    {
+      "expected_bytes": 812198396,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "6d1a9a9bd20e95fb338992e9dab17a22"
+      },
+      "id": 13148300,
+      "name": "lit_footnotes.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148300"
+    }
+  ],
+  "data_version": {
+    "persistent_id": "doi:10.7910/DVN/VH6GVH",
+    "releaseTime": "2026-05-21T03:52:13Z",
+    "version": 430
+  },
+  "deadline_utc": "2026-09-14T02:50:35+00:00",
+  "decision_rule": "Descriptive evidence only. Weak/negative after-cost economics supports shelving this version. Consistent positive economics may justify separately designed validation, never live funding from this diagnostic alone.",
+  "entry": "First regular NYSE session of month, at closing-limit proxy. Before open choose whole quantity from prior qualified raw close and stressed budget. Buy fills only if closing price including stressed 50bp cost plus fees fits its precommitted budget; otherwise no fill and no later retry. Model 10/50bp per side in base/stress; no claim of observed fills.",
+  "evaluation_end": "2023-12-29",
+  "evaluation_start": "2022-01-03",
+  "exit": "Scheduled sale at final regular NYSE session of the entry month, including costs. No optimization by holding period. Halts/unpriced holdings defer executable liquidation and leave valuation unresolved as appropriate.",
+  "fees": "Use the already archived IBKR Pro Fixed counterfactual: $0.005/share, $1 minimum, 1% notional cap, SEC $20.60/million sales, TAF $0.000195/share capped $9.79 and CAT $0.000003/share; round each component up to cents. Fixed research assumptions, not verified actual account bill or historical fee schedule.",
+  "filing_end_inclusive": "2023-12-31",
+  "history_start": "2018-01-01",
+  "identity": "Use issuerCIK and rptOwnerCik, never archive directory CIK or ticker alone. Deduplicate filings across filer copies by accession and underlying transaction table row; preserve distinct equal-valued genuine rows. Resolve owner association and joint beneficial ownership without multiplying notional.",
+  "liquidity": "Inherited cash-account eligibility: prior raw close at least $5 and median prior 60-session dollar volume at least $2,000,000; 60 qualified listed observations required. All eligibility and matching use only pre-entry information.",
+  "max_download_bytes": 3000000000,
+  "max_elapsed_hours": 3,
+  "max_uncompressed_bytes_streamed_per_pass": 120000000000,
+  "minimum_sample_before_price_outcomes": {
+    "nonroutine_active_entry_months": 18,
+    "nonroutine_distinct_issuers": 30,
+    "nonroutine_issuer_months": 80,
+    "routine_active_entry_months": 12,
+    "routine_distinct_issuers": 20,
+    "routine_issuer_months": 40
+  },
+  "minimum_sample_interpretation": "Parent minimums are recorded for context, not execution gates in this separately authorized exploratory diagnostic. Report realized counts and uncertainty; no validation PASS is available.",
+  "name": "Public insider purchase follower: $10k exploratory economic diagnostic",
+  "network": "Offline cached filings and qualified cached price/action data only. Official documentation may be read. No provider requests, credentials, account access, or paid data.",
+  "new_paid_data_budget_usd": 0,
+  "no_retuning": true,
+  "parent_policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "parent_result": "STOP_SOURCE_SAMPLE_SIZE; preserved unchanged. This diagnostic does not convert that failure to a pass.",
+  "pass_gates": [],
+  "prices": "Reuse qualified cached 2019-10-01 through 2023-12-29 price/action sources after signal freeze. No other price window or new requests.",
+  "registered_at_utc": "2026-09-13T23:51:59.050093+00:00",
+  "reporting": "All gates, monthly account returns, uncertainty, exposure, turnover, cash locks, gross/base/stress, benchmark 4% and 6% scenarios, missingness and closed positions. 2022-23 is exploratory already exposed market history, not an independent holdout. Initial dedicated new data expense is $0; cached research is reused, not billed again.",
+  "reserved_strategy_prices": "2024-2025 must not be opened",
+  "scope_stop": "One fixed-rule diagnostic within three hours and $0 new paid data. No strategy tuning, cohort expansion, reserved-window evaluation or funding. Return economic evidence where identified; document unresolved comparisons.",
+  "selection": "At prior month-end freeze event pool; sort by SHA256(seed|entry_month|issuerCIK), at most four distinct issuers. Independent identical rule for routine control; no return or purchase-size rank. All pools and diagnostics frozen before outcomes.",
+  "selection_seed": "BA-insider-follower-monthly-v1",
+  "signal_disclosure_months": [
+    "2021-12",
+    "2023-11"
+  ],
+  "signals": "Original Form 4 non-derivative P acquisition; positive price/shares; common stock; officer or director reporting owner; disclosure in prior calendar month and transaction within preceding 90 calendar days; exclude disclosed 10b5-1 plans, private/negotiated/non-market purchases, grants, option exercises, issuer repurchases and unresolved footnotes. No minimum purchase amount. Aggregate once per issuer/disclosure month. Qualify non-routine only if every relevant officer/director owner in the eligible purchases is classified non-routine; routine control requires all routine. Mixed/unknown retained separately.",
+  "source_gate": "Reuse completed source provenance checks. Finalize necessary eligibility reviews; preserve unknowns and every excluded issuer-month. Freeze signals before opening price files. Unresolved required prices/identity/held actions prevent an unconditional account conclusion.",
+  "timestamps": "Require timezone semantics corroborated by original cached filing indexes. Date-only, conflicting or future transaction/acceptance records are unresolved. No automatic rewriting of an explicit Z value. Preserve known audit timestamp conflict as quarantine.",
+  "uncertainty": "Report monthly results and concentration. Stationary bootstrap of paired daily account returns, expected block20 sessions, 2000 replicates, seed20260913, descriptive 95% intervals only; no significance-based strategy selection or claim of independent holdout.",
+  "universe": "Exactly the existing fixed 2019 cohort, retained regardless of later survival, data availability or performance; preserve all issuer-month slots.",
+  "work_started_at_utc": "2026-09-13T23:50:35+00:00"
+}

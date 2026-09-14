@@ -1,0 +1,13 @@
+{
+  "decided_at_utc": "2026-09-14T00:42:42.644054+00:00",
+  "elapsed_minutes_to_report": 19.010734233333334,
+  "full_control_comparison": "UNRESOLVED_WWE_TKO_TRANSITION",
+  "further_variants_run": false,
+  "interpretation": "Complete conditional momentum accounts are negative; full-universe opportunity coverage and full-control ranking edge remain unresolved. No general rejection of stock momentum.",
+  "new_paid_data_usd": 0,
+  "policy_sha256": "bb794d736f507c5a3ee7838eb73cd993b10dd4a12655f6dd72f69fa7dc3bfaa9",
+  "reserved_2024_2025_strategy_prices_opened": false,
+  "result_sha256": "ae4efecde753676792998a2b90c6336f50a98f46aa7ad390cda6c70898ab3d0b",
+  "status": "SHELVE_FIXED_IMPLEMENTATION_NEGATIVE_OBSERVED_ECONOMICS",
+  "verification_sha256": "01157c09757d2e809ab363e041a924d37fa359aaaf9f2324aafd3de65ade89a2"
+}

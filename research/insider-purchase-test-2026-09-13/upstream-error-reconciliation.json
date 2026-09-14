@@ -1,0 +1,1594 @@
+{
+  "rows": [
+    {
+      "accession": "0001003078-22-000032",
+      "indexed_ciks": [
+        "0001003078"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001003078"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001200390"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000100493-22-000018",
+      "indexed_ciks": [
+        "0000100493"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": true,
+      "actual_issuers": [
+        "0000100493"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001340962"
+      ],
+      "affects_relevant_owners": true,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001207097-22-000006",
+      "indexed_ciks": [
+        "0001207097"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000919567"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001207097"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001418091-22-000023",
+      "indexed_ciks": [
+        "0001418091",
+        "0001575833"
+      ],
+      "has_submission": false,
+      "has_owner": false,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001628280-22-002506",
+      "indexed_ciks": [
+        "0001769914"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001501697"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001769914"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000715579-22-000033",
+      "indexed_ciks": [
+        "0000715579"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000715579"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001269858"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-039717",
+      "indexed_ciks": [
+        "0001238734"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001652044"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001238734"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-030380",
+      "indexed_ciks": [
+        "0001332108"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": true,
+      "actual_issuers": [
+        "0001142417"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001332108"
+      ],
+      "affects_relevant_owners": true,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001628280-22-019075",
+      "indexed_ciks": [
+        "0001722010"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001722010"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001936196"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-046301",
+      "indexed_ciks": [
+        "0001296804"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000036270"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001296804"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001567619-22-011865",
+      "indexed_ciks": [
+        "0001378950"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": true,
+      "actual_issuers": [
+        "0001378950"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001818497"
+      ],
+      "affects_relevant_owners": true,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-047601",
+      "indexed_ciks": [
+        "0001938699"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20220825190212",
+          "accessionNumber": "0001209191-22-047601",
+          "type": "3",
+          "filingDate": "20220825",
+          "issuerCIK": "0001170311",
+          "documentType": "3",
+          "issuerCik": "0001170311",
+          "issuerTradingSymbol": "PNI"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001938699"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001415889-22-009812",
+      "indexed_ciks": [
+        "0001945770"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20220921161922",
+          "accessionNumber": "0001415889-22-009812",
+          "type": "3",
+          "filingDate": "20220921",
+          "issuerCIK": "0000701374",
+          "documentType": "3",
+          "issuerCik": "0000701374",
+          "issuerTradingSymbol": "SIX"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001945770"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001628280-22-022217",
+      "indexed_ciks": [
+        "0001828937"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001828937"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001853905"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-049849",
+      "indexed_ciks": [
+        "0000935596"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000800457"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0000935596"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001077428-22-000118",
+      "indexed_ciks": [
+        "0000900764"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001077428"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0000900764"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000063296-22-000062",
+      "indexed_ciks": [
+        "0000063296"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000063296"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001868527"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001213900-22-077150",
+      "indexed_ciks": [
+        "0001035909"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001029199"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001035909"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001654954-22-014199",
+      "indexed_ciks": [
+        "0001075736"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001075736"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0000902111"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000899243-22-038022",
+      "indexed_ciks": [
+        "0001063623"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001758488"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001063623"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-053341",
+      "indexed_ciks": [
+        "0001171788"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": true,
+      "actual_issuers": [
+        "0000089800"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001171788"
+      ],
+      "affects_relevant_owners": true,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-060932",
+      "indexed_ciks": [
+        "0001180262"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001180262"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001472187"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001415889-22-012020",
+      "indexed_ciks": [
+        "0001191102"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001748790"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001191102"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-054475",
+      "indexed_ciks": [
+        "0001193996"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000108312"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001193996"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001437749-22-026378",
+      "indexed_ciks": [
+        "0001308075"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001296445"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001308075"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001415889-22-011479",
+      "indexed_ciks": [
+        "0001254843"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000830524"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001254843"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001062993-22-024142",
+      "indexed_ciks": [
+        "0001656207"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001645590"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001656207"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001420506-22-001936",
+      "indexed_ciks": [
+        "0001449556"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20221101103942",
+          "accessionNumber": "0001420506-22-001936",
+          "type": "3",
+          "filingDate": "20221101",
+          "issuerCIK": "0001041368",
+          "documentType": "3",
+          "issuerCik": "0001041368",
+          "issuerTradingSymbol": "RVSB"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001449556"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": true
+    },
+    {
+      "accession": "0001477932-22-007470",
+      "indexed_ciks": [
+        "0001443863"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001443863"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001570636"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001214659-22-015255",
+      "indexed_ciks": [
+        "0001721484"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001721484"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001845308"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-054506",
+      "indexed_ciks": [
+        "0001740279"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001740279"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001894243"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001104659-22-115786",
+      "indexed_ciks": [
+        "0001721235"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000830616"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001721235"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-056887",
+      "indexed_ciks": [
+        "0001759425"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001759425"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001780347"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-054924",
+      "indexed_ciks": [
+        "0001775433"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001596783"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001775433"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000899243-22-037804",
+      "indexed_ciks": [
+        "0001832038"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001832038"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001956777"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001694426-22-000175",
+      "indexed_ciks": [
+        "0001849211"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": true,
+      "actual_issuers": [
+        "0001694426"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001849211"
+      ],
+      "affects_relevant_owners": true,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001062993-22-023529",
+      "indexed_ciks": [
+        "0000045012"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000045012"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001767591"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-22-058475",
+      "indexed_ciks": [
+        "0001872873"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001831915"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001872873"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001437749-23-002425",
+      "indexed_ciks": [
+        "0001229452"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001069533"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001229452"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001214659-23-000270",
+      "indexed_ciks": [
+        "0001581280"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001581280"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001755970"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000109563-23-000027",
+      "indexed_ciks": [
+        "0001657120"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000109563"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001657120"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000709283-23-000003",
+      "indexed_ciks": [
+        "0001677143"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20230118145415",
+          "accessionNumber": "0000709283-23-000003",
+          "type": "3",
+          "filingDate": "20230118",
+          "issuerCIK": "0000709283",
+          "documentType": "3",
+          "issuerCik": "0000709283",
+          "issuerTradingSymbol": "QMCO"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001677143"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001050915-23-000033",
+      "indexed_ciks": [
+        "0001694207"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001050915"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001694207"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001493152-23-001325",
+      "indexed_ciks": [
+        "0001799332"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001799332"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001449128"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001854401-23-000006",
+      "indexed_ciks": [
+        "0001854401"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001854401"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001870999"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-010175",
+      "indexed_ciks": [
+        "0001860864"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000831259"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001860864"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001225208-23-002235",
+      "indexed_ciks": [
+        "0001876435"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": true,
+      "actual_issuers": [
+        "0001383312"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001876435"
+      ],
+      "affects_relevant_owners": true,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001213900-23-012814",
+      "indexed_ciks": [
+        "0001963119"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20230217144812",
+          "accessionNumber": "0001213900-23-012814",
+          "type": "3",
+          "filingDate": "20230217",
+          "issuerCIK": "0001501376",
+          "documentType": "3",
+          "issuerCik": "0001501376",
+          "issuerTradingSymbol": "N/A"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001963119"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001567619-23-001792",
+      "indexed_ciks": [
+        "0001936112"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20230203133553",
+          "accessionNumber": "0001567619-23-001792",
+          "type": "3/A",
+          "filingDate": "20230203",
+          "issuerCIK": "0001879016",
+          "documentType": "3/A",
+          "issuerCik": "0001879016",
+          "issuerTradingSymbol": "IE"
+        },
+        {
+          "acceptanceDatetime": "20230203133553",
+          "accessionNumber": "0001567619-23-001792",
+          "type": "3/A",
+          "filingDate": "20230203",
+          "issuerCIK": "0001879016",
+          "documentType": "3/A",
+          "issuerCik": "0001879016",
+          "issuerTradingSymbol": "IE"
+        },
+        {
+          "acceptanceDatetime": "20230203133553",
+          "accessionNumber": "0001567619-23-001792",
+          "type": "3/A",
+          "filingDate": "20230203",
+          "issuerCIK": "0001879016",
+          "documentType": "3/A",
+          "issuerCik": "0001879016",
+          "issuerTradingSymbol": "IE"
+        },
+        {
+          "acceptanceDatetime": "20230203133553",
+          "accessionNumber": "0001567619-23-001792",
+          "type": "3/A",
+          "filingDate": "20230203",
+          "issuerCIK": "0001879016",
+          "documentType": "3/A",
+          "issuerCik": "0001879016",
+          "issuerTradingSymbol": "IE"
+        },
+        {
+          "acceptanceDatetime": "20230203133553",
+          "accessionNumber": "0001567619-23-001792",
+          "type": "3/A",
+          "filingDate": "20230203",
+          "issuerCIK": "0001879016",
+          "documentType": "3/A",
+          "issuerCik": "0001879016",
+          "issuerTradingSymbol": "IE"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001916622",
+        "0001936106",
+        "0001936112",
+        "0001961998",
+        "0001962001"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000899243-23-001000",
+      "indexed_ciks": [
+        "0000923338"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001145986"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0000923338",
+        "0001888978"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001019849-23-000072",
+      "indexed_ciks": [
+        "0001019849"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001019849"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001272480"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001171843-23-003279",
+      "indexed_ciks": [
+        "0001059262"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001059262"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001127593"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001415889-23-009828",
+      "indexed_ciks": [
+        "0001042729"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001042729"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001208501"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001125376-23-000093",
+      "indexed_ciks": [
+        "0001125376"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001125376"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001548135"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001493152-23-023198",
+      "indexed_ciks": [
+        "0001128728"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001429764"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001128728"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000091142-23-000062",
+      "indexed_ciks": [
+        "0001236626"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000091142"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001236626"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-026534",
+      "indexed_ciks": [
+        "0001327567"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001327567"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001250333"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001415889-23-009360",
+      "indexed_ciks": [
+        "0001246530"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001235912"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001246530"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-039374",
+      "indexed_ciks": [
+        "0001353283"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001353283"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001303935"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-031956",
+      "indexed_ciks": [
+        "0001753108"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001739936"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001753108"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001688476-23-000092",
+      "indexed_ciks": [
+        "0001504164"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001688476"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001504164"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0000108985-23-000054",
+      "indexed_ciks": [
+        "0001415738"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000108985"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001415738"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-029966",
+      "indexed_ciks": [
+        "0001790117"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001092699"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001790117"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001794515-23-000084",
+      "indexed_ciks": [
+        "0001794515"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001794515"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001813397"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001104659-23-051314",
+      "indexed_ciks": [
+        "0001757327",
+        "0001862592"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000020520"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001259313",
+        "0001757327",
+        "0001862511",
+        "0001862512",
+        "0001862514",
+        "0001862515",
+        "0001862592"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001104659-23-056226",
+      "indexed_ciks": [
+        "0001901336"
+      ],
+      "has_submission": false,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [],
+      "raw_submission_records": [
+        {
+          "acceptanceDatetime": "20230504214516",
+          "accessionNumber": "0001104659-23-056226",
+          "type": "3",
+          "filingDate": "20230504",
+          "issuerCIK": "0001901336",
+          "documentType": "3",
+          "issuerCik": "0001901336",
+          "issuerTradingSymbol": "ALCY"
+        }
+      ],
+      "actual_known_owner_ciks": [
+        "0001951746"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-033695",
+      "indexed_ciks": [
+        "0001803367"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001437352"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001803367"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001225208-23-005216",
+      "indexed_ciks": [
+        "0000003453"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000003453"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001206911"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001628280-23-012098",
+      "indexed_ciks": [
+        "0001932895"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001522540"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001932895"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-025043",
+      "indexed_ciks": [
+        "0001952073"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001952073"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001795250"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-024845",
+      "indexed_ciks": [
+        "0000811596"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000811596"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001972491"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001437749-23-014864",
+      "indexed_ciks": [
+        "0000834365"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000834365"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001556355"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001593968-23-000687",
+      "indexed_ciks": [
+        "0000737468"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000737468"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001472928"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001209191-23-025666",
+      "indexed_ciks": [
+        "0000084129"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000084129"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001789515"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001127602-23-014878",
+      "indexed_ciks": [
+        "0000084246"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000084246"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001388737"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001528129-23-000159",
+      "indexed_ciks": [
+        "0001528129"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001528129"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001850483"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001709738-23-000011",
+      "indexed_ciks": [
+        "0001709738"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001500198"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001709738"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001214659-23-015693",
+      "indexed_ciks": [
+        "0001173420"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001173420"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001170429"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001415889-23-015976",
+      "indexed_ciks": [
+        "0001379160"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001053706"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001379160"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001127602-23-028777",
+      "indexed_ciks": [
+        "0000719955"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000719955"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001291392"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001718227-23-000107",
+      "indexed_ciks": [
+        "0001718227"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0001718227"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001987592"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    },
+    {
+      "accession": "0001127602-23-027125",
+      "indexed_ciks": [
+        "0000829224"
+      ],
+      "has_submission": true,
+      "has_owner": true,
+      "known_relevant": false,
+      "actual_issuers": [
+        "0000829224"
+      ],
+      "raw_submission_records": [],
+      "actual_known_owner_ciks": [
+        "0001620455"
+      ],
+      "affects_relevant_owners": false,
+      "raw_issuer_in_cohort": false
+    }
+  ],
+  "source_only": true,
+  "recovery_scope": "A separate full pass of the original submission CSV for eight missing-index accessions; no new downloads."
+}

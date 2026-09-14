@@ -1,0 +1,51 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "status": "SOURCE_CLASSIFICATION_PENDING_REVIEW",
+  "history_field_states": {
+    "PS_FIELDS_VALID": 41734,
+    "MISSING_POSITIVE_PRICE_OR_SHARES": 140,
+    "SECURITY_TITLE_REVIEW": 155,
+    "NOT_COMMON": 376,
+    "AMENDMENT_REVIEW": 527,
+    "DATE_REVIEW": 35,
+    "ACQUISITION_DIRECTION_CONFLICT": 56,
+    "TRANSACTION_AFTER_DISCLOSURE": 1
+  },
+  "event_row_states": {
+    "CANDIDATE": 802,
+    "CURRENT_NOTE_UNRESOLVED": 888,
+    "AMENDMENT_NOT_NEW_SIGNAL": 27,
+    "JOINT_OWNER_ASSOCIATION_UNRESOLVED": 24,
+    "TRANSACTION_TOO_OLD": 10,
+    "NOT_COMMON": 32,
+    "NO_OFFICER_OR_DIRECTOR": 89,
+    "MISSING_POSITIVE_PRICE_OR_SHARES": 13,
+    "HISTORY_NOTE_UNRESOLVED": 10,
+    "SECURITY_TITLE_REVIEW": 3
+  },
+  "classification_counts": {
+    "NONROUTINE": {
+      "issuer_months": 32,
+      "issuers": 19,
+      "months": 16
+    },
+    "ROUTINE": {
+      "issuer_months": 7,
+      "issuers": 6,
+      "months": 6
+    }
+  },
+  "slot_classifications": {
+    "UNKNOWN_INSUFFICIENT_YEARS": 198,
+    "UNKNOWN_HISTORY": 9,
+    "NONROUTINE": 32,
+    "MIXED_OR_UNKNOWN": 47,
+    "ROUTINE": 7
+  },
+  "review_texts": 531,
+  "unreviewed_texts": 531,
+  "all_event_rows": 1898,
+  "cohort_issuer_month_slots": 4800,
+  "completed_at_utc": "2026-09-13T22:45:03.786007+00:00",
+  "security_return_observations_read": 0
+}

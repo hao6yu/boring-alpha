@@ -1,0 +1,8 @@
+{
+  "used_sec_events_sha256": "60cb80df9c16cf941b3e7b6a44ef6a529446f1fa094ab2831fc27b3170a945da",
+  "qualified_snapshot": "data/snapshots/equity-event-expansion-2026-09-13/panel-source-snapshots/sec-b609659897eabe4a91a8d52a4879c1f9b870af16ecc895e5169ab30a47027eaf.json",
+  "qualified_snapshot_sha256": "b609659897eabe4a91a8d52a4879c1f9b870af16ecc895e5169ab30a47027eaf",
+  "daily_issuer_symbol_mappings_checked": 214000,
+  "daily_mapping_differences": [],
+  "interpretation": "Source-frame adapter read the current roster rather than the exact prior panel snapshot. Independently reconstruct every daily issuer-symbol mapping against the qualified snapshot; differences, if any, require correction before conclusion."
+}

@@ -1,0 +1,69 @@
+{
+  "accounts": [
+    {
+      "account": "matched",
+      "cash_claims_checked": 10,
+      "cost_case": "base",
+      "daily_NAVs_reconciled": 501,
+      "ending_nav": "10432.19733",
+      "fills_recomputed_from_raw_source": 12,
+      "first_halt_recomputed": null,
+      "status": "RECONCILED"
+    },
+    {
+      "account": "nonroutine",
+      "cash_claims_checked": 11,
+      "cost_case": "base",
+      "daily_NAVs_reconciled": 501,
+      "ending_nav": "8904.30638",
+      "fills_recomputed_from_raw_source": 18,
+      "first_halt_recomputed": "2022-12-27",
+      "status": "RECONCILED"
+    },
+    {
+      "account": "routine",
+      "cash_claims_checked": 2,
+      "cost_case": "base",
+      "daily_NAVs_reconciled": 501,
+      "ending_nav": "10238.88001",
+      "fills_recomputed_from_raw_source": 4,
+      "first_halt_recomputed": null,
+      "status": "RECONCILED"
+    },
+    {
+      "account": "matched",
+      "cash_claims_checked": 10,
+      "cost_case": "stress",
+      "daily_NAVs_reconciled": 501,
+      "ending_nav": "10337.40665",
+      "fills_recomputed_from_raw_source": 12,
+      "first_halt_recomputed": null,
+      "status": "RECONCILED"
+    },
+    {
+      "account": "nonroutine",
+      "cash_claims_checked": 11,
+      "cost_case": "stress",
+      "daily_NAVs_reconciled": 501,
+      "ending_nav": "8857.50325",
+      "fills_recomputed_from_raw_source": 18,
+      "first_halt_recomputed": "2022-12-19",
+      "status": "RECONCILED"
+    },
+    {
+      "account": "routine",
+      "cash_claims_checked": 2,
+      "cost_case": "stress",
+      "daily_NAVs_reconciled": 501,
+      "ending_nav": "10206.52005",
+      "fills_recomputed_from_raw_source": 4,
+      "first_halt_recomputed": null,
+      "status": "RECONCILED"
+    }
+  ],
+  "qualification": "Independent Decimal cash/claim/share replay and raw-file fill checks. Same source data; not external replication. This verifies conditional account arithmetic, not missing opportunity or control coverage.",
+  "raw_price_files_rechecked": 14,
+  "source_policy_and_signal_code_unchanged": true,
+  "status": "ALL_SIX_CONDITIONAL_ACCOUNT_LEDGERS_RECONCILED",
+  "verified_at_utc": "2026-09-14T00:06:16.863236+00:00"
+}

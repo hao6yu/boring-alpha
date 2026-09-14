@@ -1,0 +1,97 @@
+{
+  "policy_sha256": "6519c99f01e44c233f0034f2f963477d883fa3c97d648e72229c26760bab7a42",
+  "new_paid_data_usd": 0,
+  "files": [
+    {
+      "expected_bytes": 887601633,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "79045477a390a95cc5b5749f5a82df59"
+      },
+      "id": 13148285,
+      "name": "lit_submission.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148285",
+      "started_at_utc": "2026-09-13T22:32:18.361388+00:00",
+      "status": "VERIFIED",
+      "downloaded_bytes": 887601633,
+      "new_paid_data_usd": 0,
+      "file": "data/snapshots/insider-purchase-test-2026-09-13/lit_submission.zip",
+      "http_status": 200,
+      "response_host": "dvn-cloud-iqss.s3.amazonaws.com",
+      "content_type": "application/zip",
+      "updated_at_utc": "2026-09-13T22:32:38.367749+00:00",
+      "md5": "79045477a390a95cc5b5749f5a82df59",
+      "sha256": "84a9a5e3830af113806d80cb79758d014f1b4acbc6c94f3bb797baf667c12897",
+      "completed_at_utc": "2026-09-13T22:32:42.364792+00:00"
+    },
+    {
+      "expected_bytes": 414084508,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "de4ab97a117d61ec320ab67581ea7038"
+      },
+      "id": 13148287,
+      "name": "lit_reportingowner.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148287",
+      "started_at_utc": "2026-09-13T22:32:42.365093+00:00",
+      "status": "VERIFIED",
+      "downloaded_bytes": 414084508,
+      "new_paid_data_usd": 0,
+      "file": "data/snapshots/insider-purchase-test-2026-09-13/lit_reportingowner.zip",
+      "http_status": 200,
+      "response_host": "dvn-cloud-iqss.s3.amazonaws.com",
+      "content_type": "application/zip",
+      "updated_at_utc": "2026-09-13T22:32:52.387852+00:00",
+      "md5": "de4ab97a117d61ec320ab67581ea7038",
+      "sha256": "4474992f5f2986a8dee0406f87cd22fb6f1c4ab76e6e8dbb0c0478c3f29c3108",
+      "completed_at_utc": "2026-09-13T22:32:54.669362+00:00"
+    },
+    {
+      "expected_bytes": 482893509,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "3a58202a83f6d0bcf297853a9c438f3b"
+      },
+      "id": 13148294,
+      "name": "lit_nonderiv.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148294",
+      "started_at_utc": "2026-09-13T22:32:54.669830+00:00",
+      "status": "VERIFIED",
+      "downloaded_bytes": 482893509,
+      "new_paid_data_usd": 0,
+      "file": "data/snapshots/insider-purchase-test-2026-09-13/lit_nonderiv.zip",
+      "http_status": 200,
+      "response_host": "dvn-cloud-iqss.s3.amazonaws.com",
+      "content_type": "application/zip",
+      "updated_at_utc": "2026-09-13T22:35:49.701898+00:00",
+      "md5": "3a58202a83f6d0bcf297853a9c438f3b",
+      "sha256": "7fb28139059f7a259ff2e57343aaebdd256ac2e6b83bb518d516d53f809e2ae4",
+      "completed_at_utc": "2026-09-13T22:35:52.606417+00:00"
+    },
+    {
+      "expected_bytes": 812198396,
+      "expected_checksum": {
+        "type": "MD5",
+        "value": "6d1a9a9bd20e95fb338992e9dab17a22"
+      },
+      "id": 13148300,
+      "name": "lit_footnotes.zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13148300",
+      "started_at_utc": "2026-09-13T22:35:52.606800+00:00",
+      "status": "VERIFIED",
+      "downloaded_bytes": 812198396,
+      "new_paid_data_usd": 0,
+      "file": "data/snapshots/insider-purchase-test-2026-09-13/lit_footnotes.zip",
+      "http_status": 200,
+      "response_host": "dvn-cloud-iqss.s3.amazonaws.com",
+      "content_type": "application/zip",
+      "updated_at_utc": "2026-09-13T22:36:12.682243+00:00",
+      "md5": "6d1a9a9bd20e95fb338992e9dab17a22",
+      "sha256": "71e13a4b5cb6ee175a2a26eb4708142e24bdbe2c3662e6d6fd0ab84ae71e32dc",
+      "completed_at_utc": "2026-09-13T22:36:13.135528+00:00"
+    }
+  ],
+  "created_at_utc": "2026-09-13T22:32:18.361225+00:00",
+  "status": "ALL_FIXED_ARCHIVES_VERIFIED",
+  "downloaded_bytes": 2596778046
+}
