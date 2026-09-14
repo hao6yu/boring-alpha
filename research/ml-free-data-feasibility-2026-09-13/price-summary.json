@@ -1,0 +1,23 @@
+{
+  "accounting_price_and_reported_shares_joins": 30,
+  "checked_issuer_dates": 40,
+  "event_sources": {
+    "atvi_acquisition": "https://investor.activision.com/static-files/6439fa79-7018-4f4d-adf5-192a2cd2007b",
+    "bbby_suspension": "https://www.sec.gov/Archives/edgar/data/886158/000119312523115523/d89202dex991.htm",
+    "fb_meta": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2022-125",
+    "ge_reverse_split": "https://www.ge.com/news/press-releases/ge-completes-one-for-eight-reverse-stock-split",
+    "ge_spinoff": "https://www.gehealthcare.com/en-us/about/newsroom/press-releases/ge-healthcare-completes-spin-off-and-begins-trading-on-nasdaq",
+    "previous_meta_fund": "https://www.miaxglobal.com/alert/2022/01/28/miax-exchange-group-options-markets-corporate-action-alert-roundhill-ball-0"
+  },
+  "expected_trading_issuer_dates": 37,
+  "full_feature_panel_qualified": false,
+  "missing_active_price_sessions": 0,
+  "no_strategy_returns": true,
+  "raw_accounting_and_price_joins": 34,
+  "raw_rows": 14197,
+  "retained_rows": 14049,
+  "semantics": "Raw Nasdaq-venue UTC-day bars. Dated alias correction verified. Corporate actions and regular-session fill suitability are not qualified.",
+  "source_errors": [],
+  "unrelated_ticker_rows_excluded": 148,
+  "valid_active_price_joins": 37
+}

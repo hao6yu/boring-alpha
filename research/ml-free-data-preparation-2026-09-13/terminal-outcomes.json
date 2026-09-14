@@ -1,0 +1,24 @@
+[
+  {
+    "cash_claim_per_share": 95,
+    "date": "2023-10-13",
+    "kind": "cash_merger",
+    "last_trade_date": "2023-10-12",
+    "last_trade_price": 94.42,
+    "payment_date": null,
+    "source": "https://investor.activision.com/static-files/6439fa79-7018-4f4d-adf5-192a2cd2007b",
+    "spendable_cash_on_event": 0,
+    "symbol": "ATVI"
+  },
+  {
+    "date": "2023-09-29",
+    "execution": "After-close corporate outcome, never a sale at the final quoted price.",
+    "kind": "equity_cancellation",
+    "known_by_et": "2023-09-29T16:23:06-04:00",
+    "last_trade_price": 0.0789,
+    "source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/d579010d8k.htm",
+    "symbol": "BBBY",
+    "terminal_value_per_share": 0,
+    "timestamp_source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/0001193125-23-247428-index.htm"
+  }
+]

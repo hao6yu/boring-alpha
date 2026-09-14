@@ -1,0 +1,34 @@
+{
+  "account_evaluations": 0,
+  "at_utc": "2026-09-14T18:25:36.179732+00:00",
+  "new_paid_data_usd": 0,
+  "next_step": "Coverage gate passed; full acquisition can proceed",
+  "passed": true,
+  "symbols": [
+    {
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "rows": 1177,
+      "status": "DOWNLOADED",
+      "symbol": "PNR"
+    },
+    {
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "rows": 1177,
+      "status": "DOWNLOADED",
+      "symbol": "VFC"
+    },
+    {
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "rows": 1177,
+      "status": "DOWNLOADED",
+      "symbol": "CSCO"
+    }
+  ],
+  "target_end": "2026-09-11"
+}

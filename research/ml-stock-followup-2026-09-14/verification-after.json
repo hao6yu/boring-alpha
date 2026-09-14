@@ -1,0 +1,626 @@
+{
+  "accounts": [
+    {
+      "account": "fixed-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 39,
+      "total_days": 501
+    },
+    {
+      "account": "fixed-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 39,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-strict",
+      "complete": false,
+      "days_reconciled": 39,
+      "fills_checked": 17,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-strict",
+      "complete": false,
+      "days_reconciled": 39,
+      "fills_checked": 17,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_00-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_00-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_01-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_01-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_02-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_02-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_03-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 20,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_03-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 20,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_04-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_04-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_05-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_05-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_06-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_06-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_07-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_07-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_08-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 20,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_08-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 20,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-strict",
+      "complete": false,
+      "days_reconciled": 39,
+      "fills_checked": 16,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-strict",
+      "complete": false,
+      "days_reconciled": 39,
+      "fills_checked": 16,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_10-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_10-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_11-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_11-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_12-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_12-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-strict",
+      "complete": false,
+      "days_reconciled": 39,
+      "fills_checked": 15,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-strict",
+      "complete": false,
+      "days_reconciled": 39,
+      "fills_checked": 15,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_14-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_14-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_15-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_15-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_16-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 20,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_16-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 20,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_17-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_17-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_18-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_18-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_19-base-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_19-stress-strict",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 18,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-cash_100_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-cash_100_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-cash_100_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-cash_100_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-cash_100_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-cash_100_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-cash_100_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-cash_100_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-cash_100_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-cash_100_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-cash_100_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-cash_100_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-cash_100_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-cash_100_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-cash_100_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-cash_100_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-cash_100_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-cash_100_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-cash_25.53_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-cash_25.53_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-cash_25.53_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-cash_25.53_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-cash_25.53_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-cash_25.53_2022-03-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-cash_25.53_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-cash_25.53_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-cash_25.53_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-cash_25.53_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-cash_25.53_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-cash_25.53_2022-04-01",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-cash_25.53_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-cash_25.53_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-cash_25.53_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-cash_25.53_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-cash_25.53_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-cash_25.53_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base-zero_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 80,
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress-zero_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 32,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-base-zero_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_09-stress-zero_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 21,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-base-zero_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    },
+    {
+      "account": "unranked_13-stress-zero_withheld",
+      "complete": true,
+      "days_reconciled": 501,
+      "fills_checked": 22,
+      "total_days": 501
+    }
+  ],
+  "control_hash_orders_checked": true,
+  "exposure_references": [
+    {
+      "cost": "base",
+      "days_reconciled": 501,
+      "ending_reference_nav": 10081.148283944258
+    },
+    {
+      "cost": "stress",
+      "days_reconciled": 501,
+      "ending_reference_nav": 9911.167207916247
+    }
+  ],
+  "followup_code_unchanged": true,
+  "no_incomplete_control_deletion": true,
+  "original_artifacts_unchanged": true,
+  "passed": true,
+  "total_fills_recomputed": 2516,
+  "total_nav_days_reconciled": 40314,
+  "unique_accounts": 86
+}

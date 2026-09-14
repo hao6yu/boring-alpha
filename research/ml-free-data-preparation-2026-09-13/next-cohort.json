@@ -1,0 +1,616 @@
+{
+  "caveat": "Community-maintained roster at a historical repository commit; not an independently certified S&P constituent history or an index replica.",
+  "commit": "5dfdfbc3b9f52802f89e72da6e050b5cafdec4a6",
+  "committer_date": "2018-04-02T20:58:25Z",
+  "diagnostic_period": "2022-01 through 2023-12; previously seen economic period, not untouched holdout",
+  "issuer_resolution": "Resolve historical issuer/CIK and classes next. Never map reused tickers solely to current company. No return-based replacement for missing or removed names. Any selected same-issuer classes share one issuer weight cap.",
+  "original_rows": 505,
+  "rows": [
+    {
+      "Name": "Pentair Ltd.",
+      "Sector": "Industrials",
+      "Symbol": "PNR",
+      "selection_hash": "01341469ef1b40e6954665713f871d83b5397587728bd48446b5755db12f7d6d"
+    },
+    {
+      "Name": "V.F. Corp.",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "VFC",
+      "selection_hash": "019041f6fca581727fadd04964c627ce410ee9dccaf1054b7e807b01e0bb0ac3"
+    },
+    {
+      "Name": "Cisco Systems",
+      "Sector": "Information Technology",
+      "Symbol": "CSCO",
+      "selection_hash": "01a6ae36b59852e74d21b3cf38eeb35547b104c8e7f8a86ad595587aedd42d10"
+    },
+    {
+      "Name": "Whirlpool Corp.",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "WHR",
+      "selection_hash": "01bc79e3376e4ac045a255337a6d29d792767e1cb0af5cb9a9b0c721e52823ce"
+    },
+    {
+      "Name": "Capital One Financial",
+      "Sector": "Financials",
+      "Symbol": "COF",
+      "selection_hash": "02360f383d61b0cf71d8acfc6d2fab7925fdbd3ab0f5725db15d6cf2e4ca035c"
+    },
+    {
+      "Name": "Aon plc",
+      "Sector": "Financials",
+      "Symbol": "AON",
+      "selection_hash": "0247c1e567db1aa00a5d1b4cabd1ffdaef40a1060dffcdc182540dd068d5b373"
+    },
+    {
+      "Name": "Robert Half International",
+      "Sector": "Industrials",
+      "Symbol": "RHI",
+      "selection_hash": "0357b79545a6be25e53f732c8104de8149291756c17ba44878bf6b6fdda76c94"
+    },
+    {
+      "Name": "Hilton Worldwide Holdings Inc",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "HLT",
+      "selection_hash": "03c37c7a254fc0ffccbeba0d47ae2c95e11ad0acc9cbf90a432eeccc2743d010"
+    },
+    {
+      "Name": "Mondelez International",
+      "Sector": "Consumer Staples",
+      "Symbol": "MDLZ",
+      "selection_hash": "03e7bb9eda5d2be96863a3d0418b4bcf83aafeb636664d91cff6609f5ce1bd05"
+    },
+    {
+      "Name": "Incyte",
+      "Sector": "Health Care",
+      "Symbol": "INCY",
+      "selection_hash": "03eae9f30a92149463f032302093f5823b98d63a1483b133bda6f69875af12b7"
+    },
+    {
+      "Name": "Cummins Inc.",
+      "Sector": "Industrials",
+      "Symbol": "CMI",
+      "selection_hash": "04ca45613aab62dea3b4b41bd4947db5a1521e9c5d01ef1ee728198022018487"
+    },
+    {
+      "Name": "Aptiv Plc",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "APTV",
+      "selection_hash": "04d2c6a105a7ae6fce6884942a6e9d11490a8510f2c06b1ffcb55ecdec1c805d"
+    },
+    {
+      "Name": "Flowserve Corporation",
+      "Sector": "Industrials",
+      "Symbol": "FLS",
+      "selection_hash": "04e9280bcb8a4f27ee2af72c10f9cbf30011fb686213cfff5a9a141a10ef3a2f"
+    },
+    {
+      "Name": "Twenty-First Century Fox Class A",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "FOXA",
+      "selection_hash": "05726389eb630bf9cd8ebb83fdeac9f18656ecae1da8a4a70f9bcabfe12b8836"
+    },
+    {
+      "Name": "Motorola Solutions Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "MSI",
+      "selection_hash": "05a9a5d5fc44f4c6dcd44dafe3ceba0f0bcf67fb1bb9c36adb8f58f948fec1bb"
+    },
+    {
+      "Name": "Stryker Corp.",
+      "Sector": "Health Care",
+      "Symbol": "SYK",
+      "selection_hash": "05affc46e91b927d10dfa400e97cc2c32dad55d3c771049fd081245c23c4c3ec"
+    },
+    {
+      "Name": "Edwards Lifesciences",
+      "Sector": "Health Care",
+      "Symbol": "EW",
+      "selection_hash": "05b395c3e97a7c3addc1e3450e4bb772c812225a930b41ad443d2e3ef976487f"
+    },
+    {
+      "Name": "Cboe Global Markets",
+      "Sector": "Financials",
+      "Symbol": "CBOE",
+      "selection_hash": "05b9359cf9e804555b599ac6d501109c163324f1eeed844b7aefdbc4f7bd55af"
+    },
+    {
+      "Name": "Moody's Corp",
+      "Sector": "Financials",
+      "Symbol": "MCO",
+      "selection_hash": "05be2da47a058af369489c6030ae17b76fc81eb4297f62edf11801ecb91435f7"
+    },
+    {
+      "Name": "DXC Technology",
+      "Sector": "Information Technology",
+      "Symbol": "DXC",
+      "selection_hash": "07d33ecc0dde2971646895e62ef5dba2062276aae6e1dde6c2aebfc23222aa75"
+    },
+    {
+      "Name": "CenturyLink Inc",
+      "Sector": "Telecommunication Services",
+      "Symbol": "CTL",
+      "selection_hash": "09184fdb46691885925764bd0b3376a5751b35f9f0e1154c6f82a0a6e13d1aab"
+    },
+    {
+      "Name": "Red Hat Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "RHT",
+      "selection_hash": "0a1a279dba993ee2ca2d05012080a9a08f45a03d851cfbef6e8699a86eacd86a"
+    },
+    {
+      "Name": "Procter & Gamble",
+      "Sector": "Consumer Staples",
+      "Symbol": "PG",
+      "selection_hash": "0a42b574930886c7034901adc94361d8cca65075f0f273bb5d689ca94505151e"
+    },
+    {
+      "Name": "Morgan Stanley",
+      "Sector": "Financials",
+      "Symbol": "MS",
+      "selection_hash": "0a5a0d6ebfd5307330510b54492d400852e36cb21ffb66ef299ba4076c502dcf"
+    },
+    {
+      "Name": "United Continental Holdings",
+      "Sector": "Industrials",
+      "Symbol": "UAL",
+      "selection_hash": "0a7c76430158fb07c4c32da16157b985fd02ee2e77bf0d37e4976b0a86967962"
+    },
+    {
+      "Name": "Leggett & Platt",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "LEG",
+      "selection_hash": "0b0f7d938b6fd1793d6bec199e8099f56e7adf457119158d3f715ddf02569c9d"
+    },
+    {
+      "Name": "BlackRock",
+      "Sector": "Financials",
+      "Symbol": "BLK",
+      "selection_hash": "0c2be2bca3c51b4f6cb0533c98a939426004a3f912de360a86dd000587b4b7ca"
+    },
+    {
+      "Name": "Cimarex Energy",
+      "Sector": "Energy",
+      "Symbol": "XEC",
+      "selection_hash": "0cdf650963e712bb78d6fbd2ed38e0bc782c0a94d6ccadee7406f03a4fef184b"
+    },
+    {
+      "Name": "CenterPoint Energy",
+      "Sector": "Utilities",
+      "Symbol": "CNP",
+      "selection_hash": "0ce619e78a7d1b68c67671ea41e66e83293973fc098eb75cbac9c7541bef9d84"
+    },
+    {
+      "Name": "Baker Hughes, a GE Company",
+      "Sector": "Energy",
+      "Symbol": "BHGE",
+      "selection_hash": "0e0868b9b4ef11a6bdd5d10c142eca7949302328fb5c17386df0c89dd750d923"
+    },
+    {
+      "Name": "LyondellBasell",
+      "Sector": "Materials",
+      "Symbol": "LYB",
+      "selection_hash": "0e44391c0f697d98322f73f24104c875e25f2ab8b221504566a77fca87553d4d"
+    },
+    {
+      "Name": "ONEOK",
+      "Sector": "Energy",
+      "Symbol": "OKE",
+      "selection_hash": "0e9f14a13f8a4ebf57ab704803fbceb10d76a11b90657a3158865fc0319079ec"
+    },
+    {
+      "Name": "SBA Communications",
+      "Sector": "Real Estate",
+      "Symbol": "SBAC",
+      "selection_hash": "0f35fa1e880bf41604015f9013d247f1d83041284fc202b0e200230e52119b3c"
+    },
+    {
+      "Name": "International Paper",
+      "Sector": "Materials",
+      "Symbol": "IP",
+      "selection_hash": "11512924f8e4e4952579d4b98c658c3b9d2dfd69bc785bb6331151c4f23312d1"
+    },
+    {
+      "Name": "Kimberly-Clark",
+      "Sector": "Consumer Staples",
+      "Symbol": "KMB",
+      "selection_hash": "1186db815d70749ee267d0d370af488c1e846f684fe9a0d1cbdd70f27c20b8e6"
+    },
+    {
+      "Name": "Wyndham Worldwide",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "WYN",
+      "selection_hash": "12184cae0e858b02b92e43bfd9ad3f6116d5f19e6aa6660512e54bc63f77178e"
+    },
+    {
+      "Name": "Vulcan Materials",
+      "Sector": "Materials",
+      "Symbol": "VMC",
+      "selection_hash": "139cfa545b270d4b2595d75c241f43460ac2e03e1b8af19d090e8ddef61cde04"
+    },
+    {
+      "Name": "Microchip Technology",
+      "Sector": "Information Technology",
+      "Symbol": "MCHP",
+      "selection_hash": "13c8ad5ec0330230638707df9d5fc5e9f720e38380144ca102dae6ab2c809c87"
+    },
+    {
+      "Name": "Hasbro Inc.",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "HAS",
+      "selection_hash": "13ea2aa18a3cf4823d7c4ec58e1a52868ffb5287d9a5f49b9cf6ea8d6f679236"
+    },
+    {
+      "Name": "Dover Corp.",
+      "Sector": "Industrials",
+      "Symbol": "DOV",
+      "selection_hash": "14e20b13af0f80ecfcc42eddcc201bd295fb5e0664141d06a7ab28333385abdd"
+    },
+    {
+      "Name": "Kansas City Southern",
+      "Sector": "Industrials",
+      "Symbol": "KSU",
+      "selection_hash": "14f91e598da3dc89709372756f5f7e0c06c42f6a3bc0b8cd9f2d686dbf9797c4"
+    },
+    {
+      "Name": "Marathon Petroleum",
+      "Sector": "Energy",
+      "Symbol": "MPC",
+      "selection_hash": "15751c0783770df630f4e3b668b935a60037b220caebbf42176a8d531e369ed5"
+    },
+    {
+      "Name": "Michael Kors Holdings",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "KORS",
+      "selection_hash": "157aa019d8554f6ad081f389987a32b2a6965bb6ffe0e95dc647ea611a8f5bdd"
+    },
+    {
+      "Name": "Nike",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "NKE",
+      "selection_hash": "15aa5cd6cb886bf1949c743ea5c1a484085e29664102acf36e9fa3b3269ed773"
+    },
+    {
+      "Name": "Regions Financial Corp.",
+      "Sector": "Financials",
+      "Symbol": "RF",
+      "selection_hash": "15f4765fca3d15f494cd8f412281841bcac6f1617ee8c78c2b621bc3de52da5b"
+    },
+    {
+      "Name": "Intuit Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "INTU",
+      "selection_hash": "160f3ee657e9364a4cd51af4701f19bb6aa64cf8253f420f1dcef406b9ac4fae"
+    },
+    {
+      "Name": "Freeport-McMoRan Inc.",
+      "Sector": "Materials",
+      "Symbol": "FCX",
+      "selection_hash": "16b43e636a448d37716612f9fae78ddd233eb05f3e83813744a3eac30b7f2c3c"
+    },
+    {
+      "Name": "Verisk Analytics",
+      "Sector": "Industrials",
+      "Symbol": "VRSK",
+      "selection_hash": "16c8191f493731f49967407afa9ccbbecca0ad26d94e73cdb2a306238e5ee3fc"
+    },
+    {
+      "Name": "Range Resources Corp.",
+      "Sector": "Energy",
+      "Symbol": "RRC",
+      "selection_hash": "17a250597ffa1d52cb87a620a2cab07b58d76612aeaac453ba5ee440f50a1d1a"
+    },
+    {
+      "Name": "Express Scripts",
+      "Sector": "Health Care",
+      "Symbol": "ESRX",
+      "selection_hash": "18c287bd3dc7d87f7ef88930e8bb50e4be6a77f961c9d34d0ceff6e33e3b890a"
+    },
+    {
+      "Name": "Tractor Supply Company",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "TSCO",
+      "selection_hash": "18d62bcff66f36b028e73fa45666cb746e974b4e900ce53c5e80006fb44a7b43"
+    },
+    {
+      "Name": "The Hershey Company",
+      "Sector": "Consumer Staples",
+      "Symbol": "HSY",
+      "selection_hash": "190b146d3f8640f9fff7c1c5f640c4ce158da0382739c645ef171646d697cbf7"
+    },
+    {
+      "Name": "PayPal",
+      "Sector": "Information Technology",
+      "Symbol": "PYPL",
+      "selection_hash": "1be7b9f7403a1c415b75f52c29f20028a81a19528659d72ca6980339d718bd12"
+    },
+    {
+      "Name": "Zoetis",
+      "Sector": "Health Care",
+      "Symbol": "ZTS",
+      "selection_hash": "1c3ec14d84fc7c568ea97476f668659b0b916f218c431d1c06f549724450c82b"
+    },
+    {
+      "Name": "Parker-Hannifin",
+      "Sector": "Industrials",
+      "Symbol": "PH",
+      "selection_hash": "1c6c3d40e972a5b4db23c737a25091b7637b072c1c5ebcd7c5fb21d07ca7b4be"
+    },
+    {
+      "Name": "Thermo Fisher Scientific",
+      "Sector": "Health Care",
+      "Symbol": "TMO",
+      "selection_hash": "1db23084b824bd4d2238af3e4c05a834b56dbb35c66f970bbe250132cf0d002f"
+    },
+    {
+      "Name": "IDEXX Laboratories",
+      "Sector": "Health Care",
+      "Symbol": "IDXX",
+      "selection_hash": "1e61beb683d12165253a196728cfe9a03b657096e4d356dbbccbbe85401acd52"
+    },
+    {
+      "Name": "Best Buy Co. Inc.",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "BBY",
+      "selection_hash": "1e6acc6ddcd79818da1a4748ad22d6fbe3cf416733f0a8dd13056d02c8a89c71"
+    },
+    {
+      "Name": "Zimmer Biomet Holdings",
+      "Sector": "Health Care",
+      "Symbol": "ZBH",
+      "selection_hash": "1efb554f9bc0e1519b232da34746599f0a73d6181ad35363f814581fb5203924"
+    },
+    {
+      "Name": "Synchrony Financial",
+      "Sector": "Financials",
+      "Symbol": "SYF",
+      "selection_hash": "1f0dee6cea2177313946d1e802df487dd2a27883c201a2ace99b7c6ebfa0424b"
+    },
+    {
+      "Name": "Eversource Energy",
+      "Sector": "Utilities",
+      "Symbol": "ES",
+      "selection_hash": "1f28838f4ab5479235ac22adeda66cf00ebcdd8fd0ec58ce4c58c7b54f3a278e"
+    },
+    {
+      "Name": "Sealed Air",
+      "Sector": "Materials",
+      "Symbol": "SEE",
+      "selection_hash": "20788fdec0b3c8a47439ef90fb77856a40514d906a94f262f2468c4b417ff864"
+    },
+    {
+      "Name": "JM Smucker",
+      "Sector": "Consumer Staples",
+      "Symbol": "SJM",
+      "selection_hash": "20feb470465e8c46c920184ddd4ea8ed8ac8cfaba6f2c3c5b35bdb08840cabbf"
+    },
+    {
+      "Name": "Medtronic plc",
+      "Sector": "Health Care",
+      "Symbol": "MDT",
+      "selection_hash": "210f6c8d6c654f08bff22dd9a115222b584284ba7da22a885c340d1cc973653d"
+    },
+    {
+      "Name": "Assurant Inc.",
+      "Sector": "Financials",
+      "Symbol": "AIZ",
+      "selection_hash": "217889fd437dd82b91836621ff1d4a3fc2202098338ea7407e6aeeee76683fc7"
+    },
+    {
+      "Name": "Philip Morris International",
+      "Sector": "Consumer Staples",
+      "Symbol": "PM",
+      "selection_hash": "22757a749a577dc90673d84b0fbe69fd1fd500223ba9084779dd5e59b6e2f7ed"
+    },
+    {
+      "Name": "Harris Corporation",
+      "Sector": "Information Technology",
+      "Symbol": "HRS",
+      "selection_hash": "227ac5cd6ae2ba3660eebe16e81d851fcb7b23c447a7c90772d378c2bd54db2f"
+    },
+    {
+      "Name": "Digital Realty Trust Inc",
+      "Sector": "Real Estate",
+      "Symbol": "DLR",
+      "selection_hash": "22d6084b7f79baaa4a7544c4e06329ef317b10486586fd6deb98486478a96065"
+    },
+    {
+      "Name": "Pioneer Natural Resources",
+      "Sector": "Energy",
+      "Symbol": "PXD",
+      "selection_hash": "22d95908874b7131e5fba1928ac1254ccc3c3cf0bbef35d2ef7acd9d326a4bf9"
+    },
+    {
+      "Name": "Hartford Financial Svc.Gp.",
+      "Sector": "Financials",
+      "Symbol": "HIG",
+      "selection_hash": "2303a47147dff8d16913fc4a14d4705958cbb24520fb11512bcfb31aced305ec"
+    },
+    {
+      "Name": "Arthur J. Gallagher & Co.",
+      "Sector": "Financials",
+      "Symbol": "AJG",
+      "selection_hash": "234c4a2ccada3b555298f9712c843dede15af89ed68f7a868e07cc8084d29bbc"
+    },
+    {
+      "Name": "Johnson Controls International",
+      "Sector": "Industrials",
+      "Symbol": "JCI",
+      "selection_hash": "239a50e904e476bc653054072456f3eac530fc0af6ead13648c55ea07811a653"
+    },
+    {
+      "Name": "Xerox Corp.",
+      "Sector": "Information Technology",
+      "Symbol": "XRX",
+      "selection_hash": "23b4b03692dcc487d0097626554e22674c4278ea49172be6b578621d97c30d5e"
+    },
+    {
+      "Name": "Adobe Systems Inc",
+      "Sector": "Information Technology",
+      "Symbol": "ADBE",
+      "selection_hash": "245ed6b52f05f95a82d3c56bf7327846725c2e2bb1701289e6a7c00dad4388ae"
+    },
+    {
+      "Name": "Simon Property Group Inc",
+      "Sector": "Real Estate",
+      "Symbol": "SPG",
+      "selection_hash": "254116db88643153d92289dd669da1adaf74acf42794e71f19919ad8fb8a0cd4"
+    },
+    {
+      "Name": "Weyerhaeuser Corp.",
+      "Sector": "Real Estate",
+      "Symbol": "WY",
+      "selection_hash": "254ded46491f505f4ea1f9665c37baeb9a1579a4150cdd4c8c6a66582478394b"
+    },
+    {
+      "Name": "Discovery Inc. Class C",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "DISCK",
+      "selection_hash": "258d74b61790bc5ed626f67de1b3144a9799a4c083a9140dcd53c149d0ddeec8"
+    },
+    {
+      "Name": "Applied Materials Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "AMAT",
+      "selection_hash": "25e00eb888f0853975da0c03224d368969f89a835bdd501b8cea0cb74bbe6afa"
+    },
+    {
+      "Name": "Fluor Corp.",
+      "Sector": "Industrials",
+      "Symbol": "FLR",
+      "selection_hash": "25e493f16ad311b74733b3d79d658fbdd5657d5744a793fb5917f80685d585e5"
+    },
+    {
+      "Name": "Consolidated Edison",
+      "Sector": "Utilities",
+      "Symbol": "ED",
+      "selection_hash": "2643cb164383fc9e519c708aa0756ce885b29c2f1bfbff07689597ff92ae7bfe"
+    },
+    {
+      "Name": "HP Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "HPQ",
+      "selection_hash": "26d764dae15c7c48f231e3e777ac4d080689f62bf4f696c0667f6ff50b71f7b1"
+    },
+    {
+      "Name": "Nucor Corp.",
+      "Sector": "Materials",
+      "Symbol": "NUE",
+      "selection_hash": "271ee12ff4cb0763815b3c6177d620b88ff6c703f5123ce9bbfa8d5535e91ffc"
+    },
+    {
+      "Name": "Abbott Laboratories",
+      "Sector": "Health Care",
+      "Symbol": "ABT",
+      "selection_hash": "277113b24af31ac9acd522512296bb74556feabfeb3f4746aa58ea1e2f79e02c"
+    },
+    {
+      "Name": "Darden Restaurants",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "DRI",
+      "selection_hash": "2787d6c961d378f56f7206211ab1825c66b90f7990a1b56467478bed22cf8a87"
+    },
+    {
+      "Name": "Verisign Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "VRSN",
+      "selection_hash": "279126fc31d7c79fd04fc6f70993fb5050a2ebb294a90864d554f2de0c9e1b90"
+    },
+    {
+      "Name": "Johnson & Johnson",
+      "Sector": "Health Care",
+      "Symbol": "JNJ",
+      "selection_hash": "2a18aed4dec8b9f0eb70f892184aa491335270eb2263611cf03a618fefdd5ca5"
+    },
+    {
+      "Name": "Duke Energy",
+      "Sector": "Utilities",
+      "Symbol": "DUK",
+      "selection_hash": "2a586d7fd3eacf8ec392610d88831529b52b72b5065fd82c533d88b062985000"
+    },
+    {
+      "Name": "Broadcom",
+      "Sector": "Information Technology",
+      "Symbol": "AVGO",
+      "selection_hash": "2aefa661f0762e4f3bb64e21ba64397e9d85a9f160a2f13c32c60bfadca7bce0"
+    },
+    {
+      "Name": "Cerner",
+      "Sector": "Health Care",
+      "Symbol": "CERN",
+      "selection_hash": "2bc9b1467646965dfd7089939105d18495cd3ce3230720652544c0ddcb17795b"
+    },
+    {
+      "Name": "Fastenal Co",
+      "Sector": "Industrials",
+      "Symbol": "FAST",
+      "selection_hash": "2c867c036700401954493cd5c0ea01b9afa09cabdd9f0860f3645260f22b49b7"
+    },
+    {
+      "Name": "Illinois Tool Works",
+      "Sector": "Industrials",
+      "Symbol": "ITW",
+      "selection_hash": "2da41316926a4123415f3b523ab34b9f8c8f9c266aa7350f996eff07654fe3c1"
+    },
+    {
+      "Name": "Ball Corp",
+      "Sector": "Materials",
+      "Symbol": "BLL",
+      "selection_hash": "2dad0d3759d3084b62d517efa37e7323a17e2cf8123e2f931569b322f433079d"
+    },
+    {
+      "Name": "Global Payments Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "GPN",
+      "selection_hash": "2dc8e84ff564bdd08063461e54d110122b94d12c7573eb2d3d8776abeaae7437"
+    },
+    {
+      "Name": "CIGNA Corp.",
+      "Sector": "Health Care",
+      "Symbol": "CI",
+      "selection_hash": "2dd202a7139f0a5c106f0d11edc370ea684a04b57a96496c18e42dc9c0c6fbfc"
+    },
+    {
+      "Name": "O'Reilly Automotive",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "ORLY",
+      "selection_hash": "2eddd391d9e7a790a9d3d19c8bd0768e5e0727b31dad01e3666a3a4d3ede793c"
+    },
+    {
+      "Name": "The Clorox Company",
+      "Sector": "Consumer Staples",
+      "Symbol": "CLX",
+      "selection_hash": "2f1d6c741844087f867b9189cc26149e4ee96f338451f87653e0a75707d0a547"
+    },
+    {
+      "Name": "Intl Flavors & Fragrances",
+      "Sector": "Materials",
+      "Symbol": "IFF",
+      "selection_hash": "2f51a1113d5e8819b6ed673a278e8b83eaeaa43e91000c19fb4d46cc704d9c98"
+    },
+    {
+      "Name": "Paychex Inc.",
+      "Sector": "Information Technology",
+      "Symbol": "PAYX",
+      "selection_hash": "306475435142af2a327e10ebfba94446f4106bfcd15824795b5375f3dd2826b1"
+    },
+    {
+      "Name": "Anthem Inc.",
+      "Sector": "Health Care",
+      "Symbol": "ANTM",
+      "selection_hash": "30dc2a57d90c2054b0c3e210e37608ee3a4e13be9fca0bb8f164536b129ff3a3"
+    },
+    {
+      "Name": "Under Armour Class A",
+      "Sector": "Consumer Discretionary",
+      "Symbol": "UAA",
+      "selection_hash": "30f5f20e19ca372258e2afc1b4d40af9d440d0ed47828bb9f75097b15dd71a5b"
+    }
+  ],
+  "selected_rows": 100,
+  "selection": "First 100 SHA256(seed + original case-sensitive symbol), hexadecimal ascending; one fixed seed, no reselection.",
+  "selection_seed": "ba-ml-free-cohort-v1|",
+  "source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/5dfdfbc3b9f52802f89e72da6e050b5cafdec4a6/data/constituents.csv",
+  "source_sha256": "188659fc8b5d8bed325ee906dab17e53df357789707baa97e89f612172f2269d",
+  "status": "FROZEN_ACQUISITION_COHORT_NOT_INVESTMENT_QUALIFICATION"
+}

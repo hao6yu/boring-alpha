@@ -1,0 +1,28 @@
+{
+  "verified_at_utc": "2026-09-14T01:26:48.714950+00:00",
+  "status": "PUBLIC_SAMPLE_SCHEMA_AND_DATES_CHECKED_ONLY",
+  "hashes_rechecked": 16,
+  "sample_rows": {
+    "fundamentals_art": 8,
+    "stocks": 23,
+    "actions": 4,
+    "tickers": 1,
+    "sp500": 8,
+    "daily": 4
+  },
+  "all_samples_match_count_without_pagination": true,
+  "all_dated_market_queries_end_before_2024": true,
+  "metadata_has_no_price_values": true,
+  "ART_dimension_and_filing_period_order": true,
+  "price_bar_invariants": true,
+  "daily_marketcap_unit": "USD millions; multiply by 1000000 before ratios with dollar-valued fundamental fields",
+  "local_versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.8.0"
+  },
+  "limitations": [
+    "One current issuer only; no paid entitlement or full coverage verified.",
+    "No strategy returns, predictive scores, or reserved strategy rows inspected."
+  ]
+}

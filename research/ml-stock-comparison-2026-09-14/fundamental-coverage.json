@@ -1,0 +1,910 @@
+{
+  "issuer_slots": 100,
+  "issuers": [
+    {
+      "book_available": 0,
+      "cik": "0000077360",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Pentair plc",
+      "symbol": "PNR"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000103379",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "V. F. CORPORATION",
+      "symbol": "VFC"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000858877",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CISCO SYSTEMS, INC.",
+      "symbol": "CSCO"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000106640",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "WHIRLPOOL CORP /DE/",
+      "symbol": "WHR"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000927628",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CAPITAL ONE FINANCIAL CORP",
+      "symbol": "COF"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000315293",
+      "common_income_available": 33,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Aon plc",
+      "symbol": "AON"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000315213",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ROBERT HALF INC.",
+      "symbol": "RHI"
+    },
+    {
+      "book_available": 44,
+      "cik": "0001585689",
+      "common_income_available": 46,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Hilton Worldwide Holdings Inc.",
+      "symbol": "HLT"
+    },
+    {
+      "book_available": 10,
+      "cik": "0001103982",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Mondelez International, Inc.",
+      "symbol": "MDLZ"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000879169",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "INCYTE CORPORATION",
+      "symbol": "INCY"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000026172",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CUMMINS INC.",
+      "symbol": "CMI"
+    },
+    {
+      "book_available": 19,
+      "cik": "0001521332",
+      "common_income_available": 34,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "APTIV PLC",
+      "symbol": "APTV"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000030625",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "FLOWSERVE CORP",
+      "symbol": "FLS"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001308161",
+      "common_income_available": 55,
+      "filing_eligible": 9,
+      "shares_available": 0,
+      "source_entity": "TWENTY-FIRST CENTURY FOX, INC.",
+      "symbol": "FOXA"
+    },
+    {
+      "book_available": 31,
+      "cik": "0000068505",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Motorola Solutions, Inc.",
+      "symbol": "MSI"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000310764",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "STRYKER CORP",
+      "symbol": "SYK"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001099800",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Edwards Lifesciences Corporation",
+      "symbol": "EW"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001374310",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Cboe Global Markets, Inc.",
+      "symbol": "CBOE"
+    },
+    {
+      "book_available": 52,
+      "cik": "0001059556",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "MOODY'S CORPORATION",
+      "symbol": "MCO"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001688568",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "DXC TECHNOLOGY COMPANY",
+      "symbol": "DXC"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000018926",
+      "common_income_available": 39,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "LUMEN TECHNOLOGIES,\u00a0INC.",
+      "symbol": "CTL"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001087423",
+      "common_income_available": 0,
+      "filing_eligible": 13,
+      "shares_available": 7,
+      "source_entity": "RED HAT INC",
+      "symbol": "RHT"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000080424",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "The Procter & Gamble Company",
+      "symbol": "PG"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000895421",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "MORGAN STANLEY",
+      "symbol": "MS"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000100517",
+      "common_income_available": 52,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "United Airlines Holdings, Inc.",
+      "symbol": "UAL"
+    },
+    {
+      "book_available": 12,
+      "cik": "0000058492",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "LEGGETT & PLATT INC",
+      "symbol": "LEG"
+    },
+    {
+      "book_available": 11,
+      "cik": "0001364742",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "BLACKROCK FINANCE, INC.",
+      "symbol": "BLK"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001168054",
+      "common_income_available": 55,
+      "filing_eligible": 39,
+      "shares_available": 32,
+      "source_entity": "CIMAREX ENERGY CO.",
+      "symbol": "XEC"
+    },
+    {
+      "book_available": 2,
+      "cik": "0001130310",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CENTERPOINT ENERGY INC",
+      "symbol": "CNP"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001701605",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 10,
+      "source_entity": "Baker Hughes Company",
+      "symbol": "BHGE"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001489393",
+      "common_income_available": 6,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "LYONDELLBASELL INDUSTRIES N.V.",
+      "symbol": "LYB"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001039684",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ONEOK INC /NEW/",
+      "symbol": "OKE"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001034054",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "SBA COMMUNICATIONS CORPORATION",
+      "symbol": "SBAC"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000051434",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "INTERNATIONAL PAPER COMPANY",
+      "symbol": "IP"
+    },
+    {
+      "book_available": 53,
+      "cik": "0000055785",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "KIMBERLY-CLARK CORPORATION",
+      "symbol": "KMB"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001361658",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Travel & Leisure Co.",
+      "symbol": "WYN"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001396009",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "VULCAN MATERIALS COMPANY",
+      "symbol": "VMC"
+    },
+    {
+      "book_available": 50,
+      "cik": "0000827054",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "MICROCHIP TECHNOLOGY INCORPORATED",
+      "symbol": "MCHP"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000046080",
+      "common_income_available": 22,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "HASBRO, INC.",
+      "symbol": "HAS"
+    },
+    {
+      "book_available": 2,
+      "cik": "0000029905",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "DOVER Corp",
+      "symbol": "DOV"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000054480",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 51,
+      "source_entity": "KANSAS CITY SOUTHERN",
+      "symbol": "KSU"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001510295",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Marathon Petroleum Corporation",
+      "symbol": "MPC"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001530721",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CAPRI HOLDINGS LIMITED",
+      "symbol": "KORS"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000320187",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 0,
+      "source_entity": "NIKE, Inc.",
+      "symbol": "NKE"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001281761",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Regions Financial Corporation",
+      "symbol": "RF"
+    },
+    {
+      "book_available": 4,
+      "cik": "0000896878",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "INTUIT INC.",
+      "symbol": "INTU"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000831259",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Freeport-McMoRan Inc.",
+      "symbol": "FCX"
+    },
+    {
+      "book_available": 46,
+      "cik": "0001442145",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Verisk Analytics, Inc.",
+      "symbol": "VRSK"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000315852",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "RANGE RESOURCES CORP",
+      "symbol": "RRC"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001532063",
+      "common_income_available": 0,
+      "filing_eligible": 6,
+      "shares_available": 0,
+      "source_entity": "Express Scripts Holding Co.",
+      "symbol": "ESRX"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000916365",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "TRACTOR SUPPLY CO /DE/",
+      "symbol": "TSCO"
+    },
+    {
+      "book_available": 36,
+      "cik": "0000047111",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 0,
+      "source_entity": "HERSHEY CO",
+      "symbol": "HSY"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001633917",
+      "common_income_available": 22,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "PayPal Holdings, Inc.",
+      "symbol": "PYPL"
+    },
+    {
+      "book_available": 3,
+      "cik": "0001555280",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Zoetis Inc.",
+      "symbol": "ZTS"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000076334",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Parker-Hannifin Corp",
+      "symbol": "PH"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000097745",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "THERMO FISHER SCIENTIFIC INC.",
+      "symbol": "TMO"
+    },
+    {
+      "book_available": 12,
+      "cik": "0000874716",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "IDEXX LABORATORIES INC /DE",
+      "symbol": "IDXX"
+    },
+    {
+      "book_available": 54,
+      "cik": "0000764478",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "BEST BUY CO., INC.",
+      "symbol": "BBY"
+    },
+    {
+      "book_available": 11,
+      "cik": "0001136869",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ZIMMER BIOMET HOLDINGS, INC.",
+      "symbol": "ZBH"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001601712",
+      "common_income_available": 46,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Synchrony Financial",
+      "symbol": "SYF"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000072741",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "EVERSOURCE ENERGY",
+      "symbol": "ES"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001012100",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "SEALED AIR CORP/DE",
+      "symbol": "SEE"
+    },
+    {
+      "book_available": 10,
+      "cik": "0000091419",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "The J. M. Smucker Company",
+      "symbol": "SJM"
+    },
+    {
+      "book_available": 15,
+      "cik": "0001613103",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Medtronic plc",
+      "symbol": "MDT"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001267238",
+      "common_income_available": 48,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Assurant, Inc.",
+      "symbol": "AIZ"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001413329",
+      "common_income_available": 22,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Philip Morris International Inc.",
+      "symbol": "PM"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000202058",
+      "common_income_available": 19,
+      "filing_eligible": 55,
+      "shares_available": 54,
+      "source_entity": "L3HARRIS TECHNOLOGIES, INC.",
+      "symbol": "HRS"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001297996",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "DIGITAL REALTY TRUST, INC.",
+      "symbol": "DLR"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001038357",
+      "common_income_available": 22,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "PIONEER NATURAL RESOURCES CO",
+      "symbol": "PXD"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000874766",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "The Hartford Insurance Group, Inc.",
+      "symbol": "HIG"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000354190",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ARTHUR J. GALLAGHER & CO.",
+      "symbol": "AJG"
+    },
+    {
+      "book_available": 12,
+      "cik": "0000833444",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "JOHNSON CONTROLS INTERNATIONAL PLC",
+      "symbol": "JCI"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001770450",
+      "common_income_available": 51,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "XEROX HOLDINGS CORPORATION",
+      "symbol": "XRX"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000796343",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ADOBE INC.",
+      "symbol": "ADBE"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001063761",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 0,
+      "source_entity": "SIMON PROPERTY GROUP, INC.",
+      "symbol": "SPG"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000106535",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "WEYERHAEUSER COMPANY",
+      "symbol": "WY"
+    },
+    {
+      "book_available": 16,
+      "cik": "0001437107",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 20,
+      "source_entity": "Warner Bros. Discovery, Inc.",
+      "symbol": "DISCK"
+    },
+    {
+      "book_available": 9,
+      "cik": "0000006951",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "APPLIED MATERIALS INC /DE",
+      "symbol": "AMAT"
+    },
+    {
+      "book_available": 27,
+      "cik": "0001124198",
+      "common_income_available": 22,
+      "filing_eligible": 55,
+      "shares_available": 50,
+      "source_entity": "FLUOR CORPORATION",
+      "symbol": "FLR"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001047862",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CONSOLIDATED EDISON INC",
+      "symbol": "ED"
+    },
+    {
+      "book_available": 52,
+      "cik": "0000047217",
+      "common_income_available": 12,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "HP INC.",
+      "symbol": "HPQ"
+    },
+    {
+      "book_available": 8,
+      "cik": "0000073309",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "NUCOR CORP",
+      "symbol": "NUE"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000001800",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ABBOTT LABORATORIES",
+      "symbol": "ABT"
+    },
+    {
+      "book_available": 15,
+      "cik": "0000940944",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "DARDEN RESTAURANTS, INC.",
+      "symbol": "DRI"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001014473",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "VERISIGN INC/CA",
+      "symbol": "VRSN"
+    },
+    {
+      "book_available": 3,
+      "cik": "0000200406",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Johnson & Johnson",
+      "symbol": "JNJ"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001326160",
+      "common_income_available": 46,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Duke Energy CORP",
+      "symbol": "DUK"
+    },
+    {
+      "book_available": 7,
+      "cik": "0001730168",
+      "common_income_available": 48,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Broadcom Inc.",
+      "symbol": "AVGO"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000804753",
+      "common_income_available": 55,
+      "filing_eligible": 48,
+      "shares_available": 41,
+      "source_entity": "CERNER Corp",
+      "symbol": "CERN"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000815556",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "FASTENAL CO",
+      "symbol": "FAST"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000049826",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ILLINOIS TOOL WORKS INC",
+      "symbol": "ITW"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000009389",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 52,
+      "source_entity": "BALL CORPORATION",
+      "symbol": "BLL"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001123360",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "GLOBAL PAYMENTS INC.",
+      "symbol": "GPN"
+    },
+    {
+      "book_available": 10,
+      "cik": "0001739940",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "The Cigna Group",
+      "symbol": "CI"
+    },
+    {
+      "book_available": 8,
+      "cik": "0000898173",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "O REILLY AUTOMOTIVE INC",
+      "symbol": "ORLY"
+    },
+    {
+      "book_available": 55,
+      "cik": "0000021076",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "CLOROX CO /DE/",
+      "symbol": "CLX"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000051253",
+      "common_income_available": 52,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "INTERNATIONAL FLAVORS\u00a0& FRAGRANCES INC",
+      "symbol": "IFF"
+    },
+    {
+      "book_available": 0,
+      "cik": "0000723531",
+      "common_income_available": 55,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "Paychex, Inc.",
+      "symbol": "PAYX"
+    },
+    {
+      "book_available": 55,
+      "cik": "0001156039",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 55,
+      "source_entity": "ELEVANCE HEALTH, INC.",
+      "symbol": "ANTM"
+    },
+    {
+      "book_available": 0,
+      "cik": "0001336917",
+      "common_income_available": 0,
+      "filing_eligible": 55,
+      "shares_available": 0,
+      "source_entity": "Under Armour, Inc.",
+      "symbol": "UAA"
+    }
+  ],
+  "months": 55,
+  "note": "Raw as-of extraction. Security/price identity and the final feature eligibility join are separate.",
+  "rows": 5500,
+  "sha256": "d5f12237ed4aede6f46447627408dbbe1e8271bcc21facdba0ddbd7285f98917",
+  "source_file": "data/snapshots/ml-stock-comparison-2026-09-14/monthly-fundamentals.json"
+}

@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-09-14T06:53:21.897210+00:00",
+  "code": {
+    "collect.py": "26f86ed9101b5956744f69e3bc043d4a9d546040a7026ab77992e82c09d7e1b2",
+    "finish_download.py": "c97a96a935fd2e42947a5b9d425a4141a3ef09944e1a9f2f5d8f9c93f53fc8d0",
+    "fundamentals.py": "38f1e9273a4de6fd54510e72ffbcb360fc2d374d54cc60ac392a605bc470fb8f",
+    "models.py": "fe77f7967a5309d9b4a8c19df538f62726bab5630370ec83572f19b11110c23b",
+    "panel.py": "217d9bd9dcefe68815dafc4618d62a500e231778dbf30aeb83c9b3f8021f0c17",
+    "portfolio.py": "e4c3697a980b44d74fc1965ab552cfc6c75f3199cbab87bbd896bf2f2d07afa3",
+    "report.py": "b49557c5f1680d27e511e0b16cb87168322136f7ea01d057520cbe52db79d066",
+    "reviewed_sources.py": "7c7a941b5ffb776e816369bbb9e6e2e00103ccfa1152834ce24da3f2fdca7089",
+    "verify.py": "1dfda7708ed6f2c41cad885a17862069aed84777159d8399f81f156d368de009",
+    "verify_accounts.py": "43713fe0e5768603f06cbb7153197d8ecec37cd2c7a460af731eba013ee34326"
+  },
+  "eligible_universe": "Known eligible subset of frozen 100 original slots; see coverage.",
+  "label_benchmark": "Equal mean of known eligible labels within month; any unavailable label means the benchmark is conditional.",
+  "manifests": {
+    "account-policy.json": "ac2ff7be47da595c66ca2421f09711a85ef462059ef8a936258a1001bf3c0bc1",
+    "identity-map.json": "32cba974b624b3a580f790e178647d9458af7ba1056858a276d1234acd523563",
+    "price-manifest.json": "ceaeafc4d8e7b0d1d65e9ac84610136bacab10463b7bdf71aa844dbb85654c1e",
+    "sec-manifest.json": "6e013c6bb2bf4aff29332eb98ec2f05eb80148d27a32ea6992e8b349b88531dd"
+  },
+  "models_fitted_before_freeze": false,
+  "panel_sha256": "2e9df6168f26255e039e1220347c83931e772938980799c181a811f294e29dd3",
+  "scope_sha256": "0006c4cba6396efda3bb7450d2b3712e0ebc20cea7e0d43108a80b8622682bcf"
+}

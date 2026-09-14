@@ -1,0 +1,7 @@
+{
+  "symbol": "SEE",
+  "rejected_cik": "0000012659",
+  "reason": "SEC submissions and Company Facts identify H&R Block, not Sealed Air.",
+  "corrected_cik": "0001012100",
+  "before_features": true
+}

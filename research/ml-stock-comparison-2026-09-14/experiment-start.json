@@ -1,0 +1,13 @@
+{
+  "status": "DATA_PREPARATION_STARTED",
+  "started_utc": "2026-09-14T04:51:18.499640+00:00",
+  "panel_checkpoint_utc": "2026-09-14T08:51:18.499640+00:00",
+  "deadline_utc": "2026-09-14T12:51:18.499640+00:00",
+  "scope_file": "research/ml-free-data-preparation-2026-09-13/NEXT_EXPERIMENT.md",
+  "scope_sha256": "0006c4cba6396efda3bb7450d2b3712e0ebc20cea7e0d43108a80b8622682bcf",
+  "cohort_file": "research/ml-free-data-preparation-2026-09-13/next-cohort.json",
+  "cohort_sha256": "275a5f4143b0620fba0594a39ab75ca1a41723cce43480182e69b7cec62f8d69",
+  "new_paid_data_ceiling_usd": 0,
+  "additional_tiingo_request_cap": 150,
+  "models_fitted": false
+}

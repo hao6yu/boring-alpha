@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-14T01:57:09.335796+00:00",
+  "curl_exit": 0,
+  "http_status": 200,
+  "quote_usd": 0.022212937474,
+  "response_bytes": 14,
+  "response_sha256": "afd7b1ebc595c4f733f95037ca955a5d0e2e43699f233473a2191369bc1447c2",
+  "url": "https://hist.databento.com/v0/metadata.get_cost?dataset=XNAS.ITCH&schema=ohlcv-1d&symbols=AAPL%2CMSFT%2CJPM%2CXOM%2CJNJ%2CAMZN%2CGE%2CFB%2CMETA%2CATVI%2CBBBY&stype_in=raw_symbol&start=2018-05-01&end=2024-01-01"
+}

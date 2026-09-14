@@ -1,0 +1,12 @@
+{
+  "caveats": [
+    "Reported share counts can be stale and need split/class treatment before market-cap ratios.",
+    "Common income and parent net income are distinct; preferred stock and class coverage need explicit handling.",
+    "This checks raw fields/TTM construction, not the complete six-feature production panel."
+  ],
+  "common_share_count_available": 36,
+  "issuer_count": 10,
+  "issuer_date_count": 40,
+  "later_filing_values_used": false,
+  "raw_accounting_complete": 37
+}

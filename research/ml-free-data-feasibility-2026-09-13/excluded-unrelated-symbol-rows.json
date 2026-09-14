@@ -1,0 +1,742 @@
+[
+  {
+    "day": "2021-06-30",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-01",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-02",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-06",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-07",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-08",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-09",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-12",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-13",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-14",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-15",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-16",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-19",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-20",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-21",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-22",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-23",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-26",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-27",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-28",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-29",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-07-30",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-02",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-03",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-04",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-05",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-06",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-09",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-10",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-11",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-12",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-13",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-16",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-17",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-18",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-19",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-20",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-23",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-24",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-25",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-26",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-27",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-30",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-08-31",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-01",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-02",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-03",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-07",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-08",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-09",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-10",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-13",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-14",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-15",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-16",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-17",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-20",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-21",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-22",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-23",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-24",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-27",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-28",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-29",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-09-30",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-01",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-04",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-05",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-06",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-07",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-08",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-11",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-12",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-13",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-14",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-15",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-18",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-19",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-20",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-21",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-22",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-25",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-26",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-27",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-28",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-10-29",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-01",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-02",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-03",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-04",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-05",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-08",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-09",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-10",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-11",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-12",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-15",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-16",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-17",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-18",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-19",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-22",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-23",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-24",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-26",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-29",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-11-30",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-01",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-02",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-03",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-06",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-07",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-08",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-09",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-10",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-13",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-14",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-15",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-16",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-17",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-20",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-21",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-22",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-23",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-27",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-28",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-29",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-30",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2021-12-31",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-03",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-04",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-05",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-06",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-07",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-10",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-11",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-12",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-13",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-14",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-18",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-19",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-20",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-21",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-24",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-25",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-26",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-27",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  },
+  {
+    "day": "2022-01-28",
+    "reason": "EARLIER_UNRELATED_META_FUND",
+    "symbol": "META"
+  }
+]

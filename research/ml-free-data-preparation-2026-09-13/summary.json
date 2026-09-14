@@ -1,0 +1,32 @@
+{
+  "accounting": {
+    "exact_original_six_features_qualified": false,
+    "nasdaq_active_accounting_price_shares_joins": 37,
+    "raw_accounting_complete": 40,
+    "repairs": 7,
+    "reported_share_count_available": 40,
+    "total_checks": 40
+  },
+  "new_paid_data_usd": 0,
+  "new_subscription": false,
+  "prices": {
+    "documented_splits": 3,
+    "documented_stock_distributions": 2,
+    "economic_reference_rows": 15625,
+    "executable_account_qualified": false,
+    "features_reference_only": true,
+    "missing_expected_sessions": 0,
+    "ordinary_dividend_records": 172,
+    "provider_adjustment_checks": 15612,
+    "provider_adjustment_errors": [],
+    "reference_file": "data/snapshots/ml-free-data-preparation-2026-09-13/reference-prices.jsonl",
+    "reference_sha256": "e3f5adef4cbfef77631d178d8695909f5b18108c533da9ba01b998fed220cd4f",
+    "retained_price_rows": 15624,
+    "stale_ATVI_rows_excluded": 1,
+    "symbol_series": 12,
+    "unexpected_sessions": 0
+  },
+  "reserved_2024_2025_prices_opened": false,
+  "strategy_fitted": false,
+  "strategy_profitability_tested": false
+}

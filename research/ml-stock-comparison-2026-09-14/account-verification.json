@@ -1,0 +1,55 @@
+{
+  "accounts": [
+    {
+      "account": "fixed-base",
+      "fills_recomputed": 39,
+      "halt_recomputed": null,
+      "nav_days_reconciled": 501,
+      "status": "RECONCILED_COMPLETE",
+      "total_days": 501
+    },
+    {
+      "account": "fixed-stress",
+      "fills_recomputed": 39,
+      "halt_recomputed": null,
+      "nav_days_reconciled": 501,
+      "status": "RECONCILED_COMPLETE",
+      "total_days": 501
+    },
+    {
+      "account": "ridge-base",
+      "fills_recomputed": 17,
+      "halt_recomputed": null,
+      "nav_days_reconciled": 39,
+      "status": "RECONCILED_VALID_PREFIX_ONLY",
+      "total_days": 501
+    },
+    {
+      "account": "ridge-stress",
+      "fills_recomputed": 17,
+      "halt_recomputed": null,
+      "nav_days_reconciled": 39,
+      "status": "RECONCILED_VALID_PREFIX_ONLY",
+      "total_days": 501
+    },
+    {
+      "account": "tree-base",
+      "fills_recomputed": 136,
+      "halt_recomputed": null,
+      "nav_days_reconciled": 501,
+      "status": "RECONCILED_COMPLETE",
+      "total_days": 501
+    },
+    {
+      "account": "tree-stress",
+      "fills_recomputed": 138,
+      "halt_recomputed": null,
+      "nav_days_reconciled": 501,
+      "status": "RECONCILED_COMPLETE",
+      "total_days": 501
+    }
+  ],
+  "annual_refit_cutoffs_and_equal_month_weights_checked": true,
+  "passed": true,
+  "source_code_unchanged": true
+}

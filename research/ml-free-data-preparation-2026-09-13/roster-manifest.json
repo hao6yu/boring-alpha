@@ -1,0 +1,10 @@
+{
+  "historical-roster-2018-04-02.csv": {
+    "file": "data/snapshots/ml-free-data-preparation-2026-09-13/historical-roster-2018-04-02.csv",
+    "sha256": "188659fc8b5d8bed325ee906dab17e53df357789707baa97e89f612172f2269d"
+  },
+  "historical-roster-commit.json": {
+    "file": "data/snapshots/ml-free-data-preparation-2026-09-13/historical-roster-commit.json",
+    "sha256": "b38195092af94d96350cfd76d7002a10ca6d7a6bbfe636af2c109df29f03c6d4"
+  }
+}

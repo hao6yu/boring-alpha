@@ -1,0 +1,79 @@
+{
+  "all-symbols-daily-quote": {
+    "at": "2026-09-14T01:52:55.362109+00:00",
+    "curl_exit": 0,
+    "file": "data/snapshots/ml-free-data-feasibility-2026-09-13/all-symbols-daily-quote.json",
+    "http_status": 200,
+    "method": "metadata.get_cost",
+    "params": {
+      "dataset": "XNAS.ITCH",
+      "end": "2024-01-01",
+      "schema": "ohlcv-1d",
+      "start": "2018-05-01",
+      "stype_in": "raw_symbol",
+      "symbols": "ALL_SYMBOLS"
+    },
+    "response_bytes": 15,
+    "response_sha256": "2cdaba3118db934489805060eb0a9e850d27fda7683a6b40473f9c92552582a0",
+    "url": "https://hist.databento.com/v0/metadata.get_cost?dataset=XNAS.ITCH&schema=ohlcv-1d&symbols=ALL_SYMBOLS&stype_in=raw_symbol&start=2018-05-01&end=2024-01-01"
+  },
+  "sample-daily-bars": {
+    "at": "2026-09-14T01:57:13.677487+00:00",
+    "curl_exit": 0,
+    "file": "data/snapshots/ml-free-data-feasibility-2026-09-13/sample-daily-bars.json",
+    "http_status": 206,
+    "method": "timeseries.get_range",
+    "params": {
+      "compression": "none",
+      "dataset": "XNAS.ITCH",
+      "encoding": "json",
+      "end": "2024-01-01",
+      "map_symbols": "true",
+      "pretty_px": "true",
+      "pretty_ts": "true",
+      "schema": "ohlcv-1d",
+      "start": "2018-05-01",
+      "stype_in": "raw_symbol",
+      "symbols": "AAPL,MSFT,JPM,XOM,JNJ,AMZN,GE,FB,META,ATVI,BBBY"
+    },
+    "response_bytes": 3215384,
+    "response_sha256": "5dbb292594d4584cb0499e94a71b59389c852f84dd25ff6f546a713e021bce7b",
+    "url": "https://hist.databento.com/v0/timeseries.get_range?dataset=XNAS.ITCH&schema=ohlcv-1d&symbols=AAPL%2CMSFT%2CJPM%2CXOM%2CJNJ%2CAMZN%2CGE%2CFB%2CMETA%2CATVI%2CBBBY&stype_in=raw_symbol&start=2018-05-01&end=2024-01-01&encoding=json&compression=none&pretty_px=true&pretty_ts=true&map_symbols=true"
+  },
+  "sample-daily-quote": {
+    "at": "2026-09-14T01:52:55.066346+00:00",
+    "curl_exit": 0,
+    "file": "data/snapshots/ml-free-data-feasibility-2026-09-13/sample-daily-quote.json",
+    "http_status": 200,
+    "method": "metadata.get_cost",
+    "params": {
+      "dataset": "XNAS.ITCH",
+      "end": "2024-01-01",
+      "schema": "ohlcv-1d",
+      "start": "2018-05-01",
+      "stype_in": "raw_symbol",
+      "symbols": "AAPL,MSFT,JPM,XOM,JNJ,AMZN,GE,FB,META,ATVI,BBBY"
+    },
+    "response_bytes": 14,
+    "response_sha256": "afd7b1ebc595c4f733f95037ca955a5d0e2e43699f233473a2191369bc1447c2",
+    "url": "https://hist.databento.com/v0/metadata.get_cost?dataset=XNAS.ITCH&schema=ohlcv-1d&symbols=AAPL%2CMSFT%2CJPM%2CXOM%2CJNJ%2CAMZN%2CGE%2CFB%2CMETA%2CATVI%2CBBBY&stype_in=raw_symbol&start=2018-05-01&end=2024-01-01"
+  },
+  "sample-symbol-map": {
+    "at": "2026-09-14T01:57:14.321816+00:00",
+    "curl_exit": 0,
+    "file": "data/snapshots/ml-free-data-feasibility-2026-09-13/sample-symbol-map.json",
+    "http_status": 200,
+    "method": "symbology.resolve",
+    "params": {
+      "dataset": "XNAS.ITCH",
+      "end_date": "2024-01-01",
+      "start_date": "2018-05-01",
+      "stype_in": "raw_symbol",
+      "stype_out": "instrument_id",
+      "symbols": "AAPL,MSFT,JPM,XOM,JNJ,AMZN,GE,FB,META,ATVI,BBBY"
+    },
+    "response_bytes": 446548,
+    "response_sha256": "3b642f358e250ccf4d592b643c72fb0bbdecaf35b8bc9a24637f9ad738512c49",
+    "url": "https://hist.databento.com/v0/symbology.resolve?dataset=XNAS.ITCH&symbols=AAPL%2CMSFT%2CJPM%2CXOM%2CJNJ%2CAMZN%2CGE%2CFB%2CMETA%2CATVI%2CBBBY&stype_in=raw_symbol&stype_out=instrument_id&start_date=2018-05-01&end_date=2024-01-01"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-14T02:03:03.508366+00:00",
+  "source": "Authenticated Chrome billing page after reload",
+  "url": "https://databento.com/portal/billing",
+  "remaining_credits_usd": 117.91,
+  "current_cash_balance_usd": 0,
+  "subscriptions": 0,
+  "licenses": 0,
+  "precision_note": "UI displays rounded cents; exact transaction debit not obtained."
+}

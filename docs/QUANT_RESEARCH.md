@@ -1,9 +1,94 @@
 # Active quantitative trading research
 
-Updated 2026-09-13. This is the current work brief; earlier ETF/withdrawal
+Updated 2026-09-14. This is the current work brief; earlier ETF/withdrawal
 research does not define the user's active objective.
 
-Latest result: the user-authorized [$10,000 stock momentum diagnostic](../research/equity-momentum-diagnostic-2026-09-13/RESULTS.md)
+Current direction: prioritize 2022 through current 2026. The
+[recent-window protocol](../research/ml-stock-recent-validation-2026-09-14/README.md)
+freezes the unchanged fixed score for January 2, 2024–September 11, 2026,
+with 2022–2023 retained as the already-seen comparison. A three-security
+Tiingo endpoint check reached September 11 for all three names at $0 new
+paid data cost. Full acquisition and the new backtest have not run. Later
+prices are now opened for these three date probes under the new scope;
+the earlier statements about reserved prices remain true at their original
+experiment dates. This changes the recommended chronology, not the strategy
+or historical cohort, and does not establish that older regimes are obsolete.
+
+Latest follow-up: the [cached benchmark and spinoff sensitivity](../research/ml-stock-followup-2026-09-14/RESULTS.md)
+provides exploratory evidence for retaining the fixed score as a research lead.
+It beats a reference with matched daily stock exposure and trading costs by
+$518.48/$479.58 under base/stress costs. Average monthly differences are positive
+in both years, but the planned 95% month-block intervals include zero. The fixed
+score still earns only 2.97%/1.95% annually and fails the 4–6% cash target.
+
+It beats all 20 unranked control accounts under base costs and 19/20 under
+stress in each of seven declared spinoff receipt scenarios. The strict full
+control ensemble remains incomplete because controls 09 and 13 encounter ZBH's
+fractional-share cash gap. No incomplete controls are deleted. Conditional
+ensemble average losses are $410.63–$416.63 base and $531.27–$537.27 stress.
+Controls hold lower average stock exposure and trade less than the fixed score;
+the counts are descriptive, not a formal significance test or proof of alpha.
+
+Ridge loses in every declared payment case: base losses $265.06–$296.65 and
+stress losses $434.70–$1,865.28. Assumed total receipts are $0, $15.318 and $60,
+with explicit immediate, delayed or never-spendable cases. The actual broker
+payment remains unknown; these are sensitivities, not exhaustive mathematical
+bounds. A small cash change can alter whole-share sizing and whether the stress
+account hits its loss halt. Both trained versions remain shelved.
+
+Eighty complete conditional accounts and six valid strict prefixes reconcile:
+86 distinct account files, 40,314 daily NAV observations and 2,516 fills.
+Original artifacts and predictions are unchanged. New paid data cost $0;
+new network data requests and model fits are zero. No reserved-year prices were
+opened. A broader, correctly dated historical evaluation of the unchanged fixed
+score is the next kind of evidence to consider; no acquisition or new test is
+queued by this result. [Benchmark paths](../research/ml-stock-followup-2026-09-14/benchmark-paths.png).
+
+Preceding result: the [fixed 100-stock model comparison](../research/ml-stock-comparison-2026-09-14/RESULTS.md)
+is complete as a bounded exploratory diagnostic. It retains all 5,500 original
+company-month slots and passes the preset coverage gate: 88–89 eligible names
+per diagnostic month and 100% known eligible labels in both 2022 and 2023.
+The fixed annual-refit tree lost $319.84/$650.64 under base/stressed costs
+(-1.62%/-3.33% annualized). The fixed six-signal score gained $599.63/$390.74
+(2.97%/1.95% annualized), below the 4–6% cash hurdle. Base maximum drawdowns
+were 18.73% for the tree and 14.91% for the fixed score. Neither halted.
+
+Ridge's complete account returns remain unresolved from March 1, 2022 because
+six ZBH shares create a 0.6-share ZIMV entitlement with unqualified fractional
+cash/payment timing. Do not present that as a measured Ridge loss. The paired
+stock-ranking comparison is available: tree minus Ridge mean monthly rank
+correlation is +0.0320, with planned 95% month-block interval [-0.0149, 0.0775].
+The tree's overall correlation is negative; a reliable trained-model advantage
+has not been established. Four complete ledgers and the two valid Ridge
+prefixes independently reconcile. See [account details and paths](../research/ml-stock-comparison-2026-09-14/ACCOUNT_NOTES.md).
+
+The attempt used existing SEC/Tiingo access and 112 additional Tiingo requests,
+respecting hourly quotas; new paid data cost $0. Source and pre-fit code hashes,
+annual training boundaries and independent account replays are preserved. No
+retuning, new model family, reserved-year test or funded pilot is queued. Shelve
+this fixed trained-model version; this result does not establish that all
+quantitative trading fails. The conservative cash/receivable conventions and
+short, economically familiar period limit broader inferences.
+
+The earlier [ten-company preparation](../research/ml-free-data-preparation-2026-09-13/RESULTS.md)
+and [frozen 100-security scope](../research/ml-free-data-preparation-2026-09-13/NEXT_EXPERIMENT.md)
+remain preserved. Initial training is June 2019–December 2021, with annual
+expanding refits and January 2022–December 2023 diagnostics. The paid Sharadar
+proposal and full-market Databento download remain parked. The [original free
+feasibility result](../research/ml-free-data-feasibility-2026-09-13/RESULTS.md)
+records roughly $0.04443 in Databento credits consumed, last observed rounded
+balance $117.91 and an unused $19.38 all-symbols price-only quote. None was
+charged again in this comparison. Reserved 2024–2025 strategy prices remain
+unopened.
+
+The [monthly combined-signal research direction](notes/2026-09-13-ml-research-focus.md)
+and [original paid specification](../research/ml-stock-selection-design-2026-09-13/PROPOSAL.md)
+are historical context. The paid design's 2000–2010 training and 2011–2023
+diagnostics were not performed. No purchase is approved; the [free-source
+assessment](../research/ml-stock-selection-design-2026-09-13/FREE_SOURCES.md)
+led to the smaller completed experiment above.
+
+Previous result: the user-authorized [$10,000 stock momentum diagnostic](../research/equity-momentum-diagnostic-2026-09-13/RESULTS.md)
 lost $1,938.22/$1,976.70 under base/stressed costs. Both accounts hit their
 $2,000 trailing dollar-loss halt on May 9, 2022 and liquidated on May 10;
 maximum drawdowns were 20.28%/20.34%. Adding back base costs on the same fills

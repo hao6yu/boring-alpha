@@ -1,0 +1,391 @@
+{
+  "account_files": {
+    "fixed-base": {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/fixed-base-account.json",
+      "sha256": "d8e63d8670f6731dd91ef7164ac517756cd2b60728be5735859b31a112013cfe"
+    },
+    "fixed-stress": {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/fixed-stress-account.json",
+      "sha256": "1088c0d717bf72db9daeed41aa28d26ec86c97ff1b41384390b49ab49143f18a"
+    },
+    "ridge-base": {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/ridge-base-account.json",
+      "sha256": "03c825263e624fc924460cc1975f6223b32a8df432c7f685114c473745dd3c05"
+    },
+    "ridge-stress": {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/ridge-stress-account.json",
+      "sha256": "f444bad415eb16442de930fca3e5b85b125080a098103f3daca66fe11916d5a7"
+    },
+    "tree-base": {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tree-base-account.json",
+      "sha256": "9b578dc3b4c4baf1f2813f7647ceaa0030c3d2eb9206a8dd92d1f98c4c1f78ab"
+    },
+    "tree-stress": {
+      "file": "data/snapshots/ml-stock-comparison-2026-09-14/tree-stress-account.json",
+      "sha256": "166d9489921137212cd41a040119bf90a3dcd598ea46d448db7136312d376906"
+    }
+  },
+  "accounts": {
+    "fixed-base": {
+      "buys": 20,
+      "cagr": 0.029710341562412923,
+      "cash_reference_end_values": {
+        "0.04": 10811.352108710895,
+        "0.06": 11228.827392225436
+      },
+      "ending_cash": 2148.32563,
+      "fees": 39.96,
+      "final_nav": 10599.63244,
+      "gross_same_fills_profit": 667.2111999999994,
+      "max_drawdown": 0.1490506730334582,
+      "profit": 599.6324399999994,
+      "slippage": 27.61876,
+      "status": "COMPLETE_ACCOUNTING",
+      "stop_date": null,
+      "stopped": false,
+      "unpaid_claims": 8451.30681,
+      "unpriced_days": 0
+    },
+    "fixed-stress": {
+      "buys": 20,
+      "cagr": 0.019457594037727732,
+      "cash_reference_end_values": {
+        "0.04": 10811.352108710895,
+        "0.06": 11228.827392225436
+      },
+      "ending_cash": 2552.5559,
+      "fees": 39.96,
+      "final_nav": 10390.74325,
+      "gross_same_fills_profit": 568.6211999999995,
+      "max_drawdown": 0.15067466942117713,
+      "profit": 390.74324999999953,
+      "slippage": 137.91795,
+      "status": "COMPLETE_ACCOUNTING",
+      "stop_date": null,
+      "stopped": false,
+      "unpaid_claims": 7838.18735,
+      "unpriced_days": 0
+    },
+    "ridge-base": {
+      "buys": 9,
+      "cagr": null,
+      "fees": 17.39,
+      "final_nav": null,
+      "max_drawdown": null,
+      "profit": null,
+      "slippage": 11.46164,
+      "status": "UNRESOLVED",
+      "stop_date": null,
+      "stopped": false,
+      "unpriced_days": 462
+    },
+    "ridge-stress": {
+      "buys": 9,
+      "cagr": null,
+      "fees": 17.39,
+      "final_nav": null,
+      "max_drawdown": null,
+      "profit": null,
+      "slippage": 57.3082,
+      "status": "UNRESOLVED",
+      "stop_date": null,
+      "stopped": false,
+      "unpriced_days": 462
+    },
+    "tree-base": {
+      "buys": 68,
+      "cagr": -0.016209845526441335,
+      "cash_reference_end_values": {
+        "0.04": 10811.352108710895,
+        "0.06": 11228.827392225436
+      },
+      "ending_cash": 3773.53721,
+      "fees": 139.36,
+      "final_nav": 9680.16422,
+      "gross_same_fills_profit": -92.28499999999941,
+      "max_drawdown": 0.187266563,
+      "profit": -319.83577999999943,
+      "slippage": 88.19078,
+      "status": "COMPLETE_ACCOUNTING",
+      "stop_date": null,
+      "stopped": false,
+      "unpaid_claims": 5906.62701,
+      "unpriced_days": 0
+    },
+    "tree-stress": {
+      "buys": 69,
+      "cagr": -0.033258227773311444,
+      "cash_reference_end_values": {
+        "0.04": 10811.352108710895,
+        "0.06": 11228.827392225436
+      },
+      "ending_cash": 4430.0284,
+      "fees": 141.38,
+      "final_nav": 9349.36145,
+      "gross_same_fills_profit": -70.41499999999968,
+      "max_drawdown": 0.187929295,
+      "profit": -650.6385499999997,
+      "slippage": 438.84355,
+      "status": "COMPLETE_ACCOUNTING",
+      "stop_date": null,
+      "stopped": false,
+      "unpaid_claims": 4919.33305,
+      "unpriced_days": 0
+    }
+  },
+  "aggregate_coverage_pass": true,
+  "conditional_identified_subset_only": false,
+  "monthly_rank_correlations": [
+    {
+      "fixed": -0.057848144364998313,
+      "known_labels": 89,
+      "month": "2022-01",
+      "ridge": -0.14518215866530473,
+      "tree": -0.2139768471229146,
+      "tree_minus_ridge": -0.06879468845760986
+    },
+    {
+      "fixed": 0.02424242424242425,
+      "known_labels": 89,
+      "month": "2022-02",
+      "ridge": -0.164521620701396,
+      "tree": -0.09072182499148793,
+      "tree_minus_ridge": 0.07379979570990808
+    },
+    {
+      "fixed": -0.041122186608432254,
+      "known_labels": 88,
+      "month": "2022-03",
+      "ridge": -0.136469303652566,
+      "tree": -0.05464759959141983,
+      "tree_minus_ridge": 0.08182170406114617
+    },
+    {
+      "fixed": 0.038304392236976514,
+      "known_labels": 88,
+      "month": "2022-04",
+      "ridge": -0.31145433411996765,
+      "tree": -0.23535627487584093,
+      "tree_minus_ridge": 0.07609805924412671
+    },
+    {
+      "fixed": -0.09657990208164562,
+      "known_labels": 88,
+      "month": "2022-05",
+      "ridge": -0.10631890387798952,
+      "tree": 0.047479835159029274,
+      "tree_minus_ridge": 0.1537987390370188
+    },
+    {
+      "fixed": 0.36758597208035415,
+      "known_labels": 89,
+      "month": "2022-06",
+      "ridge": -0.544688457609806,
+      "tree": -0.2585801838610828,
+      "tree_minus_ridge": 0.2861082737487232
+    },
+    {
+      "fixed": -0.24335176640484663,
+      "known_labels": 88,
+      "month": "2022-07",
+      "ridge": 0.36071290197597833,
+      "tree": 0.3421330703391921,
+      "tree_minus_ridge": -0.018579831636786226
+    },
+    {
+      "fixed": 0.14816315029410732,
+      "known_labels": 88,
+      "month": "2022-08",
+      "ridge": -0.30971082385262944,
+      "tree": -0.2011024620478321,
+      "tree_minus_ridge": 0.10860836180479733
+    },
+    {
+      "fixed": 0.27760557923285556,
+      "known_labels": 88,
+      "month": "2022-09",
+      "ridge": -0.2055580993976965,
+      "tree": 0.05767672854073475,
+      "tree_minus_ridge": 0.2632348279384313
+    },
+    {
+      "fixed": 0.21247930682258467,
+      "known_labels": 88,
+      "month": "2022-10",
+      "ridge": -0.11362755802895284,
+      "tree": -0.2669331830509669,
+      "tree_minus_ridge": -0.15330562502201406
+    },
+    {
+      "fixed": -0.2988447043077032,
+      "known_labels": 88,
+      "month": "2022-11",
+      "ridge": 0.4137226585889896,
+      "tree": 0.056919446303406014,
+      "tree_minus_ridge": -0.3568032122855836
+    },
+    {
+      "fixed": 0.3058539678066993,
+      "known_labels": 88,
+      "month": "2022-12",
+      "ridge": -0.41016519319502664,
+      "tree": -0.33330985171357125,
+      "tree_minus_ridge": 0.0768553414814554
+    },
+    {
+      "fixed": -0.2834525025536262,
+      "known_labels": 88,
+      "month": "2023-01",
+      "ridge": 0.45463351061956264,
+      "tree": 0.019020112007326267,
+      "tree_minus_ridge": -0.43561339861223636
+    },
+    {
+      "fixed": 0.2954985734915995,
+      "known_labels": 88,
+      "month": "2023-02",
+      "ridge": -0.38325525694762436,
+      "tree": 0.030749181078510802,
+      "tree_minus_ridge": 0.4140044380261352
+    },
+    {
+      "fixed": 0.3461308161036949,
+      "known_labels": 88,
+      "month": "2023-03",
+      "ridge": -0.25860307844035085,
+      "tree": -0.08472755450670989,
+      "tree_minus_ridge": 0.17387552393364097
+    },
+    {
+      "fixed": -0.09897502729738299,
+      "known_labels": 88,
+      "month": "2023-04",
+      "ridge": -0.17035328096932129,
+      "tree": 0.07067380507907436,
+      "tree_minus_ridge": 0.24102708604839565
+    },
+    {
+      "fixed": 0.05188263886442888,
+      "known_labels": 88,
+      "month": "2023-05",
+      "ridge": 0.041738579127188195,
+      "tree": 0.015568313902292984,
+      "tree_minus_ridge": -0.02617026522489521
+    },
+    {
+      "fixed": 0.1584128773202776,
+      "known_labels": 88,
+      "month": "2023-06",
+      "ridge": 0.1394103765277729,
+      "tree": 0.015339368109612204,
+      "tree_minus_ridge": -0.12407100841816071
+    },
+    {
+      "fixed": -0.1766933183050967,
+      "known_labels": 88,
+      "month": "2023-07",
+      "ridge": 0.5495403472931564,
+      "tree": 0.2754393998097989,
+      "tree_minus_ridge": -0.27410094748335745
+    },
+    {
+      "fixed": 0.2387024056919447,
+      "known_labels": 88,
+      "month": "2023-08",
+      "ridge": -0.048237117396358005,
+      "tree": 0.07764784614842733,
+      "tree_minus_ridge": 0.12588496354478534
+    },
+    {
+      "fixed": 0.026452044662040795,
+      "known_labels": 88,
+      "month": "2023-09",
+      "ridge": -0.10948892254587723,
+      "tree": 0.05403120707266389,
+      "tree_minus_ridge": 0.16352012961854112
+    },
+    {
+      "fixed": 0.26633440174703255,
+      "known_labels": 88,
+      "month": "2023-10",
+      "ridge": -0.27440033813532466,
+      "tree": -0.11454334119967598,
+      "tree_minus_ridge": 0.1598569969356487
+    },
+    {
+      "fixed": -0.0890246909231799,
+      "known_labels": 88,
+      "month": "2023-11",
+      "ridge": 0.05401359585784229,
+      "tree": 0.05443626501356065,
+      "tree_minus_ridge": 0.00042266915571836233
+    },
+    {
+      "fixed": -0.2954281286323131,
+      "known_labels": 88,
+      "month": "2023-12",
+      "ridge": 0.3834842027403051,
+      "tree": 0.21029551618470646,
+      "tree_minus_ridge": -0.17318868655559863
+    }
+  ],
+  "new_paid_data_usd": 0,
+  "rank_correlation_intervals": {
+    "fixed": {
+      "caveat": "Twenty-four seen months give weak regime evidence. This resamples months, not independent stocks.",
+      "ci95": [
+        -1.2333965380267029e-05,
+        0.08865839477690506
+      ],
+      "expected_block_months": 12,
+      "mean": 0.04484700746324149,
+      "months": 24
+    },
+    "ridge": {
+      "caveat": "Twenty-four seen months give weak regime evidence. This resamples months, not independent stocks.",
+      "ci95": [
+        -0.12400107721930662,
+        0.01719417391661671
+      ],
+      "expected_block_months": 12,
+      "mean": -0.05394909478355817,
+      "months": 24
+    },
+    "tree": {
+      "caveat": "Twenty-four seen months give weak regime evidence. This resamples months, not independent stocks.",
+      "ci95": [
+        -0.06832929865293776,
+        0.02532469943526701
+      ],
+      "expected_block_months": 12,
+      "mean": -0.02193704284221526,
+      "months": 24
+    },
+    "tree_minus_ridge": {
+      "caveat": "Twenty-four seen months give weak regime evidence. This resamples months, not independent stocks.",
+      "ci95": [
+        -0.01485238132976412,
+        0.07750602450307023
+      ],
+      "expected_block_months": 12,
+      "mean": 0.032012051941342934,
+      "months": 24
+    }
+  },
+  "reserved_prices_opened": false,
+  "status": "EXPLORATORY_MODEL_COMPARISON_NO_VALIDATION_OR_LIVE_APPROVAL",
+  "yearly_mean_rank_correlations": {
+    "2022": {
+      "fixed": 0.05304067407903131,
+      "ridge": -0.13943840771136395,
+      "tree": -0.09586826224272953,
+      "tree_minus_ridge": 0.043570145468634434
+    },
+    "2023": {
+      "fixed": 0.036653340847451664,
+      "ridge": 0.03154021814424759,
+      "tree": 0.051994176558299,
+      "tree_minus_ridge": 0.02045395841405142
+    }
+  }
+}

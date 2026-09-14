@@ -1,0 +1,5882 @@
+[
+  {
+    "assets": {
+      "accn": "0000320193-19-000119",
+      "available": "2019-11-04",
+      "end": "2019-09-28",
+      "filed": "2019-10-31",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 338516000000
+    },
+    "cik": "0000320193",
+    "common_income_ttm": null,
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AAPL",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-19-000119",
+          "available": "2019-11-04",
+          "end": "2019-09-28",
+          "filed": "2019-10-31",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-09-30",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 55256000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 55256000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-19-000119",
+          "available": "2019-11-04",
+          "end": "2019-09-28",
+          "filed": "2019-10-31",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-09-30",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 69391000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 69391000000
+    },
+    "parent_equity": {
+      "accn": "0000320193-19-000119",
+      "available": "2019-11-04",
+      "end": "2019-09-28",
+      "filed": "2019-10-31",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 90488000000
+    },
+    "report_end": "2019-09-28",
+    "reported_common_shares": {
+      "accn": "0000320193-19-000119",
+      "available": "2019-11-04",
+      "end": "2019-10-18",
+      "filed": "2019-10-31",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 4443265000
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000320193-21-000105",
+      "available": "2021-11-02",
+      "end": "2021-09-25",
+      "filed": "2021-10-29",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 351002000000
+    },
+    "cik": "0000320193",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AAPL",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-21-000105",
+          "available": "2021-11-02",
+          "end": "2021-09-25",
+          "filed": "2021-10-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-09-27",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 94680000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 94680000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-21-000105",
+          "available": "2021-11-02",
+          "end": "2021-09-25",
+          "filed": "2021-10-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-09-27",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 104038000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 104038000000
+    },
+    "parent_equity": {
+      "accn": "0000320193-21-000105",
+      "available": "2021-11-02",
+      "end": "2021-09-25",
+      "filed": "2021-10-29",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 63090000000
+    },
+    "report_end": "2021-09-25",
+    "reported_common_shares": {
+      "accn": "0000320193-21-000105",
+      "available": "2021-11-02",
+      "end": "2021-10-15",
+      "filed": "2021-10-29",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 16406397000
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000320193-23-000064",
+      "available": "2023-05-09",
+      "end": "2023-04-01",
+      "filed": "2023-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 332160000000
+    },
+    "cik": "0000320193",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AAPL",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-22-000108",
+          "available": "2022-11-01",
+          "end": "2022-09-24",
+          "filed": "2022-10-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2021-09-26",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 99803000000
+        },
+        {
+          "accn": "0000320193-23-000064",
+          "available": "2023-05-09",
+          "end": "2023-04-01",
+          "filed": "2023-05-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-09-25",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 54158000000
+        },
+        {
+          "accn": "0000320193-23-000064",
+          "available": "2023-05-09",
+          "end": "2022-03-26",
+          "filed": "2023-05-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2021-09-26",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 59640000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 94321000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-22-000108",
+          "available": "2022-11-01",
+          "end": "2022-09-24",
+          "filed": "2022-10-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2021-09-26",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 122151000000
+        },
+        {
+          "accn": "0000320193-23-000064",
+          "available": "2023-05-09",
+          "end": "2023-04-01",
+          "filed": "2023-05-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-09-25",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 62565000000
+        },
+        {
+          "accn": "0000320193-23-000064",
+          "available": "2023-05-09",
+          "end": "2022-03-26",
+          "filed": "2023-05-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2021-09-26",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 75132000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 109584000000
+    },
+    "parent_equity": {
+      "accn": "0000320193-23-000064",
+      "available": "2023-05-09",
+      "end": "2023-04-01",
+      "filed": "2023-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 62158000000
+    },
+    "report_end": "2023-04-01",
+    "reported_common_shares": {
+      "accn": "0000320193-23-000064",
+      "available": "2023-05-09",
+      "end": "2023-04-21",
+      "filed": "2023-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 15728702000
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000320193-23-000106",
+      "available": "2023-11-07",
+      "end": "2023-09-30",
+      "filed": "2023-11-03",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 352583000000
+    },
+    "cik": "0000320193",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AAPL",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-23-000106",
+          "available": "2023-11-07",
+          "end": "2023-09-30",
+          "filed": "2023-11-03",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-09-25",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 96995000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 96995000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000320193-23-000106",
+          "available": "2023-11-07",
+          "end": "2023-09-30",
+          "filed": "2023-11-03",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-09-25",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 110543000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 110543000000
+    },
+    "parent_equity": {
+      "accn": "0000320193-23-000106",
+      "available": "2023-11-07",
+      "end": "2023-09-30",
+      "filed": "2023-11-03",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 62146000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": {
+      "accn": "0000320193-23-000106",
+      "available": "2023-11-07",
+      "end": "2023-10-20",
+      "filed": "2023-11-03",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 15552752000
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001564590-19-037549",
+      "available": "2019-10-25",
+      "end": "2019-09-30",
+      "filed": "2019-10-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2019Q3I",
+      "fy": 2020,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 278955000000
+    },
+    "cik": "0000789019",
+    "common_income_ttm": null,
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "MSFT",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001564590-19-027952",
+          "available": "2019-08-05",
+          "end": "2019-06-30",
+          "filed": "2019-08-01",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 39240000000
+        },
+        {
+          "accn": "0001564590-19-037549",
+          "available": "2019-10-25",
+          "end": "2019-09-30",
+          "filed": "2019-10-23",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2019-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 10678000000
+        },
+        {
+          "accn": "0001564590-19-037549",
+          "available": "2019-10-25",
+          "end": "2018-09-30",
+          "filed": "2019-10-23",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2018-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 8824000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 41094000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001564590-19-027952",
+          "available": "2019-08-05",
+          "end": "2019-06-30",
+          "filed": "2019-08-01",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 52185000000
+        },
+        {
+          "accn": "0001564590-19-037549",
+          "available": "2019-10-25",
+          "end": "2019-09-30",
+          "filed": "2019-10-23",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2019-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 13818000000
+        },
+        {
+          "accn": "0001564590-19-037549",
+          "available": "2019-10-25",
+          "end": "2018-09-30",
+          "filed": "2019-10-23",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2018Q3",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2018-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 13657000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 52346000000
+    },
+    "parent_equity": {
+      "accn": "0001564590-19-037549",
+      "available": "2019-10-25",
+      "end": "2019-09-30",
+      "filed": "2019-10-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2020,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 106061000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": {
+      "accn": "0001564590-19-037549",
+      "available": "2019-10-25",
+      "end": "2019-10-18",
+      "filed": "2019-10-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2019Q3I",
+      "fy": 2020,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 7628805618
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001564590-21-051992",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2021Q3I",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 335418000000
+    },
+    "cik": "0000789019",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "MSFT",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001564590-21-039151",
+          "available": "2021-08-02",
+          "end": "2021-06-30",
+          "filed": "2021-07-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 61271000000
+        },
+        {
+          "accn": "0001564590-21-051992",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2021-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 20505000000
+        },
+        {
+          "accn": "0001564590-21-051992",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2020Q3",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2020-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 13893000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 67883000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001564590-21-039151",
+          "available": "2021-08-02",
+          "end": "2021-06-30",
+          "filed": "2021-07-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 76740000000
+        },
+        {
+          "accn": "0001564590-21-051992",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2021-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 24540000000
+        },
+        {
+          "accn": "0001564590-21-051992",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2020Q3",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2020-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 19335000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 81945000000
+    },
+    "parent_equity": {
+      "accn": "0001564590-21-051992",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 151978000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": {
+      "accn": "0001564590-21-051992",
+      "available": "2021-10-28",
+      "end": "2021-10-21",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2021Q3I",
+      "fy": 2022,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 7507980444
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000950170-23-014423",
+      "available": "2023-04-27",
+      "end": "2023-03-31",
+      "filed": "2023-04-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 380088000000
+    },
+    "cik": "0000789019",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "MSFT",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001564590-22-026876",
+          "available": "2022-08-01",
+          "end": "2022-06-30",
+          "filed": "2022-07-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2021-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 72738000000
+        },
+        {
+          "accn": "0000950170-23-014423",
+          "available": "2023-04-27",
+          "end": "2023-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 52280000000
+        },
+        {
+          "accn": "0000950170-23-014423",
+          "available": "2023-04-27",
+          "end": "2022-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2021-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 55998000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 69020000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001564590-22-026876",
+          "available": "2022-08-01",
+          "end": "2022-06-30",
+          "filed": "2022-07-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2021-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 89035000000
+        },
+        {
+          "accn": "0000950170-23-014423",
+          "available": "2023-04-27",
+          "end": "2023-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 58812000000
+        },
+        {
+          "accn": "0000950170-23-014423",
+          "available": "2023-04-27",
+          "end": "2022-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2021-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 64406000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 83441000000
+    },
+    "parent_equity": {
+      "accn": "0000950170-23-014423",
+      "available": "2023-04-27",
+      "end": "2023-03-31",
+      "filed": "2023-04-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 194683000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": {
+      "accn": "0000950170-23-014423",
+      "available": "2023-04-27",
+      "end": "2023-04-20",
+      "filed": "2023-04-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 7435487575
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000950170-23-054855",
+      "available": "2023-10-26",
+      "end": "2023-09-30",
+      "filed": "2023-10-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q3I",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 445785000000
+    },
+    "cik": "0000789019",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "MSFT",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000950170-23-035122",
+          "available": "2023-07-31",
+          "end": "2023-06-30",
+          "filed": "2023-07-27",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 72361000000
+        },
+        {
+          "accn": "0000950170-23-054855",
+          "available": "2023-10-26",
+          "end": "2023-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2023-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 22291000000
+        },
+        {
+          "accn": "0000950170-23-054855",
+          "available": "2023-10-26",
+          "end": "2022-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q3",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2022-07-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 17556000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 77096000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000950170-23-035122",
+          "available": "2023-07-31",
+          "end": "2023-06-30",
+          "filed": "2023-07-27",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 87582000000
+        },
+        {
+          "accn": "0000950170-23-054855",
+          "available": "2023-10-26",
+          "end": "2023-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2023-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 30583000000
+        },
+        {
+          "accn": "0000950170-23-054855",
+          "available": "2023-10-26",
+          "end": "2022-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q3",
+          "fy": 2024,
+          "namespace": "us-gaap",
+          "start": "2022-07-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 23198000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 94967000000
+    },
+    "parent_equity": {
+      "accn": "0000950170-23-054855",
+      "available": "2023-10-26",
+      "end": "2023-09-30",
+      "filed": "2023-10-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2024,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 220714000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": {
+      "accn": "0000950170-23-054855",
+      "available": "2023-10-26",
+      "end": "2023-10-19",
+      "filed": "2023-10-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q3I",
+      "fy": 2024,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 7432262329
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000019617-19-000232",
+      "available": "2019-11-06",
+      "end": "2019-09-30",
+      "filed": "2019-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 2764661000000
+    },
+    "cik": "0000019617",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-19-000054",
+          "available": "2019-02-28",
+          "end": "2018-12-31",
+          "filed": "2019-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 30709000000
+        },
+        {
+          "accn": "0000019617-19-000232",
+          "available": "2019-11-06",
+          "end": "2019-09-30",
+          "filed": "2019-11-04",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 26551000000
+        },
+        {
+          "accn": "0000019617-19-000232",
+          "available": "2019-11-06",
+          "end": "2018-09-30",
+          "filed": "2019-11-04",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 24067000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 33193000000
+    },
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "JPM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-19-000054",
+          "available": "2019-02-28",
+          "end": "2018-12-31",
+          "filed": "2019-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 32474000000
+        },
+        {
+          "accn": "0000019617-19-000232",
+          "available": "2019-11-06",
+          "end": "2019-09-30",
+          "filed": "2019-11-04",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 27911000000
+        },
+        {
+          "accn": "0000019617-19-000232",
+          "available": "2019-11-06",
+          "end": "2018-09-30",
+          "filed": "2019-11-04",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 25408000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 34977000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-19-000054",
+          "available": "2019-02-28",
+          "end": "2018-12-31",
+          "filed": "2019-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 14187000000
+        },
+        {
+          "accn": "0000019617-19-000232",
+          "available": "2019-11-06",
+          "end": "2019-09-30",
+          "filed": "2019-11-04",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -77039000000
+        },
+        {
+          "accn": "0000019617-19-000232",
+          "available": "2019-11-06",
+          "end": "2018-09-30",
+          "filed": "2019-11-04",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 13765000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -76617000000
+    },
+    "parent_equity": {
+      "accn": "0000019617-19-000232",
+      "available": "2019-11-06",
+      "end": "2019-09-30",
+      "filed": "2019-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 264348000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": {
+      "accn": "0000019617-19-000232",
+      "available": "2019-11-06",
+      "end": "2019-09-30",
+      "filed": "2019-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 3136484924
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000019617-21-000458",
+      "available": "2021-11-04",
+      "end": "2021-09-30",
+      "filed": "2021-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 3757576000000
+    },
+    "cik": "0000019617",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-21-000236",
+          "available": "2021-02-25",
+          "end": "2020-12-31",
+          "filed": "2021-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 27410000000
+        },
+        {
+          "accn": "0000019617-21-000458",
+          "available": "2021-11-04",
+          "end": "2021-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 36576000000
+        },
+        {
+          "accn": "0000019617-21-000458",
+          "available": "2021-11-04",
+          "end": "2020-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 15712000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 48274000000
+    },
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "JPM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-21-000236",
+          "available": "2021-02-25",
+          "end": "2020-12-31",
+          "filed": "2021-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 29131000000
+        },
+        {
+          "accn": "0000019617-21-000458",
+          "available": "2021-11-04",
+          "end": "2021-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 37935000000
+        },
+        {
+          "accn": "0000019617-21-000458",
+          "available": "2021-11-04",
+          "end": "2020-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 16995000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 50071000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-21-000236",
+          "available": "2021-02-25",
+          "end": "2020-12-31",
+          "filed": "2021-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -79910000000
+        },
+        {
+          "accn": "0000019617-21-000458",
+          "available": "2021-11-04",
+          "end": "2021-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -7011000000
+        },
+        {
+          "accn": "0000019617-21-000458",
+          "available": "2021-11-04",
+          "end": "2020-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -51858000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -35063000000
+    },
+    "parent_equity": {
+      "accn": "0000019617-21-000458",
+      "available": "2021-11-04",
+      "end": "2021-09-30",
+      "filed": "2021-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 290041000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": {
+      "accn": "0000019617-21-000458",
+      "available": "2021-11-04",
+      "end": "2021-09-30",
+      "filed": "2021-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2955266061
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000019617-23-000310",
+      "available": "2023-05-05",
+      "end": "2023-03-31",
+      "filed": "2023-05-03",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 3744305000000
+    },
+    "cik": "0000019617",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-23-000231",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 35892000000
+        },
+        {
+          "accn": "0000019617-23-000310",
+          "available": "2023-05-05",
+          "end": "2023-03-31",
+          "filed": "2023-05-03",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 12193000000
+        },
+        {
+          "accn": "0000019617-23-000310",
+          "available": "2023-05-05",
+          "end": "2022-03-31",
+          "filed": "2023-05-03",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 7845000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 40240000000
+    },
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "JPM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-23-000231",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 37676000000
+        },
+        {
+          "accn": "0000019617-23-000310",
+          "available": "2023-05-05",
+          "end": "2023-03-31",
+          "filed": "2023-05-03",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 12622000000
+        },
+        {
+          "accn": "0000019617-23-000310",
+          "available": "2023-05-05",
+          "end": "2022-03-31",
+          "filed": "2023-05-03",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 8282000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 42016000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-23-000231",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 107119000000
+        },
+        {
+          "accn": "0000019617-23-000310",
+          "available": "2023-05-05",
+          "end": "2023-03-31",
+          "filed": "2023-05-03",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -111241000000
+        },
+        {
+          "accn": "0000019617-23-000310",
+          "available": "2023-05-05",
+          "end": "2022-03-31",
+          "filed": "2023-05-03",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -41917000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 37795000000
+    },
+    "parent_equity": {
+      "accn": "0000019617-23-000310",
+      "available": "2023-05-05",
+      "end": "2023-03-31",
+      "filed": "2023-05-03",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 303082000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": {
+      "accn": "0000019617-23-000310",
+      "available": "2023-05-05",
+      "end": "2023-03-31",
+      "filed": "2023-05-03",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2922288509
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000019617-23-000524",
+      "available": "2023-11-03",
+      "end": "2023-09-30",
+      "filed": "2023-11-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 3898333000000
+    },
+    "cik": "0000019617",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-23-000231",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 35892000000
+        },
+        {
+          "accn": "0000019617-23-000524",
+          "available": "2023-11-03",
+          "end": "2023-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 38889000000
+        },
+        {
+          "accn": "0000019617-23-000524",
+          "available": "2023-11-03",
+          "end": "2022-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 25295000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 49486000000
+    },
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "JPM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-23-000231",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 37676000000
+        },
+        {
+          "accn": "0000019617-23-000524",
+          "available": "2023-11-03",
+          "end": "2023-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 40245000000
+        },
+        {
+          "accn": "0000019617-23-000524",
+          "available": "2023-11-03",
+          "end": "2022-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 26668000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 51253000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000019617-23-000231",
+          "available": "2023-02-23",
+          "end": "2022-12-31",
+          "filed": "2023-02-21",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 107119000000
+        },
+        {
+          "accn": "0000019617-23-000524",
+          "available": "2023-11-03",
+          "end": "2023-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -47257000000
+        },
+        {
+          "accn": "0000019617-23-000524",
+          "available": "2023-11-03",
+          "end": "2022-09-30",
+          "filed": "2023-11-01",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 5897000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 53965000000
+    },
+    "parent_equity": {
+      "accn": "0000019617-23-000524",
+      "available": "2023-11-03",
+      "end": "2023-09-30",
+      "filed": "2023-11-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 317371000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": {
+      "accn": "0000019617-23-000524",
+      "available": "2023-11-03",
+      "end": "2023-09-30",
+      "filed": "2023-11-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2891008341
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000034088-19-000062",
+      "available": "2019-11-08",
+      "end": "2019-09-30",
+      "filed": "2019-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 359361000000
+    },
+    "cik": "0000034088",
+    "common_income_ttm": null,
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "XOM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-19-000010",
+          "available": "2019-03-01",
+          "end": "2018-12-31",
+          "filed": "2019-02-27",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 20840000000
+        },
+        {
+          "accn": "0000034088-19-000062",
+          "available": "2019-11-08",
+          "end": "2019-09-30",
+          "filed": "2019-11-06",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 8650000000
+        },
+        {
+          "accn": "0000034088-19-000062",
+          "available": "2019-11-08",
+          "end": "2018-09-30",
+          "filed": "2019-11-06",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 14840000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 14650000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-19-000010",
+          "available": "2019-03-01",
+          "end": "2018-12-31",
+          "filed": "2019-02-27",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 36014000000
+        },
+        {
+          "accn": "0000034088-19-000062",
+          "available": "2019-11-08",
+          "end": "2019-09-30",
+          "filed": "2019-11-06",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 23364000000
+        },
+        {
+          "accn": "0000034088-19-000062",
+          "available": "2019-11-08",
+          "end": "2018-09-30",
+          "filed": "2019-11-06",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 27407000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 31971000000
+    },
+    "parent_equity": {
+      "accn": "0000034088-19-000062",
+      "available": "2019-11-08",
+      "end": "2019-09-30",
+      "filed": "2019-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 189915000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": {
+      "accn": "0000034088-19-000062",
+      "available": "2019-11-08",
+      "end": "2019-09-30",
+      "filed": "2019-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 4231106066
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000034088-21-000064",
+      "available": "2021-11-05",
+      "end": "2021-09-30",
+      "filed": "2021-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 336688000000
+    },
+    "cik": "0000034088",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "XOM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-21-000012",
+          "available": "2021-02-26",
+          "end": "2020-12-31",
+          "filed": "2021-02-24",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -22440000000
+        },
+        {
+          "accn": "0000034088-21-000064",
+          "available": "2021-11-05",
+          "end": "2021-09-30",
+          "filed": "2021-11-03",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 14170000000
+        },
+        {
+          "accn": "0000034088-21-000064",
+          "available": "2021-11-05",
+          "end": "2020-09-30",
+          "filed": "2021-11-03",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -2370000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -5900000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-21-000012",
+          "available": "2021-02-26",
+          "end": "2020-12-31",
+          "filed": "2021-02-24",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 14668000000
+        },
+        {
+          "accn": "0000034088-21-000064",
+          "available": "2021-11-05",
+          "end": "2021-09-30",
+          "filed": "2021-11-03",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 31005000000
+        },
+        {
+          "accn": "0000034088-21-000064",
+          "available": "2021-11-05",
+          "end": "2020-09-30",
+          "filed": "2021-11-03",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 10663000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 35010000000
+    },
+    "parent_equity": {
+      "accn": "0000034088-21-000064",
+      "available": "2021-11-05",
+      "end": "2021-09-30",
+      "filed": "2021-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 160589000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": {
+      "accn": "0000034088-21-000064",
+      "available": "2021-11-05",
+      "end": "2021-09-30",
+      "filed": "2021-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 4233566839
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000034088-23-000030",
+      "available": "2023-05-04",
+      "end": "2023-03-31",
+      "filed": "2023-05-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 369371000000
+    },
+    "cik": "0000034088",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "XOM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-23-000020",
+          "available": "2023-02-24",
+          "end": "2022-12-31",
+          "filed": "2023-02-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 55740000000
+        },
+        {
+          "accn": "0000034088-23-000030",
+          "available": "2023-05-04",
+          "end": "2023-03-31",
+          "filed": "2023-05-02",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 11430000000
+        },
+        {
+          "accn": "0000034088-23-000030",
+          "available": "2023-05-04",
+          "end": "2022-03-31",
+          "filed": "2023-05-02",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 5480000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 61690000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-23-000020",
+          "available": "2023-02-24",
+          "end": "2022-12-31",
+          "filed": "2023-02-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 76797000000
+        },
+        {
+          "accn": "0000034088-23-000030",
+          "available": "2023-05-04",
+          "end": "2023-03-31",
+          "filed": "2023-05-02",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 16341000000
+        },
+        {
+          "accn": "0000034088-23-000030",
+          "available": "2023-05-04",
+          "end": "2022-03-31",
+          "filed": "2023-05-02",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 14788000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 78350000000
+    },
+    "parent_equity": {
+      "accn": "0000034088-23-000030",
+      "available": "2023-05-04",
+      "end": "2023-03-31",
+      "filed": "2023-05-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 198685000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": {
+      "accn": "0000034088-23-000030",
+      "available": "2023-05-04",
+      "end": "2023-03-31",
+      "filed": "2023-05-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 4042984946
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000034088-23-000056",
+      "available": "2023-11-02",
+      "end": "2023-09-30",
+      "filed": "2023-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 372259000000
+    },
+    "cik": "0000034088",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "XOM",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-23-000020",
+          "available": "2023-02-24",
+          "end": "2022-12-31",
+          "filed": "2023-02-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 55740000000
+        },
+        {
+          "accn": "0000034088-23-000056",
+          "available": "2023-11-02",
+          "end": "2023-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 28380000000
+        },
+        {
+          "accn": "0000034088-23-000056",
+          "available": "2023-11-02",
+          "end": "2022-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 42990000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 41130000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000034088-23-000020",
+          "available": "2023-02-24",
+          "end": "2022-12-31",
+          "filed": "2023-02-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 76797000000
+        },
+        {
+          "accn": "0000034088-23-000056",
+          "available": "2023-11-02",
+          "end": "2023-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 41687000000
+        },
+        {
+          "accn": "0000034088-23-000056",
+          "available": "2023-11-02",
+          "end": "2022-09-30",
+          "filed": "2023-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 59176000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 59308000000
+    },
+    "parent_equity": {
+      "accn": "0000034088-23-000056",
+      "available": "2023-11-02",
+      "end": "2023-09-30",
+      "filed": "2023-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 199703000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": {
+      "accn": "0000034088-23-000056",
+      "available": "2023-11-02",
+      "end": "2023-09-30",
+      "filed": "2023-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 3962917886
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000200406-19-000066",
+      "available": "2019-10-30",
+      "end": "2019-09-29",
+      "filed": "2019-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 155521000000
+    },
+    "cik": "0000200406",
+    "common_income_ttm": null,
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "JNJ",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-19-000009",
+          "available": "2019-02-22",
+          "end": "2018-12-30",
+          "filed": "2019-02-20",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 15297000000
+        },
+        {
+          "accn": "0000200406-19-000066",
+          "available": "2019-10-30",
+          "end": "2019-09-29",
+          "filed": "2019-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-12-31",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 11109000000
+        },
+        {
+          "accn": "0000200406-19-000066",
+          "available": "2019-10-30",
+          "end": "2018-09-30",
+          "filed": "2019-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 12255000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 14151000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-19-000009",
+          "available": "2019-02-22",
+          "end": "2018-12-30",
+          "filed": "2019-02-20",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 22201000000
+        },
+        {
+          "accn": "0000200406-19-000066",
+          "available": "2019-10-30",
+          "end": "2019-09-29",
+          "filed": "2019-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-12-31",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 17018000000
+        },
+        {
+          "accn": "0000200406-19-000066",
+          "available": "2019-10-30",
+          "end": "2018-09-30",
+          "filed": "2019-10-28",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 15957000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 23262000000
+    },
+    "parent_equity": null,
+    "report_end": "2019-09-29",
+    "reported_common_shares": {
+      "accn": "0000200406-19-000066",
+      "available": "2019-10-30",
+      "end": "2019-10-22",
+      "filed": "2019-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2631872399
+    },
+    "required_raw_accounting_fields_available": false
+  },
+  {
+    "assets": {
+      "accn": "0000200406-21-000070",
+      "available": "2021-11-02",
+      "end": "2021-10-03",
+      "filed": "2021-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 179228000000
+    },
+    "cik": "0000200406",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "JNJ",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-21-000008",
+          "available": "2021-02-24",
+          "end": "2021-01-03",
+          "filed": "2021-02-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2019-12-30",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 14714000000
+        },
+        {
+          "accn": "0000200406-21-000070",
+          "available": "2021-11-02",
+          "end": "2021-10-03",
+          "filed": "2021-10-29",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-04",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 16142000000
+        },
+        {
+          "accn": "0000200406-21-000070",
+          "available": "2021-11-02",
+          "end": "2020-09-27",
+          "filed": "2021-10-29",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2019-12-30",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 12976000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 17880000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-21-000008",
+          "available": "2021-02-24",
+          "end": "2021-01-03",
+          "filed": "2021-02-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2019-12-30",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 23536000000
+        },
+        {
+          "accn": "0000200406-21-000070",
+          "available": "2021-11-02",
+          "end": "2021-10-03",
+          "filed": "2021-10-29",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-04",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 17678000000
+        },
+        {
+          "accn": "0000200406-21-000070",
+          "available": "2021-11-02",
+          "end": "2020-09-27",
+          "filed": "2021-10-29",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2019-12-30",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 15193000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 26021000000
+    },
+    "parent_equity": null,
+    "report_end": "2021-10-03",
+    "reported_common_shares": {
+      "accn": "0000200406-21-000070",
+      "available": "2021-11-02",
+      "end": "2021-10-22",
+      "filed": "2021-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2632596969
+    },
+    "required_raw_accounting_fields_available": false
+  },
+  {
+    "assets": {
+      "accn": "0000200406-23-000056",
+      "available": "2023-05-02",
+      "end": "2023-04-02",
+      "filed": "2023-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 195969000000
+    },
+    "cik": "0000200406",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "JNJ",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-23-000016",
+          "available": "2023-02-21",
+          "end": "2023-01-01",
+          "filed": "2023-02-16",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 17941000000
+        },
+        {
+          "accn": "0000200406-23-000056",
+          "available": "2023-05-02",
+          "end": "2023-04-02",
+          "filed": "2023-04-28",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-02",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -68000000
+        },
+        {
+          "accn": "0000200406-23-000056",
+          "available": "2023-05-02",
+          "end": "2022-04-03",
+          "filed": "2023-04-28",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 5149000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 12724000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-23-000016",
+          "available": "2023-02-21",
+          "end": "2023-01-01",
+          "filed": "2023-02-16",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 21194000000
+        },
+        {
+          "accn": "0000200406-23-000056",
+          "available": "2023-05-02",
+          "end": "2023-04-02",
+          "filed": "2023-04-28",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-02",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 3257000000
+        },
+        {
+          "accn": "0000200406-23-000056",
+          "available": "2023-05-02",
+          "end": "2022-04-03",
+          "filed": "2023-04-28",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 3979000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 20472000000
+    },
+    "parent_equity": null,
+    "report_end": "2023-04-02",
+    "reported_common_shares": {
+      "accn": "0000200406-23-000056",
+      "available": "2023-05-02",
+      "end": "2023-04-21",
+      "filed": "2023-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2598734075
+    },
+    "required_raw_accounting_fields_available": false
+  },
+  {
+    "assets": {
+      "accn": "0000200406-23-000102",
+      "available": "2023-10-31",
+      "end": "2023-10-01",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 166061000000
+    },
+    "cik": "0000200406",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "JNJ",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-23-000016",
+          "available": "2023-02-21",
+          "end": "2023-01-01",
+          "filed": "2023-02-16",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 17941000000
+        },
+        {
+          "accn": "0000200406-23-000102",
+          "available": "2023-10-31",
+          "end": "2023-10-01",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-02",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 31104000000
+        },
+        {
+          "accn": "0000200406-23-000102",
+          "available": "2023-10-31",
+          "end": "2022-10-02",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 14421000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 34624000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000200406-23-000016",
+          "available": "2023-02-21",
+          "end": "2023-01-01",
+          "filed": "2023-02-16",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 21194000000
+        },
+        {
+          "accn": "0000200406-23-000102",
+          "available": "2023-10-31",
+          "end": "2023-10-01",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-02",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 14928000000
+        },
+        {
+          "accn": "0000200406-23-000102",
+          "available": "2023-10-31",
+          "end": "2022-10-02",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-03",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 15844000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 20278000000
+    },
+    "parent_equity": {
+      "accn": "0000200406-23-000102",
+      "available": "2023-10-31",
+      "end": "2023-10-01",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 71228000000
+    },
+    "report_end": "2023-10-01",
+    "reported_common_shares": {
+      "accn": "0000200406-23-000102",
+      "available": "2023-10-31",
+      "end": "2023-10-23",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 2407278620
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001018724-19-000089",
+      "available": "2019-10-29",
+      "end": "2019-09-30",
+      "filed": "2019-10-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 199099000000
+    },
+    "cik": "0001018724",
+    "common_income_ttm": null,
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AMZN",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-19-000089",
+          "available": "2019-10-29",
+          "end": "2019-09-30",
+          "filed": "2019-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-10-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 11347000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 11347000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-19-000089",
+          "available": "2019-10-29",
+          "end": "2019-09-30",
+          "filed": "2019-10-25",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-10-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 35332000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 35332000000
+    },
+    "parent_equity": {
+      "accn": "0001018724-19-000089",
+      "available": "2019-10-29",
+      "end": "2019-09-30",
+      "filed": "2019-10-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 56508000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": {
+      "accn": "0001018724-19-000089",
+      "available": "2019-10-29",
+      "end": "2019-10-16",
+      "filed": "2019-10-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 495797220
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001018724-21-000028",
+      "available": "2021-11-02",
+      "end": "2021-09-30",
+      "filed": "2021-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 382406000000
+    },
+    "cik": "0001018724",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AMZN",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-21-000028",
+          "available": "2021-11-02",
+          "end": "2021-09-30",
+          "filed": "2021-10-29",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-10-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 26263000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 26263000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-21-000028",
+          "available": "2021-11-02",
+          "end": "2021-09-30",
+          "filed": "2021-10-29",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-10-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 54671000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 54671000000
+    },
+    "parent_equity": {
+      "accn": "0001018724-21-000028",
+      "available": "2021-11-02",
+      "end": "2021-09-30",
+      "filed": "2021-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 120564000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": {
+      "accn": "0001018724-21-000028",
+      "available": "2021-11-02",
+      "end": "2021-10-20",
+      "filed": "2021-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 507147620
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001018724-23-000008",
+      "available": "2023-05-02",
+      "end": "2023-03-31",
+      "filed": "2023-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 464378000000
+    },
+    "cik": "0001018724",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AMZN",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-23-000008",
+          "available": "2023-05-02",
+          "end": "2023-03-31",
+          "filed": "2023-04-28",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-04-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 4294000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 4294000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-23-000008",
+          "available": "2023-05-02",
+          "end": "2023-03-31",
+          "filed": "2023-04-28",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-04-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 54330000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 54330000000
+    },
+    "parent_equity": {
+      "accn": "0001018724-23-000008",
+      "available": "2023-05-02",
+      "end": "2023-03-31",
+      "filed": "2023-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 154526000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": {
+      "accn": "0001018724-23-000008",
+      "available": "2023-05-02",
+      "end": "2023-04-19",
+      "filed": "2023-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 10260353688
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001018724-23-000018",
+      "available": "2023-10-31",
+      "end": "2023-09-30",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 486883000000
+    },
+    "cik": "0001018724",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "AMZN",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-23-000018",
+          "available": "2023-10-31",
+          "end": "2023-09-30",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-10-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 20079000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 20079000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001018724-23-000018",
+          "available": "2023-10-31",
+          "end": "2023-09-30",
+          "filed": "2023-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-10-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 71654000000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": 71654000000
+    },
+    "parent_equity": {
+      "accn": "0001018724-23-000018",
+      "available": "2023-10-31",
+      "end": "2023-09-30",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 182973000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": {
+      "accn": "0001018724-23-000018",
+      "available": "2023-10-31",
+      "end": "2023-10-18",
+      "filed": "2023-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 10334030586
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000040545-19-000069",
+      "available": "2019-11-01",
+      "end": "2019-09-30",
+      "filed": "2019-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 263009000000
+    },
+    "cik": "0000040545",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-19-000014",
+          "available": "2019-02-28",
+          "end": "2018-12-31",
+          "filed": "2019-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -22802000000
+        },
+        {
+          "accn": "0000040545-19-000069",
+          "available": "2019-11-01",
+          "end": "2019-09-30",
+          "filed": "2019-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -5977000000
+        },
+        {
+          "accn": "0000040545-19-000069",
+          "available": "2019-11-01",
+          "end": "2018-09-30",
+          "filed": "2019-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -23376000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -5403000000
+    },
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "GE",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-19-000014",
+          "available": "2019-02-28",
+          "end": "2018-12-31",
+          "filed": "2019-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -22355000000
+        },
+        {
+          "accn": "0000040545-19-000069",
+          "available": "2019-11-01",
+          "end": "2019-09-30",
+          "filed": "2019-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -5707000000
+        },
+        {
+          "accn": "0000040545-19-000069",
+          "available": "2019-11-01",
+          "end": "2018-09-30",
+          "filed": "2019-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -23116000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -4946000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-19-000014",
+          "available": "2019-02-28",
+          "end": "2018-12-31",
+          "filed": "2019-02-26",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 4246000000
+        },
+        {
+          "accn": "0000040545-19-000069",
+          "available": "2019-11-01",
+          "end": "2019-09-30",
+          "filed": "2019-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 2033000000
+        },
+        {
+          "accn": "0000040545-19-000069",
+          "available": "2019-11-01",
+          "end": "2018-09-30",
+          "filed": "2019-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -3589000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 9868000000
+    },
+    "parent_equity": {
+      "accn": "0000040545-19-000069",
+      "available": "2019-11-01",
+      "end": "2019-09-30",
+      "filed": "2019-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 27935000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": {
+      "accn": "0000040545-19-000069",
+      "available": "2019-11-01",
+      "end": "2019-09-30",
+      "filed": "2019-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 8733549000
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000040545-21-000064",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 237133000000
+    },
+    "cik": "0000040545",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-21-000011",
+          "available": "2021-02-17",
+          "end": "2020-12-31",
+          "filed": "2021-02-12",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 5230000000
+        },
+        {
+          "accn": "0000040545-21-000064",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -2857000000
+        },
+        {
+          "accn": "0000040545-21-000064",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 2787000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -414000000
+    },
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "GE",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-21-000011",
+          "available": "2021-02-17",
+          "end": "2020-12-31",
+          "filed": "2021-02-12",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 5704000000
+        },
+        {
+          "accn": "0000040545-21-000064",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -2677000000
+        },
+        {
+          "accn": "0000040545-21-000064",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 3068000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -41000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-21-000011",
+          "available": "2021-02-17",
+          "end": "2020-12-31",
+          "filed": "2021-02-12",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 3597000000
+        },
+        {
+          "accn": "0000040545-21-000064",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 900000000
+        },
+        {
+          "accn": "0000040545-21-000064",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -60000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 4557000000
+    },
+    "parent_equity": {
+      "accn": "0000040545-21-000064",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 37477000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": {
+      "accn": "0000040545-21-000064",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 1098137128
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000040545-23-000136",
+      "available": "2023-04-27",
+      "end": "2023-03-31",
+      "filed": "2023-04-25",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 164472000000
+    },
+    "cik": "0000040545",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-23-000023",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -64000000
+        },
+        {
+          "accn": "0000040545-23-000136",
+          "available": "2023-04-27",
+          "end": "2023-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 7360000000
+        },
+        {
+          "accn": "0000040545-23-000136",
+          "available": "2023-04-27",
+          "end": "2022-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -1188000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 8484000000
+    },
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "GE",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-23-000023",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 225000000
+        },
+        {
+          "accn": "0000040545-23-000136",
+          "available": "2023-04-27",
+          "end": "2023-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 7506000000
+        },
+        {
+          "accn": "0000040545-23-000136",
+          "available": "2023-04-27",
+          "end": "2022-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -1136000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 8867000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-23-000023",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 5916000000
+        },
+        {
+          "accn": "0000040545-23-000136",
+          "available": "2023-04-27",
+          "end": "2023-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -259000000
+        },
+        {
+          "accn": "0000040545-23-000136",
+          "available": "2023-04-27",
+          "end": "2022-03-31",
+          "filed": "2023-04-25",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -556000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 6213000000
+    },
+    "parent_equity": {
+      "accn": "0000040545-23-000136",
+      "available": "2023-04-27",
+      "end": "2023-03-31",
+      "filed": "2023-04-25",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 31652000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": {
+      "accn": "0000040545-23-000136",
+      "available": "2023-04-27",
+      "end": "2023-03-31",
+      "filed": "2023-04-25",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 1088960029
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000040545-23-000238",
+      "available": "2023-10-26",
+      "end": "2023-09-30",
+      "filed": "2023-10-24",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 156662000000
+    },
+    "cik": "0000040545",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-23-000023",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -64000000
+        },
+        {
+          "accn": "0000040545-23-000238",
+          "available": "2023-10-26",
+          "end": "2023-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 7594000000
+        },
+        {
+          "accn": "0000040545-23-000238",
+          "available": "2023-10-26",
+          "end": "2022-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -2049000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 9579000000
+    },
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "GE",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-23-000023",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 225000000
+        },
+        {
+          "accn": "0000040545-23-000238",
+          "available": "2023-10-26",
+          "end": "2023-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 7889000000
+        },
+        {
+          "accn": "0000040545-23-000238",
+          "available": "2023-10-26",
+          "end": "2022-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -1857000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 9971000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000040545-23-000023",
+          "available": "2023-02-14",
+          "end": "2022-12-31",
+          "filed": "2023-02-10",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 5916000000
+        },
+        {
+          "accn": "0000040545-23-000238",
+          "available": "2023-10-26",
+          "end": "2023-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 2038000000
+        },
+        {
+          "accn": "0000040545-23-000238",
+          "available": "2023-10-26",
+          "end": "2022-09-30",
+          "filed": "2023-10-24",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 1417000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 6537000000
+    },
+    "parent_equity": {
+      "accn": "0000040545-23-000238",
+      "available": "2023-10-26",
+      "end": "2023-09-30",
+      "filed": "2023-10-24",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 28665000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": {
+      "accn": "0000040545-23-000238",
+      "available": "2023-10-26",
+      "end": "2023-09-30",
+      "filed": "2023-10-24",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 1088386043
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001326801-19-000069",
+      "available": "2019-11-04",
+      "end": "2019-09-30",
+      "filed": "2019-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 124418000000
+    },
+    "cik": "0001326801",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-19-000009",
+          "available": "2019-02-04",
+          "end": "2018-12-31",
+          "filed": "2019-01-31",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 22111000000
+        },
+        {
+          "accn": "0001326801-19-000069",
+          "available": "2019-11-04",
+          "end": "2019-09-30",
+          "filed": "2019-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 11136000000
+        },
+        {
+          "accn": "0001326801-19-000069",
+          "available": "2019-11-04",
+          "end": "2018-09-30",
+          "filed": "2019-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 15229000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 18018000000
+    },
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "NO_ENTITY_WIDE_COMMON_SHARE_COUNT_IN_COMPANYFACTS"
+    ],
+    "label": "META",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-19-000009",
+          "available": "2019-02-04",
+          "end": "2018-12-31",
+          "filed": "2019-01-31",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 22112000000
+        },
+        {
+          "accn": "0001326801-19-000069",
+          "available": "2019-11-04",
+          "end": "2019-09-30",
+          "filed": "2019-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 11136000000
+        },
+        {
+          "accn": "0001326801-19-000069",
+          "available": "2019-11-04",
+          "end": "2018-09-30",
+          "filed": "2019-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 15230000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 18018000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-19-000009",
+          "available": "2019-02-04",
+          "end": "2018-12-31",
+          "filed": "2019-01-31",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 29274000000
+        },
+        {
+          "accn": "0001326801-19-000069",
+          "available": "2019-11-04",
+          "end": "2019-09-30",
+          "filed": "2019-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 27231000000
+        },
+        {
+          "accn": "0001326801-19-000069",
+          "available": "2019-11-04",
+          "end": "2018-09-30",
+          "filed": "2019-10-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 21656000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 34849000000
+    },
+    "parent_equity": {
+      "accn": "0001326801-19-000069",
+      "available": "2019-11-04",
+      "end": "2019-09-30",
+      "filed": "2019-10-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 93999000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": null,
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001326801-21-000065",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 169585000000
+    },
+    "cik": "0001326801",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "NO_ENTITY_WIDE_COMMON_SHARE_COUNT_IN_COMPANYFACTS",
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "META",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-21-000014",
+          "available": "2021-02-01",
+          "end": "2020-12-31",
+          "filed": "2021-01-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 29146000000
+        },
+        {
+          "accn": "0001326801-21-000065",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 29085000000
+        },
+        {
+          "accn": "0001326801-21-000065",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 17927000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 40304000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-21-000014",
+          "available": "2021-02-01",
+          "end": "2020-12-31",
+          "filed": "2021-01-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 38747000000
+        },
+        {
+          "accn": "0001326801-21-000065",
+          "available": "2021-10-28",
+          "end": "2021-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 39579000000
+        },
+        {
+          "accn": "0001326801-21-000065",
+          "available": "2021-10-28",
+          "end": "2020-09-30",
+          "filed": "2021-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 24707000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 53619000000
+    },
+    "parent_equity": {
+      "accn": "0001326801-21-000065",
+      "available": "2021-10-28",
+      "end": "2021-09-30",
+      "filed": "2021-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 133360000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": null,
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001326801-23-000067",
+      "available": "2023-05-01",
+      "end": "2023-03-31",
+      "filed": "2023-04-27",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 184491000000
+    },
+    "cik": "0001326801",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "NO_ENTITY_WIDE_COMMON_SHARE_COUNT_IN_COMPANYFACTS",
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "META",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-23-000013",
+          "available": "2023-02-06",
+          "end": "2022-12-31",
+          "filed": "2023-02-02",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 23200000000
+        },
+        {
+          "accn": "0001326801-23-000067",
+          "available": "2023-05-01",
+          "end": "2023-03-31",
+          "filed": "2023-04-27",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 5709000000
+        },
+        {
+          "accn": "0001326801-23-000067",
+          "available": "2023-05-01",
+          "end": "2022-03-31",
+          "filed": "2023-04-27",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 7465000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 21444000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-23-000013",
+          "available": "2023-02-06",
+          "end": "2022-12-31",
+          "filed": "2023-02-02",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 50475000000
+        },
+        {
+          "accn": "0001326801-23-000067",
+          "available": "2023-05-01",
+          "end": "2023-03-31",
+          "filed": "2023-04-27",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 13998000000
+        },
+        {
+          "accn": "0001326801-23-000067",
+          "available": "2023-05-01",
+          "end": "2022-03-31",
+          "filed": "2023-04-27",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 14076000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 50397000000
+    },
+    "parent_equity": {
+      "accn": "0001326801-23-000067",
+      "available": "2023-05-01",
+      "end": "2023-03-31",
+      "filed": "2023-04-27",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 124795000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": null,
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001326801-23-000103",
+      "available": "2023-10-30",
+      "end": "2023-09-30",
+      "filed": "2023-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2023Q3I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 216274000000
+    },
+    "cik": "0001326801",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "NO_ENTITY_WIDE_COMMON_SHARE_COUNT_IN_COMPANYFACTS",
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "META",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-23-000013",
+          "available": "2023-02-06",
+          "end": "2022-12-31",
+          "filed": "2023-02-02",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 23200000000
+        },
+        {
+          "accn": "0001326801-23-000103",
+          "available": "2023-10-30",
+          "end": "2023-09-30",
+          "filed": "2023-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 25081000000
+        },
+        {
+          "accn": "0001326801-23-000103",
+          "available": "2023-10-30",
+          "end": "2022-09-30",
+          "filed": "2023-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 18547000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 29734000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001326801-23-000013",
+          "available": "2023-02-06",
+          "end": "2022-12-31",
+          "filed": "2023-02-02",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 50475000000
+        },
+        {
+          "accn": "0001326801-23-000103",
+          "available": "2023-10-30",
+          "end": "2023-09-30",
+          "filed": "2023-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 51709000000
+        },
+        {
+          "accn": "0001326801-23-000103",
+          "available": "2023-10-30",
+          "end": "2022-09-30",
+          "filed": "2023-10-26",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 35964000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 66220000000
+    },
+    "parent_equity": {
+      "accn": "0001326801-23-000103",
+      "available": "2023-10-30",
+      "end": "2023-09-30",
+      "filed": "2023-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 142873000000
+    },
+    "report_end": "2023-09-30",
+    "reported_common_shares": null,
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000718877-19-000021",
+      "available": "2019-11-11",
+      "end": "2019-09-30",
+      "filed": "2019-11-07",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 17805000000
+    },
+    "cik": "0000718877",
+    "common_income_ttm": null,
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "ATVI",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001047469-19-000788",
+          "available": "2019-03-04",
+          "end": "2018-12-31",
+          "filed": "2019-02-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1813000000
+        },
+        {
+          "accn": "0000718877-19-000021",
+          "available": "2019-11-11",
+          "end": "2019-09-30",
+          "filed": "2019-11-07",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 978000000
+        },
+        {
+          "accn": "0000718877-19-000021",
+          "available": "2019-11-11",
+          "end": "2018-09-30",
+          "filed": "2019-11-07",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1162000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1629000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001047469-19-000788",
+          "available": "2019-03-04",
+          "end": "2018-12-31",
+          "filed": "2019-02-28",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 1790000000
+        },
+        {
+          "accn": "0000718877-19-000021",
+          "available": "2019-11-11",
+          "end": "2019-09-30",
+          "filed": "2019-11-07",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 913000000
+        },
+        {
+          "accn": "0000718877-19-000021",
+          "available": "2019-11-11",
+          "end": "2018-09-30",
+          "filed": "2019-11-07",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 791000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1912000000
+    },
+    "parent_equity": {
+      "accn": "0000718877-19-000021",
+      "available": "2019-11-11",
+      "end": "2019-09-30",
+      "filed": "2019-11-07",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 12235000000
+    },
+    "report_end": "2019-09-30",
+    "reported_common_shares": {
+      "accn": "0000718877-19-000021",
+      "available": "2019-11-11",
+      "end": "2019-10-31",
+      "filed": "2019-11-07",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 768260070
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001628280-21-021200",
+      "available": "2021-11-04",
+      "end": "2021-09-30",
+      "filed": "2021-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 23977000000
+    },
+    "cik": "0000718877",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "ATVI",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-21-002828",
+          "available": "2021-02-25",
+          "end": "2020-12-31",
+          "filed": "2021-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2197000000
+        },
+        {
+          "accn": "0001628280-21-021200",
+          "available": "2021-11-04",
+          "end": "2021-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 2135000000
+        },
+        {
+          "accn": "0001628280-21-021200",
+          "available": "2021-11-04",
+          "end": "2020-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1688000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2644000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-21-002828",
+          "available": "2021-02-25",
+          "end": "2020-12-31",
+          "filed": "2021-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 2252000000
+        },
+        {
+          "accn": "0001628280-21-021200",
+          "available": "2021-11-04",
+          "end": "2021-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 1753000000
+        },
+        {
+          "accn": "0001628280-21-021200",
+          "available": "2021-11-04",
+          "end": "2020-09-30",
+          "filed": "2021-11-02",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 1112000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2893000000
+    },
+    "parent_equity": {
+      "accn": "0001628280-21-021200",
+      "available": "2021-11-04",
+      "end": "2021-09-30",
+      "filed": "2021-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 16950000000
+    },
+    "report_end": "2021-09-30",
+    "reported_common_shares": {
+      "accn": "0001628280-21-021200",
+      "available": "2021-11-04",
+      "end": "2021-10-26",
+      "filed": "2021-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 778888584
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001628280-23-015712",
+      "available": "2023-05-08",
+      "end": "2023-03-31",
+      "filed": "2023-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 27393000000
+    },
+    "cik": "0000718877",
+    "common_income_ttm": null,
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "ATVI",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-23-004842",
+          "available": "2023-02-27",
+          "end": "2022-12-31",
+          "filed": "2023-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1513000000
+        },
+        {
+          "accn": "0001628280-23-015712",
+          "available": "2023-05-08",
+          "end": "2023-03-31",
+          "filed": "2023-05-04",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 740000000
+        },
+        {
+          "accn": "0001628280-23-015712",
+          "available": "2023-05-08",
+          "end": "2022-03-31",
+          "filed": "2023-05-04",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 395000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 1858000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-23-004842",
+          "available": "2023-02-27",
+          "end": "2022-12-31",
+          "filed": "2023-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 2220000000
+        },
+        {
+          "accn": "0001628280-23-015712",
+          "available": "2023-05-08",
+          "end": "2023-03-31",
+          "filed": "2023-05-04",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2023Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 577000000
+        },
+        {
+          "accn": "0001628280-23-015712",
+          "available": "2023-05-08",
+          "end": "2022-03-31",
+          "filed": "2023-05-04",
+          "form": "10-Q",
+          "fp": "Q1",
+          "frame": "CY2022Q1",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 642000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2155000000
+    },
+    "parent_equity": {
+      "accn": "0001628280-23-015712",
+      "available": "2023-05-08",
+      "end": "2023-03-31",
+      "filed": "2023-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 20115000000
+    },
+    "report_end": "2023-03-31",
+    "reported_common_shares": {
+      "accn": "0001628280-23-015712",
+      "available": "2023-05-08",
+      "end": "2023-04-28",
+      "filed": "2023-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "frame": "CY2023Q1I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 786158727
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0001628280-23-026269",
+      "available": "2023-08-02",
+      "end": "2023-06-30",
+      "filed": "2023-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2023Q2I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 28518000000
+    },
+    "cik": "0000718877",
+    "common_income_ttm": null,
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "ATVI",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-23-004842",
+          "available": "2023-02-27",
+          "end": "2022-12-31",
+          "filed": "2023-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1513000000
+        },
+        {
+          "accn": "0001628280-23-026269",
+          "available": "2023-08-02",
+          "end": "2023-06-30",
+          "filed": "2023-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 1328000000
+        },
+        {
+          "accn": "0001628280-23-026269",
+          "available": "2023-08-02",
+          "end": "2022-06-30",
+          "filed": "2023-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": 675000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2166000000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0001628280-23-004842",
+          "available": "2023-02-27",
+          "end": "2022-12-31",
+          "filed": "2023-02-23",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 2220000000
+        },
+        {
+          "accn": "0001628280-23-026269",
+          "available": "2023-08-02",
+          "end": "2023-06-30",
+          "filed": "2023-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2023-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 1167000000
+        },
+        {
+          "accn": "0001628280-23-026269",
+          "available": "2023-08-02",
+          "end": "2022-06-30",
+          "filed": "2023-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2023,
+          "namespace": "us-gaap",
+          "start": "2022-01-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 840000000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 2547000000
+    },
+    "parent_equity": {
+      "accn": "0001628280-23-026269",
+      "available": "2023-08-02",
+      "end": "2023-06-30",
+      "filed": "2023-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2023Q2I",
+      "fy": 2023,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 20793000000
+    },
+    "report_end": "2023-06-30",
+    "reported_common_shares": {
+      "accn": "0001628280-23-026269",
+      "available": "2023-08-02",
+      "end": "2023-07-24",
+      "filed": "2023-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2023Q2I",
+      "fy": 2023,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 786798320
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000886158-19-000026",
+      "available": "2019-10-17",
+      "end": "2019-08-31",
+      "filed": "2019-10-15",
+      "form": "10-Q/A",
+      "fp": "Q2",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 7916378000
+    },
+    "cik": "0000886158",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-19-000012",
+          "available": "2019-05-02",
+          "end": "2019-03-02",
+          "filed": "2019-04-30",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-03-04",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -137224000
+        },
+        {
+          "accn": "0000886158-19-000026",
+          "available": "2019-10-17",
+          "end": "2019-08-31",
+          "filed": "2019-10-15",
+          "form": "10-Q/A",
+          "fp": "Q2",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-03-03",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -509850000
+        },
+        {
+          "accn": "0000886158-19-000026",
+          "available": "2019-10-17",
+          "end": "2018-09-01",
+          "filed": "2019-10-15",
+          "form": "10-Q/A",
+          "fp": "Q2",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-03-04",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": 92215000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -739289000
+    },
+    "cut": "2019-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "BBBY",
+    "net_income_ttm": null,
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-19-000012",
+          "available": "2019-05-02",
+          "end": "2019-03-02",
+          "filed": "2019-04-30",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2018,
+          "namespace": "us-gaap",
+          "start": "2018-03-04",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 918278000
+        },
+        {
+          "accn": "0000886158-19-000026",
+          "available": "2019-10-17",
+          "end": "2019-08-31",
+          "filed": "2019-10-15",
+          "form": "10-Q/A",
+          "fp": "Q2",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2019-03-03",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 255903000
+        },
+        {
+          "accn": "0000886158-19-000026",
+          "available": "2019-10-17",
+          "end": "2018-09-01",
+          "filed": "2019-10-15",
+          "form": "10-Q/A",
+          "fp": "Q2",
+          "fy": 2019,
+          "namespace": "us-gaap",
+          "start": "2018-03-04",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 639016000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 535165000
+    },
+    "parent_equity": {
+      "accn": "0000886158-19-000026",
+      "available": "2019-10-17",
+      "end": "2019-08-31",
+      "filed": "2019-10-15",
+      "form": "10-Q/A",
+      "fp": "Q2",
+      "fy": 2019,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 1903703000
+    },
+    "report_end": "2019-08-31",
+    "reported_common_shares": {
+      "accn": "0000886158-19-000026",
+      "available": "2019-10-17",
+      "end": "2019-08-31",
+      "filed": "2019-10-15",
+      "form": "10-Q/A",
+      "fp": "Q2",
+      "frame": "CY2019Q3I",
+      "fy": 2019,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 126566039
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000886158-21-000040",
+      "available": "2021-10-04",
+      "end": "2021-08-28",
+      "filed": "2021-09-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 6067523000
+    },
+    "cik": "0000886158",
+    "common_income_ttm": null,
+    "cut": "2021-12-31",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [
+      "COMMON_INCOME_NOT_SEPARATELY_TAGGED_DO_NOT_ASSUME_EQUALS_NET_INCOME"
+    ],
+    "label": "BBBY",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-21-000015",
+          "available": "2021-04-26",
+          "end": "2021-02-27",
+          "filed": "2021-04-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-03-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -150773000
+        },
+        {
+          "accn": "0000886158-21-000040",
+          "available": "2021-10-04",
+          "end": "2021-08-28",
+          "filed": "2021-09-30",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-02-28",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -124089000
+        },
+        {
+          "accn": "0000886158-21-000040",
+          "available": "2021-10-04",
+          "end": "2020-08-29",
+          "filed": "2021-09-30",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-03-01",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -84391000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": -190471000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-21-000015",
+          "available": "2021-04-26",
+          "end": "2021-02-27",
+          "filed": "2021-04-22",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2020,
+          "namespace": "us-gaap",
+          "start": "2020-03-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 268108000
+        },
+        {
+          "accn": "0000886158-21-000040",
+          "available": "2021-10-04",
+          "end": "2021-08-28",
+          "filed": "2021-09-30",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2021-02-28",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 46038000
+        },
+        {
+          "accn": "0000886158-21-000040",
+          "available": "2021-10-04",
+          "end": "2020-08-29",
+          "filed": "2021-09-30",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2021,
+          "namespace": "us-gaap",
+          "start": "2020-03-01",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": 148858000
+        }
+      ],
+      "method": "prior_full_year_plus_current_ytd_minus_prior_ytd",
+      "value": 165288000
+    },
+    "parent_equity": {
+      "accn": "0000886158-21-000040",
+      "available": "2021-10-04",
+      "end": "2021-08-28",
+      "filed": "2021-09-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2021,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": 934234000
+    },
+    "report_end": "2021-08-28",
+    "reported_common_shares": {
+      "accn": "0000886158-21-000040",
+      "available": "2021-10-04",
+      "end": "2021-08-28",
+      "filed": "2021-09-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "frame": "CY2021Q3I",
+      "fy": 2021,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 101060177
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000886158-23-000059",
+      "available": "2023-06-16",
+      "end": "2023-02-25",
+      "filed": "2023-06-14",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q1I",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 2225217000
+    },
+    "cik": "0000886158",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-23-000059",
+          "available": "2023-06-16",
+          "end": "2023-02-25",
+          "filed": "2023-06-14",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-02-27",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -3498801000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": -3498801000
+    },
+    "cut": "2023-06-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "BBBY",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-23-000059",
+          "available": "2023-06-16",
+          "end": "2023-02-25",
+          "filed": "2023-06-14",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-02-27",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -3498801000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": -3498801000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-23-000059",
+          "available": "2023-06-16",
+          "end": "2023-02-25",
+          "filed": "2023-06-14",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-02-27",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -990979000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": -990979000
+    },
+    "parent_equity": {
+      "accn": "0000886158-23-000059",
+      "available": "2023-06-16",
+      "end": "2023-02-25",
+      "filed": "2023-06-14",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q1I",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": -2800008000
+    },
+    "report_end": "2023-02-25",
+    "reported_common_shares": {
+      "accn": "0000886158-23-000059",
+      "available": "2023-06-16",
+      "end": "2023-05-09",
+      "filed": "2023-06-14",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q1I",
+      "fy": 2022,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 739056836
+    },
+    "required_raw_accounting_fields_available": true
+  },
+  {
+    "assets": {
+      "accn": "0000886158-23-000059",
+      "available": "2023-06-16",
+      "end": "2023-02-25",
+      "filed": "2023-06-14",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q1I",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "tag": "Assets",
+      "unit": "USD",
+      "val": 2225217000
+    },
+    "cik": "0000886158",
+    "common_income_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-23-000059",
+          "available": "2023-06-16",
+          "end": "2023-02-25",
+          "filed": "2023-06-14",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-02-27",
+          "tag": "NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD",
+          "val": -3498801000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": -3498801000
+    },
+    "cut": "2023-11-30",
+    "equity_method": "reported_parent_equity",
+    "exact_original_six_features_qualified": false,
+    "flags": [],
+    "label": "BBBY",
+    "net_income_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-23-000059",
+          "available": "2023-06-16",
+          "end": "2023-02-25",
+          "filed": "2023-06-14",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-02-27",
+          "tag": "NetIncomeLoss",
+          "unit": "USD",
+          "val": -3498801000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": -3498801000
+    },
+    "operating_cashflow_ttm": {
+      "components": [
+        {
+          "accn": "0000886158-23-000059",
+          "available": "2023-06-16",
+          "end": "2023-02-25",
+          "filed": "2023-06-14",
+          "form": "10-K",
+          "fp": "FY",
+          "frame": "CY2022",
+          "fy": 2022,
+          "namespace": "us-gaap",
+          "start": "2022-02-27",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "val": -990979000
+        }
+      ],
+      "method": "reported_full_year",
+      "value": -990979000
+    },
+    "parent_equity": {
+      "accn": "0000886158-23-000059",
+      "available": "2023-06-16",
+      "end": "2023-02-25",
+      "filed": "2023-06-14",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q1I",
+      "fy": 2022,
+      "namespace": "us-gaap",
+      "tag": "StockholdersEquity",
+      "unit": "USD",
+      "val": -2800008000
+    },
+    "report_end": "2023-02-25",
+    "reported_common_shares": {
+      "accn": "0000886158-23-000059",
+      "available": "2023-06-16",
+      "end": "2023-05-09",
+      "filed": "2023-06-14",
+      "form": "10-K",
+      "fp": "FY",
+      "frame": "CY2023Q1I",
+      "fy": 2022,
+      "namespace": "dei",
+      "tag": "EntityCommonStockSharesOutstanding",
+      "unit": "shares",
+      "val": 739056836
+    },
+    "required_raw_accounting_fields_available": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Exact original fixed-base account reproduction from frozen predictions.",
+    "Receipt scenario uses $15.318 for six ZBH shares at the ex-date reference; payment delay and source-input immutability checked.",
+    "All 20 control schedules invariant to arbitrary score and label changes.",
+    "Original artifact and prediction hashes unchanged."
+  ],
+  "passed": true
+}

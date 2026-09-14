@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "Retained preparation source bytes match manifests, including explicitly recovered provenance entries.",
+    "Unique dated issuer observations and no reserved-window prices.",
+    "Seven accounting repairs reconcile to independent stated totals and respect filing availability.",
+    "Apple/Amazon/GE unit changes and both GE child entitlements match issuer terms; WAB pseudo-cash is removed.",
+    "ATVI stale row becomes a $95 non-spendable claim; BBBY OTC history ends in an after-close zero equity outcome.",
+    "Routine entitlements cannot finance purchases before payment; no automatic Kenvue grant on an unelected exchange.",
+    "15,612 internal provider adjustment transitions and all expected sample sessions pass.",
+    "The next 100-stock acquisition cohort has one deterministic selection rule and a pre-study archived roster."
+  ],
+  "passed": true,
+  "qualification": "Sample repair checks only; not universal corporate-action accuracy, a broker ledger, or evidence of profitability.",
+  "source_payload_hashes_checked": 18
+}

@@ -1,0 +1,23 @@
+{
+  "README.md": "d02fdb6d8a93239e58de821a4605cc673f046e323fd87dde3b6fb77244fedb0e",
+  "RESULTS.md": "4cdb8543f93f619df5aacb3bd3493af6f8b4f96339be1047d8c283fb5ae3231b",
+  "analyze.py": "03136705b6c134927ec6c8faf74540427c613ab03b7c75193d4d44e7ba5d2646",
+  "credit-check-after.json": "dec8b8fb25f5311a7fea523b0e76df1fbae3d7beb7adb4c5329c2ac6a1cdc0cd",
+  "credit-check.json": "57c34dbeada33bcd8b05c54225b16d9f54b9585b102ebe0fb21c01bf656dc94c",
+  "databento-manifest.json": "fbae8e55fb747ec743e6b2f932c5b23941d660e814869538f30fcf7595b3f967",
+  "excluded-unrelated-symbol-rows.json": "4e3d4968bc6019cccdb7e7c963edb95d0ffb855d0cf5acd7e26ce603ee361916",
+  "first-download-206-client-rejection.json": "49b703a93672971fe219fdd506548743b2074845ccc97d18feb0662e54a87e64",
+  "fundamental-coverage.json": "f2da6713405d96cf3a38e879c916d38fd8bd94e1122d81583d894bece5d41476",
+  "fundamental-summary.json": "e83cd91854002d8f5043bf90fc8801f35edb60e6ba99da219e53b5355134fd6a",
+  "plan.json": "f2e7690ff6833a888756e55880607371d65f12d4db255f3426993164b938a32e",
+  "pre-download-quote.json": "0fa72dcd11d7863832e441e61d91abc8c6df9fa0fce77304ded0f2584aaeb7c5",
+  "price-coverage.json": "e204aea70fe27a07096487c15e73346931bbb634e74ba9d1f19ba9099ca12f01",
+  "price-summary.json": "e8547083e05499d5b8f4546ae9f5e5ebc6ab7d57d8fbdfb1cec717bdb10d2983",
+  "prices.py": "301f113b0b45e920ea3e09f9892b1faa28ee6a4130b4fd686864f028a35aa233",
+  "probe.py": "67a14e45ce2a53d314fa55a1f7aa5568d4d3626953f40e13a8451ac5b455eecb",
+  "quotes.json": "e58ae5f663f1ee7421cc04c9e2afecc6001f6bea7033096183c3ae6b323843cc",
+  "sample-joins.json": "d62dc57712a273cf727e50e1451fd28a080b873b4c58298d88585aaa163db075",
+  "sec-manifest.json": "4bc7a3e8f12a7153b5925fea9e2051cb760bb1bf42caebb6c75e6c71d9c56834",
+  "verification.json": "51ced83b73d96ef87099c9975892f10d3c1b94b3268809196cf9e01b371d5396",
+  "verify.py": "fbbf967a6c23ab453717cdea3f722d78efd0603263740470ff081fdb2129059c"
+}

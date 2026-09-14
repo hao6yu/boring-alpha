@@ -1,0 +1,342 @@
+{
+  "status": "PUBLIC_DOCUMENTATION_AND_AAPL_SAMPLE_CHECK_ONLY",
+  "new_paid_data_usd": 0,
+  "records": [
+    {
+      "name": "pricing",
+      "request_endpoint": "https://sharadar.com/subscribe",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:54.844159+00:00",
+      "status": 200,
+      "bytes": 107575,
+      "sha256": "fd37ca772a24453849ba1b6bbd58b0575133b58238fc92440e8c36d40f2b632c",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/pricing.html"
+    },
+    {
+      "name": "fundamentals_docs",
+      "request_endpoint": "https://sharadar.com/docs/fundamentals",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:54.845805+00:00",
+      "status": 200,
+      "bytes": 256600,
+      "sha256": "672384b91fe07e7e1b01c2a03f618960ee042cb0eadc18304aff181f4c4efb9c",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/fundamentals_docs.html"
+    },
+    {
+      "name": "stocks_docs",
+      "request_endpoint": "https://sharadar.com/docs/stocks",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:54.846348+00:00",
+      "status": 200,
+      "bytes": 136860,
+      "sha256": "0bcdfebb9d5141f2e3a584e19aef46af2d30ad60d6cf641416cee0265a74caa9",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/stocks_docs.html"
+    },
+    {
+      "name": "actions_docs",
+      "request_endpoint": "https://sharadar.com/docs/actions",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:55.009948+00:00",
+      "status": 200,
+      "bytes": 132473,
+      "sha256": "637f6a812d2cb6a961eae4b8931ab7e9c0885225997cda5d6fcdcc6dbe5a5b63",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/actions_docs.html"
+    },
+    {
+      "name": "tickers_docs",
+      "request_endpoint": "https://sharadar.com/docs/tickers",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:55.025172+00:00",
+      "status": 200,
+      "bytes": 154275,
+      "sha256": "4e1e764e7cf93ad7d28bc9aafe1c2045b89a5ab8f386d616e9b0cb0dccd73d12",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/tickers_docs.html"
+    },
+    {
+      "name": "faq",
+      "request_endpoint": "https://sharadar.com/docs/faqs",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:55.044797+00:00",
+      "status": 200,
+      "bytes": 83348,
+      "sha256": "f5700a1726ac44c39ead6ba78cfe42871ceb62585b52b9be3aabdf61a3cde273",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/faq.html"
+    },
+    {
+      "name": "license",
+      "request_endpoint": "https://sharadar.com/terms",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:55.197324+00:00",
+      "status": 200,
+      "bytes": 88479,
+      "sha256": "76027b7e177d6a788f0044844c1f9f066d6005452e524cb1b56a0998a36d6ec7",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/license.html"
+    },
+    {
+      "name": "auth_docs",
+      "request_endpoint": "https://sharadar.com/docs/auth",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:15:55.279577+00:00",
+      "status": 200,
+      "bytes": 80824,
+      "sha256": "6c792575f8e7e6b94d61a92af80e36b829ade8f103d6e48d27b468ff0948150a",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/auth_docs.html"
+    },
+    {
+      "name": "sp500_docs",
+      "request_endpoint": "https://sharadar.com/docs/sp500",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:18:22.586304+00:00",
+      "status": 200,
+      "bytes": 128229,
+      "sha256": "2985e643d25f5606c312f5366a3421dbb1957ad134bdc590e0b67bc9403e77af",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/sp500_docs.html"
+    },
+    {
+      "name": "daily_docs",
+      "request_endpoint": "https://sharadar.com/docs/daily",
+      "parameters": {},
+      "authentication": "public documentation",
+      "requested_at_utc": "2026-09-14T01:18:22.587986+00:00",
+      "status": 200,
+      "bytes": 133924,
+      "sha256": "5ca9cdaf5342edba33114de09d5e42455e0617d8d065366eb4fc0ca42f65f1b7",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/daily_docs.html"
+    },
+    {
+      "name": "fundamentals_art",
+      "request_endpoint": "https://api.sharadar.com/v1.0/data/fundamentals",
+      "parameters": {
+        "dimension": "ART",
+        "from": "2022-01-01",
+        "to": "2023-12-31",
+        "fields": "ticker,date,dimension,calendardate,reportperiod,assets,assetsavg,equityusd,netinccmnusd,netinc,ncfo,gp,revenue,debt,marketcap,lastupdated",
+        "ticker": "AAPL",
+        "format": "json",
+        "limit": 50
+      },
+      "authentication": "vendor-published AAPL demo key",
+      "requested_at_utc": "2026-09-14T01:15:55.279699+00:00",
+      "status": 200,
+      "bytes": 3104,
+      "sha256": "dbe7d897cff71f7d947c76b21de501fec6d4fc3ad2ae561c93663131912e59d6",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/fundamentals_art.json",
+      "json_type": "dict",
+      "top_level_keys": [
+        "count",
+        "data"
+      ],
+      "rows": 8,
+      "fields": [
+        "assets",
+        "assetsavg",
+        "calendardate",
+        "date",
+        "debt",
+        "dimension",
+        "equityusd",
+        "gp",
+        "lastupdated",
+        "marketcap",
+        "ncfo",
+        "netinc",
+        "netinccmnusd",
+        "reportperiod",
+        "revenue",
+        "ticker"
+      ],
+      "observed_date_range": [
+        "2022-01-28",
+        "2023-11-03"
+      ],
+      "all_filing_dates_on_or_after_report_period": true,
+      "all_dimensions_ART": true
+    },
+    {
+      "name": "stocks",
+      "request_endpoint": "https://api.sharadar.com/v1.0/data/stocks",
+      "parameters": {
+        "from": "2023-08-01",
+        "to": "2023-08-31",
+        "fields": "ticker,date,open,high,low,close,volume,closeadj,closeunadj,lastupdated",
+        "ticker": "AAPL",
+        "format": "json",
+        "limit": 50
+      },
+      "authentication": "vendor-published AAPL demo key",
+      "requested_at_utc": "2026-09-14T01:15:55.364774+00:00",
+      "status": 200,
+      "bytes": 4108,
+      "sha256": "d91f52490b8a5149ee7e6b492ebabf0ddd9c93ed42ef4e55ac52f15996d332f3",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/stocks.json",
+      "json_type": "dict",
+      "top_level_keys": [
+        "count",
+        "data"
+      ],
+      "rows": 23,
+      "fields": [
+        "close",
+        "closeadj",
+        "closeunadj",
+        "date",
+        "high",
+        "lastupdated",
+        "low",
+        "open",
+        "ticker",
+        "volume"
+      ],
+      "observed_date_range": [
+        "2023-08-01",
+        "2023-08-31"
+      ]
+    },
+    {
+      "name": "actions",
+      "request_endpoint": "https://api.sharadar.com/v1.0/data/actions",
+      "parameters": {
+        "from": "2023-01-01",
+        "to": "2023-12-31",
+        "fields": "date,action,ticker,value,contraticker",
+        "ticker": "AAPL",
+        "format": "json",
+        "limit": 50
+      },
+      "authentication": "vendor-published AAPL demo key",
+      "requested_at_utc": "2026-09-14T01:15:55.445798+00:00",
+      "status": 200,
+      "bytes": 388,
+      "sha256": "7aac6eecc4b74f1fc5fce7f3bccababa56561eaa5d0904bbcbf22220bd0fe55d",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/actions.json",
+      "json_type": "dict",
+      "top_level_keys": [
+        "count",
+        "data"
+      ],
+      "rows": 4,
+      "fields": [
+        "action",
+        "contraticker",
+        "date",
+        "ticker",
+        "value"
+      ],
+      "observed_date_range": [
+        "2023-02-10",
+        "2023-11-10"
+      ]
+    },
+    {
+      "name": "tickers",
+      "request_endpoint": "https://api.sharadar.com/v1.0/data/tickers",
+      "parameters": {
+        "table": "fundamentals",
+        "fields": "table,permaticker,ticker,category,currency,firstpricedate,lastpricedate,isdelisted",
+        "ticker": "AAPL",
+        "format": "json",
+        "limit": 50
+      },
+      "authentication": "vendor-published AAPL demo key",
+      "requested_at_utc": "2026-09-14T01:15:55.467035+00:00",
+      "status": 200,
+      "bytes": 212,
+      "sha256": "a42e8b552806c8d41cb78e0b2bd5c7c760f0eaacf273df5da23dcd2ac85284c5",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/tickers.json",
+      "json_type": "dict",
+      "top_level_keys": [
+        "count",
+        "data"
+      ],
+      "rows": 1,
+      "fields": [
+        "category",
+        "currency",
+        "firstpricedate",
+        "isdelisted",
+        "lastpricedate",
+        "permaticker",
+        "table",
+        "ticker"
+      ]
+    },
+    {
+      "name": "sp500",
+      "request_endpoint": "https://api.sharadar.com/v1.0/data/sp500",
+      "parameters": {
+        "from": "2022-01-01",
+        "to": "2023-12-31",
+        "fields": "date,action,ticker,contraticker",
+        "ticker": "AAPL",
+        "format": "json",
+        "limit": 50
+      },
+      "authentication": "vendor-published AAPL demo key",
+      "requested_at_utc": "2026-09-14T01:18:22.590114+00:00",
+      "status": 200,
+      "bytes": 668,
+      "sha256": "74a719aefdd7de2cf0393844d239d7efb67eaf753ee8b91a5cc1ab99d6d011e8",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/sp500.json",
+      "json_type": "dict",
+      "top_level_keys": [
+        "count",
+        "data"
+      ],
+      "rows": 8,
+      "fields": [
+        "action",
+        "contraticker",
+        "date",
+        "ticker"
+      ],
+      "observed_date_range": [
+        "2022-03-31",
+        "2023-12-31"
+      ]
+    },
+    {
+      "name": "daily",
+      "request_endpoint": "https://api.sharadar.com/v1.0/data/daily",
+      "parameters": {
+        "from": "2023-08-28",
+        "to": "2023-08-31",
+        "fields": "ticker,date,marketcap,lastupdated",
+        "ticker": "AAPL",
+        "format": "json",
+        "limit": 50
+      },
+      "authentication": "vendor-published AAPL demo key",
+      "requested_at_utc": "2026-09-14T01:18:22.745853+00:00",
+      "status": 200,
+      "bytes": 368,
+      "sha256": "6c619286cd6e4d5281cc411dec77741b5a258ccb4ec1a643885325cf9b512e65",
+      "path": "data/snapshots/ml-stock-selection-design-2026-09-13/daily.json",
+      "json_type": "dict",
+      "top_level_keys": [
+        "count",
+        "data"
+      ],
+      "rows": 4,
+      "fields": [
+        "date",
+        "lastupdated",
+        "marketcap",
+        "ticker"
+      ],
+      "observed_date_range": [
+        "2023-08-28",
+        "2023-08-31"
+      ]
+    }
+  ],
+  "limitations": "AAPL sample does not verify full-history paid entitlement, removed-stock breadth, historical listing transitions, or merger payout completeness. No predictive model or strategy returns computed."
+}

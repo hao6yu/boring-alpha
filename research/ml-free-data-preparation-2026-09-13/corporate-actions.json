@@ -1,0 +1,1819 @@
+[
+  {
+    "date": "2018-05-11",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.73
+  },
+  {
+    "date": "2018-05-11",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.82
+  },
+  {
+    "date": "2018-05-16",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.42
+  },
+  {
+    "date": "2018-05-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2018-06-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.16
+  },
+  {
+    "date": "2018-06-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2018-07-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.56
+  },
+  {
+    "date": "2018-08-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.73
+  },
+  {
+    "date": "2018-08-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.82
+  },
+  {
+    "date": "2018-08-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.42
+  },
+  {
+    "date": "2018-08-27",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2018-09-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.16
+  },
+  {
+    "date": "2018-09-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2018-10-04",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.8
+  },
+  {
+    "date": "2018-11-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.73
+  },
+  {
+    "date": "2018-11-09",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.82
+  },
+  {
+    "date": "2018-11-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.46
+  },
+  {
+    "date": "2018-11-26",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2018-12-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.16
+  },
+  {
+    "date": "2018-12-19",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2019-01-03",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.8
+  },
+  {
+    "date": "2019-02-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.73
+  },
+  {
+    "date": "2019-02-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.82
+  },
+  {
+    "date": "2019-02-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.46
+  },
+  {
+    "date": "2019-02-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "cash_dividend_override": 0,
+    "cash_payment_date": null,
+    "date": "2019-02-26",
+    "date_semantics": "First ex-distribution price session. GE/WAB transaction completed Feb 25; GEHC distributed Jan 3. Do not infer earlier public announcement time.",
+    "distribution": {
+      "reference_close": 73.96,
+      "reference_value": 0.39723916,
+      "security": "WAB",
+      "units_per_parent": 0.005371
+    },
+    "kind": "stock_distribution",
+    "parent_units_factor": 1,
+    "source": "https://www.ge.com/investor-relations/shareholder-services",
+    "symbol": "GE",
+    "vendor_divCash": 0.420281,
+    "vendor_split_factor": 1.0
+  },
+  {
+    "date": "2019-03-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2019-03-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.16
+  },
+  {
+    "date": "2019-03-27",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "ATVI",
+    "usd_per_post_split_share": 0.37
+  },
+  {
+    "date": "2019-04-04",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.8
+  },
+  {
+    "date": "2019-05-09",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2019-05-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.77
+  },
+  {
+    "date": "2019-05-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2019-05-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.46
+  },
+  {
+    "date": "2019-05-24",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.95
+  },
+  {
+    "date": "2019-06-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2019-06-28",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2019-07-03",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.8
+  },
+  {
+    "date": "2019-08-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2019-08-09",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.77
+  },
+  {
+    "date": "2019-08-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2019-08-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.46
+  },
+  {
+    "date": "2019-08-26",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.95
+  },
+  {
+    "date": "2019-09-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2019-09-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2019-10-03",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2019-11-07",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.77
+  },
+  {
+    "date": "2019-11-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2019-11-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2019-11-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.51
+  },
+  {
+    "date": "2019-11-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.95
+  },
+  {
+    "date": "2019-12-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2019-12-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2020-01-03",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2020-02-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2020-02-07",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.77
+  },
+  {
+    "date": "2020-02-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2020-02-19",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.51
+  },
+  {
+    "date": "2020-02-24",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 0.95
+  },
+  {
+    "date": "2020-03-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2020-03-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "BBBY",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2020-04-03",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2020-04-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "ATVI",
+    "usd_per_post_split_share": 0.41
+  },
+  {
+    "date": "2020-05-07",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2020-05-08",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.82
+  },
+  {
+    "date": "2020-05-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2020-05-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.51
+  },
+  {
+    "date": "2020-05-22",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.01
+  },
+  {
+    "date": "2020-06-26",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2020-07-02",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2020-08-07",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.82
+  },
+  {
+    "date": "2020-08-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2020-08-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2020-08-19",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.51
+  },
+  {
+    "date": "2020-08-24",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.01
+  },
+  {
+    "date": "2020-08-31",
+    "fractional_units": "Cash-in-lieu claim; no assumed cash availability before supported payment.",
+    "kind": "stock_split",
+    "source": "https://www.apple.com/newsroom/2020/07/apple-reports-third-quarter-results/",
+    "symbol": "AAPL",
+    "units_factor": 4
+  },
+  {
+    "date": "2020-09-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2020-10-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2020-11-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.205
+  },
+  {
+    "date": "2020-11-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2020-11-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2020-11-18",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.56
+  },
+  {
+    "date": "2020-11-23",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.01
+  },
+  {
+    "date": "2020-12-18",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2021-01-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2021-02-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.205
+  },
+  {
+    "date": "2021-02-09",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2021-02-11",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2021-02-17",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.56
+  },
+  {
+    "date": "2021-02-22",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.01
+  },
+  {
+    "date": "2021-03-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2021-04-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2021-04-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "ATVI",
+    "usd_per_post_split_share": 0.47
+  },
+  {
+    "date": "2021-05-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2021-05-07",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.22
+  },
+  {
+    "date": "2021-05-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2021-05-19",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.56
+  },
+  {
+    "date": "2021-05-24",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.06
+  },
+  {
+    "date": "2021-06-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.01
+  },
+  {
+    "date": "2021-07-02",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 0.9
+  },
+  {
+    "date": "2021-08-02",
+    "fractional_units": "Cash-in-lieu claim; no assumed cash availability before supported payment.",
+    "kind": "stock_split",
+    "source": "https://www.ge.com/news/press-releases/ge-completes-one-for-eight-reverse-stock-split",
+    "symbol": "GE",
+    "units_factor": 0.125
+  },
+  {
+    "date": "2021-08-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.22
+  },
+  {
+    "date": "2021-08-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2021-08-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.87
+  },
+  {
+    "date": "2021-08-18",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.56
+  },
+  {
+    "date": "2021-08-23",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.06
+  },
+  {
+    "date": "2021-09-24",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2021-10-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2021-11-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.22
+  },
+  {
+    "date": "2021-11-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.88
+  },
+  {
+    "date": "2021-11-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.12
+  },
+  {
+    "date": "2021-11-17",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.62
+  },
+  {
+    "date": "2021-11-22",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.06
+  },
+  {
+    "date": "2021-12-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2022-01-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2022-02-04",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.22
+  },
+  {
+    "date": "2022-02-09",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.88
+  },
+  {
+    "date": "2022-02-16",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.62
+  },
+  {
+    "date": "2022-02-18",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.06
+  },
+  {
+    "date": "2022-02-24",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.15
+  },
+  {
+    "date": "2022-03-07",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2022-04-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2022-04-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "ATVI",
+    "usd_per_post_split_share": 0.47
+  },
+  {
+    "date": "2022-05-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.23
+  },
+  {
+    "date": "2022-05-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.88
+  },
+  {
+    "date": "2022-05-18",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.62
+  },
+  {
+    "date": "2022-05-19",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.15
+  },
+  {
+    "date": "2022-05-23",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.13
+  },
+  {
+    "date": "2022-06-06",
+    "fractional_units": "Cash-in-lieu claim; no assumed cash availability before supported payment.",
+    "kind": "stock_split",
+    "source": "https://www.miaxglobal.com/sites/default/files/alert-files/AMZN_split__50496.pdf",
+    "symbol": "AMZN",
+    "units_factor": 20
+  },
+  {
+    "date": "2022-06-27",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2022-07-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2022-08-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.23
+  },
+  {
+    "date": "2022-08-11",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.88
+  },
+  {
+    "date": "2022-08-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.15
+  },
+  {
+    "date": "2022-08-17",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.62
+  },
+  {
+    "date": "2022-08-22",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.13
+  },
+  {
+    "date": "2022-09-26",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2022-10-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2022-11-04",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.23
+  },
+  {
+    "date": "2022-11-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.15
+  },
+  {
+    "date": "2022-11-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.91
+  },
+  {
+    "date": "2022-11-16",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.68
+  },
+  {
+    "date": "2022-11-21",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.13
+  },
+  {
+    "date": "2022-12-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "cash_dividend_override": 0,
+    "cash_payment_date": null,
+    "date": "2023-01-04",
+    "date_semantics": "First ex-distribution price session. GE/WAB transaction completed Feb 25; GEHC distributed Jan 3. Do not infer earlier public announcement time.",
+    "distribution": {
+      "reference_close": 60.49,
+      "reference_value": 20.163333333333334,
+      "security": "GEHC",
+      "units_per_parent": 0.3333333333333333
+    },
+    "kind": "stock_distribution",
+    "parent_units_factor": 1,
+    "source": "https://investor.gehealthcare.com/static-files/94bb183f-27f5-425a-adce-bb71fc9c0216",
+    "symbol": "GE",
+    "vendor_divCash": 0.0,
+    "vendor_split_factor": 1.281
+  },
+  {
+    "date": "2023-01-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2023-02-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.23
+  },
+  {
+    "date": "2023-02-13",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.91
+  },
+  {
+    "date": "2023-02-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.68
+  },
+  {
+    "date": "2023-02-17",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.13
+  },
+  {
+    "date": "2023-02-23",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2023-03-06",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2023-04-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2023-05-03",
+    "kind": "nasdaq_suspension_otc_continuation",
+    "new_listed_universe_purchases": false,
+    "provider_symbol": "BBBYQ",
+    "source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523115523/d89202dex991.htm",
+    "symbol": "BBBY"
+  },
+  {
+    "date": "2023-05-12",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.24
+  },
+  {
+    "date": "2023-05-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.91
+  },
+  {
+    "date": "2023-05-17",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.68
+  },
+  {
+    "date": "2023-05-22",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GEHC",
+    "usd_per_post_split_share": 0.03
+  },
+  {
+    "date": "2023-05-22",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.19
+  },
+  {
+    "date": "2023-05-26",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2023-07-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.0
+  },
+  {
+    "date": "2023-07-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2023-07-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GEHC",
+    "usd_per_post_split_share": 0.03
+  },
+  {
+    "date": "2023-08-01",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "ATVI",
+    "usd_per_post_split_share": 0.99
+  },
+  {
+    "date": "2023-08-11",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.24
+  },
+  {
+    "date": "2023-08-11",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2023-08-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.91
+  },
+  {
+    "date": "2023-08-16",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.68
+  },
+  {
+    "date": "2023-08-23",
+    "default_automatic_KVUE_units": 0,
+    "kind": "voluntary_exchange_default_no_election",
+    "source": "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-final-results-of-exchange-offer-and-finalizes-separation-of-kenvue-inc",
+    "symbol": "JNJ"
+  },
+  {
+    "date": "2023-08-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.19
+  },
+  {
+    "date": "2023-09-25",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  },
+  {
+    "date": "2023-09-29",
+    "execution": "After-close corporate outcome, never a sale at the final quoted price.",
+    "kind": "equity_cancellation",
+    "known_by_et": "2023-09-29T16:23:06-04:00",
+    "last_trade_price": 0.0789,
+    "source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/d579010d8k.htm",
+    "symbol": "BBBY",
+    "terminal_value_per_share": 0,
+    "timestamp_source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/0001193125-23-247428-index.htm"
+  },
+  {
+    "date": "2023-10-05",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JPM",
+    "usd_per_post_split_share": 1.05
+  },
+  {
+    "cash_claim_per_share": 95,
+    "date": "2023-10-13",
+    "kind": "cash_merger",
+    "last_trade_date": "2023-10-12",
+    "last_trade_price": 94.42,
+    "payment_date": null,
+    "source": "https://investor.activision.com/static-files/6439fa79-7018-4f4d-adf5-192a2cd2007b",
+    "spendable_cash_on_event": 0,
+    "symbol": "ATVI"
+  },
+  {
+    "date": "2023-10-19",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GEHC",
+    "usd_per_post_split_share": 0.03
+  },
+  {
+    "date": "2023-11-10",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "AAPL",
+    "usd_per_post_split_share": 0.24
+  },
+  {
+    "date": "2023-11-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "WAB",
+    "usd_per_post_split_share": 0.17
+  },
+  {
+    "date": "2023-11-14",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "XOM",
+    "usd_per_post_split_share": 0.95
+  },
+  {
+    "date": "2023-11-15",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "MSFT",
+    "usd_per_post_split_share": 0.75
+  },
+  {
+    "date": "2023-11-20",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "JNJ",
+    "usd_per_post_split_share": 1.19
+  },
+  {
+    "date": "2023-12-27",
+    "independently_issuer_confirmed": false,
+    "kind": "routine_dividend_receivable",
+    "payment_date": null,
+    "source": "tiingo-manifest.json",
+    "spendable_cash_on_ex_date": 0,
+    "symbol": "GE",
+    "usd_per_post_split_share": 0.08
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "reason": "First acquisition processes shared one manifest. Switched to independent SEC/Tiingo manifests and recovered omitted entries from preserved local bodies and tool success/failure results. No re-download.",
+  "recovered_entries": [
+    "tiingo-AAPL",
+    "submissions-JNJ",
+    "filing-0000200406-19-000066",
+    "filing-0000200406-23-000056",
+    "filing-0001326801-21-000065",
+    "filing-0001326801-23-000103"
+  ]
+}

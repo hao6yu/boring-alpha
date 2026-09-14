@@ -1,0 +1,10 @@
+{
+  "original_file": "research/equity-momentum-diagnostic-2026-09-13/portfolio.py",
+  "original_sha256": "fdb2cd38f08d006efa1d1b87e7332fd269f458c49906245912dfab011d091d08",
+  "changes": [
+    "Second-session review driven by explicit signal date, not fake filing dates.",
+    "63-session $10m liquidity check.",
+    "Unqualified stock-distribution accounting remains explicitly unresolved.",
+    "New account policy hash, preserved fee/cash/whole-share/claim/halt machinery."
+  ]
+}

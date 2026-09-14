@@ -1,0 +1,47 @@
+{
+  "status": "FREE_FIXED_100_STOCK_COMPARISON_COMPLETE_NO_PROMOTION_PAID_OPTION_PARKED",
+  "provider": "Sharadar direct personal use",
+  "plan": "Bundle / Full History / Monthly",
+  "url": "https://sharadar.com/subscribe",
+  "upfront_usd_before_tax": 69,
+  "tax_usd": null,
+  "renewal_proposal": "cancel at period end",
+  "ongoing_monthly_usd": 69,
+  "ongoing_annual_option_usd": 499,
+  "new_paid_data_usd": 0,
+  "proposed_active_effort_cap_hours_after_access": 8,
+  "initial_training_years": [
+    2000,
+    2010
+  ],
+  "historical_diagnostic_years": [
+    2011,
+    2023
+  ],
+  "diagnostic_months": 156,
+  "reserved_strategy_years_not_opened": [
+    2024,
+    2025
+  ],
+  "all_scope_details": "PROPOSAL.md",
+  "proposal_sha256": "dd3eecebbc006c76f4fc0c7cd86b275099052a198b33568d25c924412d40af12",
+  "sample_evidence_sha256": "ed5af34ab5bfedf2ac8973604afbc9689b0bedc059aa369d37999d4719c65515",
+  "checked_at_utc": "2026-09-14T01:26:48.726603+00:00",
+  "purchase_approved": false,
+  "free_route_assessment": "FREE_SOURCES.md",
+  "free_route_scope": "Existing Tiingo and SEC; fixed historical 100-security cohort; training June 2019\u2013December 2021, diagnostic January 2022\u2013December 2023. Original paid chronology preserved separately.",
+  "current_databento_credit_balance_usd": 117.91,
+  "free_route_assessment_sha256": "e2f96a447688f475d12786563fe64d096299a7e2d7030b1dce9eb8167ed17a4b",
+  "free_route_result": "../ml-free-data-feasibility-2026-09-13/RESULTS.md",
+  "current_credit_balance_note": "Rounded authenticated Chrome display after sample; see credit-check-after.json.",
+  "full_feature_panel_qualified": false,
+  "free_route_preparation": "../ml-free-data-preparation-2026-09-13/RESULTS.md",
+  "free_route_next_scope": "../ml-free-data-preparation-2026-09-13/NEXT_EXPERIMENT.md",
+  "free_route_preparation_sha256": "b795637e1473ffc2d2ac3db6f285ec32f580b648c37e8e663bff41c0c6b4514b",
+  "free_route_comparison": "../ml-stock-comparison-2026-09-14/RESULTS.md",
+  "free_route_account_details": "../ml-stock-comparison-2026-09-14/ACCOUNT_NOTES.md",
+  "free_route_aggregate_coverage_gate_pass": true,
+  "full_feature_panel_note": "All 5,500 slots built; missing financial concepts remain explicit. Coverage gate passes for the identified eligible subset; not complete financial coverage for all issuers.",
+  "free_route_models_fitted": true,
+  "free_route_ridge_account_complete": false
+}

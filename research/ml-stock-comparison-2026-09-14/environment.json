@@ -1,0 +1,9 @@
+{
+  "python": "3.13.7",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit-learn": "1.8.0",
+  "scipy": "1.18.1",
+  "exchange-calendars": "4.13.2",
+  "matplotlib": "3.11.1"
+}

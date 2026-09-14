@@ -1,0 +1,87 @@
+{
+  "filing-0000200406-19-000066": {
+    "at": null,
+    "http_status": 403,
+    "provenance": "Recovered from command results and saved file after concurrent writes to the original shared manifest.",
+    "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040619000066/a3q10q09-29x19.htm"
+  },
+  "filing-0000200406-21-000070": {
+    "at": "2026-09-14T02:24:25.128929+00:00",
+    "curl_exit": 0,
+    "http_status": 403,
+    "response_bytes": 4819,
+    "response_sha256": "45b00255c078857390de5828afe8d5a9795279f3739ac7d022feeb8f6286be0f",
+    "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040621000070/jnj-20211003.htm"
+  },
+  "filing-0000200406-23-000056": {
+    "at": null,
+    "http_status": 403,
+    "provenance": "Recovered from command results and saved file after concurrent writes to the original shared manifest.",
+    "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000056/jnj-20230402.htm"
+  },
+  "filing-0000200406-23-000102": {
+    "at": "2026-09-14T02:24:24.447169+00:00",
+    "curl_exit": 0,
+    "http_status": 403,
+    "response_bytes": 4819,
+    "response_sha256": "c9c3027b8bbefaec567f79b5695df9e73e2d3ee820730b8199c0abe54727ea43",
+    "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000102/jnj-20231001.htm"
+  },
+  "filing-0001326801-19-000069": {
+    "at": "2026-09-14T02:24:23.706839+00:00",
+    "curl_exit": 0,
+    "http_status": 403,
+    "response_bytes": 4819,
+    "response_sha256": "3274b44982efb8c92a3a657a1a9459e65fba4c2e4209c29276b4b7d0a3368555",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000069/fb-09302019x10q.htm"
+  },
+  "filing-0001326801-21-000065": {
+    "at": null,
+    "http_status": 403,
+    "provenance": "Recovered from command results and saved file after concurrent writes to the original shared manifest.",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000065/fb-20210930.htm"
+  },
+  "filing-0001326801-23-000067": {
+    "at": "2026-09-14T02:24:23.032562+00:00",
+    "curl_exit": 0,
+    "http_status": 403,
+    "response_bytes": 4819,
+    "response_sha256": "bf0152339db7bd687a5950c3d84912a0e7e38d92a70a5300ac03423fe46e8cf7",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000067/meta-20230331.htm"
+  },
+  "filing-0001326801-23-000103": {
+    "at": null,
+    "http_status": 403,
+    "provenance": "Recovered from command results and saved file after concurrent writes to the original shared manifest.",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000103/meta-20230930.htm"
+  },
+  "submissions-CIK0001326801-submissions-001.json": {
+    "at": "2026-09-14T02:24:22.345359+00:00",
+    "curl_exit": 0,
+    "file": "data/snapshots/ml-free-data-preparation-2026-09-13/submissions-CIK0001326801-submissions-001.json.json",
+    "http_status": 200,
+    "response_bytes": 314230,
+    "response_sha256": "89b00072f33fed915183c585b1663ebc37410d0bd0f7e0b39a528e33e4e60334",
+    "sha256": "89b00072f33fed915183c585b1663ebc37410d0bd0f7e0b39a528e33e4e60334",
+    "url": "https://data.sec.gov/submissions/CIK0001326801-submissions-001.json"
+  },
+  "submissions-JNJ": {
+    "at": null,
+    "file": "data/snapshots/ml-free-data-preparation-2026-09-13/submissions-JNJ.json",
+    "http_status": 200,
+    "provenance": "Recovered from command results and saved file after concurrent writes to the original shared manifest.",
+    "response_bytes": 154758,
+    "sha256": "93b22128a43b4f39572c4bee57c488b4336ce82fca1b8bb8bc3a6f86635e92f0",
+    "url": "https://data.sec.gov/submissions/CIK0000200406.json"
+  },
+  "submissions-META": {
+    "at": "2026-09-14T02:24:21.850873+00:00",
+    "curl_exit": 0,
+    "file": "data/snapshots/ml-free-data-preparation-2026-09-13/submissions-META.json",
+    "http_status": 200,
+    "response_bytes": 157527,
+    "response_sha256": "009af7b78bafe69ea35948fd261f14ad2f56076c2f7feb47d6241599f3f4391d",
+    "sha256": "009af7b78bafe69ea35948fd261f14ad2f56076c2f7feb47d6241599f3f4391d",
+    "url": "https://data.sec.gov/submissions/CIK0001326801.json"
+  }
+}

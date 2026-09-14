@@ -1,0 +1,11 @@
+{
+  "account_verification_sha256": "2d2e96ddfbd865ed0997069dc4aa49bd5e9a0b528e8234df5a312bf6020dca7b",
+  "aggregate_coverage_pass": true,
+  "completed_at_utc": "2026-09-14T06:54:21.913178+00:00",
+  "live_trading_approved": false,
+  "models_fitted": true,
+  "new_paid_data_usd": 0,
+  "reserved_prices_opened": false,
+  "result_sha256": "f67f024c6a556254464f061c76a5d3b583cce3704654757da923aff5263b34f9",
+  "status": "EXPLORATORY_MODEL_COMPARISON_NO_VALIDATION_OR_LIVE_APPROVAL"
+}

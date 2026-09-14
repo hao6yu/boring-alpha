@@ -1,0 +1,91 @@
+{
+  "new_paid_data_usd": 0,
+  "requests": [
+    {
+      "at": "2026-09-14T18:25:33.721530+00:00",
+      "curl_exit": 0,
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PNR-recent.json",
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "response_bytes": 297345,
+      "rows": 1177,
+      "sha256": "8a60765f57c26d63b63d169865d897d47f398835fc4a20cbc464918372b275d0",
+      "status": "DOWNLOADED",
+      "symbol": "PNR",
+      "url": "https://api.tiingo.com/tiingo/daily/pnr/prices?startDate=2022-01-01&endDate=2026-09-11&format=json&resampleFreq=daily"
+    },
+    {
+      "at": "2026-09-14T18:25:34.602515+00:00",
+      "curl_exit": 0,
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VFC-recent.json",
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "response_bytes": 297685,
+      "rows": 1177,
+      "sha256": "3fa79952240c3bcb19ec5987c09a49e29b17f7233015c3f2efd63b16a6f4f9cb",
+      "status": "DOWNLOADED",
+      "symbol": "VFC",
+      "url": "https://api.tiingo.com/tiingo/daily/vfc/prices?startDate=2022-01-01&endDate=2026-09-11&format=json&resampleFreq=daily"
+    },
+    {
+      "at": "2026-09-14T18:25:35.405507+00:00",
+      "curl_exit": 0,
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CSCO-recent.json",
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "response_bytes": 299085,
+      "rows": 1177,
+      "sha256": "b02b3cac251d652bdfacf204c4864b0f765a8c4ba538f929bfd677a0f81a224e",
+      "status": "DOWNLOADED",
+      "symbol": "CSCO",
+      "url": "https://api.tiingo.com/tiingo/daily/csco/prices?startDate=2022-01-01&endDate=2026-09-11&format=json&resampleFreq=daily"
+    }
+  ],
+  "symbols": {
+    "CSCO": {
+      "at": "2026-09-14T18:25:35.405507+00:00",
+      "curl_exit": 0,
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-CSCO-recent.json",
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "response_bytes": 299085,
+      "rows": 1177,
+      "sha256": "b02b3cac251d652bdfacf204c4864b0f765a8c4ba538f929bfd677a0f81a224e",
+      "status": "DOWNLOADED",
+      "symbol": "CSCO",
+      "url": "https://api.tiingo.com/tiingo/daily/csco/prices?startDate=2022-01-01&endDate=2026-09-11&format=json&resampleFreq=daily"
+    },
+    "PNR": {
+      "at": "2026-09-14T18:25:33.721530+00:00",
+      "curl_exit": 0,
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-PNR-recent.json",
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "response_bytes": 297345,
+      "rows": 1177,
+      "sha256": "8a60765f57c26d63b63d169865d897d47f398835fc4a20cbc464918372b275d0",
+      "status": "DOWNLOADED",
+      "symbol": "PNR",
+      "url": "https://api.tiingo.com/tiingo/daily/pnr/prices?startDate=2022-01-01&endDate=2026-09-11&format=json&resampleFreq=daily"
+    },
+    "VFC": {
+      "at": "2026-09-14T18:25:34.602515+00:00",
+      "curl_exit": 0,
+      "file": "data/snapshots/ml-stock-recent-validation-2026-09-14/tiingo-VFC-recent.json",
+      "first_date": "2022-01-03",
+      "http_status": 200,
+      "last_date": "2026-09-11",
+      "response_bytes": 297685,
+      "rows": 1177,
+      "sha256": "3fa79952240c3bcb19ec5987c09a49e29b17f7233015c3f2efd63b16a6f4f9cb",
+      "status": "DOWNLOADED",
+      "symbol": "VFC",
+      "url": "https://api.tiingo.com/tiingo/daily/vfc/prices?startDate=2022-01-01&endDate=2026-09-11&format=json&resampleFreq=daily"
+    }
+  }
+}

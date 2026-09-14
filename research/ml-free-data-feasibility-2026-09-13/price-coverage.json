@@ -1,0 +1,102 @@
+[
+  {
+    "cik": "0000320193",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "AAPL",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000789019",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "MSFT",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000019617",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "JPM",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000034088",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "XOM",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000200406",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "JNJ",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0001018724",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "AMZN",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000040545",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "GE",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0001326801",
+    "expected_sessions": 1427,
+    "first": "2018-05-01",
+    "label": "META",
+    "last": "2023-12-29",
+    "missing_sessions": [],
+    "price_days": 1427,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000718877",
+    "expected_sessions": 1373,
+    "first": "2018-05-01",
+    "label": "ATVI",
+    "last": "2023-10-12",
+    "missing_sessions": [],
+    "price_days": 1373,
+    "unexpected_dates": []
+  },
+  {
+    "cik": "0000886158",
+    "expected_sessions": 1260,
+    "first": "2018-05-01",
+    "label": "BBBY",
+    "last": "2023-05-02",
+    "missing_sessions": [],
+    "price_days": 1260,
+    "unexpected_dates": []
+  }
+]

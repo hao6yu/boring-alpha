@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-14T01:55:58.119644+00:00",
+  "curl_exit": 0,
+  "http_status": 206,
+  "method": "timeseries.get_range",
+  "params": {
+    "compression": "none",
+    "dataset": "XNAS.ITCH",
+    "encoding": "json",
+    "end": "2024-01-01",
+    "map_symbols": "true",
+    "pretty_px": "true",
+    "pretty_ts": "true",
+    "schema": "ohlcv-1d",
+    "start": "2018-05-01",
+    "stype_in": "raw_symbol",
+    "symbols": "AAPL,MSFT,JPM,XOM,JNJ,AMZN,GE,FB,META,ATVI,BBBY"
+  },
+  "response_bytes": 3215384,
+  "response_sha256": "ebe655799987e7811b5efc54941862d7ff94a7c18e31f8d64955e44d5e36710a",
+  "url": "https://hist.databento.com/v0/timeseries.get_range?dataset=XNAS.ITCH&schema=ohlcv-1d&symbols=AAPL%2CMSFT%2CJPM%2CXOM%2CJNJ%2CAMZN%2CGE%2CFB%2CMETA%2CATVI%2CBBBY&stype_in=raw_symbol&start=2018-05-01&end=2024-01-01&encoding=json&compression=none&pretty_px=true&pretty_ts=true&map_symbols=true",
+  "explanation": "Initial client accepted only HTTP200 and discarded a valid HTTP206 body. Corrected to preserve partial-symbol data; one explicit recovery download is counted in costs.",
+  "quote_usd": 0.022212937474
+}

@@ -1,0 +1,30 @@
+{
+  "base": {
+    "control_mean_profit_range": [
+      -416.62649800000145,
+      -410.62649800000145
+    ],
+    "controls_below_fixed_range": [
+      20,
+      20
+    ],
+    "ridge_tested_profit_range": [
+      -296.65173999999934,
+      -265.0578399999995
+    ]
+  },
+  "stress": {
+    "control_mean_profit_range": [
+      -537.2700674999978,
+      -531.2700674999978
+    ],
+    "controls_below_fixed_range": [
+      19,
+      19
+    ],
+    "ridge_tested_profit_range": [
+      -1865.27675,
+      -434.70264999999927
+    ]
+  }
+}

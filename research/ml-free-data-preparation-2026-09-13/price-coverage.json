@@ -1,0 +1,124 @@
+[
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "AAPL",
+    "rows": 1427,
+    "symbol": "AAPL",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "AMZN",
+    "rows": 1427,
+    "symbol": "AMZN",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [
+      "2023-10-13"
+    ],
+    "first": "2018-05-01",
+    "last": "2023-10-12",
+    "missing": [],
+    "provider_symbol": "ATVI",
+    "rows": 1373,
+    "symbol": "ATVI",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "GE",
+    "rows": 1427,
+    "symbol": "GE",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2023-01-04",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "GEHC",
+    "rows": 249,
+    "symbol": "GEHC",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "JNJ",
+    "rows": 1427,
+    "symbol": "JNJ",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "JPM",
+    "rows": 1427,
+    "symbol": "JPM",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "META",
+    "rows": 1427,
+    "symbol": "META",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "MSFT",
+    "rows": 1427,
+    "symbol": "MSFT",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2019-02-25",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "WAB",
+    "rows": 1222,
+    "symbol": "WAB",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-12-29",
+    "missing": [],
+    "provider_symbol": "XOM",
+    "rows": 1427,
+    "symbol": "XOM",
+    "unexpected": []
+  },
+  {
+    "excluded_stale_rows": [],
+    "first": "2018-05-01",
+    "last": "2023-09-29",
+    "missing": [],
+    "provider_symbol": "BBBYQ",
+    "rows": 1364,
+    "symbol": "BBBY",
+    "unexpected": []
+  }
+]

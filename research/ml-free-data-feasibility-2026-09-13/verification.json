@@ -1,0 +1,20 @@
+{
+  "archived_payload_hashes_checked": 14,
+  "checks": [
+    "NYSE holiday filing lag",
+    "synthetic future-restatement exclusion",
+    "contradictory fact rejection",
+    "Apple TTM arithmetic",
+    "daily OHLCV and dated symbol map",
+    "expected listing-session coverage",
+    "unrelated META fund exclusion",
+    "no forward fill after listing removal",
+    "both streamed requests counted in cost"
+  ],
+  "download_credit_cost_estimate_usd": 0.044425874948,
+  "full_feature_panel_qualified": false,
+  "historical_fact_components_checked": 346,
+  "no_profitability_result": true,
+  "status": "PASS_FOR_REPORTED_FEASIBILITY_SCOPE",
+  "successful_data_responses": 2
+}

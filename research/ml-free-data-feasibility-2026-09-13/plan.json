@@ -1,0 +1,100 @@
+{
+  "companies": [
+    {
+      "aliases": [
+        "AAPL"
+      ],
+      "cik": "0000320193",
+      "label": "AAPL"
+    },
+    {
+      "aliases": [
+        "MSFT"
+      ],
+      "cik": "0000789019",
+      "label": "MSFT"
+    },
+    {
+      "aliases": [
+        "JPM"
+      ],
+      "cik": "0000019617",
+      "label": "JPM"
+    },
+    {
+      "aliases": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "label": "XOM"
+    },
+    {
+      "aliases": [
+        "JNJ"
+      ],
+      "cik": "0000200406",
+      "label": "JNJ"
+    },
+    {
+      "aliases": [
+        "AMZN"
+      ],
+      "cik": "0001018724",
+      "label": "AMZN"
+    },
+    {
+      "aliases": [
+        "GE"
+      ],
+      "cik": "0000040545",
+      "label": "GE"
+    },
+    {
+      "aliases": [
+        "FB",
+        "META"
+      ],
+      "cik": "0001326801",
+      "label": "META"
+    },
+    {
+      "aliases": [
+        "ATVI"
+      ],
+      "cik": "0000718877",
+      "label": "ATVI"
+    },
+    {
+      "aliases": [
+        "BBBY"
+      ],
+      "cik": "0000886158",
+      "label": "BBBY"
+    }
+  ],
+  "credit_quote_ceiling_usd": 1,
+  "fresh_credit_verification_required": true,
+  "fundamental_rule": "Only facts filed before 2024; each decision uses filing availability plus two NYSE sessions.",
+  "kind": "DATA_FEASIBILITY_ONLY",
+  "no_models": true,
+  "no_new_cash": true,
+  "no_reserved_2024_2025_strategy_values": true,
+  "no_strategy_returns": true,
+  "price_query": {
+    "dataset": "XNAS.ITCH",
+    "end": "2024-01-01",
+    "schema": "ohlcv-1d",
+    "start": "2018-05-01",
+    "stype_in": "raw_symbol",
+    "symbols": "AAPL,MSFT,JPM,XOM,JNJ,AMZN,GE,FB,META,ATVI,BBBY"
+  },
+  "price_semantics": "Unadjusted Nasdaq venue UTC-day OHLCV; not qualified fills, total returns or consolidated volume.",
+  "purpose": "Check as-filed financial availability, price joins, ticker transitions, removed securities and costs.",
+  "sample_decision_dates": [
+    "2019-12-31",
+    "2021-12-31",
+    "2023-06-30",
+    "2023-11-30"
+  ],
+  "selection": "Predetermined coverage cases, not a performance-selected or representative portfolio."
+}

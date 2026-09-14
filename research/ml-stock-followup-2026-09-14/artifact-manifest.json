@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-14T16:48:26.674568+00:00",
+  "elapsed_minutes_since_protocol": 14.377288883333334,
+  "evaluation_code_unchanged": true,
+  "files": {
+    "README.md": "c11ee3e3b32b294396cb27814fd2986bd104c511c72dcf5a96c2243bdac6d86e",
+    "RESULTS.md": "104a9ed9292e7677025f6602e2559d6a4d25d60f6d6eb3731fea9029ad75a12e",
+    "benchmark-paths.png": "ebaddc1c8ca95faf2635c970bdefc2e2e5ad954498b62267b0b341ed6d3efaba",
+    "benchmark-paths.svg": "464859417feafca3911bcd75ff523cd84cdab9ba51d45bd1eb983eec67ddcf26",
+    "decision.json": "5ca691858b5f8b5cc62c9cb40040be41602b6f693a1845007e7709688ca57ff3",
+    "followup.py": "637bece14340c8f8eb902c59a1b508b4e46339094d68ea9132353ab0c3e2133f",
+    "orders.json": "ee846c148e514243ade3c3134e6ddae9c0d5d6f62ab3b7986cee81799013c86e",
+    "presentation-statistics.json": "6e9042029e3ee3e2185ce9653a8aed716e607286d82f055c40d2740ffcdd9589",
+    "protocol.json": "e1589a70adc00e523dfe87f3c7910c11939ec1d01b8541c11a4038dac3aff090",
+    "report.py": "4d9d98f6d85f3e07189112e6e05ee53e220f76d862450851a23792bced366d7e",
+    "results.json": "7988048c07856c0533e0d9d3870ec8f4c42b6a6d0817120b76966da08802efc0",
+    "run-freeze.json": "e5a9aaaaefb70c9b74a714ac81d4c12aec59c69ca1341d4abe638de42519369d",
+    "verification-after.json": "f1d5e683476bfc7bb93e2e1b5d464d88ff4d0082224ee79bece91b2b425c9ce7",
+    "verification-before.json": "f16a15efbd71d68953f74f217dcfbbdd86e12c9f2f73e65635e99d1a26ce6759",
+    "verify.py": "91c30aca4e8bcf7f317849b026ef07708ca8423a85ddf18d9ec5bbfe1507a48c"
+  },
+  "original_artifacts_unchanged": true,
+  "presentation_code_added_after_evaluation": [
+    "report.py"
+  ]
+}

@@ -1,0 +1,2156 @@
+{
+  "registrant_bridges": {
+    "CI": {
+      "effective": "2018-12-21",
+      "new": "0001739940",
+      "old": "0000701221",
+      "source": "https://www.sec.gov/Archives/edgar/data/1532063/000114036118045477/form8k.htm"
+    },
+    "XRX": {
+      "effective": "2019-07-31",
+      "new": "0001770450",
+      "old": "0000108772",
+      "ratio": 1,
+      "source": "https://www.sec.gov/Archives/edgar/data/1770450/000119312519208837/d767474d8k12b.htm"
+    }
+  },
+  "rows": [
+    {
+      "alias": null,
+      "cik": "0000077360",
+      "historical_roster_name": "Pentair Ltd.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2012-10-09T04:00:00.000Z",
+          "name": "PENTAIR LTD",
+          "to": "2014-06-03T04:00:00.000Z"
+        },
+        {
+          "from": "1994-01-05T05:00:00.000Z",
+          "name": "PENTAIR INC",
+          "to": "2012-10-02T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "PENTAIR plc",
+      "sec_tickers": [
+        "PNR"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000077360.json",
+      "source_sha256": "b1c98055428ec2e0f44858ab21dcb1250edc4ea96ba9967c19f821e808f41feb",
+      "symbol": "PNR"
+    },
+    {
+      "alias": null,
+      "cik": "0000103379",
+      "historical_roster_name": "V.F. Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2002-03-20T05:00:00.000Z",
+          "name": "V F CORP/NC",
+          "to": "2002-02-15T05:00:00.000Z"
+        },
+        {
+          "from": "1994-04-29T04:00:00.000Z",
+          "name": "V F CORP /PA/",
+          "to": "2001-01-10T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "V F CORP",
+      "sec_tickers": [
+        "VFC"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000103379.json",
+      "source_sha256": "fa46fed906567cee804f74c0f49eaea173acefb26b1a129f5974e944b7a04413",
+      "symbol": "VFC"
+    },
+    {
+      "alias": null,
+      "cik": "0000858877",
+      "historical_roster_name": "Cisco Systems",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2011-10-18T04:00:00.000Z",
+          "name": "CISCO SYSTEMS, INC.",
+          "to": "2026-09-11T04:00:00.000Z"
+        },
+        {
+          "from": "1995-02-13T05:00:00.000Z",
+          "name": "CISCO SYSTEMS INC",
+          "to": "2011-11-22T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "CISCO SYSTEMS, INC.",
+      "sec_tickers": [
+        "CSCO"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000858877.json",
+      "source_sha256": "a793dbc32faded28aa9b39219d774ccc5c52011fa220fb061136bc453c356ffb",
+      "symbol": "CSCO"
+    },
+    {
+      "alias": null,
+      "cik": "0000106640",
+      "historical_roster_name": "Whirlpool Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "WHIRLPOOL CORP /DE/",
+      "sec_tickers": [
+        "WHR",
+        "WHR-PA"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000106640.json",
+      "source_sha256": "d7a2f6af35d4bfe3236bcc75ee41c3e33b2dbc0781e38131aa4c633f9a5b8c71",
+      "symbol": "WHR"
+    },
+    {
+      "alias": null,
+      "cik": "0000927628",
+      "historical_roster_name": "Capital One Financial",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "CAPITAL ONE FINANCIAL CORP",
+      "sec_tickers": [
+        "COF",
+        "COF-PI",
+        "COF-PJ",
+        "COF-PK",
+        "COF-PL",
+        "COF-PN"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000927628.json",
+      "source_sha256": "06299c725db98514fcc59311324ac0aae9f92507e70f67fe4050f556767fcdf1",
+      "symbol": "COF"
+    },
+    {
+      "alias": null,
+      "cik": "0000315293",
+      "historical_roster_name": "Aon plc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1995-11-14T05:00:00.000Z",
+          "name": "AON CORP",
+          "to": "2012-04-02T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Aon plc",
+      "sec_tickers": [
+        "AON"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000315293.json",
+      "source_sha256": "b9a1983071b10cb51c6dfc9799b2c123964c6974cf9afc78839ddb5e87a308e8",
+      "symbol": "AON"
+    },
+    {
+      "alias": null,
+      "cik": "0000315213",
+      "historical_roster_name": "Robert Half International",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2019-07-23T04:00:00.000Z",
+          "name": "ROBERT HALF INTERNATIONAL INC.",
+          "to": "2023-05-19T04:00:00.000Z"
+        },
+        {
+          "from": "1994-05-09T04:00:00.000Z",
+          "name": "HALF ROBERT INTERNATIONAL INC /DE/",
+          "to": "2019-05-29T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "ROBERT HALF INC.",
+      "sec_tickers": [
+        "RHI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000315213.json",
+      "source_sha256": "7c97290f648c8b08964ae5c05302855eaee9b3a89d5df35e5ab16f8c2a42af38",
+      "symbol": "RHI"
+    },
+    {
+      "alias": null,
+      "cik": "0001585689",
+      "historical_roster_name": "Hilton Worldwide Holdings Inc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Hilton Worldwide Holdings Inc.",
+      "sec_tickers": [
+        "HLT"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001585689.json",
+      "source_sha256": "fc74f842da060ae24515ec1566a4a47c17443997138af9a0c86a1818bd3e3353",
+      "symbol": "HLT"
+    },
+    {
+      "alias": null,
+      "cik": "0001103982",
+      "historical_roster_name": "Mondelez International",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2000-01-24T05:00:00.000Z",
+          "name": "KRAFT FOODS INC",
+          "to": "2012-09-28T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Mondelez International, Inc.",
+      "sec_tickers": [
+        "MDLZ"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001103982.json",
+      "source_sha256": "b9003cb412bff4152f0681b2b892282a84bf5aafeaf93978cb7492611f60563c",
+      "symbol": "MDLZ"
+    },
+    {
+      "alias": null,
+      "cik": "0000879169",
+      "historical_roster_name": "Incyte",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2003-03-28T05:00:00.000Z",
+          "name": "INCYTE INC",
+          "to": "2003-03-28T05:00:00.000Z"
+        },
+        {
+          "from": "2000-08-03T04:00:00.000Z",
+          "name": "INCYTE GENOMICS INC",
+          "to": "2003-02-25T05:00:00.000Z"
+        },
+        {
+          "from": "1994-06-07T04:00:00.000Z",
+          "name": "INCYTE PHARMACEUTICALS INC",
+          "to": "2000-04-18T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "INCYTE CORP",
+      "sec_tickers": [
+        "INCY"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000879169.json",
+      "source_sha256": "21cbbb4ffc73dd6ab337076b62fb9254ff16b8078f39c0836966db035035bfeb",
+      "symbol": "INCY"
+    },
+    {
+      "alias": null,
+      "cik": "0000026172",
+      "historical_roster_name": "Cummins Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-03-10T05:00:00.000Z",
+          "name": "CUMMINS ENGINE CO INC",
+          "to": "2001-08-29T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "CUMMINS INC",
+      "sec_tickers": [
+        "CMI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000026172.json",
+      "source_sha256": "4be43666df907d167e28713cf9127f2e4e817cdc6ca771dc68a0b1eda38c1f29",
+      "symbol": "CMI"
+    },
+    {
+      "alias": null,
+      "cik": "0001521332",
+      "historical_roster_name": "Aptiv Plc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2011-05-25T04:00:00.000Z",
+          "name": "Delphi Automotive PLC",
+          "to": "2017-11-29T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Aptiv PLC",
+      "sec_tickers": [
+        "APTV"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001521332.json",
+      "source_sha256": "a7c5310e7d2e64963c4f468938e56847859bfc3a0a237aec293303e596514c4f",
+      "symbol": "APTV"
+    },
+    {
+      "alias": null,
+      "cik": "0000030625",
+      "historical_roster_name": "Flowserve Corporation",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1997-07-23T04:00:00.000Z",
+          "name": "DURCO INTERNATIONAL INC",
+          "to": "1997-05-15T04:00:00.000Z"
+        },
+        {
+          "from": "1994-05-13T04:00:00.000Z",
+          "name": "DURIRON CO INC",
+          "to": "1997-03-14T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "FLOWSERVE CORP",
+      "sec_tickers": [
+        "FLS"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000030625.json",
+      "source_sha256": "6b8fbc56b614eb3171189d4b296fdf9084b1509a35ef8077d98af719bf352779",
+      "symbol": "FLS"
+    },
+    {
+      "alias": null,
+      "cik": "0001308161",
+      "historical_roster_name": "Twenty-First Century Fox Class A",
+      "lifecycle": {
+        "end": "2019-03-19",
+        "outcome": "MIXED_MERGER_AND_DISTRIBUTION_BEFORE_FIRST_SIGNAL",
+        "provider_series_rejected": "Tiingo FOXA starts March 2019 and is the newly separated Fox Corporation, not the 2018 cohort issuer.",
+        "source": "https://thewaltdisneycompany.com/press-releases/disney-21st-century-fox-acquisition-closing-date/"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2004-11-12T00:00:00.000Z",
+          "name": "NEWS CORP",
+          "to": "2013-06-24T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "TWENTY-FIRST CENTURY FOX, INC.",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001308161.json",
+      "source_sha256": "77726a460527e76061bcdb378a57d895a80478e833da1780d5c403adbef4e802",
+      "symbol": "FOXA"
+    },
+    {
+      "alias": null,
+      "cik": "0000068505",
+      "historical_roster_name": "Motorola Solutions Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-08-10T04:00:00.000Z",
+          "name": "MOTOROLA INC",
+          "to": "2011-01-03T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Motorola Solutions, Inc.",
+      "sec_tickers": [
+        "MSI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000068505.json",
+      "source_sha256": "346ad7f32884137ec7e91aeb3c3b3628a5aec32c24870dcb54198c297f939294",
+      "symbol": "MSI"
+    },
+    {
+      "alias": null,
+      "cik": "0000310764",
+      "historical_roster_name": "Stryker Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "STRYKER CORP",
+      "sec_tickers": [
+        "SYK"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000310764.json",
+      "source_sha256": "3523e6cc79f90c903b5713325cfb5ec43fe5707e43d3ffbc697003ac337b01b3",
+      "symbol": "SYK"
+    },
+    {
+      "alias": null,
+      "cik": "0001099800",
+      "historical_roster_name": "Edwards Lifesciences",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1999-12-08T05:00:00.000Z",
+          "name": "CVG CONTROLLED INC",
+          "to": "2000-01-21T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Edwards Lifesciences Corp",
+      "sec_tickers": [
+        "EW"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001099800.json",
+      "source_sha256": "5d76af39f6529f05baa462a11df1379552c298fd0a8d597690b6ba614d6c88f0",
+      "symbol": "EW"
+    },
+    {
+      "alias": null,
+      "cik": "0001374310",
+      "historical_roster_name": "Cboe Global Markets",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2007-01-25T05:00:00.000Z",
+          "name": "CBOE Holdings, Inc.",
+          "to": "2017-10-13T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Cboe Global Markets, Inc.",
+      "sec_tickers": [
+        "CBOE"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001374310.json",
+      "source_sha256": "7aabbcb3aca9751280af6998944c1071be2b2354fd9049899fcbe5c9e3c4616b",
+      "symbol": "CBOE"
+    },
+    {
+      "alias": null,
+      "cik": "0001059556",
+      "historical_roster_name": "Moody's Corp",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1998-09-29T04:00:00.000Z",
+          "name": "DUN & BRADSTREET CORP /DE/",
+          "to": "2000-02-04T05:00:00.000Z"
+        },
+        {
+          "from": "1998-04-16T04:00:00.000Z",
+          "name": "NEW DUN & BRADSTREET CORP",
+          "to": "1998-06-26T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "MOODYS CORP /DE/",
+      "sec_tickers": [
+        "MCO"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001059556.json",
+      "source_sha256": "7c2df1974b13a7bf8a09553145c47d573f96080da0531c89a3a8939f95f82f03",
+      "symbol": "MCO"
+    },
+    {
+      "alias": null,
+      "cik": "0001688568",
+      "historical_roster_name": "DXC Technology",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2016-11-02T04:00:00.000Z",
+          "name": "Everett SpinCo, Inc.",
+          "to": "2017-03-31T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "DXC Technology Co",
+      "sec_tickers": [
+        "DXC"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001688568.json",
+      "source_sha256": "be092a4beccf19dcd9222b97c1ad9407af36a30066eebf183446eb626bbf2f15",
+      "symbol": "DXC"
+    },
+    {
+      "alias": {
+        "provider": "LUMN",
+        "source": "https://ir.lumen.com/news/news-details/2020/CenturyLink-Transforms-Rebrands-as-Lumen/default.aspx"
+      },
+      "cik": "0000018926",
+      "historical_roster_name": "CenturyLink Inc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2010-11-09T05:00:00.000Z",
+          "name": "CENTURYLINK, INC",
+          "to": "2021-01-20T05:00:00.000Z"
+        },
+        {
+          "from": "1999-07-09T04:00:00.000Z",
+          "name": "CENTURYTEL INC",
+          "to": "2010-11-08T05:00:00.000Z"
+        },
+        {
+          "from": "1994-01-28T05:00:00.000Z",
+          "name": "CENTURY TELEPHONE ENTERPRISES INC",
+          "to": "1999-05-14T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Lumen Technologies, Inc.",
+      "sec_tickers": [
+        "LUMN"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000018926.json",
+      "source_sha256": "4a4759ce43286c10a8d620b980f85f88044645829b52317d78aef433789a3520",
+      "symbol": "CTL"
+    },
+    {
+      "alias": null,
+      "cik": "0001087423",
+      "historical_roster_name": "Red Hat Inc.",
+      "lifecycle": {
+        "cash": 190,
+        "end": "2019-07-08",
+        "event_date": "2019-07-09",
+        "outcome": "CASH_MERGER",
+        "source": "https://www.ibm.com/investor/news/ibm-completes-acquisition-of-red-hat"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "RED HAT INC",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001087423.json",
+      "source_sha256": "92958de539c8b39617b6189358a7084c7e620d8b0e5518064407206ddac13709",
+      "symbol": "RHT"
+    },
+    {
+      "alias": null,
+      "cik": "0000080424",
+      "historical_roster_name": "Procter & Gamble",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "PROCTER & GAMBLE Co",
+      "sec_tickers": [
+        "PG"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000080424.json",
+      "source_sha256": "97e4a9f30f39ca271fa163dfc9ad830759f667926e23c6812ac9dac73f10a7d2",
+      "symbol": "PG"
+    },
+    {
+      "alias": null,
+      "cik": "0000895421",
+      "historical_roster_name": "Morgan Stanley",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1999-11-23T05:00:00.000Z",
+          "name": "MORGAN STANLEY",
+          "to": "2026-09-11T04:00:00.000Z"
+        },
+        {
+          "from": "1999-11-23T05:00:00.000Z",
+          "name": "MORGAN STANLEY",
+          "to": "2026-09-11T04:00:00.000Z"
+        },
+        {
+          "from": "1993-11-08T05:00:00.000Z",
+          "name": "MORGAN STANLEY DEAN WITTER & CO",
+          "to": "2002-07-12T04:00:00.000Z"
+        },
+        {
+          "from": "1997-06-19T04:00:00.000Z",
+          "name": "MORGAN STANLEY DEAN WITTER DISCOVER & CO",
+          "to": "1998-03-18T05:00:00.000Z"
+        },
+        {
+          "from": "1996-08-14T04:00:00.000Z",
+          "name": "DEAN WITTER DISCOVER & CO",
+          "to": "1997-05-08T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "MORGAN STANLEY",
+      "sec_tickers": [
+        "MS",
+        "MS-PK",
+        "MS-PE",
+        "MS-PA",
+        "MS-PF",
+        "MS-PI",
+        "MS-PL",
+        "MS-PO",
+        "MS-PP",
+        "MS-PQ"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000895421.json",
+      "source_sha256": "244b52022b1ccd50d5eff0a3af8270edce747c366aab2f977d74e1de698ce28e",
+      "symbol": "MS"
+    },
+    {
+      "alias": null,
+      "cik": "0000100517",
+      "historical_roster_name": "United Continental Holdings",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2010-07-22T04:00:00.000Z",
+          "name": "United Continental Holdings, Inc.",
+          "to": "2019-06-27T04:00:00.000Z"
+        },
+        {
+          "from": "1994-08-08T04:00:00.000Z",
+          "name": "UAL CORP /DE/",
+          "to": "2010-09-30T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "United Airlines Holdings, Inc.",
+      "sec_tickers": [
+        "UAL"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000100517.json",
+      "source_sha256": "cae8ad329f5cbdc6d382e5cd6dbd4d8ff867405c5d1e769dd18051f18883ed7a",
+      "symbol": "UAL"
+    },
+    {
+      "alias": null,
+      "cik": "0000058492",
+      "historical_roster_name": "Leggett & Platt",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "LEGGETT & PLATT INC",
+      "sec_tickers": [
+        "LEG"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000058492.json",
+      "source_sha256": "02457b7ecaf88e0c9ebfad6093269a90400e56b2d9537981a1234ee49eb59439",
+      "symbol": "LEG"
+    },
+    {
+      "alias": null,
+      "cik": "0001364742",
+      "historical_roster_name": "BlackRock",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2006-09-05T00:00:00.000Z",
+          "name": "BlackRock Inc.",
+          "to": "2024-09-26T00:00:00.000Z"
+        },
+        {
+          "from": "2006-10-03T00:00:00.000Z",
+          "name": "BlackRock, Inc.",
+          "to": "2006-10-05T00:00:00.000Z"
+        },
+        {
+          "from": "2006-06-09T00:00:00.000Z",
+          "name": "New BlackRock, Inc.",
+          "to": "2006-09-29T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "BlackRock Finance, Inc.",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001364742.json",
+      "source_sha256": "c881bb8130b15929b20c575da5e6eea22cd3e32c0b99c214fd2d80f7b0b93f25",
+      "symbol": "BLK"
+    },
+    {
+      "alias": null,
+      "cik": "0001168054",
+      "historical_roster_name": "Cimarex Energy",
+      "lifecycle": {
+        "child": "CTRA",
+        "end": "2021-09-30",
+        "event_date": "2021-10-01",
+        "outcome": "STOCK_MERGER",
+        "ratio": 4.0146,
+        "source": "https://www.sec.gov/Archives/edgar/data/858470/000085847022000009/cog-20211231.htm"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2002-02-26T00:00:00.000Z",
+          "name": "HELMERICH & PAYNE EXPLORATION & PRODUCTION CO",
+          "to": "2002-04-24T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "CIMAREX ENERGY CO",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001168054.json",
+      "source_sha256": "a147f54cb06e19936865b877ea78bb000d625e2d257088f5ab6594eaa0e9472f",
+      "symbol": "XEC"
+    },
+    {
+      "alias": null,
+      "cik": "0001130310",
+      "historical_roster_name": "CenterPoint Energy",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2001-12-18T05:00:00.000Z",
+          "name": "CENTERPOINT ENERGY INC",
+          "to": "2026-09-09T04:00:00.000Z"
+        },
+        {
+          "from": "2001-09-17T04:00:00.000Z",
+          "name": "RELIANT ENERGY REGCO INC",
+          "to": "2001-09-17T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "CENTERPOINT ENERGY INC",
+      "sec_tickers": [
+        "CNP"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001130310.json",
+      "source_sha256": "3a0ab0f206038d7553a2e114027d51b6f1b354a9c7bed91b7f46343c2457cb96",
+      "symbol": "CNP"
+    },
+    {
+      "alias": null,
+      "cik": "0001701605",
+      "historical_roster_name": "Baker Hughes, a GE Company",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2017-04-26T04:00:00.000Z",
+          "name": "Baker Hughes a GE Co",
+          "to": "2019-10-10T04:00:00.000Z"
+        },
+        {
+          "from": "2017-03-29T04:00:00.000Z",
+          "name": "Bear Newco, Inc.",
+          "to": "2017-05-30T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Baker Hughes Co",
+      "sec_tickers": [
+        "BKR"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001701605.json",
+      "source_sha256": "80530b734b519e14dc049aa0077b0f92b42ec3dbe1203b65c7dc8add50908a88",
+      "symbol": "BHGE"
+    },
+    {
+      "alias": null,
+      "cik": "0001489393",
+      "historical_roster_name": "LyondellBasell",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "LyondellBasell Industries N.V.",
+      "sec_tickers": [
+        "LYB"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001489393.json",
+      "source_sha256": "92bf1201617163445ab273c1f6ef01deb7e0584bd69c3388c53176f531b4faae",
+      "symbol": "LYB"
+    },
+    {
+      "alias": null,
+      "cik": "0001039684",
+      "historical_roster_name": "ONEOK",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1997-11-28T05:00:00.000Z",
+          "name": "ONEOK INC /NEW/",
+          "to": "2026-09-11T04:00:00.000Z"
+        },
+        {
+          "from": "1997-11-21T05:00:00.000Z",
+          "name": "WAI INC",
+          "to": "1997-11-28T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "ONEOK INC /NEW/",
+      "sec_tickers": [
+        "OKE"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001039684.json",
+      "source_sha256": "9e7845663f5dcab036e779d0c19b58cc07981b7914a6f0a91d17e9fc0cd0f77e",
+      "symbol": "OKE"
+    },
+    {
+      "alias": null,
+      "cik": "0001034054",
+      "historical_roster_name": "SBA Communications",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "SBA COMMUNICATIONS CORP",
+      "sec_tickers": [
+        "SBAC"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001034054.json",
+      "source_sha256": "1f510c4bf25e94c1f9be5994a08996bfd0d13c8adae1aca098a52c115ca30bc0",
+      "symbol": "SBAC"
+    },
+    {
+      "alias": null,
+      "cik": "0000051434",
+      "historical_roster_name": "International Paper",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "INTERNATIONAL PAPER CO /NEW/",
+      "sec_tickers": [
+        "IP",
+        "INPAP"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000051434.json",
+      "source_sha256": "4f443bae48a6ceec2205284c5f1294fbefd1eb814651e306a663ec89773f76d7",
+      "symbol": "IP"
+    },
+    {
+      "alias": null,
+      "cik": "0000055785",
+      "historical_roster_name": "Kimberly-Clark",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "KIMBERLY CLARK CORP",
+      "sec_tickers": [
+        "KMB"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000055785.json",
+      "source_sha256": "386b7437ebd72b893c1abbeff506a86ad3076d8429ac6b6597fce3829f4db9a8",
+      "symbol": "KMB"
+    },
+    {
+      "alias": {
+        "provider": "TNL",
+        "source": "https://investor.travelandleisureco.com/company-info/faq"
+      },
+      "cik": "0001361658",
+      "historical_roster_name": "Wyndham Worldwide",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2021-02-17T05:00:00.000Z",
+          "name": "Travel & Leisure Co.",
+          "to": "2026-08-27T04:00:00.000Z"
+        },
+        {
+          "from": "2018-05-31T04:00:00.000Z",
+          "name": "Wyndham Destinations, Inc.",
+          "to": "2021-02-16T05:00:00.000Z"
+        },
+        {
+          "from": "2006-05-11T04:00:00.000Z",
+          "name": "WYNDHAM WORLDWIDE CORP",
+          "to": "2018-05-23T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Travel & Leisure Co.",
+      "sec_tickers": [
+        "TNL"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001361658.json",
+      "source_sha256": "57f810c80a07b8530e80a8e5d8c62863c2637bd2ba73eeeddae7d327fd678757",
+      "symbol": "WYN"
+    },
+    {
+      "alias": null,
+      "cik": "0001396009",
+      "historical_roster_name": "Vulcan Materials",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2007-04-12T04:00:00.000Z",
+          "name": "Virginia Holdco, Inc.",
+          "to": "2007-11-16T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Vulcan Materials CO",
+      "sec_tickers": [
+        "VMC"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001396009.json",
+      "source_sha256": "5aca8d77031b958ecfef5a28f93d30056e130985d40cc231d4d79b8c29b6e029",
+      "symbol": "VMC"
+    },
+    {
+      "alias": null,
+      "cik": "0000827054",
+      "historical_roster_name": "Microchip Technology",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "MICROCHIP TECHNOLOGY INC",
+      "sec_tickers": [
+        "MCHP",
+        "MCHPP"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000827054.json",
+      "source_sha256": "6d67cef746486f703b27501bdfd115c65542c92e47b0f6844502c6a0bc9b115b",
+      "symbol": "MCHP"
+    },
+    {
+      "alias": null,
+      "cik": "0000046080",
+      "historical_roster_name": "Hasbro Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-11-09T05:00:00.000Z",
+          "name": "HASBRO INC",
+          "to": "2019-07-02T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "HASBRO, INC.",
+      "sec_tickers": [
+        "HAS"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000046080.json",
+      "source_sha256": "4e2d466880d12bd5bbfd7d698e3a86a7589a352ca5dd459eeb9144b7afa824a5",
+      "symbol": "HAS"
+    },
+    {
+      "alias": null,
+      "cik": "0000029905",
+      "historical_roster_name": "Dover Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "DOVER Corp",
+      "sec_tickers": [
+        "DOV"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000029905.json",
+      "source_sha256": "7415ac717bbe91f288f86e58039213bc275cc120ba1aa80198b5e9832c956784",
+      "symbol": "DOV"
+    },
+    {
+      "alias": null,
+      "cik": "0000054480",
+      "historical_roster_name": "Kansas City Southern",
+      "lifecycle": {
+        "cash": 90,
+        "child": "CP",
+        "end": "2021-12-13",
+        "event_date": "2021-12-14",
+        "outcome": "CASH_AND_STOCK_MERGER",
+        "ratio": 2.884,
+        "source": "https://www.sec.gov/Archives/edgar/data/54480/000119312521356252/d25745d8k.htm"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-11-14T00:00:00.000Z",
+          "name": "KANSAS CITY SOUTHERN INDUSTRIES INC",
+          "to": "2002-05-02T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "KANSAS CITY SOUTHERN",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0000054480.json",
+      "source_sha256": "009d83b665ff989b5f61fd61a666ec6567843dd80cf2a1768cfda038b7ccb3e3",
+      "symbol": "KSU"
+    },
+    {
+      "alias": null,
+      "cik": "0001510295",
+      "historical_roster_name": "Marathon Petroleum",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Marathon Petroleum Corp",
+      "sec_tickers": [
+        "MPC"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001510295.json",
+      "source_sha256": "e271fdba0d5bef81fcfa0266665cc8a1e75998a27b11ea710994e8c9b8d44fc2",
+      "symbol": "MPC"
+    },
+    {
+      "alias": null,
+      "cik": "0001530721",
+      "historical_roster_name": "Michael Kors Holdings",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2011-12-02T05:00:00.000Z",
+          "name": "Michael Kors Holdings Ltd",
+          "to": "2018-12-21T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Capri Holdings Ltd",
+      "sec_tickers": [
+        "CPRI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001530721.json",
+      "source_sha256": "9cf248c3c71ddf3b875e797f778cac5e926f2908ebed291e984463a98f08a058",
+      "symbol": "KORS"
+    },
+    {
+      "alias": null,
+      "cik": "0000320187",
+      "historical_roster_name": "Nike",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1995-01-20T05:00:00.000Z",
+          "name": "NIKE INC",
+          "to": "2019-08-05T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "NIKE, Inc.",
+      "sec_tickers": [
+        "NKE"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000320187.json",
+      "source_sha256": "914ea77e617701e2d215c85fd4a90dae8c8fd0921ceaf498e25167398a654d1b",
+      "symbol": "NKE"
+    },
+    {
+      "alias": null,
+      "cik": "0001281761",
+      "historical_roster_name": "Regions Financial Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2004-02-27T05:00:00.000Z",
+          "name": "NEW REGIONS FINANCIAL CORP",
+          "to": "2004-04-29T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "REGIONS FINANCIAL CORP",
+      "sec_tickers": [
+        "RF",
+        "RF-PC",
+        "RF-PE",
+        "RF-PF"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001281761.json",
+      "source_sha256": "fc51a29477626875b63be0b9c2bd7ddfe668faf994b1a83ec64debe9c0964d5a",
+      "symbol": "RF"
+    },
+    {
+      "alias": null,
+      "cik": "0000896878",
+      "historical_roster_name": "Intuit Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1996-10-17T04:00:00.000Z",
+          "name": "INTUIT INC",
+          "to": "2023-03-08T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "INTUIT INC.",
+      "sec_tickers": [
+        "INTU"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000896878.json",
+      "source_sha256": "be25c8a55f70886ab7f9d8063f1267280727d8729d763c4dba2c6bd4e139f3f8",
+      "symbol": "INTU"
+    },
+    {
+      "alias": null,
+      "cik": "0000831259",
+      "historical_roster_name": "Freeport-McMoRan Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-01-12T05:00:00.000Z",
+          "name": "FREEPORT MCMORAN COPPER & GOLD INC",
+          "to": "2014-07-02T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "FREEPORT-MCMORAN INC",
+      "sec_tickers": [
+        "FCX"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000831259.json",
+      "source_sha256": "05fb7ff9050d4be4f5e7fb7eff336932b883e36167197b9cd19433dc3626005f",
+      "symbol": "FCX"
+    },
+    {
+      "alias": null,
+      "cik": "0001442145",
+      "historical_roster_name": "Verisk Analytics",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Verisk Analytics, Inc.",
+      "sec_tickers": [
+        "VRSK"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001442145.json",
+      "source_sha256": "1c0068b4afb254c035ee03402df8a1b05a5daf476562d8734d6bec7986aeac71",
+      "symbol": "VRSK"
+    },
+    {
+      "alias": null,
+      "cik": "0000315852",
+      "historical_roster_name": "Range Resources Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-03-28T05:00:00.000Z",
+          "name": "LOMAK PETROLEUM INC",
+          "to": "1998-07-16T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "RANGE RESOURCES CORP",
+      "sec_tickers": [
+        "RRC"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000315852.json",
+      "source_sha256": "1e2b776db911a9323485bca3b09a96aff62b464907e0baec199b12df6cdc5695",
+      "symbol": "RRC"
+    },
+    {
+      "alias": null,
+      "cik": "0001532063",
+      "historical_roster_name": "Express Scripts",
+      "lifecycle": {
+        "end": "2018-12-20",
+        "outcome": "MERGER_BEFORE_FIRST_SIGNAL",
+        "source": "https://www.sec.gov/Archives/edgar/data/1532063/000114036118045477/form8k.htm"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2011-10-06T00:00:00.000Z",
+          "name": "Aristotle Holding, Inc.",
+          "to": "2011-11-18T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "Express Scripts Holding Co.",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001532063.json",
+      "source_sha256": "84a71314b7e577ed5e946679ad162fbbceb4c67931ce9d0ef6ee0b9b80278cb7",
+      "symbol": "ESRX"
+    },
+    {
+      "alias": null,
+      "cik": "0000916365",
+      "historical_roster_name": "Tractor Supply Company",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "TRACTOR SUPPLY CO /DE/",
+      "sec_tickers": [
+        "TSCO"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000916365.json",
+      "source_sha256": "7fad354c6001cc3118e714c0cc07cc2e32e3aa732ac4d645f3285c2f240c2006",
+      "symbol": "TSCO"
+    },
+    {
+      "alias": null,
+      "cik": "0000047111",
+      "historical_roster_name": "The Hershey Company",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-07-29T04:00:00.000Z",
+          "name": "HERSHEY FOODS CORP",
+          "to": "2005-04-20T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "HERSHEY CO",
+      "sec_tickers": [
+        "HSY"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000047111.json",
+      "source_sha256": "094087126a24a3825834d2f89f723b7f7c5c6076ef2ea87daaa514705d09cfdc",
+      "symbol": "HSY"
+    },
+    {
+      "alias": null,
+      "cik": "0001633917",
+      "historical_roster_name": "PayPal",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "PayPal Holdings, Inc.",
+      "sec_tickers": [
+        "PYPL"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001633917.json",
+      "source_sha256": "fcf9dba72d2add20a6a53e967c4c63a462529586c5050eaf79833224ccd866bc",
+      "symbol": "PYPL"
+    },
+    {
+      "alias": null,
+      "cik": "0001555280",
+      "historical_roster_name": "Zoetis",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Zoetis Inc.",
+      "sec_tickers": [
+        "ZTS"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001555280.json",
+      "source_sha256": "1263271548c0348759e34015c4c3630c3496bc94984ff7ded15549ed3c6f355d",
+      "symbol": "ZTS"
+    },
+    {
+      "alias": null,
+      "cik": "0000076334",
+      "historical_roster_name": "Parker-Hannifin",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-02-11T05:00:00.000Z",
+          "name": "PARKER HANNIFIN CORP",
+          "to": "2024-12-11T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Parker-Hannifin Corp",
+      "sec_tickers": [
+        "PH"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000076334.json",
+      "source_sha256": "52d27c6fe1ba50a31d2d382d599c5313fe0f251abd385eeb7468c8a3e515a5d0",
+      "symbol": "PH"
+    },
+    {
+      "alias": null,
+      "cik": "0000097745",
+      "historical_roster_name": "Thermo Fisher Scientific",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-02-18T05:00:00.000Z",
+          "name": "THERMO ELECTRON CORP",
+          "to": "2006-11-03T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "THERMO FISHER SCIENTIFIC INC.",
+      "sec_tickers": [
+        "TMO"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000097745.json",
+      "source_sha256": "f224b0e56b7aa113309e801972ea3e961bba3aec3d0f70867cae77f847aac648",
+      "symbol": "TMO"
+    },
+    {
+      "alias": null,
+      "cik": "0000874716",
+      "historical_roster_name": "IDEXX Laboratories",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "IDEXX LABORATORIES INC /DE",
+      "sec_tickers": [
+        "IDXX"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000874716.json",
+      "source_sha256": "c4614026c83eda0086208960af787048722e76d8dea75d95669661079f555cd3",
+      "symbol": "IDXX"
+    },
+    {
+      "alias": null,
+      "cik": "0000764478",
+      "historical_roster_name": "Best Buy Co. Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "BEST BUY CO INC",
+      "sec_tickers": [
+        "BBY"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000764478.json",
+      "source_sha256": "0ef763bd9f551c5b0fc90b288bd664f5cebd2c530d6453092516fbe6e854156a",
+      "symbol": "BBY"
+    },
+    {
+      "alias": null,
+      "cik": "0001136869",
+      "historical_roster_name": "Zimmer Biomet Holdings",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2001-03-26T05:00:00.000Z",
+          "name": "ZIMMER HOLDINGS INC",
+          "to": "2015-06-08T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "ZIMMER BIOMET HOLDINGS, INC.",
+      "sec_tickers": [
+        "ZBH"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001136869.json",
+      "source_sha256": "af999978babab1a3cd54544d119436be6fa89137157a8646f80983b715ebaf2c",
+      "symbol": "ZBH"
+    },
+    {
+      "alias": null,
+      "cik": "0001601712",
+      "historical_roster_name": "Synchrony Financial",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2014-03-13T04:00:00.000Z",
+          "name": "Synchrony Financial",
+          "to": "2026-08-19T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Synchrony Financial",
+      "sec_tickers": [
+        "SYF",
+        "SYF-PA",
+        "SYF-PB"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001601712.json",
+      "source_sha256": "d7c62e09bf9b3e94940fc7747d0c09e24be4dbc8db492bfac3f60f16e7abddbf",
+      "symbol": "SYF"
+    },
+    {
+      "alias": null,
+      "cik": "0000072741",
+      "historical_roster_name": "Eversource Energy",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-07-28T04:00:00.000Z",
+          "name": "NORTHEAST UTILITIES",
+          "to": "2015-04-29T04:00:00.000Z"
+        },
+        {
+          "from": "1996-11-27T05:00:00.000Z",
+          "name": "NORTHEAST UTILITIES SYSTEM",
+          "to": "2004-11-30T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "EVERSOURCE ENERGY",
+      "sec_tickers": [
+        "ES"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000072741.json",
+      "source_sha256": "60d078994720be6c481e29c9592a4b55ef485b15c5afa715f37efc6223039eb5",
+      "symbol": "ES"
+    },
+    {
+      "alias": null,
+      "cik": "0001012100",
+      "historical_roster_name": "Sealed Air",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1996-11-19T00:00:00.000Z",
+          "name": "WR GRACE & CO/DE",
+          "to": "1998-03-30T00:00:00.000Z"
+        },
+        {
+          "from": "1996-08-09T00:00:00.000Z",
+          "name": "GRACE HOLDING INC",
+          "to": "1996-10-07T00:00:00.000Z"
+        },
+        {
+          "from": "1996-08-02T00:00:00.000Z",
+          "name": "GRACE HOLDINGING INC",
+          "to": "1996-08-02T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "SEALED AIR CORP/DE",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001012100.json",
+      "source_sha256": "759b6c3d097fe9f70463bdd7b5640ddb511d73909b545841739b9129a540775f",
+      "symbol": "SEE"
+    },
+    {
+      "alias": null,
+      "cik": "0000091419",
+      "historical_roster_name": "JM Smucker",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-03-14T05:00:00.000Z",
+          "name": "SMUCKER J M CO",
+          "to": "2014-10-06T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "J M SMUCKER Co",
+      "sec_tickers": [
+        "SJM"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000091419.json",
+      "source_sha256": "cacc4eef42f3734e67e4ff134b8b38c52f78f8b3815e7259458c34619197d851",
+      "symbol": "SJM"
+    },
+    {
+      "alias": null,
+      "cik": "0001613103",
+      "historical_roster_name": "Medtronic plc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2015-01-15T05:00:00.000Z",
+          "name": "Medtronic Ltd",
+          "to": "2015-01-15T05:00:00.000Z"
+        },
+        {
+          "from": "2014-07-14T04:00:00.000Z",
+          "name": "Medtronic Holdings Ltd",
+          "to": "2014-11-21T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Medtronic plc",
+      "sec_tickers": [
+        "MDT"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001613103.json",
+      "source_sha256": "4771b0144ac417b4c98120795fed38c9e8fe33f8af797375af420c7d188f5530",
+      "symbol": "MDT"
+    },
+    {
+      "alias": null,
+      "cik": "0001267238",
+      "historical_roster_name": "Assurant Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2003-10-24T04:00:00.000Z",
+          "name": "ASSURANT INC",
+          "to": "2019-08-22T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "ASSURANT, INC.",
+      "sec_tickers": [
+        "AIZ",
+        "AIZN"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001267238.json",
+      "source_sha256": "5e33b757f6cacb6b3f43210f1fcf301def1e0eb317bfdf9fa50db3032513122e",
+      "symbol": "AIZ"
+    },
+    {
+      "alias": null,
+      "cik": "0001413329",
+      "historical_roster_name": "Philip Morris International",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Philip Morris International Inc.",
+      "sec_tickers": [
+        "PM"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001413329.json",
+      "source_sha256": "d0a3449804d49505cc2635a5433701cdb770bf356ffb9e0a4780c7c8d77f86e1",
+      "symbol": "PM"
+    },
+    {
+      "alias": null,
+      "cik": "0000202058",
+      "historical_roster_name": "Harris Corporation",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-09-09T04:00:00.000Z",
+          "name": "HARRIS CORP /DE/",
+          "to": "2019-06-25T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "L3HARRIS TECHNOLOGIES, INC. /DE/",
+      "sec_tickers": [
+        "LHX"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000202058.json",
+      "source_sha256": "05c696510f49242a89a396a38c29d1ed31f2f32615bb515e7d8666bb239251fe",
+      "symbol": "HRS"
+    },
+    {
+      "alias": null,
+      "cik": "0001297996",
+      "historical_roster_name": "Digital Realty Trust Inc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "DIGITAL REALTY TRUST, INC.",
+      "sec_tickers": [
+        "DLR",
+        "DLR-PK",
+        "DLR-PJ",
+        "DLR-PL"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001297996.json",
+      "source_sha256": "72ac76d957ec40a612716975b248d9f72d57b9b0397ea8f5a143d204fd0d532d",
+      "symbol": "DLR"
+    },
+    {
+      "alias": null,
+      "cik": "0001038357",
+      "historical_roster_name": "Pioneer Natural Resources",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "PIONEER NATURAL RESOURCES CO",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0001038357.json",
+      "source_sha256": "b7045774366cc56d61fd36f7055680bdf86a6ba49267ba68dc153dc7c51428a8",
+      "symbol": "PXD"
+    },
+    {
+      "alias": null,
+      "cik": "0000874766",
+      "historical_roster_name": "Hartford Financial Svc.Gp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2025-02-06T05:00:00.000Z",
+          "name": "HARTFORD INSURANCE GROUP, INC.",
+          "to": "2026-09-09T04:00:00.000Z"
+        },
+        {
+          "from": "2019-06-07T04:00:00.000Z",
+          "name": "HARTFORD FINANCIAL SERVICES GROUP, INC.",
+          "to": "2025-01-30T05:00:00.000Z"
+        },
+        {
+          "from": "1997-11-14T05:00:00.000Z",
+          "name": "HARTFORD FINANCIAL SERVICES GROUP INC/DE",
+          "to": "2019-05-23T04:00:00.000Z"
+        },
+        {
+          "from": "1996-10-29T05:00:00.000Z",
+          "name": "ITT HARTFORD GROUP INC /DE",
+          "to": "1998-02-13T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "HARTFORD INSURANCE GROUP, INC.",
+      "sec_tickers": [
+        "HIG",
+        "HIG-PG"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000874766.json",
+      "source_sha256": "f3e6df6a576f87d20ae8d001be3cf7f8967fc2c3d88acc235205f877a7653f38",
+      "symbol": "HIG"
+    },
+    {
+      "alias": null,
+      "cik": "0000354190",
+      "historical_roster_name": "Arthur J. Gallagher & Co.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-01-25T05:00:00.000Z",
+          "name": "GALLAGHER ARTHUR J & CO",
+          "to": "2019-08-14T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Arthur J. Gallagher & Co.",
+      "sec_tickers": [
+        "AJG"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000354190.json",
+      "source_sha256": "92f817661a4f6f4800b4a2a0f2a2ccb16eccc327fc4b1100f2e4004114762b15",
+      "symbol": "AJG"
+    },
+    {
+      "alias": null,
+      "cik": "0000833444",
+      "historical_roster_name": "Johnson Controls International",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2014-11-17T05:00:00.000Z",
+          "name": "TYCO INTERNATIONAL plc",
+          "to": "2016-09-07T04:00:00.000Z"
+        },
+        {
+          "from": "2010-03-08T05:00:00.000Z",
+          "name": "TYCO INTERNATIONAL LTD",
+          "to": "2014-11-14T05:00:00.000Z"
+        },
+        {
+          "from": "1997-08-05T04:00:00.000Z",
+          "name": "TYCO INTERNATIONAL LTD /BER/",
+          "to": "2010-04-07T04:00:00.000Z"
+        },
+        {
+          "from": "1995-02-15T05:00:00.000Z",
+          "name": "ADT LIMITED",
+          "to": "1997-07-08T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Johnson Controls International plc",
+      "sec_tickers": [
+        "JCI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000833444.json",
+      "source_sha256": "fd5d4f42ab9a3df2cc74fc60ffefd3bc840173d249b95c554419390f95ac1980",
+      "symbol": "JCI"
+    },
+    {
+      "alias": null,
+      "cik": "0001770450",
+      "historical_roster_name": "Xerox Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Xerox Holdings Corp",
+      "sec_tickers": [
+        "XRX",
+        "XRXDW"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001770450.json",
+      "source_sha256": "b72cba74ed16eb468dd27cc8a3eccc529cc87f12d4384ecb21dea1d5045fdd45",
+      "symbol": "XRX"
+    },
+    {
+      "alias": null,
+      "cik": "0000796343",
+      "historical_roster_name": "Adobe Systems Inc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-09-09T04:00:00.000Z",
+          "name": "ADOBE SYSTEMS INC",
+          "to": "2018-10-03T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "ADOBE INC.",
+      "sec_tickers": [
+        "ADBE"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000796343.json",
+      "source_sha256": "b4e73116e1c1bc11627c8d43797ab7dfcf6bb5d38a2c915db7e1dda9b32aa782",
+      "symbol": "ADBE"
+    },
+    {
+      "alias": null,
+      "cik": "0001063761",
+      "historical_roster_name": "Simon Property Group Inc",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1998-09-28T04:00:00.000Z",
+          "name": "SIMON PROPERTY GROUP INC /DE/",
+          "to": "2025-11-03T05:00:00.000Z"
+        },
+        {
+          "from": "1998-09-17T04:00:00.000Z",
+          "name": "CORPORATE PROPERTY INVESTORS INC",
+          "to": "1998-09-25T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "SIMON PROPERTY GROUP INC.",
+      "sec_tickers": [
+        "SPG",
+        "SPG-PJ"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001063761.json",
+      "source_sha256": "8f46723191c05739e3d631d8c8dc8845d61a7546e1b0a065b7d1b3a4c5543578",
+      "symbol": "SPG"
+    },
+    {
+      "alias": null,
+      "cik": "0000106535",
+      "historical_roster_name": "Weyerhaeuser Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "WEYERHAEUSER CO",
+      "sec_tickers": [
+        "WY"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000106535.json",
+      "source_sha256": "c780eeb2698ecbb6033ebcbafc6ecc46c1ccd8bc5b8c270584aea3a5fe2777a2",
+      "symbol": "WY"
+    },
+    {
+      "alias": null,
+      "cik": "0001437107",
+      "historical_roster_name": "Discovery Inc. Class C",
+      "lifecycle": {
+        "end": "2022-04-08",
+        "event_date": "2022-04-11",
+        "outcome": "SHARE_CLASS_REORGANIZATION_REQUIRES_NEW_CLASS_EVIDENCE",
+        "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2022-63"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2018-03-06T05:00:00.000Z",
+          "name": "Discovery, Inc.",
+          "to": "2022-04-08T04:00:00.000Z"
+        },
+        {
+          "from": "2008-06-11T04:00:00.000Z",
+          "name": "Discovery Communications, Inc.",
+          "to": "2018-03-05T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Warner Bros. Discovery, Inc.",
+      "sec_tickers": [
+        "WBD"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001437107.json",
+      "source_sha256": "782cabf4b6a4b3e32c0b86570dc19c7a9778242afb7c27eff75f7c4dbcbc18ae",
+      "symbol": "DISCK"
+    },
+    {
+      "alias": null,
+      "cik": "0000006951",
+      "historical_roster_name": "Applied Materials Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "APPLIED MATERIALS INC /DE",
+      "sec_tickers": [
+        "AMAT"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000006951.json",
+      "source_sha256": "8a0de162ae5b0e9f27c4fba708a00fdb19d9f01daee323c6057ec504913a71a4",
+      "symbol": "AMAT"
+    },
+    {
+      "alias": null,
+      "cik": "0001124198",
+      "historical_roster_name": "Fluor Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "FLUOR CORP",
+      "sec_tickers": [
+        "FLR"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001124198.json",
+      "source_sha256": "5c7179b7e3f0168f4ea54a24b516bfbcd15a9d9071fedb42c6477f143bad3b7c",
+      "symbol": "FLR"
+    },
+    {
+      "alias": null,
+      "cik": "0001047862",
+      "historical_roster_name": "Consolidated Edison",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "CONSOLIDATED EDISON INC",
+      "sec_tickers": [
+        "ED"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001047862.json",
+      "source_sha256": "3d6b4b9aac6ada3d0799f00c07968aef1516a48166ddf86549fc6910484b3a93",
+      "symbol": "ED"
+    },
+    {
+      "alias": null,
+      "cik": "0000047217",
+      "historical_roster_name": "HP Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-01-26T05:00:00.000Z",
+          "name": "HEWLETT PACKARD CO",
+          "to": "2015-10-23T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "HP INC",
+      "sec_tickers": [
+        "HPQ"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000047217.json",
+      "source_sha256": "7ebc9c15e99e6203f5dc87b183f75a45987bc815a6e93917d911721a463c9f84",
+      "symbol": "HPQ"
+    },
+    {
+      "alias": null,
+      "cik": "0000073309",
+      "historical_roster_name": "Nucor Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "NUCOR CORP",
+      "sec_tickers": [
+        "NUE"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000073309.json",
+      "source_sha256": "717173c6bb895a21937a558a09a31d911e6a08e49726b76252ed4fa02fae8bfd",
+      "symbol": "NUE"
+    },
+    {
+      "alias": null,
+      "cik": "0000001800",
+      "historical_roster_name": "Abbott Laboratories",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "ABBOTT LABORATORIES",
+      "sec_tickers": [
+        "ABT"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000001800.json",
+      "source_sha256": "94659a715c886e52b30257209a402c87fa16897d919df14a265265658f6fdd40",
+      "symbol": "ABT"
+    },
+    {
+      "alias": null,
+      "cik": "0000940944",
+      "historical_roster_name": "Darden Restaurants",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "DARDEN RESTAURANTS INC",
+      "sec_tickers": [
+        "DRI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000940944.json",
+      "source_sha256": "d9a2e504e288bd63b6e3b3b9a2ba9ecb98df153500986137a750eba6fcbd06b0",
+      "symbol": "DRI"
+    },
+    {
+      "alias": null,
+      "cik": "0001014473",
+      "historical_roster_name": "Verisign Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "VERISIGN INC/CA",
+      "sec_tickers": [
+        "VRSN"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001014473.json",
+      "source_sha256": "8565c3a772e2f7cc6d93dd8d5d0fc026f6a4940a7a39730194eceb1e0fbf9164",
+      "symbol": "VRSN"
+    },
+    {
+      "alias": null,
+      "cik": "0000200406",
+      "historical_roster_name": "Johnson & Johnson",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1995-10-06T04:00:00.000Z",
+          "name": "JOHNSON & JOHNSON ET AL",
+          "to": "1996-01-23T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "JOHNSON & JOHNSON",
+      "sec_tickers": [
+        "JNJ"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000200406.json",
+      "source_sha256": "93b22128a43b4f39572c4bee57c488b4336ce82fca1b8bb8bc3a6f86635e92f0",
+      "symbol": "JNJ"
+    },
+    {
+      "alias": null,
+      "cik": "0001326160",
+      "historical_roster_name": "Duke Energy",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2005-07-01T04:00:00.000Z",
+          "name": "Duke Energy Holding Corp.",
+          "to": "2006-04-03T04:00:00.000Z"
+        },
+        {
+          "from": "2005-05-09T04:00:00.000Z",
+          "name": "Deer Holding Corp.",
+          "to": "2005-06-22T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "Duke Energy CORP",
+      "sec_tickers": [
+        "DUK",
+        "DUKB",
+        "DUK-PA",
+        "DUKU",
+        "DUUKU"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001326160.json",
+      "source_sha256": "c405571cba9641f5a7fe13f9dcb7bf528d15a1cf97c3fb818cd7f6952ff29180",
+      "symbol": "DUK"
+    },
+    {
+      "alias": null,
+      "cik": "0001730168",
+      "historical_roster_name": "Broadcom",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2018-02-06T05:00:00.000Z",
+          "name": "Broadcom Ltd",
+          "to": "2018-03-09T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Broadcom Inc.",
+      "sec_tickers": [
+        "AVGO"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001730168.json",
+      "source_sha256": "4d95fd64c365cdc995a84b40863453adf3eddacebf248889f85f388889826112",
+      "symbol": "AVGO"
+    },
+    {
+      "alias": null,
+      "cik": "0000804753",
+      "historical_roster_name": "Cerner",
+      "lifecycle": {
+        "cash": 95,
+        "end": "2022-06-07",
+        "event_date": "2022-06-08",
+        "outcome": "CASH_MERGER",
+        "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=eca2022-127"
+      },
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-02-14T00:00:00.000Z",
+          "name": "CERNER CORP /MO/",
+          "to": "2019-07-17T00:00:00.000Z"
+        }
+      ],
+      "sec_name": "CERNER Corp",
+      "sec_tickers": [],
+      "source": "https://data.sec.gov/submissions/CIK0000804753.json",
+      "source_sha256": "473d0b7e11d650684ee14284800922e0c873656bb05457fcf33a33d619f9cd22",
+      "symbol": "CERN"
+    },
+    {
+      "alias": null,
+      "cik": "0000815556",
+      "historical_roster_name": "Fastenal Co",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1995-03-20T05:00:00.000Z",
+          "name": "FASTENAL COMPANY",
+          "to": "2002-03-04T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "FASTENAL CO",
+      "sec_tickers": [
+        "FAST"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000815556.json",
+      "source_sha256": "586fe4325d28f8c15df795be505f4b1b6aebe79d69e15a92b9e4626428386bd0",
+      "symbol": "FAST"
+    },
+    {
+      "alias": null,
+      "cik": "0000049826",
+      "historical_roster_name": "Illinois Tool Works",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "ILLINOIS TOOL WORKS INC",
+      "sec_tickers": [
+        "ITW"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000049826.json",
+      "source_sha256": "370cca865e25e38e156aa403b817b920c496705c7093c33651d2ad858140841c",
+      "symbol": "ITW"
+    },
+    {
+      "alias": {
+        "provider": "BALL",
+        "source": "https://www.ball.com/newswire/article/124123/ball-board-declares-quarterly-dividend-stock-ticker-symbol-changing-to-ball"
+      },
+      "cik": "0000009389",
+      "historical_roster_name": "Ball Corp",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "BALL Corp",
+      "sec_tickers": [
+        "BALL"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000009389.json",
+      "source_sha256": "82324c7e93877d1d1e045262080b52d2e4529a1c8a1caf720e4ca67bd0630ddf",
+      "symbol": "BLL"
+    },
+    {
+      "alias": null,
+      "cik": "0001123360",
+      "historical_roster_name": "Global Payments Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "GLOBAL PAYMENTS INC",
+      "sec_tickers": [
+        "GPN"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001123360.json",
+      "source_sha256": "384924c1dd77a356c2a14a90d9c0395b9f749709749e8ab843ba4419786d3d76",
+      "symbol": "GPN"
+    },
+    {
+      "alias": null,
+      "cik": "0001739940",
+      "historical_roster_name": "CIGNA Corp.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2018-12-26T05:00:00.000Z",
+          "name": "Cigna Corp",
+          "to": "2023-02-09T05:00:00.000Z"
+        },
+        {
+          "from": "2018-05-16T04:00:00.000Z",
+          "name": "Halfmoon Parent, Inc.",
+          "to": "2018-12-20T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Cigna Group",
+      "sec_tickers": [
+        "CI"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001739940.json",
+      "source_sha256": "b5a9000cf8f1b278577b93541002adc59320177f3b78ba49b3f7c4b77e472e50",
+      "symbol": "CI"
+    },
+    {
+      "alias": null,
+      "cik": "0000898173",
+      "historical_roster_name": "O'Reilly Automotive",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1996-08-13T04:00:00.000Z",
+          "name": "OREILLY AUTOMOTIVE INC",
+          "to": "1998-04-10T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "O REILLY AUTOMOTIVE INC",
+      "sec_tickers": [
+        "ORLY"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000898173.json",
+      "source_sha256": "0c75d06a5c64a7abb776511cb552af7abce265384d7f5140879e45ee9ed4a35d",
+      "symbol": "ORLY"
+    },
+    {
+      "alias": null,
+      "cik": "0000021076",
+      "historical_roster_name": "The Clorox Company",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "1994-03-28T05:00:00.000Z",
+          "name": "CLOROX CO /DE/",
+          "to": "2026-08-07T04:00:00.000Z"
+        }
+      ],
+      "sec_name": "CLOROX CO /DE/",
+      "sec_tickers": [
+        "CLX"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000021076.json",
+      "source_sha256": "6e6e6fab863241cc34f507a47d88383c49832e863632036579b4ec80a4a4d6a6",
+      "symbol": "CLX"
+    },
+    {
+      "alias": null,
+      "cik": "0000051253",
+      "historical_roster_name": "Intl Flavors & Fragrances",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "INTERNATIONAL FLAVORS & FRAGRANCES INC",
+      "sec_tickers": [
+        "IFF"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000051253.json",
+      "source_sha256": "58b6c5d76e40163960ed38aba953325867c3e12be2041d13356a9fe38be859fa",
+      "symbol": "IFF"
+    },
+    {
+      "alias": null,
+      "cik": "0000723531",
+      "historical_roster_name": "Paychex Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "PAYCHEX INC",
+      "sec_tickers": [
+        "PAYX"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0000723531.json",
+      "source_sha256": "a211c09c8e08b186967110b3e9e60a6fa7ee1a31130d69ba21dcea716f4eb39a",
+      "symbol": "PAYX"
+    },
+    {
+      "alias": {
+        "provider": "ELV",
+        "source": "https://www.elevancehealth.com/newsroom/elevance-health-rings-in-rebrand-with-nyse-opening-bell"
+      },
+      "cik": "0001156039",
+      "historical_roster_name": "Anthem Inc.",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [
+        {
+          "from": "2014-12-02T05:00:00.000Z",
+          "name": "Anthem, Inc.",
+          "to": "2022-06-24T04:00:00.000Z"
+        },
+        {
+          "from": "2010-01-06T05:00:00.000Z",
+          "name": "WELLPOINT, INC",
+          "to": "2014-11-12T05:00:00.000Z"
+        },
+        {
+          "from": "2004-11-30T05:00:00.000Z",
+          "name": "WELLPOINT INC",
+          "to": "2009-12-21T05:00:00.000Z"
+        },
+        {
+          "from": "2001-12-17T05:00:00.000Z",
+          "name": "ANTHEM INC",
+          "to": "2004-11-30T05:00:00.000Z"
+        }
+      ],
+      "sec_name": "Elevance Health, Inc.",
+      "sec_tickers": [
+        "ELV"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001156039.json",
+      "source_sha256": "1ecca06d8888bb2637b503a6498b9b4d734d1350e02b7df092366271d89e5ea6",
+      "symbol": "ANTM"
+    },
+    {
+      "alias": null,
+      "cik": "0001336917",
+      "historical_roster_name": "Under Armour Class A",
+      "lifecycle": null,
+      "qualification": "2018 roster name reviewed against SEC registrant/current and former names; explicit lifecycle and registrant changes retained. Current membership not used.",
+      "sec_former_names": [],
+      "sec_name": "Under Armour, Inc.",
+      "sec_tickers": [
+        "UAA",
+        "UA"
+      ],
+      "source": "https://data.sec.gov/submissions/CIK0001336917.json",
+      "source_sha256": "bb31a68bece322f7ac4f2d875340e85d90e4126ef9a10916173f666f90057b76",
+      "symbol": "UAA"
+    }
+  ],
+  "unused_rejected_cik": "0000012659"
+}

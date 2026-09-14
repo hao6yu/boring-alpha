@@ -1,0 +1,6 @@
+{
+  "all_nasdaq_venue_symbols_usd": 19.37593370676,
+  "billing": "Quote only; remaining credits and final provider debit require separate verification.",
+  "excludes": "SEC normalization, historical universe, corporate-action/reference products and execution-quality data",
+  "sample_usd": 0.022212937474
+}
