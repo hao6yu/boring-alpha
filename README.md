@@ -8,37 +8,70 @@ BoringAlpha is a small, dependency-light laboratory for systematic trading
 research. Its first job is not to make money. Its first job is to make it hard
 to fool ourselves.
 
-**Active research, September 10, 2026:** the current mandate is U.S.-accessible
-quantitative trading with a possible $5,000 pilot, not ETF allocation.
-[BA-012](docs/strategies/BA-012.md) defines a slow, diversified futures-trend
-research protocol. **All 181 settlement downloads are now complete and verified.**
-The [completion report](docs/notes/2026-09-10-ba012-download-complete.md) records
-3.28 million raw statistics records and $0.611430853385 in cumulative provider
-estimates, including failed and interrupted attempts. Under the unchanged data
-rules, 25 of 72 monthly windows have complete inputs. All 25 return verified
-cash decisions at $5,000 because the required three-group basket cannot fit
-the risk and money limits; 47 windows remain unresolved. The subsequent
-[covered-period profitability diagnostic](docs/notes/2026-09-10-ba012-profitability-diagnostic.md)
-used July 2022–December 2023 with complete daily risk history. The continuous
-$5,000 account made no trades and ended at $4,916.30 after modeled data fees
-(−1.1161% annualized). This is a cash/expense result; the full protocol's capital
-verdict and trading profitability remain unestablished. The subsequent
-[virtual capital checks](docs/notes/2026-09-10-ba012-capital-sensitivity.md)
-found nonzero portfolios at both $25,000 and $100,000 in all 25 usable cases
-under the same percentage risk policies. The subsequent
-[larger-account profitability diagnostic](docs/notes/2026-09-10-ba012-traded-profitability.md)
-is negative at both balances: July 2022–November 23, 2023 base/stress annualized
-returns are −1.96%/−4.49% at $25,000 and −0.99%/−6.69% at $100,000. All four
-full December-2023 runs remain unresolved at a missing November 24 held Treasury
-mark; the shorter boundary was fixed before returns. These are hypothetical
-parent-price exposures. No holdout, native execution or funded pass follows.
-The original [Stage A result](docs/notes/2026-09-10-ba012-stage-a-result.md),
-the [earlier bounded attempt](docs/notes/2026-09-10-ba012-final-feasibility.md),
-and both frozen data specifications are preserved. No return study or bot follows
-automatically from this partial sizing result.
-[Current status and history](docs/QUANT_RESEARCH.md) preserve the earlier
-crypto corrections and failed MES experiments. Earlier ETF research below
-remains historical context.
+## Current status — September 14, 2026
+
+The current research goal is U.S.-accessible quantitative trading with a
+possible $10,000 pilot. **A runnable historical strategy exists; a dependable
+trading advantage has not been established.** No paper or live account is
+running this strategy.
+
+The retained baseline ranks stocks monthly using six signals: book-to-price,
+earnings-to-price, return on assets, operating cash flow relative to assets,
+momentum and volatility. It uses a fixed scoring formula. The tested trained
+models did not establish an improvement over this baseline.
+
+| Component | Status |
+|---|---|
+| Fixed monthly stock-ranking strategy | Implemented for historical research |
+| Whole-share portfolio simulation, costs, cash and risk controls | Implemented and checked; unresolved corporate actions remain explicit |
+| Automated current-data updates and paper-account runner for this strategy | No operating runner |
+| Live execution and evidence sufficient for funding or scaling | Not established |
+
+The latest completed comparison applied **189 verified financial-input repairs**
+without changing the strategy rules. Annualized returns after modeled trading
+costs on separate $10,000 accounts were:
+
+| Period | Base costs: original → repaired | Stressed costs: original → repaired |
+|---|---:|---:|
+| 2022–2023 | 2.97% → 2.45% | 1.95% → 1.90% |
+| January 2024–September 11, 2026 | 5.91% → 4.59% | 5.16% → 3.81% |
+
+Recent figures use the predeclared central **conditional corporate-action
+settlement** scenario. They exclude taxes and cash interest, and ending account
+value includes receivables. Financial coverage remains incomplete. The recent
+strategy trails its exposure/cost-matched attribution reference, and central
+paired uncertainty intervals include zero. These are already-seen historical
+results, not expected future earnings.
+
+The original calculations reproduce exactly for their original incomplete
+inputs. The repairs changed rankings and trades, producing lower returns.
+Verified data is retained even when it makes the backtest look worse.
+
+Start with:
+
+- [Current research brief and history](docs/QUANT_RESEARCH.md).
+- [Completed round: findings and remaining limitations](docs/notes/2026-09-14-financial-input-research-closeout.md).
+- [Full before/after results](research/verified-input-comparison-2026-09-14/RESULTS.md)
+  and [implementation/reproduction notes](research/verified-input-comparison-2026-09-14/README.md).
+
+The research code, results and artifact hashes are committed. Full input
+snapshots and account ledgers remain local under ignored `data/snapshots/`;
+a fresh clone alone cannot reproduce the stock experiment. Frozen runners
+refuse to overwrite completed results. The quick start below exercises the
+original synthetic ETF framework, not this stock strategy.
+
+A possible next deliverable is a locked strategy-versus-control paper runner
+to assess current inputs and execution. It has not been built or scheduled for
+this strategy, and a short paper run would not establish annual outperformance.
+
+## Earlier research
+
+The [BA-012 futures-trend study](docs/strategies/BA-012.md) completed its
+settlement downloads but retained incomplete monthly coverage. Its covered
+$5,000 account made no trades and lost modeled data fees; the
+[larger-account diagnostic](docs/notes/2026-09-10-ba012-traded-profitability.md)
+was negative at both tested balances. Earlier crypto, MES and ETF findings
+remain in the [research history](docs/QUANT_RESEARCH.md).
 
 The initial strategy, **BA-001 Multi-Asset Trend**, is deliberately simple:
 eight fixed ETF sleeves are invested when their trailing 12-month total return
@@ -49,9 +82,9 @@ observed at month-end and executed at the next session's open.
 > trading do not guarantee live results. The checked-in demo configuration uses
 > deterministic synthetic data and has no economic meaning.
 
-## Current milestone
+## Original ETF framework
 
-The repository currently provides:
+The original BA-001/BA-002 framework provides:
 
 - the locked BA-001 strategy charter;
 - deterministic synthetic data for exercising the system;
@@ -94,10 +127,14 @@ seen windows. In 2018–2021, base after-tax CAGR is about 2.00–2.03% versus
 non-gating diagnostic results, not formal classification or deployment evidence.
 The original freeze remains draft; no holdout evaluation is authorized or run.
 
-Broker connectivity, live orders, sentiment, pullback timing, leverage, and ML
-are intentionally outside this milestone.
+These BA-001/BA-002 interfaces do not provide broker execution. Later
+stock-ranking and ML experiments are documented in the current research links
+above.
 
 ## Quick start
+
+This runs the original BA-001 synthetic demo. It does not start the current
+stock-ranking strategy or connect to a brokerage account.
 
 Python 3.11 or newer is required.
 
